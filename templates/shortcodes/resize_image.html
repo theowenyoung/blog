@@ -1,0 +1,26 @@
+{% if not width %}
+  {% set width = 240 %}
+{% endif %}
+{% if not height %}
+  {% if width %}
+    {% set height = width %}
+  {% else %}
+    {% set height = 180 %}
+  {% endif %}
+{% endif %}
+{% if not op %}
+  {% set op = 'fill' %}
+{% endif %}
+
+{% if caption %}
+<figure>
+  <a href="{{ get_url(path=path) }}"><img src="{{ resize_image(path=path, width=width, height=height, op=op) }}"/></a>
+  <figcaption>{{ caption }}</figcaption>
+</figure>
+{% elif figure %}
+<figure>
+  <img src="{{ resize_image(path=path, width=width, height=height, op=op) }}"/>
+</figure>
+{% else %}
+<img src="{{ resize_image(path=path, width=width, height=height, op=op) }}"/>
+{% endif %}

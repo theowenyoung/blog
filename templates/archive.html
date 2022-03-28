@@ -1,0 +1,34 @@
+{% extends "base.html" %} 
+{% set all_section_pages =
+get_section(path="_index.md") %}
+{% block title %}{{ config.title}} - Archive{%
+endblock title %} 
+
+{% block ogtitle %}{{ config.title}} - Archive {% endblock
+ogtitle %} 
+
+{% block ogdesc %}Archive Articles{% endblock ogdesc %} 
+
+{% block
+ogurl %}{% if page.slug %}{{ config.base_url }}/{{ page.slug }}{% endif %}
+
+{% endblock ogurl %} 
+
+{% block ogimg %}{% if page.extra.image %}{{ page.extra.image
+}}{% endif %}{% endblock ogimg %} 
+
+{% block main %} 
+<div class="main-box-block">
+
+{% for year, posts in
+all_section_pages.pages | group_by(attribute="year") %}
+<h2>{{ year }}</h2>
+
+<ul>
+  {% for post in posts %}
+  <li>{{ macro::post_min(page=post) }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %} 
+</div>
+{% endblock main %}

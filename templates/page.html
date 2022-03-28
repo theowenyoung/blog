@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block post_meta%}
+
+{% endblock post_meta %}
+{% block title %}{{ page.title }} - {{ config.title}}{% endblock title %}
+{% block ogtitle %}{{ page.title }} - {{ config.title}}{% endblock ogtitle %}
+{% block ogdesc %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless}}  {% endif %}{% endblock ogdesc %}
+{% block ogurl %}{% if page.slug %}{{ config.base_url }}/{{ page.slug }}{% endif %}{% endblock ogurl %}
+{% block ogimg %}{% if page.extra.image %}{{ page.extra.image }}{% endif %}{% endblock ogimg %}
+
+{% block main %}
+      {% block detail_meta -%}
+      <header id="overview">
+        <div class="pt">
+          <span>&gt;&gt;</span>
+          <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{trans(key="label_home",lang=lang)}}</a>
+          {% if page.taxonomies %}
+          <span class="divider">/</span>
+          <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{
+            page.taxonomies.categories[0] }}</a>
+          
+          {% if page.taxonomies.tags -%}
+          <span class="divider">/</span>
+          {% for tag in page.taxonomies.tags %}
+          <a href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}{% if
+          loop.index != page.taxonomies.tags | length %},{% endif %}{% endif %}
+          {% endfor %}
+          {% endif %}
+          {% endif %}
+          </div>
+        
+        <div>
+          <h1 style="font-size:2rem;">{{ page.title }}</h1>
+          <div class="muted">
+            <div>{{ trans(key="label_created",lang=lang)}}: {{ page.date }}{% if page.updated %}, {{trans(key="label_updated",lang=lang)}}: {{ page.updated }}{% endif %}, {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min</div>
+        </div>
+  
+        </div>
+        {% block detail_meta_slot %}
+        {% endblock detail_meta_slot %}
+      </header>
+      {% endblock detail_meta -%}
+      <section>
+      
+        <section class="main">
+          <section id="start"></section>
+          {{ page.content | safe }}
+
+          {% if config.extra.email %}
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            {% if config.default_language != lang %}
+            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
+             <p>
+               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject={{ "Reply: " ~ page.title | urlencode }}">mail </a><code>owen@owenyoung.com</code>
+             </p>
+            {% else %}
+            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
+            <p>
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject={{"回复："~page.title | urlencode }}">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+            </p>
+            {% endif %}
+            
+
+          </div>
+          {% endif %}
+
+          {% if config.extra.disqus and page.extra.comments %}
+          <div id="disqus">
+            <div id="disqus_thread"></div>
+            <script>
+              (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://{{config.extra.disqus}}.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
+          </div>
+          {% endif %}
+        </section>
+        
+       
+      </section>
+{% endblock main%}
+
+{% block sidebar %}
+<aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
+
+{% if page.toc %}
+
+<section class="sidebar-table-content">
+  <h3>{{trans(key="label_table_contents",lang=lang)}}</h3>
+  <ul >
+    <li><a href="#start">{{trans(key="label_back_to_start",lang=lang)}}</a></li>
+  {% for h1 in page.toc %}
+      <li>
+          <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+          {% if h1.children %}
+              <ul>
+                  {% for h2 in h1.children %}
+                      <li>
+                          <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                      </li>
+                  {% endfor %}
+              </ul>
+          {% endif %}
+      </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endif %}
+</aside>
+
+{% endblock sidebar %}

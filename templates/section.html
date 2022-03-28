@@ -1,0 +1,19 @@
+{% extends "base.html" -%} {% block main -%} {% set_global file_lang_path = ""
+%} {% if config.default_language != lang %} {% set_global file_lang_path = "." ~
+lang %} {% endif %}
+<section>
+  <header id="overview">
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{trans(key="label_home",lang=lang)}}</a>
+      {% if section.title -%}
+      <span class="divider"> / </span>{{section.title}}
+      {% endif -%}
+      </div>
+  </header>
+  {% if paginator %} {% for page in paginator.pages %} {{
+  macro::post_max(page=page) }} {% endfor %} {{ macro::paginator(ref=paginator,
+  extra=config.extra) }} {% else %} {% for page in section.pages %} {{
+  macro::post_max(page=page) }} {% endfor %} {% endif %}
+</section>
+{% endblock main -%}

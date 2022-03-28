@@ -1,0 +1,46 @@
+{% extends "base.html" -%} 
+{% block main -%}
+
+      <section >
+        {% if config.default_language != lang %}
+        <p>I'm Owen Young, I've written <a href="{{get_url(path="@/archive/_index.md",lang=lang)}}"> {{all_section_pages.pages | length}}</a> articles so far, about {{total_word_count}} words, this blog doesn't have any JS, pure static HTML, I position this as my digital personal garden, where all my notes, ideas are stored here,<a href= "{{get_url(path="@/pages/now.md")}}">Click to find out what I'm doing now</a></p>
+        {% else %}
+        <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{get_url(path="@/archive/_index.md",lang=lang)}}"> {{all_section_pages.pages | length}}</a> 篇文章，大约 {{total_word_count}} 字，这个博客没有任何JS，只是简单的静态网页。 我把这里定位成我的数字个人花园，存放我的笔记，想法。<a href="{{get_url(path="@/pages/now.md")}}">点击了解我现在在做的事情</a></p>
+        {% endif %}
+      </section>
+
+      {{ section.content | safe }}
+
+      <h3>{{trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe}}</h3>
+      <section class="articles">
+      {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+      {% for page in all_blog_pages.pages | slice(start=0,end=5)  %} 
+        {{ macro::post_max(page=page) }}   
+      {% endfor %} 
+
+      <h3>{{trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe}}</h3>
+      </section>
+  
+      <h3>{{trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe}}</h3>
+      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %} 
+      <section class="articles">
+        {{ thoughts_page.summary | safe }}
+      </section>
+
+      <h3>{{trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe}}</h3>
+      <section class="articles">
+        {% set all_categories = get_taxonomy(kind="categories",lang=lang) %}
+        {% set note_pages = [] %}
+        {% for cat in all_categories.items %} 
+          {% if cat.name == "Notes" %}
+            {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse %}
+          {% endif %}
+        {% endfor %} 
+        <ul class="root-ul">
+          {% for page in note_pages %}
+            <li>{{ macro::post_min(page=page) }}</li>
+          {% endfor %}
+          </ul>
+
+      </section>
+{% endblock main -%}  
