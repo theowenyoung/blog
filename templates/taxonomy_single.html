@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}{{ config.title }} - {{
+trans(key="label_categories",lang=lang) }}{% endblock title %} {% block main %}
+<div class="main-box-block">
+
+  <header id="overview">
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{trans(key="label_home",lang=lang)}}</a>
+      {% if term.name -%}
+      <span class="divider"> / </span> {{ term.name }}
+      {% endif -%}
+      </div>
+  </header>
+  <section>
+    {% if paginator %} {% for page in paginator.pages %} {{
+      macro::post_max(page=page) }} {% endfor %} {{ macro::paginator(ref=paginator,
+      extra=config.extra) }} {% else %} {% for page in section.pages %} {{
+      macro::post_max(page=page) }} {% endfor %} {% endif %}
+  </section>
+</div>
+{% endblock main %}

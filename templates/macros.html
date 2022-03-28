@@ -1,0 +1,75 @@
+{% macro post_max(page) %}
+<article>
+  <section class="muted pt">
+    <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
+    {% if page.taxonomies.categories %}
+    <span>{{trans(key="label_published_on",lang=lang)}} </span>
+    <a class="no-underline" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
+      {{ page.taxonomies.categories[0] }}
+    </a> 
+  {% endif %}
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="{{ page.permalink }}">{{ page.title }}</a></h1>
+
+  {% if page.summary -%}
+  <div>{{ page.summary | safe }}</div>
+  {% elif page.description -%}
+  <p>{{ page.description }}</p>
+  {% endif -%}
+  {% if page.taxonomies.tags %}
+  <p>
+    {% for tag in page.taxonomies.tags %}
+    <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">#{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}
+    {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}{% endif %}
+  {% endfor %}
+  </p>
+ 
+  {% endif %}
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="{{ page.permalink }}#continue-reading"><span>{{ trans(key="label_read_more",lang=lang) }} </span>
+        <span>{{ page.reading_time }} min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+{% endmacro post_max %}
+
+
+{% macro post_min(page) %}
+<a href="{{ page.permalink }}">{{ page.title }}</a> <span class="muted text-sm">Updated on {{ page.date }}</span>
+{% endmacro post_min %}
+
+
+{% macro paginator(ref, extra) %}
+<div class="pagination py">
+  <ul class="list-none flex justify-between">
+    {% if ref.current_index != 1 %}
+      <li><a class="no-underline" href="{{ ref.first }}">&larrb;</a></li>
+    {% else %}
+      <li class="disabled"><a class="no-underline" href="{{ ref.first }}">&larrb;</a></li>
+    {% endif %}
+
+    {% if ref.previous %}
+      <li><a class="no-underline" href="{{ ref.previous }}">&larr;</a></li>
+    {% else %}
+      <li class="disabled"><a class="no-underline" href="#">&larr;</a></li>
+    {% endif %}
+
+    <li><a class="no-underline" href="{{get_url(path="@/archive/_index.md",lang=lang)}}">{{ ref.current_index }}/{{ ref.number_pagers }}</a></li>
+    
+    {% if ref.next %}
+      <li><a class="no-underline" href="{{ ref.next }}">&rarr;</a></li>
+    {% else %}
+      <li class="disabled"><a class="no-underline" href="#">&rarr;</a></li>
+    {% endif %}
+
+    {% if ref.current_index != ref.number_pagers %}
+      <li><a class="no-underline" href="{{ ref.last }}">&rarrb;</a></li>
+    {% else %}
+      <li class="disabled"><a class="no-underline" href="{{ ref.last }}">&rarrb;</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endmacro paginator %}

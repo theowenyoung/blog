@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% block title %}{{ config.title }} - 404{% endblock
+title %}
+{% block main %}
+
+<div class="alert alert-error navmargin">
+  <h1>404 - Not found</h1>
+</div>
+<p>
+  The page you requested was not found.<br />
+  You can try to find it by browsing the menus.
+</p>
+<p>
+  <a href="{{ config.base_url }}" class="btn btn-info" role="button">Home</a>
+  <a href="{{ config.base_url }}/categories" class="btn btn-info" role="button"
+    >Categories</a
+  >
+  <a href="{{ config.base_url }}/tags" class="btn btn-info" role="button"
+    >Tags</a
+  >
+</p>
+{% endblock main %}

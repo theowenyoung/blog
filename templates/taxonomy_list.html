@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block title %}{{ config.title }} - {{
+trans(key="label_categories",lang=lang) }}{% endblock title %} {% block main %}
+<div class="main-box-block">
+  <div class="page-header">
+    <h1>All {{ taxonomy.name }}</h1>
+  </div>
+  <ul class="root-ul">
+    {% for category in terms %}
+    <li>
+      <a href="{{ category.permalink }}">{{ category.name }}</a> ({{
+      category.pages | length }})
+      <ul>
+        {% for page in category.pages %}
+        <li>{{ macro::post_min(page=page) }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock main %}
