@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Misc</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/categories/misc/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-27T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/categories/misc/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Wiki Links to Markdown Links for VSCode</title>
+		<published>2022-03-27T00:00:00+00:00</published>
+		<updated>2022-03-27T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/</id>
+		<content type="html">&lt;p&gt;Recently, I migrated my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;Wiki&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;. Zola does not support relative internal links, it only support &lt;code&gt;@&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format. This is a bit painful, I posted a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zola.discourse.group&#x2F;t&#x2F;custom-content-dir-or-support-absolute-internal-link&#x2F;1242&#x2F;2&quot;&gt;feature request&lt;&#x2F;a&gt; to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use &lt;code&gt;&#x2F;content&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;So, the second thing is to input absolute internal link quickly, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; does have a feature that allows you type wiki links, then they will be converted to markdown links. I like this feature, but when I tried &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; seconds time, I still can’t use to it, and it’s also a bit slow compared to VSCode. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;foambubble&#x2F;foam&quot;&gt;Foam&lt;&#x2F;a&gt; can only auto generate markdown reference link, but that feature not a one-time task, it sometimes makes mistakes, like add multiple &lt;code&gt;&amp;quot;&lt;&#x2F;code&gt; at the end of reference zone. So, I decided to fork foam extension, and turn off the most features that I don’t need, only keep creating notes from template, and convert wiki links to markdown links.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;sYmKeKO.gif&quot; alt=&quot;Wiki Links to Markdown Links&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’m so lucky, Foam’s code structure is very clean, so I just changed a little bit to achieve what I wanted. Here is my final result: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;foam&quot;&gt;Foam&lt;&#x2F;a&gt;, if you need this, I also publish it on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;VSCode marketplace&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Tweets</title>
+		<published>2022-03-10T00:00:00+00:00</published>
+		<updated>2022-03-22T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/thoughts/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/thoughts/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;Hello World. - 2022.03.10&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
+</feed>

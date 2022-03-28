@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - HTTPS</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/https/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/https/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>在中国自动生成免费HTTPS证书的最佳方案</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/auto-https-ssl-in-china/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/auto-https-ssl-in-china/</id>
+		<content type="html">&lt;p&gt;Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&quot;&gt;&lt;code&gt;amce.sh+cloudflare&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; 的 dns 解析是最方便无痛的.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 acme 工具:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# 用root用户权限，因为涉及到操作nginx
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; su
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -O&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; - https:&#x2F;&#x2F;get.acme.sh &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; email=my@example.com
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;域名在 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cloudflare.com&#x2F;zh-cn&#x2F;&quot;&gt;Cloudflare&lt;&#x2F;a&gt; 解析&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;在某个域名的 dashboard 面板右侧找到 &lt;code&gt;Account ID&lt;&#x2F;code&gt;, 记录下备用。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;进入&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dash.cloudflare.com&#x2F;profile&#x2F;api-tokens&quot;&gt;https:&#x2F;&#x2F;dash.cloudflare.com&#x2F;profile&#x2F;api-tokens&lt;&#x2F;a&gt;，生成一个 API Token,选择&lt;code&gt;Edit Zone&lt;&#x2F;code&gt; 模版，Zone Resources 选择 &lt;code&gt;All Zones&lt;&#x2F;code&gt;,生成，&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;把以下的信息保存到 &lt;code&gt;~&#x2F;.bashrc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;CF_Token&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;sdfsdfsdfljlbjkljlkjsdfoiwje&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;CF_Account_ID&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;xxxxxxxxxxxxx&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;&#x2F;.bashrc
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有什么不清楚的，可以参考文档： &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&#x2F;wiki&#x2F;dnsapi&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&#x2F;wiki&#x2F;dnsapi&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;签发证书，运行 &lt;code&gt;acme.sh --issue --dns dns_cf -d example.com --server letsencrypt&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;安装证书到指定目录：&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;acme.sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --install-cert -d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; example.com \
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;--key-file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;etc&#x2F;nginx&#x2F;ssl&#x2F;example.com.key \
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;--fullchain-file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;etc&#x2F;nginx&#x2F;ssl&#x2F;example.com.crt \
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;--reloadcmd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;service nginx force-reload&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;之后 acme 会自动添加 cron 任务，自动续期期限&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;nginx 配置参考&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;可以在&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tools&#x2F;nginx?domains.0.https.certType=custom&amp;amp;domains.0.php.php=false&amp;amp;domains.0.reverseProxy.reverseProxy=true&amp;amp;domains.0.routing.root=false&amp;amp;global.app.lang=zhCN&quot;&gt;这里&lt;&#x2F;a&gt; 在线生成一份合适的 ssl 配置&lt;&#x2F;p&gt;
+&lt;p&gt;生成后，首次需要初始化 Diffie-Hellman keys:&lt;code&gt;openssl dhparam -out &#x2F;etc&#x2F;nginx&#x2F;dhparam.pem 2048&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;然后运行 &lt;code&gt;sudo nginx -t &amp;amp;&amp;amp; sudo systemctl reload nginx&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

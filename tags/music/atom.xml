@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Music</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/music/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/music/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>音乐收藏</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/music/" type="text/html"/>
+		<id>https://www.owenyoung.com/music/</id>
+		<content type="html">&lt;p&gt;收集喜欢的音乐。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;shuo-chang&quot;&gt;说唱&lt;a class=&quot;zola-anchor&quot; href=&quot;#shuo-chang&quot; aria-label=&quot;Anchor link for: shuo-chang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;这首&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;weibo.com&#x2F;7340378423&#x2F;Lkqwot4KB?pagetype=profilefeed&quot;&gt;父亲不让我出门，然后…&lt;&#x2F;a&gt; 说唱可能会改变你关于中国说唱的认知。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ou-mei&quot;&gt;欧美&lt;a class=&quot;zola-anchor&quot; href=&quot;#ou-mei&quot; aria-label=&quot;Anchor link for: ou-mei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=j-Jj5vY0e9I&quot;&gt;Radiohead - Creep&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

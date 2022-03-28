@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Answer</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/answer/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/answer/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>有意思的问题收集</title>
+		<published>2021-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/answers/" type="text/html"/>
+		<id>https://www.owenyoung.com/answers/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=23092657&quot;&gt;Ask HN: 说出一个改变你生活的想法&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;收集网上看到的有意思的问题和答案。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;lai-yuan&quot;&gt;来源&lt;a class=&quot;zola-anchor&quot; href=&quot;#lai-yuan&quot; aria-label=&quot;Anchor link for: lai-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ask.buzzing.cc&#x2F;&quot;&gt;reddit 热门提问中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhi-nan&quot;&gt;指南&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhi-nan&quot; aria-label=&quot;Anchor link for: zhi-nan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;minimaxir&#x2F;hacker-news-undocumented&#x2F;blob&#x2F;master&#x2F;README.md&quot;&gt;Hacker News 最全使用说明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;wiki&#x2F;search&quot;&gt;Reddit 搜索指南&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wikihow.com&#x2F;&quot;&gt;Wiki How&lt;&#x2F;a&gt; - 所有事情的指南
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wikihow.com&#x2F;Category:Featured-Articles&quot;&gt;编辑精选&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;runyourown.social&#x2F;&quot;&gt;如何为你的朋友运营一个社交网络&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;techinterviewhandbook.org&#x2F;&quot;&gt;Tech Interview Handbook&lt;&#x2F;a&gt; - 面试指南&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;anonymousplanet.org&#x2F;guide.html&quot;&gt;anonymousplanet&lt;&#x2F;a&gt; - The Hitchhiker’s Guide to Online Anonymity, 匿名指南&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ren-sheng&quot;&gt;人生&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-sheng&quot; aria-label=&quot;Anchor link for: ren-sheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;ph4pax&#x2F;what_was_the_worst_advice_you_have_ever_received&#x2F;&quot;&gt;你收到过的最糟糕的建议是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;pk5x1q&#x2F;what_life_hacks_have_you_personally_found_that&#x2F;&quot;&gt;你个人发现有哪些生活小窍门可以改善你的生活？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=21581361&quot;&gt;Ask HN: 你在一小时内能学到的最佳价值的东西是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=23092657&quot;&gt;Ask HN: 说出一个改变你生活的想法&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;sb5gci&#x2F;what_is_the_best_country_to_live_in&#x2F;&quot;&gt;最适合居住的国家是哪一个？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=28232165&quot;&gt;问 HN： 你读过的最能改变生活的文章是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;phs99j&#x2F;what_was_your_shit_im_getting_old_moment&#x2F;&quot;&gt;What was your “Shit I’m getting old” moment ? : AskReddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;liang-xing&quot;&gt;两性&lt;a class=&quot;zola-anchor&quot; href=&quot;#liang-xing&quot; aria-label=&quot;Anchor link for: liang-xing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;TooAfraidToAsk&#x2F;comments&#x2F;pgwrjx&#x2F;aside_from_condoms_why_are_there_no_birth_control&#x2F;&quot;&gt;除了安全套之外，其他的男性避孕选择？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tong-yong&quot;&gt;通用&lt;a class=&quot;zola-anchor&quot; href=&quot;#tong-yong&quot; aria-label=&quot;Anchor link for: tong-yong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;pguqh1&#x2F;what_is_something_crazy_popular_that_you_have_no&#x2F;&quot;&gt;什么东西疯狂流行而你却毫无兴趣？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;pgqeq8&#x2F;what_do_you_miss_about_the_internet_of_the_past&#x2F;&quot;&gt;你对过去的互联网有什么怀念？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yu-ce&quot;&gt;预测&lt;a class=&quot;zola-anchor&quot; href=&quot;#yu-ce&quot; aria-label=&quot;Anchor link for: yu-ce&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=21941278&quot;&gt;Ask HN: 新的十年，有什么预测？2020 版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;sheng-chan-li&quot;&gt;生产力&lt;a class=&quot;zola-anchor&quot; href=&quot;#sheng-chan-li&quot; aria-label=&quot;Anchor link for: sheng-chan-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;danielsada.tech&#x2F;blog&#x2F;programs-saved-me-100-hours&#x2F;&quot;&gt;为我节省 100 小时的程序&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=13887237&quot;&gt;HN 讨论&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ye-yu-xiang-mu&quot;&gt;业余项目&lt;a class=&quot;zola-anchor&quot; href=&quot;#ye-yu-xiang-mu&quot; aria-label=&quot;Anchor link for: ye-yu-xiang-mu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=25992782&quot;&gt;HN 提问： 你的不在乎结果的项目是？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=25700135&quot;&gt;HN 提问：给我看看你的半成品项目&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chan-pin&quot;&gt;产品&lt;a class=&quot;zola-anchor&quot; href=&quot;#chan-pin&quot; aria-label=&quot;Anchor link for: chan-pin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=28632002&quot;&gt;问 HN：除了 HN 之外，还有哪些其他通用链接聚合器？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dian-shi-ju&quot;&gt;电视剧&lt;a class=&quot;zola-anchor&quot; href=&quot;#dian-shi-ju&quot; aria-label=&quot;Anchor link for: dian-shi-ju&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.zhihu.com&#x2F;question&#x2F;22398342&quot;&gt;哪些美剧可以称为「神作」？ - 知乎&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  itemscope
+  itemtype="http://schema.org/Blog"
+>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <title>Rust相关的资源 - Owen的博客</title>
+
+    
+    <meta
+      name="description"
+      itemprop="about"
+      content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
+    />
+    <meta
+      name="keywords"
+      itemprop="keywords"
+      content="注意力, 读书, 工具分享, 纯文本, 英语学习"
+    />
+    <meta name="author" itemprop="author" content="Owen Young" />
+    <meta itemprop="headline" content="Owen的博客" />
+    <meta itemprop="copyrightYear" content="2022" />
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
+    type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
+    rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b"> <link
+    rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64"> <link
+    rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a"> <link
+    rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020"> <link
+    rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50"> <link
+    rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363"> <link
+    rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70"> <link
+    rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1"> <link rel="icon"
+    type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac"> <link rel="icon"
+    type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"> <link rel="icon"
+    type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> <link rel="icon"
+    type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa"> <link rel="manifest"
+    href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta
+      name="msapplication-TileColor"
+      content="#000084"
+    />
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="#000084" />
+
+    <meta
+      property="og:title"
+      content="Rust相关的资源 - Owen的博客"
+    />
+    <meta
+      property="og:description"
+      content=" &lt;p&gt;Curating awesome rust resources.&lt;&#x2F;p&gt;
+  "
+    />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;www.owenyoung.com/rust"
+    />
+    <meta property="og:site_name" content="Owen的博客" />
+    
+    <meta
+      property="og:image"
+      content=""
+    />
+    
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="TheOwenYoung" />
+    <meta name="twitter:creator" content="TheOwenYoung" />
+    <meta
+      name="twitter:image:alt"
+      content="Owen的博客"
+    />
+     
+    
+
+
+  </head>
+
+  <body>
+    <section id="top"></section>
+    <section id="root" >
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"></img>
+            </a> 
+          </div>
+          <div>
+            <ul class="flex menu list-none items-center justify-center">
+             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Back to Top" href="#top">
+               <span class=""> &#8593;</span>
+              </a></li>
+             <li>
+              <a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
+                <span class=""> &#8595;</span>
+               </a>
+             </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="body-zone flex justify-between flex-1">
+          <section class="main flex-1">
+            <div class="main-inner px">
+              
+      <header id="overview">
+        <div class="pt">
+          <span>&gt;&gt;</span>
+          <a href="https://www.owenyoung.com/">首页</a>
+          
+          <span class="divider">/</span>
+          <a class="category" href="https://www.owenyoung.com/categories/notes/">Notes</a>
+          
+          <span class="divider">/</span>
+          
+          <a href="https://www.owenyoung.com/tags/dev/">Dev</a>,
+          
+          <a href="https://www.owenyoung.com/tags/rust/">Rust</a>
+          
+          
+          
+          </div>
+        
+        <div>
+          <h1 style="font-size:2rem;">Rust相关的资源</h1>
+          <div class="muted">
+            <div>发布于: 2022-03-25, 最后更新时间: 2022-03-25, 阅读时间: 7 min</div>
+        </div>
+  
+        </div>
+        
+        
+      </header>
+      <section>
+      
+        <section class="main">
+          <section id="start"></section>
+          <p>Curating awesome rust resources.</p>
+<span id="continue-reading"></span><h2 id="resources">Resources<a class="zola-anchor" href="#resources" aria-label="Anchor link for: resources">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Dhghomon/easy_rust">Easy Rust</a> - A book that let you learn rust easy, rust explained using easy English, for non-English native.
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://kumakichi.github.io/easy_rust_chs/Chapter_0.html">中文版</a></li>
+</ul>
+</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rust-lang/rustlings/">rustlings</a> - 🦀 Small exercises to get you used to reading and writing Rust code!
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://egghead.io/courses/learning-rust-by-solving-the-rustlings-exercises-a722">Learning Rust by Working Through the Rustlings Exercises</a></li>
+</ul>
+</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Mercateo/rust-for-node-developers">GitHub - Mercateo/rust-for-node-developers: An introduction to the Rust programming language for Node developers.</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://doc.rust-lang.org/rust-by-example/index.html">Rust by Example</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ctjhoa/rust-learning">rust-learning</a> - A bunch of links to blog posts, articles, videos, etc for learning Rust</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rust-lang-nursery/rust-cookbook">rust cookbook</a> - This Rust Cookbook is a collection of simple Rust examples that demonstrate good practices to accomplish common programming tasks, using the crates of the Rust ecosystem.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rust-unofficial/patterns">Rust Design Patterns</a> - A catalogue of Rust design patterns, anti-patterns and idioms</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.microsoft.com/en-us/learn/paths/rust-first-steps/">Microsoft Rust First Class</a>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.microsoft.com/zh-cn/learn/paths/rust-first-steps/">中文版</a></li>
+</ul>
+</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/TaKO8Ki/awesome-alternatives-in-rust">awesome-alternatives-in-rust</a> - A curated list of replacements for existing software written in Rust</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://cheats.rs/">Rust Language Cheat Sheet</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/dtolnay/proc-macro-workshop">Rust Latam: learn procedural macros workshop</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.cloudflare.com/workers-rust-sdk/">Native Rust support on Cloudflare Workers</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.lpalmieri.com/posts/error-handling-rust/">rust error handling</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actix/examples">actix examples</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://kaisery.github.io/trpl-zh-cn/">Rust 程序设计语言中文版</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/flosse/rust-web-framework-comparison">rust web framework comparison</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://fasterthanli.me/articles/a-half-hour-to-learn-rust">半小时学习 Rust</a></li>
+</ul>
+<h2 id="answeres">Answeres<a class="zola-anchor" href="#answeres" aria-label="Anchor link for: answeres">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://zhuanlan.zhihu.com/p/123278299">【翻译】 Rust 中的 String 和&amp;str</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://zhuanlan.zhihu.com/p/115651233">【翻译】细谈 Rust 的所有权</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://zhuanlan.zhihu.com/p/356427780">【译】Rust 宏：教程与示例（二）</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/52438988/what-is-the-most-idiomatic-way-to-merge-two-error-types">如何合并 error</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.logrocket.com/configuration-management-in-rust-web-services/">rust 配置文件指南</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://romankudryashov.com/blog/2021/06/mongodb-redis-rust/">rust mongodb redis example</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/launchbadge/sqlx/issues/1004">rust sqlx postgres custom type</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.logrocket.com/jwt-authentication-in-rust/">rust jwt example</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://tokio.rs/blog/2021-05-14-inventing-the-service-trait">tokio service 解析</a>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.purewhite.io/2021/05/24/inventing-the-service-trait/">中文版</a></li>
+</ul>
+</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.purewhite.io/2021/09/01/rust-faq/">关于 rust 的常见疑问中文版</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/skerkour/kerkour.com/tree/main/2021/rust_static_site_generator">100 行实现 rust 静态网站生成</a></li>
+</ul>
+<h2 id="communities">Communities<a class="zola-anchor" href="#communities" aria-label="Anchor link for: communities">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/rust/top/?t=year">Rust Reddit</a></li>
+</ul>
+<h2 id="tools">Tools<a class="zola-anchor" href="#tools" aria-label="Anchor link for: tools">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/cargo-generate/cargo-generate">cargo-generate</a> - cargo, make me a project</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rustwasm/wasm-pack">wasm-pack</a> - your favorite rust -&gt; wasm workflow tool!</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Byron/gitoxide">gitoxide</a> - Git in Rust</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/watchexec/cargo-watch">Cargo Watch</a> - Cargo watch, hot reload rust.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sagiegurari/cargo-make">Cargo Make</a> - Rust task runner and build tool.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/roapi/roapi">roapi</a> - Create full-fledged APIs for static datasets without writing a single line of code.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mufeedvh/binserve">binserve</a> - A blazingly fast static web server with routing, templating, and security in a single binary you can set up with zero code. ⚡🦀</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Wulf/create-rust-app">Create rust app</a></li>
+</ul>
+<h2 id="libraries">Libraries<a class="zola-anchor" href="#libraries" aria-label="Anchor link for: libraries">🔗</a></h2>
+<ul>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/bevyengine/bevy">bevy</a> - 游戏引擎</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/tokio-rs/tokio">tokio</a> - A runtime for writing reliable, asynchronous, and slim applications with the Rust programming language</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/SergioBenitez/Rocket">Rocket</a> - A web framework for Rust.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/tokio-rs/axum">axum</a> - web framework</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/linebender/druid">A data-first Rust-native UI toolkit. Druid</a> - A data-first Rust-native UI design toolkit.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mandreyel/cratetorrent">cratetorrent</a> - A BitTorrent V1 engine library for Rust (and currently Linux) #Torrents</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/emilk/egui">egui</a> - GUI library in Rust</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/TeXitoi/structopt">structopt</a> - Parse command line arguments by defining a struct. It combines clap with custom derive.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/telegram-rs/telegram-bot">telegram-bot</a> - Rust Library for creating a Telegram Bot</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/dtolnay/anyhow">anyhow</a> - General error handle</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/dtolnay/thiserror">thiserror</a> - Specific error handle</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ayrat555/frankenstein">frankenstein</a> - telegram bot api</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mehcode/config-rs">config-rs</a> - Default config for rs</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/shakacode/ssr-rs">ssr-rs</a> - rust ssr with js</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sycamore-rs/sycamore">sycamore</a> - A reactive library for creating web apps in Rust and WebAssembly</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/chinedufn/percy">percy</a> - Build frontend browser apps with Rust + WebAssembly. Supports server side rendering.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actix/actix-web">actix-web</a> - Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/env-logger-rs/env_logger/">env-logger</a> - log for rust</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/projectfluent/fluent-rs">fluent-rs</a> - rust i18n</p>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/manishearth/handlebars-fluent">handlebars-fluent</a></li>
+</ul>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sunng87/handlebars-rust">handlebars-rust</a></p>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/davidB/handlebars_misc_helpers">handlebars_misc_helpers</a></li>
+</ul>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rust-lang-nursery/glob">glob</a> - Support for matching file paths against Unix shell style patterns.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/BurntSushi/walkdir">walkdir</a> - Rust library for walking directories recursively.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/djc/askama">askama</a> - type safe template engine</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/maciejhirsz/ramhorns">ramhorns</a> - Fast Mustache template engine implementation in pure Rust.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/launchbadge/sqlx">sqlx</a> - 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, SQLite, and MSSQL.</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mibes/couch-rs">couch-rs</a> - CouchDB library for Rust</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/spacejam/sled">sled</a> - the champagne of beta embedded databases, redis alternatives</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/nharring/rksuid">rksuid</a> - Rust implementation of Segment.io’s ksuid, id generator.</p>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/bahlo/sonyflake-rs">sonyflake-rs</a> - sony flake id generator rust</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/dylanhart/ulid-rs">ulid-rs</a></li>
+</ul>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/diesel-rs/diesel">diesel</a> - database orm</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/graphql-rust/juniper">rust juniper</a> - graphql in rust</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Michael-F-Bryan/include_dir">include_dir</a> - compile include dir files</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://crates.io/crates/jwt-simple">jwt-simple</a></p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/brycx/pasetors">pasetors</a></p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Keats/validator">validator</a></p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/tokio-rs/axum">axum</a> - Ergonomic and modular web framework built with Tokio, Tower, and Hyper</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/matklad/once_cell">once cell</a> - Rust library for single assignment cells and lazy statics without macros</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/dtolnay/semver">semver</a> - Semantic versioning and version ranges for Rust</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://crates.io/crates/derivative">derivative</a> - A set of alternative <code>derive</code> attributes for Rust</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://crates.io/crates/bs62">bs62</a> - rust 62 radix frome number</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.rs/serde_with/1.11.0/serde_with/">serde_with</a> - serde with integligent convert</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mitsuhiko/dialoguer">dialoguer</a> - Rust utility library for nice command line prompts and similar things</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/bytebeamio/rumqtt">rumqtt</a> - rust mqtt broker</p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/uutils/coreutils">coreutils</a> - linux core utils in rust</p>
+</li>
+</ul>
+<h2 id="projects">Projects<a class="zola-anchor" href="#projects" aria-label="Anchor link for: projects">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/tokio-rs/mini-redis/">mini-redis</a> - based on tokio, redis example</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ivanceras/hackernews-sauron">hacker news in rust</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/grego/bladesite">blade site</a> - rust static site generator, blaze fast</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Toromino/kibou">kibou</a> - rust mastondon
+<ul>
+<li>https://git.cybre.club/kibouproject/kibou</li>
+</ul>
+</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/daogangtang/forustm">forustm</a> - rust forum</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://rusoto.github.io/rusoto/rusoto_core/">rusoto</a> - aws sdk
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://crates.io/crates/aws-sign-v4">aws-sign-v4</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="applications">Applications<a class="zola-anchor" href="#applications" aria-label="Anchor link for: applications">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/max-niederman/ttyper">ttyper</a> - Terminal-based typing test.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/TaKO8Ki/gobang">gobang</a> - A cross-platform TUI database management tool written in Rust</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/saschagrunert/webapp.rs">webapp.rs</a> - A web application completely written in Rust. real world example</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/steadylearner/Rust-Full-Stack">rust full stack</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/clifinger/canduma">canduma</a> - A Rust Boilerplate server with GraphQL API, Diesel, PostgreSQL, session authentication and JWT</li>
+</ul>
+<h2 id="criticism">Criticism<a class="zola-anchor" href="#criticism" aria-label="Anchor link for: criticism">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://matklad.github.io/2020/09/20/why-not-rust.html">Why not Rust</a></li>
+</ul>
+<h2 id="jobs">Jobs<a class="zola-anchor" href="#jobs" aria-label="Anchor link for: jobs">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://rust.careers/">Rust Careers</a></li>
+</ul>
+<h2 id="real-world-example">Real world example<a class="zola-anchor" href="#real-world-example" aria-label="Anchor link for: real-world-example">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/portier/portier-broker">portier</a> Portier Broker reference implementation, written in Rust, email login.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Plume-org/Plume">plume</a> - Federated blogging application, thanks to ActivityPub</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/LemmyNet/lemmy">lemmy</a> - 🐀 Building a federated alternative to reddit in rust</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gitlab.com/famedly/conduit">conduit</a> - Conduit is a simple, fast and reliable chat server powered by Matrix</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/revoltchat/revolt">revolt</a> - discord alternative</li>
+</ul>
+<h2 id="templates">Templates<a class="zola-anchor" href="#templates" aria-label="Anchor link for: templates">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/rust-starter/rust-starter">rust cli starter</a> - rust cli template</li>
+</ul>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
+            <p>
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9ARust%E7%9B%B8%E5%85%B3%E7%9A%84%E8%B5%84%E6%BA%90">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+            </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+
+
+<section class="sidebar-table-content">
+  <h3>快速导航</h3>
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#resources">Resources</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#answeres">Answeres</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#communities">Communities</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#tools">Tools</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#libraries">Libraries</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#projects">Projects</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#applications">Applications</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#criticism">Criticism</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#jobs">Jobs</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#real-world-example">Real world example</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/rust/#templates">Templates</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+</aside>
+
+
+
+      </main>
+      </section>
+    <section id="bottom"></section>
+  </body>
+</html>

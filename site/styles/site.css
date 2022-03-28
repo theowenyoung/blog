@@ -1,0 +1,413 @@
+@charset "UTF-8";
+html,
+body,
+p,
+dt,
+dd,
+figure,
+fieldset,
+blockquote,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/* --reset end -- */
+
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+  --colors-text: rgba(0, 0, 0, 0.8);
+  --colors-muted: rgb(117, 117, 117);
+  --colors-primary: rgb(234, 76, 137);
+  --colors-divider: rgb(226, 232, 240);
+  --colors-primary-light: rgba(234, 76, 137, 0.5);
+  --colors-background: #fffff8;
+}
+
+body {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: var(--color-text);
+  background-color: var(--colors-background);
+}
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 94rem;
+}
+h1,
+h2,
+h3 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-weight: 500;
+  border-bottom: 1px solid var(--colors-divider);
+  position: relative;
+}
+.no-border {
+  border: none;
+}
+h1::after,
+h2::after,
+h3::after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1.1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+h1 {
+  font-size: 1.625rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.265rem;
+}
+pre {
+  color: rgb(57, 58, 52);
+  background-color: rgb(246, 248, 250);
+  margin-top: 0px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 0px;
+  border-radius: 6px;
+}
+
+pre > code {
+  font-size: 0.9rem;
+  display: block;
+  overflow: auto;
+}
+code,
+pre > code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--colors-divider);
+  margin: 1em 0;
+  padding: 0;
+}
+ul {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  padding: 1px 0 1px 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-left: 5px solid var(--colors-primary);
+}
+blockquote p {
+  margin: 0.5rem 0;
+}
+p,
+dl,
+ol,
+ul {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.no-underline {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  text-decoration: underline;
+  color: inherit;
+  text-decoration-thickness: 0.1rem;
+}
+:target {
+  scroll-margin-top: 56px;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 56px;
+  margin-top: -56px;
+}
+.body-zone {
+  flex-direction: column;
+}
+
+.no-underline:link,
+.no-underline:visited,
+.sidebar a:link,
+.sidebar a:visited {
+  text-decoration: none;
+}
+.no-underline:hover,
+a:hover {
+  color: var(--colors-primary);
+  text-decoration: underline;
+}
+
+.muted,
+a.muted,
+.muted:link,
+.muted:visited {
+  color: var(--colors-muted);
+}
+.bold {
+  font-weight: 500;
+}
+.text {
+  font-size: 1.2rem;
+}
+.text-color,
+.text-color:link,
+.text-color:visited {
+  color: var(--colors-text);
+}
+
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.list-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.border-muted {
+  border: 1px solid var(--colors-muted);
+}
+.rounded-full {
+  border-radius: 999rem;
+}
+.w-full {
+  width: 100%;
+}
+
+.p-sm {
+  padding: 0.25rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+.menu li:not(:last-child) {
+  margin-right: 1rem;
+}
+.m-l-2 {
+  margin-left: 0.5rem;
+}
+.py {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+.px {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.pt {
+  padding-top: 1.4rem;
+}
+.pl {
+  padding-left: 1.4rem;
+}
+.navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--colors-background);
+}
+.navbar-inner {
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+article {
+  padding-bottom: 2rem;
+}
+article:last-of-type {
+  padding-bottom: 0;
+}
+
+.zola-anchor {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+.zola-anchor:link,
+.zola-anchor:visited {
+  text-decoration: none;
+}
+.sidebar {
+  border-top: 1px solid var(--colors-divider);
+}
+li.inline {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.text-sm {
+  font-size: 1rem;
+}
+.text-sm p {
+  font-size: 1rem;
+}
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+.no-toc {
+  width: auto;
+}
+.sidebar ul {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+.sidebar li {
+  font-size: 1rem;
+  color: var(--colors-muted);
+}
+
+@media (min-width: 64rem) {
+  .no-toc {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  #root {
+    display: flex;
+  }
+  .body-zone {
+    flex-direction: row;
+  }
+  .navbar {
+    height: 100%;
+    border-right: 1px solid var(--colors-divider);
+  }
+  .navbar-inner {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .main-inner {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu li:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  .sidebar {
+    position: sticky;
+    border-top: none;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    overflow-y: auto;
+    width: 20rem;
+  }
+
+  .sidebar li {
+    font-size: 0.9rem;
+  }
+  .sidebar h2,
+  .sidebar h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    padding-bottom: 1rem;
+    border: none;
+  }
+}

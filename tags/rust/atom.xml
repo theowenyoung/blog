@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Rust</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/rust/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-26T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/rust/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Rust相关的资源</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/rust/" type="text/html"/>
+		<id>https://www.owenyoung.com/rust/</id>
+		<content type="html">&lt;p&gt;Curating awesome rust resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Dhghomon&#x2F;easy_rust&quot;&gt;Easy Rust&lt;&#x2F;a&gt; - A book that let you learn rust easy, rust explained using easy English, for non-English native.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kumakichi.github.io&#x2F;easy_rust_chs&#x2F;Chapter_0.html&quot;&gt;中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rustlings&#x2F;&quot;&gt;rustlings&lt;&#x2F;a&gt; - 🦀 Small exercises to get you used to reading and writing Rust code!
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;egghead.io&#x2F;courses&#x2F;learning-rust-by-solving-the-rustlings-exercises-a722&quot;&gt;Learning Rust by Working Through the Rustlings Exercises&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Mercateo&#x2F;rust-for-node-developers&quot;&gt;GitHub - Mercateo&#x2F;rust-for-node-developers: An introduction to the Rust programming language for Node developers.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;rust-by-example&#x2F;index.html&quot;&gt;Rust by Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctjhoa&#x2F;rust-learning&quot;&gt;rust-learning&lt;&#x2F;a&gt; - A bunch of links to blog posts, articles, videos, etc for learning Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang-nursery&#x2F;rust-cookbook&quot;&gt;rust cookbook&lt;&#x2F;a&gt; - This Rust Cookbook is a collection of simple Rust examples that demonstrate good practices to accomplish common programming tasks, using the crates of the Rust ecosystem.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-unofficial&#x2F;patterns&quot;&gt;Rust Design Patterns&lt;&#x2F;a&gt; - A catalogue of Rust design patterns, anti-patterns and idioms&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;learn&#x2F;paths&#x2F;rust-first-steps&#x2F;&quot;&gt;Microsoft Rust First Class&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;zh-cn&#x2F;learn&#x2F;paths&#x2F;rust-first-steps&#x2F;&quot;&gt;中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;awesome-alternatives-in-rust&quot;&gt;awesome-alternatives-in-rust&lt;&#x2F;a&gt; - A curated list of replacements for existing software written in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cheats.rs&#x2F;&quot;&gt;Rust Language Cheat Sheet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;proc-macro-workshop&quot;&gt;Rust Latam: learn procedural macros workshop&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;workers-rust-sdk&#x2F;&quot;&gt;Native Rust support on Cloudflare Workers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.lpalmieri.com&#x2F;posts&#x2F;error-handling-rust&#x2F;&quot;&gt;rust error handling&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actix&#x2F;examples&quot;&gt;actix examples&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;&quot;&gt;Rust 程序设计语言中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flosse&#x2F;rust-web-framework-comparison&quot;&gt;rust web framework comparison&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fasterthanli.me&#x2F;articles&#x2F;a-half-hour-to-learn-rust&quot;&gt;半小时学习 Rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;answeres&quot;&gt;Answeres&lt;a class=&quot;zola-anchor&quot; href=&quot;#answeres&quot; aria-label=&quot;Anchor link for: answeres&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;123278299&quot;&gt;【翻译】 Rust 中的 String 和&amp;amp;str&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;115651233&quot;&gt;【翻译】细谈 Rust 的所有权&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;356427780&quot;&gt;【译】Rust 宏：教程与示例（二）&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;52438988&#x2F;what-is-the-most-idiomatic-way-to-merge-two-error-types&quot;&gt;如何合并 error&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.logrocket.com&#x2F;configuration-management-in-rust-web-services&#x2F;&quot;&gt;rust 配置文件指南&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;romankudryashov.com&#x2F;blog&#x2F;2021&#x2F;06&#x2F;mongodb-redis-rust&#x2F;&quot;&gt;rust mongodb redis example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx&#x2F;issues&#x2F;1004&quot;&gt;rust sqlx postgres custom type&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.logrocket.com&#x2F;jwt-authentication-in-rust&#x2F;&quot;&gt;rust jwt example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tokio.rs&#x2F;blog&#x2F;2021-05-14-inventing-the-service-trait&quot;&gt;tokio service 解析&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.purewhite.io&#x2F;2021&#x2F;05&#x2F;24&#x2F;inventing-the-service-trait&#x2F;&quot;&gt;中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.purewhite.io&#x2F;2021&#x2F;09&#x2F;01&#x2F;rust-faq&#x2F;&quot;&gt;关于 rust 的常见疑问中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;skerkour&#x2F;kerkour.com&#x2F;tree&#x2F;main&#x2F;2021&#x2F;rust_static_site_generator&quot;&gt;100 行实现 rust 静态网站生成&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust&#x2F;top&#x2F;?t=year&quot;&gt;Rust Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cargo-generate&#x2F;cargo-generate&quot;&gt;cargo-generate&lt;&#x2F;a&gt; - cargo, make me a project&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rustwasm&#x2F;wasm-pack&quot;&gt;wasm-pack&lt;&#x2F;a&gt; - your favorite rust -&amp;gt; wasm workflow tool!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Byron&#x2F;gitoxide&quot;&gt;gitoxide&lt;&#x2F;a&gt; - Git in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;watchexec&#x2F;cargo-watch&quot;&gt;Cargo Watch&lt;&#x2F;a&gt; - Cargo watch, hot reload rust.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sagiegurari&#x2F;cargo-make&quot;&gt;Cargo Make&lt;&#x2F;a&gt; - Rust task runner and build tool.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;roapi&#x2F;roapi&quot;&gt;roapi&lt;&#x2F;a&gt; - Create full-fledged APIs for static datasets without writing a single line of code.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mufeedvh&#x2F;binserve&quot;&gt;binserve&lt;&#x2F;a&gt; - A blazingly fast static web server with routing, templating, and security in a single binary you can set up with zero code. ⚡🦀&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Wulf&#x2F;create-rust-app&quot;&gt;Create rust app&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;a class=&quot;zola-anchor&quot; href=&quot;#libraries&quot; aria-label=&quot;Anchor link for: libraries&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bevyengine&#x2F;bevy&quot;&gt;bevy&lt;&#x2F;a&gt; - 游戏引擎&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;tokio&quot;&gt;tokio&lt;&#x2F;a&gt; - A runtime for writing reliable, asynchronous, and slim applications with the Rust programming language&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SergioBenitez&#x2F;Rocket&quot;&gt;Rocket&lt;&#x2F;a&gt; - A web framework for Rust.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;axum&quot;&gt;axum&lt;&#x2F;a&gt; - web framework&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;linebender&#x2F;druid&quot;&gt;A data-first Rust-native UI toolkit. Druid&lt;&#x2F;a&gt; - A data-first Rust-native UI design toolkit.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mandreyel&#x2F;cratetorrent&quot;&gt;cratetorrent&lt;&#x2F;a&gt; - A BitTorrent V1 engine library for Rust (and currently Linux) #Torrents&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;emilk&#x2F;egui&quot;&gt;egui&lt;&#x2F;a&gt; - GUI library in Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;structopt&quot;&gt;structopt&lt;&#x2F;a&gt; - Parse command line arguments by defining a struct. It combines clap with custom derive.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;telegram-rs&#x2F;telegram-bot&quot;&gt;telegram-bot&lt;&#x2F;a&gt; - Rust Library for creating a Telegram Bot&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;anyhow&quot;&gt;anyhow&lt;&#x2F;a&gt; - General error handle&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;thiserror&quot;&gt;thiserror&lt;&#x2F;a&gt; - Specific error handle&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ayrat555&#x2F;frankenstein&quot;&gt;frankenstein&lt;&#x2F;a&gt; - telegram bot api&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mehcode&#x2F;config-rs&quot;&gt;config-rs&lt;&#x2F;a&gt; - Default config for rs&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shakacode&#x2F;ssr-rs&quot;&gt;ssr-rs&lt;&#x2F;a&gt; - rust ssr with js&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sycamore-rs&#x2F;sycamore&quot;&gt;sycamore&lt;&#x2F;a&gt; - A reactive library for creating web apps in Rust and WebAssembly&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chinedufn&#x2F;percy&quot;&gt;percy&lt;&#x2F;a&gt; - Build frontend browser apps with Rust + WebAssembly. Supports server side rendering.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actix&#x2F;actix-web&quot;&gt;actix-web&lt;&#x2F;a&gt; - Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;env-logger-rs&#x2F;env_logger&#x2F;&quot;&gt;env-logger&lt;&#x2F;a&gt; - log for rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;projectfluent&#x2F;fluent-rs&quot;&gt;fluent-rs&lt;&#x2F;a&gt; - rust i18n&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;manishearth&#x2F;handlebars-fluent&quot;&gt;handlebars-fluent&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sunng87&#x2F;handlebars-rust&quot;&gt;handlebars-rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;davidB&#x2F;handlebars_misc_helpers&quot;&gt;handlebars_misc_helpers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang-nursery&#x2F;glob&quot;&gt;glob&lt;&#x2F;a&gt; - Support for matching file paths against Unix shell style patterns.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BurntSushi&#x2F;walkdir&quot;&gt;walkdir&lt;&#x2F;a&gt; - Rust library for walking directories recursively.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;djc&#x2F;askama&quot;&gt;askama&lt;&#x2F;a&gt; - type safe template engine&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;maciejhirsz&#x2F;ramhorns&quot;&gt;ramhorns&lt;&#x2F;a&gt; - Fast Mustache template engine implementation in pure Rust.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx&quot;&gt;sqlx&lt;&#x2F;a&gt; - 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, SQLite, and MSSQL.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mibes&#x2F;couch-rs&quot;&gt;couch-rs&lt;&#x2F;a&gt; - CouchDB library for Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spacejam&#x2F;sled&quot;&gt;sled&lt;&#x2F;a&gt; - the champagne of beta embedded databases, redis alternatives&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nharring&#x2F;rksuid&quot;&gt;rksuid&lt;&#x2F;a&gt; - Rust implementation of Segment.io’s ksuid, id generator.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bahlo&#x2F;sonyflake-rs&quot;&gt;sonyflake-rs&lt;&#x2F;a&gt; - sony flake id generator rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dylanhart&#x2F;ulid-rs&quot;&gt;ulid-rs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diesel-rs&#x2F;diesel&quot;&gt;diesel&lt;&#x2F;a&gt; - database orm&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;graphql-rust&#x2F;juniper&quot;&gt;rust juniper&lt;&#x2F;a&gt; - graphql in rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Michael-F-Bryan&#x2F;include_dir&quot;&gt;include_dir&lt;&#x2F;a&gt; - compile include dir files&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;jwt-simple&quot;&gt;jwt-simple&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycx&#x2F;pasetors&quot;&gt;pasetors&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;validator&quot;&gt;validator&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;axum&quot;&gt;axum&lt;&#x2F;a&gt; - Ergonomic and modular web framework built with Tokio, Tower, and Hyper&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matklad&#x2F;once_cell&quot;&gt;once cell&lt;&#x2F;a&gt; - Rust library for single assignment cells and lazy statics without macros&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;semver&quot;&gt;semver&lt;&#x2F;a&gt; - Semantic versioning and version ranges for Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;derivative&quot;&gt;derivative&lt;&#x2F;a&gt; - A set of alternative &lt;code&gt;derive&lt;&#x2F;code&gt; attributes for Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bs62&quot;&gt;bs62&lt;&#x2F;a&gt; - rust 62 radix frome number&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;serde_with&#x2F;1.11.0&#x2F;serde_with&#x2F;&quot;&gt;serde_with&lt;&#x2F;a&gt; - serde with integligent convert&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mitsuhiko&#x2F;dialoguer&quot;&gt;dialoguer&lt;&#x2F;a&gt; - Rust utility library for nice command line prompts and similar things&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bytebeamio&#x2F;rumqtt&quot;&gt;rumqtt&lt;&#x2F;a&gt; - rust mqtt broker&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;uutils&#x2F;coreutils&quot;&gt;coreutils&lt;&#x2F;a&gt; - linux core utils in rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;projects&quot;&gt;Projects&lt;a class=&quot;zola-anchor&quot; href=&quot;#projects&quot; aria-label=&quot;Anchor link for: projects&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;mini-redis&#x2F;&quot;&gt;mini-redis&lt;&#x2F;a&gt; - based on tokio, redis example&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ivanceras&#x2F;hackernews-sauron&quot;&gt;hacker news in rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;grego&#x2F;bladesite&quot;&gt;blade site&lt;&#x2F;a&gt; - rust static site generator, blaze fast&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Toromino&#x2F;kibou&quot;&gt;kibou&lt;&#x2F;a&gt; - rust mastondon
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;git.cybre.club&#x2F;kibouproject&#x2F;kibou&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;daogangtang&#x2F;forustm&quot;&gt;forustm&lt;&#x2F;a&gt; - rust forum&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rusoto.github.io&#x2F;rusoto&#x2F;rusoto_core&#x2F;&quot;&gt;rusoto&lt;&#x2F;a&gt; - aws sdk
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;aws-sign-v4&quot;&gt;aws-sign-v4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;applications&quot;&gt;Applications&lt;a class=&quot;zola-anchor&quot; href=&quot;#applications&quot; aria-label=&quot;Anchor link for: applications&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;max-niederman&#x2F;ttyper&quot;&gt;ttyper&lt;&#x2F;a&gt; - Terminal-based typing test.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;gobang&quot;&gt;gobang&lt;&#x2F;a&gt; - A cross-platform TUI database management tool written in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;saschagrunert&#x2F;webapp.rs&quot;&gt;webapp.rs&lt;&#x2F;a&gt; - A web application completely written in Rust. real world example&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;steadylearner&#x2F;Rust-Full-Stack&quot;&gt;rust full stack&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;clifinger&#x2F;canduma&quot;&gt;canduma&lt;&#x2F;a&gt; - A Rust Boilerplate server with GraphQL API, Diesel, PostgreSQL, session authentication and JWT&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;criticism&quot;&gt;Criticism&lt;a class=&quot;zola-anchor&quot; href=&quot;#criticism&quot; aria-label=&quot;Anchor link for: criticism&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matklad.github.io&#x2F;2020&#x2F;09&#x2F;20&#x2F;why-not-rust.html&quot;&gt;Why not Rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;jobs&quot;&gt;Jobs&lt;a class=&quot;zola-anchor&quot; href=&quot;#jobs&quot; aria-label=&quot;Anchor link for: jobs&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rust.careers&#x2F;&quot;&gt;Rust Careers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;real-world-example&quot;&gt;Real world example&lt;a class=&quot;zola-anchor&quot; href=&quot;#real-world-example&quot; aria-label=&quot;Anchor link for: real-world-example&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;portier&#x2F;portier-broker&quot;&gt;portier&lt;&#x2F;a&gt; Portier Broker reference implementation, written in Rust, email login.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Plume-org&#x2F;Plume&quot;&gt;plume&lt;&#x2F;a&gt; - Federated blogging application, thanks to ActivityPub&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LemmyNet&#x2F;lemmy&quot;&gt;lemmy&lt;&#x2F;a&gt; - 🐀 Building a federated alternative to reddit in rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;conduit&quot;&gt;conduit&lt;&#x2F;a&gt; - Conduit is a simple, fast and reliable chat server powered by Matrix&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;revoltchat&#x2F;revolt&quot;&gt;revolt&lt;&#x2F;a&gt; - discord alternative&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;templates&quot;&gt;Templates&lt;a class=&quot;zola-anchor&quot; href=&quot;#templates&quot; aria-label=&quot;Anchor link for: templates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-starter&#x2F;rust-starter&quot;&gt;rust cli starter&lt;&#x2F;a&gt; - rust cli template&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>Debian初始化Rust环境</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/rust-environment-setup-for-debian/</id>
+		<content type="html">&lt;p&gt;在 Debian 上初始化 Rust 环境笔记。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;rust-jing-xiang-she-zhi&quot;&gt;Rust 镜像设置&lt;a class=&quot;zola-anchor&quot; href=&quot;#rust-jing-xiang-she-zhi&quot; aria-label=&quot;Anchor link for: rust-jing-xiang-she-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Add this to &lt;code&gt;~&#x2F;.bashrc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;RUSTUP_DIST_SERVER&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;RUSTUP_UPDATE_ROOT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Install rustup &lt;code&gt;curl --proto &#x27;=https&#x27; --tlsv1.2 -sSf https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup-init.sh | sh&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;~&#x2F;.cargo&#x2F;config&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[source.crates-io]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;replace-with&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;rsproxy&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[source.rsproxy]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;registry&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[registries.rsproxy]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;index&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[net]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git-fetch-with-cli&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = true
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --proto &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;=https&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --tlsv1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;.2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -sSf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; https:&#x2F;&#x2F;sh.rustup.rs &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>

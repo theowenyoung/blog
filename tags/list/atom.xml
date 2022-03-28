@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - List</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/list/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-26T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/list/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>各种清单，列表，目录收集 - Notes List</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
+		<id>https://www.owenyoung.com/awesome-list/</id>
+		<content type="html">&lt;p&gt;收集各种清单，列表，目录。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;applications&quot;&gt;Applications&lt;a class=&quot;zola-anchor&quot; href=&quot;#applications&quot; aria-label=&quot;Anchor link for: applications&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;appfigures.com&#x2F;top-apps&#x2F;ios-app-store&#x2F;united-states&#x2F;iphone&#x2F;top-overall&quot;&gt;Top Ranked iOS App Store Apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.similarweb.com&#x2F;zh&#x2F;apps&#x2F;trends&#x2F;apple&#x2F;store-rank&#x2F;us&#x2F;all&#x2F;top-free&#x2F;iphone&#x2F;&quot;&gt;app store rank&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;socials&quot;&gt;Socials&lt;a class=&quot;zola-anchor&quot; href=&quot;#socials&quot; aria-label=&quot;Anchor link for: socials&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;findareddit.com&quot;&gt;Find Reddit&lt;&#x2F;a&gt; - Find reddit&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;redditlist.io&quot;&gt;Reddit List&lt;&#x2F;a&gt; - Discover Subreddits for different topics&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;croqaz&#x2F;awesome-decentralized&quot;&gt;awesome-decentralized&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;search&#x2F;?q=site%3Atheatlantic.com&amp;amp;sort=top&amp;amp;t=all&quot;&gt;大西洋月刊在 reddit 上有史以来最受欢迎的文章&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;TrueReddit&#x2F;search&#x2F;?q=site%3Atheatlantic.com&amp;amp;restrict_sr=1&amp;amp;sr_nsfw=&amp;amp;sort=top&amp;amp;t=all&quot;&gt;True Reddit 小组 only&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;awesome&quot;&gt;Awesome&lt;a class=&quot;zola-anchor&quot; href=&quot;#awesome&quot; aria-label=&quot;Anchor link for: awesome&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sindresorhus&#x2F;awesome&quot;&gt;GitHub - sindresorhus&#x2F;awesome: 😎 Awesome lists about all kinds of interesting topics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thehiveindex.com&#x2F;&quot;&gt;Hive Index&lt;&#x2F;a&gt; - Find online communities, find your people.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;startup&quot;&gt;Startup&lt;a class=&quot;zola-anchor&quot; href=&quot;#startup&quot; aria-label=&quot;Anchor link for: startup&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;startuplaunchlist.com&quot;&gt;STARTUP LAUNCH LIST&lt;&#x2F;a&gt; - A​rticle list you need to read before launching a startup.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;freelancer&quot;&gt;Freelancer&lt;a class=&quot;zola-anchor&quot; href=&quot;#freelancer&quot; aria-label=&quot;Anchor link for: freelancer&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nira.com&#x2F;templates&#x2F;freelancer-templates&#x2F;&quot;&gt;Freelancer Resources List&lt;&#x2F;a&gt; - All the free resources and templates you need to get work done as a freelancer&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;hr&quot;&gt;HR&lt;a class=&quot;zola-anchor&quot; href=&quot;#hr&quot; aria-label=&quot;Anchor link for: hr&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nomadlist.com&quot;&gt;Nomad List&lt;&#x2F;a&gt; - The biggest crowdsourced list of cities in the world to help you choose where to go next.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;market&quot;&gt;Market&lt;a class=&quot;zola-anchor&quot; href=&quot;#market&quot; aria-label=&quot;Anchor link for: market&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nira.com&#x2F;templates&#x2F;marketing-templates&#x2F;&quot;&gt;Marketing Resources List&lt;&#x2F;a&gt; - The biggest collection of free marketing resources&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;api&quot;&gt;API&lt;a class=&quot;zola-anchor&quot; href=&quot;#api&quot; aria-label=&quot;Anchor link for: api&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apilist.fun&#x2F;&quot;&gt;API list&lt;&#x2F;a&gt; - A collective list of APIs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;travel&quot;&gt;Travel&lt;a class=&quot;zola-anchor&quot; href=&quot;#travel&quot; aria-label=&quot;Anchor link for: travel&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;visalist.io&quot;&gt;Visa List&lt;&#x2F;a&gt; - Know where you can travel with your passport tension free&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;om38bx&#x2F;what_is_one_country_that_you_will_never_visit&#x2F;&quot;&gt;What is one country that you will never visit again?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;omnrxb&#x2F;what_is_one_country_you_will_gladly_visit_again&#x2F;&quot;&gt;What is one country you will gladly visit again? : AskReddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;media&quot;&gt;Media&lt;a class=&quot;zola-anchor&quot; href=&quot;#media&quot; aria-label=&quot;Anchor link for: media&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;airtable.com&#x2F;shriIvyyV3gAJf0x4&#x2F;tblcakhoBi0A33QhB&#x2F;viwWIaPD1CBQtE5e1&quot;&gt;Tech Blogs List&lt;&#x2F;a&gt; - Curated list of 3,800+ tech journalists&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;posts-articles&quot;&gt;Posts&#x2F;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#posts-articles&quot; aria-label=&quot;Anchor link for: posts-articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=24351073&quot;&gt;最受欢迎的 HackerNews 帖子&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;website&quot;&gt;Website&lt;a class=&quot;zola-anchor&quot; href=&quot;#website&quot; aria-label=&quot;Anchor link for: website&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mdibaiee&#x2F;awesome-lite-websites&quot;&gt;awesome lite websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;low-code&quot;&gt;Low Code&lt;a class=&quot;zola-anchor&quot; href=&quot;#low-code&quot; aria-label=&quot;Anchor link for: low-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stitchedon.com&#x2F;&quot;&gt;Low Code List&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;a class=&quot;zola-anchor&quot; href=&quot;#blogs&quot; aria-label=&quot;Anchor link for: blogs&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marginalrevolution.com&#x2F;blogs-we-like&quot;&gt;边缘革命喜欢的博客列表&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;emails&quot;&gt;Emails&lt;a class=&quot;zola-anchor&quot; href=&quot;#emails&quot; aria-label=&quot;Anchor link for: emails&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;inboxworld.io&#x2F;&quot;&gt;Inbox World&lt;&#x2F;a&gt; - 订阅推荐&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

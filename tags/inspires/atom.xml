@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Inspires</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/inspires/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/inspires/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>收集一些给人灵感的东西</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/inspires/" type="text/html"/>
+		<id>https://www.owenyoung.com/inspires/</id>
+		<content type="html">&lt;p&gt;网上冲浪多年，看到过太多有意思的东西了，一定要记下来！&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;lie-biao&quot;&gt;列表&lt;a class=&quot;zola-anchor&quot; href=&quot;#lie-biao&quot; aria-label=&quot;Anchor link for: lie-biao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;whimsical.club&#x2F;&quot;&gt;异想天开网站俱乐部&lt;&#x2F;a&gt; - 收集了奇奇怪怪的网站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;xian-xia&quot;&gt;线下&lt;a class=&quot;zola-anchor&quot; href=&quot;#xian-xia&quot; aria-label=&quot;Anchor link for: xian-xia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.abc.net.au&#x2F;news&#x2F;2021-10-21&#x2F;finding-friends-as-an-adult-through-friend-request-events&#x2F;100551648&quot;&gt;快速交友活动&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fa-xian-lei&quot;&gt;发现类&lt;a class=&quot;zola-anchor&quot; href=&quot;#fa-xian-lei&quot; aria-label=&quot;Anchor link for: fa-xian-lei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;subredditstats.com&#x2F;&quot;&gt;Reddit 小组趋势&lt;&#x2F;a&gt; 在这可以发现很多有意思的 Reddit 小组，有各种维度的排序&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yourstack.com&#x2F;&quot;&gt;Your Stack 你的工具栈&lt;&#x2F;a&gt; 分享自己使用的产品，在这可以发现不少好用的东西，App&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;news&quot;&gt;Hacker News 黑客新闻&lt;&#x2F;a&gt; 著名的 HN，很多互联网用户的聚集地，上面的新闻还有讨论大多数是技术相关，也有少数社会新闻，当你有新产品要冷启动的时候，里面的子版块 Show HN 很适合去宣传，当然也有可能收到评论里的不看好。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hn.buzzing.cc&#x2F;&quot;&gt;Hacker News 热门&lt;&#x2F;a&gt; 这是我做的一款抓取 Hacker News 的热门条目，然后用 Deepl 翻译标题和简介，帮助英文不是特别的非母语者做中文导读的站点，对我自己英文提升帮助很大，因为更容易找到感兴趣的文章，然后才点进去详读&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;you-yi-si&quot;&gt;有意思&lt;a class=&quot;zola-anchor&quot; href=&quot;#you-yi-si&quot; aria-label=&quot;Anchor link for: you-yi-si&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;how-i-experience-web-today.com&#x2F;&quot;&gt;我今天的上网体验&lt;&#x2F;a&gt; - 嘲讽的网站，展示了 21 世纪的今天，是如何被网站强奸眼睛的。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stumbled.cc&#x2F;stumble&quot;&gt;stumbled&lt;&#x2F;a&gt; - 随机发现有意思的网站&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;expensivetaste.art&#x2F;&quot;&gt;哪个艺术品更贵&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tannerv.com&#x2F;ipod&#x2F;&quot;&gt;ipod 复古界面听音乐&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;welcome.gif.so&#x2F;&quot;&gt;Gif.so&lt;&#x2F;a&gt; - 随便填个子域名，他会返回一个对应的表情包&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.their.news&#x2F;&quot;&gt;their news&lt;&#x2F;a&gt; - 左派&#x2F;右派新闻对比&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;extract-table.com&#x2F;&quot;&gt;从图片&#x2F;PDF 中提取表格&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;ytt-tech.com&quot;&gt;youtube 上的教程分类集合&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bryanbraun.com&#x2F;checkboxland&#x2F;docs&#x2F;demos&#x2F;webcam-test&#x2F;&quot;&gt;摄像头捕捉变成复选框动画&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bryanbraun&#x2F;checkboxland&quot;&gt;源代码库&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.consolechat.io&#x2F;&quot;&gt;将网站的 console 控制台变成聊天室&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sniptt-official&#x2F;ots&quot;&gt;生成一次性秘密用一次性 url&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bunklist.com&#x2F;&quot;&gt;收集有意思的网站到一个个清单&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;silverdial.org&#x2F;&quot;&gt;和老人聊天并获得报酬&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;projecteuler.net&#x2F;&quot;&gt;欧拉项目&lt;&#x2F;a&gt; - 对数学&#x2F;计算机问题感兴趣的人的问题库，注册后可以去解决各种各样有意思的数学问题&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;heyfromthefuture.com&#x2F;age&#x2F;&quot;&gt;给你这个年纪提的建议&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thousandetherhomepage.com&#x2F;&quot;&gt;百万美元广告项目的区块链版本&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kosmi.io&#x2F;&quot;&gt;在线和朋友玩游戏&#x2F;扑克&#x2F;看视频等等&#x2F;不登录也可以&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SubSimulatorGPT2&#x2F;&quot;&gt;一个完全由机器人提交和回复的 Reddit 小组，使用 GPT2 引擎&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SubredditSimulator&#x2F;&quot;&gt;另一个类似的小组，使用 markov chains&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;heyfromthefuture.com&#x2F;age&#x2F;&quot;&gt;人们希望在你这个年纪拥有的建议&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;aytwit.com&#x2F;thoughter&quot;&gt;Thoughter&lt;&#x2F;a&gt; - 电子邮件漂流瓶，match&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;maxboeck&#x2F;webring&quot;&gt;Webring&lt;&#x2F;a&gt; - web 环，圈子内独立网站随机推荐，互相推荐&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;anchor.fm&#x2F;deepdreams&quot;&gt;GT3 生成的播客&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mossandfog.com&#x2F;artist-imagines-what-famous-historical-figures-would-look-like-today&#x2F;&quot;&gt;古人活在现在的样子&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.paulgraham.com&#x2F;&quot;&gt;paulgraham 的博客故意把列宽设置为一个很小的值，称之为人类最佳阅读宽度&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;longbets.org&#x2F;bets&#x2F;&quot;&gt;长期赌注&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;longbets.org&#x2F;362&#x2F;&quot;&gt;巴菲特 2008 年赌标普 500 未来 10 年收益率超过对冲基金，赢&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;longbets.org&#x2F;9&#x2F;&quot;&gt;2017:未来 4 年内某个生物袭击事件将导致 100 万人丧生&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;beta.dwitter.net&#x2F;&quot;&gt;Dwitter javascript 社交，像推特一样，140 字符限制，写一些有意思的 javascript 代码&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lionleaf&#x2F;dwitter&quot;&gt;Source Code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mdibaiee&#x2F;awesome-lite-websites&quot;&gt;awesome lite website&lt;&#x2F;a&gt; - 轻量级网站汇总&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.my90stv.com&quot;&gt;模拟 90 年代的电视&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.my80stv.com&#x2F;&quot;&gt;80 年代&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;solar.lowtechmagazine.com&#x2F;power.html&quot;&gt;太阳能供电的网站&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.privateislandsonline.com&#x2F;&quot;&gt;你可以在线买一座岛屿&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chris.bolin.co&#x2F;offline&#x2F;&quot;&gt;你必须离线才能访问此页面&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crazymarvin.com&#x2F;to-dont&#x2F;&quot;&gt;To dont&lt;&#x2F;a&gt; - Todo 的反向操作，不要做的事清单&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.sincerelyme.us&#x2F;&quot;&gt;Sincerely Me&lt;&#x2F;a&gt; - 用互联网给真人写信&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.diggz.co&#x2F;&quot;&gt;diggz&lt;&#x2F;a&gt; - Find Roommates &amp;amp; Rooms today.找室友&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;digitalhumani.com&#x2F;&quot;&gt;digitalhumani&lt;&#x2F;a&gt; A platform which easily integrates with your products to reforest the planet，提供 API，让你能更方便为环境做贡献，API 种树？&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;planning.wedding&#x2F;&quot;&gt;Wedding Planning &lt;&#x2F;a&gt; - Online Wedding Planning Assistant，在线婚礼策划&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bossasaservice.life&#x2F;&quot;&gt;boss as a service&lt;&#x2F;a&gt; - We make sure you achieve your goals，老板即服务，为了让你达成你的目标，给你分配一个老板监督你。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;makepassportphoto.com&#x2F;?utm_campaign&quot;&gt;make passport photo&lt;&#x2F;a&gt; - Get your biometric Passport&#x2F;Visa&#x2F;ID photos in minutes, 在线打印护照需要的照片 #Photos #Print&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fu-wu&quot;&gt;服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu&quot; aria-label=&quot;Anchor link for: fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rover.com&#x2F;uk&#x2F;&quot;&gt;Rover&lt;&#x2F;a&gt; - The world’s largest network of 5‑star pet sitters and dog walkers. 遛狗服务
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hellodogspot.com&#x2F;&quot;&gt;dog spot&lt;&#x2F;a&gt; - A DogSpot is a smart sidewalk sanctuary, providing your dog a safe and cozy home away from home while you briefly go somewhere they aren’t allowed. With DogSpot, you don’t have to choose between adventures and spending time with your dog. You have the freedom to live your life with your dog… without having to take risks like tying them up or leaving them in the car. 另一个遛狗服务&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ying-jian&quot;&gt;硬件&lt;a class=&quot;zola-anchor&quot; href=&quot;#ying-jian&quot; aria-label=&quot;Anchor link for: ying-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.coroflot.com&#x2F;mengfandi&#x2F;if-concept-awards-2008Best-of-Best&quot;&gt;情侣闹钟，互相不吵醒的戒指设计&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=1851088&quot;&gt;DeadDrop&lt;&#x2F;a&gt; - 用 U 盘作为 P2P 的载体，安装在城市的不同地方&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tong-zhi-lei&quot;&gt;通知类&lt;a class=&quot;zola-anchor&quot; href=&quot;#tong-zhi-lei&quot; aria-label=&quot;Anchor link for: tong-zhi-lei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crono.app&#x2F;&quot;&gt;Crono&lt;&#x2F;a&gt; - Get mobile notifications and SMS on desktop&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;she-jiao-ying-yong&quot;&gt;社交应用&lt;a class=&quot;zola-anchor&quot; href=&quot;#she-jiao-ying-yong&quot; aria-label=&quot;Anchor link for: she-jiao-ying-yong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;wen-zi-jiao-you&quot;&gt;文字交友&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-zi-jiao-you&quot; aria-label=&quot;Anchor link for: wen-zi-jiao-you&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;slowly.app&#x2F;en&#x2F;&quot;&gt;SLOWLY&lt;&#x2F;a&gt; - SLOWLY 让你从你的智能手机上认识笔友！按照距离远近，和不同的人发信有不同的发送时间，有的高达 10 多个小时才能发出去。与有共同爱好的人配对，写信并收集来自世界各地的邮票。说出你的想法–一次一封信!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;addchat-random-chat&#x2F;id1464989529&quot;&gt;Addchat&lt;&#x2F;a&gt; - Make Random Friends and Chat !&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;location-based&quot;&gt;Location based&lt;a class=&quot;zola-anchor&quot; href=&quot;#location-based&quot; aria-label=&quot;Anchor link for: location-based&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.zown.co&quot;&gt;Zown&lt;&#x2F;a&gt; - Zown 让你看到离你超级近的人（半径 500 米内）。
+一旦你与某人建立联系，它只给你 15 分钟的聊天时间，所以它迫使你在现实生活中与对方见面以保持联系。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;shi-pin-dui-hua&quot;&gt;视频对话&lt;a class=&quot;zola-anchor&quot; href=&quot;#shi-pin-dui-hua&quot; aria-label=&quot;Anchor link for: shi-pin-dui-hua&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;superpeer.com&#x2F;&quot;&gt;Superpeer&lt;&#x2F;a&gt; - Host cohort-based courses, live events, or 1:1 sessions, an all-in-one video platform that gives you the tools you need to engage with your audience through video, and connect in a more authentic way.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;awesomepeers.com&#x2F;&quot;&gt;Awesome Peers&lt;&#x2F;a&gt; - A list includes 900+ free peers&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;xie-zuo-she-jiao&quot;&gt;协作社交&lt;a class=&quot;zola-anchor&quot; href=&quot;#xie-zuo-she-jiao&quot; aria-label=&quot;Anchor link for: xie-zuo-she-jiao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wt.social&#x2F;&quot;&gt;WT.social&lt;&#x2F;a&gt; - 维基百科式的社交网络，所有都可以协作编辑所有人的帖子。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tu-pian&quot;&gt;图片&lt;a class=&quot;zola-anchor&quot; href=&quot;#tu-pian&quot; aria-label=&quot;Anchor link for: tu-pian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pixelfed.org&quot;&gt;pixelfled&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.deviantart.com&#x2F;&quot;&gt;deviantart&lt;&#x2F;a&gt; - 艺术家社区&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;yu-yin-jiao-liu&quot;&gt;语音交流&lt;a class=&quot;zola-anchor&quot; href=&quot;#yu-yin-jiao-liu&quot; aria-label=&quot;Anchor link for: yu-yin-jiao-liu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dialup.com&#x2F;&quot;&gt;Dialup&lt;&#x2F;a&gt; - 偶然的声音聊天。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ni-ming&quot;&gt;匿名&lt;a class=&quot;zola-anchor&quot; href=&quot;#ni-ming&quot; aria-label=&quot;Anchor link for: ni-ming&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;turtle-chat-anonymously&#x2F;id1313518475&quot;&gt;Turtle - Chat Anonymously &lt;&#x2F;a&gt; - Turtle is an app that lets you message people and remain anonymous for three days. After three days, the other person will be able to see who you are. In an essence, it’s almost like meeting someone with a blindfold on. There is no room for implicit bias. The first impressions will be based off character, instead of appearance or status.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;yue-hui&quot;&gt;约会&lt;a class=&quot;zola-anchor&quot; href=&quot;#yue-hui&quot; aria-label=&quot;Anchor link for: yue-hui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bumble.com&#x2F;zh&#x2F;&quot;&gt;bumble&lt;&#x2F;a&gt; - 女性友好&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.heyvina.com&#x2F;&quot;&gt;vina&lt;&#x2F;a&gt; - 女性交友社区&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;all-in-one-chat&quot;&gt;All in one chat&lt;a class=&quot;zola-anchor&quot; href=&quot;#all-in-one-chat&quot; aria-label=&quot;Anchor link for: all-in-one-chat&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.beeper.com&#x2F;?hn&quot;&gt;beeper&lt;&#x2F;a&gt; - 真正的 all in one 聊天，整合 15 个 app 的聊天，降维打击啊这是。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;fu-gu&quot;&gt;复古&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-gu&quot; aria-label=&quot;Anchor link for: fu-gu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;spacehey.com&#x2F;home&quot;&gt;spacehey&lt;&#x2F;a&gt; - 重制了 mysapce，令人感慨那个年代的互联网的纯真&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ben-di&quot;&gt;本地&lt;a class=&quot;zola-anchor&quot; href=&quot;#ben-di&quot; aria-label=&quot;Anchor link for: ben-di&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;newyorksocialnetwork.com&#x2F;&quot;&gt;纽约社交网络&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;biao-zhun&quot;&gt;标准&lt;a class=&quot;zola-anchor&quot; href=&quot;#biao-zhun&quot; aria-label=&quot;Anchor link for: biao-zhun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fesja&#x2F;businesstxt&quot;&gt;Business.txt&lt;&#x2F;a&gt; - 商家信息 txt，就像 robots.txt 但是是为商家&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

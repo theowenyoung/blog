@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Communities</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/communities/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/communities/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>收集一些有意思的社区</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/communities/" type="text/html"/>
+		<id>https://www.owenyoung.com/communities/</id>
+		<content type="html">&lt;p&gt;收集一些有意思的社区，人间观察。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;index&quot;&gt;Index&lt;a class=&quot;zola-anchor&quot; href=&quot;#index&quot; aria-label=&quot;Anchor link for: index&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thehiveindex.com&#x2F;&quot;&gt;Hive Index&lt;&#x2F;a&gt; - Find online communities, find your people.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getcommunitylist.com&#x2F;&quot;&gt;Get community list&lt;&#x2F;a&gt; - Find hundreds of Communities to Promote your Product $49 #Paid&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.notion.so&#x2F;Community-908921f2f6584ae990bea68b048b8ea9&quot;&gt;community list&lt;&#x2F;a&gt; - List of some active community you must follow, Free&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;redditlist.com&#x2F;sfw&quot;&gt;Reddit List&lt;&#x2F;a&gt; - Reddit subs trends, categories&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;subredditstats.com&#x2F;&quot;&gt;reddit subreddistats&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;anvaka.github.io&#x2F;redsim&#x2F;&quot;&gt;查看相似的 reddit 小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fu-wu-qi&quot;&gt;服务器&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu-qi&quot; aria-label=&quot;Anchor link for: fu-wu-qi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lowendtalk.com&#x2F;&quot;&gt;Low End Talk&lt;&#x2F;a&gt; - 国外的底价主机论坛，上面经常会有主机商提供的活动&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hostloc.com&#x2F;&quot;&gt;全球主机交流&lt;&#x2F;a&gt; - 国内的主机论坛&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ba-gua&quot;&gt;八卦&lt;a class=&quot;zola-anchor&quot; href=&quot;#ba-gua&quot; aria-label=&quot;Anchor link for: ba-gua&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;blabla&#x2F;&quot;&gt;豆瓣鹅组&lt;&#x2F;a&gt; - 豆瓣鹅组，讨论明星八卦等。目前为仅登录可见，游客无法搜索和进入&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;613560&#x2F;&quot;&gt;小象乐园&lt;&#x2F;a&gt; - 小象乐园，前小象八卦，讨论网红的豆瓣小组&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wen-ti&quot;&gt;问题&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-ti&quot; aria-label=&quot;Anchor link for: wen-ti&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;TooAfraidToAsk&#x2F;&quot;&gt;TooAfraidToAsk reddit 小组&lt;&#x2F;a&gt; - 太害怕而不敢问的问题，各种政治不正确的问题&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;guan-xi-jian-yi&quot;&gt;关系建议&lt;a class=&quot;zola-anchor&quot; href=&quot;#guan-xi-jian-yi&quot; aria-label=&quot;Anchor link for: guan-xi-jian-yi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;relationshipadvice&#x2F;&quot;&gt;关系建议小组 reddit 小组&lt;&#x2F;a&gt; - 各种关系的建议，讨论&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;ProRevenge&quot;&gt;关于报仇&#x2F;报复的故事 reddit 小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;maker&quot;&gt;Maker&lt;a class=&quot;zola-anchor&quot; href=&quot;#maker&quot; aria-label=&quot;Anchor link for: maker&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;make.rs&#x2F;&quot;&gt;Make.rs&lt;&#x2F;a&gt; - What are you working on?&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;somethingimade&#x2F;&quot;&gt;Something I Made Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SideProject&quot;&gt;Side Project&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getmakerlog.com&#x2F;&quot;&gt;Get Maker Log&lt;&#x2F;a&gt; - How makers stay productive&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;developers&quot;&gt;Developers&lt;a class=&quot;zola-anchor&quot; href=&quot;#developers&quot; aria-label=&quot;Anchor link for: developers&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webwide.chat&#x2F;&quot;&gt;Make friends making the web. ✨&lt;&#x2F;a&gt; - Webwide is an inclusive, supportive community of professional and hobbyist web designers &amp;amp; developers.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;foods&quot;&gt;Foods&lt;a class=&quot;zola-anchor&quot; href=&quot;#foods&quot; aria-label=&quot;Anchor link for: foods&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;682274&#x2F;&quot;&gt;速食食品爱好者联盟-豆瓣小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;food&#x2F;&quot;&gt;Reddit Food subreddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;mi-huo&quot;&gt;迷惑&lt;a class=&quot;zola-anchor&quot; href=&quot;#mi-huo&quot; aria-label=&quot;Anchor link for: mi-huo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;nextfuckinglevel&#x2F;&quot;&gt;神人&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yan-su-tao-lun&quot;&gt;严肃讨论&lt;a class=&quot;zola-anchor&quot; href=&quot;#yan-su-tao-lun&quot; aria-label=&quot;Anchor link for: yan-su-tao-lun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;make-it-clear&#x2F;&quot;&gt;有一条无论如何都想沙一沙的龙&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;awakened&#x2F;&quot;&gt;reddit 觉醒小组&lt;&#x2F;a&gt; - 突然对某事有了新的想法&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;NeutralPolitics&#x2F;&quot;&gt;中立政治 reddit 小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhong-wen-ji-zhu&quot;&gt;中文技术&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-ji-zhu&quot; aria-label=&quot;Anchor link for: zhong-wen-ji-zhu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;meta.appinn.net&#x2F;&quot;&gt;小众软件论坛&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wei-lai-zhu-yi&quot;&gt;未来主义&lt;a class=&quot;zola-anchor&quot; href=&quot;#wei-lai-zhu-yi&quot; aria-label=&quot;Anchor link for: wei-lai-zhu-yi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;Futurology&quot;&gt;reddit 未来主义小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;qing-xu&quot;&gt;情绪&lt;a class=&quot;zola-anchor&quot; href=&quot;#qing-xu&quot; aria-label=&quot;Anchor link for: qing-xu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;rant&#x2F;&quot;&gt;reddit 骂组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;huan-xiang&quot;&gt;幻想&lt;a class=&quot;zola-anchor&quot; href=&quot;#huan-xiang&quot; aria-label=&quot;Anchor link for: huan-xiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;ScenesFromAHat&#x2F;top&#x2F;&quot;&gt;reddit 假装组&lt;&#x2F;a&gt; - 假装一切&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;MarkMyWords&#x2F;top&#x2F;?sort=top&quot;&gt;reddit 预言组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bai-ke&quot;&gt;百科&lt;a class=&quot;zola-anchor&quot; href=&quot;#bai-ke&quot; aria-label=&quot;Anchor link for: bai-ke&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;wikipedia&#x2F;&quot;&gt;维基百科 reddit 小组&lt;&#x2F;a&gt; - 讨论一些有意思的维基百科&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tou-zi-she-qu&quot;&gt;投资社区&lt;a class=&quot;zola-anchor&quot; href=&quot;#tou-zi-she-qu&quot; aria-label=&quot;Anchor link for: tou-zi-she-qu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thehiveindex.com&#x2F;topics&#x2F;investing&#x2F;&quot;&gt;Investing Communities&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

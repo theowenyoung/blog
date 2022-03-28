@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Sources</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/sources/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/sources/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>探索互联网上高质量的内容</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/sources/" type="text/html"/>
+		<id>https://www.owenyoung.com/sources/</id>
+		<content type="html">&lt;p&gt;我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;news-magazine&quot;&gt;News&#x2F;Magazine&lt;a class=&quot;zola-anchor&quot; href=&quot;#news-magazine&quot; aria-label=&quot;Anchor link for: news-magazine&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.newyorker.com&#x2F;&quot;&gt;New Yorker&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;&quot;&gt;The Atlantic&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.axios.com&#x2F;&quot;&gt;Axios&lt;&#x2F;a&gt; - 简明扼要的新闻，有重点的新闻，几句话新闻的精髓&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.huffpost.com&#x2F;&quot;&gt;赫芬顿邮报&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhong-wen-du-li-mei-ti&quot;&gt;中文独立媒体&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-du-li-mei-ti&quot; aria-label=&quot;Anchor link for: zhong-wen-du-li-mei-ti&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thenewslens.com&#x2F;&quot;&gt;thenewslens&lt;&#x2F;a&gt; - Taiwan indie media&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thestandnews.com&#x2F;&quot;&gt;The Stand News&lt;&#x2F;a&gt; - Hong Kong indie media&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;theinitium.com&#x2F;&quot;&gt;The Initium News &lt;&#x2F;a&gt; - Taiwan&#x2F;Hong Kong media&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hkcnews.com&#x2F;&quot;&gt;HK CNews&lt;&#x2F;a&gt; - Hong Kong indie media&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ding-qi-cha-kan-de-wen-zhang-lie-biao&quot;&gt;定期查看的文章列表&lt;a class=&quot;zola-anchor&quot; href=&quot;#ding-qi-cha-kan-de-wen-zhang-lie-biao&quot; aria-label=&quot;Anchor link for: ding-qi-cha-kan-de-wen-zhang-lie-biao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;Foodforthought&#x2F;top&#x2F;?t=month&quot;&gt;True Reddit 小组的每月排行&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhuan-lan&quot;&gt;专栏&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhuan-lan&quot; aria-label=&quot;Anchor link for: zhuan-lan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.newyorker.com&#x2F;contributors&#x2F;cal-newport&quot;&gt;Cal Newport &lt;&#x2F;a&gt; - 深度工作作者&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.newyorker.com&#x2F;news&#x2F;our-columnists&quot;&gt;纽约客专栏作家作品列表&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tynan.com&#x2F;&quot;&gt;Tynan 的博客&lt;&#x2F;a&gt; - 关于财富，投资&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;noahpinion.substack.com&#x2F;&quot;&gt;Noah&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bloomberg.com&#x2F;opinion&#x2F;authors&#x2F;AS6n2t3d_iA&#x2F;tyler-cowen&quot;&gt;Tyler Cowen 的专栏&lt;&#x2F;a&gt; - 经济相关&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;adamgrant.bulletin.com&#x2F;&quot;&gt;Adam Grant&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;austinkleon.substack.com&#x2F;&quot;&gt;Austin Kleon&lt;&#x2F;a&gt; - 像艺术家一样偷窃作者&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;product&quot;&gt;Product&lt;a class=&quot;zola-anchor&quot; href=&quot;#product&quot; aria-label=&quot;Anchor link for: product&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;producthunt-trending.js.org&#x2F;?range=monthly&quot;&gt;Product Hunt Trending (producthunt-trending.js.org)&lt;&#x2F;a&gt; - Browser producthunk by ranking, weekly, monthly, yearly.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SideProject&#x2F;&quot;&gt;r&#x2F;SideProject - A community for sharing side projects (reddit.com)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.producthunt.com&#x2F;&quot;&gt;Product Hunt&lt;&#x2F;a&gt; - The best new products in tech&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;show&quot;&gt;Hacker News Show&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hn.algolia.com&#x2F;?dateRange=pastMonth&amp;amp;page=0&amp;amp;prefix=true&amp;amp;query=show%20hn&amp;amp;sort=byPopularity&amp;amp;type=story&quot;&gt;hn show sort by points&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;showhn.buzzing.cc&#x2F;&quot;&gt;hn show 中文&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;askhn.buzzing.cc&#x2F;&quot;&gt;ask hn 中文&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bestofshowhn.com&#x2F;&quot;&gt;best of show hn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;bestcomments&quot;&gt;best hacker news comments&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;active&quot;&gt;当前活跃的 hn 讨论&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;invited&quot;&gt;被管理员重新顶上去的帖子&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;betalist.com&#x2F;&quot;&gt;Betalist&lt;&#x2F;a&gt; - Discover tomorrow’s startups, today.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;startupbase.io&#x2F;&quot;&gt;startupbase&lt;&#x2F;a&gt; - Discover early access products.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;10words.io&#x2F;&quot;&gt;10words&lt;&#x2F;a&gt; - 10words: Discover new apps and startups in 10 words or less&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;read.cv&#x2F;explore&quot;&gt;Read.cv explore&lt;&#x2F;a&gt; - profile 聚合,个人简历聚合&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.websitehunt.co&#x2F;&quot;&gt;Website Hunt&lt;&#x2F;a&gt; - 发现好网站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;self-hosted&quot;&gt;Self-Hosted&lt;a class=&quot;zola-anchor&quot; href=&quot;#self-hosted&quot; aria-label=&quot;Anchor link for: self-hosted&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;selfhosted&#x2F;&quot;&gt;Self-Hosted Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;awesome-selfhosted&#x2F;awesome-selfhosted&#x2F;&quot;&gt;Track Awesome-Selfhosted&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;decentralized&quot;&gt;Decentralized&lt;a class=&quot;zola-anchor&quot; href=&quot;#decentralized&quot; aria-label=&quot;Anchor link for: decentralized&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;croqaz&#x2F;awesome-decentralized&quot;&gt;awesome-decentralized&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;trends&quot;&gt;Trends&lt;a class=&quot;zola-anchor&quot; href=&quot;#trends&quot; aria-label=&quot;Anchor link for: trends&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;explodingtopics.com&#x2F;&quot;&gt;Discover Exploding Topics&lt;&#x2F;a&gt; - We surface rapidly growing topics before they take off.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;treendly.com&#x2F;&quot;&gt;treendly&lt;&#x2F;a&gt; - Discover rising trends you haven’t heard of&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;github&quot;&gt;Github&lt;a class=&quot;zola-anchor&quot; href=&quot;#github&quot; aria-label=&quot;Anchor link for: github&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GitHubDaily&#x2F;GitHubDaily&quot;&gt;GitHubDaily&lt;&#x2F;a&gt; - GitHubDaily 分享内容定期整理与分类。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tech&quot;&gt;Tech&lt;a class=&quot;zola-anchor&quot; href=&quot;#tech&quot; aria-label=&quot;Anchor link for: tech&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;news&quot;&gt;Hacker News&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hn.algolia.com&#x2F;&quot;&gt;Hacker News Search&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;technews.acm.org&quot;&gt;ACM Tech News&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.indiehackers.com&#x2F;&quot;&gt;indie hackers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hn.lindylearn.io&#x2F;&quot;&gt;Hacker News 经典文章集合&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;invited&quot;&gt;Hacker News 编辑精选&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;barnacl.es&#x2F;&quot;&gt;自力更生的创业者社区&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wired.com&#x2F;&quot;&gt;Wired - 连线杂志&lt;&#x2F;a&gt; - 科技相关的报道&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;engineeringblogs.xyz&#x2F;&quot;&gt;一个聚合了 500 多个程序员博客的时间流&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tildes.net&#x2F;&quot;&gt;Tildes&lt;&#x2F;a&gt; - 开源的聚合器
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.tildes.net&#x2F;announcing-tildes&quot;&gt;说明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhong-wen-she-qu&quot;&gt;中文社区&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-she-qu&quot; aria-label=&quot;Anchor link for: zhong-wen-she-qu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ph.buzzing.cc&#x2F;&quot;&gt;用中文浏览 Product Hunt 热门 App，网站和产品 - Product Hunt 热门 (buzzing.cc)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sideproject.buzzing.cc&#x2F;&quot;&gt;用中文浏览 reddit 业余项目讨论 - 业余项目分享交流 (buzzing.cc)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;689011&#x2F;&quot;&gt;沉迷优秀 App 不能自拔-豆瓣小组 &lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;718741&#x2F;&quot;&gt;这小程序针不戳啊-豆瓣小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;v2ex.com&#x2F;go&#x2F;create&quot;&gt;分享创造-v2ex&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;v2ex.com&#x2F;go&#x2F;share&quot;&gt;分享发现-v2ex&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;xin-xi-ding-yue-tui-song&quot;&gt;信息订阅&#x2F;推送&lt;a class=&quot;zola-anchor&quot; href=&quot;#xin-xi-ding-yue-tui-song&quot; aria-label=&quot;Anchor link for: xin-xi-ding-yue-tui-song&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cortadomail.com&#x2F;&quot;&gt;Cortadomail&lt;&#x2F;a&gt; - 免费版的 Mailbrew&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fun&quot;&gt;Fun&lt;a class=&quot;zola-anchor&quot; href=&quot;#fun&quot; aria-label=&quot;Anchor link for: fun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.viralwalk.com&#x2F;&quot;&gt;病毒步行&lt;&#x2F;a&gt; - 通过互联网漫步发现新网站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;life&quot;&gt;Life&lt;a class=&quot;zola-anchor&quot; href=&quot;#life&quot; aria-label=&quot;Anchor link for: life&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lifehacker.com&#x2F;&quot;&gt;Life Hacker&lt;&#x2F;a&gt; - 生活黑客，提高生活质量的方法&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;&quot;&gt;something awful&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;image&quot;&gt;Image&lt;a class=&quot;zola-anchor&quot; href=&quot;#image&quot; aria-label=&quot;Anchor link for: image&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.deviantart.com&#x2F;&quot;&gt;deviantart&lt;&#x2F;a&gt; - 艺术家社区&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;maker&quot;&gt;Maker&lt;a class=&quot;zola-anchor&quot; href=&quot;#maker&quot; aria-label=&quot;Anchor link for: maker&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getmakerlog.com&#x2F;&quot;&gt;Get Maker Log&lt;&#x2F;a&gt; - How makers stay productive&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;indexes&quot;&gt;Indexes&lt;a class=&quot;zola-anchor&quot; href=&quot;#indexes&quot; aria-label=&quot;Anchor link for: indexes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getizumo.com&#x2F;shibei&quot;&gt;云海拾贝&lt;&#x2F;a&gt; - 出云整理的国外高质量网站系列&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;shuziyimin.org&#x2F;&quot;&gt;数字移民导航&lt;&#x2F;a&gt; - 数字移民整理的国外网站导航&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ideas&quot;&gt;Ideas&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideas&quot; aria-label=&quot;Anchor link for: ideas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;needgap.com&#x2F;&quot;&gt;valid need&lt;&#x2F;a&gt; - 验证需求，由用户发需求，投票&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;profithunt.co&#x2F;&quot;&gt;profit hunt&lt;&#x2F;a&gt; - 从已经有利润的项目中获取灵感&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;books&quot;&gt;Books&lt;a class=&quot;zola-anchor&quot; href=&quot;#books&quot; aria-label=&quot;Anchor link for: books&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bookstash.io&#x2F;&quot;&gt;BookStash&lt;&#x2F;a&gt; - 提炼图书要点，精华&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;issues&quot;&gt;Issues&lt;a class=&quot;zola-anchor&quot; href=&quot;#issues&quot; aria-label=&quot;Anchor link for: issues&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.currentaffairs.org&#x2F;&quot;&gt;Current Affairs 时事&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;inboxworld.io&#x2F;&quot;&gt;Inbox world&lt;&#x2F;a&gt; - 收件箱世界，投票排序的高质量邮件列表。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;socials&quot;&gt;Socials&lt;a class=&quot;zola-anchor&quot; href=&quot;#socials&quot; aria-label=&quot;Anchor link for: socials&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;micro.blog&#x2F;&quot;&gt;Micro.blog&lt;&#x2F;a&gt; - 付费轻博客平台&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wen-zhang-ju-he&quot;&gt;文章聚合&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-zhang-ju-he&quot; aria-label=&quot;Anchor link for: wen-zhang-ju-he&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;Foodforthought&#x2F;&quot;&gt;精神食粮 Reddit 小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;TrueReddit&#x2F;&quot;&gt;真 Reddit 小组&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.metafilter.com&#x2F;&quot;&gt;Meta Filter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;soylentnews.org&#x2F;&quot;&gt;Soylentnews&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhuan-ren-wei-hu-de-reading-list&quot;&gt;专人维护的 Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhuan-ren-wei-hu-de-reading-list&quot; aria-label=&quot;Anchor link for: zhuan-ren-wei-hu-de-reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marginalrevolution.com&#x2F;&quot;&gt;Marginal Revolution&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;da-za-hui&quot;&gt;大杂烩&lt;a class=&quot;zola-anchor&quot; href=&quot;#da-za-hui&quot; aria-label=&quot;Anchor link for: da-za-hui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;upstract.com&#x2F;&quot;&gt;一个页面聚合了多个新闻源&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;you-jian-ding-yue&quot;&gt;邮件订阅&lt;a class=&quot;zola-anchor&quot; href=&quot;#you-jian-ding-yue&quot; aria-label=&quot;Anchor link for: you-jian-ding-yue&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thebrowser.com&#x2F;&quot;&gt;The Browswer&lt;&#x2F;a&gt; - 每天推荐 5 篇值得阅读的文章
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thebrowser.com&#x2F;archive&#x2F;&quot;&gt;存档&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;inboxworld.io&#x2F;&quot;&gt;Inbox World&lt;&#x2F;a&gt; - 订阅推荐&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;laskie.substack.com&#x2F;&quot;&gt;laskie&lt;&#x2F;a&gt; - We create products and services to save your company time and make you more money. 创业相关，企业管理相关&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ren-quan&quot;&gt;人权&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-quan&quot; aria-label=&quot;Anchor link for: ren-quan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chinesefeminism.org&#x2F;&quot;&gt;中国女权&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yu-le&quot;&gt;娱乐&lt;a class=&quot;zola-anchor&quot; href=&quot;#yu-le&quot; aria-label=&quot;Anchor link for: yu-le&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;nextfukinglevel&quot;&gt;Next Fucking Level&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;du-li-kai-fa-zhe&quot;&gt;独立开发者&lt;a class=&quot;zola-anchor&quot; href=&quot;#du-li-kai-fa-zhe&quot; aria-label=&quot;Anchor link for: du-li-kai-fa-zhe&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;leaders&quot;&gt;Hacker News Users with highest karma&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;andreyazimov, sheet2site 作者：
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;submitted?id=andreyazimov&quot;&gt;hacker new submitted&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;anderspitman, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;patchbay.pub&#x2F;&quot;&gt;patchbay&lt;&#x2F;a&gt; 作者
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;submitted?id=anderspitman&quot;&gt;hn submitted&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yin-le-bo-zhu&quot;&gt;音乐博主&lt;a class=&quot;zola-anchor&quot; href=&quot;#yin-le-bo-zhu&quot; aria-label=&quot;Anchor link for: yin-le-bo-zhu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;7340378423&quot;&gt;@Spylent 的个人主页 - 微博 (weibo.com)&lt;&#x2F;a&gt; - 说唱&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;influence&quot;&gt;Influence&lt;a class=&quot;zola-anchor&quot; href=&quot;#influence&quot; aria-label=&quot;Anchor link for: influence&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;publicchoice.gmu.edu&#x2F;tylercowen&quot;&gt;Tyler Cowen&lt;&#x2F;a&gt; - 乔治梅森大学和公共选择研究中心的经济学教授, 每天都会为博客 《边缘革命》（The Marginal Revolution）撰稿
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bloomberg.com&#x2F;opinion&#x2F;authors&#x2F;AS6n2t3d_iA&#x2F;tyler-cowen&quot;&gt;专栏&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

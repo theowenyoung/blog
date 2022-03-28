@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Notes</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Awesome Decentralization</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/decentralization/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/decentralization/</id>
+		<content type="html">&lt;p&gt;Curating awesome decentralized applications.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lukeplant.me.uk&#x2F;blog&#x2F;posts&#x2F;the-technological-case-against-bitcoin-and-blockchain&#x2F;&quot;&gt;反对比特币和区块链的技术案例&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gdamdam&#x2F;awesome-decentralized-web&quot;&gt;awesome-decentralized-web&lt;&#x2F;a&gt; - A curated list about the decentralized technologies and tools to develop decentralized applications.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fediverse&quot;&gt;Fediverse Wiki&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;letsdecentralize.org&#x2F;&quot;&gt;Lets decentralize&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kgryte&#x2F;awesome-peer-to-peer&quot;&gt;Awesome Peer-to-Peer&lt;&#x2F;a&gt; - A list of peer-to-peer resources.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gdamdam&#x2F;awesome-decentralized-web&quot;&gt;awesome-decentralized-web&lt;&#x2F;a&gt; - A curated list about the decentralized technologies and tools to develop decentralized applications.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;openblockchains&#x2F;awesome-blockchains&quot;&gt;awesome-blockchains&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;database&quot;&gt;Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#database&quot; aria-label=&quot;Anchor link for: database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amark&#x2F;gun&quot;&gt;Gun&lt;&#x2F;a&gt; - An open source cybersecurity protocol for syncing decentralized graph data.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;remotestorage&#x2F;remotestorage.js&quot;&gt;remotestorage&lt;&#x2F;a&gt; - An open protocol for per-user storage on the Web
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;remotestorage.io&#x2F;apps&#x2F;&quot;&gt;apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;a class=&quot;zola-anchor&quot; href=&quot;#protocol&quot; aria-label=&quot;Anchor link for: protocol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;scuttlebutt.nz&#x2F;get-started&#x2F;&quot;&gt;Scuttlebutt&lt;&#x2F;a&gt; - Scuttlebutt is a social network and it works like others social apps we already use. The key difference is that it is decentralised, meaning not centralised&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;urbit.org&#x2F;&quot;&gt;urbit&lt;&#x2F;a&gt; - A clean-slate OS and network for the 21st century.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;torrents&quot;&gt;Torrents&lt;a class=&quot;zola-anchor&quot; href=&quot;#torrents&quot; aria-label=&quot;Anchor link for: torrents&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;varbhat&#x2F;exatorrent&quot;&gt;exatorrent&lt;&#x2F;a&gt; - Self-hostable , easy-to-use , lightweight and feature-rich torrent client written in Go . It comes with beautiful Web UI and Optional Multi-User Support . Run Locally or Host in Server . Open&#x2F;Download&#x2F;Stream Torrents in Browser Right Away!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.qbittorrent.org&#x2F;&quot;&gt;qBittorrent&lt;&#x2F;a&gt; - The qBittorrent project aims to provide an open-source software alternative to µTorrent.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjb&#x2F;gittorrent&quot;&gt;Gittorrent&lt;&#x2F;a&gt; - A decentralization of GitHub using BitTorrent and Bitcoin&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.radicle.xyz&#x2F;docs&#x2F;what-is-radicle.html&quot;&gt;Radicle&lt;&#x2F;a&gt; - Radicle is a decentralized code collaboration network built on open protocols 🌱.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mrusme&#x2F;superhighway84&quot;&gt;Superhighway84&lt;&#x2F;a&gt; - USENET-inspired decentralized internet discussion system&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;search&quot;&gt;Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#search&quot; aria-label=&quot;Anchor link for: search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yacy.net&#x2F;&quot;&gt;yacy p2p search engine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;social&quot;&gt;Social&lt;a class=&quot;zola-anchor&quot; href=&quot;#social&quot; aria-label=&quot;Anchor link for: social&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mastodon&#x2F;mastodon&quot;&gt;mastodon&lt;&#x2F;a&gt; - twitter open-source alternatives &lt;code&gt;ruby&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.pleroma.social&#x2F;pleroma&#x2F;pleroma&#x2F;&quot;&gt;pleroma&lt;&#x2F;a&gt; - another twitter open-source alternatives &lt;code&gt;erlang&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;soapbox-pub&#x2F;soapbox-fe&quot;&gt;soapbox&lt;&#x2F;a&gt; - a fronend for pleroma&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;angristan&#x2F;docker-pleroma&quot;&gt;docker-pleroma&lt;&#x2F;a&gt; -docker pleroma&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;OkunaOrg&#x2F;okuna-api&quot;&gt;okuna&lt;&#x2F;a&gt; - another forum. &lt;code&gt;python&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.mills.io&#x2F;yarnsocial&#x2F;yarn&quot;&gt;twtxt - yarn&lt;&#x2F;a&gt; - yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;buckket&#x2F;twtxt&quot;&gt;twtxt&lt;&#x2F;a&gt; - origianl twtxt&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.isobeef.org&#x2F;lyse&#x2F;tt&#x2F;&quot;&gt;tt&lt;&#x2F;a&gt; - a python cli for twtxt&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.uninformativ.de&#x2F;git&#x2F;jenny&#x2F;file&#x2F;README.html&quot;&gt;jenny&lt;&#x2F;a&gt; - another python cli for twtxt&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;muttmua&#x2F;mutt&quot;&gt;mutt&lt;&#x2F;a&gt; - simillar but for email.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.uninformativ.de&#x2F;blog&#x2F;postings&#x2F;2021-09-19&#x2F;0&#x2F;POSTING-en.html&quot;&gt;jenny + mutt: Getting started with twtxt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rustwtxt&#x2F;rustwtxt&quot;&gt;rusttxt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DracoBlue&#x2F;twtxt-registry&quot;&gt;twtxt-registry&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;twtxt.xyz&#x2F;&quot;&gt;twtxt xyz&lt;&#x2F;a&gt; - A twtxt user list
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;reednj&#x2F;twtxt-directory&quot;&gt;source&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Toromino&#x2F;kibou&quot;&gt;kibou&lt;&#x2F;a&gt; - rust mastondon&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieweb.org&#x2F;&quot;&gt;Indie Web&lt;&#x2F;a&gt; - The IndieWeb is a community of individual personal websites&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;briarproject.org&#x2F;how-it-works&#x2F;&quot;&gt;Bria&lt;&#x2F;a&gt; - Android p2p chat&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;mail&quot;&gt;Mail&lt;a class=&quot;zola-anchor&quot; href=&quot;#mail&quot; aria-label=&quot;Anchor link for: mail&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mnmnotmail.org&#x2F;&quot;&gt;MNM&lt;&#x2F;a&gt; - Email alternatives&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pub-sub&quot;&gt;Pub&#x2F;Sub&lt;a class=&quot;zola-anchor&quot; href=&quot;#pub-sub&quot; aria-label=&quot;Anchor link for: pub-sub&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;clone1018&#x2F;WebSubHub&quot;&gt;WebSubHub&lt;&#x2F;a&gt; - WebSubHub is a fully compliant WebSub Hub built that you can use to distribute live changes from various publishers. Usage of WebSubHub is very simple with only a single endpoint available at https:&#x2F;&#x2F;websubhub.com&#x2F;hub.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>NSFW Resource</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/nsfw/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/nsfw/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;Warning: This resources have some NSFW sensitive resources, please pay attension.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Curating some interesting NSFW resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;resource&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource&quot; aria-label=&quot;Anchor link for: resource&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;observablehq.com&#x2F;@stared&#x2F;tree-of-reddit-sex-life&quot;&gt;Reddit sex life tree&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EBazarov&#x2F;nsfw_data_source_urls&quot;&gt;NSFW data sources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Self-hosted</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/self-hosted/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/self-hosted/</id>
+		<content type="html">&lt;h2 id=&quot;file&quot;&gt;File&lt;a class=&quot;zola-anchor&quot; href=&quot;#file&quot; aria-label=&quot;Anchor link for: file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&quot;&gt;GitHub - filebrowser&#x2F;filebrowser: 📂 Web File Browser&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;larrywonss.github.io&#x2F;#&#x2F;&quot;&gt;OpenWrt 简明教程&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;kol&quot;&gt;KOL&lt;a class=&quot;zola-anchor&quot; href=&quot;#kol&quot; aria-label=&quot;Anchor link for: kol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;calendso&#x2F;calendso&quot;&gt;calendso&#x2F;calendso: The open-source Calendly alternative. (github.com)&lt;&#x2F;a&gt; - Make an appointment, connect with your calendar&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;time-tracking&quot;&gt;Time tracking&lt;a class=&quot;zola-anchor&quot; href=&quot;#time-tracking&quot; aria-label=&quot;Anchor link for: time-tracking&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;almarklein&#x2F;timetagger&quot;&gt;timetagger&lt;&#x2F;a&gt; - Tag your time, get the insight&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;shopping&quot;&gt;Shopping&lt;a class=&quot;zola-anchor&quot; href=&quot;#shopping&quot; aria-label=&quot;Anchor link for: shopping&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;medusajs&#x2F;medusa&quot;&gt;Mpedussa&lt;&#x2F;a&gt; - Shopify alternative #Alternative&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;a class=&quot;zola-anchor&quot; href=&quot;#services&quot; aria-label=&quot;Anchor link for: services&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LibreTranslate&#x2F;LibreTranslate&quot;&gt;LibreTranslate&lt;&#x2F;a&gt; - Free and Open Source Machine Translation API. 100% self-hosted, no limits, no ties to proprietary translation services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;medias&quot;&gt;Medias&lt;a class=&quot;zola-anchor&quot; href=&quot;#medias&quot; aria-label=&quot;Anchor link for: medias&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hauxir&#x2F;rapidbay&quot;&gt;RapidBay&lt;&#x2F;a&gt; - Self-hosted torrent video streaming service compatible with Chromecast and AppleTV deployable in the cloud&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;paas&quot;&gt;PAAS&lt;a class=&quot;zola-anchor&quot; href=&quot;#paas&quot; aria-label=&quot;Anchor link for: paas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cloudron.io&#x2F;index.html&quot;&gt;cloudron&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sandstorm.io&#x2F;&quot;&gt;sandstorm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedombox.org&#x2F;&quot;&gt;freedombox&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;federation&quot;&gt;Federation&lt;a class=&quot;zola-anchor&quot; href=&quot;#federation&quot; aria-label=&quot;Anchor link for: federation&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;joinmobilizon.org&#x2F;en&#x2F;&quot;&gt;Mobilizon&lt;&#x2F;a&gt; - Mobilizon is a tool that helps you find, create and organize events.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;orbitdb&#x2F;orbit&quot;&gt;Orbit&lt;&#x2F;a&gt; - A distributed, serverless, peer-to-peer chat application on IPFS.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;irislib&#x2F;iris-messenger&quot;&gt;Iris&lt;&#x2F;a&gt; - Decentralized messenger&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twt.social&#x2F;&quot;&gt;Twt.social&lt;&#x2F;a&gt; - Twt.social is a new Social Media platform&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;old-school&quot;&gt;Old school&lt;a class=&quot;zola-anchor&quot; href=&quot;#old-school&quot; aria-label=&quot;Anchor link for: old-school&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;gemini&lt;&#x2F;a&gt; - Gemini is a new internet protocol which: Is heavier than gopher, Is lighter than the web, Will not replace either, Strives for maximum power to weight ratio, Takes user privacy very seriously&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;livestreaming&quot;&gt;Livestreaming&lt;a class=&quot;zola-anchor&quot; href=&quot;#livestreaming&quot; aria-label=&quot;Anchor link for: livestreaming&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GRVYDEV&#x2F;Project-Lightspeed&quot;&gt;Lightspeed&lt;&#x2F;a&gt; - A self contained OBS -&amp;gt; FTL -&amp;gt; WebRTC live streaming server. Comprised of 3 parts once configured anyone can achieve sub-second OBS to the browser livestreaming&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;admin&quot;&gt;Admin&lt;a class=&quot;zola-anchor&quot; href=&quot;#admin&quot; aria-label=&quot;Anchor link for: admin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToolJet&#x2F;ToolJet&#x2F;&quot;&gt;ToolJet&lt;&#x2F;a&gt; - ToolJet is an open-source low-code platform for building and deploying internal tools with minimal engineering efforts 🚀&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chat&quot;&gt;Chat&lt;a class=&quot;zola-anchor&quot; href=&quot;#chat&quot; aria-label=&quot;Anchor link for: chat&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mattermost&#x2F;mattermost-server&quot;&gt;mattermost&lt;&#x2F;a&gt; - Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;conduit&quot;&gt;conduit&lt;&#x2F;a&gt; - Conduit is a simple, fast and reliable chat server powered by Matrix&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;deploy&quot;&gt;Deploy&lt;a class=&quot;zola-anchor&quot; href=&quot;#deploy&quot; aria-label=&quot;Anchor link for: deploy&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;adnanh&#x2F;webhook&quot;&gt;Webhook&lt;&#x2F;a&gt; - webhook is a lightweight incoming webhook server to run shell commands&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;music&quot;&gt;Music&lt;a class=&quot;zola-anchor&quot; href=&quot;#music&quot; aria-label=&quot;Anchor link for: music&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;izderadicka&#x2F;audioserve&quot;&gt;music server in rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Startups</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/startups/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/startups/</id>
+		<content type="html">&lt;p&gt;Curating anyting about startups, marketing, launch, publish, cooperation, tools&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;prelaunch&quot;&gt;Prelaunch&lt;a class=&quot;zola-anchor&quot; href=&quot;#prelaunch&quot; aria-label=&quot;Anchor link for: prelaunch&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;waitinglist.app&#x2F;&quot;&gt;Waiting list&lt;&#x2F;a&gt; - Build your audience before you launch, #API&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.defmacro.org&#x2F;2019&#x2F;03&#x2F;26&#x2F;startup-checklist.html&quot;&gt;Startup Checklist&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=20254057&quot;&gt;HN link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;app.gumroad.com&#x2F;&quot;&gt;Gumroad&lt;&#x2F;a&gt; - 在线销售数字产品&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;publish&quot;&gt;Publish&lt;a class=&quot;zola-anchor&quot; href=&quot;#publish&quot; aria-label=&quot;Anchor link for: publish&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;betalist.com&#x2F;&quot;&gt;betalist&lt;&#x2F;a&gt; - Discover tomorrow’s startups, today.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.producthunt.com&#x2F;&quot;&gt;ProductHunt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;show&quot;&gt;Hacknew Show&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SideProject&#x2F;&quot;&gt;Side Project Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;productlift.ai&#x2F;&quot;&gt;productlift&lt;&#x2F;a&gt; - ProductLift helps you find relevant communities and influencers so you can:&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;airtable.com&#x2F;shrwqaak73gy83w9A&#x2F;tblu5RcUft9fYp9Ju&#x2F;viwFHmIyMniXzlpK4?blocks=show&quot;&gt;280+ Websites To Share Your Startup &#x2F; Public&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jakeprins_nl&#x2F;status&#x2F;1293243281556594690?s=21&quot;&gt;The best places to post your startup. Twitter Thread&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;cooperation&quot;&gt;Cooperation&lt;a class=&quot;zola-anchor&quot; href=&quot;#cooperation&quot; aria-label=&quot;Anchor link for: cooperation&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;circlebatch.com&#x2F;&quot;&gt;Circlebatch&lt;&#x2F;a&gt; - Circlebatch is a collaborative community to practice skills and work on projects with others&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tara.ai&#x2F;&quot;&gt;Tara&lt;&#x2F;a&gt; - Git ship done Define, plan &amp;amp; track mission-critical product updates, in one place.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;market&quot;&gt;Market&lt;a class=&quot;zola-anchor&quot; href=&quot;#market&quot; aria-label=&quot;Anchor link for: market&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;liquidary.com&#x2F;freearticle&#x2F;&quot;&gt;Free Article Publishing&lt;&#x2F;a&gt; - Get free press coverage for your project or startup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;microacquire.com&#x2F;buyers&#x2F;&quot;&gt;Microacquire&lt;&#x2F;a&gt; - Sell your company online, Sell your startup within 30 days. Anonymous listings. No fees.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;trekhleb&#x2F;promote-your-next-startup&quot;&gt;promote your next startup&lt;&#x2F;a&gt; - 🚀 Free resources you may use to promote your next startup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mysideproject.rocks&#x2F;&quot;&gt;My Side Project rocks&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;热心而真诚的评论素人的状态，你可能会收获一个关注。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;sharing&quot;&gt;Sharing&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharing&quot; aria-label=&quot;Anchor link for: sharing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;buildinpublic.com&#x2F;&quot;&gt;#buildinpublic&lt;&#x2F;a&gt; - Share your process at Twitter with #buildinpublic&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;theapplaunchpad.com&#x2F;mockup-generator&#x2F;&quot;&gt;AppLaunchpad - (1000) Best Free Mockup Generator (theapplaunchpad.com)&lt;&#x2F;a&gt; - Screen Shot Generator&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.twitonomy.com&#x2F;&quot;&gt;Twitter Analytics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;investing&quot;&gt;Investing&lt;a class=&quot;zola-anchor&quot; href=&quot;#investing&quot; aria-label=&quot;Anchor link for: investing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.micro-invest.io&#x2F;&quot;&gt;Micro investment&lt;&#x2F;a&gt; - Micro investment for solo founders&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.makerfellowship.com&#x2F;&quot;&gt;Maker Fellow Ship&lt;&#x2F;a&gt; - We offer $500 grant to indie makers to ship something useful within four weeks.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ideas&quot;&gt;Ideas&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideas&quot; aria-label=&quot;Anchor link for: ideas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.notion.so&#x2F;110-Actionable-tasks-to-get-from-Zero-to-2a28bd237e964f75a8f4cf8fcd8182c5&quot;&gt;110+ Actionable tasks to get from Zero to $$$&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;undertheradar.io&#x2F;&quot;&gt;Startup Trends&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;legel&quot;&gt;Legel&lt;a class=&quot;zola-anchor&quot; href=&quot;#legel&quot; aria-label=&quot;Anchor link for: legel&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.avodocs.com&#x2F;&quot;&gt;avodocs&lt;&#x2F;a&gt; - Free legal documents for startups&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getmakerlog.com&#x2F;&quot;&gt;Get Maker Log&lt;&#x2F;a&gt; - How makers stay productive&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Alternatives</title>
+		<published>2022-02-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/alternatives/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/alternatives/</id>
+		<content type="html">&lt;p&gt;Curating awesome alternative resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mendel5&#x2F;alternative-front-ends&quot;&gt;alternative-front-ends&lt;&#x2F;a&gt; - #Front-End&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;redecentralize&#x2F;alternative-internet&quot;&gt;Alternative Internet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ethical.net&#x2F;resources&#x2F;&quot;&gt;Ethical Alternatives &amp;amp; Resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.btw.so&#x2F;open-source-alternatives&quot;&gt;Open source Alternatives&lt;&#x2F;a&gt; - Curated 200+ open source alternatives to tools that businesses require in day-to-day operations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;awesome-alternatives-in-rust&quot;&gt;awesome-alternatives-in-rust&lt;&#x2F;a&gt; - A curated list of replacements for existing software written in Rust #Rust&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;twitter&quot;&gt;Twitter&lt;a class=&quot;zola-anchor&quot; href=&quot;#twitter&quot; aria-label=&quot;Anchor link for: twitter&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter&quot;&gt;Nitter&lt;&#x2F;a&gt; - Twitter front end alternative.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Official instance: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nitter.net&#x2F;&quot;&gt;https:&#x2F;&#x2F;nitter.net&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kizie.co&#x2F;&quot;&gt;kizie&lt;&#x2F;a&gt; - twitter redesign&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;youtube&quot;&gt;Youtube&lt;a class=&quot;zola-anchor&quot; href=&quot;#youtube&quot; aria-label=&quot;Anchor link for: youtube&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iv-org&#x2F;invidious&quot;&gt;Invidious&lt;&#x2F;a&gt; - Invidious is an alternative front-end to YouTube&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instances: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;instances.invidious.io&#x2F;&quot;&gt;https:&#x2F;&#x2F;instances.invidious.io&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;google&quot;&gt;Google&lt;a class=&quot;zola-anchor&quot; href=&quot;#google&quot; aria-label=&quot;Anchor link for: google&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;skerkour&#x2F;bloom&quot;&gt;Bloom&lt;&#x2F;a&gt; - The simplest way to de-Google your life and business: Inbox, Calendar, Files, Contacts &amp;amp; much more&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;discord&quot;&gt;Discord&lt;a class=&quot;zola-anchor&quot; href=&quot;#discord&quot; aria-label=&quot;Anchor link for: discord&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;revoltchat&#x2F;revolt&quot;&gt;revolt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;firebase&quot;&gt;Firebase&lt;a class=&quot;zola-anchor&quot; href=&quot;#firebase&quot; aria-label=&quot;Anchor link for: firebase&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;etesync&#x2F;server&quot;&gt;etesync&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nhost&#x2F;nhost&quot;&gt;nhost&lt;&#x2F;a&gt; - another firebase alternative.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;appwrite&#x2F;appwrite&quot;&gt;appwrite&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;hacker-news&quot;&gt;Hacker News&lt;a class=&quot;zola-anchor&quot; href=&quot;#hacker-news&quot; aria-label=&quot;Anchor link for: hacker-news&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;hhttps:&#x2F;&#x2F;github.com&#x2F;lobsters&#x2F;lobsters&quot;&gt;hacker news open source in ruby&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mariusor&#x2F;go-littr&quot;&gt;littr&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gurlic.com&#x2F;&quot;&gt;gurlic&lt;&#x2F;a&gt; - another hacker news alternatives&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;tildes&#x2F;tildes&quot;&gt;Tildes&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;netlify&quot;&gt;Netlify&lt;a class=&quot;zola-anchor&quot; href=&quot;#netlify&quot; aria-label=&quot;Anchor link for: netlify&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getmeli&#x2F;meli&quot;&gt;Meli&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;github&quot;&gt;Github&lt;a class=&quot;zola-anchor&quot; href=&quot;#github&quot; aria-label=&quot;Anchor link for: github&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sourcehut.org&#x2F;&quot;&gt;Source Hut&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fossil-scm.org&#x2F;home&#x2F;doc&#x2F;trunk&#x2F;www&#x2F;index.wiki&quot;&gt;fossil&lt;&#x2F;a&gt; - Sqlite use this system to develop things.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pocket&quot;&gt;Pocket&lt;a class=&quot;zola-anchor&quot; href=&quot;#pocket&quot; aria-label=&quot;Anchor link for: pocket&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-shiori&#x2F;shiori&quot;&gt;shiori&lt;&#x2F;a&gt; - Pocket open-source alternative.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

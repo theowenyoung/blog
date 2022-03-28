@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Free</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/free/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/free/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>互联网上的免费资源汇总</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/free/" type="text/html"/>
+		<id>https://www.owenyoung.com/free/</id>
+		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;444cnh&#x2F;what_are_some_free_services_on_the_internet&#x2F;cznc9la&#x2F;&quot;&gt;互联网上有哪些免费服务，每个人都应该知道？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nbats&#x2F;FMHY&#x2F;wiki&#x2F;FREEMEDIAHECKYEAH&quot;&gt;FREE MEDIA HECK YEAH&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;free-for.dev&#x2F;#&#x2F;&quot;&gt;Free for dev&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;mail&quot;&gt;Mail&lt;a class=&quot;zola-anchor&quot; href=&quot;#mail&quot; aria-label=&quot;Anchor link for: mail&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mailtie.com&quot;&gt;Mailtie&lt;&#x2F;a&gt; - Free Email Forwarding for Your Domain&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fakermail.com&quot;&gt;FakerMail&lt;&#x2F;a&gt; - Unlimited Temporary Email Provider&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;forwardemail.net&#x2F;&quot;&gt;Foreard Email&lt;&#x2F;a&gt; - 免费域名 Email 转发&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;simplelogin.io&#x2F;&quot;&gt;Simple Login&lt;&#x2F;a&gt; - 免费域名转发，发送&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&quot;&gt; Codeberg.org &lt;&#x2F;a&gt; - free git, privacy&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;a class=&quot;zola-anchor&quot; href=&quot;#video&quot; aria-label=&quot;Anchor link for: video&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mastershot.app&quot;&gt;Create amazing videos with our online video editor - Mastershot&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;domain&quot;&gt;Domain&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain&quot; aria-label=&quot;Anchor link for: domain&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedns.afraid.org&#x2F;domain&#x2F;registry&#x2F;&quot;&gt;freedns&lt;&#x2F;a&gt; - free subdomain dns&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;name&quot;&gt;Name&lt;a class=&quot;zola-anchor&quot; href=&quot;#name&quot; aria-label=&quot;Anchor link for: name&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;namae.dev&quot;&gt;namae&lt;&#x2F;a&gt; - name checking&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;free-paid-wall&quot;&gt;Free Paid Wall&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-paid-wall&quot; aria-label=&quot;Anchor link for: free-paid-wall&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;t.me&#x2F;chotamreaderbot&quot;&gt;Article reader&lt;&#x2F;a&gt; - A telegram bot that can access paid wall article with a instant view article.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;12ft.io&#x2F;&quot;&gt;12ft&lt;&#x2F;a&gt; - Show me a 10ft paywall, I’ll show you a 12ft ladder.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;free-space&quot;&gt;Free space&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-space&quot; aria-label=&quot;Anchor link for: free-space&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;deta.space&#x2F;&quot;&gt;Deta&lt;&#x2F;a&gt; - 云中托管个人的数据，免费建立自己的个人空间&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dian-zi-shu&quot;&gt;电子书&lt;a class=&quot;zola-anchor&quot; href=&quot;#dian-zi-shu&quot; aria-label=&quot;Anchor link for: dian-zi-shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.z-lib.org&#x2F;&quot;&gt;Z-Library 全球最大数字图书馆&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sg1lib.org&quot;&gt;https:&#x2F;&#x2F;sg1lib.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;1lib.pl&quot;&gt;https:&#x2F;&#x2F;1lib.pl&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ng1lib.org&quot;&gt;https:&#x2F;&#x2F;ng1lib.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;b-ok.com&quot;&gt;https:&#x2F;&#x2F;b-ok.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bookzz.ren&quot;&gt;https:&#x2F;&#x2F;bookzz.ren&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;booksc.xyz&quot;&gt;https:&#x2F;&#x2F;booksc.xyz&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jiumodiary.com&#x2F;&quot;&gt;鸠摩电子书搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dian-ying&quot;&gt;电影&lt;a class=&quot;zola-anchor&quot; href=&quot;#dian-ying&quot; aria-label=&quot;Anchor link for: dian-ying&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yts.mx&#x2F;&quot;&gt;YTS&lt;&#x2F;a&gt; - 高质量，高清的电影种子站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;rao-guo-fu-fei-qiang&quot;&gt;绕过付费墙&lt;a class=&quot;zola-anchor&quot; href=&quot;#rao-guo-fu-fei-qiang&quot; aria-label=&quot;Anchor link for: rao-guo-fu-fei-qiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iamadamdev&#x2F;bypass-paywalls-chrome&quot;&gt;chrome 插件绕过付费墙&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

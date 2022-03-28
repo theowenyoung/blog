@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Dev</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/dev/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/dev/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>开发相关的资源汇总</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
+		<id>https://www.owenyoung.com/dev-resources/</id>
+		<content type="html">&lt;p&gt;收集开发相关的资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;api-token&quot;&gt;API Token&lt;a class=&quot;zola-anchor&quot; href=&quot;#api-token&quot; aria-label=&quot;Anchor link for: api-token&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fly.io&#x2F;blog&#x2F;api-tokens-a-tedious-survey&#x2F;&quot;&gt;API Tokens: A Tedious Survey&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.iana.org&#x2F;assignments&#x2F;jwt&#x2F;jwt.xhtml&quot;&gt;JSON Web Token (JWT) Claims&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;general&#x2F;latest&#x2F;gr&#x2F;sigv4_signing.html&quot;&gt;aws signature v4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;actix-http&#x2F;2.2.1&#x2F;actix_http&#x2F;http&#x2F;struct.StatusCode.html&quot;&gt;actix http status code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webauthn.guide&#x2F;&quot;&gt;Web Auth &lt;&#x2F;a&gt; - A better alternative for securing our sensitive information online&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;auth-xiang-guan&quot;&gt;Auth 相关&lt;a class=&quot;zola-anchor&quot; href=&quot;#auth-xiang-guan&quot; aria-label=&quot;Anchor link for: auth-xiang-guan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;linuxserver&#x2F;docker-swag&quot;&gt;GitHub - linuxserver&#x2F;docker-swag: Nginx webserver and reverse proxy with php support and a built-in Certbot (Let’s Encrypt) client. It also contains fail2ban for intrusion prevention.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.linuxserver.io&#x2F;blog&#x2F;2020-08-26-setting-up-authelia&quot;&gt;Setting Up Authelia With SWAG | LinuxServer.ioGitBook icon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;authelia&#x2F;authelia&quot;&gt;GitHub - authelia&#x2F;authelia: The Single Sign-On Multi-Factor portal for web apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;greenpau&#x2F;caddy-auth-portal&quot;&gt;GitHub - greenpau&#x2F;caddy-auth-portal: Authentication Plugin for Caddy v2 implementing Form-Based, Basic, Local, LDAP, OpenID Connect, OAuth 2.0 (Github, Google, Facebook, Okta, etc.), SAML Authentication&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;api&quot;&gt;API&lt;a class=&quot;zola-anchor&quot; href=&quot;#api&quot; aria-label=&quot;Anchor link for: api&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;json-api&#x2F;json-api&quot;&gt;JSON API&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cryptlex&#x2F;rest-api-response-format&quot;&gt;REST API response format&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;extract-table.com&#x2F;&quot;&gt;extract table&lt;&#x2F;a&gt; - Extract a table from an image or a PDF&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;calganaygun&#x2F;MDcat&#x2F;blob&#x2F;main&#x2F;mdcat.py&quot;&gt;Github Markdown to HTML&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apilist.fun&#x2F;&quot;&gt;API LIST&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;benchmarks&quot;&gt;Benchmarks&lt;a class=&quot;zola-anchor&quot; href=&quot;#benchmarks&quot; aria-label=&quot;Anchor link for: benchmarks&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;NickMRamirez&#x2F;Proxy-Benchmarks&quot;&gt;GitHub - NickMRamirez&#x2F;Proxy-Benchmarks: Benchmarks for several proxies&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;djc&#x2F;template-benchmarks-rs&quot;&gt;rust templates&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chat-manage&quot;&gt;Chat Manage&lt;a class=&quot;zola-anchor&quot; href=&quot;#chat-manage&quot; aria-label=&quot;Anchor link for: chat-manage&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;live-chat&quot;&gt;Live Chat&lt;a class=&quot;zola-anchor&quot; href=&quot;#live-chat&quot; aria-label=&quot;Anchor link for: live-chat&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;airyhq&#x2F;airy&quot;&gt;airy&lt;&#x2F;a&gt; - Open source conversational platform to power conversations with an open source Live Chat, Messengers like Facebook Messenger, WhatsApp and more&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;open-source-server&quot;&gt;Open source Server&lt;a class=&quot;zola-anchor&quot; href=&quot;#open-source-server&quot; aria-label=&quot;Anchor link for: open-source-server&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GoBelieveIO&#x2F;im_service&quot;&gt;go im service&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LockGit&#x2F;gochat&quot;&gt;go chat&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;OpenIMSDK&#x2F;Open-IM-Server&quot;&gt;open im server&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;mqtt&quot;&gt;MQTT&lt;a class=&quot;zola-anchor&quot; href=&quot;#mqtt&quot; aria-label=&quot;Anchor link for: mqtt&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;emqx&#x2F;CocoaMQTT&quot;&gt;swift client CocoaMQTT&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mqttjs&#x2F;MQTT.js&quot;&gt;mqtt.js&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;emqx&#x2F;emqx&quot;&gt;emqx&lt;&#x2F;a&gt; - erlang broker&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vernemq&#x2F;vernemq&quot;&gt;vernemq&lt;&#x2F;a&gt; - erlang broker&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;OpenFlutter&#x2F;flutter_im_demo&quot;&gt;flutter im mqtt demo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;xmpp&quot;&gt;XMPP&lt;a class=&quot;zola-anchor&quot; href=&quot;#xmpp&quot; aria-label=&quot;Anchor link for: xmpp&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;esl&#x2F;MongooseIM&quot;&gt;MongooseIM&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ortuman&#x2F;jackal&quot;&gt;jackal&lt;&#x2F;a&gt; - xmpp with go&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;snikket-im&#x2F;snikket-server&quot;&gt;snikket&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;processone&#x2F;ejabberd&quot;&gt;ejabberd&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;hosted-chat-server&quot;&gt;Hosted chat Server&lt;a class=&quot;zola-anchor&quot; href=&quot;#hosted-chat-server&quot; aria-label=&quot;Anchor link for: hosted-chat-server&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;connectycube.com&#x2F;&quot;&gt;connectycube&lt;&#x2F;a&gt; - free, 10k user&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;command-tools&quot;&gt;Command Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#command-tools&quot; aria-label=&quot;Anchor link for: command-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TomWright&#x2F;dasel&quot;&gt;Dasel&lt;&#x2F;a&gt; - Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;image-process&quot;&gt;Image process&lt;a class=&quot;zola-anchor&quot; href=&quot;#image-process&quot; aria-label=&quot;Anchor link for: image-process&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;e1ven&#x2F;Robohash&quot;&gt;robohash&lt;&#x2F;a&gt; - generate image by any text&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;learning&quot;&gt;Learning&lt;a class=&quot;zola-anchor&quot; href=&quot;#learning&quot; aria-label=&quot;Anchor link for: learning&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.freecodecamp.org&#x2F;&quot;&gt;Free code camp&lt;&#x2F;a&gt; - Learn to code — for free.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;learnxinyminutes.com&#x2F;&quot;&gt;Learn X in Y minutes&lt;&#x2F;a&gt; - Learn programming in a few minutes.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;admin-dashboard&quot;&gt;Admin Dashboard&lt;a class=&quot;zola-anchor&quot; href=&quot;#admin-dashboard&quot; aria-label=&quot;Anchor link for: admin-dashboard&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToolJet&#x2F;ToolJet&#x2F;&quot;&gt;ToolJet&lt;&#x2F;a&gt; - Open-source low-code framework for building React-based web applications and internal tools 🚀&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;database&quot;&gt;Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#database&quot; aria-label=&quot;Anchor link for: database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;resource&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource&quot; aria-label=&quot;Anchor link for: resource&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fabien.herfray.org&#x2F;posts&#x2F;mastering-postgres-indexes-in-10-minutes&#x2F;&quot;&gt;Mastering Postgres indexes in 10 minutes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dr5hn&#x2F;countries-states-cities-database&quot;&gt;country states database&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;answers&quot;&gt;Answers&lt;a class=&quot;zola-anchor&quot; href=&quot;#answers&quot; aria-label=&quot;Anchor link for: answers&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;37827468&#x2F;find-the-nearest-location-by-latitude-and-longitude-in-postgresql&quot;&gt;find the nearest location by latitude and longitude in postgresql&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.munderwood.ca&#x2F;index.php&#x2F;2015&#x2F;05&#x2F;28&#x2F;altering-postgresql-columns-from-one-enum-to-another&#x2F;&quot;&gt;change postgres enum type&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;orm&quot;&gt;ORM&lt;a class=&quot;zola-anchor&quot; href=&quot;#orm&quot; aria-label=&quot;Anchor link for: orm&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;prisma&#x2F;prisma&quot;&gt;prisma&lt;&#x2F;a&gt; - Next-generation ORM for Node.js &amp;amp; TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite &amp;amp; MongoDB (Preview)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;offline&quot;&gt;Offline&lt;a class=&quot;zola-anchor&quot; href=&quot;#offline&quot; aria-label=&quot;Anchor link for: offline&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pubkey&#x2F;rxdb&quot;&gt;rxdb&lt;&#x2F;a&gt; - 🔄 A realtime Database for JavaScript Applications&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apache&#x2F;couchdb&quot;&gt;couchdb&lt;&#x2F;a&gt; - Seamless multi-master syncing database with an intuitive HTTP&#x2F;JSON API, designed for reliability&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;localForage&#x2F;localForage&quot;&gt;localforage&lt;&#x2F;a&gt; - 💾 Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Kinto&#x2F;kinto.js&#x2F;&quot;&gt;kinto&lt;&#x2F;a&gt; - An Offline-First JavaScript Client for Kinto.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pouchdb&#x2F;pouchdb&quot;&gt;puchdb&lt;&#x2F;a&gt; - 🐨 - PouchDB is a pocket-sized database.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sqlime.org&#x2F;&quot;&gt;sqlite playgound&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;supabase&#x2F;postgres&quot;&gt;supabase&#x2F;postgres&lt;&#x2F;a&gt; - Unmodified Postgres with some useful plugins&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;sqlite&quot;&gt;Sqlite&lt;a class=&quot;zola-anchor&quot; href=&quot;#sqlite&quot; aria-label=&quot;Anchor link for: sqlite&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;phiresky&#x2F;sql.js-httpvfs&quot;&gt;Sqllite httpvfs&lt;&#x2F;a&gt; - Query Sqlite with static files&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;benbjohnson&#x2F;litestream&quot;&gt;Litestream&lt;&#x2F;a&gt; - Streaming replication for SQLite.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;version&quot;&gt;Version&lt;a class=&quot;zola-anchor&quot; href=&quot;#version&quot; aria-label=&quot;Anchor link for: version&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dolthub&#x2F;dolt&quot;&gt;Dolt&lt;&#x2F;a&gt; - Dolt – It’s Git for Data&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;deno&quot;&gt;Deno&lt;a class=&quot;zola-anchor&quot; href=&quot;#deno&quot; aria-label=&quot;Anchor link for: deno&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;framework&quot;&gt;Framework&lt;a class=&quot;zola-anchor&quot; href=&quot;#framework&quot; aria-label=&quot;Anchor link for: framework&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alephjs&#x2F;aleph.js&quot;&gt;aleph&lt;&#x2F;a&gt; - The Full-stack Framework, ssr, next.js alternative in Deno.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;exhibitionist-digital&#x2F;ultra&quot;&gt;ultra&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;serverless&quot;&gt;Serverless&lt;a class=&quot;zola-anchor&quot; href=&quot;#serverless&quot; aria-label=&quot;Anchor link for: serverless&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vercel-community&#x2F;deno&quot;&gt;Vercel Deno Runtime&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;editor&quot;&gt;Editor&lt;a class=&quot;zola-anchor&quot; href=&quot;#editor&quot; aria-label=&quot;Anchor link for: editor&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ai-enhance&quot;&gt;AI Enhance&lt;a class=&quot;zola-anchor&quot; href=&quot;#ai-enhance&quot; aria-label=&quot;Anchor link for: ai-enhance&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;copilot.github.com&#x2F;&quot;&gt;GitHub Copilot · Your AI pair programmer&lt;&#x2F;a&gt; - Github Copilot&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;front-end&quot;&gt;Front-End&lt;a class=&quot;zola-anchor&quot; href=&quot;#front-end&quot; aria-label=&quot;Anchor link for: front-end&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;suren-atoyan&#x2F;monaco-react&quot;&gt;Monaco React&lt;&#x2F;a&gt; - Code Editor UI for React&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;broswer-extensioon-dev&quot;&gt;Broswer Extensioon Dev&lt;a class=&quot;zola-anchor&quot; href=&quot;#broswer-extensioon-dev&quot; aria-label=&quot;Anchor link for: broswer-extensioon-dev&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;webextension-polyfill&quot;&gt;WebExtension browser API Polyfill&lt;&#x2F;a&gt; - A lightweight polyfill library for Promise-based WebExtension APIs in Chrome&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;configure-as-frontend&quot;&gt;Configure as FrontEnd&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure-as-frontend&quot; aria-label=&quot;Anchor link for: configure-as-frontend&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;instawork&#x2F;hyperview&quot;&gt;Hyperview&lt;&#x2F;a&gt; - Backend xml to native app. #ReactNative&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;gatby-framework&quot;&gt;Gatby Framework&lt;a class=&quot;zola-anchor&quot; href=&quot;#gatby-framework&quot; aria-label=&quot;Anchor link for: gatby-framework&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;a class=&quot;zola-anchor&quot; href=&quot;#plugins&quot; aria-label=&quot;Anchor link for: plugins&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kraynel&#x2F;gatsby-transformer-gitinfo&quot;&gt;GitHub - kraynel&#x2F;gatsby-transformer-gitinfo&lt;&#x2F;a&gt; - Add git info to file, so you can get last update date for your files.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;angeloashmore&#x2F;gatsby-plugin-local-search&quot;&gt;gatsby-plugin-local-search&lt;&#x2F;a&gt; - Gatsby plugin for providing client-side search for data available in Gatsby’s GraphQL layer using a variety of engines&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tutorials&quot;&gt;Tutorials&lt;a class=&quot;zola-anchor&quot; href=&quot;#tutorials&quot; aria-label=&quot;Anchor link for: tutorials&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;56025679&#x2F;how-to-get-last-update-date-of-a-blog-post-in-gatsby-js&quot;&gt;How to get ‘Last Update Date’ of a blog post in GATSBY.js - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;id-sheng-cheng-fang-an&quot;&gt;ID 生成方案&lt;a class=&quot;zola-anchor&quot; href=&quot;#id-sheng-cheng-fang-an&quot; aria-label=&quot;Anchor link for: id-sheng-cheng-fang-an&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;UUID&lt;&#x2F;li&gt;
+&lt;li&gt;sonyflake&lt;&#x2F;li&gt;
+&lt;li&gt;snowflake&lt;&#x2F;li&gt;
+&lt;li&gt;ksuid&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ai&#x2F;nanoid&quot;&gt;nanoid&lt;&#x2F;a&gt; - &lt;code&gt;V1StGXR8_Z5jdHi6B-myT&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;tiny id: https:&#x2F;&#x2F;github.com&#x2F;paulgb&#x2F;tiny_id&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;date&quot;&gt;Date&lt;a class=&quot;zola-anchor&quot; href=&quot;#date&quot; aria-label=&quot;Anchor link for: date&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dev.to&#x2F;aminnairi&#x2F;you-probably-don-t-need-moment-js-493m&quot;&gt;You probably don’t need Moment.js&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;github&quot;&gt;Github&lt;a class=&quot;zola-anchor&quot; href=&quot;#github&quot; aria-label=&quot;Anchor link for: github&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;you-dont-need&#x2F;You-Dont-Need-Momentjs&quot;&gt;GitHub - you-dont-need&#x2F;You-Dont-Need-Momentjs: List of functions which you can use to replace moment.js + ESLint Plugin&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;low-code&quot;&gt;Low Code&lt;a class=&quot;zola-anchor&quot; href=&quot;#low-code&quot; aria-label=&quot;Anchor link for: low-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lowdefy&#x2F;lowdefy&quot;&gt;lowdefy&lt;&#x2F;a&gt; - An open-source, self-hosted, low-code framework to build internal tools, web apps, admin panels, BI dashboards, workflows, and CRUD apps with YAML or JSON. 用 yaml 生成内部工具&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;forum&quot;&gt;Forum&lt;a class=&quot;zola-anchor&quot; href=&quot;#forum&quot; aria-label=&quot;Anchor link for: forum&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ansiwave&#x2F;ansiwave&quot;&gt;Ansiwave&lt;&#x2F;a&gt; - Sqlite 驱动的，可离线的论坛&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;giscus&#x2F;giscus&quot;&gt;Giscus&lt;&#x2F;a&gt; - github discussion backend 评论系统&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;search&quot;&gt;Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#search&quot; aria-label=&quot;Anchor link for: search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;typesense&#x2F;typesense&quot;&gt;typesense&lt;&#x2F;a&gt; - Fast, typo tolerant, fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lucaong&#x2F;minisearch&quot;&gt;MiniSearch&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;a class=&quot;zola-anchor&quot; href=&quot;#protocol&quot; aria-label=&quot;Anchor link for: protocol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;Gemini&lt;&#x2F;a&gt; - 双子座是一种新的互联网协议，它：
+&lt;ul&gt;
+&lt;li&gt;比地鼠重&lt;&#x2F;li&gt;
+&lt;li&gt;比网络轻&lt;&#x2F;li&gt;
+&lt;li&gt;不会替换任何一个&lt;&#x2F;li&gt;
+&lt;li&gt;力求最大功率重量比&lt;&#x2F;li&gt;
+&lt;li&gt;非常重视用户隐私&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hypercore-protocol.org&#x2F;&quot;&gt;Hyper Protocol&lt;&#x2F;a&gt; - 分布式，仅追加的协议&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;encode-decode&quot;&gt;Encode&#x2F;Decode&lt;a class=&quot;zola-anchor&quot; href=&quot;#encode-decode&quot; aria-label=&quot;Anchor link for: encode-decode&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;KilledByAPixel&#x2F;JSONCrush&quot;&gt;json crush&lt;&#x2F;a&gt; - json to url friendly&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;schema&quot;&gt;Schema&lt;a class=&quot;zola-anchor&quot; href=&quot;#schema&quot; aria-label=&quot;Anchor link for: schema&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jviotti&#x2F;awesome-jsonschema&quot;&gt;Awesome Jsonschema&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;react-schemaorg&quot;&gt;react-schemaorg&lt;&#x2F;a&gt; - Type-checked Schema.org JSON-LD for React&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rjsf-team&#x2F;react-jsonschema-form&quot;&gt;react-jsonschema-form&lt;&#x2F;a&gt; - A React component for building Web forms from JSON Schema.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;semantic&quot;&gt;Semantic&lt;a class=&quot;zola-anchor&quot; href=&quot;#semantic&quot; aria-label=&quot;Anchor link for: semantic&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dbohdan&#x2F;classless-css&quot;&gt;Classless CSS&lt;&#x2F;a&gt; - A list of Classless CSS frameworks.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mblode.github.io&#x2F;marx&#x2F;documentation&#x2F;&quot;&gt;Marx&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;edwardtufte&#x2F;tufte-css&quot;&gt;Tufte&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;joshbuchea&#x2F;6f47e86d2510bce28f8e7f42ae84c716&quot;&gt;Git Semantic Commit Messages&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;css&quot;&gt;CSS&lt;a class=&quot;zola-anchor&quot; href=&quot;#css&quot; aria-label=&quot;Anchor link for: css&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;picocss.com&#x2F;&quot;&gt;picocss&lt;&#x2F;a&gt; - Minimal CSS Framework for semantic HTML&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;seo&quot;&gt;SEO&lt;a class=&quot;zola-anchor&quot; href=&quot;#seo&quot; aria-label=&quot;Anchor link for: seo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cards-dev.twitter.com&#x2F;validator&quot;&gt;Twitter Card Validator&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screenstab.com&#x2F;editor&#x2F;&quot;&gt;screen stab&lt;&#x2F;a&gt; - convert image to a more seo mode.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;monitors&quot;&gt;Monitors&lt;a class=&quot;zola-anchor&quot; href=&quot;#monitors&quot; aria-label=&quot;Anchor link for: monitors&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;littlewarden.com&quot;&gt;Little Warden&lt;&#x2F;a&gt; - Monitor your websides for things like expires, ssl error. £24.99&#x2F;Month&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;sample&quot;&gt;Sample&lt;a class=&quot;zola-anchor&quot; href=&quot;#sample&quot; aria-label=&quot;Anchor link for: sample&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;badssl.com&#x2F;&quot;&gt;Bad SSL&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;suan-fa&quot;&gt;算法&lt;a class=&quot;zola-anchor&quot; href=&quot;#suan-fa&quot; aria-label=&quot;Anchor link for: suan-fa&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhenghaoz&#x2F;gorse&quot;&gt;Gorse&lt;&#x2F;a&gt; - An open source recommender system service written in Go&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;code-in-cloud&quot;&gt;Code in Cloud&lt;a class=&quot;zola-anchor&quot; href=&quot;#code-in-cloud&quot; aria-label=&quot;Anchor link for: code-in-cloud&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neverinstall.com&#x2F;&quot;&gt;never install&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;vps-ce-su&quot;&gt;VPS 测速&lt;a class=&quot;zola-anchor&quot; href=&quot;#vps-ce-su&quot; aria-label=&quot;Anchor link for: vps-ce-su&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hostcsr.com&#x2F;speedtest.html&quot;&gt;CSR&lt;&#x2F;a&gt; - CSR 测速，有不少家的主机可以在线测试速度&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;static-site-generator&quot;&gt;Static Site Generator&lt;a class=&quot;zola-anchor&quot; href=&quot;#static-site-generator&quot; aria-label=&quot;Anchor link for: static-site-generator&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;framework-1&quot;&gt;Framework&lt;a class=&quot;zola-anchor&quot; href=&quot;#framework-1&quot; aria-label=&quot;Anchor link for: framework-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.11ty.dev&#x2F;docs&#x2F;getting-started&#x2F;&quot;&gt;Eleventy&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;docs&#x2F;tutorial&#x2F;&quot;&gt;Gatsby&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docusaurus.io&#x2F;&quot;&gt;Docusaurus&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;grego&#x2F;blades&quot;&gt;blade site&lt;&#x2F;a&gt; - rust generator, blaze fast&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;starter&quot;&gt;Starter&lt;a class=&quot;zola-anchor&quot; href=&quot;#starter&quot; aria-label=&quot;Anchor link for: starter&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stefanfrede&#x2F;11st-starter-kit&quot;&gt;GitHub - stefanfrede&#x2F;11st-starter-kit: 11ty, powered by Snowpack with Tailwind CSS and Alpine.js.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;comments&quot;&gt;Comments&lt;a class=&quot;zola-anchor&quot; href=&quot;#comments&quot; aria-label=&quot;Anchor link for: comments&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;eduardoboucas&#x2F;staticman&quot;&gt;Static Man&lt;&#x2F;a&gt; - 💪 User-generated content for Git-powered websites, comment save to repo.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;marddown-tools&quot;&gt;Marddown Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#marddown-tools&quot; aria-label=&quot;Anchor link for: marddown-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wooorm&#x2F;xdm&quot;&gt;xdm&lt;&#x2F;a&gt; - Just a &lt;em&gt;really&lt;&#x2F;em&gt; good MDX compiler. No runtime. With esbuild, Rollup, and webpack plugins&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;swift&quot;&gt;Swift&lt;a class=&quot;zola-anchor&quot; href=&quot;#swift&quot; aria-label=&quot;Anchor link for: swift&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;resource-1&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource-1&quot; aria-label=&quot;Anchor link for: resource-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SwiftGGTeam&#x2F;the-swift-programming-language-in-chinese&quot;&gt;Swift Ebook in Chinese&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;uraimo&#x2F;Awesome-Swift-Playgrounds&quot;&gt;Awesome-Swift-Playgrounds&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;template&quot;&gt;Template&lt;a class=&quot;zola-anchor&quot; href=&quot;#template&quot; aria-label=&quot;Anchor link for: template&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;saas&quot;&gt;SAAS&lt;a class=&quot;zola-anchor&quot; href=&quot;#saas&quot; aria-label=&quot;Anchor link for: saas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gmpetrov&#x2F;utlimate-saas-js&quot;&gt;utlimate-saas-js&lt;&#x2F;a&gt; - Ultimate SAAS template Typescript&#x2F;Next.js&#x2F;NextAuth.js&#x2F;Prisma&#x2F;Stripe&#x2F;Tailwindcss&#x2F;Postgresql , Stop loosing time implementing authentication and payment over and over again. Focus on what brings value to your customers&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;template-engine&quot;&gt;Template Engine&lt;a class=&quot;zola-anchor&quot; href=&quot;#template-engine&quot; aria-label=&quot;Anchor link for: template-engine&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mustache&#x2F;mustache&quot;&gt;mustache&lt;&#x2F;a&gt; - Logic-less templates.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nickel-org&#x2F;rust-mustache&quot;&gt;rust-mustache&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;handlebars-lang&#x2F;handlebars.js#&quot;&gt;handlebars&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sunng87&#x2F;handlebars-rust&quot;&gt;handlebars-rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;boilerplate&quot;&gt;Boilerplate&lt;a class=&quot;zola-anchor&quot; href=&quot;#boilerplate&quot; aria-label=&quot;Anchor link for: boilerplate&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;makenew&#x2F;&quot;&gt;makenew&lt;&#x2F;a&gt; - Tested project skeletons to instantly bootstrap and reliably maintain your next project.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.matuzo.at&#x2F;blog&#x2F;html-boilerplate&#x2F;&quot;&gt;html boilerplate&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;landing-page&quot;&gt;Landing page&lt;a class=&quot;zola-anchor&quot; href=&quot;#landing-page&quot; aria-label=&quot;Anchor link for: landing-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dunky11&#x2F;react-saas-template&quot;&gt;react-saas&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cruip&#x2F;tailwind-landing-page-template&quot;&gt;tailwind langding page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sandoche&#x2F;Mobile-app-landingpage-template&quot;&gt;mobile app&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;docuemnts-templates&quot;&gt;Docuemnts Templates&lt;a class=&quot;zola-anchor&quot; href=&quot;#docuemnts-templates&quot; aria-label=&quot;Anchor link for: docuemnts-templates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kbariotis&#x2F;templatesf&quot;&gt;Document template&lt;&#x2F;a&gt; - A set of standard document templates.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;awesome-ui&quot;&gt;Awesome UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#awesome-ui&quot; aria-label=&quot;Anchor link for: awesome-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;articles-1&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles-1&quot; aria-label=&quot;Anchor link for: articles-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jgthms.com&#x2F;web-design-in-4-minutes&#x2F;&quot;&gt;Web Design in 4 minutes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alexmercedcoder.medium.com&#x2F;the-renaissance-of-server-side-rendering-with-alipine-and-htmx-reactivity-with-minimal-js-809e5442480f&quot;&gt;Alpine &amp;amp; HTMX 服务器端渲染的复兴&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tools-1&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools-1&quot; aria-label=&quot;Anchor link for: tools-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;search?q=rgb+to+hex&amp;amp;oq=rgb+to+hex&amp;amp;aqs=edge.0.0i433i512l4j0i512l2j69i65.2649j0j1&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;RGB to hex, hsl convert tool by Google&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screely.com&quot;&gt;screely&lt;&#x2F;a&gt; - Instantly Turn a Screenshot into a Browser Mockup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;formito.com&#x2F;tools&#x2F;favicon&quot;&gt;Logo generator&lt;&#x2F;a&gt; - generate logo like stripe or hacker news&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;command-tools-1&quot;&gt;Command Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#command-tools-1&quot; aria-label=&quot;Anchor link for: command-tools-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap-npm-starter&quot;&gt;Bootstrap npm starter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;free-resources&quot;&gt;Free Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-resources&quot; aria-label=&quot;Anchor link for: free-resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;illlustrations.co&#x2F;&quot;&gt;Open source illustrations kit&lt;&#x2F;a&gt; - Free illustrations images resource, #Free #Image #UI&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pravatar.cc&#x2F;&quot;&gt;placeholder avatar&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openmoji.org&#x2F;&quot;&gt;开源 emoji 库&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;demos&quot;&gt;Demos&lt;a class=&quot;zola-anchor&quot; href=&quot;#demos&quot; aria-label=&quot;Anchor link for: demos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shejidaren.com&#x2F;30-best-webgl-demo-examples.html&quot;&gt;体验 3D 互动 30 个使用 WebGL 技术的优秀网页设计案例&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;css-kuang-jia&quot;&gt;CSS 框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-kuang-jia&quot; aria-label=&quot;Anchor link for: css-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jgthms&#x2F;bulma&quot;&gt;bulma&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss&quot;&gt;tailwindcss&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;heybourn&#x2F;headwind&quot;&gt;headwind&lt;&#x2F;a&gt; vscode extension for sort class name&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss-forms&quot;&gt;tailwindcss-forms&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;daisyui.com&#x2F;&quot;&gt;daisy ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;aniftyco&#x2F;awesome-tailwindcss&#x2F;readme#ui-libraries-components--templates&quot;&gt;track awesome tailwind&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kutty.netlify.app&#x2F;docs&#x2F;&quot;&gt;kutty ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cruip&#x2F;tailwind-landing-page-template&quot;&gt;tailwind landing page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;milligram&#x2F;milligram&quot;&gt;milligram&lt;&#x2F;a&gt; - 极简主义 css&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;headlessui&quot;&gt;headlessui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;picocss&#x2F;pico&quot;&gt;Picocss&lt;&#x2F;a&gt; - 语义化的 CSS 框架，极简&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;unocss&#x2F;unocss&quot;&gt;Unocss&lt;&#x2F;a&gt; - 工具 css，集成了 tailwind 等&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tachyons.io&#x2F;&quot;&gt;Tachyons&lt;&#x2F;a&gt; - 另一个工具性 css 框架&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;react-ui&quot;&gt;React UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#react-ui&quot; aria-label=&quot;Anchor link for: react-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mantine.dev&#x2F;&quot;&gt;Mantine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;css-tools&quot;&gt;CSS Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-tools&quot; aria-label=&quot;Anchor link for: css-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;saadeghi&#x2F;theme-change&quot;&gt;theme-change&lt;&#x2F;a&gt; - Change CSS theme with toggle, buttons or select using CSS custom properties and localStorage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;realworld-inspiration&quot;&gt;Realworld inspiration&lt;a class=&quot;zola-anchor&quot; href=&quot;#realworld-inspiration&quot; aria-label=&quot;Anchor link for: realworld-inspiration&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.remotestories.com&quot;&gt;remotestories&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;themes&quot;&gt;Themes&lt;a class=&quot;zola-anchor&quot; href=&quot;#themes&quot; aria-label=&quot;Anchor link for: themes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thomaspark&#x2F;bootswatch&#x2F;&quot;&gt;bootstrap themes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;a class=&quot;zola-anchor&quot; href=&quot;#windows&quot; aria-label=&quot;Anchor link for: windows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dowww.spencerwoo.com&#x2F;&quot;&gt;在 Windows 上用 WSL 优雅开发&lt;&#x2F;a&gt; - 可能是市面上最详尽的中文 WSL 开发环境配置指南 的文档现场，本章我们将对 WSL 本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows 上面开发学习的基础知识。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;configure-as-server&quot;&gt;Configure as Server&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure-as-server&quot; aria-label=&quot;Anchor link for: configure-as-server&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;daptin&#x2F;daptin&quot;&gt;Daptin&lt;&#x2F;a&gt; - Daptin - Backend As A Service - GraphQL&#x2F;JSON-API Headless CMS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt; - Configuration as Code, use YAML to write automated workflows that run on Deno, with any Deno modules, Typescript&#x2F;Javascript codes&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bash-as-workflows&quot;&gt;Bash as Workflows&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash-as-workflows&quot; aria-label=&quot;Anchor link for: bash-as-workflows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;patchbay.pub&#x2F;&quot;&gt;Patchbay&lt;&#x2F;a&gt; - Poor man ifttt&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;common-url-scheme&quot;&gt;Common URL Scheme&lt;a class=&quot;zola-anchor&quot; href=&quot;#common-url-scheme&quot; aria-label=&quot;Anchor link for: common-url-scheme&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;iina&quot;&gt;IINA&lt;a class=&quot;zola-anchor&quot; href=&quot;#iina&quot; aria-label=&quot;Anchor link for: iina&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iina.io&#x2F;&quot;&gt;IINA - The modern media player for macOS&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Open stream video:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;iina:&#x2F;&#x2F;weblink?url&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;{encoed url}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;git-workflow&quot;&gt;Git Workflow&lt;a class=&quot;zola-anchor&quot; href=&quot;#git-workflow&quot; aria-label=&quot;Anchor link for: git-workflow&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;comparing-workflows&#x2F;gitflow-workflow&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;wac-cdn.atlassian.com&#x2F;dam&#x2F;jcr:8f00f1a4-ef2d-498a-a2c6-8020bb97902f&#x2F;03%20Release%20branches.svg?cdnVersion=1770&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;mac&quot;&gt;Mac&lt;a class=&quot;zola-anchor&quot; href=&quot;#mac&quot; aria-label=&quot;Anchor link for: mac&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vendasta&#x2F;setup-new-computer-script&quot;&gt;mac developer new computer script&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;svg&quot;&gt;SVG&lt;a class=&quot;zola-anchor&quot; href=&quot;#svg&quot; aria-label=&quot;Anchor link for: svg&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2018&#x2F;08&#x2F;svg.html&quot;&gt;SVG 图像入门教程 - 阮一峰的网络日志&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>开发技巧收藏</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
+		<id>https://www.owenyoung.com/dev-tips/</id>
+		<content type="html">&lt;p&gt;收集开发相关的技巧，比如中国需要的镜像服务等。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;jing-xiang-fu-wu&quot;&gt;镜像服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#jing-xiang-fu-wu&quot; aria-label=&quot;Anchor link for: jing-xiang-fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;github&quot;&gt;Github&lt;a class=&quot;zola-anchor&quot; href=&quot;#github&quot; aria-label=&quot;Anchor link for: github&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;doc.fastgit.org&#x2F;zh-cn&#x2F;&quot;&gt;Fastgit&lt;&#x2F;a&gt; - Github 国内镜像&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Download: &lt;code&gt;https:&#x2F;&#x2F;download.fastgit.org&#x2F;org&#x2F;repo&#x2F;xxx&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone &lt;code&gt;git clone https:&#x2F;&#x2F;github.com&#x2F;org&#x2F;repo&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Clone with ssh &lt;code&gt;git clone git@ssh.fastgit.org:theowenyoung&#x2F;gatsby-theme-primer-wiki.git&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;rust&quot;&gt;Rust&lt;a class=&quot;zola-anchor&quot; href=&quot;#rust&quot; aria-label=&quot;Anchor link for: rust&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&quot;&gt;rsproxy cn&lt;&#x2F;a&gt; - rust 国内镜像&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;docker&quot;&gt;Docker&lt;a class=&quot;zola-anchor&quot; href=&quot;#docker&quot; aria-label=&quot;Anchor link for: docker&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;阿里云公网: &lt;code&gt;https:&#x2F;&#x2F;registry.cn-hangzhou.aliyuncs.com&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;腾讯云： &lt;code&gt;https:&#x2F;&#x2F;mirror.ccs.tencentyun.com&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cloud.tencent.com&#x2F;document&#x2F;product&#x2F;1207&#x2F;45596&quot;&gt;使用说明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;code&gt;sudo vim &#x2F;etc&#x2F;docker&#x2F;daemon.json&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;registry-mirrors&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;mirror.ccs.tencentyun.com&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;] }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; systemctl restart docker
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;jie-jue-fang-an&quot;&gt;解决方案&lt;a class=&quot;zola-anchor&quot; href=&quot;#jie-jue-fang-an&quot; aria-label=&quot;Anchor link for: jie-jue-fang-an&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;developer.aliyun.com&#x2F;article&#x2F;645670?spm=5176.smartservice_service_chat.0.0.6a33709aQ2zFPh&quot;&gt;阿里云函数计算 php 环境如何自定义内置扩展，覆盖系统自带扩展&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bash-tips&quot;&gt;Bash Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash-tips&quot; aria-label=&quot;Anchor link for: bash-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;get-bash-script-parent-dir-absolute-path&quot;&gt;Get bash script parent dir absolute path&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-bash-script-parent-dir-absolute-path&quot; aria-label=&quot;Anchor link for: get-bash-script-parent-dir-absolute-path&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;workspace&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;$( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;$( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;dirname&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;BASH_SOURCE[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;}&amp;quot; )&#x2F;..&#x2F;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;dev&#x2F;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;pwd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;)&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-bash-script-dir-path&quot;&gt;Get bash script dir path&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-bash-script-dir-path&quot; aria-label=&quot;Anchor link for: get-bash-script-dir-path&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;workspace&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;$( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;$( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;dirname&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt; -- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;BASH_SOURCE[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;}&amp;quot; )&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;dev&#x2F;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;pwd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;)&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;bash-dotenv&quot;&gt;Bash Dotenv&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash-dotenv&quot; aria-label=&quot;Anchor link for: bash-dotenv&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;导出.env 文件到当前执行环境&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;-o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; allexport&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;source .env&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;+o&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; allexport
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;deno-tips&quot;&gt;Deno Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#deno-tips&quot; aria-label=&quot;Anchor link for: deno-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;dirname&quot;&gt;Dirname&lt;a class=&quot;zola-anchor&quot; href=&quot;#dirname&quot; aria-label=&quot;Anchor link for: dirname&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;ts&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-ts &quot;&gt;&lt;code class=&quot;language-ts&quot; data-lang=&quot;ts&quot;&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;const &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;__dirname &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;= new &lt;&#x2F;span&gt;&lt;span&gt;URL(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;.&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;import&lt;&#x2F;span&gt;&lt;span&gt;.meta.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;url&lt;&#x2F;span&gt;&lt;span&gt;).pathname;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;docker-tips&quot;&gt;Docker Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#docker-tips&quot; aria-label=&quot;Anchor link for: docker-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;docker-compose-exec-bin&quot;&gt;Docker compose exec bin&lt;a class=&quot;zola-anchor&quot; href=&quot;#docker-compose-exec-bin&quot; aria-label=&quot;Anchor link for: docker-compose-exec-bin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;docker-compose&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; exec service-name &#x2F;bin&#x2F;sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;stop-all-contains-and-remove&quot;&gt;Stop All contains and remove&lt;a class=&quot;zola-anchor&quot; href=&quot;#stop-all-contains-and-remove&quot; aria-label=&quot;Anchor link for: stop-all-contains-and-remove&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; docker stop $(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; docker ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -a -q&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; docker rm $(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; docker ps&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -a -q&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;clean-all&quot;&gt;Clean all&lt;a class=&quot;zola-anchor&quot; href=&quot;#clean-all&quot; aria-label=&quot;Anchor link for: clean-all&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; docker system prune&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --volumes
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; docker image prune&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -a
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;git-tips&quot;&gt;Git Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#git-tips&quot; aria-label=&quot;Anchor link for: git-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;generate-ssh-key&quot;&gt;Generate ssh key&lt;a class=&quot;zola-anchor&quot; href=&quot;#generate-ssh-key&quot; aria-label=&quot;Anchor link for: generate-ssh-key&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Reference: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;github&#x2F;authenticating-to-github&#x2F;connecting-to-github-with-ssh&#x2F;generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot;&gt;Generating a new SSH key and adding it to the ssh-agent - GitHub Docs&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;ssh-keygen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; ed25519&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -C &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;your_email@example.com&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# Start the ssh-agent in the background.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;eval &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;ssh-agent&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;)&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# Add your SSH private key to the ssh-agent
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;ssh-add ~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;&#x2F;.ssh&#x2F;id_ed25519
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Add ssh key to Github:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .ssh&#x2F;id_ed25519.pub
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;settings&#x2F;keys&quot;&gt;SSH Keys Setting&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;huo-qu-shou-ci-ti-jiao-shi-jian&quot;&gt;获取首次提交时间&lt;a class=&quot;zola-anchor&quot; href=&quot;#huo-qu-shou-ci-ti-jiao-shi-jian&quot; aria-label=&quot;Anchor link for: huo-qu-shou-ci-ti-jiao-shi-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;2390199&#x2F;finding-the-date-time-a-file-was-first-added-to-a-git-repository&#x2F;25633731&quot;&gt;Finding the date&#x2F;time a file was first added to a Git repository - Stack Overflow&lt;&#x2F;a&gt; - 获取首次提交时间&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ti-jiao-xiao-xi-de-mo-ban&quot;&gt;提交消息的模版&lt;a class=&quot;zola-anchor&quot; href=&quot;#ti-jiao-xiao-xi-de-mo-ban&quot; aria-label=&quot;Anchor link for: ti-jiao-xiao-xi-de-mo-ban&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;joshbuchea&#x2F;6f47e86d2510bce28f8e7f42ae84c716&quot;&gt;Git Semantic Commit Messages&lt;&#x2F;a&gt; - git 语义化提交消息模版&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang&quot;&gt;合并上游的时候不弹出确认框&lt;a class=&quot;zola-anchor&quot; href=&quot;#he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang&quot; aria-label=&quot;Anchor link for: he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; pull upstream main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --commit --no-edit
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;dui-suo-you-de-chong-tu-shang-you-de-geng-xin&quot;&gt;对所有的冲突上游的更新&lt;a class=&quot;zola-anchor&quot; href=&quot;#dui-suo-you-de-chong-tu-shang-you-de-geng-xin&quot; aria-label=&quot;Anchor link for: dui-suo-you-de-chong-tu-shang-you-de-geng-xin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; checkout&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --theirs&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;shou-ci-geng-xin-zi-repo-submodule&quot;&gt;首次更新子 repo submodule&lt;a class=&quot;zola-anchor&quot; href=&quot;#shou-ci-geng-xin-zi-repo-submodule&quot; aria-label=&quot;Anchor link for: shou-ci-geng-xin-zi-repo-submodule&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; submodule update&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --init --recursive
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Later&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; submodule update&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --recursive
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia&quot;&gt;Gitignore 忽略所有，除了文件夹&lt;a class=&quot;zola-anchor&quot; href=&quot;#gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia&quot; aria-label=&quot;Anchor link for: gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;folder&#x2F;*
+&lt;&#x2F;span&gt;&lt;span&gt;!&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;folder&#x2F;.gitkeep
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;go-template-tips&quot;&gt;Go Template Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#go-template-tips&quot; aria-label=&quot;Anchor link for: go-template-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Parent Variable, &lt;code&gt;{{$.XX}}&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;URL encode, &lt;code&gt;urlquery &amp;quot;https:&#x2F;&#x2F;test.com&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;kai-yuan-xu-ke-zheng&quot;&gt;开源许可证&lt;a class=&quot;zola-anchor&quot; href=&quot;#kai-yuan-xu-ke-zheng&quot; aria-label=&quot;Anchor link for: kai-yuan-xu-ke-zheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;attachments&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;By &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2011&#x2F;05&#x2F;how_to_choose_free_software_licenses.html&quot;&gt;如何选择开源许可证？&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;linux-common-commands&quot;&gt;Linux Common Commands&lt;a class=&quot;zola-anchor&quot; href=&quot;#linux-common-commands&quot; aria-label=&quot;Anchor link for: linux-common-commands&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;view-current-system-info&quot;&gt;View current system info&lt;a class=&quot;zola-anchor&quot; href=&quot;#view-current-system-info&quot; aria-label=&quot;Anchor link for: view-current-system-info&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;lsb_release&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -a
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Output:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;Distributor&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; ID:	Debian
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;Description:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;	Debian GNU&#x2F;Linux 10 (buster&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;Release:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;	10
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;Codename:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;	buster
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;view-all-users&quot;&gt;View all users&lt;a class=&quot;zola-anchor&quot; href=&quot;#view-all-users&quot; aria-label=&quot;Anchor link for: view-all-users&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;etc&#x2F;passwd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -v&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; nologin&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;|&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -v&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; halt&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;|&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -v&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; shutdown&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;|&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;awk&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -F&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;:&amp;quot; &amp;#39;{ print $1&amp;quot;|&amp;quot;$3&amp;quot;|&amp;quot;$4 }&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;|&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;more
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-publish-ip&quot;&gt;Get Publish IP&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-publish-ip&quot; aria-label=&quot;Anchor link for: get-publish-ip&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;hostname&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -I
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;change-user-group&quot;&gt;Change user group&lt;a class=&quot;zola-anchor&quot; href=&quot;#change-user-group&quot; aria-label=&quot;Anchor link for: change-user-group&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;usermod&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -g&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; groupname username
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-user-group&quot;&gt;Get user group&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-user-group&quot; aria-label=&quot;Anchor link for: get-user-group&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;id&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -g -n
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;remove-apt-ppa&quot;&gt;Remove apt ppa&lt;a class=&quot;zola-anchor&quot; href=&quot;#remove-apt-ppa&quot; aria-label=&quot;Anchor link for: remove-apt-ppa&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; add-apt-repository&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --remove&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; ppa:qbittorrent-team&#x2F;qbittorrent-stable
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-current-shell&quot;&gt;Get current shell&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-current-shell&quot; aria-label=&quot;Anchor link for: get-current-shell&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;SHELL&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-current-cpu-arch&quot;&gt;Get current cpu arch&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-current-cpu-arch&quot; aria-label=&quot;Anchor link for: get-current-cpu-arch&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;arch
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;or&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;dpkg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --print-architecture
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;unzip-tar-gz&quot;&gt;Unzip tar.gz&lt;a class=&quot;zola-anchor&quot; href=&quot;#unzip-tar-gz&quot; aria-label=&quot;Anchor link for: unzip-tar-gz&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;tar&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -xf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; x.tar.gz
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;linuxize.com&#x2F;post&#x2F;how-to-extract-unzip-tar-gz-file&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Tar to specific directory&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;tar&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -xf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; x.tar.gz&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -C&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .&#x2F;xxx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;stdout-to-file&quot;&gt;Stdout to File&lt;a class=&quot;zola-anchor&quot; href=&quot;#stdout-to-file&quot; aria-label=&quot;Anchor link for: stdout-to-file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;command &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; file
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Overwrite:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;command &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;file.txt &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;download-upload-file-by-ssh-scp&quot;&gt;Download&#x2F;Upload file by SSH SCP&lt;a class=&quot;zola-anchor&quot; href=&quot;#download-upload-file-by-ssh-scp&quot; aria-label=&quot;Anchor link for: download-upload-file-by-ssh-scp&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Download to local:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;scp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; root@ip:&#x2F;path &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;&#x2F;Downloads
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;remove-node-modules&quot;&gt;Remove node_modules&lt;a class=&quot;zola-anchor&quot; href=&quot;#remove-node-modules&quot; aria-label=&quot;Anchor link for: remove-node-modules&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;find&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;node_modules&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -prune -exec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; rm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -rf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;{}&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; +
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;remove-target&quot;&gt;Remove target&lt;a class=&quot;zola-anchor&quot; href=&quot;#remove-target&quot; aria-label=&quot;Anchor link for: remove-target&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;find&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;target&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -prune -exec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; rm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -rf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;{}&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; +
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;find-and-replace-string&quot;&gt;Find and replace string&lt;a class=&quot;zola-anchor&quot; href=&quot;#find-and-replace-string&quot; aria-label=&quot;Anchor link for: find-and-replace-string&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sed&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;s&#x2F;old-text&#x2F;new-text&#x2F;g&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; input.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;soft-link&quot;&gt;Soft Link&lt;a class=&quot;zola-anchor&quot; href=&quot;#soft-link&quot; aria-label=&quot;Anchor link for: soft-link&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;ln&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; source_file target_file
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;create-user&quot;&gt;Create User&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-user&quot; aria-label=&quot;Anchor link for: create-user&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;useradd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -m&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; USERNAME
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: with home directory&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;get-all-shells&quot;&gt;Get all shells&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-all-shells&quot; aria-label=&quot;Anchor link for: get-all-shells&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;etc&#x2F;shells
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;last-n-lines-in-file&quot;&gt;Last n lines in file&lt;a class=&quot;zola-anchor&quot; href=&quot;#last-n-lines-in-file&quot; aria-label=&quot;Anchor link for: last-n-lines-in-file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;tail&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; file.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;linux-find-a-biggest-directory-in&quot;&gt;Linux find a biggest directory in .&#x2F;&lt;a class=&quot;zola-anchor&quot; href=&quot;#linux-find-a-biggest-directory-in&quot; aria-label=&quot;Anchor link for: linux-find-a-biggest-directory-in&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; du&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -a&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .&#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;&#x2F;dev&#x2F;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -n -r &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;head&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -n&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; 20
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;linux-find-a-biggest-file-in&quot;&gt;Linux find a biggest file in .&#x2F;&lt;a class=&quot;zola-anchor&quot; href=&quot;#linux-find-a-biggest-file-in&quot; aria-label=&quot;Anchor link for: linux-find-a-biggest-file-in&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;find&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -printf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;%s %p\n&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -nr &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;head&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -10
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;linux-view-systemctl-log&quot;&gt;Linux view systemctl log:&lt;a class=&quot;zola-anchor&quot; href=&quot;#linux-view-systemctl-log&quot; aria-label=&quot;Anchor link for: linux-view-systemctl-log&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; journalctl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -f -u&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; service-name.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;see-who-connect-with-me&quot;&gt;See who connect with Me&lt;a class=&quot;zola-anchor&quot; href=&quot;#see-who-connect-with-me&quot; aria-label=&quot;Anchor link for: see-who-connect-with-me&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.linuxshelltips.com&#x2F;find-ip-addresses-are-connected-to-linux&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;ss&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -tun&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; state connected
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;sort-by-ip-connect-with-443&quot;&gt;Sort by ip connect with 443&lt;a class=&quot;zola-anchor&quot; href=&quot;#sort-by-ip-connect-with-443&quot; aria-label=&quot;Anchor link for: sort-by-ip-connect-with-443&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;netstat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -tn 2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;&#x2F;dev&#x2F;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -E &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;\s[0-9.]+:443\s&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;awk &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;{print $5}&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;cut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; :&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; 1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sort &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;uniq&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sort&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -nr
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;ban&quot;&gt;Ban&lt;a class=&quot;zola-anchor&quot; href=&quot;#ban&quot; aria-label=&quot;Anchor link for: ban&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.rackspace.com&#x2F;support&#x2F;how-to&#x2F;block-an-ip-address-on-a-Linux-server&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; systemctl status firewalld
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; firewall-cmd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --permanent --add-rich-rule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;rule family=&amp;#39;ipv4&amp;#39; source address=&amp;#39;202.61.254.136&amp;#39; reject&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; firewall-cmd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --reload
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; firewall-cmd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --list-all
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;kill-tcp&quot;&gt;Kill tcp&lt;a class=&quot;zola-anchor&quot; href=&quot;#kill-tcp&quot; aria-label=&quot;Anchor link for: kill-tcp&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;tcpkill&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; host &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;ip&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;nodejs-tips&quot;&gt;Nodejs Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#nodejs-tips&quot; aria-label=&quot;Anchor link for: nodejs-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;delete-node-modules-folder-recursively-from-a-specified-path-using-command-line&quot;&gt;Delete node_modules folder recursively from a specified path using command line&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-node-modules-folder-recursively-from-a-specified-path-using-command-line&quot; aria-label=&quot;Anchor link for: delete-node-modules-folder-recursively-from-a-specified-path-using-command-line&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;42950501&#x2F;delete-node-modules-folder-recursively-from-a-specified-path-using-command-line&quot;&gt;Delete node_modules folder recursively from a specified path using command line - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;find&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;node_modules&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -prune -exec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; rm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -rf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;{}&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; +
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-npm-token&quot;&gt;Get NPM Token&lt;a class=&quot;zola-anchor&quot; href=&quot;#get-npm-token&quot; aria-label=&quot;Anchor link for: get-npm-token&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; token create
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;check-npm-modules-updates&quot;&gt;Check NPM modules updates&lt;a class=&quot;zola-anchor&quot; href=&quot;#check-npm-modules-updates&quot; aria-label=&quot;Anchor link for: check-npm-modules-updates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; npm-check-updates
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Update to the latest version:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; npm-check-updates&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -u
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;postgresql-tips&quot;&gt;Postgresql Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#postgresql-tips&quot; aria-label=&quot;Anchor link for: postgresql-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;0-enter-psql&quot;&gt;0. Enter psql&lt;a class=&quot;zola-anchor&quot; href=&quot;#0-enter-psql&quot; aria-label=&quot;Anchor link for: 0-enter-psql&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;psql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;show-all-databases&quot;&gt;Show all databases&lt;a class=&quot;zola-anchor&quot; href=&quot;#show-all-databases&quot; aria-label=&quot;Anchor link for: show-all-databases&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;\l
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;enter-database&quot;&gt;Enter Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#enter-database&quot; aria-label=&quot;Anchor link for: enter-database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;\c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;database_name
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;show-all-tables&quot;&gt;Show all Tables&lt;a class=&quot;zola-anchor&quot; href=&quot;#show-all-tables&quot; aria-label=&quot;Anchor link for: show-all-tables&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;\d
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;show-table-structure&quot;&gt;Show Table structure&lt;a class=&quot;zola-anchor&quot; href=&quot;#show-table-structure&quot; aria-label=&quot;Anchor link for: show-table-structure&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;\d &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;table_name
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;pretty-print-table&quot;&gt;Pretty print table&lt;a class=&quot;zola-anchor&quot; href=&quot;#pretty-print-table&quot; aria-label=&quot;Anchor link for: pretty-print-table&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;\x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;on
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;alter-table&quot;&gt;Alter table&lt;a class=&quot;zola-anchor&quot; href=&quot;#alter-table&quot; aria-label=&quot;Anchor link for: alter-table&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;sql-altertable.html&quot;&gt;https:&#x2F;&#x2F;www.postgresql.org&#x2F;docs&#x2F;current&#x2F;sql-altertable.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;upsert&quot;&gt;Upsert&lt;a class=&quot;zola-anchor&quot; href=&quot;#upsert&quot; aria-label=&quot;Anchor link for: upsert&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;61494958&#x2F;postgres-on-conflict-do-update-only-non-null-values-in-python&quot;&gt;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;61494958&#x2F;postgres-on-conflict-do-update-only-non-null-values-in-python&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;export-schema&quot;&gt;Export Schema&lt;a class=&quot;zola-anchor&quot; href=&quot;#export-schema&quot; aria-label=&quot;Anchor link for: export-schema&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;pg_dump&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; database_name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -s --no-owner &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; schema.sql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;export-only-data&quot;&gt;Export Only data&lt;a class=&quot;zola-anchor&quot; href=&quot;#export-only-data&quot; aria-label=&quot;Anchor link for: export-only-data&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;pg_dump&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; database_name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -a --no-owner &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; data.sql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;delete-or-drop-or-remove-database&quot;&gt;Delete or Drop or Remove Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-or-drop-or-remove-database&quot; aria-label=&quot;Anchor link for: delete-or-drop-or-remove-database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;psql
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;drop&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; database database_name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;create-database&quot;&gt;Create Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#create-database&quot; aria-label=&quot;Anchor link for: create-database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;psql
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;CREATE&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; DATABASE name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;import-database&quot;&gt;Import Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#import-database&quot; aria-label=&quot;Anchor link for: import-database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;psql&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; database_name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; data.sql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;css&quot;&gt;CSS&lt;a class=&quot;zola-anchor&quot; href=&quot;#css&quot; aria-label=&quot;Anchor link for: css&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;smart-word-break-in-css&quot;&gt;Smart word break in CSS&lt;a class=&quot;zola-anchor&quot; href=&quot;#smart-word-break-in-css&quot; aria-label=&quot;Anchor link for: smart-word-break-in-css&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;From &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;a&#x2F;48830291&quot;&gt;Smarter word break in CSS? - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;css&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-css &quot;&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;body &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;overflow-wrap&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;break-word&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;word-wrap&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;break-word&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;-ms-word-break&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;break-all&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;word-break&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;break-word&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;-ms-hyphens&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;auto&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;-moz-hyphens&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;auto&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;-webkit-hyphens&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;auto&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c99e00;&quot;&gt;hyphens&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;auto&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;vim-tips&quot;&gt;Vim Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#vim-tips&quot; aria-label=&quot;Anchor link for: vim-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.vim.so&#x2F;&quot;&gt;Vim online exercises&lt;&#x2F;a&gt; - help you master vim with interactive exercises.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tips&quot;&gt;Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#tips&quot; aria-label=&quot;Anchor link for: tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Delete all words: &lt;code&gt;1,$d&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Current line end: &lt;code&gt;$&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Replace all string: &lt;code&gt;s&#x2F;string&#x2F;replace_string&#x2F;g&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;vs-code-tips&quot;&gt;VS Code Tips&lt;a class=&quot;zola-anchor&quot; href=&quot;#vs-code-tips&quot; aria-label=&quot;Anchor link for: vs-code-tips&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;open-command-palette-p&quot;&gt;Open command palette: &lt;code&gt;⇧⌘P&lt;&#x2F;code&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#open-command-palette-p&quot; aria-label=&quot;Anchor link for: open-command-palette-p&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;select-current-line-cmd-l&quot;&gt;Select current line: &lt;code&gt;cmd+L&lt;&#x2F;code&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#select-current-line-cmd-l&quot; aria-label=&quot;Anchor link for: select-current-line-cmd-l&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;quick-switch-windows&quot;&gt;Quick Switch Windows&lt;a class=&quot;zola-anchor&quot; href=&quot;#quick-switch-windows&quot; aria-label=&quot;Anchor link for: quick-switch-windows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;37371739&#x2F;os-x-cycle-between-windows-in-visual-studio-code&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Added the following shortcut to &lt;code&gt;keybindings.json&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;key&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;alt+tab&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;command&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;workbench.action.quickSwitchWindow&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;read-more&quot;&gt;Read more:&lt;a class=&quot;zola-anchor&quot; href=&quot;#read-more&quot; aria-label=&quot;Anchor link for: read-more&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;docs&#x2F;getstarted&#x2F;tips-and-tricks&quot;&gt;Visual Studio Code Tips and Tricks&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;vscode-tips-and-tricks&quot;&gt;GitHub - microsoft&#x2F;vscode-tips-and-tricks: Collection of helpful tips and tricks for VS Code.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>Flutter相关资源汇总</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/flutter/" type="text/html"/>
+		<id>https://www.owenyoung.com/flutter/</id>
+		<content type="html">&lt;p&gt;收集 Flutter 相关资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;cros&quot;&gt;Cros&lt;a class=&quot;zola-anchor&quot; href=&quot;#cros&quot; aria-label=&quot;Anchor link for: cros&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;betterprogramming.pub&#x2F;flutter-failed-to-solve-the-biggest-challenge-for-our-cross-platform-app-c551afa0ef18&quot;&gt;Flutter Failed To Solve the Biggest Challenge for Our Cross-Platform App&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ahammer&#x2F;dart_board&quot;&gt;Dart Board&lt;&#x2F;a&gt; - Dart Board is a Framework&#x2F;Architecture pattern for Flutter applications.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;flutter.dev&#x2F;docs&#x2F;development&#x2F;data-and-backend&#x2F;json#code-generation&quot;&gt;Dart JSON and serialization&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;books&quot;&gt;Books&lt;a class=&quot;zola-anchor&quot; href=&quot;#books&quot; aria-label=&quot;Anchor link for: books&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Flutter in action]](https:&#x2F;&#x2F;livebook.manning.com&#x2F;book&#x2F;flutter-in-action&#x2F;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Solido&#x2F;awesome-flutter&quot;&gt;awesome flutter&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;Solido&#x2F;awesome-flutter&#x2F;readme&#x2F;&quot;&gt;track&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tortuvshin&#x2F;open-source-flutter-apps&quot;&gt;open-source-flutter-apps&lt;&#x2F;a&gt; - 📱 List of open source Flutter applications :octocat:&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iampawan&#x2F;FlutterExampleApps&quot;&gt;flutter example apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flutter&#x2F;samples&quot;&gt;flutter official sample apps&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diegoveloper&#x2F;flutter-samples&quot;&gt;flutter sample apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;roadmap&quot;&gt;Roadmap&lt;a class=&quot;zola-anchor&quot; href=&quot;#roadmap&quot; aria-label=&quot;Anchor link for: roadmap&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;olexale&#x2F;flutter_roadmap&quot;&gt;flutter roadmap&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhong-wen-zi-yuan&quot;&gt;中文资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-zi-yuan&quot; aria-label=&quot;Anchor link for: zhong-wen-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.flutterchina.club&#x2F;&quot;&gt;Flutter 实战&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pp4y187w6?p=2&quot;&gt;Flutter 视频教程-从零到上架&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codelabs.developers.google.com&#x2F;codelabs&#x2F;flutter&#x2F;#0&quot;&gt;用 flutter 构建一个聊天应用界面-谷歌官方出品&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.dartcn.com&#x2F;guides&#x2F;language&#x2F;language-tour&quot;&gt;Dart 语言概览&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;flutterchina.club&#x2F;tutorials&#x2F;layout&#x2F;&quot;&gt;flutter 布局教程&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;a class=&quot;zola-anchor&quot; href=&quot;#libraries&quot; aria-label=&quot;Anchor link for: libraries&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;e-oj&#x2F;visa&quot;&gt;visa&lt;&#x2F;a&gt; - Easy third party authentication (OAuth 2.0) for Flutter apps.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fluttercandies&#x2F;flutter_wechat_assets_picker&quot;&gt;wechat-assets-picker&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;flutter_platform_widgets&quot;&gt;flutter platform widgets&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LiewJunTung&#x2F;pin_code_text_field&quot;&gt;pin code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aagarwal1012&#x2F;Liquid-Pull-To-Refresh&quot;&gt;pull refresh&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jaweii&#x2F;Flutter_beautiful_popup&#x2F;blob&#x2F;master&#x2F;README_CN.md&quot;&gt;advanced popup&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chrisedg87&#x2F;flutter_rounded_loading_button&quot;&gt;loading button&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pedromassango&#x2F;titled_navigation_bar&quot;&gt;titled navigation bar&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jamesblasco&#x2F;modal_bottom_sheet&quot;&gt;modal_bottom_sheet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jogboms&#x2F;flutter_offline&quot;&gt;flutter offline&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rvamsikrishna&#x2F;inview_notifier_list&quot;&gt;inview_notifier_list&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SimformSolutionsPvtLtd&#x2F;flutter_showcaseview&quot;&gt;show case view&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;letsar&#x2F;flutter_slidable&quot;&gt;sliable actions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aliyigitbireroglu&#x2F;flutter-peek-and-pop#media&quot;&gt;peek and pop&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hnvn&#x2F;flutter_shimmer&quot;&gt;shimmer&lt;&#x2F;a&gt; - blingbling effet&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;i-protoss&#x2F;wave&quot;&gt;wave effect&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GeekyAnts&#x2F;flutter-login-home-animation&quot;&gt;signin effect&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;serenader2014&#x2F;flutter_carousel_slider&quot;&gt;image slider&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bluefireteam&#x2F;photo_view&quot;&gt;photo view&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dnfield&#x2F;flutter_svg&quot;&gt;flutter svg&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hnvn&#x2F;flutter_image_cropper&quot;&gt;flutter image crop&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Baseflow&#x2F;flutter_cached_network_image&quot;&gt;image cache&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flutter&#x2F;plugins&#x2F;tree&#x2F;master&#x2F;packages&#x2F;url_launcher&#x2F;url_launcher&quot;&gt;url launcher&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flutter&#x2F;plugins&quot;&gt;flutter plugins&lt;&#x2F;a&gt; - official plugins&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jonataslaw&#x2F;getx&quot;&gt;getx&lt;&#x2F;a&gt; - router, navigation&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leisim&#x2F;auto_size_text&quot;&gt;auto sized text&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dart-lang&#x2F;usage&quot;&gt;gooble anylyze&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;baseflow&#x2F;flutter-permission-handler&quot;&gt;permission handler&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tekartik&#x2F;sqflite&quot;&gt;flutter sqlite&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;simolus3&#x2F;moor&quot;&gt;drift&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aagarwal1012&#x2F;Animated-Text-Kit&quot;&gt;animated text kit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;OpenFlutter&#x2F;fluwx&quot;&gt;flutter wechat&lt;&#x2F;a&gt; - flutter 微信 sdk&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;tiktoklikescroller&quot;&gt;tiktoklike scrooler&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rrousselgit&#x2F;river_pod&quot;&gt;river_pod&lt;&#x2F;a&gt; - A simple way to access state while robust and testable.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;very_good_cli&quot;&gt;very good cli&lt;&#x2F;a&gt; - create kool template flutter cli&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;birjuvachhani&#x2F;adaptive_theme&quot;&gt;adptive theme&lt;&#x2F;a&gt; - Easiest way to add support for light and dark theme in your flutter app.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;responsive_framework&quot;&gt;responsive_framework&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;flutter_secure_storage&quot;&gt;flutter secure storage&lt;&#x2F;a&gt; - Flutter Secure Storage provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;java-james&#x2F;flutter_dotenv&quot;&gt;flutter dotenv&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flutter-webrtc&#x2F;flutter-webrtc&quot;&gt;flutter webrtc&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flyerhq&#x2F;flutter_chat_ui&quot;&gt;flutter chat ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;flutter_markdown&quot;&gt;flutter_markdown&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bcgit&#x2F;pc-dart&quot;&gt;pointycastle&lt;&#x2F;a&gt; - flutter encode, decode, sha1, sha3, hmac…&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ch-muhammad-adil&#x2F;flutter-plugin-circular_profile_avatar&quot;&gt;avatar &lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;uni_links&quot;&gt;uni_links&lt;&#x2F;a&gt; – uni links&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mobiten&#x2F;flutter_phoenix&quot;&gt;phoenix&lt;&#x2F;a&gt; – app restart lifetime&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pub.dev&#x2F;packages&#x2F;text_editor&quot;&gt;text_editor&lt;&#x2F;a&gt; - Instagram like text editor&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leisim&#x2F;auto_size_text&quot;&gt;auto size text&lt;&#x2F;a&gt; - auto size text&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;malikwang&#x2F;custom_pop_up_menu&quot;&gt;custom pop up menu&lt;&#x2F;a&gt; - 仿微信消息弹出菜单&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;apps&quot;&gt;Apps&lt;a class=&quot;zola-anchor&quot; href=&quot;#apps&quot; aria-label=&quot;Anchor link for: apps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Ivaskuu&#x2F;tinder_cards&quot;&gt;flutter-tinder&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;geekruchika&#x2F;FlutterCardSwipe&quot;&gt;card swipe&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;fluffychat&quot;&gt;flutty chat&lt;&#x2F;a&gt; - FluffyChat is a multi-platform Matrix client written in Dart&#x2F;Flutter. It compiles to native code on Android, iOS, macOS, Windows and Linux and renders with Skia on the web. FluffyChat is just a hobby project from the developers of Famedly and licensed under AGPLv3. It follows a design philosophy to be minimalistic, inclusive and easy to use.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flutter&#x2F;gallery&quot;&gt;flutter gallery&lt;&#x2F;a&gt; - A full components by official&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Ivaskuu&#x2F;tinder_cards&quot;&gt;tinder cards&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;duytq94&#x2F;flutter-fb-reactions-animation&quot;&gt;facebook reactions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iampawan&#x2F;FlutterWhatsAppClone&quot;&gt;whatsapp clone&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;JideGuru&#x2F;FlutterFoodybite&quot;&gt;flutter food bite&lt;&#x2F;a&gt; - 挺好看的&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zubairehman&#x2F;flutter-boilerplate-project&quot;&gt;flutgter boilerplate&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bizz84&#x2F;starter_architecture_flutter_firebase&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;bizz84&#x2F;starter_architecture_flutter_firebase&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;templates&quot;&gt;Templates&lt;a class=&quot;zola-anchor&quot; href=&quot;#templates&quot; aria-label=&quot;Anchor link for: templates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nhancv&#x2F;nft&quot;&gt;nft template&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wem2017&#x2F;flutter_bloc_boilerplate&quot;&gt;bloc boilerplate&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>收集 Javascript 相关的资源</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/javascript/" type="text/html"/>
+		<id>https://www.owenyoung.com/javascript/</id>
+		<content type="html">&lt;p&gt;收集用过的，好用的 Javascipt 库。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;wen-zhang&quot;&gt;文章&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-zhang&quot; aria-label=&quot;Anchor link for: wen-zhang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.arewewebyet.org&#x2F;&quot;&gt;Are we web yet?&lt;&#x2F;a&gt; - web 框架的挑选&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ui-kuang-jia&quot;&gt;UI 框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#ui-kuang-jia&quot; aria-label=&quot;Anchor link for: ui-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;system-ui&#x2F;theme-ui&quot;&gt;GitHub - system-ui&#x2F;theme-ui: Build consistent, themeable React apps based on constraint-based design principles&lt;&#x2F;a&gt; - ThemeUI, 我愿意称之为真正的以配置主题为核心的 UI 框架，基本所有的元素样式都是配置出来的，页面 UI 里基本不怎么需要内联样式了，缺点（也可以说是优点）是内置组件少，适合自定义 UI 风格。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ui-zu-jian&quot;&gt;UI 组件&lt;a class=&quot;zola-anchor&quot; href=&quot;#ui-zu-jian&quot; aria-label=&quot;Anchor link for: ui-zu-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;atomiks&#x2F;tippyjs&quot;&gt;Tippyjs&lt;&#x2F;a&gt; - 弹出提示，tips, tooltip, popup&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yu-yan&quot;&gt;语言&lt;a class=&quot;zola-anchor&quot; href=&quot;#yu-yan&quot; aria-label=&quot;Anchor link for: yu-yan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;imba&#x2F;imba&quot;&gt;imba&lt;&#x2F;a&gt; - IMBA 语言，全栈语言，最终编译为 Javascript，内置 html,style&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;xing-neng-ce-shi&quot;&gt;性能测试&lt;a class=&quot;zola-anchor&quot; href=&quot;#xing-neng-ce-shi&quot; aria-label=&quot;Anchor link for: xing-neng-ce-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;krausest&#x2F;js-framework-benchmark&quot;&gt;js 框架性能测试&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;localvoid.github.io&#x2F;uibench&#x2F;&quot;&gt;ui bench&lt;&#x2F;a&gt; - another ui bench&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;qian-duan-kuang-jia&quot;&gt;前端框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#qian-duan-kuang-jia&quot; aria-label=&quot;Anchor link for: qian-duan-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;solidjs&#x2F;solid&quot;&gt;solid&lt;&#x2F;a&gt; - react like 的写法，但是性能极大的提高
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;solidjs&#x2F;solid-realworld&quot;&gt;solid real world example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LXSMNSYC&#x2F;solid-headless&quot;&gt;solid headless ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lit&#x2F;lit&quot;&gt;lit&lt;&#x2F;a&gt; - Lit is a simple library for building fast, lightweight web components.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;redwoodjs&#x2F;redwood&quot;&gt;redwood&lt;&#x2F;a&gt; - Bringing full-stack to the Jamstack.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sveltejs&#x2F;svelte&quot;&gt;svelte&lt;&#x2F;a&gt; - Cybernetically enhanced web apps
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sveltejs&#x2F;sapper&quot;&gt;sapper&lt;&#x2F;a&gt; - The next small thing in web development, powered by Svelte&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sveltejs&#x2F;kit&quot;&gt;svelte kit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;hui-zong-zi-yuan&quot;&gt;汇总资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#hui-zong-zi-yuan&quot; aria-label=&quot;Anchor link for: hui-zong-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;enaqx&#x2F;awesome-react&quot;&gt;awesome-react&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;gong-ju&quot;&gt;工具&lt;a class=&quot;zola-anchor&quot; href=&quot;#gong-ju&quot; aria-label=&quot;Anchor link for: gong-ju&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vercel&#x2F;turborepo&quot;&gt;Turborepo&lt;&#x2F;a&gt; - vercel mono repo tool&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;schema&quot;&gt;Schema&lt;a class=&quot;zola-anchor&quot; href=&quot;#schema&quot; aria-label=&quot;Anchor link for: schema&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[Zod(https:&#x2F;&#x2F;github.com&#x2F;colinhacks&#x2F;zod) - 好用的 JS Schema 验证库，再也不用担心 js 运行时类型问题了&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;a class=&quot;zola-anchor&quot; href=&quot;#libraries&quot; aria-label=&quot;Anchor link for: libraries&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mholt&#x2F;PapaParse&quot;&gt;PapaParse&lt;&#x2F;a&gt; - 解析 CSV 文件&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>Rust相关的资源</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/rust/" type="text/html"/>
+		<id>https://www.owenyoung.com/rust/</id>
+		<content type="html">&lt;p&gt;Curating awesome rust resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Dhghomon&#x2F;easy_rust&quot;&gt;Easy Rust&lt;&#x2F;a&gt; - A book that let you learn rust easy, rust explained using easy English, for non-English native.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kumakichi.github.io&#x2F;easy_rust_chs&#x2F;Chapter_0.html&quot;&gt;中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rustlings&#x2F;&quot;&gt;rustlings&lt;&#x2F;a&gt; - 🦀 Small exercises to get you used to reading and writing Rust code!
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;egghead.io&#x2F;courses&#x2F;learning-rust-by-solving-the-rustlings-exercises-a722&quot;&gt;Learning Rust by Working Through the Rustlings Exercises&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Mercateo&#x2F;rust-for-node-developers&quot;&gt;GitHub - Mercateo&#x2F;rust-for-node-developers: An introduction to the Rust programming language for Node developers.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;rust-by-example&#x2F;index.html&quot;&gt;Rust by Example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ctjhoa&#x2F;rust-learning&quot;&gt;rust-learning&lt;&#x2F;a&gt; - A bunch of links to blog posts, articles, videos, etc for learning Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang-nursery&#x2F;rust-cookbook&quot;&gt;rust cookbook&lt;&#x2F;a&gt; - This Rust Cookbook is a collection of simple Rust examples that demonstrate good practices to accomplish common programming tasks, using the crates of the Rust ecosystem.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-unofficial&#x2F;patterns&quot;&gt;Rust Design Patterns&lt;&#x2F;a&gt; - A catalogue of Rust design patterns, anti-patterns and idioms&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;en-us&#x2F;learn&#x2F;paths&#x2F;rust-first-steps&#x2F;&quot;&gt;Microsoft Rust First Class&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.microsoft.com&#x2F;zh-cn&#x2F;learn&#x2F;paths&#x2F;rust-first-steps&#x2F;&quot;&gt;中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;awesome-alternatives-in-rust&quot;&gt;awesome-alternatives-in-rust&lt;&#x2F;a&gt; - A curated list of replacements for existing software written in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cheats.rs&#x2F;&quot;&gt;Rust Language Cheat Sheet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;proc-macro-workshop&quot;&gt;Rust Latam: learn procedural macros workshop&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.cloudflare.com&#x2F;workers-rust-sdk&#x2F;&quot;&gt;Native Rust support on Cloudflare Workers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.lpalmieri.com&#x2F;posts&#x2F;error-handling-rust&#x2F;&quot;&gt;rust error handling&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actix&#x2F;examples&quot;&gt;actix examples&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;&quot;&gt;Rust 程序设计语言中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flosse&#x2F;rust-web-framework-comparison&quot;&gt;rust web framework comparison&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fasterthanli.me&#x2F;articles&#x2F;a-half-hour-to-learn-rust&quot;&gt;半小时学习 Rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;answeres&quot;&gt;Answeres&lt;a class=&quot;zola-anchor&quot; href=&quot;#answeres&quot; aria-label=&quot;Anchor link for: answeres&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;123278299&quot;&gt;【翻译】 Rust 中的 String 和&amp;amp;str&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;115651233&quot;&gt;【翻译】细谈 Rust 的所有权&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;356427780&quot;&gt;【译】Rust 宏：教程与示例（二）&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;52438988&#x2F;what-is-the-most-idiomatic-way-to-merge-two-error-types&quot;&gt;如何合并 error&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.logrocket.com&#x2F;configuration-management-in-rust-web-services&#x2F;&quot;&gt;rust 配置文件指南&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;romankudryashov.com&#x2F;blog&#x2F;2021&#x2F;06&#x2F;mongodb-redis-rust&#x2F;&quot;&gt;rust mongodb redis example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx&#x2F;issues&#x2F;1004&quot;&gt;rust sqlx postgres custom type&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.logrocket.com&#x2F;jwt-authentication-in-rust&#x2F;&quot;&gt;rust jwt example&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tokio.rs&#x2F;blog&#x2F;2021-05-14-inventing-the-service-trait&quot;&gt;tokio service 解析&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.purewhite.io&#x2F;2021&#x2F;05&#x2F;24&#x2F;inventing-the-service-trait&#x2F;&quot;&gt;中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.purewhite.io&#x2F;2021&#x2F;09&#x2F;01&#x2F;rust-faq&#x2F;&quot;&gt;关于 rust 的常见疑问中文版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;skerkour&#x2F;kerkour.com&#x2F;tree&#x2F;main&#x2F;2021&#x2F;rust_static_site_generator&quot;&gt;100 行实现 rust 静态网站生成&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust&#x2F;top&#x2F;?t=year&quot;&gt;Rust Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cargo-generate&#x2F;cargo-generate&quot;&gt;cargo-generate&lt;&#x2F;a&gt; - cargo, make me a project&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rustwasm&#x2F;wasm-pack&quot;&gt;wasm-pack&lt;&#x2F;a&gt; - your favorite rust -&amp;gt; wasm workflow tool!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Byron&#x2F;gitoxide&quot;&gt;gitoxide&lt;&#x2F;a&gt; - Git in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;watchexec&#x2F;cargo-watch&quot;&gt;Cargo Watch&lt;&#x2F;a&gt; - Cargo watch, hot reload rust.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sagiegurari&#x2F;cargo-make&quot;&gt;Cargo Make&lt;&#x2F;a&gt; - Rust task runner and build tool.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;roapi&#x2F;roapi&quot;&gt;roapi&lt;&#x2F;a&gt; - Create full-fledged APIs for static datasets without writing a single line of code.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mufeedvh&#x2F;binserve&quot;&gt;binserve&lt;&#x2F;a&gt; - A blazingly fast static web server with routing, templating, and security in a single binary you can set up with zero code. ⚡🦀&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Wulf&#x2F;create-rust-app&quot;&gt;Create rust app&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;a class=&quot;zola-anchor&quot; href=&quot;#libraries&quot; aria-label=&quot;Anchor link for: libraries&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bevyengine&#x2F;bevy&quot;&gt;bevy&lt;&#x2F;a&gt; - 游戏引擎&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;tokio&quot;&gt;tokio&lt;&#x2F;a&gt; - A runtime for writing reliable, asynchronous, and slim applications with the Rust programming language&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;SergioBenitez&#x2F;Rocket&quot;&gt;Rocket&lt;&#x2F;a&gt; - A web framework for Rust.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;axum&quot;&gt;axum&lt;&#x2F;a&gt; - web framework&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;linebender&#x2F;druid&quot;&gt;A data-first Rust-native UI toolkit. Druid&lt;&#x2F;a&gt; - A data-first Rust-native UI design toolkit.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mandreyel&#x2F;cratetorrent&quot;&gt;cratetorrent&lt;&#x2F;a&gt; - A BitTorrent V1 engine library for Rust (and currently Linux) #Torrents&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;emilk&#x2F;egui&quot;&gt;egui&lt;&#x2F;a&gt; - GUI library in Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TeXitoi&#x2F;structopt&quot;&gt;structopt&lt;&#x2F;a&gt; - Parse command line arguments by defining a struct. It combines clap with custom derive.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;telegram-rs&#x2F;telegram-bot&quot;&gt;telegram-bot&lt;&#x2F;a&gt; - Rust Library for creating a Telegram Bot&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;anyhow&quot;&gt;anyhow&lt;&#x2F;a&gt; - General error handle&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;thiserror&quot;&gt;thiserror&lt;&#x2F;a&gt; - Specific error handle&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ayrat555&#x2F;frankenstein&quot;&gt;frankenstein&lt;&#x2F;a&gt; - telegram bot api&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mehcode&#x2F;config-rs&quot;&gt;config-rs&lt;&#x2F;a&gt; - Default config for rs&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shakacode&#x2F;ssr-rs&quot;&gt;ssr-rs&lt;&#x2F;a&gt; - rust ssr with js&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sycamore-rs&#x2F;sycamore&quot;&gt;sycamore&lt;&#x2F;a&gt; - A reactive library for creating web apps in Rust and WebAssembly&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chinedufn&#x2F;percy&quot;&gt;percy&lt;&#x2F;a&gt; - Build frontend browser apps with Rust + WebAssembly. Supports server side rendering.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actix&#x2F;actix-web&quot;&gt;actix-web&lt;&#x2F;a&gt; - Actix Web is a powerful, pragmatic, and extremely fast web framework for Rust.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;env-logger-rs&#x2F;env_logger&#x2F;&quot;&gt;env-logger&lt;&#x2F;a&gt; - log for rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;projectfluent&#x2F;fluent-rs&quot;&gt;fluent-rs&lt;&#x2F;a&gt; - rust i18n&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;manishearth&#x2F;handlebars-fluent&quot;&gt;handlebars-fluent&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sunng87&#x2F;handlebars-rust&quot;&gt;handlebars-rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;davidB&#x2F;handlebars_misc_helpers&quot;&gt;handlebars_misc_helpers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-lang-nursery&#x2F;glob&quot;&gt;glob&lt;&#x2F;a&gt; - Support for matching file paths against Unix shell style patterns.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;BurntSushi&#x2F;walkdir&quot;&gt;walkdir&lt;&#x2F;a&gt; - Rust library for walking directories recursively.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;djc&#x2F;askama&quot;&gt;askama&lt;&#x2F;a&gt; - type safe template engine&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;maciejhirsz&#x2F;ramhorns&quot;&gt;ramhorns&lt;&#x2F;a&gt; - Fast Mustache template engine implementation in pure Rust.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;launchbadge&#x2F;sqlx&quot;&gt;sqlx&lt;&#x2F;a&gt; - 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, SQLite, and MSSQL.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mibes&#x2F;couch-rs&quot;&gt;couch-rs&lt;&#x2F;a&gt; - CouchDB library for Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;spacejam&#x2F;sled&quot;&gt;sled&lt;&#x2F;a&gt; - the champagne of beta embedded databases, redis alternatives&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nharring&#x2F;rksuid&quot;&gt;rksuid&lt;&#x2F;a&gt; - Rust implementation of Segment.io’s ksuid, id generator.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bahlo&#x2F;sonyflake-rs&quot;&gt;sonyflake-rs&lt;&#x2F;a&gt; - sony flake id generator rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dylanhart&#x2F;ulid-rs&quot;&gt;ulid-rs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diesel-rs&#x2F;diesel&quot;&gt;diesel&lt;&#x2F;a&gt; - database orm&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;graphql-rust&#x2F;juniper&quot;&gt;rust juniper&lt;&#x2F;a&gt; - graphql in rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Michael-F-Bryan&#x2F;include_dir&quot;&gt;include_dir&lt;&#x2F;a&gt; - compile include dir files&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;jwt-simple&quot;&gt;jwt-simple&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;brycx&#x2F;pasetors&quot;&gt;pasetors&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;validator&quot;&gt;validator&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;axum&quot;&gt;axum&lt;&#x2F;a&gt; - Ergonomic and modular web framework built with Tokio, Tower, and Hyper&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matklad&#x2F;once_cell&quot;&gt;once cell&lt;&#x2F;a&gt; - Rust library for single assignment cells and lazy statics without macros&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dtolnay&#x2F;semver&quot;&gt;semver&lt;&#x2F;a&gt; - Semantic versioning and version ranges for Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;derivative&quot;&gt;derivative&lt;&#x2F;a&gt; - A set of alternative &lt;code&gt;derive&lt;&#x2F;code&gt; attributes for Rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;bs62&quot;&gt;bs62&lt;&#x2F;a&gt; - rust 62 radix frome number&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;serde_with&#x2F;1.11.0&#x2F;serde_with&#x2F;&quot;&gt;serde_with&lt;&#x2F;a&gt; - serde with integligent convert&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mitsuhiko&#x2F;dialoguer&quot;&gt;dialoguer&lt;&#x2F;a&gt; - Rust utility library for nice command line prompts and similar things&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bytebeamio&#x2F;rumqtt&quot;&gt;rumqtt&lt;&#x2F;a&gt; - rust mqtt broker&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;uutils&#x2F;coreutils&quot;&gt;coreutils&lt;&#x2F;a&gt; - linux core utils in rust&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;projects&quot;&gt;Projects&lt;a class=&quot;zola-anchor&quot; href=&quot;#projects&quot; aria-label=&quot;Anchor link for: projects&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tokio-rs&#x2F;mini-redis&#x2F;&quot;&gt;mini-redis&lt;&#x2F;a&gt; - based on tokio, redis example&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ivanceras&#x2F;hackernews-sauron&quot;&gt;hacker news in rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;grego&#x2F;bladesite&quot;&gt;blade site&lt;&#x2F;a&gt; - rust static site generator, blaze fast&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Toromino&#x2F;kibou&quot;&gt;kibou&lt;&#x2F;a&gt; - rust mastondon
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;git.cybre.club&#x2F;kibouproject&#x2F;kibou&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;daogangtang&#x2F;forustm&quot;&gt;forustm&lt;&#x2F;a&gt; - rust forum&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rusoto.github.io&#x2F;rusoto&#x2F;rusoto_core&#x2F;&quot;&gt;rusoto&lt;&#x2F;a&gt; - aws sdk
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;aws-sign-v4&quot;&gt;aws-sign-v4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;applications&quot;&gt;Applications&lt;a class=&quot;zola-anchor&quot; href=&quot;#applications&quot; aria-label=&quot;Anchor link for: applications&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;max-niederman&#x2F;ttyper&quot;&gt;ttyper&lt;&#x2F;a&gt; - Terminal-based typing test.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;gobang&quot;&gt;gobang&lt;&#x2F;a&gt; - A cross-platform TUI database management tool written in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;saschagrunert&#x2F;webapp.rs&quot;&gt;webapp.rs&lt;&#x2F;a&gt; - A web application completely written in Rust. real world example&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;steadylearner&#x2F;Rust-Full-Stack&quot;&gt;rust full stack&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;clifinger&#x2F;canduma&quot;&gt;canduma&lt;&#x2F;a&gt; - A Rust Boilerplate server with GraphQL API, Diesel, PostgreSQL, session authentication and JWT&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;criticism&quot;&gt;Criticism&lt;a class=&quot;zola-anchor&quot; href=&quot;#criticism&quot; aria-label=&quot;Anchor link for: criticism&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matklad.github.io&#x2F;2020&#x2F;09&#x2F;20&#x2F;why-not-rust.html&quot;&gt;Why not Rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;jobs&quot;&gt;Jobs&lt;a class=&quot;zola-anchor&quot; href=&quot;#jobs&quot; aria-label=&quot;Anchor link for: jobs&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rust.careers&#x2F;&quot;&gt;Rust Careers&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;real-world-example&quot;&gt;Real world example&lt;a class=&quot;zola-anchor&quot; href=&quot;#real-world-example&quot; aria-label=&quot;Anchor link for: real-world-example&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;portier&#x2F;portier-broker&quot;&gt;portier&lt;&#x2F;a&gt; Portier Broker reference implementation, written in Rust, email login.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Plume-org&#x2F;Plume&quot;&gt;plume&lt;&#x2F;a&gt; - Federated blogging application, thanks to ActivityPub&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LemmyNet&#x2F;lemmy&quot;&gt;lemmy&lt;&#x2F;a&gt; - 🐀 Building a federated alternative to reddit in rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;conduit&quot;&gt;conduit&lt;&#x2F;a&gt; - Conduit is a simple, fast and reliable chat server powered by Matrix&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;revoltchat&#x2F;revolt&quot;&gt;revolt&lt;&#x2F;a&gt; - discord alternative&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;templates&quot;&gt;Templates&lt;a class=&quot;zola-anchor&quot; href=&quot;#templates&quot; aria-label=&quot;Anchor link for: templates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-starter&#x2F;rust-starter&quot;&gt;rust cli starter&lt;&#x2F;a&gt; - rust cli template&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

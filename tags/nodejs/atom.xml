@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Nodejs</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/tags/nodejs/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-26T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/nodejs/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Nodejs Monorepo</title>
+		<published>2022-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/nodejs-monorepo/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/nodejs-monorepo/</id>
+		<content type="html">&lt;p&gt;Use changesets as monorepo mananger.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;atlassian&#x2F;changesets&quot;&gt;GitHub - atlassian&#x2F;changesets: 🦋 A way to manage your versioning and changelogs with a focus on monorepos&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;use-changesets-as-monorepo-manager&quot;&gt;Use Changesets as monorepo manager&lt;a class=&quot;zola-anchor&quot; href=&quot;#use-changesets-as-monorepo-manager&quot; aria-label=&quot;Anchor link for: use-changesets-as-monorepo-manager&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;init-a-monorepo&quot;&gt;Init a monorepo&lt;a class=&quot;zola-anchor&quot; href=&quot;#init-a-monorepo&quot; aria-label=&quot;Anchor link for: init-a-monorepo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;mkdir&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; monorepo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;cd monorepo
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; init
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# Add .gitignore file for nodejs &amp;lt;https:&#x2F;&#x2F;github.com&#x2F;github&#x2F;gitignore&#x2F;blob&#x2F;master&#x2F;Node.gitignore&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; init&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --yes
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Add &lt;code&gt;&amp;quot;private&amp;quot;:&amp;quot;true&amp;quot;&lt;&#x2F;code&gt; to the root &lt;code&gt;package.json&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; init&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -w&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; packages&#x2F;a
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; init&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -w&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; packages&#x2F;b
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; init&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -w&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; packages&#x2F;c
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Let &lt;code&gt;c&lt;&#x2F;code&gt; depends &lt;code&gt;a&lt;&#x2F;code&gt; and &lt;code&gt;b&lt;&#x2F;code&gt;,&lt;&#x2F;p&gt;
+&lt;p&gt;Add&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;dependencies&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;a&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;^1.0.0&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;b&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;^1.0.0&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;to &lt;code&gt;packages&#x2F;c&#x2F;package.json&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;install-changesets&quot;&gt;Install changesets&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-changesets&quot; aria-label=&quot;Anchor link for: install-changesets&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;atlassian&#x2F;changesets&#x2F;blob&#x2F;main&#x2F;docs&#x2F;intro-to-using-changesets.md&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -D&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; @changesets&#x2F;cli &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;&amp;amp;&amp;amp; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; changeset init
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This action will add a &lt;code&gt;.changeset&lt;&#x2F;code&gt; folder, and a couple of files to help you out:&lt;&#x2F;p&gt;
+&lt;p&gt;You should change the &lt;code&gt;.changeset&#x2F;config.json&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;baseBranch&lt;&#x2F;code&gt; to yourself main branch, also change &lt;code&gt;access&lt;&#x2F;code&gt; to &lt;code&gt;public&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Commit current files.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; add .
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;feat: init&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;That’s done.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;usage&quot;&gt;Usage&lt;a class=&quot;zola-anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;first-publish&quot;&gt;First publish&lt;a class=&quot;zola-anchor&quot; href=&quot;#first-publish&quot; aria-label=&quot;Anchor link for: first-publish&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+&lt;p&gt;First publish you should just use the follow command to publish your module&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; changeset publish
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;future-changes&quot;&gt;Future changes&lt;a class=&quot;zola-anchor&quot; href=&quot;#future-changes&quot; aria-label=&quot;Anchor link for: future-changes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+&lt;p&gt;You should see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;atlassian&#x2F;changesets&#x2F;blob&#x2F;main&#x2F;docs&#x2F;detailed-explanation.md&quot;&gt;changesets philosophy&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You should first create an &lt;code&gt;intent to change&lt;&#x2F;code&gt;, that said, before what ever changes you want to make, you should create a &lt;code&gt;intent change&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; changeset
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;…Make some changes&lt;&#x2F;p&gt;
+&lt;p&gt;Now, generate new version, changeset will take care your dependences,&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note, by default, if &lt;code&gt;a&lt;&#x2F;code&gt; upgrade from &lt;code&gt;1.0.1&lt;&#x2F;code&gt; to &lt;code&gt;1.0.2&lt;&#x2F;code&gt;, &lt;code&gt;c&lt;&#x2F;code&gt; depends on &lt;code&gt;a@^1.0.1&lt;&#x2F;code&gt;, then &lt;code&gt;c&lt;&#x2F;code&gt; &lt;code&gt;package.json&lt;&#x2F;code&gt; will not change, cause npm will auto update &lt;code&gt;a@^1.0.1&lt;&#x2F;code&gt; to the last version &lt;code&gt;1.0.2&lt;&#x2F;code&gt;
+if you want change to the exact version every time, you can set the config to&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;updateInternalDependents&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;always&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; changeset version
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then, you can publish it.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npx&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; changeset publish
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; add .
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;chore: version&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; push&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --follow-tags
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;with-ci&quot;&gt;With CI&lt;a class=&quot;zola-anchor&quot; href=&quot;#with-ci&quot; aria-label=&quot;Anchor link for: with-ci&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I’ll use Github Actions as example.&lt;&#x2F;p&gt;
+&lt;p&gt;The CI workflow assume that you use &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;#git-tips&quot;&gt;开发技巧收藏&lt;&#x2F;a&gt; as your git workflow.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note, you can use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;atlassian&#x2F;changesets&#x2F;tree&#x2F;main&#x2F;packages&#x2F;changelog-github&quot;&gt;&lt;code&gt;@changesets&#x2F;changelog-github&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; as your changelog format log. with this, you can generate a log like &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;monorepo-example&#x2F;releases&#x2F;tag&#x2F;%40theowenyoung%2Fpackage-example-b%401.1.0&quot;&gt;this&lt;&#x2F;a&gt; , without this, then the log will only include &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;monorepo-example&#x2F;releases&#x2F;tag&#x2F;%40theowenyoung%2Fpackage-example-c%401.1.2&quot;&gt;commit link&lt;&#x2F;a&gt; &amp;gt; &lt;code&gt;npm i -D @changesets&#x2F;changelog-github&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;changelog&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: [
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;@changesets&#x2F;changelog-github&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;repo&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;theowenyoung&#x2F;monorepo-example&amp;quot; &lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;  ]
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a script in root &lt;code&gt;package.json&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;scripts&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;version-packages&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;changeset version&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;release&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;changeset publish&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Create github actions workflows&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;mkdir&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .github&#x2F;workflows
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;touch&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; .github&#x2F;workflows&#x2F;release.yml
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;With the following content:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Release
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;workflow_dispatch&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;push&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;branches&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;main
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;jobs&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;release&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Release
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;runs-on&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;ubuntu-latest
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;steps&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Checkout Repo
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;uses&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;actions&#x2F;checkout@master
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;with&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;fetch-depth&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Setup Node.js 12.x
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;uses&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;actions&#x2F;setup-node@master
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;with&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;node-version&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;12.x
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Setup NPM Latest
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;run&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;npm i -g npm
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Install Dependencies
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;run&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;npm i
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;Create Release Pull Request or Publish to npm
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;uses&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;changesets&#x2F;action@master
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;with&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# this expects you to have a script called release which does a build for your packages and calls changeset publish
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;publish&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;npm run release
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;version&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;npm run version-packages
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;env&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;GITHUB_TOKEN&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;${{ secrets.GITHUB_TOKEN }}
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;NPM_TOKEN&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;${{ secrets.NPM_TOKEN }}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Add &lt;code&gt;NPM_TOKEN&lt;&#x2F;code&gt; to your github repo secret settings&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;By &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;&quot;&gt;开发技巧收藏&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; token create
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Done.&lt;&#x2F;p&gt;
+&lt;p&gt;Every time you use &lt;code&gt;npx changeset&lt;&#x2F;code&gt; to generate a new changeset intent, and the change is pulled to the &lt;code&gt;main&lt;&#x2F;code&gt; branch, then CI will create a pull request to generate a new version, and after the pull request was merged, CI will publish npm packages, and create a new release.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Nodejs Setup for Debian</title>
+		<published>2020-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/nodejs-setup-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/nodejs-setup-for-debian/</id>
+		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nodesource&#x2F;distributions&#x2F;blob&#x2F;master&#x2F;README.md&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# Using Debian, as root
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -fsSL&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; https:&#x2F;&#x2F;deb.nodesource.com&#x2F;setup_14.x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;bash&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; -
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;apt-get&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; nodejs
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>

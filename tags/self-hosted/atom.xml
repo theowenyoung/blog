@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Self-hosted</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/self-hosted/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-26T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/self-hosted/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Jackett Setup</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/jackett-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/jackett-setup/</id>
+		<content type="html">&lt;p&gt;Jackett 是一款开源的种子聚合搜索服务，常用来和 BT 下载器配合使用。&lt;&#x2F;p&gt;
+&lt;p&gt;Read more at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett#install-as-service&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and extract the latest &lt;code&gt;Jackett.Binaries.LinuxAMDx64.tar.gz&lt;&#x2F;code&gt; release from the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett&#x2F;releases&quot;&gt;releases page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett&#x2F;releases&#x2F;download&#x2F;v0.18.545&#x2F;Jackett.Binaries.LinuxAMDx64.tar.gz
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# tar to a directory you want
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;tar&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -xf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; Jackett.Binaries.LinuxAMDx64.tar.gz
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;To install Jackett as a service, open a Terminal, cd to the jackett folder and run &lt;code&gt;sudo .&#x2F;install_service_systemd.sh&lt;&#x2F;code&gt; You need root permissions to install the service. The service will start on each logon. You can always stop it by running &lt;code&gt;systemctl stop jackett.service&lt;&#x2F;code&gt; from Terminal. You can start it again it using &lt;code&gt;systemctl start jackett.service&lt;&#x2F;code&gt;. Logs are stored as usual under &lt;code&gt;~&#x2F;.config&#x2F;Jackett&#x2F;log.txt&lt;&#x2F;code&gt; and also in &lt;code&gt;journalctl -u jackett.service&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;code&gt;http:&#x2F;&#x2F;your-ip:9117&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can set password, or port by UI.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;jackett-suo-yin-tui-jian&quot;&gt;Jackett 索引推荐&lt;a class=&quot;zola-anchor&quot; href=&quot;#jackett-suo-yin-tui-jian&quot; aria-label=&quot;Anchor link for: jackett-suo-yin-tui-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;EZTV&lt;&#x2F;li&gt;
+&lt;li&gt;RARBG&lt;&#x2F;li&gt;
+&lt;li&gt;YTS&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>Jellyfin安装</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/jellyfin-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/jellyfin-setup/</id>
+		<content type="html">&lt;p&gt;Jellyfin 是一款开源的，拥有前后端服务的视频播放器和服务端程序。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jellyfin.org&#x2F;docs&#x2F;general&#x2F;administration&#x2F;installing.html#debian&quot;&gt;Installing Jellyfin | Documentation - Jellyfin Project&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;a class=&quot;zola-anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; systemctl restart jellyfin
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;zhong-wen-zi-ti&quot;&gt;中文字体&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-zi-ti&quot; aria-label=&quot;Anchor link for: zhong-wen-zi-ti&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Download google noto fonts:
+This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CodePlayer&#x2F;webfont-noto&quot;&gt;repo&lt;&#x2F;a&gt; compiled noto fonts, so you can just download it and use it.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; https:&#x2F;&#x2F;github.com&#x2F;CodePlayer&#x2F;webfont-noto&#x2F;raw&#x2F;master&#x2F;dist&#x2F;NotoSans&#x2F;NotoSansCJKsc-hinted&#x2F;subset&#x2F;NotoSansCJKsc-hinted-standard&#x2F;NotoSansCJKsc-Regular.woff2
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At Jellyfin Admin dashboard, player, open back font, add the font path&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;faq&quot;&gt;FAQ&lt;a class=&quot;zola-anchor&quot; href=&quot;#faq&quot; aria-label=&quot;Anchor link for: faq&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jellyfin&#x2F;jellyfin-web&#x2F;issues&#x2F;934&quot;&gt;Jellyfin 中文字体问题&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

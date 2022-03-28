@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Startups</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/tags/startups/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/startups/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Awesome Startups</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/startups/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/startups/</id>
+		<content type="html">&lt;p&gt;Curating anyting about startups, marketing, launch, publish, cooperation, tools&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;prelaunch&quot;&gt;Prelaunch&lt;a class=&quot;zola-anchor&quot; href=&quot;#prelaunch&quot; aria-label=&quot;Anchor link for: prelaunch&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;waitinglist.app&#x2F;&quot;&gt;Waiting list&lt;&#x2F;a&gt; - Build your audience before you launch, #API&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.defmacro.org&#x2F;2019&#x2F;03&#x2F;26&#x2F;startup-checklist.html&quot;&gt;Startup Checklist&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=20254057&quot;&gt;HN link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;app.gumroad.com&#x2F;&quot;&gt;Gumroad&lt;&#x2F;a&gt; - 在线销售数字产品&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;publish&quot;&gt;Publish&lt;a class=&quot;zola-anchor&quot; href=&quot;#publish&quot; aria-label=&quot;Anchor link for: publish&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;betalist.com&#x2F;&quot;&gt;betalist&lt;&#x2F;a&gt; - Discover tomorrow’s startups, today.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.producthunt.com&#x2F;&quot;&gt;ProductHunt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;show&quot;&gt;Hacknew Show&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SideProject&#x2F;&quot;&gt;Side Project Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;productlift.ai&#x2F;&quot;&gt;productlift&lt;&#x2F;a&gt; - ProductLift helps you find relevant communities and influencers so you can:&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;airtable.com&#x2F;shrwqaak73gy83w9A&#x2F;tblu5RcUft9fYp9Ju&#x2F;viwFHmIyMniXzlpK4?blocks=show&quot;&gt;280+ Websites To Share Your Startup &#x2F; Public&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jakeprins_nl&#x2F;status&#x2F;1293243281556594690?s=21&quot;&gt;The best places to post your startup. Twitter Thread&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;cooperation&quot;&gt;Cooperation&lt;a class=&quot;zola-anchor&quot; href=&quot;#cooperation&quot; aria-label=&quot;Anchor link for: cooperation&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;circlebatch.com&#x2F;&quot;&gt;Circlebatch&lt;&#x2F;a&gt; - Circlebatch is a collaborative community to practice skills and work on projects with others&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tara.ai&#x2F;&quot;&gt;Tara&lt;&#x2F;a&gt; - Git ship done Define, plan &amp;amp; track mission-critical product updates, in one place.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;market&quot;&gt;Market&lt;a class=&quot;zola-anchor&quot; href=&quot;#market&quot; aria-label=&quot;Anchor link for: market&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;liquidary.com&#x2F;freearticle&#x2F;&quot;&gt;Free Article Publishing&lt;&#x2F;a&gt; - Get free press coverage for your project or startup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;microacquire.com&#x2F;buyers&#x2F;&quot;&gt;Microacquire&lt;&#x2F;a&gt; - Sell your company online, Sell your startup within 30 days. Anonymous listings. No fees.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;trekhleb&#x2F;promote-your-next-startup&quot;&gt;promote your next startup&lt;&#x2F;a&gt; - 🚀 Free resources you may use to promote your next startup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mysideproject.rocks&#x2F;&quot;&gt;My Side Project rocks&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;热心而真诚的评论素人的状态，你可能会收获一个关注。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;sharing&quot;&gt;Sharing&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharing&quot; aria-label=&quot;Anchor link for: sharing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;buildinpublic.com&#x2F;&quot;&gt;#buildinpublic&lt;&#x2F;a&gt; - Share your process at Twitter with #buildinpublic&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;theapplaunchpad.com&#x2F;mockup-generator&#x2F;&quot;&gt;AppLaunchpad - (1000) Best Free Mockup Generator (theapplaunchpad.com)&lt;&#x2F;a&gt; - Screen Shot Generator&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.twitonomy.com&#x2F;&quot;&gt;Twitter Analytics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;investing&quot;&gt;Investing&lt;a class=&quot;zola-anchor&quot; href=&quot;#investing&quot; aria-label=&quot;Anchor link for: investing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.micro-invest.io&#x2F;&quot;&gt;Micro investment&lt;&#x2F;a&gt; - Micro investment for solo founders&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.makerfellowship.com&#x2F;&quot;&gt;Maker Fellow Ship&lt;&#x2F;a&gt; - We offer $500 grant to indie makers to ship something useful within four weeks.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ideas&quot;&gt;Ideas&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideas&quot; aria-label=&quot;Anchor link for: ideas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.notion.so&#x2F;110-Actionable-tasks-to-get-from-Zero-to-2a28bd237e964f75a8f4cf8fcd8182c5&quot;&gt;110+ Actionable tasks to get from Zero to $$$&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;undertheradar.io&#x2F;&quot;&gt;Startup Trends&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;legel&quot;&gt;Legel&lt;a class=&quot;zola-anchor&quot; href=&quot;#legel&quot; aria-label=&quot;Anchor link for: legel&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.avodocs.com&#x2F;&quot;&gt;avodocs&lt;&#x2F;a&gt; - Free legal documents for startups&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getmakerlog.com&#x2F;&quot;&gt;Get Maker Log&lt;&#x2F;a&gt; - How makers stay productive&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

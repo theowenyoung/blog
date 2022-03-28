@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Journal</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/journal/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-26T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022年的一些记录</title>
+		<published>2022-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/journal-2022/" type="text/html"/>
+		<id>https://www.owenyoung.com/journal-2022/</id>
+		<content type="html">&lt;p&gt;2022 年的记录汇总。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;FDKV22VnBOayDlEwFAtzmw&quot;&gt;徐州丰县目前为止的总结&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.forbes.com&#x2F;sites&#x2F;georgecalhoun&#x2F;2021&#x2F;06&#x2F;07&#x2F;the-sad-end-of-jack-ma-inc&#x2F;?sh=55c1fd0c123a&quot;&gt;马云公司的悲惨结局&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wwsww.cn&#x2F;qkl&#x2F;10173.html&quot;&gt;Arweave（AR）－为永存网络（Permaweb）提供动力的区块链&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;t.me&#x2F;douban_read&#x2F;110380&quot;&gt;一条豆瓣动态引发的“疫情文学”复兴&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;shu&quot;&gt;书&lt;a class=&quot;zola-anchor&quot; href=&quot;#shu&quot; aria-label=&quot;Anchor link for: shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;大多数书都记录在&lt;a href=&quot;&#x2F;books&#x2F;&quot;&gt;读书记录里&lt;&#x2F;a&gt; ，这里记得基本都是一些没咋读完的书。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;don-t-let-me-think&quot;&gt;Don’t let me think&lt;a class=&quot;zola-anchor&quot; href=&quot;#don-t-let-me-think&quot; aria-label=&quot;Anchor link for: don-t-let-me-think&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨&lt;&#x2F;p&gt;
+&lt;p&gt;中文版叫《点石成金》，主要设计理念是：不要让我思考，不要在网页设计中做出让用户 confuse 的设计。但是本书的出版有点早，所以里面其实有不少东西稍微有点过时。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ru-he-sheng-huo&quot;&gt;如何生活&lt;a class=&quot;zola-anchor&quot; href=&quot;#ru-he-sheng-huo&quot; aria-label=&quot;Anchor link for: ru-he-sheng-huo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨，德里克西佛斯&lt;&#x2F;p&gt;
+&lt;p&gt;未读完，有点混乱，有点像诗歌，主要是前后不一致，前面说不要社交，后面又说要多交朋友。。读不下去。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;永远不要在听到某个观点的同一天就同意任何事情。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大多数问题是人际关系，成为社会的一部分就是失去自己，切断与社会的联系。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提供产品而不是个人服务，这样你的产品没有你也能跑&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;jing-ji-xue-de-si-wei-fang-shi&quot;&gt;经济学的思维方式&lt;a class=&quot;zola-anchor&quot; href=&quot;#jing-ji-xue-de-si-wei-fang-shi&quot; aria-label=&quot;Anchor link for: jing-ji-xue-de-si-wei-fang-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨✨&lt;&#x2F;p&gt;
+&lt;p&gt;又一本经典的经济学著作。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在封建经济或社会主义经济中，领导人可以持续无限地犯着同样的错误，后果则由其他人来承担，承受着由于稀缺资源的不当利用而造成的生活水平低下的结果。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;di-san-di-guo-de-yu-yan&quot;&gt;第三帝国的语言&lt;a class=&quot;zola-anchor&quot; href=&quot;#di-san-di-guo-de-yu-yan&quot; aria-label=&quot;Anchor link for: di-san-di-guo-de-yu-yan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;随便翻了一下，有点晦涩&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我根本不相信他真正读过任何东西，他只是抓取了最一般教育里的片段，只是找出了其中对他疯狂体系中有用的东西，进行不断的鹦鹉学舌和无度夸张。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>2021年的一些记录</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2021-12-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/journal-2021/" type="text/html"/>
+		<id>https://www.owenyoung.com/journal-2021/</id>
+		<content type="html">&lt;p&gt;2021日记汇总。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;deno.com&#x2F;blog&#x2F;deploy-beta2&quot;&gt;Deno Deploy Beta2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.robertsapolskyrocks.com&#x2F;depression.html&quot;&gt;罗伯特-萨波尔斯基谈抑郁症(2009)&lt;&#x2F;a&gt; - #Depression&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cj.sina.com.cn&#x2F;articles&#x2F;view&#x2F;1154814715&#x2F;44d512fb01900wn2x&quot;&gt;深圳准留学生花 15800 元“围观”的厂妹，曾让我羡慕死了&lt;&#x2F;a&gt; - #Society&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;slc.is&#x2F;#The%20Best%20TLD%20is%20Not%20.com&quot;&gt;最好的域名不是.com, 而是.is, The Best TLD is Not .com&lt;&#x2F;a&gt; - #Domains , the best tld is &lt;code&gt;.is&lt;&#x2F;code&gt;, by Iceland&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thehelm.com&#x2F;&quot;&gt;Helm&lt;&#x2F;a&gt; - 个人服务器，类似树莓派，$399 1T, #Privacy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.mozilla.org&#x2F;en&#x2F;internet-culture&#x2F;deep-dives&#x2F;why-are-hyperlinks-blue&#x2F;&quot;&gt;为什么超链接是蓝色的？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;b6TLj4b2rhexEjDT-u4jHA&quot;&gt;幼儿园，一孩难求&lt;&#x2F;a&gt; - 小孩数量在减少&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;XhRf8pvVxljAAzAd81_bLg&quot;&gt;「不长大」，是怎么成为越来越多人的愿望？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;5uKyMHd2G4bunZIZ9YFYYg&quot;&gt;浪漫是怎么一步步在现代爱情中消失的？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.e-pistolas.org&#x2F;entire-battlestar-galactica-timeline-explained&quot;&gt;《太空堡垒卡拉狄加》时间轴的说明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;briansunter.com&#x2F;blog&#x2F;five-minute-journal&#x2F;&quot;&gt;五分钟日记 - 技巧和提示&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;text.npr.org&#x2F;1039313011&quot;&gt;reddit 上的人通过复制国会议员的所作所为来交易股票&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;colors.jaylow.se&#x2F;&quot;&gt;艺术品生成器&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.failory.com&#x2F;startups&#x2F;new-zealand&quot;&gt;新西兰创业公司&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;42matters.com&#x2F;ios-apple-app-store-statistics-and-trends&quot;&gt;app store 2021 stats&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hacker-recommended-books.vercel.app&#x2F;category&#x2F;0&#x2F;past-6-months&#x2F;page&#x2F;0&#x2F;5&quot;&gt;妈妈测试- hn 图书推荐&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.douban.com&#x2F;review&#x2F;10002244&#x2F;&quot;&gt;妈妈测试书评&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=28682173&quot;&gt;hn shows 去哪了&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bryanbraun.com&#x2F;2021&#x2F;09&#x2F;21&#x2F;i-keep-making-things-out-of-checkboxes&#x2F;&quot;&gt;all things using check box&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=25644817&quot;&gt;问 hn： 谁在寻找联合创始人&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=26990815&quot;&gt;问 hn：你用过最昂贵的服务是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;forum-rules&#x2F;forum-rules&#x2F;&quot;&gt;something awful rule&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dev.to&#x2F;antoniopk&#x2F;firstdevrole-1-what-are-the-real-requirements-for-becoming-a-programmer-2e1p&quot;&gt;👨💻[FirstDevRole #1] 成为一名程序员的真正要求是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.joshwcomeau.com&#x2F;blog&#x2F;how-to-learn-stuff-quickly&#x2F;#%2F%2F%2F%2F%2F%2F&#x2F;&quot;&gt;如何快速学习&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

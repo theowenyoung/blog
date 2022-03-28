@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  itemscope
+  itemtype="http://schema.org/Blog"
+>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <title>Owen的博客</title>
+
+    
+    <meta
+      name="description"
+      itemprop="about"
+      content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
+    />
+    <meta
+      name="keywords"
+      itemprop="keywords"
+      content="注意力, 读书, 工具分享, 纯文本, 英语学习"
+    />
+    <meta name="author" itemprop="author" content="Owen Young" />
+    <meta itemprop="headline" content="Owen的博客" />
+    <meta itemprop="copyrightYear" content="2022" />
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
+    type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
+    rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b"> <link
+    rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64"> <link
+    rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a"> <link
+    rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020"> <link
+    rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50"> <link
+    rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363"> <link
+    rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70"> <link
+    rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1"> <link rel="icon"
+    type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac"> <link rel="icon"
+    type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"> <link rel="icon"
+    type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> <link rel="icon"
+    type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa"> <link rel="manifest"
+    href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta
+      name="msapplication-TileColor"
+      content="#000084"
+    />
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="#000084" />
+
+    <meta
+      property="og:title"
+      content="Owen的博客"
+    />
+    <meta
+      property="og:description"
+      content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
+    />
+    <meta
+      property="og:url"
+      content="https://www.owenyoung.com/"
+    />
+    <meta property="og:site_name" content="Owen的博客" />
+    
+    <meta
+      property="og:image"
+      content="https://www.owenyoung.com/logo.png"
+    />
+    
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="TheOwenYoung" />
+    <meta name="twitter:creator" content="TheOwenYoung" />
+    <meta
+      name="twitter:image:alt"
+      content="Owen的博客"
+    />
+     
+    
+  </head>
+
+  <body>
+    <section id="top"></section>
+    <section id="root" >
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"></img>
+            </a> 
+          </div>
+          <div>
+            <ul class="flex menu list-none items-center justify-center">
+             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Back to Top" href="#top">
+               <span class=""> &#8593;</span>
+              </a></li>
+             <li>
+              <a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
+                <span class=""> &#8595;</span>
+               </a>
+             </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="body-zone flex justify-between flex-1">
+          <section class="main flex-1">
+            <div class="main-inner px">
+               
+<section>
+  <header id="overview">
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="https://www.owenyoung.com/">首页</a>
+      <span class="divider"> / </span>全部文章
+      </div>
+  </header>
+    
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;disprezzo&#x2F;">鄙视</a></h1>
+
+  <div><p>去年看到一个视频在做这本书的新书发布会，我还以为是一个本新书，直到我看完之后，我还是觉得这是一本近几年才出版的书，直到我去看了豆瓣的评价，才知道这本书竟然是 70 年前，20 世纪 50 年代的作品。一本好书的生命力就体现在这里。全书以丈夫的口吻，在一直找出妻子鄙视自己的答案，把心理描写的非常让人入戏，我曾以为，男性作家的心理描写都不怎么样，但是看了这本之后，我觉得作家就是作家。特别推荐给现在有在恋爱，或者已经结婚的人。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;disprezzo&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>1 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;naples&#x2F;">那不勒斯四部曲</a></h1>
+
+  <div><blockquote>
+<p>就是这样，他想解放别人的女人，而不是自己的女人。</p>
+</blockquote>
+<p>随着最近《我的天才女友》第三季电视剧的播出，又开始重新看这本书了。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;naples&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>3 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;of-mice-and-men&#x2F;">人鼠之间</a></h1>
+
+  <div><blockquote>
+<p>“说道说道别的人怎样，咱们又是怎样。” 乔治说：“像咱们这样的人都没有个亲人。他们刚攒了点本钱，马上就挥霍光了。他们在这个世上就没有一个人在乎他们的死活——” “咱们可不是这样。”伦尼开心地叫道，“现在说说咱们是怎么样的。” 乔治沉默了一会儿。“咱们可不是这样。”他说。 “因为——” “因为我有你，而且——” “而且我有你。咱们彼此照应，就是因为这个，咱们是真正有人关心的人。”</p>
+</blockquote>
+<p>这本比上面那本《愤怒的葡萄》早两年，很现实的描绘了穷人破灭的梦想。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;of-mice-and-men&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>2 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-design-of-everyday-things&#x2F;">设计心理学</a></h1>
+
+  <div><blockquote>
+<p>数年来厂商尽力使汽车跑起来安静无声，谁能够想到有一天还需要花费数年时间和数以千万美元的成本添加声音？</p>
+</blockquote>
+<p>从生活中到机器人，各个方面探讨了良好的交互设计是怎样的，看完之后你会发现有好多东西，你从来没有注意到/想到，看完之后有助于一个高质量的生活。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-design-of-everyday-things&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>2 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-grapes-of-wrath&#x2F;">愤怒的葡萄</a></h1>
+
+  <div><blockquote>
+<p>等到没有鞋子、没有衣服、没有食物，连希望都没有的时候，我们还有枪。</p>
+</blockquote>
+<p>1939 年出版的一本书，我是在《华氏 451 度》电影里看到焚书行动中一个即将被烧死的妇人手中看到的这本书，没想到很惊艳，作者的语言充满了力量感。非常配得上这本被誉为为穷人写的书。我在这本书里摘录了大量内容，要知道这可是一本小说啊，竟然能摘录这么多内容。强烈推荐。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-grapes-of-wrath&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>23 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-handmaids-tale&#x2F;">使女的故事</a></h1>
+
+  <div><blockquote>
+<p>别让那些杂种骑在你头上。</p>
+</blockquote>
+<p>原名:The Handmaid’s Tale, 链接：<a rel="noopener nofollow noreferrer" target="_blank" href="https://book.douban.com/subject/3056877/">使女的故事</a></p>
+<p>我太爱女性作家写的书了，我本身天性并不敏感，所以很多书里的心理描写都会让我想快速阅读过去，但是女性作家的文笔写出来的心理描写，特别的能让人共情，那种娓娓道来的感觉，特别的吸引读者阅读。原著确实比电视剧带给人更多的信息，之前曾经 3 次尝试看使女的故事的电视剧版，但是每次都有点摸不着头脑，看完原著后再去看剧，一切都 make sense 了。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-handmaids-tale&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>4 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-hunger-games-trilogy&#x2F;">饥饿游戏三部曲</a></h1>
+
+  <div><p>这本书电影似乎比小说更能表现故事情节，怀疑写的时候是不是就是有影视化的打算。不知道是翻译的问题还是原著的问题，其实阅读体验不是太好。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-hunger-games-trilogy&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>2 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-testaments&#x2F;">证言</a></h1>
+
+  <div><p>原名: The Testaments, 链接： <a rel="noopener nofollow noreferrer" target="_blank" href="https://book.douban.com/subject/35081845/">豆瓣</a></p>
+<blockquote>
+<p>一旦你认为千真万确的事被证明是假的，你就会开始怀疑所有的事</p>
+</blockquote>
+<p>这是作者在时隔 30 多年之后为使女的故事写的续作，我只能说比原作更加精彩，难以想象这是作者在 80 岁发布的小说续作。更多的视角来回顾基列共和国是如何成为基列共和国的。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-testaments&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>5 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-25</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/dev/">
+      Dev
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;auto-https-ssl-in-china&#x2F;">在中国自动生成免费HTTPS证书的最佳方案</a></h1>
+
+  <div><p>Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/acmesh-official/acme.sh"><code>amce.sh+cloudflare</code></a> 的 dns 解析是最方便无痛的.</p>
+</div>
+  
+  <p>
+    
+    <a class="muted text-sm no-underline" href="https://www.owenyoung.com/tags/https/">#HTTPS</a>
+  
+  </p>
+ 
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;auto-https-ssl-in-china&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>2 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-25</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;stolen-focus&#x2F;">被偷走的注意力</a></h1>
+
+  <div><p>英文原名《Stolen Focus》</p>
+<p><strong>为什么注意力危机这个问题很重要？</strong></p>
+<ol>
+<li>当你无法持续关注时，你就无法实现你想要实现的事情。当你想读一本书，但你可能会被抖音或微博所吸引。当你想花几个小时和你的孩子在一起，但你一直在焦急地检查你的电子邮件，看看你的老板是否在给你发消息。如果这种情况持续数月和数年，它让你失去知道自己是谁以及你想要什么的能力。如果我们想在任何领域，做重要的事情，我们必须能够关注正确的事情。如果我们不能做到这一点，那么就很难做任何事情。</li>
+<li>这种注意力的分裂不仅给我们个人带来了问题，而且给我们整个社会带来了危机。作为一个物种，我们面临着一系列前所未有的危机，比如气候危机，而且，与前几代人不同，我们大多没有站起来解决我们最大的挑战。为什么？我认为，部分原因是，当注意力崩溃时，解决问题的能力就会崩溃。解决大问题需要许多人多年来的持续关注。民主要求民众能够集中足够长的注意力，以识别真正的问题，将它们与幻想区分开来，提出解决方案，并在他们未能实现这些问题时追究其领导人的责任。</li>
+<li>如果我们了解正在发生的事情，我们就可以开始改变它。注意力危机是人为制造的，所以我们也可以解除它。我们要做的就是从根本上重新定义问题，然后采取行动。</li>
+</ol>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;stolen-focus&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>23 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-10</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;steal-like-an-artist&#x2F;">像一个艺术家一样偷窃</a></h1>
+
+  <div><p>这本书非常有作者自己的风格，全文读下来行云流水，读完之后你会对创作有新对认识，强烈推荐。</p>
+<blockquote>
+<p>每个艺术家都会被问到这个问题，“你从哪里得到你的想法？” 诚实的艺术家回答，“我偷的”。</p>
+</blockquote>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;steal-like-an-artist&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>6 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-03-10</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/misc/">
+      Misc
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;mobile-may-be-the-worst-tool&#x2F;">手机可能是人类最有害的发明</a></h1>
+
+  <div><p>手机可能是人类最有害的发明，实在是让你太方便被它吸取注意力了。</p>
+<p>而且上瘾程度已经不能说这是属于个人责任范围了。从普通人到高级知识分子，大都很难抵挡它的诱惑力。也许这和吸烟一样，需要长达几十年的时间才能让人们意识到它的危害，以至于必须作出限制。</p>
+</div>
+  
+  <p>
+    
+    <a class="muted text-sm no-underline" href="https://www.owenyoung.com/tags/focus/">#Focus</a>
+  
+  </p>
+ 
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;mobile-may-be-the-worst-tool&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>3 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-02-24</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;too-old-to-understand&#x2F;">老得太早，聪明的太晚：你现在需要知道的三十件真实的事情</a></h1>
+
+  <div><p>有点社达和刻薄…基本上就是劝说我们不要太抱怨，我们已经失去了抱怨对诉讼时效，世界上伤心对人太多了，所以我们要勇敢点，乐观点。</p>
+<blockquote>
+<p>运转良好的家庭善于让孩子离开,功能不佳的家庭往往会抓住他们。</p>
+</blockquote>
+<blockquote>
+<p>我们大多数童年创伤的诉讼时效已经过期。</p>
+</blockquote>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;too-old-to-understand&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>6 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-01-27</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;fahrenheit-451&#x2F;">华氏 451</a></h1>
+
+  <div><blockquote>
+<p>除非能得到第三样必需品,才能成功的反抗。第一样：信息的质。第二样：消化信息的闲暇。第三样：依照前两样的互动所获得的知识来行为的权利。</p>
+</blockquote>
+<p>又一本反乌托邦小说，设定很新颖，但是感觉行文有点不够通畅。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;fahrenheit-451&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>7 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-01-25</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;indonesia-etc&#x2F;">印尼 ETC</a></h1>
+
+  <div><p><a rel="noopener nofollow noreferrer" target="_blank" href="https://book.douban.com/subject/34872741/">印尼 Etc. (豆瓣) (douban.com)</a> , 作者用一种温暖人心的方式向我们缓缓的讲述了在印尼的故事，看完之后你会对印尼有更多的认识。值得一看。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;indonesia-etc&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>2 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-01-07</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-blind-assassin&#x2F;">盲刺客</a></h1>
+
+  <div><p>2000 年的布克奖获奖作品，我是第一次看到这种结构的作品，学到了另一种写作手法。但是作品的故事有点离我太远，所以不是很能共情。但是还是喜欢作者的文笔。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-blind-assassin&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>1 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2022-01-07</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/books/">
+      Books
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-greatest-gatsby&#x2F;">了不起的盖茨比</a></h1>
+
+  <div><blockquote>
+<p>“每逢你想要批评任何人的时候，”他对我说，“你就记住，这个世界上所有的人，并不是个个都有过你拥有的那些优越条件。”</p>
+</blockquote>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://book.douban.com/subject/10738023/">了不起的盖茨比 (豆瓣)</a></p>
+<p>语言优美动人，但是对我来讲有点无感，可能是因为讲的是大洋彼岸的 20 年代的故事吧。故事也有点简单。反思了美国梦，虚荣，和当时的社会风气。</p>
+</div>
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;the-greatest-gatsby&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>3 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2021-12-31</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/misc/">
+      Misc
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books-2021&#x2F;">2021年读书笔记</a></h1>
+
+  <div><p>2021年的读书笔记，没有做更详细的整理，所以就一并列的这里了。</p>
+<p><a href="content/books/_index.md">点击查看最新读书笔记</a></p>
+</div>
+  
+  <p>
+    
+    <a class="muted text-sm no-underline" href="https://www.owenyoung.com/tags/books/">#Books</a>
+  
+  </p>
+ 
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books-2021&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>12 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2021-12-26</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/misc/">
+      Misc
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;you-should-know-these-words-aboard&#x2F;">出国，这几句话必须学会用当地语言怎么说</a></h1>
+
+  <div><ol>
+<li>你好</li>
+</ol>
+<ul>
+<li>Hello</li>
+</ul>
+<ol start="2">
+<li>再见</li>
+</ol>
+<ul>
+<li>Goodbye</li>
+</ul>
+<ol start="3">
+<li>请</li>
+</ol>
+<ul>
+<li>Please</li>
+</ul>
+<ol start="4">
+<li>谢谢</li>
+</ol>
+<ul>
+<li>Thank you</li>
+</ul>
+</div>
+  
+  <p>
+    
+    <a class="muted text-sm no-underline" href="https://www.owenyoung.com/tags/english/">#English</a>
+  
+  </p>
+ 
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;you-should-know-these-words-aboard&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>1 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<article>
+  <section class="muted pt">
+    <time pubdate>2021-09-26</time>
+    
+    <span>发布在 </span>
+    <a class="no-underline" href="https://www.owenyoung.com/categories/misc/">
+      Misc
+    </a> 
+  
+    </section>
+  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;how-to-writing&#x2F;">如何写作？</a></h1>
+
+  <div><p>来自<a rel="noopener nofollow noreferrer" target="_blank" href="https://sive.rs/book/OnWritingWell">写出更好的东西读书笔记</a>：</p>
+<ul>
+<li>用第一人称写。</li>
+<li>如果它在写作中让你感到好笑，那就把它放进去</li>
+<li>出乎意料但令人耳目一新的话语</li>
+<li>在让它进入世界之前，大声朗读所有内容。</li>
+<li>学习写作的唯一方法是强迫自己定期产生一定数量的单词。</li>
+<li>每一部成功的非虚构作品都应该给读者留下一个他或她以前没有的挑衅性想法。不是两个想法，也不是五个- 只是一个。</li>
+<li>任何文章中最重要的句子都是第一个句子。如果它没有诱使读者继续第二句话，那么你的文章就死了。如果第二句话没有诱使他继续第三句话，那么它同样已经死了。</li>
+<li>特别注意每个段落的最后一句 - 这是下一段的关键跳板。试着给这句话一个额外的幽默或惊喜。</li>
+<li>每一个小小的限定词都会削弱读者的信任度。</li>
+<li>有趣的作家保持自己的兴趣。有趣的生活和继续教育。</li>
+<li>现在，您的读者接下来想知道什么？在每句话之后问自己这个问题。</li>
+</ul>
+</div>
+  
+  <p>
+    
+    <a class="muted text-sm no-underline" href="https://www.owenyoung.com/tags/writing/">#Writing</a>
+  
+  </p>
+ 
+  
+  <div class="muted">
+    <section>
+      <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;how-to-writing&#x2F;#continue-reading"><span>继续阅读需要 </span>
+        <span>2 min &rarr;</span> </a>
+    </section>
+  </div>  
+   <br>
+  <hr class="w-1__2">
+</article>
+  
+<div class="pagination py">
+  <ul class="list-none flex justify-between">
+    
+      <li class="disabled"><a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;">&larrb;</a></li>
+    
+
+    
+      <li class="disabled"><a class="no-underline" href="#">&larr;</a></li>
+    
+
+    <li><a class="no-underline" href="https://www.owenyoung.com/archive/">1/2</a></li>
+    
+    
+      <li><a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;page&#x2F;2&#x2F;">&rarr;</a></li>
+    
+
+    
+      <li><a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;page&#x2F;2&#x2F;">&rarrb;</a></li>
+    
+  </ul>
+</div>
+ 
+</section>
+
+
+              </div>
+            </section>
+
+          
+          <aside class="sidebar px">
+
+          <h2><a class="no-underline" href="&#x2F;categories/">所有分类</h2></a>
+          <ul>
+             
+            
+            <li>
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;books&#x2F;"
+                >Books(15)</a
+              >
+            </li>
+            
+            
+            <li>
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;dev&#x2F;"
+                >Dev(4)</a
+              >
+            </li>
+            
+            
+            <li>
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;misc&#x2F;"
+                >Misc(8)</a
+              >
+            </li>
+            
+            
+            <li>
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;notes&#x2F;"
+                >Notes(26)</a
+              >
+            </li>
+            
+          </ul>
+           
+            <h2 id="chang-yong-lian-jie">常用链接</h2>
+<ul>
+<li><a href="/en/">English Blog</a></li>
+<li><a href="/archive/">所有文章存档</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">本站源码</a></li>
+<li><a href="/atom.xml">RSS 订阅地址</a></li>
+<li><a href="/about/">关于我</a></li>
+<li><a href="/now/">现在在做的事</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/OwenYoungZh">Twitter</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung">Github</a></li>
+</ul>
+
+
+          <h2 ><a class="no-underline" href="&#x2F;tags/">标签</a></h2>
+          <ul class="list-none text-sm">
+             <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;answer&#x2F;"
+                >Answer(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;articles&#x2F;"
+                >Articles(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;books&#x2F;"
+                >Books(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;communities&#x2F;"
+                >Communities(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;dev&#x2F;"
+                >Dev(5)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;english&#x2F;"
+                >English(2)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;flutter&#x2F;"
+                >Flutter(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;focus&#x2F;"
+                >Focus(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;free&#x2F;"
+                >Free(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;https&#x2F;"
+                >HTTPS(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;image&#x2F;"
+                >Image(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;inspires&#x2F;"
+                >Inspires(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;investing&#x2F;"
+                >Investing(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;javascript&#x2F;"
+                >Javascript(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;jobs&#x2F;"
+                >Jobs(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;journal&#x2F;"
+                >Journal(2)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;list&#x2F;"
+                >List(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;me&#x2F;"
+                >Me(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;movies&#x2F;"
+                >Movies(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;music&#x2F;"
+                >Music(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;quotes&#x2F;"
+                >Quotes(2)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;resources&#x2F;"
+                >Resources(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;rust&#x2F;"
+                >Rust(2)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-hosted&#x2F;"
+                >Self-hosted(2)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;server&#x2F;"
+                >Server(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;sources&#x2F;"
+                >Sources(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;tips&#x2F;"
+                >Tips(3)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;tools&#x2F;"
+                >Tools(2)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;tv&#x2F;"
+                >TV(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;tweets&#x2F;"
+                >Tweets(1)</a
+              >
+            </li>
+            <li class="inline">
+              <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;writing&#x2F;"
+                >Writing(1)</a
+              >
+            </li>
+            
+          </ul>
+        </aside>
+          
+
+      </main>
+      </section>
+    <section id="bottom"></section>
+  </body>
+</html>
