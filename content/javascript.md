@@ -61,3 +61,4 @@ taxonomies:
 ## Libraries
 
 - [PapaParse](https://github.com/mholt/PapaParse) - 解析 CSV 文件
+- [Mozilla 的网页可读性库，网页纯文本](https://github.com/mozilla/readability) - #readability
