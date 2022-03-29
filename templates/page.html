@@ -41,7 +41,8 @@
         <div>
           <h1 style="font-size:2rem;">{{ page.title }}</h1>
           <div class="muted">
-            <div>{{ trans(key="label_created",lang=lang)}}: {{ page.date }}{% if page.updated %}, {{trans(key="label_updated",lang=lang)}}: {{ page.updated }}{% endif %}, {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min</div>
+            <div>
+              {% if page.date %}{{ trans(key="label_created",lang=lang)}}: {{ page.date }}{% endif %}{% if page.updated %}, {{trans(key="label_updated",lang=lang)}}: {{ page.updated }},{% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
         </div>
   
         </div>

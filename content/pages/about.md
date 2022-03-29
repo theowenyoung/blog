@@ -1,7 +1,5 @@
 ---
 title: 关于我和这个博客
-date: 2022-03-25
-updated: 2022-03-25
 path: about/
 ---
 
