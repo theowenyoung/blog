@@ -73,6 +73,7 @@ html {
   --colors-primary: rgb(234, 76, 137);
   --colors-divider: rgb(226, 232, 240);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
+  --colors-code-background: #edf0f3;
   --colors-background: #fffff8;
   --colors-secondary: #14213d;
 }
@@ -136,10 +137,17 @@ pre {
   border-radius: 0.5rem;
   overflow: auto;
 }
-
+code {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem;
+  background-color: var(--colors-code-background);
+}
 pre > code {
   font-size: 0.9rem;
   display: block;
+}
+pre code {
+  background: none;
 }
 code,
 pre > code {
@@ -148,6 +156,7 @@ pre > code {
   line-height: 1.42;
   -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
 }
+
 hr {
   display: block;
   height: 1px;
@@ -266,6 +275,9 @@ a.muted,
 }
 .rounded-full {
   border-radius: 999rem;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .w-full {
   width: 100%;
