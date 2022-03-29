@@ -660,52 +660,6 @@ if you want change to the exact version every time, you can set the config to&lt
 </content>
 	</entry>
 	<entry xml:lang="en">
-		<title>About Me and the Blog</title>
-		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-03-22T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/about/" type="text/html"/>
-		<id>https://www.owenyoung.com/en/about/</id>
-		<content type="html">&lt;p&gt;I created a personal public Wiki &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Everything I Know by Owen - A Personal Knowledge Based Wiki (owenyoung.com)&lt;&#x2F;a&gt; and Blog &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Home - Owen Young’s Story&lt;&#x2F;a&gt;, which made me develop the habit of taking notes and writing more things, because the habit has been formed, so I no longer bothered about the form of the blog, put my personal notes, all the output of the blog through here, so that I can better maintain myself and save my mind, before the two places I was a little overwhelmed by switching back and forth.&lt;&#x2F;p&gt;
-&lt;p&gt;I’m using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; to edit all the content of this blog. Obsidian has a lot of easy-to-use shortcuts to make writing more efficient, and I recommend you use them as well. I prefer text-assisted input tools to software that modifies the formatting of my original data. It gives me more control as well as not being locked in by the operator.&lt;&#x2F;p&gt;
-&lt;p&gt;I’m using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola (getzola.org)&lt;&#x2F;a&gt; to generate this static blog, Zola is written in Rust, before that I basically used JS toolchain to generate the blog, now I prefer to use the one-stop tool, mainly because I’m afraid of the third-party plugin ecosystem, and I want to keep my blog as simple as possible. Zola actually provides a lot of capabilities, so it can also achieve most of the ideas, for example, I implemented this book sorting by rating: [books-sort-by-rating](content&#x2F;pages&#x2F;books- sort-by-rating.md)&lt;&#x2F;p&gt;
-&lt;p&gt;Now , I’am using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;foambubble&#x2F;foam&quot;&gt;foam&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;obsidian&lt;&#x2F;a&gt; to edit the wiki.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;about-me&quot;&gt;About Me&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;a-failure-of-english-learning&quot;&gt;A failure of English learning&lt;&#x2F;h3&gt;
-&lt;p&gt;I’ve learned English more than 10 years, but it still sucks, so I registered a Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt; for only English tweets, and this &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;wiki&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;blog&lt;&#x2F;a&gt; to force me to use more English.&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;programmer&quot;&gt;Programmer&lt;&#x2F;h3&gt;
-&lt;p&gt;Full stack developer, main technology stack is javascript. Find more my projects &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;&quot;&gt;Projects&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;what-am-i-doing-now&quot;&gt;What am I doing now?&lt;&#x2F;h3&gt;
-&lt;p&gt;See what am I doing now at &lt;a href=&quot;now.md&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;contact-me&quot;&gt;Contact Me&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Email: &lt;code&gt;owen#owenyoung.com&lt;&#x2F;code&gt; (Replace &lt;code&gt;#&lt;&#x2F;code&gt; with &lt;code&gt;@&lt;&#x2F;code&gt;)&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Telegram: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;t.me&#x2F;itsowenyoung&quot;&gt;https:&#x2F;&#x2F;t.me&#x2F;itsowenyoung&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;中文推 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;OwenYoungZh&quot;&gt;@OwenYoungZh&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;other-resources&quot;&gt;Other Resources&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Github &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&quot;&gt;@theowenyoung&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Patreon &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.patreon.com&#x2F;theowenyoung&quot;&gt;@theowenyoung&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Read.cv &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;read.cv&#x2F;owenyoung&quot;&gt;@owenyoung&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
 		<title>Tweets</title>
 		<published>2022-03-10T00:00:00+00:00</published>
 		<updated>2022-03-22T00:00:00+00:00</updated>
