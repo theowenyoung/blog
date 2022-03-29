@@ -357,19 +357,7 @@ li.inline {
   font-size: 1rem;
 }
 
-@media (min-width: 67.5rem) {
-  .no-toc {
-    width: 20rem;
-  }
-  .main-toc {
-    display: none;
-  }
-  #root {
-    display: flex;
-  }
-  .body-zone {
-    flex-direction: row;
-  }
+@media (min-width: 48rem) {
   .navbar {
     height: 100%;
     border-right: 1px solid var(--colors-divider);
@@ -378,10 +366,6 @@ li.inline {
     flex-direction: column;
     height: 100vh;
   }
-  .main-inner {
-    max-width: 44rem;
-    margin: 0 auto;
-  }
   .menu {
     flex-direction: column;
   }
@@ -389,6 +373,28 @@ li.inline {
     margin-bottom: 1rem;
     margin-right: 0;
   }
+  #root {
+    display: flex;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  .no-toc {
+    width: 20rem;
+  }
+  .main-toc {
+    display: none;
+  }
+
+  .body-zone {
+    flex-direction: row;
+  }
+
+  .main-inner {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
   .sidebar {
     position: sticky;
     border-top: none;
