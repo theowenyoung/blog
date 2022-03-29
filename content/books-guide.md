@@ -31,6 +31,7 @@ taxonomies:
 - [豆瓣外国小说 Top 100](https://m.douban.com/subject_collection/ECY45E4YA)
 - [纽约时报实时畅销榜](https://www.nytimes.com/books/best-sellers/)
 - [史上最佳商业书籍排行](https://hacktheentrepreneur.com/best-business-books/)
+- [适合小孩的书 6-14 岁](https://www.bookvine.io/)
 
 ## 资源
 
