@@ -1,6 +1,6 @@
 ---
 title: Books Sort By Rating
-path: books-sort-by-rating
+path: books
 template: books.html
 ---
 

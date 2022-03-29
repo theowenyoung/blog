@@ -11,7 +11,7 @@ path: about/
 
 我在使用[VSCode](https://code.visualstudio.com/)配合我开发的[Markdown 输入插件 Foam Lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode)来编辑这个博客的所有内容。我更喜欢文本辅助输入工具，而不希望软件修改我的原文数据格式。这让我更有掌控感以及不被运营商锁定。
 
-我在使用[Zola (getzola.org)](https://www.getzola.org/)来生成这个静态博客，Zola 是用 Rust 写的，我之前基本都是用 JS 工具链来生成博客，现在我更喜欢用一站式工具，主要是对第三方插件生态感到害怕，同时想让自己的博客尽量保持简单，这个博客的样式也不多，都是我写的，所以以后就算是要迁移，也很简单。Zola 其实也提供了不少能力，所以也可以实现大部分的想法，比如我实现了这个图书按评分排序的功能：[books-sort-by-rating](/content/pages/books-sort-by-rating.md)
+我在使用[Zola (getzola.org)](https://www.getzola.org/)来生成这个静态博客，Zola 是用 Rust 写的，我之前基本都是用 JS 工具链来生成博客，现在我更喜欢用一站式工具，主要是对第三方插件生态感到害怕，同时想让自己的博客尽量保持简单，这个博客的样式也不多，都是我写的，所以以后就算是要迁移，也很简单。Zola 其实也提供了不少能力，所以也可以实现大部分的想法，比如我实现了这个图书按评分排序的功能：[books-sort-by-rating](/content/pages/books.md)
 
 ## 关于我
 
