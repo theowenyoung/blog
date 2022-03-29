@@ -38,7 +38,7 @@ include_content = false
 [extra]
 author = "Owen Young"
 email = "owen@owenyoung.com"
-theme_color = "rgb(234, 76, 137)"
+theme_color = "#EA4C89"
 
 ### THIRD PARTY
 # google_analytics = "UA-012345-67"
@@ -74,7 +74,7 @@ label_created = "发布于"
 label_home = "首页"
 label_links = "一些可能有用的链接"
 label_new_posts_list_title = "以下是我[最新](/blog/)的5篇文章："
-label_notes_title = "以下是我长期在[更新和维护的笔记](/categories/notes/)："
+label_notes_title = "以下是我长期在[更新和维护的笔记(按最后更新时间排序)](/categories/notes/)："
 label_published_on = "发布在"
 label_rating = "评分"
 label_read_more = "继续阅读需要"
