@@ -1,0 +1,50 @@
+---
+title: 阅读指南
+date: 2022-03-29
+updated: 2022-03-29
+taxonomies:
+  categories:
+    - Notes
+  tags:
+    - Books
+    - Guide
+---
+
+收集书籍推荐列表，以及资源。
+
+<!-- more -->
+
+## 其他人的书籍推荐资源
+
+- [汇总了 hacker news 上评论里提到的书籍的排名](https://hacker-recommended-books.vercel.app/)
+  - [又一个 hacker news 提到的图书周报](https://hackernewsbooks.com/top-books-on-hacker-news)
+- [reddit 上的图书推荐排名](https://www.redditreads.com/)
+- [豆瓣图书 top250](https://book.douban.com/top250)
+- [像在书店一样发现新的书](https://shepherd.com/)
+- [Ask HN: 那些书改变了你对所有事情的看法？](https://news.ycombinator.com/item?id=19087418)
+  - [Ask HN: 您推荐大家阅读的一本书是什么？](https://hn.buzzing.cc/hn/30241190/)
+- [Sive 的读书笔记](https://sive.rs/book)
+- [BBC 最有影响力的 100 本书籍](https://en.wikipedia.org/wiki/BBC_list_of_100_%22most_inspiring%22_novels)
+- [Good read 最受欢迎的书籍列表](https://www.goodreads.com/list/popular_lists)
+  - [有史以来最好的书 - Good read list](https://www.goodreads.com/list/show/1.Best_Books_Ever)
+- [时代周刊百大最佳英文长篇小说](https://zh.wikipedia.org/wiki/%E6%99%82%E4%BB%A3%E9%9B%9C%E8%AA%8C%E7%99%BE%E5%A4%A7%E8%8B%B1%E6%96%87%E5%B0%8F%E8%AA%AA)
+- [豆瓣外国小说 Top 100](https://m.douban.com/subject_collection/ECY45E4YA)
+- [纽约时报实时畅销榜](https://www.nytimes.com/books/best-sellers/)
+- [史上最佳商业书籍排行](https://hacktheentrepreneur.com/best-business-books/)
+
+## 资源
+
+- [标准电子书](https://standardebooks.org/) - 制作精美的免费版权的电子书
+- [鸠摩电子书搜索](https://www.jiumodiary.com/)
+- [Z-Library 全球最大数字图书馆](https://zh.z-lib.org/)
+  - <https://sg1lib.org>
+  - <https://1lib.pl>
+  - <https://ng1lib.org>
+  - <https://b-ok.com>
+  - <https://bookzz.ren>
+  - <https://booksc.xyz>
+- [公共领域有声读物](https://librivox.org/)
+
+## 讨论
+
+- [Book Forum](https://www.bookforum.com/) - 高质量的书籍推荐/评论平台
