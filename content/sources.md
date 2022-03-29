@@ -20,6 +20,10 @@ taxonomies:
 - [Axios](https://www.axios.com/) - 简明扼要的新闻，有重点的新闻，几句话新闻的精髓
 - [赫芬顿邮报](https://www.huffpost.com/)
 
+## opinion
+
+- [Narrative](https://www.narrativesproject.com/) - 非营利组织，温和新闻观点，致力于提供温和的立场
+
 ## 中文独立媒体
 
 - [thenewslens](https://www.thenewslens.com/) - Taiwan indie media
