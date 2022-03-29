@@ -168,7 +168,7 @@ folder/*
 
 ## 开源许可证
 
-![License Comparison](attachments/license-comparision.png)
+![License Comparison](./license-comparision.png)
 
 > By [如何选择开源许可证？](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 

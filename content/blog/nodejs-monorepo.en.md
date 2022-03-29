@@ -124,7 +124,7 @@ git push --follow-tags
 
 I'll use Github Actions as example.
 
-The CI workflow assume that you use [开发技巧收藏](/content/dev-tips.md#git-tips) as your git workflow.
+The CI workflow assume that you use [开发技巧收藏](/content/dev-tips/index.md#git-tips) as your git workflow.
 
 > Note, you can use [`@changesets/changelog-github`](https://github.com/atlassian/changesets/tree/main/packages/changelog-github) as your changelog format log. with this, you can generate a log like [this](https://github.com/theowenyoung/monorepo-example/releases/tag/%40theowenyoung%2Fpackage-example-b%401.1.0) , without this, then the log will only include [commit link](https://github.com/theowenyoung/monorepo-example/releases/tag/%40theowenyoung%2Fpackage-example-c%401.1.2) > `npm i -D @changesets/changelog-github`
 >
@@ -202,7 +202,7 @@ jobs:
 
 3. Add `NPM_TOKEN` to your github repo secret settings
 
-By [开发技巧收藏](/content/dev-tips.md)
+By [开发技巧收藏](/content/dev-tips/index.md)
 
 ```bash
 npm token create
