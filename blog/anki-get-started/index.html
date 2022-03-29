@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  itemscope
+  itemtype="http://schema.org/Blog"
+>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
+    <title>Anki背单词必备的3个插件 - Owen的博客</title>
+
+    
+    <meta
+      name="description"
+      itemprop="about"
+      content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
+    />
+    <meta
+      name="keywords"
+      itemprop="keywords"
+      content="注意力, 读书, 工具分享, 纯文本, 英语学习"
+    />
+    <meta name="author" itemprop="author" content="Owen Young" />
+    <meta itemprop="headline" content="Owen的博客" />
+    <meta itemprop="copyrightYear" content="2022" />
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
+    type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
+    rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b"> <link
+    rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64"> <link
+    rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a"> <link
+    rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020"> <link
+    rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50"> <link
+    rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363"> <link
+    rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70"> <link
+    rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1"> <link rel="icon"
+    type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac"> <link rel="icon"
+    type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"> <link rel="icon"
+    type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> <link rel="icon"
+    type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa"> <link rel="manifest"
+    href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta
+      name="msapplication-TileColor"
+      content="rgb(234, 76, 137)"
+    />
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
+
+    <meta
+      property="og:title"
+      content="Anki背单词必备的3个插件 - Owen的博客"
+    />
+    <meta
+      property="og:description"
+      content=" &lt;p&gt;用了那么多背单词软件，发现还是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;&quot;&gt;Anki&lt;&#x2F;a&gt;好用，我觉得其中最好用是 Anki 提供的强大的 Tag 功能，你可以给每个单词打上一个 Tag ，这样方便你日后归类来复习这些单词，比如你可以有一个「hard」的 Tag。&lt;&#x2F;p&gt;
+  "
+    />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;www.owenyoung.com/anki-get-started"
+    />
+    <meta property="og:site_name" content="Owen的博客" />
+    
+    <meta
+      property="og:image"
+      content=""
+    />
+    
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="TheOwenYoung" />
+    <meta name="twitter:creator" content="TheOwenYoung" />
+    <meta
+      name="twitter:image:alt"
+      content="Owen的博客"
+    />
+     
+    
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
+
+  </head>
+
+  <body>
+    <section id="top"></section>
+    <section id="root" >
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"></img>
+            </a> 
+          </div>
+          <div>
+            <ul class="flex menu list-none items-center justify-center">
+             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Back to Top" href="#top">
+               <span class=""> &#8593;</span>
+              </a></li>
+             <li>
+              <a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
+                <span class=""> &#8595;</span>
+               </a>
+             </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="body-zone flex justify-between flex-1">
+          <section class="main flex-1">
+            <div class="main-inner px">
+              
+      <header id="overview">
+        <div class="pt">
+          <span>&gt;&gt;</span>
+          <a href="https://www.owenyoung.com/">首页</a>
+          
+          <span class="divider">/</span>
+          <a class="category" href="https://www.owenyoung.com/categories/misc/">Misc</a>
+          
+          <span class="divider">/</span>
+          
+          <a href="https://www.owenyoung.com/tags/english/">English</a>
+          
+          
+          
+          </div>
+        
+        <div>
+          <h1 style="font-size:2rem;">Anki背单词必备的3个插件</h1>
+          <div class="muted">
+            <div>发布于: 2020-11-10, 最后更新时间: 2020-11-10, 阅读时间: 4 min</div>
+        </div>
+  
+        </div>
+        
+        
+      </header>
+      <section>
+      
+        <section class="main">
+          
+          <div class="main-toc pt">
+            <details>
+              <summary>快速导航</summary>
+              
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/anki-get-started/#yu-xian-zhun-bei">预先准备</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/anki-get-started/#bi-bei-cha-jian">必备插件</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/anki-get-started/#1-quick-tagging">1. Quick tagging</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/anki-get-started/#2-clickable-tags">2. Clickable Tags </a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/anki-get-started/#3-tag-entry-enhancements-v2">3. Tag Entry Enhancements v2</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/anki-get-started/#zong-jie">总结</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <p>用了那么多背单词软件，发现还是<a rel="noopener nofollow noreferrer" target="_blank" href="https://ankiweb.net/">Anki</a>好用，我觉得其中最好用是 Anki 提供的强大的 Tag 功能，你可以给每个单词打上一个 Tag ，这样方便你日后归类来复习这些单词，比如你可以有一个「hard」的 Tag。</p>
+<span id="continue-reading"></span>
+<p>Tag 是 Anki 官方提供的功能，你可以直接在 Anki 上管理 tag，但是默认的 tag 管理比较不够便捷，所以如果配合以下插件，就能更方便的添加，查看 Tag。</p>
+<p>这里纪录下我的 Anki 配置，希望你也能用得着。最终效果如下：</p>
+<p><img src="https://i.imgur.com/WF5posJ.png" alt="" /></p>
+<h2 id="yu-xian-zhun-bei">预先准备<a class="zola-anchor" href="#yu-xian-zhun-bei" aria-label="Anchor link for: yu-xian-zhun-bei">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.ankiweb.net/">下载 Anki 桌面版</a></li>
+<li>[下载一个词库][https://ankiweb.net/shared/decks/] - 可选，我初学的时候用的是这个排名第一的<a rel="noopener nofollow noreferrer" target="_blank" href="https://ankiweb.net/shared/info/1104981491">4000 Essential English Words 英英</a></li>
+</ul>
+<h2 id="bi-bei-cha-jian">必备插件<a class="zola-anchor" href="#bi-bei-cha-jian" aria-label="Anchor link for: bi-bei-cha-jian">🔗</a></h2>
+<p>下载插件是在「Tools-&gt;Add-ons-&gt;Get Add-ons」,输入插件的 Code，插件的 Code 在插件主页上找到，[点击这里](https://ankiweb.net/shared/addons/ 2.1)可以浏览所有的插件。</p>
+<blockquote>
+<p>Note: 每次安装完插件后，重启才能生效。</p>
+</blockquote>
+<h3 id="1-quick-tagging">1. <a rel="noopener nofollow noreferrer" target="_blank" href="https://ankiweb.net/shared/info/304770511">Quick tagging</a><a class="zola-anchor" href="#1-quick-tagging" aria-label="Anchor link for: 1-quick-tagging">🔗</a></h3>
+<p>Code: <code>304770511</code></p>
+<p>这个插件用来在 review 时，用快捷键快速添加 tag，默认是「q」键，你可以配置自己常用的 tag，比如「h」键添加一个「hard」标签。</p>
+<p>以下是我的配置(其实就只是加了一个 hard 快捷键)：</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">add tag shortcut</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">q</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">edit tag shortcut</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">w</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">quick tags</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">Ctrl+Shift+B</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">action</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">bury note</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">tags</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">burynote</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">Shift+B</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">action</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">bury card</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">tags</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">burycard</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">Shift+S</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">action</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">suspend card</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">tags</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">suspend</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">h</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">action</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">again card</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">tags</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">hard</span><span>&quot;
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h3 id="2-clickable-tags">2. <a rel="noopener nofollow noreferrer" target="_blank" href="https://ankiweb.net/shared/info/380714095">Clickable Tags </a><a class="zola-anchor" href="#2-clickable-tags" aria-label="Anchor link for: 2-clickable-tags">🔗</a></h3>
+<p>Code: <code>380714095</code></p>
+<p>接下来就是这个 Clickable Tags 插件了，上一个插件解决了添加 Tag 的问题，这个插件解决显示 Tag 的问题，用了这个插件后你可以把这个单词所属的 Tag 都显示在 Review 页面，并且可以随时点击进去查看同个 Tag 的所有单词。效果如下：</p>
+<p><img src="https://raw.githubusercontent.com/luoliyan/anki-misc/master/screenshots/clickable-tags.png" alt="" /></p>
+<p>安装完成后，你需要在你的单词模板里插入一个占位符来作为显示 Tag 的地方，步骤如下：</p>
+<p><img src="https://i.imgur.com/2WWkaiA.png" alt="" /></p>
+<p>点击「Cards」，选择「Back Template」，在合适的地方插入 <code>{{clickable:Tags}}</code></p>
+<p><img src="https://i.imgur.com/xVZHyjW.png" alt="" /></p>
+<p>保存并重启 Anki，你就会在卡片背面看到单词的 Tags（如果有 Tag 的话）</p>
+<h3 id="3-tag-entry-enhancements-v2">3. <a rel="noopener nofollow noreferrer" target="_blank" href="https://ankiweb.net/shared/info/536796161">Tag Entry Enhancements v2</a><a class="zola-anchor" href="#3-tag-entry-enhancements-v2" aria-label="Anchor link for: 3-tag-entry-enhancements-v2">🔗</a></h3>
+<p>Code: <code>536796161</code></p>
+<p>这个插件提供标签输入增强的，提供了以下功能：</p>
+<ul>
+<li>添加 Return / Enter 作为热键以应用第一个建议的标签</li>
+<li>将 Ctrl + Tab 作为热键添加以在建议列表中移动</li>
+<li>输入字段时禁用初始建议框弹出窗口</li>
+<li>允许使用 ↑/↓ 调用标签建议框</li>
+</ul>
+<p>安装后重启即可使用</p>
+<h2 id="zong-jie">总结<a class="zola-anchor" href="#zong-jie" aria-label="Anchor link for: zong-jie">🔗</a></h2>
+<p>总之，我使用 Anki 的重度功能就是这个 Tag，背到某个单词的时候，可以看到你标记的同类单词，这样更不容易忘记。</p>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
+            <p>
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9AAnki%E8%83%8C%E5%8D%95%E8%AF%8D%E5%BF%85%E5%A4%87%E7%9A%843%E4%B8%AA%E6%8F%92%E4%BB%B6">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+            </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>快速导航</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/anki-get-started/#yu-xian-zhun-bei">预先准备</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/anki-get-started/#bi-bei-cha-jian">必备插件</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/anki-get-started/#1-quick-tagging">1. Quick tagging</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/anki-get-started/#2-clickable-tags">2. Clickable Tags </a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/anki-get-started/#3-tag-entry-enhancements-v2">3. Tag Entry Enhancements v2</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/anki-get-started/#zong-jie">总结</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+
+</aside>
+
+
+
+      </main>
+      </section>
+    <section id="bottom"></section>
+  </body>
+</html>

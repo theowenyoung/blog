@@ -390,7 +390,7 @@
 &lt;h3 id=&quot;iina&quot;&gt;IINA&lt;a class=&quot;zola-anchor&quot; href=&quot;#iina&quot; aria-label=&quot;Anchor link for: iina&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iina.io&#x2F;&quot;&gt;IINA - The modern media player for macOS&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Open stream video:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;iina:&#x2F;&#x2F;weblink?url&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;{encoed url}
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;iina:&#x2F;&#x2F;weblink?url&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{encoed url}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;git-workflow&quot;&gt;Git Workflow&lt;a class=&quot;zola-anchor&quot; href=&quot;#git-workflow&quot; aria-label=&quot;Anchor link for: git-workflow&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;comparing-workflows&#x2F;gitflow-workflow&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;

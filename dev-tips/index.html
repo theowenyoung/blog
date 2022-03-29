@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>开发技巧收藏 - Owen的博客</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -81,7 +81,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -145,361 +154,12 @@
       <section>
       
         <section class="main">
-          <section id="start"></section>
-          <p>收集开发相关的技巧，比如中国需要的镜像服务等。</p>
-<span id="continue-reading"></span><h2 id="jing-xiang-fu-wu">镜像服务<a class="zola-anchor" href="#jing-xiang-fu-wu" aria-label="Anchor link for: jing-xiang-fu-wu">🔗</a></h2>
-<h3 id="github">Github<a class="zola-anchor" href="#github" aria-label="Anchor link for: github">🔗</a></h3>
-<ul>
-<li>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://doc.fastgit.org/zh-cn/">Fastgit</a> - Github 国内镜像</p>
-</li>
-<li>
-<p>Download: <code>https://download.fastgit.org/org/repo/xxx</code></p>
-</li>
-<li>
-<p>Clone <code>git clone https://github.com/org/repo</code></p>
-</li>
-<li>
-<p>Clone with ssh <code>git clone git@ssh.fastgit.org:theowenyoung/gatsby-theme-primer-wiki.git</code></p>
-</li>
-</ul>
-<h3 id="rust">Rust<a class="zola-anchor" href="#rust" aria-label="Anchor link for: rust">🔗</a></h3>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://rsproxy.cn/">rsproxy cn</a> - rust 国内镜像</li>
-</ul>
-<h3 id="docker">Docker<a class="zola-anchor" href="#docker" aria-label="Anchor link for: docker">🔗</a></h3>
-<ul>
-<li>阿里云公网: <code>https://registry.cn-hangzhou.aliyuncs.com</code></li>
-<li>腾讯云： <code>https://mirror.ccs.tencentyun.com</code>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://cloud.tencent.com/document/product/1207/45596">使用说明</a></li>
-</ul>
-</li>
-</ul>
-<p><code>sudo vim /etc/docker/daemon.json</code></p>
-<pre data-lang="json" style="background-color:#ffffff;color:#4d4d4c;" class="language-json "><code class="language-json" data-lang="json"><span>{ </span><span style="color:#718c00;">&quot;registry-mirrors&quot;</span><span>: [</span><span style="color:#718c00;">&quot;https://mirror.ccs.tencentyun.com&quot;</span><span>] }
-</span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl restart docker
-</span></code></pre>
-<h2 id="jie-jue-fang-an">解决方案<a class="zola-anchor" href="#jie-jue-fang-an" aria-label="Anchor link for: jie-jue-fang-an">🔗</a></h2>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://developer.aliyun.com/article/645670?spm=5176.smartservice_service_chat.0.0.6a33709aQ2zFPh">阿里云函数计算 php 环境如何自定义内置扩展，覆盖系统自带扩展</a></li>
-</ul>
-<h2 id="bash-tips">Bash Tips<a class="zola-anchor" href="#bash-tips" aria-label="Anchor link for: bash-tips">🔗</a></h2>
-<h3 id="get-bash-script-parent-dir-absolute-path">Get bash script parent dir absolute path<a class="zola-anchor" href="#get-bash-script-parent-dir-absolute-path" aria-label="Anchor link for: get-bash-script-parent-dir-absolute-path">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">workspace</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">&quot;$( </span><span style="color:#4271ae;">cd</span><span style="color:#3e999f;"> -- </span><span style="color:#718c00;">&quot;$( </span><span style="color:#c82829;">dirname</span><span style="color:#3e999f;"> -- </span><span style="color:#718c00;">&quot;${</span><span style="color:#c82829;">BASH_SOURCE[</span><span style="color:#f5871f;">0</span><span style="color:#c82829;">]</span><span style="color:#718c00;">}&quot; )/../&quot; </span><span style="color:#3e999f;">&amp;&gt;</span><span style="color:#4271ae;"> /dev/null </span><span style="color:#3e999f;">&amp;&amp; </span><span style="color:#4271ae;">pwd </span><span style="color:#718c00;">)&quot;
-</span></code></pre>
-<h3 id="get-bash-script-dir-path">Get bash script dir path<a class="zola-anchor" href="#get-bash-script-dir-path" aria-label="Anchor link for: get-bash-script-dir-path">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">workspace</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">&quot;$( </span><span style="color:#4271ae;">cd</span><span style="color:#3e999f;"> -- </span><span style="color:#718c00;">&quot;$( </span><span style="color:#c82829;">dirname</span><span style="color:#3e999f;"> -- </span><span style="color:#718c00;">&quot;${</span><span style="color:#c82829;">BASH_SOURCE[</span><span style="color:#f5871f;">0</span><span style="color:#c82829;">]</span><span style="color:#718c00;">}&quot; )&quot; </span><span style="color:#3e999f;">&amp;&gt;</span><span style="color:#4271ae;"> /dev/null </span><span style="color:#3e999f;">&amp;&amp; </span><span style="color:#4271ae;">pwd </span><span style="color:#718c00;">)&quot;
-</span></code></pre>
-<h3 id="bash-dotenv">Bash Dotenv<a class="zola-anchor" href="#bash-dotenv" aria-label="Anchor link for: bash-dotenv">🔗</a></h3>
-<blockquote>
-<p>导出.env 文件到当前执行环境</p>
-</blockquote>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#4271ae;">set </span><span style="color:#f5871f;">-o</span><span style="color:#4271ae;"> allexport</span><span style="color:#3e999f;">; </span><span style="color:#4271ae;">source .env</span><span style="color:#3e999f;">; </span><span style="color:#4271ae;">set </span><span style="color:#f5871f;">+o</span><span style="color:#4271ae;"> allexport
-</span></code></pre>
-<h2 id="deno-tips">Deno Tips<a class="zola-anchor" href="#deno-tips" aria-label="Anchor link for: deno-tips">🔗</a></h2>
-<h3 id="dirname">Dirname<a class="zola-anchor" href="#dirname" aria-label="Anchor link for: dirname">🔗</a></h3>
-<pre data-lang="ts" style="background-color:#ffffff;color:#4d4d4c;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#8959a8;">const </span><span style="color:#c82829;">__dirname </span><span style="color:#3e999f;">= new </span><span>URL(</span><span style="color:#718c00;">&quot;.&quot;</span><span>, </span><span style="color:#8959a8;">import</span><span>.meta.</span><span style="color:#c82829;">url</span><span>).pathname;
-</span></code></pre>
-<h2 id="docker-tips">Docker Tips<a class="zola-anchor" href="#docker-tips" aria-label="Anchor link for: docker-tips">🔗</a></h2>
-<h3 id="docker-compose-exec-bin">Docker compose exec bin<a class="zola-anchor" href="#docker-compose-exec-bin" aria-label="Anchor link for: docker-compose-exec-bin">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">docker-compose</span><span style="color:#4271ae;"> exec service-name /bin/sh
-</span></code></pre>
-<h3 id="stop-all-contains-and-remove">Stop All contains and remove<a class="zola-anchor" href="#stop-all-contains-and-remove" aria-label="Anchor link for: stop-all-contains-and-remove">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> docker stop $(</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> docker ps</span><span style="color:#f5871f;"> -a -q</span><span style="color:#4271ae;">)
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> docker rm $(</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> docker ps</span><span style="color:#f5871f;"> -a -q</span><span style="color:#4271ae;">)
-</span></code></pre>
-<h3 id="clean-all">Clean all<a class="zola-anchor" href="#clean-all" aria-label="Anchor link for: clean-all">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> docker system prune</span><span style="color:#f5871f;"> --volumes
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> docker image prune</span><span style="color:#f5871f;"> -a
-</span></code></pre>
-<h2 id="git-tips">Git Tips<a class="zola-anchor" href="#git-tips" aria-label="Anchor link for: git-tips">🔗</a></h2>
-<h3 id="generate-ssh-key">Generate ssh key<a class="zola-anchor" href="#generate-ssh-key" aria-label="Anchor link for: generate-ssh-key">🔗</a></h3>
-<p>Reference: <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generating a new SSH key and adding it to the ssh-agent - GitHub Docs</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">ssh-keygen</span><span style="color:#f5871f;"> -t</span><span style="color:#4271ae;"> ed25519</span><span style="color:#f5871f;"> -C </span><span style="color:#718c00;">&quot;your_email@example.com&quot;
-</span><span style="color:#999999;"># Start the ssh-agent in the background.
-</span><span style="color:#4271ae;">eval </span><span style="color:#718c00;">&quot;$(</span><span style="color:#c82829;">ssh-agent</span><span style="color:#f5871f;"> -s</span><span style="color:#718c00;">)&quot;
-</span><span style="color:#999999;"># Add your SSH private key to the ssh-agent
-</span><span style="color:#c82829;">ssh-add ~</span><span style="color:#4271ae;">/.ssh/id_ed25519
-</span></code></pre>
-<p>Add ssh key to Github:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">cat</span><span style="color:#4271ae;"> .ssh/id_ed25519.pub
-</span></code></pre>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/settings/keys">SSH Keys Setting</a></p>
-<h3 id="huo-qu-shou-ci-ti-jiao-shi-jian">获取首次提交时间<a class="zola-anchor" href="#huo-qu-shou-ci-ti-jiao-shi-jian" aria-label="Anchor link for: huo-qu-shou-ci-ti-jiao-shi-jian">🔗</a></h3>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/2390199/finding-the-date-time-a-file-was-first-added-to-a-git-repository/25633731">Finding the date/time a file was first added to a Git repository - Stack Overflow</a> - 获取首次提交时间</li>
-</ul>
-<h3 id="ti-jiao-xiao-xi-de-mo-ban">提交消息的模版<a class="zola-anchor" href="#ti-jiao-xiao-xi-de-mo-ban" aria-label="Anchor link for: ti-jiao-xiao-xi-de-mo-ban">🔗</a></h3>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">Git Semantic Commit Messages</a> - git 语义化提交消息模版</li>
-</ul>
-<h3 id="he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang">合并上游的时候不弹出确认框<a class="zola-anchor" href="#he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang" aria-label="Anchor link for: he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> pull upstream main</span><span style="color:#f5871f;"> --commit --no-edit
-</span></code></pre>
-<h3 id="dui-suo-you-de-chong-tu-shang-you-de-geng-xin">对所有的冲突上游的更新<a class="zola-anchor" href="#dui-suo-you-de-chong-tu-shang-you-de-geng-xin" aria-label="Anchor link for: dui-suo-you-de-chong-tu-shang-you-de-geng-xin">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> checkout</span><span style="color:#f5871f;"> --theirs</span><span style="color:#4271ae;"> .
-</span></code></pre>
-<h3 id="shou-ci-geng-xin-zi-repo-submodule">首次更新子 repo submodule<a class="zola-anchor" href="#shou-ci-geng-xin-zi-repo-submodule" aria-label="Anchor link for: shou-ci-geng-xin-zi-repo-submodule">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> submodule update</span><span style="color:#f5871f;"> --init --recursive
-</span></code></pre>
-<p>Later</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> submodule update</span><span style="color:#f5871f;"> --recursive
-</span></code></pre>
-<h3 id="gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia">Gitignore 忽略所有，除了文件夹<a class="zola-anchor" href="#gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia" aria-label="Anchor link for: gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">folder/*
-</span><span>!</span><span style="color:#c82829;">folder/.gitkeep
-</span></code></pre>
-<h2 id="go-template-tips">Go Template Tips<a class="zola-anchor" href="#go-template-tips" aria-label="Anchor link for: go-template-tips">🔗</a></h2>
-<ul>
-<li>Parent Variable, <code>{{$.XX}}</code></li>
-<li>URL encode, <code>urlquery &quot;https://test.com&quot;</code></li>
-</ul>
-<h2 id="kai-yuan-xu-ke-zheng">开源许可证<a class="zola-anchor" href="#kai-yuan-xu-ke-zheng" aria-label="Anchor link for: kai-yuan-xu-ke-zheng">🔗</a></h2>
-<p><img src="attachments/license-comparision.png" alt="License Comparison" /></p>
-<blockquote>
-<p>By <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html">如何选择开源许可证？</a></p>
-</blockquote>
-<h2 id="linux-common-commands">Linux Common Commands<a class="zola-anchor" href="#linux-common-commands" aria-label="Anchor link for: linux-common-commands">🔗</a></h2>
-<h3 id="view-current-system-info">View current system info<a class="zola-anchor" href="#view-current-system-info" aria-label="Anchor link for: view-current-system-info">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">lsb_release</span><span style="color:#f5871f;"> -a
-</span></code></pre>
-<p>Output:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">Distributor</span><span style="color:#4271ae;"> ID:	Debian
-</span><span style="color:#c82829;">Description:</span><span style="color:#4271ae;">	Debian GNU/Linux 10 (buster</span><span>)
-</span><span style="color:#c82829;">Release:</span><span style="color:#4271ae;">	10
-</span><span style="color:#c82829;">Codename:</span><span style="color:#4271ae;">	buster
-</span></code></pre>
-<h3 id="view-all-users">View all users<a class="zola-anchor" href="#view-all-users" aria-label="Anchor link for: view-all-users">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">cat</span><span style="color:#4271ae;"> /etc/passwd </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">grep</span><span style="color:#f5871f;"> -v</span><span style="color:#4271ae;"> nologin</span><span style="color:#3e999f;">|</span><span style="color:#c82829;">grep</span><span style="color:#f5871f;"> -v</span><span style="color:#4271ae;"> halt</span><span style="color:#3e999f;">|</span><span style="color:#c82829;">grep</span><span style="color:#f5871f;"> -v</span><span style="color:#4271ae;"> shutdown</span><span style="color:#3e999f;">|</span><span style="color:#c82829;">awk</span><span style="color:#f5871f;"> -F</span><span style="color:#718c00;">&quot;:&quot; &#39;{ print $1&quot;|&quot;$3&quot;|&quot;$4 }&#39;</span><span style="color:#3e999f;">|</span><span style="color:#c82829;">more
-</span></code></pre>
-<h3 id="get-publish-ip">Get Publish IP<a class="zola-anchor" href="#get-publish-ip" aria-label="Anchor link for: get-publish-ip">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">hostname</span><span style="color:#f5871f;"> -I
-</span></code></pre>
-<h3 id="change-user-group">Change user group<a class="zola-anchor" href="#change-user-group" aria-label="Anchor link for: change-user-group">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">usermod</span><span style="color:#f5871f;"> -g</span><span style="color:#4271ae;"> groupname username
-</span></code></pre>
-<h3 id="get-user-group">Get user group<a class="zola-anchor" href="#get-user-group" aria-label="Anchor link for: get-user-group">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">id</span><span style="color:#f5871f;"> -g -n
-</span></code></pre>
-<h3 id="remove-apt-ppa">Remove apt ppa<a class="zola-anchor" href="#remove-apt-ppa" aria-label="Anchor link for: remove-apt-ppa">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> add-apt-repository</span><span style="color:#f5871f;"> --remove</span><span style="color:#4271ae;"> ppa:qbittorrent-team/qbittorrent-stable
-</span></code></pre>
-<h3 id="get-current-shell">Get current shell<a class="zola-anchor" href="#get-current-shell" aria-label="Anchor link for: get-current-shell">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#4271ae;">echo </span><span style="color:#718c00;">&quot;$</span><span style="color:#c82829;">SHELL</span><span style="color:#718c00;">&quot;
-</span></code></pre>
-<h3 id="get-current-cpu-arch">Get current cpu arch<a class="zola-anchor" href="#get-current-cpu-arch" aria-label="Anchor link for: get-current-cpu-arch">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">arch
-</span></code></pre>
-<p>or</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">dpkg</span><span style="color:#f5871f;"> --print-architecture
-</span></code></pre>
-<h3 id="unzip-tar-gz">Unzip tar.gz<a class="zola-anchor" href="#unzip-tar-gz" aria-label="Anchor link for: unzip-tar-gz">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">tar</span><span style="color:#f5871f;"> -xf</span><span style="color:#4271ae;"> x.tar.gz
-</span></code></pre>
-<p>See also <a rel="noopener nofollow noreferrer" target="_blank" href="https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/">here</a></p>
-<p>Tar to specific directory</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">tar</span><span style="color:#f5871f;"> -xf</span><span style="color:#4271ae;"> x.tar.gz</span><span style="color:#f5871f;"> -C</span><span style="color:#4271ae;"> ./xxx
-</span></code></pre>
-<h3 id="stdout-to-file">Stdout to File<a class="zola-anchor" href="#stdout-to-file" aria-label="Anchor link for: stdout-to-file">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#4271ae;">command </span><span style="color:#3e999f;">&amp;&gt;</span><span style="color:#4271ae;"> file
-</span></code></pre>
-<p>Overwrite:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#4271ae;">command </span><span style="color:#3e999f;">&gt;| </span><span style="color:#c82829;">file.txt </span><span style="color:#f5871f;">2</span><span style="color:#3e999f;">&gt;&amp;</span><span style="color:#f5871f;">1
-</span></code></pre>
-<h3 id="download-upload-file-by-ssh-scp">Download/Upload file by SSH SCP<a class="zola-anchor" href="#download-upload-file-by-ssh-scp" aria-label="Anchor link for: download-upload-file-by-ssh-scp">🔗</a></h3>
-<p>Download to local:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">scp</span><span style="color:#4271ae;"> root@ip:/path </span><span style="color:#c82829;">~</span><span style="color:#4271ae;">/Downloads
-</span></code></pre>
-<h3 id="remove-node-modules">Remove node_modules<a class="zola-anchor" href="#remove-node-modules" aria-label="Anchor link for: remove-node-modules">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">find</span><span style="color:#4271ae;"> .</span><span style="color:#f5871f;"> -name </span><span style="color:#718c00;">&#39;node_modules&#39;</span><span style="color:#f5871f;"> -type</span><span style="color:#4271ae;"> d</span><span style="color:#f5871f;"> -prune -exec</span><span style="color:#4271ae;"> rm</span><span style="color:#f5871f;"> -rf </span><span style="color:#718c00;">&#39;{}&#39;</span><span style="color:#4271ae;"> +
-</span></code></pre>
-<h3 id="remove-target">Remove target<a class="zola-anchor" href="#remove-target" aria-label="Anchor link for: remove-target">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">find</span><span style="color:#4271ae;"> .</span><span style="color:#f5871f;"> -name </span><span style="color:#718c00;">&#39;target&#39;</span><span style="color:#f5871f;"> -type</span><span style="color:#4271ae;"> d</span><span style="color:#f5871f;"> -prune -exec</span><span style="color:#4271ae;"> rm</span><span style="color:#f5871f;"> -rf </span><span style="color:#718c00;">&#39;{}&#39;</span><span style="color:#4271ae;"> +
-</span></code></pre>
-<h3 id="find-and-replace-string">Find and replace string<a class="zola-anchor" href="#find-and-replace-string" aria-label="Anchor link for: find-and-replace-string">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sed</span><span style="color:#f5871f;"> -i </span><span style="color:#718c00;">&#39;s/old-text/new-text/g&#39;</span><span style="color:#4271ae;"> input.txt
-</span></code></pre>
-<h3 id="soft-link">Soft Link<a class="zola-anchor" href="#soft-link" aria-label="Anchor link for: soft-link">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">ln</span><span style="color:#f5871f;"> -s</span><span style="color:#4271ae;"> source_file target_file
-</span></code></pre>
-<h3 id="create-user">Create User<a class="zola-anchor" href="#create-user" aria-label="Anchor link for: create-user">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">useradd</span><span style="color:#f5871f;"> -m</span><span style="color:#4271ae;"> USERNAME
-</span></code></pre>
-<blockquote>
-<p>Note: with home directory</p>
-</blockquote>
-<h3 id="get-all-shells">Get all shells<a class="zola-anchor" href="#get-all-shells" aria-label="Anchor link for: get-all-shells">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">cat</span><span style="color:#4271ae;"> /etc/shells
-</span></code></pre>
-<h3 id="last-n-lines-in-file">Last n lines in file<a class="zola-anchor" href="#last-n-lines-in-file" aria-label="Anchor link for: last-n-lines-in-file">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">tail</span><span style="color:#f5871f;"> -3</span><span style="color:#4271ae;"> file.txt
-</span></code></pre>
-<h3 id="linux-find-a-biggest-directory-in">Linux find a biggest directory in ./<a class="zola-anchor" href="#linux-find-a-biggest-directory-in" aria-label="Anchor link for: linux-find-a-biggest-directory-in">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> du</span><span style="color:#f5871f;"> -a</span><span style="color:#4271ae;"> ./ </span><span style="color:#f5871f;">2</span><span style="color:#3e999f;">&gt;</span><span style="color:#4271ae;">/dev/null </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">sort</span><span style="color:#f5871f;"> -n -r </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">head</span><span style="color:#f5871f;"> -n</span><span style="color:#4271ae;"> 20
-</span></code></pre>
-<h3 id="linux-find-a-biggest-file-in">Linux find a biggest file in ./<a class="zola-anchor" href="#linux-find-a-biggest-file-in" aria-label="Anchor link for: linux-find-a-biggest-file-in">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">find</span><span style="color:#4271ae;"> ./</span><span style="color:#f5871f;"> -type</span><span style="color:#4271ae;"> f</span><span style="color:#f5871f;"> -printf </span><span style="color:#718c00;">&#39;%s %p\n&#39; </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">sort</span><span style="color:#f5871f;"> -nr </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">head</span><span style="color:#f5871f;"> -10
-</span></code></pre>
-<h3 id="linux-view-systemctl-log">Linux view systemctl log:<a class="zola-anchor" href="#linux-view-systemctl-log" aria-label="Anchor link for: linux-view-systemctl-log">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> journalctl</span><span style="color:#f5871f;"> -f -u</span><span style="color:#4271ae;"> service-name.service
-</span></code></pre>
-<h3 id="see-who-connect-with-me">See who connect with Me<a class="zola-anchor" href="#see-who-connect-with-me" aria-label="Anchor link for: see-who-connect-with-me">🔗</a></h3>
-<p>See: <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.linuxshelltips.com/find-ip-addresses-are-connected-to-linux/">here</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">ss</span><span style="color:#f5871f;"> -tun</span><span style="color:#4271ae;"> state connected
-</span></code></pre>
-<h3 id="sort-by-ip-connect-with-443">Sort by ip connect with 443<a class="zola-anchor" href="#sort-by-ip-connect-with-443" aria-label="Anchor link for: sort-by-ip-connect-with-443">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">netstat</span><span style="color:#f5871f;"> -tn 2</span><span style="color:#3e999f;">&gt;</span><span style="color:#4271ae;">/dev/null </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">grep</span><span style="color:#f5871f;"> -E </span><span style="color:#718c00;">&#39;\s[0-9.]+:443\s&#39; </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">awk </span><span style="color:#718c00;">&#39;{print $5}&#39; </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">cut</span><span style="color:#f5871f;"> -d</span><span style="color:#4271ae;"> :</span><span style="color:#f5871f;"> -f</span><span style="color:#4271ae;"> 1 </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">sort </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">uniq</span><span style="color:#f5871f;"> -c </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">sort</span><span style="color:#f5871f;"> -nr
-</span></code></pre>
-<h3 id="ban">Ban<a class="zola-anchor" href="#ban" aria-label="Anchor link for: ban">🔗</a></h3>
-<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.rackspace.com/support/how-to/block-an-ip-address-on-a-Linux-server/">here</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl status firewalld
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> firewall-cmd</span><span style="color:#f5871f;"> --permanent --add-rich-rule</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">&quot;rule family=&#39;ipv4&#39; source address=&#39;202.61.254.136&#39; reject&quot;
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> firewall-cmd</span><span style="color:#f5871f;"> --reload
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> firewall-cmd</span><span style="color:#f5871f;"> --list-all
-</span></code></pre>
-<h3 id="kill-tcp">Kill tcp<a class="zola-anchor" href="#kill-tcp" aria-label="Anchor link for: kill-tcp">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">tcpkill</span><span style="color:#4271ae;"> host </span><span style="color:#3e999f;">&lt;</span><span style="color:#4271ae;">ip</span><span style="color:#3e999f;">&gt;
-</span></code></pre>
-<h2 id="nodejs-tips">Nodejs Tips<a class="zola-anchor" href="#nodejs-tips" aria-label="Anchor link for: nodejs-tips">🔗</a></h2>
-<h3 id="delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">Delete node_modules folder recursively from a specified path using command line<a class="zola-anchor" href="#delete-node-modules-folder-recursively-from-a-specified-path-using-command-line" aria-label="Anchor link for: delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">🔗</a></h3>
-<blockquote>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/42950501/delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">Delete node_modules folder recursively from a specified path using command line - Stack Overflow</a></p>
-</blockquote>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">find</span><span style="color:#4271ae;"> .</span><span style="color:#f5871f;"> -name </span><span style="color:#718c00;">&#39;node_modules&#39;</span><span style="color:#f5871f;"> -type</span><span style="color:#4271ae;"> d</span><span style="color:#f5871f;"> -prune -exec</span><span style="color:#4271ae;"> rm</span><span style="color:#f5871f;"> -rf </span><span style="color:#718c00;">&#39;{}&#39;</span><span style="color:#4271ae;"> +
-</span></code></pre>
-<h3 id="get-npm-token">Get NPM Token<a class="zola-anchor" href="#get-npm-token" aria-label="Anchor link for: get-npm-token">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> token create
-</span></code></pre>
-<h3 id="check-npm-modules-updates">Check NPM modules updates<a class="zola-anchor" href="#check-npm-modules-updates" aria-label="Anchor link for: check-npm-modules-updates">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> npm-check-updates
-</span></code></pre>
-<p>Update to the latest version:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> npm-check-updates</span><span style="color:#f5871f;"> -u
-</span></code></pre>
-<h2 id="postgresql-tips">Postgresql Tips<a class="zola-anchor" href="#postgresql-tips" aria-label="Anchor link for: postgresql-tips">🔗</a></h2>
-<h3 id="0-enter-psql">0. Enter psql<a class="zola-anchor" href="#0-enter-psql" aria-label="Anchor link for: 0-enter-psql">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">psql
-</span></code></pre>
-<h3 id="show-all-databases">Show all databases<a class="zola-anchor" href="#show-all-databases" aria-label="Anchor link for: show-all-databases">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#f5871f;">\l
-</span></code></pre>
-<h3 id="enter-database">Enter Database<a class="zola-anchor" href="#enter-database" aria-label="Anchor link for: enter-database">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#f5871f;">\c </span><span style="color:#c82829;">database_name
-</span></code></pre>
-<h3 id="show-all-tables">Show all Tables<a class="zola-anchor" href="#show-all-tables" aria-label="Anchor link for: show-all-tables">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#f5871f;">\d
-</span></code></pre>
-<h3 id="show-table-structure">Show Table structure<a class="zola-anchor" href="#show-table-structure" aria-label="Anchor link for: show-table-structure">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#f5871f;">\d </span><span style="color:#c82829;">table_name
-</span></code></pre>
-<h3 id="pretty-print-table">Pretty print table<a class="zola-anchor" href="#pretty-print-table" aria-label="Anchor link for: pretty-print-table">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#f5871f;">\x </span><span style="color:#c82829;">on
-</span></code></pre>
-<h3 id="alter-table">Alter table<a class="zola-anchor" href="#alter-table" aria-label="Anchor link for: alter-table">🔗</a></h3>
-<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.postgresql.org/docs/current/sql-altertable.html">https://www.postgresql.org/docs/current/sql-altertable.html</a></p>
-<h3 id="upsert">Upsert<a class="zola-anchor" href="#upsert" aria-label="Anchor link for: upsert">🔗</a></h3>
-<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/61494958/postgres-on-conflict-do-update-only-non-null-values-in-python">https://stackoverflow.com/questions/61494958/postgres-on-conflict-do-update-only-non-null-values-in-python</a></p>
-<h3 id="export-schema">Export Schema<a class="zola-anchor" href="#export-schema" aria-label="Anchor link for: export-schema">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span> </span><span style="color:#c82829;">pg_dump</span><span style="color:#4271ae;"> database_name</span><span style="color:#f5871f;"> -s --no-owner </span><span style="color:#3e999f;">&gt;</span><span style="color:#4271ae;"> schema.sql
-</span></code></pre>
-<h3 id="export-only-data">Export Only data<a class="zola-anchor" href="#export-only-data" aria-label="Anchor link for: export-only-data">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span> </span><span style="color:#c82829;">pg_dump</span><span style="color:#4271ae;"> database_name</span><span style="color:#f5871f;"> -a --no-owner </span><span style="color:#3e999f;">&gt;</span><span style="color:#4271ae;"> data.sql
-</span></code></pre>
-<h3 id="delete-or-drop-or-remove-database">Delete or Drop or Remove Database<a class="zola-anchor" href="#delete-or-drop-or-remove-database" aria-label="Anchor link for: delete-or-drop-or-remove-database">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">psql
-</span><span style="color:#c82829;">drop</span><span style="color:#4271ae;"> database database_name</span><span style="color:#3e999f;">;
-</span></code></pre>
-<h3 id="create-database">Create Database<a class="zola-anchor" href="#create-database" aria-label="Anchor link for: create-database">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">psql
-</span><span style="color:#c82829;">CREATE</span><span style="color:#4271ae;"> DATABASE name</span><span style="color:#3e999f;">;
-</span></code></pre>
-<h3 id="import-database">Import Database<a class="zola-anchor" href="#import-database" aria-label="Anchor link for: import-database">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">psql</span><span style="color:#4271ae;"> database_name </span><span style="color:#3e999f;">&lt;</span><span style="color:#4271ae;"> data.sql
-</span></code></pre>
-<h2 id="css">CSS<a class="zola-anchor" href="#css" aria-label="Anchor link for: css">🔗</a></h2>
-<h3 id="smart-word-break-in-css">Smart word break in CSS<a class="zola-anchor" href="#smart-word-break-in-css" aria-label="Anchor link for: smart-word-break-in-css">🔗</a></h3>
-<blockquote>
-<p>From <a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/a/48830291">Smarter word break in CSS? - Stack Overflow</a></p>
-</blockquote>
-<pre data-lang="css" style="background-color:#ffffff;color:#4d4d4c;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#c82829;">body </span><span>{
-</span><span>  </span><span style="color:#c99e00;">overflow-wrap</span><span>: </span><span style="color:#f5871f;">break-word</span><span>;
-</span><span>  </span><span style="color:#c99e00;">word-wrap</span><span>: </span><span style="color:#f5871f;">break-word</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-ms-word-break</span><span>: </span><span style="color:#f5871f;">break-all</span><span>;
-</span><span>  </span><span style="color:#c99e00;">word-break</span><span>: </span><span style="color:#f5871f;">break-word</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-ms-hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-moz-hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-webkit-hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>}
-</span></code></pre>
-<h2 id="vim-tips">Vim Tips<a class="zola-anchor" href="#vim-tips" aria-label="Anchor link for: vim-tips">🔗</a></h2>
-<h3 id="resources">Resources<a class="zola-anchor" href="#resources" aria-label="Anchor link for: resources">🔗</a></h3>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.vim.so/">Vim online exercises</a> - help you master vim with interactive exercises.</li>
-</ul>
-<h3 id="tips">Tips<a class="zola-anchor" href="#tips" aria-label="Anchor link for: tips">🔗</a></h3>
-<ul>
-<li>
-<p>Delete all words: <code>1,$d</code></p>
-</li>
-<li>
-<p>Current line end: <code>$</code></p>
-</li>
-<li>
-<p>Replace all string: <code>s/string/replace_string/g</code></p>
-</li>
-</ul>
-<h2 id="vs-code-tips">VS Code Tips<a class="zola-anchor" href="#vs-code-tips" aria-label="Anchor link for: vs-code-tips">🔗</a></h2>
-<h3 id="open-command-palette-p">Open command palette: <code>⇧⌘P</code><a class="zola-anchor" href="#open-command-palette-p" aria-label="Anchor link for: open-command-palette-p">🔗</a></h3>
-<h3 id="select-current-line-cmd-l">Select current line: <code>cmd+L</code><a class="zola-anchor" href="#select-current-line-cmd-l" aria-label="Anchor link for: select-current-line-cmd-l">🔗</a></h3>
-<h3 id="quick-switch-windows">Quick Switch Windows<a class="zola-anchor" href="#quick-switch-windows" aria-label="Anchor link for: quick-switch-windows">🔗</a></h3>
-<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/37371739/os-x-cycle-between-windows-in-visual-studio-code">here</a></p>
-<p>Added the following shortcut to <code>keybindings.json</code></p>
-<pre data-lang="json" style="background-color:#ffffff;color:#4d4d4c;" class="language-json "><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#718c00;">&quot;key&quot;</span><span>: </span><span style="color:#718c00;">&quot;alt+tab&quot;</span><span>,
-</span><span>  </span><span style="color:#718c00;">&quot;command&quot;</span><span>: </span><span style="color:#718c00;">&quot;workbench.action.quickSwitchWindow&quot;
-</span><span>}
-</span></code></pre>
-<h3 id="read-more">Read more:<a class="zola-anchor" href="#read-more" aria-label="Anchor link for: read-more">🔗</a></h3>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks">Visual Studio Code Tips and Tricks</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/microsoft/vscode-tips-and-tricks">GitHub - microsoft/vscode-tips-and-tricks: Collection of helpful tips and tricks for VS Code.</a></li>
-</ul>
-
-
           
-          <div id="email-comment" class="muted text-sm">
-            <hr class="w-full">
-            
-            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
-            <p>
-              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9A%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7%E6%94%B6%E8%97%8F">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
-            </p>
-            
-            
-
-          </div>
-          
-
-          
-        </section>
-        
-       
-      </section>
-
-
-              </div>
-            </section>
-
-          
-<aside class="sidebar px ">
-
-
-
+          <div class="main-toc pt">
+            <details>
+              <summary>快速导航</summary>
+              
 <section class="sidebar-table-content">
-  <h3>快速导航</h3>
   <ul >
     <li><a href="#start">正文开始</a></li>
   
@@ -879,6 +539,745 @@
   
   </ul>
 </section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <p>收集开发相关的技巧，比如中国需要的镜像服务等。</p>
+<span id="continue-reading"></span><h2 id="jing-xiang-fu-wu">镜像服务<a class="zola-anchor" href="#jing-xiang-fu-wu" aria-label="Anchor link for: jing-xiang-fu-wu">🔗</a></h2>
+<h3 id="github">Github<a class="zola-anchor" href="#github" aria-label="Anchor link for: github">🔗</a></h3>
+<ul>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://doc.fastgit.org/zh-cn/">Fastgit</a> - Github 国内镜像</p>
+</li>
+<li>
+<p>Download: <code>https://download.fastgit.org/org/repo/xxx</code></p>
+</li>
+<li>
+<p>Clone <code>git clone https://github.com/org/repo</code></p>
+</li>
+<li>
+<p>Clone with ssh <code>git clone git@ssh.fastgit.org:theowenyoung/gatsby-theme-primer-wiki.git</code></p>
+</li>
+</ul>
+<h3 id="rust">Rust<a class="zola-anchor" href="#rust" aria-label="Anchor link for: rust">🔗</a></h3>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://rsproxy.cn/">rsproxy cn</a> - rust 国内镜像</li>
+</ul>
+<h3 id="docker">Docker<a class="zola-anchor" href="#docker" aria-label="Anchor link for: docker">🔗</a></h3>
+<ul>
+<li>阿里云公网: <code>https://registry.cn-hangzhou.aliyuncs.com</code></li>
+<li>腾讯云： <code>https://mirror.ccs.tencentyun.com</code>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://cloud.tencent.com/document/product/1207/45596">使用说明</a></li>
+</ul>
+</li>
+</ul>
+<p><code>sudo vim /etc/docker/daemon.json</code></p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{ &quot;</span><span style="color:#a3be8c;">registry-mirrors</span><span>&quot;: [&quot;</span><span style="color:#a3be8c;">https://mirror.ccs.tencentyun.com</span><span>&quot;] }
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl restart docker
+</span></code></pre>
+<h2 id="jie-jue-fang-an">解决方案<a class="zola-anchor" href="#jie-jue-fang-an" aria-label="Anchor link for: jie-jue-fang-an">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://developer.aliyun.com/article/645670?spm=5176.smartservice_service_chat.0.0.6a33709aQ2zFPh">阿里云函数计算 php 环境如何自定义内置扩展，覆盖系统自带扩展</a></li>
+</ul>
+<h2 id="bash-tips">Bash Tips<a class="zola-anchor" href="#bash-tips" aria-label="Anchor link for: bash-tips">🔗</a></h2>
+<h3 id="get-bash-script-parent-dir-absolute-path">Get bash script parent dir absolute path<a class="zola-anchor" href="#get-bash-script-parent-dir-absolute-path" aria-label="Anchor link for: get-bash-script-parent-dir-absolute-path">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">workspace</span><span>=&quot;$</span><span style="color:#a3be8c;">( </span><span style="color:#96b5b4;">cd</span><span> -- &quot;$</span><span style="color:#a3be8c;">( </span><span style="color:#bf616a;">dirname</span><span> -- &quot;$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">BASH_SOURCE[</span><span style="color:#d08770;">0</span><span style="color:#bf616a;">]</span><span style="color:#a3be8c;">}</span><span>&quot; </span><span style="color:#a3be8c;">)/../</span><span>&quot; &amp;&gt;</span><span style="color:#a3be8c;"> /dev/null </span><span>&amp;&amp; </span><span style="color:#96b5b4;">pwd </span><span style="color:#a3be8c;">)</span><span>&quot;
+</span></code></pre>
+<h3 id="get-bash-script-dir-path">Get bash script dir path<a class="zola-anchor" href="#get-bash-script-dir-path" aria-label="Anchor link for: get-bash-script-dir-path">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">workspace</span><span>=&quot;$</span><span style="color:#a3be8c;">( </span><span style="color:#96b5b4;">cd</span><span> -- &quot;$</span><span style="color:#a3be8c;">( </span><span style="color:#bf616a;">dirname</span><span> -- &quot;$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">BASH_SOURCE[</span><span style="color:#d08770;">0</span><span style="color:#bf616a;">]</span><span style="color:#a3be8c;">}</span><span>&quot; </span><span style="color:#a3be8c;">)</span><span>&quot; &amp;&gt;</span><span style="color:#a3be8c;"> /dev/null </span><span>&amp;&amp; </span><span style="color:#96b5b4;">pwd </span><span style="color:#a3be8c;">)</span><span>&quot;
+</span></code></pre>
+<h3 id="bash-dotenv">Bash Dotenv<a class="zola-anchor" href="#bash-dotenv" aria-label="Anchor link for: bash-dotenv">🔗</a></h3>
+<blockquote>
+<p>导出.env 文件到当前执行环境</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">set </span><span style="color:#bf616a;">-o</span><span> allexport; </span><span style="color:#96b5b4;">source</span><span> .env; </span><span style="color:#96b5b4;">set </span><span style="color:#bf616a;">+o</span><span> allexport
+</span></code></pre>
+<h2 id="deno-tips">Deno Tips<a class="zola-anchor" href="#deno-tips" aria-label="Anchor link for: deno-tips">🔗</a></h2>
+<h3 id="dirname">Dirname<a class="zola-anchor" href="#dirname" aria-label="Anchor link for: dirname">🔗</a></h3>
+<pre data-lang="ts" style="background-color:#2b303b;color:#c0c5ce;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#b48ead;">const </span><span style="color:#bf616a;">__dirname </span><span>= new URL(&quot;</span><span style="color:#a3be8c;">.</span><span>&quot;, </span><span style="color:#b48ead;">import</span><span>.meta.</span><span style="color:#bf616a;">url</span><span>).pathname;
+</span></code></pre>
+<h2 id="docker-tips">Docker Tips<a class="zola-anchor" href="#docker-tips" aria-label="Anchor link for: docker-tips">🔗</a></h2>
+<h3 id="docker-compose-exec-bin">Docker compose exec bin<a class="zola-anchor" href="#docker-compose-exec-bin" aria-label="Anchor link for: docker-compose-exec-bin">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">docker-compose</span><span> exec service-name /bin/sh
+</span></code></pre>
+<h3 id="stop-all-contains-and-remove">Stop All contains and remove<a class="zola-anchor" href="#stop-all-contains-and-remove" aria-label="Anchor link for: stop-all-contains-and-remove">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> docker stop $(</span><span style="color:#bf616a;">sudo</span><span> docker ps</span><span style="color:#bf616a;"> -a -q</span><span>)
+</span><span style="color:#bf616a;">sudo</span><span> docker rm $(</span><span style="color:#bf616a;">sudo</span><span> docker ps</span><span style="color:#bf616a;"> -a -q</span><span>)
+</span></code></pre>
+<h3 id="clean-all">Clean all<a class="zola-anchor" href="#clean-all" aria-label="Anchor link for: clean-all">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> docker system prune</span><span style="color:#bf616a;"> --volumes
+</span><span style="color:#bf616a;">sudo</span><span> docker image prune</span><span style="color:#bf616a;"> -a
+</span></code></pre>
+<h2 id="git-tips">Git Tips<a class="zola-anchor" href="#git-tips" aria-label="Anchor link for: git-tips">🔗</a></h2>
+<h3 id="generate-ssh-key">Generate ssh key<a class="zola-anchor" href="#generate-ssh-key" aria-label="Anchor link for: generate-ssh-key">🔗</a></h3>
+<p>Reference: <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Generating a new SSH key and adding it to the ssh-agent - GitHub Docs</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">ssh-keygen -t</span><span> ed25519</span><span style="color:#bf616a;"> -C </span><span>&quot;</span><span style="color:#a3be8c;">your_email@example.com</span><span>&quot;
+</span><span style="color:#65737e;"># Start the ssh-agent in the background.
+</span><span style="color:#96b5b4;">eval </span><span>&quot;$</span><span style="color:#a3be8c;">(</span><span style="color:#bf616a;">ssh-agent -s</span><span style="color:#a3be8c;">)</span><span>&quot;
+</span><span style="color:#65737e;"># Add your SSH private key to the ssh-agent
+</span><span style="color:#bf616a;">ssh-add ~</span><span>/.ssh/id_ed25519
+</span></code></pre>
+<p>Add ssh key to Github:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cat</span><span> .ssh/id_ed25519.pub
+</span></code></pre>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/settings/keys">SSH Keys Setting</a></p>
+<h3 id="huo-qu-shou-ci-ti-jiao-shi-jian">获取首次提交时间<a class="zola-anchor" href="#huo-qu-shou-ci-ti-jiao-shi-jian" aria-label="Anchor link for: huo-qu-shou-ci-ti-jiao-shi-jian">🔗</a></h3>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/2390199/finding-the-date-time-a-file-was-first-added-to-a-git-repository/25633731">Finding the date/time a file was first added to a Git repository - Stack Overflow</a> - 获取首次提交时间</li>
+</ul>
+<h3 id="ti-jiao-xiao-xi-de-mo-ban">提交消息的模版<a class="zola-anchor" href="#ti-jiao-xiao-xi-de-mo-ban" aria-label="Anchor link for: ti-jiao-xiao-xi-de-mo-ban">🔗</a></h3>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716">Git Semantic Commit Messages</a> - git 语义化提交消息模版</li>
+</ul>
+<h3 id="he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang">合并上游的时候不弹出确认框<a class="zola-anchor" href="#he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang" aria-label="Anchor link for: he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> pull upstream main</span><span style="color:#bf616a;"> --commit --no-edit
+</span></code></pre>
+<h3 id="dui-suo-you-de-chong-tu-shang-you-de-geng-xin">对所有的冲突上游的更新<a class="zola-anchor" href="#dui-suo-you-de-chong-tu-shang-you-de-geng-xin" aria-label="Anchor link for: dui-suo-you-de-chong-tu-shang-you-de-geng-xin">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> checkout</span><span style="color:#bf616a;"> --theirs</span><span> .
+</span></code></pre>
+<h3 id="shou-ci-geng-xin-zi-repo-submodule">首次更新子 repo submodule<a class="zola-anchor" href="#shou-ci-geng-xin-zi-repo-submodule" aria-label="Anchor link for: shou-ci-geng-xin-zi-repo-submodule">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> submodule update</span><span style="color:#bf616a;"> --init --recursive
+</span></code></pre>
+<p>Later</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> submodule update</span><span style="color:#bf616a;"> --recursive
+</span></code></pre>
+<h3 id="gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia">Gitignore 忽略所有，除了文件夹<a class="zola-anchor" href="#gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia" aria-label="Anchor link for: gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">folder/*
+</span><span>!</span><span style="color:#bf616a;">folder/.gitkeep
+</span></code></pre>
+<h2 id="go-template-tips">Go Template Tips<a class="zola-anchor" href="#go-template-tips" aria-label="Anchor link for: go-template-tips">🔗</a></h2>
+<ul>
+<li>Parent Variable, <code>{{$.XX}}</code></li>
+<li>URL encode, <code>urlquery &quot;https://test.com&quot;</code></li>
+</ul>
+<h2 id="kai-yuan-xu-ke-zheng">开源许可证<a class="zola-anchor" href="#kai-yuan-xu-ke-zheng" aria-label="Anchor link for: kai-yuan-xu-ke-zheng">🔗</a></h2>
+<p><img src="./license-comparision.png" alt="License Comparison" /></p>
+<blockquote>
+<p>By <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html">如何选择开源许可证？</a></p>
+</blockquote>
+<h2 id="linux-common-commands">Linux Common Commands<a class="zola-anchor" href="#linux-common-commands" aria-label="Anchor link for: linux-common-commands">🔗</a></h2>
+<h3 id="view-current-system-info">View current system info<a class="zola-anchor" href="#view-current-system-info" aria-label="Anchor link for: view-current-system-info">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">lsb_release -a
+</span></code></pre>
+<p>Output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">Distributor</span><span> ID:	Debian
+</span><span style="color:#bf616a;">Description:</span><span>	Debian GNU/Linux 10 (buster)
+</span><span style="color:#bf616a;">Release:</span><span>	10
+</span><span style="color:#bf616a;">Codename:</span><span>	buster
+</span></code></pre>
+<h3 id="view-all-users">View all users<a class="zola-anchor" href="#view-all-users" aria-label="Anchor link for: view-all-users">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cat</span><span> /etc/passwd | </span><span style="color:#bf616a;">grep -v</span><span> nologin|</span><span style="color:#bf616a;">grep -v</span><span> halt|</span><span style="color:#bf616a;">grep -v</span><span> shutdown|</span><span style="color:#bf616a;">awk -F</span><span>&quot;</span><span style="color:#a3be8c;">:</span><span>&quot; &#39;</span><span style="color:#a3be8c;">{ print $1&quot;|&quot;$3&quot;|&quot;$4 }</span><span>&#39;|</span><span style="color:#bf616a;">more
+</span></code></pre>
+<h3 id="get-publish-ip">Get Publish IP<a class="zola-anchor" href="#get-publish-ip" aria-label="Anchor link for: get-publish-ip">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">hostname -I
+</span></code></pre>
+<h3 id="change-user-group">Change user group<a class="zola-anchor" href="#change-user-group" aria-label="Anchor link for: change-user-group">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">usermod -g</span><span> groupname username
+</span></code></pre>
+<h3 id="get-user-group">Get user group<a class="zola-anchor" href="#get-user-group" aria-label="Anchor link for: get-user-group">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">id -g -n
+</span></code></pre>
+<h3 id="remove-apt-ppa">Remove apt ppa<a class="zola-anchor" href="#remove-apt-ppa" aria-label="Anchor link for: remove-apt-ppa">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> add-apt-repository</span><span style="color:#bf616a;"> --remove</span><span> ppa:qbittorrent-team/qbittorrent-stable
+</span></code></pre>
+<h3 id="get-current-shell">Get current shell<a class="zola-anchor" href="#get-current-shell" aria-label="Anchor link for: get-current-shell">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">echo </span><span>&quot;$</span><span style="color:#bf616a;">SHELL</span><span>&quot;
+</span></code></pre>
+<h3 id="get-current-cpu-arch">Get current cpu arch<a class="zola-anchor" href="#get-current-cpu-arch" aria-label="Anchor link for: get-current-cpu-arch">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">arch
+</span></code></pre>
+<p>or</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">dpkg --print-architecture
+</span></code></pre>
+<h3 id="unzip-tar-gz">Unzip tar.gz<a class="zola-anchor" href="#unzip-tar-gz" aria-label="Anchor link for: unzip-tar-gz">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">tar -xf</span><span> x.tar.gz
+</span></code></pre>
+<p>See also <a rel="noopener nofollow noreferrer" target="_blank" href="https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/">here</a></p>
+<p>Tar to specific directory</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">tar -xf</span><span> x.tar.gz</span><span style="color:#bf616a;"> -C</span><span> ./xxx
+</span></code></pre>
+<h3 id="stdout-to-file">Stdout to File<a class="zola-anchor" href="#stdout-to-file" aria-label="Anchor link for: stdout-to-file">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">command </span><span>&amp;&gt; file
+</span></code></pre>
+<p>Overwrite:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">command </span><span>&gt;| </span><span style="color:#bf616a;">file.txt </span><span style="color:#d08770;">2</span><span>&gt;&amp;</span><span style="color:#d08770;">1
+</span></code></pre>
+<h3 id="download-upload-file-by-ssh-scp">Download/Upload file by SSH SCP<a class="zola-anchor" href="#download-upload-file-by-ssh-scp" aria-label="Anchor link for: download-upload-file-by-ssh-scp">🔗</a></h3>
+<p>Download to local:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">scp</span><span> root@ip:/path </span><span style="color:#bf616a;">~</span><span>/Downloads
+</span></code></pre>
+<h3 id="remove-node-modules">Remove node_modules<a class="zola-anchor" href="#remove-node-modules" aria-label="Anchor link for: remove-node-modules">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">find</span><span> .</span><span style="color:#bf616a;"> -name </span><span>&#39;</span><span style="color:#a3be8c;">node_modules</span><span>&#39;</span><span style="color:#bf616a;"> -type</span><span> d</span><span style="color:#bf616a;"> -prune -exec</span><span> rm</span><span style="color:#bf616a;"> -rf </span><span>&#39;</span><span style="color:#a3be8c;">{}</span><span>&#39; +
+</span></code></pre>
+<h3 id="remove-target">Remove target<a class="zola-anchor" href="#remove-target" aria-label="Anchor link for: remove-target">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">find</span><span> .</span><span style="color:#bf616a;"> -name </span><span>&#39;</span><span style="color:#a3be8c;">target</span><span>&#39;</span><span style="color:#bf616a;"> -type</span><span> d</span><span style="color:#bf616a;"> -prune -exec</span><span> rm</span><span style="color:#bf616a;"> -rf </span><span>&#39;</span><span style="color:#a3be8c;">{}</span><span>&#39; +
+</span></code></pre>
+<h3 id="find-and-replace-string">Find and replace string<a class="zola-anchor" href="#find-and-replace-string" aria-label="Anchor link for: find-and-replace-string">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sed -i </span><span>&#39;</span><span style="color:#a3be8c;">s/old-text/new-text/g</span><span>&#39; input.txt
+</span></code></pre>
+<h3 id="soft-link">Soft Link<a class="zola-anchor" href="#soft-link" aria-label="Anchor link for: soft-link">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">ln -s</span><span> source_file target_file
+</span></code></pre>
+<h3 id="create-user">Create User<a class="zola-anchor" href="#create-user" aria-label="Anchor link for: create-user">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">useradd -m</span><span> USERNAME
+</span></code></pre>
+<blockquote>
+<p>Note: with home directory</p>
+</blockquote>
+<h3 id="get-all-shells">Get all shells<a class="zola-anchor" href="#get-all-shells" aria-label="Anchor link for: get-all-shells">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cat</span><span> /etc/shells
+</span></code></pre>
+<h3 id="last-n-lines-in-file">Last n lines in file<a class="zola-anchor" href="#last-n-lines-in-file" aria-label="Anchor link for: last-n-lines-in-file">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">tail -3</span><span> file.txt
+</span></code></pre>
+<h3 id="linux-find-a-biggest-directory-in">Linux find a biggest directory in ./<a class="zola-anchor" href="#linux-find-a-biggest-directory-in" aria-label="Anchor link for: linux-find-a-biggest-directory-in">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> du</span><span style="color:#bf616a;"> -a</span><span> ./ </span><span style="color:#d08770;">2</span><span>&gt;/dev/null | </span><span style="color:#bf616a;">sort -n -r </span><span>| </span><span style="color:#bf616a;">head -n</span><span> 20
+</span></code></pre>
+<h3 id="linux-find-a-biggest-file-in">Linux find a biggest file in ./<a class="zola-anchor" href="#linux-find-a-biggest-file-in" aria-label="Anchor link for: linux-find-a-biggest-file-in">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">find</span><span> ./</span><span style="color:#bf616a;"> -type</span><span> f</span><span style="color:#bf616a;"> -printf </span><span>&#39;</span><span style="color:#a3be8c;">%s %p\n</span><span>&#39; | </span><span style="color:#bf616a;">sort -nr </span><span>| </span><span style="color:#bf616a;">head -10
+</span></code></pre>
+<h3 id="linux-view-systemctl-log">Linux view systemctl log:<a class="zola-anchor" href="#linux-view-systemctl-log" aria-label="Anchor link for: linux-view-systemctl-log">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> journalctl</span><span style="color:#bf616a;"> -f -u</span><span> service-name.service
+</span></code></pre>
+<h3 id="see-who-connect-with-me">See who connect with Me<a class="zola-anchor" href="#see-who-connect-with-me" aria-label="Anchor link for: see-who-connect-with-me">🔗</a></h3>
+<p>See: <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.linuxshelltips.com/find-ip-addresses-are-connected-to-linux/">here</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">ss -tun</span><span> state connected
+</span></code></pre>
+<h3 id="sort-by-ip-connect-with-443">Sort by ip connect with 443<a class="zola-anchor" href="#sort-by-ip-connect-with-443" aria-label="Anchor link for: sort-by-ip-connect-with-443">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">netstat -tn </span><span style="color:#d08770;">2</span><span>&gt;/dev/null | </span><span style="color:#bf616a;">grep -E </span><span>&#39;</span><span style="color:#a3be8c;">\s[0-9.]+:443\s</span><span>&#39; | </span><span style="color:#bf616a;">awk </span><span>&#39;</span><span style="color:#a3be8c;">{print $5}</span><span>&#39; | </span><span style="color:#bf616a;">cut -d</span><span> :</span><span style="color:#bf616a;"> -f</span><span> 1 | </span><span style="color:#bf616a;">sort </span><span>| </span><span style="color:#bf616a;">uniq -c </span><span>| </span><span style="color:#bf616a;">sort -nr
+</span></code></pre>
+<h3 id="ban">Ban<a class="zola-anchor" href="#ban" aria-label="Anchor link for: ban">🔗</a></h3>
+<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.rackspace.com/support/how-to/block-an-ip-address-on-a-Linux-server/">here</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl status firewalld
+</span><span style="color:#bf616a;">sudo</span><span> firewall-cmd</span><span style="color:#bf616a;"> --permanent --add-rich-rule</span><span>=&quot;</span><span style="color:#a3be8c;">rule family=&#39;ipv4&#39; source address=&#39;202.61.254.136&#39; reject</span><span>&quot;
+</span><span style="color:#bf616a;">sudo</span><span> firewall-cmd</span><span style="color:#bf616a;"> --reload
+</span><span style="color:#bf616a;">sudo</span><span> firewall-cmd</span><span style="color:#bf616a;"> --list-all
+</span></code></pre>
+<h3 id="kill-tcp">Kill tcp<a class="zola-anchor" href="#kill-tcp" aria-label="Anchor link for: kill-tcp">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">tcpkill</span><span> host &lt;ip&gt;
+</span></code></pre>
+<h2 id="nodejs-tips">Nodejs Tips<a class="zola-anchor" href="#nodejs-tips" aria-label="Anchor link for: nodejs-tips">🔗</a></h2>
+<h3 id="delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">Delete node_modules folder recursively from a specified path using command line<a class="zola-anchor" href="#delete-node-modules-folder-recursively-from-a-specified-path-using-command-line" aria-label="Anchor link for: delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">🔗</a></h3>
+<blockquote>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/42950501/delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">Delete node_modules folder recursively from a specified path using command line - Stack Overflow</a></p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">find</span><span> .</span><span style="color:#bf616a;"> -name </span><span>&#39;</span><span style="color:#a3be8c;">node_modules</span><span>&#39;</span><span style="color:#bf616a;"> -type</span><span> d</span><span style="color:#bf616a;"> -prune -exec</span><span> rm</span><span style="color:#bf616a;"> -rf </span><span>&#39;</span><span style="color:#a3be8c;">{}</span><span>&#39; +
+</span></code></pre>
+<h3 id="get-npm-token">Get NPM Token<a class="zola-anchor" href="#get-npm-token" aria-label="Anchor link for: get-npm-token">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npm</span><span> token create
+</span></code></pre>
+<h3 id="check-npm-modules-updates">Check NPM modules updates<a class="zola-anchor" href="#check-npm-modules-updates" aria-label="Anchor link for: check-npm-modules-updates">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npx</span><span> npm-check-updates
+</span></code></pre>
+<p>Update to the latest version:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npx</span><span> npm-check-updates</span><span style="color:#bf616a;"> -u
+</span></code></pre>
+<h2 id="postgresql-tips">Postgresql Tips<a class="zola-anchor" href="#postgresql-tips" aria-label="Anchor link for: postgresql-tips">🔗</a></h2>
+<h3 id="0-enter-psql">0. Enter psql<a class="zola-anchor" href="#0-enter-psql" aria-label="Anchor link for: 0-enter-psql">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">psql
+</span></code></pre>
+<h3 id="show-all-databases">Show all databases<a class="zola-anchor" href="#show-all-databases" aria-label="Anchor link for: show-all-databases">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">\l
+</span></code></pre>
+<h3 id="enter-database">Enter Database<a class="zola-anchor" href="#enter-database" aria-label="Anchor link for: enter-database">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">\c </span><span style="color:#bf616a;">database_name
+</span></code></pre>
+<h3 id="show-all-tables">Show all Tables<a class="zola-anchor" href="#show-all-tables" aria-label="Anchor link for: show-all-tables">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">\d
+</span></code></pre>
+<h3 id="show-table-structure">Show Table structure<a class="zola-anchor" href="#show-table-structure" aria-label="Anchor link for: show-table-structure">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">\d </span><span style="color:#bf616a;">table_name
+</span></code></pre>
+<h3 id="pretty-print-table">Pretty print table<a class="zola-anchor" href="#pretty-print-table" aria-label="Anchor link for: pretty-print-table">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">\x </span><span style="color:#bf616a;">on
+</span></code></pre>
+<h3 id="alter-table">Alter table<a class="zola-anchor" href="#alter-table" aria-label="Anchor link for: alter-table">🔗</a></h3>
+<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.postgresql.org/docs/current/sql-altertable.html">https://www.postgresql.org/docs/current/sql-altertable.html</a></p>
+<h3 id="upsert">Upsert<a class="zola-anchor" href="#upsert" aria-label="Anchor link for: upsert">🔗</a></h3>
+<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/61494958/postgres-on-conflict-do-update-only-non-null-values-in-python">https://stackoverflow.com/questions/61494958/postgres-on-conflict-do-update-only-non-null-values-in-python</a></p>
+<h3 id="export-schema">Export Schema<a class="zola-anchor" href="#export-schema" aria-label="Anchor link for: export-schema">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span> </span><span style="color:#bf616a;">pg_dump</span><span> database_name</span><span style="color:#bf616a;"> -s --no-owner </span><span>&gt; schema.sql
+</span></code></pre>
+<h3 id="export-only-data">Export Only data<a class="zola-anchor" href="#export-only-data" aria-label="Anchor link for: export-only-data">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span> </span><span style="color:#bf616a;">pg_dump</span><span> database_name</span><span style="color:#bf616a;"> -a --no-owner </span><span>&gt; data.sql
+</span></code></pre>
+<h3 id="delete-or-drop-or-remove-database">Delete or Drop or Remove Database<a class="zola-anchor" href="#delete-or-drop-or-remove-database" aria-label="Anchor link for: delete-or-drop-or-remove-database">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">psql
+</span><span style="color:#bf616a;">drop</span><span> database database_name;
+</span></code></pre>
+<h3 id="create-database">Create Database<a class="zola-anchor" href="#create-database" aria-label="Anchor link for: create-database">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">psql
+</span><span style="color:#bf616a;">CREATE</span><span> DATABASE name;
+</span></code></pre>
+<h3 id="import-database">Import Database<a class="zola-anchor" href="#import-database" aria-label="Anchor link for: import-database">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">psql</span><span> database_name &lt; data.sql
+</span></code></pre>
+<h2 id="css">CSS<a class="zola-anchor" href="#css" aria-label="Anchor link for: css">🔗</a></h2>
+<h3 id="smart-word-break-in-css">Smart word break in CSS<a class="zola-anchor" href="#smart-word-break-in-css" aria-label="Anchor link for: smart-word-break-in-css">🔗</a></h3>
+<blockquote>
+<p>From <a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/a/48830291">Smarter word break in CSS? - Stack Overflow</a></p>
+</blockquote>
+<pre data-lang="css" style="background-color:#2b303b;color:#c0c5ce;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#bf616a;">body </span><span>{
+</span><span>  overflow-wrap: break-word;
+</span><span>  word-wrap: break-word;
+</span><span>  -ms-word-break: break-all;
+</span><span>  word-break: break-word;
+</span><span>  -ms-hyphens: auto;
+</span><span>  -moz-hyphens: auto;
+</span><span>  -webkit-hyphens: auto;
+</span><span>  hyphens: auto;
+</span><span>}
+</span></code></pre>
+<h2 id="vim-tips">Vim Tips<a class="zola-anchor" href="#vim-tips" aria-label="Anchor link for: vim-tips">🔗</a></h2>
+<h3 id="resources">Resources<a class="zola-anchor" href="#resources" aria-label="Anchor link for: resources">🔗</a></h3>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.vim.so/">Vim online exercises</a> - help you master vim with interactive exercises.</li>
+</ul>
+<h3 id="tips">Tips<a class="zola-anchor" href="#tips" aria-label="Anchor link for: tips">🔗</a></h3>
+<ul>
+<li>
+<p>Delete all words: <code>1,$d</code></p>
+</li>
+<li>
+<p>Current line end: <code>$</code></p>
+</li>
+<li>
+<p>Replace all string: <code>s/string/replace_string/g</code></p>
+</li>
+</ul>
+<h2 id="vs-code-tips">VS Code Tips<a class="zola-anchor" href="#vs-code-tips" aria-label="Anchor link for: vs-code-tips">🔗</a></h2>
+<h3 id="open-command-palette-p">Open command palette: <code>⇧⌘P</code><a class="zola-anchor" href="#open-command-palette-p" aria-label="Anchor link for: open-command-palette-p">🔗</a></h3>
+<h3 id="select-current-line-cmd-l">Select current line: <code>cmd+L</code><a class="zola-anchor" href="#select-current-line-cmd-l" aria-label="Anchor link for: select-current-line-cmd-l">🔗</a></h3>
+<h3 id="quick-switch-windows">Quick Switch Windows<a class="zola-anchor" href="#quick-switch-windows" aria-label="Anchor link for: quick-switch-windows">🔗</a></h3>
+<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/37371739/os-x-cycle-between-windows-in-visual-studio-code">here</a></p>
+<p>Added the following shortcut to <code>keybindings.json</code></p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">key</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">alt+tab</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">command</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">workbench.action.quickSwitchWindow</span><span>&quot;
+</span><span>}
+</span></code></pre>
+<h3 id="read-more">Read more:<a class="zola-anchor" href="#read-more" aria-label="Anchor link for: read-more">🔗</a></h3>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks">Visual Studio Code Tips and Tricks</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/microsoft/vscode-tips-and-tricks">GitHub - microsoft/vscode-tips-and-tricks: Collection of helpful tips and tricks for VS Code.</a></li>
+</ul>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
+            <p>
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9A%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7%E6%94%B6%E8%97%8F">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+            </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>快速导航</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#jing-xiang-fu-wu">镜像服务</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#github">Github</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#rust">Rust</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#docker">Docker</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#jie-jue-fang-an">解决方案</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#bash-tips">Bash Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-bash-script-parent-dir-absolute-path">Get bash script parent dir absolute path</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-bash-script-dir-path">Get bash script dir path</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#bash-dotenv">Bash Dotenv</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#deno-tips">Deno Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#dirname">Dirname</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#docker-tips">Docker Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#docker-compose-exec-bin">Docker compose exec bin</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#stop-all-contains-and-remove">Stop All contains and remove</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#clean-all">Clean all</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#git-tips">Git Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#generate-ssh-key">Generate ssh key</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#huo-qu-shou-ci-ti-jiao-shi-jian">获取首次提交时间</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#ti-jiao-xiao-xi-de-mo-ban">提交消息的模版</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#he-bing-shang-you-de-shi-hou-bu-dan-chu-que-ren-kuang">合并上游的时候不弹出确认框</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#dui-suo-you-de-chong-tu-shang-you-de-geng-xin">对所有的冲突上游的更新</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#shou-ci-geng-xin-zi-repo-submodule">首次更新子 repo submodule</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#gitignore-hu-lue-suo-you-chu-liao-wen-jian-jia">Gitignore 忽略所有，除了文件夹</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#go-template-tips">Go Template Tips</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#kai-yuan-xu-ke-zheng">开源许可证</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#linux-common-commands">Linux Common Commands</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#view-current-system-info">View current system info</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#view-all-users">View all users</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-publish-ip">Get Publish IP</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#change-user-group">Change user group</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-user-group">Get user group</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#remove-apt-ppa">Remove apt ppa</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-current-shell">Get current shell</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-current-cpu-arch">Get current cpu arch</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#unzip-tar-gz">Unzip tar.gz</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#stdout-to-file">Stdout to File</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#download-upload-file-by-ssh-scp">Download&#x2F;Upload file by SSH SCP</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#remove-node-modules">Remove node_modules</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#remove-target">Remove target</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#find-and-replace-string">Find and replace string</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#soft-link">Soft Link</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#create-user">Create User</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-all-shells">Get all shells</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#last-n-lines-in-file">Last n lines in file</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#linux-find-a-biggest-directory-in">Linux find a biggest directory in .&#x2F;</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#linux-find-a-biggest-file-in">Linux find a biggest file in .&#x2F;</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#linux-view-systemctl-log">Linux view systemctl log:</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#see-who-connect-with-me">See who connect with Me</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#sort-by-ip-connect-with-443">Sort by ip connect with 443</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#ban">Ban</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#kill-tcp">Kill tcp</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#nodejs-tips">Nodejs Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#delete-node-modules-folder-recursively-from-a-specified-path-using-command-line">Delete node_modules folder recursively from a specified path using command line</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#get-npm-token">Get NPM Token</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#check-npm-modules-updates">Check NPM modules updates</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#postgresql-tips">Postgresql Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#0-enter-psql">0. Enter psql</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#show-all-databases">Show all databases</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#enter-database">Enter Database</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#show-all-tables">Show all Tables</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#show-table-structure">Show Table structure</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#pretty-print-table">Pretty print table</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#alter-table">Alter table</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#upsert">Upsert</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#export-schema">Export Schema</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#export-only-data">Export Only data</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#delete-or-drop-or-remove-database">Delete or Drop or Remove Database</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#create-database">Create Database</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#import-database">Import Database</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#css">CSS</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#smart-word-break-in-css">Smart word break in CSS</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#vim-tips">Vim Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#resources">Resources</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#tips">Tips</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/dev-tips/#vs-code-tips">VS Code Tips</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#open-command-palette-p">Open command palette: ⇧⌘P</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#select-current-line-cmd-l">Select current line: cmd+L</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#quick-switch-windows">Quick Switch Windows</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/dev-tips/#read-more">Read more:</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+  </ul>
+</section>
+
 
 </aside>
 

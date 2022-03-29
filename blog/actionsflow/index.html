@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  itemscope
+  itemtype="http://schema.org/Blog"
+>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
+    <title>Actionsflow介绍 - 可以一键部署在Github上的IFTTT&#x2F;Zapier的开源替代 - Owen的博客</title>
+
+    
+    <meta
+      name="description"
+      itemprop="about"
+      content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
+    />
+    <meta
+      name="keywords"
+      itemprop="keywords"
+      content="注意力, 读书, 工具分享, 纯文本, 英语学习"
+    />
+    <meta name="author" itemprop="author" content="Owen Young" />
+    <meta itemprop="headline" content="Owen的博客" />
+    <meta itemprop="copyrightYear" content="2022" />
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
+    type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
+    rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b"> <link
+    rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64"> <link
+    rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a"> <link
+    rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020"> <link
+    rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50"> <link
+    rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363"> <link
+    rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70"> <link
+    rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1"> <link rel="icon"
+    type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac"> <link rel="icon"
+    type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"> <link rel="icon"
+    type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> <link rel="icon"
+    type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa"> <link rel="manifest"
+    href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta
+      name="msapplication-TileColor"
+      content="rgb(234, 76, 137)"
+    />
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
+
+    <meta
+      property="og:title"
+      content="Actionsflow介绍 - 可以一键部署在Github上的IFTTT&#x2F;Zapier的开源替代 - Owen的博客"
+    />
+    <meta
+      property="og:description"
+      content=" &lt;p&gt;我还记得当年第一次使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ifttt.com&quot;&gt;IFTTT&lt;&#x2F;a&gt;的时候的那种兴奋，天呐，这才是互联网！从那时起，就一直使用 IFTTT 到今天，真的很棒的一个产品！直到 IFTTT 最近宣布要收费，我就在想有没有合适的开源方案可以替代，因为托管方案肯定没戏了，连 10 年都免费的 IFTTT 都开始收费了，其他的只会更贵，结果发现主流的开源替代方案，比如 huginn, n8n, node-red 好像又有点重，不够轻量，而且扩展起来也不容易。&lt;&#x2F;p&gt;
+  "
+    />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;www.owenyoung.com/actionsflow"
+    />
+    <meta property="og:site_name" content="Owen的博客" />
+    
+    <meta
+      property="og:image"
+      content=""
+    />
+    
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="TheOwenYoung" />
+    <meta name="twitter:creator" content="TheOwenYoung" />
+    <meta
+      name="twitter:image:alt"
+      content="Owen的博客"
+    />
+     
+    
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
+
+  </head>
+
+  <body>
+    <section id="top"></section>
+    <section id="root" >
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"></img>
+            </a> 
+          </div>
+          <div>
+            <ul class="flex menu list-none items-center justify-center">
+             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Back to Top" href="#top">
+               <span class=""> &#8593;</span>
+              </a></li>
+             <li>
+              <a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
+                <span class=""> &#8595;</span>
+               </a>
+             </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="body-zone flex justify-between flex-1">
+          <section class="main flex-1">
+            <div class="main-inner px">
+              
+      <header id="overview">
+        <div class="pt">
+          <span>&gt;&gt;</span>
+          <a href="https://www.owenyoung.com/">首页</a>
+          
+          <span class="divider">/</span>
+          <a class="category" href="https://www.owenyoung.com/categories/misc/">Misc</a>
+          
+          <span class="divider">/</span>
+          
+          <a href="https://www.owenyoung.com/tags/workflows/">Workflows</a>
+          
+          
+          
+          </div>
+        
+        <div>
+          <h1 style="font-size:2rem;">Actionsflow介绍 - 可以一键部署在Github上的IFTTT&#x2F;Zapier的开源替代</h1>
+          <div class="muted">
+            <div>发布于: 2021-02-02, 最后更新时间: 2021-02-02, 阅读时间: 5 min</div>
+        </div>
+  
+        </div>
+        
+        
+      </header>
+      <section>
+      
+        <section class="main">
+          
+          <div class="main-toc pt">
+            <details>
+              <summary>快速导航</summary>
+              
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#kai-shi">开始</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#pei-zhi">配置</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#webhook">Webhook</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#ben-di-yun-xing">本地运行</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <p>我还记得当年第一次使用<a rel="noopener nofollow noreferrer" target="_blank" href="https://ifttt.com">IFTTT</a>的时候的那种兴奋，天呐，这才是互联网！从那时起，就一直使用 IFTTT 到今天，真的很棒的一个产品！直到 IFTTT 最近宣布要收费，我就在想有没有合适的开源方案可以替代，因为托管方案肯定没戏了，连 10 年都免费的 IFTTT 都开始收费了，其他的只会更贵，结果发现主流的开源替代方案，比如 huginn, n8n, node-red 好像又有点重，不够轻量，而且扩展起来也不容易。</p>
+<span id="continue-reading"></span>
+<p>刚好在那时看到<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions">Github 的 Actions</a>支持<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule">Schedule</a>事件，而 Github 的 Actions 又是对开源项目免费使用，所以就萌生了利用 Github Actions 的定时运行来检测更新，并执行指定动作。所以一个新的轮子<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow">Actionsflow</a> 来了！</p>
+<h2 id="kai-shi">开始<a class="zola-anchor" href="#kai-shi" aria-label="Anchor link for: kai-shi">🔗</a></h2>
+<ol>
+<li>
+<p>使用这个<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow-workflow-default/generate">链接</a>用 Actionsflow 的默认模板创建一个新的 GitHub 项目，一个典型的 Actionsflow 项目长这样：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">├──</span><span> .github
+</span><span style="color:#bf616a;">│</span><span>   └── workflows
+</span><span style="color:#bf616a;">│</span><span>       └── actionsflow.yml
+</span><span style="color:#bf616a;">├──</span><span> .gitignore
+</span><span style="color:#bf616a;">├──</span><span> README.md
+</span><span style="color:#bf616a;">└──</span><span> workflows
+</span><span style="color:#bf616a;">│</span><span>   └── rss.yml
+</span><span style="color:#bf616a;">│</span><span>   └── webhook.yml
+</span><span style="color:#bf616a;">└──</span><span> package.json
+</span></code></pre>
+</li>
+<li>
+<p>取消 <code>.github/workflows/actionsflow.yml</code> 文件里<code>schedule</code>的注释</p>
+</li>
+<li>
+<p>在<code>workflows/</code>文件夹创建你自己的 workflow 文件</p>
+</li>
+<li>
+<p>保存并提交你的文件到 Github</p>
+</li>
+</ol>
+<h2 id="pei-zhi">配置<a class="zola-anchor" href="#pei-zhi" aria-label="Anchor link for: pei-zhi">🔗</a></h2>
+<p>我对 Actionsflow 的设计原则是规则尽可能简单，并且可扩展，workflow 的配置规则直接采用 Github Actions 的<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions">配置格式</a>，如果你之前有用过 Github Actions 的话，应该立刻就能懂 Actionsflow 的全部配置规则：</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#d08770;">on</span><span>:
+</span><span>  </span><span style="color:#bf616a;">rss</span><span>:
+</span><span>    </span><span style="color:#bf616a;">url</span><span>: </span><span style="color:#a3be8c;">https://hnrss.org/newest?points=300
+</span><span>    </span><span style="color:#bf616a;">config</span><span>:
+</span><span>    	</span><span style="color:#bf616a;">limit</span><span>: </span><span style="color:#d08770;">10
+</span><span style="color:#bf616a;">jobs</span><span>:
+</span><span>  </span><span style="color:#bf616a;">request</span><span>:
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Make a HTTP Request
+</span><span>    </span><span style="color:#bf616a;">runs-on</span><span>: </span><span style="color:#a3be8c;">ubuntu-latest
+</span><span>    </span><span style="color:#bf616a;">steps</span><span>:
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Make a HTTP Request
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actionsflow/axios@v1
+</span><span>        </span><span style="color:#bf616a;">with</span><span>:
+</span><span>          </span><span style="color:#bf616a;">url</span><span>: </span><span style="color:#a3be8c;">https://hookb.in/VGPzxoWbdjtE22bwznzE
+</span><span>          </span><span style="color:#bf616a;">method</span><span>: </span><span style="color:#a3be8c;">POST
+</span><span>          </span><span style="color:#bf616a;">body</span><span>: </span><span style="color:#b48ead;">|
+</span><span style="color:#a3be8c;">            {
+</span><span style="color:#a3be8c;">              &quot;link&quot;:&quot;${{ on.rss.outputs.link }}&quot;,
+</span><span style="color:#a3be8c;">              &quot;title&quot;: &quot;${{ on.rss.outputs.title }}&quot;,
+</span><span style="color:#a3be8c;">              &quot;content&quot;:&quot;&lt;&lt;&lt;${{ on.rss.outputs.contentSnippet }}&gt;&gt;&gt;&quot;
+</span><span style="color:#a3be8c;">            }
+</span></code></pre>
+<p>和原生的 Github Actions 的配置相比，Actionsflow 只是扩展了<code>on</code>的事件，在 Actionsflow 里，我把它叫做<code>trigger</code>，<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/triggers/rss/"> RSS trigger</a>经常被用来做示例使用，你可以点击[这里](<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/triggers/">Actionsflow Triggers | Actionsflow Documentation</a>)查看目前 Actionsflow 支持的所有 trigger. Trigger 里有个特殊的参数是<code>config</code>,这个 config 是通用参数，也就是所有的 trigger 都支持 config 参数，config 实现了很多通用的功能的，比如设置过滤条件，设置过滤条数，格式化输出结果，设置触发时间等等，点击[这里](<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/workflow/#ontriggerconfig">Workflow Syntax for Actionsflow | Actionsflow Documentation</a>可以查看所有支持的配置。</p>
+<p>其他的就和 Github Actions 的配置一样了，你可以在 jobs 里配置任何复杂的任务，或者简单的发个请求，你可以用<code> ${{ on.rss.outputs.&lt;key&gt; }}</code>来使用 trigger 的结果，每个 trigger 的结果的 key 需要去看对应 trigger 的文档。</p>
+<p>我在<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/actions/">这里</a>列出了你可能会用到的 Github Action，同时新建了一个<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/awesome-actionsflow">Awesome 项目</a>列出一些常用的 Actionsflow 工作流。</p>
+<h2 id="webhook">Webhook<a class="zola-anchor" href="#webhook" aria-label="Anchor link for: webhook">🔗</a></h2>
+<p>Actionsflow 不仅支持定时抓取类的任务，同时还支持 Webhook 类的任务，这样第三方服务如果有任何更新就可以主动通知 Actionsflow 了。这里 Webhook 机制是利用 Github 可以接收外界的 <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows#repository_dispatch"><code>repository_dispatch</code></a> 事件来触发 Action 运行来实现的，具体使用可以见<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/triggers/webhook/">这里</a></p>
+<h2 id="ben-di-yun-xing">本地运行<a class="zola-anchor" href="#ben-di-yun-xing" aria-label="Anchor link for: ben-di-yun-xing">🔗</a></h2>
+<p>大多数情况下，使用 Github Actions 运行 Actionsflow 是更方便，也是推荐的使用方式，但是可能出于某种原因你需要在本地或者你自己的 VPS 上部署 Actionsflow. 要在本地运行 Actionsflow，必须先安装<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.docker.com/">Docker</a></p>
+<p>然后只需要运行:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">docker</span><span> run</span><span style="color:#bf616a;"> -it -v</span><span> /var/run/docker.sock:/var/run/docker.sock</span><span style="color:#bf616a;"> -v </span><span>${</span><span style="color:#bf616a;">PWD</span><span>}:/data</span><span style="color:#bf616a;"> -p</span><span> 3000:3000 actionsflow/actionsflow
+</span></code></pre>
+<p>手动运行方式见<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/self-hosted/#manual">这里</a></p>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
+            <p>
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9AActionsflow%E4%BB%8B%E7%BB%8D%20-%20%E5%8F%AF%E4%BB%A5%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2%E5%9C%A8Github%E4%B8%8A%E7%9A%84IFTTT&#x2F;Zapier%E7%9A%84%E5%BC%80%E6%BA%90%E6%9B%BF%E4%BB%A3">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+            </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>快速导航</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#kai-shi">开始</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#pei-zhi">配置</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#webhook">Webhook</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/actionsflow/#ben-di-yun-xing">本地运行</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+
+</aside>
+
+
+
+      </main>
+      </section>
+    <section id="bottom"></section>
+  </body>
+</html>

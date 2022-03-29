@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>在中国自动生成免费HTTPS证书的最佳方案 - Owen的博客</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -81,7 +81,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -143,18 +152,19 @@
       <section>
       
         <section class="main">
+          
           <section id="start"></section>
           <p>Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/acmesh-official/acme.sh"><code>amce.sh+cloudflare</code></a> 的 dns 解析是最方便无痛的.</p>
 <span id="continue-reading"></span>
 <ol>
 <li>下载 acme 工具:</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
-</span><span style="color:#999999;"># 用root用户权限，因为涉及到操作nginx
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#65737e;"># 用root用户权限，因为涉及到操作nginx
 </span><span>
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> su
+</span><span style="color:#bf616a;">sudo</span><span> su
 </span><span>
-</span><span style="color:#c82829;">wget</span><span style="color:#f5871f;"> -O</span><span style="color:#4271ae;"> - https://get.acme.sh </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">sh</span><span style="color:#f5871f;"> -s</span><span style="color:#4271ae;"> email=my@example.com
+</span><span style="color:#bf616a;">wget -O</span><span> - https://get.acme.sh | </span><span style="color:#bf616a;">sh -s</span><span> email=my@example.com
 </span><span>
 </span></code></pre>
 <ol>
@@ -169,14 +179,14 @@
 </li>
 </ol>
 <p>把以下的信息保存到 <code>~/.bashrc</code></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
-</span><span style="color:#8959a8;">export </span><span style="color:#c82829;">CF_Token</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">&quot;sdfsdfsdfljlbjkljlkjsdfoiwje&quot;
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">CF_Token</span><span>=&quot;</span><span style="color:#a3be8c;">sdfsdfsdfljlbjkljlkjsdfoiwje</span><span>&quot;
 </span><span>
-</span><span style="color:#8959a8;">export </span><span style="color:#c82829;">CF_Account_ID</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">&quot;xxxxxxxxxxxxx&quot;
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">CF_Account_ID</span><span>=&quot;</span><span style="color:#a3be8c;">xxxxxxxxxxxxx</span><span>&quot;
 </span><span>
 </span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
-</span><span style="color:#4271ae;">source </span><span style="color:#c82829;">~</span><span style="color:#4271ae;">/.bashrc
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#96b5b4;">source </span><span style="color:#bf616a;">~</span><span>/.bashrc
 </span><span>
 </span></code></pre>
 <blockquote>
@@ -190,14 +200,14 @@
 <p>安装证书到指定目录：</p>
 </li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
-</span><span style="color:#c82829;">acme.sh</span><span style="color:#f5871f;"> --install-cert -d</span><span style="color:#4271ae;"> example.com \
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#bf616a;">acme.sh --install-cert -d</span><span> example.com \
 </span><span>
-</span><span style="color:#c82829;">--key-file</span><span style="color:#4271ae;"> /etc/nginx/ssl/example.com.key \
+</span><span style="color:#bf616a;">--key-file</span><span> /etc/nginx/ssl/example.com.key \
 </span><span>
-</span><span style="color:#c82829;">--fullchain-file</span><span style="color:#4271ae;"> /etc/nginx/ssl/example.com.crt \
+</span><span style="color:#bf616a;">--fullchain-file</span><span> /etc/nginx/ssl/example.com.crt \
 </span><span>
-</span><span style="color:#c82829;">--reloadcmd </span><span style="color:#718c00;">&quot;service nginx force-reload&quot;
+</span><span style="color:#bf616a;">--reloadcmd </span><span>&quot;</span><span style="color:#a3be8c;">service nginx force-reload</span><span>&quot;
 </span><span>
 </span></code></pre>
 <p>之后 acme 会自动添加 cron 任务，自动续期期限</p>
@@ -235,7 +245,6 @@
 
           
 <aside class="sidebar px no-toc">
-
 
 </aside>
 

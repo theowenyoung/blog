@@ -1,42 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
-	<title>Owen的博客 - Server</title>
-	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Server</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
 	<link href="https://www.owenyoung.com/tags/server/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2022-03-26T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/server/atom.xml</id>
-	<entry xml:lang="zh">
-		<title>Debian初始化Rust环境</title>
+	<entry xml:lang="en">
+		<title>Rclone Setup</title>
+		<published>2022-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/rclone-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/rclone-setup/</id>
+		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;rclone.org&#x2F;install.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; bash
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rclone.org&#x2F;drive&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;transfer&quot;&gt;Transfer&lt;a class=&quot;zola-anchor&quot; href=&quot;#transfer&quot; aria-label=&quot;Anchor link for: transfer&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cat ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;.config&#x2F;rclone
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Copy that to another machine.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;web-ui&quot;&gt;Web UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#web-ui&quot; aria-label=&quot;Anchor link for: web-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;rclone&lt;&#x2F;span&gt;&lt;span&gt; rcd&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --rc-web-gui --rc-user&lt;&#x2F;span&gt;&lt;span&gt;=test&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --rc-pass&lt;&#x2F;span&gt;&lt;span&gt;=test&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --rc-web-gui-update --stats&lt;&#x2F;span&gt;&lt;span&gt;=24h&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --rc-enable-metrics --rc-web-gui-no-open-browser
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Postgres Setup for Debian</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/" type="text/html"/>
-		<id>https://www.owenyoung.com/blog/rust-environment-setup-for-debian/</id>
-		<content type="html">&lt;p&gt;在 Debian 上初始化 Rust 环境笔记。&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;rust-jing-xiang-she-zhi&quot;&gt;Rust 镜像设置&lt;a class=&quot;zola-anchor&quot; href=&quot;#rust-jing-xiang-she-zhi&quot; aria-label=&quot;Anchor link for: rust-jing-xiang-she-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Add this to &lt;code&gt;~&#x2F;.bashrc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;RUSTUP_DIST_SERVER&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&amp;quot;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;RUSTUP_UPDATE_ROOT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup&amp;quot;
+		<link href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/postgres-setup-for-debian/</id>
+		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -c &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;echo &amp;quot;deb http:&#x2F;&#x2F;apt.postgresql.org&#x2F;pub&#x2F;repos&#x2F;apt $(lsb_release -cs)-pgdg main&amp;quot; &amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;pgdg.list&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget --quiet -O&lt;&#x2F;span&gt;&lt;span&gt; - https:&#x2F;&#x2F;www.postgresql.org&#x2F;media&#x2F;keys&#x2F;ACCC4CF8.asc | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-key add -
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-get update
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-get&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span&gt; install postgresql
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Install rustup &lt;code&gt;curl --proto &#x27;=https&#x27; --tlsv1.2 -sSf https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup-init.sh | sh&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;code&gt;~&#x2F;.cargo&#x2F;config&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[source.crates-io]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;replace-with&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;rsproxy&amp;#39;
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[source.rsproxy]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;registry&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[registries.rsproxy]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;index&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&amp;quot;
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[net]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git-fetch-with-cli&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = true
+&lt;h3 id=&quot;optional&quot;&gt;Optional&lt;a class=&quot;zola-anchor&quot; href=&quot;#optional&quot; aria-label=&quot;Anchor link for: optional&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Install postgis&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span&gt; install postgis
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --proto &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;=https&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --tlsv1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;.2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -sSf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; https:&#x2F;&#x2F;sh.rustup.rs &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sh
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Open BBR for Debian</title>
+		<published>2021-01-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/open-bbr-for-debian/</id>
+		<content type="html">&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the following configuration file to enable enable TCP BBR.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vi&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;sysctl.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;At the end of the config file, add the following lines.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;net.core.default_qdisc&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;fq
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;net.ipv4.tcp_congestion_control&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bbr
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;reload&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sysctl -p
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now, Verify if BBR is enabled in your system,&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sysctl&lt;&#x2F;span&gt;&lt;span&gt; net.ipv4.tcp_congestion_control
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Output:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;root@vps:~#&lt;&#x2F;span&gt;&lt;span&gt; sysctl net.ipv4.tcp_congestion_control
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;net.ipv4.tcp_congestion_control&lt;&#x2F;span&gt;&lt;span&gt; = bbr
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>

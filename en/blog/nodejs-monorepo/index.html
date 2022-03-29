@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>Nodejs Monorepo - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -81,7 +81,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -145,180 +154,12 @@
       <section>
       
         <section class="main">
-          <section id="start"></section>
-          <p>Use changesets as monorepo mananger.</p>
-<span id="continue-reading"></span><h2 id="tools">Tools<a class="zola-anchor" href="#tools" aria-label="Anchor link for: tools">🔗</a></h2>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets">GitHub - atlassian/changesets: 🦋 A way to manage your versioning and changelogs with a focus on monorepos</a></p>
-<h2 id="use-changesets-as-monorepo-manager">Use Changesets as monorepo manager<a class="zola-anchor" href="#use-changesets-as-monorepo-manager" aria-label="Anchor link for: use-changesets-as-monorepo-manager">🔗</a></h2>
-<h3 id="init-a-monorepo">Init a monorepo<a class="zola-anchor" href="#init-a-monorepo" aria-label="Anchor link for: init-a-monorepo">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">mkdir</span><span style="color:#4271ae;"> monorepo </span><span style="color:#3e999f;">&amp;&amp; </span><span style="color:#4271ae;">cd monorepo
-</span><span style="color:#c82829;">git</span><span style="color:#4271ae;"> init
-</span><span style="color:#999999;"># Add .gitignore file for nodejs &lt;https://github.com/github/gitignore/blob/master/Node.gitignore&gt;
-</span><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> init</span><span style="color:#f5871f;"> --yes
-</span></code></pre>
-<p>Add <code>&quot;private&quot;:&quot;true&quot;</code> to the root <code>package.json</code></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> init</span><span style="color:#f5871f;"> -w</span><span style="color:#4271ae;"> packages/a
-</span><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> init</span><span style="color:#f5871f;"> -w</span><span style="color:#4271ae;"> packages/b
-</span><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> init</span><span style="color:#f5871f;"> -w</span><span style="color:#4271ae;"> packages/c
-</span></code></pre>
-<p>Let <code>c</code> depends <code>a</code> and <code>b</code>,</p>
-<p>Add</p>
-<pre data-lang="json" style="background-color:#ffffff;color:#4d4d4c;" class="language-json "><code class="language-json" data-lang="json"><span style="color:#718c00;">&quot;dependencies&quot;</span><span>: {
-</span><span>  </span><span style="color:#718c00;">&quot;a&quot;</span><span>:</span><span style="color:#718c00;">&quot;^1.0.0&quot;</span><span>,
-</span><span>  </span><span style="color:#718c00;">&quot;b&quot;</span><span>:</span><span style="color:#718c00;">&quot;^1.0.0&quot;
-</span><span>}
-</span></code></pre>
-<p>to <code>packages/c/package.json</code></p>
-<h3 id="install-changesets">Install changesets<a class="zola-anchor" href="#install-changesets" aria-label="Anchor link for: install-changesets">🔗</a></h3>
-<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets/blob/main/docs/intro-to-using-changesets.md">here</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> install</span><span style="color:#f5871f;"> -D</span><span style="color:#4271ae;"> @changesets/cli </span><span style="color:#3e999f;">&amp;&amp; </span><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> changeset init
-</span></code></pre>
-<p>This action will add a <code>.changeset</code> folder, and a couple of files to help you out:</p>
-<p>You should change the <code>.changeset/config.json</code> -&gt; <code>baseBranch</code> to yourself main branch, also change <code>access</code> to <code>public</code></p>
-<p>Commit current files.</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> add .
-</span><span style="color:#c82829;">git</span><span style="color:#4271ae;"> commit</span><span style="color:#f5871f;"> -m </span><span style="color:#718c00;">&quot;feat: init&quot;
-</span></code></pre>
-<p>That’s done.</p>
-<h3 id="usage">Usage<a class="zola-anchor" href="#usage" aria-label="Anchor link for: usage">🔗</a></h3>
-<h4 id="first-publish">First publish<a class="zola-anchor" href="#first-publish" aria-label="Anchor link for: first-publish">🔗</a></h4>
-<p>First publish you should just use the follow command to publish your module</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> changeset publish
-</span></code></pre>
-<h4 id="future-changes">Future changes<a class="zola-anchor" href="#future-changes" aria-label="Anchor link for: future-changes">🔗</a></h4>
-<p>You should see <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets/blob/main/docs/detailed-explanation.md">changesets philosophy</a></p>
-<p>You should first create an <code>intent to change</code>, that said, before what ever changes you want to make, you should create a <code>intent change</code></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> changeset
-</span></code></pre>
-<p>…Make some changes</p>
-<p>Now, generate new version, changeset will take care your dependences,</p>
-<blockquote>
-<p>Note, by default, if <code>a</code> upgrade from <code>1.0.1</code> to <code>1.0.2</code>, <code>c</code> depends on <code>a@^1.0.1</code>, then <code>c</code> <code>package.json</code> will not change, cause npm will auto update <code>a@^1.0.1</code> to the last version <code>1.0.2</code>
-if you want change to the exact version every time, you can set the config to</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span> </span><span style="color:#718c00;">&quot;___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH&quot;</span><span style="color:#c82829;">: </span><span style="color:#4271ae;">{
-</span><span style="color:#4271ae;">    </span><span style="color:#718c00;">&quot;updateInternalDependents&quot;</span><span style="color:#4271ae;">: </span><span style="color:#718c00;">&quot;always&quot;
-</span><span style="color:#4271ae;"> }
-</span></code></pre>
-</blockquote>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> changeset version
-</span></code></pre>
-<p>Then, you can publish it.</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npx</span><span style="color:#4271ae;"> changeset publish
-</span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> add .
-</span><span style="color:#c82829;">git</span><span style="color:#4271ae;"> commit</span><span style="color:#f5871f;"> -m </span><span style="color:#718c00;">&quot;chore: version&quot;
-</span><span style="color:#c82829;">git</span><span style="color:#4271ae;"> push</span><span style="color:#f5871f;"> --follow-tags
-</span></code></pre>
-<h2 id="with-ci">With CI<a class="zola-anchor" href="#with-ci" aria-label="Anchor link for: with-ci">🔗</a></h2>
-<p>I’ll use Github Actions as example.</p>
-<p>The CI workflow assume that you use <a href="https://www.owenyoung.com/dev-tips/#git-tips">开发技巧收藏</a> as your git workflow.</p>
-<blockquote>
-<p>Note, you can use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets/tree/main/packages/changelog-github"><code>@changesets/changelog-github</code></a> as your changelog format log. with this, you can generate a log like <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/monorepo-example/releases/tag/%40theowenyoung%2Fpackage-example-b%401.1.0">this</a> , without this, then the log will only include <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/monorepo-example/releases/tag/%40theowenyoung%2Fpackage-example-c%401.1.2">commit link</a> &gt; <code>npm i -D @changesets/changelog-github</code></p>
-<pre data-lang="json" style="background-color:#ffffff;color:#4d4d4c;" class="language-json "><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#718c00;">&quot;changelog&quot;</span><span>: [
-</span><span>    </span><span style="color:#718c00;">&quot;@changesets/changelog-github&quot;</span><span>,
-</span><span>    { </span><span style="color:#718c00;">&quot;repo&quot;</span><span>: </span><span style="color:#718c00;">&quot;theowenyoung/monorepo-example&quot; </span><span>}
-</span><span>  ]
-</span><span>}
-</span></code></pre>
-</blockquote>
-<ol>
-<li>Create a script in root <code>package.json</code></li>
-</ol>
-<pre data-lang="json" style="background-color:#ffffff;color:#4d4d4c;" class="language-json "><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#718c00;">&quot;scripts&quot;</span><span>: {
-</span><span>    </span><span style="color:#718c00;">&quot;version-packages&quot;</span><span>: </span><span style="color:#718c00;">&quot;changeset version&quot;</span><span>,
-</span><span>    </span><span style="color:#718c00;">&quot;release&quot;</span><span>: </span><span style="color:#718c00;">&quot;changeset publish&quot;
-</span><span>  }
-</span><span>}
-</span></code></pre>
-<ol start="2">
-<li>Create github actions workflows</li>
-</ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">mkdir</span><span style="color:#f5871f;"> -p</span><span style="color:#4271ae;"> .github/workflows
-</span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">touch</span><span style="color:#4271ae;"> .github/workflows/release.yml
-</span></code></pre>
-<p>With the following content:</p>
-<pre data-lang="yaml" style="background-color:#ffffff;color:#4d4d4c;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Release
-</span><span>
-</span><span style="color:#f5871f;">on</span><span>:
-</span><span>  </span><span style="color:#c82829;">workflow_dispatch</span><span>:
-</span><span>  </span><span style="color:#c82829;">push</span><span>:
-</span><span>    </span><span style="color:#c82829;">branches</span><span>:
-</span><span>      - </span><span style="color:#718c00;">main
-</span><span>
-</span><span style="color:#c82829;">jobs</span><span>:
-</span><span>  </span><span style="color:#c82829;">release</span><span>:
-</span><span>    </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Release
-</span><span>    </span><span style="color:#c82829;">runs-on</span><span>: </span><span style="color:#718c00;">ubuntu-latest
-</span><span>    </span><span style="color:#c82829;">steps</span><span>:
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Checkout Repo
-</span><span>        </span><span style="color:#c82829;">uses</span><span>: </span><span style="color:#718c00;">actions/checkout@master
-</span><span>        </span><span style="color:#c82829;">with</span><span>:
-</span><span>          </span><span style="color:#999999;"># This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
-</span><span>          </span><span style="color:#c82829;">fetch-depth</span><span>: </span><span style="color:#f5871f;">0
-</span><span>
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Setup Node.js 12.x
-</span><span>        </span><span style="color:#c82829;">uses</span><span>: </span><span style="color:#718c00;">actions/setup-node@master
-</span><span>        </span><span style="color:#c82829;">with</span><span>:
-</span><span>          </span><span style="color:#c82829;">node-version</span><span>: </span><span style="color:#718c00;">12.x
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Setup NPM Latest
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">npm i -g npm
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Install Dependencies
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">npm i
-</span><span>
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Create Release Pull Request or Publish to npm
-</span><span>        </span><span style="color:#c82829;">uses</span><span>: </span><span style="color:#718c00;">changesets/action@master
-</span><span>        </span><span style="color:#c82829;">with</span><span>:
-</span><span>          </span><span style="color:#999999;"># this expects you to have a script called release which does a build for your packages and calls changeset publish
-</span><span>          </span><span style="color:#c82829;">publish</span><span>: </span><span style="color:#718c00;">npm run release
-</span><span>          </span><span style="color:#c82829;">version</span><span>: </span><span style="color:#718c00;">npm run version-packages
-</span><span>        </span><span style="color:#c82829;">env</span><span>:
-</span><span>          </span><span style="color:#c82829;">GITHUB_TOKEN</span><span>: </span><span style="color:#718c00;">${{ secrets.GITHUB_TOKEN }}
-</span><span>          </span><span style="color:#c82829;">NPM_TOKEN</span><span>: </span><span style="color:#718c00;">${{ secrets.NPM_TOKEN }}
-</span></code></pre>
-<ol start="3">
-<li>Add <code>NPM_TOKEN</code> to your github repo secret settings</li>
-</ol>
-<p>By <a href="https://www.owenyoung.com/dev-tips/">开发技巧收藏</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> token create
-</span></code></pre>
-<p>Done.</p>
-<p>Every time you use <code>npx changeset</code> to generate a new changeset intent, and the change is pulled to the <code>main</code> branch, then CI will create a pull request to generate a new version, and after the pull request was merged, CI will publish npm packages, and create a new release.</p>
-
-
           
-          <div id="email-comment" class="muted text-sm">
-            <hr class="w-full">
-            
-            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
-             <p>
-               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20Nodejs%20Monorepo">mail </a><code>owen@owenyoung.com</code>
-             </p>
-            
-            
-
-          </div>
-          
-
-          
-        </section>
-        
-       
-      </section>
-
-
-              </div>
-            </section>
-
-          
-<aside class="sidebar px ">
-
-
-
+          <div class="main-toc pt">
+            <details>
+              <summary>On this page</summary>
+              
 <section class="sidebar-table-content">
-  <h3>On this page</h3>
   <ul >
     <li><a href="#start">Get Started</a></li>
   
@@ -355,6 +196,221 @@ if you want change to the exact version every time, you can set the config to</p
   
   </ul>
 </section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <p>Use changesets as monorepo mananger.</p>
+<span id="continue-reading"></span><h2 id="tools">Tools<a class="zola-anchor" href="#tools" aria-label="Anchor link for: tools">🔗</a></h2>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets">GitHub - atlassian/changesets: 🦋 A way to manage your versioning and changelogs with a focus on monorepos</a></p>
+<h2 id="use-changesets-as-monorepo-manager">Use Changesets as monorepo manager<a class="zola-anchor" href="#use-changesets-as-monorepo-manager" aria-label="Anchor link for: use-changesets-as-monorepo-manager">🔗</a></h2>
+<h3 id="init-a-monorepo">Init a monorepo<a class="zola-anchor" href="#init-a-monorepo" aria-label="Anchor link for: init-a-monorepo">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">mkdir</span><span> monorepo &amp;&amp; </span><span style="color:#96b5b4;">cd</span><span> monorepo
+</span><span style="color:#bf616a;">git</span><span> init
+</span><span style="color:#65737e;"># Add .gitignore file for nodejs &lt;https://github.com/github/gitignore/blob/master/Node.gitignore&gt;
+</span><span style="color:#bf616a;">npm</span><span> init</span><span style="color:#bf616a;"> --yes
+</span></code></pre>
+<p>Add <code>&quot;private&quot;:&quot;true&quot;</code> to the root <code>package.json</code></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npm</span><span> init</span><span style="color:#bf616a;"> -w</span><span> packages/a
+</span><span style="color:#bf616a;">npm</span><span> init</span><span style="color:#bf616a;"> -w</span><span> packages/b
+</span><span style="color:#bf616a;">npm</span><span> init</span><span style="color:#bf616a;"> -w</span><span> packages/c
+</span></code></pre>
+<p>Let <code>c</code> depends <code>a</code> and <code>b</code>,</p>
+<p>Add</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>&quot;</span><span style="color:#a3be8c;">dependencies</span><span>&quot;: {
+</span><span>  &quot;</span><span style="color:#a3be8c;">a</span><span>&quot;:&quot;</span><span style="color:#a3be8c;">^1.0.0</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">b</span><span>&quot;:&quot;</span><span style="color:#a3be8c;">^1.0.0</span><span>&quot;
+</span><span>}
+</span></code></pre>
+<p>to <code>packages/c/package.json</code></p>
+<h3 id="install-changesets">Install changesets<a class="zola-anchor" href="#install-changesets" aria-label="Anchor link for: install-changesets">🔗</a></h3>
+<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets/blob/main/docs/intro-to-using-changesets.md">here</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npm</span><span> install</span><span style="color:#bf616a;"> -D</span><span> @changesets/cli &amp;&amp; </span><span style="color:#bf616a;">npx</span><span> changeset init
+</span></code></pre>
+<p>This action will add a <code>.changeset</code> folder, and a couple of files to help you out:</p>
+<p>You should change the <code>.changeset/config.json</code> -&gt; <code>baseBranch</code> to yourself main branch, also change <code>access</code> to <code>public</code></p>
+<p>Commit current files.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> add .
+</span><span style="color:#bf616a;">git</span><span> commit</span><span style="color:#bf616a;"> -m </span><span>&quot;</span><span style="color:#a3be8c;">feat: init</span><span>&quot;
+</span></code></pre>
+<p>That’s done.</p>
+<h3 id="usage">Usage<a class="zola-anchor" href="#usage" aria-label="Anchor link for: usage">🔗</a></h3>
+<h4 id="first-publish">First publish<a class="zola-anchor" href="#first-publish" aria-label="Anchor link for: first-publish">🔗</a></h4>
+<p>First publish you should just use the follow command to publish your module</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npx</span><span> changeset publish
+</span></code></pre>
+<h4 id="future-changes">Future changes<a class="zola-anchor" href="#future-changes" aria-label="Anchor link for: future-changes">🔗</a></h4>
+<p>You should see <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets/blob/main/docs/detailed-explanation.md">changesets philosophy</a></p>
+<p>You should first create an <code>intent to change</code>, that said, before what ever changes you want to make, you should create a <code>intent change</code></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npx</span><span> changeset
+</span></code></pre>
+<p>…Make some changes</p>
+<p>Now, generate new version, changeset will take care your dependences,</p>
+<blockquote>
+<p>Note, by default, if <code>a</code> upgrade from <code>1.0.1</code> to <code>1.0.2</code>, <code>c</code> depends on <code>a@^1.0.1</code>, then <code>c</code> <code>package.json</code> will not change, cause npm will auto update <code>a@^1.0.1</code> to the last version <code>1.0.2</code>
+if you want change to the exact version every time, you can set the config to</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span> &quot;</span><span style="color:#a3be8c;">___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH</span><span>&quot;</span><span style="color:#bf616a;">: </span><span>{
+</span><span>    &quot;</span><span style="color:#a3be8c;">updateInternalDependents</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">always</span><span>&quot;
+</span><span> }
+</span></code></pre>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npx</span><span> changeset version
+</span></code></pre>
+<p>Then, you can publish it.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npx</span><span> changeset publish
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> add .
+</span><span style="color:#bf616a;">git</span><span> commit</span><span style="color:#bf616a;"> -m </span><span>&quot;</span><span style="color:#a3be8c;">chore: version</span><span>&quot;
+</span><span style="color:#bf616a;">git</span><span> push</span><span style="color:#bf616a;"> --follow-tags
+</span></code></pre>
+<h2 id="with-ci">With CI<a class="zola-anchor" href="#with-ci" aria-label="Anchor link for: with-ci">🔗</a></h2>
+<p>I’ll use Github Actions as example.</p>
+<p>The CI workflow assume that you use <a href="https://www.owenyoung.com/dev-tips/#git-tips">开发技巧收藏</a> as your git workflow.</p>
+<blockquote>
+<p>Note, you can use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets/tree/main/packages/changelog-github"><code>@changesets/changelog-github</code></a> as your changelog format log. with this, you can generate a log like <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/monorepo-example/releases/tag/%40theowenyoung%2Fpackage-example-b%401.1.0">this</a> , without this, then the log will only include <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/monorepo-example/releases/tag/%40theowenyoung%2Fpackage-example-c%401.1.2">commit link</a> &gt; <code>npm i -D @changesets/changelog-github</code></p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">changelog</span><span>&quot;: [
+</span><span>    &quot;</span><span style="color:#a3be8c;">@changesets/changelog-github</span><span>&quot;,
+</span><span>    { &quot;</span><span style="color:#a3be8c;">repo</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">theowenyoung/monorepo-example</span><span>&quot; }
+</span><span>  ]
+</span><span>}
+</span></code></pre>
+</blockquote>
+<ol>
+<li>Create a script in root <code>package.json</code></li>
+</ol>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">scripts</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">version-packages</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">changeset version</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">release</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">changeset publish</span><span>&quot;
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<ol start="2">
+<li>Create github actions workflows</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">mkdir -p</span><span> .github/workflows
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">touch</span><span> .github/workflows/release.yml
+</span></code></pre>
+<p>With the following content:</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Release
+</span><span>
+</span><span style="color:#d08770;">on</span><span>:
+</span><span>  </span><span style="color:#bf616a;">workflow_dispatch</span><span>:
+</span><span>  </span><span style="color:#bf616a;">push</span><span>:
+</span><span>    </span><span style="color:#bf616a;">branches</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">main
+</span><span>
+</span><span style="color:#bf616a;">jobs</span><span>:
+</span><span>  </span><span style="color:#bf616a;">release</span><span>:
+</span><span>    </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Release
+</span><span>    </span><span style="color:#bf616a;">runs-on</span><span>: </span><span style="color:#a3be8c;">ubuntu-latest
+</span><span>    </span><span style="color:#bf616a;">steps</span><span>:
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Checkout Repo
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/checkout@master
+</span><span>        </span><span style="color:#bf616a;">with</span><span>:
+</span><span>          </span><span style="color:#65737e;"># This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+</span><span>          </span><span style="color:#bf616a;">fetch-depth</span><span>: </span><span style="color:#d08770;">0
+</span><span>
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Setup Node.js 12.x
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/setup-node@master
+</span><span>        </span><span style="color:#bf616a;">with</span><span>:
+</span><span>          </span><span style="color:#bf616a;">node-version</span><span>: </span><span style="color:#a3be8c;">12.x
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Setup NPM Latest
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">npm i -g npm
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Install Dependencies
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">npm i
+</span><span>
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Create Release Pull Request or Publish to npm
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">changesets/action@master
+</span><span>        </span><span style="color:#bf616a;">with</span><span>:
+</span><span>          </span><span style="color:#65737e;"># this expects you to have a script called release which does a build for your packages and calls changeset publish
+</span><span>          </span><span style="color:#bf616a;">publish</span><span>: </span><span style="color:#a3be8c;">npm run release
+</span><span>          </span><span style="color:#bf616a;">version</span><span>: </span><span style="color:#a3be8c;">npm run version-packages
+</span><span>        </span><span style="color:#bf616a;">env</span><span>:
+</span><span>          </span><span style="color:#bf616a;">GITHUB_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{ secrets.GITHUB_TOKEN }}
+</span><span>          </span><span style="color:#bf616a;">NPM_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{ secrets.NPM_TOKEN }}
+</span></code></pre>
+<ol start="3">
+<li>Add <code>NPM_TOKEN</code> to your github repo secret settings</li>
+</ol>
+<p>By <a href="https://www.owenyoung.com/dev-tips/">开发技巧收藏</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npm</span><span> token create
+</span></code></pre>
+<p>Done.</p>
+<p>Every time you use <code>npx changeset</code> to generate a new changeset intent, and the change is pulled to the <code>main</code> branch, then CI will create a pull request to generate a new version, and after the pull request was merged, CI will publish npm packages, and create a new release.</p>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
+             <p>
+               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20Nodejs%20Monorepo">mail </a><code>owen@owenyoung.com</code>
+             </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>On this page</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">Get Started</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#tools">Tools</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#use-changesets-as-monorepo-manager">Use Changesets as monorepo manager</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#init-a-monorepo">Init a monorepo</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#install-changesets">Install changesets</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#usage">Usage</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#with-ci">With CI</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
 
 </aside>
 

@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>Debian Server Setup - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -138,6 +147,7 @@
       <section>
       
         <section class="main">
+          
           <section id="start"></section>
           <blockquote>
 <p>For linux common commands, see <a href="https://www.owenyoung.com/dev-tips/#linux-common-commands">开发技巧收藏</a></p>
@@ -145,12 +155,12 @@
 <ol>
 <li>
 <p>Update Source</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">apt</span><span style="color:#4271ae;"> update</span><span style="color:#f5871f;"> --yes </span><span style="color:#3e999f;">&amp;&amp; </span><span style="color:#c82829;">apt</span><span style="color:#4271ae;"> upgrade</span><span style="color:#f5871f;"> --yes
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">apt</span><span> update</span><span style="color:#bf616a;"> --yes </span><span>&amp;&amp; </span><span style="color:#bf616a;">apt</span><span> upgrade</span><span style="color:#bf616a;"> --yes
 </span></code></pre>
 </li>
 <li>
 <p>Install sudo package</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">apt</span><span style="color:#4271ae;"> install</span><span style="color:#f5871f;"> -y</span><span style="color:#4271ae;"> sudo
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">apt</span><span> install</span><span style="color:#bf616a;"> -y</span><span> sudo
 </span></code></pre>
 </li>
 <li>
@@ -163,7 +173,7 @@
 <p>In your local machine:</p>
 </li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">ssh-copy-id</span><span style="color:#f5871f;"> -i </span><span style="color:#c82829;">~</span><span style="color:#4271ae;">/.ssh/id_rsa.pub username@remote_host
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">ssh-copy-id -i ~</span><span>/.ssh/id_rsa.pub username@remote_host
 </span></code></pre>
 <blockquote>
 <p>This will copy your id_rsa.pub to remote machine <code>~/.ssh/authorized_keys</code></p>
@@ -246,7 +256,6 @@
 
           
 <aside class="sidebar px no-toc">
-
 
 </aside>
 

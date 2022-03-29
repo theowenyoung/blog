@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Workflows</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/workflows/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-02-02T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/workflows/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Actionsflow介绍 - 可以一键部署在Github上的IFTTT&#x2F;Zapier的开源替代</title>
+		<published>2021-02-02T00:00:00+00:00</published>
+		<updated>2021-02-02T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/actionsflow/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/actionsflow/</id>
+		<content type="html">&lt;p&gt;我还记得当年第一次使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ifttt.com&quot;&gt;IFTTT&lt;&#x2F;a&gt;的时候的那种兴奋，天呐，这才是互联网！从那时起，就一直使用 IFTTT 到今天，真的很棒的一个产品！直到 IFTTT 最近宣布要收费，我就在想有没有合适的开源方案可以替代，因为托管方案肯定没戏了，连 10 年都免费的 IFTTT 都开始收费了，其他的只会更贵，结果发现主流的开源替代方案，比如 huginn, n8n, node-red 好像又有点重，不够轻量，而且扩展起来也不容易。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;刚好在那时看到&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&quot;&gt;Github 的 Actions&lt;&#x2F;a&gt;支持&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&#x2F;reference&#x2F;events-that-trigger-workflows#schedule&quot;&gt;Schedule&lt;&#x2F;a&gt;事件，而 Github 的 Actions 又是对开源项目免费使用，所以就萌生了利用 Github Actions 的定时运行来检测更新，并执行指定动作。所以一个新的轮子&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; 来了！&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;kai-shi&quot;&gt;开始&lt;a class=&quot;zola-anchor&quot; href=&quot;#kai-shi&quot; aria-label=&quot;Anchor link for: kai-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;使用这个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow-workflow-default&#x2F;generate&quot;&gt;链接&lt;&#x2F;a&gt;用 Actionsflow 的默认模板创建一个新的 GitHub 项目，一个典型的 Actionsflow 项目长这样：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;├──&lt;&#x2F;span&gt;&lt;span&gt; .github
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;│&lt;&#x2F;span&gt;&lt;span&gt;   └── workflows
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;│&lt;&#x2F;span&gt;&lt;span&gt;       └── actionsflow.yml
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;├──&lt;&#x2F;span&gt;&lt;span&gt; .gitignore
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;├──&lt;&#x2F;span&gt;&lt;span&gt; README.md
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;└──&lt;&#x2F;span&gt;&lt;span&gt; workflows
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;│&lt;&#x2F;span&gt;&lt;span&gt;   └── rss.yml
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;│&lt;&#x2F;span&gt;&lt;span&gt;   └── webhook.yml
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;└──&lt;&#x2F;span&gt;&lt;span&gt; package.json
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;取消 &lt;code&gt;.github&#x2F;workflows&#x2F;actionsflow.yml&lt;&#x2F;code&gt; 文件里&lt;code&gt;schedule&lt;&#x2F;code&gt;的注释&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;code&gt;workflows&#x2F;&lt;&#x2F;code&gt;文件夹创建你自己的 workflow 文件&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;保存并提交你的文件到 Github&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;pei-zhi&quot;&gt;配置&lt;a class=&quot;zola-anchor&quot; href=&quot;#pei-zhi&quot; aria-label=&quot;Anchor link for: pei-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;我对 Actionsflow 的设计原则是规则尽可能简单，并且可扩展，workflow 的配置规则直接采用 Github Actions 的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&#x2F;reference&#x2F;workflow-syntax-for-github-actions&quot;&gt;配置格式&lt;&#x2F;a&gt;，如果你之前有用过 Github Actions 的话，应该立刻就能懂 Actionsflow 的全部配置规则：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;rss&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;url&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;hnrss.org&#x2F;newest?points=300
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;config&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;limit&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;jobs&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;request&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Make a HTTP Request
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;runs-on&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;ubuntu-latest
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;steps&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Make a HTTP Request
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;uses&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;actionsflow&#x2F;axios@v1
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;with&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;url&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;hookb.in&#x2F;VGPzxoWbdjtE22bwznzE
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;method&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;POST
+&lt;&#x2F;span&gt;&lt;span&gt;          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;body&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;|
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;              &amp;quot;link&amp;quot;:&amp;quot;${{ on.rss.outputs.link }}&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;              &amp;quot;title&amp;quot;: &amp;quot;${{ on.rss.outputs.title }}&amp;quot;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;              &amp;quot;content&amp;quot;:&amp;quot;&amp;lt;&amp;lt;&amp;lt;${{ on.rss.outputs.contentSnippet }}&amp;gt;&amp;gt;&amp;gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            }
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;和原生的 Github Actions 的配置相比，Actionsflow 只是扩展了&lt;code&gt;on&lt;&#x2F;code&gt;的事件，在 Actionsflow 里，我把它叫做&lt;code&gt;trigger&lt;&#x2F;code&gt;，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;triggers&#x2F;rss&#x2F;&quot;&gt; RSS trigger&lt;&#x2F;a&gt;经常被用来做示例使用，你可以点击[这里](&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;triggers&#x2F;&quot;&gt;Actionsflow Triggers | Actionsflow Documentation&lt;&#x2F;a&gt;)查看目前 Actionsflow 支持的所有 trigger. Trigger 里有个特殊的参数是&lt;code&gt;config&lt;&#x2F;code&gt;,这个 config 是通用参数，也就是所有的 trigger 都支持 config 参数，config 实现了很多通用的功能的，比如设置过滤条件，设置过滤条数，格式化输出结果，设置触发时间等等，点击[这里](&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;workflow&#x2F;#ontriggerconfig&quot;&gt;Workflow Syntax for Actionsflow | Actionsflow Documentation&lt;&#x2F;a&gt;可以查看所有支持的配置。&lt;&#x2F;p&gt;
+&lt;p&gt;其他的就和 Github Actions 的配置一样了，你可以在 jobs 里配置任何复杂的任务，或者简单的发个请求，你可以用&lt;code&gt; ${{ on.rss.outputs.&amp;lt;key&amp;gt; }}&lt;&#x2F;code&gt;来使用 trigger 的结果，每个 trigger 的结果的 key 需要去看对应 trigger 的文档。&lt;&#x2F;p&gt;
+&lt;p&gt;我在&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;actions&#x2F;&quot;&gt;这里&lt;&#x2F;a&gt;列出了你可能会用到的 Github Action，同时新建了一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;awesome-actionsflow&quot;&gt;Awesome 项目&lt;&#x2F;a&gt;列出一些常用的 Actionsflow 工作流。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;webhook&quot;&gt;Webhook&lt;a class=&quot;zola-anchor&quot; href=&quot;#webhook&quot; aria-label=&quot;Anchor link for: webhook&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Actionsflow 不仅支持定时抓取类的任务，同时还支持 Webhook 类的任务，这样第三方服务如果有任何更新就可以主动通知 Actionsflow 了。这里 Webhook 机制是利用 Github 可以接收外界的 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&#x2F;reference&#x2F;events-that-trigger-workflows#repository_dispatch&quot;&gt;&lt;code&gt;repository_dispatch&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; 事件来触发 Action 运行来实现的，具体使用可以见&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;triggers&#x2F;webhook&#x2F;&quot;&gt;这里&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ben-di-yun-xing&quot;&gt;本地运行&lt;a class=&quot;zola-anchor&quot; href=&quot;#ben-di-yun-xing&quot; aria-label=&quot;Anchor link for: ben-di-yun-xing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;大多数情况下，使用 Github Actions 运行 Actionsflow 是更方便，也是推荐的使用方式，但是可能出于某种原因你需要在本地或者你自己的 VPS 上部署 Actionsflow. 要在本地运行 Actionsflow，必须先安装&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.docker.com&#x2F;&quot;&gt;Docker&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;然后只需要运行:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;docker&lt;&#x2F;span&gt;&lt;span&gt; run&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -it -v&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;var&#x2F;run&#x2F;docker.sock:&#x2F;var&#x2F;run&#x2F;docker.sock&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -v &lt;&#x2F;span&gt;&lt;span&gt;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;PWD&lt;&#x2F;span&gt;&lt;span&gt;}:&#x2F;data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span&gt; 3000:3000 actionsflow&#x2F;actionsflow
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;手动运行方式见&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;self-hosted&#x2F;#manual&quot;&gt;这里&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

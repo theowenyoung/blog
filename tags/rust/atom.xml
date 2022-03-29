@@ -279,25 +279,25 @@
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;rust-jing-xiang-she-zhi&quot;&gt;Rust 镜像设置&lt;a class=&quot;zola-anchor&quot; href=&quot;#rust-jing-xiang-she-zhi&quot; aria-label=&quot;Anchor link for: rust-jing-xiang-she-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Add this to &lt;code&gt;~&#x2F;.bashrc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;RUSTUP_DIST_SERVER&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&amp;quot;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;RUSTUP_UPDATE_ROOT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup&amp;quot;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RUSTUP_DIST_SERVER&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RUSTUP_UPDATE_ROOT&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Install rustup &lt;code&gt;curl --proto &#x27;=https&#x27; --tlsv1.2 -sSf https:&#x2F;&#x2F;rsproxy.cn&#x2F;rustup-init.sh | sh&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;code&gt;~&#x2F;.cargo&#x2F;config&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[source.crates-io]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;replace-with&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;rsproxy&amp;#39;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[source.crates-io]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;replace-with&lt;&#x2F;span&gt;&lt;span&gt; = &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;rsproxy&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[source.rsproxy]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;registry&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[source.rsproxy]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;registry&lt;&#x2F;span&gt;&lt;span&gt; = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[registries.rsproxy]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;index&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[registries.rsproxy]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;index&lt;&#x2F;span&gt;&lt;span&gt; = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;rsproxy.cn&#x2F;crates.io-index&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;[net]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;git-fetch-with-cli&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; = true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[net]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git-fetch-with-cli&lt;&#x2F;span&gt;&lt;span&gt; = true
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --proto &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;#39;=https&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --tlsv1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;.2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -sSf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; https:&#x2F;&#x2F;sh.rustup.rs &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sh
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl --proto &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;=https&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --tlsv1&lt;&#x2F;span&gt;&lt;span&gt;.2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -sSf&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;sh.rustup.rs | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sh
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>

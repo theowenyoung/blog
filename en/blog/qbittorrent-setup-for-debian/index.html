@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>qBittorrent setup for Debian - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -142,131 +151,12 @@
       <section>
       
         <section class="main">
-          <section id="start"></section>
-          <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
-<p>Because there is no official ppa of qBittorrent for debian, so we use a <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/userdocs/qbittorrent-nox-static">third party service - qbittorrent-nox-static</a> to compile qb.</p>
-<ol>
-<li>Download script</li>
-</ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">wget</span><span style="color:#f5871f;"> -qO </span><span style="color:#c82829;">~</span><span style="color:#4271ae;">/qbittorrent-nox-static.sh https://git.io/qbstatic
-</span><span style="color:#c82829;">chmod</span><span style="color:#4271ae;"> +x </span><span style="color:#c82829;">~</span><span style="color:#4271ae;">/qbittorrent-nox-static.sh
-</span><span style="color:#999999;"># pre
-</span><span style="color:#c82829;">sudo ~</span><span style="color:#4271ae;">/qbittorrent-nox-static.sh
-</span><span style="color:#999999;"># build
-</span><span style="color:#c82829;">~/qbittorrent-nox-static.sh</span><span style="color:#4271ae;"> all
-</span><span style="color:#999999;"># install
-</span><span style="color:#c82829;">sudo ~</span><span style="color:#4271ae;">/qbittorrent-nox-static.sh install
-</span></code></pre>
-<h2 id="configure">Configure<a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">🔗</a></h2>
-<p>Read more at <a rel="noopener nofollow noreferrer" target="_blank" href="https://userdocs.github.io/qbittorrent-nox-static/#/install-qbittorrent?id=configuring-qbittorrent">qbittorrent-nox configure</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">vim ~</span><span style="color:#4271ae;">/.config/qBittorrent/qBittorrent.conf
-</span></code></pre>
-<p>With follow config:</p>
-<pre data-lang="ini" style="background-color:#ffffff;color:#4d4d4c;" class="language-ini "><code class="language-ini" data-lang="ini"><span style="color:#8959a8;">[LegalNotice]
-</span><span style="color:#f5871f;">Accepted</span><span style="color:#3e999f;">=</span><span style="color:#f5871f;">true
-</span><span>
-</span><span style="color:#8959a8;">[Preferences]
-</span><span style="color:#f5871f;">WebUI</span><span style="color:#3e999f;">\</span><span>Port</span><span style="color:#3e999f;">=</span><span style="color:#f5871f;">8080
-</span><span style="color:#f5871f;">WebUI</span><span style="color:#3e999f;">\</span><span>HostHeaderValidation</span><span style="color:#3e999f;">=</span><span style="color:#f5871f;">false
-</span></code></pre>
-<h2 id="systemd-service">Systemd service<a class="zola-anchor" href="#systemd-service" aria-label="Anchor link for: systemd-service">🔗</a></h2>
-<p>Reference at <a rel="noopener nofollow noreferrer" target="_blank" href="https://userdocs.github.io/qbittorrent-nox-static/#/systemd">here</a></p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#999999;"># create a user
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> vim /etc/systemd/system/qbittorrent.service
-</span></code></pre>
-<p>Config:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">[Unit]
-</span><span style="color:#c82829;">Description</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">qBittorrent-nox </span><span style="color:#c82829;">service
-</span><span style="color:#c82829;">Wants</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">network-online.target
-</span><span style="color:#c82829;">After</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">network-online.target </span><span style="color:#c82829;">nss-lookup.target
-</span><span>
-</span><span style="color:#c82829;">[Service]
-</span><span style="color:#c82829;">Type</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">exec
-</span><span style="color:#c82829;">User</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">qbtuser
-</span><span style="color:#c82829;">ExecStart</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">/usr/local/bin/qbittorrent-nox
-</span><span style="color:#c82829;">Restart</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">on-failure
-</span><span style="color:#c82829;">SyslogIdentifier</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">qbittorrent-nox
-</span><span>
-</span><span style="color:#c82829;">[Install]
-</span><span style="color:#c82829;">WantedBy</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">multi-user.target
-</span></code></pre>
-<p>After any changes to the services reload using this command.</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl daemon-reload
-</span></code></pre>
-<p>Now you can enable the service</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl enable</span><span style="color:#f5871f;"> --now</span><span style="color:#4271ae;"> qbittorrent.service
-</span></code></pre>
-<p>Now you can use these commands</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">systemctl</span><span style="color:#4271ae;"> stop qbittorrent
-</span><span style="color:#c82829;">systemctl</span><span style="color:#4271ae;"> start qbittorrent
-</span><span style="color:#c82829;">systemctl</span><span style="color:#4271ae;"> restart qbittorrent
-</span><span style="color:#c82829;">systemctl</span><span style="color:#4271ae;"> status qbittorrent
-</span><span>
-</span></code></pre>
-<h2 id="reverse-proxy-optional">Reverse Proxy (Optional)<a class="zola-anchor" href="#reverse-proxy-optional" aria-label="Anchor link for: reverse-proxy-optional">🔗</a></h2>
-<p>Use Caddy to access qBittorrent with domain. This should install <a href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/">Caddy2 Setup for Debian</a></p>
-<p>Config:</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">example.com </span><span style="color:#4271ae;">{
-</span><span style="color:#4271ae;">   push
-</span><span style="color:#4271ae;">   reverse_proxy 127.0.0.1:8080
-</span><span style="color:#4271ae;">}
-</span><span>
-</span></code></pre>
-<p>Now, you can access your qBittorrent web UI at: example.com, the default username and password is : admin/adminadmin</p>
-<blockquote>
-<p>Note, you should change the default username/password</p>
-</blockquote>
-<h2 id="config">Config<a class="zola-anchor" href="#config" aria-label="Anchor link for: config">🔗</a></h2>
-<ul>
-<li>Download directory, <code>/data/Downloads</code></li>
-<li>Settings, auto add <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/XIU2/TrackersListCollection">China</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://trackerslist.com/best.txt">https://trackerslist.com/best.txt</a> , <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ngosang/trackerslist">US</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://ngosang.github.io/trackerslist/trackers_best.txt">https://ngosang.github.io/trackerslist/trackers_best.txt</a></li>
-<li>Open <code>announce_to_all_trackers</code> at settings.</li>
-</ul>
-<h2 id="install-search-plugin-jackett">Install Search Plugin Jackett<a class="zola-anchor" href="#install-search-plugin-jackett" aria-label="Anchor link for: install-search-plugin-jackett">🔗</a></h2>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Jackett/Jackett">Jackett</a> is a server program that provides support for more than 400 torrent sites (public and private).</p>
-<h3 id="install-jackett">Install Jackett<a class="zola-anchor" href="#install-jackett" aria-label="Anchor link for: install-jackett">🔗</a></h3>
-<p>See <a href="https://www.owenyoung.com/blog/jackett-setup/">Jackett Setup</a></p>
-<h3 id="install-jackett-plugin">Install Jackett Plugin<a class="zola-anchor" href="#install-jackett-plugin" aria-label="Anchor link for: install-jackett-plugin">🔗</a></h3>
-<p>See also at <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/qbittorrent/search-plugins/wiki/How-to-configure-Jackett-plugin">here</a></p>
-<p>Open qBittorrent Web UI, In the Search tab, click the Search plugins… button (bottom-right) -&gt; add new plugin -&gt; <code>https://raw.githubusercontent.com/qbittorrent/search-plugins/master/nova3/engines/jackett.py</code></p>
-<p>Change API key settings, You can get it from Jackett UI</p>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">vim ~</span><span style="color:#4271ae;">/.local/share/qBittorrent/nova3/engines/jackett.json
-</span></code></pre>
-<h2 id="resource">Resource<a class="zola-anchor" href="#resource" aria-label="Anchor link for: resource">🔗</a></h2>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://sleele.com/2020/03/16/%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/">高阶教程-追剧全流程自动化</a></p>
-
-
           
-          <div id="email-comment" class="muted text-sm">
-            <hr class="w-full">
-            
-            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
-             <p>
-               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20qBittorrent%20setup%20for%20Debian">mail </a><code>owen@owenyoung.com</code>
-             </p>
-            
-            
-
-          </div>
-          
-
-          
-        </section>
-        
-       
-      </section>
-
-
-              </div>
-            </section>
-
-          
-<aside class="sidebar px ">
-
-
-
+          <div class="main-toc pt">
+            <details>
+              <summary>On this page</summary>
+              
 <section class="sidebar-table-content">
-  <h3>On this page</h3>
   <ul >
     <li><a href="#start">Get Started</a></li>
   
@@ -319,6 +209,188 @@
   
   </ul>
 </section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<p>Because there is no official ppa of qBittorrent for debian, so we use a <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/userdocs/qbittorrent-nox-static">third party service - qbittorrent-nox-static</a> to compile qb.</p>
+<ol>
+<li>Download script</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">wget -qO ~</span><span>/qbittorrent-nox-static.sh https://git.io/qbstatic
+</span><span style="color:#bf616a;">chmod</span><span> +x </span><span style="color:#bf616a;">~</span><span>/qbittorrent-nox-static.sh
+</span><span style="color:#65737e;"># pre
+</span><span style="color:#bf616a;">sudo ~</span><span>/qbittorrent-nox-static.sh
+</span><span style="color:#65737e;"># build
+</span><span style="color:#bf616a;">~/qbittorrent-nox-static.sh</span><span> all
+</span><span style="color:#65737e;"># install
+</span><span style="color:#bf616a;">sudo ~</span><span>/qbittorrent-nox-static.sh install
+</span></code></pre>
+<h2 id="configure">Configure<a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">🔗</a></h2>
+<p>Read more at <a rel="noopener nofollow noreferrer" target="_blank" href="https://userdocs.github.io/qbittorrent-nox-static/#/install-qbittorrent?id=configuring-qbittorrent">qbittorrent-nox configure</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vim ~</span><span>/.config/qBittorrent/qBittorrent.conf
+</span></code></pre>
+<p>With follow config:</p>
+<pre data-lang="ini" style="background-color:#2b303b;color:#c0c5ce;" class="language-ini "><code class="language-ini" data-lang="ini"><span style="color:#b48ead;">[LegalNotice]
+</span><span style="color:#bf616a;">Accepted</span><span>=</span><span style="color:#d08770;">true
+</span><span>
+</span><span style="color:#b48ead;">[Preferences]
+</span><span style="color:#bf616a;">WebUI</span><span>\Port=</span><span style="color:#d08770;">8080
+</span><span style="color:#bf616a;">WebUI</span><span>\HostHeaderValidation=</span><span style="color:#d08770;">false
+</span></code></pre>
+<h2 id="systemd-service">Systemd service<a class="zola-anchor" href="#systemd-service" aria-label="Anchor link for: systemd-service">🔗</a></h2>
+<p>Reference at <a rel="noopener nofollow noreferrer" target="_blank" href="https://userdocs.github.io/qbittorrent-nox-static/#/systemd">here</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># create a user
+</span><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/qbittorrent.service
+</span></code></pre>
+<p>Config:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
+</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">qBittorrent-nox </span><span style="color:#bf616a;">service
+</span><span style="color:#bf616a;">Wants</span><span>=</span><span style="color:#a3be8c;">network-online.target
+</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">network-online.target </span><span style="color:#bf616a;">nss-lookup.target
+</span><span>
+</span><span style="color:#bf616a;">[Service]
+</span><span style="color:#bf616a;">Type</span><span>=</span><span style="color:#a3be8c;">exec
+</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">qbtuser
+</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/usr/local/bin/qbittorrent-nox
+</span><span style="color:#bf616a;">Restart</span><span>=</span><span style="color:#a3be8c;">on-failure
+</span><span style="color:#bf616a;">SyslogIdentifier</span><span>=</span><span style="color:#a3be8c;">qbittorrent-nox
+</span><span>
+</span><span style="color:#bf616a;">[Install]
+</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
+</span></code></pre>
+<p>After any changes to the services reload using this command.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
+</span></code></pre>
+<p>Now you can enable the service</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl enable</span><span style="color:#bf616a;"> --now</span><span> qbittorrent.service
+</span></code></pre>
+<p>Now you can use these commands</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">systemctl</span><span> stop qbittorrent
+</span><span style="color:#bf616a;">systemctl</span><span> start qbittorrent
+</span><span style="color:#bf616a;">systemctl</span><span> restart qbittorrent
+</span><span style="color:#bf616a;">systemctl</span><span> status qbittorrent
+</span><span>
+</span></code></pre>
+<h2 id="reverse-proxy-optional">Reverse Proxy (Optional)<a class="zola-anchor" href="#reverse-proxy-optional" aria-label="Anchor link for: reverse-proxy-optional">🔗</a></h2>
+<p>Use Caddy to access qBittorrent with domain. This should install <a href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/">Caddy2 Setup for Debian</a></p>
+<p>Config:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">example.com </span><span>{
+</span><span>   push
+</span><span>   reverse_proxy 127.0.0.1:8080
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>Now, you can access your qBittorrent web UI at: example.com, the default username and password is : admin/adminadmin</p>
+<blockquote>
+<p>Note, you should change the default username/password</p>
+</blockquote>
+<h2 id="config">Config<a class="zola-anchor" href="#config" aria-label="Anchor link for: config">🔗</a></h2>
+<ul>
+<li>Download directory, <code>/data/Downloads</code></li>
+<li>Settings, auto add <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/XIU2/TrackersListCollection">China</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://trackerslist.com/best.txt">https://trackerslist.com/best.txt</a> , <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ngosang/trackerslist">US</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://ngosang.github.io/trackerslist/trackers_best.txt">https://ngosang.github.io/trackerslist/trackers_best.txt</a></li>
+<li>Open <code>announce_to_all_trackers</code> at settings.</li>
+</ul>
+<h2 id="install-search-plugin-jackett">Install Search Plugin Jackett<a class="zola-anchor" href="#install-search-plugin-jackett" aria-label="Anchor link for: install-search-plugin-jackett">🔗</a></h2>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Jackett/Jackett">Jackett</a> is a server program that provides support for more than 400 torrent sites (public and private).</p>
+<h3 id="install-jackett">Install Jackett<a class="zola-anchor" href="#install-jackett" aria-label="Anchor link for: install-jackett">🔗</a></h3>
+<p>See <a href="https://www.owenyoung.com/blog/jackett-setup/">Jackett Setup</a></p>
+<h3 id="install-jackett-plugin">Install Jackett Plugin<a class="zola-anchor" href="#install-jackett-plugin" aria-label="Anchor link for: install-jackett-plugin">🔗</a></h3>
+<p>See also at <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/qbittorrent/search-plugins/wiki/How-to-configure-Jackett-plugin">here</a></p>
+<p>Open qBittorrent Web UI, In the Search tab, click the Search plugins… button (bottom-right) -&gt; add new plugin -&gt; <code>https://raw.githubusercontent.com/qbittorrent/search-plugins/master/nova3/engines/jackett.py</code></p>
+<p>Change API key settings, You can get it from Jackett UI</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vim ~</span><span>/.local/share/qBittorrent/nova3/engines/jackett.json
+</span></code></pre>
+<h2 id="resource">Resource<a class="zola-anchor" href="#resource" aria-label="Anchor link for: resource">🔗</a></h2>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://sleele.com/2020/03/16/%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/">高阶教程-追剧全流程自动化</a></p>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
+             <p>
+               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20qBittorrent%20setup%20for%20Debian">mail </a><code>owen@owenyoung.com</code>
+             </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>On this page</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">Get Started</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#install">Install</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#configure">Configure</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#systemd-service">Systemd service</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#reverse-proxy-optional">Reverse Proxy (Optional)</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#config">Config</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#install-search-plugin-jackett">Install Search Plugin Jackett</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#install-jackett">Install Jackett</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#install-jackett-plugin">Install Jackett Plugin</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/#resource">Resource</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
 
 </aside>
 

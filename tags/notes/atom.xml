@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Notes</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/notes/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-10T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/tags/notes/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>不要再碎片化笔记了 - 关于笔记的思考</title>
+		<published>2022-03-10T00:00:00+00:00</published>
+		<updated>2022-03-10T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/about-notes/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/about-notes/</id>
+		<content type="html">&lt;p&gt;笔记很重要，一个好的笔记系统应该以一生的尺度去设计和维护，让我们自己受益一生。&lt;&#x2F;p&gt;
+&lt;p&gt;所以：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;非运营商锁定很重要，离线很重要，我们不能指望一个公司，或者一个在线服务能服务好一个以一生为尺度的个人系统。&lt;&#x2F;li&gt;
+&lt;li&gt;笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;所以我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;wiki&quot;&gt;以一生为尺度设计的笔记系统&lt;&#x2F;a&gt;就是一个纯文本的文件夹，里面保存了我所有能公开的笔记。至于公开笔记的原因，一方面，公开笔记能让我更有动力一直维护下去，另一方面，也许在某时可以给别人某种灵感，这会让我很满足。&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;近年来越来越多的人开始用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;258561003&quot;&gt;卢曼卡片盒笔记法&lt;&#x2F;a&gt;来记笔记，大多数人都是倾向于建立大量的笔记，然后再把这些笔记互相链接起来，以形成一个所谓的第二大脑。我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;笔记系统&lt;&#x2F;a&gt;的也采用了这种形式。现在的链接情况大概是这个样子的：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;.&#x2F;note-cuts.jpg&quot; alt=&quot;note-cuts&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;大概快记了一年吧，笔记条目现在急剧增加，我发现多卡片式的笔记系统开始出现经典的“日记问题”，类似我们以前可能会写很多日记，但是随着时间的增长，这些日记其实已经变成了一个类似&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archiveprogram.github.com&#x2F;&quot;&gt;Github 北极封存&lt;&#x2F;a&gt;的项目了。由于条目过多，所以很困难去再次检索，翻阅。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关于日记方面，现在其实有一个很好的记录形式，就是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bulletjournal.com&#x2F;&quot;&gt;子弹日记&lt;&#x2F;a&gt; ，清晰明了的格式，只记最重要的东西，以及索引日记。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;笔记多了，即使有“第二大脑”的帮助下，你也会发现，很难通过卡片间找到灵感，因为卡片是在是太多了，仅仅通过卡片间互相链接的形式很容易忘记&#x2F;错过某些过去的卡片。我目前的采用的办法是：归类，而且归的类越少越好。事实证明纯文本很强大，一个纯文本文件可以放进去超级多内容而大小并不会有多少 K。比如说，如果你在一个纯文本文件里面发送&#x2F;放置你的原创推特，假设你平均每天发一条推特，假设你是活到 100 岁，其实这个推特的纯文本文件只有 36500 行，对于一个纯文本文件来说，这并不算太大。 我就用这个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;theowenyoung&#x2F;wiki&#x2F;main&#x2F;thoughts.md&quot;&gt;纯文本文件&lt;&#x2F;a&gt;记录我的短想法。还有个很有名的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;buckket&#x2F;twtxt&quot;&gt;twtxt&lt;&#x2F;a&gt;标准，就是用一个换行符作为分割的 txt 文件写推特。&lt;&#x2F;p&gt;
+&lt;p&gt;以下是我目前整理出的大多数人可能会需要的几个纯文本文件笔记类型：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;quotes, 记录一些别人的话，&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;quotes&#x2F;&quot;&gt;收集发人深省的话&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;thoughts, 记录一些自己的话,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;thoughts&#x2F;&quot;&gt;短想法&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;journal, 日记，可按照不同年份保存，&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;journal-2022&#x2F;&quot;&gt;2022 年的一些记录&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;tools, 记录好用的工具，&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tools&#x2F;&quot;&gt;最好用的工具集合&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;articles, 记录好文章, &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;articles&#x2F;&quot;&gt;收集值得阅读的文章&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;sources, 记录常用的内容源， &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;sources&#x2F;&quot;&gt;探索互联网上高质量的内容&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;answers，记录一些好的答案，&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;answers&#x2F;&quot;&gt;有意思的问题收集&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;inspires, 记录一些启发灵感的，有意思的东西, &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;inspires&#x2F;&quot;&gt;收集一些给人灵感的东西&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;tips，记录一些常用的技巧 &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;&quot;&gt;生活技巧&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;以上这些就是我觉得大多数人都需要的一些公共类型的笔记，其他的类型就根据自己的类型来分类了。原则就是尽量少一点类型，这样更容易碰撞灵感和回顾，整理。&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

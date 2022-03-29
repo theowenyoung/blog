@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>Install PHP 8.0 On CentOS 7 &#x2F; RHEL 7 - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -138,13 +147,14 @@
       <section>
       
         <section class="main">
+          
           <section id="start"></section>
-          <pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
-</span><span style="color:#c82829;">yum</span><span style="color:#4271ae;"> install</span><span style="color:#f5871f;"> -y</span><span style="color:#4271ae;"> https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+          <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#bf616a;">yum</span><span> install</span><span style="color:#bf616a;"> -y</span><span> https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 </span><span>
-</span><span style="color:#c82829;">yum</span><span style="color:#4271ae;"> install</span><span style="color:#f5871f;"> -y</span><span style="color:#4271ae;"> https://rpms.remirepo.net/enterprise/remi-release-7.rpm
-</span><span style="color:#c82829;">yum</span><span style="color:#4271ae;"> install</span><span style="color:#f5871f;"> -y --enablerepo</span><span style="color:#3e999f;">=</span><span style="color:#4271ae;">remi-php80 php php-cli
-</span><span style="color:#c82829;">php</span><span style="color:#f5871f;"> -v
+</span><span style="color:#bf616a;">yum</span><span> install</span><span style="color:#bf616a;"> -y</span><span> https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+</span><span style="color:#bf616a;">yum</span><span> install</span><span style="color:#bf616a;"> -y --enablerepo</span><span>=remi-php80 php php-cli
+</span><span style="color:#bf616a;">php -v
 </span></code></pre>
 
 
@@ -174,7 +184,6 @@
 
           
 <aside class="sidebar px no-toc">
-
 
 </aside>
 

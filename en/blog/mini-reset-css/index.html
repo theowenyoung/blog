@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>Mini Reset CSS - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -138,91 +147,92 @@
       <section>
       
         <section class="main">
+          
           <section id="start"></section>
           <blockquote>
 <p>Forked by <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/jgthms/minireset.css/blob/master/minireset.css">https://github.com/jgthms/minireset.css/blob/master/minireset.css</a></p>
 </blockquote>
-<pre data-lang="css" style="background-color:#ffffff;color:#4d4d4c;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#c82829;">html </span><span>{
-</span><span>  </span><span style="color:#c99e00;">font-family</span><span>: </span><span style="color:#718c00;">&quot;SF Pro SC&quot;</span><span>, </span><span style="color:#718c00;">&quot;SF Pro Text&quot;</span><span>, </span><span style="color:#718c00;">&quot;SF Pro Icons&quot;</span><span>, </span><span style="color:#718c00;">&quot;PingFang SC&quot;</span><span>,
-</span><span>    </span><span style="color:#718c00;">&quot;Helvetica Neue&quot;</span><span>, </span><span style="color:#718c00;">&quot;Helvetica&quot;</span><span>, </span><span style="color:#718c00;">&quot;Arial&quot;</span><span>, </span><span style="color:#f5871f;">sans-serif</span><span>;
+<pre data-lang="css" style="background-color:#2b303b;color:#c0c5ce;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#bf616a;">html </span><span>{
+</span><span>  font-family: &quot;</span><span style="color:#a3be8c;">SF Pro SC</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">SF Pro Text</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">SF Pro Icons</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">PingFang SC</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">Helvetica Neue</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">Helvetica</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">Arial</span><span>&quot;, sans-serif;
 </span><span>}
-</span><span style="color:#c82829;">body </span><span>{
-</span><span>  </span><span style="color:#c99e00;">overflow-wrap</span><span>: </span><span style="color:#f5871f;">break-word</span><span>;
-</span><span>  </span><span style="color:#c99e00;">word-wrap</span><span>: </span><span style="color:#f5871f;">break-word</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-ms-word-break</span><span>: </span><span style="color:#f5871f;">break-all</span><span>;
-</span><span>  </span><span style="color:#c99e00;">word-break</span><span>: </span><span style="color:#f5871f;">break-word</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-ms-hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-moz-hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">-webkit-hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">hyphens</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
+</span><span style="color:#bf616a;">body </span><span>{
+</span><span>  overflow-wrap: break-word;
+</span><span>  word-wrap: break-word;
+</span><span>  -ms-word-break: break-all;
+</span><span>  word-break: break-word;
+</span><span>  -ms-hyphens: auto;
+</span><span>  -moz-hyphens: auto;
+</span><span>  -webkit-hyphens: auto;
+</span><span>  hyphens: auto;
 </span><span>}
-</span><span style="color:#c82829;">html</span><span>,
-</span><span style="color:#c82829;">body</span><span>,
-</span><span style="color:#c82829;">p</span><span>,
-</span><span style="color:#c82829;">dt</span><span>,
-</span><span style="color:#c82829;">dd</span><span>,
-</span><span style="color:#c82829;">blockquote</span><span>,
-</span><span style="color:#c82829;">figure</span><span>,
-</span><span style="color:#c82829;">fieldset</span><span>,
-</span><span style="color:#c82829;">legend</span><span>,
-</span><span style="color:#c82829;">textarea</span><span>,
-</span><span style="color:#c82829;">pre</span><span>,
-</span><span style="color:#c82829;">iframe</span><span>,
-</span><span style="color:#c82829;">hr</span><span>,
-</span><span style="color:#c82829;">h1</span><span>,
-</span><span style="color:#c82829;">h2</span><span>,
-</span><span style="color:#c82829;">h3</span><span>,
-</span><span style="color:#c82829;">h4</span><span>,
-</span><span style="color:#c82829;">h5</span><span>,
-</span><span style="color:#c82829;">h6 </span><span>{
-</span><span>  </span><span style="color:#c99e00;">margin</span><span>: </span><span style="color:#f5871f;">0</span><span>;
-</span><span>  </span><span style="color:#c99e00;">padding</span><span>: </span><span style="color:#f5871f;">0</span><span>;
-</span><span>}
-</span><span>
-</span><span style="color:#c82829;">h1</span><span>,
-</span><span style="color:#c82829;">h2</span><span>,
-</span><span style="color:#c82829;">h3</span><span>,
-</span><span style="color:#c82829;">h4</span><span>,
-</span><span style="color:#c82829;">h5</span><span>,
-</span><span style="color:#c82829;">h6 </span><span>{
-</span><span>  </span><span style="color:#c99e00;">font-size</span><span>: </span><span style="color:#f5871f;">100%</span><span>;
-</span><span>  </span><span style="color:#c99e00;">font-weight</span><span>: </span><span style="color:#f5871f;">normal</span><span>;
+</span><span style="color:#bf616a;">html</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">body</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">p</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">dt</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">dd</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">blockquote</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">figure</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">fieldset</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">legend</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">textarea</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">pre</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">iframe</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">hr</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h1</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h2</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h3</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h4</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h5</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h6 </span><span>{
+</span><span>  margin: </span><span style="color:#d08770;">0</span><span>;
+</span><span>  padding: </span><span style="color:#d08770;">0</span><span>;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">button</span><span>,
-</span><span style="color:#c82829;">input</span><span>,
-</span><span style="color:#c82829;">select </span><span>{
-</span><span>  </span><span style="color:#c99e00;">margin</span><span>: </span><span style="color:#f5871f;">0</span><span>;
+</span><span style="color:#bf616a;">h1</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h2</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h3</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h4</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h5</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h6 </span><span>{
+</span><span>  font-size: </span><span style="color:#d08770;">100%</span><span>;
+</span><span>  font-weight: normal;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">html </span><span>{
-</span><span>  </span><span style="color:#c99e00;">box-sizing</span><span>: </span><span style="color:#f5871f;">border-box</span><span>;
+</span><span style="color:#bf616a;">button</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">input</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">select </span><span>{
+</span><span>  margin: </span><span style="color:#d08770;">0</span><span>;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">*</span><span>,
-</span><span style="color:#c82829;">*</span><span>::before,
-</span><span style="color:#c82829;">*</span><span>::after {
-</span><span>  </span><span style="color:#c99e00;">box-sizing</span><span>: </span><span style="color:#f5871f;">inherit</span><span>;
+</span><span style="color:#bf616a;">html </span><span>{
+</span><span>  box-sizing: border-box;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">img</span><span>,
-</span><span style="color:#c82829;">video </span><span>{
-</span><span>  </span><span style="color:#c99e00;">height</span><span>: </span><span style="color:#f5871f;">auto</span><span>;
-</span><span>  </span><span style="color:#c99e00;">max-width</span><span>: </span><span style="color:#f5871f;">100%</span><span>;
+</span><span style="color:#bf616a;">*</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">*</span><span style="color:#8fa1b3;">::</span><span style="color:#b48ead;">before,
+</span><span style="color:#bf616a;">*</span><span style="color:#8fa1b3;">::</span><span style="color:#b48ead;">after </span><span>{
+</span><span>  box-sizing: inherit;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">iframe </span><span>{
-</span><span>  </span><span style="color:#c99e00;">border</span><span>: </span><span style="color:#f5871f;">0</span><span>;
+</span><span style="color:#bf616a;">img</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">video </span><span>{
+</span><span>  height: auto;
+</span><span>  max-width: </span><span style="color:#d08770;">100%</span><span>;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">table </span><span>{
-</span><span>  </span><span style="color:#c99e00;">border-collapse</span><span>: </span><span style="color:#f5871f;">collapse</span><span>;
-</span><span>  </span><span style="color:#c99e00;">border-spacing</span><span>: </span><span style="color:#f5871f;">0</span><span>;
+</span><span style="color:#bf616a;">iframe </span><span>{
+</span><span>  border: </span><span style="color:#d08770;">0</span><span>;
 </span><span>}
 </span><span>
-</span><span style="color:#c82829;">td</span><span>,
-</span><span style="color:#c82829;">th </span><span>{
-</span><span>  </span><span style="color:#c99e00;">padding</span><span>: </span><span style="color:#f5871f;">0</span><span>;
+</span><span style="color:#bf616a;">table </span><span>{
+</span><span>  border-collapse: collapse;
+</span><span>  border-spacing: </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">td</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">th </span><span>{
+</span><span>  padding: </span><span style="color:#d08770;">0</span><span>;
 </span><span>}
 </span></code></pre>
 
@@ -253,7 +263,6 @@
 
           
 <aside class="sidebar px no-toc">
-
 
 </aside>
 

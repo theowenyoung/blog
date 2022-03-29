@@ -74,6 +74,7 @@ html {
   --colors-divider: rgb(226, 232, 240);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-background: #fffff8;
+  --colors-secondary: #14213d;
 }
 
 body {
@@ -129,16 +130,16 @@ pre {
   color: rgb(57, 58, 52);
   background-color: rgb(246, 248, 250);
   margin-top: 0px;
-  margin-bottom: 16px;
-  padding: 16px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
   border: 0px;
-  border-radius: 6px;
+  border-radius: 0.5rem;
+  overflow: auto;
 }
 
 pre > code {
   font-size: 0.9rem;
   display: block;
-  overflow: auto;
 }
 code,
 pre > code {
@@ -310,7 +311,7 @@ a.muted,
   background-color: var(--colors-background);
 }
 .navbar-inner {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.875rem;
   display: flex;
 }
 
@@ -354,16 +355,15 @@ li.inline {
 }
 .sidebar li {
   font-size: 1rem;
-  color: var(--colors-muted);
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 67.5rem) {
   .no-toc {
     width: 20rem;
   }
-}
-
-@media (min-width: 48rem) {
+  .main-toc {
+    display: none;
+  }
   #root {
     display: flex;
   }
@@ -398,7 +398,10 @@ li.inline {
     overflow-y: auto;
     width: 20rem;
   }
-
+  .sidebar ul {
+    border-left: 1px solid var(--colors-divider);
+    list-style: none;
+  }
   .sidebar li {
     font-size: 0.9rem;
   }

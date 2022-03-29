@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>Shadowsocks Rust Setup for Debian - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -142,100 +151,12 @@
       <section>
       
         <section class="main">
-          <section id="start"></section>
-          <p>Shadowsocks Repo: <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/shadowsocks/shadowsocks-rust">https://github.com/shadowsocks/shadowsocks-rust</a></p>
-<p>Setup rust first: <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/">Debian 初始化 Rust 环境</a></p>
-<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">rustup</span><span style="color:#4271ae;"> default nightly
-</span><span style="color:#c82829;">cargo</span><span style="color:#4271ae;"> install shadowsocks-rust
-</span></code></pre>
-<h2 id="configure">Configure<a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">mkdir</span><span style="color:#4271ae;"> ss
-</span></code></pre>
-<p>Server config sample:</p>
-<pre data-lang="json" style="background-color:#ffffff;color:#4d4d4c;" class="language-json "><code class="language-json" data-lang="json"><span>{
-</span><span>  </span><span style="color:#718c00;">&quot;servers&quot;</span><span>: [
-</span><span>    {
-</span><span>      </span><span style="color:#718c00;">&quot;address&quot;</span><span>: </span><span style="color:#718c00;">&quot;::&quot;</span><span>,
-</span><span>      </span><span style="color:#718c00;">&quot;port&quot;</span><span>: </span><span style="color:#f5871f;">9982</span><span>,
-</span><span>      </span><span style="color:#718c00;">&quot;method&quot;</span><span>: </span><span style="color:#718c00;">&quot;chacha20-ietf-poly1305&quot;</span><span>,
-</span><span>      </span><span style="color:#718c00;">&quot;password&quot;</span><span>: </span><span style="color:#718c00;">&quot;strong-password&quot;</span><span>,
-</span><span>      </span><span style="color:#718c00;">&quot;mode&quot;</span><span>: </span><span style="color:#718c00;">&quot;tcp_and_udp&quot;</span><span>,
-</span><span>      </span><span style="color:#718c00;">&quot;fast_open&quot;</span><span>: </span><span style="color:#f5871f;">false</span><span>,
-</span><span>      </span><span style="color:#718c00;">&quot;timeout&quot;</span><span>: </span><span style="color:#f5871f;">7200
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
-<h2 id="add-as-a-system-service">Add as a system service<a class="zola-anchor" href="#add-as-a-system-service" aria-label="Anchor link for: add-as-a-system-service">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> vim /etc/systemd/system/ss.service
-</span></code></pre>
-<blockquote>
-<p>Note: Change <code>username</code> to your own username</p>
-</blockquote>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">[Unit]
-</span><span style="color:#c82829;">Description</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">ssserver </span><span style="color:#c82829;">service
-</span><span style="color:#c82829;">After</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">network.target
-</span><span>
-</span><span style="color:#c82829;">[Service]
-</span><span style="color:#c82829;">ExecStart</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">/home/username/.cargo/bin/ssserver </span><span style="color:#c82829;">-c</span><span style="color:#4271ae;"> /home/username/ss/config.json
-</span><span style="color:#c82829;">ExecStop</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">/usr/bin/killall </span><span style="color:#c82829;">ssserver
-</span><span style="color:#c82829;">Restart</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">on-failure
-</span><span style="color:#c82829;">StandardOutput</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">syslog               </span><span style="color:#999999;"># Output to syslog
-</span><span style="color:#c82829;">StandardError</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">syslog                </span><span style="color:#999999;"># Output to syslog
-</span><span style="color:#c82829;">SyslogIdentifier</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">ss
-</span><span style="color:#c82829;">User</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">username
-</span><span style="color:#c82829;">Group</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">admin
-</span><span>
-</span><span style="color:#c82829;">[Install]
-</span><span style="color:#c82829;">WantedBy</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">multi-user.target
-</span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl daemon-reload
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl enable</span><span style="color:#f5871f;"> --now</span><span style="color:#4271ae;"> ss
-</span></code></pre>
-<h2 id="run">Run<a class="zola-anchor" href="#run" aria-label="Anchor link for: run">🔗</a></h2>
-<h2 id="status">Status<a class="zola-anchor" href="#status" aria-label="Anchor link for: status">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl status ss
-</span></code></pre>
-<h2 id="stop">Stop<a class="zola-anchor" href="#stop" aria-label="Anchor link for: stop">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl stop ss
-</span></code></pre>
-<h2 id="update">Update<a class="zola-anchor" href="#update" aria-label="Anchor link for: update">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">cargo</span><span style="color:#4271ae;"> install shadowsocks-rust
-</span></code></pre>
-
-
           
-          <div id="email-comment" class="muted text-sm">
-            <hr class="w-full">
-            
-            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
-             <p>
-               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20Shadowsocks%20Rust%20Setup%20for%20Debian">mail </a><code>owen@owenyoung.com</code>
-             </p>
-            
-            
-
-          </div>
-          
-
-          
-        </section>
-        
-       
-      </section>
-
-
-              </div>
-            </section>
-
-          
-<aside class="sidebar px ">
-
-
-
+          <div class="main-toc pt">
+            <details>
+              <summary>On this page</summary>
+              
 <section class="sidebar-table-content">
-  <h3>On this page</h3>
   <ul >
     <li><a href="#start">Get Started</a></li>
   
@@ -276,6 +197,145 @@
   
   </ul>
 </section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <p>Shadowsocks Repo: <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/shadowsocks/shadowsocks-rust">https://github.com/shadowsocks/shadowsocks-rust</a></p>
+<p>Setup rust first: <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/">Debian 初始化 Rust 环境</a></p>
+<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">rustup</span><span> default nightly
+</span><span style="color:#bf616a;">cargo</span><span> install shadowsocks-rust
+</span></code></pre>
+<h2 id="configure">Configure<a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">mkdir</span><span> ss
+</span></code></pre>
+<p>Server config sample:</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">servers</span><span>&quot;: [
+</span><span>    {
+</span><span>      &quot;</span><span style="color:#a3be8c;">address</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">::</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">port</span><span>&quot;: </span><span style="color:#d08770;">9982</span><span>,
+</span><span>      &quot;</span><span style="color:#a3be8c;">method</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">chacha20-ietf-poly1305</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">password</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">strong-password</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">mode</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">tcp_and_udp</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">fast_open</span><span>&quot;: </span><span style="color:#d08770;">false</span><span>,
+</span><span>      &quot;</span><span style="color:#a3be8c;">timeout</span><span>&quot;: </span><span style="color:#d08770;">7200
+</span><span>    }
+</span><span>  ]
+</span><span>}
+</span></code></pre>
+<h2 id="add-as-a-system-service">Add as a system service<a class="zola-anchor" href="#add-as-a-system-service" aria-label="Anchor link for: add-as-a-system-service">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/ss.service
+</span></code></pre>
+<blockquote>
+<p>Note: Change <code>username</code> to your own username</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
+</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">ssserver </span><span style="color:#bf616a;">service
+</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">network.target
+</span><span>
+</span><span style="color:#bf616a;">[Service]
+</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/home/username/.cargo/bin/ssserver </span><span style="color:#bf616a;">-c</span><span> /home/username/ss/config.json
+</span><span style="color:#bf616a;">ExecStop</span><span>=</span><span style="color:#a3be8c;">/usr/bin/killall </span><span style="color:#bf616a;">ssserver
+</span><span style="color:#bf616a;">Restart</span><span>=</span><span style="color:#a3be8c;">on-failure
+</span><span style="color:#bf616a;">StandardOutput</span><span>=</span><span style="color:#a3be8c;">syslog               </span><span style="color:#65737e;"># Output to syslog
+</span><span style="color:#bf616a;">StandardError</span><span>=</span><span style="color:#a3be8c;">syslog                </span><span style="color:#65737e;"># Output to syslog
+</span><span style="color:#bf616a;">SyslogIdentifier</span><span>=</span><span style="color:#a3be8c;">ss
+</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">username
+</span><span style="color:#bf616a;">Group</span><span>=</span><span style="color:#a3be8c;">admin
+</span><span>
+</span><span style="color:#bf616a;">[Install]
+</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
+</span><span style="color:#bf616a;">sudo</span><span> systemctl enable</span><span style="color:#bf616a;"> --now</span><span> ss
+</span></code></pre>
+<h2 id="run">Run<a class="zola-anchor" href="#run" aria-label="Anchor link for: run">🔗</a></h2>
+<h2 id="status">Status<a class="zola-anchor" href="#status" aria-label="Anchor link for: status">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl status ss
+</span></code></pre>
+<h2 id="stop">Stop<a class="zola-anchor" href="#stop" aria-label="Anchor link for: stop">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl stop ss
+</span></code></pre>
+<h2 id="update">Update<a class="zola-anchor" href="#update" aria-label="Anchor link for: update">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cargo</span><span> install shadowsocks-rust
+</span></code></pre>
+
+
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
+             <p>
+               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20Shadowsocks%20Rust%20Setup%20for%20Debian">mail </a><code>owen@owenyoung.com</code>
+             </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>On this page</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">Get Started</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#install">Install</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#configure">Configure</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#add-as-a-system-service">Add as a system service</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#run">Run</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#status">Status</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#stop">Stop</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#update">Update</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
 
 </aside>
 

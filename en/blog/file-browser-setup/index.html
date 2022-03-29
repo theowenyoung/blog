@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>FileBrowser Setup - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -142,27 +151,53 @@
       <section>
       
         <section class="main">
+          
+          <div class="main-toc pt">
+            <details>
+              <summary>On this page</summary>
+              
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">Get Started</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/file-browser-setup/#install">Install</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/file-browser-setup/#systemd">Systemd</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+            </details>
+
+          </div>
+          
           <section id="start"></section>
           <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">curl</span><span style="color:#f5871f;"> -fsSL</span><span style="color:#4271ae;"> https://raw.githubusercontent.com/filebrowser/get/master/get.sh </span><span style="color:#3e999f;">| </span><span style="color:#c82829;">bash
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">curl -fsSL</span><span> https://raw.githubusercontent.com/filebrowser/get/master/get.sh | </span><span style="color:#bf616a;">bash
 </span></code></pre>
 <h2 id="systemd">Systemd<a class="zola-anchor" href="#systemd" aria-label="Anchor link for: systemd">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> vim /etc/systemd/system/filebrowser.service
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/filebrowser.service
 </span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">[Unit]
-</span><span style="color:#c82829;">Description</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">File </span><span style="color:#c82829;">browser: </span><span style="color:#4271ae;">%</span><span style="color:#c82829;">I
-</span><span style="color:#c82829;">After</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">network.target
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
+</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">File </span><span style="color:#bf616a;">browser: </span><span>%</span><span style="color:#bf616a;">I
+</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">network.target
 </span><span>
-</span><span style="color:#c82829;">[Service]
-</span><span style="color:#c82829;">User</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">www-data
-</span><span style="color:#c82829;">Group</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">www-data
-</span><span style="color:#c82829;">ExecStart</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">/usr/local/sbin/filebrowser </span><span style="color:#c82829;">-c</span><span style="color:#4271ae;"> /etc/filebrowser/%</span><span style="color:#c82829;">I</span><span style="color:#f5871f;"> -d</span><span style="color:#4271ae;"> /etc/filebrowser/filebrowser.db
+</span><span style="color:#bf616a;">[Service]
+</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">www-data
+</span><span style="color:#bf616a;">Group</span><span>=</span><span style="color:#a3be8c;">www-data
+</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/usr/local/sbin/filebrowser </span><span style="color:#bf616a;">-c</span><span> /etc/filebrowser/%</span><span style="color:#bf616a;">I -d</span><span> /etc/filebrowser/filebrowser.db
 </span><span>
-</span><span style="color:#c82829;">[Install]
-</span><span style="color:#c82829;">WantedBy</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">multi-user.target
+</span><span style="color:#bf616a;">[Install]
+</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
 </span></code></pre>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl daemon-reload
-</span><span style="color:#c82829;">sudo</span><span style="color:#4271ae;"> systemctl enable</span><span style="color:#f5871f;"> --now</span><span style="color:#4271ae;"> filebrowser
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
+</span><span style="color:#bf616a;">sudo</span><span> systemctl enable</span><span style="color:#bf616a;"> --now</span><span> filebrowser
 </span></code></pre>
 
 
@@ -193,10 +228,9 @@
           
 <aside class="sidebar px ">
 
-
+<h2>On this page</h2>
 
 <section class="sidebar-table-content">
-  <h3>On this page</h3>
   <ul >
     <li><a href="#start">Get Started</a></li>
   
@@ -212,6 +246,7 @@
   
   </ul>
 </section>
+
 
 </aside>
 

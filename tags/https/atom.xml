@@ -18,12 +18,12 @@
 &lt;ol&gt;
 &lt;li&gt;下载 acme 工具:&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#999999;&quot;&gt;# 用root用户权限，因为涉及到操作nginx
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 用root用户权限，因为涉及到操作nginx
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; su
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; su
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -O&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; - https:&#x2F;&#x2F;get.acme.sh &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; -s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; email=my@example.com
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget -O&lt;&#x2F;span&gt;&lt;span&gt; - https:&#x2F;&#x2F;get.acme.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sh -s&lt;&#x2F;span&gt;&lt;span&gt; email=my@example.com
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;ol&gt;
@@ -38,14 +38,14 @@
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;p&gt;把以下的信息保存到 &lt;code&gt;~&#x2F;.bashrc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;CF_Token&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;sdfsdfsdfljlbjkljlkjsdfoiwje&amp;quot;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;CF_Token&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sdfsdfsdfljlbjkljlkjsdfoiwje&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;CF_Account_ID&lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;xxxxxxxxxxxxx&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;CF_Account_ID&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;xxxxxxxxxxxxx&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;&#x2F;.bashrc
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;.bashrc
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;blockquote&gt;
@@ -59,14 +59,14 @@
 &lt;p&gt;安装证书到指定目录：&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#4d4d4c;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;acme.sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f5871f;&quot;&gt; --install-cert -d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; example.com \
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;acme.sh --install-cert -d&lt;&#x2F;span&gt;&lt;span&gt; example.com \
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;--key-file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;etc&#x2F;nginx&#x2F;ssl&#x2F;example.com.key \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--key-file&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;nginx&#x2F;ssl&#x2F;example.com.key \
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;--fullchain-file&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt; &#x2F;etc&#x2F;nginx&#x2F;ssl&#x2F;example.com.crt \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--fullchain-file&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;nginx&#x2F;ssl&#x2F;example.com.crt \
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c82829;&quot;&gt;--reloadcmd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#718c00;&quot;&gt;&amp;quot;service nginx force-reload&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--reloadcmd &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;service nginx force-reload&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;之后 acme 会自动添加 cron 任务，自动续期期限&lt;&#x2F;p&gt;

@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>How to check if there are uncommited changes in Github Actions? - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -142,35 +151,36 @@
       <section>
       
         <section class="main">
+          
           <section id="start"></section>
-          <pre data-lang="yaml" style="background-color:#ffffff;color:#4d4d4c;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Github Actions check if there are uncommited changes
-</span><span style="color:#f5871f;">on</span><span>:
-</span><span>  </span><span style="color:#c82829;">repository_dispatch</span><span>:
-</span><span>  </span><span style="color:#c82829;">workflow_dispatch</span><span>:
-</span><span>  </span><span style="color:#c82829;">push</span><span>:
-</span><span>    </span><span style="color:#c82829;">branches</span><span>:
-</span><span>      - </span><span style="color:#718c00;">main
-</span><span style="color:#c82829;">jobs</span><span>:
-</span><span>  </span><span style="color:#c82829;">test</span><span>:
-</span><span>    </span><span style="color:#c82829;">runs-on</span><span>: </span><span style="color:#718c00;">ubuntu-latest
-</span><span>    </span><span style="color:#c82829;">steps</span><span>:
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">Check out repository code
-</span><span>        </span><span style="color:#c82829;">uses</span><span>: </span><span style="color:#718c00;">actions/checkout@v2
-</span><span>      - </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">touch index.html
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">chown
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">sudo chown -R $USER:$USER ./
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">git config
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">git config --global user.name &quot;github-actions[bot]&quot; &amp;&amp; git config --global user.email github-actions-bot@users.noreply.github.com
-</span><span>      - </span><span style="color:#c82829;">name</span><span>: </span><span style="color:#718c00;">git add
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">git add .
-</span><span>      - </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">git status
-</span><span>      - </span><span style="color:#c82829;">id</span><span>: </span><span style="color:#718c00;">isChanged
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">git diff-index --cached --quiet HEAD || echo &#39;::set-output name=changed::true&#39;
-</span><span>      - </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">echo ${{ steps.isChanged.outputs.changed }}
-</span><span>      - </span><span style="color:#c82829;">if</span><span>: </span><span style="color:#718c00;">${{ steps.isChanged.outputs.changed == &#39;true&#39; }}
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">echo &#39;yes, changed&#39;
-</span><span>      - </span><span style="color:#c82829;">if</span><span>: </span><span style="color:#718c00;">${{ steps.isChanged.outputs.changed != &#39;true&#39; }}
-</span><span>        </span><span style="color:#c82829;">run</span><span>: </span><span style="color:#718c00;">echo &#39;no any change&#39;
+          <pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Github Actions check if there are uncommited changes
+</span><span style="color:#d08770;">on</span><span>:
+</span><span>  </span><span style="color:#bf616a;">repository_dispatch</span><span>:
+</span><span>  </span><span style="color:#bf616a;">workflow_dispatch</span><span>:
+</span><span>  </span><span style="color:#bf616a;">push</span><span>:
+</span><span>    </span><span style="color:#bf616a;">branches</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">main
+</span><span style="color:#bf616a;">jobs</span><span>:
+</span><span>  </span><span style="color:#bf616a;">test</span><span>:
+</span><span>    </span><span style="color:#bf616a;">runs-on</span><span>: </span><span style="color:#a3be8c;">ubuntu-latest
+</span><span>    </span><span style="color:#bf616a;">steps</span><span>:
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Check out repository code
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/checkout@v2
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">touch index.html
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">chown
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">sudo chown -R $USER:$USER ./
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">git config
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git config --global user.name &quot;github-actions[bot]&quot; &amp;&amp; git config --global user.email github-actions-bot@users.noreply.github.com
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">git add
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git add .
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git status
+</span><span>      - </span><span style="color:#bf616a;">id</span><span>: </span><span style="color:#a3be8c;">isChanged
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git diff-index --cached --quiet HEAD || echo &#39;::set-output name=changed::true&#39;
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">echo ${{ steps.isChanged.outputs.changed }}
+</span><span>      - </span><span style="color:#bf616a;">if</span><span>: </span><span style="color:#a3be8c;">${{ steps.isChanged.outputs.changed == &#39;true&#39; }}
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">echo &#39;yes, changed&#39;
+</span><span>      - </span><span style="color:#bf616a;">if</span><span>: </span><span style="color:#a3be8c;">${{ steps.isChanged.outputs.changed != &#39;true&#39; }}
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">echo &#39;no any change&#39;
 </span></code></pre>
 
 
@@ -200,7 +210,6 @@
 
           
 <aside class="sidebar px no-toc">
-
 
 </aside>
 

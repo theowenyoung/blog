@@ -12,7 +12,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d218ab2201ef5cd9918460381aa70ae0125687babbc4895d03a6785697d8017e">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=0bac62fa00a16eb42ef82551c51b0dfcb8968a821f9068ec960bcd72fa2b52e8">
     <title>Mastdon Development Setup - Owen Young&#x27;s Blog</title>
 
     
@@ -46,10 +46,10 @@
     href="https://www.owenyoung.com/site/images/manifest.json">
     <meta
       name="msapplication-TileColor"
-      content="#000084"
+      content="rgb(234, 76, 137)"
     />
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#000084" />
+    <meta name="theme-color" content="rgb(234, 76, 137)" />
 
     <meta
       property="og:title"
@@ -80,7 +80,16 @@
     />
      
     
-
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
 
   </head>
 
@@ -142,6 +151,7 @@
       <section>
       
         <section class="main">
+          
           <section id="start"></section>
           <p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.joinmastodon.org/dev/setup/">dev/setup</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.joinmastodon.org/admin/install/">admin/install</a></p>
 <ol>
@@ -156,40 +166,40 @@
 <ol start="4">
 <li>Install redit</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">brew</span><span style="color:#4271ae;"> install redis
-</span><span style="color:#c82829;">brew</span><span style="color:#4271ae;"> services start redis
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span> install redis
+</span><span style="color:#bf616a;">brew</span><span> services start redis
 </span></code></pre>
 <ol start="5">
 <li>Clone</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">git</span><span style="color:#4271ae;"> clone git@github.com:mastodon/mastodon.git live
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> clone git@github.com:mastodon/mastodon.git live
 </span></code></pre>
 <ol start="6">
 <li>Install ruby dependences</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#4271ae;">cd live
-</span><span style="color:#c82829;">bundle</span><span style="color:#4271ae;"> config set</span><span style="color:#f5871f;"> --local</span><span style="color:#4271ae;"> with </span><span style="color:#718c00;">&#39;development&#39;
-</span><span style="color:#c82829;">bundle</span><span style="color:#4271ae;"> install
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">cd</span><span> live
+</span><span style="color:#bf616a;">bundle</span><span> config set</span><span style="color:#bf616a;"> --local</span><span> with &#39;</span><span style="color:#a3be8c;">development</span><span>&#39;
+</span><span style="color:#bf616a;">bundle</span><span> install
 </span></code></pre>
 <ol start="6">
 <li>Install yarn</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">npm</span><span style="color:#4271ae;"> install</span><span style="color:#f5871f;"> --global</span><span style="color:#4271ae;"> yarn
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npm</span><span> install</span><span style="color:#bf616a;"> --global</span><span> yarn
 </span></code></pre>
 <ol start="7">
 <li>Install nodejs dependences</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">yarn
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">yarn
 </span></code></pre>
 <ol>
 <li>Init database</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">RAILS_ENV</span><span style="color:#3e999f;">=</span><span style="color:#718c00;">development </span><span style="color:#c82829;">bundle</span><span style="color:#4271ae;"> exec rails db:setup
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">RAILS_ENV</span><span>=</span><span style="color:#a3be8c;">development </span><span style="color:#bf616a;">bundle</span><span> exec rails db:setup
 </span></code></pre>
 <ol start="8">
 <li>Install foreman for multiple run</li>
 </ol>
-<pre data-lang="bash" style="background-color:#ffffff;color:#4d4d4c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#c82829;">gem</span><span style="color:#4271ae;"> install foreman</span><span style="color:#f5871f;"> --no-document
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">gem</span><span> install foreman</span><span style="color:#bf616a;"> --no-document
 </span></code></pre>
 <ol start="9">
 <li>Open</li>
@@ -225,7 +235,6 @@ password: <code>mastodonadmin</code></p>
 
           
 <aside class="sidebar px no-toc">
-
 
 </aside>
 
