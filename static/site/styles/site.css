@@ -70,7 +70,7 @@ html {
   box-sizing: border-box;
   --colors-text: rgba(0, 0, 0, 0.8);
   --colors-muted: rgb(117, 117, 117);
-  --colors-primary: rgb(234, 76, 137);
+  --colors-primary: #ea4c89;
   --colors-divider: rgb(226, 232, 240);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-code-background: #edf0f3;
@@ -122,10 +122,10 @@ h1 {
   font-size: 1.625rem;
 }
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 h3 {
-  font-size: 1.265rem;
+  font-size: 1.3rem;
 }
 pre {
   color: rgb(57, 58, 52);
