@@ -1,17 +1,13 @@
 ---
 title: About Me and the Blog
-date: 2022-03-10
-updated: 2022-03-22
 path: en/about
 ---
 
-I created a personal public Wiki [Everything I Know by Owen - A Personal Knowledge Based Wiki (owenyoung.com)](https://wiki.owenyoung.com/) and Blog [Home - Owen Young's Story](https://blog.owenyoung.com/), which made me develop the habit of taking notes and writing more things, because the habit has been formed, so I no longer bothered about the form of the blog, put my personal notes, all the output of the blog through here, so that I can better maintain myself and save my mind, before the two places I was a little overwhelmed by switching back and forth.
+I established a personal public [Wiki](https://wiki.owenyoung.com/) and [Blog](https://blog.owenyoung.com/) before, which let me develop the habit of taking notes and writing more things, as the habit has been developed, so I will no longer entangle the form of the blog problem, put Personal notes, all the outputs of the blog are placed here, so that I can maintain myself better and save my mind, before the two places to switch back and forth to make me a bit overwhelmed.
 
-I'm using [Obsidian](https://obsidian.md/) to edit all the content of this blog. Obsidian has a lot of easy-to-use shortcuts to make writing more efficient, and I recommend you use them as well. I prefer text-assisted input tools to software that modifies the formatting of my original data. It gives me more control as well as not being locked in by the operator.
+I'm using [VSCode](https://code.visualstudio.com/) with the (https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode) I developed to edit all the content of this blog. I prefer text-assisted input tools to software that modifies the formatting of my original data. It gives me more control as well as not being locked out by the operator.
 
-I'm using [Zola (getzola.org)](https://www.getzola.org/) to generate this static blog, Zola is written in Rust, before that I basically used JS toolchain to generate the blog, now I prefer to use the one-stop tool, mainly because I'm afraid of the third-party plugin ecosystem, and I want to keep my blog as simple as possible. Zola actually provides a lot of capabilities, so it can also achieve most of the ideas, for example, I implemented this book sorting by rating: [books-sort-by-rating](content/pages/books- sort-by-rating.md)
-
-Now , I'am using [foam](https://github.com/foambubble/foam) and [obsidian](https://obsidian.md/) to edit the wiki.
+I'm using [Zola](https://www.getzola.org/) to generate this static blog, Zola is written in Rust, I've basically used JS toolchain to generate the blog before, now I prefer to use a one-stop tool, mainly because I'm scared of the third-party plugin ecosystem, and I want to keep my blog Zola actually provides a lot of capabilities, so it's possible to implement most of the ideas, for example, I implemented this function for sorting books by rating: [books-sort-by-rating](/content/pages/books-sort-by-rating.md)
 
 ## About Me
 
