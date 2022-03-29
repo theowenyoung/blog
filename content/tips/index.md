@@ -17,7 +17,7 @@ taxonomies:
 
 - [天涯 kkndme 神贴聊房价](https://github.com/shengcaishizhan/kkndme_tianya)
 - [长沙买房攻略](https://github.com/eeve/cs-house)
-- ![思维导图](./attachments/cn-house-steps.jpeg)
+- ![思维导图](./cn-house-steps.jpeg)
 
 ## 自用物品分享
 

@@ -1,5 +1,5 @@
 ---
-title: Jellyfin安装
+title: Jellyfin安装指南
 date: 2021-03-26
 updated: 2022-03-26
 taxonomies:

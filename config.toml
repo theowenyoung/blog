@@ -14,7 +14,7 @@ title = "Owen Young's Blog"
 [markdown]
 # When set to "true", all code blocks are highlighted.
 highlight_code = true
-highlight_theme = "Tomorrow"
+# highlight_theme = "Tomorrow"
 # Whether external links are to be opened in a new tab
 # If this is true, a `rel="noopener"` will always automatically be added for security reasons
 external_links_target_blank = true
@@ -38,7 +38,7 @@ include_content = false
 [extra]
 author = "Owen Young"
 email = "owen@owenyoung.com"
-theme_color = "#000084"
+theme_color = "rgb(234, 76, 137)"
 
 ### THIRD PARTY
 # google_analytics = "UA-012345-67"
@@ -64,7 +64,7 @@ title = "Owen的博客"
 
 [languages.zh.translations]
 keywords = "注意力, 读书, 工具分享, 纯文本, 英语学习"
-label_all_posts = "[点击查看所有文章](/blog/)"
+label_all_posts = "[点击查看所有文章🔥🔥](/blog/)"
 label_archive = "全部文章归档"
 label_back_to_start = "正文开始"
 label_book_author = "图书作者"

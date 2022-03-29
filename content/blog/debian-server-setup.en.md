@@ -7,7 +7,7 @@ taxonomies:
     - Dev
 ---
 
-> For linux common commands, see [开发技巧收藏](/content/dev-tips.md#linux-common-commands)
+> For linux common commands, see [开发技巧收藏](/content/dev-tips/index.md#linux-common-commands)
 
 1. Update Source
 

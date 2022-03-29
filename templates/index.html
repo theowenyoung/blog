@@ -10,24 +10,26 @@
       </section>
 
       {{ section.content | safe }}
-
-      <h3>{{trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe}}</h3>
+      <hr class="w-full">
+      <h2>{{trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe}}</h2>
       <section class="articles">
       {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
       {% for page in all_blog_pages.pages | slice(start=0,end=5)  %} 
         {{ macro::post_max(page=page) }}   
       {% endfor %} 
 
-      <h3>{{trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe}}</h3>
+      <h3 class="no-border">{{trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe}}</h3>
       </section>
-  
-      <h3>{{trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe}}</h3>
+      <hr class="w-full">
+
+      <h2>{{trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe}}</h2>
       {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %} 
       <section class="articles">
         {{ thoughts_page.summary | safe }}
       </section>
+      <hr class="w-full">
 
-      <h3>{{trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe}}</h3>
+      <h2>{{trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe}}</h2>
       <section class="articles">
         {% set all_categories = get_taxonomy(kind="categories",lang=lang) %}
         {% set note_pages = [] %}

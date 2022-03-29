@@ -9,12 +9,10 @@ taxonomies:
     - Self-hosted
 ---
 
-
-
 Copy the [Template](https://gist.github.com/theowenyoung/e09cb6e2c59f247fdc3f4e6fe4401481) to your local caddy config folder.
 
 This template will display the follow page:
-![screenshot](./attachments/caddy-file-template-screenshot.png)
+![screenshot](./caddy-file-template-screenshot.png)
 
 ```bash
 localhost {

@@ -1,5 +1,5 @@
 ---
-title: Jackett Setup
+title: Jackett 安装指南
 date: 2021-03-26
 updated: 2022-03-26
 taxonomies:
