@@ -311,7 +311,7 @@ a.muted,
   background-color: var(--colors-background);
 }
 .navbar-inner {
-  padding: 0.5rem 0.875rem;
+  padding: 0.5rem 1.4rem;
   display: flex;
 }
 
@@ -363,6 +363,7 @@ li.inline {
     border-right: 1px solid var(--colors-divider);
   }
   .navbar-inner {
+    padding: 1.4rem 0.875rem;
     flex-direction: column;
     height: 100vh;
   }
