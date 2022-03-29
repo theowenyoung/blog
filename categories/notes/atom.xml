@@ -5,8 +5,64 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-26T00:00:00+00:00</updated>
+	<updated>2022-03-29T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>阅读指南</title>
+		<published>2022-03-29T00:00:00+00:00</published>
+		<updated>2022-03-29T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/books-guide/" type="text/html"/>
+		<id>https://www.owenyoung.com/books-guide/</id>
+		<content type="html">&lt;p&gt;收集书籍推荐列表，以及资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;其他人的书籍推荐资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hacker-recommended-books.vercel.app&#x2F;&quot;&gt;汇总了 hacker news 上评论里提到的书籍的排名&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hackernewsbooks.com&#x2F;top-books-on-hacker-news&quot;&gt;又一个 hacker news 提到的图书周报&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.redditreads.com&#x2F;&quot;&gt;reddit 上的图书推荐排名&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.douban.com&#x2F;top250&quot;&gt;豆瓣图书 top250&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;shepherd.com&#x2F;&quot;&gt;像在书店一样发现新的书&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=19087418&quot;&gt;Ask HN: 那些书改变了你对所有事情的看法？&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hn.buzzing.cc&#x2F;hn&#x2F;30241190&#x2F;&quot;&gt;Ask HN: 您推荐大家阅读的一本书是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sive.rs&#x2F;book&quot;&gt;Sive 的读书笔记&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;BBC_list_of_100_%22most_inspiring%22_novels&quot;&gt;BBC 最有影响力的 100 本书籍&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;list&#x2F;popular_lists&quot;&gt;Good read 最受欢迎的书籍列表&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;list&#x2F;show&#x2F;1.Best_Books_Ever&quot;&gt;有史以来最好的书 - Good read list&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.wikipedia.org&#x2F;wiki&#x2F;%E6%99%82%E4%BB%A3%E9%9B%9C%E8%AA%8C%E7%99%BE%E5%A4%A7%E8%8B%B1%E6%96%87%E5%B0%8F%E8%AA%AA&quot;&gt;时代周刊百大最佳英文长篇小说&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;m.douban.com&#x2F;subject_collection&#x2F;ECY45E4YA&quot;&gt;豆瓣外国小说 Top 100&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;books&#x2F;best-sellers&#x2F;&quot;&gt;纽约时报实时畅销榜&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hacktheentrepreneur.com&#x2F;best-business-books&#x2F;&quot;&gt;史上最佳商业书籍排行&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zi-yuan&quot;&gt;资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-yuan&quot; aria-label=&quot;Anchor link for: zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;standardebooks.org&#x2F;&quot;&gt;标准电子书&lt;&#x2F;a&gt; - 制作精美的免费版权的电子书&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jiumodiary.com&#x2F;&quot;&gt;鸠摩电子书搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.z-lib.org&#x2F;&quot;&gt;Z-Library 全球最大数字图书馆&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sg1lib.org&quot;&gt;https:&#x2F;&#x2F;sg1lib.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;1lib.pl&quot;&gt;https:&#x2F;&#x2F;1lib.pl&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ng1lib.org&quot;&gt;https:&#x2F;&#x2F;ng1lib.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;b-ok.com&quot;&gt;https:&#x2F;&#x2F;b-ok.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bookzz.ren&quot;&gt;https:&#x2F;&#x2F;bookzz.ren&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;booksc.xyz&quot;&gt;https:&#x2F;&#x2F;booksc.xyz&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;librivox.org&#x2F;&quot;&gt;公共领域有声读物&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tao-lun&quot;&gt;讨论&lt;a class=&quot;zola-anchor&quot; href=&quot;#tao-lun&quot; aria-label=&quot;Anchor link for: tao-lun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bookforum.com&#x2F;&quot;&gt;Book Forum&lt;&#x2F;a&gt; - 高质量的书籍推荐&#x2F;评论平台&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>收集值得阅读的文章</title>
 		<published>2022-03-25T00:00:00+00:00</published>

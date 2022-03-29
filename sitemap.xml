@@ -192,7 +192,11 @@
         <lastmod>2022-03-26</lastmod>
     </url>
     <url>
-        <loc>https://www.owenyoung.com/books-sort-by-rating/</loc>
+        <loc>https://www.owenyoung.com/books-guide/</loc>
+        <lastmod>2022-03-29</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/books/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/categories/</loc>
@@ -567,6 +571,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/github-actions/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/guide/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/guide/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/hacker-news/</loc>
