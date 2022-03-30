@@ -44,6 +44,7 @@ taxonomies:
 - [Tyler Cowen 的专栏](https://www.bloomberg.com/opinion/authors/AS6n2t3d_iA/tyler-cowen) - 经济相关
 - [Adam Grant](https://adamgrant.bulletin.com/)
 - [Austin Kleon](https://austinkleon.substack.com/) - 像艺术家一样偷窃作者
+- [Paul Graham](http://paulgraham.com/articles.html) - YC 创始人
 
 ## Product
 
@@ -196,3 +197,7 @@ taxonomies:
 
 - [Tyler Cowen](https://publicchoice.gmu.edu/tylercowen) - 乔治梅森大学和公共选择研究中心的经济学教授, 每天都会为博客 《边缘革命》（The Marginal Revolution）撰稿
   - [专栏](https://www.bloomberg.com/opinion/authors/AS6n2t3d_iA/tyler-cowen)
+
+## 搜索引擎
+
+- [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
