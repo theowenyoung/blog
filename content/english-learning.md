@@ -44,6 +44,11 @@ taxonomies:
 - [简易英语](https://intranet.secure.griffith.edu.au/schools-departments/natural-semantic-metalanguage/minimal-english)
 - [TED ed](https://ed.ted.com/lessons?direction=desc&sort=featured-position&user_by_click=student)
 - [频率词典](https://www.routledge.com/Routledge-Frequency-Dictionaries/book-series/RFD)
+- [多种免费英语课程资源](https://www.reddit.com/r/language_exchange/comments/dcaeq2/all_websites_for_finding_free_language_courses/)
+
+## 聊天室
+
+- [Discord 聊天室列表](https://www.reddit.com/r/languagelearning/comments/5m5426/discord_language_learning_servers_masterlist/)
 
 ## 视频
 
