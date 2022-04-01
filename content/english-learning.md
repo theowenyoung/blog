@@ -38,6 +38,7 @@ taxonomies:
   - [TED Fluent ](https://www.youtube.com/watch?v=iBMfg4WkKL8&t=1s)
 - [让母语人士为你录制你想要的文本，互助，免费](https://rhinospike.com/)
 - [Youglish](https://youglish.com/) - 搜索 youtube 上人提到的某个单词
+- [Hi Native](https://hinative.com) - 母语人士为你回答关于语言的问题
 
 ## 资源
 
