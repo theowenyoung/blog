@@ -120,3 +120,16 @@ taxonomies:
 - 歌手首先学习发音，因此，我们不必与多年的坏习惯作斗争。在我们知道单词的含义之前，我们学会了准确地模仿单词，这样我们就可以在不让自己尴尬的情况下登上舞台。你也应该这样做。如果你等到以后再处理你的口音，你将失去你词汇中的每个单词数百（或数千次）。
 
 - 如果有长单词，可以分段练，先从词尾开始一小节一小节连，最后连起来。
+
+## 常见英文连读
+
+- Think of it
+- All of us
+- it'll be fine
+- out of -> outta
+- I don't want to get into -> I don wanna get into
+- lives up
+
+## 冷知识
+
+- 只有 4%的英文对话是 Native to Native 的 -- [ted,9:53](https://www.youtube.com/watch?v=Ge7c7otG2mk)
