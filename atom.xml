@@ -3090,7 +3090,7 @@
 	<entry xml:lang="zh">
 		<title>手机可能是人类最有害的发明</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-03-10T00:00:00+00:00</updated>
+		<updated>2022-03-22T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/blog/mobile-may-be-the-worst-tool/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/mobile-may-be-the-worst-tool/</id>
 		<content type="html">&lt;p&gt;手机可能是人类最有害的发明，实在是让你太方便被它吸取注意力了。&lt;&#x2F;p&gt;
@@ -3102,7 +3102,7 @@
 &lt;li&gt;该手机被设计为只支持&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;Gemini&lt;&#x2F;a&gt;协议或者类似的协议，这种简单的文本协议，用很少的代码就可以渲染出来，然后还可以配个墨水屏。&lt;&#x2F;li&gt;
 &lt;li&gt;该手机可以给电脑传输信息，同样也是每小时一次，为了简化开发，只允许传纯文本消息，给某个邮件地址，一次只能传一个文档，不考虑列表。&lt;&#x2F;li&gt;
 &lt;li&gt;有电话功能，短信功能&lt;&#x2F;li&gt;
-&lt;li&gt;有每天只能同步 1 次的 RSS 客户端，这个客户端对内容源也有要求，内容源被设计为每天只能推送 1 则信息， 每月可以紧急推送 4 次。甚至RSS 可以被设计为 web3 的形式，允许内容源做付费订阅。该手机可以生成多个加密钱包地址。系统内置加密钱包 id，且可以随机生成多个。&lt;&#x2F;li&gt;
+&lt;li&gt;有每天只能同步 1 次的 RSS 客户端，这个客户端对内容源也有要求，内容源被设计为每天只能推送 1 则信息， 每月可以紧急推送 4 次。甚至 RSS 可以被设计为 web3 的形式，允许内容源做付费订阅。该手机可以生成多个加密钱包地址。系统内置加密钱包 id，且可以随机生成多个。&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;p&gt;你怎么看？&lt;&#x2F;p&gt;
 </content>
@@ -3114,11 +3114,15 @@
 		<link href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;给博客加上一个最后更新时间，可以有效促进你多写点东西。 – 2022.04.04&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;怎么和年轻人竞争啊，我 28，加了一个英语角聊天室，人家高中就加入了。 – 2022.04.1&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;分类太难了，所以不要浪费时间在分类上，我的博客现在只有 4 个分类,都非常的明确，在开启一篇新文章的时候，我不要花一秒钟如何判断他的所属分类上，我的分类是 Issues,Books,Notes,Misc.周刊很容易判定，读书笔记也是，Notes 是我长期更新和维护的 Awesome List，其他所有的想法都放在 Misc 里面，同时每篇文章可以有 Tags 来标记文章的标签。 - 2022.03.30&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我不太喜欢&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt;现在的发展，他的很多概念我都喜欢，但是实际后，发现他的性能还是和 VS Code 差很多的。以及如果再加上他那庞大的插件生态，我都不敢想象这些第三方插件以后没人维护要怎么办（Gatsby 后遗症）。可能人老了之后就喜欢那种一揽子解决方案。我现在最需要的 Obsidian 功能是键入两个中括号后，他可以直接生成一个 Markdown Style 的内部链接。不知道有没有 VSCode 插件有这个功能。- 2022.03.27
 后续： 没找到类似的插件，所以修改了原版 Foam 的插件，发布了&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;Foam Lite 插件&lt;&#x2F;a&gt;，功能很少，但很必要。完美满足了我的需求。 - 2022.03.28&lt;&#x2F;p&gt;
@@ -3132,7 +3136,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;如果你还不开始写点东西，那么你永远不会有自己的观点，你有的只是别人的观点，只有你开始自己尝试写东西的时候，你才会开始自己真正的思考。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;你应该现在立即做的事，就是开始写东西，如果你不这样做，你永远都不会有写作的能力和习惯。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -5676,6 +5679,19 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;li&gt;
 &lt;p&gt;如果有长单词，可以分段练，先从词尾开始一小节一小节连，最后连起来。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chang-jian-ying-wen-lian-du&quot;&gt;常见英文连读&lt;a class=&quot;zola-anchor&quot; href=&quot;#chang-jian-ying-wen-lian-du&quot; aria-label=&quot;Anchor link for: chang-jian-ying-wen-lian-du&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Think of it&lt;&#x2F;li&gt;
+&lt;li&gt;All of us&lt;&#x2F;li&gt;
+&lt;li&gt;it’ll be fine&lt;&#x2F;li&gt;
+&lt;li&gt;out of -&amp;gt; outta&lt;&#x2F;li&gt;
+&lt;li&gt;I don’t want to get into -&amp;gt; I don wanna get into&lt;&#x2F;li&gt;
+&lt;li&gt;lives up&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;leng-zhi-shi&quot;&gt;冷知识&lt;a class=&quot;zola-anchor&quot; href=&quot;#leng-zhi-shi&quot; aria-label=&quot;Anchor link for: leng-zhi-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;只有 4%的英文对话是 Native to Native 的 – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Ge7c7otG2mk&quot;&gt;ted,9:53&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
