@@ -129,7 +129,12 @@ taxonomies:
 - out of -> outta
 - I don't want to get into -> I don wanna get into
 - lives up
+- make an appointment
 
 ## 冷知识
 
 - 只有 4%的英文对话是 Native to Native 的 -- [ted,9:53](https://www.youtube.com/watch?v=Ge7c7otG2mk)
+
+## Common Expression
+
+- There's a wonderful line I came across -> There's a wonderful quote I found
