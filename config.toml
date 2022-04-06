@@ -100,7 +100,7 @@ taxonomies = [
 title = "Owen Young's Blog"
 [languages.en.translations]
 keywords = "Focus, Reading, Tool sharing, Plain text, English learning"
-label_all_posts = "[View all posts](/blog/)"
+label_all_posts = "[View all posts](/en/blog/)"
 label_archive = "Archive"
 label_back_to_start = "Get Started"
 label_book_author = "Book Author"
