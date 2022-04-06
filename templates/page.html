@@ -1,5 +1,6 @@
 {% extends "base.html" -%}
 {% block post_meta-%}
+<meta name="title" content="{{ page.title }}">
 <style>
   .sidebar{
     display: none;
@@ -64,7 +65,9 @@
           </div>
           {% endif %}
           <section id="start"></section>
-          {{ page.content | safe }}
+          <article>
+            {{ page.content | safe }}
+          </article>
 
           {% if config.extra.email %}
           <div id="email-comment" class="muted text-sm">
