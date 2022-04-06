@@ -81,7 +81,8 @@
       content="Owen的博客"
     />
      
-    <style>
+    <meta name="title" content="Actionsflow介绍 - 可以一键部署在Github上的IFTTT&#x2F;Zapier的开源替代">
+<style>
   .sidebar{
     display: none;
   }
@@ -190,7 +191,8 @@
           </div>
           
           <section id="start"></section>
-          <p>我还记得当年第一次使用<a rel="noopener nofollow noreferrer" target="_blank" href="https://ifttt.com">IFTTT</a>的时候的那种兴奋，天呐，这才是互联网！从那时起，就一直使用 IFTTT 到今天，真的很棒的一个产品！直到 IFTTT 最近宣布要收费，我就在想有没有合适的开源方案可以替代，因为托管方案肯定没戏了，连 10 年都免费的 IFTTT 都开始收费了，其他的只会更贵，结果发现主流的开源替代方案，比如 huginn, n8n, node-red 好像又有点重，不够轻量，而且扩展起来也不容易。</p>
+          <article>
+            <p>我还记得当年第一次使用<a rel="noopener nofollow noreferrer" target="_blank" href="https://ifttt.com">IFTTT</a>的时候的那种兴奋，天呐，这才是互联网！从那时起，就一直使用 IFTTT 到今天，真的很棒的一个产品！直到 IFTTT 最近宣布要收费，我就在想有没有合适的开源方案可以替代，因为托管方案肯定没戏了，连 10 年都免费的 IFTTT 都开始收费了，其他的只会更贵，结果发现主流的开源替代方案，比如 huginn, n8n, node-red 好像又有点重，不够轻量，而且扩展起来也不容易。</p>
 <span id="continue-reading"></span>
 <p>刚好在那时看到<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions">Github 的 Actions</a>支持<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule">Schedule</a>事件，而 Github 的 Actions 又是对开源项目免费使用，所以就萌生了利用 Github Actions 的定时运行来检测更新，并执行指定动作。所以一个新的轮子<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow">Actionsflow</a> 来了！</p>
 <h2 id="kai-shi">开始<a class="zola-anchor" href="#kai-shi" aria-label="Anchor link for: kai-shi">🔗</a></h2>
@@ -254,6 +256,7 @@
 </span></code></pre>
 <p>手动运行方式见<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/self-hosted/#manual">这里</a></p>
 
+          </article>
 
           
           <div id="email-comment" class="muted text-sm">

@@ -81,7 +81,8 @@
       content="Owen的博客"
     />
      
-    <style>
+    <meta name="title" content="在中国自动生成免费HTTPS证书的最佳方案">
+<style>
   .sidebar{
     display: none;
   }
@@ -155,7 +156,8 @@
         <section class="main">
           
           <section id="start"></section>
-          <p>Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/acmesh-official/acme.sh"><code>amce.sh+cloudflare</code></a> 的 dns 解析是最方便无痛的.</p>
+          <article>
+            <p>Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/acmesh-official/acme.sh"><code>amce.sh+cloudflare</code></a> 的 dns 解析是最方便无痛的.</p>
 <span id="continue-reading"></span>
 <ol>
 <li>下载 acme 工具:</li>
@@ -219,6 +221,7 @@
 <p>生成后，首次需要初始化 Diffie-Hellman keys:<code>openssl dhparam -out /etc/nginx/dhparam.pem 2048</code></p>
 <p>然后运行 <code>sudo nginx -t &amp;&amp; sudo systemctl reload nginx</code></p>
 
+          </article>
 
           
           <div id="email-comment" class="muted text-sm">

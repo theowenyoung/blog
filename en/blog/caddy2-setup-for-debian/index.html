@@ -79,7 +79,8 @@
       content="Owen Young&#x27;s Blog"
     />
      
-    <style>
+    <meta name="title" content="Caddy2 Setup for Debian">
+<style>
   .sidebar{
     display: none;
   }
@@ -178,7 +179,8 @@
           </div>
           
           <section id="start"></section>
-          <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://caddyserver.com/v2">Official Site</a></p>
+          <article>
+            <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://caddyserver.com/v2">Official Site</a></p>
 <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> apt install</span><span style="color:#bf616a;"> -y</span><span> debian-keyring debian-archive-keyring apt-transport-https
 </span><span style="color:#bf616a;">curl -1sLf </span><span>&#39;</span><span style="color:#a3be8c;">https://dl.cloudsmith.io/public/caddy/stable/gpg.key</span><span>&#39; | </span><span style="color:#bf616a;">sudo</span><span> tee /etc/apt/trusted.gpg.d/caddy-stable.asc
@@ -195,6 +197,7 @@
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://caddyserver.com/docs/caddyfile/directives/basicauth#basicauth">basicauth (Caddyfile directive) — Caddy Documentation</a></li>
 </ul>
 
+          </article>
 
           
           <div id="email-comment" class="muted text-sm">

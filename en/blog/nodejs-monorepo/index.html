@@ -81,7 +81,8 @@
       content="Owen Young&#x27;s Blog"
     />
      
-    <style>
+    <meta name="title" content="Nodejs Monorepo">
+<style>
   .sidebar{
     display: none;
   }
@@ -203,7 +204,8 @@
           </div>
           
           <section id="start"></section>
-          <p>Use changesets as monorepo mananger.</p>
+          <article>
+            <p>Use changesets as monorepo mananger.</p>
 <span id="continue-reading"></span><h2 id="tools">Tools<a class="zola-anchor" href="#tools" aria-label="Anchor link for: tools">🔗</a></h2>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlassian/changesets">GitHub - atlassian/changesets: 🦋 A way to manage your versioning and changelogs with a focus on monorepos</a></p>
 <h2 id="use-changesets-as-monorepo-manager">Use Changesets as monorepo manager<a class="zola-anchor" href="#use-changesets-as-monorepo-manager" aria-label="Anchor link for: use-changesets-as-monorepo-manager">🔗</a></h2>
@@ -344,6 +346,7 @@ if you want change to the exact version every time, you can set the config to</p
 <p>Done.</p>
 <p>Every time you use <code>npx changeset</code> to generate a new changeset intent, and the change is pulled to the <code>main</code> branch, then CI will create a pull request to generate a new version, and after the pull request was merged, CI will publish npm packages, and create a new release.</p>
 
+          </article>
 
           
           <div id="email-comment" class="muted text-sm">
