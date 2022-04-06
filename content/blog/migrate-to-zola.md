@@ -1,5 +1,5 @@
 ---
-title: 把博客和Wiki一起迁移到 Zola
+title: 迁移博客和Wiki到 Zola
 date: 2022-04-06
 updated: 2022-04-06
 draft: false
