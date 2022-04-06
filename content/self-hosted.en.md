@@ -34,6 +34,7 @@ taxonomies:
 ## Medias
 
 - [RapidBay](https://github.com/hauxir/rapidbay) - Self-hosted torrent video streaming service compatible with Chromecast and AppleTV deployable in the cloud
+- [Dim](https://github.com/Dusk-Labs/dim) - Dim, a media manager fueled by dark forces.
 
 ## PAAS
 

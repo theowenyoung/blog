@@ -24,6 +24,7 @@ taxonomies:
 - [为什么大多数建议都很糟糕？](https://atis.substack.com/p/most-advice-is-pretty-bad)
 - [智能手机毁了一代人吗？](https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/)
 - [每天一次消息的 IM 应用程序 Pony](https://www.theatlantic.com/technology/archive/2022/01/slow-internet-email/621232/?utm_source=twitter&utm_medium=social&utm_campaign=share)
+- [下一个谷歌](https://dkb.io/post/the-next-google) - 介绍了几个搜索引擎
 
 ## 工作
 
