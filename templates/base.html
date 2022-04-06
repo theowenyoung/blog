@@ -39,7 +39,7 @@
     <meta
       name="description"
       itemprop="about"
-      content="{{ config.description }}"
+      content="{% block description -%}{{ config.description }}{% endblock description -%}"
     />
     <meta
       name="keywords"
