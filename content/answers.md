@@ -69,3 +69,7 @@ taxonomies:
 ## 电视剧
 
 - [哪些美剧可以称为「神作」？ - 知乎](https://www.zhihu.com/question/22398342)
+
+## 抑郁症
+
+- [问 HN：使用或不使用抗抑郁药来战胜抑郁症？](https://news.ycombinator.com/item?id=30923701)
