@@ -75,6 +75,8 @@ taxonomies:
 - [boss as a service](https://bossasaservice.life/) - We make sure you achieve your goals，老板即服务，为了让你达成你的目标，给你分配一个老板监督你。
 - [make passport photo](https://makepassportphoto.com/?utm_campaign) - Get your biometric Passport/Visa/ID photos in minutes, 在线打印护照需要的照片 #Photos #Print
 - [Throw app](https://www.throwapp.com/) - 匿名发送问题，然后等待响应
+- [Hacker News 报纸版](https://www.wolfgangfaust.com/project/paper-hn/)
+- [Reddit 报纸版](https://unim.press/)
 
 ## 服务
 
