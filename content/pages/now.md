@@ -13,7 +13,9 @@ path: now/
 
 ## 最近的想法
 
-最近特别想交新的长期朋友，可能有受到这篇[为什么 30 岁以上交朋友很难](https://www.nytimes.com/2012/07/15/fashion/the-challenge-of-making-friends-as-an-adult.html)的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。想用[Pony](https://www.ponymessenger.com/)来做实验，这是一个我觉得特别适合的工具，因为每天只会定时发送/接受 1 次消息，然后我们可以建立一个群组和私人联系，如果有什么东西要分享的话，我们可以每天发一次消息，不会太打扰彼此，按照这样的频率去沟通和联系。如果有机会，我们应该在线下见面。 - 2022.03.15
+最近特别想交新的长期朋友，可能有受到这篇[为什么 30 岁以上交朋友很难](https://www.nytimes.com/2012/07/15/fashion/the-challenge-of-making-friends-as-an-adult.html)的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。
+
+也许可以用[Pony](https://www.ponymessenger.com/)来做实验，这是一个我觉得特别适合的工具，因为每天只会定时发送/接受 1 次消息，如果有什么东西要分享的话，我们可以每天发一次消息，不会太打扰彼此，按照这样的频率去沟通和联系。如果有机会，我们还应该在线下见面。[给我发一封邮件吧](mailto:owen@owenyoung.com): `owen@owenyoung.com`
 
 ## 正在听
 
