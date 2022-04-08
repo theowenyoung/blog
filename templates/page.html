@@ -68,7 +68,12 @@
           <article>
             {{ page.content | safe }}
           </article>
-
+          {% if config.extra.edit_url_prefix %}
+          <section>
+            <hr>
+            <a class="muted" href="{{config.extra.edit_url_prefix~page.relative_path}}">📝 {{trans(key="label_edit",lang=lang)}}</a>
+          </section>
+          {% endif %}
           {% if config.extra.email %}
           <div id="email-comment" class="muted text-sm">
             <hr class="w-full">

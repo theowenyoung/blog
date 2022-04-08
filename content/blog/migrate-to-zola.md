@@ -19,15 +19,17 @@ taxonomies:
 ## 特性
 
 - 由[单一的二进制文件](https://github.com/theowenyoung/blog/tree/main/bin)驱动（为了更简单，我把那个二进制文件直接放在这个 [repo](https://github.com/theowenyoung/blog) 里了，所以这个博客相当于是自运行的，不依赖任何外部环境）
-- 所以这个博客实际上是由[Zola](https://www.getzola.org/)驱动的，Zola 是用 Rust 写的，非常快，目前我的博客在 Github Actions 里从开始到部署完成只需要[14s](https://github.com/theowenyoung/blog/runs/5845460900?check_suite_focus=true)，实际构建时间只需要 2s。对比之前的 Wiki 站点总共需要[4 分钟](https://github.com/theowenyoung/wiki/runs/5684155852?check_suite_focus=true),Blog 站点总共要[3m 37s](https://github.com/theowenyoung/theowenyoung.github.io/runs/5845524376?check_suite_focus=true)
-- 所有的样式都是[一个简单的 CSS 文件里](https://github.com/theowenyoung/blog/blob/main/static/site/styles/site.css)，全是手写的。保持样式文件的简单有助于后续的持续维护。
-- [同时支持](https://www.owenyoung.com/) [普通文章](https://www.owenyoung.com/blog/)，[笔记](https://www.owenyoung.com/categories/notes/)，和[短想法](https://www.owenyoung.com/thoughts/)，但是也都只是[一个个的 Markdown 文件](https://github.com/theowenyoung/blog/tree/main/content)
+- 这个博客实际上是由[Zola](https://www.getzola.org/)驱动的，Zola 是用 Rust 写的，非常快，目前我的博客在 Github Actions 里从开始到部署完成只需要[14s](https://github.com/theowenyoung/blog/runs/5845460900?check_suite_focus=true)，实际构建时间只需要 2s。而之前用 Gatsby 搭建的 Wiki 站点，总共需要[4 分钟](https://github.com/theowenyoung/wiki/runs/5684155852?check_suite_focus=true)构建完成, Blog 站点总共要[3m 37s](https://github.com/theowenyoung/theowenyoung.github.io/runs/5845524376?check_suite_focus=true)才能完成
+- 所有的样式都在[一个简单的 CSS 文件里](https://github.com/theowenyoung/blog/blob/main/static/site/styles/site.css)，全是手写的。保持样式文件的简单，有助于后续的持续维护。
+- [同时支持](https://www.owenyoung.com/)[普通文章](https://www.owenyoung.com/blog/)，[笔记](https://www.owenyoung.com/categories/notes/)，和[短想法](https://www.owenyoung.com/thoughts/)，而且，维护很简单，所有文件都只是[一个个的 Markdown 文件](https://github.com/theowenyoung/blog/tree/main/content)
 
 ## 对 Zola 不满意的点
 
-Zola 有一些约束和约定俗成的东西，大多数是比较深思熟虑的限制，我最苦恼的一点就是他不支持把 Markdown 里的相对链接转成 html 的链接。相对链接这一点的限制其实是合理的，我以前写过[Gatsby 的插件](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/gatsby-relative-path-to-slug)去分析相对链接，但是逻辑其实很恶心，而且并不能满足所有情况。所以，[Zola 的办法简单粗暴](https://www.getzola.org/documentation/content/linking/#internal-links)，就是只替换包换特殊符号的链接`@/xxx.md`，把这类链接统一替换成`/xxx/`.
+Zola 有一些约束和约定俗成的东西，大多数是比较深思熟虑的限制，我最苦恼的一点就是他不支持把 Markdown 里的相对链接转成 html 的链接。相对链接自动转换这一点的限制其实是合理的，我以前写过[Gatsby 的插件](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/gatsby-relative-path-to-slug)去转换相对链接，但是逻辑其实很恶心，因为 markdown 的文件层级和 html 的文件层级其实是不一样的，对 markdown 来说是`xxx.md`,但是对 HTML 来说是 `xxx/index.html`, 但是有的时候又是一样的,比如`xxx/index.md` 同样是 `xxx/index.html`. 所以我的插件转换需要约定不少东西，挺恶心的。而[Zola 的办法就很简单粗暴](https://www.getzola.org/documentation/content/linking/#internal-links)，他刻意不帮你转换这些东西，只替换包含特殊符号的链接，比如`@/xxx.md`，它会把这类链接统一替换按照正确的路径替换，这样就容易多了.
 
-但是这样的话，本地文件系统的相互链接就不工作了,这很令人苦恼。我就这个问题在 Zola 的论坛提了[一个替代办法](https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242)，主要就是不用`@`做为特殊符号，直接用`/content`作为特殊符号，这样本地链接里是内部绝对链接，大概是这样：`/content/xxx.md`，Zola 还没接受我的请求，所以我[改动了 Zola 的代码，改动很少，就几行](https://github.com/theowenyoung/zola), 现在我可以用 `/content/xxx.md`的形式作为内部链接。
+但是像这样`[xxx](@/xxxm.d)`写链接的话，本地文件系统的相互链接就不工作了,编辑器不知道`@`是什么，这很令人苦恼。
+
+我就这个问题在 Zola 的论坛提了[一个替代办法](https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242)，主要就是不用`@`做为特殊符号，直接用`/content`作为特殊符号，这样本地链接就其实是一个合法的内部绝对链接，像这样：`[xxx](/content/xxx.md)`，但是 Zola 还没接受我的请求，所以我[改动了 Zola 的代码，改动很少，就几行](https://github.com/theowenyoung/zola), 现在我可以用 `/content/xxx.md`的形式作为内部链接。
 
 ## 如何编辑
 
