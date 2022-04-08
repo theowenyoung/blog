@@ -138,3 +138,28 @@ taxonomies:
 ## Common Expression
 
 - There's a wonderful line I came across -> There's a wonderful quote I found
+
+## Chat Topics
+
+- [对话启动器](https://www.conversationstarters.com/)
+- [对话问题](https://blog.fluent-forever.com/conversation-questions/)
+- [Good Questions](https://conversationstartersworld.com/good-questions-to-ask/)
+- What did you eat for breakfast?
+- What’s your favorite food?
+- What do you do in your spare time?
+- Do you have a pet? dog or cat? what's its name? what's its breed?
+- Have you read any impressive books recently?
+  - Have you read any impressive articles recently?
+  - Have you watch any impressive tv shows/movies recently?
+- What website do you usually visit?
+- Where is one place you’d love to travel again?
+  - where have you traveled?
+- what projects are you working on now?
+- Do you collect anything?
+- What are you currently worried about?
+- Where do you get your news?
+- What was the last photo you took?
+- Is there anything you've bought that's not expensive but works well?
+- What are the 3 applications you use most often
+- What’s the best and worst thing about the country you are from?
+- What are your best tips for learning English?
