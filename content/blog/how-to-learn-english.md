@@ -50,23 +50,6 @@ taxonomies:
 - [Rhinospike - 地道语言录制互助社区](https://rhinospike.com/language/)
 - [Fluentin 3 months](https://www.fluentin3months.com/)
 
-## Chat Topics
-
-- [对话启动器](https://www.conversationstarters.com/)
-- [对话问题](https://blog.fluent-forever.com/conversation-questions/)
-- what did you eat today？
-- What’s your favorite food?
-- What do you do in your spare time?
-- Do you have a pet? dog or cat? what's its name? what's its breed?
-- Have you read any impressive books recently?
-  - Have you read any impressive articles recently?
-  - Have you watch any impressive tv shows/movies recently?
-- What website do you usually visit?
-- Where is one place you’d love to travel to again?
-  - where have you traveled?
-- what projects are you working on now?
-- Do you collect anything?
-
 ## 语言交换简介
 
 Hi, I'm Owen, my native language is Chinese Mandarin, I have a specific plan to practice our target language (if you want). The plan is that we can do the following chat practice(voice/video/recorded conversations are all avaliable), there is a question list, <https://blog.fluent-forever.com/conversation-questions/> , we can both answer these questions in our target language, and when I answers, you need to reorganize my answer in my target language. I will do the same for you. This way we can all practice the target language effectively. How about it, are you interested?
