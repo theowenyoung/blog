@@ -41,6 +41,10 @@
         <lastmod>2022-02-22</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/</loc>
+        <lastmod>2022-04-10</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/auto-https-ssl-in-china/</loc>
         <lastmod>2022-03-25</lastmod>
     </url>
@@ -187,10 +191,6 @@
         <lastmod>2022-03-10</lastmod>
     </url>
     <url>
-        <loc>https://www.owenyoung.com/blog/russia-verge-nervous-breakdown/</loc>
-        <lastmod>2022-04-10</lastmod>
-    </url>
-    <url>
         <loc>https://www.owenyoung.com/blog/rust-environment-setup-for-debian/</loc>
         <lastmod>2022-03-26</lastmod>
     </url>
@@ -223,6 +223,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/categories/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/categories/articles/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/categories/articles/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/categories/books/</loc>
