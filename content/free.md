@@ -1,7 +1,7 @@
 ---
 title: 互联网上的免费资源汇总
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-04-10
 taxonomies:
   categories:
     - Notes
@@ -70,3 +70,7 @@ taxonomies:
 ## 绕过付费墙
 
 - [chrome 插件绕过付费墙](https://github.com/iamadamdev/bypass-paywalls-chrome)
+
+## 音乐
+
+- [Jango](https://www.jango.com/) - 免费在线音乐定制播放
