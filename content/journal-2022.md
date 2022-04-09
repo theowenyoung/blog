@@ -22,6 +22,8 @@ taxonomies:
 - [Arweave（AR）－为永存网络（Permaweb）提供动力的区块链](https://www.wwsww.cn/qkl/10173.html)
 - [一条豆瓣动态引发的“疫情文学”复兴](https://t.me/douban_read/110380)
 - [由于气候变暖，2100 年地球将不适合居住的地方的地图](https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/en.html)
+- [俄罗斯处于精神崩溃的边缘
+  ](https://granta.com/russia-verge-nervous-breakdown/)
 
 ## Books
 
