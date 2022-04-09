@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-04-08T00:00:00+00:00</updated>
+	<updated>2022-04-10T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>知道该做什么和真正去做之间的差距是巨大的</title>
@@ -2186,7 +2186,7 @@
 	<entry xml:lang="zh">
 		<title>互联网上的免费资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-04-10T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/free/" type="text/html"/>
 		<id>https://www.owenyoung.com/free/</id>
 		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
@@ -2249,6 +2249,10 @@
 &lt;h2 id=&quot;rao-guo-fu-fei-qiang&quot;&gt;绕过付费墙&lt;a class=&quot;zola-anchor&quot; href=&quot;#rao-guo-fu-fei-qiang&quot; aria-label=&quot;Anchor link for: rao-guo-fu-fei-qiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iamadamdev&#x2F;bypass-paywalls-chrome&quot;&gt;chrome 插件绕过付费墙&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yin-le&quot;&gt;音乐&lt;a class=&quot;zola-anchor&quot; href=&quot;#yin-le&quot; aria-label=&quot;Anchor link for: yin-le&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jango.com&#x2F;&quot;&gt;Jango&lt;&#x2F;a&gt; - 免费在线音乐定制播放&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -5577,6 +5581,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=25992782&quot;&gt;HN 提问： 你的不在乎结果的项目是？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=25700135&quot;&gt;HN 提问：给我看看你的半成品项目&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=30934529&quot;&gt;HN 提问：分享你的个人网站&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;chan-pin&quot;&gt;产品&lt;a class=&quot;zola-anchor&quot; href=&quot;#chan-pin&quot; aria-label=&quot;Anchor link for: chan-pin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
