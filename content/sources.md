@@ -201,3 +201,7 @@ taxonomies:
 ## 搜索引擎
 
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
+
+## 视频
+
+- [Vox](https://www.youtube.com/c/Vox/featured) - Youtube 上的一个分享各种各样事情解释的博主，比如塔利班，比如新冠病毒等等，视频质量非常高。
