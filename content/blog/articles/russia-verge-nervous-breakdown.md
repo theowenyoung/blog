@@ -5,7 +5,7 @@ updated: 2022-04-10
 draft: false
 taxonomies:
   categories:
-    - Misc
+    - Articles
 ---
 
 > 在俄罗斯，反对派不会站在反对派的立场上。公民不会为公民权利挺身而出。俄罗斯人民遭受着受害者情结的折磨：他们认为没有什么可以依靠他们，他们无法改变任何事情。
