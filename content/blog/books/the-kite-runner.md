@@ -1,7 +1,7 @@
 ---
 title: 追风筝的人
-date: 2022-04-10
-updated: 2022-04-10
+date: "2022-04-10T15:00:00Z"
+updated: "2022-04-10"
 taxonomies:
   categories:
     - Books
