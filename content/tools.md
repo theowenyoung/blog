@@ -230,6 +230,7 @@ Curating awesome browsers.
 - [Microsoft Edge](https://www.microsoft.com/en-us/edge) - Microsoft Edge is the fast and secure browser, which I'm using now. its the best for now.
 - [Vivaldi Browser | Now with built-in Translate, Mail, and Calendar](https://vivaldi.com/)
 - [Waterfox](https://www.waterfox.net/) - The way to surf the web. Striking the perfect balance of privacy and useability.
+- [Orion](https://browser.kagi.com/) - 基于 safari webkit 的隐私优先的 mac/ios 浏览器
 
 ### For developer
 
@@ -286,3 +287,4 @@ Curating awesome browsers.
 ## 搜索引擎
 
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
+- [Kagi](https://kagi.com/) - 高级搜索引擎
