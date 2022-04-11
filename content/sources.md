@@ -156,6 +156,7 @@ taxonomies:
 - [真 Reddit 小组](https://old.reddit.com/r/TrueReddit/)
 - [Meta Filter](https://www.metafilter.com/)
 - [Soylentnews](https://soylentnews.org/)
+- [Read Something Interesting](https://readsomethinginteresting.com/)
 
 ## 专人维护的 Reading List
 
