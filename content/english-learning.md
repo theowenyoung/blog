@@ -432,7 +432,7 @@ Certainly. Why not?
 
 I agree.
 
-## Closing
+### Closing
 
 That is all there is to say.
 
@@ -510,7 +510,7 @@ That sounds like . . .
 
 And that is why . . .
 
-## Opening
+### Opening
 
 Thank you very much.
 
