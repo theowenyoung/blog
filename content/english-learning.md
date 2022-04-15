@@ -1,7 +1,7 @@
 ---
 title: 英语学习相关资源
 date: 2021-03-25
-updated: 2022-03-25
+updated: 2022-04-15
 taxonomies:
   categories:
     - Notes
@@ -54,6 +54,7 @@ taxonomies:
 ## 视频
 
 - [每日英语听力](https://www.bilibili.com/video/BV1U7411a7xG?p=1&share_medium=ipad&share_plat=ios&share_source=COPY&share_tag=s_i&timestamp=1641627028&unique_k=Ye9sEiY)
+- [简易英语播放列表](https://www.youtube.com/watch?v=qky3U0cQe_E&list=PLA5UIoabheFM281dIr4ojw9xOVoo9dOtw)
 
 ## 轻松英语
 
@@ -163,3 +164,442 @@ taxonomies:
 - What are the 3 applications you use most often
 - What’s the best and worst thing about the country you are from?
 - What are your best tips for learning English?
+
+## First Conversation
+
+~Hello! Pleased to meet you. My name is… What’s your name?
+
+~My name is… Nice to meet you too.
+
+~How are you today?
+
+~I’m well, and you?
+
+~I’m fine thanks/I’m tired, please go easy on me!
+
+~Where are you from?
+
+~I’m from… And you?
+
+~Where do you live?
+
+~I live in…
+
+~How old are you?
+
+~I am… years old.
+
+~What do you do for a living?
+
+~I’m a student. I’m studying…
+
+~I work as…
+
+~I am retired.
+
+~What would you like to do when you finish your studies?
+
+~Tell me about a typical day at work.
+
+~Do you have any hobbies?
+
+~How long have you been learning…? – e.g. ‘How long have you been learning Spanish?’
+
+~I have been learning… for… months/years.
+
+~Why do you want to learn…? – e.g. ‘Why do you want to learn Spanish?’
+
+~I want to learn… because/to… – e.g. ‘I want to learn Spanish to surprise my grandparents. They are from Madrid.’
+
+~Have you ever been to…? – e.g. ‘Have you ever been to Cuba?’
+
+~Yes, last year/… years ago.
+
+~No, I haven’t, but I’d like to go one day.
+
+~What did you like most about…? – e.g. ‘What did you like most about Cuba?’
+
+~I loved…
+
+~Did you like it?
+
+~I liked it/No, I didn’t.
+
+~What’s your favourite book/movie/song?
+
+~My favourite book/movie/song is…
+
+~What is the book/movie/song about?
+
+~The book/movie/song is about…
+
+~Who is your favourite actor/singer/author? What do you like about them?
+
+~My favourite actor/singer/author is… I love the fact that…
+
+~Can you cook?
+
+~Yes, I can/No, I can’t.
+
+~What’s your favourite food?
+
+~My favourite food is…
+
+~Do you like…? – e.g. ‘Do you like pasta?’
+
+~Yes, I love it/No, I don’t.
+
+~Do you prefer… or… – e.g. ‘Do you prefer Thai or Vietnamese?’
+
+~Do you play any sports?
+
+~Yes, I play…/No, I don’t.
+
+~What sport do you like?
+
+~I like…/I don’t like any sports.
+
+~Do you have any pets?
+
+~Yes, I have a... His/her name is…/No, I don’t have any pets.
+
+~What do you like to do in your free time?
+
+~I like…
+
+~Tell me about your last holiday. Where did you go? Did you travel with someone or by yourself?
+
+~My last holiday was in… I went with…/by myself.
+
+~What did you do there?
+
+~I visited... I had a great time!
+
+~Would you rather… or…? – e.g. ‘Would you rather be invisible or be able to read people’s minds?’
+
+~I’d rather be… – e.g. ‘I’d rather be invisible’.
+
+~What’s on your bucket list?
+
+~I’m sorry, I didn’t understand. Can you repeat, please?
+
+~Got it, thanks!
+
+~Could you please talk slower?
+
+~How do you say… in…? – e.g. ‘How do you say cheers! in Italian?’
+
+~What does… mean? – e.g. ‘What does salute! mean?’
+
+~It means… – e.g. ‘It means cheers! ’
+
+~How do you spell that?
+
+~What are your plans for the weekend?
+
+~This weekend, I will…
+
+~I have no plans for the weekend.
+
+~OK, that’s all for today. I’ll see you next week.
+
+~Thanks for your help! See you next week.
+
+## Following conversation sessions
+
+~What do you think about…? – e.g. ‘What do you think about space tourism?’
+
+~I think it’s a good/bad idea.
+
+~I think it’s good news/a serious issue.
+
+~Do you think it’s important to…? – e.g. ‘Do you think it’s important to believe in yourself?’
+
+~I think so/I don’t think so.
+
+~In my opinion, it’s important/not important because…
+
+~Do you think it’s possible…? – e.g. ‘Do you think it’s possible to never lie?’
+
+~It depends/It’s possible.
+
+~I think so/I don’t think so.
+
+~Do you agree with…? – e.g. ‘Do you agree with gun control?’
+
+~I agree with it/I disagree with it.
+
+~What is the difference between… and…? – e.g. ‘What is the difference between a good beer and a great one?’
+
+~The difference is…
+
+~Have you ever…? – e.g. ‘Have you ever been skydiving?’
+
+~Yes, I have/No, I haven’t.
+~Was… better in the past or now? – e.g. ‘Was fashion better in the past or now?’
+
+~It is better now because…/It was better in the past because…
+
+~What are the advantages/benefits of…? – e.g. ‘What are the advantages of working from home?’
+
+~The advantages/benefits are…
+
+~What are the disadvantages of...? – e.g. ‘What are the disadvantages of working from home?’
+
+~The disadvantages are…
+
+~What is the best/worst thing about…? – e.g. ‘What is the best/worst thing about renting a house?’
+
+~The best/worst thing about… is…
+
+~Who do you think is the greatest person in history?
+
+~I think the greatest person in history is…
+
+~What do you like most about… – e.g. ‘What do you like most about your country?’
+
+~What do you like least about…? – e.g. ‘What do you like least about your country?’
+
+~What makes a good…? – e.g. ‘What makes a good friendship?’
+
+~What can we do to… – e.g. ‘What can we do to help the environment?’
+
+~When you were a child/teenager, did you…? – e.g. ‘When you were a child/teenager, did you watch cartoons?’
+
+~Now that you are an adult, do you still…? – e.g. ‘Now that you are an adult, do you still watch cartoons?’
+
+~Who… the most? Kids or adults? – e.g. ‘Who watches TV the most? Kids or adults?’
+
+~Do you think… is for everyone or is aimed more at children/adolescents/adults? – e.g. ‘Do you think the Harry Potter movies are for everyone or are they aimed more at children/adolescents/adults?’
+
+~What would you do if…? – e.g. ‘What would you do if you won a million dollars?’
+
+~Do you prefer… or…? – e.g. ‘Do you prefer to wake up early or sleep in?’
+
+~Do you prefer… alone or with someone? – e.g. ‘Do you prefer travelling alone or with someone?’
+
+~If you could…, what would you do? – e.g. ‘If you could fly, what would you do?’
+
+~Have you ever heard of…? – e.g. ‘Have you ever heard of the game Dungeons & Dragons ?’
+
+~Yes, I’ve heard of it/No, it’s the first time I’ve heard of it.
+
+~Did you know that... – e.g. ‘Did you know that karate, skateboarding, baseball and surfing will be part of the next Olympic games?’
+
+~What are the risks of…? – e.g. ‘What are the risks of never taking a risk?’
+
+## Advanced
+
+### Apologizing
+
+Don’t be upset, but . . .
+
+It was a slip of the tongue.
+
+I said it by mistake.
+
+I am sorry that . . .
+
+### (Dis)agreeing
+
+One hundred percent.
+
+Without question.
+
+Exactly right.
+
+Most certainly.
+
+Without doubt.
+
+In no way . . .
+
+That isn’t true at all.
+
+That is an exaggeration.
+
+I really can’t believe that.
+
+In principle that is true, but . . .
+
+Admittedly that is true, but . . .
+
+That’s one way to say it.
+
+Only up to a certain point.
+
+Certainly. Why not?
+
+I agree.
+
+## Closing
+
+That is all there is to say.
+
+That is all for now.
+
+To sum up . . .
+
+And there is the problem.
+
+I hope it is only a matter of time.
+
+That remains to be seen.
+
+### Filer
+
+Understandably.
+
+Frankly speaking . . .
+
+Between you and me . . .
+
+Anyway . . .
+
+Well then . . .
+
+Well, as a matter of fact . . .
+
+How can I put it?
+
+I must say that . . .
+
+First . . .
+
+Second . . .
+
+I would like you to know that . . .
+
+I am afraid that . . .
+
+Now and then it seems to me that . . .
+
+After all . . .
+
+As far as I am concerned . . .
+
+More and more . . .
+
+Actually . . .
+
+All joking aside . . .
+
+Now seriously . . .
+
+### Elaborating
+
+To be more precise . . .
+
+And what’s more . . .
+
+Since I am already talking about it . . .
+
+I would like to emphasize that . . .
+
+Should I explain in greater detail?
+
+Allow me to say it another way.
+
+That is to say . . .
+
+Nevertheless . . .
+
+Even though . . .
+
+That sounds like . . .
+
+And that is why . . .
+
+## Opening
+
+Thank you very much.
+
+That is a good question.
+
+That is such a difficult question.
+
+Once upon a time, long ago . . .
+
+### Passing
+
+Can you tell me please . . . ?
+
+Would you be interested in us talking about something else?
+
+And what do you think?
+
+### Qualifying
+
+To tell you the truth . . .
+
+I presume that . . .
+
+I hope that . . .
+
+In my opinion . . .
+
+If that is true . . .
+
+I don’t know exactly.
+
+I would like to think that . . .
+
+The way I see it is that . . .
+
+As you may know . . .
+
+I don’t have a big interest in that.
+
+If I understand correctly . . .
+
+As you already know . . .
+
+That isn’t such a big problem.
+
+That is a matter of opinion.
+
+As far as I know . . .
+
+I have the impression that . . .
+
+It is usually true that . . .
+
+You never know, but . . .
+
+I haven’t thought about it before, but . . .
+
+If I am not mistaken . . .
+
+I am not certain whether . . .
+
+Like every other man/woman . . .
+
+I have my own opinion on it, but . . .
+
+I am not an expert, but . . .
+
+### Quoting
+
+He/she said something like . . .
+
+My wife/husband pointed out that . . .
+
+Recently, I heard that . . .
+
+My better half said . . .
+
+### Switching
+
+Now it occurs to me that . . .
+
+By the way . . .
+
+I have an interesting story about it.
+
+And besides that . . .
+
+Oh, I nearly forgot . . .
+
+And one more thing . . .
+
+On the other hand . . .
