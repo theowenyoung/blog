@@ -55,6 +55,7 @@ taxonomies:
 
 - [每日英语听力](https://www.bilibili.com/video/BV1U7411a7xG?p=1&share_medium=ipad&share_plat=ios&share_source=COPY&share_tag=s_i&timestamp=1641627028&unique_k=Ye9sEiY)
 - [简易英语播放列表](https://www.youtube.com/watch?v=qky3U0cQe_E&list=PLA5UIoabheFM281dIr4ojw9xOVoo9dOtw)
+- [日常英语问题](https://www.youtube.com/watch?v=Lo5m5U5mn5E)
 
 ## 轻松英语
 
