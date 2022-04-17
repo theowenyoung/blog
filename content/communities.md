@@ -29,7 +29,8 @@ taxonomies:
 
 ## 八卦
 
-- [豆瓣鹅组](https://www.douban.com/group/blabla/) - 豆瓣鹅组，讨论明星八卦等。目前为仅登录可见，游客无法搜索和进入
+- [豆瓣鹅组](https://www.douban.com/group/blabla/) - 豆瓣鹅组，讨论明星八卦等。目前已被无限期停用
+  - [Reddit 流浪鹅组](https://www.reddit.com/r/DoubanGoosegroup/)
 - [小象乐园](https://www.douban.com/group/613560/) - 小象乐园，前小象八卦，讨论网红的豆瓣小组
 
 ## 问题
