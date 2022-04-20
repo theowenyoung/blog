@@ -1,21 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>Owen Young&#x27;s Blog - Tweets</title>
-	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Tweets</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
 	<link href="https://www.owenyoung.com/tags/tweets/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-22T00:00:00+00:00</updated>
+	<updated>2022-04-20T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tweets/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Tweets</title>
+	<entry xml:lang="zh">
+		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-03-22T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/thoughts/" type="text/html"/>
-		<id>https://www.owenyoung.com/en/thoughts/</id>
+		<updated>2022-04-20T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/thoughts/" type="text/html"/>
+		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
-&lt;p&gt;Hello World. - 2022.03.10&lt;&#x2F;p&gt;
+&lt;p&gt;今天在 Quora 上看到一条&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.quora.com&#x2F;What-is-fake-secularism&quot;&gt;什么是伪世俗主义？&lt;&#x2F;a&gt;的回答让我好震惊。回答里面有不少印度教的人回答觉得当局在反向歧视印度教的人，在给少数民族（比如穆斯林）特权。我不了解印度教，以及印度社会里印度教和伊斯兰教的冲突，只知道印度教是占大多数的。这是不是有点像韩国男的觉得自己在被反向歧视？（直觉让我觉得这些印度教教徒有点类似韩国男的）&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+&lt;blockquote&gt;
+&lt;p&gt;基督教的世界观:&lt;&#x2F;p&gt;
+&lt;p&gt;(1) 上帝按照他的形象创造了人类，以便我们能与他建立有意义的关系，并把我们放在地球上统治它&lt;&#x2F;p&gt;
+&lt;p&gt;(2) 但是我们得罪了上帝，所以使自己和世界受到邪恶、腐朽和死亡的诅咒&lt;&#x2F;p&gt;
+&lt;p&gt;(3)上帝成为人，牺牲自己，为罪付出代价，并在某一天将创造物恢复到完美状态&lt;&#x2F;p&gt;
+&lt;p&gt;基督徒的世界观是坚持道德的绝对性，相信奇迹、人类生命的价值以及宽恕&#x2F;救赎的可能性。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;学英语这么多年，最大的教训就是背别人给我列好的单词列表，比如各种背单词 App，还有 Anki 上导入的词汇列表。因为别人的单词列表对我来说是没有任何场景辅助记忆的，事倍功半，所以要想长期记忆，必须亲自在 Anki 上记自己的卡片，这个卡片最好是短语或者句子，再配上看到这个单词的场景图片。如果没有，必须亲自去 imgur.com 或者 youglish.com 去搜。 然后在 anki 里录入的时候再跟读几遍，录入自己的语音。这样才是一个好的起点。 – 2022.04.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果不看书，就会按直觉行事。只有大量的看书才能反直觉。 – 2022.04.05&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;给博客加上一个最后更新时间，可以有效促进你多写点东西。 – 2022.04.04&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;怎么和年轻人竞争啊，我 28，加了一个英语角聊天室，人家高中就加入了。 – 2022.04.1&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;分类太难了，所以不要浪费时间在分类上，我的博客现在只有 4 个分类,都非常的明确，在开启一篇新文章的时候，我不要花一秒钟如何判断他的所属分类上，我的分类是 Issues,Books,Notes,Misc.周刊很容易判定，读书笔记也是，Notes 是我长期更新和维护的 Awesome List，其他所有的想法都放在 Misc 里面，同时每篇文章可以有 Tags 来标记文章的标签。 - 2022.03.30&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我不太喜欢&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt;现在的发展，他的很多概念我都喜欢，但是实际后，发现他的性能还是和 VS Code 差很多的。以及如果再加上他那庞大的插件生态，我都不敢想象这些第三方插件以后没人维护要怎么办（Gatsby 后遗症）。可能人老了之后就喜欢那种一揽子解决方案。我现在最需要的 Obsidian 功能是键入两个中括号后，他可以直接生成一个 Markdown Style 的内部链接。不知道有没有 VSCode 插件有这个功能。- 2022.03.27
+后续： 没找到类似的插件，所以修改了原版 Foam 的插件，发布了&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;Foam Lite 插件&lt;&#x2F;a&gt;，功能很少，但很必要。完美满足了我的需求。 - 2022.03.28&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; 是一个深思熟虑的静态网站生成器框架。实际上，很多 rust 的框架设计都很神似熟练。 – 2022.03.23&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我的记性太差了，我已经忘记了发生在这片土地上的很多事情了。我也不敢公开记下来。所以，从今天开始我会在自己的私人笔记本里记下这篇土地正在发生的事。 - 2022.03.23&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你还不开始写点东西，那么你永远不会有自己的观点，你有的只是别人的观点，只有你开始自己尝试写东西的时候，你才会开始自己真正的思考。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你应该现在立即做的事，就是开始写东西，如果你不这样做，你永远都不会有写作的能力和习惯。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;纯文本的工具应该是辅助性输入的。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你的微信还没打开青少年模式吗？ - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为什么在有选择的情况下应该读书而不是文章呢？一般来说，如果一个人有能力扯出一本书的话，那么他肯定比只扯出一篇文章的人更牛。他在写书的过程中已经多次帮你去抽象各种东西，然后才能生成一本书。最普通的人写推特，厉害一点的写博客，最厉害的在写书。当然，其实写书的人，都是写过大量文章的，书很有可能就是他文章的集合，并且是高度抽象，整理之后的。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;应该去 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;image.google.com&quot;&gt;Google Image&lt;&#x2F;a&gt; 去搜索不认识的单词。然后再去搜索他的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;forvo.com&#x2F;search&#x2F;hello&#x2F;&quot;&gt;发音&lt;&#x2F;a&gt;,这个时候就知道他的意思了。如果还是不知道，再去搜他的意思。可以配合 Alfred 一起用 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;桌子旁边应该放一个柜子，把常用的东西都放里面，桌面上不应该有任何让你分心的东西。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可不可以做一个 Anki 版的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;Gemini&lt;&#x2F;a&gt;? Anki 由于依赖 html，对于解析来说，实在是太复杂了。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;搜索 “Language“相关的书，而不是学习英语的书。英语作为全世界文化输出最多的语言，并不会有太多英语母语者写一本学习英语的书，他们更可能写学习第二语言的书。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用英语录点东西，发出去。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;目前为止，互联网里对我最重要的发明是 GPS ，翻译，note 软件。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个可后悔的 focus 应用是最没有用的 focus 应用。focus 应用必须做到极端，在你设定的时间里绝对无法取消。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;建立私人群组作为高级套餐是一个不错的模式。有没有相关开源自部署的东西呢？ - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最好不要切换窗口，这就跟我们人不适合做多任务一样，但是你可以把 2 个窗口合并到 1 个窗口里，这样可以避免切换。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;写一个脚本，生成本周新加的笔记，然后生成一个 newsletter 的周报，加以人工编辑。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;多读书吧，有人坐下来，花了几个月（或几年）的时间组织你需要的信息，你可以把所有这些成果都放在你的手掌中，只需要 10 来块，甚至还有盗版网站，我觉得对于穷人来说，用盗版网站看书，看电影不涉及道德。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;暂时决定以后阅读英文用浏览器的翻译功能翻译，多听英语的材料，少看英语的文章，看文章基本没啥用，然后看的还慢，又记不住东西的。应该多听，先学会读才行。等以后听力流利的，也许可以开始沉浸式阅读了，现在阅读个 twitter 都费劲 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;读书也太重要了吧，研究一个问题最好的办法就是找相应的书，而不是看网上的文章。在 youtube 和网上找了那么多文章，从来没有一个人告诉过我别用别人的卡片集合。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;发现笔记的原始记录不适合按照按照文件去分发，还是得按照时间倒序，可以每周或者每月一个文件，然后文件内部用 Tag，或者 Category 去分类每一条，这样才能写周报啊。最终生成的东西再按照 tag 和 category 去生成。我得定义某种格式。易于解析的格式。也许还有个办法，就是给每一条笔记记录一个时间，这样工具好像也可以生成按时间排序的东西。难道这就是 logseq 的 blocks 吗，也许可以按照 trackawesomelist 那样，去分析一下 git 的提交记录。但是这样又有运营商依赖了。所以还是应该按照二级标题来区分文件，三级标题来区分文件内的 topics. - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用了这么多年 Anki，才发现自己以前完全是错的。因为这么多年我都是用别人做好的卡片集合来记东西，今天看了一本书，才知道这是没有用的，难怪每次都记的很痛苦。因为我都是下载的别人的卡片集合，比如 4000 个最常用的单词。但是由于这个集合里的东西根本就不是来自我个人的记忆&#x2F;经验，所以记起来会非常痛苦，因为对于这些卡片来说，无法产生任何有意义的联想，导致事倍功半。所以 Anki 的正确使用方法是，我们必须自己创造自己的卡片集合，每张卡片都可以联系一张图片，或者声音，或者任何场景，这样记起来才是事半功倍的。Anki 的创建者 Damien Elmes 很好地总结了这一点：“创建自己的卡片是学习复杂主题的最有效方法。像语言和科学这样的主题不能仅通过死记硬背来理解——它们需要解释和上下文才能有效地学习。此外，自己主动输入信息的时候，会迫使你决定关键点是什么，然后进一步更好的理解该卡片。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我太喜欢&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ponymessenger.com&#x2F;&quot;&gt;Pony messager&lt;&#x2F;a&gt;的概念了，不幸的是，单就这一个应用救不了我们的注意力，我们应该设计一种系统，这种系统只允许应用每天定时拉取和发送 1 次信息。这样才能拯救人类。结合 Solid，用户的东西全部离线化，文件化，用户的东西归用户。应用就只是应用。如果用户需要查什么东西也是，提前编辑好要查询的东西，然后一个小时后统一发送，再过一个小时，系统自动拉取查询的结果。如果不满意，就继续这个过程。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;当需要 2 个应用程序来回切换的情况下，全屏模式下的应用分屏是最佳能集中注意力的方式。比如左屏幕开阅读器，右屏幕开笔记软件记笔记。或者左屏幕开编辑器，右边屏幕开终端窗口。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Twitter 对人类世界影响之大和他的股票价值严重的不匹配。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;感谢英国人给 BBC 交的税，让我能免费享受高质量的音乐台 BBC 1 Relax 和 BBC 6，以及高质量的谈话类电台 BBC 4 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Email 可能是最后一个我们还和世界在连接的一个东西。 - 2022.03.19&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;把浏览器的书签功能关掉很重要，不然太容易分心了。浏览器的书签栏就是诱惑你的第一大杀手。 - 2022.03.18&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;微信读书真变态。。网页直接用 canvas 做。 - 2022.03.18&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更好的生活应该拥有的东西：Kindle，mp3，mp4，gps，老人机。重点是离线和本地化。 - 2022.03.18&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如何阅读最新的英文书籍？下载 epub，下载&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;epubpup-epub-reader&#x2F;kjfhlbghiagglcldmlfmpkdgmehmhfjc&quot;&gt;Chrome epub 阅读器扩展&lt;&#x2F;a&gt;，然后在扩展中打开这本书，使用浏览器自带的翻译即可阅读，体验真好。 - 2022.03.18&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;现在的英文水平基本上可以无压力听懂教英文的频道视频了。因为这种视频基本都用的是 simple plain english. - 2022.03.17&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最近特别想交新的长期朋友，可能有受到这篇&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2012&#x2F;07&#x2F;15&#x2F;fashion&#x2F;the-challenge-of-making-friends-as-an-adult.html&quot;&gt;为什么 30 岁以上交朋友很难&lt;&#x2F;a&gt;的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。想用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ponymessenger.com&#x2F;&quot;&gt;Pony&lt;&#x2F;a&gt;来做实验，这是一个我觉得特别适合的工具，因为每天只会定时发送&#x2F;接受 1 次消息，然后我们可以建立一个群组和私人联系，如果有什么东西要分享的话，我们可以每天发一次消息，不会太打扰彼此，按照这样的频率去沟通和联系。如果有机会，我们应该在线下见面。 - 2022.03.15&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;决定把这里的想法按照时间倒序来编辑，这样浏览起来可能是比较符合直觉的。 - 2022.03.15&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.openculture.com&#x2F;2017&#x2F;11&#x2F;a-map-showing-how-much-time-it-takes-to-learn-foreign-languages-from-easiest-to-hardest.html&quot;&gt;这个地图&lt;&#x2F;a&gt;显示中国人学好英语需要的时间属于最长的一批，平均要 2200 个小时，每天 1 小时，足足要学 6 年。 - 2022.03.13&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自动化的网站没有灵魂，就像工具产品一样。人工很重要。 - 2022.03.12&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;水温从 100 度到 90 度所用的时间和 90 度到 80 度所用的时间相同吗？ - 2022.03.11&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;永远不要在看到一个财经观点的同一天就去操作股票。 - 2022.03.10&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hacker News 的社区推崇简单，高效的网页，比如用户在分享 reddit 的帖子的时候会分享 old.reddit.com 的资源，分享 npr 的新闻时，会分享 https:&#x2F;&#x2F;text.npr.org&#x2F; 下的资源，在里面冲浪久了之后，我也更喜欢这种古早风味的界面了，并且在心里暗暗决定下次的项目也会按照这个风格来。 - 2022.03.09&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;思考下我这一生最需要维护的几个公共纯文本文件，quotes, books, journal, tools, articles, sources, thoughts, answers, tips - 2022.03.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;人一旦开始为了赚钱有目的的找事情，就不好玩了。 - 2022.03.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;互联网上经常能看到非常有创意的绘画，到位的文字，还有一些人在演奏音乐甚至创作音乐。而我，一样都不会。即使这样，我好像也只是偶尔深夜 emo 的时候才自卑一下，大多数时候仍然是普通而心高气傲。 - 2022.03.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我都快忘记当年还在用短信时候的那种感觉了，用短信和初恋或者朋友联系，用实体键盘快速输入，删除一些短信以获得更多空间，当时很少垃圾短信，离线的交流体验，发短信一条要 1 毛钱。所以当时要怎么认识陌生人呢？ - 2022.03.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;人应该年轻的时候多阅读，不然你就无法践行你在阅读中收获的东西了。 - 2022.02.22&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以前觉得 Gatsby 生态好繁荣，好棒啊。Gatsby 升级了几个版本之后，再也笑不出来了,所以，越少依赖越好。- 2022.02.20&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;临近年尾，很多人都会写年度总结，但是我很抗拒点开，每点开一篇，都可能会给自己碌碌无为的一年插上一刀。 - 2021.12.31&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;贵族统治并不可怕，最可怕的是没有荣誉感的贵族统治。 - 2021.12.01&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
 	</entry>
 </feed>
