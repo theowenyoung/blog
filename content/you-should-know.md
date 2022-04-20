@@ -29,4 +29,5 @@ taxonomies:
   - [倒退的左翼自由主义](https://en.wikipedia.org/wiki/Regressive_left)
   - [上帝并不伟大（书）](https://en.wikipedia.org/wiki/God_Is_Not_Great)
   - [邪恶问题](https://en.wikipedia.org/wiki/Problem_of_evil#cite_note-2009Meister-39)
+  - [伊斯兰进步主义](https://en.wikipedia.org/wiki/Liberalism_and_progressivism_within_Islam#:~:text=Liberalism%20and%20progressivism%20within%20Islam%20involve%20professed%20Muslims%20who%20have,%2DIsl%C4%81m%20at%2Dtaqaddum%C4%AB).)
 - [言论自由](https://en.wikipedia.org/wiki/Freedom_of_speech)
