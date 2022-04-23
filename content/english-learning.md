@@ -140,6 +140,7 @@ taxonomies:
 ## Common Expression
 
 - There's a wonderful line I came across -> There's a wonderful quote I found
+- My girlfriend is on her period.
 
 ## Chat Topics
 
