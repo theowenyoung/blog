@@ -3,13 +3,15 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2022-04-20
+updated: 2022-04-25
 taxonomies:
   categories:
     - Misc
   tags:
     - Tweets
 ---
+
+> 我要震惊了，今天在英语角遇到一个菲律宾的 18 岁学生，英语流利的不像话，最重要的是连续谈论宗教半小时没喘气，而且，对宗教的问题理解的非常深刻。我 28 才知道一点皮毛。
 
 > Reddit 上有[前穆斯林小组](https://www.reddit.com/r/exmuslim/)，也有[穆斯林小组](https://www.reddit.com/r/Muslim/)，这就是自由的空气啊。
 
