@@ -6,6 +6,8 @@ draft: false
 taxonomies:
   categories:
     - Misc
+  tags:
+    - Religious
 ---
 
 “那如果你选错了宗教怎么办”？

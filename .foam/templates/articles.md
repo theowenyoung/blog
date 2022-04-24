@@ -5,6 +5,8 @@ updated: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}
 taxonomies:
   categories:
     - Articles
+  tags:
+    - 
 ---
 
 

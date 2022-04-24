@@ -1,5 +1,8 @@
 {% extends "base.html" -%} 
-
+{% block title %}{{trans(key="label_books",lang=lang)}} -  {{ config.title }}{% endblock title %}
+{% block ogtitle %}{{trans(key="label_books",lang=lang)}} -  {{ config.title }}{% endblock ogtitle %}
+{% block headline %}{{trans(key="label_books",lang=lang)}} -  {{ config.title }}{% endblock headline %}
+{% block description %}{{trans(key="label_books",lang=lang)}}{% endblock description %}
 {% block main -%}
 
 {% if paginator %}
