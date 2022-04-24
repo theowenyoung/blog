@@ -6,6 +6,8 @@ draft: false
 taxonomies:
   categories:
     - Misc
+  tags:
+    - Islam
 ---
 
 今天学英语，看了半岛电视台的一个视频[法国，伊斯兰教，世俗主义](https://www.youtube.com/watch?v=fQJUaYQN4os)，和 Vice 的一个[为什么法国变成了西方世界里穆斯林最讨厌的国家](https://www.youtube.com/watch?v=d_l0n_kc_Fc)

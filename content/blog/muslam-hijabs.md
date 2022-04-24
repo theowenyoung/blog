@@ -5,6 +5,8 @@ updated: 2022-04-12
 taxonomies:
   categories:
     - Misc
+  tags:
+    - Islam
 ---
 
 最近在看 Youtube 视频学英语，挺喜欢[Vox](https://www.youtube.com/channel/UCLXo7UDZvByw2ixzpQCufnA)的视频的，质量很高，又都有字幕。

@@ -47,7 +47,7 @@
       content="{{ trans(key="keywords",lang=lang) }}"
     />
     <meta name="author" itemprop="author" content="{{ config.extra.author }}" />
-    <meta itemprop="headline" content="{{ config.title }}" />
+    <meta itemprop="headline" content="{% block headline %}{{ config.title }}{% endblock headline %}" />
     <meta itemprop="copyrightYear" content="{{ now() | date(format="%Y") }}" />
     <link rel="icon" href="{{ get_url(path="site/images/favicon-32x32.png",cachebust=true) }}"
     type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="{{

@@ -1,5 +1,9 @@
-{% extends "base.html" %} {% block title %}{{ config.title }} - {{
-trans(key="label_categories",lang=lang) }}{% endblock title %} {% block main %}
+{% extends "base.html" %} {% block title %}{{taxonomy.name}}: {{term.name}} -  {{ config.title }}{% endblock title %}
+{% block ogtitle %}{{taxonomy.name}}: {{term.name}} -  {{ config.title }}{% endblock ogtitle %}
+{% block headline %}{{taxonomy.name}}: {{term.name}} -  {{ config.title }}{% endblock headline %}
+{% block description %}All posts in {{term.name}}{% endblock description %}
+{% block ogurl %}{{get_taxonomy_url(kind=taxonomy.name,lang=lang, name=term.name)}}{% endblock ogurl %}
+{% block main %}
 <div class="main-box-block">
 
   <header id="overview">
@@ -7,7 +11,14 @@ trans(key="label_categories",lang=lang) }}{% endblock title %} {% block main %}
       <span>&gt;&gt;</span>
       <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{trans(key="label_home",lang=lang)}}</a>
       {% if term.name -%}
-      <span class="divider"> / </span> {{ term.name }}
+      <span class="divider"> / </span>
+      
+      <a href="{{lang_prefix_path}}categories/">{{taxonomy.name}}</a>
+      
+      <span class="divider"> / </span>
+
+      {{term.name}}
+
       {% endif -%}
       </div>
   </header>

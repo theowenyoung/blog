@@ -14,11 +14,11 @@
 {% endblock post_meta -%}
 {% block title %}{{ page.title }} - {{ config.title}}{% endblock title %}
 {% block ogtitle %}{{ page.title }} - {{ config.title}}{% endblock ogtitle %}
+{% block headline %}{{ page.title }} - {{ config.title}}{% endblock headline %}
 {% block ogdesc %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless | striptags}}  {% endif %}{% endblock ogdesc %}
 {% block description %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless | striptags}}  {% endif %}{% endblock description %}
 {% block ogurl %}{% if page.slug %}{{ config.base_url }}/{{ page.slug }}{% endif %}{% endblock ogurl %}
 {% block ogimg %}{% if page.extra.image %}{{ page.extra.image }}{% endif %}{% endblock ogimg %}
-
 {% block main %}
       {% block detail_meta -%}
       <header id="overview">
@@ -29,7 +29,6 @@
           <span class="divider">/</span>
           <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{
             page.taxonomies.categories[0] }}</a>
-          
           {% if page.taxonomies.tags -%}
           <span class="divider">/</span>
           {% for tag in page.taxonomies.tags %}
@@ -42,7 +41,7 @@
         
         <div>
           <h1 style="font-size:2rem;">{{ page.title }}</h1>
-          <div class="muted">
+          <div class="pt muted">
             <div>
               {% if page.date %}{{ trans(key="label_created",lang=lang)}}: {{ page.date }}{% endif %}{% if page.updated %}, {{trans(key="label_updated",lang=lang)}}: {{ page.updated }},{% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
         </div>
