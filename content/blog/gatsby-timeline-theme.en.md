@@ -4,7 +4,7 @@ date: 2021-01-29
 updated: 2022-03-29
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Theme
 extra:

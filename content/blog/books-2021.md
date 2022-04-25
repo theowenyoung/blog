@@ -4,12 +4,12 @@ date: 2021-12-31
 updated: 2022-03-25
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Books
 ---
 
-2021年的读书笔记，没有做更详细的整理，所以就一并列的这里了。
+2021 年的读书笔记，没有做更详细的整理，所以就一并列的这里了。
 
 [点击查看最新读书笔记](content/books/_index.md)
 

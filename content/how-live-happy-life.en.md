@@ -5,7 +5,7 @@ updated: 2022-04-04
 draft: false
 taxonomies:
   categories:
-    - Misc
+    - Random
 ---
 
 > "If we want to be happier, I think the first place to start is looking at the available options and then working out which to pursue. The way I see it, there are only three avenues to take. We can change how we think, how we spend our time, or the external facts of our life."

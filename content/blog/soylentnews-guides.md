@@ -4,7 +4,7 @@ date: 2022-03-08
 updated: 2022-03-10
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Translations
     - Rules

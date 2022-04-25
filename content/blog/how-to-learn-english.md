@@ -5,7 +5,7 @@ updated: 2022-03-27
 draft: true
 taxonomies:
   categories:
-    - Misc
+    - Random
 ---
 
 穷人如何学英语？

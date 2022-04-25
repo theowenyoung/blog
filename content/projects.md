@@ -4,7 +4,7 @@ date: 2021-03-26
 updated: 2022-03-26
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Me
 ---

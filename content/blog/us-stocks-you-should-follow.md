@@ -4,7 +4,7 @@ date: 2021-02-11
 updated: 2022-03-10
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Investing
 ---

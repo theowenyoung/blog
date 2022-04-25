@@ -5,7 +5,7 @@ updated: 2022-04-20
 draft: false
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Islam
 ---

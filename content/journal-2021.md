@@ -4,12 +4,12 @@ date: 2021-03-26
 updated: 2021-12-26
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Journal
 ---
 
-2021日记汇总。
+2021 日记汇总。
 
 <!-- more -->
 

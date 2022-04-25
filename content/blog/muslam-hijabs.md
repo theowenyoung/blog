@@ -4,7 +4,7 @@ date: 2022-04-12T23:19:15+08:00
 updated: 2022-04-12
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Islam
 ---
