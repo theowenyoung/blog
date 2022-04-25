@@ -5,7 +5,7 @@ updated: 2022-04-06
 draft: false
 taxonomies:
   categories:
-    - Misc
+    - Random
 ---
 
 有一位医生曾经被问到：“你工作中最难的部分是什么？”。医生回答：“不是压力或责任，那些都太基本了，最难的是让我的病人按照我要求的去做。"

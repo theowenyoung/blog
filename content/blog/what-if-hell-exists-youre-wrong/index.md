@@ -5,7 +5,7 @@ updated: 2022-04-23
 draft: false
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Religious
 ---

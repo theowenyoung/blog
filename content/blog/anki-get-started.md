@@ -4,7 +4,7 @@ date: 2020-11-10
 updated: 2020-11-10
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - English
 ---

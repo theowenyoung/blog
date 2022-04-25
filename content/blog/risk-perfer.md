@@ -4,7 +4,7 @@ date: 2021-10-16
 updated: 2022-03-10
 taxonomies:
   categories:
-    - Misc
+    - Random
 ---
 
 今天看《快思慢想》的时候，看到一个很有意思的实验：

@@ -4,7 +4,7 @@ date: 2021-12-31
 updated: 2022-03-10
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Freelancer
 ---

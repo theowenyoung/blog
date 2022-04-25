@@ -4,7 +4,7 @@ date: 2021-02-02
 updated: 2021-02-02
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Workflows
 ---

@@ -6,7 +6,7 @@ date: 2022-03-10
 updated: 2022-04-25
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Tweets
 ---
@@ -43,7 +43,7 @@ taxonomies:
 
 > 怎么和年轻人竞争啊，我 28，加了一个英语角聊天室，人家高中就加入了。 -- 2022.04.01
 
-> 分类太难了，所以不要浪费时间在分类上，我的博客现在只有 4 个分类,都非常的明确，在开启一篇新文章的时候，我不要花一秒钟如何判断他的所属分类上，我的分类是 Issues,Books,Notes,Misc.周刊很容易判定，读书笔记也是，Notes 是我长期更新和维护的 Awesome List，其他所有的想法都放在 Misc 里面，同时每篇文章可以有 Tags 来标记文章的标签。 - 2022.03.30
+> 分类太难了，所以不要浪费时间在分类上，我的博客现在只有 4 个分类,都非常的明确，在开启一篇新文章的时候，我不要花一秒钟如何判断他的所属分类上，我的分类是 Issues,Books,Notes,Random.周刊很容易判定，读书笔记也是，Notes 是我长期更新和维护的 Awesome List，其他所有的想法都放在 Random 里面，同时每篇文章可以有 Tags 来标记文章的标签。 - 2022.03.30
 
 > 我不太喜欢[Obsidian](https://obsidian.md/)现在的发展，他的很多概念我都喜欢，但是实际后，发现他的性能还是和 VS Code 差很多的。以及如果再加上他那庞大的插件生态，我都不敢想象这些第三方插件以后没人维护要怎么办（Gatsby 后遗症）。可能人老了之后就喜欢那种一揽子解决方案。我现在最需要的 Obsidian 功能是键入两个中括号后，他可以直接生成一个 Markdown Style 的内部链接。不知道有没有 VSCode 插件有这个功能。- 2022.03.27
 > 后续： 没找到类似的插件，所以修改了原版 Foam 的插件，发布了[Foam Lite 插件](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode)，功能很少，但很必要。完美满足了我的需求。 - 2022.03.28

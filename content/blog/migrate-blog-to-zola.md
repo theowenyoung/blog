@@ -5,5 +5,5 @@ updated: 2022-03-30
 draft: true
 taxonomies:
   categories:
-    - Misc
+    - Random
 ---

@@ -4,7 +4,7 @@ date: 2022-02-20
 updated: 2022-03-10
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - Hacker News
 image: https://blog.entelo.com/hs-fs/hubfs/hackernewslogo.jpeg?width=809&name=hackernewslogo.jpeg
