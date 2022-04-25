@@ -276,15 +276,6 @@
         <loc>https://www.owenyoung.com/categories/dev/page/2/</loc>
     </url>
     <url>
-        <loc>https://www.owenyoung.com/categories/misc/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/categories/misc/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/categories/misc/page/2/</loc>
-    </url>
-    <url>
         <loc>https://www.owenyoung.com/categories/notes/</loc>
     </url>
     <url>
@@ -292,6 +283,15 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/categories/notes/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/categories/random/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/categories/random/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/categories/random/page/2/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/communities/</loc>
@@ -438,6 +438,10 @@
     <url>
         <loc>https://www.owenyoung.com/en/nsfw/</loc>
         <lastmod>2022-03-25</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/en/quotes/</loc>
+        <lastmod>2022-04-25</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/en/self-hosted/</loc>

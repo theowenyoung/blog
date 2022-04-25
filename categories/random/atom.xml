@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
-	<title>Owen的博客 - Misc</title>
+	<title>Owen的博客 - Random</title>
 	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
-	<link href="https://www.owenyoung.com/categories/misc/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://www.owenyoung.com/categories/random/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2022-04-25T00:00:00+00:00</updated>
-	<id>https://www.owenyoung.com/categories/misc/atom.xml</id>
+	<id>https://www.owenyoung.com/categories/random/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>如果地狱真的存在，而你错了怎么办？</title>
 		<published>2022-04-23T21:27:51+08:00</published>
@@ -349,7 +349,7 @@
 &lt;p&gt;怎么和年轻人竞争啊，我 28，加了一个英语角聊天室，人家高中就加入了。 – 2022.04.01&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;分类太难了，所以不要浪费时间在分类上，我的博客现在只有 4 个分类,都非常的明确，在开启一篇新文章的时候，我不要花一秒钟如何判断他的所属分类上，我的分类是 Issues,Books,Notes,Misc.周刊很容易判定，读书笔记也是，Notes 是我长期更新和维护的 Awesome List，其他所有的想法都放在 Misc 里面，同时每篇文章可以有 Tags 来标记文章的标签。 - 2022.03.30&lt;&#x2F;p&gt;
+&lt;p&gt;分类太难了，所以不要浪费时间在分类上，我的博客现在只有 4 个分类,都非常的明确，在开启一篇新文章的时候，我不要花一秒钟如何判断他的所属分类上，我的分类是 Issues,Books,Notes,Random.周刊很容易判定，读书笔记也是，Notes 是我长期更新和维护的 Awesome List，其他所有的想法都放在 Random 里面，同时每篇文章可以有 Tags 来标记文章的标签。 - 2022.03.30&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我不太喜欢&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt;现在的发展，他的很多概念我都喜欢，但是实际后，发现他的性能还是和 VS Code 差很多的。以及如果再加上他那庞大的插件生态，我都不敢想象这些第三方插件以后没人维护要怎么办（Gatsby 后遗症）。可能人老了之后就喜欢那种一揽子解决方案。我现在最需要的 Obsidian 功能是键入两个中括号后，他可以直接生成一个 Markdown Style 的内部链接。不知道有没有 VSCode 插件有这个功能。- 2022.03.27
@@ -771,7 +771,7 @@
 		<updated>2022-03-25T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/blog/books-2021/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books-2021/</id>
-		<content type="html">&lt;p&gt;2021年的读书笔记，没有做更详细的整理，所以就一并列的这里了。&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;2021 年的读书笔记，没有做更详细的整理，所以就一并列的这里了。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;content&#x2F;books&#x2F;_index.md&quot;&gt;点击查看最新读书笔记&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;ul&gt;
@@ -1162,7 +1162,7 @@
 		<updated>2021-12-26T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/journal-2021/" type="text/html"/>
 		<id>https://www.owenyoung.com/journal-2021/</id>
-		<content type="html">&lt;p&gt;2021日记汇总。&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;2021 日记汇总。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。&lt;&#x2F;p&gt;
