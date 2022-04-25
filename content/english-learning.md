@@ -56,6 +56,11 @@ taxonomies:
 - [每日英语听力](https://www.bilibili.com/video/BV1U7411a7xG?p=1&share_medium=ipad&share_plat=ios&share_source=COPY&share_tag=s_i&timestamp=1641627028&unique_k=Ye9sEiY)
 - [简易英语播放列表](https://www.youtube.com/watch?v=qky3U0cQe_E&list=PLA5UIoabheFM281dIr4ojw9xOVoo9dOtw)
 - [日常英语问题](https://www.youtube.com/watch?v=Lo5m5U5mn5E)
+- [Canguro English](https://www.youtube.com/channel/UCr2TgqpOrU3kUTkVy5XoLow) - 一位很赞的 ESL 老师
+  - [生动地解释短语是怎么来的](https://www.youtube.com/watch?v=k1uduN-i8R0)
+  - [如何变得流利 - 练习](https://www.youtube.com/watch?v=cxwRViDKwEg)
+    - 一定要根据上下文学习新单词
+  - [用英语思考？](https://www.youtube.com/watch?v=dioU2ZcuW38)
 
 ## 轻松英语
 
