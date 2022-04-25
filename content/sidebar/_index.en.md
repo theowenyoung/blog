@@ -4,13 +4,22 @@ sort_direction: "decending"
 updated: 2022-04-04
 ---
 
-## Links you may need
+## Impornant Links
 
-- [Feed URL](/en/atom.xml)
-- [Archive](/en/archive/)
-- [Source](https://github.com/theowenyoung/blog)
+- [RSS Feed](/en/atom.xml)
+- [中文博客](/)
+
+## About
+
 - [About](/en/about/)
 - [Now](/now/)
-- [中文博客](/)
+
+## Other
+
 - [Twitter](https://twitter.com/TheOwenYoung)
 - [Github](https://github.com/theowenyoung)
+
+## Archive
+
+- [Archive](/en/archive/)
+- [Source](https://github.com/theowenyoung/blog)
