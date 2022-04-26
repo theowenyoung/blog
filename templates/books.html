@@ -1,6 +1,9 @@
 {% extends "base.html" -%} 
 {% block title %}{{trans(key="label_books",lang=lang)}} -  {{ config.title }}{% endblock title %}
 {% block ogtitle %}{{trans(key="label_books",lang=lang)}} -  {{ config.title }}{% endblock ogtitle %}
+{% block
+  ogurl %}{{ config.base_url~lang_prefix_path }}books/{% endblock ogurl %} 
+  
 {% block headline %}{{trans(key="label_books",lang=lang)}} -  {{ config.title }}{% endblock headline %}
 {% block description %}{{trans(key="label_books",lang=lang)}}{% endblock description %}
 {% block main -%}

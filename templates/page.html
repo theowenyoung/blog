@@ -17,7 +17,7 @@
 {% block headline %}{{ page.title }} - {{ config.title}}{% endblock headline %}
 {% block ogdesc %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless | striptags}}  {% endif %}{% endblock ogdesc %}
 {% block description %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless | striptags}}  {% endif %}{% endblock description %}
-{% block ogurl %}{% if page.slug %}{{ config.base_url }}/{{ page.slug }}{% endif %}{% endblock ogurl %}
+{% block ogurl %}{% if page.path %}{{ config.base_url }}{{ page.path }}{% endif %}{% endblock ogurl %}
 {% block ogimg %}{% if page.extra.image %}{{ page.extra.image }}{% endif %}{% endblock ogimg %}
 {% block main %}
       {% block detail_meta -%}
