@@ -2,18 +2,24 @@
 title: 12条生活法则
 date: 2022-04-26T02:19:51+08:00
 updated: 2022-04-26
-draft: true
+draft: false
 taxonomies:
   categories:
     - Books
   tags:
     - Self-Help
 extra:
-  rating: 8
+  rating: 5
   author: Jordan Peterson
 ---
 
-[English Version](/content/blog/books/12-rules-for-life.en.md)
+从[这个视频](https://www.youtube.com/watch?v=8wLCmDtCDAM)中知道的这本书，但实际上它不是我喜欢的类型。基本上是以经验为基础，而不是以科学为基础的想法。
+
+最好的部分是前言。但它不是由作者写的。也许我应该读一些写前言的哥们写的书。
+
+另外摘抄了一些英文原文在[English Version](/content/blog/books/12-rules-for-life.en.md)
+
+<!-- more -->
 
 ## 摘抄
 
@@ -28,3 +34,5 @@ extra:
 > 苏格拉底对这些相互冲突的道德准则的认识所孕育的不确定性做出反应，决定不变成虚无主义者，道德相对主义者或提出某种意识形态，而是将自己的一生奉献给寻找可以解释这些差异的智慧，即：他帮助发明了哲学。他一生都在问一些令人困惑的基本问题，比如“什么是美德？”和“一个人怎样才能过上美好的生活？”和“什么是正义？”，他研究了不同的方法，问哪些方法似乎最连贯，最符合人性。
 
 > 也许在我們心靈的最深處，我們都希望被評判。
+
+> 因为我们是脆弱和凡人，痛苦和焦虑是人类生存的一个组成部分。我们必须有一些东西来对抗存在固有的痛苦。我们必须拥有深刻的价值体系所固有的意义，否则存在的恐怖就会迅速变得至高无上。然后，我们就会堕入到虚无主义中。
