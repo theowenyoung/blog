@@ -70,6 +70,10 @@
         <loc>https://www.owenyoung.com/blog/books/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/books/12-rules-for-life/</loc>
+        <lastmod>2022-04-26</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/books/disprezzo/</loc>
         <lastmod>2022-03-27</lastmod>
     </url>
@@ -324,6 +328,10 @@
     <url>
         <loc>https://www.owenyoung.com/en/blog/bazarr-setup/</loc>
         <lastmod>2022-03-26</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/en/blog/books/12-rules-for-life/</loc>
+        <lastmod>2022-04-26</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/en/blog/books/stolen-focus/</loc>
@@ -776,6 +784,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/rust/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/self-help/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/self-help/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/self-hosted/</loc>
