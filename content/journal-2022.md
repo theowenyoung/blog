@@ -1,7 +1,7 @@
 ---
 title: 2022年的一些记录
 date: 2022-03-26
-updated: 2022-03-26
+updated: 2022-04-28
 taxonomies:
   categories:
     - Random
@@ -92,3 +92,41 @@ taxonomies:
 > 如果您正在使用手机醒来，并且它正在破坏您的早晨，请尝试以下操作：在睡觉前，将手机插入房间对面的插座或触手可及的地方。当你醒来时，尽量不要看它。醒来有很多更好的方法：去你的幸福站，吃早餐，伸展，做一些运动，散步，跑步，听莫扎特，洗澡，读书，和你的孩子一起玩，或者只是沉默一会儿。即使是十五分钟，早上给自己一些时间，不要被这个消息完全吓坏。
 
 > 社交媒体创造了一种名为 FOMO 的人类现象：对错过的恐惧。这是一种感觉，滚动浏览你的提要，那里的每个人都比你过得更好。唯一的解药是 JOMO：错过的喜悦。
+
+## 看不见的女人
+
+[wiki](https://www.goodreads.com/book/show/41104077-invisible-women)
+
+- 2013 年联合国的一项凶杀案调查发现，全世界 96%的杀人案肇事者是男性
+- 1975 年被联合国宣布为妇女年，在冰岛，妇女决心让其名副其实。成立了一个由冰岛五大妇女组织的代表组成的委员会。经过一番讨论，她们想出了罢工的想法。10 月 24 日，冰岛所有女人都停止工作。没有带薪工作，同时也没有做饭，没有清洁，没有托儿服务等。让冰岛的男人看看，如果没有女性每天为保持国家运转所做的无形工作，他们是如何应对的。
+- 在全球范围内，75%的无偿工作由女性完成，她们每天花费三到六个小时，而男性的平均无偿工作时间为 30 分钟到 2 小时。
+  - [在印度，妇女每天六小时的无偿劳动中有五小时花在家务上，而男子则有 13 分钟。](http://www.oecd.org/dev/development-gender/Unpaid_care_work.pdf)
+  - 在美国，男性每天比女性多出一个多小时的业余时间，19 而在英国，男性每周享受的闲暇时间比女性多五个小时。
+
+## For the Love of Men
+
+前面写的挺好的，很吸引人，用语比较 informal,适合英语小白看。但是后面有点乱。但是还是获得了很多新知识。
+
+> 我们生活在一种文化中，这种文化教导男孩坚忍主义而不是真实性，支配而不是同理心，如果他们不遵循他们的剧本，有人会注意到并拿走他们的“男人卡”。男孩们被教导不要问问题，因为寻求帮助会表明缺乏领导力，而不是视为这是一个简单的寻求帮助的行为。
+>
+> We live in a culture that teaches boys stoicism over authenticity, dominance over empathy, and that if they don’t follow their script, someone will take notice and take their “man card” away. Boys are taught not to ask questions because asking for help would suggest a lack of leadership, instead of being an acute sign of it.
+
+> 男孩们被教导不要问问题，因为寻求帮助会表明缺乏领导力，所以“真正的男人”都不会问路。而任何曾经坐过男人车的女人都知道兜圈子却死活不问路的痛苦。
+>
+> Boys also learn that “real men” don’t ask for directions. Any woman who’s ever driven with a man knows the agony of driving in circles rather than asking for directions.
+
+> 在美国，男性伴侣是美国孕妇的第二大死因。每一天，三个男人都会杀死他们的女朋友，妻子或前任。在最终被谋杀的所有女性中，近一半是被现任或前任浪漫伴侣杀害的
+>
+> Male partners are the second leading cause of death for pregnant women in the United States. Every single day three men will end up killing their girlfriend, wife or ex. Nearly half of all women who end up murdered are killed by a current or former romantic partner
+
+> 男人的朋友越来越少，友谊也越来越深，随着年龄的增长，他们变得越来越孤立。孤独是一个不成比例的男性问题。仅在英国，就有 250 万男性报告没有亲密的朋友。
+>
+> Men have fewer friends and less in-depth friendships and become increasingly isolated with age. Loneliness is a disproportionately male problem. In the UK alone, there are 2.5 million men who report having zero close friends.
+
+> 我刚开始意识到我与生活中的女性有着如此丰富的关系，为什么在与男人的关系方面，我会降低标准？
+>
+> I just started realizing I have such rich relationships with the women in my life,Why would I lower my standards when it comes to my relationships with men?
+
+> 女性在婚姻中的幸福感与丈夫所做的“情感工作”程度有关。感觉被理解并与丈夫有联系是女性婚姻满意度的最强预测因素。
+>
+> a woman’s happiness in a marriage is correlated with how much “emotional work” her husband performs. Feeling understood and connected to her husband was the strongest predictor for a woman’s level of marital satisfaction.
