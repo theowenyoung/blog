@@ -32,6 +32,7 @@ taxonomies:
 - [纽约时报实时畅销榜](https://www.nytimes.com/books/best-sellers/)
 - [史上最佳商业书籍排行](https://hacktheentrepreneur.com/best-business-books/)
 - [适合小孩的书 6-14 岁](https://www.bookvine.io/)
+- [牛津：所有事情的简短介绍](https://www.goodreads.com/list/show/43502.The_Oxford_Very_Short_Introductions_Series)
 
 ## 资源
 
