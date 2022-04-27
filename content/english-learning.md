@@ -39,6 +39,9 @@ taxonomies:
 - [让母语人士为你录制你想要的文本，互助，免费](https://rhinospike.com/)
 - [Youglish](https://youglish.com/) - 搜索 youtube 上人提到的某个单词
 - [Hi Native](https://hinative.com) - 母语人士为你回答关于语言的问题
+- [Bing 翻译](https://www.bing.com/Translator) - 发音最好的翻译，甚至提供了文言文翻译
+  - [Deepl 翻译](https://www.deepl.com/en/translator) - 相对最准确的翻译
+  - [腾讯翻译](https://fanyi.qq.com/) - 也比较准确
 
 ## 资源
 
