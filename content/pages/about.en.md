@@ -21,7 +21,7 @@ Full stack developer, main technology stack is javascript. Find more my projects
 
 ### What am I doing now?
 
-See what am I doing now at [here](now.md)
+See what am I doing now at [Now](/content/pages/now.md)
 
 ## Contact Me
 
