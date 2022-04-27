@@ -5,7 +5,7 @@ updated: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}
 draft: true
 taxonomies:
   categories:
-    - Misc
+    - Random
   tags:
     - 
 ---
