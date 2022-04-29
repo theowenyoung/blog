@@ -64,6 +64,21 @@ taxonomies:
 >
 > The whole conception of God is a conception derived from the ancient Oriental despotisms. It is a conception quite unworthy of free men. When you hear people in church debasing themselves and saying that they are miserable sinners, and all the rest of it, it seems contemptible and not worthy of self-respecting human beings. We ought to stand up and look the world frankly in the face. We ought to make the best we can of the world, and if it is not so good as we wish, after all it will still be better than what these others have made of it in all these ages. A good world needs knowledge, kindliness, and courage; it does not need a regretful hankering after the past or a fettering of the free intelligence by the words uttered long ago by ignorant men. It needs a fearless outlook and a free intelligence. It needs hope for the future, not looking back all the time toward a past that is dead, which we trust will be far surpassed by the future that our intelligence can create.
 
+## 无神论 2.0
+
+[无神论 2.0 Youtube Video](https://www.youtube.com/watch?v=2Oe6HUgrRlQ&t=122s)
+
+1. 教育是全世界都相信的一条路。
+
+   - 所有宗教都把我们看作孩子，我们需要指导
+   - 布道和讲座都区别是什么
+     - 布道
+       - 想改变你的生活
+       - 无条件相信神，并且重复这个想法（话语）
+     - 讲座
+       1. 给你信息
+       2. 当我们想听讲座的时候，我们期待听到新的东西，而不是一直重复旧的东西，想象一下，你连续听五场一样的讲座。
+
 ## 漫画
 
 ![](./religious.webp)
