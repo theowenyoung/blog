@@ -12,24 +12,31 @@ taxonomies:
 1. 你好
 
 - Hello
+- สวัสดี
 
 2. 再见
 
+- Bye
 - Goodbye
+- Thai: Fandimai
 
 3. 请
 
+-
 - Please
 
 4. 谢谢
 
 - Thank you
+- Cong Kong
 
 <!-- more -->
 
 5. 我
 
 - Me
+- ฉัน C̄hạn
+- Pon Shu Owen
 
 6. 你
 
@@ -66,6 +73,8 @@ taxonomies:
 14. 那个多少钱？
 
 - How much money is that?
+- Tou lai crab
+- 多少钱？
 
 15. 洗手间在哪里？
 
@@ -94,6 +103,7 @@ taxonomies:
 21. 这很好吃
 
 - This is so delicious!
+- a Roi
 
 22. 这是什么？
 
@@ -102,3 +112,7 @@ taxonomies:
 23. 这个东西用你的语言怎么说？
 
 - How do you say {English word} in {your language}, please?
+
+24. 我 21 岁。
+
+- Pon a yo 21 by crap.
