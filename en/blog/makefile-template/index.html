@@ -137,7 +137,7 @@
           <h1 style="font-size:2rem;">Makefile Template</h1>
           <div class="pt muted">
             <div>
-              Published: 2022-03-26, Updated: 2022-03-26, Reading Time: 1 min</div>
+              Published: 2022-03-26, Updated: 2022-04-30, Reading Time: 1 min</div>
         </div>
   
         </div>
@@ -148,6 +148,26 @@
       
         <section class="main">
           
+          <div class="main-toc pt">
+            <details>
+              <summary>On this page</summary>
+              
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">Get Started</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/makefile-template/#replace-some-line">Replace some line</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+            </details>
+
+          </div>
+          
           <section id="start"></section>
           <article>
             <pre data-lang="Makefile" style="background-color:#2b303b;color:#c0c5ce;" class="language-Makefile "><code class="language-Makefile" data-lang="Makefile"><span style="color:#8fa1b3;">.PHONY</span><span>: </span><span style="color:#a3be8c;">start reload stop
@@ -157,6 +177,14 @@
 </span><span>	</span><span style="color:#bf616a;">systemctl</span><span> stop caddy
 </span><span style="color:#8fa1b3;">reload</span><span>:
 </span><span>	</span><span style="color:#bf616a;">systemctl</span><span> reload caddy
+</span></code></pre>
+<h2 id="replace-some-line">Replace some line<a class="zola-anchor" href="#replace-some-line" aria-label="Anchor link for: replace-some-line">🔗</a></h2>
+<p>`make set count=5</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">set:
+</span><span>	</span><span style="color:#bf616a;">@test </span><span>$(</span><span style="color:#bf616a;">count</span><span>)
+</span><span>	</span><span style="color:#bf616a;">@sed -i -e </span><span>&#39;</span><span style="color:#a3be8c;">$(LINE)s/.*/      POST_WEIBO_COUNT: $(count)/</span><span>&#39; docker-compose.yaml
+</span><span>	</span><span style="color:#bf616a;">@echo</span><span> Change Count to $(</span><span style="color:#bf616a;">count</span><span>) Success! Now ready to restart!
+</span><span>	</span><span style="color:#bf616a;">docker-compose</span><span> up</span><span style="color:#bf616a;"> -d
 </span></code></pre>
 
           </article>
@@ -191,7 +219,22 @@
             </section>
 
           
-<aside class="sidebar px no-toc">
+<aside class="sidebar px ">
+
+<h2>On this page</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">Get Started</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/makefile-template/#replace-some-line">Replace some line</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
 
 </aside>
 
