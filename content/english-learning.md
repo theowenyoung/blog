@@ -149,6 +149,7 @@ taxonomies:
 
 - There's a wonderful line I came across -> There's a wonderful quote I found
 - My girlfriend is on her period.
+- Tens of millions of Chinese are currently unable to leave their homes. All face being taken to isolation centres, should they test positive or be declared close contacts of a virus-carrier. A grim fate for anyone, centralised quarantine is terrifying for pet-owners, who must scramble to find a shelter or someone to foster their animals. If they fail, the creatures may starve in an empty flat or—as has happened in several cities—be bludgeoned to death by workers sent to disinfect homes.
 
 ## Chat Topics
 
