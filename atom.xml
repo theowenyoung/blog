@@ -5,8 +5,21 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-04-28T00:00:00+00:00</updated>
+	<updated>2022-04-30T19:17:39+08:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Why foreigners envy China?</title>
+		<published>2022-04-30T19:17:39+08:00</published>
+		<updated>2022-04-30T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/why-foreigners-envy-china/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/why-foreigners-envy-china/</id>
+		<content type="html">&lt;p&gt;It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=2DH4v6FnbvM&quot;&gt;This Bill Maher’s video &lt;&#x2F;a&gt; clearly shows us that even though the host is so smart and cares so much about freedom of speech, there is no hiding his envy for all that the Chinese government has accomplished through dictatorship.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;I was wondering if it were the Qin Dynasty, I’m sure this host would be singing the praises of Qin Shi Huang’s Great Wall.&lt;&#x2F;p&gt;
+&lt;p&gt;&#x2F;&#x2F; TODO - add more content here to make it more convincing&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>Todos</title>
 		<published>2022-04-27T20:01:52+08:00</published>
