@@ -20,3 +20,5 @@ Quotes.
 > A: In order to think, you have to risk being offensive. You're using your free speech to risk offending me and more power to you!
 >
 > -- [Jordan B. Peterson](https://www.youtube.com/watch?v=8wLCmDtCDAM)
+
+> "It is said that power corrupts, but actually it's more true that power attracts the corruptible. The sane are usually attracted by other things than power." — David Brin
