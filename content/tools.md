@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-03-25
+updated: 2022-05-02
 taxonomies:
   categories:
     - Notes
@@ -208,17 +208,6 @@ taxonomies:
 
 - [Save-to-the-Wayback-Machine](https://github.com/VerifiedJoseph/Save-to-the-Wayback-Machine) - A browser extension that allow you to save the webpage to wayback machine
 
----
-
-tags:
-
-- Notes
-- Browser
-
----
-
-Curating awesome browsers.
-
 ## Browser
 
 ### Articles
@@ -269,6 +258,7 @@ Curating awesome browsers.
 - [Bazarr Setup](/content/blog/bazarr-setup.en.md) - Subtitle manager
 - [subtitles translate](https://translate-s ubtitles.com/) - Google translate subtitles
 - [Subhd](https://subhd.tv/) - Best Chinese subtitle
+- [Youtube 字幕下载](https://savesubs.com/)
 
 ## 旅行手续
 
