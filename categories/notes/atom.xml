@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-04-27T20:01:52+08:00</updated>
+	<updated>2022-05-02T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>Todos</title>
@@ -2200,7 +2200,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-05-02T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -2408,14 +2408,6 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;VerifiedJoseph&#x2F;Save-to-the-Wayback-Machine&quot;&gt;Save-to-the-Wayback-Machine&lt;&#x2F;a&gt; - A browser extension that allow you to save the webpage to wayback machine&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;tags:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Notes&lt;&#x2F;li&gt;
-&lt;li&gt;Browser&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;Curating awesome browsers.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;browser&quot;&gt;Browser&lt;a class=&quot;zola-anchor&quot; href=&quot;#browser&quot; aria-label=&quot;Anchor link for: browser&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2468,6 +2460,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;&quot;&gt;Bazarr Setup&lt;&#x2F;a&gt; - Subtitle manager&lt;&#x2F;li&gt;
 &lt;li&gt;[subtitles translate](https:&#x2F;&#x2F;translate-s ubtitles.com&#x2F;) - Google translate subtitles&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;subhd.tv&#x2F;&quot;&gt;Subhd&lt;&#x2F;a&gt; - Best Chinese subtitle&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;savesubs.com&#x2F;&quot;&gt;Youtube 字幕下载&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;lu-xing-shou-xu&quot;&gt;旅行手续&lt;a class=&quot;zola-anchor&quot; href=&quot;#lu-xing-shou-xu&quot; aria-label=&quot;Anchor link for: lu-xing-shou-xu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
