@@ -47,6 +47,8 @@ taxonomies:
 
 ## 未分类
 
+> 小偷认为每个人都偷东西。 -- 丹麦谚语
+
 > 这个俄罗斯中年女人非常善于感知孩子们何时对她撒谎，但当她看俄罗斯电视时，这些本能似乎抛弃了她。 -- [经济学人](https://www.economist.com/1843/2022/04/22/the-russian-elite-doesnt-seem-to-care-about-the-invasion-of-ukraine)
 
 > 男孩们被教导不要问问题，因为寻求帮助会表明缺乏领导力，所以“真正的男人”从来不会问路。任何曾经坐过男人车的女人都知道兜圈子却死活不问路的痛苦。 -- For the Love of Men
