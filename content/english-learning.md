@@ -49,6 +49,7 @@ taxonomies:
 - [TED ed](https://ed.ted.com/lessons?direction=desc&sort=featured-position&user_by_click=student)
 - [频率词典](https://www.routledge.com/Routledge-Frequency-Dictionaries/book-series/RFD)
 - [多种免费英语课程资源](https://www.reddit.com/r/language_exchange/comments/dcaeq2/all_websites_for_finding_free_language_courses/)
+- [英语频率排序列表](https://frequencylist.com/)
 
 ## 聊天室
 
@@ -150,6 +151,8 @@ taxonomies:
 - There's a wonderful line I came across -> There's a wonderful quote I found
 - My girlfriend is on her period.
 - Tens of millions of Chinese are currently unable to leave their homes. All face being taken to isolation centres, should they test positive or be declared close contacts of a virus-carrier. A grim fate for anyone, centralised quarantine is terrifying for pet-owners, who must scramble to find a shelter or someone to foster their animals. If they fail, the creatures may starve in an empty flat or—as has happened in several cities—be bludgeoned to death by workers sent to disinfect homes.
+- Never that will happen.
+- Do you often work overtime in your company?
 
 ## Chat Topics
 
