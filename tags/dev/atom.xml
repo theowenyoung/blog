@@ -906,6 +906,7 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sveltejs&#x2F;kit&quot;&gt;svelte kit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;htmx.org&#x2F;&quot;&gt;HTMX&lt;&#x2F;a&gt; - low js, html to js&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;hui-zong-zi-yuan&quot;&gt;汇总资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#hui-zong-zi-yuan&quot; aria-label=&quot;Anchor link for: hui-zong-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -923,6 +924,10 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mholt&#x2F;PapaParse&quot;&gt;PapaParse&lt;&#x2F;a&gt; - 解析 CSV 文件&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;readability&quot;&gt;Mozilla 的网页可读性库，网页纯文本&lt;&#x2F;a&gt; - #readability&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;algorithms&quot;&gt;Algorithms&lt;a class=&quot;zola-anchor&quot; href=&quot;#algorithms&quot; aria-label=&quot;Anchor link for: algorithms&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=JgWm6sQwS_I&quot;&gt;youtube js algorithms crash course&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
