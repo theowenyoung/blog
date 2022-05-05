@@ -83,3 +83,9 @@ Jose Saramago, Blindness.
 China Mieville, The City and the City.
 
 J.M. Coetzee, Disgrace.
+
+## abortion
+
+(a) By law, abortion should never be permitted. (b) The law should permit abortion only in case of rape, incest, or when the woman’s life is in danger. (c) The law should permit abortion for reasons other than rape, incest, or danger to the woman’s life, but only after the need for the abortion has been clearly established. (d) By law, a woman should always be able to obtain an abortion as a matter of personal choice. (e) Other.
+
+Today I known discord is a word that has a meaning. it means Disagreement

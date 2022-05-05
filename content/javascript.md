@@ -45,6 +45,7 @@ taxonomies:
 - [svelte](https://github.com/sveltejs/svelte) - Cybernetically enhanced web apps
   - [sapper](https://github.com/sveltejs/sapper) - The next small thing in web development, powered by Svelte
   - [svelte kit](https://github.com/sveltejs/kit)
+- [HTMX](https://htmx.org/) - low js, html to js
 
 ## 汇总资源
 
@@ -62,3 +63,7 @@ taxonomies:
 
 - [PapaParse](https://github.com/mholt/PapaParse) - 解析 CSV 文件
 - [Mozilla 的网页可读性库，网页纯文本](https://github.com/mozilla/readability) - #readability
+
+## Algorithms
+
+- [youtube js algorithms crash course](https://www.youtube.com/watch?v=JgWm6sQwS_I)
