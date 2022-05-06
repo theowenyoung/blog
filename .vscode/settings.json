@@ -20,5 +20,8 @@
     "pasteImage.path": "${projectRoot}/attachments",
     "pasteImage.showFilePathConfirmInputBox": true,
     "prettier.singleQuote": false,
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": true,
     
 }

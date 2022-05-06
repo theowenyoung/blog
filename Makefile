@@ -1,4 +1,4 @@
-.Phony: serve build build-linux
+.Phony: serve build build-linux test
 
 serve:
 	./bin/zola serve
@@ -8,3 +8,6 @@ build:
 
 build-linux:
 	./bin/linux-zola build
+
+test:
+	Deno test
