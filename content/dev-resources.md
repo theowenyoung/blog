@@ -1,7 +1,7 @@
 ---
 title: 开发相关的资源汇总
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-05-07
 taxonomies:
   categories:
     - Notes
@@ -415,3 +415,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## SVG
 
 - [SVG 图像入门教程 - 阮一峰的网络日志](https://www.ruanyifeng.com/blog/2018/08/svg.html)
+
+## 计算机教程
+
+- [CS50 针对律师的计算机课程](https://cs50.harvard.edu/law/2019/) - 哈佛大学的教授出品，课程设计的很好，非常适合计算机基础学习
