@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/dev/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-25T00:00:00+00:00</updated>
+	<updated>2022-05-07T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/dev/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>开发相关的资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-05-07T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-resources/</id>
 		<content type="html">&lt;p&gt;收集开发相关的资源。&lt;&#x2F;p&gt;
@@ -402,6 +402,10 @@
 &lt;h2 id=&quot;svg&quot;&gt;SVG&lt;a class=&quot;zola-anchor&quot; href=&quot;#svg&quot; aria-label=&quot;Anchor link for: svg&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2018&#x2F;08&#x2F;svg.html&quot;&gt;SVG 图像入门教程 - 阮一峰的网络日志&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ji-suan-ji-jiao-cheng&quot;&gt;计算机教程&lt;a class=&quot;zola-anchor&quot; href=&quot;#ji-suan-ji-jiao-cheng&quot; aria-label=&quot;Anchor link for: ji-suan-ji-jiao-cheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cs50.harvard.edu&#x2F;law&#x2F;2019&#x2F;&quot;&gt;CS50 针对律师的计算机课程&lt;&#x2F;a&gt; - 哈佛大学的教授出品，课程设计的很好，非常适合计算机基础学习&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
