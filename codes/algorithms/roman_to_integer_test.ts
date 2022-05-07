@@ -26,9 +26,9 @@ const hash = {
   MMMCMXCIX: 3999,
 };
 for (const [key, value] of Object.entries(hash)) {
-  // Deno.test(`roman ${key} to integer ${value}`, () => {
-  //   assertEquals(romanToInteger(key), value);
-  // });
+  Deno.test(`roman ${key} to integer ${value}`, () => {
+    assertEquals(romanToInteger(key), value);
+  });
   Deno.test(`integer ${value} to roman ${key}`, () => {
     assertEquals(integerToRoman(value), key);
   });
@@ -37,4 +37,9 @@ for (const [key, value] of Object.entries(hash)) {
 Deno.test(`integer 5100 to roman should throw exception`, () => {
   const resultFunction = () => integerToRoman(5100);
   assertThrows(resultFunction, Error, "Number must be between 1 and 3999");
+});
+
+Deno.test(`invalid roman should throw exception`, () => {
+  const resultFunction = () => romanToInteger("TT");
+  assertThrows(resultFunction, Error, "Invalid roman");
 });
