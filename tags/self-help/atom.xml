@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>Owen Young&#x27;s Blog - Self-Help</title>
-	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Self-Help</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
 	<link href="https://www.owenyoung.com/tags/self-help/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2022-04-26T02:19:51+08:00</updated>
 	<id>https://www.owenyoung.com/tags/self-help/atom.xml</id>
-	<entry xml:lang="en">
-		<title>12 Rules for Life</title>
+	<entry xml:lang="zh">
+		<title>12条生活法则</title>
 		<published>2022-04-26T02:19:51+08:00</published>
 		<updated>2022-04-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/books/12-rules-for-life/" type="text/html"/>
-		<id>https://www.owenyoung.com/en/blog/books/12-rules-for-life/</id>
-		<content type="html">&lt;p&gt;I know this book from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8wLCmDtCDAM&quot;&gt;this video&lt;&#x2F;a&gt;, but actually it’s not my type. It’s basically based by experience not by science.&lt;&#x2F;p&gt;
-&lt;p&gt;The best part is the foreword. But it’s not written by the author. Maybe I should read some books written by this guy.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;quotes&quot;&gt;Quotes&lt;&#x2F;h2&gt;
+		<link href="https://www.owenyoung.com/blog/books/12-rules-for-life/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/books/12-rules-for-life/</id>
+		<content type="html">&lt;p&gt;从&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8wLCmDtCDAM&quot;&gt;这个视频&lt;&#x2F;a&gt;中知道的这本书，但实际上它不是我喜欢的类型。基本上是以经验为基础，而不是以科学为基础的想法。&lt;&#x2F;p&gt;
+&lt;p&gt;最好的部分是前言。但它不是由作者写的。也许我应该读一些写前言的哥们写的书。&lt;&#x2F;p&gt;
+&lt;p&gt;另外摘抄了一些英文原文在&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;books&#x2F;12-rules-for-life&#x2F;&quot;&gt;English Version&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;zhai-chao&quot;&gt;摘抄&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhai-chao&quot; aria-label=&quot;Anchor link for: zhai-chao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Ideologies are simple ideas, disguised as science or philosophy, that purport to explain the complexity of the world and offer remedies that will perfect it. Ideologues are people who pretend they know how to “make the world a better place” before they’ve taken care of their own chaos within. (The warrior identity that their ideology gives them covers over that chaos.)&lt;&#x2F;p&gt;
-&lt;p&gt;Ideologies are substitutes for true knowledge, and ideologues are always dangerous when they come to power, because a simple-minded I-know-it-all approach is no match for the complexity of existence. Furthermore, when their social contraptions fail to fly, ideologues blame not themselves but all who see through the simplifications.&lt;&#x2F;p&gt;
+&lt;p&gt;意识形态是伪装成科学或哲学的理论，声称要解释世界的复杂性，并提供能够完善世界的补救措施。这些理论家是那种连自己内心的混乱都没有处理好，却假装自己知道如何 “让世界变得更好”。(他们的意识形态所赋予他们的战士身份，掩盖了这种内心的混乱）。意识形态被称为是真理的替代品，但是让这些理论家掌权反而非常危险，因为对于这个复杂的现实来说，根本就不存在一个简单，适合所有情况的理论。而当这些理论家的社会失败时，他们责怪的不是他们自己，而是所有批评这种意识形态的人。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;in the deepest part of our psyche, we all want to be judged.&lt;&#x2F;p&gt;
+&lt;p&gt;意识形态其实批了一层他们声称要取代的宗教的外衣，只是消除了叙事和心理上的丰富性。比如共产主义借用了出埃及记的故事，有一个被奴役的阶级，富有的迫害者，一个像列宁一样的领袖，他到国外，生活在奴役者中间，然后带领被奴役者到应许之地（乌托邦；无产阶级专政）。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;the fact that the meaning of life without positive value is not simply neutral. Because we are vulnerable and mortal, pain and anxiety are an integral part of human existence. We must have something to set against the suffering that is intrinsic to Being. We must have the meaning inherent in a profound system of value or the horror of existence rapidly becomes paramount. Then, nihilism beckons, with its hopelessness and despair.&lt;&#x2F;p&gt;
+&lt;p&gt;如今，后现代主义左派还声称，一个群体的道德只不过是它对另一个群体行使权力的企图。因此，做一件体面的事情–一旦你和你的社会的“道德价值观”变得多么任意–就会对那些想法不同、来自不同背景的人表现出宽容。对宽容的强调是至高无上的，以至于对许多人来说，一个人最糟糕的性格缺陷之一就是“判断力”。既然我们不知道是非，也不知道什么是好的，成年人所能做的最不合适的事情就是给年轻人提供如何生活的建议。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;培养对美德和恶之间区别的判断是智慧的开始，永远不会过时。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;苏格拉底对这些相互冲突的道德准则的认识所孕育的不确定性做出反应，决定不变成虚无主义者，道德相对主义者或提出某种意识形态，而是将自己的一生奉献给寻找可以解释这些差异的智慧，即：他帮助发明了哲学。他一生都在问一些令人困惑的基本问题，比如“什么是美德？”和“一个人怎样才能过上美好的生活？”和“什么是正义？”，他研究了不同的方法，问哪些方法似乎最连贯，最符合人性。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也许在我們心靈的最深處，我們都希望被評判。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因为我们是脆弱和凡人，痛苦和焦虑是人类生存的一个组成部分。我们必须有一些东西来对抗存在固有的痛苦。我们必须拥有深刻的价值体系所固有的意义，否则存在的恐怖就会迅速变得至高无上。然后，我们就会堕入到虚无主义中。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 </content>
 	</entry>
