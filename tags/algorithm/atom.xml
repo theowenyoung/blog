@@ -21,6 +21,10 @@
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone git@github.com:theowenyoung&#x2F;blog.git
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;deno&lt;&#x2F;span&gt;&lt;span&gt; test
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problem-list&#x2F;top-interview-questions&#x2F;&quot;&gt;Top Interview Questions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;.&#x2F;sort_test.ts&quot;&gt;Sort&lt;&#x2F;a&gt;
@@ -39,6 +43,12 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;binary-search&#x2F;&quot;&gt;Binary Search&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;binary_search_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;first-bad-version&#x2F;&quot;&gt;First Bad Version&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;first_bad_version_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;search-insert-position&#x2F;&quot;&gt;Search Insert Position&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;search_insert_position_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;palindrome-linked-list&#x2F;&quot;&gt;Palindrome Linked List&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;palindrome_linked_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;fizz-buzz&#x2F;&quot;&gt;Fizz Buzz&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;fizz_buzz_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;middle-of-the-linked-list&#x2F;&quot;&gt;Middle of the Linked List&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;middle_of_the_linked_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;the-k-weakest-rows-in-a-matrix&#x2F;&quot;&gt;The K Weakest Rows in a Matrix&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;the_k_weakest_rows_in_a_matrix_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;number-of-steps-to-reduce-a-number-to-zero&#x2F;&quot;&gt;Number of Steps to Reduce a Number to Zero&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;number_of_steps_to_reduce_a_number_to_zero_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;richest-customer-wealth&#x2F;&quot;&gt;Richest Customer Wealth&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;richest_customer_wealth_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
