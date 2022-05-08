@@ -26,6 +26,10 @@ git clone git@github.com:theowenyoung/blog.git
 deno test
 ```
 
+## Resources
+
+- [Top Interview Questions](https://leetcode.com/problem-list/top-interview-questions/)
+
 ## List
 
 - [Sort](./sort_test.ts)
@@ -41,3 +45,9 @@ deno test
 - [Binary Search](https://leetcode.com/problems/binary-search/) - [Answer](./binary_search_test.ts)
 - [First Bad Version](https://leetcode.com/problems/first-bad-version/) - [Answer](./first_bad_version_test.ts)
 - [Search Insert Position](https://leetcode.com/problems/search-insert-position/) - [Answer](./search_insert_position_test.ts)
+- [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) - [Answer](./palindrome_linked_list_test.ts)
+- [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) - [Answer](./fizz_buzz_test.ts)
+- [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) - [Answer](./middle_of_the_linked_list_test.ts)
+- [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) - [Answer](./the_k_weakest_rows_in_a_matrix_test.ts)
+- [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) - [Answer](./number_of_steps_to_reduce_a_number_to_zero_test.ts)
+- [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) - [Answer](./richest_customer_wealth_test.ts)
