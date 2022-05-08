@@ -9,11 +9,17 @@ taxonomies:
     - Algorithm
 ---
 
-Save [some algorithm problems](https://leetcode.com/problemset/all/) solutions to [here](https://github.com/theowenyoung/blog/tree/main/content/algorithms). I'll use Typscript to write codes, and use `deno test` to test the codes.
+When I saw Leetcode on the timeline, I thought you guys were so "cult"...
+
+Until I started doing Leetcode problems myself - "Damn it's super fun just to solve the problems, the daily intellectual challenge is the new fun every day!"
+
+So now I'm starting to save [these algorithm problems'](https://leetcode.com/problemset/all/) solutions to [here](https://github.com/theowenyoung/blog/tree/main/content/algorithms).
+
+I solve these problems in Typescript , and add a few unit tests with Deno, perfect! Don't know if I'll ever get the chance to do the whole thing in this lifetime.
 
 <!-- more -->
 
-## Test
+## Usage
 
 ```bash
 git clone git@github.com:theowenyoung/blog.git
