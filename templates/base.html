@@ -166,7 +166,11 @@
 
           {% block sidebar %}
           <aside class="sidebar px">
-
+          <div class="pt">
+            <a class="{% if lang=='zh' -%}muted{% endif -%}" href="/">中</a><span class="divider">/</span>
+            <a class="{% if lang=='en' -%}muted{% endif -%}" href="/en/">EN</a>
+            
+          </div>
           <h2><a class="no-underline" href="{{lang_prefix_path}}categories/">{{ trans(key="label_categories",lang=lang) }}</h2></a>
           <ul>
             {% set categories = get_taxonomy(kind="categories",lang=lang) %} {% for cat in

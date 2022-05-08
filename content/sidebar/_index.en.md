@@ -7,7 +7,6 @@ updated: 2022-04-04
 ## Impornant Links
 
 - [RSS Feed](/en/atom.xml)
-- [中文博客](/)
 
 ## About
 
