@@ -39,5 +39,5 @@ deno test
 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Answer](./add_two_numbers_test.ts)
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) - [Answer](./longest_substring_without_repeating_characters_test.ts)
 - [Binary Search](https://leetcode.com/problems/binary-search/) - [Answer](./binary_search_test.ts)
-- [First Bad Version](https://leetcode.com/problems/first-bad-version/ - [Answer](./first_bad_version_test.ts)
+- [First Bad Version](https://leetcode.com/problems/first-bad-version/) - [Answer](./first_bad_version_test.ts)
 - [Search Insert Position](https://leetcode.com/problems/search-insert-position/) - [Answer](./search_insert_position_test.ts)
