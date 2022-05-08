@@ -9,7 +9,7 @@ taxonomies:
     - Algorithm
 ---
 
-Save some algorithm practice [here](https://github.com/theowenyoung/blog/tree/main/codes/algorithms). I'll use Typscript to write codes, and use `deno test` to test the codes.
+Save [some algorithm problems](https://leetcode.com/problemset/all/) solutions to [here](https://github.com/theowenyoung/blog/tree/main/codes/algorithms). I'll use Typscript to write codes, and use `deno test` to test the codes.
 
 <!-- more -->
 
@@ -28,5 +28,6 @@ deno test
 - [Quick Sort](./quick_sort.ts)
 - [Merge Sort](./merge_sort.ts)
 - [Roman to Integer](./roman_to_integer.ts)
-- [Two Sum](./two_sum.ts) - [Question](https://leetcode.com/problems/add-two-numbers/)
-- [Add Two Numbers](./add_two_numbers.ts) - [Question](https://leetcode.com/problems/add-two-numbers/)
+- [Two Sum](https://leetcode.com/problems/two-sum/) - [Answer](./two_sum.ts)
+- [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Answer](./add_two_numbers.ts)
+- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) - [Answer](./longest_substring_without_repeating_characters.ts)
