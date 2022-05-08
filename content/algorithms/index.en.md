@@ -9,7 +9,7 @@ taxonomies:
     - Algorithm
 ---
 
-Save [some algorithm problems](https://leetcode.com/problemset/all/) solutions to [here](https://github.com/theowenyoung/blog/tree/main/codes/algorithms). I'll use Typscript to write codes, and use `deno test` to test the codes.
+Save [some algorithm problems](https://leetcode.com/problemset/all/) solutions to [here](https://github.com/theowenyoung/blog/tree/main/content/algorithms). I'll use Typscript to write codes, and use `deno test` to test the codes.
 
 <!-- more -->
 
