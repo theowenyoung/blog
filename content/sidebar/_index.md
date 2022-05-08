@@ -8,7 +8,6 @@ updated: 2022-04-04
 
 - [邮件订阅](https://digests.owenyoung.com/)
 - [RSS 订阅地址](/atom.xml)
-- [English Blog](/en/)
 
 ## 关于
 
