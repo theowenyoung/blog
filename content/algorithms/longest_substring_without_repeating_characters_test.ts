@@ -1,6 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.138.0/testing/asserts.ts";
 function lengthOfLongestSubstring(s: string): number {
-  const arr = s.split("https://deno.land/std@0.138.0/testing/asserts.ts");
+  const arr = s.split("");
   let longest = 0;
   const set: Set<string> = new Set();
   for (let i = 0; i < arr.length; i++) {

@@ -51,3 +51,8 @@ deno test
 - [The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/) - [Answer](./the_k_weakest_rows_in_a_matrix_test.ts)
 - [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) - [Answer](./number_of_steps_to_reduce_a_number_to_zero_test.ts)
 - [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) - [Answer](./richest_customer_wealth_test.ts)
+- [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) - [Answer](./median_of_two_sorted_arrays_test.ts)
+- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - [Answer](./longest_palindromic_substring_test.ts)
+- [Reverse Integer](https://leetcode.com/problems/reverse-integer/) - [Answer](./reverse_integer_test.ts)
+- [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) - [Answer](./squares_of_a_sorted_array_test.ts)
+- [Rotate Array](https://leetcode.com/problems/rotate-array/) - [Answer](./rotate_array_test.ts)
