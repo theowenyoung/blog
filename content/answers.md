@@ -47,6 +47,7 @@ taxonomies:
 
 - [什么东西疯狂流行而你却毫无兴趣？](https://www.reddit.com/r/AskReddit/comments/pguqh1/what_is_something_crazy_popular_that_you_have_no/)
 - [你对过去的互联网有什么怀念？](https://www.reddit.com/r/AskReddit/comments/pgqeq8/what_do_you_miss_about_the_internet_of_the_past/)
+- [你们国家有什么奇怪的传统？](https://www.reddit.com/r/TellMeAFact/comments/emukdw/tmaf_about_weird_traditions_in_your_country/)
 
 ## 预测
 

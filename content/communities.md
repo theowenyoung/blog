@@ -1,7 +1,7 @@
 ---
 title: 收集一些有意思的社区
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-05-10
 taxonomies:
   categories:
     - Notes
@@ -36,6 +36,7 @@ taxonomies:
 ## 问题
 
 - [TooAfraidToAsk reddit 小组](https://www.reddit.com/r/TooAfraidToAsk/) - 太害怕而不敢问的问题，各种政治不正确的问题
+- [告诉我事实 reddit 小组](https://www.reddit.com/r/TellMeAFact) - 回答必须附带来源
 
 ## 关系建议
 
