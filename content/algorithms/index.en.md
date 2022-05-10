@@ -56,3 +56,8 @@ deno test
 - [Reverse Integer](https://leetcode.com/problems/reverse-integer/) - [Answer](./reverse_integer_test.ts)
 - [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) - [Answer](./squares_of_a_sorted_array_test.ts)
 - [Rotate Array](https://leetcode.com/problems/rotate-array/) - [Answer](./rotate_array_test.ts)
+- [Move Zeroes](https://leetcode.com/problems/move-zeroes/) - [Answer](./move_zeroes_test.ts)
+- [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) - [Answer](./two_sum_ii_input_array_is_sorted_test.ts)
+- [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) - [Answer](./string_to_integer_atoi_test.ts)
+- [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) - [Answer](./container_with_most_water_test.ts)
+- [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) - [Answer](./longest_common_prefix_test.ts)
