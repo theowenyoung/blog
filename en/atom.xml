@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/en/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-05-08T06:17:19+08:00</updated>
+	<updated>2022-05-10T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/en/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Solve Algorithms</title>
@@ -94,11 +94,14 @@
 	<entry xml:lang="en">
 		<title>Quotes</title>
 		<published>2022-04-25T00:00:00+00:00</published>
-		<updated>2022-04-25T00:00:00+00:00</updated>
+		<updated>2022-05-10T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/quotes/</id>
 		<content type="html">&lt;p&gt;Quotes.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;quotes&quot;&gt;Quotes&lt;a class=&quot;zola-anchor&quot; href=&quot;#quotes&quot; aria-label=&quot;Anchor link for: quotes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Democracy and capitalism are 100% unrelated to each other. Democracy is a form of government, capitalism is an economic system. You can have Fascist Capitalists(China), Fascist Mercantilists(US Republicans), Fascist Socialism(the USSR), Democratic Capitalists(most Americans), Democratic Mercantilists(The British), Democratic Socialism(Bernie Sanders types in the US; many of the Nordics), and a whole host of things in between. Democracy and Capitalism are two separate axes creating a plane, rather than two sides of the same axis. – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;Ask_Politics&#x2F;comments&#x2F;uleb6a&#x2F;comment&#x2F;i7xh2x0&#x2F;?utm_source=reddit&amp;amp;utm_medium=web2x&amp;amp;context=3&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;In Indonesia, there are anti-democratic groups. They really admire the Taliban. We want that group to be exchanged for people like you so that the Taliban get people who love them and Indonesia gets people who are pro-democracy. – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=AMH4gflo4_Y&quot;&gt;Kurasha Takada&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
