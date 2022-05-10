@@ -1,7 +1,7 @@
 ---
 title: Quotes
 date: 2022-04-25
-updated: 2022-04-25
+updated: 2022-05-10
 taxonomies:
   categories:
     - Notes
@@ -14,6 +14,8 @@ Quotes.
 <!-- more -->
 
 ## Quotes
+
+> Democracy and capitalism are 100% unrelated to each other. Democracy is a form of government, capitalism is an economic system. You can have Fascist Capitalists(China), Fascist Mercantilists(US Republicans), Fascist Socialism(the USSR), Democratic Capitalists(most Americans), Democratic Mercantilists(The British), Democratic Socialism(Bernie Sanders types in the US; many of the Nordics), and a whole host of things in between. Democracy and Capitalism are two separate axes creating a plane, rather than two sides of the same axis. -- [reddit comment](https://www.reddit.com/r/Ask_Politics/comments/uleb6a/comment/i7xh2x0/?utm_source=reddit&utm_medium=web2x&context=3)
 
 > In Indonesia, there are anti-democratic groups. They really admire the Taliban. We want that group to be exchanged for people like you so that the Taliban get people who love them and Indonesia gets people who are pro-democracy. -- [Kurasha Takada](https://www.youtube.com/watch?v=AMH4gflo4_Y)
 
