@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-05-11
 taxonomies:
   categories:
     - Notes
@@ -207,3 +207,4 @@ taxonomies:
 ## 视频
 
 - [Vox](https://www.youtube.com/c/Vox/featured) - Youtube 上的一个分享各种各样事情解释的博主，比如塔利班，比如新冠病毒等等，视频质量非常高。
+- [Good Vids](https://www.goodvids.so/) - 通过你的推特 Twitter 好友，找到推荐的视频 Videos
