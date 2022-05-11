@@ -54,3 +54,7 @@ taxonomies:
 ## 免费电子书
 
 - [从头开始理解计算机网络](https://www.networksfromscratch.com/)
+
+## 帖子
+
+- [推荐有关革命。骚乱。地下运动。内乱。分裂的社会的书籍？](https://www.reddit.com/r/suggestmeabook/comments/umi2gl/revolution_riots_underground_movements_civil/)
