@@ -70,6 +70,9 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;merge-k-sorted-lists&#x2F;&quot;&gt;Merge k Sorted Lists&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;merge_k_sorted_lists_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;remove-duplicates-from-sorted-array&#x2F;&quot;&gt;Remove Duplicates from Sorted Array&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;remove_duplicates_from_sorted_array_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;implement-strstr&#x2F;&quot;&gt;Implement strStr()&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;implement_strstr_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;permutation-in-string&#x2F;&quot;&gt;Permutation in String&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;permutation_in_string_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;build_max_heap_test.ts&quot;&gt;Build Max Heap&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;flood-fill&#x2F;&quot;&gt;Flood Fill&lt;&#x2F;a&gt; - &lt;a href=&quot;.&#x2F;flood_fill_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
