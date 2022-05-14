@@ -72,3 +72,6 @@ deno test
 - [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) - [Answer](./merge_k_sorted_lists_test.ts)
 - [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) - [Answer](./remove_duplicates_from_sorted_array_test.ts)
 - [Implement strStr()](https://leetcode.com/problems/implement-strstr/) - [Answer](./implement_strstr_test.ts)
+- [Permutation in String](https://leetcode.com/problems/permutation-in-string/) - [Answer](./permutation_in_string_test.ts)
+- [Build Max Heap](./build_max_heap_test.ts)
+- [Flood Fill](https://leetcode.com/problems/flood-fill/) - [Answer](./flood_fill_test.ts)
