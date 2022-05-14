@@ -4,7 +4,7 @@ sort_direction: "decending"
 insert_anchor_links: "right"
 ---
 
-## 以下是我的一些热门笔记
+## 热门笔记
 
 - [读书笔记](/content/blog/books/_index.md)
 - [探索互联网上高质量的内容](/content/sources.md)
