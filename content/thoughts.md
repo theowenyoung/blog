@@ -6,7 +6,7 @@ date: 2022-03-10
 updated: 2022-05-15
 taxonomies:
   categories:
-    - Random
+    - Notes
   tags:
     - Tweets
 ---
