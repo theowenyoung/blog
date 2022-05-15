@@ -25,6 +25,10 @@ taxonomies:
 
 - [Narrative](https://www.narrativesproject.com/) - 非营利组织，温和新闻观点，致力于提供温和的立场
 
+## Data
+
+- [Pew Research Center](https://www.pewresearch.org/) - 统计数据，调查问卷分析研究
+
 ## 中文独立媒体
 
 - [thenewslens](https://www.thenewslens.com/) - Taiwan indie media
