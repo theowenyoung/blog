@@ -36,3 +36,4 @@ taxonomies:
   - [邪恶问题](https://en.wikipedia.org/wiki/Problem_of_evil#cite_note-2009Meister-39)
   - [伊斯兰进步主义](https://en.wikipedia.org/wiki/Liberalism_and_progressivism_within_Islam#:~:text=Liberalism%20and%20progressivism%20within%20Islam%20involve%20professed%20Muslims%20who%20have,%2DIsl%C4%81m%20at%2Dtaqaddum%C4%AB).)
 - [言论自由](https://en.wikipedia.org/wiki/Freedom_of_speech)
+- [斯威士兰](https://en.wikipedia.org/wiki/Eswatini) - 非洲的绝对君主统治的国家
