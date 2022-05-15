@@ -93,6 +93,10 @@ taxonomies:
 
 - [纯文本记账](https://plaintextaccounting.org/)
 
+## 中国
+
+- [调查报告：美国人怎么看待中国？](https://www.pewresearch.org/global/2021/06/30/most-americans-have-cold-views-of-china-heres-what-they-think-about-china-in-their-own-words/)
+
 ## 抑郁症
 
 ## 文章
