@@ -29,10 +29,10 @@ function connect(root: Node | null): Node | null {
 
     while (lineNode) {
       lineNode!.left!.next = lineNode!.right;
-      console.log("lineNode.next", lineNode!.next);
+      // console.log("lineNode.next", lineNode!.next);
 
-      if (!lineNode!.next) {
-        console.log("lineNode.next", lineNode!.next);
+      if (lineNode!.next) {
+        // console.log("lineNode.next", lineNode!.next);
 
         lineNode!.right!.next = lineNode!.next!.left;
       } else {
