@@ -13,6 +13,10 @@ Curating opnions and things about China.
 
 <!-- more -->
 
+## Articles
+
+- [A Teacher in China Learns the Limits of Free Expression](https://www.newyorker.com/magazine/2022/05/16/a-teacher-in-china-learns-the-limits-of-free-expression)
+
 ## Videos
 
 - [Why India is Better than China](https://www.youtube.com/watch?v=9avzTVVjnZw) - The most knowledgeable foreigner in China I have seen so far, about the censorship, and dishonest in China.
