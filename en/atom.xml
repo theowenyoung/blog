@@ -5,8 +5,21 @@
 	<link href="https://www.owenyoung.com/en/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-05-15T14:32:20+08:00</updated>
+	<updated>2022-05-16T12:11:23+08:00</updated>
 	<id>https://www.owenyoung.com/en/atom.xml</id>
+	<entry xml:lang="en">
+		<title>About China</title>
+		<published>2022-05-16T12:11:23+08:00</published>
+		<updated>2022-05-16T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/china/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/china/</id>
+		<content type="html">&lt;p&gt;Curating opnions and things about China.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;videos&quot;&gt;Videos&lt;a class=&quot;zola-anchor&quot; href=&quot;#videos&quot; aria-label=&quot;Anchor link for: videos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9avzTVVjnZw&quot;&gt;Why India is Better than China&lt;&#x2F;a&gt; - The most knowledgeable foreigner in China I have seen so far, about the censorship, and dishonest in China.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>About The Netherlands</title>
 		<published>2022-05-15T14:32:20+08:00</published>
