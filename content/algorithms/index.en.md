@@ -79,3 +79,5 @@ deno test
 - [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/submissions/) - [Answer](./merge_two_binary_trees_test.ts)
 - [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) - [Answer](./populating_next_right_pointers_in_each_node_test.ts)
 - [01 Matrix](https://leetcode.com/problems/01-matrix/) - [Answer](./01_matrix_test.ts)
+- [Fibonacci](./fibonacci_test.ts)
+- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [Answer](./reverse_linked_list_test.ts)
