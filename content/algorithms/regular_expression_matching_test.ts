@@ -29,8 +29,10 @@ function isMatch(s: string, p: string): boolean {
   // Empty string and empty pattern are a match
   dp[0][0] = true;
   // Deals with patterns with *
+  // when string is empty
   for (let i = 1; i < columns + 1; i++) {
-    if (p[i - 1] === "*") {
+    const currentPatternChar = p[i - 1];
+    if (currentPatternChar === "*") {
       dp[0][i] = dp[0][i - 2];
     } else {
       dp[0][i] = false;
@@ -39,19 +41,29 @@ function isMatch(s: string, p: string): boolean {
   // For remaining characters
   for (let i = 1; i < rows + 1; i++) {
     for (let j = 1; j < columns + 1; j++) {
-      if (p[j - 1] === "*") {
-        if (p[j - 2] === s[i - 1] || p[j - 2] === ".") {
-          dp[i][j] = dp[i][j - 2] || dp[i - 1][j];
-        } else {
-          dp[i][j] = dp[i][j - 2];
-        }
-      } else if (p[j - 1] === s[i - 1] || p[j - 1] === ".") {
+      const currentPatternChar = p[j - 1];
+      const lastPatternChat = p[j - 2];
+      const currentTextChar = s[i - 1];
+      if (
+        currentPatternChar === currentTextChar ||
+        currentPatternChar === "."
+      ) {
         dp[i][j] = dp[i - 1][j - 1];
+      } else if (currentPatternChar === "*") {
+        dp[i][j] = dp[i][j - 2];
+
+        if (lastPatternChat === currentTextChar || lastPatternChat === ".") {
+          // first case, when currentTextChat is exist
+          // TODO what does this mean? dp[i - 1][j]
+          dp[i][j] = dp[i][j] || dp[i - 1][j];
+        }
       } else {
         dp[i][j] = false;
       }
     }
   }
+  console.log("dp", dp);
+
   return dp[rows][columns];
 }
 
@@ -70,4 +82,14 @@ Deno.test("isMatch 4", () => {
 });
 Deno.test("isMatch 5", () => {
   assertEquals(isMatch("mississippi", "mis*is*p*."), false);
+});
+
+Deno.test("is Match 6", () => {
+  assertEquals(isMatch("aaa", "ab*a*c*a"), true);
+});
+Deno.test("is Match 7", () => {
+  assertEquals(isMatch("aa", "ab*"), false);
+});
+Deno.test("is Match 8", () => {
+  assertEquals(isMatch("aa", "aa*"), true);
 });
