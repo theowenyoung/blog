@@ -1,7 +1,7 @@
 ---
 title: Solve Algorithms
 date: 2022-05-08T06:17:19+08:00
-updated: 2022-05-08
+updated: 2022-05-19
 taxonomies:
   categories:
     - Notes
@@ -85,3 +85,6 @@ deno test
 - [Combinations](https://leetcode.com/problems/combinations/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/combinations_test.ts)
 - [Permutations](https://leetcode.com/problems/permutations/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/permutations_test.ts)
 - [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/letter_case_permutation_test.ts)
+- [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/climbing_stairs_test.ts)
+- [House Robber](https://leetcode.com/problems/house-robber/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/house_robber_test.ts)
+- [Triangle](https://leetcode.com/problems/triangle/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/triangle_test.ts)
