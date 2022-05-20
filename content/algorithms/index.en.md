@@ -88,3 +88,5 @@ deno test
 - [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/climbing_stairs_test.ts)
 - [House Robber](https://leetcode.com/problems/house-robber/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/house_robber_test.ts)
 - [Triangle](https://leetcode.com/problems/triangle/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/triangle_test.ts)
+- [Power of Two](https://leetcode.com/problems/power-of-two/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/power_of_two_test.ts)
+- [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_1_bits_test.ts)
