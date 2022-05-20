@@ -42,6 +42,7 @@ taxonomies:
 - [Bing 翻译](https://www.bing.com/Translator) - 发音最好的翻译，甚至提供了文言文翻译
   - [Deepl 翻译](https://www.deepl.com/en/translator) - 相对最准确的翻译
   - [腾讯翻译](https://fanyi.qq.com/) - 也比较准确
+- [English Vocabulary game](https://jklm.fun/) - 英文游戏，拼单词
 
 ## 资源
 
