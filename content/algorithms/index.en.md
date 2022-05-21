@@ -1,7 +1,7 @@
 ---
 title: Solve Algorithms
 date: 2022-05-08T06:17:19+08:00
-updated: 2022-05-19
+updated: 2022-05-21
 taxonomies:
   categories:
     - Notes
@@ -79,7 +79,7 @@ deno test
 - [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/submissions/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/merge_two_binary_trees_test.ts)
 - [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/populating_next_right_pointers_in_each_node_test.ts)
 - [01 Matrix](https://leetcode.com/problems/01-matrix/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/01_matrix_test.ts)
-- [Fibonacci](https://github.com/theowenyoung/blog/blob/main/content/algorithms/fibonacci_test.ts)
+- [Fibonacci](https://leetcode.com/problems/fibonacci-number/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/fibonacci_test.ts)
 - [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/reverse_linked_list_test.ts)
 - [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/rotting_oranges_test.ts)
 - [Combinations](https://leetcode.com/problems/combinations/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/combinations_test.ts)
@@ -90,3 +90,10 @@ deno test
 - [Triangle](https://leetcode.com/problems/triangle/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/triangle_test.ts)
 - [Power of Two](https://leetcode.com/problems/power-of-two/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/power_of_two_test.ts)
 - [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_1_bits_test.ts)
+- [Reverse Bits](https://leetcode.com/problems/reverse-bits/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/reverse_bits_test.ts)
+- [Single Number](https://leetcode.com/problems/single-number/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/single_number_test.ts)
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximum_subarray_test.ts)
+- [Count Odd Numbers in an Interval Range](https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/count_odd_numbers_in_an_interval_range_test.ts)
+- [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/average_salary_excluding_the_minimum_and_maximum_salary_test.ts)
+- [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/n_th_tribonacci_number_test.ts)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_islands_test.ts)
