@@ -21,6 +21,10 @@ I like the Netherlands, so I'm going to collect some notes about it.
 - Dial Code: +31
 - Drive: The right side of the roads
 
+## Quote
+
+God may have made the world, but the Dutch made the Netherlands.
+
 ## Videos
 
 - [Geography Now! NETHERLANDS](https://www.youtube.com/watch?v=f4TmQEZzsec)
@@ -43,3 +47,14 @@ I like the Netherlands, so I'm going to collect some notes about it.
   - national color: orange
   - first country to legalize same-sex marriage
   - hockey
+- [Why We Won't Raise Our Kids in Suburbia (and moved to the Netherlands instead)](https://www.youtube.com/watch?v=ul_xzyCDT98)
+- [Travel from Rotterdam to Amsterdam in 10 minutes by boat: a 4k timelapse](https://www.youtube.com/watch?v=HfPCdJapIXA)
+- [The Netherlands in 100 Seconds](https://www.youtube.com/watch?v=v0AP18DjLA0)
+- [Why Grocery Shopping is Better in Amsterdam](https://www.youtube.com/watch?v=kYHTzqHIngk)
+- [This is how trash gets removed from underground bins in The Netherlands](https://www.youtube.com/watch?v=t_QJ9fWzLUc)
+- [​​Why The Netherlands Is Insanely Well Designed](https://www.youtube.com/watch?v=lP-G-inkkDg)
+
+## People who don't like the Netherlands
+
+- [Fox News: About the Netherlands](https://www.youtube.com/watch?feature=player_embedded&v=fKuJvYh6h9I#!)
+- [The Netherlands Is The Worst Country in Europe. Here's Why](https://www.youtube.com/watch?v=JlaCSFUqHEw)

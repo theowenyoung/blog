@@ -97,3 +97,6 @@ deno test
 - [Average Salary Excluding the Minimum and Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/average_salary_excluding_the_minimum_and_maximum_salary_test.ts)
 - [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/n_th_tribonacci_number_test.ts)
 - [Number of Islands](https://leetcode.com/problems/number-of-islands/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_islands_test.ts)
+- [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/merge_sorted_array_test.ts)
+- [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/min_cost_climbing_stairs_test.ts)
+- [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_closed_islands_test.ts)
