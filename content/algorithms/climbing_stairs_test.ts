@@ -4,7 +4,7 @@
 
 import { assertEquals } from "https://deno.land/std@0.138.0/testing/asserts.ts";
 
-function climbStairs(n: number): number {
+function climbStairs1(n: number): number {
   const dp = (
     currentStep: number,
     memo: Record<string, number> = {}
@@ -39,10 +39,23 @@ function climbStairs(n: number): number {
   return dp(0, {});
 }
 
-Deno.test("067. Climbing Stairs", () => {
-  assertEquals(climbStairs(2), 2);
-  assertEquals(climbStairs(3), 3);
-  assertEquals(climbStairs(4), 5);
-  assertEquals(climbStairs(5), 8);
-  assertEquals(climbStairs(44), 1134903170);
-});
+function climbStairs2(n: number): number {
+  const dp: number[] = Array(n).fill(0);
+  dp[0] = 1;
+  dp[1] = 2;
+  for (let i = 2; i < n; i++) {
+    dp[i] = dp[i - 1] + dp[i - 2];
+  }
+  return dp[n - 1];
+}
+const solutions = [climbStairs1, climbStairs2];
+
+for (const climbStairs of solutions) {
+  Deno.test("067. Climbing Stairs", () => {
+    assertEquals(climbStairs(2), 2);
+    assertEquals(climbStairs(3), 3);
+    assertEquals(climbStairs(4), 5);
+    assertEquals(climbStairs(5), 8);
+    assertEquals(climbStairs(44), 1134903170);
+  });
+}
