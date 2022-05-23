@@ -20,6 +20,7 @@ taxonomies:
 - [Axios](https://www.axios.com/) - 简明扼要的新闻，有重点的新闻，几句话新闻的精髓
 - [赫芬顿邮报](https://www.huffpost.com/)
 - [Politico](https://www.politico.com/) - 政治评论和报道
+- [卫报](https://www.theguardian.com/)
 
 ## opinion
 
