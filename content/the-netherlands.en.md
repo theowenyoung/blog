@@ -21,6 +21,10 @@ I like the Netherlands, so I'm going to collect some notes about it.
 - Dial Code: +31
 - Drive: The right side of the roads
 
+## News
+
+- [Dutch News](https://www.dutchnews.nl/)
+
 ## Quote
 
 God may have made the world, but the Dutch made the Netherlands.

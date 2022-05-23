@@ -3,7 +3,6 @@
  Do not return anything, modify nums in-place instead.
  */
 import { assertEquals } from "https://deno.land/std@0.138.0/testing/asserts.ts";
-
 function moveZeroes(nums: number[]): number[] {
   let nextNonZeroAt = 0;
   for (let i = 0; i < nums.length; i++) {
