@@ -57,6 +57,7 @@ God may have made the world, but the Dutch made the Netherlands.
 - [Why Grocery Shopping is Better in Amsterdam](https://www.youtube.com/watch?v=kYHTzqHIngk)
 - [This is how trash gets removed from underground bins in The Netherlands](https://www.youtube.com/watch?v=t_QJ9fWzLUc)
 - [​​Why The Netherlands Is Insanely Well Designed](https://www.youtube.com/watch?v=lP-G-inkkDg)
+- [Dutch 11-year olds get a lesson in Love](https://www.youtube.com/watch?v=AA1HDFH9OaU&t=1s)
 
 ## People who don't like the Netherlands
 
