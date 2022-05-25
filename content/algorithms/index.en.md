@@ -108,3 +108,6 @@ deno test
 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/pacific_atlantic_water_flow_test.ts)
 - [Pascals Triangle](https://leetcode.com/problems/pascals-triangle/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/pascals_triangle_test.ts)
 - [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/reshape_the_matrix_test.ts)
+- [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/search_a_2d_matrix_test.ts)
+- [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/n_ary_tree_preorder_traversal_test.ts)
+- [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/next_greater_element_i_test.ts)
