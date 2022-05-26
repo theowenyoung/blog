@@ -1,56 +1,16 @@
-function isValidSudoku(board: string[][]): boolean {
-  const rows = board.length;
-  const cols = board[0].length;
-  const total = rows * cols;
+function sumOddLengthSubarrays(arr: number[]): number {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    // 1
+    sum += arr[i];
+    // 3
 
-  const hash: Record<string, Set<string>> = {};
-  for (let i = 0; i < total; i++) {
-    const col = i % 9;
-    const row = Math.floor(i / 9);
-    const colKey = `col${col}`;
-    const rowKey = `row${row}`;
-    if (!hash[colKey]) {
-      hash[colKey] = new Set();
-    }
-    if (!hash[rowKey]) {
-      hash[rowKey] = new Set();
-    }
+    sum += arr[i];
 
-    const subCol = Math.floor(col / 3);
-    const subRow = Math.floor(row / 3);
-
-    const key = `${subRow}-${subCol}`;
-    if (!hash[key]) {
-      hash[key] = new Set();
-    }
-
-    const val = board[row][col];
-
-    if (val !== ".") {
-      if (
-        hash[colKey].has(val) ||
-        hash[rowKey].has(val) ||
-        hash[key].has(val)
-      ) {
-        return false;
-      }
-      hash[colKey].add(val);
-      hash[rowKey].add(val);
-      hash[key].add(val);
-    }
+    // 5
   }
-  return true;
+  return sum;
 }
 
-const a = isValidSudoku([
-  ["5", "3", ".", ".", "7", ".", ".", ".", "."],
-  ["6", ".", ".", "1", "9", "5", ".", ".", "."],
-  [".", "9", "8", ".", ".", ".", ".", "6", "."],
-  ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
-  ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
-  ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
-  [".", "6", ".", ".", ".", ".", "2", "8", "."],
-  [".", ".", ".", "4", "1", "9", ".", ".", "5"],
-  [".", ".", ".", ".", "8", ".", ".", "7", "9"],
-]);
+const a = sumOddLengthSubarrays([1, 4, 2, 5, 3]);
 console.log("a", a);
