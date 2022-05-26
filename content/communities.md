@@ -93,3 +93,8 @@ taxonomies:
 ## 投资社区
 
 - [Investing Communities](https://thehiveindex.com/topics/investing/)
+
+## 关于共产主义
+
+- [r/asktankies](https://www.reddit.com/r/asktankies/) - 询问关于共产主义的问题
+- [r/DebateCommunism](https://www.reddit.com/r/DebateCommunism) - 辩论有关共产主义的问题
