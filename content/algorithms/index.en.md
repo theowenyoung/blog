@@ -111,3 +111,7 @@ deno test
 - [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/search_a_2d_matrix_test.ts)
 - [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/n_ary_tree_preorder_traversal_test.ts)
 - [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/next_greater_element_i_test.ts)
+- [Sum of All Odd Length Subarrays](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/) - [Asnwer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/sum_of_all_odd_length_subarrays_test.ts)
+- [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximum_product_subarray_test.ts)
+- [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximum_length_of_subarray_with_positive_product_test.ts)
+- [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/nearest_exit_from_entrance_in_maze_test.ts)
