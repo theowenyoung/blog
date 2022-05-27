@@ -115,3 +115,5 @@ deno test
 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximum_product_subarray_test.ts)
 - [Maximum Length of Subarray With Positive Product](https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximum_length_of_subarray_with_positive_product_test.ts)
 - [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/nearest_exit_from_entrance_in_maze_test.ts)
+- [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_sightseeing_pair_test.ts)
+- [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/all_paths_from_source_to_target_test.ts)
