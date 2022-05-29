@@ -102,6 +102,7 @@ deno test
 - [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/min_cost_climbing_stairs_test.ts)
 - [Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_closed_islands_test.ts)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_time_to_buy_and_sell_stock_test.ts)
+- [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_time_to_buy_and_sell_stock_ii_test.ts)
 - [As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/as_far_from_land_as_possible_test.ts)
 - [Jump Game](https://leetcode.com/problems/jump-game/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/jump_game_test.ts)
 - [Jump Game II](https://leetcode.com/problems/jump-game-ii/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/jump_game_ii_test.ts)
@@ -117,3 +118,5 @@ deno test
 - [Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/nearest_exit_from_entrance_in_maze_test.ts)
 - [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_sightseeing_pair_test.ts)
 - [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/all_paths_from_source_to_target_test.ts)
+- [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/remove_duplicates_from_sorted_list_test.ts)
+- [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/goal_parser_interpretation_test.ts)

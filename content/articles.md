@@ -1,7 +1,7 @@
 ---
 title: 收集值得阅读的文章
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-05-28
 taxonomies:
   categories:
     - Notes
@@ -39,6 +39,7 @@ taxonomies:
 
 - [掌握金钱，负担得起你所有想要的东西](https://affordanything.com/start-here/)
 - [数字极简主义](https://www.calnewport.com/blog/2016/12/18/on-digital-minimalism/)
+- [一个人，一条狗，走路环游世界](https://www.afar.com/magazine/tom-turcich-and-the-world-walk)
 
 ## 人物
 
