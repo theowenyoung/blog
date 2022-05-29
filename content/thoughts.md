@@ -3,13 +3,15 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2022-05-26
+updated: 2022-05-29
 taxonomies:
   categories:
     - Notes
   tags:
     - Tweets
 ---
+
+> 就觉得这个世界被浪费的才华真的太多了，以至于几乎只有西方世界的人能发挥自己的才华，中国，中东，非洲，南美有太多地方的人没法发挥自己的才华，让这个世界少了多少的精彩啊。 2022.05.29
 
 > [目前见过最可怕的 Reddit 小组](https://www.reddit.com/r/GenZedong/) -- 2022.05.26
 
