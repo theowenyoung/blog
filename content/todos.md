@@ -88,6 +88,8 @@ From [Bill Gates](https://old.reddit.com/r/IAmA/comments/ut7yj0/im_bill_gates_co
 
 Two of Smil's latest Grand Transitions and How the World Really Works are great. Pinker has a lot of great books including The Better Angels of our Nature. I am just finishing the Coddling of the American Mind which was good. Ezra Klein's book on Polarization is good. Of course fiction books are more fun like Heart or A Gentleman in Moscow or All the Light you cannot see...
 
+任何主题的必读非小说类书籍: <https://www.reddit.com/r/suggestmeabook/comments/uzpnt5/mustread_nonfiction_books_on_any_topic/>
+
 ## abortion
 
 (a) By law, abortion should never be permitted. (b) The law should permit abortion only in case of rape, incest, or when the woman’s life is in danger. (c) The law should permit abortion for reasons other than rape, incest, or danger to the woman’s life, but only after the need for the abortion has been clearly established. (d) By law, a woman should always be able to obtain an abortion as a matter of personal choice. (e) Other.
