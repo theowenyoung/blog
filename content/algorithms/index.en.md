@@ -120,3 +120,7 @@ deno test
 - [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/all_paths_from_source_to_target_test.ts)
 - [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/remove_duplicates_from_sorted_list_test.ts)
 - [Goal Parser Interpretation](https://leetcode.com/problems/goal-parser-interpretation/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/goal_parser_interpretation_test.ts)
+- [Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_time_to_buy_and_sell_stock_with_cooldown_test.ts)
+- [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_time_to_buy_and_sell_stock_with_transaction_fee_test.ts)
+- [Word Break](https://leetcode.com/problems/word-break/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/word_break_test.ts)
+- [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/trapping_rain_water_test.ts)
