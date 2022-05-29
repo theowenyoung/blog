@@ -139,6 +139,22 @@ Khalil Bilici 研究的结果表明，在具有智力/意识形态动机的前�
 
 > 即使中东有更多的民主国家，它们也将是不自由的民主国家。这仍然是大多数人的暴政。马利基在伊拉克的宗派暴力是多数人暴政的一个很好的例子。 -- [reddit comment](https://old.reddit.com/r/IAmA/comments/58h5pd/im_amani_the_founder_of_the_largest_online/d918x3t/)
 
+> 在伊斯兰教中，死刑是对叛教的惩罚并不罕见。关于世界各地普通穆斯林的观点，有真实的数字。一起来看看吧。赞成对皈依者判处死刑的穆斯林百分比：
+>
+> 埃及 - 79%
+>
+> 巴基斯坦 - 76%
+>
+> 巴勒斯坦 - 66%
+>
+> 约旦 - 82%
+>
+> 马来西亚 - 62%
+>
+> 这种信仰是伊斯兰词许多地方的主要内容。即使在土耳其和印度尼西亚等被称为“温和”的地方，也有 17%和 18%的人持有这种信念。-- [reddit comment](https://www.reddit.com/r/IAmA/comments/9vy9ug/comment/e9gst37/?utm_source=reddit&utm_medium=web2x&context=3)
+
+> 只有在公众眼中，伊斯兰价值观与宽容直接冲突时，你才会假装宽容。[link](https://www.reddit.com/r/IAmA/comments/9vy9ug/comment/e9htxnh/?utm_source=reddit&utm_medium=web2x&context=3)
+
 ## 公开宣布脱离宗教的危险
 
 1. 对于许多前穆斯林来说，出柜是以他们与家人、朋友、社区和国家的关系为代价的。即使是直系亲属也可能表达极端反应以及威胁。
