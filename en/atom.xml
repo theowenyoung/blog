@@ -5,12 +5,30 @@
 	<link href="https://www.owenyoung.com/en/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-05-21T00:00:00+00:00</updated>
+	<updated>2022-05-28T16:49:08+08:00</updated>
 	<id>https://www.owenyoung.com/en/atom.xml</id>
+	<entry xml:lang="en">
+		<title>The Great Stuffs</title>
+		<published>2022-05-28T16:49:08+08:00</published>
+		<updated>2022-05-28T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/great/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/great/</id>
+		<content type="html">&lt;p&gt;Curating things that deserve respect.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;charity&quot;&gt;Charity&lt;a class=&quot;zola-anchor&quot; href=&quot;#charity&quot; aria-label=&quot;Anchor link for: charity&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.givewell.org&#x2F;&quot;&gt;Give Well&lt;&#x2F;a&gt; - GiveWell’s mission is to find outstanding giving opportunities and publish the full details of our analysis to help donors decide where to give. They publish a list of top charities, which are their recommendations for donors. GiveWell is focused on finding a small number of outstanding giving opportunities, not on reviewing as many charities — or as many causes — as possible.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.givewell.org&#x2F;charities&#x2F;top-charities&quot;&gt;Top Charities&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.givedirectly.org&#x2F;&quot;&gt;Give Directly&lt;&#x2F;a&gt; - Lift one person above poverty by donating $30&#x2F;mo. Direct giving is an efficient, proven, and empowering way to help.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>About China</title>
 		<published>2022-05-16T12:11:23+08:00</published>
-		<updated>2022-05-16T00:00:00+00:00</updated>
+		<updated>2022-05-28T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/china/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/china/</id>
 		<content type="html">&lt;p&gt;Curating opnions and things about China.&lt;&#x2F;p&gt;
@@ -25,6 +43,13 @@
 &lt;h2 id=&quot;chinese-language&quot;&gt;Chinese Language&lt;a class=&quot;zola-anchor&quot; href=&quot;#chinese-language&quot; aria-label=&quot;Anchor link for: chinese-language&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;img src=&quot;.&#x2F;chinese-phonotactics.jpeg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;To speak Chinese is not hard, because the most common words are two syllables, so it’s easy to remember. The hard part is the characters. There are more than 2000 common characters in Chinese.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;core-problems&quot;&gt;Core Problems&lt;a class=&quot;zola-anchor&quot; href=&quot;#core-problems&quot; aria-label=&quot;Anchor link for: core-problems&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no rule of law, There is great uncertainty in your life&lt;&#x2F;li&gt;
+&lt;li&gt;Throughout the education from elementary school to higher education, a lot of ideology is deliberately implanted about communism, patriotism and love of the party, as well as the over-exaggeration of historical humiliation, and most people hate the so-called imperialist countries such as the United States and Japan.&lt;&#x2F;li&gt;
+&lt;li&gt;The extreme suppression of freedom of expression, the slightest public dissent is enough to send you to opaque imprisonment&lt;&#x2F;li&gt;
+&lt;li&gt;The massive blocking of offshore networks and the restrictions on VPNs, as well as the criminalization, make it difficult for the average person to get the facts and opinions on the other side.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
@@ -207,6 +232,7 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;min-cost-climbing-stairs&#x2F;&quot;&gt;Min Cost Climbing Stairs&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;min_cost_climbing_stairs_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;number-of-closed-islands&#x2F;&quot;&gt;Number of Closed Islands&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;number_of_closed_islands_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-time-to-buy-and-sell-stock&#x2F;&quot;&gt;Best Time to Buy and Sell Stock&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_time_to_buy_and_sell_stock_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-time-to-buy-and-sell-stock-ii&#x2F;&quot;&gt;Best Time to Buy and Sell Stock II&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_time_to_buy_and_sell_stock_ii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;as-far-from-land-as-possible&#x2F;&quot;&gt;As Far from Land as Possible&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;as_far_from_land_as_possible_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;jump-game&#x2F;&quot;&gt;Jump Game&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;jump_game_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;jump-game-ii&#x2F;&quot;&gt;Jump Game II&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;jump_game_ii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -222,6 +248,8 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;nearest-exit-from-entrance-in-maze&#x2F;&quot;&gt;Nearest Exit from Entrance in Maze&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;nearest_exit_from_entrance_in_maze_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-sightseeing-pair&#x2F;&quot;&gt;Best Sightseeing Pair&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_sightseeing_pair_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;all-paths-from-source-to-target&#x2F;&quot;&gt;All Paths From Source to Target&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;all_paths_from_source_to_target_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;remove-duplicates-from-sorted-list&#x2F;&quot;&gt;Remove Duplicates from Sorted List&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;remove_duplicates_from_sorted_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;goal-parser-interpretation&#x2F;&quot;&gt;Goal Parser Interpretation&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;goal_parser_interpretation_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -267,6 +295,18 @@
 		<id>https://www.owenyoung.com/en/quotes/</id>
 		<content type="html">&lt;p&gt;Quotes.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;quotes&quot;&gt;Quotes&lt;a class=&quot;zola-anchor&quot; href=&quot;#quotes&quot; aria-label=&quot;Anchor link for: quotes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chinese people are not stupid, they are not incapable of distinguishing right from wrong, it’s just that the whole environment of speech is so unfair that only one voice is allowed. I am optimistic that most people will be able to distinguish between right and wrong within a year’s time if they are allowed to compete fairly.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If there is no religion there is so division among people. We can move on from imaginary issues and focus on real issues of our planet. - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;IAmA&#x2F;comments&#x2F;58h5pd&#x2F;im_amani_the_founder_of_the_largest_online&#x2F;d91m2fb&#x2F;&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;reddit users and making vague generalizations based on their own biases. - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;IAmA&#x2F;comments&#x2F;ut7yj0&#x2F;im_bill_gates_cochair_of_the_bill_and_melinda&#x2F;i992tkz&#x2F;&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;He sees it all personified in Lee Kuan Yew, who “honestly thought that money and status equated to happiness … His failure to understand how false that was really showed, leading us to become one of the richest countries in the world, and one of the most depressed. Ultimately, how do you quantify a great leader? It is by how he creates a place where people are able to live happily and prosper based on their own unique attributes. And he hasn’t.” – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theguardian.com&#x2F;cities&#x2F;2016&#x2F;apr&#x2F;21&#x2F;story-cities-singapore-carefully-planned-lee-kuan-yew&quot;&gt;Story of cities #27: Singapore – the most meticulously planned city in the world&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Democracy and capitalism are 100% unrelated to each other. Democracy is a form of government, capitalism is an economic system. You can have Fascist Capitalists(China), Fascist Mercantilists(US Republicans), Fascist Socialism(the USSR), Democratic Capitalists(most Americans), Democratic Mercantilists(The British), Democratic Socialism(Bernie Sanders types in the US; many of the Nordics), and a whole host of things in between. Democracy and Capitalism are two separate axes creating a plane, rather than two sides of the same axis. – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;Ask_Politics&#x2F;comments&#x2F;uleb6a&#x2F;comment&#x2F;i7xh2x0&#x2F;?utm_source=reddit&amp;amp;utm_medium=web2x&amp;amp;context=3&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;

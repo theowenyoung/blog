@@ -1,16 +1,21 @@
-function sumOddLengthSubarrays(arr: number[]): number {
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    // 1
-    sum += arr[i];
-    // 3
-
-    sum += arr[i];
-
-    // 5
+function mergeAlternately(word1: string, word2: string): string {
+  let newWord = "";
+  for (var i = 0; i < word1.length; i++) {
+    newWord += word1[i];
+    if (word2[i]) {
+      newWord += word2[i];
+    }
   }
-  return sum;
+  console.log("i", i);
+  console.log("word.length", word2.length);
+
+  if (i < word1.length) {
+    newWord += word1.slice(i);
+  } else if (i < word2.length) {
+    newWord += word2.slice(i);
+  }
+  return newWord;
 }
 
-const a = sumOddLengthSubarrays([1, 4, 2, 5, 3]);
+const a = mergeAlternately("cf", "eee");
 console.log("a", a);
