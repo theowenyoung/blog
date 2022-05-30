@@ -124,3 +124,4 @@ deno test
 - [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/best_time_to_buy_and_sell_stock_with_transaction_fee_test.ts)
 - [Word Break](https://leetcode.com/problems/word-break/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/word_break_test.ts)
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/trapping_rain_water_test.ts)
+- [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/binary_tree_preorder_traversal_test.ts)
