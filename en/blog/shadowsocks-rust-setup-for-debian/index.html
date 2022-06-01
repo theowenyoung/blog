@@ -141,7 +141,7 @@
           <h1 style="font-size:2rem;">Shadowsocks Rust Setup for Debian</h1>
           <div class="pt muted">
             <div>
-              Published: 2021-03-10, Updated: 2022-03-22, Reading Time: 1 min</div>
+              Published: 2021-03-10, Updated: 2022-06-01, Reading Time: 2 min</div>
         </div>
   
         </div>
@@ -192,6 +192,23 @@
   
       <li>
           <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#update">Update</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#multiple-ports">Multiple Ports</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#show-if-success">Show if success:</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#delete-the-rule">Delete the rule:</a>
+                      </li>
+                  
+              </ul>
           
       </li>
   
@@ -263,6 +280,17 @@
 </span></code></pre>
 <h2 id="update">Update<a class="zola-anchor" href="#update" aria-label="Anchor link for: update">🔗</a></h2>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cargo</span><span> install shadowsocks-rust
+</span></code></pre>
+<h2 id="multiple-ports">Multiple Ports<a class="zola-anchor" href="#multiple-ports" aria-label="Anchor link for: multiple-ports">🔗</a></h2>
+<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://gfw.report/blog/ss_tutorial/zh/">here</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -A</span><span> PREROUTING</span><span style="color:#bf616a;"> -p</span><span> tcp</span><span style="color:#bf616a;"> --dport</span><span> 12000:12010</span><span style="color:#bf616a;"> -j</span><span> REDIRECT</span><span style="color:#bf616a;"> --to-port</span><span> 9982
+</span><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -A</span><span> PREROUTING</span><span style="color:#bf616a;"> -p</span><span> udp</span><span style="color:#bf616a;"> --dport</span><span> 12000:12010</span><span style="color:#bf616a;"> -j</span><span> REDIRECT</span><span style="color:#bf616a;"> --to-port</span><span> 9982
+</span></code></pre>
+<h3 id="show-if-success">Show if success:<a class="zola-anchor" href="#show-if-success" aria-label="Anchor link for: show-if-success">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -L</span><span> PREROUTING</span><span style="color:#bf616a;"> -nv --line-number
+</span></code></pre>
+<h3 id="delete-the-rule">Delete the rule:<a class="zola-anchor" href="#delete-the-rule" aria-label="Anchor link for: delete-the-rule">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -D</span><span> PREROUTING &lt;number&gt;
 </span></code></pre>
 
           </article>
@@ -337,6 +365,23 @@
   
       <li>
           <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#update">Update</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#multiple-ports">Multiple Ports</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#show-if-success">Show if success:</a>
+                      </li>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#delete-the-rule">Delete the rule:</a>
+                      </li>
+                  
+              </ul>
           
       </li>
   

@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/en/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-05-28T16:49:08+08:00</updated>
+	<updated>2022-06-01T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/en/atom.xml</id>
 	<entry xml:lang="en">
 		<title>The Great Stuffs</title>
@@ -255,6 +255,7 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;word-break&#x2F;&quot;&gt;Word Break&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;word_break_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;trapping-rain-water&#x2F;&quot;&gt;Trapping Rain Water&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;trapping_rain_water_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;binary-tree-preorder-traversal&#x2F;&quot;&gt;Binary Tree Preorder Traversal&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;binary_tree_preorder_traversal_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;binary-tree-level-order-traversal&#x2F;&quot;&gt;Binary Tree Level Order Traversal&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;binary_tree_level_order_traversal_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -1477,7 +1478,7 @@ if you want change to the exact version every time, you can set the config to&lt
 	<entry xml:lang="en">
 		<title>Shadowsocks Rust Setup for Debian</title>
 		<published>2021-03-10T00:00:00+00:00</published>
-		<updated>2022-03-22T00:00:00+00:00</updated>
+		<updated>2022-06-01T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;Shadowsocks Repo: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shadowsocks&#x2F;shadowsocks-rust&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;shadowsocks&#x2F;shadowsocks-rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1539,6 +1540,17 @@ if you want change to the exact version every time, you can set the config to&lt
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;update&quot;&gt;Update&lt;a class=&quot;zola-anchor&quot; href=&quot;#update&quot; aria-label=&quot;Anchor link for: update&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; install shadowsocks-rust
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;multiple-ports&quot;&gt;Multiple Ports&lt;a class=&quot;zola-anchor&quot; href=&quot;#multiple-ports&quot; aria-label=&quot;Anchor link for: multiple-ports&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gfw.report&#x2F;blog&#x2F;ss_tutorial&#x2F;zh&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -A&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span&gt; tcp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --dport&lt;&#x2F;span&gt;&lt;span&gt; 12000:12010&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -j&lt;&#x2F;span&gt;&lt;span&gt; REDIRECT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --to-port&lt;&#x2F;span&gt;&lt;span&gt; 9982
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -A&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span&gt; udp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --dport&lt;&#x2F;span&gt;&lt;span&gt; 12000:12010&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -j&lt;&#x2F;span&gt;&lt;span&gt; REDIRECT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --to-port&lt;&#x2F;span&gt;&lt;span&gt; 9982
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;show-if-success&quot;&gt;Show if success:&lt;a class=&quot;zola-anchor&quot; href=&quot;#show-if-success&quot; aria-label=&quot;Anchor link for: show-if-success&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -L&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -nv --line-number
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;delete-the-rule&quot;&gt;Delete the rule:&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-the-rule&quot; aria-label=&quot;Anchor link for: delete-the-rule&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -D&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING &amp;lt;number&amp;gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
