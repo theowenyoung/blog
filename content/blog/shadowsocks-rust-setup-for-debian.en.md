@@ -1,7 +1,7 @@
 ---
 title: Shadowsocks Rust Setup for Debian
 date: 2021-03-10
-updated: 2022-03-22
+updated: 2022-06-01
 taxonomies:
   categories:
     - Dev
@@ -94,4 +94,25 @@ sudo systemctl stop ss
 
 ```bash
 cargo install shadowsocks-rust
+```
+
+## Multiple Ports
+
+Also see [here](https://gfw.report/blog/ss_tutorial/zh/)
+
+```bash
+sudo iptables -t nat -A PREROUTING -p tcp --dport 12000:12010 -j REDIRECT --to-port 9982
+sudo iptables -t nat -A PREROUTING -p udp --dport 12000:12010 -j REDIRECT --to-port 9982
+```
+
+### Show if success:
+
+```bash
+sudo iptables -t nat -L PREROUTING -nv --line-number
+```
+
+### Delete the rule:
+
+```bash
+sudo iptables -t nat -D PREROUTING <number>
 ```

@@ -148,3 +148,7 @@ taxonomies:
 ## 标准
 
 - [Business.txt](https://github.com/fesja/businesstxt) - 商家信息 txt，就像 robots.txt 但是是为商家
+
+## God
+
+- [God Checker](https://www.godchecker.com/) - 全世界几万个神的汇总
