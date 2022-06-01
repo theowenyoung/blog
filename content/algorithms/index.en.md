@@ -125,3 +125,4 @@ deno test
 - [Word Break](https://leetcode.com/problems/word-break/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/word_break_test.ts)
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/trapping_rain_water_test.ts)
 - [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/binary_tree_preorder_traversal_test.ts)
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/binary_tree_level_order_traversal_test.ts)
