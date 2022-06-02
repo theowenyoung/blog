@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-05-02
+updated: 2022-06-02
 taxonomies:
   categories:
     - Notes
@@ -43,7 +43,7 @@ taxonomies:
 ## Developmenets
 
 - [cosmopolitan - build-once run-anywhere c library](https://github.com/jart/cosmopolitan) - 编译生成单一的可执行文件的服务器
-- [try it online](https://tio.run/#) - 在线运行几百种变成语言
+- [try it online](https://tio.run/#) - 在线运行几百种编程语言
 - [Docker Run](https://github.com/glotcode/docker-run) - 使用 docker 来运行不信任的代码，运行后删除
 
 ## Stocks
@@ -278,3 +278,7 @@ taxonomies:
 
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
 - [Kagi](https://kagi.com/) - 高级搜索引擎
+
+## 在线平台模拟
+
+- [Never Install](https://neverinstall.com/) - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。

@@ -7,6 +7,10 @@ taxonomies:
     - Dev
 ---
 
+Common Makefile Template.
+
+<!-- more -->
+
 ```Makefile
 .PHONY: start reload stop
 start:
