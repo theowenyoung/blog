@@ -10,6 +10,9 @@ taxonomies:
     - Media
 ---
 
+Bazarr setup.
+
+<!-- more -->
 
 ## Install
 

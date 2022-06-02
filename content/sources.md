@@ -21,6 +21,7 @@ taxonomies:
 - [赫芬顿邮报](https://www.huffpost.com/)
 - [Politico](https://www.politico.com/) - 政治评论和报道
 - [卫报](https://www.theguardian.com/)
+- [每日电讯报](https://www.telegraph.co.uk/) - 英国
 
 ## opinion
 

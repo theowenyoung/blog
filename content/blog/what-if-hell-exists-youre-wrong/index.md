@@ -84,3 +84,5 @@ taxonomies:
 ![](./religious.webp)
 
 ![](./prove.webp)
+
+![2020年各国宗教情况统计](./stats.png)
