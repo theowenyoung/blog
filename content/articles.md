@@ -1,7 +1,7 @@
 ---
 title: 收集值得阅读的文章
 date: 2022-03-25
-updated: 2022-05-28
+updated: 2022-06-02
 taxonomies:
   categories:
     - Notes
@@ -25,6 +25,7 @@ taxonomies:
 - [智能手机毁了一代人吗？](https://www.theatlantic.com/magazine/archive/2017/09/has-the-smartphone-destroyed-a-generation/534198/)
 - [每天一次消息的 IM 应用程序 Pony](https://www.theatlantic.com/technology/archive/2022/01/slow-internet-email/621232/?utm_source=twitter&utm_medium=social&utm_campaign=share)
 - [下一个谷歌](https://dkb.io/post/the-next-google) - 介绍了几个搜索引擎
+- [本地优先技术概述](https://www.inkandswitch.com/local-first/)
 
 ## 工作
 
