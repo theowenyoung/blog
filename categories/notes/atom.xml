@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-05-29T00:00:00+00:00</updated>
+	<updated>2022-06-02T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>关于丁克&#x2F;不生孩子</title>
@@ -2015,6 +2015,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.huffpost.com&#x2F;&quot;&gt;赫芬顿邮报&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.politico.com&#x2F;&quot;&gt;Politico&lt;&#x2F;a&gt; - 政治评论和报道&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theguardian.com&#x2F;&quot;&gt;卫报&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.telegraph.co.uk&#x2F;&quot;&gt;每日电讯报&lt;&#x2F;a&gt; - 英国&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;opinion&quot;&gt;opinion&lt;a class=&quot;zola-anchor&quot; href=&quot;#opinion&quot; aria-label=&quot;Anchor link for: opinion&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -2497,7 +2498,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-05-02T00:00:00+00:00</updated>
+		<updated>2022-06-02T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -2531,7 +2532,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;developmenets&quot;&gt;Developmenets&lt;a class=&quot;zola-anchor&quot; href=&quot;#developmenets&quot; aria-label=&quot;Anchor link for: developmenets&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jart&#x2F;cosmopolitan&quot;&gt;cosmopolitan - build-once run-anywhere c library&lt;&#x2F;a&gt; - 编译生成单一的可执行文件的服务器&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tio.run&#x2F;#&quot;&gt;try it online&lt;&#x2F;a&gt; - 在线运行几百种变成语言&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tio.run&#x2F;#&quot;&gt;try it online&lt;&#x2F;a&gt; - 在线运行几百种编程语言&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;glotcode&#x2F;docker-run&quot;&gt;Docker Run&lt;&#x2F;a&gt; - 使用 docker 来运行不信任的代码，运行后删除&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;stocks&quot;&gt;Stocks&lt;a class=&quot;zola-anchor&quot; href=&quot;#stocks&quot; aria-label=&quot;Anchor link for: stocks&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -2776,6 +2777,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blogsurf.io&#x2F;&quot;&gt;Blog Surf&lt;&#x2F;a&gt; - 博客搜索引擎&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kagi.com&#x2F;&quot;&gt;Kagi&lt;&#x2F;a&gt; - 高级搜索引擎&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zai-xian-ping-tai-mo-ni&quot;&gt;在线平台模拟&lt;a class=&quot;zola-anchor&quot; href=&quot;#zai-xian-ping-tai-mo-ni&quot; aria-label=&quot;Anchor link for: zai-xian-ping-tai-mo-ni&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neverinstall.com&#x2F;&quot;&gt;Never Install&lt;&#x2F;a&gt; - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

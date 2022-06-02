@@ -399,7 +399,8 @@
 		<updated>2022-04-30T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/blog/makefile-template/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/makefile-template/</id>
-		<content type="html">&lt;pre data-lang=&quot;Makefile&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Makefile &quot;&gt;&lt;code class=&quot;language-Makefile&quot; data-lang=&quot;Makefile&quot;&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.PHONY&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;start reload stop
+		<content type="html">&lt;p&gt;Common Makefile Template.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;pre data-lang=&quot;Makefile&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Makefile &quot;&gt;&lt;code class=&quot;language-Makefile&quot; data-lang=&quot;Makefile&quot;&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.PHONY&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;start reload stop
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;start&lt;&#x2F;span&gt;&lt;span&gt;:
 &lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;systemctl&lt;&#x2F;span&gt;&lt;span&gt; start caddy
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;stop&lt;&#x2F;span&gt;&lt;span&gt;:
@@ -1157,7 +1158,8 @@ if you want change to the exact version every time, you can set the config to&lt
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/blog/bazarr-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/bazarr-setup/</id>
-		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;Bazarr setup.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.bazarr.media&#x2F;Getting-Started&#x2F;Installation&#x2F;Linux&#x2F;linux&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-get install python3-pip python3-distutils&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;morpheus65535&#x2F;bazarr&#x2F;releases&#x2F;latest&#x2F;download&#x2F;bazarr.zip
