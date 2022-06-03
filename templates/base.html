@@ -140,12 +140,22 @@
             </a> 
           </div>
           <div>
+            
             <ul class="flex menu list-none items-center justify-center">
-             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Back to Top" href="#top">
+              <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='en' -%}muted{% endif -%}" title="English Site" href="/en/">
+                <span class="text-sm">EN</span>
+               </a></li>
+              <li>
+               <a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='zh' -%}muted{% endif -%}" title="中文站点" class="only-show-small" href="/">
+                 <span class="text-sm">中</span>
+                </a>
+              </li>
+             <div class="nav-divider"></div>
+             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline" title="Back to Top" href="#top">
                <span class=""> &#8593;</span>
               </a></li>
              <li>
-              <a class="flex border-muted rounded-full justify-center items-center icon no-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
+              <a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
                 <span class=""> &#8595;</span>
                </a>
              </li>

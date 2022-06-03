@@ -101,6 +101,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
+.relative {
+  position: relative;
+}
 .no-border {
   border: none;
 }
@@ -219,6 +222,7 @@ a:visited {
   flex-direction: column;
 }
 
+
 .no-underline:link,
 .no-underline:visited,
 .sidebar a:link,
@@ -230,7 +234,9 @@ a:hover {
   color: var(--colors-primary);
   text-decoration: underline;
 }
-
+.no-hover-underline:hover {
+  text-decoration: none;
+}
 .muted,
 a.muted,
 .muted:link,
@@ -304,6 +310,14 @@ a.muted,
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
 }
+.my {
+  margin-top: 1.4rem;
+  margin-bottom:1.4rem;
+}
+.my-2 {
+  margin-top: 2.4rem;
+  margin-bottom:2.4rem;
+}
 .px {
   padding-left: 1.4rem;
   padding-right: 1.4rem;
@@ -366,8 +380,20 @@ li.inline {
 .sidebar li {
   font-size: 1rem;
 }
+.nav-divider{
+  border-right: 2px solid var(--colors-divider);
+  height: 24px;
+  margin: 0 1.6rem 0 0.6rem;
+}
 
 @media (min-width: 48rem) {
+  .nav-divider{
+    border-top: 2px solid var(--colors-divider);
+    width: 24px;
+    margin: 0.6rem 0 1.6rem 0;
+    height: 0;
+    border-right:none;
+  }
   .navbar {
     height: 100%;
     border-right: 1px solid var(--colors-divider);
