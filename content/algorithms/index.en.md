@@ -1,7 +1,7 @@
 ---
 title: Solve Algorithms
 date: 2022-05-08T06:17:19+08:00
-updated: 2022-05-21
+updated: 2022-06-04
 taxonomies:
   categories:
     - Notes
@@ -108,6 +108,7 @@ deno test
 - [Jump Game II](https://leetcode.com/problems/jump-game-ii/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/jump_game_ii_test.ts)
 - [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/pacific_atlantic_water_flow_test.ts)
 - [Pascals Triangle](https://leetcode.com/problems/pascals-triangle/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/pascals_triangle_test.ts)
+- [Pascals Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/pascals_triangle_ii_test.ts)
 - [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/reshape_the_matrix_test.ts)
 - [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/search_a_2d_matrix_test.ts)
 - [N-ary Tree Preorder Traversal](https://leetcode.com/problems/n-ary-tree-preorder-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/n_ary_tree_preorder_traversal_test.ts)
@@ -126,3 +127,7 @@ deno test
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/trapping_rain_water_test.ts)
 - [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/binary_tree_preorder_traversal_test.ts)
 - [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/binary_tree_level_order_traversal_test.ts)
+- [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/unique_binary_search_trees_test.ts)
+- [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/minimum_falling_path_sum_test.ts)
+- [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/matrix_block_sum_test.ts)
+- [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/range_sum_query_2d_immutable_test.ts)

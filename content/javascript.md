@@ -67,3 +67,11 @@ taxonomies:
 ## Algorithms
 
 - [youtube js algorithms crash course](https://www.youtube.com/watch?v=JgWm6sQwS_I)
+
+## 常用代码
+
+```Javascript
+// create a 2d array
+Array.from(Array(2), () =>Array(4))
+
+```
