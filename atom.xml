@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-02T00:00:00+00:00</updated>
+	<updated>2022-06-04T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>关于丁克&#x2F;不生孩子</title>
@@ -1511,6 +1511,9 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;books&quot;&gt;Books&lt;a class=&quot;zola-anchor&quot; href=&quot;#books&quot; aria-label=&quot;Anchor link for: books&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;大多数书都记录在&lt;a href=&quot;&#x2F;books&#x2F;&quot;&gt;读书记录里&lt;&#x2F;a&gt; ，这里记得基本都是一些没咋读完的书。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;chu-mai-zhong-guo&quot;&gt;出卖中国&lt;a class=&quot;zola-anchor&quot; href=&quot;#chu-mai-zhong-guo&quot; aria-label=&quot;Anchor link for: chu-mai-zhong-guo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨&lt;&#x2F;p&gt;
+&lt;p&gt;偏统计性的，里面的大多数数据年代又有点久远，所以就有点看不下去。&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;don-t-let-me-think&quot;&gt;Don’t let me think&lt;a class=&quot;zola-anchor&quot; href=&quot;#don-t-let-me-think&quot; aria-label=&quot;Anchor link for: don-t-let-me-think&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;p&gt;✨✨✨&lt;&#x2F;p&gt;
 &lt;p&gt;中文版叫《点石成金》，主要设计理念是：不要让我思考，不要在网页设计中做出让用户 confuse 的设计。但是本书的出版有点早，所以里面其实有不少东西稍微有点过时。&lt;&#x2F;p&gt;
@@ -3240,6 +3243,11 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=JgWm6sQwS_I&quot;&gt;youtube js algorithms crash course&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chang-yong-dai-ma&quot;&gt;常用代码&lt;a class=&quot;zola-anchor&quot; href=&quot;#chang-yong-dai-ma&quot; aria-label=&quot;Anchor link for: chang-yong-dai-ma&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;Javascript&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Javascript &quot;&gt;&lt;code class=&quot;language-Javascript&quot; data-lang=&quot;Javascript&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; create a 2d array
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Array&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;from&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Array&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;), () &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;=&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Array&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;))
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
@@ -6330,7 +6338,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>电视剧笔记</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-03-26T00:00:00+00:00</updated>
+		<updated>2022-06-04T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/tv-shows/" type="text/html"/>
 		<id>https://www.owenyoung.com/tv-shows/</id>
 		<content type="html">&lt;p&gt;记录自己看过的剧，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021 开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。有一些剧是看的解说，但是有点后悔，当时是为了节省时间，早知道那么精彩就应该看原剧。&lt;&#x2F;p&gt;
@@ -6351,12 +6359,14 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;li&gt;行骗天下&lt;&#x2F;li&gt;
 &lt;li&gt;大明王朝 1566&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;2020&quot;&gt;2020&lt;a class=&quot;zola-anchor&quot; href=&quot;#2020&quot; aria-label=&quot;Anchor link for: 2020&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;2022&quot;&gt;2022&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022&quot; aria-label=&quot;Anchor link for: 2022&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
-我的天才女友，✨✨✨✨✨，神剧&lt;&#x2F;li&gt;
+我的天才女友， 第三季，✨✨✨✨✨，一如既往的水准。这部剧是我心中排名前三的剧。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
-银河英雄传说，✨✨✨✨✨，动画长剧，后悔小时候没看，神动画剧，很宏大的宇宙世界。正反派都刻画的非常好。&lt;&#x2F;li&gt;
+使女的故事，第一季，✨✨✨✨，推荐先看原著，再看电视剧，不然很可能一头雾水。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+南方公园，第 23&#x2F;24&#x2F;25 季，✨✨✨✨✨，喜欢这种紧跟时事的讽刺性作品。要是中国也能出这类作品就好了。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;2021&quot;&gt;2021&lt;a class=&quot;zola-anchor&quot; href=&quot;#2021&quot; aria-label=&quot;Anchor link for: 2021&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -6383,12 +6393,12 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
 是大臣，全三季，✨✨✨✨✨，五星推荐，英式情景喜剧，每一集一个主题，对英国政治运作的吐槽。非常到位。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;2022&quot;&gt;2022&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022&quot; aria-label=&quot;Anchor link for: 2022&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;2020&quot;&gt;2020&lt;a class=&quot;zola-anchor&quot; href=&quot;#2020&quot; aria-label=&quot;Anchor link for: 2020&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
-我的天才女友， 第三季，✨✨✨✨✨，一如既往的水准。这部剧是我心中排名前三的剧。&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
-使女的故事，第一季，✨✨✨✨，推荐先看原著，再看电视剧，不然很可能一头雾水。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+我的天才女友，✨✨✨✨✨，神剧&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
+银河英雄传说，✨✨✨✨✨，动画长剧，后悔小时候没看，神动画剧，很宏大的宇宙世界。正反派都刻画的非常好。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
