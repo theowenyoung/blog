@@ -1,7 +1,7 @@
 ---
 title: Solve Algorithms
 date: 2022-05-08T06:17:19+08:00
-updated: 2022-06-04
+updated: 2022-06-05
 taxonomies:
   categories:
     - Notes
@@ -30,14 +30,17 @@ deno test
 
 - [Top Interview Questions](https://leetcode.com/problem-list/top-interview-questions/)
 
-## List
+## Classic
 
 - [Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/sort_test.ts)
-  - [Bubble Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/bubble_sort.ts)
-  - [Selection Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/selection_sort.ts)
+  - [Bubble Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/bubble_sort.ts) - Medium
+  - [Selection Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/selection_sort.ts) - Easy
   - [Insertion Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/insertion_sort.ts)
   - [Quick Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/quick_sort.ts)
   - [Merge Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/merge_sort.ts)
+
+## List
+
 - [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/roman_to_integer_test.ts)
 - [Two Sum](https://leetcode.com/problems/two-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/two_sum_test.ts)
 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/add_two_numbers_test.ts)
@@ -131,3 +134,7 @@ deno test
 - [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/minimum_falling_path_sum_test.ts)
 - [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/matrix_block_sum_test.ts)
 - [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/range_sum_query_2d_immutable_test.ts)
+
+## Medium
+
+- [Maximal Square](https://leetcode.com/problems/maximal-square/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximal_square_test.ts)

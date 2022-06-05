@@ -1,3 +1,8 @@
+/**
+ * Split array to two groups by a pivot(you can pick one from the last number or first number or any) , left groups is less than pivot, right groups is greater than pivot. then merge them
+ * @param arr
+ * @returns
+ */
 export const quickSort = (arr: number[]): number[] => {
   if (arr.length < 2) {
     return arr;

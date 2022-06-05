@@ -1,3 +1,8 @@
+/**
+ * Rearrange the first few each time,
+ * @param arr
+ * @returns
+ */
 export const insertionSort = (arr: number[]): number[] => {
   const array = arr.slice();
   for (let i = 1; i < array.length; i++) {
