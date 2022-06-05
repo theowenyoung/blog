@@ -121,7 +121,34 @@ function addTwoNumbers(
   return head.next;
 }
 
-const solutions = [myAddTwoNumbers, addTwoNumbers];
+function addTwoNumbers2(
+  l1: ListNode | null,
+  l2: ListNode | null
+): ListNode | null {
+  const newList = new ListNode(0);
+  let current = newList;
+  let isGreaterThan10 = 0;
+  while (l2 || l1) {
+    const newVal = (l1?.val ?? 0) + (l2 ? l2.val : 0) + isGreaterThan10;
+
+    if (newVal >= 10) {
+      isGreaterThan10 = 1;
+    } else {
+      isGreaterThan10 = 0;
+    }
+    l1 = l1?.next || null;
+    l2 = l2?.next || null;
+    current.next = new ListNode(newVal % 10);
+    current = current.next;
+  }
+  // check
+  if (isGreaterThan10) {
+    current.next = new ListNode(1);
+  }
+  return newList.next;
+}
+
+const solutions = [myAddTwoNumbers, addTwoNumbers, addTwoNumbers2];
 
 for (const solution of solutions) {
   Deno.test(solution.name + " add two numbers test 1", () => {
@@ -195,3 +222,11 @@ for (const solution of solutions) {
     assertEquals(result, expectedNode);
   });
 }
+
+Deno.test("xxxx add two numbers test 1", () => {
+  const l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+  const l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+  const result = addTwoNumbers2(l1, l2);
+  const expected = new ListNode(7, new ListNode(0, new ListNode(8)));
+  assertEquals(result, expected);
+});

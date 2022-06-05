@@ -33,17 +33,27 @@ deno test
 ## Classic
 
 - [Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/sort_test.ts)
-  - [Bubble Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/bubble_sort.ts) - Medium
   - [Selection Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/selection_sort.ts) - Easy
-  - [Insertion Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/insertion_sort.ts)
-  - [Quick Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/quick_sort.ts)
-  - [Merge Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/merge_sort.ts)
+  - [Bubble Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/bubble_sort.ts) - Medium
+  - [Insertion Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/insertion_sort.ts) - Medium
+  - [Quick Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/quick_sort.ts) - Medium
+  - [Merge Sort](https://github.com/theowenyoung/blog/blob/main/content/algorithms/merge_sort.ts) - Medium
+
+## Easy
+
+- [Two Sum](https://leetcode.com/problems/two-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/two_sum_test.ts)
+- [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/roman_to_integer_test.ts)
+- [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/add_two_numbers_test.ts)
+
+## Medium
+
+- [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/roman_to_integer_test.ts)
+- [Maximal Square](https://leetcode.com/problems/maximal-square/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximal_square_test.ts)
+
+## Hard
 
 ## List
 
-- [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/roman_to_integer_test.ts)
-- [Two Sum](https://leetcode.com/problems/two-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/two_sum_test.ts)
-- [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/add_two_numbers_test.ts)
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_substring_without_repeating_characters_test.ts)
 - [Binary Search](https://leetcode.com/problems/binary-search/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/binary_search_test.ts)
 - [First Bad Version](https://leetcode.com/problems/first-bad-version/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/first_bad_version_test.ts)
@@ -134,7 +144,3 @@ deno test
 - [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/minimum_falling_path_sum_test.ts)
 - [Matrix Block Sum](https://leetcode.com/problems/matrix-block-sum/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/matrix_block_sum_test.ts)
 - [Range Sum Query 2D - Immutable](https://leetcode.com/problems/range-sum-query-2d-immutable/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/range_sum_query_2d_immutable_test.ts)
-
-## Medium
-
-- [Maximal Square](https://leetcode.com/problems/maximal-square/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/maximal_square_test.ts)

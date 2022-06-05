@@ -36,8 +36,21 @@ function twoSum2(nums: number[], target: number): number[] {
   }
   return [sortedNums[start][0], sortedNums[end][0]];
 }
+function twoSum3(nums: number[], target: number): number[] {
+  const hash: Record<number, number> = {};
 
-const solutions = [twoSum1, twoSum2];
+  for (let i = 0; i < nums.length; i++) {
+    const val = nums[i];
+    if (hash[target - val] >= 0) {
+      return [hash[target - val], i];
+    } else {
+      hash[val] = i;
+    }
+  }
+  return [];
+}
+
+const solutions = [twoSum1, twoSum2, twoSum3];
 
 for (const twoSum of solutions) {
   Deno.test("two sum test 1", () => {
