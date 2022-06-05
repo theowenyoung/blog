@@ -1,89 +1,372 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>Owen Young&#x27;s Blog - Tools</title>
-	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Tools</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
 	<link href="https://www.owenyoung.com/tags/tools/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-01T00:00:00+00:00</updated>
+	<updated>2022-06-02T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tools/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Shadowsocks Rust Setup for Debian</title>
-		<published>2021-03-10T00:00:00+00:00</published>
-		<updated>2022-06-01T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/" type="text/html"/>
-		<id>https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/</id>
-		<content type="html">&lt;p&gt;Shadowsocks Repo: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shadowsocks&#x2F;shadowsocks-rust&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;shadowsocks&#x2F;shadowsocks-rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;Setup rust first: &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;&quot;&gt;Debian 初始化 Rust 环境&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;rustup&lt;&#x2F;span&gt;&lt;span&gt; default nightly
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; install shadowsocks-rust
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;configure&quot;&gt;Configure&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure&quot; aria-label=&quot;Anchor link for: configure&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;mkdir&lt;&#x2F;span&gt;&lt;span&gt; ss
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Server config sample:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
-&lt;&#x2F;span&gt;&lt;span&gt;  &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;servers&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: [
-&lt;&#x2F;span&gt;&lt;span&gt;    {
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;address&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;port&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9982&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;method&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;chacha20-ietf-poly1305&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;password&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;strong-password&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;mode&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;tcp_and_udp&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;fast_open&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;timeout&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7200
-&lt;&#x2F;span&gt;&lt;span&gt;    }
-&lt;&#x2F;span&gt;&lt;span&gt;  ]
-&lt;&#x2F;span&gt;&lt;span&gt;}
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;add-as-a-system-service&quot;&gt;Add as a system service&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-as-a-system-service&quot; aria-label=&quot;Anchor link for: add-as-a-system-service&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;ss.service
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Note: Change &lt;code&gt;username&lt;&#x2F;code&gt; to your own username&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Unit]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Description&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;ssserver &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;service
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;After&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;network.target
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Service]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;home&#x2F;username&#x2F;.cargo&#x2F;bin&#x2F;ssserver &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;-c&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;home&#x2F;username&#x2F;ss&#x2F;config.json
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStop&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;usr&#x2F;bin&#x2F;killall &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ssserver
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Restart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;on-failure
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;StandardOutput&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;syslog               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Output to syslog
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;StandardError&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;syslog                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Output to syslog
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SyslogIdentifier&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;ss
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;User&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;username
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Group&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;admin
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Install]
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WantedBy&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;multi-user.target
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl daemon-reload
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl enable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --now&lt;&#x2F;span&gt;&lt;span&gt; ss
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;run&quot;&gt;Run&lt;a class=&quot;zola-anchor&quot; href=&quot;#run&quot; aria-label=&quot;Anchor link for: run&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;h2 id=&quot;status&quot;&gt;Status&lt;a class=&quot;zola-anchor&quot; href=&quot;#status&quot; aria-label=&quot;Anchor link for: status&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl status ss
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;stop&quot;&gt;Stop&lt;a class=&quot;zola-anchor&quot; href=&quot;#stop&quot; aria-label=&quot;Anchor link for: stop&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl stop ss
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;update&quot;&gt;Update&lt;a class=&quot;zola-anchor&quot; href=&quot;#update&quot; aria-label=&quot;Anchor link for: update&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; install shadowsocks-rust
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;multiple-ports&quot;&gt;Multiple Ports&lt;a class=&quot;zola-anchor&quot; href=&quot;#multiple-ports&quot; aria-label=&quot;Anchor link for: multiple-ports&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gfw.report&#x2F;blog&#x2F;ss_tutorial&#x2F;zh&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -A&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span&gt; tcp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --dport&lt;&#x2F;span&gt;&lt;span&gt; 12000:12010&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -j&lt;&#x2F;span&gt;&lt;span&gt; REDIRECT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --to-port&lt;&#x2F;span&gt;&lt;span&gt; 9982
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -A&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -p&lt;&#x2F;span&gt;&lt;span&gt; udp&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --dport&lt;&#x2F;span&gt;&lt;span&gt; 12000:12010&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -j&lt;&#x2F;span&gt;&lt;span&gt; REDIRECT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --to-port&lt;&#x2F;span&gt;&lt;span&gt; 9982
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;show-if-success&quot;&gt;Show if success:&lt;a class=&quot;zola-anchor&quot; href=&quot;#show-if-success&quot; aria-label=&quot;Anchor link for: show-if-success&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -L&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -nv --line-number
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h3 id=&quot;delete-the-rule&quot;&gt;Delete the rule:&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-the-rule&quot; aria-label=&quot;Anchor link for: delete-the-rule&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -D&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING &amp;lt;number&amp;gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+	<entry xml:lang="zh">
+		<title>互联网上的免费资源汇总</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-04-10T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/free/" type="text/html"/>
+		<id>https://www.owenyoung.com/free/</id>
+		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;AskReddit&#x2F;comments&#x2F;444cnh&#x2F;what_are_some_free_services_on_the_internet&#x2F;cznc9la&#x2F;&quot;&gt;互联网上有哪些免费服务，每个人都应该知道？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nbats&#x2F;FMHY&#x2F;wiki&#x2F;FREEMEDIAHECKYEAH&quot;&gt;FREE MEDIA HECK YEAH&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;free-for.dev&#x2F;#&#x2F;&quot;&gt;Free for dev&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;mail&quot;&gt;Mail&lt;a class=&quot;zola-anchor&quot; href=&quot;#mail&quot; aria-label=&quot;Anchor link for: mail&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mailtie.com&quot;&gt;Mailtie&lt;&#x2F;a&gt; - Free Email Forwarding for Your Domain&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fakermail.com&quot;&gt;FakerMail&lt;&#x2F;a&gt; - Unlimited Temporary Email Provider&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;forwardemail.net&#x2F;&quot;&gt;Foreard Email&lt;&#x2F;a&gt; - 免费域名 Email 转发&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;simplelogin.io&#x2F;&quot;&gt;Simple Login&lt;&#x2F;a&gt; - 免费域名转发，发送&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&quot;&gt; Codeberg.org &lt;&#x2F;a&gt; - free git, privacy&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;video&quot;&gt;Video&lt;a class=&quot;zola-anchor&quot; href=&quot;#video&quot; aria-label=&quot;Anchor link for: video&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mastershot.app&quot;&gt;Create amazing videos with our online video editor - Mastershot&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;domain&quot;&gt;Domain&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain&quot; aria-label=&quot;Anchor link for: domain&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedns.afraid.org&#x2F;domain&#x2F;registry&#x2F;&quot;&gt;freedns&lt;&#x2F;a&gt; - free subdomain dns&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;name&quot;&gt;Name&lt;a class=&quot;zola-anchor&quot; href=&quot;#name&quot; aria-label=&quot;Anchor link for: name&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;namae.dev&quot;&gt;namae&lt;&#x2F;a&gt; - name checking&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;free-paid-wall&quot;&gt;Free Paid Wall&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-paid-wall&quot; aria-label=&quot;Anchor link for: free-paid-wall&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;t.me&#x2F;chotamreaderbot&quot;&gt;Article reader&lt;&#x2F;a&gt; - A telegram bot that can access paid wall article with a instant view article.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;12ft.io&#x2F;&quot;&gt;12ft&lt;&#x2F;a&gt; - Show me a 10ft paywall, I’ll show you a 12ft ladder.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;free-space&quot;&gt;Free space&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-space&quot; aria-label=&quot;Anchor link for: free-space&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;deta.space&#x2F;&quot;&gt;Deta&lt;&#x2F;a&gt; - 云中托管个人的数据，免费建立自己的个人空间&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dian-zi-shu&quot;&gt;电子书&lt;a class=&quot;zola-anchor&quot; href=&quot;#dian-zi-shu&quot; aria-label=&quot;Anchor link for: dian-zi-shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.z-lib.org&#x2F;&quot;&gt;Z-Library 全球最大数字图书馆&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sg1lib.org&quot;&gt;https:&#x2F;&#x2F;sg1lib.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;1lib.pl&quot;&gt;https:&#x2F;&#x2F;1lib.pl&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ng1lib.org&quot;&gt;https:&#x2F;&#x2F;ng1lib.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;b-ok.com&quot;&gt;https:&#x2F;&#x2F;b-ok.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bookzz.ren&quot;&gt;https:&#x2F;&#x2F;bookzz.ren&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;booksc.xyz&quot;&gt;https:&#x2F;&#x2F;booksc.xyz&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jiumodiary.com&#x2F;&quot;&gt;鸠摩电子书搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dian-ying&quot;&gt;电影&lt;a class=&quot;zola-anchor&quot; href=&quot;#dian-ying&quot; aria-label=&quot;Anchor link for: dian-ying&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yts.mx&#x2F;&quot;&gt;YTS&lt;&#x2F;a&gt; - 高质量，高清的电影种子站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;rao-guo-fu-fei-qiang&quot;&gt;绕过付费墙&lt;a class=&quot;zola-anchor&quot; href=&quot;#rao-guo-fu-fei-qiang&quot; aria-label=&quot;Anchor link for: rao-guo-fu-fei-qiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iamadamdev&#x2F;bypass-paywalls-chrome&quot;&gt;chrome 插件绕过付费墙&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yin-le&quot;&gt;音乐&lt;a class=&quot;zola-anchor&quot; href=&quot;#yin-le&quot; aria-label=&quot;Anchor link for: yin-le&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jango.com&#x2F;&quot;&gt;Jango&lt;&#x2F;a&gt; - 免费在线音乐定制播放&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>最好用的工具集合</title>
+		<published>2022-03-10T00:00:00+00:00</published>
+		<updated>2022-06-02T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/tools/" type="text/html"/>
+		<id>https://www.owenyoung.com/tools/</id>
+		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;da-zi&quot;&gt;打字&lt;a class=&quot;zola-anchor&quot; href=&quot;#da-zi&quot; aria-label=&quot;Anchor link for: da-zi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codingspeedtest.com&quot;&gt;Code Typing Script&lt;&#x2F;a&gt; - 用代码测试你的打字速度，可以选语言比如 js,go&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.typelit.io&#x2F;&quot;&gt;用小说内容来练习打字&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;gong-zhong-hao-rss&quot;&gt;公众号 RSS&lt;a class=&quot;zola-anchor&quot; href=&quot;#gong-zhong-hao-rss&quot; aria-label=&quot;Anchor link for: gong-zhong-hao-rss&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;feeddd.org&#x2F;&quot;&gt;Feedadd&lt;&#x2F;a&gt; - 众包的形式运行爬虫机器人，上传数据&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ce-shi-ming-li&quot;&gt;测试，命理&lt;a class=&quot;zola-anchor&quot; href=&quot;#ce-shi-ming-li&quot; aria-label=&quot;Anchor link for: ce-shi-ming-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.freehoro.net&#x2F;FreeHoro&#x2F;index.php&quot;&gt;八字，命理测试&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhui-zei&quot;&gt;追贼&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zei&quot; aria-label=&quot;Anchor link for: zhui-zei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iknowwhatyoudownload.com&#x2F;&quot;&gt;I Know what your download&lt;&#x2F;a&gt; - 我知道你下载了什么，追踪 ip 的下载列表，有点可怕。。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zhuan-huan&quot;&gt;转换&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhuan-huan&quot; aria-label=&quot;Anchor link for: zhuan-huan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.html22.com&#x2F;zh&#x2F;&quot;&gt;百度文库转 word 或 pdf&lt;&#x2F;a&gt; - 有瑕疵，勉强能用。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.huomaqun.com&#x2F;&quot;&gt;微友活码&lt;&#x2F;a&gt; - 用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;epub.to&quot;&gt;Epub to HTML&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;server&quot;&gt;Server&lt;a class=&quot;zola-anchor&quot; href=&quot;#server&quot; aria-label=&quot;Anchor link for: server&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nginx-playground.wizardzines.com&#x2F;&quot;&gt;Nginx Playground&lt;&#x2F;a&gt; - 在线调试 nginx 服务器&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;developmenets&quot;&gt;Developmenets&lt;a class=&quot;zola-anchor&quot; href=&quot;#developmenets&quot; aria-label=&quot;Anchor link for: developmenets&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jart&#x2F;cosmopolitan&quot;&gt;cosmopolitan - build-once run-anywhere c library&lt;&#x2F;a&gt; - 编译生成单一的可执行文件的服务器&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tio.run&#x2F;#&quot;&gt;try it online&lt;&#x2F;a&gt; - 在线运行几百种编程语言&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;glotcode&#x2F;docker-run&quot;&gt;Docker Run&lt;&#x2F;a&gt; - 使用 docker 来运行不信任的代码，运行后删除&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;stocks&quot;&gt;Stocks&lt;a class=&quot;zola-anchor&quot; href=&quot;#stocks&quot; aria-label=&quot;Anchor link for: stocks&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GamestonkTerminal&#x2F;GamestonkTerminal&quot;&gt;GamestonkTerminal&lt;&#x2F;a&gt; - Investment Research for Everyone. python 写的投资情绪等分析。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wifi&quot;&gt;Wifi&lt;a class=&quot;zola-anchor&quot; href=&quot;#wifi&quot; aria-label=&quot;Anchor link for: wifi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wificard.io&#x2F;&quot;&gt;Wificard&lt;&#x2F;a&gt; - print wifi info to card&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tu-pian-sheng-cheng&quot;&gt;图片生成&lt;a class=&quot;zola-anchor&quot; href=&quot;#tu-pian-sheng-cheng&quot; aria-label=&quot;Anchor link for: tu-pian-sheng-cheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ray.so&#x2F;&quot;&gt;漂亮的代码截图生成&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sourcecodeshots.com&#x2F;language&#x2F;js&#x2F;theme&#x2F;dark-plus&quot;&gt;代码截图生成的 API&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;carbon.now.sh&#x2F;&quot;&gt;另一个代码截图生成器&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.52doutu.cn&#x2F;&quot;&gt;52 斗图&lt;&#x2F;a&gt; - 表情包在线生成&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lf94&#x2F;img2utf&quot;&gt;rust 生成线条图片&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;url-suo-duan-qi&quot;&gt;URL 缩短器&lt;a class=&quot;zola-anchor&quot; href=&quot;#url-suo-duan-qi&quot; aria-label=&quot;Anchor link for: url-suo-duan-qi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nelsontky&#x2F;gh-pages-url-shortener&quot;&gt;利用 github Issues 缩短网址&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tu-pian-cai-jian&quot;&gt;图片裁剪&lt;a class=&quot;zola-anchor&quot; href=&quot;#tu-pian-cai-jian&quot; aria-label=&quot;Anchor link for: tu-pian-cai-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;photo16x9.com&#x2F;&quot;&gt;photo 16x9&lt;&#x2F;a&gt; - 填充背景色以使得图片满足 16:9 的推特比例&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;clideo.com&#x2F;dpi-converter&quot;&gt;DPI Converter — Change DPI of Image Online — Clideo&lt;&#x2F;a&gt; - DPI 在线转换&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;imresizer.com&#x2F;&quot;&gt;Resize image in cm, mm, inch or px online free | ImResizer&lt;&#x2F;a&gt; - 按照不同单位在线转换图片&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bei-jing-yin-le-bai-zao-yin&quot;&gt;背景音乐，白噪音&lt;a class=&quot;zola-anchor&quot; href=&quot;#bei-jing-yin-le-bai-zao-yin&quot; aria-label=&quot;Anchor link for: bei-jing-yin-le-bai-zao-yin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.lofi.cafe&#x2F;&quot;&gt;Lofi 咖啡&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;radio.garden&#x2F;listen&#x2F;bbc-radio-6-music&#x2F;sPUw6n5C&quot;&gt;BBC 6 音乐电台&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;rss&quot;&gt;RSS&lt;a class=&quot;zola-anchor&quot; href=&quot;#rss&quot; aria-label=&quot;Anchor link for: rss&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hntokindle.com&#x2F;&quot;&gt;Hacker News to Kindle&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fu-fei-diao-cha&quot;&gt;付费调查&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-fei-diao-cha&quot; aria-label=&quot;Anchor link for: fu-fei-diao-cha&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;eurekasurveys.com&#x2F;&quot;&gt;Surveys&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;low-code-website&quot;&gt;Low Code website&lt;a class=&quot;zola-anchor&quot; href=&quot;#low-code-website&quot; aria-label=&quot;Anchor link for: low-code-website&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.sheet2site.com&#x2F;&quot;&gt;Sheet2site&lt;&#x2F;a&gt; - google sheet to site&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;workflows&quot;&gt;Workflows&lt;a class=&quot;zola-anchor&quot; href=&quot;#workflows&quot; aria-label=&quot;Anchor link for: workflows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;patchbay.pub&#x2F;&quot;&gt;Patchbay&lt;&#x2F;a&gt; - 穷人版 ifttt&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zi-yu-ming&quot;&gt;子域名&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-yu-ming&quot; aria-label=&quot;Anchor link for: zi-yu-ming&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;takingnames.io&#x2F;blog&#x2F;instant-subdomains&quot;&gt;免费的子域名，一个 get 请求即可生成&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;yin-pin&quot;&gt;音频&lt;a class=&quot;zola-anchor&quot; href=&quot;#yin-pin&quot; aria-label=&quot;Anchor link for: yin-pin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;farplay.io&#x2F;&quot;&gt;最快速的音频聊天&#x2F;在线分享服务 farplay&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jamulus.io&#x2F;&quot;&gt;好吧，他们说这个可能更快，jamulus&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;kindle&quot;&gt;Kindle&lt;a class=&quot;zola-anchor&quot; href=&quot;#kindle&quot; aria-label=&quot;Anchor link for: kindle&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;abishekmuthian&#x2F;hntoebook&quot;&gt;Hacker News to Kindle&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wen-jian&quot;&gt;文件&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-jian&quot; aria-label=&quot;Anchor link for: wen-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EtherDream&#x2F;http-server-online&quot;&gt;在线把本地文件夹作为一个 http 服务器&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;commands&quot;&gt;Commands&lt;a class=&quot;zola-anchor&quot; href=&quot;#commands&quot; aria-label=&quot;Anchor link for: commands&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cmdchallenge.com&#x2F;&quot;&gt;cmd 有趣在线挑战&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jsonformatter.com&#x2F;&quot;&gt;Json for matter, 友好的在线 json 格式化网站&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;shi-pin&quot;&gt;视频&lt;a class=&quot;zola-anchor&quot; href=&quot;#shi-pin&quot; aria-label=&quot;Anchor link for: shi-pin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;popcorn-official&#x2F;popcorn-desktop&quot;&gt;爆米花种子播放器，边下边播&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodvids.so&#x2F;&quot;&gt;Good Vids&lt;&#x2F;a&gt; - 通过你的推特 Twitter 好友，找到推荐的视频 Videos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;newsletter&quot;&gt;Newsletter&lt;a class=&quot;zola-anchor&quot; href=&quot;#newsletter&quot; aria-label=&quot;Anchor link for: newsletter&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leafac&#x2F;kill-the-newsletter&quot;&gt;Newsletter to RSS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;knadh&#x2F;listmonk&quot;&gt;Listmonk&lt;&#x2F;a&gt; - 自部署 newsletter 服务&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pa-chong&quot;&gt;爬虫&lt;a class=&quot;zola-anchor&quot; href=&quot;#pa-chong&quot; aria-label=&quot;Anchor link for: pa-chong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ulixee&#x2F;secret-agent&quot;&gt;secret-agent&lt;&#x2F;a&gt; - 专为爬虫而生的 nodejs 仿浏览器爬虫&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bian-cheng&quot;&gt;编程&lt;a class=&quot;zola-anchor&quot; href=&quot;#bian-cheng&quot; aria-label=&quot;Anchor link for: bian-cheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;glitch.com&#x2F;&quot;&gt;Glitch&lt;&#x2F;a&gt; - 在浏览器中快速开始一个新项目并运行它，有很多最佳实践的模版，很适合开始尝试某个项目。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fu-fei-qiang&quot;&gt;付费墙&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-fei-qiang&quot; aria-label=&quot;Anchor link for: fu-fei-qiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;12ft.io&#x2F;&quot;&gt;12ft&lt;&#x2F;a&gt; - 绕过付费墙&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;email-ding-yue&quot;&gt;Email 订阅&lt;a class=&quot;zola-anchor&quot; href=&quot;#email-ding-yue&quot; aria-label=&quot;Anchor link for: email-ding-yue&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhubai.love&#x2F;&quot;&gt;竹白&lt;&#x2F;a&gt; - 中国邮件订阅&#x2F;公众号订阅服务&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;play&quot;&gt;Play&lt;a class=&quot;zola-anchor&quot; href=&quot;#play&quot; aria-label=&quot;Anchor link for: play&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kosmi.io&#x2F;&quot;&gt;在线和朋友玩游戏&#x2F;扑克&#x2F;看视频等等&#x2F;不登录也可以&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ge-ren-guan-li&quot;&gt;个人管理&lt;a class=&quot;zola-anchor&quot; href=&quot;#ge-ren-guan-li&quot; aria-label=&quot;Anchor link for: ge-ren-guan-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;monicahq&#x2F;monica&quot;&gt;monica&lt;&#x2F;a&gt; - 个人 CRM&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ying-jian&quot;&gt;硬件&lt;a class=&quot;zola-anchor&quot; href=&quot;#ying-jian&quot; aria-label=&quot;Anchor link for: ying-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sunboxlabs.com&#x2F;solar-kit&#x2F;&quot;&gt;太阳能&#x2F;家用大功率充电宝&lt;&#x2F;a&gt; - $449&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;focus&quot;&gt;Focus&lt;a class=&quot;zola-anchor&quot; href=&quot;#focus&quot; aria-label=&quot;Anchor link for: focus&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;stayfocusd&#x2F;laankejkbhbdhmipfmgcngdelahlfoji?hl=fr&quot;&gt;Stay Focus chrome extension&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;selfcontrolapp.com&#x2F;&quot;&gt;Self Control Mac app&lt;&#x2F;a&gt; - block list&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;di-tu&quot;&gt;地图&lt;a class=&quot;zola-anchor&quot; href=&quot;#di-tu&quot; aria-label=&quot;Anchor link for: di-tu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;organicmaps&#x2F;organicmaps&quot;&gt;Organic Maps&lt;&#x2F;a&gt; - 开源离线优先地图&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chrome-extensions&quot;&gt;Chrome Extensions&lt;a class=&quot;zola-anchor&quot; href=&quot;#chrome-extensions&quot; aria-label=&quot;Anchor link for: chrome-extensions&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;singlefile&#x2F;mpiodijhokgodhhofbcjdecpffjipkle&#x2F;related?hl=en&quot;&gt;Save To one File&lt;&#x2F;a&gt; - 把文件保存到一个文件中&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;only-macos&quot;&gt;Only Macos&lt;a class=&quot;zola-anchor&quot; href=&quot;#only-macos&quot; aria-label=&quot;Anchor link for: only-macos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getradar.co&#x2F;&quot;&gt;Radar&lt;&#x2F;a&gt; - Menu bar app to check the things that matter to you&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;menubarx.app&#x2F;&quot;&gt;Menubarx&lt;&#x2F;a&gt; - Menu bar app to browser website.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.taskpaper.com&#x2F;&quot;&gt;Taskpaper&lt;&#x2F;a&gt;- Plain text task manager&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ios&quot;&gt;iOS&lt;a class=&quot;zola-anchor&quot; href=&quot;#ios&quot; aria-label=&quot;Anchor link for: ios&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bere.al&#x2F;en&quot;&gt;Logo BeReal&lt;&#x2F;a&gt; - Your Friends for Real. Everyday at a random time, everyone is notified simultaneously to capture and share a Photo in 2 Minutes. A new and unique way to discover who your friends really are in their daily life.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;housebook&#x2F;id1489866496?utm_campaign=newsletter-2020-07-17&amp;amp;utm_medium=email&amp;amp;utm_source=10words&quot;&gt;HouseBook&lt;&#x2F;a&gt; - Keep track of your stuff.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;id1474476414?utm_campaign=newsletter-2020-03-20&amp;amp;utm_medium=email&amp;amp;utm_source=10words&quot;&gt;Your life weekly calendar&lt;&#x2F;a&gt; - List your life by weeks. every week is a dot.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;cn&#x2F;app&#x2F;alarmy-alarm-clock-%E4%BD%BF%E5%91%BD%E9%97%B9%E9%92%9F&#x2F;id1163786766&quot;&gt;使命闹钟&lt;&#x2F;a&gt; - Alarmy 可以帮助您先起床，并让您每天早上成功完成所有“要做的事情”。借助各种有趣的任务和响亮的随机铃声，您可以轻松唤醒并刷新每天养成成功习惯的习惯&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;maskeraid&#x2F;id1590163828&quot;&gt;自动给图片里的人脸打一个表情符号&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apps.apple.com&#x2F;us&#x2F;app&#x2F;anonymous-camera&#x2F;id1504102584&quot;&gt;自动给视频打码&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;web&quot;&gt;Web&lt;a class=&quot;zola-anchor&quot; href=&quot;#web&quot; aria-label=&quot;Anchor link for: web&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gurov&#x2F;stupid-rss-reader&quot;&gt;Stupid RSS Reader&lt;&#x2F;a&gt; - ⊕ PWA RSS client on Angular 11&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;all&quot;&gt;All&lt;a class=&quot;zola-anchor&quot; href=&quot;#all&quot; aria-label=&quot;Anchor link for: all&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.zijizhang.com&#x2F;&quot;&gt;自记账&lt;&#x2F;a&gt; - 自己记账，不找代理&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ponymessenger.com&#x2F;&quot;&gt;正念消息传递 PonyMessager&lt;&#x2F;a&gt; - 每天固定时间发送和接收消息&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;paas&quot;&gt;PAAS&lt;a class=&quot;zola-anchor&quot; href=&quot;#paas&quot; aria-label=&quot;Anchor link for: paas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;deta.space&#x2F;&quot;&gt;Deta&lt;&#x2F;a&gt; - 云中托管个人的数据，免费建立自己的个人空间&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cloudron.io&#x2F;index.html&quot;&gt;cloudron&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sandstorm.io&#x2F;&quot;&gt;sandstorm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedombox.org&#x2F;&quot;&gt;freedombox&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;image&quot;&gt;Image&lt;a class=&quot;zola-anchor&quot; href=&quot;#image&quot; aria-label=&quot;Anchor link for: image&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thisxdoesnotexist.com&#x2F;&quot;&gt;这个 x 现在不存在&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;backup&quot;&gt;Backup&lt;a class=&quot;zola-anchor&quot; href=&quot;#backup&quot; aria-label=&quot;Anchor link for: backup&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;VerifiedJoseph&#x2F;Save-to-the-Wayback-Machine&quot;&gt;Save-to-the-Wayback-Machine&lt;&#x2F;a&gt; - A browser extension that allow you to save the webpage to wayback machine&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;browser&quot;&gt;Browser&lt;a class=&quot;zola-anchor&quot; href=&quot;#browser&quot; aria-label=&quot;Anchor link for: browser&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;morrick.me&#x2F;archives&#x2F;9500&quot;&gt;This is my next main browser: a review of Orion&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;common-list&quot;&gt;Common List&lt;a class=&quot;zola-anchor&quot; href=&quot;#common-list&quot; aria-label=&quot;Anchor link for: common-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;edge&quot;&gt;Microsoft Edge&lt;&#x2F;a&gt; - Microsoft Edge is the fast and secure browser, which I’m using now. its the best for now.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;vivaldi.com&#x2F;&quot;&gt;Vivaldi Browser | Now with built-in Translate, Mail, and Calendar&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.waterfox.net&#x2F;&quot;&gt;Waterfox&lt;&#x2F;a&gt; - The way to surf the web. Striking the perfect balance of privacy and useability.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;browser.kagi.com&#x2F;&quot;&gt;Orion&lt;&#x2F;a&gt; - 基于 safari webkit 的隐私优先的 mac&#x2F;ios 浏览器&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;for-developer&quot;&gt;For developer&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-developer&quot; aria-label=&quot;Anchor link for: for-developer&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blisk.io&#x2F;&quot;&gt;Blisk&lt;&#x2F;a&gt;- Cross-Device Testing Done Right&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bonsaibrowser.com&#x2F;&quot;&gt;bonsai&lt;&#x2F;a&gt; - Web-browser for research that helps programmers think clearly.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.brow.sh&#x2F;&quot;&gt;Brow&lt;&#x2F;a&gt; - Text based broswer&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;atlas-engineer&#x2F;nyxt&quot;&gt;Nyxt&lt;&#x2F;a&gt; - 像 vim 一样的浏览器&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;beakerbrowser.com&#x2F;&quot;&gt;Beaker Browswer&lt;&#x2F;a&gt; - p2p 浏览器
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;userlist.beakerbrowser.com&#x2F;&quot;&gt;user list&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;paid-browser&quot;&gt;Paid Browser&lt;a class=&quot;zola-anchor&quot; href=&quot;#paid-browser&quot; aria-label=&quot;Anchor link for: paid-browser&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;https:&#x2F;&#x2F;sizzy.co&#x2F; - The browser for developers, view one page with multiple devices once&lt;&#x2F;li&gt;
+&lt;li&gt;https:&#x2F;&#x2F;www.meetsidekick.com&#x2F; - The fastest browser for work ever made, Designed to be the ultimate online work experience, it brings together your team and every web tool you use – all in one interface. Actually, not so fast, but the UI, the workflow, the sidebar, will give your new experience.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bi-ji&quot;&gt;笔记&lt;a class=&quot;zola-anchor&quot; href=&quot;#bi-ji&quot; aria-label=&quot;Anchor link for: bi-ji&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;foambubble&#x2F;foam&quot;&gt;GitHub - foambubble&#x2F;foam: A personal knowledge management and sharing system for VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;twitter-tools&quot;&gt;Twitter Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#twitter-tools&quot; aria-label=&quot;Anchor link for: twitter-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.feedsmage.com&#x2F;&quot;&gt;feddsmage&lt;&#x2F;a&gt; - I found 40 feeds in your timeline ✨ 5 are newsletters 📨 11 are slow feeds 🐌 (usually lost in the noise).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;resume&quot;&gt;Resume&lt;a class=&quot;zola-anchor&quot; href=&quot;#resume&quot; aria-label=&quot;Anchor link for: resume&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;read.cv&#x2F;&quot;&gt;read cv&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zuo-pai-you-pai-xin-wen-bi-jiao&quot;&gt;左派右派新闻比较&lt;a class=&quot;zola-anchor&quot; href=&quot;#zuo-pai-you-pai-xin-wen-bi-jiao&quot; aria-label=&quot;Anchor link for: zuo-pai-you-pai-xin-wen-bi-jiao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.their.news&#x2F;&quot;&gt;Their news&lt;&#x2F;a&gt; - left or right news&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zi-mu-gong-ju&quot;&gt;字幕工具&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-mu-gong-ju&quot; aria-label=&quot;Anchor link for: zi-mu-gong-ju&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sorz.github.io&#x2F;asstosrt-wasm&#x2F;&quot;&gt;ass to srt&lt;&#x2F;a&gt; - ass to srt converter&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;&quot;&gt;Bazarr Setup&lt;&#x2F;a&gt; - Subtitle manager&lt;&#x2F;li&gt;
+&lt;li&gt;[subtitles translate](https:&#x2F;&#x2F;translate-s ubtitles.com&#x2F;) - Google translate subtitles&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;subhd.tv&#x2F;&quot;&gt;Subhd&lt;&#x2F;a&gt; - Best Chinese subtitle&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;savesubs.com&#x2F;&quot;&gt;Youtube 字幕下载&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;lu-xing-shou-xu&quot;&gt;旅行手续&lt;a class=&quot;zola-anchor&quot; href=&quot;#lu-xing-shou-xu&quot; aria-label=&quot;Anchor link for: lu-xing-shou-xu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;25400818&quot;&gt;如何给车辆办理“护照”出境自驾？&lt;&#x2F;a&gt; ，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20210825164831&#x2F;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;25400818&quot;&gt;备份&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;longtermvisas.com&#x2F;&quot;&gt;Long term visas&lt;&#x2F;a&gt; - Travel decisions, simplified.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tools-1&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools-1&quot; aria-label=&quot;Anchor link for: tools-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gromov.com&#x2F;&quot;&gt;预测你在世界各地的生活成本&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;sou-suo-yin-qing&quot;&gt;搜索引擎&lt;a class=&quot;zola-anchor&quot; href=&quot;#sou-suo-yin-qing&quot; aria-label=&quot;Anchor link for: sou-suo-yin-qing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blogsurf.io&#x2F;&quot;&gt;Blog Surf&lt;&#x2F;a&gt; - 博客搜索引擎&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kagi.com&#x2F;&quot;&gt;Kagi&lt;&#x2F;a&gt; - 高级搜索引擎&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zai-xian-ping-tai-mo-ni&quot;&gt;在线平台模拟&lt;a class=&quot;zola-anchor&quot; href=&quot;#zai-xian-ping-tai-mo-ni&quot; aria-label=&quot;Anchor link for: zai-xian-ping-tai-mo-ni&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neverinstall.com&#x2F;&quot;&gt;Never Install&lt;&#x2F;a&gt; - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 </feed>

@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/algorithm/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-04T00:00:00+00:00</updated>
+	<updated>2022-06-05T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/algorithm/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Solve Algorithms</title>
 		<published>2022-05-08T06:17:19+08:00</published>
-		<updated>2022-06-04T00:00:00+00:00</updated>
+		<updated>2022-06-05T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/algorithms/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/algorithms/</id>
 		<content type="html">&lt;p&gt;When I saw Leetcode on the timeline, I thought you guys were so “cult”…&lt;&#x2F;p&gt;
@@ -25,17 +25,20 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problem-list&#x2F;top-interview-questions&#x2F;&quot;&gt;Top Interview Questions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;classic&quot;&gt;Classic&lt;a class=&quot;zola-anchor&quot; href=&quot;#classic&quot; aria-label=&quot;Anchor link for: classic&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;sort_test.ts&quot;&gt;Sort&lt;&#x2F;a&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;bubble_sort.ts&quot;&gt;Bubble Sort&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;selection_sort.ts&quot;&gt;Selection Sort&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;bubble_sort.ts&quot;&gt;Bubble Sort&lt;&#x2F;a&gt; - Medium&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;selection_sort.ts&quot;&gt;Selection Sort&lt;&#x2F;a&gt; - Easy&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;insertion_sort.ts&quot;&gt;Insertion Sort&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;quick_sort.ts&quot;&gt;Quick Sort&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;merge_sort.ts&quot;&gt;Merge Sort&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;integer-to-roman&#x2F;&quot;&gt;Integer to Roman&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;roman_to_integer_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;two-sum&#x2F;&quot;&gt;Two Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;two_sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;add-two-numbers&#x2F;&quot;&gt;Add Two Numbers&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;add_two_numbers_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -129,6 +132,10 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;minimum-falling-path-sum&#x2F;&quot;&gt;Minimum Falling Path Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;minimum_falling_path_sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;matrix-block-sum&#x2F;&quot;&gt;Matrix Block Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;matrix_block_sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;range-sum-query-2d-immutable&#x2F;&quot;&gt;Range Sum Query 2D - Immutable&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;range_sum_query_2d_immutable_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;medium&quot;&gt;Medium&lt;a class=&quot;zola-anchor&quot; href=&quot;#medium&quot; aria-label=&quot;Anchor link for: medium&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;maximal-square&#x2F;&quot;&gt;Maximal Square&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;maximal_square_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

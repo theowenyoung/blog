@@ -1,3 +1,10 @@
+/**
+ * Split array to two groups until array number is 1, then sort these sorted groups.
+ * @param leftArray
+ * @param rightArray
+ * @returns
+ */
+
 const sortSortedGroups = (
   leftArray: number[],
   rightArray: number[]
