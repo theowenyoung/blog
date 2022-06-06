@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - World</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/tags/world/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-06-06T17:10:49+08:00</updated>
+	<id>https://www.owenyoung.com/tags/world/atom.xml</id>
+	<entry xml:lang="en">
+		<title>About the World</title>
+		<published>2022-06-06T17:10:49+08:00</published>
+		<updated>2022-06-06T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/world/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/world/</id>
+		<content type="html">&lt;p&gt;Curating the knowledge of the world, countries, rank&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rank&quot;&gt;Rank&lt;a class=&quot;zola-anchor&quot; href=&quot;#rank&quot; aria-label=&quot;Anchor link for: rank&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.heritage.org&#x2F;index&#x2F;ranking&quot;&gt;World Economic Freedom Rank&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

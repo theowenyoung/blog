@@ -15,7 +15,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/articles/</loc>
-        <lastmod>2022-06-02</lastmod>
+        <lastmod>2022-06-06</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/awesome-list/</loc>
@@ -491,6 +491,10 @@
         <lastmod>2022-05-11</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/en/world/</loc>
+        <lastmod>2022-06-06</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/english-learning/</loc>
         <lastmod>2022-04-15</lastmod>
     </url>
@@ -922,6 +926,12 @@
         <loc>https://www.owenyoung.com/tags/workflows/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/world/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/world/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/writing/</loc>
     </url>
     <url>
@@ -949,6 +959,6 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/you-should-know/</loc>
-        <lastmod>2022-04-20</lastmod>
+        <lastmod>2022-06-06</lastmod>
     </url>
 </urlset>
