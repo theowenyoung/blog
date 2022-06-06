@@ -11,7 +11,7 @@ taxonomies:
     - Tweets
 ---
 
-> 伊朗小粉红小组： https://www.reddit.com/r/ProIran/
+> 伊朗小粉红小组： <https://www.reddit.com/r/ProIran/>
 
 > 一个人怎么会又想看中国拍好电影，同时又认可中国的审查呢？ -- 2022.05.29
 

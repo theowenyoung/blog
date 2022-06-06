@@ -16,7 +16,7 @@
         <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{get_url(path="@/archive/_index.md",lang=lang)}}"> {{all_section_pages.pages | length}}</a> 篇文章，大约 {{total_word_count}} 字，最后更新时间：<a href="{{get_url(path="@/archive/_index.md",lang=lang)}}">{{all_pages_sort_by_date[0].updated}}</a>. 这个博客没有任何JS，只是简单的静态网页。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>, <a href="{{get_url(path="@/pages/now.md")}}">点击了解我现在在做的事情</a></p>
         {% endif %}
       </section>
-      <h2>{{trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe}}</h2>
+      <h2>{{trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe}}<a href="#latest-notes" id="latest-notes" class="zola-anchor" >🔗</a></h2>
       <section class="articles">
       
         <ul class="root-ul">
@@ -29,7 +29,7 @@
 
    
       {{ section.content | safe }}
-      <h2>{{trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe}}</h2>
+      <h2>{{trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe}}<a href="#latest" id="latest" class="zola-anchor" >🔗</a></h2>
       <section class="articles">
       {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
       {% for page in all_blog_pages.pages | slice(start=0,end=5)  %} 
@@ -40,7 +40,7 @@
       </section>
       <hr class="w-full">
 
-      <h2>{{trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe}}</h2>
+      <h2>{{trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe}}<a href="#thoughts" id="thoughts" class="zola-anchor" >🔗</a></h2>
       {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %} 
       <section class="articles">
         {{ thoughts_page.summary | safe }}
@@ -48,7 +48,7 @@
       </section>
       <hr class="w-full">
 
-      <h2>{{trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe}}</h2>
+      <h2>{{trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe}}<a href="#all-notes" id="all-notes" class="zola-anchor" >🔗</a></h2>
       <section class="articles">
       
         <ul class="root-ul">
