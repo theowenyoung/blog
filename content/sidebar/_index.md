@@ -9,6 +9,11 @@ updated: 2022-04-04
 - [邮件订阅](https://digests.owenyoung.com/)
 - [RSS 订阅地址](/atom.xml)
 
+## 指南
+
+- [阅读指南](/content/books-guide.md)
+- [我在阅读什么？](https://myfeed.owenyoung.com/)
+
 ## 关于
 
 - [关于我](/about/)

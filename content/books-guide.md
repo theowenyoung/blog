@@ -36,9 +36,7 @@ taxonomies:
 
 ## 资源
 
-- [标准电子书](https://standardebooks.org/) - 制作精美的免费版权的电子书
-- [鸠摩电子书搜索](https://www.jiumodiary.com/)
-- [Z-Library 全球最大数字图书馆](https://zh.z-lib.org/)
+- [Z-Library 全球最大数字图书馆](https://zh.jp1lib.org/)
   - <https://sg1lib.org>
   - <https://1lib.pl>
   - <https://ng1lib.org>
@@ -46,6 +44,8 @@ taxonomies:
   - <https://bookzz.ren>
   - <https://booksc.xyz>
 - [公共领域有声读物](https://librivox.org/)
+- [标准电子书](https://standardebooks.org/) - 制作精美的免费版权的电子书
+- [鸠摩电子书搜索](https://www.jiumodiary.com/)
 
 ## 讨论
 

@@ -1,7 +1,7 @@
 ---
 title: 收集值得阅读的文章
 date: 2022-03-25
-updated: 2022-06-02
+updated: 2022-06-06
 taxonomies:
   categories:
     - Notes
@@ -41,6 +41,10 @@ taxonomies:
 - [掌握金钱，负担得起你所有想要的东西](https://affordanything.com/start-here/)
 - [数字极简主义](https://www.calnewport.com/blog/2016/12/18/on-digital-minimalism/)
 - [一个人，一条狗，走路环游世界](https://www.afar.com/magazine/tom-turcich-and-the-world-walk)
+
+## 人生/哲学
+
+- [无知是大多数人最终失败的原因](https://www.floordaily.net/floorfocus/cluelessness-is-the-reason-most-people-eventually-)
 
 ## 人物
 
