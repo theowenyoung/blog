@@ -212,12 +212,6 @@ a:visited {
   scroll-margin-top: 56px;
 }
 
-:target::before {
-  content: "";
-  display: block;
-  height: 56px;
-  margin-top: -56px;
-}
 .body-zone {
   flex-direction: column;
 }

@@ -52,6 +52,9 @@ deno test
 
 ## Hard
 
+- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_palindromic_substring_test.ts)
+- [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_palindromic_subsequence_test.ts)
+
 ## List
 
 - [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_substring_without_repeating_characters_test.ts)
@@ -65,7 +68,7 @@ deno test
 - [Number of Steps to Reduce a Number to Zero](https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/number_of_steps_to_reduce_a_number_to_zero_test.ts)
 - [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/richest_customer_wealth_test.ts)
 - [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/median_of_two_sorted_arrays_test.ts)
-- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_palindromic_substring_test.ts)
+
 - [Reverse Integer](https://leetcode.com/problems/reverse-integer/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/reverse_integer_test.ts)
 - [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/squares_of_a_sorted_array_test.ts)
 - [Rotate Array](https://leetcode.com/problems/rotate-array/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/rotate_array_test.ts)
