@@ -74,3 +74,7 @@ taxonomies:
 ## 音乐
 
 - [Jango](https://www.jango.com/) - 免费在线音乐定制播放
+
+## 服务器
+
+- [scaleway](https://www.scaleway.com/) - 免费对象存储 75GB

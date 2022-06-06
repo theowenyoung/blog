@@ -70,6 +70,7 @@ taxonomies:
   - 愿意使人民挨饿和孤立其国家的独裁者可以无视他们。
   - 独裁者经常无视制裁，无论他们自己或他们的国家付出多大的代价。到目前为止，普京似乎也不在乎。
   - 在十九世纪五十年代的朝鲜战争之后首次对朝鲜实施的制裁和禁运已经完全失败了。在三代人的时间里，金氏王朝只会变得更加好战，武装得更好，更加顽固。据估计，世界上最孤立的政权现在拥有数十枚核武器和远程导弹，可以在亚洲和太平洋地区发射。
+- [西方（仍然）对普京的错误](https://foreignpolicy.com/2022/06/01/putin-war-ukraine-west-misconceptions/)
 
 ## 创业
 
@@ -101,7 +102,7 @@ taxonomies:
 
 ## 抑郁症
 
-## 文章
+### 文章
 
 - [如何从抑郁中恢复过来](https://psychlopaedia.org/health/how-to-prevent-depression-full-transcript/)
   - 你如何解释，你如何赋予意义，你对生活中的事件赋予什么样的意义。我们学到的部分内容是，有一种现象叫做归因风格，这是一种人们如何反射性地、无意识地解释事件意义的模式。
@@ -133,3 +134,11 @@ taxonomies:
     - 不要忽视现实，了解事实
     - 不要放棄或被動
   - 你是唯一一个能管理好自己的人，目标不是治愈抑郁症，目标是学习如何管理你的情绪
+
+## 政治
+
+- [英国怎么了？让我们从君主制开始](https://www.opendemocracy.net/en/opendemocracyuk/whats-wrong-with-britain-lets-start-with-the-monarchy/)
+
+## 日本
+
+- [日本的生活水平太低了](https://noahpinion.substack.com/p/japans-living-standards-are-too-low?s=w)
