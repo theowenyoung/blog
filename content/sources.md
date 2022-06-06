@@ -22,6 +22,7 @@ taxonomies:
 - [Politico](https://www.politico.com/) - 政治评论和报道
 - [卫报](https://www.theguardian.com/)
 - [每日电讯报](https://www.telegraph.co.uk/) - 英国
+- [The Rest of World](https://restofworld.org/) - 科技报道
 
 ## opinion
 
