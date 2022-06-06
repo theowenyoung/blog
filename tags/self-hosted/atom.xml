@@ -1,66 +1,1016 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
-	<title>Owen的博客 - Self-hosted</title>
-	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Self-hosted</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
 	<link href="https://www.owenyoung.com/tags/self-hosted/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2022-03-26T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/self-hosted/atom.xml</id>
-	<entry xml:lang="zh">
-		<title>Jackett 安装指南</title>
-		<published>2021-03-26T00:00:00+00:00</published>
+	<entry xml:lang="en">
+		<title>Caddy File Server Browser with URL Scheme</title>
+		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/jackett-setup/" type="text/html"/>
-		<id>https://www.owenyoung.com/blog/jackett-setup/</id>
-		<content type="html">&lt;p&gt;Jackett 是一款开源的种子聚合搜索服务，常用来和 BT 下载器配合使用。&lt;&#x2F;p&gt;
-&lt;p&gt;Read more at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett#install-as-service&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Download and extract the latest &lt;code&gt;Jackett.Binaries.LinuxAMDx64.tar.gz&lt;&#x2F;code&gt; release from the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett&#x2F;releases&quot;&gt;releases page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett&#x2F;releases&#x2F;download&#x2F;v0.18.545&#x2F;Jackett.Binaries.LinuxAMDx64.tar.gz
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# tar to a directory you want
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;tar -xf&lt;&#x2F;span&gt;&lt;span&gt; Jackett.Binaries.LinuxAMDx64.tar.gz
+		<link href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/</id>
+		<content type="html">&lt;p&gt;Copy the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;theowenyoung&#x2F;e09cb6e2c59f247fdc3f4e6fe4401481&quot;&gt;Template&lt;&#x2F;a&gt; to your local caddy config folder.&lt;&#x2F;p&gt;
+&lt;p&gt;This template will display the follow page:
+&lt;img src=&quot;.&#x2F;caddy-file-template-screenshot.png&quot; alt=&quot;screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;localhost &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  root * &#x2F;root
+&lt;&#x2F;span&gt;&lt;span&gt;  encode gzip
+&lt;&#x2F;span&gt;&lt;span&gt;  file_server {
+&lt;&#x2F;span&gt;&lt;span&gt;    browse .&#x2F;file-browser-template-for-caddy.html
+&lt;&#x2F;span&gt;&lt;span&gt;    hide .*
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;To install Jackett as a service, open a Terminal, cd to the jackett folder and run &lt;code&gt;sudo .&#x2F;install_service_systemd.sh&lt;&#x2F;code&gt; You need root permissions to install the service. The service will start on each logon. You can always stop it by running &lt;code&gt;systemctl stop jackett.service&lt;&#x2F;code&gt; from Terminal. You can start it again it using &lt;code&gt;systemctl start jackett.service&lt;&#x2F;code&gt;. Logs are stored as usual under &lt;code&gt;~&#x2F;.config&#x2F;Jackett&#x2F;log.txt&lt;&#x2F;code&gt; and also in &lt;code&gt;journalctl -u jackett.service&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Mastdon Development Setup</title>
+		<published>2022-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/mastdon-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/mastdon-setup/</id>
+		<content type="html">&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinmastodon.org&#x2F;dev&#x2F;setup&#x2F;&quot;&gt;dev&#x2F;setup&lt;&#x2F;a&gt; &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinmastodon.org&#x2F;admin&#x2F;install&#x2F;&quot;&gt;admin&#x2F;install&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Ruby&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;p&gt;&lt;code&gt;http:&#x2F;&#x2F;your-ip:9117&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;You can set password, or port by UI.&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;jackett-suo-yin-tui-jian&quot;&gt;Jackett 索引推荐&lt;a class=&quot;zola-anchor&quot; href=&quot;#jackett-suo-yin-tui-jian&quot; aria-label=&quot;Anchor link for: jackett-suo-yin-tui-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruby-lang.org&#x2F;en&#x2F;documentation&#x2F;installation&#x2F;&quot;&gt;Installing Ruby&lt;&#x2F;a&gt; 2. Install Node&lt;&#x2F;p&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nvm-sh&#x2F;nvm&quot;&gt;nvm&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Install postgres&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;postgres-setup-for-debian&#x2F;&quot;&gt;Postgres Setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Install redit&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;brew&lt;&#x2F;span&gt;&lt;span&gt; install redis
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;brew&lt;&#x2F;span&gt;&lt;span&gt; services start redis
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Clone&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone git@github.com:mastodon&#x2F;mastodon.git live
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Install ruby dependences&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; live
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bundle&lt;&#x2F;span&gt;&lt;span&gt; config set&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --local&lt;&#x2F;span&gt;&lt;span&gt; with &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;development&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bundle&lt;&#x2F;span&gt;&lt;span&gt; install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Install yarn&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;npm&lt;&#x2F;span&gt;&lt;span&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --global&lt;&#x2F;span&gt;&lt;span&gt; yarn
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Install nodejs dependences&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;yarn
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol&gt;
+&lt;li&gt;Init database&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RAILS_ENV&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;development &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bundle&lt;&#x2F;span&gt;&lt;span&gt; exec rails db:setup
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;8&quot;&gt;
+&lt;li&gt;Install foreman for multiple run&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gem&lt;&#x2F;span&gt;&lt;span&gt; install foreman&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --no-document
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;Open&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;localhost:3000&quot;&gt;http:&#x2F;&#x2F;localhost:3000&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;email: &lt;code&gt;admin@localhost:3000&lt;&#x2F;code&gt;
+password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Self-hosted</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/self-hosted/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/self-hosted/</id>
+		<content type="html">&lt;h2 id=&quot;file&quot;&gt;File&lt;a class=&quot;zola-anchor&quot; href=&quot;#file&quot; aria-label=&quot;Anchor link for: file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;EZTV&lt;&#x2F;li&gt;
-&lt;li&gt;RARBG&lt;&#x2F;li&gt;
-&lt;li&gt;YTS&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&quot;&gt;GitHub - filebrowser&#x2F;filebrowser: 📂 Web File Browser&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;larrywonss.github.io&#x2F;#&#x2F;&quot;&gt;OpenWrt 简明教程&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;kol&quot;&gt;KOL&lt;a class=&quot;zola-anchor&quot; href=&quot;#kol&quot; aria-label=&quot;Anchor link for: kol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;calendso&#x2F;calendso&quot;&gt;calendso&#x2F;calendso: The open-source Calendly alternative. (github.com)&lt;&#x2F;a&gt; - Make an appointment, connect with your calendar&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;time-tracking&quot;&gt;Time tracking&lt;a class=&quot;zola-anchor&quot; href=&quot;#time-tracking&quot; aria-label=&quot;Anchor link for: time-tracking&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;almarklein&#x2F;timetagger&quot;&gt;timetagger&lt;&#x2F;a&gt; - Tag your time, get the insight&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;shopping&quot;&gt;Shopping&lt;a class=&quot;zola-anchor&quot; href=&quot;#shopping&quot; aria-label=&quot;Anchor link for: shopping&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;medusajs&#x2F;medusa&quot;&gt;Mpedussa&lt;&#x2F;a&gt; - Shopify alternative #Alternative&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;a class=&quot;zola-anchor&quot; href=&quot;#services&quot; aria-label=&quot;Anchor link for: services&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LibreTranslate&#x2F;LibreTranslate&quot;&gt;LibreTranslate&lt;&#x2F;a&gt; - Free and Open Source Machine Translation API. 100% self-hosted, no limits, no ties to proprietary translation services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;medias&quot;&gt;Medias&lt;a class=&quot;zola-anchor&quot; href=&quot;#medias&quot; aria-label=&quot;Anchor link for: medias&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hauxir&#x2F;rapidbay&quot;&gt;RapidBay&lt;&#x2F;a&gt; - Self-hosted torrent video streaming service compatible with Chromecast and AppleTV deployable in the cloud&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Dusk-Labs&#x2F;dim&quot;&gt;Dim&lt;&#x2F;a&gt; - Dim, a media manager fueled by dark forces.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;paas&quot;&gt;PAAS&lt;a class=&quot;zola-anchor&quot; href=&quot;#paas&quot; aria-label=&quot;Anchor link for: paas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cloudron.io&#x2F;index.html&quot;&gt;cloudron&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sandstorm.io&#x2F;&quot;&gt;sandstorm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedombox.org&#x2F;&quot;&gt;freedombox&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;federation&quot;&gt;Federation&lt;a class=&quot;zola-anchor&quot; href=&quot;#federation&quot; aria-label=&quot;Anchor link for: federation&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;joinmobilizon.org&#x2F;en&#x2F;&quot;&gt;Mobilizon&lt;&#x2F;a&gt; - Mobilizon is a tool that helps you find, create and organize events.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;orbitdb&#x2F;orbit&quot;&gt;Orbit&lt;&#x2F;a&gt; - A distributed, serverless, peer-to-peer chat application on IPFS.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;irislib&#x2F;iris-messenger&quot;&gt;Iris&lt;&#x2F;a&gt; - Decentralized messenger&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twt.social&#x2F;&quot;&gt;Twt.social&lt;&#x2F;a&gt; - Twt.social is a new Social Media platform&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;old-school&quot;&gt;Old school&lt;a class=&quot;zola-anchor&quot; href=&quot;#old-school&quot; aria-label=&quot;Anchor link for: old-school&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;gemini&lt;&#x2F;a&gt; - Gemini is a new internet protocol which: Is heavier than gopher, Is lighter than the web, Will not replace either, Strives for maximum power to weight ratio, Takes user privacy very seriously&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;livestreaming&quot;&gt;Livestreaming&lt;a class=&quot;zola-anchor&quot; href=&quot;#livestreaming&quot; aria-label=&quot;Anchor link for: livestreaming&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GRVYDEV&#x2F;Project-Lightspeed&quot;&gt;Lightspeed&lt;&#x2F;a&gt; - A self contained OBS -&amp;gt; FTL -&amp;gt; WebRTC live streaming server. Comprised of 3 parts once configured anyone can achieve sub-second OBS to the browser livestreaming&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;admin&quot;&gt;Admin&lt;a class=&quot;zola-anchor&quot; href=&quot;#admin&quot; aria-label=&quot;Anchor link for: admin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToolJet&#x2F;ToolJet&#x2F;&quot;&gt;ToolJet&lt;&#x2F;a&gt; - ToolJet is an open-source low-code platform for building and deploying internal tools with minimal engineering efforts 🚀&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chat&quot;&gt;Chat&lt;a class=&quot;zola-anchor&quot; href=&quot;#chat&quot; aria-label=&quot;Anchor link for: chat&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mattermost&#x2F;mattermost-server&quot;&gt;mattermost&lt;&#x2F;a&gt; - Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;conduit&quot;&gt;conduit&lt;&#x2F;a&gt; - Conduit is a simple, fast and reliable chat server powered by Matrix&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;deploy&quot;&gt;Deploy&lt;a class=&quot;zola-anchor&quot; href=&quot;#deploy&quot; aria-label=&quot;Anchor link for: deploy&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;adnanh&#x2F;webhook&quot;&gt;Webhook&lt;&#x2F;a&gt; - webhook is a lightweight incoming webhook server to run shell commands&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;music&quot;&gt;Music&lt;a class=&quot;zola-anchor&quot; href=&quot;#music&quot; aria-label=&quot;Anchor link for: music&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;izderadicka&#x2F;audioserve&quot;&gt;music server in rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
-	<entry xml:lang="zh">
-		<title>Jellyfin安装指南</title>
+	<entry xml:lang="en">
+		<title>FileBrowser Setup</title>
+		<published>2022-02-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/file-browser-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/file-browser-setup/</id>
+		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -fsSL&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;filebrowser&#x2F;get&#x2F;master&#x2F;get.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bash
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;filebrowser.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Unit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Description&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;File &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;browser: &lt;&#x2F;span&gt;&lt;span&gt;%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;I
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;After&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;network.target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Service]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;User&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;www-data
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Group&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;www-data
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;usr&#x2F;local&#x2F;sbin&#x2F;filebrowser &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;-c&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;filebrowser&#x2F;%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;I -d&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;filebrowser&#x2F;filebrowser.db
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Install]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WantedBy&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;multi-user.target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl enable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --now&lt;&#x2F;span&gt;&lt;span&gt; filebrowser
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Bazarr Setup</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/jellyfin-setup/" type="text/html"/>
-		<id>https://www.owenyoung.com/blog/jellyfin-setup/</id>
-		<content type="html">&lt;p&gt;Jellyfin 是一款开源的，拥有前后端服务的视频播放器和服务端程序。&lt;&#x2F;p&gt;
+		<link href="https://www.owenyoung.com/en/blog/bazarr-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/bazarr-setup/</id>
+		<content type="html">&lt;p&gt;Bazarr setup.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jellyfin.org&#x2F;docs&#x2F;general&#x2F;administration&#x2F;installing.html#debian&quot;&gt;Installing Jellyfin | Documentation - Jellyfin Project&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;a class=&quot;zola-anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl restart jellyfin
+&lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.bazarr.media&#x2F;Getting-Started&#x2F;Installation&#x2F;Linux&#x2F;linux&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-get install python3-pip python3-distutils&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;morpheus65535&#x2F;bazarr&#x2F;releases&#x2F;latest&#x2F;download&#x2F;bazarr.zip
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;unzip&lt;&#x2F;span&gt;&lt;span&gt; bazarr.zip&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -d ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;bazarr
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;cd&lt;&#x2F;span&gt;&lt;span&gt; bazarr
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;python3 -m&lt;&#x2F;span&gt;&lt;span&gt; pip install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;span&gt; requirements.txt
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;zhong-wen-zi-ti&quot;&gt;中文字体&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-zi-ti&quot; aria-label=&quot;Anchor link for: zhong-wen-zi-ti&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;setup-as-system-service&quot;&gt;Setup as system service&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup-as-system-service&quot; aria-label=&quot;Anchor link for: setup-as-system-service&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Reference at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.bazarr.media&#x2F;Getting-Started&#x2F;Autostart&#x2F;Linux&#x2F;linux&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You have to create a &lt;code&gt;bazarr.service&lt;&#x2F;code&gt; file in &lt;code&gt;&#x2F;etc&#x2F;systemd&#x2F;system&lt;&#x2F;code&gt; that would contain the following text:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;bazarr.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Unit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Description&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Bazarr &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Daemon
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;After&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;syslog.target &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;network.target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# After=syslog.target network.target sonarr.service radarr.service
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Service]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WorkingDirectory&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;home&#x2F;green&#x2F;bazarr&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;User&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;green
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Group&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;admin
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;UMask&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0002
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Restart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;on-failure
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RestartSec&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;5
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Type&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;simple
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;usr&#x2F;bin&#x2F;python3 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;&#x2F;home&#x2F;green&#x2F;bazarr&#x2F;bazarr.py
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;KillSignal&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;SIGINT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;TimeoutStopSec&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;20
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SyslogIdentifier&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bazarr
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStartPre&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;bin&#x2F;sleep &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;30
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Install]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WantedBy&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;multi-user.target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl enable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --now&lt;&#x2F;span&gt;&lt;span&gt; bazarr
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl status bazarr
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl restart bazarr
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;configure&quot;&gt;Configure&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure&quot; aria-label=&quot;Anchor link for: configure&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;You can set your password at the UI.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;sonarr&quot;&gt;Sonarr&lt;a class=&quot;zola-anchor&quot; href=&quot;#sonarr&quot; aria-label=&quot;Anchor link for: sonarr&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Enabled, See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.bazarr.media&#x2F;Getting-Started&#x2F;Setup-Guide&#x2F;#sonarr&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;provider&quot;&gt;Provider&lt;a class=&quot;zola-anchor&quot; href=&quot;#provider&quot; aria-label=&quot;Anchor link for: provider&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Add Zimuku, assrt, Opensubtitle&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;language&quot;&gt;Language&lt;a class=&quot;zola-anchor&quot; href=&quot;#language&quot; aria-label=&quot;Anchor link for: language&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.bazarr.media&#x2F;Getting-Started&#x2F;Setup-Guide&#x2F;#languages&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Add default settings, see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.bazarr.media&#x2F;Getting-Started&#x2F;Setup-Guide&#x2F;#default-settings&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Caddy2 Setup for Debian</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/</id>
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;caddyserver.com&#x2F;v2&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span&gt; debian-keyring debian-archive-keyring apt-transport-https
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -1sLf &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;dl.cloudsmith.io&#x2F;public&#x2F;caddy&#x2F;stable&#x2F;gpg.key&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; tee &#x2F;etc&#x2F;apt&#x2F;trusted.gpg.d&#x2F;caddy-stable.asc
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -1sLf &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;dl.cloudsmith.io&#x2F;public&#x2F;caddy&#x2F;stable&#x2F;debian.deb.txt&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; tee &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;caddy-stable.list
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt update
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt install caddy
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Once installed, caddy is running.&lt;&#x2F;p&gt;
+&lt;p&gt;The default config file at &lt;code&gt;&#x2F;etc&#x2F;caddy&#x2F;Caddyfile&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;greenpau&#x2F;caddy-auth-portal&quot;&gt;GitHub - greenpau&#x2F;caddy-auth-portal: Authentication Plugin for Caddy v2 implementing Form-Based, Basic, Local, LDAP, OpenID Connect, OAuth 2.0 (Github, Google, Facebook, Okta, etc.), SAML Authentication&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;greenpau&#x2F;caddy-auth-jwt&quot;&gt;GitHub - greenpau&#x2F;caddy-auth-jwt: JWT Authorization Plugin for Caddy v2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;caddyserver.com&#x2F;docs&#x2F;caddyfile&#x2F;directives&#x2F;basicauth#basicauth&quot;&gt;basicauth (Caddyfile directive) — Caddy Documentation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>qBittorrent setup for Debian</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/</id>
+		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Because there is no official ppa of qBittorrent for debian, so we use a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;userdocs&#x2F;qbittorrent-nox-static&quot;&gt;third party service - qbittorrent-nox-static&lt;&#x2F;a&gt; to compile qb.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download script&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget -qO ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;qbittorrent-nox-static.sh https:&#x2F;&#x2F;git.io&#x2F;qbstatic
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;chmod&lt;&#x2F;span&gt;&lt;span&gt; +x &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;qbittorrent-nox-static.sh
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# pre
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;qbittorrent-nox-static.sh
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# build
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~&#x2F;qbittorrent-nox-static.sh&lt;&#x2F;span&gt;&lt;span&gt; all
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# install
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;qbittorrent-nox-static.sh install
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;configure&quot;&gt;Configure&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure&quot; aria-label=&quot;Anchor link for: configure&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Read more at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;userdocs.github.io&#x2F;qbittorrent-nox-static&#x2F;#&#x2F;install-qbittorrent?id=configuring-qbittorrent&quot;&gt;qbittorrent-nox configure&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vim ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;.config&#x2F;qBittorrent&#x2F;qBittorrent.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;With follow config:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ini&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-ini &quot;&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[LegalNotice]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Accepted&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[Preferences]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WebUI&lt;&#x2F;span&gt;&lt;span&gt;\Port=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8080
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WebUI&lt;&#x2F;span&gt;&lt;span&gt;\HostHeaderValidation=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;systemd-service&quot;&gt;Systemd service&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd-service&quot; aria-label=&quot;Anchor link for: systemd-service&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Reference at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;userdocs.github.io&#x2F;qbittorrent-nox-static&#x2F;#&#x2F;systemd&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# create a user
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;qbittorrent.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Config:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Unit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Description&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;qBittorrent-nox &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;service
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Wants&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;network-online.target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;After&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;network-online.target &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;nss-lookup.target
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Service]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Type&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;exec
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;User&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;qbtuser
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;qbittorrent-nox
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Restart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;on-failure
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SyslogIdentifier&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;qbittorrent-nox
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Install]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WantedBy&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;multi-user.target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After any changes to the services reload using this command.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can enable the service&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl enable&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --now&lt;&#x2F;span&gt;&lt;span&gt; qbittorrent.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can use these commands&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;systemctl&lt;&#x2F;span&gt;&lt;span&gt; stop qbittorrent
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;systemctl&lt;&#x2F;span&gt;&lt;span&gt; start qbittorrent
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;systemctl&lt;&#x2F;span&gt;&lt;span&gt; restart qbittorrent
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;systemctl&lt;&#x2F;span&gt;&lt;span&gt; status qbittorrent
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;reverse-proxy-optional&quot;&gt;Reverse Proxy (Optional)&lt;a class=&quot;zola-anchor&quot; href=&quot;#reverse-proxy-optional&quot; aria-label=&quot;Anchor link for: reverse-proxy-optional&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Use Caddy to access qBittorrent with domain. This should install &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy2-setup-for-debian&#x2F;&quot;&gt;Caddy2 Setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Config:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;example.com &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;   push
+&lt;&#x2F;span&gt;&lt;span&gt;   reverse_proxy 127.0.0.1:8080
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now, you can access your qBittorrent web UI at: example.com, the default username and password is : admin&#x2F;adminadmin&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note, you should change the default username&#x2F;password&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;config&quot;&gt;Config&lt;a class=&quot;zola-anchor&quot; href=&quot;#config&quot; aria-label=&quot;Anchor link for: config&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download directory, &lt;code&gt;&#x2F;data&#x2F;Downloads&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Settings, auto add &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;XIU2&#x2F;TrackersListCollection&quot;&gt;China&lt;&#x2F;a&gt; &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;trackerslist.com&#x2F;best.txt&quot;&gt;https:&#x2F;&#x2F;trackerslist.com&#x2F;best.txt&lt;&#x2F;a&gt; , &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ngosang&#x2F;trackerslist&quot;&gt;US&lt;&#x2F;a&gt; &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ngosang.github.io&#x2F;trackerslist&#x2F;trackers_best.txt&quot;&gt;https:&#x2F;&#x2F;ngosang.github.io&#x2F;trackerslist&#x2F;trackers_best.txt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Open &lt;code&gt;announce_to_all_trackers&lt;&#x2F;code&gt; at settings.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;install-search-plugin-jackett&quot;&gt;Install Search Plugin Jackett&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-search-plugin-jackett&quot; aria-label=&quot;Anchor link for: install-search-plugin-jackett&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett&quot;&gt;Jackett&lt;&#x2F;a&gt; is a server program that provides support for more than 400 torrent sites (public and private).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;install-jackett&quot;&gt;Install Jackett&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-jackett&quot; aria-label=&quot;Anchor link for: install-jackett&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jackett-setup&#x2F;&quot;&gt;Jackett Setup&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;install-jackett-plugin&quot;&gt;Install Jackett Plugin&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-jackett-plugin&quot; aria-label=&quot;Anchor link for: install-jackett-plugin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;See also at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;qbittorrent&#x2F;search-plugins&#x2F;wiki&#x2F;How-to-configure-Jackett-plugin&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Open qBittorrent Web UI, In the Search tab, click the Search plugins… button (bottom-right) -&amp;gt; add new plugin -&amp;gt; &lt;code&gt;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;qbittorrent&#x2F;search-plugins&#x2F;master&#x2F;nova3&#x2F;engines&#x2F;jackett.py&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Change API key settings, You can get it from Jackett UI&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vim ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;.local&#x2F;share&#x2F;qBittorrent&#x2F;nova3&#x2F;engines&#x2F;jackett.json
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;resource&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource&quot; aria-label=&quot;Anchor link for: resource&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sleele.com&#x2F;2020&#x2F;03&#x2F;16&#x2F;%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96&#x2F;&quot;&gt;高阶教程-追剧全流程自动化&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Open BBR for Debian</title>
+		<published>2021-01-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/open-bbr-for-debian/</id>
+		<content type="html">&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the following configuration file to enable enable TCP BBR.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vi&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;sysctl.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;At the end of the config file, add the following lines.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;net.core.default_qdisc&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;fq
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;net.ipv4.tcp_congestion_control&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bbr
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;reload&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sysctl -p
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now, Verify if BBR is enabled in your system,&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sysctl&lt;&#x2F;span&gt;&lt;span&gt; net.ipv4.tcp_congestion_control
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Output:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;root@vps:~#&lt;&#x2F;span&gt;&lt;span&gt; sysctl net.ipv4.tcp_congestion_control
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;net.ipv4.tcp_congestion_control&lt;&#x2F;span&gt;&lt;span&gt; = bbr
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Metube Setup</title>
+		<published>2020-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/metube-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/metube-setup/</id>
+		<content type="html">&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alexta69&#x2F;metube&quot;&gt;GitHub - alexta69&#x2F;metube: youtube-dl web UI&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;metube-downloader&#x2F;fbmkmdnlhacefjljljlbhkodfmfkijdh&quot;&gt;Metube chrome extension&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup&quot; aria-label=&quot;Anchor link for: setup&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.docker.com&#x2F;engine&#x2F;install&#x2F;&quot;&gt;Docker Install&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;config&quot;&gt;Config&lt;a class=&quot;zola-anchor&quot; href=&quot;#config&quot; aria-label=&quot;Anchor link for: config&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;version&lt;&#x2F;span&gt;&lt;span&gt;: &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;services&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;metube&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;image&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;alexta69&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;container_name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;metube
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;restart&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;unless-stopped
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ports&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;10005:8081&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;volumes&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;data&#x2F;youtube:&#x2F;downloads
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Nginx Setup for Debian</title>
+		<published>2020-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/nginx-setup-for-debian/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/nginx-setup-for-debian/</id>
+		<content type="html">&lt;p&gt;Install latest stable nginx for debian&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nginx.com&#x2F;resources&#x2F;wiki&#x2F;start&#x2F;topics&#x2F;tutorials&#x2F;install&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; su
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cat &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;EOF &lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;nginx.list
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;deb http:&#x2F;&#x2F;nginx.org&#x2F;packages&#x2F;debian&#x2F; buster nginx
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;deb-src http:&#x2F;&#x2F;nginx.org&#x2F;packages&#x2F;debian&#x2F; buster nginx
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;EOF
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;exit
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -L&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;nginx.org&#x2F;keys&#x2F;nginx_signing.key | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-key add -
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt update
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt install nginx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;optional-generate-nginx-conf-online&quot;&gt;Optional generate nginx conf online&lt;a class=&quot;zola-anchor&quot; href=&quot;#optional-generate-nginx-conf-online&quot; aria-label=&quot;Anchor link for: optional-generate-nginx-conf-online&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Generate a nginx conf online at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.digitalocean.com&#x2F;community&#x2F;tools&#x2F;nginx&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If nginx conf need dhparam.pem, run :&lt;code&gt;cd &#x2F;etc&#x2F;nginx sudo openssl dhparam -dsaparam -out dhparam.pem 4096&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;optional-install-acme-sh&quot;&gt;Optional install acme.sh&lt;a class=&quot;zola-anchor&quot; href=&quot;#optional-install-acme-sh&quot; aria-label=&quot;Anchor link for: optional-install-acme-sh&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; su
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget -O&lt;&#x2F;span&gt;&lt;span&gt; -  https:&#x2F;&#x2F;get.acme.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sh -s&lt;&#x2F;span&gt;&lt;span&gt; email=my@example.com
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;.bashrc
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;acme.sh --issue -d&lt;&#x2F;span&gt;&lt;span&gt; example.com&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --nginx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;optional-install-certbot&quot;&gt;Optional Install certbot&lt;a class=&quot;zola-anchor&quot; href=&quot;#optional-install-certbot&quot; aria-label=&quot;Anchor link for: optional-install-certbot&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;install-snap&quot;&gt;Install snap&lt;a class=&quot;zola-anchor&quot; href=&quot;#install-snap&quot; aria-label=&quot;Anchor link for: install-snap&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;https:&#x2F;&#x2F;snapcraft.io&#x2F;docs&#x2F;installing-snapd&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span&gt; install snapd
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; snap install core; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; snap refresh core
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;https:&#x2F;&#x2F;certbot.eff.org&#x2F;lets-encrypt&#x2F;debianbuster-nginx&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; snap install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --classic&lt;&#x2F;span&gt;&lt;span&gt; certbot
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; snap install certbot-dns-cloudflare
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; ln&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -s&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;snap&#x2F;bin&#x2F;certbot &#x2F;usr&#x2F;bin&#x2F;certbot
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;generate-ssl&quot;&gt;Generate SSL&lt;a class=&quot;zola-anchor&quot; href=&quot;#generate-ssl&quot; aria-label=&quot;Anchor link for: generate-ssl&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; certbot&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; --nginx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Peertube Setup with Caddy Server</title>
+		<published>2020-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/</id>
+		<content type="html">&lt;p&gt;Peertube is an activityPub-federated video streaming platform using P2P directly in your web browser.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Chocobozzz&#x2F;PeerTube&#x2F;blob&#x2F;develop&#x2F;support&#x2F;doc&#x2F;production.md&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pre-requirement&quot;&gt;Pre Requirement&lt;a class=&quot;zola-anchor&quot; href=&quot;#pre-requirement&quot; aria-label=&quot;Anchor link for: pre-requirement&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;debian-server-setup&#x2F;&quot;&gt;Debian Server Setup&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy2-setup-for-debian&#x2F;&quot;&gt;Caddy2 Setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;nodejs-setup-for-debian&#x2F;&quot;&gt;Nodejs Setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Install yarn, and be sure to have &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yarnpkg&#x2F;yarn&#x2F;releases&#x2F;latest&quot;&gt;a recent version&lt;&#x2F;a&gt;:
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yarnpkg.com&#x2F;en&#x2F;docs&#x2F;install#linux-tab&quot;&gt;https:&#x2F;&#x2F;yarnpkg.com&#x2F;en&#x2F;docs&#x2F;install#linux-tab&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; npm i&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -g&lt;&#x2F;span&gt;&lt;span&gt; yarn
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Install Python:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;On Ubuntu &amp;lt;= bionic (18.04 LTS) or Debian &amp;lt;= Buster:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo apt update
+&lt;&#x2F;span&gt;&lt;span&gt;sudo apt install python-dev
+&lt;&#x2F;span&gt;&lt;span&gt;python --version # Should be &amp;gt;= 2.x or &amp;gt;= 3.x
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;On Ubuntu &amp;gt;= focal (20.04 LTS) or Debian &amp;gt;= Bullseye:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo apt update
+&lt;&#x2F;span&gt;&lt;span&gt;sudo apt install python3-dev python-is-python3 # python-is-python2 should also work
+&lt;&#x2F;span&gt;&lt;span&gt;python --version # Should be &amp;gt;= 2.x or &amp;gt;= 3.x
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Install common dependencies:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo apt update
+&lt;&#x2F;span&gt;&lt;span&gt;sudo apt install certbot nginx ffmpeg postgresql postgresql-contrib openssl g++ make redis-server git cron wget
+&lt;&#x2F;span&gt;&lt;span&gt;ffmpeg -version # Should be &amp;gt;= 4.1
+&lt;&#x2F;span&gt;&lt;span&gt;g++ -v # Should be &amp;gt;= 5.x
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now that dependencies are installed, before running PeerTube you should start PostgreSQL and Redis:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo systemctl start redis postgresql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;peertube-user&quot;&gt;PeerTube user&lt;a class=&quot;zola-anchor&quot; href=&quot;#peertube-user&quot; aria-label=&quot;Anchor link for: peertube-user&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Create a &lt;code&gt;peertube&lt;&#x2F;code&gt; user with &lt;code&gt;&#x2F;var&#x2F;www&#x2F;peertube&lt;&#x2F;code&gt; home:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo useradd -m -d &#x2F;var&#x2F;www&#x2F;peertube -s &#x2F;bin&#x2F;bash -p peertube peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Set its password:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo passwd peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;database&quot;&gt;Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#database&quot; aria-label=&quot;Anchor link for: database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Create the production database and a peertube user inside PostgreSQL:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u postgres createuser -P peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;For password you can use &lt;code&gt;peertube&lt;&#x2F;code&gt; from the default config yaml.&lt;&#x2F;p&gt;
+&lt;p&gt;Here you should enter a password for PostgreSQL &lt;code&gt;peertube&lt;&#x2F;code&gt; user, that should be copied in &lt;code&gt;production.yaml&lt;&#x2F;code&gt; file.
+Don’t just hit enter else it will be empty.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo -u postgres createdb -O peertube -E UTF8 -T template0 peertube_prod
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then enable extensions PeerTube needs:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo -u postgres psql -c &amp;quot;CREATE EXTENSION pg_trgm;&amp;quot; peertube_prod
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u postgres psql -c &amp;quot;CREATE EXTENSION unaccent;&amp;quot; peertube_prod
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;prepare-peertube-directory&quot;&gt;Prepare PeerTube directory&lt;a class=&quot;zola-anchor&quot; href=&quot;#prepare-peertube-directory&quot; aria-label=&quot;Anchor link for: prepare-peertube-directory&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Fetch the latest tagged version of Peertube&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ VERSION=$(curl -s https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;chocobozzz&#x2F;peertube&#x2F;releases&#x2F;latest | grep tag_name | cut -d &amp;#39;&amp;quot;&amp;#39; -f 4) &amp;amp;&amp;amp; echo &amp;quot;Latest Peertube version is $VERSION&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Open the peertube directory, create a few required directories&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u peertube mkdir config storage versions
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u peertube chmod 750 config&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Download the latest version of the Peertube client, unzip it and remove the zip&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u peertube wget -q &amp;quot;https:&#x2F;&#x2F;github.com&#x2F;Chocobozzz&#x2F;PeerTube&#x2F;releases&#x2F;download&#x2F;${VERSION}&#x2F;peertube-${VERSION}.zip&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u peertube unzip -q peertube-${VERSION}.zip &amp;amp;&amp;amp; sudo -u peertube rm peertube-${VERSION}.zip
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Install Peertube:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;cd &#x2F;var&#x2F;www&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;span&gt;sudo -u peertube ln -s versions&#x2F;peertube-${VERSION} .&#x2F;peertube-latest
+&lt;&#x2F;span&gt;&lt;span&gt;cd .&#x2F;peertube-latest
+&lt;&#x2F;span&gt;&lt;span&gt;sudo -H -u peertube yarn install --production --pure-lockfile
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;peertube-configuration&quot;&gt;PeerTube configuration&lt;a class=&quot;zola-anchor&quot; href=&quot;#peertube-configuration&quot; aria-label=&quot;Anchor link for: peertube-configuration&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Copy the default configuration file that contains the default configuration provided by PeerTube.
+You &lt;strong&gt;must not&lt;&#x2F;strong&gt; update this file.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u peertube cp peertube-latest&#x2F;config&#x2F;default.yaml config&#x2F;default.yaml
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now copy the production example configuration:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo -u peertube cp peertube-latest&#x2F;config&#x2F;production.yaml.example config&#x2F;production.yaml
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then edit the &lt;code&gt;config&#x2F;production.yaml&lt;&#x2F;code&gt; file according to your webserver
+and database configuration (&lt;code&gt;webserver&lt;&#x2F;code&gt;, &lt;code&gt;database&lt;&#x2F;code&gt;, &lt;code&gt;redis&lt;&#x2F;code&gt;, &lt;code&gt;smtp&lt;&#x2F;code&gt; and &lt;code&gt;admin.email&lt;&#x2F;code&gt; sections in particular).
+Keys defined in &lt;code&gt;config&#x2F;production.yaml&lt;&#x2F;code&gt; will override keys defined in &lt;code&gt;config&#x2F;default.yaml&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;PeerTube does not support webserver host change&lt;&#x2F;strong&gt;. Even though &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinpeertube.org&#x2F;maintain-tools?id=update-hostjs&quot;&gt;PeerTube CLI can help you to switch hostname&lt;&#x2F;a&gt; there’s no official support for that since it is a risky operation that might result in unforeseen errors.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;webserver&quot;&gt;Webserver&lt;a class=&quot;zola-anchor&quot; href=&quot;#webserver&quot; aria-label=&quot;Anchor link for: webserver&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;We only provide official configuration files for Nginx.&lt;&#x2F;p&gt;
+&lt;p&gt;Copy the nginx configuration template:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;with the following config:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;conf&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-conf &quot;&gt;&lt;code class=&quot;language-conf&quot; data-lang=&quot;conf&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Minimum Nginx version required:  1.13.0 (released Apr 25, 2017)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Please check your Nginx installation features the following modules via &amp;#39;nginx -V&amp;#39;:
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# STANDARD HTTP MODULES: Core, Proxy, Rewrite, Access, Gzip, Headers, HTTP&#x2F;2, Log, Real IP, SSL, Thread Pool, Upstream, AIO Multithreading.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# THIRD PARTY MODULES:   None.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;upstream &lt;&#x2F;span&gt;&lt;span&gt;backend {
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;server &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;127.0.0.1:9000&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;server &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;listen &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8880&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;listen &lt;&#x2F;span&gt;&lt;span&gt;[::]:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8880&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;access_log &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;var&#x2F;log&#x2F;nginx&#x2F;peertube.access.log; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# reduce I&#x2F;0 with buffer=10m flush=5m
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;error_log  &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;var&#x2F;log&#x2F;nginx&#x2F;peertube.error.log;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;##
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Certificates
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# you need a certificate to run in production. see https:&#x2F;&#x2F;letsencrypt.org&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;##
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location @api&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header &lt;&#x2F;span&gt;&lt;span&gt;X-Forwarded-For &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$proxy_add_x_forwarded_for&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header &lt;&#x2F;span&gt;&lt;span&gt;Host  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$host&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header &lt;&#x2F;span&gt;&lt;span&gt;X-Real-IP       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$remote_addr&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;client_max_body_size  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;100k&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 1M
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_connect_timeout &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10m&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_send_timeout    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10m&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_read_timeout    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10m&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;send_timeout          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10m&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_pass &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;http:&#x2F;&#x2F;backend&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;&#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dev&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;= &#x2F;api&#x2F;v1&#x2F;videos&#x2F;upload-resumable {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;client_max_body_size    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_request_buffering &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;off&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dev&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;= &#x2F;api&#x2F;v1&#x2F;videos&#x2F;upload {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;limit_except &lt;&#x2F;span&gt;&lt;span&gt;POST HEAD { deny all; }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# This is the maximum upload size, which roughly matches the maximum size of a video file.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Note that temporary space is needed equal to the total size of all concurrent uploads.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# This data gets stored in &#x2F;var&#x2F;lib&#x2F;nginx by default, so you may want to put this directory
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# on a dedicated filesystem.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;client_max_body_size                      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;12G&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 1M
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header            &lt;&#x2F;span&gt;&lt;span&gt;X-File-Maximum-Size &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8G&lt;&#x2F;span&gt;&lt;span&gt; always; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# inform backend of the set value in bytes before mime-encoding (x * 1.4 &amp;gt;= client_max_body_size)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dev&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;~ ^&#x2F;api&#x2F;v1&#x2F;(videos|video-playlists|video-channels|users&#x2F;me) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;client_max_body_size                      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6M&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 1M
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header            &lt;&#x2F;span&gt;&lt;span&gt;X-File-Maximum-Size &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4M&lt;&#x2F;span&gt;&lt;span&gt; always; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# inform backend of the set value in bytes before mime-encoding (x * 1.4 &amp;gt;= client_max_body_size)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dev&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;##
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Websocket
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;##
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location @api_websocket&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_http_version &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header   &lt;&#x2F;span&gt;&lt;span&gt;X-Forwarded-For &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$proxy_add_x_forwarded_for&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header   &lt;&#x2F;span&gt;&lt;span&gt;Host            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$host&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header   &lt;&#x2F;span&gt;&lt;span&gt;X-Real-IP       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$remote_addr&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header   &lt;&#x2F;span&gt;&lt;span&gt;Upgrade         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$http_upgrade&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_set_header   &lt;&#x2F;span&gt;&lt;span&gt;Connection      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;upgrade&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_pass &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;http:&#x2F;&#x2F;backend&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;socket.io {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dev&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@api_websocket&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;tracker&#x2F;socket {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Peers send a message to the tracker every 15 minutes
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Don&amp;#39;t close the websocket before then
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_read_timeout &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;15m&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 60s
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dev&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;null &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@api_websocket&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;##
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Performance optimizations
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# For extra performance please refer to https:&#x2F;&#x2F;github.com&#x2F;denji&#x2F;nginx-tuning
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;##
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;root &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;var&#x2F;www&#x2F;peertube&#x2F;storage;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Enable compression for JS&#x2F;CSS&#x2F;HTML, for improved client load times.
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# It might be nice to compress JSON&#x2F;XML as returned by the API, but
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# leaving that out to protect against potential BREACH attack.
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip              &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip_vary         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip_types        &lt;&#x2F;span&gt;&lt;span&gt;# text&#x2F;html is always compressed by HttpGzipModule
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;text&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;css
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;application&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;javascript
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;font&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;truetype
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;font&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;opentype
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;application&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;vnd.ms-fontobject
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;image&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;svg+xml;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip_min_length   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1000&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 20 bytes
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip_buffers      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;16 8k&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip_comp_level   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 1
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;client_body_timeout       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;30s&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 60
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;client_header_timeout     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10s&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 60
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;send_timeout              &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10s&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 60
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;keepalive_timeout         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10s&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 75
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;resolver_timeout          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10s&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# default is 30
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;reset_timedout_connection &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;proxy_ignore_client_abort &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;tcp_nopush                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# send headers in one piece
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;tcp_nodelay               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# don&amp;#39;t buffer data sent, good for small data bursts in real time
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# If you have a small &#x2F;var&#x2F;lib partition, it could be interesting to store temp nginx uploads in a different place
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# See https:&#x2F;&#x2F;nginx.org&#x2F;en&#x2F;docs&#x2F;http&#x2F;ngx_http_core_module.html#client_body_temp_path
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#client_body_temp_path &#x2F;var&#x2F;www&#x2F;peertube&#x2F;storage&#x2F;nginx&#x2F;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Bypass PeerTube for performance reasons. Optional.
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Should be consistent with client-overrides assets list in &#x2F;server&#x2F;controllers&#x2F;client.ts
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;~ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;^&#x2F;client&#x2F;(assets&#x2F;images&#x2F;(icons&#x2F;icon-36x36\.png|icons&#x2F;icon-48x48\.png|icons&#x2F;icon-72x72\.png|icons&#x2F;icon-96x96\.png|icons&#x2F;icon-144x144\.png|icons&#x2F;icon-192x192\.png|icons&#x2F;icon-512x512\.png|logo\.svg|favicon\.png))$&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Cache-Control &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;public, max-age=31536000, immutable&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Cache 1 year
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;root &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;var&#x2F;www&#x2F;peertube;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;storage&#x2F;client-overrides&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$1 &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;peertube-latest&#x2F;client&#x2F;dist&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$1 @api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Bypass PeerTube for performance reasons. Optional.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;~ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;^&#x2F;client&#x2F;(.*\.(js|css|png|svg|woff2|otf|ttf|woff|eot))$&lt;&#x2F;span&gt;&lt;span&gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Cache-Control &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;public, max-age=31536000, immutable&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Cache 1 year
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    alias &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;var&#x2F;www&#x2F;peertube&#x2F;peertube-latest&#x2F;client&#x2F;dist&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Bypass PeerTube for performance reasons. Optional.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;~ ^&#x2F;static&#x2F;(thumbnails|avatars)&#x2F; {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    if&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$request_method &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;OPTIONS&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Origin  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;*&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Methods &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;GET, OPTIONS&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Headers &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Range,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Max-Age       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1728000&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Preflight request can be cached 20 days
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Content-Type                 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;text&#x2F;plain charset=UTF-8&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Content-Length               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;204&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Origin    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;*&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Methods   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;GET, OPTIONS&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Headers   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Range,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Cache-Control                  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;quot;public, max-age=7200&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Cache response 2 hours
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    rewrite &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;^&#x2F;static&#x2F;(.*)$ &#x2F;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; break;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$uri @api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Bypass PeerTube for performance reasons. Optional.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;  location &lt;&#x2F;span&gt;&lt;span&gt;~ ^&#x2F;static&#x2F;(webseed|redundancy|streaming-playlists)&#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;limit_rate_after            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5M&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Clients usually have 4 simultaneous webseed connections, so the real limit is 3MB&#x2F;s per client
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$peertube_limit_rate    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;800k&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Increase rate limit in HLS mode, because we don&amp;#39;t have multiple simultaneous connections
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    if&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$request_uri &lt;&#x2F;span&gt;&lt;span&gt;~ -fragmented.mp4$) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$peertube_limit_rate  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5M&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Use this line with nginx &amp;gt;= 1.17.0
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#limit_rate $peertube_limit_rate;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Or this line if your nginx &amp;lt; 1.17.0
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$limit_rate $peertube_limit_rate&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    if&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$request_method &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;OPTIONS&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Origin  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;*&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Methods &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;GET, OPTIONS&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Headers &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Range,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Max-Age       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1728000&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Preflight request can be cached 20 days
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Content-Type                 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;text&#x2F;plain charset=UTF-8&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Content-Length               &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;204&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    if&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$request_method &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;GET&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Origin  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;*&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Methods &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;GET, OPTIONS&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;add_header &lt;&#x2F;span&gt;&lt;span&gt;Access-Control-Allow-Headers &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&amp;#39;Range,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Don&amp;#39;t spam access log file with byte range requests
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;access_log &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;off&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Enabling the sendfile directive eliminates the step of copying the data into the buffer
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# and enables direct copying data from one file descriptor to another.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sendfile &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sendfile_max_chunk &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1M&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# prevent one fast connection from entirely occupying the worker process. should be &amp;gt; 800k.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;aio &lt;&#x2F;span&gt;&lt;span&gt;threads;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    rewrite &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;^&#x2F;static&#x2F;webseed&#x2F;(.*)$ &#x2F;videos&#x2F;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; break;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;    rewrite &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;^&#x2F;static&#x2F;(.*)$         &#x2F;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;        break;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;try_files &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;$uri @api&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Add caddy config:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;conf&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-conf &quot;&gt;&lt;code class=&quot;language-conf&quot; data-lang=&quot;conf&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;example&lt;&#x2F;span&gt;&lt;span&gt;.com {
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;reverse_proxy &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;127.0.0.1:8880
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then modify the webserver configuration file. Please pay attention to the &lt;code&gt;alias&lt;&#x2F;code&gt; keys of the static locations.
+It should correspond to the paths of your storage directories (set in the configuration file inside the &lt;code&gt;storage&lt;&#x2F;code&gt; key).&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo vim &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Activate the configuration file:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo ln -s &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;peertube &#x2F;etc&#x2F;nginx&#x2F;sites-enabled&#x2F;peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To generate the certificate for your domain as required to make https work you can use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;letsencrypt.org&#x2F;&quot;&gt;Let’s Encrypt&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl stop nginx
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo certbot certonly --standalone --post-hook &amp;quot;systemctl restart nginx&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo systemctl reload nginx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you have the certificates you can reload nginx:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl reload nginx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Certbot should have installed a cron to automatically renew your certificate.
+Since our nginx template supports webroot renewal, we suggest you to update the renewal config file to use the &lt;code&gt;webroot&lt;&#x2F;code&gt; authenticator:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ # Replace authenticator = standalone by authenticator = webroot
+&lt;&#x2F;span&gt;&lt;span&gt;$ # Add webroot_path = &#x2F;var&#x2F;www&#x2F;certbot
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo vim &#x2F;etc&#x2F;letsencrypt&#x2F;renewal&#x2F;your-domain.com.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;tcp-ip-tuning&quot;&gt;TCP&#x2F;IP Tuning&lt;a class=&quot;zola-anchor&quot; href=&quot;#tcp-ip-tuning&quot; aria-label=&quot;Anchor link for: tcp-ip-tuning&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;On Linux&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo cp &#x2F;var&#x2F;www&#x2F;peertube&#x2F;peertube-latest&#x2F;support&#x2F;sysctl.d&#x2F;30-peertube-tcp.conf &#x2F;etc&#x2F;sysctl.d&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo sysctl -p &#x2F;etc&#x2F;sysctl.d&#x2F;30-peertube-tcp.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Your distro may enable this by default, but at least Debian 9 does not, and the default FIFO
+scheduler is quite prone to “Buffer Bloat” and extreme latency when dealing with slower client
+links as we often encounter in a video server.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;systemd&quot;&gt;systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;If your OS uses systemd, copy the configuration template:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo cp &#x2F;var&#x2F;www&#x2F;peertube&#x2F;peertube-latest&#x2F;support&#x2F;systemd&#x2F;peertube.service &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Check the service file (PeerTube paths and security directives):&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;peertube.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Tell systemd to reload its config:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you want to start PeerTube on boot:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl enable peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Run:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl start peertube
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo journalctl -feu peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Run:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo service peertube start
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;administrator&quot;&gt;Administrator&lt;a class=&quot;zola-anchor&quot; href=&quot;#administrator&quot; aria-label=&quot;Anchor link for: administrator&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The administrator password is automatically generated and can be found in the PeerTube
+logs (path defined in &lt;code&gt;production.yaml&lt;&#x2F;code&gt;). You can also set another password with:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;peertube-latest &amp;amp;&amp;amp; NODE_CONFIG_DIR=&#x2F;var&#x2F;www&#x2F;peertube&#x2F;config NODE_ENV=production npm run reset-password -- -u root
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Alternatively you can set the environment variable &lt;code&gt;PT_INITIAL_ROOT_PASSWORD&lt;&#x2F;code&gt;,
+to your own administrator password, although it must be 6 characters or more.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-now&quot;&gt;What now?&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-now&quot; aria-label=&quot;Anchor link for: what-now&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Now your instance is up you can:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add your instance to the public PeerTube instances index if you want to: https:&#x2F;&#x2F;instances.joinpeertube.org&#x2F;&lt;&#x2F;li&gt;
+&lt;li&gt;Check &lt;a href=&quot;&#x2F;support&#x2F;doc&#x2F;tools.md&quot;&gt;available CLI tools&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;upgrade&quot;&gt;Upgrade&lt;a class=&quot;zola-anchor&quot; href=&quot;#upgrade&quot; aria-label=&quot;Anchor link for: upgrade&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;peertube-instance&quot;&gt;PeerTube instance&lt;a class=&quot;zola-anchor&quot; href=&quot;#peertube-instance&quot; aria-label=&quot;Anchor link for: peertube-instance&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;strong&gt;Check the changelog (in particular BREAKING CHANGES!):&lt;&#x2F;strong&gt; https:&#x2F;&#x2F;github.com&#x2F;Chocobozzz&#x2F;PeerTube&#x2F;blob&#x2F;develop&#x2F;CHANGELOG.md&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;auto&quot;&gt;Auto&lt;a class=&quot;zola-anchor&quot; href=&quot;#auto&quot; aria-label=&quot;Anchor link for: auto&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+&lt;p&gt;The password it asks is PeerTube’s database user password.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;peertube-latest&#x2F;scripts &amp;amp;&amp;amp; sudo -H -u peertube .&#x2F;upgrade.sh
+&lt;&#x2F;span&gt;&lt;span&gt;$ sudo systemctl restart peertube # Or use your OS command to restart PeerTube if you don&amp;#39;t use systemd
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;manually&quot;&gt;Manually&lt;a class=&quot;zola-anchor&quot; href=&quot;#manually&quot; aria-label=&quot;Anchor link for: manually&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h4&gt;
+&lt;p&gt;Make a SQL backup&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ SQL_BACKUP_PATH=&amp;quot;backup&#x2F;sql-peertube_prod-$(date -Im).bak&amp;quot; &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    cd &#x2F;var&#x2F;www&#x2F;peertube &amp;amp;&amp;amp; sudo -u peertube mkdir -p backup &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u postgres pg_dump -F c peertube_prod | sudo -u peertube tee &amp;quot;$SQL_BACKUP_PATH&amp;quot; &amp;gt;&#x2F;dev&#x2F;null
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Fetch the latest tagged version of Peertube:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ VERSION=$(curl -s https:&#x2F;&#x2F;api.github.com&#x2F;repos&#x2F;chocobozzz&#x2F;peertube&#x2F;releases&#x2F;latest | grep tag_name | cut -d &amp;#39;&amp;quot;&amp;#39; -f 4) &amp;amp;&amp;amp; echo &amp;quot;Latest Peertube version is $VERSION&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Download the new version and unzip it:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u peertube wget -q &amp;quot;https:&#x2F;&#x2F;github.com&#x2F;Chocobozzz&#x2F;PeerTube&#x2F;releases&#x2F;download&#x2F;${VERSION}&#x2F;peertube-${VERSION}.zip&amp;quot; &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u peertube unzip -o peertube-${VERSION}.zip &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u peertube rm peertube-${VERSION}.zip
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Install node dependencies:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions&#x2F;peertube-${VERSION} &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -H -u peertube yarn install --production --pure-lockfile
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Copy new configuration defaults values and update your configuration file:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo -u peertube cp &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions&#x2F;peertube-${VERSION}&#x2F;config&#x2F;default.yaml &#x2F;var&#x2F;www&#x2F;peertube&#x2F;config&#x2F;default.yaml
+&lt;&#x2F;span&gt;&lt;span&gt;$ diff &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions&#x2F;peertube-${VERSION}&#x2F;config&#x2F;production.yaml.example &#x2F;var&#x2F;www&#x2F;peertube&#x2F;config&#x2F;production.yaml
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Change the link to point to the latest version:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo unlink .&#x2F;peertube-latest &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u peertube ln -s versions&#x2F;peertube-${VERSION} .&#x2F;peertube-latest
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;nginx&quot;&gt;nginx&lt;a class=&quot;zola-anchor&quot; href=&quot;#nginx&quot; aria-label=&quot;Anchor link for: nginx&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Check changes in nginx configuration:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions
+&lt;&#x2F;span&gt;&lt;span&gt;$ diff &amp;quot;$(ls --sort=t | head -2 | tail -1)&#x2F;support&#x2F;nginx&#x2F;peertube&amp;quot; &amp;quot;$(ls --sort=t | head -1)&#x2F;support&#x2F;nginx&#x2F;peertube&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;systemd-1&quot;&gt;systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd-1&quot; aria-label=&quot;Anchor link for: systemd-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Check changes in systemd configuration:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ cd &#x2F;var&#x2F;www&#x2F;peertube&#x2F;versions
+&lt;&#x2F;span&gt;&lt;span&gt;$ diff &amp;quot;$(ls --sort=t | head -2 | tail -1)&#x2F;support&#x2F;systemd&#x2F;peertube.service&amp;quot; &amp;quot;$(ls --sort=t | head -1)&#x2F;support&#x2F;systemd&#x2F;peertube.service&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;restart-peertube&quot;&gt;Restart PeerTube&lt;a class=&quot;zola-anchor&quot; href=&quot;#restart-peertube&quot; aria-label=&quot;Anchor link for: restart-peertube&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;If you changed your nginx configuration:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl reload nginx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If you changed your systemd configuration:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Restart PeerTube and check the logs:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ sudo systemctl restart peertube &amp;amp;&amp;amp; sudo journalctl -fu peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;things-went-wrong&quot;&gt;Things went wrong?&lt;a class=&quot;zola-anchor&quot; href=&quot;#things-went-wrong&quot; aria-label=&quot;Anchor link for: things-went-wrong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Change &lt;code&gt;peertube-latest&lt;&#x2F;code&gt; destination to the previous version and restore your SQL backup:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;$ OLD_VERSION=&amp;quot;v0.42.42&amp;quot; &amp;amp;&amp;amp; SQL_BACKUP_PATH=&amp;quot;backup&#x2F;sql-peertube_prod-2018-01-19T10:18+01:00.bak&amp;quot; &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    cd &#x2F;var&#x2F;www&#x2F;peertube &amp;amp;&amp;amp; sudo -u peertube unlink .&#x2F;peertube-latest &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u peertube ln -s &amp;quot;versions&#x2F;peertube-$OLD_VERSION&amp;quot; peertube-latest &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo -u postgres pg_restore -c -C -d postgres &amp;quot;$SQL_BACKUP_PATH&amp;quot; &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span&gt;    sudo systemctl restart peertube
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Radarr Setup</title>
+		<published>2020-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/radarr-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/radarr-setup/</id>
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Radarr&#x2F;Radarr&quot;&gt;repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.servarr.com&#x2F;radarr&#x2F;installation#linux&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Radarr&#x2F;Radarr&#x2F;releases&quot;&gt;Latest Release&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cat &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&amp;lt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;EOF &lt;&#x2F;span&gt;&lt;span&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; tee &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;radarr.service &amp;gt; &#x2F;dev&#x2F;null
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;[Unit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Description=Radarr Daemon
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;After=syslog.target network.target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;[Service]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;User=green
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Group=admin
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Type=simple
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;ExecStart=&#x2F;home&#x2F;green&#x2F;radarr&#x2F;Radarr -nobrowser -data=&#x2F;home&#x2F;green&#x2F;.config&#x2F;radarr&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;TimeoutStopSec=20
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;KillMode=process
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Restart=always
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;[Install]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;WantedBy=multi-user.target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;EOF
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Sonarr Setup</title>
+		<published>2020-03-26T00:00:00+00:00</published>
+		<updated>2022-03-26T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/en/blog/sonarr-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/sonarr-setup/</id>
+		<content type="html">&lt;p&gt;Before setup sonarr, you should setup &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sonarr.tv&#x2F;#downloads-v3-linux&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Once installed, visit &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;ip:8989&quot;&gt;http:&#x2F;&#x2F;ip:8989&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;restart&quot;&gt;Restart&lt;a class=&quot;zola-anchor&quot; href=&quot;#restart&quot; aria-label=&quot;Anchor link for: restart&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl restart sonarr
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;a class=&quot;zola-anchor&quot; href=&quot;#setup&quot; aria-label=&quot;Anchor link for: setup&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.servarr.com&#x2F;sonarr&#x2F;quick-start-guide&quot;&gt;Sonarr Quick Start Guide | WikiArr&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Download google noto fonts:
-This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;CodePlayer&#x2F;webfont-noto&quot;&gt;repo&lt;&#x2F;a&gt; compiled noto fonts, so you can just download it and use it.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;CodePlayer&#x2F;webfont-noto&#x2F;raw&#x2F;master&#x2F;dist&#x2F;NotoSans&#x2F;NotoSansCJKsc-hinted&#x2F;subset&#x2F;NotoSansCJKsc-hinted-standard&#x2F;NotoSansCJKsc-Regular.woff2
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;At Jellyfin Admin dashboard, player, open back font, add the font path&lt;&#x2F;p&gt;
+&lt;p&gt;Click on &lt;code&gt;Settings =&amp;gt; Media Management&lt;&#x2F;code&gt; on the left menu.&lt;&#x2F;p&gt;
+&lt;p&gt;Check &lt;code&gt;Rename Episodes&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Check left top &lt;code&gt;Show Advanced&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Importing&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Import Extra Files&lt;&#x2F;code&gt; &lt;code&gt;.srt,.ass,.sub&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;&#x2F;data&#x2F;TV&lt;&#x2F;code&gt; to &lt;code&gt;Root Folders&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Indexers, Add &lt;code&gt;eztv&lt;&#x2F;code&gt;, &lt;code&gt;RARBG&lt;&#x2F;code&gt; as Indexers, see jackett home page.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;h2 id=&quot;faq&quot;&gt;FAQ&lt;a class=&quot;zola-anchor&quot; href=&quot;#faq&quot; aria-label=&quot;Anchor link for: faq&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;add-qbittorrent-client&quot;&gt;Add qBittorrent Client:&lt;a class=&quot;zola-anchor&quot; href=&quot;#add-qbittorrent-client&quot; aria-label=&quot;Anchor link for: add-qbittorrent-client&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;Setting&lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;Download Clients &lt;&#x2F;code&gt; -&amp;gt; &lt;code&gt;qBittorrent&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;resource&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource&quot; aria-label=&quot;Anchor link for: resource&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jellyfin&#x2F;jellyfin-web&#x2F;issues&#x2F;934&quot;&gt;Jellyfin 中文字体问题&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sleele.com&#x2F;2020&#x2F;03&#x2F;16&#x2F;%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96&#x2F;&quot;&gt;高阶教程-追剧全流程自动化&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
