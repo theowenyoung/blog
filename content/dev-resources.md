@@ -85,6 +85,7 @@ taxonomies:
 
 - [Free code camp](https://www.freecodecamp.org/) - Learn to code — for free.
 - [Learn X in Y minutes](https://learnxinyminutes.com/) - Learn programming in a few minutes.
+- [50 天内完成 50 个 web mini 项目 - HTML/CSS 和 JavaScript](https://github.com/bradtraversy/50projects50days)
 
 ## Admin Dashboard
 
