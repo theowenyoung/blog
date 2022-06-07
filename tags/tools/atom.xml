@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/tools/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-02T00:00:00+00:00</updated>
+	<updated>2022-06-08T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tools/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>互联网上的免费资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-04-10T00:00:00+00:00</updated>
+		<updated>2022-06-08T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/free/" type="text/html"/>
 		<id>https://www.owenyoung.com/free/</id>
 		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
@@ -38,6 +38,7 @@
 &lt;h2 id=&quot;domain&quot;&gt;Domain&lt;a class=&quot;zola-anchor&quot; href=&quot;#domain&quot; aria-label=&quot;Anchor link for: domain&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedns.afraid.org&#x2F;domain&#x2F;registry&#x2F;&quot;&gt;freedns&lt;&#x2F;a&gt; - free subdomain dns&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nic.eu.org&#x2F;index.html&quot;&gt;自 1996 年以来后缀为 EU.org 的免费域名&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;name&quot;&gt;Name&lt;a class=&quot;zola-anchor&quot; href=&quot;#name&quot; aria-label=&quot;Anchor link for: name&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -87,7 +88,7 @@
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-06-02T00:00:00+00:00</updated>
+		<updated>2022-06-08T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -198,7 +199,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cmdchallenge.com&#x2F;&quot;&gt;cmd 有趣在线挑战&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;json&quot;&gt;Json&lt;a class=&quot;zola-anchor&quot; href=&quot;#json&quot; aria-label=&quot;Anchor link for: json&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jsonformatter.com&#x2F;&quot;&gt;Json for matter, 友好的在线 json 格式化网站&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -358,7 +359,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;longtermvisas.com&#x2F;&quot;&gt;Long term visas&lt;&#x2F;a&gt; - Travel decisions, simplified.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;tools-1&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools-1&quot; aria-label=&quot;Anchor link for: tools-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gromov.com&#x2F;&quot;&gt;预测你在世界各地的生活成本&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -370,6 +371,10 @@
 &lt;h2 id=&quot;zai-xian-ping-tai-mo-ni&quot;&gt;在线平台模拟&lt;a class=&quot;zola-anchor&quot; href=&quot;#zai-xian-ping-tai-mo-ni&quot; aria-label=&quot;Anchor link for: zai-xian-ping-tai-mo-ni&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neverinstall.com&#x2F;&quot;&gt;Never Install&lt;&#x2F;a&gt; - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;si-wei-guan-li&quot;&gt;思维管理&lt;a class=&quot;zola-anchor&quot; href=&quot;#si-wei-guan-li&quot; aria-label=&quot;Anchor link for: si-wei-guan-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;untools.co&#x2F;&quot;&gt;提高思维能力的工具&lt;&#x2F;a&gt; - 收集思维工具和框架，以帮助您解决问题，做出决策并了解系统。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
