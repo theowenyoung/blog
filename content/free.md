@@ -1,7 +1,7 @@
 ---
 title: 互联网上的免费资源汇总
 date: 2022-03-25
-updated: 2022-04-10
+updated: 2022-06-08
 taxonomies:
   categories:
     - Notes
@@ -38,6 +38,7 @@ taxonomies:
 ## Domain
 
 - [freedns](https://freedns.afraid.org/domain/registry/) - free subdomain dns
+- [自 1996 年以来后缀为 EU.org 的免费域名](https://nic.eu.org/index.html)
 
 ## Name
 

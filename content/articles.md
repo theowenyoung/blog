@@ -41,6 +41,7 @@ taxonomies:
 - [掌握金钱，负担得起你所有想要的东西](https://affordanything.com/start-here/)
 - [数字极简主义](https://www.calnewport.com/blog/2016/12/18/on-digital-minimalism/)
 - [一个人，一条狗，走路环游世界](https://www.afar.com/magazine/tom-turcich-and-the-world-walk)
+- [在哪里生活更幸福](https://210ethan.github.io/research/living.html)
 
 ## 人生/哲学
 
@@ -146,3 +147,7 @@ taxonomies:
 ## 日本
 
 - [日本的生活水平太低了](https://noahpinion.substack.com/p/japans-living-standards-are-too-low?s=w)
+
+## 言论自由
+
+- [言论自由正在退却](https://www.economist.com/international/2016/06/04/the-muzzle-grows-tighter)
