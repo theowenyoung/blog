@@ -25,47 +25,31 @@ function lengthOfLongestSubstring1(s: string): number {
 function lengthOfLongestSubstring2(s: string): number {
   const lastCharOccurHash: Record<string, number> = {};
   const dp: number[] = Array(s.length);
-  let max = 0;
+  let max = 0; // current max
+  let currentStartIndex = 0; // current unique substring start index
   for (let i = 0; i < s.length; i++) {
     const currentChar = s[i];
-    if (lastCharOccurHash[currentChar] >= 0) {
-      dp[i] = Math.min(
-        i - lastCharOccurHash[currentChar],
-        (dp[i - 1] ?? 0) + 1
-      );
+    if (lastCharOccurHash[currentChar] >= currentStartIndex) {
+      // if the duplicated char occured in current string, then it's duplicated, we need to change the currentStartIndex to the lastCharOccurIndex+1;
+      // and the dp[i] = i-
+      currentStartIndex = lastCharOccurHash[currentChar] + 1;
+      dp[i] = i - currentStartIndex + 1;
     } else {
+      // if it's not duplicated, then add 1
       dp[i] = (dp[i - 1] ?? 0) + 1;
     }
+    // change the max value if needed.
     if (dp[i] > max) {
       max = dp[i];
     }
+    // record the last char position.
     lastCharOccurHash[currentChar] = i;
   }
 
   return max;
 }
 
-function lengthOfLongestSubstring3(s: string): number {
-  let j = 0,
-    max = 0;
-  let set: Set<string> = new Set();
-  while (j < s.length) {
-    let currentChar = s[j];
-    if (!set.has(currentChar)) {
-      j++;
-      set.add(currentChar);
-      max = Math.max(max, set.size);
-    } else {
-      set.delete(currentChar);
-    }
-  }
-  return max;
-}
-const solutions = [
-  lengthOfLongestSubstring1,
-  lengthOfLongestSubstring2,
-  lengthOfLongestSubstring3,
-];
+const solutions = [lengthOfLongestSubstring1, lengthOfLongestSubstring2];
 
 for (const lengthOfLongestSubstring of solutions) {
   Deno.test("length of longest substring test 1", () => {
