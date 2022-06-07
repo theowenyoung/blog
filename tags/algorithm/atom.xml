@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/algorithm/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-05T00:00:00+00:00</updated>
+	<updated>2022-06-07T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/algorithm/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Solve Algorithms</title>
 		<published>2022-05-08T06:17:19+08:00</published>
-		<updated>2022-06-05T00:00:00+00:00</updated>
+		<updated>2022-06-07T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/algorithms/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/algorithms/</id>
 		<content type="html">&lt;p&gt;When I saw Leetcode on the timeline, I thought you guys were so “cult”…&lt;&#x2F;p&gt;
@@ -52,6 +52,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-palindromic-substring&#x2F;&quot;&gt;Longest Palindromic Substring&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_palindromic_substring_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-palindromic-subsequence&#x2F;&quot;&gt;Longest Palindromic Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_palindromic_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-increasing-subsequence&#x2F;&quot;&gt;Longest Increasing Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_increasing_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;wiggle-subsequence&#x2F;&quot;&gt;Wiggle Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;wiggle_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
