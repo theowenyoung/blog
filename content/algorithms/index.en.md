@@ -1,7 +1,7 @@
 ---
 title: Solve Algorithms
 date: 2022-05-08T06:17:19+08:00
-updated: 2022-06-05
+updated: 2022-06-07
 taxonomies:
   categories:
     - Notes
@@ -54,6 +54,8 @@ deno test
 
 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_palindromic_substring_test.ts)
 - [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_palindromic_subsequence_test.ts)
+- [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_increasing_subsequence_test.ts)
+- [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/wiggle_subsequence_test.ts)
 
 ## List
 
