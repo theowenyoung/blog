@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-06-02
+updated: 2022-06-08
 taxonomies:
   categories:
     - Notes
@@ -114,7 +114,7 @@ taxonomies:
 
 - [cmd 有趣在线挑战](https://cmdchallenge.com/)
 
-## Tools
+## Json
 
 - [Json for matter, 友好的在线 json 格式化网站](https://jsonformatter.com/)
 
@@ -282,3 +282,7 @@ taxonomies:
 ## 在线平台模拟
 
 - [Never Install](https://neverinstall.com/) - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。
+
+## 思维管理
+
+- [提高思维能力的工具](https://untools.co/) - 收集思维工具和框架，以帮助您解决问题，做出决策并了解系统。

@@ -20,3 +20,9 @@ taxonomies:
 ## 欧美
 
 - [Radiohead - Creep](https://www.youtube.com/watch?v=j-Jj5vY0e9I)
+
+## 404
+
+- [六月某时 - 秀场寡头](https://soundcloud.com/show-oligarch/sometimes-in-june)
+- [吳吞 : 一萬個名字](https://www.youtube.com/watch?v=poYDiJU2HJQ)
+- [1990 年的春天: 李志](https://www.youtube.com/watch?v=nmTvasFpovs)
