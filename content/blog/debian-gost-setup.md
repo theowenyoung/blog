@@ -9,21 +9,24 @@ taxonomies:
     - Proxy
 ---
 
-在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书
+[Gost](https://github.com/ginuerzh/gost) 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。
+
+本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。
 
 <!-- more -->
 
 ## 1. 下载并解压最新的 Gost 压缩包
 
-去[Gost Release](https://github.com/go-gost/gost/releases)找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是`https://github.com/go-gost/gost/releases/download/v3.0.0-beta.2/gost-linux-amd64-3.0.0-beta.2.gz`
+去[Gost Release](https://github.com/ginuerzh/gost/releases/)找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是`https://github.com/ginuerzh/gost/releases/download/v2.11.2/gost-linux-amd64-2.11.2.gz`
 
 ```bash
 # create gost directory
 mkdir gost
 # download to current directory
-wget https://github.com/go-gost/gost/releases/download/v3.0.0-beta.2/gost-linux-amd64-3.0.0-beta.2.gz
+wget https://github.com/ginuerzh/gost/releases/download/v2.11.2/gost-linux-amd64-2.11.2.gz
 # unzip
-gzip -d gost-linux-amd64-3.0.0-beta.2.gz
+gzip -d gost-linux-amd64-2.11.2.gz
+mv gost-linux-amd64-2.11.2.gz gost
 # Add execute permission
 chmod +x gost
 ```
