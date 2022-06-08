@@ -251,6 +251,12 @@ Tar to specific directory
 tar -xf x.tar.gz -C ./xxx
 ```
 
+### Unzip .gz
+
+```bash
+gzip -d file.gz
+```
+
 ### Stdout to File
 
 ```bash
