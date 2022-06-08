@@ -428,3 +428,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Lisp
 
 - [通往 Common Lisp 之路](https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/)
+
+## Search
+
+- [Common Crawl](https://commoncrawl.org/the-data/get-started/) - 全球网站抓取免费数据集，适用本地搜索引擎数据库

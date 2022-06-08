@@ -1,7 +1,7 @@
 ---
 title: 值得收藏的截图
 date: 2021-03-26
-updated: 2022-03-26
+updated: 2022-06-08
 taxonomies:
   categories:
     - Notes
@@ -30,3 +30,5 @@ taxonomies:
 > 事实证明，生活就是一系列令人失望的事，它们间隔的时间刚刚够让下一次失望令人大吃一惊。 -- 《早间新闻》S02E02
 
 4. ![有孩子的父母比没孩子的父母更开心吗？](./parents-happier.jpg)
+
+1. ![](./boat.jpg)

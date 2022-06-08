@@ -1,7 +1,7 @@
 ---
 title: 收集 Javascript 相关的资源
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-06-08
 taxonomies:
   categories:
     - Notes
@@ -21,6 +21,7 @@ taxonomies:
 ## UI 框架
 
 - [GitHub - system-ui/theme-ui: Build consistent, themeable React apps based on constraint-based design principles](https://github.com/system-ui/theme-ui) - ThemeUI, 我愿意称之为真正的以配置主题为核心的 UI 框架，基本所有的元素样式都是配置出来的，页面 UI 里基本不怎么需要内联样式了，缺点（也可以说是优点）是内置组件少，适合自定义 UI 风格。
+- [MSON](https://github.com/redgeoff/mson) - MSON Lang: Generate an app from JSON
 
 ## UI 组件
 
@@ -46,6 +47,10 @@ taxonomies:
   - [sapper](https://github.com/sveltejs/sapper) - The next small thing in web development, powered by Svelte
   - [svelte kit](https://github.com/sveltejs/kit)
 - [HTMX](https://htmx.org/) - low js, html to js
+
+## 服务端框架
+
+- [Deepkit](https://github.com/deepkit/deepkit-framework)
 
 ## 汇总资源
 
