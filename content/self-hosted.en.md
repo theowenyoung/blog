@@ -65,6 +65,7 @@ taxonomies:
 
 - [mattermost](https://github.com/mattermost/mattermost-server) - Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.
 - [conduit](https://gitlab.com/famedly/conduit) - Conduit is a simple, fast and reliable chat server powered by Matrix
+- [Harmony Chat](https://harmonyapp.io/) - An open protocol for open, harmonious communication.
 
 ## Deploy
 

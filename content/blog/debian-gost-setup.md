@@ -1,5 +1,5 @@
 ---
-title: Debian 安装 Gost
+title: 在Debian系统中安装 Gost
 date: 2022-06-09T00:31:11+08:00
 updated: 2022-06-09
 taxonomies:
@@ -129,7 +129,7 @@ acme.sh --install-cert -d example.com \
 --reloadcmd "sudo systemctl restart gost"
 ```
 
-## 3. 启动服务
+## 5. 启动服务
 
 Gost 的命令还挺长的，所以可以写的简单的脚本，以后启动方便点：
 
@@ -154,7 +154,7 @@ sudo ./gost \
 chmod +x ./start.sh
 ```
 
-## 5. 查看日志
+## 6. 查看日志
 
 ```bash
 # 查看状态
