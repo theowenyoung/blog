@@ -8,7 +8,7 @@
 	<updated>2022-06-09T00:31:11+08:00</updated>
 	<id>https://www.owenyoung.com/tags/proxy/atom.xml</id>
 	<entry xml:lang="zh">
-		<title>Debian 安装 Gost</title>
+		<title>在Debian系统中安装 Gost</title>
 		<published>2022-06-09T00:31:11+08:00</published>
 		<updated>2022-06-09T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
@@ -112,7 +112,7 @@
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--ca-file ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;gost&#x2F;ca.pem \
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--reloadcmd &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sudo systemctl restart gost&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;3-qi-dong-fu-wu&quot;&gt;3. 启动服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-qi-dong-fu-wu&quot; aria-label=&quot;Anchor link for: 3-qi-dong-fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;5-qi-dong-fu-wu&quot;&gt;5. 启动服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-qi-dong-fu-wu&quot; aria-label=&quot;Anchor link for: 5-qi-dong-fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Gost 的命令还挺长的，所以可以写的简单的脚本，以后启动方便点：&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt; start.sh
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
@@ -128,7 +128,7 @@
 &lt;p&gt;添加执行权限&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;chmod&lt;&#x2F;span&gt;&lt;span&gt; +x .&#x2F;start.sh
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;5-cha-kan-ri-zhi&quot;&gt;5. 查看日志&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-cha-kan-ri-zhi&quot; aria-label=&quot;Anchor link for: 5-cha-kan-ri-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;6-cha-kan-ri-zhi&quot;&gt;6. 查看日志&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-cha-kan-ri-zhi&quot; aria-label=&quot;Anchor link for: 6-cha-kan-ri-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 查看状态
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl status gost
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 查看日志

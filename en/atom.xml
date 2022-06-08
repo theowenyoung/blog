@@ -1157,6 +1157,7 @@ if you want change to the exact version every time, you can set the config to&lt
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mattermost&#x2F;mattermost-server&quot;&gt;mattermost&lt;&#x2F;a&gt; - Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;conduit&quot;&gt;conduit&lt;&#x2F;a&gt; - Conduit is a simple, fast and reliable chat server powered by Matrix&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;harmonyapp.io&#x2F;&quot;&gt;Harmony Chat&lt;&#x2F;a&gt; - An open protocol for open, harmonious communication.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;deploy&quot;&gt;Deploy&lt;a class=&quot;zola-anchor&quot; href=&quot;#deploy&quot; aria-label=&quot;Anchor link for: deploy&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;

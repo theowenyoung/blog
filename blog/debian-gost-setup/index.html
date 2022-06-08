@@ -13,7 +13,7 @@
     />
 
     <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=1b57151384537bec41511becacc75c60492b2d5610644ce3f0161ca4946ff8a2">
-    <title>Debian 安装 Gost - Owen的博客</title>
+    <title>在Debian系统中安装 Gost - Owen的博客</title>
 
     
     <meta
@@ -28,7 +28,7 @@
       content="注意力, 读书, 工具分享, 纯文本, 英语学习"
     />
     <meta name="author" itemprop="author" content="Owen Young" />
-    <meta itemprop="headline" content="Debian 安装 Gost - Owen的博客" />
+    <meta itemprop="headline" content="在Debian系统中安装 Gost - Owen的博客" />
     <meta itemprop="copyrightYear" content="2022" />
     <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
     type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
@@ -54,7 +54,7 @@
 
     <meta
       property="og:title"
-      content="Debian 安装 Gost - Owen的博客"
+      content="在Debian系统中安装 Gost - Owen的博客"
     />
     <meta
       property="og:description"
@@ -81,7 +81,7 @@
       content="Owen的博客"
     />
      
-    <meta name="title" content="Debian 安装 Gost">
+    <meta name="title" content="在Debian系统中安装 Gost">
 <style>
   .sidebar{
     display: none;
@@ -150,7 +150,7 @@
           </div>
         
         <div>
-          <h1 style="font-size:2rem;">Debian 安装 Gost</h1>
+          <h1 style="font-size:2rem;">在Debian系统中安装 Gost</h1>
           <div class="pt muted">
             <div>
               发布于: 2022-06-09T00:31:11+08:00, 最后更新时间: 2022-06-09, 阅读时间: 4 min</div>
@@ -209,12 +209,12 @@
       </li>
   
       <li>
-          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#3-qi-dong-fu-wu">3. 启动服务</a>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#5-qi-dong-fu-wu">5. 启动服务</a>
           
       </li>
   
       <li>
-          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#5-cha-kan-ri-zhi">5. 查看日志</a>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#6-cha-kan-ri-zhi">6. 查看日志</a>
           
       </li>
   
@@ -336,7 +336,7 @@
 </span><span style="color:#bf616a;">--ca-file ~</span><span>/gost/ca.pem \
 </span><span style="color:#bf616a;">--reloadcmd </span><span>&quot;</span><span style="color:#a3be8c;">sudo systemctl restart gost</span><span>&quot;
 </span></code></pre>
-<h2 id="3-qi-dong-fu-wu">3. 启动服务<a class="zola-anchor" href="#3-qi-dong-fu-wu" aria-label="Anchor link for: 3-qi-dong-fu-wu">🔗</a></h2>
+<h2 id="5-qi-dong-fu-wu">5. 启动服务<a class="zola-anchor" href="#5-qi-dong-fu-wu" aria-label="Anchor link for: 5-qi-dong-fu-wu">🔗</a></h2>
 <p>Gost 的命令还挺长的，所以可以写的简单的脚本，以后启动方便点：</p>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vim</span><span> start.sh
 </span></code></pre>
@@ -352,7 +352,7 @@
 <p>添加执行权限</p>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">chmod</span><span> +x ./start.sh
 </span></code></pre>
-<h2 id="5-cha-kan-ri-zhi">5. 查看日志<a class="zola-anchor" href="#5-cha-kan-ri-zhi" aria-label="Anchor link for: 5-cha-kan-ri-zhi">🔗</a></h2>
+<h2 id="6-cha-kan-ri-zhi">6. 查看日志<a class="zola-anchor" href="#6-cha-kan-ri-zhi" aria-label="Anchor link for: 6-cha-kan-ri-zhi">🔗</a></h2>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># 查看状态
 </span><span style="color:#bf616a;">sudo</span><span> systemctl status gost
 </span><span style="color:#65737e;"># 查看日志
@@ -388,7 +388,7 @@
             
             <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
             <p>
-              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9ADebian%20%E5%AE%89%E8%A3%85%20Gost">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9A%E5%9C%A8Debian%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%89%E8%A3%85%20Gost">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
             </p>
             
             
@@ -452,12 +452,12 @@
       </li>
   
       <li>
-          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#3-qi-dong-fu-wu">3. 启动服务</a>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#5-qi-dong-fu-wu">5. 启动服务</a>
           
       </li>
   
       <li>
-          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#5-cha-kan-ri-zhi">5. 查看日志</a>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#6-cha-kan-ri-zhi">6. 查看日志</a>
           
       </li>
   
