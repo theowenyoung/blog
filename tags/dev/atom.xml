@@ -584,6 +584,9 @@
 &lt;p&gt;Tar to specific directory&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;tar -xf&lt;&#x2F;span&gt;&lt;span&gt; x.tar.gz&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -C&lt;&#x2F;span&gt;&lt;span&gt; .&#x2F;xxx
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;unzip-gz&quot;&gt;Unzip .gz&lt;a class=&quot;zola-anchor&quot; href=&quot;#unzip-gz&quot; aria-label=&quot;Anchor link for: unzip-gz&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip -d&lt;&#x2F;span&gt;&lt;span&gt; file.gz
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h3 id=&quot;stdout-to-file&quot;&gt;Stdout to File&lt;a class=&quot;zola-anchor&quot; href=&quot;#stdout-to-file&quot; aria-label=&quot;Anchor link for: stdout-to-file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;command &lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;&amp;gt; file
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;

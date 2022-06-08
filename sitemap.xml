@@ -149,6 +149,10 @@
         <lastmod>2022-03-24</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/debian-gost-setup/</loc>
+        <lastmod>2022-06-09</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/deploy-rsshub-with-actionsflow/</loc>
         <lastmod>2022-03-10</lastmod>
     </url>
@@ -826,6 +830,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/nsfw/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/proxy/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/proxy/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/quotes/</loc>

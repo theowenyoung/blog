@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Proxy</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/proxy/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-06-09T00:31:11+08:00</updated>
+	<id>https://www.owenyoung.com/tags/proxy/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Debian 安装 Gost</title>
+		<published>2022-06-09T00:31:11+08:00</published>
+		<updated>2022-06-09T00:00:00+00:00</updated>
+		<link href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/debian-gost-setup/</id>
+		<content type="html">&lt;p&gt;在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao&quot;&gt;1. 下载并解压最新的 Gost 压缩包&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao&quot; aria-label=&quot;Anchor link for: 1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;去&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-gost&#x2F;gost&#x2F;releases&quot;&gt;Gost Release&lt;&#x2F;a&gt;找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是&lt;code&gt;https:&#x2F;&#x2F;github.com&#x2F;go-gost&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v3.0.0-beta.2&#x2F;gost-linux-amd64-3.0.0-beta.2.gz&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# create gost directory
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;mkdir&lt;&#x2F;span&gt;&lt;span&gt; gost
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# download to current directory
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;go-gost&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v3.0.0-beta.2&#x2F;gost-linux-amd64-3.0.0-beta.2.gz
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# unzip
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip -d&lt;&#x2F;span&gt;&lt;span&gt; gost-linux-amd64-3.0.0-beta.2.gz
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Add execute permission
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;chmod&lt;&#x2F;span&gt;&lt;span&gt; +x gost
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi&quot;&gt;2. 申请 https 证书并自动续期&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi&quot; aria-label=&quot;Anchor link for: 2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;我使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&quot;&gt;acme.sh&lt;&#x2F;a&gt;来管理证书，并且使用 Cloudflare 作为 DNS 管理，因为 Cloudflare 提供了 API 来验证域名所属权限，这样签发证书更方便。&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 acme 工具:&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget -O&lt;&#x2F;span&gt;&lt;span&gt; - https:&#x2F;&#x2F;get.acme.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sh -s&lt;&#x2F;span&gt;&lt;span&gt; email=my@example.com
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;把域名在 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cloudflare.com&#x2F;zh-cn&#x2F;&quot;&gt;Cloudflare&lt;&#x2F;a&gt; 添加解析，解析到你的服务器 IP&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;在某个域名的 dashboard 面板右侧找到 &lt;code&gt;Account ID&lt;&#x2F;code&gt;, 记录下备用。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;进入&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dash.cloudflare.com&#x2F;profile&#x2F;api-tokens&quot;&gt;https:&#x2F;&#x2F;dash.cloudflare.com&#x2F;profile&#x2F;api-tokens&lt;&#x2F;a&gt;，生成一个 API Token,选择&lt;code&gt;Edit Zone&lt;&#x2F;code&gt; 模版，Zone Resources 选择 &lt;code&gt;All Zones&lt;&#x2F;code&gt;,生成，&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;把以下的信息保存到 &lt;code&gt;~&#x2F;.bashrc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;CF_Token&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sdfsdfsdfljlbjkljlkjsdfoiwje&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;export &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;CF_Account_ID&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;xxxxxxxxxxxxx&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;使之生效：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;.bashrc
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果还有什么不清楚的，可以参考文档： &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&#x2F;wiki&#x2F;dnsapi&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&#x2F;wiki&#x2F;dnsapi&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;qian-fa-zheng-shu&quot;&gt;签发证书&lt;a class=&quot;zola-anchor&quot; href=&quot;#qian-fa-zheng-shu&quot; aria-label=&quot;Anchor link for: qian-fa-zheng-shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;修改 &lt;code&gt;example.com&lt;&#x2F;code&gt; 为你的域名&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;运行 &lt;code&gt;acme.sh --issue --dns dns_cf -d example.com&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: 默认的签发机构是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zerossl.com&#x2F;&quot;&gt;Zerossl&lt;&#x2F;a&gt;, 也可以使用 letsencrypt , &lt;code&gt;acme.sh --issue --dns dns_cf -d example.com --server letsencrypt&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;运行之后他就会自动续期该域名，你可以检查 crontab 任务是否添加成功: &lt;code&gt;crontab -e&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;3-shi-yong-systemctl-qi-dong&quot;&gt;3. 使用 Systemctl 启动&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-shi-yong-systemctl-qi-dong&quot; aria-label=&quot;Anchor link for: 3-shi-yong-systemctl-qi-dong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; vim &#x2F;etc&#x2F;systemd&#x2F;system&#x2F;gost.service
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;写入以下文件：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;修改 &lt;code&gt;&#x2F;home&#x2F;green&#x2F;gost&#x2F;&lt;&#x2F;code&gt; 为你的 gost 文件夹&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Unit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Description&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Gost
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;After&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;syslog.target &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;network.target
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Service]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WorkingDirectory&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;home&#x2F;green&#x2F;gost&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;User&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;green
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Group&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;admin
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;UMask&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0002
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Restart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;on-failure
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RestartSec&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;5
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Type&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;simple
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ExecStart&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;home&#x2F;green&#x2F;gost&#x2F;start.sh
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;KillSignal&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;SIGINT
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;TimeoutStopSec&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;20
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SyslogIdentifier&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;gost
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;[Install]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;WantedBy&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;multi-user.target
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;使之生效：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl daemon-reload
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl enable gost
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;4-an-zhuang-zheng-shu&quot;&gt;4. 安装证书&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-an-zhuang-zheng-shu&quot; aria-label=&quot;Anchor link for: 4-an-zhuang-zheng-shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;an-zhuang-zheng-shu-dao-gost-mu-lu&quot;&gt;安装证书到 gost 目录&lt;a class=&quot;zola-anchor&quot; href=&quot;#an-zhuang-zheng-shu-dao-gost-mu-lu&quot; aria-label=&quot;Anchor link for: an-zhuang-zheng-shu-dao-gost-mu-lu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;修改 &lt;code&gt;~&#x2F;gost&#x2F;&lt;&#x2F;code&gt;为你的文件夹， &lt;code&gt;example.com&lt;&#x2F;code&gt; 为你的域名&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;acme.sh --install-cert -d&lt;&#x2F;span&gt;&lt;span&gt; example.com \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--cert-file ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;gost&#x2F;cert.pem  \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--key-file ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;gost&#x2F;key.pem  \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--ca-file ~&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;gost&#x2F;ca.pem \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;--reloadcmd &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;sudo systemctl restart gost&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;3-qi-dong-fu-wu&quot;&gt;3. 启动服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-qi-dong-fu-wu&quot; aria-label=&quot;Anchor link for: 3-qi-dong-fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Gost 的命令还挺长的，所以可以写的简单的脚本，以后启动方便点：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt; start.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 下面的3个参数需要改成你的
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;USER&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;xxxx&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;PASS&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;xxxxxxxx&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;PORT&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;8443
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;BIND_IP&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.0.0.0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; .&#x2F;gost \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;    -L &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http2:&#x2F;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;USER&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;}:&lt;&#x2F;span&gt;&lt;span&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;PASS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;}@&lt;&#x2F;span&gt;&lt;span&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;BIND_IP&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;}:&lt;&#x2F;span&gt;&lt;span&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;PORT&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;}?probe_resist=web:www.baidu.com:443&amp;amp;knock=example.com&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;添加执行权限&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;chmod&lt;&#x2F;span&gt;&lt;span&gt; +x .&#x2F;start.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;5-cha-kan-ri-zhi&quot;&gt;5. 查看日志&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-cha-kan-ri-zhi&quot; aria-label=&quot;Anchor link for: 5-cha-kan-ri-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 查看状态
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl status gost
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 查看日志
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; journalctl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -u&lt;&#x2F;span&gt;&lt;span&gt; gost&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -f
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;6-ke-hu-duan-pei-zhi&quot;&gt;6. 客户端配置&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-ke-hu-duan-pei-zhi&quot; aria-label=&quot;Anchor link for: 6-ke-hu-duan-pei-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;参见&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;haoel&#x2F;haoel.github.io#4-%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE&quot;&gt;这里&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;clash 配置参考：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;h8443
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;password&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;xxxxxxxx
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;port&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8443
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;server&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;example.com
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;tls&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;skip-cert-verify&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;username&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;xxxx
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;can-kao&quot;&gt;参考&lt;a class=&quot;zola-anchor&quot; href=&quot;#can-kao&quot; aria-label=&quot;Anchor link for: can-kao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;haoel&#x2F;haoel.github.io&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;haoel&#x2F;haoel.github.io&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

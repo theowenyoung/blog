@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html
+  lang="zh"
+  itemscope
+  itemtype="http://schema.org/Blog"
+>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=1b57151384537bec41511becacc75c60492b2d5610644ce3f0161ca4946ff8a2">
+    <title>Debian 安装 Gost - Owen的博客</title>
+
+    
+    <meta
+      name="description"
+      itemprop="about"
+      content=" 在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书
+  "
+    />
+    <meta
+      name="keywords"
+      itemprop="keywords"
+      content="注意力, 读书, 工具分享, 纯文本, 英语学习"
+    />
+    <meta name="author" itemprop="author" content="Owen Young" />
+    <meta itemprop="headline" content="Debian 安装 Gost - Owen的博客" />
+    <meta itemprop="copyrightYear" content="2022" />
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
+    type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
+    rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b"> <link
+    rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64"> <link
+    rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a"> <link
+    rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020"> <link
+    rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50"> <link
+    rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363"> <link
+    rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70"> <link
+    rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1"> <link rel="icon"
+    type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac"> <link rel="icon"
+    type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"> <link rel="icon"
+    type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> <link rel="icon"
+    type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa"> <link rel="manifest"
+    href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta
+      name="msapplication-TileColor"
+      content="#EA4C89"
+    />
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="#EA4C89" />
+
+    <meta
+      property="og:title"
+      content="Debian 安装 Gost - Owen的博客"
+    />
+    <meta
+      property="og:description"
+      content=" 在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书
+  "
+    />
+    <meta
+      property="og:url"
+      content="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;debian-gost-setup&#x2F;"
+    />
+    <meta property="og:site_name" content="Owen的博客" />
+    
+    <meta
+      property="og:image"
+      content=""
+    />
+    
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="TheOwenYoung" />
+    <meta name="twitter:creator" content="TheOwenYoung" />
+    <meta
+      name="twitter:image:alt"
+      content="Owen的博客"
+    />
+     
+    <meta name="title" content="Debian 安装 Gost">
+<style>
+  .sidebar{
+    display: none;
+  }
+  @media (min-width: 67.5rem) {
+    .sidebar{
+      display: block;
+    }
+  }
+</style>
+
+  </head>
+
+  <body>
+    <section id="top"></section>
+    <section id="root" >
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"></img>
+            </a> 
+          </div>
+          <div>
+            
+            <ul class="flex menu list-none items-center justify-center">
+              <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline " title="English Site" href="/en/">
+                <span class="text-sm">EN</span>
+               </a></li>
+              <li>
+               <a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted" title="中文站点" class="only-show-small" href="/">
+                 <span class="text-sm">中</span>
+                </a>
+              </li>
+             <div class="nav-divider"></div>
+             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline" title="Back to Top" href="#top">
+               <span class=""> &#8593;</span>
+              </a></li>
+             <li>
+              <a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
+                <span class=""> &#8595;</span>
+               </a>
+             </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="body-zone flex justify-between flex-1">
+          <section class="main flex-1">
+            <div class="main-inner px">
+              
+      <header id="overview">
+        <div class="pt">
+          <span>&gt;&gt;</span>
+          <a href="https://www.owenyoung.com/">首页</a>
+          
+          <span class="divider">/</span>
+          <a class="category" href="https://www.owenyoung.com/categories/random/">Random</a>
+          <span class="divider">/</span>
+          
+          <a href="https://www.owenyoung.com/tags/proxy/">Proxy</a>
+          
+          
+          
+          </div>
+        
+        <div>
+          <h1 style="font-size:2rem;">Debian 安装 Gost</h1>
+          <div class="pt muted">
+            <div>
+              发布于: 2022-06-09T00:31:11+08:00, 最后更新时间: 2022-06-09, 阅读时间: 4 min</div>
+        </div>
+  
+        </div>
+        
+        
+      </header>
+      <section>
+      
+        <section class="main">
+          
+          <div class="main-toc pt">
+            <details>
+              <summary>快速导航</summary>
+              
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">1. 下载并解压最新的 Gost 压缩包</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi">2. 申请 https 证书并自动续期</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#qian-fa-zheng-shu">签发证书</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#3-shi-yong-systemctl-qi-dong">3. 使用 Systemctl 启动</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#4-an-zhuang-zheng-shu">4. 安装证书</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#an-zhuang-zheng-shu-dao-gost-mu-lu">安装证书到 gost 目录</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#3-qi-dong-fu-wu">3. 启动服务</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#5-cha-kan-ri-zhi">5. 查看日志</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#6-ke-hu-duan-pei-zhi">6. 客户端配置</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#can-kao">参考</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+            </details>
+
+          </div>
+          
+          <section id="start"></section>
+          <article>
+            <p>在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书</p>
+<span id="continue-reading"></span><h2 id="1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">1. 下载并解压最新的 Gost 压缩包<a class="zola-anchor" href="#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao" aria-label="Anchor link for: 1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">🔗</a></h2>
+<p>去<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/go-gost/gost/releases">Gost Release</a>找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是<code>https://github.com/go-gost/gost/releases/download/v3.0.0-beta.2/gost-linux-amd64-3.0.0-beta.2.gz</code></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># create gost directory
+</span><span style="color:#bf616a;">mkdir</span><span> gost
+</span><span style="color:#65737e;"># download to current directory
+</span><span style="color:#bf616a;">wget</span><span> https://github.com/go-gost/gost/releases/download/v3.0.0-beta.2/gost-linux-amd64-3.0.0-beta.2.gz
+</span><span style="color:#65737e;"># unzip
+</span><span style="color:#bf616a;">gzip -d</span><span> gost-linux-amd64-3.0.0-beta.2.gz
+</span><span style="color:#65737e;"># Add execute permission
+</span><span style="color:#bf616a;">chmod</span><span> +x gost
+</span></code></pre>
+<h2 id="2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi">2. 申请 https 证书并自动续期<a class="zola-anchor" href="#2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi" aria-label="Anchor link for: 2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi">🔗</a></h2>
+<p>我使用<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/acmesh-official/acme.sh">acme.sh</a>来管理证书，并且使用 Cloudflare 作为 DNS 管理，因为 Cloudflare 提供了 API 来验证域名所属权限，这样签发证书更方便。</p>
+<ol>
+<li>下载 acme 工具:</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">wget -O</span><span> - https://get.acme.sh | </span><span style="color:#bf616a;">sh -s</span><span> email=my@example.com
+</span></code></pre>
+<ol>
+<li>
+<p>把域名在 <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cloudflare.com/zh-cn/">Cloudflare</a> 添加解析，解析到你的服务器 IP</p>
+</li>
+<li>
+<p>在某个域名的 dashboard 面板右侧找到 <code>Account ID</code>, 记录下备用。</p>
+</li>
+<li>
+<p>进入<a rel="noopener nofollow noreferrer" target="_blank" href="https://dash.cloudflare.com/profile/api-tokens">https://dash.cloudflare.com/profile/api-tokens</a>，生成一个 API Token,选择<code>Edit Zone</code> 模版，Zone Resources 选择 <code>All Zones</code>,生成，</p>
+</li>
+</ol>
+<p>把以下的信息保存到 <code>~/.bashrc</code></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">CF_Token</span><span>=&quot;</span><span style="color:#a3be8c;">sdfsdfsdfljlbjkljlkjsdfoiwje</span><span>&quot;
+</span><span>
+</span><span style="color:#b48ead;">export </span><span style="color:#bf616a;">CF_Account_ID</span><span>=&quot;</span><span style="color:#a3be8c;">xxxxxxxxxxxxx</span><span>&quot;
+</span><span>
+</span></code></pre>
+<p>使之生效：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#96b5b4;">source </span><span style="color:#bf616a;">~</span><span>/.bashrc
+</span><span>
+</span></code></pre>
+<blockquote>
+<p>如果还有什么不清楚的，可以参考文档： <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/acmesh-official/acme.sh/wiki/dnsapi">https://github.com/acmesh-official/acme.sh/wiki/dnsapi</a></p>
+</blockquote>
+<h3 id="qian-fa-zheng-shu">签发证书<a class="zola-anchor" href="#qian-fa-zheng-shu" aria-label="Anchor link for: qian-fa-zheng-shu">🔗</a></h3>
+<blockquote>
+<p>修改 <code>example.com</code> 为你的域名</p>
+</blockquote>
+<p>运行 <code>acme.sh --issue --dns dns_cf -d example.com</code></p>
+<blockquote>
+<p>Note: 默认的签发机构是<a rel="noopener nofollow noreferrer" target="_blank" href="https://zerossl.com/">Zerossl</a>, 也可以使用 letsencrypt , <code>acme.sh --issue --dns dns_cf -d example.com --server letsencrypt</code></p>
+</blockquote>
+<blockquote>
+<p>运行之后他就会自动续期该域名，你可以检查 crontab 任务是否添加成功: <code>crontab -e</code></p>
+</blockquote>
+<h2 id="3-shi-yong-systemctl-qi-dong">3. 使用 Systemctl 启动<a class="zola-anchor" href="#3-shi-yong-systemctl-qi-dong" aria-label="Anchor link for: 3-shi-yong-systemctl-qi-dong">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/gost.service
+</span></code></pre>
+<p>写入以下文件：</p>
+<blockquote>
+<p>修改 <code>/home/green/gost/</code> 为你的 gost 文件夹</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
+</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">Gost
+</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">syslog.target </span><span style="color:#bf616a;">network.target
+</span><span style="color:#bf616a;">[Service]
+</span><span style="color:#bf616a;">WorkingDirectory</span><span>=</span><span style="color:#a3be8c;">/home/green/gost/
+</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">green
+</span><span style="color:#bf616a;">Group</span><span>=</span><span style="color:#a3be8c;">admin
+</span><span style="color:#bf616a;">UMask</span><span>=</span><span style="color:#a3be8c;">0002
+</span><span style="color:#bf616a;">Restart</span><span>=</span><span style="color:#a3be8c;">on-failure
+</span><span style="color:#bf616a;">RestartSec</span><span>=</span><span style="color:#a3be8c;">5
+</span><span style="color:#bf616a;">Type</span><span>=</span><span style="color:#a3be8c;">simple
+</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/home/green/gost/start.sh
+</span><span style="color:#bf616a;">KillSignal</span><span>=</span><span style="color:#a3be8c;">SIGINT
+</span><span style="color:#bf616a;">TimeoutStopSec</span><span>=</span><span style="color:#a3be8c;">20
+</span><span style="color:#bf616a;">SyslogIdentifier</span><span>=</span><span style="color:#a3be8c;">gost
+</span><span style="color:#bf616a;">[Install]
+</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
+</span></code></pre>
+<p>使之生效：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
+</span><span style="color:#bf616a;">sudo</span><span> systemctl enable gost
+</span><span>
+</span></code></pre>
+<h2 id="4-an-zhuang-zheng-shu">4. 安装证书<a class="zola-anchor" href="#4-an-zhuang-zheng-shu" aria-label="Anchor link for: 4-an-zhuang-zheng-shu">🔗</a></h2>
+<h3 id="an-zhuang-zheng-shu-dao-gost-mu-lu">安装证书到 gost 目录<a class="zola-anchor" href="#an-zhuang-zheng-shu-dao-gost-mu-lu" aria-label="Anchor link for: an-zhuang-zheng-shu-dao-gost-mu-lu">🔗</a></h3>
+<blockquote>
+<p>修改 <code>~/gost/</code>为你的文件夹， <code>example.com</code> 为你的域名</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">acme.sh --install-cert -d</span><span> example.com \
+</span><span style="color:#bf616a;">--cert-file ~</span><span>/gost/cert.pem  \
+</span><span style="color:#bf616a;">--key-file ~</span><span>/gost/key.pem  \
+</span><span style="color:#bf616a;">--ca-file ~</span><span>/gost/ca.pem \
+</span><span style="color:#bf616a;">--reloadcmd </span><span>&quot;</span><span style="color:#a3be8c;">sudo systemctl restart gost</span><span>&quot;
+</span></code></pre>
+<h2 id="3-qi-dong-fu-wu">3. 启动服务<a class="zola-anchor" href="#3-qi-dong-fu-wu" aria-label="Anchor link for: 3-qi-dong-fu-wu">🔗</a></h2>
+<p>Gost 的命令还挺长的，所以可以写的简单的脚本，以后启动方便点：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vim</span><span> start.sh
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;">#!/bin/bash
+</span><span style="color:#65737e;"># 下面的3个参数需要改成你的
+</span><span style="color:#bf616a;">USER</span><span>=&quot;</span><span style="color:#a3be8c;">xxxx</span><span>&quot;
+</span><span style="color:#bf616a;">PASS</span><span>=&quot;</span><span style="color:#a3be8c;">xxxxxxxx</span><span>&quot;
+</span><span style="color:#bf616a;">PORT</span><span>=</span><span style="color:#a3be8c;">8443
+</span><span style="color:#bf616a;">BIND_IP</span><span>=</span><span style="color:#a3be8c;">0.0.0.0
+</span><span style="color:#bf616a;">sudo</span><span> ./gost \
+</span><span style="color:#bf616a;">    -L </span><span>&quot;</span><span style="color:#a3be8c;">http2://</span><span>$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">USER</span><span style="color:#a3be8c;">}:</span><span>$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">PASS</span><span style="color:#a3be8c;">}@</span><span>$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">BIND_IP</span><span style="color:#a3be8c;">}:</span><span>$</span><span style="color:#a3be8c;">{</span><span style="color:#bf616a;">PORT</span><span style="color:#a3be8c;">}?probe_resist=web:www.baidu.com:443&amp;knock=example.com</span><span>&quot;
+</span></code></pre>
+<p>添加执行权限</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">chmod</span><span> +x ./start.sh
+</span></code></pre>
+<h2 id="5-cha-kan-ri-zhi">5. 查看日志<a class="zola-anchor" href="#5-cha-kan-ri-zhi" aria-label="Anchor link for: 5-cha-kan-ri-zhi">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># 查看状态
+</span><span style="color:#bf616a;">sudo</span><span> systemctl status gost
+</span><span style="color:#65737e;"># 查看日志
+</span><span style="color:#bf616a;">sudo</span><span> journalctl</span><span style="color:#bf616a;"> -u</span><span> gost</span><span style="color:#bf616a;"> -f
+</span></code></pre>
+<h2 id="6-ke-hu-duan-pei-zhi">6. 客户端配置<a class="zola-anchor" href="#6-ke-hu-duan-pei-zhi" aria-label="Anchor link for: 6-ke-hu-duan-pei-zhi">🔗</a></h2>
+<p>参见<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/haoel/haoel.github.io#4-%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE">这里</a></p>
+<p>clash 配置参考：</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span>- </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">h8443
+</span><span>  </span><span style="color:#bf616a;">password</span><span>: </span><span style="color:#a3be8c;">xxxxxxxx
+</span><span>  </span><span style="color:#bf616a;">port</span><span>: </span><span style="color:#d08770;">8443
+</span><span>  </span><span style="color:#bf616a;">server</span><span>: </span><span style="color:#a3be8c;">example.com
+</span><span>  </span><span style="color:#bf616a;">tls</span><span>: </span><span style="color:#d08770;">true
+</span><span>  </span><span style="color:#bf616a;">skip-cert-verify</span><span>: </span><span style="color:#d08770;">true
+</span><span>  </span><span style="color:#bf616a;">type</span><span>: </span><span style="color:#a3be8c;">http
+</span><span>  </span><span style="color:#bf616a;">username</span><span>: </span><span style="color:#a3be8c;">xxxx
+</span></code></pre>
+<h2 id="can-kao">参考<a class="zola-anchor" href="#can-kao" aria-label="Anchor link for: can-kao">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/haoel/haoel.github.io">https://github.com/haoel/haoel.github.io</a></li>
+</ul>
+
+          </article>
+          
+          <section>
+            <hr>
+            <a class="muted" href="https://github.com/theowenyoung/blog/tree/main/content/blog/debian-gost-setup.md">📝 帮我完善这个页面？</a>
+          </section>
+          
+          
+          <div id="email-comment" class="muted text-sm">
+            <hr class="w-full">
+            
+            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
+            <p>
+              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9ADebian%20%E5%AE%89%E8%A3%85%20Gost">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
+            </p>
+            
+            
+
+          </div>
+          
+
+          
+        </section>
+        
+       
+      </section>
+
+
+              </div>
+            </section>
+
+          
+<aside class="sidebar px ">
+
+<h2>快速导航</h2>
+
+<section class="sidebar-table-content">
+  <ul >
+    <li><a href="#start">正文开始</a></li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">1. 下载并解压最新的 Gost 压缩包</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#2-shen-qing-https-zheng-shu-bing-zi-dong-xu-qi">2. 申请 https 证书并自动续期</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#qian-fa-zheng-shu">签发证书</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#3-shi-yong-systemctl-qi-dong">3. 使用 Systemctl 启动</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#4-an-zhuang-zheng-shu">4. 安装证书</a>
+          
+              <ul>
+                  
+                      <li>
+                          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#an-zhuang-zheng-shu-dao-gost-mu-lu">安装证书到 gost 目录</a>
+                      </li>
+                  
+              </ul>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#3-qi-dong-fu-wu">3. 启动服务</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#5-cha-kan-ri-zhi">5. 查看日志</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#6-ke-hu-duan-pei-zhi">6. 客户端配置</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/blog/debian-gost-setup/#can-kao">参考</a>
+          
+      </li>
+  
+  </ul>
+</section>
+
+
+</aside>
+
+
+
+      </main>
+      </section>
+    <section id="bottom"></section>
+  </body>
+</html>

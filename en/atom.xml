@@ -1769,6 +1769,10 @@ if you want change to the exact version every time, you can set the config to&lt
 &lt;h3 id=&quot;delete-the-rule&quot;&gt;Delete the rule:&lt;a class=&quot;zola-anchor&quot; href=&quot;#delete-the-rule&quot; aria-label=&quot;Anchor link for: delete-the-rule&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; iptables&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; nat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -D&lt;&#x2F;span&gt;&lt;span&gt; PREROUTING &amp;lt;number&amp;gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;other-resources&quot;&gt;Other Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#other-resources&quot; aria-label=&quot;Anchor link for: other-resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;haoel&#x2F;haoel.github.io&quot;&gt;Through out Firewall&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
