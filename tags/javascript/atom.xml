@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/javascript/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-25T00:00:00+00:00</updated>
+	<updated>2022-06-08T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/javascript/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>收集 Javascript 相关的资源</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-06-08T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/javascript/" type="text/html"/>
 		<id>https://www.owenyoung.com/javascript/</id>
 		<content type="html">&lt;p&gt;收集用过的，好用的 Javascipt 库。&lt;&#x2F;p&gt;
@@ -21,6 +21,7 @@
 &lt;h2 id=&quot;ui-kuang-jia&quot;&gt;UI 框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#ui-kuang-jia&quot; aria-label=&quot;Anchor link for: ui-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;system-ui&#x2F;theme-ui&quot;&gt;GitHub - system-ui&#x2F;theme-ui: Build consistent, themeable React apps based on constraint-based design principles&lt;&#x2F;a&gt; - ThemeUI, 我愿意称之为真正的以配置主题为核心的 UI 框架，基本所有的元素样式都是配置出来的，页面 UI 里基本不怎么需要内联样式了，缺点（也可以说是优点）是内置组件少，适合自定义 UI 风格。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;redgeoff&#x2F;mson&quot;&gt;MSON&lt;&#x2F;a&gt; - MSON Lang: Generate an app from JSON&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ui-zu-jian&quot;&gt;UI 组件&lt;a class=&quot;zola-anchor&quot; href=&quot;#ui-zu-jian&quot; aria-label=&quot;Anchor link for: ui-zu-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -52,6 +53,10 @@
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;htmx.org&#x2F;&quot;&gt;HTMX&lt;&#x2F;a&gt; - low js, html to js&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;fu-wu-duan-kuang-jia&quot;&gt;服务端框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu-duan-kuang-jia&quot; aria-label=&quot;Anchor link for: fu-wu-duan-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;deepkit&#x2F;deepkit-framework&quot;&gt;Deepkit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;hui-zong-zi-yuan&quot;&gt;汇总资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#hui-zong-zi-yuan&quot; aria-label=&quot;Anchor link for: hui-zong-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
