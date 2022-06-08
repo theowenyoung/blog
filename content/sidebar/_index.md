@@ -4,6 +4,14 @@ sort_direction: "decending"
 updated: 2022-04-04
 ---
 
+## 本页导航
+
+- [最近更新](/#latest-notes)
+- [热门笔记](/#re-men-bi-ji)
+- [最新文章](/#latest)
+- [短想法](/#thoughts)
+- [全部笔记](/#all-notes)
+
 ## 重要链接
 
 - [邮件订阅](https://digests.owenyoung.com/)
