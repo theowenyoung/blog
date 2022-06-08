@@ -1,7 +1,7 @@
 ---
 title: 音乐收藏
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-06-08
 taxonomies:
   categories:
     - Notes

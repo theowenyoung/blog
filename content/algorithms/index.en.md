@@ -56,6 +56,8 @@ deno test
 - [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_palindromic_subsequence_test.ts)
 - [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_increasing_subsequence_test.ts)
 - [Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/wiggle_subsequence_test.ts)
+- [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/longest_common_subsequence_test.ts)
+- [Edit Distance](https://leetcode.com/problems/edit-distance/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/edit_distance_test.ts)
 
 ## List
 

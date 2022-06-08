@@ -424,3 +424,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## 简历
 
 - [nodejs 简历模版](https://github.com/geekcompany/ResumeSample/blob/master/node.md)
+
+## Lisp
+
+- [通往 Common Lisp 之路](https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/)
