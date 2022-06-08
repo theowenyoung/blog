@@ -13,15 +13,17 @@
 		<updated>2022-06-09T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/debian-gost-setup/</id>
-		<content type="html">&lt;p&gt;在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&quot;&gt;Gost&lt;&#x2F;a&gt; 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。&lt;&#x2F;p&gt;
+&lt;p&gt;本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao&quot;&gt;1. 下载并解压最新的 Gost 压缩包&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao&quot; aria-label=&quot;Anchor link for: 1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;去&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-gost&#x2F;gost&#x2F;releases&quot;&gt;Gost Release&lt;&#x2F;a&gt;找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是&lt;code&gt;https:&#x2F;&#x2F;github.com&#x2F;go-gost&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v3.0.0-beta.2&#x2F;gost-linux-amd64-3.0.0-beta.2.gz&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;去&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&#x2F;releases&#x2F;&quot;&gt;Gost Release&lt;&#x2F;a&gt;找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是&lt;code&gt;https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v2.11.2&#x2F;gost-linux-amd64-2.11.2.gz&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# create gost directory
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;mkdir&lt;&#x2F;span&gt;&lt;span&gt; gost
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# download to current directory
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;go-gost&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v3.0.0-beta.2&#x2F;gost-linux-amd64-3.0.0-beta.2.gz
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&#x2F;releases&#x2F;download&#x2F;v2.11.2&#x2F;gost-linux-amd64-2.11.2.gz
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# unzip
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip -d&lt;&#x2F;span&gt;&lt;span&gt; gost-linux-amd64-3.0.0-beta.2.gz
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gzip -d&lt;&#x2F;span&gt;&lt;span&gt; gost-linux-amd64-2.11.2.gz
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;mv&lt;&#x2F;span&gt;&lt;span&gt; gost-linux-amd64-2.11.2.gz gost
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Add execute permission
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;chmod&lt;&#x2F;span&gt;&lt;span&gt; +x gost
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;

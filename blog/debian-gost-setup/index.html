@@ -19,7 +19,7 @@
     <meta
       name="description"
       itemprop="about"
-      content=" 在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书
+      content=" Gost 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。
   "
     />
     <meta
@@ -58,7 +58,7 @@
     />
     <meta
       property="og:description"
-      content=" 在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书
+      content=" Gost 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。
   "
     />
     <meta
@@ -237,15 +237,17 @@
           
           <section id="start"></section>
           <article>
-            <p>在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书</p>
+            <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ginuerzh/gost">Gost</a> 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。</p>
+<p>本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。</p>
 <span id="continue-reading"></span><h2 id="1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">1. 下载并解压最新的 Gost 压缩包<a class="zola-anchor" href="#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao" aria-label="Anchor link for: 1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">🔗</a></h2>
-<p>去<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/go-gost/gost/releases">Gost Release</a>找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是<code>https://github.com/go-gost/gost/releases/download/v3.0.0-beta.2/gost-linux-amd64-3.0.0-beta.2.gz</code></p>
+<p>去<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ginuerzh/gost/releases/">Gost Release</a>找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是<code>https://github.com/ginuerzh/gost/releases/download/v2.11.2/gost-linux-amd64-2.11.2.gz</code></p>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># create gost directory
 </span><span style="color:#bf616a;">mkdir</span><span> gost
 </span><span style="color:#65737e;"># download to current directory
-</span><span style="color:#bf616a;">wget</span><span> https://github.com/go-gost/gost/releases/download/v3.0.0-beta.2/gost-linux-amd64-3.0.0-beta.2.gz
+</span><span style="color:#bf616a;">wget</span><span> https://github.com/ginuerzh/gost/releases/download/v2.11.2/gost-linux-amd64-2.11.2.gz
 </span><span style="color:#65737e;"># unzip
-</span><span style="color:#bf616a;">gzip -d</span><span> gost-linux-amd64-3.0.0-beta.2.gz
+</span><span style="color:#bf616a;">gzip -d</span><span> gost-linux-amd64-2.11.2.gz
+</span><span style="color:#bf616a;">mv</span><span> gost-linux-amd64-2.11.2.gz gost
 </span><span style="color:#65737e;"># Add execute permission
 </span><span style="color:#bf616a;">chmod</span><span> +x gost
 </span></code></pre>
