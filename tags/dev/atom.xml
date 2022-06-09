@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/tags/dev/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-08T00:00:00+00:00</updated>
+	<updated>2022-06-09T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/dev/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>开发相关的资源汇总</title>
@@ -425,7 +425,7 @@
 	<entry xml:lang="zh">
 		<title>开发技巧收藏</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-06-09T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-tips/</id>
 		<content type="html">&lt;p&gt;收集开发相关的技巧，比如中国需要的镜像服务等。&lt;&#x2F;p&gt;

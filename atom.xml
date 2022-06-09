@@ -134,7 +134,7 @@
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# 查看日志
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; journalctl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -u&lt;&#x2F;span&gt;&lt;span&gt; gost&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -f
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;h2 id=&quot;6-ke-hu-duan-pei-zhi&quot;&gt;6. 客户端配置&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-ke-hu-duan-pei-zhi&quot; aria-label=&quot;Anchor link for: 6-ke-hu-duan-pei-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;7-ke-hu-duan-pei-zhi&quot;&gt;7. 客户端配置&lt;a class=&quot;zola-anchor&quot; href=&quot;#7-ke-hu-duan-pei-zhi&quot; aria-label=&quot;Anchor link for: 7-ke-hu-duan-pei-zhi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;参见&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;haoel&#x2F;haoel.github.io#4-%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE&quot;&gt;这里&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;clash 配置参考：&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;h8443
@@ -2788,7 +2788,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>开发技巧收藏</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-06-09T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-tips/</id>
 		<content type="html">&lt;p&gt;收集开发相关的技巧，比如中国需要的镜像服务等。&lt;&#x2F;p&gt;
