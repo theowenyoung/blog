@@ -163,7 +163,7 @@ sudo systemctl status gost
 sudo journalctl -u gost -f
 ```
 
-## 6. 客户端配置
+## 7. 客户端配置
 
 参见[这里](https://github.com/haoel/haoel.github.io#4-%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE)
 
