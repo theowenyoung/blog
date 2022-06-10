@@ -47,6 +47,7 @@ taxonomies:
   - [sapper](https://github.com/sveltejs/sapper) - The next small thing in web development, powered by Svelte
   - [svelte kit](https://github.com/sveltejs/kit)
 - [HTMX](https://htmx.org/) - low js, html to js
+- [Refine](https://refine.dev/docs/getting-started/overview/) - A React-based framework for building internal tools, rapidly.
 
 ## 服务端框架
 

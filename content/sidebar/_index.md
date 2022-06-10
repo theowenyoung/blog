@@ -19,7 +19,8 @@ updated: 2022-04-04
 
 ## 指南
 
-- [阅读指南](/content/books-guide.md)
+- [图书阅读指南](/content/books-guide.md)
+- [探索互联网上高质量的内容](/content/sources.md)
 - [我在阅读什么？](https://myfeed.owenyoung.com/)
 
 ## 关于
