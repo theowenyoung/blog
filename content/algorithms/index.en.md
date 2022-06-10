@@ -1,7 +1,7 @@
 ---
 title: Solve Algorithms
 date: 2022-05-08T06:17:19+08:00
-updated: 2022-06-07
+updated: 2022-06-10
 taxonomies:
   categories:
     - Notes
@@ -60,6 +60,7 @@ deno test
 - [Edit Distance](https://leetcode.com/problems/edit-distance/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/edit_distance_test.ts)
 - [Coin Change](https://leetcode.com/problems/coin-change/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/coin_change_test.ts)
   - [Coin Change 2](https://leetcode.com/problems/coin-change-2/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/coin_change_2_test.ts)
+  - [Perfect Squares](https://leetcode.com/problems/perfect-squares/) - [Answer](https://github.com/theowenyoung/blog/blob/main/content/algorithms/perfect_squares_test.ts)
 
 ## List
 

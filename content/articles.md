@@ -1,7 +1,7 @@
 ---
 title: 收集值得阅读的文章
 date: 2022-03-25
-updated: 2022-06-06
+updated: 2022-06-10
 taxonomies:
   categories:
     - Notes
@@ -151,3 +151,7 @@ taxonomies:
 ## 言论自由
 
 - [言论自由正在退却](https://www.economist.com/international/2016/06/04/the-muzzle-grows-tighter)
+
+## 技术
+
+- [公共 CDN 是无用和危险的](https://httptoolkit.tech/blog/public-cdn-risks/)
