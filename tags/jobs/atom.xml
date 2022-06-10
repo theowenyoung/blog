@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/jobs/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-25T00:00:00+00:00</updated>
+	<updated>2022-06-11T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/jobs/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>工作相关的资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-06-11T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/jobs/" type="text/html"/>
 		<id>https://www.owenyoung.com/jobs/</id>
 		<content type="html">&lt;p&gt;Curating awesome jobs.&lt;&#x2F;p&gt;
@@ -31,6 +31,7 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.workingnomads.com&#x2F;jobs&quot;&gt;Working nomads&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.honeypot.io&#x2F;&quot;&gt;HoneyPot&lt;&#x2F;a&gt; - 是欧洲以开发人员为中心的工作平台。我们的使命是让开发人员获得出色的工作。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;berlinstartupjobs.com&#x2F;&quot;&gt;德国柏林工作机会&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;Germany&#x2F;wiki&#x2F;working&#x2F;findingajob&quot;&gt;德国找工作 wiki - reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
