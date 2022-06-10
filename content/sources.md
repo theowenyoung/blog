@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-06-06
+updated: 2022-06-11
 taxonomies:
   categories:
     - Notes
@@ -24,13 +24,28 @@ taxonomies:
 - [每日电讯报](https://www.telegraph.co.uk/) - 英国
 - [The Rest of World](https://restofworld.org/) - 科技报道
 
-## opinion
+## 文章聚合
 
-- [Narrative](https://www.narrativesproject.com/) - 非营利组织，温和新闻观点，致力于提供温和的立场
+- [精神食粮 Reddit 小组](https://old.reddit.com/r/Foodforthought/)
+- [真 Reddit 小组](https://old.reddit.com/r/TrueReddit/)
+- [Meta Filter](https://www.metafilter.com/)
+- [Soylentnews](https://soylentnews.org/)
+- [Read Something Interesting](https://readsomethinginteresting.com/)
+- [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/)
+- [True Reddit 小组的每月排行](https://old.reddit.com/r/Foodforthought/top/?t=month)
 
-## Data
+## 专人维护的 Reading List
 
-- [Pew Research Center](https://www.pewresearch.org/) - 统计数据，调查问卷分析研究
+- [Marginal Revolution](https://marginalrevolution.com/)
+
+## 视频
+
+- [Vox](https://www.youtube.com/c/Vox/featured) - Youtube 上的一个分享各种各样事情解释的博主，比如塔利班，比如新冠病毒等等，视频质量非常高。
+- [Good Vids](https://www.goodvids.so/) - 通过你的推特 Twitter 好友，找到推荐的视频 Videos
+- [Ad Commercials Videos Reddit](https://www.reddit.com/r/ObscureMedia/) - Films and shorts, Drug PSA's, random music video's, odd cartoons, Media of all sorts ETC.
+- [视频讲座 - Reddit 小组](https://www.reddit.com/r/lectures/)
+- [观看并学习 - Reddit 小组](https://www.reddit.com/r/WatchandLearn/)
+- [下饭视频 - Reddit 小组](https://www.reddit.com/r/mealtimevideos/)
 
 ## 中文独立媒体
 
@@ -38,10 +53,6 @@ taxonomies:
 - [The Stand News](https://www.thestandnews.com/) - Hong Kong indie media
 - [The Initium News ](https://theinitium.com/) - Taiwan/Hong Kong media
 - [HK CNews](https://www.hkcnews.com/) - Hong Kong indie media
-
-## 定期查看的文章列表
-
-- [True Reddit 小组的每月排行](https://old.reddit.com/r/Foodforthought/top/?t=month)
 
 ## 专栏
 
@@ -72,6 +83,14 @@ taxonomies:
 - [10words](https://10words.io/) - 10words: Discover new apps and startups in 10 words or less
 - [Read.cv explore](https://read.cv/explore) - profile 聚合,个人简历聚合
 - [Website Hunt](https://www.websitehunt.co/) - 发现好网站
+
+## opinion
+
+- [Narrative](https://www.narrativesproject.com/) - 非营利组织，温和新闻观点，致力于提供温和的立场
+
+## Data
+
+- [Pew Research Center](https://www.pewresearch.org/) - 统计数据，调查问卷分析研究
 
 ## Self-Hosted
 
@@ -158,18 +177,6 @@ taxonomies:
 
 - [Micro.blog](https://micro.blog/) - 付费轻博客平台
 
-## 文章聚合
-
-- [精神食粮 Reddit 小组](https://old.reddit.com/r/Foodforthought/)
-- [真 Reddit 小组](https://old.reddit.com/r/TrueReddit/)
-- [Meta Filter](https://www.metafilter.com/)
-- [Soylentnews](https://soylentnews.org/)
-- [Read Something Interesting](https://readsomethinginteresting.com/)
-
-## 专人维护的 Reading List
-
-- [Marginal Revolution](https://marginalrevolution.com/)
-
 ## 大杂烩
 
 - [一个页面聚合了多个新闻源](https://upstract.com/)
@@ -210,9 +217,3 @@ taxonomies:
 ## 搜索引擎
 
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
-
-## 视频
-
-- [Vox](https://www.youtube.com/c/Vox/featured) - Youtube 上的一个分享各种各样事情解释的博主，比如塔利班，比如新冠病毒等等，视频质量非常高。
-- [Good Vids](https://www.goodvids.so/) - 通过你的推特 Twitter 好友，找到推荐的视频 Videos
-- [Ad Commercials Videos Reddit](https://www.reddit.com/r/ObscureMedia/) - Films and shorts, Drug PSA's, random music video's, odd cartoons, Media of all sorts ETC.

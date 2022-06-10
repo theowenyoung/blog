@@ -21,6 +21,7 @@ taxonomies:
 - [Reddit List](http://redditlist.com/sfw) - Reddit subs trends, categories
 - [reddit subreddistats](https://subredditstats.com/)
 - [查看相似的 reddit 小组](https://anvaka.github.io/redsim/)
+- [Reddit Subreddits Wiki](https://www.reddit.com/r/ListOfSubreddits/wiki/listofsubreddits)
 
 ## 服务器
 
@@ -37,6 +38,7 @@ taxonomies:
 
 - [TooAfraidToAsk reddit 小组](https://www.reddit.com/r/TooAfraidToAsk/) - 太害怕而不敢问的问题，各种政治不正确的问题
 - [告诉我事实 reddit 小组](https://www.reddit.com/r/TellMeAFact) - 回答必须附带来源
+- [大家都在干嘛 reddit 小组](https://www.reddit.com/r/OutOfTheLoop/)
 
 ## 关系建议
 
@@ -98,4 +100,33 @@ taxonomies:
 
 - [r/asktankies](https://www.reddit.com/r/asktankies/) - 询问关于共产主义的问题
 - [r/DebateCommunism](https://www.reddit.com/r/DebateCommunism) - 辩论有关共产主义的问题
-- []
+
+## 食物
+
+- [问烹饪](https://www.reddit.com/r/AskCulinary) - 询问美食相关的问题 reddit 小组
+
+## 医疗
+
+- [问医生](https://www.reddit.com/r/AskDocs/) - Reddit 医生论坛
+
+## 艺术
+
+- [帮你画画](https://www.reddit.com/r/redditgetsdrawn/)
+- [学画画](https://www.reddit.com/r/ArtFundamentals/)
+
+## 致富
+
+- [制造百万富翁 - reddit](https://www.reddit.com/r/millionairemakers) - 成为百万富翁，每月抽一个人，由其他 redditors 资助
+
+## 搞笑
+
+- [岁月的痕迹 - reddit 小组](https://www.reddit.com/r/Wellworn/) - 用了很久的东西，
+- [Made me smile - subreddit ](https://www.reddit.com/r/MadeMeSmile/)
+
+## 阅读
+
+- [改善读书俱乐部 - reddit 小组](https://www.reddit.com/r/BettermentBookClub/)
+
+## 移民
+
+- [I want out](https://www.reddit.com/r/IWantOut/)

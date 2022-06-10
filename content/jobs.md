@@ -1,7 +1,7 @@
 ---
 title: 工作相关的资源汇总
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-06-11
 taxonomies:
   categories:
     - Notes
@@ -30,6 +30,7 @@ Curating awesome jobs.
 - [Working nomads](https://www.workingnomads.com/jobs)
 - [HoneyPot](https://www.honeypot.io/) - 是欧洲以开发人员为中心的工作平台。我们的使命是让开发人员获得出色的工作。
 - [德国柏林工作机会](https://berlinstartupjobs.com/)
+- [德国找工作 wiki - reddit](https://old.reddit.com/r/Germany/wiki/working/findingajob)
 
 ## Tools
 
