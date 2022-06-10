@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/algorithm/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-07T00:00:00+00:00</updated>
+	<updated>2022-06-10T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/algorithm/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Solve Algorithms</title>
 		<published>2022-05-08T06:17:19+08:00</published>
-		<updated>2022-06-07T00:00:00+00:00</updated>
+		<updated>2022-06-10T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/algorithms/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/algorithms/</id>
 		<content type="html">&lt;p&gt;When I saw Leetcode on the timeline, I thought you guys were so “cult”…&lt;&#x2F;p&gt;
@@ -59,6 +59,7 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;coin-change&#x2F;&quot;&gt;Coin Change&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;coin_change_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;coin-change-2&#x2F;&quot;&gt;Coin Change 2&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;coin_change_2_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;perfect-squares&#x2F;&quot;&gt;Perfect Squares&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;perfect_squares_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
