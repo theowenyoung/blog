@@ -436,3 +436,4 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Indie Web
 
 - [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention 推送给你。
+- [Indie Webring](https://xn--sr8hvo.ws/) - 独立网站的 Webring 服务
