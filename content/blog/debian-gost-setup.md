@@ -1,7 +1,7 @@
 ---
 title: 在Debian系统中安装 Gost
 date: 2022-06-09T00:31:11+08:00
-updated: 2022-06-09
+updated: 2022-06-12
 taxonomies:
   categories:
     - Random
@@ -167,7 +167,7 @@ sudo journalctl -u gost -f
 
 参见[这里](https://github.com/haoel/haoel.github.io#4-%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%AE%BE%E7%BD%AE)
 
-clash 配置参考：
+### 7.1 clash 配置参考
 
 ```yaml
 - name: h8443
@@ -179,6 +179,47 @@ clash 配置参考：
   type: http
   username: xxxx
 ```
+
+### 7.2 Gost 中转节点
+
+> 在中转节点安装 gost，步骤同上
+
+```bash
+cd ~/gost
+vim config.json
+```
+
+```json
+{
+  "ServeNodes": ["socks5://username:pass@0.0.0.0:1080"],
+  "ChainNodes": ["https://username:pass@example:443"]
+}
+```
+
+```bash
+vim start.sh
+```
+
+```bash
+#!/bin/bash
+# 下面的3个参数需要改成你的
+USER="xxxx"
+PASS="xxxxxxxx"
+DOMAIN="xxxx.com"
+PORT=1080
+TARGET_PORT=8443
+BIND_IP=0.0.0.0
+sudo ./gost \
+    -L "socks5://${USER}:${PASS}@${BIND_IP}:${PORT}" -F "https://${USER}:${PASS}@${DOMAIN}:${TARGET_PORT}"
+```
+
+添加执行权限
+
+```bash
+chmod +x ./start.sh
+```
+
+按照如上步骤 3，添加 systemctl 服务
 
 ## 参考
 

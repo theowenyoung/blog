@@ -432,3 +432,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Search
 
 - [Common Crawl](https://commoncrawl.org/the-data/get-started/) - 全球网站抓取免费数据集，适用本地搜索引擎数据库
+
+## Indie Web
+
+- [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention 推送给你。
