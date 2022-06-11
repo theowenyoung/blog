@@ -386,6 +386,9 @@ li.inline {
 .p-name{
   margin-left: 0.5rem;
 }
+.display-none{
+  display: none;
+}
 
 @media (min-width: 48rem) {
   .nav-divider{
