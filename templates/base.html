@@ -178,11 +178,13 @@
 
           {% block sidebar %}
           <aside class="sidebar px">
-          <div class="pt">
-            <a class="{% if lang=='zh' -%}muted{% endif -%}" href="/">中</a><span class="divider">/</span>
-            <a class="{% if lang=='en' -%}muted{% endif -%}" href="/en/">EN</a>
-            
-          </div>
+            <div class="h-card pt">
+              <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
+              <a class="p-name u-url"
+              href="{{ config.base_url }}" 
+
+             >{{ config.extra.author }}</a> 
+            </div>
           <h2><a class="no-underline" href="{{lang_prefix_path}}categories/">{{ trans(key="label_categories",lang=lang) }}</h2></a>
           <ul>
             {% set categories = get_taxonomy(kind="categories",lang=lang) %} {% for cat in
@@ -197,7 +199,7 @@
           </ul>
           {% set custom_sidebar = get_section(path="sidebar/_index"~file_lang_path~".md") %} 
             {{ custom_sidebar.content | safe }}
-
+        
           <h2 ><a class="no-underline" href="{{lang_prefix_path}}tags/">{{ trans(key="label_tags",lang=lang) }}</a></h2>
           <ul class="list-none text-sm">
             {% set tags = get_taxonomy(kind="tags",lang=lang) %} {% for tag in tags.items -%}
@@ -209,6 +211,7 @@
             </li>
             {% endfor %}
           </ul>
+       
         </aside>
           {% endblock sidebar %}
 

@@ -379,6 +379,13 @@ li.inline {
   height: 24px;
   margin: 0 1.6rem 0 0.6rem;
 }
+.h-card{
+  display: flex;
+  align-items: center;
+}
+.p-name{
+  margin-left: 0.5rem;
+}
 
 @media (min-width: 48rem) {
   .nav-divider{
