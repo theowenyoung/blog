@@ -178,12 +178,12 @@
 
           {% block sidebar %}
           <aside class="sidebar px">
-            <div class="h-card pt">
+            <div class="display-none h-card pt">
               <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
               <a class="p-name u-url"
               href="{{ config.base_url }}" 
-
              >{{ config.extra.author }}</a> 
+             <p class="p-note">{{ config.extra.bio }}</p>
             </div>
           <h2><a class="no-underline" href="{{lang_prefix_path}}categories/">{{ trans(key="label_categories",lang=lang) }}</h2></a>
           <ul>
