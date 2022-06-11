@@ -361,6 +361,9 @@ li.inline {
 .text-sm p {
   font-size: 1rem;
 }
+.pb {
+  padding-bottom: 1.4rem;
+}
 .pb-sm {
   padding-bottom: 0.5rem;
 }
