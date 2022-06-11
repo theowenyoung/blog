@@ -40,6 +40,8 @@ author = "Owen Young"
 email = "owen@owenyoung.com"
 theme_color = "#EA4C89"
 
+### indieweb note
+bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
 ### THIRD PARTY
 # google_analytics = "UA-012345-67"
 # disqus = "disqus-user"
@@ -49,7 +51,6 @@ edit_url_prefix = "https://github.com/theowenyoung/blog/tree/main/content/"
 github_user = "theowenyoung"
 image = "https://www.owenyoung.com/logo.png"
 twitter_user = "TheOwenYoung"
-# gitlab_user = ""
 
 ### I18N WORDS
 
