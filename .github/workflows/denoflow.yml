@@ -20,6 +20,7 @@ jobs:
       - run: deno run -A https://deno.land/x/denoflow/cli.ts run
         env:
           WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
+          WEBMENTION_APP_TOKEN: ${{secrets.WEBMENTION_APP_TOKEN}}
         continue-on-error: true
       - name: chown
         run: sudo chown -R $USER:$USER ./
