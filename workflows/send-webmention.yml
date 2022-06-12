@@ -1,0 +1,18 @@
+sources:
+  - from: https://deno.land/x/denoflow@0.0.35/sources/rss.ts
+    args:
+      - https://www.owenyoung.com/blog/atom.xml
+  - from: https://deno.land/x/denoflow@0.0.35/sources/rss.ts
+    args:
+      - https://www.owenyoung.com/en/blog/atom.xml
+steps:
+  - use: fetch
+    args:
+      - https://webmention.app/check?token=${{ctx.env.WEBMENTION_APP_TOKEN}}&url=${{encodeURIComponent(ctx.item.links[0].href)}}
+      - method: GET
+        headers:
+          Content-Type: application/json
+    run: |
+      console.log(ctx.item.links[0].href);
+      const json = await ctx.result.json();
+      console.log(json);

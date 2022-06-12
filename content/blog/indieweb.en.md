@@ -94,7 +94,7 @@ Basically, I use [Webmention.io](https://webmention.io) to collect all webmentio
 
 3. Use [Denoflow](https://github.com/denoflow/denoflow) to cache all webmentions to [my blog repo](https://github.com/theowenyoung/blog/tree/main/webmentions)
 
-Workflow file(`workflows/fetch-webmention.yml`):
+Workflow file([`workflows/fetch-webmention.yml`](https://github.com/theowenyoung/blog/blob/main/workflows/fetch-webmention.yml)):
 
 > Fetch webmention [API](https://github.com/aaronpk/webmention.io#api) to get updates, then save to `webmentions` directory.
 
@@ -207,12 +207,80 @@ jobs:
 
 > Cause I don't have too many mentions, so I use [sebastiandedeyne's](https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions) mention data as this article's webmention data.
 
+## 5. Send webmention when you publish a new article
+
+When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using [Denoflow](https://github.com/denoflow/denoflow) and the [Webmention.app](https://webmention.app/) API. [Webmention.app](https://webmention.app/) can check all the mentioned links in the new article and send all webmentions to them.
+
+Before [Webmention.app](https://webmention.app/) can recognize the mentioned links, we need to add some extra [microformats2](https://indieweb.org/microformats2) to our article html. Basically, it's some html tag class names. These took me quite a few time to update my templates, so now I have supported [h-card](https://indieweb.org/h-card), [h-entry](https://indieweb.org/h-entry) and [h-feed](https://indieweb.org/h-feed). It looks like this:
+
+```html
+<article class="h-entry">
+  <h1 class="p-name">Microformats are amazing</h1>
+  <p>
+    Published by
+    <a class="p-author h-card" href="http://example.com">W. Developer</a> on
+    <time class="dt-published" datetime="2013-06-13 12:00:00"
+      >13<sup>th</sup> June 2013</time
+    >
+  </p>
+  <p class="p-summary">In which I extoll the virtues of using microformats.</p>
+  <div class="e-content">
+    <p>Blah blah blah</p>
+  </div>
+</article>
+```
+
+I have updated [page.html](https://github.com/theowenyoung/blog/blob/main/templates/page.html), [index.html](https://github.com/theowenyoung/blog/blob/main/templates/index.html), [taxonomy_single.html](https://github.com/theowenyoung/blog/blob/main/templates/taxonomy_single.html) and [section.html](https://github.com/theowenyoung/blog/blob/main/templates/section.html) to support these new microformats. I have to say this is the most demanding job, good luck!
+
+Once finished, I went to [indiewebify](https://indiewebify.me/) to test if it can recognize my new microformats. It works!
+
+Next, I went to [webmention.app](https://webmention.app/token) to apply for a token. Then I can add a denoflow workflow file to fetch it's service every day.
+
+Here is the workflow file([`workflows/send-webmention.yml`](https://github.com/theowenyoung/blog/blob/main/workflows/send-webmention.yml)):
+
+```yaml
+sources:
+  - from: https://deno.land/x/denoflow@0.0.35/sources/rss.ts
+    args:
+      - https://www.owenyoung.com/blog/atom.xml
+  - from: https://deno.land/x/denoflow@0.0.35/sources/rss.ts
+    args:
+      - https://www.owenyoung.com/en/blog/atom.xml
+steps:
+  - use: fetch
+    args:
+      - https://webmention.app/check?token=${{ctx.env.WEBMENTION_APP_TOKEN}}&url=${{encodeURIComponent(ctx.item.links[0].href)}}
+      - method: GET
+        headers:
+          Content-Type: application/json
+    run: |
+      console.log(ctx.item.links[0].href);
+      const json = await ctx.result.json();
+      console.log(json);
+```
+
+Don't forget to add enviroment variables `WEBMENTION_APP_TOKEN` to your denoflow workflow file(`.github/workflows/denoflow.yml`).
+
+```yaml
+- run: deno run -A https://deno.land/x/denoflow/cli.ts run
+  env:
+    WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
+    WEBMENTION_APP_TOKEN: ${{secrets.WEBMENTION_APP_TOKEN}}
+```
+
+## Conclusion
+
+I really like the concept of IndieWeb and their API design philosophy, it took some time but I still think it was worth it. It gave me renewed confidence in the Internet.
+
+You can find the all source code of this blog on [Github](https://github.com/theowenyoung/blog)
+
 ## Resources
 
 - [Bird.gy](https://brid.gy/) - Bridgy connects your web site to social media.
   Likes, retweets, mentions, cross-posting
 - [Indie Webring](https://xn--sr8hvo.ws/)
 - [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
+- [Webmention.app](https://webmention.app/) - Automate your outgoing webmentions
 - [Webmention.io](https://webmention.io/) - Webmention.io is a hosted service created to easily receive webmentions on any web page.
 - [Fediring](https://fediring.net/)
 - [Webmentions on a static site with GitHub Actions](https://sebastiandedeyne.com/webmentions-on-a-static-site-with-github-actions/)
