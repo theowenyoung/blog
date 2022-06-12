@@ -370,6 +370,10 @@
         <lastmod>2022-03-26</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/en/blog/indieweb/</loc>
+        <lastmod>2022-06-12</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/en/blog/install-php8-on-centos7/</loc>
         <lastmod>2022-03-26</lastmod>
     </url>
@@ -742,6 +746,12 @@
         <loc>https://www.owenyoung.com/tags/image/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/indieweb/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/indieweb/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/inspires/</loc>
     </url>
     <url>
@@ -940,6 +950,12 @@
         <loc>https://www.owenyoung.com/tags/videos/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/webmention/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/webmention/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/workflows/</loc>
     </url>
     <url>
@@ -956,6 +972,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/writing/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/zola/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/zola/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/thoughts/</loc>

@@ -140,83 +140,97 @@
           <section class="main flex-1">
             <div class="main-inner px">
               
-      <header id="overview">
-        <div class="pt">
-          <span>&gt;&gt;</span>
-          <a href="https://www.owenyoung.com/en/">Home</a>
-          
-          <span class="divider">/</span>
-          <a class="category" href="https://www.owenyoung.com/en/categories/random/">Random</a>
-          
-          
-          </div>
-        
-        <div>
-          <h1 style="font-size:2rem;">Wiki Links to Markdown Links for VSCode</h1>
-          <div class="pt muted">
-            <div>
-              Published: 2022-03-27, Updated: 2022-03-27, Reading Time: 2 min</div>
-        </div>
+<div class="h-entry hentry">
+  <header id="overview">
   
-        </div>
-        
-        
-      </header>
-      <section>
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="https://www.owenyoung.com/en/">Home</a>
       
-        <section class="main">
-          
-          <section id="start"></section>
-          <article>
-            <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
+      <span class="divider">/</span>
+      <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/en/categories/random/">Random</a>
+      
+      
+      </div>
+  
+    <div>
+      <h1 class="p-name entry-title" style="font-size:2rem;">Wiki Links to Markdown Links for VSCode</h1>
+      <div class="display-none p-author h-card vcard">
+        <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+        <a class="p-name u-url url"
+        href="https:&#x2F;&#x2F;www.owenyoung.com" 
+       >Owen Young</a> 
+       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+      </div>
+      <div class="pt muted">
+        <div>
+          Published: <time class="dt-published published" datetime="2022-03-27">2022-03-27</time>, Updated: <time class="dt-updated updated" datetime="2022-03-27">2022-03-27</time>, Reading Time: 2 min</div>
+    </div>
+
+    </div>
+    
+    
+  </header>
+  <section>
+  
+    <section class="main">
+      <div class="display-none p-summary">
+        <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
+
+      </div>
+      <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Permanent Link</a>
+      
+      <section id="start"></section>
+      <article class="e-content entry-content">
+        <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
 <span id="continue-reading"></span>
 <p>So, the second thing is to input absolute internal link quickly, <a rel="noopener nofollow noreferrer" target="_blank" href="https://obsidian.md/">Obsidian</a> does have a feature that allows you type wiki links, then they will be converted to markdown links. I like this feature, but when I tried <a rel="noopener nofollow noreferrer" target="_blank" href="https://obsidian.md/">Obsidian</a> seconds time, I still can’t use to it, and it’s also a bit slow compared to VSCode. <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/foambubble/foam">Foam</a> can only auto generate markdown reference link, but that feature not a one-time task, it sometimes makes mistakes, like add multiple <code>&quot;</code> at the end of reference zone. So, I decided to fork foam extension, and turn off the most features that I don’t need, only keep creating notes from template, and convert wiki links to markdown links.</p>
 <p><img src="https://i.imgur.com/sYmKeKO.gif" alt="Wiki Links to Markdown Links" /></p>
 <p>I’m so lucky, Foam’s code structure is very clean, so I just changed a little bit to achieve what I wanted. Here is my final result: <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/foam">Foam</a>, if you need this, I also publish it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode">VSCode marketplace</a>.</p>
 
-          </article>
-          
-          <section>
-            <hr>
-            <a class="muted" href="https://github.com/theowenyoung/blog/tree/main/content/blog/wiki-links-to-markdown-links-for-vscode.en.md">📝 Edit this page</a>
-          </section>
-          
+      </article>
       
-          
-          
-          
-          <hr>
-          <h2>Response<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
-          <form class="webmention-form ui form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
-            
-            <div id="email-comment" class="muted text-sm">
-              
-               <p>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:
-                 Or, you can send your response via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20Wiki%20Links%20to%20Markdown%20Links%20for%20VSCode">mail </a><code>owen@owenyoung.com</code>
-               </p>
-              
-              
-  
-            </div>
-            
-            <div class="flex items-center flex-wrap">
-                <input type="url" name="source" class="flex-3 mr w-full py-sm px-sm">
-              <input type="submit" class="px py-sm" value="Send Webmention">
-
-            </div>
-            <div class="status hidden">
-              <div class="ui message"></div>
-            </div>
-            <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">
-          </form>
-            
-          
-          
-
-        </section>
-        
-       
+      <section>
+        <hr>
+        <a class="muted" href="https://github.com/theowenyoung/blog/tree/main/content/blog/wiki-links-to-markdown-links-for-vscode.en.md">📝 Edit this page</a>
       </section>
+      
+  
+      
+      
+      
+      <hr>
+      <h2>Response<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
+      <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+        
+        <div id="email-comment" class="muted text-sm">
+          
+           <p>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL,
+             Or, you can send your response via <a href="mailto:owen@owenyoung.com?subject=Reply%3A%20Wiki%20Links%20to%20Markdown%20Links%20for%20VSCode">mail </a><code>owen@owenyoung.com</code>
+           </p>
+          
+        
+        </div>
+        
+        <div class="flex items-center flex-wrap pb">
+          <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
+          <input type="submit" class="px py-sm" value="Send Webmention">
+        </div>
+        <div class="status hidden">
+          <div class="ui message"></div>
+        </div>
+        <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">
+      </form>
+        
+      
+      
+
+    </section>
+    
+   
+  </section>
+</div>
+   
 
 
               </div>

@@ -140,40 +140,55 @@
           <section class="main flex-1">
             <div class="main-inner px">
               
-      <header id="overview">
-        <div class="pt">
-          <span>&gt;&gt;</span>
-          <a href="https://www.owenyoung.com/">首页</a>
-          
-          <span class="divider">/</span>
-          <a class="category" href="https://www.owenyoung.com/categories/random/">Random</a>
-          <span class="divider">/</span>
-          
-          <a href="https://www.owenyoung.com/tags/proxy/">Proxy</a>
-          
-          
-          
-          </div>
-        
-        <div>
-          <h1 style="font-size:2rem;">在Debian系统中安装 Gost</h1>
-          <div class="pt muted">
-            <div>
-              发布于: 2022-06-09T00:31:11+08:00, 最后更新时间: 2022-06-12, 阅读时间: 5 min</div>
-        </div>
+<div class="h-entry hentry">
+  <header id="overview">
   
-        </div>
-        
-        
-      </header>
-      <section>
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="https://www.owenyoung.com/">首页</a>
       
-        <section class="main">
+      <span class="divider">/</span>
+      <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/categories/random/">Random</a>
+      <span class="divider">/</span>
+      
+      <a href="https://www.owenyoung.com/tags/proxy/">Proxy</a>
+      
+      
+      
+      </div>
+  
+    <div>
+      <h1 class="p-name entry-title" style="font-size:2rem;">在Debian系统中安装 Gost</h1>
+      <div class="display-none p-author h-card vcard">
+        <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+        <a class="p-name u-url url"
+        href="https:&#x2F;&#x2F;www.owenyoung.com" 
+       >Owen Young</a> 
+       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+      </div>
+      <div class="pt muted">
+        <div>
+          发布于: <time class="dt-published published" datetime="2022-06-09T00:31:11+08:00">2022-06-09</time>, 最后更新时间: <time class="dt-updated updated" datetime="2022-06-12">2022-06-12</time>, 阅读时间: 5 min</div>
+    </div>
+
+    </div>
+    
+    
+  </header>
+  <section>
+  
+    <section class="main">
+      <div class="display-none p-summary">
+        <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ginuerzh/gost">Gost</a> 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。</p>
+<p>本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。</p>
+
+      </div>
+      <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;debian-gost-setup&#x2F;">Permanent Link</a>
+      
+      <div class="main-toc pt">
+        <details>
+          <summary>快速导航</summary>
           
-          <div class="main-toc pt">
-            <details>
-              <summary>快速导航</summary>
-              
 <section class="sidebar-table-content">
   <ul >
     <li><a href="#start">正文开始</a></li>
@@ -249,13 +264,13 @@
   </ul>
 </section>
 
-            </details>
+        </details>
 
-          </div>
-          
-          <section id="start"></section>
-          <article>
-            <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ginuerzh/gost">Gost</a> 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。</p>
+      </div>
+      
+      <section id="start"></section>
+      <article class="e-content entry-content">
+        <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ginuerzh/gost">Gost</a> 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。</p>
 <p>本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。</p>
 <span id="continue-reading"></span><h2 id="1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">1. 下载并解压最新的 Gost 压缩包<a class="zola-anchor" href="#1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao" aria-label="Anchor link for: 1-xia-zai-bing-jie-ya-zui-xin-de-gost-ya-suo-bao">🔗</a></h2>
 <p>去<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ginuerzh/gost/releases/">Gost Release</a>找到最新版本的压缩包，比如 我的服务器系统是 Debian，amd64 架构，所以对应的是<code>https://github.com/ginuerzh/gost/releases/download/v2.11.2/gost-linux-amd64-2.11.2.gz</code></p>
@@ -422,49 +437,49 @@
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/haoel/haoel.github.io">https://github.com/haoel/haoel.github.io</a></li>
 </ul>
 
-          </article>
-          
-          <section>
-            <hr>
-            <a class="muted" href="https://github.com/theowenyoung/blog/tree/main/content/blog/debian-gost-setup.md">📝 帮我完善这个页面？</a>
-          </section>
-          
+      </article>
       
-          
-          
-          
-          <hr>
-          <h2>网络回应<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
-          <form class="webmention-form ui form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
-            
-            <div id="email-comment" class="muted text-sm">
-              
-              <p>
-                你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9A%E5%9C%A8Debian%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%89%E8%A3%85%20Gost">邮件  </a><code>owen@owenyoung.com</code> 和我讨论。
-              </p>
-              
-              
-  
-            </div>
-            
-            <div class="flex items-center flex-wrap">
-                <input type="url" name="source" class="flex-3 mr w-full py-sm px-sm">
-              <input type="submit" class="px py-sm" value="Send Webmention">
-
-            </div>
-            <div class="status hidden">
-              <div class="ui message"></div>
-            </div>
-            <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;debian-gost-setup&#x2F;">
-          </form>
-            
-          
-          
-
-        </section>
-        
-       
+      <section>
+        <hr>
+        <a class="muted" href="https://github.com/theowenyoung/blog/tree/main/content/blog/debian-gost-setup.md">📝 帮我完善这个页面？</a>
       </section>
+      
+  
+      
+      
+      
+      <hr>
+      <h2>网络回应<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
+      <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+        
+        <div id="email-comment" class="muted text-sm">
+          
+          <p>
+            你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9A%E5%9C%A8Debian%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%AE%89%E8%A3%85%20Gost">邮件  </a><code>owen@owenyoung.com</code> 和我讨论。
+          </p>
+          
+        
+        </div>
+        
+        <div class="flex items-center flex-wrap pb">
+          <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
+          <input type="submit" class="px py-sm" value="Send Webmention">
+        </div>
+        <div class="status hidden">
+          <div class="ui message"></div>
+        </div>
+        <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;debian-gost-setup&#x2F;">
+      </form>
+        
+      
+      
+
+    </section>
+    
+   
+  </section>
+</div>
+   
 
 
               </div>
