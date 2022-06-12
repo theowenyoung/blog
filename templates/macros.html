@@ -66,6 +66,9 @@
           {% endif %}
       </li>
   {% endfor %}
+  <li>
+    <a href="#response">{{ trans(key="label_response",lang=lang) }}</a>
+</li>
   </ul>
 </section>
 {% endmacro page_toc %}
@@ -140,14 +143,14 @@
       </a>
 </li>
 {% elif item.content.html %}
-<li class="card mb-lg rounded-lg list-none px py h-cite p-comment">
+<li class="card mb-lg rounded-lg list-none px py h-cite p-comment h-entry" id="{{item['wm-id']}}">
   <div class="flex items-center flex-wrap p-author h-card">
     {% if item.author.photo %}
       <a
       rel="nofollow ugc"
       title="{{item.author.name}}"
       href="{{item.author.url}}"
-      class="mr-sm"
+      class="mr-sm p-name u-url"
     >
       <img alt="{{item.author.name}}" class="u-photo rounded-full icon" src="{{item.author.photo}}">
     </a>
@@ -166,19 +169,20 @@
 {% endif %}
 {% if item.published %}
 {% set key = "label_action_"~type %}
-<span class="mr-sm">{{config.extra[key]}} on</span>
+<a id="{{item['wm-id']}}" class="mr-sm" href="#{{item['wm-id']}}">{{config.extra[key]}}</a>
+<span class="mr-sm"> on</span>
 <a
   rel="nofollow ugc"
+  class="u-url"
   title="{{ item.published }}"
   href="{{item.url}}"
->{{ item.published | date() }}</a>
+><time class="dt-published published" datetime="{{item.published}}">{{ item.published | date() }}</time></a>
 {% endif %}
 <span>:</span>
   </div>
   
-<div>
+<div class="p-content p-name">
   {{ item.content.html | safe }}   
-
 </div>
 </li>
 {% endif %}

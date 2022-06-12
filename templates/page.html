@@ -90,6 +90,7 @@
       {% if config.extra.webmention_path %}
       {% set current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
       {% set webmention_data = load_data(path="webmentions"~current_webmention_file_name~".json",required=false) %}
+      <section class="p-comments h-feed">
       <hr>
       <h2>{{trans(key="label_response",lang=lang)}}<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
       <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
@@ -126,7 +127,7 @@
           {% for type, items in mentions | group_by(attribute="wm-property") %}
               <h3>{{trans(key="label_"~type,lang=lang)}} ({{items | length}})<a href="#{{type}}" id="{{type}}" class="zola-anchor" >🔗</a></h3>
               {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
-                <ul class="list-none flex items-center">
+                <ul class="list-none flex items-center flex-wrap">
                   {% for item in items %}
                     {{ macro::webmention(type=type, item=item) }}
                   {% endfor %}
@@ -143,6 +144,7 @@
           {% endfor %}
 
         {% endif %}
+      </section>
       {% endif %}
       {% if config.extra.disqus and page.extra.comments %}
       <div id="disqus">
