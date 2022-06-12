@@ -138,7 +138,9 @@ pre {
   padding: 1.5rem 1rem;
   border: 0px;
   border-radius: 0.5rem;
-  overflow: auto;
+  /* overflow: auto; */
+  overflow-x: scroll;
+  max-width: 100%;
 }
 code {
   border-radius: 0.25rem;
@@ -255,6 +257,9 @@ a.muted,
 }
 .flex-1 {
   flex: 1;
+}
+.flex-1-auto {
+  flex: 1 1 auto;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -457,6 +462,11 @@ li.inline {
   #root {
     display: flex;
   }
+  .body-zone {
+    /* prevent overflow */
+    min-width: 0;
+  }
+
 }
 
 @media (min-width: 67.5rem) {
