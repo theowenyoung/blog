@@ -28,8 +28,7 @@ jobs:
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - run: make install
-      - run: make run
+      - run: make webmention
         env:
           WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
         continue-on-error: true
