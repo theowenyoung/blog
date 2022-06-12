@@ -437,3 +437,6 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 
 - [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention 推送给你。
 - [Indie Webring](https://xn--sr8hvo.ws/) - 独立网站的 Webring 服务
+- [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
+- [Webmention.io](https://webmention.io/) - Webmention.io is a hosted service created to easily receive webmentions on any web page.
+- [Fediring](https://fediring.net/)

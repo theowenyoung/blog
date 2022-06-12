@@ -76,7 +76,11 @@ Then, I add this code to [my homepage aside](https://github.com/theowenyoung/blo
 
 Learn more about [Webmention](https://indieweb.org/Webmention) and [How to support webmention](https://indieweb.org/Webmention-developer)
 
-1.
+Basically, I use [Webmention.io](https://webmention.io) to collect all webmentions about this blog, and then I use [Denoflow](https://github.com/denoflow/denoflow) to cache them to [my blog repo](https://github.com/theowenyoung/blog/tree/main/webmentions), and then I use [Zola](https://www.getzola.org/documentation/templates/overview/#load-data) `load_data` function to load them, and render them.
+
+1. First, go [webmention.io](https://webmention.io) and create a new account with my domain `www.owenyoung.com`, then I can get my webmention endpoint, and I connected my twitter and github account to the service.
+
+2. Second, let other services know your webmention endpoint. Add this to the head:
 
 ```html
 <link
@@ -84,3 +88,45 @@ Learn more about [Webmention](https://indieweb.org/Webmention) and [How to suppo
   href="https://webmention.io/www.owenyoung.com/webmention"
 />
 ```
+
+3. Use [Denoflow](https://github.com/denoflow/denoflow) to cache all webmentions to [my blog repo](https://github.com/theowenyoung/blog/tree/main/webmentions)
+
+Workflow file:
+
+```yaml
+sources:
+  - use: fetch
+    args:
+      - https://webmention.io/api/mentions.jf2?domain=www.owenyoung.com&per-page=999&token=${{env.WEBMENTION_TOKEN}}
+    run: return ctx.result.json()
+    itemsPath: children
+    key: "wm-id"
+filter:
+  run: |
+    const {ensureDir} = await import("https://deno.land/std@0.121.0/fs/mod.ts");
+    const { dirname } = await import("https://deno.land/std@0.121.0/path/mod.ts");
+    for(const item of ctx.items){
+      const id = item["wm-id"];
+      const target = new URL(item["wm-target"]);
+      const pathname = target.pathname;
+      const filename = pathname.slice(1).replace(/\/$/, "");
+      const filepath = "webmentions/"+filename+".json";
+      await ensureDir(dirname(filepath));
+      let webmentionData = {};
+      try {
+        const dataString = await Deno.readTextFile(filepath);
+        webmentionData = JSON.parse(dataString);
+      } catch (_e) {
+        // ignore
+      }
+      webmentionData[id] = item;
+      console.log("write file:", filepath);
+      await Deno.writeTextFile(filepath, JSON.stringify(webmentionData,null,2));
+    }
+    return ctx.items.map(()=>true);
+```
+
+## Resources
+
+- [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
+- [Webmentions on a static site with GitHub Actions](https://sebastiandedeyne.com/webmentions-on-a-static-site-with-github-actions/)
