@@ -174,7 +174,7 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
       </div>
       <div class="pt muted">
         <div>
-          Published: <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>, Updated: <time class="dt-updated updated" datetime="2022-06-12">2022-06-12</time>, Reading Time: 7 min</div>
+          Published: <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>, Updated: <time class="dt-updated updated" datetime="2022-06-12">2022-06-12</time>, Reading Time: 10 min</div>
     </div>
 
     </div>
@@ -215,6 +215,16 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
   
       <li>
           <a href="https://www.owenyoung.com/en/blog/indieweb/#4-adding-webmention-response-to-articles">4. Adding Webmention Response to articles</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/indieweb/#5-send-webmention-when-you-publish-a-new-article">5. Send webmention when you publish a new article</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/indieweb/#conclusion">Conclusion</a>
           
       </li>
   
@@ -306,7 +316,7 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 <ol start="3">
 <li>Use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/denoflow/denoflow">Denoflow</a> to cache all webmentions to <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/tree/main/webmentions">my blog repo</a></li>
 </ol>
-<p>Workflow file(<code>workflows/fetch-webmention.yml</code>):</p>
+<p>Workflow file(<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/workflows/fetch-webmention.yml"><code>workflows/fetch-webmention.yml</code></a>):</p>
 <blockquote>
 <p>Fetch webmention <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/aaronpk/webmention.io#api">API</a> to get updates, then save to <code>webmentions</code> directory.</p>
 </blockquote>
@@ -414,12 +424,63 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 <blockquote>
 <p>Cause I don’t have too many mentions, so I use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions">sebastiandedeyne’s</a> mention data as this article’s webmention data.</p>
 </blockquote>
+<h2 id="5-send-webmention-when-you-publish-a-new-article">5. Send webmention when you publish a new article<a class="zola-anchor" href="#5-send-webmention-when-you-publish-a-new-article" aria-label="Anchor link for: 5-send-webmention-when-you-publish-a-new-article">🔗</a></h2>
+<p>When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/denoflow/denoflow">Denoflow</a> and the <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> API. <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> can check all the mentioned links in the new article and send all webmentions to them.</p>
+<p>Before <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> can recognize the mentioned links, we need to add some extra <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/microformats2">microformats2</a> to our article html. Basically, it’s some html tag class names. These took me quite a few time to update my templates, so now I have supported <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-card">h-card</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-entry">h-entry</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-feed">h-feed</a>. It looks like this:</p>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">h-entry</span><span>&quot;&gt;
+</span><span>  &lt;</span><span style="color:#bf616a;">h1 </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">p-name</span><span>&quot;&gt;Microformats are amazing&lt;/</span><span style="color:#bf616a;">h1</span><span>&gt;
+</span><span>  &lt;</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>    Published by
+</span><span>    &lt;</span><span style="color:#bf616a;">a </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">p-author h-card</span><span>&quot; </span><span style="color:#d08770;">href</span><span>=&quot;</span><span style="color:#a3be8c;">http://example.com</span><span>&quot;&gt;W. Developer&lt;/</span><span style="color:#bf616a;">a</span><span>&gt; on
+</span><span>    &lt;</span><span style="color:#bf616a;">time </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">dt-published</span><span>&quot; </span><span style="color:#d08770;">datetime</span><span>=&quot;</span><span style="color:#a3be8c;">2013-06-13 12:00:00</span><span>&quot;
+</span><span>      &gt;13&lt;</span><span style="color:#bf616a;">sup</span><span>&gt;th&lt;/</span><span style="color:#bf616a;">sup</span><span>&gt; June 2013&lt;/</span><span style="color:#bf616a;">time
+</span><span>    &gt;
+</span><span>  &lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>  &lt;</span><span style="color:#bf616a;">p </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">p-summary</span><span>&quot;&gt;In which I extoll the virtues of using microformats.&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">e-content</span><span>&quot;&gt;
+</span><span>    &lt;</span><span style="color:#bf616a;">p</span><span>&gt;Blah blah blah&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>  &lt;/</span><span style="color:#bf616a;">div</span><span>&gt;
+</span><span>&lt;/</span><span style="color:#bf616a;">article</span><span>&gt;
+</span></code></pre>
+<p>I have updated <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/page.html">page.html</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/index.html">index.html</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/taxonomy_single.html">taxonomy_single.html</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/section.html">section.html</a> to support these new microformats. I have to say this is the most demanding job, good luck!</p>
+<p>Once finished, I went to <a rel="noopener nofollow noreferrer" target="_blank" href="https://indiewebify.me/">indiewebify</a> to test if it can recognize my new microformats. It works!</p>
+<p>Next, I went to <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/token">webmention.app</a> to apply for a token. Then I can add a denoflow workflow file to fetch it’s service every day.</p>
+<p>Here is the workflow file(<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/workflows/send-webmention.yml"><code>workflows/send-webmention.yml</code></a>):</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">sources</span><span>:
+</span><span>  - </span><span style="color:#bf616a;">from</span><span>: </span><span style="color:#a3be8c;">https://deno.land/x/denoflow@0.0.35/sources/rss.ts
+</span><span>    </span><span style="color:#bf616a;">args</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">https://www.owenyoung.com/blog/atom.xml
+</span><span>  - </span><span style="color:#bf616a;">from</span><span>: </span><span style="color:#a3be8c;">https://deno.land/x/denoflow@0.0.35/sources/rss.ts
+</span><span>    </span><span style="color:#bf616a;">args</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">https://www.owenyoung.com/en/blog/atom.xml
+</span><span style="color:#bf616a;">steps</span><span>:
+</span><span>  - </span><span style="color:#bf616a;">use</span><span>: </span><span style="color:#a3be8c;">fetch
+</span><span>    </span><span style="color:#bf616a;">args</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">https://webmention.app/check?token=${{ctx.env.WEBMENTION_APP_TOKEN}}&amp;url=${{encodeURIComponent(ctx.item.links[0].href)}}
+</span><span>      - </span><span style="color:#bf616a;">method</span><span>: </span><span style="color:#a3be8c;">GET
+</span><span>        </span><span style="color:#bf616a;">headers</span><span>:
+</span><span>          </span><span style="color:#bf616a;">Content-Type</span><span>: </span><span style="color:#a3be8c;">application/json
+</span><span>    </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#b48ead;">|
+</span><span style="color:#a3be8c;">      console.log(ctx.item.links[0].href);
+</span><span style="color:#a3be8c;">      const json = await ctx.result.json();
+</span><span style="color:#a3be8c;">      console.log(json);
+</span></code></pre>
+<p>Don’t forget to add enviroment variables <code>WEBMENTION_APP_TOKEN</code> to your denoflow workflow file(<code>.github/workflows/denoflow.yml</code>).</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span>- </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">deno run -A https://deno.land/x/denoflow/cli.ts run
+</span><span>  </span><span style="color:#bf616a;">env</span><span>:
+</span><span>    </span><span style="color:#bf616a;">WEBMENTION_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.WEBMENTION_TOKEN}}
+</span><span>    </span><span style="color:#bf616a;">WEBMENTION_APP_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.WEBMENTION_APP_TOKEN}}
+</span></code></pre>
+<h2 id="conclusion">Conclusion<a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">🔗</a></h2>
+<p>I really like the concept of IndieWeb and their API design philosophy, it took some time but I still think it was worth it. It gave me renewed confidence in the Internet.</p>
+<p>You can find the all source code of this blog on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">Github</a></p>
 <h2 id="resources">Resources<a class="zola-anchor" href="#resources" aria-label="Anchor link for: resources">🔗</a></h2>
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://brid.gy/">Bird.gy</a> - Bridgy connects your web site to social media.
 Likes, retweets, mentions, cross-posting</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://xn--sr8hvo.ws/">Indie Webring</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://telegraph.p3k.io/">Telegraph</a> - Easily send Webmentions from your website</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> - Automate your outgoing webmentions</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.io/">Webmention.io</a> - Webmention.io is a hosted service created to easily receive webmentions on any web page.</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://fediring.net/">Fediring</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://sebastiandedeyne.com/webmentions-on-a-static-site-with-github-actions/">Webmentions on a static site with GitHub Actions</a></li>
@@ -1599,6 +1660,16 @@ now done - <a href="https://github.com/synesthesia/site2019">here</a></p>
   
       <li>
           <a href="https://www.owenyoung.com/en/blog/indieweb/#4-adding-webmention-response-to-articles">4. Adding Webmention Response to articles</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/indieweb/#5-send-webmention-when-you-publish-a-new-article">5. Send webmention when you publish a new article</a>
+          
+      </li>
+  
+      <li>
+          <a href="https://www.owenyoung.com/en/blog/indieweb/#conclusion">Conclusion</a>
           
       </li>
   
