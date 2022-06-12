@@ -1,0 +1,57 @@
+name: Denoflow
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: "1 0 * * *"
+jobs:
+  denoflow:
+    runs-on: ubuntu-latest
+    concurrency: denoflow
+    steps:
+      - if: github.event_name!='workflow_dispatch'
+        name: sleep for pr
+        run: sleep 60
+      - run: |
+          sudo apt-get update \
+          && sudo apt-get install -y wget gnupg \
+          && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - \
+          && sudo sh -c 'sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
+          && sudo apt-get update \
+          && sudo apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 \
+            --no-install-recommends \
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: make install
+      - run: make run
+        env:
+          WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
+        continue-on-error: true
+      - name: chown
+        run: sudo chown -R $USER:$USER ./
+      - name: git config
+        run: git config --global user.name "github-actions[bot]" && git config --global user.email github-actions-bot@users.noreply.github.com
+      - name: git add
+        run: git add data && git add sources
+      - run: git status
+      - id: isChanged
+        run: git diff-index --cached --quiet HEAD || echo '::set-output name=changed::true'
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v3
+        if: ${{ steps.isChanged.outputs.changed == 'true' }}
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          labels: automerge
+          add-paths: data,sources
+          commit-message: "chore: new item"
+          committer: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
+          author: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
+          branch: new-item
+          delete-branch: true
+          title: New item update

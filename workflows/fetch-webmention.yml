@@ -1,0 +1,30 @@
+sources:
+  - use: fetch
+    args:
+      - https://webmention.io/api/mentions.jf2?domain=www.owenyoung.com&per-page=999&token=${{ENV.WEBMENTION_TOKEN}}
+    run: return ctx.result.json()
+    itemsPath: children
+    key: "wm-id"
+filter:
+  run: |
+    const {ensureDir} = await import("https://deno.land/std@0.121.0/fs/mod.ts");
+    const { dirname } = await import("https://deno.land/std@0.121.0/path/mod.ts");
+    for(const item of ctx.items){
+      const id = item["wm-id"];
+      const target = new URL(item["wm-target"]);
+      const pathname = target.pathname;
+      const filename = pathname.slice(1).replace(/\/$/, "");
+      const filepath = "webmentions/"+filename+".json";
+      await ensureDir(dirname(filepath));
+      let webmentionData = {};
+      try {
+        const dataString = await Deno.readTextFile(filepath);
+        webmentionData = JSON.parse(dataString);
+      } catch (_e) {
+        // ignore
+      }
+      webmentionData[id] = item;
+      console.log("write file:", filepath);
+      await Deno.writeTextFile(filepath, JSON.stringify(webmentionData,null,2));
+    }
+    return ctx.items.map(()=>true);

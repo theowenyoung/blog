@@ -1,0 +1,732 @@
+{
+  "635001": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Anonymous",
+      "photo": "https://webmention.io/avatar/commentpara.de/ef200c8b639d79d1cfbc0abf0e25f42dcbc585b4398003dd90f5a56c9d56e3bf.svg",
+      "url": ""
+    },
+    "url": "https://commentpara.de/comment/428.htm",
+    "published": null,
+    "wm-received": "2019-06-28T06:34:28Z",
+    "wm-id": 635001,
+    "wm-source": "https://commentpara.de/comment/428.htm",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "Cool!"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "635019": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Bramus!",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/61a000e6774bacfe39918128f9022678cf4b57a65a351cb6cf55aa22d5fa0fa1.jpg",
+      "url": "https://twitter.com/bramus"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-9131062",
+    "published": null,
+    "wm-received": "2019-06-28T06:51:43Z",
+    "wm-id": 635019,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/9131062",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635020": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Freek Van der Herten 🎆",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/0e82b7fa7a888172ec7f5dd150222f2d70982b6946127010c1ea6e6d8ca67cc4.jpg",
+      "url": "https://twitter.com/freekmurze"
+    },
+    "url": "https://twitter.com/freekmurze/status/1144494253671714816",
+    "published": "2019-06-28T06:34:28+00:00",
+    "wm-received": "2019-06-28T06:51:43Z",
+    "wm-id": 635020,
+    "wm-source": "https://brid-gy.appspot.com/repost/twitter/sebdedeyne/1144493898007367680/1144494253671714816",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "✒️ Adding webmentions to my blog sebastiandedeyne.com/adding-webment…"
+    },
+    "repost-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "repost-of",
+    "wm-private": false
+  },
+  "635021": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Bruno CHIREZ",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/681c4b5ae294013d922c4df728eceede32542747ce585431e9ece3ae1822379f.jpg",
+      "url": "https://twitter.com/sn4rky"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-9586032",
+    "published": null,
+    "wm-received": "2019-06-28T06:51:43Z",
+    "wm-id": 635021,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/9586032",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635050": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Антон",
+      "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+      "url": "https://twitter.com/asaprykintsd"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-1128233985346277376",
+    "published": null,
+    "wm-received": "2019-06-28T07:48:05Z",
+    "wm-id": 635050,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/1128233985346277376",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635051": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Антон",
+      "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+      "url": "https://twitter.com/asaprykintsd"
+    },
+    "url": "https://twitter.com/asaprykintsd/status/1144511954498838529",
+    "published": "2019-06-28T07:44:48+00:00",
+    "wm-received": "2019-06-28T07:48:06Z",
+    "wm-id": 635051,
+    "wm-source": "https://brid-gy.appspot.com/comment/twitter/sebdedeyne/1144493898007367680/1144511954498838529",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "🤘"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "635067": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Erick Patrick",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/775293f9b434b929ab13e1806abaff50e13450b42d340cb80e92b8f123b38ba2.jpg",
+      "url": "https://twitter.com/erickpatrick"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-20648766",
+    "published": null,
+    "wm-received": "2019-06-28T08:14:36Z",
+    "wm-id": 635067,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/20648766",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635068": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Rhincodon",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/352208b408d518b344a415cbd9c1e355fb38b7ef7cdce10005467f01eea4096e.jpg",
+      "url": "https://twitter.com/rhinodontypicus"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-2354883085",
+    "published": null,
+    "wm-received": "2019-06-28T08:14:38Z",
+    "wm-id": 635068,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/2354883085",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635088": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Johan Bové",
+      "photo": "https://webmention.io/avatar/social.johanbove.info/c36ca839d16c988baca6ea031f2597274827441bb1dd9aa72b00f7761dbb5da5.jpg",
+      "url": "https://social.johanbove.info/profile/johan"
+    },
+    "url": "https://social.johanbove.info/2019/06/28/adding-webmentions-to-my-blog-sebastian-de-deynes-blog",
+    "published": "2019-06-28T11:00:34+02:00",
+    "wm-received": "2019-06-28T09:00:37Z",
+    "wm-id": 635088,
+    "wm-source": "https://social.johanbove.info/2019/06/28/adding-webmentions-to-my-blog-sebastian-de-deynes-blog",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "name": "Adding webmentions to my blog — Sebastian De Deyne's Blog",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635098": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Johan Bové",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/f1c7af5a40b4a6af891b29acf1d7be59c61990b1178202e53acd4a68e273e479.png",
+      "url": "https://twitter.com/johanbove"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-231445532",
+    "published": null,
+    "wm-received": "2019-06-28T09:14:04Z",
+    "wm-id": 635098,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/231445532",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "635122": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Shirshak 🌿 🐄 🐷 Ⓥ",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/c7bae84bdc072ccf3b8188f827dd54151be9bf25fe3de86bfe72c710e96006ef.png",
+      "url": "https://twitter.com/shirshak55"
+    },
+    "url": "https://twitter.com/shirshak55/status/1144540357314502658",
+    "published": "2019-06-28T09:37:40+00:00",
+    "wm-received": "2019-06-28T09:44:14Z",
+    "wm-id": 635122,
+    "wm-source": "https://brid-gy.appspot.com/comment/twitter/sebdedeyne/1144493898007367680/1144540357314502658",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "is it same like ping back that wordpress used to had?"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "635184": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Spatie",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/3efb487e7f3a0bc3690580277105f93eda590d65e4d9eb01135a184a9df60b18.jpg",
+      "url": "https://twitter.com/spatie_be"
+    },
+    "url": "https://twitter.com/spatie_be/status/1144572545385095174",
+    "published": "2019-06-28T11:45:34+00:00",
+    "wm-received": "2019-06-28T11:46:40Z",
+    "wm-id": 635184,
+    "wm-source": "https://brid-gy.appspot.com/repost/twitter/sebdedeyne/1144493898007367680/1144572545385095174",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "✒️ Adding webmentions to my blog sebastiandedeyne.com/adding-webment…"
+    },
+    "repost-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "repost-of",
+    "wm-private": false
+  },
+  "638335": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Simon Depelchin",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/0ba1f45cd188689acc3b236d9af81f9081ee99c95dfbc5068ad2b34b5198982b.jpg",
+      "url": "https://twitter.com/SimonDepelchin"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-18478194",
+    "published": null,
+    "wm-received": "2019-07-02T18:54:45Z",
+    "wm-id": 638335,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/18478194",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "643221": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Freek Van der Herten 🎆",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/fc87f4abfee522403bfb9d8ebbdd1bde483d020713c137b63e94bec043c45cfa.jpg",
+      "url": "https://twitter.com/freekmurze"
+    },
+    "url": "https://twitter.com/freekmurze/status/1148609730925015040",
+    "published": "2019-07-09T15:07:54+00:00",
+    "wm-received": "2019-07-09T15:09:40Z",
+    "wm-id": 643221,
+    "wm-source": "https://brid-gy.appspot.com/comment/twitter/freekmurze/1148608357420412928/1148609730925015040",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "Thanks\n<a class=\"u-mention\" href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\"></a>",
+      "text": "Thanks"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "643224": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "NUNO MADURO 💡",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/66bc64df878d8a1d9dcfd2ed6199a6ba856f4aed7413777459008d70f33497c2.jpg",
+      "url": "https://twitter.com/enunomaduro"
+    },
+    "url": "https://twitter.com/enunomaduro/status/1148608901845327872",
+    "published": "2019-07-09T15:04:36+00:00",
+    "wm-received": "2019-07-09T15:09:44Z",
+    "wm-id": 643224,
+    "wm-source": "https://brid-gy.appspot.com/comment/twitter/freekmurze/1148608357420412928/1148608901845327872",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "Nice new profile photo buddy. 👌🏻\n<a class=\"u-mention\" href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\"></a>",
+      "text": "Nice new profile photo buddy. 👌🏻"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "643229": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Freek Van der Herten 🎆",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/fc87f4abfee522403bfb9d8ebbdd1bde483d020713c137b63e94bec043c45cfa.jpg",
+      "url": "https://twitter.com/freekmurze"
+    },
+    "url": "https://twitter.com/freekmurze/status/1148608357420412928",
+    "published": "2019-07-09T15:02:27+00:00",
+    "wm-received": "2019-07-09T15:15:07Z",
+    "wm-id": 643229,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1148608357420412928",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "🔗 Adding webmentions to my blog\n<a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a>",
+      "text": "🔗 Adding webmentions to my blog\nsebastiandedeyne.com/adding-webment…"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "644389": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Tyler Leonhardt",
+      "photo": "https://webmention.io/avatar/i.imgur.com/577069328928f47dd1acabf7de60c18fb679ef3758d6040f11c61b6e681b164e.jpg",
+      "url": ""
+    },
+    "url": "https://commentpara.de/comment/434.htm",
+    "published": null,
+    "wm-received": "2019-07-11T02:23:18Z",
+    "wm-id": 644389,
+    "wm-source": "https://commentpara.de/comment/434.htm",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "This is really cool"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "647038": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Fred 👨‍💻",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/db38c7fdae3d67f5c26f30111a05ae90a791f96fedcc67c404bed6481b24672e.jpg",
+      "url": "https://twitter.com/fredbradley"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-83694807",
+    "published": null,
+    "wm-received": "2019-07-15T04:28:44Z",
+    "wm-id": 647038,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/83694807",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "647152": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Grant Richmond",
+      "photo": "https://webmention.io/avatar/grant.codes/ca9d913e6e49b5ef5a5492313c9a7908cee0a33d0e188ea842a59c1968da2dd1.jpg",
+      "url": "https://grant.codes/"
+    },
+    "url": "https://grant.codes/2019/07/15/08-35-49",
+    "published": "2019-07-15T08:35:49",
+    "wm-received": "2019-07-15T08:35:58Z",
+    "wm-id": 647152,
+    "wm-source": "https://grant.codes/2019/07/15/08-35-49",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "647153": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Jan Boddez",
+      "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+      "url": "https://twitter.com/janboddez"
+    },
+    "url": "https://twitter.com/janboddez/status/1150684441687285760",
+    "published": "2019-07-15T08:32:04+00:00",
+    "wm-received": "2019-07-15T08:36:47Z",
+    "wm-id": 647153,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1150684441687285760",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "‘Adding webmentions to my blog’ <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a>",
+      "text": "‘Adding webmentions to my blog’ sebastiandedeyne.com/adding-webment…"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "648838": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Sven",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/96263383203a0a5b526de0de91f8376dce91b0bfd5d47852699848f4f3fbbf4f.png",
+      "url": "https://twitter.com/svenluijten"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-206623956",
+    "published": null,
+    "wm-received": "2019-07-17T09:49:44Z",
+    "wm-id": 648838,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/206623956",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "648955": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Chris White",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a5acb54c4d706f8374538d908669a78d06cc910025aa3df4cd1320160eb72bde.jpg",
+      "url": "https://twitter.com/cwhite_92"
+    },
+    "url": "https://twitter.com/cwhite_92/status/1151491528289869824",
+    "published": "2019-07-17T13:59:08+00:00",
+    "wm-received": "2019-07-17T14:11:23Z",
+    "wm-id": 648955,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1151491528289869824",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "&lt;script&gt;alert(0)&lt;/script&gt; <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a>",
+      "text": "<script>alert(0)</script> sebastiandedeyne.com/adding-webment…"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "648956": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Chris White",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a5acb54c4d706f8374538d908669a78d06cc910025aa3df4cd1320160eb72bde.jpg",
+      "url": "https://twitter.com/cwhite_92"
+    },
+    "url": "https://twitter.com/sebdedeyne/status/1144493898007367680#favorited-by-2921575018",
+    "published": null,
+    "wm-received": "2019-07-17T14:11:31Z",
+    "wm-id": 648956,
+    "wm-source": "https://brid-gy.appspot.com/like/twitter/sebdedeyne/1144493898007367680/2921575018",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "like-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "649375": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "La semana PHP",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfd0c987004c612438e013bf5427e37b27ff4f46c2e70acd8cc8ef5d28b3f362.jpg",
+      "url": "https://twitter.com/lasemanaphp"
+    },
+    "url": "https://twitter.com/lasemanaphp/status/1151748480865624064",
+    "published": "2019-07-18T07:00:10+00:00",
+    "wm-received": "2019-07-18T07:16:43Z",
+    "wm-id": 649375,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1151748480865624064",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "Añadiendo webmentions a mi blog <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a> vía <a href=\"https://twitter.com/sebdedeyne\">@sebdedeyne</a>",
+      "text": "Añadiendo webmentions a mi blog sebastiandedeyne.com/adding-webment… vía @sebdedeyne"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "653984": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Star Tutorial",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/0ac05bcbc6efe593356e512f603575ccf7265ab4254df138ebe7be9db461685a.jpg",
+      "url": "https://twitter.com/startutorial"
+    },
+    "url": "https://twitter.com/startutorial/status/1154225513449308160",
+    "published": "2019-07-25T03:03:01+00:00",
+    "wm-received": "2019-07-25T03:18:24Z",
+    "wm-id": 653984,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1154225513449308160",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "Adding webmentions to my blog\n<a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a>\n<a href=\"https://twitter.com/search?q=%23php\">#php</a>",
+      "text": "Adding webmentions to my blog\nsebastiandedeyne.com/adding-webment…\n#php"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "662534": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Isabela Moreira",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a1bcb539952bd267adab100c1cd15abe91eb1197ac9eb08146ff6000cdd5fc24.jpg",
+      "url": "https://twitter.com/isabelacmor"
+    },
+    "url": "https://twitter.com/isabelacmor/status/1158878603494547458",
+    "published": "2019-08-06T23:12:44+00:00",
+    "wm-received": "2019-08-06T23:37:13Z",
+    "wm-id": 662534,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1158878603494547458",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "I finally had a chance to style the webmentions on my website 🎉 \n\nThanks to <a href=\"https://twitter.com/sebdedeyne\">@sebdedeyne</a>’s blog post (<a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a>) and <a href=\"https://twitter.com/TylerLeonhardt\">@TylerLeonhardt</a> for showing me.\n\nCheck it out 🤖\n<a href=\"https://isabela.dev/posts/how-to-write-a-great-resume-intro/\">isabela.dev/posts/how-to-w…</a>",
+      "text": "I finally had a chance to style the webmentions on my website 🎉 \n\nThanks to @sebdedeyne’s blog post (sebastiandedeyne.com/adding-webment…) and @TylerLeonhardt for showing me.\n\nCheck it out 🤖\nisabela.dev/posts/how-to-w…"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "662540": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Chris W",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/4951bb03233f58dc571ce4d718fcd20ab6aff6c2ef7ec0a4ead9ca75ce89ec56.jpg",
+      "url": "https://twitter.com/_watzon"
+    },
+    "url": "https://twitter.com/_watzon/status/1158879282581475328",
+    "published": "2019-08-06T23:15:26+00:00",
+    "wm-received": "2019-08-06T23:38:57Z",
+    "wm-id": 662540,
+    "wm-source": "https://brid-gy.appspot.com/comment/twitter/isabelacmor/1158878603494547458/1158879282581475328",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "How are you liking Ghost? I haven't used it in over a year and I'm wondering it's improved. It was pretty good then, but lacking in features a bit.\n<a class=\"u-mention\" href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\"></a>",
+      "text": "How are you liking Ghost? I haven't used it in over a year and I'm wondering it's improved. It was pretty good then, but lacking in features a bit."
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "730855": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Dzulfikar",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6f54473a26e3894726859430f54b7ce159963f551dcf7a88a3c023f7da63d6b3.jpg",
+      "url": "https://twitter.com/superpikar"
+    },
+    "url": "https://twitter.com/superpikar/status/1202383503251214336",
+    "published": "2019-12-05T00:25:41+00:00",
+    "wm-received": "2019-12-05T00:49:21Z",
+    "wm-id": 730855,
+    "wm-source": "https://brid-gy.appspot.com/post/twitter/sebdedeyne/1202383503251214336",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "html": "Adding webmentions to my blog — Sebastian De Deyne <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">sebastiandedeyne.com/adding-webment…</a>",
+      "text": "Adding webmentions to my blog — Sebastian De Deyne sebastiandedeyne.com/adding-webment…"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "816780": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "James Mead",
+      "photo": "",
+      "url": "https://jamesmead.org/"
+    },
+    "url": "https://jamesmead.org/blog/2020-06-27-indieweb-ifying-my-personal-website",
+    "published": "2020-06-27T18:53:00+00:00",
+    "wm-received": "2020-06-27T21:50:20Z",
+    "wm-id": 816780,
+    "wm-source": "https://jamesmead.org/blog/2020-06-27-indieweb-ifying-my-personal-website",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "name": "IndieWeb-ifying my personal website",
+    "summary": {
+      "content-type": "text/plain",
+      "value": "Marking up relevant content with microformats and adding the ability to receive webmentions"
+    },
+    "content": {
+      "html": "<p>I've been interested in the <a href=\"https://indieweb.org/\">IndieWeb</a> since my colleague, <a href=\"http://chrisroos.co.uk/\">Chris R</a>, hosted <a href=\"https://gofreerange.com/the-first-london-indieweb-homebrew-website-club\">the first London IndieWeb meetup</a> years ago and at various points I've played with a few bits of it on my website, e.g. <a href=\"https://en.wikipedia.org/wiki/OpenID\">OpenID</a> and <a href=\"https://indieauth.net/\">IndieAuth</a>. As part of my efforts to move away from Twitter and Facebook, I recently joined the very friendly <a href=\"https://fosstodon.org/\">fosstodon.org</a> Mastodon instance and I noticed quite a lot of toots about the IndieWeb including one which mentioned the <a href=\"https://indiewebify.me\">indiewebify.me</a> website which walks you through various levels of IndieWeb \"compliance\". I've been interested in finding out more about <a href=\"https://www.w3.org/TR/webmention/\">Webmentions</a> for a while and this gave me the motivation I needed to give them a try.</p>\n\n<p>It turns out I had already <a href=\"https://github.com/floehopper/jamesmead.org/commit/7755ead416ed2e39906a1d61f692d0b83be34546\">become a citizen of the IndieWeb</a>, i.e. Level 1 compliance, back in June 2013 and amazingly (to me anyway) that functionality was still working. Level 2 compliance is about publishing on the IndieWeb and Level 3 compliance is about federating IndieWeb conversations.</p>\n\n<h3>Publishing on the IndieWeb</h3>\n\n<p>For level 2, the first step was to markup my home page using the <a href=\"http://microformats.org/wiki/h-card\">h-card microformat</a>, not to be confused with the older <a href=\"http://microformats.org/wiki/hCard\">hCard microformat</a>. I started doing this by creating separate hidden markup, but I was unhappy with the amount of duplication. And so, after faffing about with <a href=\"https://middlemanapp.com/\">middleman</a> for a while and discovering its <a href=\"https://middlemanapp.com/basics/layouts/#nested-layouts\">nested layouts</a>, I managed to markup some of the existing content to reduce the amount of duplication: <a href=\"https://github.com/floehopper/jamesmead.org/blob/6760dd64e5a3999f19726efa96f46e4d42fd9905/source/layouts/home.html.erb#L2-L6\">h-card &amp; p-name</a>, <a href=\"https://github.com/floehopper/jamesmead.org/blob/6760dd64e5a3999f19726efa96f46e4d42fd9905/source/index.html.erb#L12-L13\">p-org, p-job-title, p-locality &amp; p-country-name</a> and <a href=\"https://github.com/floehopper/jamesmead.org/blob/6760dd64e5a3999f19726efa96f46e4d42fd9905/source/index.html.erb#L31-L46\">u-photo, p-note, u-uid &amp; u-url</a>. The validator suggested that it was <a href=\"https://indiewebify.me/validate-h-card/?url=https%3A%2F%2Fjamesmead.org%2F\">working OK</a>. So far, so good.</p>\n\n<p><img style=\"margin-left:auto;margin-right:auto;\" src=\"https://jamesmead.org/images/h-card-validation.png\" alt=\"h-card validation success\" /></p>\n\n<p>The next step was to markup my blog posts with the <a href=\"http://microformats.org/wiki/h-entry\">h-entry microformat</a>. This was relatively straightforward to implement now that I had a separate <a href=\"https://github.com/floehopper/jamesmead.org/blob/b5522b3c2529b93b3dfd07b148ecc3f911d23d4f/source/layouts/blog.html.erb#L2-L19\"><code>blog</code> layout</a> and the validator suggested that it was <a href=\"https://indiewebify.me/validate-h-entry/?url=https%3A%2F%2Fjamesmead.org%2Fblog%2F2020-03-30-automatic-backup-of-trello-boards-to-s3-using-aws-cdk\">working OK</a>.</p>\n\n<p><img style=\"margin-left:auto;margin-right:auto;\" src=\"https://jamesmead.org/images/h-entry-validation.png\" alt=\"h-entry validation success\" /></p>\n\n<p>At this point, I should have added the ability to send Webmentions to other IndieWeb sites, but it's not completely obvious to me how to do this for a static site. I <em>think</em> I could do it by hooking the <a href=\"https://github.com/indieweb/webmention-client-ruby\"><code>webmention</code> gem</a> into my <a href=\"https://jamesmead.org/blog/2019-09-07-using-github-actions-to-publish-a-static-site-to-github-pages\">GitHub Action-based build</a>, but I decided to skip this step for now given that it's relatively easy to <a href=\"https://indieweb.org/webmention-implementation-guide#One-liner_webmentions\">send a Webmention manually using <code>curl</code></a> and it's not as if I currently blog that frequently!</p>\n\n<h3>Federating IndieWeb conversations</h3>\n\n<p>I also decided to skip the steps about posting <a href=\"https://indieweb.org/reply\">replies</a> to other people's posts and adding <a href=\"https://indieweb.org/reply-context\">reply contexts</a> to my own site until I actually want to reply to something someone has written.</p>\n\n<p>However, I did <a href=\"https://github.com/floehopper/jamesmead.org/blob/6760dd64e5a3999f19726efa96f46e4d42fd9905/source/layouts/layout.html.erb#L33\">configure my site to receive Webmentions</a> using the excellent hosted <a href=\"https://webmention.io/\">webmention.io</a> service. This was very easy.</p>\n\n<p>I then added some very basic code to <a href=\"https://github.com/floehopper/jamesmead.org/commit/6760dd64e5a3999f19726efa96f46e4d42fd9905\">display Webmentions</a> at the bottom of each blog post closely based on <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/#displaying-webmentions-on-post-pages\">Sebastian De Deyne's implementation</a>. For the moment, I'm using JavaScript running on the client-side, but I can see how in time this might lead to putting an unfair load on webmention.io.</p>\n\n<p>A better solution might be to incorporate fetching the latest Webmentions and rendering them in HTML into the automated build, perhaps enhancing them with the latest Webmentions using JavaScript. I think this might be how the <a href=\"https://github.com/aarongustafson/jekyll-webmention_io\">webmention.io Jekyll plugin</a> works, but that's a job for another day.</p>\n\n<p>I checked that my website is receiving Webmentions OK by commenting on a blog post using <a href=\"https://commentpara.de/\">commentpara.de</a>. 🎉🎉</p>\n\n<p><img style=\"border:1px dashed;margin-left:auto;margin-right:auto;\" src=\"https://jamesmead.org/images/webmention-comment.png\" alt=\"comment added using commentpara.de\" /></p>\n\n<p>Clearly I haven't yet fully achieved even level 2 IndieWeb compliance, but I'm pleased with what I've done so far and, more to the point, what I've learnt in doing it. I should also mention that I found lots of useful advice in the following articles:</p>\n\n<ul><li>\n    <p><a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">Adding webmentions to my blog</a> by Sebastian De Deyne</p>\n  </li>\n  <li>\n    <p><a href=\"https://www.jvt.me/posts/2019/03/18/displaying-webmentions/\">Displaying Webmentions on my Hugo website</a> by Jamie Tanna</p>\n  </li>\n  <li>\n    <p><a href=\"http://evantravers.com/articles/2019/11/14/indieweb-webmentions-on-middleman-or-jekyll/\">Indieweb Webmentions on Middleman or Jekyll</a> by Evan Travers</p>\n  </li>\n</ul>",
+      "text": "I've been interested in the IndieWeb since my colleague, Chris R, hosted the first London IndieWeb meetup years ago and at various points I've played with a few bits of it on my website, e.g. OpenID and IndieAuth. As part of my efforts to move away from Twitter and Facebook, I recently joined the very friendly fosstodon.org Mastodon instance and I noticed quite a lot of toots about the IndieWeb including one which mentioned the indiewebify.me website which walks you through various levels of IndieWeb \"compliance\". I've been interested in finding out more about Webmentions for a while and this gave me the motivation I needed to give them a try.\n\nIt turns out I had already become a citizen of the IndieWeb, i.e. Level 1 compliance, back in June 2013 and amazingly (to me anyway) that functionality was still working. Level 2 compliance is about publishing on the IndieWeb and Level 3 compliance is about federating IndieWeb conversations.\n\nPublishing on the IndieWeb\n\nFor level 2, the first step was to markup my home page using the h-card microformat, not to be confused with the older hCard microformat. I started doing this by creating separate hidden markup, but I was unhappy with the amount of duplication. And so, after faffing about with middleman for a while and discovering its nested layouts, I managed to markup some of the existing content to reduce the amount of duplication: h-card & p-name, p-org, p-job-title, p-locality & p-country-name and u-photo, p-note, u-uid & u-url. The validator suggested that it was working OK. So far, so good.\n\n\n\nThe next step was to markup my blog posts with the h-entry microformat. This was relatively straightforward to implement now that I had a separate blog layout and the validator suggested that it was working OK.\n\n\n\nAt this point, I should have added the ability to send Webmentions to other IndieWeb sites, but it's not completely obvious to me how to do this for a static site. I think I could do it by hooking the webmention gem into my GitHub Action-based build, but I decided to skip this step for now given that it's relatively easy to send a Webmention manually using curl and it's not as if I currently blog that frequently!\n\nFederating IndieWeb conversations\n\nI also decided to skip the steps about posting replies to other people's posts and adding reply contexts to my own site until I actually want to reply to something someone has written.\n\nHowever, I did configure my site to receive Webmentions using the excellent hosted webmention.io service. This was very easy.\n\nI then added some very basic code to display Webmentions at the bottom of each blog post closely based on Sebastian De Deyne's implementation. For the moment, I'm using JavaScript running on the client-side, but I can see how in time this might lead to putting an unfair load on webmention.io.\n\nA better solution might be to incorporate fetching the latest Webmentions and rendering them in HTML into the automated build, perhaps enhancing them with the latest Webmentions using JavaScript. I think this might be how the webmention.io Jekyll plugin works, but that's a job for another day.\n\nI checked that my website is receiving Webmentions OK by commenting on a blog post using commentpara.de. 🎉🎉\n\n\n\nClearly I haven't yet fully achieved even level 2 IndieWeb compliance, but I'm pleased with what I've done so far and, more to the point, what I've learnt in doing it. I should also mention that I found lots of useful advice in the following articles:\n\n\n    Adding webmentions to my blog by Sebastian De Deyne\n  \n  \n    Displaying Webmentions on my Hugo website by Jamie Tanna\n  \n  \n    Indieweb Webmentions on Middleman or Jekyll by Evan Travers"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "959903": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Anonymous",
+      "photo": "https://webmention.io/avatar/commentpara.de/ef200c8b639d79d1cfbc0abf0e25f42dcbc585b4398003dd90f5a56c9d56e3bf.svg",
+      "url": ""
+    },
+    "url": "https://commentpara.de/comment/748.htm",
+    "published": null,
+    "wm-received": "2020-12-23T11:17:44Z",
+    "wm-id": 959903,
+    "wm-source": "https://commentpara.de/comment/748.htm",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "try to comment with comment parade :)"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1067285": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Anonymous",
+      "photo": "https://webmention.io/avatar/commentpara.de/ef200c8b639d79d1cfbc0abf0e25f42dcbc585b4398003dd90f5a56c9d56e3bf.svg",
+      "url": ""
+    },
+    "url": "https://commentpara.de/comment/816.htm",
+    "published": null,
+    "wm-received": "2021-03-11T20:17:23Z",
+    "wm-id": 1067285,
+    "wm-source": "https://commentpara.de/comment/816.htm",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "content": {
+      "text": "why dose it say"
+    },
+    "in-reply-to": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1080662": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Wouter Groeneveld",
+      "photo": "https://webmention.io/avatar/brainbaking.com/4966f3a2a3d4594117a1a709c48bc3d9dc079f6fe32ae92e91acecde0127a5ec.jpg",
+      "url": ""
+    },
+    "url": "https://brainbaking.com/",
+    "published": "2021-02-27T17:51:00",
+    "wm-received": "2021-03-18T20:20:30Z",
+    "wm-id": 1080662,
+    "wm-source": "https://brainbaking.com/notes/2021/02/27h17m51s39/",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "syndication": [
+      "https://chat.brainbaking.com/objects/0a54f23f-d362-4b12-9d67-3f8a4945d5ae"
+    ],
+    "content": {
+      "html": "<p>Trying to wrap my mind around WebMentions and how I could implement them without resorting to a third-party provider… <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\"></a><a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">https://sebastiandedeyne.com/adding-webmentions-to-my-blog/</a> I wonder if a link such as this one would receive a webmention/pingback if I just write about it using Hugo.</p>",
+      "text": "Trying to wrap my mind around WebMentions and how I could implement them without resorting to a third-party provider… https://sebastiandedeyne.com/adding-webmentions-to-my-blog/ I wonder if a link such as this one would receive a webmention/pingback if I just write about it using Hugo."
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https://brainbaking.com/notes/2021/02/27h17m51s39/"
+    }
+  },
+  "1354311": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Julian Elve",
+      "photo": "",
+      "url": "https://www.synesthesia.co.uk/author/julian-elve/"
+    },
+    "url": "https://www.synesthesia.co.uk/note/2022/02/21/webmentions-revisited/",
+    "published": null,
+    "wm-received": "2022-02-21T18:42:41Z",
+    "wm-id": 1354311,
+    "wm-source": "https://www.synesthesia.co.uk/note/2022/02/21/webmentions-revisited/",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "name": "Webmentions revisited #",
+    "photo": [
+      "https://www.synesthesia.co.uk/author/julian-elve/avatar_hu216cebfc71bfa4c1f3caea2fb462a59e_1571_250x250_fill_q90_lanczos_center.jpg"
+    ],
+    "content": {
+      "html": "This is a very brief note for my own benefit - if you are even slightly interested I recommend following the links to find other authors who have done a much better job of explaining this!\n\n\n<p>I had previously displayed <a href=\"https://indieweb.org/Webmention#History\">WebMentions</a> on posts via a script that ran on each pageview, queried <a href=\"https://webmention.io/\">webmention.io</a> for mentions relevant to that page and rendered them - entriely based on the <a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">original approach documented by Sebastian de Dyne</a>.</p>\n<p>In the most recent iteration of changes I have:</p>\n<ul><li>adapted the processing of inbound webmentions so they are pulled periodically into data files in the repo by Github actions, then processed when the site is built so they are baked into the rendered static pages</li>\n<li>added a Netlify build plugin to push outgoing webmentions from my site to the sites I link to</li>\n</ul><h2>Processing inbound web mentions</h2>\n<p>Key elements:</p>\n<ul><li>a Github action that runs every thirty minutes and calls a retrieval script</li>\n<li>the retrieval script which pulls webmentions from <a href=\"https://webmention.io/\">webmention.io</a> and stores them as data files in the source repo for the site</li>\n<li>a processing script that is run each time the site is built - this reads the raw webmentions and processes them into a form suitable for Hugo to digest</li>\n<li>changes to page layouts to render a webmentions section</li>\n</ul><p>For all of this I am indebted to <a href=\"https://rowanmanning.com/posts/webmentions-for-your-static-site/\">Rowan Manning’s approach</a>.</p>\n<h2>Sending web mentions when the site is built</h2>\n<p>This is the other side of the coin. There are a range of approaches, but I decided to go with a Netlify build plugin <a href=\"https://www.netlify.com/blog/2021/05/06/now-available-configure-build-plugins-by-deploy-context/\">configured to only run on production builds</a>.</p>\n<p>All the examples I could find work by processing the RSS feed for the site, and most take the approach of posting webmentions for any remote sites linked from the last (or a configurable last number of) posts. This will fall down if you ever create more than one post in between publishes - rare but not impossible.</p>\n<p>I then found the approach documented by <a href=\"https://qubyte.codes/blog/dispatching-webmentions-with-a-netlify-build-plugin\">Mark Everitt</a> which compares the RSS feed before and after the build and pushes webmentions for all new items, and have adapted <a href=\"https://github.com/qubyte/qubyte-codes/tree/main/plugins/dispatch-webmentions\">his code</a>.</p>\n<h2>Other things</h2>\n<p><del><em>A note to myself - new functionality based on code developed by others, I need to spend some time to make the repo for this site openable, then make it public.</em></del>\nnow done - <a href=\"https://github.com/synesthesia/site2019\">here</a></p>",
+      "text": "This is a very brief note for my own benefit - if you are even slightly interested I recommend following the links to find other authors who have done a much better job of explaining this!\n\n\nI had previously displayed WebMentions on posts via a script that ran on each pageview, queried webmention.io for mentions relevant to that page and rendered them - entriely based on the original approach documented by Sebastian de Dyne.\nIn the most recent iteration of changes I have:\nadapted the processing of inbound webmentions so they are pulled periodically into data files in the repo by Github actions, then processed when the site is built so they are baked into the rendered static pages\nadded a Netlify build plugin to push outgoing webmentions from my site to the sites I link to\nProcessing inbound web mentions\nKey elements:\na Github action that runs every thirty minutes and calls a retrieval script\nthe retrieval script which pulls webmentions from webmention.io and stores them as data files in the source repo for the site\na processing script that is run each time the site is built - this reads the raw webmentions and processes them into a form suitable for Hugo to digest\nchanges to page layouts to render a webmentions section\nFor all of this I am indebted to Rowan Manning’s approach.\nSending web mentions when the site is built\nThis is the other side of the coin. There are a range of approaches, but I decided to go with a Netlify build plugin configured to only run on production builds.\nAll the examples I could find work by processing the RSS feed for the site, and most take the approach of posting webmentions for any remote sites linked from the last (or a configurable last number of) posts. This will fall down if you ever create more than one post in between publishes - rare but not impossible.\nI then found the approach documented by Mark Everitt which compares the RSS feed before and after the build and pushes webmentions for all new items, and have adapted his code.\nOther things\nA note to myself - new functionality based on code developed by others, I need to spend some time to make the repo for this site openable, then make it public.\nnow done - here"
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1355806": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "photo": "",
+      "url": ""
+    },
+    "url": "https://11d.im/yo/20220225150728/",
+    "published": null,
+    "wm-received": "2022-02-25T15:08:34Z",
+    "wm-id": 1355806,
+    "wm-source": "https://11d.im/yo/20220225150728/",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1376754": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "photo": "",
+      "url": ""
+    },
+    "url": "https://blog.omgmog.net/post/adding-support-for-webmentions/",
+    "published": "2022-04-08T00:00:00+00:00",
+    "wm-received": "2022-04-08T12:26:11Z",
+    "wm-id": 1376754,
+    "wm-source": "https://blog.omgmog.net/post/adding-support-for-webmentions/",
+    "wm-target": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "name": "Adding support for Webmentions",
+    "content": {
+      "html": "<p>I’ve added <a href=\"https://indieweb.org/Webmention\">Webmention</a> support to the posts on this blog.</p>\n<p>Webmentions are a method for websites to know that they’ve been linked to (or mentioned) from elsewhere on the web.</p>\n\n<blockquote>\n<p><strong><a href=\"https://www.w3.org/TR/webmention/\">Webmention</a></strong> is a web standard for mentions and conversations across the web, a powerful building block that is used for a growing federated network of comments, likes, reposts, and other rich interactions across the decentralized social web.</p>\n<p>When you link to a website, you can send it a Webmention to notify it. If it supports Webmentions, then that website may display your post as a comment, like, or other response, and presto, you’re having a conversation from one site to another!</p>\n</blockquote>\n<p>It depends on a couple of things being in place for it all to work, but I’ve implemented the basics to fetch and display any mentions that have been detected by the <a href=\"https://webmention.io\">webmention.io</a> service.</p>\n<p>I have already been using Github Issues-powered commenting for the past couple of years, so I took the time to consolidate comments and Webmentions in to a single chunk of “interactions” functionality to fetch, cache, and render any comments or Webmentions. This is all done with native JS and could probably be improved further with a framework like Vue.js, but it works fine for now.</p>\n<p>I’m using <a href=\"https://brid.gy\">brid.gy</a> to recieve Webmentions from Twitter and Reddit interactions via <a href=\"https://webmention.io\">webmention.io</a> — this will mean that if somebody shares/likes/retweets a link to one of my blog posts on either platform it will display that here below the post.</p>\n<p>I’m using <a href=\"https://webmention.app\">webmention.app</a> and <a href=\"https://ifttt.com\">IFTTT</a> to automatically try and send webmentions to sites I link to from within my posts.</p>\n<p>As you can see it’s a bit complicated, and it feels like it’s held together with duct tape in places, but for now it works!</p>\n<p>Lots of others have written about how they’ve implemented Webmentions on their sites, and these write-ups were really useful when arriving at my own implementation.</p>\n<p>So to share the love, here are some links to those posts:</p>\n<ul><li><a href=\"https://www.gyford.com/phil/writing/2022/03/30/webmentions/\">Webmentions - Phil Gyford</a></li>\n<li><a href=\"https://rowanmanning.com/posts/webmentions-for-your-static-site/\">Webmentions for your Static Site - Rowan Manning</a></li>\n<li><a href=\"https://paul.kinlan.me/using-web-mentions-in-a-static-sitehugo/\">Using Web Mentions in a static site (Hugo) - Paul Kinlan</a></li>\n<li><a href=\"https://keithjgrant.com/posts/2019/02/adding-webmention-support-to-a-static-site/\">Adding Webmention Support to a Static Site - Keith J. Grant</a></li>\n<li><a href=\"https://anaulin.org/blog/adding-webmentions/\">Adding Webmentions to My Static Hugo Site - Ana Ulin</a></li>\n<li><a href=\"https://mxb.dev/blog/using-webmentions-on-static-sites/\">Using Webmentions in Eleventy - Max Böck</a></li>\n<li><a href=\"https://boffosocko.com/2018/07/19/webmentions-enabling-better-communication-on-the-internet-2/\">Webmentions: Enabling Better Communication on the Internet - Chris Aldrich</a></li>\n<li><a href=\"https://www.ctrl.blog/entry/setup-webmention.html\">Add Webmention support to your website in ten minutes - Daniel Aleksandersen</a></li>\n<li><a href=\"https://aaronparecki.com/2018/06/30/11/your-first-webmention\">Sending your First Webmention from Scratch - Aaron Parecki</a></li>\n<li><a href=\"https://deluvi.com/blog/webmention/\">Implementing Webmention on a static website - Deluvi</a></li>\n<li><a href=\"https://dwayne.xyz/post/webmentions-from-scratch\">Adding Webmention Support from Scratch - Dwayne Harris</a></li>\n<li><a href=\"https://molovo.co/writing/jekyll-webmentions/\">Social media responses on a Jekyll site using webmentions - James Dinsdale</a></li>\n<li><a href=\"https://sebastiandedeyne.com/adding-webmentions-to-my-blog/\">Adding webmentions to my blog - Sebastian De Deyne</a></li>\n<li><a href=\"https://hbish.com/brief-look-at-webmention/\">A Brief Look at WebMention - Ben Shi</a></li>\n<li><a href=\"https://indiewebify.me\">IndieWebify.Me</a></li>\n</ul><p>And that’s about it really. I’ll be tweeting a link to this post once it’s published and then any replies or likes will <em>hopefully</em> appear at the bottom of the page.</p>",
+      "text": "I’ve added Webmention support to the posts on this blog.\nWebmentions are a method for websites to know that they’ve been linked to (or mentioned) from elsewhere on the web.\n\n\nWebmention is a web standard for mentions and conversations across the web, a powerful building block that is used for a growing federated network of comments, likes, reposts, and other rich interactions across the decentralized social web.\nWhen you link to a website, you can send it a Webmention to notify it. If it supports Webmentions, then that website may display your post as a comment, like, or other response, and presto, you’re having a conversation from one site to another!\n\nIt depends on a couple of things being in place for it all to work, but I’ve implemented the basics to fetch and display any mentions that have been detected by the webmention.io service.\nI have already been using Github Issues-powered commenting for the past couple of years, so I took the time to consolidate comments and Webmentions in to a single chunk of “interactions” functionality to fetch, cache, and render any comments or Webmentions. This is all done with native JS and could probably be improved further with a framework like Vue.js, but it works fine for now.\nI’m using brid.gy to recieve Webmentions from Twitter and Reddit interactions via webmention.io — this will mean that if somebody shares/likes/retweets a link to one of my blog posts on either platform it will display that here below the post.\nI’m using webmention.app and IFTTT to automatically try and send webmentions to sites I link to from within my posts.\nAs you can see it’s a bit complicated, and it feels like it’s held together with duct tape in places, but for now it works!\nLots of others have written about how they’ve implemented Webmentions on their sites, and these write-ups were really useful when arriving at my own implementation.\nSo to share the love, here are some links to those posts:\nWebmentions - Phil Gyford\nWebmentions for your Static Site - Rowan Manning\nUsing Web Mentions in a static site (Hugo) - Paul Kinlan\nAdding Webmention Support to a Static Site - Keith J. Grant\nAdding Webmentions to My Static Hugo Site - Ana Ulin\nUsing Webmentions in Eleventy - Max Böck\nWebmentions: Enabling Better Communication on the Internet - Chris Aldrich\nAdd Webmention support to your website in ten minutes - Daniel Aleksandersen\nSending your First Webmention from Scratch - Aaron Parecki\nImplementing Webmention on a static website - Deluvi\nAdding Webmention Support from Scratch - Dwayne Harris\nSocial media responses on a Jekyll site using webmentions - James Dinsdale\nAdding webmentions to my blog - Sebastian De Deyne\nA Brief Look at WebMention - Ben Shi\nIndieWebify.Me\nAnd that’s about it really. I’ll be tweeting a link to this post once it’s published and then any replies or likes will hopefully appear at the bottom of the page."
+    },
+    "mention-of": "https://sebastiandedeyne.com/adding-webmentions-to-my-blog/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https://blog.omgmog.net/post/adding-support-for-webmentions/"
+    }
+  }
+}

@@ -73,25 +73,66 @@
             <a class="muted" href="{{config.extra.edit_url_prefix~page.relative_path}}">📝 {{trans(key="label_edit",lang=lang)}}</a>
           </section>
           {% endif %}
-          {% if config.extra.email %}
-          <div id="email-comment" class="muted text-sm">
-            <hr class="w-full">
-            {% if config.default_language != lang %}
-            <p>This blog doesn't include a commenting system, it's not that I don't like to communicate, on the contrary, I really like meeting new people. I prefer one-on-one communication via email, it helps us maintain some kind of human connection. After that, I'll manually update valuable communications here. </p>
-             <p>
-               So if you have anything you want to discuss about this article, you can send it via <a href="mailto:owen@owenyoung.com?subject={{ "Reply: " ~ page.title | urlencode }}">mail </a><code>owen@owenyoung.com</code>
-             </p>
-            {% else %}
-            <p>这个博客没有引入评论系统，因为我还没有找到静态博客引入评论的好方法。目前为止，我对通过邮件来评论感到很满意，这是去中心化的，1对1的私人交流，之后我会手动把有价值的交流内容更新到原文。</p>
-            <p>
-              如果你对本文有任何想要探讨的地方，非常欢迎你通过<a href="mailto:owen@owenyoung.com?subject={{"回复："~page.title | urlencode }}">邮件  </a><code>owen@owenyoung.com</code> 和我交流。
-            </p>
+      
+          {% if config.extra.webmention_path %}
+          {% set current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
+          {% set webmention_data = load_data(path="webmentions"~current_webmention_file_name~".json",required=false) %}
+          <hr>
+          <h2>{{trans(key="label_response",lang=lang)}}<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
+          <form class="webmention-form ui form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+            {% if config.extra.email %}
+            <div id="email-comment" class="muted text-sm">
+              {% if config.default_language != lang %}
+               <p>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:
+                 Or, you can send your response via <a href="mailto:owen@owenyoung.com?subject={{ "Reply: " ~ page.title | urlencode }}">mail </a><code>owen@owenyoung.com</code>
+               </p>
+              {% else %}
+              <p>
+                你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject={{"回复："~page.title | urlencode }}">邮件  </a><code>owen@owenyoung.com</code> 和我讨论。
+              </p>
+              {% endif %}
+              
+  
+            </div>
             {% endif %}
-            
+            <div class="flex items-center flex-wrap">
+                <input type="url" name="source" class="flex-3 mr w-full py-sm px-sm">
+              <input type="submit" class="px py-sm" value="Send Webmention">
 
-          </div>
+            </div>
+            <div class="status hidden">
+              <div class="ui message"></div>
+            </div>
+            <input type="hidden" name="target" value="{{current_url}}">
+          </form>
+            {% if webmention_data %}
+              {% set_global mentions = [] %}
+              {% for ignored, item in webmention_data %}
+                  {% set_global mentions = mentions | concat(with=item) %}
+              {% endfor %}
+          
+              <p class="muted text-sm">{{trans(key="label_response_description",lang=lang)| markdown(inline=true) | safe}}</p>
+              {% for type, items in mentions | group_by(attribute="wm-property") %}
+                  <h3>{{trans(key="label_"~type,lang=lang)}} ({{items | length}})<a href="#{{type}}" id="{{type}}" class="zola-anchor" >🔗</a></h3>
+                  {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
+                    <ul class="list-none flex items-center">
+                      {% for item in items %}
+                        {{ macro::webmention(type=type, item=item) }}
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+                  <ul class="list-none">
+                    {% for item in items %}
+                    {{ macro::webmention(type=type, item=item) }}
+                    {% endfor %}
+                  </ul>
+
+                  {% endif %}
+               
+              {% endfor %}
+
+            {% endif %}
           {% endif %}
-
           {% if config.extra.disqus and page.extra.comments %}
           <div id="disqus">
             <div id="disqus_thread"></div>
@@ -107,6 +148,7 @@
                 Disqus.</a></noscript>
           </div>
           {% endif %}
+
         </section>
         
        

@@ -117,3 +117,63 @@
   </form>
 </div>
 {% endmacro subscribe %}
+
+{% macro webmention(type,item) %}
+{% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
+<li class="list-none">
+  <a
+        class="reaction"
+        rel="nofollow ugc"
+        title="{{item.author.name}} {% if item.published %}at {{ item.published }}{% endif %}"
+        href="{{item.author.url}}"
+      >
+        {% if item.author.photo %}
+        <img alt="{{item.author.name}}" class="icon rounded-full" src="{{item.author.photo}}">
+        {% endif%}
+      </a>
+</li>
+{% elif item.content.html %}
+<li class="card mb-lg rounded-lg list-none px py">
+  <div class="flex items-center flex-wrap">
+    {% if item.author.photo %}
+      <a
+      rel="nofollow ugc"
+      title="{{item.author.name}}"
+      href="{{item.author.url}}"
+      class="mr-sm"
+    >
+      <img alt="{{item.author.name}}" class="rounded-full icon" src="{{item.author.photo}}">
+    </a>
+  {% endif%}
+{% if item.author and item.author.name %}
+  <a
+  rel="nofollow ugc"
+  class="mr-sm"
+  title="{{item.author.name}}"
+  href="{{item.author.url}}"
+>
+{{ item.author.name }}
+</a>
+{% else %}
+<span class="mr-sm">Unknown</span>
+{% endif %}
+{% if item.published %}
+{% set key = "label_action_"~type %}
+<span class="mr-sm">{{config.extra[key]}} on</span>
+<a
+  rel="nofollow ugc"
+  title="{{ item.published }}"
+  href="{{item.url}}"
+>{{ item.published | date() }}</a>
+{% endif %}
+<span>:</span>
+  </div>
+  
+<div>
+  {{ item.content.html | safe }}   
+
+</div>
+</li>
+{% endif %}
+
+{% endmacro webmention %}
