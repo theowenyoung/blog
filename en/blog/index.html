@@ -19,13 +19,11 @@
   href="https://webmention.io/www.owenyoung.com/webmention"
 />
     <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=293a1fbbfc877af61f1de92c9dc6a63fe16370203f21d1a88e6cc9bb872e5e5b">
-    <title>Owen Young&#x27;s Blog</title>
-
-    
+    <title>All Posts -  Owen Young&#x27;s Blog</title>
     <meta
       name="description"
       itemprop="about"
-      content="Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"
+      content="All Posts -  Owen Young&#x27;s Blog"
     />
     <meta
       name="keywords"
@@ -33,7 +31,7 @@
       content="Focus, Reading, Tool sharing, Plain text, English learning"
     />
     <meta name="author" itemprop="author" content="Owen Young" />
-    <meta itemprop="headline" content="Owen Young&#x27;s Blog" />
+    <meta itemprop="headline" content="All Posts -  Owen Young&#x27;s Blog" />
     <meta itemprop="copyrightYear" content="2022" />
     <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
     type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
@@ -59,15 +57,15 @@
 
     <meta
       property="og:title"
-      content="Owen Young&#x27;s Blog"
+      content="All Posts -  Owen Young&#x27;s Blog"
     />
     <meta
       property="og:description"
-      content="Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"
+      content="All Posts -  Owen Young&#x27;s Blog"
     />
     <meta
       property="og:url"
-      content="https://www.owenyoung.com/en/"
+      content="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;"
     />
     <meta property="og:site_name" content="Owen Young&#x27;s Blog" />
     
@@ -84,7 +82,12 @@
       name="twitter:image:alt"
       content="Owen Young&#x27;s Blog"
     />
-     
+    
+    
+
+  <link rel="alternate" type="application/atom+xml" title="All Posts -  Owen Young&#x27;s Blog RSS" href="https://www.owenyoung.com/en/blog/atom.xml">
+
+    
     
   </head>
 
@@ -127,7 +130,15 @@
           <section class="main flex-1">
             <div class="main-inner px">
                  
-<section>
+
+
+  <link rel="alternate" type="application/atom+xml" title="All Posts -  Owen Young&#x27;s Blog RSS" href="https://www.owenyoung.com/en/blog/atom.xml">
+
+<section class="h-feed hfeed">
+  <div class="display-none">
+    <div class="p-name site-title">Owen Young&#x27;s Blog</div>
+    <p class="p-summary site-description">Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</p>
+  </div>
   <header id="overview">
     <div class="pt">
       <span>&gt;&gt;</span>
@@ -136,19 +147,26 @@
       </div>
   </header>
     
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-06-12</time>
+    <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00" pubdate>2022-06-12</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/random/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/random/">
       Random
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a></h1>
 
-  <div><p>Since I saw the concept of <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/IndieWeb">IndieWeb</a> last year, I’ve been wanting to support it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my Zola blog</a>. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.</p>
+  <div class="p-summary entry-summary"><p>Since I saw the concept of <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/IndieWeb">IndieWeb</a> last year, I’ve been wanting to support it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my Zola blog</a>. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.</p>
 </div>
   
   <p>
@@ -175,19 +193,26 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-04-30</time>
+    <time class="dt-published published" datetime="2022-04-30T19:17:39+08:00" pubdate>2022-04-30</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/random/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/random/">
       Random
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;why-foreigners-envy-china&#x2F;">Why foreigners envy China?</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;why-foreigners-envy-china&#x2F;">Why foreigners envy China?</a></h1>
 
-  <div><p>It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.</p>
+  <div class="p-summary entry-summary"><p>It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=2DH4v6FnbvM">This Bill Maher’s video </a> clearly shows us that even though the host is so smart and cares so much about freedom of speech, there is no hiding his envy for all that the Chinese government has accomplished through dictatorship.</p>
 </div>
   
@@ -208,19 +233,26 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-27</time>
+    <time class="dt-published published" datetime="2022-03-27" pubdate>2022-03-27</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/random/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/random/">
       Random
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Wiki Links to Markdown Links for VSCode</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Wiki Links to Markdown Links for VSCode</a></h1>
 
-  <div><p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
+  <div class="p-summary entry-summary"><p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
 </div>
   
   <div class="muted">
@@ -233,17 +265,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-26</time>
+    <time class="dt-published published" datetime="2022-03-26" pubdate>2022-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;">Caddy File Server Browser with URL Scheme</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;">Caddy File Server Browser with URL Scheme</a></h1>
 
   
   <p>
@@ -263,19 +302,26 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-26</time>
+    <time class="dt-published published" datetime="2022-03-26" pubdate>2022-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;makefile-template&#x2F;">Makefile Template</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;makefile-template&#x2F;">Makefile Template</a></h1>
 
-  <div><p>Common Makefile Template.</p>
+  <div class="p-summary entry-summary"><p>Common Makefile Template.</p>
 </div>
   
   <div class="muted">
@@ -288,17 +334,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-26</time>
+    <time class="dt-published published" datetime="2022-03-26" pubdate>2022-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mastdon-setup&#x2F;">Mastdon Development Setup</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mastdon-setup&#x2F;">Mastdon Development Setup</a></h1>
 
   
   <p>
@@ -318,17 +371,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-26</time>
+    <time class="dt-published published" datetime="2022-03-26" pubdate>2022-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mini-reset-css&#x2F;">Mini Reset CSS</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mini-reset-css&#x2F;">Mini Reset CSS</a></h1>
 
   
   <div class="muted">
@@ -341,19 +401,26 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-26</time>
+    <time class="dt-published published" datetime="2022-03-26" pubdate>2022-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;nodejs-monorepo&#x2F;">Nodejs Monorepo</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;nodejs-monorepo&#x2F;">Nodejs Monorepo</a></h1>
 
-  <div><p>Use changesets as monorepo mananger.</p>
+  <div class="p-summary entry-summary"><p>Use changesets as monorepo mananger.</p>
 </div>
   
   <p>
@@ -377,17 +444,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-03-26</time>
+    <time class="dt-published published" datetime="2022-03-26" pubdate>2022-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;rclone-setup&#x2F;">Rclone Setup</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;rclone-setup&#x2F;">Rclone Setup</a></h1>
 
   
   <p>
@@ -407,17 +481,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2022-02-26</time>
+    <time class="dt-published published" datetime="2022-02-26" pubdate>2022-02-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;file-browser-setup&#x2F;">FileBrowser Setup</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;file-browser-setup&#x2F;">FileBrowser Setup</a></h1>
 
   
   <p>
@@ -437,19 +518,26 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-26</time>
+    <time class="dt-published published" datetime="2021-03-26" pubdate>2021-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;">Bazarr Setup</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;">Bazarr Setup</a></h1>
 
-  <div><p>Bazarr setup.</p>
+  <div class="p-summary entry-summary"><p>Bazarr setup.</p>
 </div>
   
   <p>
@@ -473,17 +561,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-26</time>
+    <time class="dt-published published" datetime="2021-03-26" pubdate>2021-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy2-setup-for-debian&#x2F;">Caddy2 Setup for Debian</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy2-setup-for-debian&#x2F;">Caddy2 Setup for Debian</a></h1>
 
   
   <p>
@@ -503,17 +598,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-26</time>
+    <time class="dt-published published" datetime="2021-03-26" pubdate>2021-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;debian-server-setup&#x2F;">Debian Server Setup</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;debian-server-setup&#x2F;">Debian Server Setup</a></h1>
 
   
   <div class="muted">
@@ -526,17 +628,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-26</time>
+    <time class="dt-published published" datetime="2021-03-26" pubdate>2021-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;how-to-check-if-there-are-uncommited-changes-in-github&#x2F;">How to check if there are uncommited changes in Github Actions?</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;how-to-check-if-there-are-uncommited-changes-in-github&#x2F;">How to check if there are uncommited changes in Github Actions?</a></h1>
 
   
   <p>
@@ -556,17 +665,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-26</time>
+    <time class="dt-published published" datetime="2021-03-26" pubdate>2021-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;postgres-setup-for-debian&#x2F;">Postgres Setup for Debian</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;postgres-setup-for-debian&#x2F;">Postgres Setup for Debian</a></h1>
 
   
   <p>
@@ -586,17 +702,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-26</time>
+    <time class="dt-published published" datetime="2021-03-26" pubdate>2021-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;">qBittorrent setup for Debian</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;">qBittorrent setup for Debian</a></h1>
 
   
   <p>
@@ -616,17 +739,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-03-10</time>
+    <time class="dt-published published" datetime="2021-03-10" pubdate>2021-03-10</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;shadowsocks-rust-setup-for-debian&#x2F;">Shadowsocks Rust Setup for Debian</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;shadowsocks-rust-setup-for-debian&#x2F;">Shadowsocks Rust Setup for Debian</a></h1>
 
   
   <p>
@@ -646,17 +776,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-01-29</time>
+    <time class="dt-published published" datetime="2021-01-29" pubdate>2021-01-29</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/random/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/random/">
       Random
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;gatsby-timeline-theme&#x2F;">A new Gatsby theme [Timeline] - Show your all posts, tweets, instagram posts into one</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;gatsby-timeline-theme&#x2F;">A new Gatsby theme [Timeline] - Show your all posts, tweets, instagram posts into one</a></h1>
 
   
   <p>
@@ -676,17 +813,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2021-01-26</time>
+    <time class="dt-published published" datetime="2021-01-26" pubdate>2021-01-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;open-bbr-for-debian&#x2F;">Open BBR for Debian</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;open-bbr-for-debian&#x2F;">Open BBR for Debian</a></h1>
 
   
   <p>
@@ -710,17 +854,24 @@
   <hr class="w-1__2">
 </article>
   
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
+    <a class="p-name u-url url"
+    href="https:&#x2F;&#x2F;www.owenyoung.com" 
+   >Owen Young</a> 
+   <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>2020-03-26</time>
+    <time class="dt-published published" datetime="2020-03-26" pubdate>2020-03-26</time>
     
     <span>on </span>
-    <a class="no-underline" href="https://www.owenyoung.com/en/categories/dev/">
+    <a class="no-underline p-category" rel="category tag"  href="https://www.owenyoung.com/en/categories/dev/">
       Dev
     </a> 
   
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;install-php8-on-centos7&#x2F;">Install PHP 8.0 On CentOS 7 &#x2F; RHEL 7</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;install-php8-on-centos7&#x2F;">Install PHP 8.0 On CentOS 7 &#x2F; RHEL 7</a></h1>
 
   
   <div class="muted">
@@ -757,9 +908,8 @@
  
 </section>
 
-
               </div>
-            </section>
+          </section>
 
           
           <aside class="sidebar px">
