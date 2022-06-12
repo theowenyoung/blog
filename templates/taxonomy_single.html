@@ -2,10 +2,19 @@
 {% block ogtitle %}{{taxonomy.name}}: {{term.name}} -  {{ config.title }}{% endblock ogtitle %}
 {% block headline %}{{taxonomy.name}}: {{term.name}} -  {{ config.title }}{% endblock headline %}
 {% block description %}All posts in {{term.name}}{% endblock description %}
+{% block ogdesc %}All posts in {{term.name}}{% endblock ogdesc %}
 {% block ogurl %}{{get_taxonomy_url(kind=taxonomy.name,lang=lang, name=term.name)}}{% endblock ogurl %}
+{% block rss %}
+  {% set term_name_slugify = term.name | slugify %}
+{% set rss_path = taxonomy.name ~ "/" ~ term_name_slugify ~ "/atom.xml" %}
+  <link rel="alternate" type="application/atom+xml" title="{{taxonomy.name}}: {{term.name}} -  {{ config.title }} RSS" href="{{ get_url(path=rss_path, trailing_slash=false,lang=lang) }}">
+{% endblock rss %}
 {% block main %}
-<div class="main-box-block">
-
+<div class="main-box-block h-feed hfeed">
+  <div class="display-none">
+    <div class="p-name site-title">{{config.title}}</div>
+    <p class="p-summary site-description">{{config.description}}</p>
+  </div>
   <header id="overview">
     <div class="pt">
       <span>&gt;&gt;</span>

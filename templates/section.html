@@ -1,7 +1,22 @@
-{% extends "base.html" -%} {% block main -%} {% set_global file_lang_path = ""
+{% extends "base.html" -%} 
+{% block title %}{{section.title}} -  {{ config.title }}{% endblock title %}
+{% block ogtitle %}{{section.title}} -  {{ config.title }}{% endblock ogtitle %}
+{% block headline %}{{section.title}} -  {{ config.title }}{% endblock headline %}
+{% block description %}{{section.title}} -  {{ config.title }}{% endblock description %}
+{% block ogdesc %}{{section.title}} -  {{ config.title }}{% endblock ogdesc %}
+{% block ogurl %}{{current_url}}{% endblock ogurl %}
+{% block main -%} {% set_global file_lang_path = ""
 %} {% if config.default_language != lang %} {% set_global file_lang_path = "." ~
 lang %} {% endif %}
-<section>
+{% block rss %}
+{% set rss_path = section.path ~ "atom.xml" %}
+  <link rel="alternate" type="application/atom+xml" title="{{section.title}} -  {{ config.title }} RSS" href="{{ get_url(path=rss_path, trailing_slash=false) }}">
+{% endblock rss %}
+<section class="h-feed hfeed">
+  <div class="display-none">
+    <div class="p-name site-title">{{config.title}}</div>
+    <p class="p-summary site-description">{{config.description}}</p>
+  </div>
   <header id="overview">
     <div class="pt">
       <span>&gt;&gt;</span>

@@ -1,20 +1,27 @@
 {% macro post_max(page) %}
-<article>
+<article class="h-entry hentry">
+  <div class="display-none p-author h-card vcard">
+    <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
+    <a class="p-name u-url url"
+    href="{{ config.base_url }}" 
+   >{{ config.extra.author }}</a> 
+   <p class="p-note">{{ config.extra.bio }}</p>
+  </div>
   <section class="muted pt">
-    <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
+    <time class="dt-published published" datetime="{{page.date}}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
     {% if page.taxonomies.categories %}
     <span>{{trans(key="label_published_on",lang=lang)}} </span>
-    <a class="no-underline" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
+    <a class="no-underline p-category" rel="category tag"  href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
       {{ page.taxonomies.categories[0] }}
     </a> 
   {% endif %}
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline " href="{{ page.permalink }}">{{ page.title }}</a></h1>
+  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a></h1>
 
   {% if page.summary -%}
-  <div>{{ page.summary | safe }}</div>
+  <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
   {% elif page.description -%}
-  <p>{{ page.description }}</p>
+  <p class="p-summary entry-summary">{{ page.description }}</p>
   {% endif -%}
   {% if page.taxonomies.tags %}
   <p>
