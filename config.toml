@@ -6,8 +6,8 @@ description = "主要关注注意力管理，深度工作，英文学习，反�
 generate_feed = true
 generate_rss = true
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 20},
-  {name = "categories", feed = true, paginate_by = 20},
+  {name = "tags", feed = true, paginate_by = 20, lang = "zh"},
+  {name = "categories", feed = true, paginate_by = 20, lang = "zh"},
 ]
 title = "Owen Young's Blog"
 
@@ -29,7 +29,7 @@ smart_punctuation = true
 # Whether to include the title of the page/section in the index
 include_title = true
 # Whether to include the description of the page/section in the index
-include_description = true
+include_description = false
 # Whether to include the path of the page/section in the index
 include_path = true
 # Whether to include the rendered content of the page/section in the index
@@ -64,7 +64,6 @@ paths = "on"
 taxonomies = "on"
 
 [languages.zh]
-build_search_index = true
 description = "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
 title = "Owen的博客"
 
@@ -108,14 +107,11 @@ label_taxonomy = "类别"
 label_thoughts_title = "最新的几条[短想法](/thoughts/)："
 label_updated = "最后更新时间"
 [languages.en]
+build_search_index = true
 description = "Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"
-generate_feed = true
-generate_rss = true
-highlight_code = true
-smart_punctuation = true
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 20},
-  {name = "categories", feed = true, paginate_by = 20},
+  {name = "tags", feed = true, paginate_by = 20, lang = "en"},
+  {name = "categories", feed = true, paginate_by = 20, lang = "en"},
 ]
 title = "Owen Young's Blog"
 [languages.en.translations]

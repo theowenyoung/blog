@@ -38,10 +38,6 @@
     <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css",
     trailing_slash=false,cachebust=true) | safe }}">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-
-    {% if config.generate_rss %} <link rel="alternate"
-    type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
-    {% endif %}
     <meta
       name="description"
       itemprop="about"
@@ -101,7 +97,7 @@
     />
     <meta
       property="og:url"
-      content="{% block ogurl %}{{ config.base_url~lang_prefix_path | safe }}{% endblock ogurl%}"
+      content="{% block ogurl %}{{ current_url }}{% endblock ogurl%}"
     />
     <meta property="og:site_name" content="{{ config.title }}" />
     {% if config.extra.image %}
@@ -118,7 +114,11 @@
       name="twitter:image:alt"
       content="{% block ogaltimg %}{{ config.title }}{% endblock ogaltimg %}"
     />
-    {% endif %} {% if config.extra.google_analytics %}
+    {% endif %}
+    {% block rss %} <link rel="alternate"
+type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(path="atom.xml") }}">
+{% endblock rss %}
+    {% if config.extra.google_analytics %}
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id={{config.extra.google_analytics}}"
@@ -176,9 +176,8 @@
             <div class="main-inner px">
               {% block main %}
               {% endblock main %}
-
               </div>
-            </section>
+          </section>
 
           {% block sidebar %}
           <aside class="sidebar px">
