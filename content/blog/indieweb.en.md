@@ -2,18 +2,21 @@
 title: Now, I'm in IndieWeb?
 date: 2022-06-12T03:40:31+08:00
 updated: 2022-06-12
-draft: true
+draft: false
 taxonomies:
   categories:
     - Random
   tags:
     - IndieWeb
     - Zola
+    - Webmention
 ---
 
-[IndieWeb](https://indieweb.org/IndieWeb)
+Since I saw the concept of [IndieWeb](https://indieweb.org/IndieWeb) last year, I've been wanting to support it on [my Zola blog](https://github.com/theowenyoung/blog). Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.
 
-Zola,
+<!-- more -->
+
+> The [IndieWeb](https://indieweb.org/IndieWeb) **IndieWeb** is a community of independent & personal websites connected by simple standards, based on the **[principles](https://indieweb.org/principles "principles")** of: **[owning your domain](https://indieweb.org/personal-domain "personal-domain")** & using it as **[your primary identity](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain "How to set up web sign-in on your own domain")**, **[publishing on your own site (optionally syndicating elsewhere)](https://indieweb.org/POSSE "POSSE")**, and **[owning your data](https://indieweb.org/ownyourdata "ownyourdata")**.
 
 ## 1. Support IndieWeb Auth
 
@@ -39,8 +42,8 @@ By editing [my index template file](https://github.com/theowenyoung/blog/blob/a8
 
 ```html
 <div class="display-none h-card pt">
-  <img class="u-photo icon" alt="Owen" src="{{
-  get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
+  <img class="u-photo icon" alt="Owen"
+  src="{{/*get_url(path="site/images/favicon-96x96.png",cachebust=true)*/}}" />
   <a class="p-name u-url" href="{{ config.base_url }}"
     >{{ config.extra.author }}</a
   >
@@ -68,7 +71,7 @@ An IndieWeb Webring 🕸💍
 
 Then, I add this code to [my homepage aside](https://github.com/theowenyoung/blog/blob/a8b3cb3c13077b28cbcf7503518f6ed6cb8bb773/templates/base.html#L216-L218), you can see it on the [aside footer](https://www.owenyoung.com/#bottom)
 
-## 4. Adding [Webmention](https://indieweb.org/Webmention)
+## 4. Adding [Webmention](https://indieweb.org/Webmention) Response to articles
 
 [Webmention](https://www.w3.org/TR/webmention/) is a web standard for mentions and conversations across the web, a powerful building block that is used for a growing federated network of comments, likes, reposts, and other rich interactions across the decentralized social web.
 
@@ -91,7 +94,9 @@ Basically, I use [Webmention.io](https://webmention.io) to collect all webmentio
 
 3. Use [Denoflow](https://github.com/denoflow/denoflow) to cache all webmentions to [my blog repo](https://github.com/theowenyoung/blog/tree/main/webmentions)
 
-Workflow file:
+Workflow file(`workflows/fetch-webmention.yml`):
+
+> Fetch webmention [API](https://github.com/aaronpk/webmention.io#api) to get updates, then save to `webmentions` directory.
 
 ```yaml
 sources:
@@ -126,7 +131,88 @@ filter:
     return ctx.items.map(()=>true);
 ```
 
+Github Workflow file([`.github/workflows/denoflow.yml`](https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml)):
+
+> Run denoflow every day at midnight, if there are any new updates, it will create a new pull request.
+
+```yaml
+name: Denoflow
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: "1 0 * * *"
+jobs:
+  denoflow:
+    runs-on: ubuntu-latest
+    concurrency: denoflow
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: make webmention
+        env:
+          WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
+        continue-on-error: true
+      - name: chown
+        run: sudo chown -R $USER:$USER ./
+      - name: git config
+        run: git config --global user.name "github-actions[bot]" && git config --global user.email github-actions-bot@users.noreply.github.com
+      - name: git add
+        run: git add data && git add sources
+      - run: git status
+      - id: isChanged
+        run: git diff-index --cached --quiet HEAD || echo '::set-output name=changed::true'
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v3
+        if: ${{ steps.isChanged.outputs.changed == 'true' }}
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          labels: automerge
+          add-paths: data,sources
+          commit-message: "chore: new item"
+          committer: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
+          author: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
+          branch: new-item
+          delete-branch: true
+          title: New item update
+```
+
+Github auto merge workflow file([`.github/workflows/auto-merge.yml`](https://github.com/theowenyoung/blog/blob/main/.github/workflows/auto-merge.yml)):
+
+> When a pull request is created, the workflow will automatically merge it if the pull request is from the same author
+
+```yaml
+name: Auto merge
+on:
+  workflow_dispatch:
+  pull_request_target:
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge
+        if: (github.actor=='theowenyoung') && (startsWith(github.head_ref,'new-item'))
+        uses: "pascalgn/automerge-action@v0.14.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.PERSONAL_TOKEN }}"
+          MERGE_DELETE_BRANCH: true
+          MERGE_LABELS: ""
+```
+
+> Cause I don't have too many mentions, so I use [sebastiandedeyne's](https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions) mention data as this article's webmention data.
+
 ## Resources
 
+- [Bird.gy](https://brid.gy/) - Bridgy connects your web site to social media.
+  Likes, retweets, mentions, cross-posting
+- [Indie Webring](https://xn--sr8hvo.ws/)
 - [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
+- [Webmention.io](https://webmention.io/) - Webmention.io is a hosted service created to easily receive webmentions on any web page.
+- [Fediring](https://fediring.net/)
 - [Webmentions on a static site with GitHub Actions](https://sebastiandedeyne.com/webmentions-on-a-static-site-with-github-actions/)

@@ -12,23 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: denoflow
     steps:
-      - if: github.event_name!='workflow_dispatch'
-        name: sleep for pr
-        run: sleep 60
-      - run: |
-          sudo apt-get update \
-          && sudo apt-get install -y wget gnupg \
-          && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - \
-          && sudo sh -c 'sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
-          && sudo apt-get update \
-          && sudo apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 \
-            --no-install-recommends \
       - name: Check out repository code
         uses: actions/checkout@v2
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - run: make webmention
+      - run: deno run -A https://deno.land/x/denoflow/cli.ts run
         env:
           WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
         continue-on-error: true

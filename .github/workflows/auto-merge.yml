@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Merge
-        if: (github.actor=='theowenyoung') && (github.head_ref=='l10n_main' || github.head_ref=='i18n-auto-translation' || startsWith(github.head_ref,'new-item') || github.head_ref=='new-issue-item')
+        if: (github.actor=='theowenyoung') && (startsWith(github.head_ref,'new-item'))
         uses: "pascalgn/automerge-action@v0.14.3"
         env:
           GITHUB_TOKEN: "${{ secrets.PERSONAL_TOKEN }}"
