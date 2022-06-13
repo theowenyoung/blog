@@ -13,6 +13,10 @@ All Updates about this blog.
 
 <!-- more -->
 
+## [2022.06.14](https://github.com/theowenyoung/blog/commit/7a87eb29b6e3eaafdae14488a8f42de817073f3f)
+
+Adding [Activity](/content/pages/activity.en.md) page.
+
 ## [2022.06.13](https://github.com/theowenyoung/blog/commit/c20bb4c97540e91ed2f555800d36ebbe05379155) - IndieWeb
 
 1. Support [IndieAuth](https://indieauth.net/)

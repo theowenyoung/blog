@@ -267,13 +267,23 @@ Then, I add a webmention form, so if people want to submit their mentions, they 
 </form>
 ```
 
+> Optional: I also added an [activity page](/content/pages/activity.en.md) for aggregating all response, the activity template page is [here](https://github.com/theowenyoung/blog/blob/main/templates/activity.html)
+
 > Cause I don't have too many mentions, so I use [sebastiandedeyne's](https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions) mention data as this article's webmention data.
 
 ## 5. Send webmention when you publish a new article
 
-When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using [Denoflow](https://github.com/denoflow/denoflow) and the [Webmention.app](https://webmention.app/) API. [Webmention.app](https://webmention.app/) can check all the mentioned links in the new article and send all webmentions to them.
-
-Before [Webmention.app](https://webmention.app/) can recognize the mentioned links, we need to add some extra [microformats2](https://indieweb.org/microformats2) to our article html. Basically, it's some html tag class names. These took me quite a few time to update my templates, so now I have supported [h-card](https://indieweb.org/h-card), [h-entry](https://indieweb.org/h-entry) and [h-feed](https://indieweb.org/h-feed). It looks like this:
+When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using
+[Denoflow](https://github.com/denoflow/denoflow) and the
+[Webmention.app](https://webmention.app/) API.
+[Webmention.app](https://webmention.app/) can check all the mentioned links in
+the new article and send all webmentions to them. Before
+[Webmention.app](https://webmention.app/) can recognize the mentioned links, we
+need to add some extra [microformats2](https://indieweb.org/microformats2) to
+our article html. Basically, it's some html tag class names. These took me quite
+a few time to update my templates, so now I have supported
+[h-card](https://indieweb.org/h-card), [h-entry](https://indieweb.org/h-entry)
+and [h-feed](https://indieweb.org/h-feed). It looks like this:
 
 ```html
 <article class="h-entry">
