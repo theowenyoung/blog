@@ -27,7 +27,7 @@ jobs:
       - name: git config
         run: git config --global user.name "github-actions[bot]" && git config --global user.email github-actions-bot@users.noreply.github.com
       - name: git add
-        run: git add data && git add sources
+        run: git add data && git add webmentions
       - run: git status
       - id: isChanged
         run: git diff-index --cached --quiet HEAD || echo '::set-output name=changed::true'
@@ -37,7 +37,7 @@ jobs:
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
           labels: automerge
-          add-paths: data,sources
+          add-paths: data,webmentions
           commit-message: "chore: new item"
           committer: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
           author: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
