@@ -7,6 +7,9 @@
         <loc>https://www.owenyoung.com/about/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/activity/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/answers/</loc>
         <lastmod>2022-03-25</lastmod>
     </url>
@@ -320,6 +323,9 @@
         <loc>https://www.owenyoung.com/en/about/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/en/activity/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/en/algorithms/</loc>
         <lastmod>2022-06-10</lastmod>
     </url>
@@ -450,6 +456,10 @@
     <url>
         <loc>https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/</loc>
         <lastmod>2022-03-27</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/en/changelog/</loc>
+        <lastmod>2022-06-13</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/en/china/</loc>
@@ -630,6 +640,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/books/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/changelog/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/changelog/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/china/</loc>

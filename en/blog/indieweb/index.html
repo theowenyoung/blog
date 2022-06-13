@@ -19,7 +19,7 @@
   rel="webmention"
   href="https://webmention.io/www.owenyoung.com/webmention"
 />
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=4dee2ba4028af76706f18ae61599cfdfcf7bdaf940255d26327f246d0fab8644">
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=9a36f7308b85a11b995eb7f56a233512314389a0548adbc6c48e548c8c007a4f">
     <title>Now, I&#x27;m in IndieWeb? - Owen Young&#x27;s Blog</title>
     <meta
       name="description"
@@ -117,6 +117,8 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
           <div>
             
             <ul class="flex menu list-none items-center justify-center">
+    
+              
               <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted" title="English Site" href="/en/">
                 <span class="text-sm">EN</span>
                </a></li>
@@ -175,7 +177,7 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
       </div>
       <div class="pt muted">
         <div>
-          Published: <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>, Updated: <time class="dt-updated updated" datetime="2022-06-12">2022-06-12</time>, Reading Time: 10 min</div>
+          Published: <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>, Updated: <time class="dt-updated updated" datetime="2022-06-12">2022-06-12</time>, Reading Time: 11 min</div>
     </div>
 
     </div>
@@ -236,6 +238,9 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
   
   <li>
     <a href="#response">Response</a>
+</li>
+<li>
+  <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md">Edit this page</a>
 </li>
   </ul>
 </section>
@@ -422,6 +427,59 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 </span><span>          </span><span style="color:#bf616a;">MERGE_DELETE_BRANCH</span><span>: </span><span style="color:#d08770;">true
 </span><span>          </span><span style="color:#bf616a;">MERGE_LABELS</span><span>: &quot;&quot;
 </span></code></pre>
+<ol start="4">
+<li>Add response block to page tempalte</li>
+</ol>
+<p>This part may take a while to finish, here is <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/3034e093846f4e7e33a957e3169856407b9087c0/templates/page.html#L90-L148">the main page template code</a>, I’ll only show the main part.</p>
+<p>Use <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/documentation/templates/overview/#load-data">Zola load_data function</a> to load the webmention data JSON file.</p>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>{% set current_webmention_file_name = current_path | trim_end_matches(pat=&quot;/&quot;)
+</span><span>%} {% set webmention_data =
+</span><span>load_data(path=&quot;webmentions&quot;~current_webmention_file_name~&quot;.json&quot;,required=false)
+</span><span>%}
+</span></code></pre>
+<p>Show response:</p>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>{% if webmention_data %} {% set_global mentions = [] %} {% for ignored, item in
+</span><span>webmention_data %} {% set_global mentions = mentions | concat(with=item) %} {%
+</span><span>endfor %}
+</span><span>&lt;</span><span style="color:#bf616a;">p </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">muted text-sm</span><span>&quot;&gt;
+</span><span>  {{trans(key=&quot;label_response_description&quot;,lang=lang)| markdown(inline=true) |
+</span><span>  safe}}
+</span><span>&lt;/</span><span style="color:#bf616a;">p</span><span>&gt;
+</span><span>{% for type, items in mentions | group_by(attribute=&quot;wm-property&quot;) %}
+</span><span>&lt;</span><span style="color:#bf616a;">h3</span><span>&gt;
+</span><span>  {{trans(key=&quot;label_&quot;~type,lang=lang)}} ({{items | length}})&lt;</span><span style="color:#bf616a;">a
+</span><span>    </span><span style="color:#d08770;">href</span><span>=&quot;</span><span style="color:#a3be8c;">#{{type}}</span><span>&quot;
+</span><span>    </span><span style="color:#8fa1b3;">id</span><span>=&quot;</span><span style="color:#a3be8c;">{{type}}</span><span>&quot;
+</span><span>    </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">zola-anchor</span><span>&quot;
+</span><span>    &gt;🔗&lt;/</span><span style="color:#bf616a;">a
+</span><span>  &gt;
+</span><span>&lt;/</span><span style="color:#bf616a;">h3</span><span>&gt;
+</span><span>{% if type == &#39;like-of&#39; or type == &quot;repost-of&quot; or type == &quot;bookmark-of&quot; or type
+</span><span>== &quot;follow-of&quot; %}
+</span><span>&lt;</span><span style="color:#bf616a;">ul </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">list-none flex items-center flex-wrap</span><span>&quot;&gt;
+</span><span>  {% for item in items %} {{ macro::webmention(type=type, item=item) }} {%
+</span><span>  endfor %}
+</span><span>&lt;/</span><span style="color:#bf616a;">ul</span><span>&gt;
+</span><span>{% else %}
+</span><span>&lt;</span><span style="color:#bf616a;">ul </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">list-none</span><span>&quot;&gt;
+</span><span>  {% for item in items %} {{ macro::webmention(type=type, item=item) }} {%
+</span><span>  endfor %}
+</span><span>&lt;/</span><span style="color:#bf616a;">ul</span><span>&gt;
+</span><span>{% endif %} {% endfor %} {% endif %}
+</span></code></pre>
+<p>Then, I add a webmention form, so if people want to submit their mentions, they can directly submit it.</p>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">form
+</span><span>  </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">webmention-form</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">action</span><span>=&quot;</span><span style="color:#a3be8c;">https://webmention.io/www.owenyoung.com/webmention</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">method</span><span>=&quot;</span><span style="color:#a3be8c;">post</span><span>&quot;
+</span><span>&gt;
+</span><span>  &lt;</span><span style="color:#bf616a;">div </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">flex items-center flex-wrap pb</span><span>&quot;&gt;
+</span><span>    &lt;</span><span style="color:#bf616a;">input </span><span style="color:#d08770;">type</span><span>=&quot;</span><span style="color:#a3be8c;">url</span><span>&quot; </span><span style="color:#d08770;">name</span><span>=&quot;</span><span style="color:#a3be8c;">source</span><span>&quot; </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">flex-3 mr-sm w-full py-sm px-sm</span><span>&quot; /&gt;
+</span><span>    &lt;</span><span style="color:#bf616a;">input </span><span style="color:#d08770;">type</span><span>=&quot;</span><span style="color:#a3be8c;">submit</span><span>&quot; </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">px py-sm</span><span>&quot; </span><span style="color:#d08770;">value</span><span>=&quot;</span><span style="color:#a3be8c;">Send Webmention</span><span>&quot; /&gt;
+</span><span>  &lt;/</span><span style="color:#bf616a;">div</span><span>&gt;
+</span><span>  &lt;</span><span style="color:#bf616a;">input </span><span style="color:#d08770;">type</span><span>=&quot;</span><span style="color:#a3be8c;">hidden</span><span>&quot; </span><span style="color:#d08770;">name</span><span>=&quot;</span><span style="color:#a3be8c;">target</span><span>&quot; </span><span style="color:#d08770;">value</span><span>=&quot;</span><span style="color:#a3be8c;">{{current_url}}</span><span>&quot; /&gt;
+</span><span>&lt;/</span><span style="color:#bf616a;">form</span><span>&gt;
+</span></code></pre>
 <blockquote>
 <p>Cause I don’t have too many mentions, so I use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions">sebastiandedeyne’s</a> mention data as this article’s webmention data.</p>
 </blockquote>
@@ -491,7 +549,7 @@ Likes, retweets, mentions, cross-posting</li>
       
       <section>
         <hr>
-        <a class="muted" href="https://github.com/theowenyoung/blog/tree/main/content/blog/indieweb.en.md">📝 Edit this page</a>
+        <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md">📝 Edit this page</a><a href="#edit" id="edit" class="zola-anchor" >🔗</a>
       </section>
       
   
@@ -516,9 +574,7 @@ Likes, retweets, mentions, cross-posting</li>
           <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
           <input type="submit" class="px py-sm" value="Send Webmention">
         </div>
-        <div class="status hidden">
-          <div class="ui message"></div>
-        </div>
+    
         <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">
       </form>
         
@@ -649,13 +705,13 @@ Freek Van der Herten 🎆
 
 
 <a id="643221" class="mr-sm" href="#643221">replied</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-09T15:07:54+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;freekmurze&#x2F;status&#x2F;1148609730925015040"
-><time class="dt-published published" datetime="2019-07-09T15:07:54+00:00">2019-07-09</time></a>
+><time class="dt-published published" datetime="2019-07-09T15:07:54+00:00">2019-07-09 15:07</time></a>
 
 <span>:</span>
   </div>
@@ -696,13 +752,13 @@ NUNO MADURO 💡
 
 
 <a id="643224" class="mr-sm" href="#643224">replied</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-09T15:04:36+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;enunomaduro&#x2F;status&#x2F;1148608901845327872"
-><time class="dt-published published" datetime="2019-07-09T15:04:36+00:00">2019-07-09</time></a>
+><time class="dt-published published" datetime="2019-07-09T15:04:36+00:00">2019-07-09 15:04</time></a>
 
 <span>:</span>
   </div>
@@ -748,13 +804,13 @@ Chris W
 
 
 <a id="662540" class="mr-sm" href="#662540">replied</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-08-06T23:15:26+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;_watzon&#x2F;status&#x2F;1158879282581475328"
-><time class="dt-published published" datetime="2019-08-06T23:15:26+00:00">2019-08-06</time></a>
+><time class="dt-published published" datetime="2019-08-06T23:15:26+00:00">2019-08-06 23:15</time></a>
 
 <span>:</span>
   </div>
@@ -789,7 +845,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635019">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -807,7 +863,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635021">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -825,7 +881,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635050">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -843,7 +899,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635067">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -861,7 +917,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635068">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -879,7 +935,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635088">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -897,7 +953,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635098">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -915,7 +971,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="638335">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -933,7 +989,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="647038">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -951,7 +1007,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="647152">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -969,7 +1025,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="648838">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -987,7 +1043,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="648956">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -1005,7 +1061,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="1415316">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -1023,7 +1079,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="1415408">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -1049,7 +1105,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635020">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -1067,7 +1123,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="635184">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -1085,7 +1141,7 @@ Chris W
                   
                     
 
-<li class="list-none">
+<li class="list-none" id="1415275">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -1136,13 +1192,13 @@ Freek Van der Herten 🎆
 
 
 <a id="643229" class="mr-sm" href="#643229">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-09T15:02:27+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;freekmurze&#x2F;status&#x2F;1148608357420412928"
-><time class="dt-published published" datetime="2019-07-09T15:02:27+00:00">2019-07-09</time></a>
+><time class="dt-published published" datetime="2019-07-09T15:02:27+00:00">2019-07-09 15:02</time></a>
 
 <span>:</span>
   </div>
@@ -1183,13 +1239,13 @@ Jan Boddez
 
 
 <a id="647153" class="mr-sm" href="#647153">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-15T08:32:04+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;janboddez&#x2F;status&#x2F;1150684441687285760"
-><time class="dt-published published" datetime="2019-07-15T08:32:04+00:00">2019-07-15</time></a>
+><time class="dt-published published" datetime="2019-07-15T08:32:04+00:00">2019-07-15 08:32</time></a>
 
 <span>:</span>
   </div>
@@ -1229,13 +1285,13 @@ Chris White
 
 
 <a id="648955" class="mr-sm" href="#648955">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-17T13:59:08+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;cwhite_92&#x2F;status&#x2F;1151491528289869824"
-><time class="dt-published published" datetime="2019-07-17T13:59:08+00:00">2019-07-17</time></a>
+><time class="dt-published published" datetime="2019-07-17T13:59:08+00:00">2019-07-17 13:59</time></a>
 
 <span>:</span>
   </div>
@@ -1275,13 +1331,13 @@ La semana PHP
 
 
 <a id="649375" class="mr-sm" href="#649375">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-18T07:00:10+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;lasemanaphp&#x2F;status&#x2F;1151748480865624064"
-><time class="dt-published published" datetime="2019-07-18T07:00:10+00:00">2019-07-18</time></a>
+><time class="dt-published published" datetime="2019-07-18T07:00:10+00:00">2019-07-18 07:00</time></a>
 
 <span>:</span>
   </div>
@@ -1321,13 +1377,13 @@ Star Tutorial
 
 
 <a id="653984" class="mr-sm" href="#653984">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-07-25T03:03:01+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;startutorial&#x2F;status&#x2F;1154225513449308160"
-><time class="dt-published published" datetime="2019-07-25T03:03:01+00:00">2019-07-25</time></a>
+><time class="dt-published published" datetime="2019-07-25T03:03:01+00:00">2019-07-25 03:03</time></a>
 
 <span>:</span>
   </div>
@@ -1369,13 +1425,13 @@ Isabela Moreira
 
 
 <a id="662534" class="mr-sm" href="#662534">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-08-06T23:12:44+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;isabelacmor&#x2F;status&#x2F;1158878603494547458"
-><time class="dt-published published" datetime="2019-08-06T23:12:44+00:00">2019-08-06</time></a>
+><time class="dt-published published" datetime="2019-08-06T23:12:44+00:00">2019-08-06 23:12</time></a>
 
 <span>:</span>
   </div>
@@ -1420,13 +1476,13 @@ Dzulfikar
 
 
 <a id="730855" class="mr-sm" href="#730855">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2019-12-05T00:25:41+00:00"
   href="https:&#x2F;&#x2F;twitter.com&#x2F;superpikar&#x2F;status&#x2F;1202383503251214336"
-><time class="dt-published published" datetime="2019-12-05T00:25:41+00:00">2019-12-05</time></a>
+><time class="dt-published published" datetime="2019-12-05T00:25:41+00:00">2019-12-05 00:25</time></a>
 
 <span>:</span>
   </div>
@@ -1457,13 +1513,13 @@ James Mead
 
 
 <a id="816780" class="mr-sm" href="#816780">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2020-06-27T18:53:00+00:00"
   href="https:&#x2F;&#x2F;jamesmead.org&#x2F;blog&#x2F;2020-06-27-indieweb-ifying-my-personal-website"
-><time class="dt-published published" datetime="2020-06-27T18:53:00+00:00">2020-06-27</time></a>
+><time class="dt-published published" datetime="2020-06-27T18:53:00+00:00">2020-06-27 18:53</time></a>
 
 <span>:</span>
   </div>
@@ -1544,13 +1600,13 @@ Wouter Groeneveld
 
 
 <a id="1080662" class="mr-sm" href="#1080662">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2021-02-27T17:51:00"
   href="https:&#x2F;&#x2F;brainbaking.com&#x2F;"
-><time class="dt-published published" datetime="2021-02-27T17:51:00">2021-02-27</time></a>
+><time class="dt-published published" datetime="2021-02-27T17:51:00">2021-02-27 17:51</time></a>
 
 <span>:</span>
   </div>
@@ -1626,13 +1682,13 @@ now done - <a href="https://github.com/synesthesia/site2019">here</a></p>
 
 
 <a id="1376754" class="mr-sm" href="#1376754">mentioned</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="2022-04-08T00:00:00+00:00"
   href="https:&#x2F;&#x2F;blog.omgmog.net&#x2F;post&#x2F;adding-support-for-webmentions&#x2F;"
-><time class="dt-published published" datetime="2022-04-08T00:00:00+00:00">2022-04-08</time></a>
+><time class="dt-published published" datetime="2022-04-08T00:00:00+00:00">2022-04-08 00:00</time></a>
 
 <span>:</span>
   </div>
@@ -1741,6 +1797,9 @@ now done - <a href="https://github.com/synesthesia/site2019">here</a></p>
   
   <li>
     <a href="#response">Response</a>
+</li>
+<li>
+  <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md">Edit this page</a>
 </li>
   </ul>
 </section>
