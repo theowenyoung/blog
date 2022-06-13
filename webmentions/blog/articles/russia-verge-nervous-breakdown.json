@@ -1,0 +1,20 @@
+{
+  "1415295": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "蒋继发",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/ca630a3d16f7ae884866a8e36fd1a41fe4205c37527d0e62ad3f75e8ff3e2878.jpg",
+      "url": "https://twitter.com/ThaddeusJiang"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1512915537084383234#favorited-by-1150937016361553920",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:54Z",
+    "wm-id": 1415295,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1512915537084383234/1150937016361553920",
+    "wm-target": "https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/",
+    "like-of": "https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}
