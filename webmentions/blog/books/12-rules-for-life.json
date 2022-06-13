@@ -1,0 +1,20 @@
+{
+  "1415117": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "photo": "",
+      "url": ""
+    },
+    "url": "https://www.owenyoung.com",
+    "published": null,
+    "wm-received": "2022-06-12T22:29:51Z",
+    "wm-id": 1415117,
+    "wm-source": "https://www.owenyoung.com",
+    "wm-target": "https://www.owenyoung.com/blog/books/12-rules-for-life/",
+    "mention-of": "https://www.owenyoung.com/blog/books/12-rules-for-life/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
