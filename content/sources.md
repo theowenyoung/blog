@@ -31,7 +31,7 @@ taxonomies:
 - [Meta Filter](https://www.metafilter.com/)
 - [Soylentnews](https://soylentnews.org/)
 - [Read Something Interesting](https://readsomethinginteresting.com/)
-- [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/)
+- [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/) - 一句话总结文章内容，所以你不用点进去看文章了
 - [True Reddit 小组的每月排行](https://old.reddit.com/r/Foodforthought/top/?t=month)
 
 ## 专人维护的 Reading List
