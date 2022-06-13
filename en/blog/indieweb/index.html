@@ -384,7 +384,7 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 </span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">git config
 </span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git config --global user.name &quot;github-actions[bot]&quot; &amp;&amp; git config --global user.email github-actions-bot@users.noreply.github.com
 </span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">git add
-</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git add data &amp;&amp; git add sources
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git add data &amp;&amp; git add webmentions
 </span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git status
 </span><span>      - </span><span style="color:#bf616a;">id</span><span>: </span><span style="color:#a3be8c;">isChanged
 </span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git diff-index --cached --quiet HEAD || echo &#39;::set-output name=changed::true&#39;
@@ -394,7 +394,7 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 </span><span>        </span><span style="color:#bf616a;">with</span><span>:
 </span><span>          </span><span style="color:#bf616a;">token</span><span>: </span><span style="color:#a3be8c;">${{ secrets.PERSONAL_TOKEN }}
 </span><span>          </span><span style="color:#bf616a;">labels</span><span>: </span><span style="color:#a3be8c;">automerge
-</span><span>          </span><span style="color:#bf616a;">add-paths</span><span>: </span><span style="color:#a3be8c;">data,sources
+</span><span>          </span><span style="color:#bf616a;">add-paths</span><span>: </span><span style="color:#a3be8c;">data,webmentions
 </span><span>          </span><span style="color:#bf616a;">commit-message</span><span>: &quot;</span><span style="color:#a3be8c;">chore: new item</span><span>&quot;
 </span><span>          </span><span style="color:#bf616a;">committer</span><span>: &quot;</span><span style="color:#a3be8c;">github-actions[bot] &lt;github-actions-bot@users.noreply.github.com&gt;</span><span>&quot;
 </span><span>          </span><span style="color:#bf616a;">author</span><span>: &quot;</span><span style="color:#a3be8c;">github-actions[bot] &lt;github-actions-bot@users.noreply.github.com&gt;</span><span>&quot;
