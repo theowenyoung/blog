@@ -1,0 +1,38 @@
+{
+  "1415296": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1511683820927713280#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:54Z",
+    "wm-id": 1415296,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1511683820927713280/159287109",
+    "wm-target": "https://www.owenyoung.com/blog/migrate-to-zola/",
+    "like-of": "https://www.owenyoung.com/blog/migrate-to-zola/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1415298": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "RoCry",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/49afade99fe07d60442ac7b6b9cda8615395df1feffff58b4ec49ae6ff401dcb.jpg",
+      "url": "https://twitter.com/RoCry"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1511683820927713280#favorited-by-8295782",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:56Z",
+    "wm-id": 1415298,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1511683820927713280/8295782",
+    "wm-target": "https://www.owenyoung.com/blog/migrate-to-zola/",
+    "like-of": "https://www.owenyoung.com/blog/migrate-to-zola/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}

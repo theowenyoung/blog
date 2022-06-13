@@ -1,0 +1,20 @@
+{
+  "1415285": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1533854180917784577#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:36Z",
+    "wm-id": 1415285,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1533854180917784577/159287109",
+    "wm-target": "https://www.owenyoung.com/blog/",
+    "like-of": "https://www.owenyoung.com/blog/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}

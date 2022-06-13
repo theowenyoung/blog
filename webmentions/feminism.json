@@ -20,5 +20,23 @@
     "mention-of": "https://www.owenyoung.com/feminism/#ji-jin-nu-quan-zhu-yi",
     "wm-property": "mention-of",
     "wm-private": false
+  },
+  "1415281": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Cheng Kang @ CCK @ 曾诚康",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a93a3e426076103aedd8005b7ea86dbd0a02c7f66f661e77d393b897973b9906.jpg",
+      "url": "https://twitter.com/chengkangzai"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1534198187304443904#favorited-by-383688848",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:27Z",
+    "wm-id": 1415281,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1534198187304443904/383688848",
+    "wm-target": "https://www.owenyoung.com/feminism/#ji-jin-nu-quan-zhu-yi",
+    "like-of": "https://www.owenyoung.com/feminism/#ji-jin-nu-quan-zhu-yi",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
