@@ -102,7 +102,7 @@ Workflow file([`workflows/fetch-webmention.yml`](https://github.com/theowenyoung
 sources:
   - use: fetch
     args:
-      - https://webmention.io/api/mentions.jf2?domain=www.owenyoung.com&per-page=999&token=${{env.WEBMENTION_TOKEN}}
+      - https://webmention.io/api/mentions.jf2?domain=www.owenyoung.com&per-page=999&token=${{ctx.env.WEBMENTION_TOKEN}}
     run: return ctx.result.json()
     itemsPath: children
     key: "wm-id"
