@@ -1,0 +1,75 @@
+{% extends "base.html" -%} {% set all_section_pages =
+get_section(path="_index.md") %} {% block title
+%}{{trans(key="label_activity",lang=lang)}} - {{ config.title }}{% endblock
+title %} {% block ogtitle %}{{trans(key="label_activity",lang=lang)}} - {{
+config.title }}{% endblock ogtitle %} {% block headline
+%}{{trans(key="label_activity",lang=lang)}} - {{ config.title }}{% endblock
+headline %} {% block description %}{{trans(key="label_activity",lang=lang)}}{%
+endblock description %} {% block main -%}
+
+<h1>{{trans(key="label_activity",lang=lang)}}</h1>
+<setion> {{ page.content | safe}} </setion>
+{% set_global mentions = [] %} 
+{% set_global mentions_pages = [] %} 
+
+<ul class="">
+{% for post
+in all_section_pages.pages %} 
+
+{% set current_webmention_file_name = post.path |
+trim_end_matches(pat="/") %} 
+
+{% set webmention_data =
+load_data(path="webmentions"~current_webmention_file_name~".json",required=false)
+%} 
+{% if webmention_data %} 
+{% for ignored, item in webmention_data %}
+{%set_global mentions = mentions | concat(with=item) %} 
+{% set_global
+mentions_pages = mentions_pages | concat(with=post) %} 
+{% endfor %} 
+{% endif %}
+{% endfor %} 
+{% set_global
+  mentions = mentions | sort(attribute="wm-received") | reverse  %} 
+{% set_global mentions_pages = mentions_pages | unique(attribute="path")%}
+{% for mention in mentions %} 
+{% if mention.author and
+mention.author.url %}
+{% set key = "label_action_"~mention["wm-property"] %}
+{% set mention_paths = mention["wm-target"] | trim_start_matches(pat=config.extra.prefix_url) | split(pat="#") %}
+{% set mention_paths2 = mention_paths[0] | split(pat="?") %}
+{% set mention_path = mention_paths2[0] %}
+{% set current_posts = mentions_pages | filter(attribute="path",value=mention_path)%}
+{% set current_post = current_posts | first %}
+{% if current_post %}
+<li class="mb-li">
+  {% if mention["wm-received"] %}
+  {% if mention["published"] %}
+  {% set_global time = mention["published"]  %}
+  {% else%}
+  {% set_global time = mention["wm-received"] %}
+  {% endif %}
+<a
+  class="no-underline mr-sm"
+  href="{{mention.url}}"
+  title="{{ time }}"
+><time class="dt-published published" datetime="{{time}}">
+ {{time | date(format="%Y-%m-%d %H:%M")}}
+  </time></a>
+{% endif %}
+  <a class="mr-sm relative no-underline" href="{{mention.author.url}}">{% if mention.author.photo %}
+    <img src="{{mention.author.photo}}" class="icon mr-sm mb-absolute" alt="{% if mention.author.name %}{{mention.author.name}}{% else %}Unknown{% endif %}" /> {% else %}
+    <span class="icon text-lg mr-sm pr-sm pl-sm">👤</span>
+    {% endif %}{% if mention.author.name %}{{mention.author.name}}{% else %}Unknown{% endif %}</a><span class="mr-sm">{{config.extra[key]}}</span>
+  <a class="" href="{{current_post.permalink}}#{{mention['wm-id']}}">{{current_post.title}}</a>
+  
+</li>
+{% else%}
+<!-- TODO-CATCH-OTHER-CASE -->
+{% endif %}
+
+{% endif %} 
+{% endfor %} 
+</ul>
+{% endblock main -%}

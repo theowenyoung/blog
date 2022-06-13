@@ -27,6 +27,8 @@ updated: 2022-04-04
 
 - [关于我](/about/)
 - [现在在做的事](/now/)
+- [博客评论/喜欢/提及动态](/content/pages/activity.md)
+- [博客更新日志](/content/changelog/index.en.md)
 
 ## 社交媒体
 

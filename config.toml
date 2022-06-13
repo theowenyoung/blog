@@ -38,8 +38,8 @@ include_content = false
 [extra]
 author = "Owen Young"
 email = "owen@owenyoung.com"
+prefix_url = "https://www.owenyoung.com"
 theme_color = "#EA4C89"
-
 ### indieweb note
 bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
 ### THIRD PARTY
@@ -47,12 +47,15 @@ bio = "Web developer, I like reading and explore the internet, so I have collect
 # disqus = "disqus-user"
 
 ### SOCIAL MEDIA
-edit_url_prefix = "https://github.com/theowenyoung/blog/tree/main/content/"
+# https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md
+edit_url_prefix = "https://github.com/theowenyoung/blog/edit/main/content/"
 github_user = "theowenyoung"
 image = "https://www.owenyoung.com/logo.png"
 "label_action_in-reply-to" = "replied"
+"label_action_like-of" = "liked"
 "label_action_mention-of" = "mentioned"
 "label_action_reply-to" = "replied"
+"label_action_repost-of" = "reposted"
 "label_action_rsvp" = "answered"
 twitter_user = "TheOwenYoung"
 webmention_path = "webmentions"
@@ -70,6 +73,7 @@ title = "Owen的博客"
 [languages.zh.translations]
 
 keywords = "注意力, 读书, 工具分享, 纯文本, 英语学习"
+label_activity = "动态"
 label_all_posts = "[点击查看所有文章🔥🔥](/blog/)"
 label_all_thoughts = "[点击查看所有短想法🔥🔥](/thoughts/)"
 label_archive = "全部文章归档"
@@ -116,6 +120,7 @@ taxonomies = [
 title = "Owen Young's Blog"
 [languages.en.translations]
 keywords = "Focus, Reading, Tool sharing, Plain text, English learning"
+label_activity = "Activity"
 label_all_posts = "[View all posts](/en/blog/)"
 label_all_thoughts = "[View all thoughts🔥🔥](/en/thoughts/)"
 label_archive = "Archive"

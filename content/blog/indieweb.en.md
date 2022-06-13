@@ -205,6 +205,68 @@ jobs:
           MERGE_LABELS: ""
 ```
 
+4. Add response block to page tempalte
+
+This part may take a while to finish, here is [the main page template code](https://github.com/theowenyoung/blog/blob/3034e093846f4e7e33a957e3169856407b9087c0/templates/page.html#L90-L148), I'll only show the main part.
+
+Use [Zola load_data function](https://www.getzola.org/documentation/templates/overview/#load-data) to load the webmention data JSON file.
+
+```html
+{% set current_webmention_file_name = current_path | trim_end_matches(pat="/")
+%} {% set webmention_data =
+load_data(path="webmentions"~current_webmention_file_name~".json",required=false)
+%}
+```
+
+Show response:
+
+```html
+{% if webmention_data %} {% set_global mentions = [] %} {% for ignored, item in
+webmention_data %} {% set_global mentions = mentions | concat(with=item) %} {%
+endfor %}
+<p class="muted text-sm">
+  {{trans(key="label_response_description",lang=lang)| markdown(inline=true) |
+  safe}}
+</p>
+{% for type, items in mentions | group_by(attribute="wm-property") %}
+<h3>
+  {{trans(key="label_"~type,lang=lang)}} ({{items | length}})<a
+    href="#{{type}}"
+    id="{{type}}"
+    class="zola-anchor"
+    >🔗</a
+  >
+</h3>
+{% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type
+== "follow-of" %}
+<ul class="list-none flex items-center flex-wrap">
+  {% for item in items %} {{ macro::webmention(type=type, item=item) }} {%
+  endfor %}
+</ul>
+{% else %}
+<ul class="list-none">
+  {% for item in items %} {{ macro::webmention(type=type, item=item) }} {%
+  endfor %}
+</ul>
+{% endif %} {% endfor %} {% endif %}
+```
+
+Then, I add a webmention form, so if people want to submit their mentions, they can directly submit it.
+
+```html
+<form
+  class="webmention-form"
+  action="https://webmention.io/www.owenyoung.com/webmention"
+  method="post"
+>
+  <div class="flex items-center flex-wrap pb">
+    <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm" />
+    <input type="submit" class="px py-sm" value="Send Webmention" />
+  </div>
+  <input type="hidden" name="target" value="{{current_url}}" />
+</form>
+```
+
 > Cause I don't have too many mentions, so I use [sebastiandedeyne's](https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions) mention data as this article's webmention data.
 
 ## 5. Send webmention when you publish a new article
