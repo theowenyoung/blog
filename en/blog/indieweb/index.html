@@ -481,11 +481,23 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 </span><span>&lt;/</span><span style="color:#bf616a;">form</span><span>&gt;
 </span></code></pre>
 <blockquote>
+<p>Optional: I also added an <a href="https://www.owenyoung.com/en/activity/">activity page</a> for aggregating all response, the activity template page is <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/activity.html">here</a></p>
+</blockquote>
+<blockquote>
 <p>Cause I don’t have too many mentions, so I use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions">sebastiandedeyne’s</a> mention data as this article’s webmention data.</p>
 </blockquote>
 <h2 id="5-send-webmention-when-you-publish-a-new-article">5. Send webmention when you publish a new article<a class="zola-anchor" href="#5-send-webmention-when-you-publish-a-new-article" aria-label="Anchor link for: 5-send-webmention-when-you-publish-a-new-article">🔗</a></h2>
-<p>When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/denoflow/denoflow">Denoflow</a> and the <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> API. <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> can check all the mentioned links in the new article and send all webmentions to them.</p>
-<p>Before <a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> can recognize the mentioned links, we need to add some extra <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/microformats2">microformats2</a> to our article html. Basically, it’s some html tag class names. These took me quite a few time to update my templates, so now I have supported <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-card">h-card</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-entry">h-entry</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-feed">h-feed</a>. It looks like this:</p>
+<p>When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/denoflow/denoflow">Denoflow</a> and the
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> API.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> can check all the mentioned links in
+the new article and send all webmentions to them. Before
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://webmention.app/">Webmention.app</a> can recognize the mentioned links, we
+need to add some extra <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/microformats2">microformats2</a> to
+our article html. Basically, it’s some html tag class names. These took me quite
+a few time to update my templates, so now I have supported
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-card">h-card</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-entry">h-entry</a>
+and <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/h-feed">h-feed</a>. It looks like this:</p>
 <pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">article </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">h-entry</span><span>&quot;&gt;
 </span><span>  &lt;</span><span style="color:#bf616a;">h1 </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">p-name</span><span>&quot;&gt;Microformats are amazing&lt;/</span><span style="color:#bf616a;">h1</span><span>&gt;
 </span><span>  &lt;</span><span style="color:#bf616a;">p</span><span>&gt;
