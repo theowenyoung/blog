@@ -324,7 +324,7 @@ type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://w
 <pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">sources</span><span>:
 </span><span>  - </span><span style="color:#bf616a;">use</span><span>: </span><span style="color:#a3be8c;">fetch
 </span><span>    </span><span style="color:#bf616a;">args</span><span>:
-</span><span>      - </span><span style="color:#a3be8c;">https://webmention.io/api/mentions.jf2?domain=www.owenyoung.com&amp;per-page=999&amp;token=${{env.WEBMENTION_TOKEN}}
+</span><span>      - </span><span style="color:#a3be8c;">https://webmention.io/api/mentions.jf2?domain=www.owenyoung.com&amp;per-page=999&amp;token=${{ctx.env.WEBMENTION_TOKEN}}
 </span><span>    </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">return ctx.result.json()
 </span><span>    </span><span style="color:#bf616a;">itemsPath</span><span>: </span><span style="color:#a3be8c;">children
 </span><span>    </span><span style="color:#bf616a;">key</span><span>: &quot;</span><span style="color:#a3be8c;">wm-id</span><span>&quot;
