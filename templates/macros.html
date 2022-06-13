@@ -69,6 +69,9 @@
   <li>
     <a href="#response">{{ trans(key="label_response",lang=lang) }}</a>
 </li>
+<li>
+  <a href="{{config.extra.edit_url_prefix~page.relative_path}}">{{ trans(key="label_edit",lang=lang) }}</a>
+</li>
   </ul>
 </section>
 {% endmacro page_toc %}
@@ -130,7 +133,7 @@
 
 {% macro webmention(type,item) %}
 {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
-<li class="list-none">
+<li class="list-none" id="{{item['wm-id']}}">
   <a
         class="reaction"
         rel="nofollow ugc"
@@ -139,6 +142,8 @@
       >
         {% if item.author.photo %}
         <img alt="{{item.author.name}}" class="icon rounded-full" src="{{item.author.photo}}">
+        {% else %}
+       <span class="icon text-lg">👤</span>
         {% endif%}
       </a>
 </li>
@@ -170,13 +175,13 @@
 {% if item.published %}
 {% set key = "label_action_"~type %}
 <a id="{{item['wm-id']}}" class="mr-sm" href="#{{item['wm-id']}}">{{config.extra[key]}}</a>
-<span class="mr-sm"> on</span>
+<span class="mr-sm"> at</span>
 <a
   rel="nofollow ugc"
   class="u-url"
   title="{{ item.published }}"
   href="{{item.url}}"
-><time class="dt-published published" datetime="{{item.published}}">{{ item.published | date() }}</time></a>
+><time class="dt-published published" datetime="{{item.published}}">{{ item.published | date(format="%Y-%m-%d %H:%M") }}</time></a>
 {% endif %}
 <span>:</span>
   </div>

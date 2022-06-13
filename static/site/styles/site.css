@@ -104,6 +104,12 @@ h3 {
 .relative {
   position: relative;
 }
+.bold{
+  font-weight: 600;
+}
+.mb-absolute {
+  margin-bottom: -0.8rem;
+}
 .no-border {
   border: none;
 }
@@ -339,6 +345,12 @@ a.muted,
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
+.pr-sm {
+  padding-right: 0.5rem;
+}
+.pl-sm {
+  padding-left: 0.5rem;
+}
 .pt {
   padding-top: 1.4rem;
 }
@@ -381,6 +393,9 @@ li.inline {
   display: inline-block;
   margin-right: 0.5rem;
 }
+.text-lg{
+  font-size: 1.5rem;
+}
 .text-sm {
   font-size: 1rem;
 }
@@ -392,6 +407,9 @@ li.inline {
 }
 .pb-sm {
   padding-bottom: 0.5rem;
+}
+.p0 {
+  padding: 0;
 }
 .no-toc {
   width: auto;
@@ -420,6 +438,9 @@ li.inline {
 }
 .mb{
   margin-bottom: 1.4rem;
+}
+.mb-li{
+  margin-bottom: 1rem;
 }
 .mb-lg{
   margin-bottom: 2.4rem;

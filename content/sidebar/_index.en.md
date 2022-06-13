@@ -12,6 +12,8 @@ updated: 2022-04-04
 
 - [About](/en/about/)
 - [Now](/now/)
+- [Response Activity](/content/pages/activity.en.md)
+- [Changelog](/content/changelog/index.en.md)
 
 ## Other
 
