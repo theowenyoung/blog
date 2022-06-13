@@ -1,0 +1,56 @@
+{
+  "1415284": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Kelvin",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/50556490e07ac7b3aed77f1c128279592920576a1fb6fe3f98b9047a25f065c0.jpg",
+      "url": "https://twitter.com/kidultx"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1523129138130817026#favorited-by-34868053",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:35Z",
+    "wm-id": 1415284,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1523129138130817026/34868053",
+    "wm-target": "https://www.owenyoung.com/en/algorithms/",
+    "like-of": "https://www.owenyoung.com/en/algorithms/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1415289": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "garrulous abyss🌈",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/466a7d185b0e5b4368e857b359b28f47b596850b3badaa0d4178bcbbbb17633b.jpg",
+      "url": "https://twitter.com/garrulous_abyss"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1523129138130817026#favorited-by-4752010152",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:47Z",
+    "wm-id": 1415289,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1523129138130817026/4752010152",
+    "wm-target": "https://www.owenyoung.com/en/algorithms/",
+    "like-of": "https://www.owenyoung.com/en/algorithms/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1415290": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "千葉翔太@エンジニア専門独立支援",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/221ac11f3af3107e57aece038b63e4adde6d92c9fd102f2040e5807ffdedc630.jpg",
+      "url": "https://twitter.com/baachi_chiba"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1523129138130817026#favorited-by-874858503252434944",
+    "published": null,
+    "wm-received": "2022-06-13T05:48:47Z",
+    "wm-id": 1415290,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1523129138130817026/874858503252434944",
+    "wm-target": "https://www.owenyoung.com/en/algorithms/",
+    "like-of": "https://www.owenyoung.com/en/algorithms/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}
