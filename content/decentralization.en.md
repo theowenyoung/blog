@@ -1,7 +1,7 @@
 ---
 title: Awesome Decentralization
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-06-14
 taxonomies:
   categories:
     - Notes
@@ -36,6 +36,8 @@ Curating awesome decentralized applications.
 
 - [Scuttlebutt](https://scuttlebutt.nz/get-started/) - Scuttlebutt is a social network and it works like others social apps we already use. The key difference is that it is decentralised, meaning not centralised
 - [urbit](https://urbit.org/) - A clean-slate OS and network for the 21st century.
+- [Nostr](https://github.com/nostr-protocol/nostr) - a truly censorship-resistant alternative to Twitter that has a chance of working
+  - [awesome nostr](https://github.com/aljazceru/awesome-nostr)
 
 ## Torrents
 
@@ -75,6 +77,14 @@ Curating awesome decentralized applications.
 - [kibou](https://github.com/Toromino/kibou) - rust mastondon
 - [Indie Web](https://indieweb.org/) - The IndieWeb is a community of individual personal websites
 - [Bria](https://briarproject.org/how-it-works/) - Android p2p chat
+- [Nvote](https://github.com/rdbell/nvote) - Decentralized, vote-driven community similar to services like Reddit and HackerNews. Built on nostr.
+  - [online](https://nvote.co/)
+- [Branle](https://github.com/fiatjaf/branle) - A Twitter-like Nostr client made with Quasar
+  - [online](https://branle.netlify.app/)
+  - [astral](https://github.com/monlovesmango/astral) - Nostr client made with Quasar
+  - [rsslay](https://github.com/fiatjaf/rsslay)
+  - [damus](https://damus.io/)
+- [Iris Messanger](https://github.com/irislib/iris-messenger) - Decentralized messenger
 
 ## Mail
 

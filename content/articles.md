@@ -1,7 +1,7 @@
 ---
 title: 收集值得阅读的文章
 date: 2022-03-25
-updated: 2022-06-10
+updated: 2022-06-14
 taxonomies:
   categories:
     - Notes
@@ -155,3 +155,4 @@ taxonomies:
 ## 技术
 
 - [公共 CDN 是无用和危险的](https://httptoolkit.tech/blog/public-cdn-risks/)
+- [对 Web5 的第一印象](https://educatedguesswork.org/posts/web5-first-impressions/)
