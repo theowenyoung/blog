@@ -792,5 +792,44 @@
     "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1416044": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Shawn",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a8a3e63a254c27192ca3161be48d823452645b215c098e79638f909471553ba1.jpg",
+      "url": "https://twitter.com/xiangee"
+    },
+    "url": "https://twitter.com/xiangee/status/1536466218969837568",
+    "published": "2022-06-13T21:51:07+00:00",
+    "wm-received": "2022-06-13T23:00:37Z",
+    "wm-id": 1416044,
+    "wm-source": "https://brid.gy/repost/twitter/OwenYoungZh/1536451433645895680/1536466218969837568",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "text": "用Zola给我的静态博客 owenyoung.com/activity/ 实现了一个动态页面，利用 webmention.io  收集网络的回应，然后用Denoflow把回应保存成json文件，最后用Zola的模版渲染出来。 owenyoung.com/en/blog/indiew…"
+    },
+    "repost-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "repost-of",
+    "wm-private": false
+  },
+  "1416259": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1536451433645895680#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-06-14T02:19:11Z",
+    "wm-id": 1416259,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1536451433645895680/159287109",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
