@@ -11,7 +11,7 @@
 		<title>投资&#x2F;股票相关的资源分享</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/investing/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/investing/" type="text/html"/>
 		<id>https://www.owenyoung.com/investing/</id>
 		<content type="html">&lt;p&gt;有关投资的一切资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -34,7 +34,7 @@
 		<title>2021年美股值得关注的信息源包括推特，网站，Reddit小组</title>
 		<published>2021-02-11T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/us-stocks-you-should-follow/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/us-stocks-you-should-follow/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/us-stocks-you-should-follow/</id>
 		<content type="html">&lt;p&gt;自从&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;wallstreetbets&quot;&gt;华尔街赌徒小组&lt;&#x2F;a&gt; 从一个小众的小组在 $GME 的风潮下迅速涨粉到 89 万人，成为 Reddit 上金融相关小组中名副其实的第一名。身边很多人在看到一个 Reddit 小组对美国股市的影响力如此之大之后，都迫不及待的想找到一些美股的消息源。虽然我炒股不咋地，但是我搜索信息的能力还是家中一绝啊，万一能帮到下一个百万富翁呢！分享下我平时关注的一些关于投资的一些信息源，包括 Reddit，Twitter，网站还有 Youtube.&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -70,7 +70,7 @@
 		<title>我目前的投资（基金，炒股，存款）情况和投资方向</title>
 		<published>2021-02-06T00:00:00+00:00</published>
 		<updated>2021-02-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/investing-information-guide/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/investing-information-guide/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/investing-information-guide/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;免责声明： 本文只是总结个人的投资方向，并不构成任何投资指南，我们每个人都应该根据自己收集的相关信息来指导自己的投资。&lt;&#x2F;p&gt;
@@ -149,7 +149,7 @@
 		<title>重新开始投资</title>
 		<published>2021-02-04T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/start-investing-again/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/start-investing-again/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/start-investing-again/</id>
 		<content type="html">&lt;p&gt;说起来我投资的时间还蛮久的，从大学的时候就开了股票账户，一直到现在有 8 年以上的投资经验了，但其实还是像一个菜鸟一样，没赚过什么钱，当然，万幸的是至少没亏钱。&lt;&#x2F;p&gt;
 &lt;p&gt;今天有一笔股市打新的意外收入，填平了一直萦绕在我心里的 3 年前的一笔股票巨额亏损，这让我终于没了心魔，这才敢在 Google Sheet 里创建了一个表格，总结了下近几年的投资收益和各个账户的资金状态（还有一个原因是，我一直想总结下自己在各个银行开立的账户，万一我发生什么意外，让亲友能知道我的账户情况）&lt;&#x2F;p&gt;

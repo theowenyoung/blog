@@ -11,7 +11,7 @@
 		<title>在Debian系统中安装 Gost</title>
 		<published>2022-06-09T00:31:11+08:00</published>
 		<updated>2022-06-12T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/debian-gost-setup/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&quot;&gt;Gost&lt;&#x2F;a&gt; 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。&lt;&#x2F;p&gt;
 &lt;p&gt;本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。&lt;&#x2F;p&gt;

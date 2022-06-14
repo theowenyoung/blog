@@ -11,7 +11,7 @@
 		<title>收集一些有意思的社区</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-05-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/communities/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/communities/" type="text/html"/>
 		<id>https://www.owenyoung.com/communities/</id>
 		<content type="html">&lt;p&gt;收集一些有意思的社区，人间观察。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;index&quot;&gt;Index&lt;a class=&quot;zola-anchor&quot; href=&quot;#index&quot; aria-label=&quot;Anchor link for: index&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;

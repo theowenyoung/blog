@@ -11,7 +11,7 @@
 		<title>关于丁克&#x2F;不生孩子</title>
 		<published>2022-05-11T19:23:16+08:00</published>
 		<updated>2022-05-11T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/kids/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/kids/" type="text/html"/>
 		<id>https://www.owenyoung.com/kids/</id>
 		<content type="html">&lt;p&gt;收集丁克相关的文章和帖子。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tao-lun&quot;&gt;讨论&lt;a class=&quot;zola-anchor&quot; href=&quot;#tao-lun&quot; aria-label=&quot;Anchor link for: tao-lun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -96,7 +96,7 @@
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;data&quot;&gt;Data&lt;a class=&quot;zola-anchor&quot; href=&quot;#data&quot; aria-label=&quot;Anchor link for: data&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;parents-happier.jpg&quot; alt=&quot;有孩子的父母比没孩子的父母更开心吗？&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;kids&#x2F;.&#x2F;parents-happier.jpg&quot; alt=&quot;有孩子的父母比没孩子的父母更开心吗？&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
 	</entry>
 </feed>

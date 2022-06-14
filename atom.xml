@@ -11,7 +11,7 @@
 		<title>在Debian系统中安装 Gost</title>
 		<published>2022-06-09T00:31:11+08:00</published>
 		<updated>2022-06-12T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/debian-gost-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/debian-gost-setup/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ginuerzh&#x2F;gost&quot;&gt;Gost&lt;&#x2F;a&gt; 是一个灵活的代理转发工具，可以转发 HTTP、HTTPS、SOCKS5 等协议，可以配置反嗅探策略等等。&lt;&#x2F;p&gt;
 &lt;p&gt;本文记录在 Debian 上使用 Systemctl 配置 Gost 代理，以及使用 acme.sh 配置 https 证书。&lt;&#x2F;p&gt;
@@ -185,7 +185,7 @@
 		<title>女权主义</title>
 		<published>2022-06-07T16:18:24+08:00</published>
 		<updated>2022-06-07T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/feminism/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/feminism/" type="text/html"/>
 		<id>https://www.owenyoung.com/feminism/</id>
 		<content type="html">&lt;p&gt;女权主义是一系列社会政治运动和意识形态，旨在定义和建立性别的政治，经济，个人和社会平等。女权主义包含了这样一种立场，即社会优先考虑男性的观点，而女性在这些社会中受到不公正的对待。努力改变，并且打击性别歧视的传统观念，为妇女建立与男子平等的教育、职业和人际关系机会和成果。女权运动一直在为妇女权利而运动，包括：投票权、担任公职权、工作权、同工同酬权、拥有财产权、接受教育权、签订合同权、婚内享有平等权利和产假权。女权主义者还努力确保获得避孕药具、合法堕胎和社会融合，并保护妇女和女童免遭强奸、性骚扰和家庭暴力。女性着装标准的变化和女性可接受的身体活动往往是女权主义运动的一部分。&lt;&#x2F;p&gt;
 &lt;p&gt;多年来，许多女权主义运动和意识形态不断发展，代表了不同的观点和目标。传统上，自 19 世纪以来，第一波自由主义女权主义通过在自由民主框架内的改革寻求政治和法律平等，与基于劳工的无产阶级妇女运动形成鲜明对比，后者随着时间的推移发展成为基于阶级斗争理论的社会主义和马克思主义女权主义。自 1960 年代以来，这两种传统也与激进女权主义形成鲜明对比，后者源于第二波女权主义的激进派别，并要求对社会进行彻底的重新排序以消除男性至上;自由主义，社会主义和激进女权主义有时被称为女权主义思想的“三大”学派。&lt;&#x2F;p&gt;
@@ -340,7 +340,7 @@
 		<title>关于丁克&#x2F;不生孩子</title>
 		<published>2022-05-11T19:23:16+08:00</published>
 		<updated>2022-05-11T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/kids/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/kids/" type="text/html"/>
 		<id>https://www.owenyoung.com/kids/</id>
 		<content type="html">&lt;p&gt;收集丁克相关的文章和帖子。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tao-lun&quot;&gt;讨论&lt;a class=&quot;zola-anchor&quot; href=&quot;#tao-lun&quot; aria-label=&quot;Anchor link for: tao-lun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -425,14 +425,14 @@
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;data&quot;&gt;Data&lt;a class=&quot;zola-anchor&quot; href=&quot;#data&quot; aria-label=&quot;Anchor link for: data&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;parents-happier.jpg&quot; alt=&quot;有孩子的父母比没孩子的父母更开心吗？&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;kids&#x2F;.&#x2F;parents-happier.jpg&quot; alt=&quot;有孩子的父母比没孩子的父母更开心吗？&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>Todos</title>
 		<published>2022-04-27T20:01:52+08:00</published>
 		<updated>2022-04-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/todos/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/todos/" type="text/html"/>
 		<id>https://www.owenyoung.com/todos/</id>
 		<content type="html">&lt;p&gt;Todo Lists.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;movies&quot;&gt;Movies&lt;a class=&quot;zola-anchor&quot; href=&quot;#movies&quot; aria-label=&quot;Anchor link for: movies&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -507,7 +507,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>12条生活法则</title>
 		<published>2022-04-26T02:19:51+08:00</published>
 		<updated>2022-04-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/12-rules-for-life/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/12-rules-for-life/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/12-rules-for-life/</id>
 		<content type="html">&lt;p&gt;从&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8wLCmDtCDAM&quot;&gt;这个视频&lt;&#x2F;a&gt;中知道的这本书，但实际上它不是我喜欢的类型。基本上是以经验为基础，而不是以科学为基础的想法。&lt;&#x2F;p&gt;
 &lt;p&gt;最好的部分是前言。但它不是由作者写的。也许我应该读一些写前言的哥们写的书。&lt;&#x2F;p&gt;
@@ -540,7 +540,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>如果地狱真的存在，而你错了怎么办？</title>
 		<published>2022-04-23T21:27:51+08:00</published>
 		<updated>2022-04-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/what-if-hell-exists-youre-wrong/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/what-if-hell-exists-youre-wrong/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/what-if-hell-exists-youre-wrong/</id>
 		<content type="html">&lt;p&gt;“那如果你选错了宗教怎么办”？&lt;&#x2F;p&gt;
 &lt;p&gt;“你指的是你的版本的地狱还是所有版本的地狱？”&lt;&#x2F;p&gt;
@@ -625,16 +625,16 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;h2 id=&quot;man-hua&quot;&gt;漫画&lt;a class=&quot;zola-anchor&quot; href=&quot;#man-hua&quot; aria-label=&quot;Anchor link for: man-hua&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;religious.webp&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;prove.webp&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;stats.png&quot; alt=&quot;2020年各国宗教情况统计&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;what-if-hell-exists-youre-wrong&#x2F;.&#x2F;religious.webp&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;what-if-hell-exists-youre-wrong&#x2F;.&#x2F;prove.webp&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;what-if-hell-exists-youre-wrong&#x2F;.&#x2F;stats.png&quot; alt=&quot;2020年各国宗教情况统计&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>伊斯兰教中的“叛教者” - 前穆斯林们</title>
 		<published>2022-04-20T21:46:04+08:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/articles/ex-muslims/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/articles/ex-muslims/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/articles/ex-muslims/</id>
 		<content type="html">&lt;p&gt;今天在维基百科上看到&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Ex-Muslims&quot;&gt;前穆斯林们&lt;&#x2F;a&gt;这个词条，挺感兴趣的，因为一直以来都听说伊斯兰教对叛教者惩罚非常严厉，我比较好奇，那究竟有没有叛教者，尤其是在西方相对自由的环境下，有没有叛教者？这些叛教者是怎么想的？他们有没有受到威胁？这个词条里有非常多的内容，让我受益良多，其中很多内容我觉得不只是针对伊斯兰教，具有一般性。我总结了其中一部分到这里。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -804,7 +804,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>为什么法国变成了西方世界里穆斯林最讨厌的国家？</title>
 		<published>2022-04-20T16:32:15+08:00</published>
 		<updated>2022-04-20T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/france-islam/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/france-islam/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/france-islam/</id>
 		<content type="html">&lt;p&gt;今天学英语，看了半岛电视台的一个视频&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=fQJUaYQN4os&quot;&gt;法国，伊斯兰教，世俗主义&lt;&#x2F;a&gt;，和 Vice 的一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=d_l0n_kc_Fc&quot;&gt;为什么法国变成了西方世界里穆斯林最讨厌的国家&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;曾经的法国是穆斯林最喜欢的国家之一，并且由于法国反对美国入侵伊拉克，这种情绪在 2003 年达到了最高峰。为什么现在的法国变成了西方世界里穆斯林最讨厌的国家呢？&lt;&#x2F;p&gt;
@@ -831,7 +831,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>关于穆斯林女性为什么要戴头巾的问题</title>
 		<published>2022-04-12T23:19:15+08:00</published>
 		<updated>2022-04-12T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/muslam-hijabs/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/muslam-hijabs/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/muslam-hijabs/</id>
 		<content type="html">&lt;p&gt;最近在看 Youtube 视频学英语，挺喜欢&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;channel&#x2F;UCLXo7UDZvByw2ixzpQCufnA&quot;&gt;Vox&lt;&#x2F;a&gt;的视频的，质量很高，又都有字幕。&lt;&#x2F;p&gt;
 &lt;p&gt;今天看了 Vox 的一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;playlist?list=PLJ8cMiYb3G5dIu76T0o8smkqjHOz1-kUo&quot;&gt;关于穆斯林的秘密的系列&lt;&#x2F;a&gt;，主要是为了消除人们对穆斯林的刻板印象。视频做的挺好的，我从中学到了很多。&lt;&#x2F;p&gt;
@@ -852,7 +852,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>追风筝的人</title>
 		<published>2022-04-10T15:00:00+00:00</published>
 		<updated>2022-04-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-kite-runner/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-kite-runner/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-kite-runner/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;我十分清楚阿富汗人的双重标准，身为男性，我占尽便宜&lt;&#x2F;p&gt;
@@ -978,7 +978,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>俄罗斯的现状</title>
 		<published>2022-04-10T00:00:00+00:00</published>
 		<updated>2022-04-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;在俄罗斯，反对派不会站在反对派的立场上。公民不会为公民权利挺身而出。俄罗斯人民遭受着受害者情结的折磨：他们认为没有什么可以依靠他们，他们无法改变任何事情。&lt;&#x2F;p&gt;
@@ -1045,7 +1045,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>你所感受到的并不只是一种氛围转变，这是永久性的改变</title>
 		<published>2022-04-10T00:00:00+00:00</published>
 		<updated>2022-04-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/articles/vibe-shift-war-in-ukraine/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/articles/vibe-shift-war-in-ukraine/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/articles/vibe-shift-war-in-ukraine/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;我出生在全球稳定时间最长的时期。现在，似乎所有这些都是转瞬即逝的。&lt;&#x2F;p&gt;
@@ -1067,7 +1067,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>知道该做什么和真正去做之间的差距是巨大的</title>
 		<published>2022-04-06T00:00:00+00:00</published>
 		<updated>2022-04-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/know-vs-do/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/know-vs-do/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/know-vs-do/</id>
 		<content type="html">&lt;p&gt;有一位医生曾经被问到：“你工作中最难的部分是什么？”。医生回答：“不是压力或责任，那些都太基本了，最难的是让我的病人按照我要求的去做。“&lt;&#x2F;p&gt;
 &lt;p&gt;如果你去看过病，你就会知道，医生有的时候嘱咐我们该吃什么，以及不该吃什么。我们知道医生是对的，这代表我们会严格遵守医嘱吗？不，正常情况下，我们可能只会在前几天有所注意，过不了多久我们又会回到自己以前的生活方式。我们只期待那该死的药能帮我们快捷的解决所有问题。&lt;&#x2F;p&gt;
@@ -1102,7 +1102,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>迁移博客和Wiki到 Zola</title>
 		<published>2022-04-06T00:00:00+00:00</published>
 		<updated>2022-04-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/migrate-to-zola/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/migrate-to-zola/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/migrate-to-zola/</id>
 		<content type="html">&lt;p&gt;我在之前建立了一个个人的公开 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt;和 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt;，这让我养成了记笔记，多写东西的习惯。但是随着时间的增长，我感到维护 2 个 repo 实在有点麻烦，并且由于 Wiki 和博客都是基于&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;gatsby-cons&#x2F;&quot;&gt;Gatsby 框架&lt;&#x2F;a&gt;的，更新，维护，还有编译都挺花时间的。&lt;&#x2F;p&gt;
 &lt;p&gt;总的来说就是太复杂了，而由于我对自己的&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;about-notes&#x2F;&quot;&gt;笔记&#x2F;博客系统&lt;&#x2F;a&gt;是以一生的尺度去设计和维护的，所以我想让它保持简单。&lt;&#x2F;p&gt;
@@ -1131,7 +1131,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>不被操蛋的生活折磨的微妙艺术：过上美好生活的反直觉方法</title>
 		<published>2022-04-01T00:00:00+00:00</published>
 		<updated>2022-04-01T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-subtle-art-of-not-giving-a-fuck/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-subtle-art-of-not-giving-a-fuck/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-subtle-art-of-not-giving-a-fuck/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;对更积极体验的渴望本身就是一种消极的体验。而且，矛盾的是，接受一个人的消极经历本身就是一种积极的经历。&lt;&#x2F;p&gt;
@@ -1275,7 +1275,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>如此优秀以至于他们无法忽略你</title>
 		<published>2022-03-30T00:00:00+00:00</published>
 		<updated>2022-03-30T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/so-good-they-cannot-ignore-you/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/so-good-they-cannot-ignore-you/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/so-good-they-cannot-ignore-you/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;如果年轻的史蒂夫·乔布斯（Steve Jobs）采纳了自己的建议，决定只从事他喜欢的工作，我们今天可能会发现他是洛斯阿尔托斯禅宗中心最受欢迎的老师之一。&lt;&#x2F;p&gt;
@@ -1402,7 +1402,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>阅读指南</title>
 		<published>2022-03-29T00:00:00+00:00</published>
 		<updated>2022-03-29T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/books-guide/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/books-guide/" type="text/html"/>
 		<id>https://www.owenyoung.com/books-guide/</id>
 		<content type="html">&lt;p&gt;收集书籍推荐列表，以及资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;其他人的书籍推荐资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -1468,7 +1468,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>鄙视</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/disprezzo/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/disprezzo/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/disprezzo/</id>
 		<content type="html">&lt;p&gt;去年看到一个视频在做这本书的新书发布会，我还以为是一个本新书，直到我看完之后，我还是觉得这是一本近几年才出版的书，直到我去看了豆瓣的评价，才知道这本书竟然是 70 年前，20 世纪 50 年代的作品。一本好书的生命力就体现在这里。全书以丈夫的口吻，在一直找出妻子鄙视自己的答案，把心理描写的非常让人入戏，我曾以为，男性作家的心理描写都不怎么样，但是看了这本之后，我觉得作家就是作家。特别推荐给现在有在恋爱，或者已经结婚的人。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
@@ -1477,7 +1477,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>那不勒斯四部曲</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/naples/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/naples/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/naples/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;就是这样，他想解放别人的女人，而不是自己的女人。&lt;&#x2F;p&gt;
@@ -1517,7 +1517,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>人鼠之间</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/of-mice-and-men/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/of-mice-and-men/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/of-mice-and-men/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;“说道说道别的人怎样，咱们又是怎样。” 乔治说：“像咱们这样的人都没有个亲人。他们刚攒了点本钱，马上就挥霍光了。他们在这个世上就没有一个人在乎他们的死活——” “咱们可不是这样。”伦尼开心地叫道，“现在说说咱们是怎么样的。” 乔治沉默了一会儿。“咱们可不是这样。”他说。 “因为——” “因为我有你，而且——” “而且我有你。咱们彼此照应，就是因为这个，咱们是真正有人关心的人。”&lt;&#x2F;p&gt;
@@ -1533,7 +1533,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>设计心理学</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-design-of-everyday-things/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-design-of-everyday-things/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-design-of-everyday-things/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;数年来厂商尽力使汽车跑起来安静无声，谁能够想到有一天还需要花费数年时间和数以千万美元的成本添加声音？&lt;&#x2F;p&gt;
@@ -1555,7 +1555,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>愤怒的葡萄</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-grapes-of-wrath/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-grapes-of-wrath/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-grapes-of-wrath/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;等到没有鞋子、没有衣服、没有食物，连希望都没有的时候，我们还有枪。&lt;&#x2F;p&gt;
@@ -1698,7 +1698,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>使女的故事</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-handmaids-tale/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-handmaids-tale/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-handmaids-tale/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;别让那些杂种骑在你头上。&lt;&#x2F;p&gt;
@@ -1745,7 +1745,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>饥饿游戏三部曲</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-hunger-games-trilogy/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-hunger-games-trilogy/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-hunger-games-trilogy/</id>
 		<content type="html">&lt;p&gt;这本书电影似乎比小说更能表现故事情节，怀疑写的时候是不是就是有影视化的打算。不知道是翻译的问题还是原著的问题，其实阅读体验不是太好。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;zhai-chao&quot;&gt;摘抄&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhai-chao&quot; aria-label=&quot;Anchor link for: zhai-chao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -1767,7 +1767,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>证言</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-testaments/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-testaments/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-testaments/</id>
 		<content type="html">&lt;p&gt;原名: The Testaments, 链接： &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;35081845&#x2F;&quot;&gt;豆瓣&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -1824,7 +1824,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>2022年的一些记录</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-04-28T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/journal-2022/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/journal-2022/" type="text/html"/>
 		<id>https://www.owenyoung.com/journal-2022/</id>
 		<content type="html">&lt;p&gt;2022 年的记录汇总。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -1954,7 +1954,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>收集值得阅读的文章</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-14T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/articles/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/articles/" type="text/html"/>
 		<id>https://www.owenyoung.com/articles/</id>
 		<content type="html">&lt;p&gt;收集值得一看的文章。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;ke-ji&quot;&gt;科技&lt;a class=&quot;zola-anchor&quot; href=&quot;#ke-ji&quot; aria-label=&quot;Anchor link for: ke-ji&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -2129,7 +2129,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>在中国自动生成免费HTTPS证书的最佳方案</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/auto-https-ssl-in-china/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/auto-https-ssl-in-china/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/auto-https-ssl-in-china/</id>
 		<content type="html">&lt;p&gt;Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&quot;&gt;&lt;code&gt;amce.sh+cloudflare&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; 的 dns 解析是最方便无痛的.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -2200,7 +2200,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>被偷走的注意力</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/stolen-focus/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/stolen-focus/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/stolen-focus/</id>
 		<content type="html">&lt;p&gt;英文原名《Stolen Focus》，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stolenfocusbook.com&#x2F;&quot;&gt;地址&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;为什么注意力危机这个问题很重要？&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
@@ -2309,7 +2309,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>收集一些有意思的社区</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-05-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/communities/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/communities/" type="text/html"/>
 		<id>https://www.owenyoung.com/communities/</id>
 		<content type="html">&lt;p&gt;收集一些有意思的社区，人间观察。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;index&quot;&gt;Index&lt;a class=&quot;zola-anchor&quot; href=&quot;#index&quot; aria-label=&quot;Anchor link for: index&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -2443,7 +2443,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>开发相关的资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-resources/</id>
 		<content type="html">&lt;p&gt;收集开发相关的资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;api-token&quot;&gt;API Token&lt;a class=&quot;zola-anchor&quot; href=&quot;#api-token&quot; aria-label=&quot;Anchor link for: api-token&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -2860,13 +2860,30 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webmention.io&#x2F;&quot;&gt;Webmention.io&lt;&#x2F;a&gt; - Webmention.io is a hosted service created to easily receive webmentions on any web page.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fediring.net&#x2F;&quot;&gt;Fediring&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;system-os&quot;&gt;System OS&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-os&quot; aria-label=&quot;Anchor link for: system-os&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;guix.gnu.org&#x2F;&quot;&gt;Guix&lt;&#x2F;a&gt; - Guix comes with thousands of packages which include applications, system tools, documentation, fonts, and other digital goods readily available for installing with the GNU Guix package manager.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;myme.no&#x2F;posts&#x2F;2022-06-14-nixos-confederation.html&quot;&gt;NixOS 联盟&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bash&quot;&gt;Bash&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash&quot; aria-label=&quot;Anchor link for: bash&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;zx&quot;&gt;zx&lt;&#x2F;a&gt; - A tool for writing better scripts, using Javascript&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;redis&quot;&gt;Redis&lt;a class=&quot;zola-anchor&quot; href=&quot;#redis&quot; aria-label=&quot;Anchor link for: redis&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dragonflydb&#x2F;dragonfly&quot;&gt;dragonfly&lt;&#x2F;a&gt; - reddit 的现代替代品&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>开发技巧收藏</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-09T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-tips/</id>
 		<content type="html">&lt;p&gt;收集开发相关的技巧，比如中国需要的镜像服务等。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;jing-xiang-fu-wu&quot;&gt;镜像服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#jing-xiang-fu-wu&quot; aria-label=&quot;Anchor link for: jing-xiang-fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -2979,7 +2996,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;URL encode, &lt;code&gt;urlquery &amp;quot;https:&#x2F;&#x2F;test.com&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;kai-yuan-xu-ke-zheng&quot;&gt;开源许可证&lt;a class=&quot;zola-anchor&quot; href=&quot;#kai-yuan-xu-ke-zheng&quot; aria-label=&quot;Anchor link for: kai-yuan-xu-ke-zheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;.&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;By &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2011&#x2F;05&#x2F;how_to_choose_free_software_licenses.html&quot;&gt;如何选择开源许可证？&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -3198,7 +3215,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>Flutter相关资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/flutter/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/flutter/" type="text/html"/>
 		<id>https://www.owenyoung.com/flutter/</id>
 		<content type="html">&lt;p&gt;收集 Flutter 相关资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;cros&quot;&gt;Cros&lt;a class=&quot;zola-anchor&quot; href=&quot;#cros&quot; aria-label=&quot;Anchor link for: cros&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3326,7 +3343,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>互联网上的免费资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/free/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/free/" type="text/html"/>
 		<id>https://www.owenyoung.com/free/</id>
 		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3404,7 +3421,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>收集一些给人灵感的东西</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/inspires/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/inspires/" type="text/html"/>
 		<id>https://www.owenyoung.com/inspires/</id>
 		<content type="html">&lt;p&gt;网上冲浪多年，看到过太多有意思的东西了，一定要记下来！&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;lie-biao&quot;&gt;列表&lt;a class=&quot;zola-anchor&quot; href=&quot;#lie-biao&quot; aria-label=&quot;Anchor link for: lie-biao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3496,6 +3513,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neverinstall.com&#x2F;&quot;&gt;Never Install&lt;&#x2F;a&gt; - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shhhsound.com&#x2F;&quot;&gt;白噪音&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;worldle.teuteuf.fr&#x2F;&quot;&gt;Wordle for World Map&lt;&#x2F;a&gt; - 猜国家 wordle 游戏&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gainedin.site&#x2F;&quot;&gt;哲学笔记&lt;&#x2F;a&gt; - 哲学&#x2F;抽象常识书。它是从成千上万的文章，书籍，视频和讨论中收集的。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;react-guitar.com&#x2F;&quot;&gt;在线吉他练习&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnod.com&#x2F;&quot;&gt;全球发现网络&lt;&#x2F;a&gt; - 发现有趣的新东西&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ying-jian&quot;&gt;硬件&lt;a class=&quot;zola-anchor&quot; href=&quot;#ying-jian&quot; aria-label=&quot;Anchor link for: ying-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -3573,7 +3594,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>投资&#x2F;股票相关的资源分享</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/investing/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/investing/" type="text/html"/>
 		<id>https://www.owenyoung.com/investing/</id>
 		<content type="html">&lt;p&gt;有关投资的一切资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3596,7 +3617,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>收集 Javascript 相关的资源</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/javascript/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/javascript/" type="text/html"/>
 		<id>https://www.owenyoung.com/javascript/</id>
 		<content type="html">&lt;p&gt;收集用过的，好用的 Javascipt 库。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;wen-zhang&quot;&gt;文章&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-zhang&quot; aria-label=&quot;Anchor link for: wen-zhang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3676,7 +3697,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>工作相关的资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-11T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/jobs/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/jobs/" type="text/html"/>
 		<id>https://www.owenyoung.com/jobs/</id>
 		<content type="html">&lt;p&gt;Curating awesome jobs.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3716,7 +3737,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>音乐收藏</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/music/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/music/" type="text/html"/>
 		<id>https://www.owenyoung.com/music/</id>
 		<content type="html">&lt;p&gt;收集喜欢的音乐。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;shuo-chang&quot;&gt;说唱&lt;a class=&quot;zola-anchor&quot; href=&quot;#shuo-chang&quot; aria-label=&quot;Anchor link for: shuo-chang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -3739,7 +3760,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>Rust相关的资源</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/rust/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/rust/" type="text/html"/>
 		<id>https://www.owenyoung.com/rust/</id>
 		<content type="html">&lt;p&gt;Curating awesome rust resources.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -4000,7 +4021,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>探索互联网上高质量的内容</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-11T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/sources/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/sources/" type="text/html"/>
 		<id>https://www.owenyoung.com/sources/</id>
 		<content type="html">&lt;p&gt;我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;news-magazine&quot;&gt;News&#x2F;Magazine&lt;a class=&quot;zola-anchor&quot; href=&quot;#news-magazine&quot; aria-label=&quot;Anchor link for: news-magazine&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -4229,13 +4250,17 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blogsurf.io&#x2F;&quot;&gt;Blog Surf&lt;&#x2F;a&gt; - 博客搜索引擎&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#&quot; aria-label=&quot;Anchor link for: &quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;entertaining.space&#x2F;&quot;&gt;Entertaining space&lt;&#x2F;a&gt; - 无聊，不知道看点什么？这里有一些推荐&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>你应该知道的一些冷知识</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/you-should-know/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/you-should-know/" type="text/html"/>
 		<id>https://www.owenyoung.com/you-should-know/</id>
 		<content type="html">&lt;p&gt;收集冷知识，维基百科以及一些数据。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;leng-zhi-shi&quot;&gt;冷知识&lt;a class=&quot;zola-anchor&quot; href=&quot;#leng-zhi-shi&quot; aria-label=&quot;Anchor link for: leng-zhi-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -4310,7 +4335,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>不要再碎片化笔记了 - 关于笔记的思考</title>
 		<published>2022-03-10T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/about-notes/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/about-notes/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/about-notes/</id>
 		<content type="html">&lt;p&gt;笔记很重要，一个好的笔记系统应该以一生的尺度去设计和维护，让我们自己受益一生。&lt;&#x2F;p&gt;
 &lt;p&gt;所以：&lt;&#x2F;p&gt;
@@ -4319,7 +4344,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;所以我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;wiki&quot;&gt;以一生为尺度设计的笔记系统&lt;&#x2F;a&gt;就是一个纯文本的文件夹，里面保存了我所有能公开的笔记。至于公开笔记的原因，一方面，公开笔记能让我更有动力一直维护下去，另一方面，也许在某时可以给别人某种灵感，这会让我很满足。&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;p&gt;近年来越来越多的人开始用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;258561003&quot;&gt;卢曼卡片盒笔记法&lt;&#x2F;a&gt;来记笔记，大多数人都是倾向于建立大量的笔记，然后再把这些笔记互相链接起来，以形成一个所谓的第二大脑。我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;笔记系统&lt;&#x2F;a&gt;的也采用了这种形式。现在的链接情况大概是这个样子的：&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;note-cuts.jpg&quot; alt=&quot;note-cuts&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;about-notes&#x2F;.&#x2F;note-cuts.jpg&quot; alt=&quot;note-cuts&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;大概快记了一年吧，笔记条目现在急剧增加，我发现多卡片式的笔记系统开始出现经典的“日记问题”，类似我们以前可能会写很多日记，但是随着时间的增长，这些日记其实已经变成了一个类似&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archiveprogram.github.com&#x2F;&quot;&gt;Github 北极封存&lt;&#x2F;a&gt;的项目了。由于条目过多，所以很困难去再次检索，翻阅。&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;关于日记方面，现在其实有一个很好的记录形式，就是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bulletjournal.com&#x2F;&quot;&gt;子弹日记&lt;&#x2F;a&gt; ，清晰明了的格式，只记最重要的东西，以及索引日记。&lt;&#x2F;p&gt;
@@ -4344,7 +4369,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>像一个艺术家一样偷窃</title>
 		<published>2022-03-10T00:00:00+00:00</published>
 		<updated>2022-03-22T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/steal-like-an-artist/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/steal-like-an-artist/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/steal-like-an-artist/</id>
 		<content type="html">&lt;p&gt;这本书非常有作者自己的风格，全文读下来行云流水，读完之后你会对创作有新对认识，强烈推荐。&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -4417,7 +4442,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>手机可能是人类最有害的发明</title>
 		<published>2022-03-10T00:00:00+00:00</published>
 		<updated>2022-03-22T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/mobile-may-be-the-worst-tool/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/mobile-may-be-the-worst-tool/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/mobile-may-be-the-worst-tool/</id>
 		<content type="html">&lt;p&gt;手机可能是人类最有害的发明，实在是让你太方便被它吸取注意力了。&lt;&#x2F;p&gt;
 &lt;p&gt;而且上瘾程度已经不能说这是属于个人责任范围了。从普通人到高级知识分子，大都很难抵挡它的诱惑力。也许这和吸烟一样，需要长达几十年的时间才能让人们意识到它的危害，以至于必须作出限制。&lt;&#x2F;p&gt;
@@ -4437,7 +4462,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
 		<updated>2022-05-29T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/thoughts/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;伊朗小粉红小组： &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ProIran&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ProIran&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -4659,7 +4684,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/tools/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;da-zi&quot;&gt;打字&lt;a class=&quot;zola-anchor&quot; href=&quot;#da-zi&quot; aria-label=&quot;Anchor link for: da-zi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -4952,7 +4977,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>Gatsby框架的缺点</title>
 		<published>2022-03-08T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/gatsby-cons/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/gatsby-cons/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/gatsby-cons/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby.js&lt;&#x2F;a&gt;是一个基于 React 生成静态网站的工具链，也称为静态网站生成器(SSG), 旨在让开发人员使用基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;&quot;&gt;React&lt;&#x2F;a&gt; 的框架和基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;graphql.org&#x2F;&quot;&gt;Gaphql&lt;&#x2F;a&gt; 的数据层去构建快速、安全且功能强大的网站，从而将不同的内容、API 和服务生成一个体验良好的静态网站。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -5013,7 +5038,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>Soylent News 的文章提交指南[翻译]</title>
 		<published>2022-03-08T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/soylentnews-guides/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/soylentnews-guides/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/soylentnews-guides/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;soylentnews.org&#x2F;&quot;&gt;Soylent News&lt;&#x2F;a&gt; 是一个由志愿者维护的关于新闻和讨论的社区，重点关注网络上对每个人都很重要的文章或者书籍。允许注册或者匿名讨论。该社区的目标是成为一个关于技术，艺术，科学和政治良性讨论平台。&lt;&#x2F;p&gt;
 &lt;p&gt;通常我看到一个感兴趣的社区的时候，我就会去阅读一下它的社区规范，一般来说，氛围良好的社区都会有一个非常出色的社区指南，我之前也翻译过一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;zh&#x2F;posts&#x2F;share-a-forum-rule&#x2F;&quot;&gt;somethingawful.com 的论坛协议&lt;&#x2F;a&gt; , 今天又看到&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.soylentnews.org&#x2F;wiki&#x2F;Submission_guidelines&quot;&gt;Soylent News 的社区提交规范&lt;&#x2F;a&gt;, 很喜欢他们的社区规范，所以想简单翻译一下。&lt;&#x2F;p&gt;
@@ -5052,7 +5077,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>老得太早，聪明的太晚：你现在需要知道的三十件真实的事情</title>
 		<published>2022-02-24T00:00:00+00:00</published>
 		<updated>2022-03-24T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/too-old-to-understand/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/too-old-to-understand/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/too-old-to-understand/</id>
 		<content type="html">&lt;p&gt;有点社达和刻薄…基本上就是劝说我们不要太抱怨，我们已经失去了抱怨对诉讼时效，世界上伤心对人太多了，所以我们要勇敢点，乐观点。&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -5125,7 +5150,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>记者的对抗性提问 - 翻译一段美联社记者提问美国国务院发言人的片段</title>
 		<published>2022-02-22T00:00:00+00:00</published>
 		<updated>2022-02-22T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/ap-question/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/ap-question/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/ap-question/</id>
 		<content type="html">&lt;p&gt;为什么拥有一个强大的对抗性媒体来调查政府的说法并验证它们是否得到证据支持是如此重要？&lt;&#x2F;p&gt;
 &lt;p&gt;在这篇文章&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.currentaffairs.org&#x2F;2022&#x2F;02&#x2F;the-urgent-need-for-adversarial-journalism&#x2F;&quot;&gt;《我们迫切需要对抗性的新闻报道》&lt;&#x2F;a&gt;中，作者认为不仅是俄罗斯政府，美国政府也有撒谎的前科和动机。所以媒体不应只是简单的转述政府的说法，而应该更加审慎的验证政府的说法。也就是我们需要更多的对抗性媒体。比如针对最近美国政府指控俄罗斯将要入侵乌克兰，&lt;&#x2F;p&gt;
@@ -5241,7 +5266,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>我从 Hacker News 中学到了什么？</title>
 		<published>2022-02-20T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/hackernews/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/hackernews/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/hackernews/</id>
 		<content type="html">&lt;p&gt;昨天看到 Hacker News 的创始人 Paul Graham 在 2009 年写的一篇文章&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.paulgraham.com&#x2F;hackernews.html&quot;&gt;《我从 Hacker News 中学到了什么》&lt;&#x2F;a&gt;, 作者提到：&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -5292,7 +5317,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>华氏 451</title>
 		<published>2022-01-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/fahrenheit-451/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/fahrenheit-451/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/fahrenheit-451/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;除非能得到第三样必需品,才能成功的反抗。第一样：信息的质。第二样：消化信息的闲暇。第三样：依照前两样的互动所获得的知识来行为的权利。&lt;&#x2F;p&gt;
@@ -5335,7 +5360,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>笑话收集</title>
 		<published>2022-01-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/jokes/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/jokes/" type="text/html"/>
 		<id>https://www.owenyoung.com/jokes/</id>
 		<content type="html">&lt;p&gt;收集笑话, 有的时候和外国人交流的时候，经常需要讲一些笑话，但是脑子里很少能立刻想到几个，在这记录一些。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;wang-zhan&quot;&gt;网站&lt;a class=&quot;zola-anchor&quot; href=&quot;#wang-zhan&quot; aria-label=&quot;Anchor link for: wang-zhan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -5376,7 +5401,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>印尼 ETC</title>
 		<published>2022-01-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/indonesia-etc/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/indonesia-etc/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/indonesia-etc/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;34872741&#x2F;&quot;&gt;印尼 Etc. (豆瓣) (douban.com)&lt;&#x2F;a&gt; , 作者用一种温暖人心的方式向我们缓缓的讲述了在印尼的故事，看完之后你会对印尼有更多的认识。值得一看。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;zhai-chao&quot;&gt;摘抄&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhai-chao&quot; aria-label=&quot;Anchor link for: zhai-chao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -5392,7 +5417,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>盲刺客</title>
 		<published>2022-01-07T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-blind-assassin/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-blind-assassin/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-blind-assassin/</id>
 		<content type="html">&lt;p&gt;2000 年的布克奖获奖作品，我是第一次看到这种结构的作品，学到了另一种写作手法。但是作品的故事有点离我太远，所以不是很能共情。但是还是喜欢作者的文笔。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
@@ -5401,7 +5426,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>了不起的盖茨比</title>
 		<published>2022-01-07T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books/the-greatest-gatsby/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books/the-greatest-gatsby/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books/the-greatest-gatsby/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;“每逢你想要批评任何人的时候，”他对我说，“你就记住，这个世界上所有的人，并不是个个都有过你拥有的那些优越条件。”&lt;&#x2F;p&gt;
@@ -5443,7 +5468,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>2021年读书笔记</title>
 		<published>2021-12-31T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/books-2021/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/books-2021/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/books-2021/</id>
 		<content type="html">&lt;p&gt;2021 年的读书笔记，没有做更详细的整理，所以就一并列的这里了。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;content&#x2F;books&#x2F;_index.md&quot;&gt;点击查看最新读书笔记&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -5533,7 +5558,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>自由职业者如何度过每一天？</title>
 		<published>2021-12-31T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/how-to-spend-everyday/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/how-to-spend-everyday/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/how-to-spend-everyday/</id>
 		<content type="html">&lt;p&gt;自由职业的好处是时间变多，不用通勤，减少了很多不必要的社交，随心所欲的做自己的事情，但是确实要提升自我管理能力，不得不说，我走了很多弯路。其中最现实的问题就是：&lt;strong&gt;如何为碎片化的时间&#x2F;吃饭时间&#x2F;不想工作的时间找到源源不断的事做&lt;&#x2F;strong&gt;，我把这类时间统称为放松时间。&lt;&#x2F;p&gt;
 &lt;p&gt;放松时间做的事情对一个人的幸福感至关重要，你在放松时间里做的事情越有意义，自由职业的幸福感就越高。&lt;&#x2F;p&gt;
@@ -5571,7 +5596,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>出国，这几句话必须学会用当地语言怎么说</title>
 		<published>2021-12-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/you-should-know-these-words-aboard/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/you-should-know-these-words-aboard/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/you-should-know-these-words-aboard/</id>
 		<content type="html">&lt;ol&gt;
 &lt;li&gt;你好&lt;&#x2F;li&gt;
@@ -5734,7 +5759,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>你应该立即停止做的事</title>
 		<published>2021-10-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/stop/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/stop/" type="text/html"/>
 		<id>https://www.owenyoung.com/stop/</id>
 		<content type="html">&lt;p&gt;有点标题党，但是确实是我的肺腑之言啊。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;1-ting-zhi-shi-yong-notion-deng-fei-ming-wen-cun-chu-yun-ying-shang-suo-ding-de-bi-ji-ruan-jian&quot;&gt;1. 停止使用 Notion 等非明文存储，运营商锁定的笔记软件&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-ting-zhi-shi-yong-notion-deng-fei-ming-wen-cun-chu-yun-ying-shang-suo-ding-de-bi-ji-ruan-jian&quot; aria-label=&quot;Anchor link for: 1-ting-zhi-shi-yong-notion-deng-fei-ming-wen-cun-chu-yun-ying-shang-suo-ding-de-bi-ji-ruan-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -5754,7 +5779,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>一个风险偏好的实验</title>
 		<published>2021-10-16T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/risk-perfer/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/risk-perfer/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/risk-perfer/</id>
 		<content type="html">&lt;p&gt;今天看《快思慢想》的时候，看到一个很有意思的实验：&lt;&#x2F;p&gt;
 &lt;p&gt;想像美国正为一场亚洲爆发的疾病做准备，这个病预期会使 600 人死亡。有两个方式可以来对抗这个疾病，假设科学对这两种治疗方式的预测如下：&lt;&#x2F;p&gt;
@@ -5787,7 +5812,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>分享somethingawful.com的论坛协议</title>
 		<published>2021-10-12T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/share-a-forum-rule/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/share-a-forum-rule/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/share-a-forum-rule/</id>
 		<content type="html">&lt;p&gt;今天逛 hacker news，意外看到一个很有意思的论坛，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;&quot;&gt;Something Awful&lt;&#x2F;a&gt;,注册会员收费 10 美元，为了要过滤用户。好奇看了下他的论坛协议，觉得写的很有意思。尤其是这句：&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -5848,7 +5873,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>如何写作？</title>
 		<published>2021-09-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/how-to-writing/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/how-to-writing/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/how-to-writing/</id>
 		<content type="html">&lt;p&gt;来自&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sive.rs&#x2F;book&#x2F;OnWritingWell&quot;&gt;写出更好的东西读书笔记&lt;&#x2F;a&gt;：&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -5870,7 +5895,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>各种清单，列表，目录收集 - Notes List</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
 		<id>https://www.owenyoung.com/awesome-list/</id>
 		<content type="html">&lt;p&gt;收集各种清单，列表，目录。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;applications&quot;&gt;Applications&lt;a class=&quot;zola-anchor&quot; href=&quot;#applications&quot; aria-label=&quot;Anchor link for: applications&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -5956,7 +5981,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>Jackett 安装指南</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/jackett-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/jackett-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/jackett-setup/</id>
 		<content type="html">&lt;p&gt;Jackett 是一款开源的种子聚合搜索服务，常用来和 BT 下载器配合使用。&lt;&#x2F;p&gt;
 &lt;p&gt;Read more at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett#install-as-service&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -5985,7 +6010,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<title>Jellyfin安装指南</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/jellyfin-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/jellyfin-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/jellyfin-setup/</id>
 		<content type="html">&lt;p&gt;Jellyfin 是一款开源的，拥有前后端服务的视频播放器和服务端程序。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -6013,7 +6038,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 		<title>Debian初始化Rust环境</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/rust-environment-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;在 Debian 上初始化 Rust 环境笔记。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -6046,7 +6071,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 		<title>值得收藏的截图</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/image-quotes/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/image-quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/image-quotes/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;一个穷人什么时候有时间发疯啊&lt;&#x2F;p&gt;
@@ -6054,13 +6079,13 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 &lt;p&gt;收集影视剧的截图。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;img src=&quot;.&#x2F;the-morning-show-screenshot-1.jpg&quot; alt=&quot;他们不知道该怎么做，需要你来告诉他们&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;.&#x2F;the-morning-show-screenshot-1.jpg&quot; alt=&quot;他们不知道该怎么做，需要你来告诉他们&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;– 《早间新闻》S01E09&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;ol start=&quot;2&quot;&gt;
-&lt;li&gt;&lt;img src=&quot;.&#x2F;Man.Of.La.Mancha.1972-quote1.jpg&quot; alt=&quot;一个穷人什么时候有时间发疯啊&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;.&#x2F;Man.Of.La.Mancha.1972-quote1.jpg&quot; alt=&quot;一个穷人什么时候有时间发疯啊&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;– 《梦幻骑士》1972&lt;&#x2F;p&gt;
@@ -6072,7 +6097,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 &lt;&#x2F;blockquote&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;life-truth.jpg&quot; alt=&quot;&quot; &#x2F;&gt; &lt;img src=&quot;.&#x2F;life-truth-2.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;.&#x2F;life-truth.jpg&quot; alt=&quot;&quot; &#x2F;&gt; &lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;.&#x2F;life-truth-2.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;blockquote&gt;
@@ -6080,10 +6105,10 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 &lt;&#x2F;blockquote&gt;
 &lt;ol start=&quot;4&quot;&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;parents-happier.jpg&quot; alt=&quot;有孩子的父母比没孩子的父母更开心吗？&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;.&#x2F;parents-happier.jpg&quot; alt=&quot;有孩子的父母比没孩子的父母更开心吗？&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;boat.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;.&#x2F;boat.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 </content>
@@ -6092,7 +6117,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 		<title>2021年的一些记录</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2021-12-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/journal-2021/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/journal-2021/" type="text/html"/>
 		<id>https://www.owenyoung.com/journal-2021/</id>
 		<content type="html">&lt;p&gt;2021 日记汇总。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -6134,7 +6159,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 		<title>电影笔记</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/movies/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/movies/" type="text/html"/>
 		<id>https://www.owenyoung.com/movies/</id>
 		<content type="html">&lt;p&gt;记录自己看过的电影，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021 开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -6150,8 +6175,8 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;workflows&quot;&gt;workflows&lt;a class=&quot;zola-anchor&quot; href=&quot;#workflows&quot; aria-label=&quot;Anchor link for: workflows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;目前主要是用 &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jackett-setup&#x2F;&quot;&gt;Jackett Setup&lt;&#x2F;a&gt;载电影，买了一台 1T 的 VPS 作为 NAS。本来想用&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jellyfin-setup&#x2F;&quot;&gt;Jellyfin 安装&lt;&#x2F;a&gt;为影视中心的，但是使用后感觉客户端并不是 native 的，略卡，可能暂时还不胜用，所以索性直接上&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;&quot;&gt;Caddy File Server Browser with URL Scheme&lt;&#x2F;a&gt;, 然后 mac 用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iina.io&#x2F;&quot;&gt;IINA&lt;&#x2F;a&gt;，或者&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;video.xunlei.com&#x2F;&quot;&gt;迅雷看看&lt;&#x2F;a&gt;（大多数剧的字幕匹配做的好一点），手机端用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nplayer.com&#x2F;&quot;&gt;nplayer&lt;&#x2F;a&gt;或&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.videolan.org&#x2F;&quot;&gt;VLC&lt;&#x2F;a&gt; 打开流文件。目前这样的体验是最爽的。&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;caddy-root.png&quot; alt=&quot;Root Screenshot&quot; &#x2F;&gt;
-&lt;img src=&quot;.&#x2F;movie-demo.png&quot; alt=&quot;Movie Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;.&#x2F;caddy-root.png&quot; alt=&quot;Root Screenshot&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;.&#x2F;movie-demo.png&quot; alt=&quot;Movie Demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;ren-sheng-bi-kan-xi-lie&quot;&gt;人生必看系列&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-sheng-bi-kan-xi-lie&quot; aria-label=&quot;Anchor link for: ren-sheng-bi-kan-xi-lie&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;这里放我自己觉得必看的一些电影：&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -6182,7 +6207,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 		<title>Projects</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/projects/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/projects/" type="text/html"/>
 		<id>https://www.owenyoung.com/projects/</id>
 		<content type="html">&lt;p&gt;This is a list of projects I’ve done and am doing.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -6218,7 +6243,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 		<title>收集发人深省的话</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-06-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/quotes/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/quotes/</id>
 		<content type="html">&lt;p&gt;收集看到的一些有意思的话。值得高亮再次回味的话。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;qi-ta-ren-de-quotes&quot;&gt;其他人的 Quotes&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-quotes&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-quotes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -6799,7 +6824,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>讽刺言论收集</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/satire-quotes/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/satire-quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/satire-quotes/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;我大概数了数，能进入乌克兰站地的中国记者，比能进入徐州的中国记者还多。 – 微博网友 @鲁镇旧闻&lt;&#x2F;p&gt;
@@ -6821,7 +6846,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>电视剧笔记</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-06-04T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/tv-shows/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/tv-shows/" type="text/html"/>
 		<id>https://www.owenyoung.com/tv-shows/</id>
 		<content type="html">&lt;p&gt;记录自己看过的剧，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021 开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。有一些剧是看的解说，但是有点后悔，当时是为了节省时间，早知道那么精彩就应该看原剧。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -6832,8 +6857,8 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;workflows&quot;&gt;workflows&lt;a class=&quot;zola-anchor&quot; href=&quot;#workflows&quot; aria-label=&quot;Anchor link for: workflows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;目前主要是用 &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jackett-setup&#x2F;&quot;&gt;Jackett Setup&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;sonarr-setup&#x2F;&quot;&gt;Sonarr Setup&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;&quot;&gt;Bazarr Setup&lt;&#x2F;a&gt; 在下载和管理剧以及字幕，买了一台 1T 的 VPS 作为 NAS。本来想用&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jellyfin-setup&#x2F;&quot;&gt;Jellyfin 安装&lt;&#x2F;a&gt;为影视中心的，但是使用后感觉客户端并不是 native 的，略卡，可能暂时还不胜用，所以索性直接上&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;&quot;&gt;Caddy File Server Browser with URL Scheme&lt;&#x2F;a&gt;, 然后 mac 用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iina.io&#x2F;&quot;&gt;IINA&lt;&#x2F;a&gt;，或者&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;video.xunlei.com&#x2F;&quot;&gt;迅雷看看&lt;&#x2F;a&gt;（大多数剧的字幕匹配做的好一点），手机端用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nplayer.com&#x2F;&quot;&gt;nplayer&lt;&#x2F;a&gt;或&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.videolan.org&#x2F;&quot;&gt;VLC&lt;&#x2F;a&gt; 打开流文件。目前这样的体验是最爽的。&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;caddy-root.png&quot; alt=&quot;Root Screenshot&quot; &#x2F;&gt;
-&lt;img src=&quot;.&#x2F;caddy-tv-demo.png&quot; alt=&quot;Rick and Morty Season 5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;.&#x2F;caddy-root.png&quot; alt=&quot;Root Screenshot&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;.&#x2F;caddy-tv-demo.png&quot; alt=&quot;Rick and Morty Season 5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;ren-sheng-bi-kan-xi-lie&quot;&gt;人生必看系列&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-sheng-bi-kan-xi-lie&quot; aria-label=&quot;Anchor link for: ren-sheng-bi-kan-xi-lie&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;这里放我自己觉得必看的一些剧：&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -6892,7 +6917,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>有意思的问题收集</title>
 		<published>2021-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/answers/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/answers/" type="text/html"/>
 		<id>https://www.owenyoung.com/answers/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=23092657&quot;&gt;Ask HN: 说出一个改变你生活的想法&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -6971,7 +6996,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>英语学习相关资源</title>
 		<published>2021-03-25T00:00:00+00:00</published>
 		<updated>2022-04-15T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/english-learning/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/english-learning/" type="text/html"/>
 		<id>https://www.owenyoung.com/english-learning/</id>
 		<content type="html">&lt;p&gt;收集英语学习相关的工具，资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -7439,14 +7464,14 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>生活技巧</title>
 		<published>2021-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/tips/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/tips/" type="text/html"/>
 		<id>https://www.owenyoung.com/tips/</id>
 		<content type="html">&lt;p&gt;收集一些关于生活中的 Tips&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;mai-fang-xiang-guan&quot;&gt;买房相关&lt;a class=&quot;zola-anchor&quot; href=&quot;#mai-fang-xiang-guan&quot; aria-label=&quot;Anchor link for: mai-fang-xiang-guan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shengcaishizhan&#x2F;kkndme_tianya&quot;&gt;天涯 kkndme 神贴聊房价&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;eeve&#x2F;cs-house&quot;&gt;长沙买房攻略&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;img src=&quot;.&#x2F;cn-house-steps.jpeg&quot; alt=&quot;思维导图&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;.&#x2F;cn-house-steps.jpeg&quot; alt=&quot;思维导图&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;zi-yong-wu-pin-fen-xiang&quot;&gt;自用物品分享&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-yong-wu-pin-fen-xiang&quot; aria-label=&quot;Anchor link for: zi-yong-wu-pin-fen-xiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;收集自己用过的一些好东西。&lt;&#x2F;p&gt;
@@ -7499,7 +7524,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>2021年美股值得关注的信息源包括推特，网站，Reddit小组</title>
 		<published>2021-02-11T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/us-stocks-you-should-follow/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/us-stocks-you-should-follow/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/us-stocks-you-should-follow/</id>
 		<content type="html">&lt;p&gt;自从&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;wallstreetbets&quot;&gt;华尔街赌徒小组&lt;&#x2F;a&gt; 从一个小众的小组在 $GME 的风潮下迅速涨粉到 89 万人，成为 Reddit 上金融相关小组中名副其实的第一名。身边很多人在看到一个 Reddit 小组对美国股市的影响力如此之大之后，都迫不及待的想找到一些美股的消息源。虽然我炒股不咋地，但是我搜索信息的能力还是家中一绝啊，万一能帮到下一个百万富翁呢！分享下我平时关注的一些关于投资的一些信息源，包括 Reddit，Twitter，网站还有 Youtube.&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -7535,7 +7560,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>我目前的投资（基金，炒股，存款）情况和投资方向</title>
 		<published>2021-02-06T00:00:00+00:00</published>
 		<updated>2021-02-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/investing-information-guide/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/investing-information-guide/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/investing-information-guide/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;免责声明： 本文只是总结个人的投资方向，并不构成任何投资指南，我们每个人都应该根据自己收集的相关信息来指导自己的投资。&lt;&#x2F;p&gt;
@@ -7614,7 +7639,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>重新开始投资</title>
 		<published>2021-02-04T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/start-investing-again/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/start-investing-again/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/start-investing-again/</id>
 		<content type="html">&lt;p&gt;说起来我投资的时间还蛮久的，从大学的时候就开了股票账户，一直到现在有 8 年以上的投资经验了，但其实还是像一个菜鸟一样，没赚过什么钱，当然，万幸的是至少没亏钱。&lt;&#x2F;p&gt;
 &lt;p&gt;今天有一笔股市打新的意外收入，填平了一直萦绕在我心里的 3 年前的一笔股票巨额亏损，这让我终于没了心魔，这才敢在 Google Sheet 里创建了一个表格，总结了下近几年的投资收益和各个账户的资金状态（还有一个原因是，我一直想总结下自己在各个银行开立的账户，万一我发生什么意外，让亲友能知道我的账户情况）&lt;&#x2F;p&gt;
@@ -7649,7 +7674,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>使用Actionsflow在Github上免费部署Rsshub</title>
 		<published>2021-02-03T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/deploy-rsshub-with-actionsflow/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/deploy-rsshub-with-actionsflow/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/deploy-rsshub-with-actionsflow/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DIYgod&#x2F;RSSHub&quot;&gt;Rsshub&lt;&#x2F;a&gt;是一个很棒的工具，把很多知名或不知名的网页数据通通统一为&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;RSS&quot;&gt;RSS 格式&lt;&#x2F;a&gt;，堪称中文互联网的 W3C. 但是官方推荐的部署方式是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.rsshub.app&#x2F;install&#x2F;#docker-compose-bu-shu&quot;&gt;Docker 部署&lt;&#x2F;a&gt;，对于大多数轻量使用的用户来说有点重，所以这里介绍一种免费，轻量，按需使用的部署方式，利用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt;部署在 GitHub 的 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.github.com&#x2F;en&#x2F;actions&quot;&gt;Actions&lt;&#x2F;a&gt; 上。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt;是一个基于 Github Actions 上的 IFTTT&#x2F;Zapier 的开源替代，使用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;workflow&#x2F;&quot;&gt;Github Actions 的配置格式&lt;&#x2F;a&gt;来配置你需要的工作流, 更多关于 Actionsflow 的使用可以看我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;zh&#x2F;posts&#x2F;actionsflow&#x2F;&quot;&gt;另一篇文章介绍&lt;&#x2F;a&gt;,或者&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;actionsflow.github.io&#x2F;docs&#x2F;&quot;&gt;官方文档&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -7754,7 +7779,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>如何培养长期的英文阅读兴趣？</title>
 		<published>2021-02-03T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/how-do-i-cultivate-long-term-interest-in-english-reading/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/how-do-i-cultivate-long-term-interest-in-english-reading/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/how-do-i-cultivate-long-term-interest-in-english-reading/</id>
 		<content type="html">&lt;p&gt;在我自己博客里的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;about&#x2F;&quot;&gt;&#x2F;about&lt;&#x2F;a&gt;页里对自己的第一个介绍就是:&lt;strong&gt;A failure of English learning&lt;&#x2F;strong&gt;, 一个学了 10 年英语的菜鸟，我自己认为根本原因是我的意志力，物理原因主要是对英文的练习不够，所以我现在的主要思路还是要提高英语的练习量，重点是坚持。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -7769,7 +7794,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>Actionsflow介绍 - 可以一键部署在Github上的IFTTT&#x2F;Zapier的开源替代</title>
 		<published>2021-02-02T00:00:00+00:00</published>
 		<updated>2021-02-02T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/actionsflow/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/actionsflow/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/actionsflow/</id>
 		<content type="html">&lt;p&gt;我还记得当年第一次使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ifttt.com&quot;&gt;IFTTT&lt;&#x2F;a&gt;的时候的那种兴奋，天呐，这才是互联网！从那时起，就一直使用 IFTTT 到今天，真的很棒的一个产品！直到 IFTTT 最近宣布要收费，我就在想有没有合适的开源方案可以替代，因为托管方案肯定没戏了，连 10 年都免费的 IFTTT 都开始收费了，其他的只会更贵，结果发现主流的开源替代方案，比如 huginn, n8n, node-red 好像又有点重，不够轻量，而且扩展起来也不容易。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -7840,7 +7865,7 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 		<title>Anki背单词必备的3个插件</title>
 		<published>2020-11-10T00:00:00+00:00</published>
 		<updated>2020-11-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/anki-get-started/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/anki-get-started/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/anki-get-started/</id>
 		<content type="html">&lt;p&gt;用了那么多背单词软件，发现还是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ankiweb.net&#x2F;&quot;&gt;Anki&lt;&#x2F;a&gt;好用，我觉得其中最好用是 Anki 提供的强大的 Tag 功能，你可以给每个单词打上一个 Tag ，这样方便你日后归类来复习这些单词，比如你可以有一个「hard」的 Tag。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;

@@ -11,7 +11,7 @@
 		<title>Gatsby框架的缺点</title>
 		<published>2022-03-08T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/gatsby-cons/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/gatsby-cons/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/gatsby-cons/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby.js&lt;&#x2F;a&gt;是一个基于 React 生成静态网站的工具链，也称为静态网站生成器(SSG), 旨在让开发人员使用基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;&quot;&gt;React&lt;&#x2F;a&gt; 的框架和基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;graphql.org&#x2F;&quot;&gt;Gaphql&lt;&#x2F;a&gt; 的数据层去构建快速、安全且功能强大的网站，从而将不同的内容、API 和服务生成一个体验良好的静态网站。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;

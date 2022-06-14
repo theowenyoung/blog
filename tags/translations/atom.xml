@@ -11,7 +11,7 @@
 		<title>Soylent News 的文章提交指南[翻译]</title>
 		<published>2022-03-08T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/soylentnews-guides/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/soylentnews-guides/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/soylentnews-guides/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;soylentnews.org&#x2F;&quot;&gt;Soylent News&lt;&#x2F;a&gt; 是一个由志愿者维护的关于新闻和讨论的社区，重点关注网络上对每个人都很重要的文章或者书籍。允许注册或者匿名讨论。该社区的目标是成为一个关于技术，艺术，科学和政治良性讨论平台。&lt;&#x2F;p&gt;
 &lt;p&gt;通常我看到一个感兴趣的社区的时候，我就会去阅读一下它的社区规范，一般来说，氛围良好的社区都会有一个非常出色的社区指南，我之前也翻译过一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;zh&#x2F;posts&#x2F;share-a-forum-rule&#x2F;&quot;&gt;somethingawful.com 的论坛协议&lt;&#x2F;a&gt; , 今天又看到&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.soylentnews.org&#x2F;wiki&#x2F;Submission_guidelines&quot;&gt;Soylent News 的社区提交规范&lt;&#x2F;a&gt;, 很喜欢他们的社区规范，所以想简单翻译一下。&lt;&#x2F;p&gt;
@@ -50,7 +50,7 @@
 		<title>记者的对抗性提问 - 翻译一段美联社记者提问美国国务院发言人的片段</title>
 		<published>2022-02-22T00:00:00+00:00</published>
 		<updated>2022-02-22T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/ap-question/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/ap-question/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/ap-question/</id>
 		<content type="html">&lt;p&gt;为什么拥有一个强大的对抗性媒体来调查政府的说法并验证它们是否得到证据支持是如此重要？&lt;&#x2F;p&gt;
 &lt;p&gt;在这篇文章&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.currentaffairs.org&#x2F;2022&#x2F;02&#x2F;the-urgent-need-for-adversarial-journalism&#x2F;&quot;&gt;《我们迫切需要对抗性的新闻报道》&lt;&#x2F;a&gt;中，作者认为不仅是俄罗斯政府，美国政府也有撒谎的前科和动机。所以媒体不应只是简单的转述政府的说法，而应该更加审慎的验证政府的说法。也就是我们需要更多的对抗性媒体。比如针对最近美国政府指控俄罗斯将要入侵乌克兰，&lt;&#x2F;p&gt;
@@ -166,7 +166,7 @@
 		<title>分享somethingawful.com的论坛协议</title>
 		<published>2021-10-12T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/share-a-forum-rule/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/share-a-forum-rule/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/share-a-forum-rule/</id>
 		<content type="html">&lt;p&gt;今天逛 hacker news，意外看到一个很有意思的论坛，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;&quot;&gt;Something Awful&lt;&#x2F;a&gt;,注册会员收费 10 美元，为了要过滤用户。好奇看了下他的论坛协议，觉得写的很有意思。尤其是这句：&lt;&#x2F;p&gt;
 &lt;blockquote&gt;

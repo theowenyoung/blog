@@ -11,7 +11,7 @@
 		<title>如何写作？</title>
 		<published>2021-09-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/how-to-writing/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/how-to-writing/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/how-to-writing/</id>
 		<content type="html">&lt;p&gt;来自&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sive.rs&#x2F;book&#x2F;OnWritingWell&quot;&gt;写出更好的东西读书笔记&lt;&#x2F;a&gt;：&lt;&#x2F;p&gt;
 &lt;ul&gt;

@@ -11,7 +11,7 @@
 		<title>Rust相关的资源</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/rust/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/rust/" type="text/html"/>
 		<id>https://www.owenyoung.com/rust/</id>
 		<content type="html">&lt;p&gt;Curating awesome rust resources.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -272,7 +272,7 @@
 		<title>Debian初始化Rust环境</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/rust-environment-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;在 Debian 上初始化 Rust 环境笔记。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;learn&#x2F;get-started&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;

@@ -11,7 +11,7 @@
 		<title>阅读指南</title>
 		<published>2022-03-29T00:00:00+00:00</published>
 		<updated>2022-03-29T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/books-guide/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/books-guide/" type="text/html"/>
 		<id>https://www.owenyoung.com/books-guide/</id>
 		<content type="html">&lt;p&gt;收集书籍推荐列表，以及资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;其他人的书籍推荐资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;

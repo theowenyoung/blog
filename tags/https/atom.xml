@@ -11,7 +11,7 @@
 		<title>在中国自动生成免费HTTPS证书的最佳方案</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/auto-https-ssl-in-china/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/auto-https-ssl-in-china/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/auto-https-ssl-in-china/</id>
 		<content type="html">&lt;p&gt;Certbot 自动生成 Lets encrypt 的方案已经被墙了，经过各种尝试之后，发现基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;acmesh-official&#x2F;acme.sh&quot;&gt;&lt;code&gt;amce.sh+cloudflare&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; 的 dns 解析是最方便无痛的.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Alternatives</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/en/tags/alternatives/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-25T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/en/tags/alternatives/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Awesome Alternatives</title>
+		<published>2022-02-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/alternatives/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/alternatives/</id>
+		<content type="html">&lt;p&gt;Curating awesome alternative resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mendel5&#x2F;alternative-front-ends&quot;&gt;alternative-front-ends&lt;&#x2F;a&gt; - #Front-End&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;redecentralize&#x2F;alternative-internet&quot;&gt;Alternative Internet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ethical.net&#x2F;resources&#x2F;&quot;&gt;Ethical Alternatives &amp;amp; Resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.btw.so&#x2F;open-source-alternatives&quot;&gt;Open source Alternatives&lt;&#x2F;a&gt; - Curated 200+ open source alternatives to tools that businesses require in day-to-day operations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;awesome-alternatives-in-rust&quot;&gt;awesome-alternatives-in-rust&lt;&#x2F;a&gt; - A curated list of replacements for existing software written in Rust #Rust&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;twitter&quot;&gt;Twitter&lt;a class=&quot;zola-anchor&quot; href=&quot;#twitter&quot; aria-label=&quot;Anchor link for: twitter&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter&quot;&gt;Nitter&lt;&#x2F;a&gt; - Twitter front end alternative.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Official instance: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nitter.net&#x2F;&quot;&gt;https:&#x2F;&#x2F;nitter.net&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kizie.co&#x2F;&quot;&gt;kizie&lt;&#x2F;a&gt; - twitter redesign&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;youtube&quot;&gt;Youtube&lt;a class=&quot;zola-anchor&quot; href=&quot;#youtube&quot; aria-label=&quot;Anchor link for: youtube&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iv-org&#x2F;invidious&quot;&gt;Invidious&lt;&#x2F;a&gt; - Invidious is an alternative front-end to YouTube&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instances: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;instances.invidious.io&#x2F;&quot;&gt;https:&#x2F;&#x2F;instances.invidious.io&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;google&quot;&gt;Google&lt;a class=&quot;zola-anchor&quot; href=&quot;#google&quot; aria-label=&quot;Anchor link for: google&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;skerkour&#x2F;bloom&quot;&gt;Bloom&lt;&#x2F;a&gt; - The simplest way to de-Google your life and business: Inbox, Calendar, Files, Contacts &amp;amp; much more&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;discord&quot;&gt;Discord&lt;a class=&quot;zola-anchor&quot; href=&quot;#discord&quot; aria-label=&quot;Anchor link for: discord&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;revoltchat&#x2F;revolt&quot;&gt;revolt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;firebase&quot;&gt;Firebase&lt;a class=&quot;zola-anchor&quot; href=&quot;#firebase&quot; aria-label=&quot;Anchor link for: firebase&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;etesync&#x2F;server&quot;&gt;etesync&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nhost&#x2F;nhost&quot;&gt;nhost&lt;&#x2F;a&gt; - another firebase alternative.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;appwrite&#x2F;appwrite&quot;&gt;appwrite&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;hacker-news&quot;&gt;Hacker News&lt;a class=&quot;zola-anchor&quot; href=&quot;#hacker-news&quot; aria-label=&quot;Anchor link for: hacker-news&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;hhttps:&#x2F;&#x2F;github.com&#x2F;lobsters&#x2F;lobsters&quot;&gt;hacker news open source in ruby&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mariusor&#x2F;go-littr&quot;&gt;littr&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gurlic.com&#x2F;&quot;&gt;gurlic&lt;&#x2F;a&gt; - another hacker news alternatives&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;tildes&#x2F;tildes&quot;&gt;Tildes&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;netlify&quot;&gt;Netlify&lt;a class=&quot;zola-anchor&quot; href=&quot;#netlify&quot; aria-label=&quot;Anchor link for: netlify&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getmeli&#x2F;meli&quot;&gt;Meli&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;github&quot;&gt;Github&lt;a class=&quot;zola-anchor&quot; href=&quot;#github&quot; aria-label=&quot;Anchor link for: github&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sourcehut.org&#x2F;&quot;&gt;Source Hut&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fossil-scm.org&#x2F;home&#x2F;doc&#x2F;trunk&#x2F;www&#x2F;index.wiki&quot;&gt;fossil&lt;&#x2F;a&gt; - Sqlite use this system to develop things.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pocket&quot;&gt;Pocket&lt;a class=&quot;zola-anchor&quot; href=&quot;#pocket&quot; aria-label=&quot;Anchor link for: pocket&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-shiori&#x2F;shiori&quot;&gt;shiori&lt;&#x2F;a&gt; - Pocket open-source alternative.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

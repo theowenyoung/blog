@@ -11,7 +11,7 @@
 		<title>开发技巧收藏</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-09T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/dev-tips/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-tips/</id>
 		<content type="html">&lt;p&gt;收集开发相关的技巧，比如中国需要的镜像服务等。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;jing-xiang-fu-wu&quot;&gt;镜像服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#jing-xiang-fu-wu&quot; aria-label=&quot;Anchor link for: jing-xiang-fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -124,7 +124,7 @@
 &lt;li&gt;URL encode, &lt;code&gt;urlquery &amp;quot;https:&#x2F;&#x2F;test.com&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;kai-yuan-xu-ke-zheng&quot;&gt;开源许可证&lt;a class=&quot;zola-anchor&quot; href=&quot;#kai-yuan-xu-ke-zheng&quot; aria-label=&quot;Anchor link for: kai-yuan-xu-ke-zheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;img src=&quot;.&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;.&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;By &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2011&#x2F;05&#x2F;how_to_choose_free_software_licenses.html&quot;&gt;如何选择开源许可证？&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -343,7 +343,7 @@
 		<title>你应该知道的一些冷知识</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/you-should-know/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/you-should-know/" type="text/html"/>
 		<id>https://www.owenyoung.com/you-should-know/</id>
 		<content type="html">&lt;p&gt;收集冷知识，维基百科以及一些数据。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;leng-zhi-shi&quot;&gt;冷知识&lt;a class=&quot;zola-anchor&quot; href=&quot;#leng-zhi-shi&quot; aria-label=&quot;Anchor link for: leng-zhi-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -418,14 +418,14 @@
 		<title>生活技巧</title>
 		<published>2021-03-25T00:00:00+00:00</published>
 		<updated>2022-03-25T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/tips/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/tips/" type="text/html"/>
 		<id>https://www.owenyoung.com/tips/</id>
 		<content type="html">&lt;p&gt;收集一些关于生活中的 Tips&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;mai-fang-xiang-guan&quot;&gt;买房相关&lt;a class=&quot;zola-anchor&quot; href=&quot;#mai-fang-xiang-guan&quot; aria-label=&quot;Anchor link for: mai-fang-xiang-guan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shengcaishizhan&#x2F;kkndme_tianya&quot;&gt;天涯 kkndme 神贴聊房价&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;eeve&#x2F;cs-house&quot;&gt;长沙买房攻略&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;img src=&quot;.&#x2F;cn-house-steps.jpeg&quot; alt=&quot;思维导图&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;.&#x2F;cn-house-steps.jpeg&quot; alt=&quot;思维导图&quot; &#x2F;&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;zi-yong-wu-pin-fen-xiang&quot;&gt;自用物品分享&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-yong-wu-pin-fen-xiang&quot; aria-label=&quot;Anchor link for: zi-yong-wu-pin-fen-xiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;收集自己用过的一些好东西。&lt;&#x2F;p&gt;

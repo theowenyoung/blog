@@ -11,7 +11,7 @@
 		<title>互联网上的免费资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-08T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/free/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/free/" type="text/html"/>
 		<id>https://www.owenyoung.com/free/</id>
 		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;

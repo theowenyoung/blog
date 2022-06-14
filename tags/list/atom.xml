@@ -11,7 +11,7 @@
 		<title>各种清单，列表，目录收集 - Notes List</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
 		<id>https://www.owenyoung.com/awesome-list/</id>
 		<content type="html">&lt;p&gt;收集各种清单，列表，目录。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;applications&quot;&gt;Applications&lt;a class=&quot;zola-anchor&quot; href=&quot;#applications&quot; aria-label=&quot;Anchor link for: applications&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;

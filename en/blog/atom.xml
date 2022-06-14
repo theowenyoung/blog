@@ -11,7 +11,7 @@
 		<title>Now, I&#x27;m in IndieWeb?</title>
 		<published>2022-06-12T03:40:31+08:00</published>
 		<updated>2022-06-12T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/indieweb/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/indieweb/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/indieweb/</id>
 		<content type="html">&lt;p&gt;Since I saw the concept of &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieweb.org&#x2F;IndieWeb&quot;&gt;IndieWeb&lt;&#x2F;a&gt; last year, I’ve been wanting to support it on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&quot;&gt;my Zola blog&lt;&#x2F;a&gt;. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -324,7 +324,7 @@ Likes, retweets, mentions, cross-posting&lt;&#x2F;li&gt;
 		<title>Why foreigners envy China?</title>
 		<published>2022-04-30T19:17:39+08:00</published>
 		<updated>2022-04-30T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/why-foreigners-envy-china/</id>
 		<content type="html">&lt;p&gt;It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=2DH4v6FnbvM&quot;&gt;This Bill Maher’s video &lt;&#x2F;a&gt; clearly shows us that even though the host is so smart and cares so much about freedom of speech, there is no hiding his envy for all that the Chinese government has accomplished through dictatorship.&lt;&#x2F;p&gt;
@@ -337,7 +337,7 @@ Likes, retweets, mentions, cross-posting&lt;&#x2F;li&gt;
 		<title>Wiki Links to Markdown Links for VSCode</title>
 		<published>2022-03-27T00:00:00+00:00</published>
 		<updated>2022-03-27T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/</id>
 		<content type="html">&lt;p&gt;Recently, I migrated my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;Wiki&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;. Zola does not support relative internal links, it only support &lt;code&gt;@&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format. This is a bit painful, I posted a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zola.discourse.group&#x2F;t&#x2F;custom-content-dir-or-support-absolute-internal-link&#x2F;1242&#x2F;2&quot;&gt;feature request&lt;&#x2F;a&gt; to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use &lt;code&gt;&#x2F;content&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -350,11 +350,11 @@ Likes, retweets, mentions, cross-posting&lt;&#x2F;li&gt;
 		<title>Caddy File Server Browser with URL Scheme</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/</id>
 		<content type="html">&lt;p&gt;Copy the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;theowenyoung&#x2F;e09cb6e2c59f247fdc3f4e6fe4401481&quot;&gt;Template&lt;&#x2F;a&gt; to your local caddy config folder.&lt;&#x2F;p&gt;
 &lt;p&gt;This template will display the follow page:
-&lt;img src=&quot;.&#x2F;caddy-file-template-screenshot.png&quot; alt=&quot;screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;.&#x2F;caddy-file-template-screenshot.png&quot; alt=&quot;screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;localhost &lt;&#x2F;span&gt;&lt;span&gt;{
 &lt;&#x2F;span&gt;&lt;span&gt;  root * &#x2F;root
 &lt;&#x2F;span&gt;&lt;span&gt;  encode gzip
@@ -370,7 +370,7 @@ Likes, retweets, mentions, cross-posting&lt;&#x2F;li&gt;
 		<title>Makefile Template</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-04-30T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/makefile-template/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/makefile-template/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/makefile-template/</id>
 		<content type="html">&lt;p&gt;Common Makefile Template.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;pre data-lang=&quot;Makefile&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Makefile &quot;&gt;&lt;code class=&quot;language-Makefile&quot; data-lang=&quot;Makefile&quot;&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;.PHONY&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;start reload stop
@@ -395,7 +395,7 @@ Likes, retweets, mentions, cross-posting&lt;&#x2F;li&gt;
 		<title>Mastdon Development Setup</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/mastdon-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/mastdon-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/mastdon-setup/</id>
 		<content type="html">&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinmastodon.org&#x2F;dev&#x2F;setup&#x2F;&quot;&gt;dev&#x2F;setup&lt;&#x2F;a&gt; &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinmastodon.org&#x2F;admin&#x2F;install&#x2F;&quot;&gt;admin&#x2F;install&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;ol&gt;
@@ -457,7 +457,7 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<title>Mini Reset CSS</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/mini-reset-css/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/mini-reset-css/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/mini-reset-css/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;Forked by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jgthms&#x2F;minireset.css&#x2F;blob&#x2F;master&#x2F;minireset.css&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;jgthms&#x2F;minireset.css&#x2F;blob&#x2F;master&#x2F;minireset.css&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -551,7 +551,7 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<title>Nodejs Monorepo</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/nodejs-monorepo/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/nodejs-monorepo/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/nodejs-monorepo/</id>
 		<content type="html">&lt;p&gt;Use changesets as monorepo mananger.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -699,7 +699,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Rclone Setup</title>
 		<published>2022-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/rclone-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/rclone-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/rclone-setup/</id>
 		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;rclone.org&#x2F;install.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; bash
@@ -718,7 +718,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>FileBrowser Setup</title>
 		<published>2022-02-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/file-browser-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/file-browser-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/file-browser-setup/</id>
 		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -fsSL&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;filebrowser&#x2F;get&#x2F;master&#x2F;get.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bash
@@ -747,7 +747,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Bazarr Setup</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/bazarr-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/bazarr-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/bazarr-setup/</id>
 		<content type="html">&lt;p&gt;Bazarr setup.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -807,7 +807,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Caddy2 Setup for Debian</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;caddyserver.com&#x2F;v2&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -831,7 +831,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Debian Server Setup</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/debian-server-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/debian-server-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/debian-server-setup/</id>
 		<content type="html">&lt;blockquote&gt;
 &lt;p&gt;For linux common commands, see &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;#linux-common-commands&quot;&gt;开发技巧收藏&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -918,7 +918,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>How to check if there are uncommited changes in Github Actions?</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/how-to-check-if-there-are-uncommited-changes-in-github/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/how-to-check-if-there-are-uncommited-changes-in-github/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/how-to-check-if-there-are-uncommited-changes-in-github/</id>
 		<content type="html">&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Github Actions check if there are uncommited changes
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;on&lt;&#x2F;span&gt;&lt;span&gt;:
@@ -955,7 +955,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Postgres Setup for Debian</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/postgres-setup-for-debian/</id>
 		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -c &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;echo &amp;quot;deb http:&#x2F;&#x2F;apt.postgresql.org&#x2F;pub&#x2F;repos&#x2F;apt $(lsb_release -cs)-pgdg main&amp;quot; &amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;pgdg.list&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
@@ -973,7 +973,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>qBittorrent setup for Debian</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/</id>
 		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Because there is no official ppa of qBittorrent for debian, so we use a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;userdocs&#x2F;qbittorrent-nox-static&quot;&gt;third party service - qbittorrent-nox-static&lt;&#x2F;a&gt; to compile qb.&lt;&#x2F;p&gt;
@@ -1072,7 +1072,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Shadowsocks Rust Setup for Debian</title>
 		<published>2021-03-10T00:00:00+00:00</published>
 		<updated>2022-06-01T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;Shadowsocks Repo: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shadowsocks&#x2F;shadowsocks-rust&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;shadowsocks&#x2F;shadowsocks-rust&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Setup rust first: &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;&quot;&gt;Debian 初始化 Rust 环境&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1155,7 +1155,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>A new Gatsby theme [Timeline] - Show your all posts, tweets, instagram posts into one</title>
 		<published>2021-01-29T00:00:00+00:00</published>
 		<updated>2022-03-29T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/gatsby-timeline-theme/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/gatsby-timeline-theme/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/gatsby-timeline-theme/</id>
 		<content type="html">&lt;p&gt;Don’t you think there are too many different personal profile for us? Like twitter, instagram, facebook, blog, etc, So do I, I suppose there is an elegant site to show all my creative work, that’s the new gatsby theme &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-timeline&quot;&gt;Timeline&lt;&#x2F;a&gt;, a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby&lt;&#x2F;a&gt; theme, you can use it to show your all posts, tweets, instagram posts etc into one blog. In my opinion, this is a real personal home.&lt;&#x2F;p&gt;
 &lt;p&gt;Checkout my blog: https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&lt;&#x2F;p&gt;
@@ -1188,7 +1188,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Open BBR for Debian</title>
 		<published>2021-01-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/open-bbr-for-debian/</id>
 		<content type="html">&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ol&gt;
@@ -1220,7 +1220,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Install PHP 8.0 On CentOS 7 &#x2F; RHEL 7</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/install-php8-on-centos7/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/install-php8-on-centos7/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/install-php8-on-centos7/</id>
 		<content type="html">&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;yum&lt;&#x2F;span&gt;&lt;span&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;dl.fedoraproject.org&#x2F;pub&#x2F;epel&#x2F;epel-release-latest-7.noarch.rpm
@@ -1235,7 +1235,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Metube Setup</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/metube-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/metube-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/metube-setup/</id>
 		<content type="html">&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1263,7 +1263,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Nginx Setup for Debian</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/nginx-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/nginx-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/nginx-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;Install latest stable nginx for debian&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
@@ -1314,7 +1314,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Nodejs Setup for Debian</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/nodejs-setup-for-debian/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/nodejs-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/nodejs-setup-for-debian/</id>
 		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nodesource&#x2F;distributions&#x2F;blob&#x2F;master&#x2F;README.md&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1328,7 +1328,7 @@ if you want change to the exact version every time, you can set the config to&lt
 		<title>Peertube Setup with Caddy Server</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/</id>
 		<content type="html">&lt;p&gt;Peertube is an activityPub-federated video streaming platform using P2P directly in your web browser.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
@@ -1785,7 +1785,7 @@ to your own administrator password, although it must be 6 characters or more.&lt
 		<title>Radarr Setup</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/radarr-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/radarr-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/radarr-setup/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Radarr&#x2F;Radarr&quot;&gt;repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -1815,7 +1815,7 @@ to your own administrator password, although it must be 6 characters or more.&lt
 		<title>Sonarr Setup</title>
 		<published>2020-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/en/blog/sonarr-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/sonarr-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/sonarr-setup/</id>
 		<content type="html">&lt;p&gt;Before setup sonarr, you should setup &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;

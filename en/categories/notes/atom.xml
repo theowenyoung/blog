@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - Notes</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/en/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-06-14T00:00:00+00:00</updated>
+	<id>https://www.owenyoung.com/en/categories/notes/atom.xml</id>
+	<entry xml:lang="en">
+		<title>ChangeLog</title>
+		<published>2022-06-13T23:15:27+08:00</published>
+		<updated>2022-06-13T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/changelog/</id>
+		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-06-14-activity-page&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;7a87eb29b6e3eaafdae14488a8f42de817073f3f&quot;&gt;2022.06.14&lt;&#x2F;a&gt; - Activity Page&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-14-activity-page&quot; aria-label=&quot;Anchor link for: 2022-06-14-activity-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Adding &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;activity&#x2F;&quot;&gt;Activity&lt;&#x2F;a&gt; page.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-13-indieweb&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;c20bb4c97540e91ed2f555800d36ebbe05379155&quot;&gt;2022.06.13&lt;&#x2F;a&gt; - IndieWeb&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-13-indieweb&quot; aria-label=&quot;Anchor link for: 2022-06-13-indieweb&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Support &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieauth.net&#x2F;&quot;&gt;IndieAuth&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Joining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;xn--sr8hvo.ws&#x2F;&quot;&gt;IndieWeb Webring&lt;&#x2F;a&gt;, See home page bottom right corner&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;indiewebring.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Support &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieweb.org&#x2F;Webmention&quot;&gt;Webmention&lt;&#x2F;a&gt;, see example &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;&quot;&gt;Now, I’m in IndieWeb?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;webmention-response.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-05-14-latest-updates&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;cb7e8ec8cc115a35948906c2c91679826e561c79&quot;&gt;2022.05.14&lt;&#x2F;a&gt; - Latest Updates&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-05-14-latest-updates&quot; aria-label=&quot;Anchor link for: 2022-05-14-latest-updates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add Latest Updates to home page.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;recently-updated.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-04-25-random-category&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;ebe57d4b3717c5052ea3319e8e1f04e9d7b80153&quot;&gt;2022.04.25&lt;&#x2F;a&gt; - Random Category&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-04-25-random-category&quot; aria-label=&quot;Anchor link for: 2022-04-25-random-category&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Change category &lt;code&gt;Misc&lt;&#x2F;code&gt; to &lt;code&gt;Random&lt;&#x2F;code&gt;, I prefer &lt;code&gt;Random&lt;&#x2F;code&gt; than &lt;code&gt;Misc&lt;&#x2F;code&gt;, cause I even don’t know what &lt;code&gt;Misc&lt;&#x2F;code&gt; is. It’s inspired by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pinchlime.com&#x2F;categories&#x2F;random&#x2F;&quot;&gt;Pin 起來&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-04-24-seo&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;cfc2b4dc4c96c1e16e8f4a257da2d30b254f8afc&quot;&gt;2022.04.24&lt;&#x2F;a&gt; - SEO&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-04-24-seo&quot; aria-label=&quot;Anchor link for: 2022-04-24-seo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add &lt;code&gt;og:title&lt;&#x2F;code&gt;,&lt;code&gt;description&lt;&#x2F;code&gt; to pages for better SEO.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-04-08-edit-link&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;06f1d35a7a5a8e4c97d4189cf3204b4b7c4bdea2&quot;&gt;2022.04.08&lt;&#x2F;a&gt; - Edit Link&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-04-08-edit-link&quot; aria-label=&quot;Anchor link for: 2022-04-08-edit-link&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Adding Edit this article link to every post.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;edit-link.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-03-29-birthday&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;0f8244f2e8a8799ce6b6cbd82914db734af33f30&quot;&gt;2022.03.29&lt;&#x2F;a&gt; - Birthday&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-03-29-birthday&quot; aria-label=&quot;Anchor link for: 2022-03-29-birthday&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Today is this blog’s birthday, and I’m happy to announce that I’ve migrated from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;&quot;&gt;New Blog&lt;&#x2F;a&gt;. The Blog is built with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;, I also wrote &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;migrate-to-zola&#x2F;&quot;&gt;迁移博客和 Wiki 到 Zola&lt;&#x2F;a&gt; to record it. The biggest difference is the blazing building speed of Zola, for now, it only takes 2 seconds to build the whole site.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Support &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;&quot;&gt;读书笔记&lt;&#x2F;a&gt; Templates, show my review score of the book, and show &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books&#x2F;&quot;&gt;Books Sort By Rating&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;books-template.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>About the World</title>
+		<published>2022-06-06T17:10:49+08:00</published>
+		<updated>2022-06-06T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/world/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/world/</id>
+		<content type="html">&lt;p&gt;Curating the knowledge of the world, countries, rank&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rank&quot;&gt;Rank&lt;a class=&quot;zola-anchor&quot; href=&quot;#rank&quot; aria-label=&quot;Anchor link for: rank&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.heritage.org&#x2F;index&#x2F;ranking&quot;&gt;World Economic Freedom Rank&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>The Great Stuffs</title>
+		<published>2022-05-28T16:49:08+08:00</published>
+		<updated>2022-05-28T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/great/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/great/</id>
+		<content type="html">&lt;p&gt;Curating things that deserve respect.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;charity&quot;&gt;Charity&lt;a class=&quot;zola-anchor&quot; href=&quot;#charity&quot; aria-label=&quot;Anchor link for: charity&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.givewell.org&#x2F;&quot;&gt;Give Well&lt;&#x2F;a&gt; - GiveWell’s mission is to find outstanding giving opportunities and publish the full details of our analysis to help donors decide where to give. They publish a list of top charities, which are their recommendations for donors. GiveWell is focused on finding a small number of outstanding giving opportunities, not on reviewing as many charities — or as many causes — as possible.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.givewell.org&#x2F;charities&#x2F;top-charities&quot;&gt;Top Charities&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.givedirectly.org&#x2F;&quot;&gt;Give Directly&lt;&#x2F;a&gt; - Lift one person above poverty by donating $30&#x2F;mo. Direct giving is an efficient, proven, and empowering way to help.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>About China</title>
+		<published>2022-05-16T12:11:23+08:00</published>
+		<updated>2022-05-28T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/china/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/china/</id>
+		<content type="html">&lt;p&gt;Curating opnions and things about China.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.newyorker.com&#x2F;magazine&#x2F;2022&#x2F;05&#x2F;16&#x2F;a-teacher-in-china-learns-the-limits-of-free-expression&quot;&gt;A Teacher in China Learns the Limits of Free Expression&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;videos&quot;&gt;Videos&lt;a class=&quot;zola-anchor&quot; href=&quot;#videos&quot; aria-label=&quot;Anchor link for: videos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=9avzTVVjnZw&quot;&gt;Why India is Better than China&lt;&#x2F;a&gt; - The most knowledgeable foreigner in China I have seen so far, about the censorship, and dishonest in China.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chinese-language&quot;&gt;Chinese Language&lt;a class=&quot;zola-anchor&quot; href=&quot;#chinese-language&quot; aria-label=&quot;Anchor link for: chinese-language&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;china&#x2F;.&#x2F;chinese-phonotactics.jpeg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To speak Chinese is not hard, because the most common words are two syllables, so it’s easy to remember. The hard part is the characters. There are more than 2000 common characters in Chinese.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;core-problems&quot;&gt;Core Problems&lt;a class=&quot;zola-anchor&quot; href=&quot;#core-problems&quot; aria-label=&quot;Anchor link for: core-problems&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is no rule of law, There is great uncertainty in your life&lt;&#x2F;li&gt;
+&lt;li&gt;Throughout the education from elementary school to higher education, a lot of ideology is deliberately implanted about communism, patriotism and love of the party, as well as the over-exaggeration of historical humiliation, and most people hate the so-called imperialist countries such as the United States and Japan.&lt;&#x2F;li&gt;
+&lt;li&gt;The extreme suppression of freedom of expression, the slightest public dissent is enough to send you to opaque imprisonment&lt;&#x2F;li&gt;
+&lt;li&gt;The massive blocking of offshore networks and the restrictions on VPNs, as well as the criminalization, make it difficult for the average person to get the facts and opinions on the other side.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>About The Netherlands</title>
+		<published>2022-05-15T14:32:20+08:00</published>
+		<updated>2022-05-15T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/the-netherlands/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/the-netherlands/</id>
+		<content type="html">&lt;p&gt;I like the Netherlands, so I’m going to collect some notes about it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;basic-info&quot;&gt;Basic Info&lt;a class=&quot;zola-anchor&quot; href=&quot;#basic-info&quot; aria-label=&quot;Anchor link for: basic-info&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Language: Dutch&lt;&#x2F;li&gt;
+&lt;li&gt;Population: 17.5 million&lt;&#x2F;li&gt;
+&lt;li&gt;Capital: Amsterdam, The Hague&lt;&#x2F;li&gt;
+&lt;li&gt;Currency: Euro&lt;&#x2F;li&gt;
+&lt;li&gt;Time Zone: CET (UTC+1)&lt;&#x2F;li&gt;
+&lt;li&gt;Dial Code: +31&lt;&#x2F;li&gt;
+&lt;li&gt;Drive: The right side of the roads&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;news&quot;&gt;News&lt;a class=&quot;zola-anchor&quot; href=&quot;#news&quot; aria-label=&quot;Anchor link for: news&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.dutchnews.nl&#x2F;&quot;&gt;Dutch News&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;quote&quot;&gt;Quote&lt;a class=&quot;zola-anchor&quot; href=&quot;#quote&quot; aria-label=&quot;Anchor link for: quote&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;God may have made the world, but the Dutch made the Netherlands.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;videos&quot;&gt;Videos&lt;a class=&quot;zola-anchor&quot; href=&quot;#videos&quot; aria-label=&quot;Anchor link for: videos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=f4TmQEZzsec&quot;&gt;Geography Now! NETHERLANDS&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;Dutch are the tallest people onaverage in the world. Men: 185cm, Women: 170cm&lt;&#x2F;li&gt;
+&lt;li&gt;Dutch have learned how to control the water and use it to their advantage.&lt;&#x2F;li&gt;
+&lt;li&gt;Stop call t he country “Holland”&lt;&#x2F;li&gt;
+&lt;li&gt;12 provinces&lt;&#x2F;li&gt;
+&lt;li&gt;Amsterdam, The Hague, Rotterdam&lt;&#x2F;li&gt;
+&lt;li&gt;6 Islands
+&lt;ul&gt;
+&lt;li&gt;ABC Islands, Aruba, Bonaire, Curacao&lt;&#x2F;li&gt;
+&lt;li&gt;Leeward Islands, SSS Islands, Sint Maarten, SABA, Sint Eustatius&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Windmills&lt;&#x2F;li&gt;
+&lt;li&gt;lowest country in the Europe&lt;&#x2F;li&gt;
+&lt;li&gt;The top 20 lagest world economies&lt;&#x2F;li&gt;
+&lt;li&gt;The top 10 largetst exporters on Earth&lt;&#x2F;li&gt;
+&lt;li&gt;the Oldest Stock Exchange&lt;&#x2F;li&gt;
+&lt;li&gt;Tulip mania&lt;&#x2F;li&gt;
+&lt;li&gt;Companies: Shell, Phillips,&lt;&#x2F;li&gt;
+&lt;li&gt;highest proficiency in English out of any non-English official country in the world, 9&#x2F;10 can speak English comfortably, 94% are bilingual&lt;&#x2F;li&gt;
+&lt;li&gt;national color: orange&lt;&#x2F;li&gt;
+&lt;li&gt;first country to legalize same-sex marriage&lt;&#x2F;li&gt;
+&lt;li&gt;hockey&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ul_xzyCDT98&quot;&gt;Why We Won’t Raise Our Kids in Suburbia (and moved to the Netherlands instead)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HfPCdJapIXA&quot;&gt;Travel from Rotterdam to Amsterdam in 10 minutes by boat: a 4k timelapse&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=v0AP18DjLA0&quot;&gt;The Netherlands in 100 Seconds&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kYHTzqHIngk&quot;&gt;Why Grocery Shopping is Better in Amsterdam&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=t_QJ9fWzLUc&quot;&gt;This is how trash gets removed from underground bins in The Netherlands&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=lP-G-inkkDg&quot;&gt;​​Why The Netherlands Is Insanely Well Designed&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=AA1HDFH9OaU&amp;amp;t=1s&quot;&gt;Dutch 11-year olds get a lesson in Love&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;people-who-don-t-like-the-netherlands&quot;&gt;People who don’t like the Netherlands&lt;a class=&quot;zola-anchor&quot; href=&quot;#people-who-don-t-like-the-netherlands&quot; aria-label=&quot;Anchor link for: people-who-don-t-like-the-netherlands&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?feature=player_embedded&amp;amp;v=fKuJvYh6h9I#!&quot;&gt;Fox News: About the Netherlands&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=JlaCSFUqHEw&quot;&gt;The Netherlands Is The Worst Country in Europe. Here’s Why&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Videos You Should Watch</title>
+		<published>2022-05-11T15:58:39+08:00</published>
+		<updated>2022-05-11T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/videos/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/videos/</id>
+		<content type="html">&lt;p&gt;Curated list of videos you should watch.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;explore&quot;&gt;Explore&lt;a class=&quot;zola-anchor&quot; href=&quot;#explore&quot; aria-label=&quot;Anchor link for: explore&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ObscureMedia&#x2F;&quot;&gt;Ad Commercials Videos Reddit&lt;&#x2F;a&gt; - Films and shorts, Drug PSA’s, random music video’s, odd cartoons, Media of all sorts ETC.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;videos&quot;&gt;Videos&lt;a class=&quot;zola-anchor&quot; href=&quot;#videos&quot; aria-label=&quot;Anchor link for: videos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=AwKv3_WwD4o&quot;&gt;Why LA Destroyed Its World-Class Transit System - Cheddar Explains&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;commercials&quot;&gt;Commercials&lt;a class=&quot;zola-anchor&quot; href=&quot;#commercials&quot; aria-label=&quot;Anchor link for: commercials&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kOO31qFmi9A&quot;&gt;Introduction to Microsoft Excel 1992&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Solve Algorithms</title>
+		<published>2022-05-08T06:17:19+08:00</published>
+		<updated>2022-06-10T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/algorithms/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/algorithms/</id>
+		<content type="html">&lt;p&gt;When I saw Leetcode on the timeline, I thought you guys were so “cult”…&lt;&#x2F;p&gt;
+&lt;p&gt;Until I started doing Leetcode problems myself - “Damn it’s super fun just to solve the problems, the daily intellectual challenge is the new fun every day!”&lt;&#x2F;p&gt;
+&lt;p&gt;So now I’m starting to save &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problemset&#x2F;all&#x2F;&quot;&gt;these algorithm problems’&lt;&#x2F;a&gt; solutions to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;tree&#x2F;main&#x2F;content&#x2F;algorithms&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I solve these problems in Typescript , and add a few unit tests with Deno, perfect! Don’t know if I’ll ever get the chance to do the whole thing in this lifetime.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;a class=&quot;zola-anchor&quot; href=&quot;#usage&quot; aria-label=&quot;Anchor link for: usage&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone git@github.com:theowenyoung&#x2F;blog.git
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;deno&lt;&#x2F;span&gt;&lt;span&gt; test
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#resources&quot; aria-label=&quot;Anchor link for: resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problem-list&#x2F;top-interview-questions&#x2F;&quot;&gt;Top Interview Questions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;classic&quot;&gt;Classic&lt;a class=&quot;zola-anchor&quot; href=&quot;#classic&quot; aria-label=&quot;Anchor link for: classic&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;sort_test.ts&quot;&gt;Sort&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;selection_sort.ts&quot;&gt;Selection Sort&lt;&#x2F;a&gt; - Easy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;bubble_sort.ts&quot;&gt;Bubble Sort&lt;&#x2F;a&gt; - Medium&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;insertion_sort.ts&quot;&gt;Insertion Sort&lt;&#x2F;a&gt; - Medium&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;quick_sort.ts&quot;&gt;Quick Sort&lt;&#x2F;a&gt; - Medium&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;merge_sort.ts&quot;&gt;Merge Sort&lt;&#x2F;a&gt; - Medium&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;easy&quot;&gt;Easy&lt;a class=&quot;zola-anchor&quot; href=&quot;#easy&quot; aria-label=&quot;Anchor link for: easy&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;two-sum&#x2F;&quot;&gt;Two Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;two_sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;roman-to-integer&#x2F;&quot;&gt;Roman to Integer&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;roman_to_integer_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;add-two-numbers&#x2F;&quot;&gt;Add Two Numbers&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;add_two_numbers_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;medium&quot;&gt;Medium&lt;a class=&quot;zola-anchor&quot; href=&quot;#medium&quot; aria-label=&quot;Anchor link for: medium&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;integer-to-roman&#x2F;&quot;&gt;Integer to Roman&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;roman_to_integer_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;maximal-square&#x2F;&quot;&gt;Maximal Square&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;maximal_square_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;hard&quot;&gt;Hard&lt;a class=&quot;zola-anchor&quot; href=&quot;#hard&quot; aria-label=&quot;Anchor link for: hard&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-palindromic-substring&#x2F;&quot;&gt;Longest Palindromic Substring&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_palindromic_substring_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-palindromic-subsequence&#x2F;&quot;&gt;Longest Palindromic Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_palindromic_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-increasing-subsequence&#x2F;&quot;&gt;Longest Increasing Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_increasing_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;wiggle-subsequence&#x2F;&quot;&gt;Wiggle Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;wiggle_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-common-subsequence&#x2F;&quot;&gt;Longest Common Subsequence&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_common_subsequence_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;edit-distance&#x2F;&quot;&gt;Edit Distance&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;edit_distance_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;coin-change&#x2F;&quot;&gt;Coin Change&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;coin_change_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;coin-change-2&#x2F;&quot;&gt;Coin Change 2&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;coin_change_2_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;perfect-squares&#x2F;&quot;&gt;Perfect Squares&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;perfect_squares_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-substring-without-repeating-characters&#x2F;&quot;&gt;Longest Substring Without Repeating Characters&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_substring_without_repeating_characters_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;binary-search&#x2F;&quot;&gt;Binary Search&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;binary_search_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;first-bad-version&#x2F;&quot;&gt;First Bad Version&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;first_bad_version_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;search-insert-position&#x2F;&quot;&gt;Search Insert Position&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;search_insert_position_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;palindrome-linked-list&#x2F;&quot;&gt;Palindrome Linked List&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;palindrome_linked_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;fizz-buzz&#x2F;&quot;&gt;Fizz Buzz&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;fizz_buzz_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;middle-of-the-linked-list&#x2F;&quot;&gt;Middle of the Linked List&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;middle_of_the_linked_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;the-k-weakest-rows-in-a-matrix&#x2F;&quot;&gt;The K Weakest Rows in a Matrix&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;the_k_weakest_rows_in_a_matrix_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;number-of-steps-to-reduce-a-number-to-zero&#x2F;&quot;&gt;Number of Steps to Reduce a Number to Zero&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;number_of_steps_to_reduce_a_number_to_zero_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;richest-customer-wealth&#x2F;&quot;&gt;Richest Customer Wealth&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;richest_customer_wealth_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;median-of-two-sorted-arrays&#x2F;&quot;&gt;Median of Two Sorted Arrays&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;median_of_two_sorted_arrays_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;reverse-integer&#x2F;&quot;&gt;Reverse Integer&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;reverse_integer_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;squares-of-a-sorted-array&#x2F;&quot;&gt;Squares of a Sorted Array&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;squares_of_a_sorted_array_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;rotate-array&#x2F;&quot;&gt;Rotate Array&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;rotate_array_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;move-zeroes&#x2F;&quot;&gt;Move Zeroes&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;move_zeroes_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;two-sum-ii-input-array-is-sorted&#x2F;&quot;&gt;Two Sum II - Input Array Is Sorted&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;two_sum_ii_input_array_is_sorted_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;string-to-integer-atoi&#x2F;&quot;&gt;String to Integer (atoi)&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;string_to_integer_atoi_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;container-with-most-water&#x2F;&quot;&gt;Container With Most Water&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;container_with_most_water_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;longest-common-prefix&#x2F;&quot;&gt;Longest Common Prefix&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;longest_common_prefix_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;reverse-string&#x2F;&quot;&gt;Reverse String&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;reverse_string_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;reverse-words-in-a-string-iii&#x2F;&quot;&gt;Reverse Words in a String III&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;reverse_words_in_a_string_iii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;3sum&#x2F;&quot;&gt;3 Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;3sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;letter-combinations-of-a-phone-number&#x2F;&quot;&gt;Letter Combinations of a Phone Number&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;letter_combinations_of_a_phone_number_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;remove-nth-node-from-end-of-list&#x2F;&quot;&gt;Remove Nth Node From End of List&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;remove_nth_node_from_end_of_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;valid-parentheses&#x2F;&quot;&gt;Valid Parentheses&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;valid_parentheses_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;merge-two-sorted-lists&#x2F;&quot;&gt;Merge Two Sorted Lists&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;merge_two_sorted_lists_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;generate-parentheses&#x2F;&quot;&gt;Generate Parentheses&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;generate_parentheses_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;merge-k-sorted-lists&#x2F;&quot;&gt;Merge k Sorted Lists&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;merge_k_sorted_lists_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;remove-duplicates-from-sorted-array&#x2F;&quot;&gt;Remove Duplicates from Sorted Array&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;remove_duplicates_from_sorted_array_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;implement-strstr&#x2F;&quot;&gt;Implement strStr()&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;implement_strstr_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;permutation-in-string&#x2F;&quot;&gt;Permutation in String&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;permutation_in_string_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;build_max_heap_test.ts&quot;&gt;Build Max Heap&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;flood-fill&#x2F;&quot;&gt;Flood Fill&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;flood_fill_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;max-area-of-island&#x2F;&quot;&gt;Max Area of Island&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;max_area_of_island_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;merge-two-binary-trees&#x2F;submissions&#x2F;&quot;&gt;Merge Two Binary Trees&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;merge_two_binary_trees_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;populating-next-right-pointers-in-each-node&#x2F;&quot;&gt;Populating Next Right Pointers in Each Node&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;populating_next_right_pointers_in_each_node_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;01-matrix&#x2F;&quot;&gt;01 Matrix&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;01_matrix_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;fibonacci-number&#x2F;&quot;&gt;Fibonacci&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;fibonacci_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;reverse-linked-list&#x2F;&quot;&gt;Reverse Linked List&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;reverse_linked_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;rotting-oranges&#x2F;&quot;&gt;Rotting Oranges&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;rotting_oranges_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;combinations&#x2F;&quot;&gt;Combinations&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;combinations_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;permutations&#x2F;&quot;&gt;Permutations&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;permutations_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;letter-case-permutation&#x2F;&quot;&gt;Letter Case Permutation&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;letter_case_permutation_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;climbing-stairs&#x2F;&quot;&gt;Climbing Stairs&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;climbing_stairs_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;house-robber&#x2F;&quot;&gt;House Robber&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;house_robber_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;house-robber-ii&#x2F;&quot;&gt;House Robber II&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;house_robber_ii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;triangle&#x2F;&quot;&gt;Triangle&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;triangle_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;power-of-two&#x2F;&quot;&gt;Power of Two&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;power_of_two_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;number-of-1-bits&#x2F;&quot;&gt;Number of 1 Bits&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;number_of_1_bits_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;reverse-bits&#x2F;&quot;&gt;Reverse Bits&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;reverse_bits_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;single-number&#x2F;&quot;&gt;Single Number&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;single_number_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;maximum-subarray&#x2F;&quot;&gt;Maximum Subarray&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;maximum_subarray_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;count-odd-numbers-in-an-interval-range&#x2F;&quot;&gt;Count Odd Numbers in an Interval Range&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;count_odd_numbers_in_an_interval_range_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;average-salary-excluding-the-minimum-and-maximum-salary&#x2F;&quot;&gt;Average Salary Excluding the Minimum and Maximum Salary&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;average_salary_excluding_the_minimum_and_maximum_salary_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;n-th-tribonacci-number&#x2F;&quot;&gt;N-th Tribonacci Number&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;n_th_tribonacci_number_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;number-of-islands&#x2F;&quot;&gt;Number of Islands&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;number_of_islands_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;merge-sorted-array&#x2F;&quot;&gt;Merge Sorted Array&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;merge_sorted_array_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;min-cost-climbing-stairs&#x2F;&quot;&gt;Min Cost Climbing Stairs&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;min_cost_climbing_stairs_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;number-of-closed-islands&#x2F;&quot;&gt;Number of Closed Islands&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;number_of_closed_islands_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-time-to-buy-and-sell-stock&#x2F;&quot;&gt;Best Time to Buy and Sell Stock&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_time_to_buy_and_sell_stock_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-time-to-buy-and-sell-stock-ii&#x2F;&quot;&gt;Best Time to Buy and Sell Stock II&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_time_to_buy_and_sell_stock_ii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;as-far-from-land-as-possible&#x2F;&quot;&gt;As Far from Land as Possible&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;as_far_from_land_as_possible_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;jump-game&#x2F;&quot;&gt;Jump Game&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;jump_game_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;jump-game-ii&#x2F;&quot;&gt;Jump Game II&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;jump_game_ii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;pacific-atlantic-water-flow&#x2F;&quot;&gt;Pacific Atlantic Water Flow&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;pacific_atlantic_water_flow_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;pascals-triangle&#x2F;&quot;&gt;Pascals Triangle&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;pascals_triangle_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;pascals-triangle-ii&#x2F;&quot;&gt;Pascals Triangle II&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;pascals_triangle_ii_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;reshape-the-matrix&#x2F;&quot;&gt;Reshape the Matrix&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;reshape_the_matrix_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;search-a-2d-matrix&#x2F;&quot;&gt;Search a 2D Matrix&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;search_a_2d_matrix_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;n-ary-tree-preorder-traversal&#x2F;&quot;&gt;N-ary Tree Preorder Traversal&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;n_ary_tree_preorder_traversal_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;next-greater-element-i&#x2F;&quot;&gt;Next Greater Element I&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;next_greater_element_i_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;sum-of-all-odd-length-subarrays&#x2F;&quot;&gt;Sum of All Odd Length Subarrays&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;sum_of_all_odd_length_subarrays_test.ts&quot;&gt;Asnwer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;maximum-product-subarray&#x2F;&quot;&gt;Maximum Product Subarray&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;maximum_product_subarray_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;maximum-length-of-subarray-with-positive-product&#x2F;&quot;&gt;Maximum Length of Subarray With Positive Product&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;maximum_length_of_subarray_with_positive_product_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;nearest-exit-from-entrance-in-maze&#x2F;&quot;&gt;Nearest Exit from Entrance in Maze&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;nearest_exit_from_entrance_in_maze_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-sightseeing-pair&#x2F;&quot;&gt;Best Sightseeing Pair&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_sightseeing_pair_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;all-paths-from-source-to-target&#x2F;&quot;&gt;All Paths From Source to Target&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;all_paths_from_source_to_target_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;remove-duplicates-from-sorted-list&#x2F;&quot;&gt;Remove Duplicates from Sorted List&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;remove_duplicates_from_sorted_list_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;goal-parser-interpretation&#x2F;&quot;&gt;Goal Parser Interpretation&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;goal_parser_interpretation_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-time-to-buy-and-sell-stock-with-cooldown&#x2F;&quot;&gt;Best Time to Buy and Sell Stock with Cooldown&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_time_to_buy_and_sell_stock_with_cooldown_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;best-time-to-buy-and-sell-stock-with-transaction-fee&#x2F;&quot;&gt;Best Time to Buy and Sell Stock with Transaction Fee&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;best_time_to_buy_and_sell_stock_with_transaction_fee_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;word-break&#x2F;&quot;&gt;Word Break&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;word_break_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;trapping-rain-water&#x2F;&quot;&gt;Trapping Rain Water&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;trapping_rain_water_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;binary-tree-preorder-traversal&#x2F;&quot;&gt;Binary Tree Preorder Traversal&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;binary_tree_preorder_traversal_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;binary-tree-level-order-traversal&#x2F;&quot;&gt;Binary Tree Level Order Traversal&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;binary_tree_level_order_traversal_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;unique-binary-search-trees&#x2F;&quot;&gt;Unique Binary Search Trees&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;unique_binary_search_trees_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;minimum-falling-path-sum&#x2F;&quot;&gt;Minimum Falling Path Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;minimum_falling_path_sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;matrix-block-sum&#x2F;&quot;&gt;Matrix Block Sum&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;matrix_block_sum_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;leetcode.com&#x2F;problems&#x2F;range-sum-query-2d-immutable&#x2F;&quot;&gt;Range Sum Query 2D - Immutable&lt;&#x2F;a&gt; - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;blob&#x2F;main&#x2F;content&#x2F;algorithms&#x2F;range_sum_query_2d_immutable_test.ts&quot;&gt;Answer&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Quotes</title>
+		<published>2022-04-25T00:00:00+00:00</published>
+		<updated>2022-05-10T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/quotes/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/quotes/</id>
+		<content type="html">&lt;p&gt;Quotes.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;quotes&quot;&gt;Quotes&lt;a class=&quot;zola-anchor&quot; href=&quot;#quotes&quot; aria-label=&quot;Anchor link for: quotes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chinese people are not stupid, they are not incapable of distinguishing right from wrong, it’s just that the whole environment of speech is so unfair that only one voice is allowed. I am optimistic that most people will be able to distinguish between right and wrong within a year’s time if they are allowed to compete fairly.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If there is no religion there is so division among people. We can move on from imaginary issues and focus on real issues of our planet. - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;IAmA&#x2F;comments&#x2F;58h5pd&#x2F;im_amani_the_founder_of_the_largest_online&#x2F;d91m2fb&#x2F;&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;reddit users and making vague generalizations based on their own biases. - &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;IAmA&#x2F;comments&#x2F;ut7yj0&#x2F;im_bill_gates_cochair_of_the_bill_and_melinda&#x2F;i992tkz&#x2F;&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;He sees it all personified in Lee Kuan Yew, who “honestly thought that money and status equated to happiness … His failure to understand how false that was really showed, leading us to become one of the richest countries in the world, and one of the most depressed. Ultimately, how do you quantify a great leader? It is by how he creates a place where people are able to live happily and prosper based on their own unique attributes. And he hasn’t.” – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theguardian.com&#x2F;cities&#x2F;2016&#x2F;apr&#x2F;21&#x2F;story-cities-singapore-carefully-planned-lee-kuan-yew&quot;&gt;Story of cities #27: Singapore – the most meticulously planned city in the world&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Democracy and capitalism are 100% unrelated to each other. Democracy is a form of government, capitalism is an economic system. You can have Fascist Capitalists(China), Fascist Mercantilists(US Republicans), Fascist Socialism(the USSR), Democratic Capitalists(most Americans), Democratic Mercantilists(The British), Democratic Socialism(Bernie Sanders types in the US; many of the Nordics), and a whole host of things in between. Democracy and Capitalism are two separate axes creating a plane, rather than two sides of the same axis. – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;Ask_Politics&#x2F;comments&#x2F;uleb6a&#x2F;comment&#x2F;i7xh2x0&#x2F;?utm_source=reddit&amp;amp;utm_medium=web2x&amp;amp;context=3&quot;&gt;reddit comment&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Indonesia, there are anti-democratic groups. They really admire the Taliban. We want that group to be exchanged for people like you so that the Taliban get people who love them and Indonesia gets people who are pro-democracy. – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=AMH4gflo4_Y&quot;&gt;Kurasha Takada&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Going home is a luxury that’s not available to everyone. – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=HBbBs1ohZtI&quot;&gt;ted&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Q: Why should your right to freedom of speech trump a person’s right not to be offended?&lt;&#x2F;p&gt;
+&lt;p&gt;A: In order to think, you have to risk being offensive. You’re using your free speech to risk offending me and more power to you!&lt;&#x2F;p&gt;
+&lt;p&gt;– &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=8wLCmDtCDAM&quot;&gt;Jordan B. Peterson&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“It is said that power corrupts, but actually it’s more true that power attracts the corruptible. The sane are usually attracted by other things than power.” — David Brin&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Decentralization</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-06-14T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/decentralization/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/decentralization/</id>
+		<content type="html">&lt;p&gt;Curating awesome decentralized applications.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lukeplant.me.uk&#x2F;blog&#x2F;posts&#x2F;the-technological-case-against-bitcoin-and-blockchain&#x2F;&quot;&gt;反对比特币和区块链的技术案例&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gdamdam&#x2F;awesome-decentralized-web&quot;&gt;awesome-decentralized-web&lt;&#x2F;a&gt; - A curated list about the decentralized technologies and tools to develop decentralized applications.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fediverse&quot;&gt;Fediverse Wiki&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;letsdecentralize.org&#x2F;&quot;&gt;Lets decentralize&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kgryte&#x2F;awesome-peer-to-peer&quot;&gt;Awesome Peer-to-Peer&lt;&#x2F;a&gt; - A list of peer-to-peer resources.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gdamdam&#x2F;awesome-decentralized-web&quot;&gt;awesome-decentralized-web&lt;&#x2F;a&gt; - A curated list about the decentralized technologies and tools to develop decentralized applications.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;openblockchains&#x2F;awesome-blockchains&quot;&gt;awesome-blockchains&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;database&quot;&gt;Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#database&quot; aria-label=&quot;Anchor link for: database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amark&#x2F;gun&quot;&gt;Gun&lt;&#x2F;a&gt; - An open source cybersecurity protocol for syncing decentralized graph data.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;remotestorage&#x2F;remotestorage.js&quot;&gt;remotestorage&lt;&#x2F;a&gt; - An open protocol for per-user storage on the Web
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;remotestorage.io&#x2F;apps&#x2F;&quot;&gt;apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;a class=&quot;zola-anchor&quot; href=&quot;#protocol&quot; aria-label=&quot;Anchor link for: protocol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;scuttlebutt.nz&#x2F;get-started&#x2F;&quot;&gt;Scuttlebutt&lt;&#x2F;a&gt; - Scuttlebutt is a social network and it works like others social apps we already use. The key difference is that it is decentralised, meaning not centralised&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;urbit.org&#x2F;&quot;&gt;urbit&lt;&#x2F;a&gt; - A clean-slate OS and network for the 21st century.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nostr-protocol&#x2F;nostr&quot;&gt;Nostr&lt;&#x2F;a&gt; - a truly censorship-resistant alternative to Twitter that has a chance of working
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aljazceru&#x2F;awesome-nostr&quot;&gt;awesome nostr&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;torrents&quot;&gt;Torrents&lt;a class=&quot;zola-anchor&quot; href=&quot;#torrents&quot; aria-label=&quot;Anchor link for: torrents&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;varbhat&#x2F;exatorrent&quot;&gt;exatorrent&lt;&#x2F;a&gt; - Self-hostable , easy-to-use , lightweight and feature-rich torrent client written in Go . It comes with beautiful Web UI and Optional Multi-User Support . Run Locally or Host in Server . Open&#x2F;Download&#x2F;Stream Torrents in Browser Right Away!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.qbittorrent.org&#x2F;&quot;&gt;qBittorrent&lt;&#x2F;a&gt; - The qBittorrent project aims to provide an open-source software alternative to µTorrent.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cjb&#x2F;gittorrent&quot;&gt;Gittorrent&lt;&#x2F;a&gt; - A decentralization of GitHub using BitTorrent and Bitcoin&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.radicle.xyz&#x2F;docs&#x2F;what-is-radicle.html&quot;&gt;Radicle&lt;&#x2F;a&gt; - Radicle is a decentralized code collaboration network built on open protocols 🌱.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mrusme&#x2F;superhighway84&quot;&gt;Superhighway84&lt;&#x2F;a&gt; - USENET-inspired decentralized internet discussion system&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;search&quot;&gt;Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#search&quot; aria-label=&quot;Anchor link for: search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;yacy.net&#x2F;&quot;&gt;yacy p2p search engine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;social&quot;&gt;Social&lt;a class=&quot;zola-anchor&quot; href=&quot;#social&quot; aria-label=&quot;Anchor link for: social&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mastodon&#x2F;mastodon&quot;&gt;mastodon&lt;&#x2F;a&gt; - twitter open-source alternatives &lt;code&gt;ruby&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.pleroma.social&#x2F;pleroma&#x2F;pleroma&#x2F;&quot;&gt;pleroma&lt;&#x2F;a&gt; - another twitter open-source alternatives &lt;code&gt;erlang&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;soapbox-pub&#x2F;soapbox-fe&quot;&gt;soapbox&lt;&#x2F;a&gt; - a fronend for pleroma&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;angristan&#x2F;docker-pleroma&quot;&gt;docker-pleroma&lt;&#x2F;a&gt; -docker pleroma&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;OkunaOrg&#x2F;okuna-api&quot;&gt;okuna&lt;&#x2F;a&gt; - another forum. &lt;code&gt;python&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.mills.io&#x2F;yarnsocial&#x2F;yarn&quot;&gt;twtxt - yarn&lt;&#x2F;a&gt; - yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;buckket&#x2F;twtxt&quot;&gt;twtxt&lt;&#x2F;a&gt; - origianl twtxt&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.isobeef.org&#x2F;lyse&#x2F;tt&#x2F;&quot;&gt;tt&lt;&#x2F;a&gt; - a python cli for twtxt&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.uninformativ.de&#x2F;git&#x2F;jenny&#x2F;file&#x2F;README.html&quot;&gt;jenny&lt;&#x2F;a&gt; - another python cli for twtxt&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;muttmua&#x2F;mutt&quot;&gt;mutt&lt;&#x2F;a&gt; - simillar but for email.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.uninformativ.de&#x2F;blog&#x2F;postings&#x2F;2021-09-19&#x2F;0&#x2F;POSTING-en.html&quot;&gt;jenny + mutt: Getting started with twtxt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rustwtxt&#x2F;rustwtxt&quot;&gt;rusttxt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DracoBlue&#x2F;twtxt-registry&quot;&gt;twtxt-registry&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;twtxt.xyz&#x2F;&quot;&gt;twtxt xyz&lt;&#x2F;a&gt; - A twtxt user list
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;reednj&#x2F;twtxt-directory&quot;&gt;source&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Toromino&#x2F;kibou&quot;&gt;kibou&lt;&#x2F;a&gt; - rust mastondon&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieweb.org&#x2F;&quot;&gt;Indie Web&lt;&#x2F;a&gt; - The IndieWeb is a community of individual personal websites&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;briarproject.org&#x2F;how-it-works&#x2F;&quot;&gt;Bria&lt;&#x2F;a&gt; - Android p2p chat&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rdbell&#x2F;nvote&quot;&gt;Nvote&lt;&#x2F;a&gt; - Decentralized, vote-driven community similar to services like Reddit and HackerNews. Built on nostr.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nvote.co&#x2F;&quot;&gt;online&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fiatjaf&#x2F;branle&quot;&gt;Branle&lt;&#x2F;a&gt; - A Twitter-like Nostr client made with Quasar
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;branle.netlify.app&#x2F;&quot;&gt;online&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;monlovesmango&#x2F;astral&quot;&gt;astral&lt;&#x2F;a&gt; - Nostr client made with Quasar&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fiatjaf&#x2F;rsslay&quot;&gt;rsslay&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;damus.io&#x2F;&quot;&gt;damus&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;irislib&#x2F;iris-messenger&quot;&gt;Iris Messanger&lt;&#x2F;a&gt; - Decentralized messenger&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;mail&quot;&gt;Mail&lt;a class=&quot;zola-anchor&quot; href=&quot;#mail&quot; aria-label=&quot;Anchor link for: mail&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mnmnotmail.org&#x2F;&quot;&gt;MNM&lt;&#x2F;a&gt; - Email alternatives&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pub-sub&quot;&gt;Pub&#x2F;Sub&lt;a class=&quot;zola-anchor&quot; href=&quot;#pub-sub&quot; aria-label=&quot;Anchor link for: pub-sub&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;clone1018&#x2F;WebSubHub&quot;&gt;WebSubHub&lt;&#x2F;a&gt; - WebSubHub is a fully compliant WebSub Hub built that you can use to distribute live changes from various publishers. Usage of WebSubHub is very simple with only a single endpoint available at https:&#x2F;&#x2F;websubhub.com&#x2F;hub.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>NSFW Resource</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/nsfw/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/nsfw/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;Warning: This resources have some NSFW sensitive resources, please pay attension.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Curating some interesting NSFW resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;resource&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource&quot; aria-label=&quot;Anchor link for: resource&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;observablehq.com&#x2F;@stared&#x2F;tree-of-reddit-sex-life&quot;&gt;Reddit sex life tree&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;EBazarov&#x2F;nsfw_data_source_urls&quot;&gt;NSFW data sources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Self-hosted</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/self-hosted/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/self-hosted/</id>
+		<content type="html">&lt;h2 id=&quot;file&quot;&gt;File&lt;a class=&quot;zola-anchor&quot; href=&quot;#file&quot; aria-label=&quot;Anchor link for: file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&quot;&gt;GitHub - filebrowser&#x2F;filebrowser: 📂 Web File Browser&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;larrywonss.github.io&#x2F;#&#x2F;&quot;&gt;OpenWrt 简明教程&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;kol&quot;&gt;KOL&lt;a class=&quot;zola-anchor&quot; href=&quot;#kol&quot; aria-label=&quot;Anchor link for: kol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;calendso&#x2F;calendso&quot;&gt;calendso&#x2F;calendso: The open-source Calendly alternative. (github.com)&lt;&#x2F;a&gt; - Make an appointment, connect with your calendar&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;time-tracking&quot;&gt;Time tracking&lt;a class=&quot;zola-anchor&quot; href=&quot;#time-tracking&quot; aria-label=&quot;Anchor link for: time-tracking&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;almarklein&#x2F;timetagger&quot;&gt;timetagger&lt;&#x2F;a&gt; - Tag your time, get the insight&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;shopping&quot;&gt;Shopping&lt;a class=&quot;zola-anchor&quot; href=&quot;#shopping&quot; aria-label=&quot;Anchor link for: shopping&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;medusajs&#x2F;medusa&quot;&gt;Mpedussa&lt;&#x2F;a&gt; - Shopify alternative #Alternative&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;services&quot;&gt;Services&lt;a class=&quot;zola-anchor&quot; href=&quot;#services&quot; aria-label=&quot;Anchor link for: services&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;LibreTranslate&#x2F;LibreTranslate&quot;&gt;LibreTranslate&lt;&#x2F;a&gt; - Free and Open Source Machine Translation API. 100% self-hosted, no limits, no ties to proprietary translation services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;medias&quot;&gt;Medias&lt;a class=&quot;zola-anchor&quot; href=&quot;#medias&quot; aria-label=&quot;Anchor link for: medias&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hauxir&#x2F;rapidbay&quot;&gt;RapidBay&lt;&#x2F;a&gt; - Self-hosted torrent video streaming service compatible with Chromecast and AppleTV deployable in the cloud&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Dusk-Labs&#x2F;dim&quot;&gt;Dim&lt;&#x2F;a&gt; - Dim, a media manager fueled by dark forces.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;paas&quot;&gt;PAAS&lt;a class=&quot;zola-anchor&quot; href=&quot;#paas&quot; aria-label=&quot;Anchor link for: paas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cloudron.io&#x2F;index.html&quot;&gt;cloudron&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sandstorm.io&#x2F;&quot;&gt;sandstorm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;freedombox.org&#x2F;&quot;&gt;freedombox&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;federation&quot;&gt;Federation&lt;a class=&quot;zola-anchor&quot; href=&quot;#federation&quot; aria-label=&quot;Anchor link for: federation&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;joinmobilizon.org&#x2F;en&#x2F;&quot;&gt;Mobilizon&lt;&#x2F;a&gt; - Mobilizon is a tool that helps you find, create and organize events.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;orbitdb&#x2F;orbit&quot;&gt;Orbit&lt;&#x2F;a&gt; - A distributed, serverless, peer-to-peer chat application on IPFS.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;irislib&#x2F;iris-messenger&quot;&gt;Iris&lt;&#x2F;a&gt; - Decentralized messenger&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twt.social&#x2F;&quot;&gt;Twt.social&lt;&#x2F;a&gt; - Twt.social is a new Social Media platform&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;old-school&quot;&gt;Old school&lt;a class=&quot;zola-anchor&quot; href=&quot;#old-school&quot; aria-label=&quot;Anchor link for: old-school&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gemini.circumlunar.space&#x2F;&quot;&gt;gemini&lt;&#x2F;a&gt; - Gemini is a new internet protocol which: Is heavier than gopher, Is lighter than the web, Will not replace either, Strives for maximum power to weight ratio, Takes user privacy very seriously&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;livestreaming&quot;&gt;Livestreaming&lt;a class=&quot;zola-anchor&quot; href=&quot;#livestreaming&quot; aria-label=&quot;Anchor link for: livestreaming&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;GRVYDEV&#x2F;Project-Lightspeed&quot;&gt;Lightspeed&lt;&#x2F;a&gt; - A self contained OBS -&amp;gt; FTL -&amp;gt; WebRTC live streaming server. Comprised of 3 parts once configured anyone can achieve sub-second OBS to the browser livestreaming&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;admin&quot;&gt;Admin&lt;a class=&quot;zola-anchor&quot; href=&quot;#admin&quot; aria-label=&quot;Anchor link for: admin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToolJet&#x2F;ToolJet&#x2F;&quot;&gt;ToolJet&lt;&#x2F;a&gt; - ToolJet is an open-source low-code platform for building and deploying internal tools with minimal engineering efforts 🚀&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;chat&quot;&gt;Chat&lt;a class=&quot;zola-anchor&quot; href=&quot;#chat&quot; aria-label=&quot;Anchor link for: chat&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mattermost&#x2F;mattermost-server&quot;&gt;mattermost&lt;&#x2F;a&gt; - Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;conduit&quot;&gt;conduit&lt;&#x2F;a&gt; - Conduit is a simple, fast and reliable chat server powered by Matrix&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;harmonyapp.io&#x2F;&quot;&gt;Harmony Chat&lt;&#x2F;a&gt; - An open protocol for open, harmonious communication.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;deploy&quot;&gt;Deploy&lt;a class=&quot;zola-anchor&quot; href=&quot;#deploy&quot; aria-label=&quot;Anchor link for: deploy&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;adnanh&#x2F;webhook&quot;&gt;Webhook&lt;&#x2F;a&gt; - webhook is a lightweight incoming webhook server to run shell commands&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;music&quot;&gt;Music&lt;a class=&quot;zola-anchor&quot; href=&quot;#music&quot; aria-label=&quot;Anchor link for: music&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;izderadicka&#x2F;audioserve&quot;&gt;music server in rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Startups</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/startups/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/startups/</id>
+		<content type="html">&lt;p&gt;Curating anyting about startups, marketing, launch, publish, cooperation, tools&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;prelaunch&quot;&gt;Prelaunch&lt;a class=&quot;zola-anchor&quot; href=&quot;#prelaunch&quot; aria-label=&quot;Anchor link for: prelaunch&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;waitinglist.app&#x2F;&quot;&gt;Waiting list&lt;&#x2F;a&gt; - Build your audience before you launch, #API&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.defmacro.org&#x2F;2019&#x2F;03&#x2F;26&#x2F;startup-checklist.html&quot;&gt;Startup Checklist&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=20254057&quot;&gt;HN link&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;app.gumroad.com&#x2F;&quot;&gt;Gumroad&lt;&#x2F;a&gt; - 在线销售数字产品&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;publish&quot;&gt;Publish&lt;a class=&quot;zola-anchor&quot; href=&quot;#publish&quot; aria-label=&quot;Anchor link for: publish&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;betalist.com&#x2F;&quot;&gt;betalist&lt;&#x2F;a&gt; - Discover tomorrow’s startups, today.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.producthunt.com&#x2F;&quot;&gt;ProductHunt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;show&quot;&gt;Hacknew Show&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;SideProject&#x2F;&quot;&gt;Side Project Reddit&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;productlift.ai&#x2F;&quot;&gt;productlift&lt;&#x2F;a&gt; - ProductLift helps you find relevant communities and influencers so you can:&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;airtable.com&#x2F;shrwqaak73gy83w9A&#x2F;tblu5RcUft9fYp9Ju&#x2F;viwFHmIyMniXzlpK4?blocks=show&quot;&gt;280+ Websites To Share Your Startup &#x2F; Public&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jakeprins_nl&#x2F;status&#x2F;1293243281556594690?s=21&quot;&gt;The best places to post your startup. Twitter Thread&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;cooperation&quot;&gt;Cooperation&lt;a class=&quot;zola-anchor&quot; href=&quot;#cooperation&quot; aria-label=&quot;Anchor link for: cooperation&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;circlebatch.com&#x2F;&quot;&gt;Circlebatch&lt;&#x2F;a&gt; - Circlebatch is a collaborative community to practice skills and work on projects with others&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tara.ai&#x2F;&quot;&gt;Tara&lt;&#x2F;a&gt; - Git ship done Define, plan &amp;amp; track mission-critical product updates, in one place.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;market&quot;&gt;Market&lt;a class=&quot;zola-anchor&quot; href=&quot;#market&quot; aria-label=&quot;Anchor link for: market&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;liquidary.com&#x2F;freearticle&#x2F;&quot;&gt;Free Article Publishing&lt;&#x2F;a&gt; - Get free press coverage for your project or startup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;microacquire.com&#x2F;buyers&#x2F;&quot;&gt;Microacquire&lt;&#x2F;a&gt; - Sell your company online, Sell your startup within 30 days. Anonymous listings. No fees.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;trekhleb&#x2F;promote-your-next-startup&quot;&gt;promote your next startup&lt;&#x2F;a&gt; - 🚀 Free resources you may use to promote your next startup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mysideproject.rocks&#x2F;&quot;&gt;My Side Project rocks&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;热心而真诚的评论素人的状态，你可能会收获一个关注。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;sharing&quot;&gt;Sharing&lt;a class=&quot;zola-anchor&quot; href=&quot;#sharing&quot; aria-label=&quot;Anchor link for: sharing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;buildinpublic.com&#x2F;&quot;&gt;#buildinpublic&lt;&#x2F;a&gt; - Share your process at Twitter with #buildinpublic&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;theapplaunchpad.com&#x2F;mockup-generator&#x2F;&quot;&gt;AppLaunchpad - (1000) Best Free Mockup Generator (theapplaunchpad.com)&lt;&#x2F;a&gt; - Screen Shot Generator&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.twitonomy.com&#x2F;&quot;&gt;Twitter Analytics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;investing&quot;&gt;Investing&lt;a class=&quot;zola-anchor&quot; href=&quot;#investing&quot; aria-label=&quot;Anchor link for: investing&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.micro-invest.io&#x2F;&quot;&gt;Micro investment&lt;&#x2F;a&gt; - Micro investment for solo founders&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.makerfellowship.com&#x2F;&quot;&gt;Maker Fellow Ship&lt;&#x2F;a&gt; - We offer $500 grant to indie makers to ship something useful within four weeks.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ideas&quot;&gt;Ideas&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideas&quot; aria-label=&quot;Anchor link for: ideas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.notion.so&#x2F;110-Actionable-tasks-to-get-from-Zero-to-2a28bd237e964f75a8f4cf8fcd8182c5&quot;&gt;110+ Actionable tasks to get from Zero to $$$&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;undertheradar.io&#x2F;&quot;&gt;Startup Trends&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;legel&quot;&gt;Legel&lt;a class=&quot;zola-anchor&quot; href=&quot;#legel&quot; aria-label=&quot;Anchor link for: legel&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.avodocs.com&#x2F;&quot;&gt;avodocs&lt;&#x2F;a&gt; - Free legal documents for startups&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;communities&quot;&gt;Communities&lt;a class=&quot;zola-anchor&quot; href=&quot;#communities&quot; aria-label=&quot;Anchor link for: communities&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getmakerlog.com&#x2F;&quot;&gt;Get Maker Log&lt;&#x2F;a&gt; - How makers stay productive&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Awesome Alternatives</title>
+		<published>2022-02-25T00:00:00+00:00</published>
+		<updated>2022-03-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/alternatives/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/alternatives/</id>
+		<content type="html">&lt;p&gt;Curating awesome alternative resources.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mendel5&#x2F;alternative-front-ends&quot;&gt;alternative-front-ends&lt;&#x2F;a&gt; - #Front-End&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;redecentralize&#x2F;alternative-internet&quot;&gt;Alternative Internet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ethical.net&#x2F;resources&#x2F;&quot;&gt;Ethical Alternatives &amp;amp; Resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.btw.so&#x2F;open-source-alternatives&quot;&gt;Open source Alternatives&lt;&#x2F;a&gt; - Curated 200+ open source alternatives to tools that businesses require in day-to-day operations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TaKO8Ki&#x2F;awesome-alternatives-in-rust&quot;&gt;awesome-alternatives-in-rust&lt;&#x2F;a&gt; - A curated list of replacements for existing software written in Rust #Rust&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;twitter&quot;&gt;Twitter&lt;a class=&quot;zola-anchor&quot; href=&quot;#twitter&quot; aria-label=&quot;Anchor link for: twitter&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zedeus&#x2F;nitter&quot;&gt;Nitter&lt;&#x2F;a&gt; - Twitter front end alternative.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Official instance: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nitter.net&#x2F;&quot;&gt;https:&#x2F;&#x2F;nitter.net&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kizie.co&#x2F;&quot;&gt;kizie&lt;&#x2F;a&gt; - twitter redesign&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;youtube&quot;&gt;Youtube&lt;a class=&quot;zola-anchor&quot; href=&quot;#youtube&quot; aria-label=&quot;Anchor link for: youtube&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;iv-org&#x2F;invidious&quot;&gt;Invidious&lt;&#x2F;a&gt; - Invidious is an alternative front-end to YouTube&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instances: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;instances.invidious.io&#x2F;&quot;&gt;https:&#x2F;&#x2F;instances.invidious.io&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;google&quot;&gt;Google&lt;a class=&quot;zola-anchor&quot; href=&quot;#google&quot; aria-label=&quot;Anchor link for: google&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;skerkour&#x2F;bloom&quot;&gt;Bloom&lt;&#x2F;a&gt; - The simplest way to de-Google your life and business: Inbox, Calendar, Files, Contacts &amp;amp; much more&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;discord&quot;&gt;Discord&lt;a class=&quot;zola-anchor&quot; href=&quot;#discord&quot; aria-label=&quot;Anchor link for: discord&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;revoltchat&#x2F;revolt&quot;&gt;revolt&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;firebase&quot;&gt;Firebase&lt;a class=&quot;zola-anchor&quot; href=&quot;#firebase&quot; aria-label=&quot;Anchor link for: firebase&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;etesync&#x2F;server&quot;&gt;etesync&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nhost&#x2F;nhost&quot;&gt;nhost&lt;&#x2F;a&gt; - another firebase alternative.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;appwrite&#x2F;appwrite&quot;&gt;appwrite&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;hacker-news&quot;&gt;Hacker News&lt;a class=&quot;zola-anchor&quot; href=&quot;#hacker-news&quot; aria-label=&quot;Anchor link for: hacker-news&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;hhttps:&#x2F;&#x2F;github.com&#x2F;lobsters&#x2F;lobsters&quot;&gt;hacker news open source in ruby&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mariusor&#x2F;go-littr&quot;&gt;littr&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gurlic.com&#x2F;&quot;&gt;gurlic&lt;&#x2F;a&gt; - another hacker news alternatives&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;tildes&#x2F;tildes&quot;&gt;Tildes&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;netlify&quot;&gt;Netlify&lt;a class=&quot;zola-anchor&quot; href=&quot;#netlify&quot; aria-label=&quot;Anchor link for: netlify&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getmeli&#x2F;meli&quot;&gt;Meli&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;github&quot;&gt;Github&lt;a class=&quot;zola-anchor&quot; href=&quot;#github&quot; aria-label=&quot;Anchor link for: github&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sourcehut.org&#x2F;&quot;&gt;Source Hut&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fossil-scm.org&#x2F;home&#x2F;doc&#x2F;trunk&#x2F;www&#x2F;index.wiki&quot;&gt;fossil&lt;&#x2F;a&gt; - Sqlite use this system to develop things.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;pocket&quot;&gt;Pocket&lt;a class=&quot;zola-anchor&quot; href=&quot;#pocket&quot; aria-label=&quot;Anchor link for: pocket&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-shiori&#x2F;shiori&quot;&gt;shiori&lt;&#x2F;a&gt; - Pocket open-source alternative.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

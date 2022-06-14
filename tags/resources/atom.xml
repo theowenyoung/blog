@@ -11,7 +11,7 @@
 		<title>开发相关的资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
 		<updated>2022-06-06T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-resources/</id>
 		<content type="html">&lt;p&gt;收集开发相关的资源。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;api-token&quot;&gt;API Token&lt;a class=&quot;zola-anchor&quot; href=&quot;#api-token&quot; aria-label=&quot;Anchor link for: api-token&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -427,6 +427,23 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;telegraph.p3k.io&#x2F;&quot;&gt;Telegraph&lt;&#x2F;a&gt; - Easily send Webmentions from your website&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webmention.io&#x2F;&quot;&gt;Webmention.io&lt;&#x2F;a&gt; - Webmention.io is a hosted service created to easily receive webmentions on any web page.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fediring.net&#x2F;&quot;&gt;Fediring&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;system-os&quot;&gt;System OS&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-os&quot; aria-label=&quot;Anchor link for: system-os&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;guix.gnu.org&#x2F;&quot;&gt;Guix&lt;&#x2F;a&gt; - Guix comes with thousands of packages which include applications, system tools, documentation, fonts, and other digital goods readily available for installing with the GNU Guix package manager.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;myme.no&#x2F;posts&#x2F;2022-06-14-nixos-confederation.html&quot;&gt;NixOS 联盟&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bash&quot;&gt;Bash&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash&quot; aria-label=&quot;Anchor link for: bash&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;zx&quot;&gt;zx&lt;&#x2F;a&gt; - A tool for writing better scripts, using Javascript&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;redis&quot;&gt;Redis&lt;a class=&quot;zola-anchor&quot; href=&quot;#redis&quot; aria-label=&quot;Anchor link for: redis&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dragonflydb&#x2F;dragonfly&quot;&gt;dragonfly&lt;&#x2F;a&gt; - reddit 的现代替代品&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

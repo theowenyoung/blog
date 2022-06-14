@@ -11,7 +11,7 @@
 		<title>Jackett 安装指南</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/jackett-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/jackett-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/jackett-setup/</id>
 		<content type="html">&lt;p&gt;Jackett 是一款开源的种子聚合搜索服务，常用来和 BT 下载器配合使用。&lt;&#x2F;p&gt;
 &lt;p&gt;Read more at &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Jackett&#x2F;Jackett#install-as-service&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -40,7 +40,7 @@
 		<title>Jellyfin安装指南</title>
 		<published>2021-03-26T00:00:00+00:00</published>
 		<updated>2022-03-26T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/jellyfin-setup/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/jellyfin-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/jellyfin-setup/</id>
 		<content type="html">&lt;p&gt;Jellyfin 是一款开源的，拥有前后端服务的视频播放器和服务端程序。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;

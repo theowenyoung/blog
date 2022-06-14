@@ -11,7 +11,7 @@
 		<title>我从 Hacker News 中学到了什么？</title>
 		<published>2022-02-20T00:00:00+00:00</published>
 		<updated>2022-03-10T00:00:00+00:00</updated>
-		<link href="https://www.owenyoung.com/blog/hackernews/" type="text/html"/>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/hackernews/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/hackernews/</id>
 		<content type="html">&lt;p&gt;昨天看到 Hacker News 的创始人 Paul Graham 在 2009 年写的一篇文章&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.paulgraham.com&#x2F;hackernews.html&quot;&gt;《我从 Hacker News 中学到了什么》&lt;&#x2F;a&gt;, 作者提到：&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
