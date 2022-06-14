@@ -217,3 +217,7 @@ taxonomies:
 ## 搜索引擎
 
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
+
+##
+
+- [Entertaining space](https://entertaining.space/) - 无聊，不知道看点什么？这里有一些推荐
