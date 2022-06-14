@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-12T00:00:00+00:00</updated>
+	<updated>2022-06-14T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>在Debian系统中安装 Gost</title>
@@ -1953,7 +1953,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>收集值得阅读的文章</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-10T00:00:00+00:00</updated>
+		<updated>2022-06-14T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/articles/" type="text/html"/>
 		<id>https://www.owenyoung.com/articles/</id>
 		<content type="html">&lt;p&gt;收集值得一看的文章。&lt;&#x2F;p&gt;
@@ -2121,6 +2121,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;ji-zhu&quot;&gt;技术&lt;a class=&quot;zola-anchor&quot; href=&quot;#ji-zhu&quot; aria-label=&quot;Anchor link for: ji-zhu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;httptoolkit.tech&#x2F;blog&#x2F;public-cdn-risks&#x2F;&quot;&gt;公共 CDN 是无用和危险的&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;educatedguesswork.org&#x2F;posts&#x2F;web5-first-impressions&#x2F;&quot;&gt;对 Web5 的第一印象&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

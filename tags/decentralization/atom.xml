@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/decentralization/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-03-25T00:00:00+00:00</updated>
+	<updated>2022-06-14T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/decentralization/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Awesome Decentralization</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-06-14T00:00:00+00:00</updated>
 		<link href="https://www.owenyoung.com/en/decentralization/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/decentralization/</id>
 		<content type="html">&lt;p&gt;Curating awesome decentralized applications.&lt;&#x2F;p&gt;
@@ -40,6 +40,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;scuttlebutt.nz&#x2F;get-started&#x2F;&quot;&gt;Scuttlebutt&lt;&#x2F;a&gt; - Scuttlebutt is a social network and it works like others social apps we already use. The key difference is that it is decentralised, meaning not centralised&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;urbit.org&#x2F;&quot;&gt;urbit&lt;&#x2F;a&gt; - A clean-slate OS and network for the 21st century.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nostr-protocol&#x2F;nostr&quot;&gt;Nostr&lt;&#x2F;a&gt; - a truly censorship-resistant alternative to Twitter that has a chance of working
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aljazceru&#x2F;awesome-nostr&quot;&gt;awesome nostr&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;torrents&quot;&gt;Torrents&lt;a class=&quot;zola-anchor&quot; href=&quot;#torrents&quot; aria-label=&quot;Anchor link for: torrents&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -88,6 +93,20 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Toromino&#x2F;kibou&quot;&gt;kibou&lt;&#x2F;a&gt; - rust mastondon&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieweb.org&#x2F;&quot;&gt;Indie Web&lt;&#x2F;a&gt; - The IndieWeb is a community of individual personal websites&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;briarproject.org&#x2F;how-it-works&#x2F;&quot;&gt;Bria&lt;&#x2F;a&gt; - Android p2p chat&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rdbell&#x2F;nvote&quot;&gt;Nvote&lt;&#x2F;a&gt; - Decentralized, vote-driven community similar to services like Reddit and HackerNews. Built on nostr.
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nvote.co&#x2F;&quot;&gt;online&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fiatjaf&#x2F;branle&quot;&gt;Branle&lt;&#x2F;a&gt; - A Twitter-like Nostr client made with Quasar
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;branle.netlify.app&#x2F;&quot;&gt;online&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;monlovesmango&#x2F;astral&quot;&gt;astral&lt;&#x2F;a&gt; - Nostr client made with Quasar&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fiatjaf&#x2F;rsslay&quot;&gt;rsslay&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;damus.io&#x2F;&quot;&gt;damus&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;irislib&#x2F;iris-messenger&quot;&gt;Iris Messanger&lt;&#x2F;a&gt; - Decentralized messenger&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;mail&quot;&gt;Mail&lt;a class=&quot;zola-anchor&quot; href=&quot;#mail&quot; aria-label=&quot;Anchor link for: mail&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
