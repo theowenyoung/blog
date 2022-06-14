@@ -440,3 +440,17 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 - [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
 - [Webmention.io](https://webmention.io/) - Webmention.io is a hosted service created to easily receive webmentions on any web page.
 - [Fediring](https://fediring.net/)
+
+## System OS
+
+- [Guix](https://guix.gnu.org/) - Guix comes with thousands of packages which include applications, system tools, documentation, fonts, and other digital goods readily available for installing with the GNU Guix package manager.
+- [NixOS](https://nixos.org/)
+  - [NixOS 联盟](https://myme.no/posts/2022-06-14-nixos-confederation.html)
+
+## Bash
+
+- [zx](https://github.com/google/zx) - A tool for writing better scripts, using Javascript
+
+## Redis
+
+- [dragonfly](https://github.com/dragonflydb/dragonfly) - reddit 的现代替代品

@@ -2,14 +2,14 @@ base_url = "https://www.owenyoung.com"
 build_search_index = false
 compile_sass = false
 default_language = "zh"
-description = "主要关注注意力管理，深度工作，英文学习，反直觉, 技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，等方向"
+description = "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
 generate_feed = true
 generate_rss = true
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 20, lang = "zh"},
-  {name = "categories", feed = true, paginate_by = 20, lang = "zh"},
+  {name = "tags", feed = true, paginate_by = 25},
+  {name = "categories", feed = true, paginate_by = 25},
 ]
-title = "Owen Young's Blog"
+title = "Owen的博客"
 
 [markdown]
 # When set to "true", all code blocks are highlighted.
@@ -66,11 +66,7 @@ anchors = "on"
 paths = "on"
 taxonomies = "on"
 
-[languages.zh]
-description = "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
-title = "Owen的博客"
-
-[languages.zh.translations]
+[translations]
 
 keywords = "注意力, 读书, 工具分享, 纯文本, 英语学习"
 label_activity = "动态"
@@ -111,11 +107,11 @@ label_taxonomy = "类别"
 label_thoughts_title = "最新的几条[短想法](/thoughts/)："
 label_updated = "最后更新时间"
 [languages.en]
-build_search_index = true
+build_search_index = false
 description = "Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 20, lang = "en"},
-  {name = "categories", feed = true, paginate_by = 20, lang = "en"},
+  {name = "tags", feed = true, paginate_by = 25},
+  {name = "categories", feed = true, paginate_by = 25},
 ]
 title = "Owen Young's Blog"
 [languages.en.translations]
