@@ -106,6 +106,7 @@ taxonomies:
 ### ORM
 
 - [prisma](https://github.com/prisma/prisma) - Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite & MongoDB (Preview)
+- [Neon](https://github.com/neondatabase/neon) - Serverless Postgres
 
 ### Offline
 
@@ -128,6 +129,10 @@ taxonomies:
 ### Version
 
 - [Dolt](https://github.com/dolthub/dolt) - Dolt – It's Git for Data
+
+### Nosql
+
+- [dragonfly](https://github.com/dragonflydb/dragonfly) - redis 的现代替代品
 
 ## Deno
 
@@ -450,7 +455,3 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Bash
 
 - [zx](https://github.com/google/zx) - A tool for writing better scripts, using Javascript
-
-## Redis
-
-- [dragonfly](https://github.com/dragonflydb/dragonfly) - reddit 的现代替代品
