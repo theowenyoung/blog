@@ -64,18 +64,27 @@ th {
   padding: 0;
 }
 /* --reset end -- */
-
+/* 
+ #d2bf9e 
+ #fcfcfc 
+ #fffff8 
+ #41403e 
+ #e6ddd0 
+ divider: rgb(226, 232, 240);
+ code back: edf0f3
+/* rgba(0, 0, 0, 0.8)*/
 html {
   font-size: 15px;
   box-sizing: border-box;
-  --colors-text: rgba(0, 0, 0, 0.8);
+  --colors-text: #41403e ;
   --colors-muted: rgb(117, 117, 117);
   --colors-primary: #ea4c89;
-  --colors-divider: rgb(226, 232, 240);
+  --colors-divider: rgba(0,0,0,0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-code-background: #edf0f3;
-  --colors-background: #fcfcfc;
+  --colors-code-background: rgba(0,0,0,0.08);
+  --colors-background: #e6ddd0;
   --colors-secondary: #14213d;
+  --colors-surface: rgba(0,0,0,0.06);
 }
 
 body {
@@ -84,6 +93,7 @@ body {
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: var(--color-text);
   background-color: var(--colors-background);
+
 }
 #root {
   margin-left: auto;
@@ -122,7 +132,7 @@ h3::after {
   content: "";
   width: 50%;
   height: 1.1px;
-  background-color: white;
+  background-color: var(--colors-background);
   position: absolute;
   right: 0;
   bottom: -1px;
@@ -144,9 +154,7 @@ pre {
   padding: 1.5rem 1rem;
   border: 0px;
   border-radius: 0.5rem;
-  /* overflow: auto; */
-  overflow-x: scroll;
-  max-width: 100%;
+  overflow: auto;
 }
 code {
   border-radius: 0.25rem;
@@ -453,7 +461,7 @@ li.inline {
 }
 .card {
   /* background: #fff; */
-  background: #fffff8;
+  background: var(--colors-surface);
 }
 
 @media (min-width: 48rem) {
