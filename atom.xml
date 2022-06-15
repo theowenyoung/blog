@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-14T00:00:00+00:00</updated>
+	<updated>2022-06-15T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>在Debian系统中安装 Gost</title>
@@ -3421,7 +3421,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>收集一些给人灵感的东西</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-06-15T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/inspires/" type="text/html"/>
 		<id>https://www.owenyoung.com/inspires/</id>
 		<content type="html">&lt;p&gt;网上冲浪多年，看到过太多有意思的东西了，一定要记下来！&lt;&#x2F;p&gt;
@@ -3504,6 +3504,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.throwapp.com&#x2F;&quot;&gt;Throw app&lt;&#x2F;a&gt; - 匿名发送问题，然后等待响应&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wolfgangfaust.com&#x2F;project&#x2F;paper-hn&#x2F;&quot;&gt;Hacker News 报纸版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unim.press&#x2F;&quot;&gt;Reddit 报纸版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thiswebsitewillselfdestruct.com&#x2F;&quot;&gt;这个网站将会自毁&lt;&#x2F;a&gt; - 在 xxx s 后&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;fu-wu&quot;&gt;服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu&quot; aria-label=&quot;Anchor link for: fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -3518,6 +3519,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gainedin.site&#x2F;&quot;&gt;哲学笔记&lt;&#x2F;a&gt; - 哲学&#x2F;抽象常识书。它是从成千上万的文章，书籍，视频和讨论中收集的。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;react-guitar.com&#x2F;&quot;&gt;在线吉他练习&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gnod.com&#x2F;&quot;&gt;全球发现网络&lt;&#x2F;a&gt; - 发现有趣的新东西&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pointerpointer.com&#x2F;&quot;&gt;找鼠标光标位置的有意思网页&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ying-jian&quot;&gt;硬件&lt;a class=&quot;zola-anchor&quot; href=&quot;#ying-jian&quot; aria-label=&quot;Anchor link for: ying-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -3588,6 +3590,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;god&quot;&gt;God&lt;a class=&quot;zola-anchor&quot; href=&quot;#god&quot; aria-label=&quot;Anchor link for: god&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.godchecker.com&#x2F;&quot;&gt;God Checker&lt;&#x2F;a&gt; - 全世界几万个神的汇总&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;answers&quot;&gt;Answers&lt;a class=&quot;zola-anchor&quot; href=&quot;#answers&quot; aria-label=&quot;Anchor link for: answers&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=31708366&quot;&gt;Ask HN： 你遇到过最酷的网站&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -4076,6 +4082,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;adamgrant.bulletin.com&#x2F;&quot;&gt;Adam Grant&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;austinkleon.substack.com&#x2F;&quot;&gt;Austin Kleon&lt;&#x2F;a&gt; - 像艺术家一样偷窃作者&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;paulgraham.com&#x2F;articles.html&quot;&gt;Paul Graham&lt;&#x2F;a&gt; - YC 创始人&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gwern.net&#x2F;index&quot;&gt;Gwern&lt;&#x2F;a&gt; - 美国作家和研究员&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;product&quot;&gt;Product&lt;a class=&quot;zola-anchor&quot; href=&quot;#product&quot; aria-label=&quot;Anchor link for: product&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -4251,7 +4258,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blogsurf.io&#x2F;&quot;&gt;Blog Surf&lt;&#x2F;a&gt; - 博客搜索引擎&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#&quot; aria-label=&quot;Anchor link for: &quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;da-fa-shi-jian&quot;&gt;打发时间&lt;a class=&quot;zola-anchor&quot; href=&quot;#da-fa-shi-jian&quot; aria-label=&quot;Anchor link for: da-fa-shi-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;entertaining.space&#x2F;&quot;&gt;Entertaining space&lt;&#x2F;a&gt; - 无聊，不知道看点什么？这里有一些推荐&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
