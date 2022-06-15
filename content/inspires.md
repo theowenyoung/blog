@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-06-15
 taxonomies:
   categories:
     - Notes
@@ -77,6 +77,7 @@ taxonomies:
 - [Throw app](https://www.throwapp.com/) - 匿名发送问题，然后等待响应
 - [Hacker News 报纸版](https://www.wolfgangfaust.com/project/paper-hn/)
 - [Reddit 报纸版](https://unim.press/)
+- [这个网站将会自毁](https://www.thiswebsitewillselfdestruct.com/) - 在 xxx s 后
 
 ## 服务
 
@@ -88,6 +89,7 @@ taxonomies:
 - [哲学笔记](https://gainedin.site/) - 哲学/抽象常识书。它是从成千上万的文章，书籍，视频和讨论中收集的。
 - [在线吉他练习](https://react-guitar.com/)
 - [全球发现网络](https://www.gnod.com/) - 发现有趣的新东西
+- [找鼠标光标位置的有意思网页](https://pointerpointer.com/)
 
 ## 硬件
 
@@ -156,3 +158,7 @@ taxonomies:
 ## God
 
 - [God Checker](https://www.godchecker.com/) - 全世界几万个神的汇总
+
+## Answers
+
+- [Ask HN： 你遇到过最酷的网站](https://news.ycombinator.com/item?id=31708366)

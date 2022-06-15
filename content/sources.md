@@ -64,6 +64,7 @@ taxonomies:
 - [Adam Grant](https://adamgrant.bulletin.com/)
 - [Austin Kleon](https://austinkleon.substack.com/) - 像艺术家一样偷窃作者
 - [Paul Graham](http://paulgraham.com/articles.html) - YC 创始人
+- [Gwern](https://www.gwern.net/index) - 美国作家和研究员
 
 ## Product
 
@@ -218,6 +219,6 @@ taxonomies:
 
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
 
-##
+## 打发时间
 
 - [Entertaining space](https://entertaining.space/) - 无聊，不知道看点什么？这里有一些推荐
