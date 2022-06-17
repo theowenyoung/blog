@@ -2871,6 +2871,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;myme.no&#x2F;posts&#x2F;2022-06-14-nixos-confederation.html&quot;&gt;NixOS 联盟&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.nikiv.dev&#x2F;operating-systems&#x2F;linux&#x2F;nixos&quot;&gt;Nixos notes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -3210,6 +3211,11 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;docs&#x2F;getstarted&#x2F;tips-and-tricks&quot;&gt;Visual Studio Code Tips and Tricks&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;vscode-tips-and-tricks&quot;&gt;GitHub - microsoft&#x2F;vscode-tips-and-tricks: Collection of helpful tips and tricks for VS Code.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;robots-txt&quot;&gt;Robots.txt&lt;a class=&quot;zola-anchor&quot; href=&quot;#robots-txt&quot; aria-label=&quot;Anchor link for: robots-txt&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;robots&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-robots &quot;&gt;&lt;code class=&quot;language-robots&quot; data-lang=&quot;robots&quot;&gt;&lt;span&gt;# https:&#x2F;&#x2F;www.robotstxt.org&#x2F;robotstxt.html
+&lt;&#x2F;span&gt;&lt;span&gt;User-agent: *
+&lt;&#x2F;span&gt;&lt;span&gt;Disallow: &#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
