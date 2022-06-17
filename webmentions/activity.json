@@ -37,5 +37,26 @@
     "like-of": "https://www.owenyoung.com/activity/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1417744": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "峭立",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6e20d3077fcc5635eff4f92e3e74578add95524b248645af21caca8b075a16ca.jpg",
+      "url": "https://twitter.com/bianaiSM"
+    },
+    "url": "https://twitter.com/bianaiSM/status/1537338838728994816",
+    "published": "2022-06-16T07:38:36+00:00",
+    "wm-received": "2022-06-16T09:46:25Z",
+    "wm-id": 1417744,
+    "wm-source": "https://brid.gy/repost/twitter/OwenYoungZh/1536451433645895680/1537338838728994816",
+    "wm-target": "https://www.owenyoung.com/activity/",
+    "content": {
+      "text": "用Zola给我的静态博客 owenyoung.com/activity/ 实现了一个动态页面，利用 webmention.io  收集网络的回应，然后用Denoflow把回应保存成json文件，最后用Zola的模版渲染出来。 owenyoung.com/en/blog/indiew…"
+    },
+    "repost-of": "https://www.owenyoung.com/activity/",
+    "wm-property": "repost-of",
+    "wm-private": false
   }
 }
