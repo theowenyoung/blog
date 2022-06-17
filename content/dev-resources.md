@@ -451,6 +451,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 - [Guix](https://guix.gnu.org/) - Guix comes with thousands of packages which include applications, system tools, documentation, fonts, and other digital goods readily available for installing with the GNU Guix package manager.
 - [NixOS](https://nixos.org/)
   - [NixOS 联盟](https://myme.no/posts/2022-06-14-nixos-confederation.html)
+  - [Nixos notes](https://wiki.nikiv.dev/operating-systems/linux/nixos)
 
 ## Bash
 
