@@ -1,8 +1,10 @@
-.Phony: serve build build-linux test webmention send dev-webmention
+.Phony: serve build build-linux test webmention send dev-webmention win
 
 serve:
 	./bin/zola serve
 
+win:
+	./bin/win-zola.exe serve
 build:
 	./bin/zola build
 
