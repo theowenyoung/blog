@@ -1,8 +1,15 @@
 ---
-sort_by: "date"
-sort_direction: "decending"
-updated: 2022-04-04
+title: Sidebar
+date: 2021-03-29
+updated: 2022-06-04
 ---
+
+## Home Navigation
+
+- [Last Updated](/en/#latest-notes)
+- [Latest Articles](/en/#latest)
+- [Short Thoughts](/en/#thoughts)
+- [All Notes](/en/#all-notes)
 
 ## Impornant Links
 

@@ -87,63 +87,7 @@
       </section>
       {% endif %}
   
-      {% if config.extra.webmention_path %}
-      {% set current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
-      {% set webmention_data = load_data(path="webmentions"~current_webmention_file_name~".json",required=false) %}
-      <section class="p-comments h-feed">
-      <hr>
-      <h2>{{trans(key="label_response",lang=lang)}}<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
-      <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
-        {% if config.extra.email %}
-        <div id="email-comment" class="muted text-sm">
-          {% if config.default_language != lang %}
-           <p>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL,
-             Or, you can send your response via <a href="mailto:owen@owenyoung.com?subject={{ "Reply: " ~ page.title | urlencode }}">mail </a><code>owen@owenyoung.com</code>
-           </p>
-          {% else %}
-          <p>
-            你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject={{"回复："~page.title | urlencode }}">邮件  </a><code>owen@owenyoung.com</code> 和我讨论。
-          </p>
-          {% endif %}
-        
-        </div>
-        {% endif %}
-        <div class="flex items-center flex-wrap pb">
-          <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
-          <input type="submit" class="px py-sm" value="Send Webmention">
-        </div>
-    
-        <input type="hidden" name="target" value="{{current_url}}">
-      </form>
-        {% if webmention_data %}
-          {% set_global mentions = [] %}
-          {% for ignored, item in webmention_data %}
-              {% set_global mentions = mentions | concat(with=item) %}
-          {% endfor %}
-      
-          <p class="muted text-sm">{{trans(key="label_response_description",lang=lang)| markdown(inline=true) | safe}}</p>
-          {% for type, items in mentions | group_by(attribute="wm-property") %}
-              <h3>{{trans(key="label_"~type,lang=lang)}} ({{items | length}})<a href="#{{type}}" id="{{type}}" class="zola-anchor" >🔗</a></h3>
-              {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
-                <ul class="list-none flex items-center flex-wrap">
-                  {% for item in items %}
-                    {{ macro::webmention(type=type, item=item) }}
-                  {% endfor %}
-                </ul>
-              {% else %}
-              <ul class="list-none">
-                {% for item in items %}
-                {{ macro::webmention(type=type, item=item) }}
-                {% endfor %}
-              </ul>
-
-              {% endif %}
-           
-          {% endfor %}
-
-        {% endif %}
-      </section>
-      {% endif %}
+      {{ macro::webmentions()}}
       {% if config.extra.disqus and page.extra.comments %}
       <div id="disqus">
         <div id="disqus_thread"></div>

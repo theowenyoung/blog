@@ -13,6 +13,10 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.06.18
+
+Migrate `sidebar/_index.md` to `pages/sidebar.md`, all spectified page located in `content/pages` directories.
+
 ## [2022.06.14](https://github.com/theowenyoung/blog/commit/7a87eb29b6e3eaafdae14488a8f42de817073f3f) - Activity Page
 
 Adding [Activity](/content/pages/activity.en.md) page.
