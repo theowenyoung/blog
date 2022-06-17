@@ -14,7 +14,9 @@
 		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/changelog/</id>
 		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-06-14-activity-page&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;7a87eb29b6e3eaafdae14488a8f42de817073f3f&quot;&gt;2022.06.14&lt;&#x2F;a&gt; - Activity Page&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-14-activity-page&quot; aria-label=&quot;Anchor link for: 2022-06-14-activity-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-06-18&quot;&gt;2022.06.18&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-18&quot; aria-label=&quot;Anchor link for: 2022-06-18&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Migrate &lt;code&gt;sidebar&#x2F;_index.md&lt;&#x2F;code&gt; to &lt;code&gt;pages&#x2F;sidebar.md&lt;&#x2F;code&gt;, all spectified page located in &lt;code&gt;content&#x2F;pages&lt;&#x2F;code&gt; directories.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-14-activity-page&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;7a87eb29b6e3eaafdae14488a8f42de817073f3f&quot;&gt;2022.06.14&lt;&#x2F;a&gt; - Activity Page&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-14-activity-page&quot; aria-label=&quot;Anchor link for: 2022-06-14-activity-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Adding &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;activity&#x2F;&quot;&gt;Activity&lt;&#x2F;a&gt; page.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;2022-06-13-indieweb&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;c20bb4c97540e91ed2f555800d36ebbe05379155&quot;&gt;2022.06.13&lt;&#x2F;a&gt; - IndieWeb&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-13-indieweb&quot; aria-label=&quot;Anchor link for: 2022-06-13-indieweb&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ol&gt;
@@ -1748,6 +1750,42 @@ if you want change to the exact version every time, you can set the config to&lt
 &lt;h2 id=&quot;pocket&quot;&gt;Pocket&lt;a class=&quot;zola-anchor&quot; href=&quot;#pocket&quot; aria-label=&quot;Anchor link for: pocket&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-shiori&#x2F;shiori&quot;&gt;shiori&lt;&#x2F;a&gt; - Pocket open-source alternative.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Sidebar</title>
+		<published>2021-03-29T00:00:00+00:00</published>
+		<updated>2022-06-04T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/pages/sidebar/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/pages/sidebar/</id>
+		<content type="html">&lt;h2 id=&quot;home-navigation&quot;&gt;Home Navigation&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#latest-notes&quot;&gt;Last Updated&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#latest&quot;&gt;Latest Articles&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#thoughts&quot;&gt;Short Thoughts&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#all-notes&quot;&gt;All Notes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;impornant-links&quot;&gt;Impornant Links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;blog&#x2F;atom.xml&quot;&gt;RSS Feed&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;about&quot;&gt;About&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;about&#x2F;&quot;&gt;About&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;now&#x2F;&quot;&gt;Now&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;activity&#x2F;&quot;&gt;Response Activity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;&quot;&gt;Changelog&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;other&quot;&gt;Other&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;Twitter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&quot;&gt;Github&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;archive&quot;&gt;Archive&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;archive&#x2F;&quot;&gt;Archive&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&quot;&gt;Source&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
