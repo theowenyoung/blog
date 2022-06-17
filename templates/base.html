@@ -203,7 +203,7 @@ type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(pa
             </li>
             {% endfor %}
           </ul>
-          {% set custom_sidebar = get_section(path="sidebar/_index"~file_lang_path~".md") %} 
+          {% set custom_sidebar = get_page(path="pages/sidebar"~file_lang_path~".md") %} 
             {{ custom_sidebar.content | safe }}
         
           <h2 ><a class="no-underline" href="{{lang_prefix_path}}tags/">{{ trans(key="label_tags",lang=lang) }}</a></h2>
