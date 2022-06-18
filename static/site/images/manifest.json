@@ -1,5 +1,7 @@
 {
-  "name": "Owen 博客",
+  "name": "Owen's Blog",
+  "short_name": "Owen",
+  "theme_color": "#f9f5e9",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
