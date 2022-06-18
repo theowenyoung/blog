@@ -39,7 +39,7 @@ include_content = false
 author = "Owen Young"
 email = "owen@owenyoung.com"
 prefix_url = "https://www.owenyoung.com"
-theme_color = "#e6ddd0"
+theme_color = "#f9f5e9"
 ### indieweb note
 bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
 ### THIRD PARTY

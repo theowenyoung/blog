@@ -69,9 +69,10 @@ th {
  #fcfcfc 
  #fffff8 
  #41403e 
- #e6ddd0 
+ backanother #e6ddd0 
  divider: rgb(226, 232, 240);
  code back: edf0f3
+ rgb(249, 245, 233)
 /* rgba(0, 0, 0, 0.8)*/
 html {
   font-size: 15px;
@@ -82,18 +83,22 @@ html {
   --colors-divider: rgba(0,0,0,0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-code-background: rgba(0,0,0,0.08);
-  --colors-background: #e6ddd0;
+  --colors-background:  #f9f5e9;
   --colors-secondary: #14213d;
-  --colors-surface: rgba(0,0,0,0.06);
+  --colors-surface: rgba(0,0,0,0.04);
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+  Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+  "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 body {
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: var(--color-text);
+
+  color: var(--colors-text);
   background-color: var(--colors-background);
 
+}
+[lang]:lang(zh) {
+  font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 #root {
   margin-left: auto;
@@ -212,6 +217,43 @@ ol,
 ul {
   font-size: 1.2rem;
   line-height: 2;
+}
+button,input[type=submit]{
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+  transition: all 235ms ease-in-out 0s;
+  align-self: center;
+  background: 0 0;
+  border: 2px solid var(--colors-text);
+  color: var(--colors-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  padding: .75rem;
+  font-family: Neucha,sans-serif;
+}
+button,input[type=submit]:hover{
+  transform: translate3d(0,2px,0);
+  box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+input[type=url],input[type=text]{
+  background: none;
+  border: 2px solid var(--colors-text);
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: var(--colors-text);
+  display: block;
+  font-size: 1rem;
+  outline: 0;
+  padding: .75rem;
+
 }
 .no-underline {
   text-decoration: none;
