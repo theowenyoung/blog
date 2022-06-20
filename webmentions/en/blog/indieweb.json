@@ -1290,5 +1290,23 @@
     "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1419465": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "失格记忆",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/46a52e75dc4b93095576f0a858ce50b6beec3ac42fb10427e2657237928497ea.jpg",
+      "url": "https://twitter.com/han19981020"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1537973323929227266#favorited-by-1280547354920157184",
+    "published": null,
+    "wm-received": "2022-06-19T10:18:27Z",
+    "wm-id": 1419465,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1537973323929227266/1280547354920157184",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
