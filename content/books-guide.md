@@ -43,6 +43,7 @@ taxonomies:
   - <https://b-ok.com>
   - <https://bookzz.ren>
   - <https://booksc.xyz>
+- [Libgen](https://libgen.is) - 英文书籍
 - [公共领域有声读物](https://librivox.org/)
 - [标准电子书](https://standardebooks.org/) - 制作精美的免费版权的电子书
 - [鸠摩电子书搜索](https://www.jiumodiary.com/)
