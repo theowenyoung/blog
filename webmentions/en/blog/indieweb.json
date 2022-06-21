@@ -1308,5 +1308,105 @@
     "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1419749": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Reorx",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/93207c009f2cb695c62a9f4a6c3311f80f491d61923d1c84f808c30af498307a.png",
+      "url": "https://twitter.com/novoreorx"
+    },
+    "url": "https://twitter.com/novoreorx/status/1538716629290610688",
+    "published": "2022-06-20T02:53:27+00:00",
+    "wm-received": "2022-06-20T03:06:48Z",
+    "wm-id": 1419749,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1538704107577708546/1538716629290610688",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "感谢介绍 Webmention，我准备也引入到博客中😄\n\n没错，Welcomments 的逻辑可以用各种自动化服务拼装起来，很期待有人能实践一下\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/WuPingJu\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/pseudo_yu\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>",
+      "text": "感谢介绍 Webmention，我准备也引入到博客中😄\n\n没错，Welcomments 的逻辑可以用各种自动化服务拼装起来，很期待有人能实践一下"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1419798": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Yu ZHANG",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6b0acfbfd61d0e3f3ecda9d981945fe14556ad248c2056121f088da10369e438.jpg",
+      "url": "https://twitter.com/pseudo_yu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1538704107577708546#favorited-by-1293983659125440512",
+    "published": null,
+    "wm-received": "2022-06-20T04:56:07Z",
+    "wm-id": 1419798,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1538704107577708546/1293983659125440512",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1419799": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1538704107577708546#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-06-20T04:56:08Z",
+    "wm-id": 1419799,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1538704107577708546/159287109",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "like-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1419800": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Shawn",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a8a3e63a254c27192ca3161be48d823452645b215c098e79638f909471553ba1.jpg",
+      "url": "https://twitter.com/xiangee"
+    },
+    "url": "https://twitter.com/xiangee/status/1538746203411816448",
+    "published": "2022-06-20T04:50:58+00:00",
+    "wm-received": "2022-06-20T04:56:09Z",
+    "wm-id": 1419800,
+    "wm-source": "https://brid.gy/repost/twitter/OwenYoungZh/1538704107577708546/1538746203411816448",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "text": "是的，我目前就是用Webmention协议，把mention的json数据定时更新到我的repo，然后渲染。owenyoung.com/en/blog/indiew… ，看了你的文章之后，感觉那个Welcomments理论上可以直接用Github Actions实现，似乎能省掉一个SAAS。Github Actions支持webhook，然后生成一个pull request,这样就有了审核的功能了。"
+    },
+    "repost-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "repost-of",
+    "wm-private": false
+  },
+  "1419801": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Yu ZHANG",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6b0acfbfd61d0e3f3ecda9d981945fe14556ad248c2056121f088da10369e438.jpg",
+      "url": "https://twitter.com/pseudo_yu"
+    },
+    "url": "https://twitter.com/pseudo_yu/status/1538719983534231552",
+    "published": "2022-06-20T03:06:46+00:00",
+    "wm-received": "2022-06-20T04:56:10Z",
+    "wm-id": 1419801,
+    "wm-source": "https://brid.gy/repost/twitter/OwenYoungZh/1538704107577708546/1538719983534231552",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "text": "是的，我目前就是用Webmention协议，把mention的json数据定时更新到我的repo，然后渲染。owenyoung.com/en/blog/indiew… ，看了你的文章之后，感觉那个Welcomments理论上可以直接用Github Actions实现，似乎能省掉一个SAAS。Github Actions支持webhook，然后生成一个pull request,这样就有了审核的功能了。"
+    },
+    "repost-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "repost-of",
+    "wm-private": false
   }
 }
