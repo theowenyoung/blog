@@ -1,0 +1,20 @@
+{
+  "1422612": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Jeremy Lu",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/4309754539e4b7efc50b0e762f37c31beaf9e42825f8f0a753c4dffe5aeae0ab.png",
+      "url": "https://twitter.com/thecat"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1541005804928921602#favorited-by-807633",
+    "published": null,
+    "wm-received": "2022-06-26T11:16:34Z",
+    "wm-id": 1422612,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1541005804928921602/807633",
+    "wm-target": "https://www.owenyoung.com/blog/books/stolen-focus/",
+    "like-of": "https://www.owenyoung.com/blog/books/stolen-focus/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}
