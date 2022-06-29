@@ -147,6 +147,9 @@ taxonomies:
 
 ## Editor
 
+- [emacs neovim, and vscode](https://www.murilopereira.com/the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla/)
+- [neovim-vscode](https://github.com/vscode-neovim/vscode-neovim)
+- [dotfile](https://gitlab.com/datenstrom/home)
 ### AI Enhance
 
 - [GitHub Copilot · Your AI pair programmer](https://copilot.github.com/) - Github Copilot
@@ -457,3 +460,6 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 
 - [zx](https://github.com/google/zx) - A tool for writing better scripts, using Javascript
 
+## Vim
+
+- [niivim](https://git.sr.ht/~theorytoe/nii-nvim)

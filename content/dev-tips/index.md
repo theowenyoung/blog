@@ -168,6 +168,8 @@ folder/*
 
 ## 开源许可证
 
+- [Unlicense](https://unlicense.org/) - 无版权许可证，公有领域许可证
+
 ![License Comparison](./license-comparision.png)
 
 > By [如何选择开源许可证？](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
@@ -540,4 +542,13 @@ Added the following shortcut to `keybindings.json`
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /
+```
+
+## Systemd
+
+
+### stay active after your session is killed
+
+```bash
+loginctl <userid> enable-linger
 ```
