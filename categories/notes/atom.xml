@@ -405,6 +405,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<content type="html">&lt;p&gt;收集值得一看的文章。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;ke-ji&quot;&gt;科技&lt;a class=&quot;zola-anchor&quot; href=&quot;#ke-ji&quot; aria-label=&quot;Anchor link for: ke-ji&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;permacomputing.net&#x2F;Principles&#x2F;&quot;&gt;可持续计算&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;idlewords.com&#x2F;talks&#x2F;web_design_first_100_years.htm&quot;&gt;网页设计 100 年（2014）&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=1025681&quot;&gt;新的十年有什么预测？（2010）&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;michaelfeathers.silvrback.com&#x2F;10-papers-every-developer-should-read-at-least-twice&quot;&gt;每个开发者都应该阅读的 10 篇论文（2009）&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -442,6 +443,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;ren-sheng-zhe-xue&quot;&gt;人生&#x2F;哲学&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-sheng-zhe-xue&quot; aria-label=&quot;Anchor link for: ren-sheng-zhe-xue&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.floordaily.net&#x2F;floorfocus&#x2F;cluelessness-is-the-reason-most-people-eventually-&quot;&gt;无知是大多数人最终失败的原因&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;M_OOo9X1k4IioNmv7rGk9w&quot;&gt;过去10年美国人的生活为何如此愚蠢？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ren-wu&quot;&gt;人物&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-wu&quot; aria-label=&quot;Anchor link for: ren-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -568,6 +570,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;httptoolkit.tech&#x2F;blog&#x2F;public-cdn-risks&#x2F;&quot;&gt;公共 CDN 是无用和危险的&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;educatedguesswork.org&#x2F;posts&#x2F;web5-first-impressions&#x2F;&quot;&gt;对 Web5 的第一印象&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;key-documents&quot;&gt;key-documents&lt;a class=&quot;zola-anchor&quot; href=&quot;#key-documents&quot; aria-label=&quot;Anchor link for: key-documents&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;davieshouser.com&#x2F;wp-content&#x2F;uploads&#x2F;2018&#x2F;05&#x2F;19-What-My-Family-Should-Know.pdf&quot;&gt;当我死后，我的家人应该知道什么&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -839,6 +845,11 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vercel-community&#x2F;deno&quot;&gt;Vercel Deno Runtime&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;editor&quot;&gt;Editor&lt;a class=&quot;zola-anchor&quot; href=&quot;#editor&quot; aria-label=&quot;Anchor link for: editor&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.murilopereira.com&#x2F;the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla&#x2F;&quot;&gt;emacs neovim, and vscode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vscode-neovim&#x2F;vscode-neovim&quot;&gt;neovim-vscode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;datenstrom&#x2F;home&quot;&gt;dotfile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;ai-enhance&quot;&gt;AI Enhance&lt;a class=&quot;zola-anchor&quot; href=&quot;#ai-enhance&quot; aria-label=&quot;Anchor link for: ai-enhance&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;copilot.github.com&#x2F;&quot;&gt;GitHub Copilot · Your AI pair programmer&lt;&#x2F;a&gt; - Github Copilot&lt;&#x2F;li&gt;
@@ -1145,6 +1156,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;zx&quot;&gt;zx&lt;&#x2F;a&gt; - A tool for writing better scripts, using Javascript&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;vim&quot;&gt;Vim&lt;a class=&quot;zola-anchor&quot; href=&quot;#vim&quot; aria-label=&quot;Anchor link for: vim&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.sr.ht&#x2F;%7Etheorytoe&#x2F;nii-nvim&quot;&gt;niivim&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
@@ -1264,6 +1279,9 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;URL encode, &lt;code&gt;urlquery &amp;quot;https:&#x2F;&#x2F;test.com&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;kai-yuan-xu-ke-zheng&quot;&gt;开源许可证&lt;a class=&quot;zola-anchor&quot; href=&quot;#kai-yuan-xu-ke-zheng&quot; aria-label=&quot;Anchor link for: kai-yuan-xu-ke-zheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unlicense.org&#x2F;&quot;&gt;Unlicense&lt;&#x2F;a&gt; - 无版权许可证，公有领域许可证&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;.&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;By &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2011&#x2F;05&#x2F;how_to_choose_free_software_licenses.html&quot;&gt;如何选择开源许可证？&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1481,6 +1499,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;robots&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-robots &quot;&gt;&lt;code class=&quot;language-robots&quot; data-lang=&quot;robots&quot;&gt;&lt;span&gt;# https:&#x2F;&#x2F;www.robotstxt.org&#x2F;robotstxt.html
 &lt;&#x2F;span&gt;&lt;span&gt;User-agent: *
 &lt;&#x2F;span&gt;&lt;span&gt;Disallow: &#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;stay-active-after-your-session-is-killed&quot;&gt;stay active after your session is killed&lt;a class=&quot;zola-anchor&quot; href=&quot;#stay-active-after-your-session-is-killed&quot; aria-label=&quot;Anchor link for: stay-active-after-your-session-is-killed&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;loginctl &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;userid&amp;gt; enable-linger
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
@@ -2618,7 +2640,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
-&lt;p&gt;伊朗小粉红小组： &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ProIran&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ProIran&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;防疫措施里有2条是我觉得最最最反智的：1. 不让农民下地。 2.不让快递员把快递放在位于小区内的快递柜里。– 2022.06.21&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;伊朗小粉红小组： &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ProIran&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;ProIran&#x2F;&lt;&#x2F;a&gt; – 2022.05.29&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个人怎么会又想看中国拍好电影，同时又认可中国的审查呢？ – 2022.05.29&lt;&#x2F;p&gt;

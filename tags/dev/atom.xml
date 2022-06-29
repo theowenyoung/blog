@@ -141,6 +141,11 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vercel-community&#x2F;deno&quot;&gt;Vercel Deno Runtime&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;editor&quot;&gt;Editor&lt;a class=&quot;zola-anchor&quot; href=&quot;#editor&quot; aria-label=&quot;Anchor link for: editor&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.murilopereira.com&#x2F;the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla&#x2F;&quot;&gt;emacs neovim, and vscode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vscode-neovim&#x2F;vscode-neovim&quot;&gt;neovim-vscode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;datenstrom&#x2F;home&quot;&gt;dotfile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;ai-enhance&quot;&gt;AI Enhance&lt;a class=&quot;zola-anchor&quot; href=&quot;#ai-enhance&quot; aria-label=&quot;Anchor link for: ai-enhance&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;copilot.github.com&#x2F;&quot;&gt;GitHub Copilot · Your AI pair programmer&lt;&#x2F;a&gt; - Github Copilot&lt;&#x2F;li&gt;
@@ -447,6 +452,10 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;zx&quot;&gt;zx&lt;&#x2F;a&gt; - A tool for writing better scripts, using Javascript&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;vim&quot;&gt;Vim&lt;a class=&quot;zola-anchor&quot; href=&quot;#vim&quot; aria-label=&quot;Anchor link for: vim&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;git.sr.ht&#x2F;%7Etheorytoe&#x2F;nii-nvim&quot;&gt;niivim&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
@@ -566,6 +575,9 @@
 &lt;li&gt;URL encode, &lt;code&gt;urlquery &amp;quot;https:&#x2F;&#x2F;test.com&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;kai-yuan-xu-ke-zheng&quot;&gt;开源许可证&lt;a class=&quot;zola-anchor&quot; href=&quot;#kai-yuan-xu-ke-zheng&quot; aria-label=&quot;Anchor link for: kai-yuan-xu-ke-zheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unlicense.org&#x2F;&quot;&gt;Unlicense&lt;&#x2F;a&gt; - 无版权许可证，公有领域许可证&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;.&#x2F;license-comparision.png&quot; alt=&quot;License Comparison&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;By &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2011&#x2F;05&#x2F;how_to_choose_free_software_licenses.html&quot;&gt;如何选择开源许可证？&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -783,6 +795,10 @@
 &lt;pre data-lang=&quot;robots&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-robots &quot;&gt;&lt;code class=&quot;language-robots&quot; data-lang=&quot;robots&quot;&gt;&lt;span&gt;# https:&#x2F;&#x2F;www.robotstxt.org&#x2F;robotstxt.html
 &lt;&#x2F;span&gt;&lt;span&gt;User-agent: *
 &lt;&#x2F;span&gt;&lt;span&gt;Disallow: &#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;stay-active-after-your-session-is-killed&quot;&gt;stay active after your session is killed&lt;a class=&quot;zola-anchor&quot; href=&quot;#stay-active-after-your-session-is-killed&quot; aria-label=&quot;Anchor link for: stay-active-after-your-session-is-killed&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;loginctl &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;userid&amp;gt; enable-linger
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
 	</entry>
