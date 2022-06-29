@@ -1,6 +1,8 @@
 ---
 title: Env, Secrets, Dotfiles, Password Manager
 date: 2022-06-20
+draft: true
+updated: 2022-06-29
 ---
 
 
