@@ -15,6 +15,7 @@ taxonomies:
 
 ## 科技
 
+- [可持续计算](https://permacomputing.net/Principles/)
 - [网页设计 100 年（2014）](https://idlewords.com/talks/web_design_first_100_years.htm)
 - [新的十年有什么预测？（2010）](https://news.ycombinator.com/item?id=1025681)
 - [每个开发者都应该阅读的 10 篇论文（2009）](https://michaelfeathers.silvrback.com/10-papers-every-developer-should-read-at-least-twice)
@@ -46,7 +47,7 @@ taxonomies:
 ## 人生/哲学
 
 - [无知是大多数人最终失败的原因](https://www.floordaily.net/floorfocus/cluelessness-is-the-reason-most-people-eventually-)
-
+- [过去10年美国人的生活为何如此愚蠢？](https://mp.weixin.qq.com/s/M_OOo9X1k4IioNmv7rGk9w)
 ## 人物
 
 - [我从 Hacker News 中学到了什么？](http://www.paulgraham.com/hackernews.html)
@@ -156,3 +157,8 @@ taxonomies:
 
 - [公共 CDN 是无用和危险的](https://httptoolkit.tech/blog/public-cdn-risks/)
 - [对 Web5 的第一印象](https://educatedguesswork.org/posts/web5-first-impressions/)
+
+## key-documents
+
+
+- [当我死后，我的家人应该知道什么](https://davieshouser.com/wp-content/uploads/2018/05/19-What-My-Family-Should-Know.pdf)
