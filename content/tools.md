@@ -294,3 +294,4 @@ taxonomies:
 ## HTTP Client
 
 - [Rest Client](https://github.com/Huachao/vscode-restclient) - Vscode http request by plain text
+- [HURL](https://hurl.dev)
