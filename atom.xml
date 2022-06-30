@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-29T00:00:00+00:00</updated>
+	<updated>2022-06-30T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>在Debian系统中安装 Gost</title>
@@ -4723,7 +4723,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-06-08T00:00:00+00:00</updated>
+		<updated>2022-06-30T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -5010,6 +5010,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;si-wei-guan-li&quot;&gt;思维管理&lt;a class=&quot;zola-anchor&quot; href=&quot;#si-wei-guan-li&quot; aria-label=&quot;Anchor link for: si-wei-guan-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;untools.co&#x2F;&quot;&gt;提高思维能力的工具&lt;&#x2F;a&gt; - 收集思维工具和框架，以帮助您解决问题，做出决策并了解系统。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bash&quot;&gt;Bash&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash&quot; aria-label=&quot;Anchor link for: bash&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;macos-defaults.com&#x2F;#%F0%9F%99%8B-what-s-a-defaults-command&quot;&gt;Macos Default&lt;&#x2F;a&gt; - find command to change macos defaults&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
