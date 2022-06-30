@@ -14,7 +14,10 @@
 		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/changelog/</id>
 		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-06-18&quot;&gt;2022.06.18&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-18&quot; aria-label=&quot;Anchor link for: 2022-06-18&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-06-30&quot;&gt;2022.06.30&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-30&quot; aria-label=&quot;Anchor link for: 2022-06-30&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add Toggle More Button.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;toggle-more.png&quot; alt=&quot;toggle more screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-18&quot;&gt;2022.06.18&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-18&quot; aria-label=&quot;Anchor link for: 2022-06-18&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Migrate &lt;code&gt;sidebar&#x2F;_index.md&lt;&#x2F;code&gt; to &lt;code&gt;pages&#x2F;sidebar.md&lt;&#x2F;code&gt;, all spectified page located in &lt;code&gt;content&#x2F;pages&lt;&#x2F;code&gt; directories.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;2022-06-14-activity-page&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;7a87eb29b6e3eaafdae14488a8f42de817073f3f&quot;&gt;2022.06.14&lt;&#x2F;a&gt; - Activity Page&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-14-activity-page&quot; aria-label=&quot;Anchor link for: 2022-06-14-activity-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Adding &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;activity&#x2F;&quot;&gt;Activity&lt;&#x2F;a&gt; page.&lt;&#x2F;p&gt;

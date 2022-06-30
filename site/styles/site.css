@@ -194,6 +194,9 @@ ul {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
 }
+ul > details > summary {
+  margin-left: -1.4rem
+}
 p {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
