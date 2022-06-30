@@ -162,3 +162,7 @@ taxonomies:
 
 
 - [当我死后，我的家人应该知道什么](https://davieshouser.com/wp-content/uploads/2018/05/19-What-My-Family-Should-Know.pdf)
+
+## Bash
+
+- [Ten thing I wish I'd known about bash](https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/)
