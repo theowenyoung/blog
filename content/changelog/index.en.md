@@ -13,6 +13,12 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.06.30
+
+Add Toggle More Button.
+
+![toggle more screenshot](./toggle-more.png)
+
 ## 2022.06.18
 
 Migrate `sidebar/_index.md` to `pages/sidebar.md`, all spectified page located in `content/pages` directories.
