@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-06-08
+updated: 2022-06-30
 taxonomies:
   categories:
     - Notes
@@ -286,3 +286,7 @@ taxonomies:
 ## 思维管理
 
 - [提高思维能力的工具](https://untools.co/) - 收集思维工具和框架，以帮助您解决问题，做出决策并了解系统。
+
+## Bash
+
+- [Macos Default](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) - find command to change macos defaults
