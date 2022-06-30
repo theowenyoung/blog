@@ -290,3 +290,7 @@ taxonomies:
 ## Bash
 
 - [Macos Default](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) - find command to change macos defaults
+
+## HTTP Client
+
+- [Rest Client](https://github.com/Huachao/vscode-restclient) - Vscode http request by plain text
