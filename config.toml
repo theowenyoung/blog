@@ -67,7 +67,7 @@ paths = "on"
 taxonomies = "on"
 
 [translations]
-
+label_toggle_more="展开全部"
 keywords = "注意力, 读书, 工具分享, 纯文本, 英语学习"
 label_activity = "动态"
 label_all_posts = "[点击查看所有文章🔥🔥](/blog/)"
@@ -121,6 +121,7 @@ label_activity = "Activity"
 label_all_posts = "[View all posts](/en/blog/)"
 label_all_thoughts = "[View all thoughts🔥🔥](/en/thoughts/)"
 label_archive = "Archive"
+label_toggle_more = "View All"
 label_back_to_start = "Get Started"
 label_book_author = "Book Author"
 "label_bookmark-of" = "Bookmarks"
