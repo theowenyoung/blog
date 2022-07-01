@@ -463,3 +463,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Vim
 
 - [niivim](https://git.sr.ht/~theorytoe/nii-nvim)
+
+## Cheetsheet
+
+- [what's your cheatsheet](https://news.ycombinator.com/item?id=31928736)
