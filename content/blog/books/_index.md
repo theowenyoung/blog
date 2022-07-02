@@ -15,4 +15,6 @@ page_template: "book.html"
 
 还有一些我草草读过的，或者觉得没有必要单独列出的书，我记录在我的[年度日记文件里](/content/journal-2022.md#books)
 
+> 从2021年开始记录，[2021年读书笔记在这里](/content/blog/books-2021.md)
+
 ---
