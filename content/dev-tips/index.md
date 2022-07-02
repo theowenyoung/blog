@@ -538,7 +538,7 @@ Added the following shortcut to `keybindings.json`
 
 ## Robots.txt
 
-```robots
+```bash
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /
