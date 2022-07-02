@@ -796,9 +796,9 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;microsoft&#x2F;vscode-tips-and-tricks&quot;&gt;GitHub - microsoft&#x2F;vscode-tips-and-tricks: Collection of helpful tips and tricks for VS Code.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;robots-txt&quot;&gt;Robots.txt&lt;a class=&quot;zola-anchor&quot; href=&quot;#robots-txt&quot; aria-label=&quot;Anchor link for: robots-txt&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;robots&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-robots &quot;&gt;&lt;code class=&quot;language-robots&quot; data-lang=&quot;robots&quot;&gt;&lt;span&gt;# https:&#x2F;&#x2F;www.robotstxt.org&#x2F;robotstxt.html
-&lt;&#x2F;span&gt;&lt;span&gt;User-agent: *
-&lt;&#x2F;span&gt;&lt;span&gt;Disallow: &#x2F;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# https:&#x2F;&#x2F;www.robotstxt.org&#x2F;robotstxt.html
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;User-agent: &lt;&#x2F;span&gt;&lt;span&gt;*
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Disallow:&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;stay-active-after-your-session-is-killed&quot;&gt;stay active after your session is killed&lt;a class=&quot;zola-anchor&quot; href=&quot;#stay-active-after-your-session-is-killed&quot; aria-label=&quot;Anchor link for: stay-active-after-your-session-is-killed&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
