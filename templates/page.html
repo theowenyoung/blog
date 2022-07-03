@@ -42,7 +42,7 @@
       </div>
   
     <div>
-      <h1 class="p-name entry-title" style="font-size:2rem;">{{ page.title }}</h1>
+      <h1 class="p-name entry-title" style="font-size:1.8rem;">{{ page.title }}</h1>
       <div class="display-none p-author h-card vcard">
         <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
         <a class="p-name u-url url"
@@ -52,7 +52,8 @@
       </div>
       <div class="pt muted">
         <div>
-          {% if page.date %}{{ trans(key="label_created",lang=lang)}}: <time class="dt-published published" datetime="{{page.date}}">{{page.date | date}}</time>{% endif %}{% if page.updated %}, {{trans(key="label_updated",lang=lang)}}: <time class="dt-updated updated" datetime="{{page.updated}}">{{ page.updated | date}}</time>,{% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
+          {% if page.date %}{{ trans(key="label_created",lang=lang)}}: <time class="dt-published published" datetime="{{page.date}}">{{page.date | date}}</time>{% endif %}{% if page.updated %} | {{trans(key="label_updated",lang=lang)}}: <time class="dt-updated updated" datetime="{{page.updated}}">{{ page.updated | date}}</time> |
+           {% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
     </div>
 
     </div>

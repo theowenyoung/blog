@@ -13,6 +13,10 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.07.03
+
+Change base font size to 15px 
+
 ## 2022.06.30
 
 Add Toggle More Button.
