@@ -1,7 +1,7 @@
 ---
 title: 阅读指南
 date: 2022-03-29
-updated: 2022-03-29
+updated: 2022-07-03
 taxonomies:
   categories:
     - Notes
@@ -47,6 +47,9 @@ taxonomies:
 - [公共领域有声读物](https://librivox.org/)
 - [标准电子书](https://standardebooks.org/) - 制作精美的免费版权的电子书
 - [鸠摩电子书搜索](https://www.jiumodiary.com/)
+- [知识库电子书中文](https://book.zhishikoo.com/)
+- [elib 中文](https://elib.cc/)
+- [ahhhfs分享](https://www.ahhhhfs.com/welfare/recourse/)
 
 ## 讨论
 
