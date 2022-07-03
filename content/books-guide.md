@@ -49,7 +49,7 @@ taxonomies:
 - [鸠摩电子书搜索](https://www.jiumodiary.com/)
 - [知识库电子书中文](https://book.zhishikoo.com/)
 - [elib 中文](https://elib.cc/)
-- [ahhhfs分享](https://www.ahhhhfs.com/welfare/recourse/)
+- [ahhhfs分享](https://www.ahhhhfs.com/?cat=&s=%E7%94%B5%E5%AD%90%E4%B9%A6)
 
 ## 讨论
 
