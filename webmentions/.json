@@ -70,5 +70,23 @@
     "like-of": "https://www.owenyoung.com/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1426642": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "ConteMan",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/dab35dbdc13e87f308739338b072c2f8935bb27e917bba536f38562e7dd069dd.jpg",
+      "url": "https://twitter.com/RealConteMan"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1543481897958789120#favorited-by-2683812139",
+    "published": null,
+    "wm-received": "2022-07-03T08:03:53Z",
+    "wm-id": 1426642,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1543481897958789120/2683812139",
+    "wm-target": "https://www.owenyoung.com/",
+    "like-of": "https://www.owenyoung.com/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
