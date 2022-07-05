@@ -88,5 +88,45 @@
     "like-of": "https://www.owenyoung.com/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1427040": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Percy Ma",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b404c78442e5c84c6f7520ba8481ba3711fd4b1c2ef7cc2b136f4ecd345c7268.jpg",
+      "url": "https://twitter.com/kecrily"
+    },
+    "url": "https://twitter.com/kecrily/status/1543782692395061249",
+    "published": "2022-07-04T02:24:10+00:00",
+    "wm-received": "2022-07-04T02:40:12Z",
+    "wm-id": 1427040,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1543481897958789120/1543782692395061249",
+    "wm-target": "https://www.owenyoung.com/",
+    "content": {
+      "html": "是这样的，项目一多每年光域名也是笔不小的钱\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>",
+      "text": "是这样的，项目一多每年光域名也是笔不小的钱"
+    },
+    "in-reply-to": "https://www.owenyoung.com/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1427209": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "三咲智子",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/ec95ac30434baa0ee8b7c0d403452d1751aac5114c7e1b430d10141d4615fdf8.jpg",
+      "url": "https://twitter.com/sanxiaozhizi"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1543481897958789120#favorited-by-3780357442",
+    "published": null,
+    "wm-received": "2022-07-04T14:09:40Z",
+    "wm-id": 1427209,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1543481897958789120/3780357442",
+    "wm-target": "https://www.owenyoung.com/",
+    "like-of": "https://www.owenyoung.com/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
