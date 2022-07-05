@@ -14,8 +14,11 @@
 		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/changelog/</id>
 		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-03&quot;&gt;2022.07.03&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-03&quot; aria-label=&quot;Anchor link for: 2022-07-03&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;Change base font size to 15px &lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-06&quot;&gt;2022.07.06&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-06&quot; aria-label=&quot;Anchor link for: 2022-07-06&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;when screen width greater than 67.5rem, then set the background color of main area as white, it’s like the safari reader mode, can be more focus to the reader.
+&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;2022-07-06-home-page-screen-shot.png&quot; alt=&quot;home page&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-03&quot;&gt;2022.07.03&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-03&quot; aria-label=&quot;Anchor link for: 2022-07-03&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Change base font size to 15px&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;2022-06-30&quot;&gt;2022.06.30&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-30&quot; aria-label=&quot;Anchor link for: 2022-06-30&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Add Toggle More Button.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;toggle-more.png&quot; alt=&quot;toggle more screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
