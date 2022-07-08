@@ -6,7 +6,7 @@ config.title }}{% endblock ogtitle %} {% block headline
 %}{{trans(key="label_activity",lang=lang)}} - {{ config.title }}{% endblock
 headline %} {% block description %}{{trans(key="label_activity",lang=lang)}}{%
 endblock description %} {% block main -%}
-
+{% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
 <h1>{{trans(key="label_activity",lang=lang)}}</h1>
 <setion> {{ page.content | safe}} </setion>
 {% set_global mentions = [] %} 

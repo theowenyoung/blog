@@ -1,6 +1,4 @@
 {% extends "base.html" %} 
-{% set all_section_pages =
-get_section(path="_index.md") %}
 {% block title %}{{ config.title}} - Archive{%
 endblock title %} 
 
@@ -17,6 +15,7 @@ ogurl %}{{ config.base_url~lang_prefix_path }}archive/{% endblock ogurl %}
 }}{% endif %}{% endblock ogimg %} 
 
 {% block main %} 
+{% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
 <div class="main-box-block">
 
 {% for year, posts in

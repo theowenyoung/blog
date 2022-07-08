@@ -1,5 +1,12 @@
 {% extends "base.html" -%}
 {% block main -%}
+
+{% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
+{% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse  -%}
+{% set total_word_count = 0 -%}
+{% for page_item in all_section_pages.pages -%}
+  {% set_global total_word_count = total_word_count+page_item.word_count -%}
+{% endfor -%}
 {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
 {% set_global note_pages = [] -%}
 {% for cat in all_categories.items -%} 
