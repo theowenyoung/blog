@@ -128,5 +128,41 @@
     "like-of": "https://www.owenyoung.com/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1429978": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "no today",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/a20b8bd2029056ef898bbe9d20c1aca5f1b8eb71844a0479d075d5d9f8c76c10.jpg",
+      "url": "https://twitter.com/no_today_"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1545190288033218560#favorited-by-1037267178356178944",
+    "published": null,
+    "wm-received": "2022-07-08T01:06:57Z",
+    "wm-id": 1429978,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1545190288033218560/1037267178356178944",
+    "wm-target": "https://www.owenyoung.com/",
+    "like-of": "https://www.owenyoung.com/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1429991": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1545190288033218560#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-07-08T01:53:22Z",
+    "wm-id": 1429991,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1545190288033218560/159287109",
+    "wm-target": "https://www.owenyoung.com/",
+    "like-of": "https://www.owenyoung.com/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
