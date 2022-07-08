@@ -11,14 +11,6 @@ path: now/
 
 也就是说在邮件通讯里我只会发我觉得不能错过的东西，其他大多数“狗屎”，我只会让它们留在我的博客里，这可以让你选择主动阅读，而不是被迫听我的“狗屎”。我主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，反直觉，深度工作等方面。
 
-## 最近的想法
-
-最近特别想交新的长期朋友，可能有受到这篇[为什么 30 岁以上交朋友很难](https://www.nytimes.com/2012/07/15/fashion/the-challenge-of-making-friends-as-an-adult.html)的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。
-
-[给我发一封邮件吧](mailto:owen@owenyoung.com): `owen@owenyoung.com`
-
-如果有机会，我们还应该在线下见面。
-
 ## 正在听
 
 - [BBC Radio 6 Music](https://www.bbc.co.uk/sounds/play/live:bbc_6music)
