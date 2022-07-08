@@ -1,7 +1,7 @@
 ---
 title: 2022年的一些记录
 date: 2022-03-26
-updated: 2022-04-28
+updated: 2022-07-09
 taxonomies:
   categories:
     - Random
@@ -87,11 +87,11 @@ taxonomies:
 1. 我一直在想这个问题;终于有人说了出来;或
 1. 我以前从未想过这个问题！
 
-## 牵引力
+### 牵引力
 
 > 一个常见的故事是这样的：创始人通过花时间根据早期客户所说的他们想要的东西进行调整来构建人们想要的东西。然后，当他们认为自己已经准备好了，他们就会发起并刺伤以获得更多客户，但当客户没有蜂拥而至时，他们就会感到沮丧。
 
-## Keep Going
+### Keep Going
 
 > 我让自己的感情受到伤害的最简单方法是在早上第一件事就是打开手机。即使在极少数情况下，我也不会让我的感情受到伤害，我的时间已经一去不复返了，我的大脑也分散了。
 
@@ -101,7 +101,7 @@ taxonomies:
 
 > 社交媒体创造了一种名为 FOMO 的人类现象：对错过的恐惧。这是一种感觉，滚动浏览你的提要，那里的每个人都比你过得更好。唯一的解药是 JOMO：错过的喜悦。
 
-## 看不见的女人
+### 看不见的女人
 
 [wiki](https://www.goodreads.com/book/show/41104077-invisible-women)
 
@@ -111,7 +111,7 @@ taxonomies:
   - [在印度，妇女每天六小时的无偿劳动中有五小时花在家务上，而男子则有 13 分钟。](http://www.oecd.org/dev/development-gender/Unpaid_care_work.pdf)
   - 在美国，男性每天比女性多出一个多小时的业余时间，19 而在英国，男性每周享受的闲暇时间比女性多五个小时。
 
-## For the Love of Men
+### For the Love of Men
 
 前面写的挺好的，很吸引人，用语比较 informal,适合英语小白看。但是后面有点乱。但是还是获得了很多新知识。
 
@@ -138,3 +138,13 @@ taxonomies:
 > 女性在婚姻中的幸福感与丈夫所做的“情感工作”程度有关。感觉被理解并与丈夫有联系是女性婚姻满意度的最强预测因素。
 >
 > a woman’s happiness in a marriage is correlated with how much “emotional work” her husband performs. Feeling understood and connected to her husband was the strongest predictor for a woman’s level of marital satisfaction.
+
+## 临时想法备份
+
+### 2022-05-01~2022-07-09
+
+最近特别想交新的长期朋友，可能有受到这篇[为什么 30 岁以上交朋友很难](https://www.nytimes.com/2012/07/15/fashion/the-challenge-of-making-friends-as-an-adult.html)的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。
+
+[给我发一封邮件吧](mailto:owen@owenyoung.com): `owen@owenyoung.com`
+
+如果有机会，我们还应该在线下见面。
