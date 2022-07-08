@@ -13,10 +13,16 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.07.09
+
+Support backlinks.
+
+![backlinks](./backlinks.png)
+
 ## 2022.07.06
 
 when screen width greater than 67.5rem, then set the background color of main area as white, it's like the safari reader mode, can be more focus to the reader.
-![home page](2022-07-06-home-page-screen-shot.png)
+![home page](./2022-07-06-home-page-screen-shot.png)
 
 ## 2022.07.03
 

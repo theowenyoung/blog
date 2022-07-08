@@ -29,5 +29,5 @@ all_section_pages.pages | group_by(attribute="year") %}
 </ul>
 {% endfor %} 
 </div>
-{{ macro::webmentions()}}
+{{ macro::webmentions(backlinks=page.backlinks)}}
 {% endblock main %}

@@ -47,6 +47,23 @@
 {% macro post_min(page) %}
 <a href="{{ page.permalink }}">{{ page.title }}</a> <span class="muted text-sm">Updated on {{ page.updated }}</span>
 {% endmacro post_min %}
+{% macro backlink(pages) %}
+{% if pages and pages | length >0 %}
+<section class="backlinks ">
+  <h3>{{trans(key="label_backlinks",lang=lang)}} ({{pages | length}})<a href="#backlinks" id="backlinks" class="zola-anchor">🔗</a></h3>
+  <ul class="">
+    {% for page in pages%}
+    <li>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>
+
+
+{% endif %}
+{% endmacro backlink %}
 
 {% macro page_toc(toc)%}
 <section class="sidebar-table-content">
@@ -226,7 +243,7 @@
 </form>
 {% endmacro webmention_form %}
 
-{% macro webmentions() %}
+{% macro webmentions(backlinks) %}
 {% if config.extra.webmention_path %}
 {% if current_path == "/"%}
 {% set_global current_webmention_file_name = current_path %}
@@ -235,15 +252,16 @@
 {% endif %}
 {% set webmention_data = load_data(path=config.extra.webmention_path~current_webmention_file_name~".json",required=false,format="json") %}
 <section class="p-comments h-feed">
-<hr>
+  <hr />
 <h2>{{trans(key="label_response",lang=lang)}}<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
   {{ macro::webmention_form()}}
+  {{macro::backlink(pages=backlinks)}}
   {% if webmention_data %}
     {% set_global mentions = [] %}
     {% for ignored, item in webmention_data %}
         {% set_global mentions = mentions | concat(with=item) %}
     {% endfor %}
-    <p class="muted text-sm">{{trans(key="label_response_description",lang=lang)| markdown(inline=true) | safe}}</p>
+ 
     {% for type, items in mentions | group_by(attribute="wm-property") %}
         <h3>{{trans(key="label_"~type,lang=lang)}} ({{items | length}})<a href="#{{type}}" id="{{type}}" class="zola-anchor" >🔗</a></h3>
         {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
@@ -260,6 +278,7 @@
         </ul>
         {% endif %}
     {% endfor %}
+    <p class="muted text-sm">{{trans(key="label_response_description",lang=lang)| markdown(inline=true) | safe}}</p>
   {% endif %}
   {% endif %}
 
