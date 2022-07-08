@@ -13,32 +13,30 @@ All Updates about this blog.
 
 <!-- more -->
 
-## 2022.07.09
-
-### 1. Support backlinks.
+## 2022.07.09 Support backlinks.
 
 ![backlinks](./backlinks.png)
 
-### 2. Fix large building time
+## 2022.07.09 Fix large building time
 
 I wrote a heavy logic in the `base.html` template, this can increase much building time, actually the logic is only dependent by two page, so I move it, now the building time is about 1 second again, also [see here](https://github.com/getzola/zola/issues/1902#issuecomment-1178845667)
 
-## 2022.07.06
+## 2022.07.06 Desktop Read Mode
 
 when screen width greater than 67.5rem, then set the background color of main area as white, it's like the safari reader mode, can be more focus to the reader.
 ![home page](./2022-07-06-home-page-screen-shot.png)
 
-## 2022.07.03
+## 2022.07.03 Decrease Base fontsize
 
 Change base font size to 15px
 
-## 2022.06.30
+## 2022.06.30 index toggle more button
 
 Add Toggle More Button.
 
 ![toggle more screenshot](./toggle-more.png)
 
-## 2022.06.18
+## 2022.06.18 refactor sidebar/archive
 
 Migrate `sidebar/_index.md` to `pages/sidebar.md`, all spectified page located in `content/pages` directories.
 
