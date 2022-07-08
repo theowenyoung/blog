@@ -49,9 +49,9 @@
        >{{ config.extra.author }}</a> 
        <p class="p-note">{{ config.extra.bio }}</p>
       </div>
-      <div class="pt muted">
+      <div class="pb muted">
         <div>
-          {% if page.date %}{{ trans(key="label_created",lang=lang)}}: <time class="dt-published published" datetime="{{page.date}}">{{page.date | date}}</time>{% endif %}{% if page.updated %} | {{trans(key="label_updated",lang=lang)}}: <time class="dt-updated updated" datetime="{{page.updated}}">{{ page.updated | date}}</time> |
+          {% if page.date %}{{ trans(key="label_created",lang=lang)}}: <time class="dt-published published" datetime="{{page.date}}">{{page.date | date}}</time>{% endif %}{% if page.updated %} · {{trans(key="label_updated",lang=lang)}}: <time class="dt-updated updated" datetime="{{page.updated}}">{{ page.updated | date}}</time> ·
            {% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
     </div>
 
@@ -83,11 +83,10 @@
       {% if config.extra.edit_url_prefix %}
       <section>
         <hr>
-        <a class="muted" href="{{config.extra.edit_url_prefix~page.relative_path}}">📝 {{trans(key="label_edit",lang=lang)}}</a><a href="#edit" id="edit" class="zola-anchor" >🔗</a>
+        <a class="muted" href="{{config.extra.edit_url_prefix~page.relative_path}}">📝 {{trans(key="label_edit",lang=lang)}}</a>
       </section>
       {% endif %}
-  
-      {{ macro::webmentions()}}
+      {{ macro::webmentions(backlinks=page.backlinks)}}
       {% if config.extra.disqus and page.extra.comments %}
       <div id="disqus">
         <div id="disqus_thread"></div>

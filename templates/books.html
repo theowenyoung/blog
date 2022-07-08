@@ -62,5 +62,5 @@
       {{macro::paginator(ref=paginator, extra=config.extra) }}
       {% endif %}
     </section>
-    {{ macro::webmentions()}}
-{% endblock main -%}
+    {{ macro::webmentions(backlinks=[])}}
+    {% endblock main -%}
