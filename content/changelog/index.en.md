@@ -15,9 +15,13 @@ All Updates about this blog.
 
 ## 2022.07.09
 
-Support backlinks.
+### 1. Support backlinks.
 
 ![backlinks](./backlinks.png)
+
+### 2. Fix large building time
+
+I wrote a heavy logic in the `base.html` template, this can increase much building time, actually the logic is only dependent by two page, so I move it, now the building time is about 1 second again, also [see here](https://github.com/getzola/zola/issues/1902#issuecomment-1178845667)
 
 ## 2022.07.06
 
