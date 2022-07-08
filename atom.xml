@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-03T00:00:00+00:00</updated>
+	<updated>2022-07-09T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>在Debian系统中安装 Gost</title>
@@ -1830,7 +1830,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>2022年的一些记录</title>
 		<published>2022-03-26T00:00:00+00:00</published>
-		<updated>2022-04-28T00:00:00+00:00</updated>
+		<updated>2022-07-09T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/journal-2022/" type="text/html"/>
 		<id>https://www.owenyoung.com/journal-2022/</id>
 		<content type="html">&lt;p&gt;2022 年的记录汇总。&lt;&#x2F;p&gt;
@@ -1900,11 +1900,11 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;我一直在想这个问题;终于有人说了出来;或&lt;&#x2F;li&gt;
 &lt;li&gt;我以前从未想过这个问题！&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
-&lt;h2 id=&quot;qian-yin-li&quot;&gt;牵引力&lt;a class=&quot;zola-anchor&quot; href=&quot;#qian-yin-li&quot; aria-label=&quot;Anchor link for: qian-yin-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;qian-yin-li&quot;&gt;牵引力&lt;a class=&quot;zola-anchor&quot; href=&quot;#qian-yin-li&quot; aria-label=&quot;Anchor link for: qian-yin-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个常见的故事是这样的：创始人通过花时间根据早期客户所说的他们想要的东西进行调整来构建人们想要的东西。然后，当他们认为自己已经准备好了，他们就会发起并刺伤以获得更多客户，但当客户没有蜂拥而至时，他们就会感到沮丧。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;h2 id=&quot;keep-going&quot;&gt;Keep Going&lt;a class=&quot;zola-anchor&quot; href=&quot;#keep-going&quot; aria-label=&quot;Anchor link for: keep-going&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;keep-going&quot;&gt;Keep Going&lt;a class=&quot;zola-anchor&quot; href=&quot;#keep-going&quot; aria-label=&quot;Anchor link for: keep-going&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我让自己的感情受到伤害的最简单方法是在早上第一件事就是打开手机。即使在极少数情况下，我也不会让我的感情受到伤害，我的时间已经一去不复返了，我的大脑也分散了。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -1917,7 +1917,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;社交媒体创造了一种名为 FOMO 的人类现象：对错过的恐惧。这是一种感觉，滚动浏览你的提要，那里的每个人都比你过得更好。唯一的解药是 JOMO：错过的喜悦。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;h2 id=&quot;kan-bu-jian-de-nu-ren&quot;&gt;看不见的女人&lt;a class=&quot;zola-anchor&quot; href=&quot;#kan-bu-jian-de-nu-ren&quot; aria-label=&quot;Anchor link for: kan-bu-jian-de-nu-ren&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;kan-bu-jian-de-nu-ren&quot;&gt;看不见的女人&lt;a class=&quot;zola-anchor&quot; href=&quot;#kan-bu-jian-de-nu-ren&quot; aria-label=&quot;Anchor link for: kan-bu-jian-de-nu-ren&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;book&#x2F;show&#x2F;41104077-invisible-women&quot;&gt;wiki&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;2013 年联合国的一项凶杀案调查发现，全世界 96%的杀人案肇事者是男性&lt;&#x2F;li&gt;
@@ -1929,7 +1929,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;for-the-love-of-men&quot;&gt;For the Love of Men&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-the-love-of-men&quot; aria-label=&quot;Anchor link for: for-the-love-of-men&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;for-the-love-of-men&quot;&gt;For the Love of Men&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-the-love-of-men&quot; aria-label=&quot;Anchor link for: for-the-love-of-men&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;p&gt;前面写的挺好的，很吸引人，用语比较 informal,适合英语小白看。但是后面有点乱。但是还是获得了很多新知识。&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我们生活在一种文化中，这种文化教导男孩坚忍主义而不是真实性，支配而不是同理心，如果他们不遵循他们的剧本，有人会注意到并拿走他们的“男人卡”。男孩们被教导不要问问题，因为寻求帮助会表明缺乏领导力，而不是视为这是一个简单的寻求帮助的行为。&lt;&#x2F;p&gt;
@@ -1955,6 +1955,11 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;p&gt;女性在婚姻中的幸福感与丈夫所做的“情感工作”程度有关。感觉被理解并与丈夫有联系是女性婚姻满意度的最强预测因素。&lt;&#x2F;p&gt;
 &lt;p&gt;a woman’s happiness in a marriage is correlated with how much “emotional work” her husband performs. Feeling understood and connected to her husband was the strongest predictor for a woman’s level of marital satisfaction.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;lin-shi-xiang-fa-bei-fen&quot;&gt;临时想法备份&lt;a class=&quot;zola-anchor&quot; href=&quot;#lin-shi-xiang-fa-bei-fen&quot; aria-label=&quot;Anchor link for: lin-shi-xiang-fa-bei-fen&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;2022-05-01-2022-07-09&quot;&gt;2022-05-01~2022-07-09&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-05-01-2022-07-09&quot; aria-label=&quot;Anchor link for: 2022-05-01-2022-07-09&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;最近特别想交新的长期朋友，可能有受到这篇&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2012&#x2F;07&#x2F;15&#x2F;fashion&#x2F;the-challenge-of-making-friends-as-an-adult.html&quot;&gt;为什么 30 岁以上交朋友很难&lt;&#x2F;a&gt;的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;mailto:owen@owenyoung.com&quot;&gt;给我发一封邮件吧&lt;&#x2F;a&gt;: &lt;code&gt;owen@owenyoung.com&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;如果有机会，我们还应该在线下见面。&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
