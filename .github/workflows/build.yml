@@ -8,8 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: make install
       - name: Build Site
-        run: make build-linux
+        run: make build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
