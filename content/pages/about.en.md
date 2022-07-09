@@ -1,9 +1,10 @@
 ---
 title: About Me and the Blog
 path: en/about
+template: about.html
 ---
 
-I established a personal public [Wiki](https://wiki.owenyoung.com/) and [Blog](https://blog.owenyoung.com/) before, which let me develop the habit of taking notes and writing more things, as the habit has been developed, so I will no longer entangle the form of the blog problem, put Personal notes, all the outputs of the blog are placed here, so that I can maintain myself better and save my mind, before the two places to switch back and forth to make me a bit overwhelmed.
+I established a personal public [Wiki](https://wiki.owenyoung.com/) and [Blog](https://blog.owenyoung.com/) before, which let me develop the habit of taking notes and writing more things, as the habit has been developed, so I will no longer entangle the form of the blog problem, put Personal notes, all the outputs of the blog are placed here, so that I can maintain myself better and save my mind, before the two places to switch back and forth to make me a bit overwhelmed. Currently, all blog sources are placed in the [GitHub Repo](https://github.com/theowenyoung/blog).
 
 <!-- more -->
 

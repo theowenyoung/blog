@@ -49,12 +49,13 @@
        >{{ config.extra.author }}</a> 
        <p class="p-note">{{ config.extra.bio }}</p>
       </div>
+      {% if page.date %}
       <div class="pb muted">
         <div>
           {% if page.date %}{{ trans(key="label_created",lang=lang)}}: <time class="dt-published published" datetime="{{page.date}}">{{page.date | date}}</time>{% endif %}{% if page.updated %} · {{trans(key="label_updated",lang=lang)}}: <time class="dt-updated updated" datetime="{{page.updated}}">{{ page.updated | date}}</time> ·
            {% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
     </div>
-
+     {% endif %}
     </div>
     {% block detail_meta_slot %}
     {% endblock detail_meta_slot %}

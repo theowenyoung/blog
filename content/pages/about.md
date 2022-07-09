@@ -1,13 +1,14 @@
 ---
 title: 关于我和这个博客
 path: about/
+template: about.html
 ---
 
 我想在这个博客里尝试以 [Axios](https://www.axios.com/) 做新闻的方式去收集，整理，和介绍一些我读过的文章，书籍。
 
 主要就是以**Why it matters**的形式来总结文章的观点，最大程度的节省你的时间，让你能更快速的找到自己感兴趣的内容去深入阅读。
 
-我在之前建立了一个个人的公开 [Wiki](https://wiki.owenyoung.com/)和 [Blog](https://blog.owenyoung.com/)，这让我养成了记笔记，多写东西的习惯，由于习惯已经养成，所以就不再纠结博客的形式问题了，把个人的笔记，博客所有的产出通通都放在这里，这样让我自己更好维护，更省心，之前两个地方来回切换让我有点吃不消。
+我在之前建立了一个个人的公开 [Wiki](https://wiki.owenyoung.com/)和 [Blog](https://blog.owenyoung.com/)，这让我养成了记笔记，多写东西的习惯，由于习惯已经养成，所以就不再纠结博客的形式问题了，把个人的笔记，博客所有的产出通通都放在这里，这样让我自己更好维护，更省心，之前两个地方来回切换让我有点吃不消，博客全部内容托管在这个[Github 的 Repo 里](https://github.com/theowenyoung/blog)。
 
 我在使用[VSCode](https://code.visualstudio.com/)配合我开发的[Markdown 输入插件 Foam Lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode)来编辑这个博客的所有内容。我更喜欢文本辅助输入工具，而不希望软件修改我的原文数据格式。这让我更有掌控感以及不被运营商锁定。
 
