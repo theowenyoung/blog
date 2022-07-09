@@ -17,6 +17,7 @@ taxonomies:
 
 > 这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。
 
+- [我如何为我的博客构建无服务器搜索](https://www.morling.dev/blog/how-i-built-a-serverless-search-for-my-blog/)
 - [荷兰如何养活世界](https://news.ycombinator.com/from?site=nationalgeographic.com)
 - [摩洛哥的乡村女教师们](https://www.youtube.com/watch?v=Ha-31FEFX8s)
 - [徐州丰县目前为止的总结](https://mp.weixin.qq.com/s/FDKV22VnBOayDlEwFAtzmw)
