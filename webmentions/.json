@@ -164,5 +164,63 @@
     "like-of": "https://www.owenyoung.com/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1430081": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/WuPingJu/status/1545319210615980032",
+    "published": "2022-07-08T08:09:45+00:00",
+    "wm-received": "2022-07-08T08:35:03Z",
+    "wm-id": 1430081,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1545190288033218560/1545319210615980032",
+    "wm-target": "https://www.owenyoung.com/",
+    "content": {
+      "html": "好看耶！我也想來模仿一下 😍\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>",
+      "text": "好看耶！我也想來模仿一下 😍"
+    },
+    "in-reply-to": "https://www.owenyoung.com/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1430140": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "心乐",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/7a157c4fd0f10b867ad9065bc9fdeb60dba50391bc9b21120b4aca7e238a2512.jpg",
+      "url": "https://twitter.com/liu_xinle"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1545190288033218560#favorited-by-1100998207721529344",
+    "published": null,
+    "wm-received": "2022-07-08T13:28:50Z",
+    "wm-id": 1430140,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1545190288033218560/1100998207721529344",
+    "wm-target": "https://www.owenyoung.com/",
+    "like-of": "https://www.owenyoung.com/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1430225": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "马自立",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/fa7aa4122bc410803d244cec9d41d648579f19d23bd17b3a3ad1ae1264bbd304.png",
+      "url": "https://twitter.com/Matsurimywaifu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1545190288033218560#favorited-by-695559973795991552",
+    "published": null,
+    "wm-received": "2022-07-08T15:59:56Z",
+    "wm-id": 1430225,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1545190288033218560/695559973795991552",
+    "wm-target": "https://www.owenyoung.com/",
+    "like-of": "https://www.owenyoung.com/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
