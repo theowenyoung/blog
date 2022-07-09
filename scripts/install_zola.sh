@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd );
 BIN_DIR="$SCRIPT_DIR/../bin"
-
+mkdir -p $BIN_DIR
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   cd -- /tmp
   curl -OL https://github.com/theowenyoung/zola/releases/latest/download/zola-x86_64-unknown-linux-gnu.tar.gz
