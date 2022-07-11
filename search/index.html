@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=4d197ae9f279140193d348878f262837a79885a41584f2830595c407927fc075">
     <title>
       
-        Owen的博客
-      
+  Search - Owen的博客
+
     </title>
     <meta name="description" itemprop="about" content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"/>
     <meta name="keywords" itemprop="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
@@ -117,9 +117,10 @@
       <main class="body-zone flex justify-between flex-1">
         <section class="main flex-1 py">
           <div class="main-inner"> <div class="search-page">
-    <setion>
+    <h1>Search</h1>
+    <section>
       
-    </setion>
+    </section>
     <section>
       <h2>
         Search with
@@ -127,7 +128,6 @@
       </h2>
       <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
     </section>
-    <hr/>
     <section>
       <h2>
         Search with
@@ -138,7 +138,6 @@
         <input class="px py-sm" type="submit" value="Search"/>
       </form>
     </section>
-    <hr/>
     <section>
       <h2>
         Search with
@@ -163,6 +162,17 @@
           and click the search button</p>
       </blockquote>
     </section>
+    <section>
+      <h2>
+        Search with
+        <a href="https://www.google.com/search?q=site%3Awww.owenyoung.com">Google</a>
+      </h2>
+      <form id="google-search" class="flex items-center flex-wrap pb">
+        <input class="flex-3 mr-sm w-full py-sm px-sm" type="search" id="google-search-term"/>
+        <input class="px py-sm" type="submit" value="Search"/>
+      </form>
+    </section>
+    <hr/>
   </div>
 
             </div>
@@ -428,6 +438,12 @@
         e.preventDefault(); // to prevent form submission
         var searchUrl = 'https://sourcegraph.com/search?patternType=literal&q=context:global+repo:%5Egithub%5C.com/theowenyoung/blog%24+' +
             encodeURIComponent(document.getElementById('sourcegraph-search-term').value);
+        window.open(searchUrl, '_blank');
+      });
+      // google search
+      document.getElementById('google-search').addEventListener('submit', function (e) {
+        e.preventDefault(); // to prevent form submission
+        var searchUrl = 'https://www.google.com/search?q=site%3Awww.owenyoung.com+' + encodeURIComponent(document.getElementById('google-search-term').value);
         window.open(searchUrl, '_blank');
       });
     </script>
