@@ -13,6 +13,12 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.07.12 Support Search
+
+Powerd by [Meilisearch](https://github.com/meilisearch/meilisearch)
+
+![search](./search-prerview.png)
+
 ## 2022.07.09 Support backlinks.
 
 ![backlinks](./backlinks.png)

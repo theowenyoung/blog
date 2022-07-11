@@ -16,14 +16,14 @@
       "selector": ".detail-page .p-category",
       "default_value": "Random"
     },
-    "lvl1": ".detail-page .entry-title",
-    "lvl2": ".e-content h2",
-    "lvl3": ".e-content h3",
-    "lvl4": ".e-content h4",
+    "lvl1": ".detail-page .tag",
+    "lvl2": ".detail-page .entry-title",
+    "lvl3": ".e-content h2",
+    "lvl4": ".e-content h3",
     "text": ".e-content p, .e-content li"
   },
   "strip_chars": " .,;:#",
-  "min_indexed_level": 1,
+  "min_indexed_level": 0,
   "custom_settings": {
     "synonyms": {
       "js": ["javascript", "nodejs"]

@@ -5,7 +5,7 @@ public
 .DS_Store
 .AppleDouble
 .LSOverride
-
+.vscode/*.log
 # Icon must end with two \r
 Icon
 

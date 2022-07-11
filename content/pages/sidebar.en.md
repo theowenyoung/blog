@@ -6,7 +6,6 @@ updated: 2022-06-04
 
 ## Home Navigation
 
-- [Last Updated](/en/#latest-notes)
 - [Latest Articles](/en/#latest)
 - [Short Thoughts](/en/#thoughts)
 - [All Notes](/en/#all-notes)
@@ -14,6 +13,7 @@ updated: 2022-06-04
 ## Impornant Links
 
 - [RSS Feed](/en/blog/atom.xml)
+- [Global Search by VSCode](https://github1s.com/theowenyoung/blog)
 
 ## About
 

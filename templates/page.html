@@ -58,7 +58,7 @@
         {% if page.taxonomies.tags -%}
           <span class="divider">/</span>
           {% for tag in page.taxonomies.tags %}
-            <a href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
+            <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
             {% if page.taxonomies.tags | length > 1 %}
               {% if
       loop.index != page.taxonomies.tags | length %},{% endif %}
@@ -127,7 +127,7 @@
             (function () { // DON'T EDIT BELOW THIS LINE
               var d = document,
                 s = d.createElement('script');
-              s.src = 'https://      {{ config.extra.disqus }}.disqus.com/embed.js';
+              s.src = 'https://       {{ config.extra.disqus }}.disqus.com/embed.js';
               s.setAttribute('data-timestamp', + new Date());
               (d.head || d.body).appendChild(s);
             })();
