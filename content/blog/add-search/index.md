@@ -90,6 +90,8 @@ Over! 其实说的简单，但是我在建立索引的过程中多次调整了�
 
 ![meilisearch](./meilisearch.png)
 
+搜索页面的模版文件[在这里](https://github.com/theowenyoung/blog/blob/main/templates/search.html)
+
 ## 结论
 
 虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢[Edgesearch](https://github.com/wilsonzlin/edgesearch)的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<https://meilisearch.owenyoung.com/>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～
