@@ -1,4 +1,3 @@
-
 ---
 title: Mini Reset CSS
 date: 2022-03-26
@@ -6,6 +5,8 @@ updated: 2022-03-26
 taxonomies:
   categories:
     - Dev
+  tags:
+    - CSS
 ---
 
 > Forked by <https://github.com/jgthms/minireset.css/blob/master/minireset.css>

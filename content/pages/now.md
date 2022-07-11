@@ -1,6 +1,13 @@
 ---
 title: Now
 path: now/
+date: 2022-03-25
+updated: 2022-06-12
+taxonomies:
+  categories:
+    - About
+  tags:
+    - Now
 ---
 
 > This is a [now](https://nownownow.com/about) page, read more about me at [关于我和这个博客](/content/pages/about.md) page or [Projects](/content/projects.md) page.

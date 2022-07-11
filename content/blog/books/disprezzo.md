@@ -5,6 +5,9 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
+    - Relationships
 extra:
   rating: 8
   author: (意大利)阿尔贝托・莫拉维亚

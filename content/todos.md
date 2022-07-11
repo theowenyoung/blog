@@ -5,6 +5,8 @@ updated: 2022-04-27
 taxonomies:
   categories:
     - Notes
+  tags:
+    - Todo
 ---
 
 Todo Lists.

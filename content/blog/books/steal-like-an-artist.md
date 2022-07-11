@@ -5,6 +5,8 @@ updated: 2022-03-22
 taxonomies:
   categories:
     - Books
+  tags:
+    - Nonfiction
 extra:
   rating: 9
   author: 戈登·利文斯顿

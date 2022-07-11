@@ -5,6 +5,8 @@ updated: 2022-03-26
 taxonomies:
   categories:
     - Dev
+  tags:
+    - Debian
 ---
 
 > For linux common commands, see [开发技巧收藏](/content/dev-tips/index.md#linux-common-commands)

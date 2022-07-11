@@ -5,6 +5,10 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
+    - Dystopia
+    - Reconmendation
 extra:
   rating: 10
   author: (加拿大)玛格丽特·阿特伍德

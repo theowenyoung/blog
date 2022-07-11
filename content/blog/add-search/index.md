@@ -11,7 +11,7 @@ taxonomies:
     - Zola
 ---
 
-我一直觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个[搜索页面](/content/pages/search.md)，以及首页也添加了一个搜索框。
+我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个[搜索页面](/content/pages/search.md)，以及首页也添加了一个搜索框。
 
 我一直在这个博客里存放自己的所有公开内容，包括笔记和文章，我经常需要搜索自己的笔记，在此之前，我一直用 VSCode 在本地搜索文档。但是 VSCode 其实启动挺慢的，而且如果不在电脑边，也没法用，所以最近就研究了几种搜索方案。最终我选择了自托管 Rust 开发的[Meilisearch](https://github.com/meilisearch/meilisearch)，但是这也不是特别理想的方案，因为需要在自己的 VPS 服务器上托管，对于静态博客来说，多了一环需要动态运行的服务需要维护。但是这已经是目前最不差的方案了。
 
@@ -83,5 +83,5 @@ taxonomies:
 我的部署过程：
 
 1. 先在 VPS 上搭建 Meili,见[我的 meilisearch dotfile 配置](https://github.com/theowenyoung/dotfiles/blob/main/modules/meilisearch/meilisearch.yml)，并不复杂，是我最喜欢的单一二进制文件，无依赖。
-2. 在 Github Actions 的中添加步骤，在网站更新后，立刻爬取整个网站.见[build.yml](https://github.com/theowenyoung/blog/blob/ee82d2d783c3b08b98862a7700a6a29a301e164e/.github/workflows/build.yml#L20-L37) 以及[爬取的配置文件](https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json),得益于我上次在[Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)中给网站的结构添加了很多有用的标记，所以很好定位到我的一级标题，二级标题，分类等
-3.
+2. 在 Github Actions 的中添加步骤，在网站更新后，立刻爬取整个网站.见[build.yml](https://github.com/theowenyoung/blog/blob/ee82d2d783c3b08b98862a7700a6a29a301e164e/.github/workflows/build.yml#L20-L37) 以及[爬取的配置文件](https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json),得益于我上次在[Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)中给网站的结构添加了很多有用的标记，所以很好定位到我的一级标题，二级标题，分类等, 我在配置中排除了列表页面，让他只爬取文章页。
+3. 在前端网页引入相应的 css 和 js 文件

@@ -6,6 +6,8 @@ draft: true
 taxonomies:
   categories:
     - Notes
+  tags:
+    - Society
 ---
 
 荒谬收集。

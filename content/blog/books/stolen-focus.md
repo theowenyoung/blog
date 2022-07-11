@@ -5,6 +5,10 @@ updated: 2022-03-25
 taxonomies:
   categories:
     - Books
+  tags:
+    - Advice
+    - Nonfiction
+    - Reconmendation
 extra:
   rating: 10
   author: Johann Hari

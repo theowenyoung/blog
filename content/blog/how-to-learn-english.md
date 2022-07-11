@@ -6,6 +6,8 @@ draft: true
 taxonomies:
   categories:
     - Random
+  tags:
+    - English
 ---
 
 穷人如何学英语？

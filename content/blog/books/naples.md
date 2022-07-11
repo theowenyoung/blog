@@ -5,9 +5,11 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
 extra:
   rating: 10
-  author:
+  author: Elena Ferrante
 ---
 
 > 就是这样，他想解放别人的女人，而不是自己的女人。

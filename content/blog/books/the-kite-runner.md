@@ -5,6 +5,9 @@ updated: "2022-04-10"
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
+    - Islam
 extra:
   rating: 9
   author: "[美] 卡勒德·胡赛尼"

@@ -5,8 +5,10 @@ updated: 2022-03-26
 taxonomies:
   categories:
     - Dev
+  tags:
+    - PHP
+    - CentOS
 ---
-
 
 ```bash
 

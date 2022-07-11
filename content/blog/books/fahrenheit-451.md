@@ -5,6 +5,8 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
 extra:
   rating: 6
   author: "[美] 雷·布拉德伯里"

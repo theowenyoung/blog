@@ -5,6 +5,8 @@ updated: 2022-04-30
 taxonomies:
   categories:
     - Dev
+  tags:
+    - Makfile
 ---
 
 Common Makefile Template.

@@ -1,7 +1,14 @@
 ---
 title: 关于我和这个博客
 path: about/
+date: 2022-03-29
+updated: 2022-07-12
 template: about.html
+taxonomies:
+  categories:
+    - About
+  tags:
+    - Me
 ---
 
 我想在这个博客里尝试以 [Axios](https://www.axios.com/) 做新闻的方式去收集，整理，和介绍一些我读过的文章，书籍。

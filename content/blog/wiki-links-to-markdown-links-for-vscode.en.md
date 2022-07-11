@@ -5,6 +5,9 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Random
+  tags:
+    - Wiki Links
+    - VSCode
 ---
 
 Recently, I migrated my [Wiki](https://wiki.owenyoung.com) to [Zola](https://www.getzola.org/). Zola does not support relative internal links, it only support `@/xxx.md` internal link format. This is a bit painful, I posted a [feature request](https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2) to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use `/content/xxx.md` internal link format.

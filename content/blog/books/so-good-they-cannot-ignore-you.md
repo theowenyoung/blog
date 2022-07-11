@@ -6,6 +6,9 @@ draft: false
 taxonomies:
   categories:
     - Books
+  tags:
+    - Nonfiction
+    - Advice
 extra:
   rating: 7
   author: 卡尔纽波特

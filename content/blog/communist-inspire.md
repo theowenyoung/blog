@@ -1,11 +1,13 @@
 ---
-title: 反思
+title: 一些联想
 date: 2022-04-27T18:02:58+08:00
 updated: 2022-04-27
 draft: true
 taxonomies:
   categories:
     - Random
+  tags:
+    - Politics
 ---
 
 暂时属于收集状态，设为私有。

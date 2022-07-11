@@ -5,6 +5,8 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
 extra:
   rating: 8
   author: "[美]约翰·斯坦贝克"

@@ -5,6 +5,8 @@ updated: 2022-04-01
 taxonomies:
   categories:
     - Books
+  tags:
+    - Nonfiction
 extra:
   rating: 7
   author: Mark Manson

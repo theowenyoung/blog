@@ -5,6 +5,8 @@ updated: 2022-03-26
 taxonomies:
   categories:
     - Notes
+  tags:
+    - Jokes
 ---
 
 收集笑话, 有的时候和外国人交流的时候，经常需要讲一些笑话，但是脑子里很少能立刻想到几个，在这记录一些。

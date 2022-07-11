@@ -5,6 +5,8 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Fiction
 extra:
   rating: 7
   author: "[美] 斯科特·菲茨杰拉德"

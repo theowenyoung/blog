@@ -5,6 +5,9 @@ updated: 2022-03-25
 taxonomies:
   categories:
     - Books
+  tags:
+    - Nonfiction
+    - Indonesia
 extra:
   rating: 8
   author: 伊丽莎白·皮萨尼

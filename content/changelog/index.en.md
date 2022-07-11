@@ -7,6 +7,7 @@ taxonomies:
     - Notes
   tags:
     - ChangeLog
+    - About
 ---
 
 All Updates about this blog.

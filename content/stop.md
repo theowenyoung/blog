@@ -5,6 +5,8 @@ updated: 2022-03-26
 taxonomies:
   categories:
     - Notes
+  tags:
+    - Advice
 ---
 
 有点标题党，但是确实是我的肺腑之言啊。

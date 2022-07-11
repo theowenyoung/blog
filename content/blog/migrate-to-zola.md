@@ -6,6 +6,9 @@ draft: false
 taxonomies:
   categories:
     - Random
+  tags:
+    - Zola
+    - About
 ---
 
 我在之前建立了一个个人的公开 [Wiki](https://wiki.owenyoung.com/)和 [Blog](https://blog.owenyoung.com/)，这让我养成了记笔记，多写东西的习惯。但是随着时间的增长，我感到维护 2 个 repo 实在有点麻烦，并且由于 Wiki 和博客都是基于[Gatsby 框架](/content/blog/gatsby-cons.md)的，更新，维护，还有编译都挺花时间的。

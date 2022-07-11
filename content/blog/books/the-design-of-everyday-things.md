@@ -5,6 +5,9 @@ updated: 2022-03-27
 taxonomies:
   categories:
     - Books
+  tags:
+    - Nonfiction
+    - Design
 extra:
   rating: 8
   author: "[美] 唐纳德•A•诺曼"

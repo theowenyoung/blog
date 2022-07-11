@@ -5,6 +5,8 @@ updated: 2022-04-10
 taxonomies:
   categories:
     - Articles
+  tags:
+    - Notes
 ---
 
 > 我出生在全球稳定时间最长的时期。现在，似乎所有这些都是转瞬即逝的。
