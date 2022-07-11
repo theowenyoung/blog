@@ -1407,6 +1407,42 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
+		<title>关于我和这个博客</title>
+		<published>2022-03-29T00:00:00+00:00</published>
+		<updated>2022-07-12T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/about/" type="text/html"/>
+		<id>https://www.owenyoung.com/about/</id>
+		<content type="html">&lt;p&gt;我想在这个博客里尝试以 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.axios.com&#x2F;&quot;&gt;Axios&lt;&#x2F;a&gt; 做新闻的方式去收集，整理，和介绍一些我读过的文章，书籍。&lt;&#x2F;p&gt;
+&lt;p&gt;主要就是以&lt;strong&gt;Why it matters&lt;&#x2F;strong&gt;的形式来总结文章的观点，最大程度的节省你的时间，让你能更快速的找到自己感兴趣的内容去深入阅读。&lt;&#x2F;p&gt;
+&lt;p&gt;我在之前建立了一个个人的公开 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt;和 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt;，这让我养成了记笔记，多写东西的习惯，由于习惯已经养成，所以就不再纠结博客的形式问题了，把个人的笔记，博客所有的产出通通都放在这里，这样让我自己更好维护，更省心，之前两个地方来回切换让我有点吃不消，博客全部内容托管在这个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&quot;&gt;Github 的 Repo 里&lt;&#x2F;a&gt;。&lt;&#x2F;p&gt;
+&lt;p&gt;我在使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;&quot;&gt;VSCode&lt;&#x2F;a&gt;配合我开发的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;Markdown 输入插件 Foam Lite&lt;&#x2F;a&gt;来编辑这个博客的所有内容。我更喜欢文本辅助输入工具，而不希望软件修改我的原文数据格式。这让我更有掌控感以及不被运营商锁定。&lt;&#x2F;p&gt;
+&lt;p&gt;我在使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola (getzola.org)&lt;&#x2F;a&gt;来生成这个静态博客，Zola 是用 Rust 写的，我之前基本都是用 JS 工具链来生成博客，现在我更喜欢用一站式工具，主要是对第三方插件生态感到害怕，同时想让自己的博客尽量保持简单，这个博客的样式也不多，都是我写的，所以以后就算是要迁移，也很简单。Zola 其实也提供了不少能力，所以也可以实现大部分的想法，比如我实现了这个图书按评分排序的功能：&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books&#x2F;&quot;&gt;books-sort-by-rating&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;guan-yu-wo&quot;&gt;关于我&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ying-yu-xue-xi-de-shi-bai-zhe&quot;&gt;英语学习的失败者&lt;&#x2F;h3&gt;
+&lt;p&gt;我学了 10 多年的英语，但还是很糟糕，所以我注册了一个 Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt;，只发英文推文，还有这个 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;Wiki&lt;&#x2F;a&gt; 和 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;Blog&lt;&#x2F;a&gt;，以迫使我多用英文。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;cheng-xu-yuan&quot;&gt;程序员&lt;&#x2F;h3&gt;
+&lt;p&gt;全栈开发者，主要技术栈是 javascript。 &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;&quot;&gt;查看我的所有项目&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;wo-xian-zai-zai-zuo-shi-yao&quot;&gt;我现在在做什么？&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;now&#x2F;&quot;&gt;看看我现在在做什么&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;tong-guo-you-jian-tong-xun-bao-chi-lian-xi&quot;&gt;通过邮件通讯保持联系&lt;&#x2F;h2&gt;
+&lt;p&gt;我开了一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;digests.owenyoung.com&#x2F;&quot;&gt;Newsletter&lt;&#x2F;a&gt;，初步想法是每隔一段时间整理一些我觉得不能错过的东西。但是只有我觉得必须联系你的时候，我才会给你发一封邮件。&lt;&#x2F;p&gt;
+&lt;p&gt;也就是说在邮件通讯里我只会发我觉得不能错过的东西，其他大多数“狗屎”，我只会让它们留在我的博客里，这可以让你选择主动阅读，而不是被迫听我的“狗屎”。我主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，反直觉，深度工作等方面。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lian-xi-wo&quot;&gt;联系我&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;电子邮件：&lt;code&gt;owen#owenyoung.com&lt;&#x2F;code&gt; (把&lt;code&gt;#&lt;&#x2F;code&gt;换成&lt;code&gt;@&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Telegram: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;t.me&#x2F;itsowenyoung&quot;&gt;https:&#x2F;&#x2F;t.me&#x2F;itsowenyoung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;中文推 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;OwenYoungZh&quot;&gt;@OwenYoungZh&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;qi-ta-lian-jie&quot;&gt;其他链接&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Github &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&quot;&gt;@theowenyoung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Patreon &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.patreon.com&#x2F;theowenyoung&quot;&gt;@theowenyoung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Read.cv &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;read.cv&#x2F;owenyoung&quot;&gt;@owenyoung&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
 		<title>阅读指南</title>
 		<published>2022-03-29T00:00:00+00:00</published>
 		<updated>2022-07-03T00:00:00+00:00</updated>
@@ -3827,6 +3863,55 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;show-oligarch&#x2F;sometimes-in-june&quot;&gt;六月某时 - 秀场寡头&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=poYDiJU2HJQ&quot;&gt;吳吞 : 一萬個名字&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=nmTvasFpovs&quot;&gt;1990 年的春天: 李志&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>Now</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-06-12T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/now/" type="text/html"/>
+		<id>https://www.owenyoung.com/now/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;This is a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nownownow.com&#x2F;about&quot;&gt;now&lt;&#x2F;a&gt; page, read more about me at &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;about&#x2F;&quot;&gt;关于我和这个博客&lt;&#x2F;a&gt; page or &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;&quot;&gt;Projects&lt;&#x2F;a&gt; page.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;jin-xing-zhong&quot;&gt;进行中&lt;&#x2F;h2&gt;
+&lt;p&gt;开了一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;digests.owenyoung.com&#x2F;&quot;&gt;Newsletter&lt;&#x2F;a&gt;，初步想法是每隔一段时间整理一些我觉得不能错过的东西。但是只有我觉得必须联系你的时候，我才会给你发一封邮件。&lt;&#x2F;p&gt;
+&lt;p&gt;也就是说在邮件通讯里我只会发我觉得不能错过的东西，其他大多数“狗屎”，我只会让它们留在我的博客里，这可以让你选择主动阅读，而不是被迫听我的“狗屎”。我主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，反直觉，深度工作等方面。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zheng-zai-ting&quot;&gt;正在听&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;live:bbc_6music&quot;&gt;BBC Radio 6 Music&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;live:bbc_radio_fourfm&quot;&gt;BBC 4&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;live:bbc_radio_one_relax&quot;&gt;BBC Radio 1 Relax&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;lian-xi-ying-yu&quot;&gt;练习英语&lt;&#x2F;h3&gt;
+&lt;p&gt;I’m a failure of English learning. I’ve learned English more than 10 years, but it still sucks, so I registered a Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt; for only English tweets, and this &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;blog&lt;&#x2F;a&gt; to force me to use more English. It’s Feb, 01, 2021 today when I writing this, I hope this is my last goal after making so many goals. Once I reach my goal, I’ll update here.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;projects&quot;&gt;Projects&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;maintaining-denoflow&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt; is an automate workflows based on Deno&#x2F;Typescript&#x2F;Javascript&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;maintaining-gatsby-theme-primer-wiki&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-primer-wiki&quot;&gt;Gatsby Theme Primer Wiki&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;maintaining-track-awesome-list&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&quot;&gt;Track Awesome List&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;maintaining-actionsflow&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; helps you automate workflows - it’s a free &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ifttt.com&#x2F;&quot;&gt;IFTTT&lt;&#x2F;a&gt;&#x2F;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zapier.com&#x2F;&quot;&gt;Zapier&lt;&#x2F;a&gt; alternative for developers. With &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; you can connect your favorite apps, data, and APIs, receive notifications of actions as they occur, sync files, collect data, and more.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;maintaining-buzzing&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.buzzing.cc&#x2F;&quot;&gt;Buzzing&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;You can use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.buzzing.cc&#x2F;&quot;&gt;Buzzing&lt;&#x2F;a&gt; to see hot discussions in your native language. Browse in your native language, Read more into the original text. Currently, it supports Chinese, I hope it can support more languages, and more topics.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;&#x2F;h2&gt;
+&lt;p&gt;如果今年还是没有流利英语，我就是傻逼。&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+90 天挑战，每天录一条英文视频。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+More patient about stocks.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Significantly improve English level&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+读者达到 1000 人。包括 twitter newsletter&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

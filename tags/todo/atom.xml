@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Todo</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/todo/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-04-27T20:01:52+08:00</updated>
+	<id>https://www.owenyoung.com/tags/todo/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Todos</title>
+		<published>2022-04-27T20:01:52+08:00</published>
+		<updated>2022-04-27T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/todos/" type="text/html"/>
+		<id>https://www.owenyoung.com/todos/</id>
+		<content type="html">&lt;p&gt;Todo Lists.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;movies&quot;&gt;Movies&lt;a class=&quot;zola-anchor&quot; href=&quot;#movies&quot; aria-label=&quot;Anchor link for: movies&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Waking_Life&quot;&gt;清醒的生活&lt;&#x2F;a&gt; - 动画，哲学总览&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;books&quot;&gt;Books&lt;a class=&quot;zola-anchor&quot; href=&quot;#books&quot; aria-label=&quot;Anchor link for: books&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Hi! Here are a few of my suggestions:&lt;&#x2F;p&gt;
+&lt;p&gt;By the way I think it’s great that you want to learn more about the world.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Factfulness: Ten Reasons We’re Wrong About the World–and Why Things Are Better Than You Think Hardcover – Illustrated, April 3 2018 by Hans Rosling&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Sapiens – A Brief History of Humankind Yuval Noah Harari&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Invisible Women: Data Bias in a World Designed for Men by Caroline Criado Pérez&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The Diary of Anne Frank, if you’ve never read it.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Strangers in Their Own Land: Anger and Mourning on the American Right Hardcover – Sept. 6 2016 by Arlie Russell Hochschild&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The Righteous Mind: Why Good People Are Divided by Politics and Religion Paperback – Illustrated, Feb. 12 2013 by Jonathan Haidt&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The Coddling of the American Mind Book by Greg Lukianoff and Jonathan Haidt&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Mindset: The New Psychology of Success Paperback – Illustrated, Dec 26 2007&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;by Carol S. Dweck&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Seven Fallen Feathers: Racism, Death, and Hard Truths in a Northern City Paperback – Sept. 30 2017 by Tanya Talaga&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Those are a few that come to mind. Maybe not quite along the lines of philosophy that you were looking for, but all very interesting and important reads in my opinion.&lt;&#x2F;p&gt;
+&lt;p&gt;Enjoy! There is so much out there to learn, read as much as you can, question and fact check everything!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marginalrevolution.com&#x2F;marginalrevolution&#x2F;2022&#x2F;04&#x2F;the-best-fiction-in-recent-times.html&quot;&gt;The best fiction in recent times&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;by Tyler Cowen April 15, 2022 at 12:42 am in Books The Arts
+Here are my picks, in no particular order:&lt;&#x2F;p&gt;
+&lt;p&gt;W.G. Sebald, The Emigrants (1992, maybe not recent?).&lt;&#x2F;p&gt;
+&lt;p&gt;Elena Ferrante, The Neapolitan quadrology.&lt;&#x2F;p&gt;
+&lt;p&gt;Karl Knausgaard, My Struggle, volumes one and two.&lt;&#x2F;p&gt;
+&lt;p&gt;Philip Pullman, His Dark Materials.&lt;&#x2F;p&gt;
+&lt;p&gt;Michel Houellebecq, Submission.&lt;&#x2F;p&gt;
+&lt;p&gt;Min Lee, Pachinko.&lt;&#x2F;p&gt;
+&lt;p&gt;Liu Cixin, The Three-Body Problem.&lt;&#x2F;p&gt;
+&lt;p&gt;Roberto Bolaño, The Savage Detectives.&lt;&#x2F;p&gt;
+&lt;p&gt;And addended:&lt;&#x2F;p&gt;
+&lt;p&gt;Haruki Murakami, IQ84.&lt;&#x2F;p&gt;
+&lt;p&gt;Vikrram Seth, A Suitable Boy.&lt;&#x2F;p&gt;
+&lt;p&gt;Orhan Pamuk, Museum of Innocence.&lt;&#x2F;p&gt;
+&lt;p&gt;Neal Stephenson, Cryptonomicon.&lt;&#x2F;p&gt;
+&lt;p&gt;David Grossman, To the End of the Land.&lt;&#x2F;p&gt;
+&lt;p&gt;David Mitchell, Cloud Atlas.&lt;&#x2F;p&gt;
+&lt;p&gt;Jose Saramago, Blindness.&lt;&#x2F;p&gt;
+&lt;p&gt;China Mieville, The City and the City.&lt;&#x2F;p&gt;
+&lt;p&gt;J.M. Coetzee, Disgrace.&lt;&#x2F;p&gt;
+&lt;p&gt;From &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;IAmA&#x2F;comments&#x2F;ut7yj0&#x2F;im_bill_gates_cochair_of_the_bill_and_melinda&#x2F;i98b4ki&#x2F;&quot;&gt;Bill Gates&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;Two of Smil’s latest Grand Transitions and How the World Really Works are great. Pinker has a lot of great books including The Better Angels of our Nature. I am just finishing the Coddling of the American Mind which was good. Ezra Klein’s book on Polarization is good. Of course fiction books are more fun like Heart or A Gentleman in Moscow or All the Light you cannot see…&lt;&#x2F;p&gt;
+&lt;p&gt;任何主题的必读非小说类书籍: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;suggestmeabook&#x2F;comments&#x2F;uzpnt5&#x2F;mustread_nonfiction_books_on_any_topic&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;suggestmeabook&#x2F;comments&#x2F;uzpnt5&#x2F;mustread_nonfiction_books_on_any_topic&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;abortion&quot;&gt;abortion&lt;a class=&quot;zola-anchor&quot; href=&quot;#abortion&quot; aria-label=&quot;Anchor link for: abortion&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;(a) By law, abortion should never be permitted. (b) The law should permit abortion only in case of rape, incest, or when the woman’s life is in danger. (c) The law should permit abortion for reasons other than rape, incest, or danger to the woman’s life, but only after the need for the abortion has been clearly established. (d) By law, a woman should always be able to obtain an abortion as a matter of personal choice. (e) Other.&lt;&#x2F;p&gt;
+&lt;p&gt;Today I known discord is a word that has a meaning. it means Disagreement&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

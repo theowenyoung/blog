@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Owen Young&#x27;s Blog - About</title>
+	<subtitle>Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions</subtitle>
+	<link href="https://www.owenyoung.com/en/tags/about/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-06-13T23:15:27+08:00</updated>
+	<id>https://www.owenyoung.com/en/tags/about/atom.xml</id>
+	<entry xml:lang="en">
+		<title>ChangeLog</title>
+		<published>2022-06-13T23:15:27+08:00</published>
+		<updated>2022-06-13T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/changelog/</id>
+		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-12-support-search&quot;&gt;2022.07.12 Support Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-12-support-search&quot; aria-label=&quot;Anchor link for: 2022-07-12-support-search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Powerd by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;meilisearch&#x2F;meilisearch&quot;&gt;Meilisearch&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;search-prerview.png&quot; alt=&quot;search&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-09-support-backlinks&quot;&gt;2022.07.09 Support backlinks.&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-09-support-backlinks&quot; aria-label=&quot;Anchor link for: 2022-07-09-support-backlinks&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;backlinks.png&quot; alt=&quot;backlinks&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-09-fix-large-building-time&quot;&gt;2022.07.09 Fix large building time&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-09-fix-large-building-time&quot; aria-label=&quot;Anchor link for: 2022-07-09-fix-large-building-time&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I wrote a heavy logic in the &lt;code&gt;base.html&lt;&#x2F;code&gt; template, this can increase much building time, actually the logic is only dependent by two page, so I move it, now the building time is about 1 second again, also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1902#issuecomment-1178845667&quot;&gt;see here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-06-desktop-read-mode&quot;&gt;2022.07.06 Desktop Read Mode&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-06-desktop-read-mode&quot; aria-label=&quot;Anchor link for: 2022-07-06-desktop-read-mode&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;when screen width greater than 67.5rem, then set the background color of main area as white, it’s like the safari reader mode, can be more focus to the reader.
+&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;2022-07-06-home-page-screen-shot.png&quot; alt=&quot;home page&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-03-decrease-base-fontsize&quot;&gt;2022.07.03 Decrease Base fontsize&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-03-decrease-base-fontsize&quot; aria-label=&quot;Anchor link for: 2022-07-03-decrease-base-fontsize&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Change base font size to 15px&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-30-index-toggle-more-button&quot;&gt;2022.06.30 index toggle more button&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-30-index-toggle-more-button&quot; aria-label=&quot;Anchor link for: 2022-06-30-index-toggle-more-button&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add Toggle More Button.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;toggle-more.png&quot; alt=&quot;toggle more screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-18-refactor-sidebar-archive&quot;&gt;2022.06.18 refactor sidebar&#x2F;archive&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-18-refactor-sidebar-archive&quot; aria-label=&quot;Anchor link for: 2022-06-18-refactor-sidebar-archive&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Migrate &lt;code&gt;sidebar&#x2F;_index.md&lt;&#x2F;code&gt; to &lt;code&gt;pages&#x2F;sidebar.md&lt;&#x2F;code&gt;, all spectified page located in &lt;code&gt;content&#x2F;pages&lt;&#x2F;code&gt; directories.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-14-activity-page&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;7a87eb29b6e3eaafdae14488a8f42de817073f3f&quot;&gt;2022.06.14&lt;&#x2F;a&gt; - Activity Page&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-14-activity-page&quot; aria-label=&quot;Anchor link for: 2022-06-14-activity-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Adding &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;activity&#x2F;&quot;&gt;Activity&lt;&#x2F;a&gt; page.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-06-13-indieweb&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;c20bb4c97540e91ed2f555800d36ebbe05379155&quot;&gt;2022.06.13&lt;&#x2F;a&gt; - IndieWeb&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-06-13-indieweb&quot; aria-label=&quot;Anchor link for: 2022-06-13-indieweb&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Support &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieauth.net&#x2F;&quot;&gt;IndieAuth&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Joining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;xn--sr8hvo.ws&#x2F;&quot;&gt;IndieWeb Webring&lt;&#x2F;a&gt;, See home page bottom right corner&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;indiewebring.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Support &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;indieweb.org&#x2F;Webmention&quot;&gt;Webmention&lt;&#x2F;a&gt;, see example &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;&quot;&gt;Now, I’m in IndieWeb?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;webmention-response.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-05-14-latest-updates&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;cb7e8ec8cc115a35948906c2c91679826e561c79&quot;&gt;2022.05.14&lt;&#x2F;a&gt; - Latest Updates&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-05-14-latest-updates&quot; aria-label=&quot;Anchor link for: 2022-05-14-latest-updates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add Latest Updates to home page.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;recently-updated.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-04-25-random-category&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;ebe57d4b3717c5052ea3319e8e1f04e9d7b80153&quot;&gt;2022.04.25&lt;&#x2F;a&gt; - Random Category&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-04-25-random-category&quot; aria-label=&quot;Anchor link for: 2022-04-25-random-category&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Change category &lt;code&gt;Misc&lt;&#x2F;code&gt; to &lt;code&gt;Random&lt;&#x2F;code&gt;, I prefer &lt;code&gt;Random&lt;&#x2F;code&gt; than &lt;code&gt;Misc&lt;&#x2F;code&gt;, cause I even don’t know what &lt;code&gt;Misc&lt;&#x2F;code&gt; is. It’s inspired by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pinchlime.com&#x2F;categories&#x2F;random&#x2F;&quot;&gt;Pin 起來&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-04-24-seo&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;cfc2b4dc4c96c1e16e8f4a257da2d30b254f8afc&quot;&gt;2022.04.24&lt;&#x2F;a&gt; - SEO&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-04-24-seo&quot; aria-label=&quot;Anchor link for: 2022-04-24-seo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Add &lt;code&gt;og:title&lt;&#x2F;code&gt;,&lt;code&gt;description&lt;&#x2F;code&gt; to pages for better SEO.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-04-08-edit-link&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;06f1d35a7a5a8e4c97d4189cf3204b4b7c4bdea2&quot;&gt;2022.04.08&lt;&#x2F;a&gt; - Edit Link&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-04-08-edit-link&quot; aria-label=&quot;Anchor link for: 2022-04-08-edit-link&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Adding Edit this article link to every post.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;edit-link.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-03-29-birthday&quot;&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&#x2F;commit&#x2F;0f8244f2e8a8799ce6b6cbd82914db734af33f30&quot;&gt;2022.03.29&lt;&#x2F;a&gt; - Birthday&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-03-29-birthday&quot; aria-label=&quot;Anchor link for: 2022-03-29-birthday&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Today is this blog’s birthday, and I’m happy to announce that I’ve migrated from &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;&quot;&gt;New Blog&lt;&#x2F;a&gt;. The Blog is built with &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;, I also wrote &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;migrate-to-zola&#x2F;&quot;&gt;迁移博客和 Wiki 到 Zola&lt;&#x2F;a&gt; to record it. The biggest difference is the blazing building speed of Zola, for now, it only takes 2 seconds to build the whole site.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Support &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;&quot;&gt;读书笔记&lt;&#x2F;a&gt; Templates, show my review score of the book, and show &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books&#x2F;&quot;&gt;Books Sort By Rating&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;books-template.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
