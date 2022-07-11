@@ -76,21 +76,23 @@
           <ul class="flex menu list-none items-center justify-center">
             <li>
               <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
-                title="English Site"
-                href="/en/">
-                <span class="text-sm">EN</span>
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Search"
+                href="/search/">
+                <span class="text-sm">🔍</span>
               </a>
             </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted"
-                title="中文站点"
-                class="only-show-small"
-                href="/">
-                <span class="text-sm">中</span>
-              </a>
-            </li>
+            
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                  title="English Site"
+                  href="/en/">
+                  <span class="text-sm">EN</span>
+                </a>
+              </li>
+            
+            
             <div class="nav-divider"></div>
             <li>
               <a
@@ -120,8 +122,8 @@
     <section>
       
         <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="https://www.owenyoung.com/archive/">
-            85</a>
-          篇文章，大约 124980 字，最后更新时间：<a href="https://www.owenyoung.com/archive/">2022-07-09</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
+            86</a>
+          篇文章，大约 128431 字，最后更新时间：<a href="https://www.owenyoung.com/archive/">2022-07-12</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
           <a href="https://www.owenyoung.com/now/">点击了解我现在在做的事情</a>
         </p>
       
@@ -320,6 +322,41 @@
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
     <section class="muted pt">
+      <time class="dt-published published" datetime="2022-07-12T00:54:03+08:00" pubdate>2022-07-12</time>
+      
+        <span>发布在
+        </span>
+        <a class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
+          Random
+        </a>
+      
+    </section>
+    <h1 class="no-border pb-sm">
+      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;">给Zola博客增加搜索功能</a>
+    </h1>
+    <div class="p-summary entry-summary"><p>我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个<a href="https://www.owenyoung.com/search/">搜索页面</a>，以及首页也添加了一个搜索框。</p>
+<p>我一直在这个博客里存放自己的所有公开内容，包括笔记和文章，我经常需要搜索自己的笔记，在此之前，我一直用 VSCode 在本地搜索文档。但是 VSCode 其实启动挺慢的，而且如果不在电脑边，也没法用，所以最近就研究了几种搜索方案。最终我选择了自托管 Rust 开发的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">Meilisearch</a>，但是这也不是特别理想的方案，因为需要在自己的 VPS 服务器上托管，对于静态博客来说，多了一环需要动态运行的服务需要维护。但是这已经是目前最不差的方案了。</p>
+</div>
+    <!--  <p>  <a class="muted text-sm no-underline"
+    href="https://www.owenyoung.com/tags/search/">#Search</a>
+    &nbsp;  <a class="muted text-sm no-underline"
+    href="https://www.owenyoung.com/tags/zola/">#Zola</a>
+      </p>  -->
+    <!-- <div class="muted"> <section>
+        <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;#continue-reading"><span>继续阅读需要 </span>
+          <span>18 min &rarr;</span> </a>
+    </section> </div> <br> -->
+    <hr class="w-1__2"></article>
+  
+      
+        
+  <article class="h-entry hentry">
+    <div class="display-none p-author h-card vcard">
+      <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
+      <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
+      <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+    </div>
+    <section class="muted pt">
       <time class="dt-published published" datetime="2022-06-09T00:31:11+08:00" pubdate>2022-06-09</time>
       
         <span>发布在
@@ -440,38 +477,6 @@
     <!-- <div class="muted"> <section>
         <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;articles&#x2F;ex-muslims&#x2F;#continue-reading"><span>继续阅读需要 </span>
           <span>33 min &rarr;</span> </a>
-    </section> </div> <br> -->
-    <hr class="w-1__2"></article>
-  
-      
-        
-  <article class="h-entry hentry">
-    <div class="display-none p-author h-card vcard">
-      <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
-      <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
-      <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
-    </div>
-    <section class="muted pt">
-      <time class="dt-published published" datetime="2022-04-20T16:32:15+08:00" pubdate>2022-04-20</time>
-      
-        <span>发布在
-        </span>
-        <a class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
-          Random
-        </a>
-      
-    </section>
-    <h1 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;france-islam&#x2F;">为什么法国变成了西方世界里穆斯林最讨厌的国家？</a>
-    </h1>
-    <div class="p-summary entry-summary"><p>今天学英语，看了半岛电视台的一个视频<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=fQJUaYQN4os">法国，伊斯兰教，世俗主义</a>，和 Vice 的一个<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=d_l0n_kc_Fc">为什么法国变成了西方世界里穆斯林最讨厌的国家</a></p>
-<p>曾经的法国是穆斯林最喜欢的国家之一，并且由于法国反对美国入侵伊拉克，这种情绪在 2003 年达到了最高峰。为什么现在的法国变成了西方世界里穆斯林最讨厌的国家呢？</p>
-</div>
-    <!--  <p>  <a class="muted text-sm no-underline"
-    href="https://www.owenyoung.com/tags/islam/">#Islam</a>  </p>  -->
-    <!-- <div class="muted"> <section>
-        <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;france-islam&#x2F;#continue-reading"><span>继续阅读需要 </span>
-          <span>6 min &rarr;</span> </a>
     </section> </div> <br> -->
     <hr class="w-1__2"></article>
   
@@ -725,7 +730,7 @@
             
               
               <li>
-                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(28)</a>
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(29)</a>
               </li>
             
           </ul>
@@ -920,6 +925,9 @@
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;rust&#x2F;">Rust(2)</a>
               </li>
             <li class="inline">
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;search&#x2F;">Search(1)</a>
+              </li>
+            <li class="inline">
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-help&#x2F;">Self-Help(1)</a>
               </li>
             <li class="inline">
@@ -956,7 +964,7 @@
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;writing&#x2F;">Writing(1)</a>
               </li>
             <li class="inline">
-                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;zola&#x2F;">Zola(1)</a>
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;zola&#x2F;">Zola(2)</a>
               </li>
             
           </ul>

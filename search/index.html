@@ -76,21 +76,23 @@
           <ul class="flex menu list-none items-center justify-center">
             <li>
               <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
-                title="English Site"
-                href="/en/">
-                <span class="text-sm">EN</span>
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Search"
+                href="/search/">
+                <span class="text-sm">🔍</span>
               </a>
             </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted"
-                title="中文站点"
-                class="only-show-small"
-                href="/">
-                <span class="text-sm">中</span>
-              </a>
-            </li>
+            
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                  title="English Site"
+                  href="/en/">
+                  <span class="text-sm">EN</span>
+                </a>
+              </li>
+            
+            
             <div class="nav-divider"></div>
             <li>
               <a
@@ -119,7 +121,8 @@
           <div class="main-inner"> <div class="search-page">
     <h1>Search</h1>
     <section>
-      
+      <p>本页面可以使用很多种方法搜索此站，我在<a href="https://www.owenyoung.com/blog/add-search/">《给 Zola 博客增加搜索功能》</a>中记录了关于建立搜索页面的过程。</p>
+
     </section>
     <section>
       <h2>
@@ -144,6 +147,7 @@
         <a href="https://github.com/theowenyoung/blog/search">Github</a>
       </h2>
       <form
+        target="_blank"
         id="github-search"
         class="flex items-center flex-wrap pb"
         action="https://github.com/theowenyoung/blog/search"
@@ -219,7 +223,7 @@
             
               
               <li>
-                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(28)</a>
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(29)</a>
               </li>
             
           </ul>
@@ -414,6 +418,9 @@
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;rust&#x2F;">Rust(2)</a>
               </li>
             <li class="inline">
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;search&#x2F;">Search(1)</a>
+              </li>
+            <li class="inline">
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-help&#x2F;">Self-Help(1)</a>
               </li>
             <li class="inline">
@@ -450,7 +457,7 @@
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;writing&#x2F;">Writing(1)</a>
               </li>
             <li class="inline">
-                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;zola&#x2F;">Zola(1)</a>
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;zola&#x2F;">Zola(2)</a>
               </li>
             
           </ul>
@@ -480,7 +487,7 @@
           meilisearchOptions: {
             limit: 10
           },
-          debug: true, // Set debug to true if you want to inspect the dropdown
+          debug: false, // Set debug to true if you want to inspect the dropdown
         })
       });
       // sourcegraph search

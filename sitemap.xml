@@ -37,6 +37,10 @@
         <lastmod>2021-02-02</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/add-search/</loc>
+        <lastmod>2022-07-12</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/anki-get-started/</loc>
         <lastmod>2020-11-10</lastmod>
     </url>
@@ -1018,6 +1022,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/rust/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/search/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/search/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/self-help/</loc>

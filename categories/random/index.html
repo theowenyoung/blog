@@ -82,21 +82,23 @@
           <ul class="flex menu list-none items-center justify-center">
             <li>
               <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
-                title="English Site"
-                href="/en/">
-                <span class="text-sm">EN</span>
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Search"
+                href="/search/">
+                <span class="text-sm">🔍</span>
               </a>
             </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted"
-                title="中文站点"
-                class="only-show-small"
-                href="/">
-                <span class="text-sm">中</span>
-              </a>
-            </li>
+            
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                  title="English Site"
+                  href="/en/">
+                  <span class="text-sm">EN</span>
+                </a>
+              </li>
+            
+            
             <div class="nav-divider"></div>
             <li>
               <a
@@ -144,6 +146,41 @@
       </header>
       <section>
         
+          
+            
+  <article class="h-entry hentry">
+    <div class="display-none p-author h-card vcard">
+      <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
+      <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
+      <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+    </div>
+    <section class="muted pt">
+      <time class="dt-published published" datetime="2022-07-12T00:54:03+08:00" pubdate>2022-07-12</time>
+      
+        <span>发布在
+        </span>
+        <a class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
+          Random
+        </a>
+      
+    </section>
+    <h1 class="no-border pb-sm">
+      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;">给Zola博客增加搜索功能</a>
+    </h1>
+    <div class="p-summary entry-summary"><p>我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个<a href="https://www.owenyoung.com/search/">搜索页面</a>，以及首页也添加了一个搜索框。</p>
+<p>我一直在这个博客里存放自己的所有公开内容，包括笔记和文章，我经常需要搜索自己的笔记，在此之前，我一直用 VSCode 在本地搜索文档。但是 VSCode 其实启动挺慢的，而且如果不在电脑边，也没法用，所以最近就研究了几种搜索方案。最终我选择了自托管 Rust 开发的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">Meilisearch</a>，但是这也不是特别理想的方案，因为需要在自己的 VPS 服务器上托管，对于静态博客来说，多了一环需要动态运行的服务需要维护。但是这已经是目前最不差的方案了。</p>
+</div>
+    <!--  <p>  <a class="muted text-sm no-underline"
+    href="https://www.owenyoung.com/tags/search/">#Search</a>
+    &nbsp;  <a class="muted text-sm no-underline"
+    href="https://www.owenyoung.com/tags/zola/">#Zola</a>
+      </p>  -->
+    <!-- <div class="muted"> <section>
+        <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;#continue-reading"><span>继续阅读需要 </span>
+          <span>18 min &rarr;</span> </a>
+    </section> </div> <br> -->
+    <hr class="w-1__2"></article>
+  
           
             
   <article class="h-entry hentry">
@@ -991,41 +1028,6 @@
     <hr class="w-1__2"></article>
   
           
-            
-  <article class="h-entry hentry">
-    <div class="display-none p-author h-card vcard">
-      <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
-      <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
-      <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
-    </div>
-    <section class="muted pt">
-      <time class="dt-published published" datetime="2021-02-03" pubdate>2021-02-03</time>
-      
-        <span>发布在
-        </span>
-        <a class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
-          Random
-        </a>
-      
-    </section>
-    <h1 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;deploy-rsshub-with-actionsflow&#x2F;">使用Actionsflow在Github上免费部署Rsshub</a>
-    </h1>
-    <div class="p-summary entry-summary"><p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/DIYgod/RSSHub">Rsshub</a>是一个很棒的工具，把很多知名或不知名的网页数据通通统一为<a rel="noopener nofollow noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/RSS">RSS 格式</a>，堪称中文互联网的 W3C. 但是官方推荐的部署方式是<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.rsshub.app/install/#docker-compose-bu-shu">Docker 部署</a>，对于大多数轻量使用的用户来说有点重，所以这里介绍一种免费，轻量，按需使用的部署方式，利用<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow">Actionsflow</a>部署在 GitHub 的 <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.github.com/en/actions">Actions</a> 上。</p>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow">Actionsflow</a>是一个基于 Github Actions 上的 IFTTT/Zapier 的开源替代，使用 <a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/workflow/">Github Actions 的配置格式</a>来配置你需要的工作流, 更多关于 Actionsflow 的使用可以看我的<a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/zh/posts/actionsflow/">另一篇文章介绍</a>,或者<a rel="noopener nofollow noreferrer" target="_blank" href="https://actionsflow.github.io/docs/">官方文档</a></p>
-</div>
-    <!--  <p>  <a class="muted text-sm no-underline"
-    href="https://www.owenyoung.com/tags/github-actions/">#Github Actions</a>
-    &nbsp;  <a class="muted text-sm no-underline"
-    href="https://www.owenyoung.com/tags/actionsflow/">#Actionsflow</a>
-      </p>  -->
-    <!-- <div class="muted"> <section>
-        <a class="text text-color" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;deploy-rsshub-with-actionsflow&#x2F;#continue-reading"><span>继续阅读需要 </span>
-          <span>4 min &rarr;</span> </a>
-    </section> </div> <br> -->
-    <hr class="w-1__2"></article>
-  
-          
           
     <div class="pagination py">
       <ul class="list-none flex justify-between">
@@ -1103,7 +1105,7 @@
             
               
               <li>
-                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(28)</a>
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(29)</a>
               </li>
             
           </ul>
@@ -1298,6 +1300,9 @@
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;rust&#x2F;">Rust(2)</a>
               </li>
             <li class="inline">
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;search&#x2F;">Search(1)</a>
+              </li>
+            <li class="inline">
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-help&#x2F;">Self-Help(1)</a>
               </li>
             <li class="inline">
@@ -1334,7 +1339,7 @@
                 <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;writing&#x2F;">Writing(1)</a>
               </li>
             <li class="inline">
-                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;zola&#x2F;">Zola(1)</a>
+                <a class="no-underline" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;zola&#x2F;">Zola(2)</a>
               </li>
             
           </ul>
