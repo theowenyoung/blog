@@ -16,7 +16,7 @@
       "selector": ".detail-page .p-category",
       "default_value": "Random"
     },
-    "lvl1": ".detail-page .tag",
+    "lvl1": ".detail-page .p-tag",
     "lvl2": ".detail-page .entry-title",
     "lvl3": ".e-content h2",
     "lvl4": ".e-content h3",
