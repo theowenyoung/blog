@@ -85,7 +85,8 @@
         <div class="navbar-inner justify-between">
           <div>
             <a class="brand" href="{{ config.base_url~lang_prefix_path }}">
-            <img class="icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"> </img>
+              <img class="icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
+            </img>
           </a>
         </div>
         <div>
@@ -131,59 +132,61 @@
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-    {% block body_zone -%}
-    <main class="body-zone flex justify-between flex-1">
-      <section class="main flex-1 py">
-        <div class="main-inner"> {% block main %}{% endblock main %}
-          </div>
-        </section>
-        {% block sidebar %}
+      </nav>
+      {% block body_zone -%}
+      <main class="body-zone flex justify-between flex-1">
+        <section class="main flex-1 py">
+          <div class="main-inner"> {% block main %}{% endblock main %}
+            </div>
+          </section>
+          {% block sidebar %}
           <aside class="sidebar px">
-            <div class="display-none h-card pt">
-              <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
-              <a class="p-name u-url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
-              <p class="p-note">{{ config.extra.bio }}</p>
-            </div>
-            <h2>
-              <a class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</h2>
-            </a>
-            <ul>
-              {% set categories = get_taxonomy(kind="categories",lang=lang) %}
-              {% for cat in
+            {% block sidebar_top %}
+          {% endblock sidebar_toop %}
+          <div class="display-none h-card pt">
+            <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
+            <a class="p-name u-url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
+            <p class="p-note">{{ config.extra.bio }}</p>
+          </div>
+          <h2>
+            <a class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</h2>
+          </a>
+          <ul>
+            {% set categories = get_taxonomy(kind="categories",lang=lang) %}
+            {% for cat in
             categories.items %}
-                {% set url = get_taxonomy_url(kind="categories",lang=lang, name=cat.name) %}
-                <li>
-                  <a class="no-underline" href="{{ url }}">{{ cat.name }}({{ cat.pages | length }})</a>
-                </li>
-              {% endfor %}
-            </ul>
-            {% set custom_sidebar = get_page(path="pages/sidebar"~file_lang_path~".md") %}
-            {{ custom_sidebar.content | safe }}
-            <h2>
-              <a class="no-underline" href="{{ lang_prefix_path }}tags/">{{ trans(key="label_tags",lang=lang) }}</a>
-            </h2>
-            <ul class="list-none text-sm">
-              {% set tags = get_taxonomy(kind="tags",lang=lang) %}
-              {% for tag in tags.items -%}
-                {% set url = get_taxonomy_url(kind="tags",lang=lang, name=tag.name) -%}
-                <li class="inline">
-                  <a class="no-underline" href="{{ url }}">{{ tag.name }}({{ tag.pages | length }})</a>
-                </li>
-              {% endfor %}
-            </ul>
-            <h2>
-              <a class="no-underline" href="https://indieweb.org/">IndieWeb</a>
-            </h2>
-            <div class="pb">
-              <a href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/previous">←</a>
-              An IndieWeb Webring 🕸💍
-              <a href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/next">→</a>
-            </div>
-          </aside>
-        {% endblock sidebar %}
-      </main>
-    {% endblock body_zone -%}
-  </body>
-</html></section><section id="bottom"></section></body></html>
+              {% set url = get_taxonomy_url(kind="categories",lang=lang, name=cat.name) %}
+              <li>
+                <a class="no-underline" href="{{ url }}">{{ cat.name }}({{ cat.pages | length }})</a>
+              </li>
+            {% endfor %}
+          </ul>
+          {% set custom_sidebar = get_page(path="pages/sidebar"~file_lang_path~".md") %}
+          {{ custom_sidebar.content | safe }}
+          <h2>
+            <a class="no-underline" href="{{ lang_prefix_path }}tags/">{{ trans(key="label_tags",lang=lang) }}</a>
+          </h2>
+          <ul class="list-none text-sm">
+            {% set tags = get_taxonomy(kind="tags",lang=lang) %}
+            {% for tag in tags.items -%}
+              {% set url = get_taxonomy_url(kind="tags",lang=lang, name=tag.name) -%}
+              <li class="inline">
+                <a class="no-underline" href="{{ url }}">{{ tag.name }}({{ tag.pages | length }})</a>
+              </li>
+            {% endfor %}
+          </ul>
+          <h2>
+            <a class="no-underline" href="https://indieweb.org/">IndieWeb</a>
+          </h2>
+          <div class="pb">
+            <a href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/previous">←</a>
+            An IndieWeb Webring 🕸💍
+            <a href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/next">→</a>
+          </div>
+        </aside>
+      {% endblock sidebar %}
+    </main>
+  {% endblock body_zone -%}
+</section>
+<section id="bottom"></section>
+{% block before_body_end %}{% endblock before_body_end %}</body></html>

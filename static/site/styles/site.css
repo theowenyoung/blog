@@ -318,7 +318,9 @@ a:visited {
 .sidebar a:visited {
   text-decoration: none;
 }
-
+.sidebar{
+  overflow-x:visible;
+}
 .no-underline:hover,
 a:hover {
   color: var(--colors-primary);
