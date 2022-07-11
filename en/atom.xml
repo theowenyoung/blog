@@ -14,7 +14,10 @@
 		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/changelog/</id>
 		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-09-support-backlinks&quot;&gt;2022.07.09 Support backlinks.&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-09-support-backlinks&quot; aria-label=&quot;Anchor link for: 2022-07-09-support-backlinks&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-12-support-search&quot;&gt;2022.07.12 Support Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-12-support-search&quot; aria-label=&quot;Anchor link for: 2022-07-12-support-search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Powerd by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;meilisearch&#x2F;meilisearch&quot;&gt;Meilisearch&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;search-prerview.png&quot; alt=&quot;search&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-09-support-backlinks&quot;&gt;2022.07.09 Support backlinks.&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-09-support-backlinks&quot; aria-label=&quot;Anchor link for: 2022-07-09-support-backlinks&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;backlinks.png&quot; alt=&quot;backlinks&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;2022-07-09-fix-large-building-time&quot;&gt;2022.07.09 Fix large building time&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-09-fix-large-building-time&quot; aria-label=&quot;Anchor link for: 2022-07-09-fix-large-building-time&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;I wrote a heavy logic in the &lt;code&gt;base.html&lt;&#x2F;code&gt; template, this can increase much building time, actually the logic is only dependent by two page, so I move it, now the building time is about 1 second again, also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;issues&#x2F;1902#issuecomment-1178845667&quot;&gt;see here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1776,7 +1779,6 @@ if you want change to the exact version every time, you can set the config to&lt
 		<id>https://www.owenyoung.com/en/pages/sidebar/</id>
 		<content type="html">&lt;h2 id=&quot;home-navigation&quot;&gt;Home Navigation&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#latest-notes&quot;&gt;Last Updated&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#latest&quot;&gt;Latest Articles&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#thoughts&quot;&gt;Short Thoughts&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;#all-notes&quot;&gt;All Notes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -1784,6 +1786,7 @@ if you want change to the exact version every time, you can set the config to&lt
 &lt;h2 id=&quot;impornant-links&quot;&gt;Impornant Links&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;&#x2F;en&#x2F;blog&#x2F;atom.xml&quot;&gt;RSS Feed&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github1s.com&#x2F;theowenyoung&#x2F;blog&quot;&gt;Global Search by VSCode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;about&quot;&gt;About&lt;&#x2F;h2&gt;
 &lt;ul&gt;
