@@ -93,23 +93,35 @@
           <ul class="flex menu list-none items-center justify-center">
             <li>
               <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='en'
-                  -%}muted{% endif -%}"
-                title="English Site"
-                href="/en/">
-                <span class="text-sm">EN</span>
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Search"
+                href="/search/">
+                <span class="text-sm">🔍</span>
               </a>
             </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='zh'
-                  -%}muted{% endif -%}"
-                title="中文站点"
-                class="only-show-small"
-                href="/">
-                <span class="text-sm">中</span>
-              </a>
-            </li>
+            {% if lang=='zh' %}
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='en'
+                    -%}muted{% endif -%}"
+                  title="English Site"
+                  href="/en/">
+                  <span class="text-sm">EN</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if lang=='en' %}
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='zh'
+                    -%}muted{% endif -%}"
+                  title="中文站点"
+                  class="only-show-small"
+                  href="/">
+                  <span class="text-sm">中</span>
+                </a>
+              </li>
+            {% endif %}
             <div class="nav-divider"></div>
             <li>
               <a

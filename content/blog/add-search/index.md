@@ -2,7 +2,7 @@
 title: 给Zola博客增加搜索功能
 date: 2022-07-12T00:54:03+08:00
 updated: 2022-07-12
-draft: true
+draft: false
 taxonomies:
   categories:
     - Random
@@ -64,7 +64,7 @@ taxonomies:
 
 我在[阮老师的科技周刊](https://github.com/ruanyf/weekly)里看到阮老师给用户的其中一个搜索选项是利用 <https://sourcegraph.com/github.com/theowenyoung/blog> 提供的对 Github 源码的免费搜索服务，我试了一下，搜索准确度非常高，但是只能链接到源文件，没法回到对应的网页，但是由于博客内容是用 markdown 写的，所以纯文本也没问题。所以，这是一个不错的替代品。我在[Search](/content/pages/search.md)也添加了一个表单搜索链接过去，你可以体验一下。
 
-### VSCode Web 版
+### [VSCode Web 版(Github1s)](https://github1s.com/theowenyoung/blog)
 
 你只需要在 github 的网址上加上`1s`之后，就能用浏览器以 VSCode 的方式打开你的 github repo，比如我的博客对应的地址就是：<https://github1s.com/theowenyoung/blog> ，这里自带 VSCode 的全局搜索，所以就可以直接在浏览器上搜索博客内容，这其实也是一个很好的搜索替代方案，完全不用担心自己托管，搜索速度也超快，就是差一个直接指向搜索并且带搜索参数的链接，我提了一个[Issue](https://github.com/conwnet/github1s/issues/428),结果他们回复其实他们用的是我上面提到的 Sourcegraph 的搜索，被骗了！我以为是 VSCode 自带的搜索！但是还是期待一下后续的进度，希望能有一个直链，支持类似这样的链接`https://github1s.com/theowenyoung/blog/panel/search?q=term&files-include=content`,这样就可以直接从我的博客里的搜索框跳转到 vscode 的全局搜索里，体验更好。不过这个工具的问题也是首次启动挺慢的，期待微软官方能出一个类似的工具，因为反正 github 也是他家的，可能会更快。
 
@@ -80,8 +80,16 @@ taxonomies:
 
 [美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。可以在[Search 页面](/content/pages/search.md)体验一下这个层次！
 
-我的部署过程：
+### 我的部署过程
 
 1. 先在 VPS 上搭建 Meili,见[我的 meilisearch dotfile 配置](https://github.com/theowenyoung/dotfiles/blob/main/modules/meilisearch/meilisearch.yml)，并不复杂，是我最喜欢的单一二进制文件，无依赖。
 2. 在 Github Actions 的中添加步骤，在网站更新后，立刻爬取整个网站.见[build.yml](https://github.com/theowenyoung/blog/blob/ee82d2d783c3b08b98862a7700a6a29a301e164e/.github/workflows/build.yml#L20-L37) 以及[爬取的配置文件](https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json),得益于我上次在[Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)中给网站的结构添加了很多有用的标记，所以很好定位到我的一级标题，二级标题，分类等, 我在配置中排除了列表页面，让他只爬取文章页。
-3. 在前端网页引入相应的 css 和 js 文件
+3. 在前端网页引入相应的 [css](https://github.com/theowenyoung/blog/blob/37de4f670b3b2d28a77e39b1804ce986c99f0a6a/templates/search.html#L6-L8) 和 [js 脚本](https://github.com/theowenyoung/blog/blob/37de4f670b3b2d28a77e39b1804ce986c99f0a6a/templates/search.html#L71-L85)
+
+Over! 其实说的简单，但是我在建立索引的过程中多次调整了页面中 tag 的层级和 class 以便机器人可以更好的定位到需要的内容（面向机器人编程），最终打磨出来的效果就是：
+
+![meilisearch](./meilisearch.png)
+
+## 结论
+
+虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢[Edgesearch](https://github.com/wilsonzlin/edgesearch)的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<https://meilisearch.owenyoung.com/>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～
