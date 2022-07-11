@@ -78,7 +78,7 @@ taxonomies:
 
 ### [Meilisearch](https://github.com/meilisearch/meilisearch)
 
-[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。可以在[Search 页面](/content/pages/search.md)体验一下这个层次！
+[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](/content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！）
 
 ### 我的部署过程
 
