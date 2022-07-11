@@ -5,7 +5,11 @@
   "scrap_start_urls": false,
   "stop_urls": [
     "https://www.owenyoung.com/categories/",
-    "https://www.owenyoung.com/tags/"
+    "https://www.owenyoung.com/tags/",
+    "https://www.owenyoung.com/en/tags/",
+    "https://www.owenyoung.com/en/categories/",
+    "https://www.owenyoung.com/pages/",
+    "https://www.owenyoung.com/en/pages/"
   ],
   "selectors": {
     "lvl0": {

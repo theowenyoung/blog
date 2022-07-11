@@ -1,9 +1,9 @@
 {% extends "base.html" -%}
-{% block post_meta %}
+{% block before_meta %}
   {% if config.extra.meilisearch_url %}
     <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
     {% endif %}
-  {% endblock post_meta %}
+  {% endblock before_meta %}
   {% block sidebar_top %}{% endblock sidebar_top %}
   {% block main -%}
   {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
@@ -41,7 +41,7 @@
         </p>
       {% endif %}
     </section>
-    {# <input type="search" id="search-bar-input"/> #}
+    <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
     <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
     </h2>
     <section class="articles">
@@ -90,15 +90,20 @@
 {% endblock main -%}
 {% block before_body_end %}
   {% if config.extra.meilisearch_url %}
-    <script src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
+    <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
     <script>
-      docsSearchBar({
-        hostUrl: '{{ config.extra.meilisearch_url | safe }}',
-        apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
-        indexUid: 'owen-blog',
-        inputSelector: '#search-bar-input',
-        debug: true, // Set debug to true if you want to inspect the dropdown
-      })
+      document.addEventListener('DOMContentLoaded', function () {
+        docsSearchBar({
+          hostUrl: '{{ config.extra.meilisearch_url | safe }}',
+          apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
+          indexUid: 'owen-blog',
+          inputSelector: '#search-bar-input',
+          meilisearchOptions: {
+            limit: 10
+          },
+          debug: true, // Set debug to true if you want to inspect the dropdown
+        })
+      });
     </script>
   {% endif %}
 {% endblock before_body_end %}
