@@ -1,232 +1,243 @@
 <!DOCTYPE html>
-<html
-  lang="zh"
-  itemscope
-  itemtype="http://schema.org/Blog"
->
+<html lang="zh" itemscope itemtype="http://schema.org/Blog">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
-    <link rel="me" href="https://twitter.com/TheOwenYoung" />
-    <link rel="me" href="https://twitter.com/OwenYoungZh" />
-    <link rel="me" href="https://github.com/theowenyoung" />
-    <link rel="me" href="mailto:owen@owenyoung.com" />
-    <link
-  rel="webmention"
-  href="https://webmention.io/www.owenyoung.com/webmention"
-/>
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=f941a79e4b2668b7215b37592be155fcfb4484e196c05621c4cb8fa23061cea2">
-    <title>Debian初始化Rust环境 - Owen的博客</title>
-    <meta
-      name="description"
-      itemprop="about"
-      content=" 在 Debian 上初始化 Rust 环境笔记。Official Site
-  "
-    />
-    <meta
-      name="keywords"
-      itemprop="keywords"
-      content="注意力, 读书, 工具分享, 纯文本, 英语学习"
-    />
-    <meta name="author" itemprop="author" content="Owen Young" />
-    <meta itemprop="headline" content="Debian初始化Rust环境 - Owen的博客" />
-    <meta itemprop="copyrightYear" content="2022" />
-    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"
-    type="image/x-icon"> <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4"> <link
-    rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b"> <link
-    rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64"> <link
-    rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a"> <link
-    rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020"> <link
-    rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50"> <link
-    rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363"> <link
-    rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70"> <link
-    rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1"> <link rel="icon"
-    type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac"> <link rel="icon"
-    type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6"> <link rel="icon"
-    type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> <link rel="icon"
-    type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa"> <link rel="manifest"
-    href="https://www.owenyoung.com/site/images/manifest.json">
-    <meta
-      name="msapplication-TileColor"
-      content="#f9f5e9"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <link rel="me" href="https://twitter.com/TheOwenYoung"/>
+    <link rel="me" href="https://twitter.com/OwenYoungZh"/>
+    <link rel="me" href="https://github.com/theowenyoung"/>
+    <link rel="me" href="mailto:owen@owenyoung.com"/>
+    <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/>
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=d709940fd75533974798ee3cf5339918fb580b676d12313bfc9314b21e519dc7">
+    <title>
+      
+  Debian初始化Rust环境 - Owen的博客
+
+    </title>
+    <meta name="description" itemprop="about" content="
+  
+    在 Debian 上初始化 Rust 环境笔记。Official Site
+
+  
+"/>
+    <meta name="keywords" itemprop="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
+    <meta name="author" itemprop="author" content="Owen Young"/>
+    <meta itemprop="headline" content="
+  Debian初始化Rust环境 - Owen的博客
+"/>
+    <meta itemprop="copyrightYear" content="2022"/>
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa">
+    <link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#f9f5e9"/>
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#f9f5e9" />
+    <meta name="theme-color" content="#f9f5e9"/>
+    <meta property="og:title" content="
+  Debian初始化Rust环境 - Owen的博客
+"/>
+    <meta property="og:description" content="
+  
+    在 Debian 上初始化 Rust 环境笔记。Official Site
 
-    <meta
-      property="og:title"
-      content="Debian初始化Rust环境 - Owen的博客"
-    />
-    <meta
-      property="og:description"
-      content=" 在 Debian 上初始化 Rust 环境笔记。Official Site
-  "
-    />
-    <meta
-      property="og:url"
-      content="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;"
-    />
-    <meta property="og:site_name" content="Owen的博客" />
+  
+"/>
+    <meta property="og:url" content="
+  
+    https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;
+  
+"/>
+    <meta property="og:site_name" content="Owen的博客"/>
     
-    <meta
-      property="og:image"
-      content=""
-    />
+      <meta property="og:image" content="
+  
+"/>
     
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary"/>
     
-    <meta name="twitter:site" content="TheOwenYoung" />
-    <meta name="twitter:creator" content="TheOwenYoung" />
-    <meta
-      name="twitter:image:alt"
-      content="Owen的博客"
-    />
+      <meta name="twitter:site" content="TheOwenYoung"/>
+      <meta name="twitter:creator" content="TheOwenYoung"/>
+      <meta name="twitter:image:alt" content="Owen的博客"/>
     
-     <link rel="alternate"
-type="application/atom+xml" title="Owen的博客 - RSS" href="https://www.owenyoung.com/atom.xml">
-
+    
+      <link rel="alternate" type="application/atom+xml" title="Owen的博客 - RSS" href="https://www.owenyoung.com/atom.xml">
+    
     
     <meta name="title" content="Debian初始化Rust环境">
-<style>
-  .sidebar{
-    display: none;
-  }
-  @media (min-width: 67.5rem) {
-    .sidebar{
-      display: block;
+  <style>
+    .sidebar {
+      display: none;
     }
-  }
-</style>
+    @media(min-width: 67.5rem) {
+      .sidebar {
+        display: block;
+      }
+    }
+  </style>
 
   </head>
-
   <body>
     <section id="top"></section>
-    <section id="root" >
+    <section id="root">
       <nav class="navbar">
         <div class="navbar-inner justify-between">
           <div>
             <a class="brand" href="https://www.owenyoung.com/">
-              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"></img>
-            </a> 
-          </div>
-          <div>
-            
-            <ul class="flex menu list-none items-center justify-center">
-    
-              
-              <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline " title="English Site" href="/en/">
-                <span class="text-sm">EN</span>
-               </a></li>
-              <li>
-               <a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted" title="中文站点" class="only-show-small" href="/">
-                 <span class="text-sm">中</span>
-                </a>
-              </li>
-             <div class="nav-divider"></div>
-             <li><a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline" title="Back to Top" href="#top">
-               <span class=""> &#8593;</span>
-              </a></li>
-             <li>
-              <a class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline" title="Go to Bottom" class="only-show-small" href="#bottom">
-                <span class=""> &#8595;</span>
-               </a>
-             </li>
-            
-            </ul>
-          </div>
+            <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"> </img>
+          </a>
         </div>
-      </nav>
-      <main class="body-zone flex justify-between flex-1">
-          <section class="main flex-1 py">
-            <div class="main-inner">
-              
-<div class="h-entry hentry">
+        <div>
+          <ul class="flex menu list-none items-center justify-center">
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                title="English Site"
+                href="/en/">
+                <span class="text-sm">EN</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline muted"
+                title="中文站点"
+                class="only-show-small"
+                href="/">
+                <span class="text-sm">中</span>
+              </a>
+            </li>
+            <div class="nav-divider"></div>
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Back to Top"
+                href="#top">
+                <span class="">
+                  &#8593;</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Go to Bottom"
+                class="only-show-small"
+                href="#bottom">
+                <span class="">
+                  &#8595;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="body-zone flex justify-between flex-1">
+      <section class="main flex-1 py">
+        <div class="main-inner"> 
+<div class="h-entry hentry detail-page">
   <header id="overview">
     <div class="pt">
       <span>&gt;&gt;</span>
       <a href="https://www.owenyoung.com/">首页</a>
       
-      <span class="divider">/</span>
-      <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/categories/dev/">Dev</a>
-      <span class="divider">/</span>
+        <span class="divider">/</span>
+        <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/categories/dev/">Dev</a>
+        <span class="divider">/</span>
+          
+            <a href="https://www.owenyoung.com/tags/rust/">Rust</a>
+            
+              ,
+            
+          
+            <a href="https://www.owenyoung.com/tags/server/">Server</a>
+            
+              
+            
+          
+        
       
-      <a href="https://www.owenyoung.com/tags/rust/">Rust</a>,
-      
-      <a href="https://www.owenyoung.com/tags/server/">Server</a>
-      
-      
-      
-      </div>
-  
+    </div>
     <div>
       <h1 class="p-name entry-title" style="font-size:1.8rem;">Debian初始化Rust环境</h1>
       <div class="display-none p-author h-card vcard">
-        <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f" />
-        <a class="p-name u-url url"
-        href="https:&#x2F;&#x2F;www.owenyoung.com" 
-       >Owen Young</a> 
-       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+        <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
+        <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
+        <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
       </div>
       
-      <div class="pb muted">
-        <div>
-          发布于: <time class="dt-published published" datetime="2021-03-26">2021-03-26</time> · 最后更新时间: <time class="dt-updated updated" datetime="2022-03-26">2022-03-26</time> ·
-            阅读时间: 1 min</div>
+        <div class="pb muted">
+          <div>
+            
+              发布于:
+              <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+            
+            
+              · 最后更新时间:
+              <time class="dt-updated updated" datetime="2022-03-26">2022-03-26</time>
+              ·
+            
+            
+              阅读时间: 1 min
+          </div>
+        </div>
+      
     </div>
-     
-    </div>
-    
     
   </header>
-  <section>
-  
-    <section class="main">
-      <div class="display-none p-summary">
-        <p>在 Debian 上初始化 Rust 环境笔记。</p>
+<section>
+  <section class="main">
+    <div class="display-none p-summary">
+      <p>在 Debian 上初始化 Rust 环境笔记。</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.rust-lang.org/learn/get-started">Official Site</a></p>
 
-      </div>
-      <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;">Permanent Link</a>
-      
+    </div>
+    <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;">Permanent Link</a>
+    
       <div class="main-toc pt">
         <details>
           <summary>快速导航</summary>
           
-<section class="sidebar-table-content">
-  <ul >
-    <li><a href="#start">正文开始</a></li>
+    <section class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">正文开始</a>
+        </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#rust-jing-xiang-she-zhi">Rust 镜像设置</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#install">Install</a>
+            
+          </li>
+        
+        <li>
+          <a href="#response">回应区</a>
+        </li>
+        <li>
+          <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/rust-environment-setup-for-debian.md">帮我完善这个页面？</a>
+        </li>
+      </ul>
+    </section>
   
-      <li>
-          <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#rust-jing-xiang-she-zhi">Rust 镜像设置</a>
-          
-      </li>
-  
-      <li>
-          <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#install">Install</a>
-          
-      </li>
-  
-  <li>
-    <a href="#response">回应区</a>
-</li>
-<li>
-  <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/rust-environment-setup-for-debian.md">帮我完善这个页面？</a>
-</li>
-  </ul>
-</section>
-
         </details>
-
       </div>
-      
-      <section id="start"></section>
-      <article class="e-content entry-content">
-        <p>在 Debian 上初始化 Rust 环境笔记。</p>
+    
+    <section id="start"></section>
+    <article class="e-content entry-content">
+      <p>在 Debian 上初始化 Rust 环境笔记。</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.rust-lang.org/learn/get-started">Official Site</a></p>
 <span id="continue-reading"></span><h2 id="rust-jing-xiang-she-zhi">Rust 镜像设置<a class="zola-anchor" href="#rust-jing-xiang-she-zhi" aria-label="Anchor link for: rust-jing-xiang-she-zhi">🔗</a></h2>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://rsproxy.cn/">https://rsproxy.cn/</a></p>
@@ -252,113 +263,101 @@ type="application/atom+xml" title="Owen的博客 - RSS" href="https://www.owenyo
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">curl --proto </span><span>&#39;</span><span style="color:#a3be8c;">=https</span><span>&#39;</span><span style="color:#bf616a;"> --tlsv1</span><span>.2</span><span style="color:#bf616a;"> -sSf</span><span> https://sh.rustup.rs | </span><span style="color:#bf616a;">sh
 </span></code></pre>
 
-      </article>
-      
+    </article>
+    
       <section>
         <hr>
-        <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/rust-environment-setup-for-debian.md">📝 帮我完善这个页面？</a>
+          <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/rust-environment-setup-for-debian.md">📝 帮我完善这个页面？</a>
+        </section>
+      
+      
+                      
+                        
+                          
+                        
+                        
+                        <section class="p-comments h-feed">
+                          <hr/>
+                          <h2>回应区<a href="#response" id="response" class="zola-anchor">🔗</a>
+                          </h2>
+                          
+                <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+                  
+                    
+                      
+                    
+                    <div id="email-comment" class="muted text-sm">
+                      
+                        <p>
+                          你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject=%20%E5%9B%9E%E5%A4%8D%EF%BC%9ADebian%E5%88%9D%E5%A7%8B%E5%8C%96Rust%E7%8E%AF%E5%A2%83">邮件
+                          </a>
+                          <code>owen@owenyoung.com</code>
+                          和我讨论。
+                        </p>
+                      
+                    </div>
+                  
+                  <div class="flex items-center flex-wrap pb">
+                    <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
+                      <input type="submit" class="px py-sm" value="Send Webmention"></div>
+                      <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;"></form>
+                    
+                          
+    
+      <section class="backlinks ">
+        <h3>博客内双向链接文章 (1)<a href="#backlinks" id="backlinks" class="zola-anchor">🔗</a>
+        </h3>
+        <ul class="">
+          
+            <li>
+              <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;shadowsocks-rust-setup-for-debian&#x2F;">Shadowsocks Rust Setup for Debian</a>
+            </li>
+          
+        </ul>
       </section>
+    
+  
+                          
+                        
+                      
       
-      
-
-
-
-
-
-<section class="p-comments h-feed">
-  <hr />
-<h2>回应区<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
-  
-<form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
-  
-  
-  
-  
-  <div id="email-comment" class="muted text-sm">
-    
-    <p>
-      你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject=%E5%9B%9E%E5%A4%8D%EF%BC%9ADebian%E5%88%9D%E5%A7%8B%E5%8C%96Rust%E7%8E%AF%E5%A2%83">邮件  </a><code>owen@owenyoung.com</code> 和我讨论。
-    </p>
-    
-  
-  </div>
-  
-  <div class="flex items-center flex-wrap pb">
-    <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
-    <input type="submit" class="px py-sm" value="Send Webmention">
-  </div>
-
-  <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;rust-environment-setup-for-debian&#x2F;">
-</form>
-
-  
-
-<section class="backlinks ">
-  <h3>博客内双向链接文章 (1)<a href="#backlinks" id="backlinks" class="zola-anchor">🔗</a></h3>
-  <ul class="">
-    
-    <li>
-      <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;shadowsocks-rust-setup-for-debian&#x2F;">Shadowsocks Rust Setup for Debian</a>
-    </li>
-    
-  </ul>
-
-</section>
-
-
-
-
-  
-  
-
-
-      
-
     </section>
-    
-   
   </section>
 </div>
-   
-
-              </div>
-          </section>
-
-          
+          </div>
+        </section>
+        
 <aside class="sidebar px ">
-
-<h2>快速导航</h2>
-
-<section class="sidebar-table-content">
-  <ul >
-    <li><a href="#start">正文开始</a></li>
   
-      <li>
-          <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#rust-jing-xiang-she-zhi">Rust 镜像设置</a>
-          
-      </li>
+    <h2>快速导航</h2>
+    
+    <section class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">正文开始</a>
+        </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#rust-jing-xiang-she-zhi">Rust 镜像设置</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#install">Install</a>
+            
+          </li>
+        
+        <li>
+          <a href="#response">回应区</a>
+        </li>
+        <li>
+          <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/rust-environment-setup-for-debian.md">帮我完善这个页面？</a>
+        </li>
+      </ul>
+    </section>
   
-      <li>
-          <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/#install">Install</a>
-          
-      </li>
   
-  <li>
-    <a href="#response">回应区</a>
-</li>
-<li>
-  <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/rust-environment-setup-for-debian.md">帮我完善这个页面？</a>
-</li>
-  </ul>
-</section>
-
-
 </aside>
-
-
-
       </main>
-      </section>
-    <section id="bottom"></section>
-  </body>
-</html>
+    </body>
+</html></section><section id="bottom"></section></body></html>

@@ -145,6 +145,7 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.murilopereira.com&#x2F;the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla&#x2F;&quot;&gt;emacs neovim, and vscode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vscode-neovim&#x2F;vscode-neovim&quot;&gt;neovim-vscode&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;datenstrom&#x2F;home&quot;&gt;dotfile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neovide.dev&#x2F;&quot;&gt;neovide&lt;&#x2F;a&gt; - rust gui for neovim&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;ai-enhance&quot;&gt;AI Enhance&lt;a class=&quot;zola-anchor&quot; href=&quot;#ai-enhance&quot; aria-label=&quot;Anchor link for: ai-enhance&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -197,6 +198,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;typesense&#x2F;typesense&quot;&gt;typesense&lt;&#x2F;a&gt; - Fast, typo tolerant, fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lucaong&#x2F;minisearch&quot;&gt;MiniSearch&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jameslittle230&#x2F;stork&quot;&gt;Stork&lt;&#x2F;a&gt; - 🔎 Impossibly fast web search, made for static sites.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tinysearch&#x2F;tinysearch&quot;&gt;Tiny Search&lt;&#x2F;a&gt; - 🔍 Tiny, full-text search engine for static websites built with Rust and Wasm&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hackernoon.com&#x2F;static-full-text-search-in-nextjs-with-webassembly-rust-and-xor-filters-tldr&quot;&gt;Next 中的静态全文搜索.js 使用 WebAssembly、Rust 和 Xor Filters&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ahmadrosid.com&#x2F;blog&#x2F;fulltext-search-with-inverted-index&quot;&gt;在 Javascript 中为 Next.js 静态站点编写全文搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nextapps-de&#x2F;flexsearch&quot;&gt;flexsearch&lt;&#x2F;a&gt; - 浏览器和 nodejs 的下一代全文搜索库.js&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;a class=&quot;zola-anchor&quot; href=&quot;#protocol&quot; aria-label=&quot;Anchor link for: protocol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
