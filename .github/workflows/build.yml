@@ -5,24 +5,24 @@ on:
     branches:
       - main
 jobs:
-  build-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - run: make install
-      - name: Build Site
-        run: make build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./public
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+  # build-deploy:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - run: make install
+  #     - name: Build Site
+  #       run: make build
+  #     - name: Deploy
+  #       uses: peaceiris/actions-gh-pages@v3
+  #       with:
+  #         publish_dir: ./public
+  #         github_token: ${{ secrets.GITHUB_TOKEN }}
   scrape-and-build-search-index:
     needs: build-deploy
     runs-on: ubuntu-latest
     steps:
       # wait github pages publish
-      - run: sleep 1m 
+      # - run: sleep 1m 
       - uses: actions/checkout@v3
       - name: Run docs-scraper
         env:
