@@ -57,13 +57,15 @@
         <a rel="category tag" class="p-category category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{ page.taxonomies.categories[0] }}</a>
         {% if page.taxonomies.tags -%}
           <span class="divider">/</span>
-          {% for tag in page.taxonomies.tags %}
-            <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
-            {% if page.taxonomies.tags | length > 1 %}
-              {% if
+          <div class="inline-block p-tags">
+            {% for tag in page.taxonomies.tags %}
+              <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
+              {% if page.taxonomies.tags | length > 1 %}
+                {% if
       loop.index != page.taxonomies.tags | length %},{% endif %}
-            {% endif %}
-          {% endfor %}
+              {% endif %}
+            {% endfor %}
+          </div>
         {% endif %}
       {% endif %}
     </div>
@@ -127,7 +129,7 @@
             (function () { // DON'T EDIT BELOW THIS LINE
               var d = document,
                 s = d.createElement('script');
-              s.src = 'https://       {{ config.extra.disqus }}.disqus.com/embed.js';
+              s.src = 'https://          {{ config.extra.disqus }}.disqus.com/embed.js';
               s.setAttribute('data-timestamp', + new Date());
               (d.head || d.body).appendChild(s);
             })();

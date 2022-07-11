@@ -79,3 +79,9 @@ taxonomies:
 ### [Meilisearch](https://github.com/meilisearch/meilisearch)
 
 [美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。可以在[Search 页面](/content/pages/search.md)体验一下这个层次！
+
+我的部署过程：
+
+1. 先在 VPS 上搭建 Meili,见[我的 meilisearch dotfile 配置](https://github.com/theowenyoung/dotfiles/blob/main/modules/meilisearch/meilisearch.yml)，并不复杂，是我最喜欢的单一二进制文件，无依赖。
+2. 在 Github Actions 的中添加步骤，在网站更新后，立刻爬取整个网站.见[build.yml](https://github.com/theowenyoung/blog/blob/ee82d2d783c3b08b98862a7700a6a29a301e164e/.github/workflows/build.yml#L20-L37) 以及[爬取的配置文件](https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json),得益于我上次在[Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)中给网站的结构添加了很多有用的标记，所以很好定位到我的一级标题，二级标题，分类等
+3.
