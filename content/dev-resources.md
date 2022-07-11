@@ -150,6 +150,8 @@ taxonomies:
 - [emacs neovim, and vscode](https://www.murilopereira.com/the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla/)
 - [neovim-vscode](https://github.com/vscode-neovim/vscode-neovim)
 - [dotfile](https://gitlab.com/datenstrom/home)
+- [neovide](https://neovide.dev/) - rust gui for neovim
+
 ### AI Enhance
 
 - [GitHub Copilot · Your AI pair programmer](https://copilot.github.com/) - Github Copilot
@@ -209,6 +211,11 @@ taxonomies:
 
 - [typesense](https://github.com/typesense/typesense) - Fast, typo tolerant, fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch.
 - [MiniSearch](https://github.com/lucaong/minisearch)
+- [Stork](https://github.com/jameslittle230/stork) - 🔎 Impossibly fast web search, made for static sites.
+- [Tiny Search](https://github.com/tinysearch/tinysearch) - 🔍 Tiny, full-text search engine for static websites built with Rust and Wasm
+- [Next 中的静态全文搜索.js 使用 WebAssembly、Rust 和 Xor Filters](https://hackernoon.com/static-full-text-search-in-nextjs-with-webassembly-rust-and-xor-filters-tldr)
+- [在 Javascript 中为 Next.js 静态站点编写全文搜索](https://www.ahmadrosid.com/blog/fulltext-search-with-inverted-index)
+- [flexsearch](https://github.com/nextapps-de/flexsearch) - 浏览器和 nodejs 的下一代全文搜索库.js
 
 ## Protocol
 

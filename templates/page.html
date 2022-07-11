@@ -1,123 +1,148 @@
 {% extends "base.html" -%}
-{% block post_meta-%}
+{% block post_meta -%}
 <meta name="title" content="{{ page.title }}">
-<style>
-  .sidebar{
-    display: none;
-  }
-  @media (min-width: 67.5rem) {
-    .sidebar{
-      display: block;
+  <style>
+    .sidebar {
+      display: none;
     }
-  }
-</style>
+    @media(min-width: 67.5rem) {
+      .sidebar {
+        display: block;
+      }
+    }
+  </style>
 {% endblock post_meta -%}
-{% block title %}{{ page.title }} - {{ config.title}}{% endblock title %}
-{% block ogtitle %}{{ page.title }} - {{ config.title}}{% endblock ogtitle %}
-{% block headline %}{{ page.title }} - {{ config.title}}{% endblock headline %}
-{% block ogdesc %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless | striptags}}  {% endif %}{% endblock ogdesc %}
-{% block description %}{% if page.description %} {{ page.description }} {% elif page.summary%} {{page.summary | spaceless | striptags}}  {% endif %}{% endblock description %}
-{% block ogurl %}{% if page.path %}{{ config.base_url }}{{ page.path }}{% endif %}{% endblock ogurl %}
-{% block ogimg %}{% if page.extra.image %}{{ page.extra.image }}{% endif %}{% endblock ogimg %}
+{% block title %}
+  {{ page.title }} - {{ config.title }}
+{% endblock title %}
+{% block ogtitle %}
+  {{ page.title }} - {{ config.title }}
+{% endblock ogtitle %}
+{% block headline %}
+  {{ page.title }} - {{ config.title }}
+{% endblock headline %}
+{% block ogdesc %}
+  {% if page.description %}
+    {{ page.description }}
+  {% elif page.summary %}
+    {{ page.summary | spaceless | striptags }}
+  {% endif %}
+{% endblock ogdesc %}
+{% block description %}
+  {% if page.description %}
+    {{ page.description }}
+  {% elif page.summary %}
+    {{ page.summary | spaceless | striptags }}
+  {% endif %}
+{% endblock description %}
+{% block ogurl %}
+  {% if page.path %}
+    {{ config.base_url }}{{ page.path }}
+  {% endif %}
+{% endblock ogurl %}
+{% block ogimg %}
+  {% if page.extra.image %}
+    {{ page.extra.image }}
+  {% endif %}
+{% endblock ogimg %}
 {% block main %}
-<div class="h-entry hentry">
+<div class="h-entry hentry detail-page">
   {% block detail_meta -%}
   <header id="overview">
     <div class="pt">
       <span>&gt;&gt;</span>
-      <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{trans(key="label_home",lang=lang)}}</a>
+      <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
       {% if page.taxonomies %}
-      <span class="divider">/</span>
-      <a rel="category tag" class="p-category category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{
-        page.taxonomies.categories[0] }}</a>
-      {% if page.taxonomies.tags -%}
-      <span class="divider">/</span>
-      {% for tag in page.taxonomies.tags %}
-      <a href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}{% if
-      loop.index != page.taxonomies.tags | length %},{% endif %}{% endif %}
-      {% endfor %}
+        <span class="divider">/</span>
+        <a rel="category tag" class="p-category category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{ page.taxonomies.categories[0] }}</a>
+        {% if page.taxonomies.tags -%}
+          <span class="divider">/</span>
+          {% for tag in page.taxonomies.tags %}
+            <a href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
+            {% if page.taxonomies.tags | length > 1 %}
+              {% if
+      loop.index != page.taxonomies.tags | length %},{% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       {% endif %}
-      {% endif %}
-      </div>
-  
+    </div>
     <div>
       <h1 class="p-name entry-title" style="font-size:1.8rem;">{{ page.title }}</h1>
       <div class="display-none p-author h-card vcard">
-        <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
-        <a class="p-name u-url url"
-        href="{{ config.base_url }}" 
-       >{{ config.extra.author }}</a> 
-       <p class="p-note">{{ config.extra.bio }}</p>
+        <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
+        <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
+        <p class="p-note">{{ config.extra.bio }}</p>
       </div>
       {% if page.date %}
-      <div class="pb muted">
-        <div>
-          {% if page.date %}{{ trans(key="label_created",lang=lang)}}: <time class="dt-published published" datetime="{{page.date}}">{{page.date | date}}</time>{% endif %}{% if page.updated %} · {{trans(key="label_updated",lang=lang)}}: <time class="dt-updated updated" datetime="{{page.updated}}">{{ page.updated | date}}</time> ·
-           {% endif %}{% if page.date %} {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}</div>
+        <div class="pb muted">
+          <div>
+            {% if page.date %}
+              {{ trans(key="label_created",lang=lang) }}:
+              <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date }}</time>
+            {% endif %}
+            {% if page.updated %}
+              · {{ trans(key="label_updated",lang=lang) }}:
+              <time class="dt-updated updated" datetime="{{ page.updated }}">{{ page.updated | date }}</time>
+              ·
+            {% endif %}
+            {% if page.date %}
+              {{ trans(key="label_reading",lang=lang) }}: {{ page.reading_time }} min{% endif %}
+          </div>
+        </div>
+      {% endif %}
     </div>
-     {% endif %}
-    </div>
-    {% block detail_meta_slot %}
-    {% endblock detail_meta_slot %}
+    {% block detail_meta_slot %}{% endblock detail_meta_slot %}
   </header>
-  {% endblock detail_meta -%}
-  <section>
-  
-    <section class="main">
-      <div class="display-none p-summary">
-        {{ page.summary | safe }}
-      </div>
-      <a class="display-none u-url" href="{{current_url}}">Permanent Link</a>
-      {% if page.toc %}
+{% endblock detail_meta -%}
+<section>
+  <section class="main">
+    <div class="display-none p-summary">
+      {{ page.summary | safe }}
+    </div>
+    <a class="display-none u-url" href="{{ current_url }}">Permanent Link</a>
+    {% if page.toc %}
       <div class="main-toc pt">
         <details>
-          <summary>{{trans(key="label_table_contents",lang=lang)}}</summary>
+          <summary>{{ trans(key="label_table_contents",lang=lang) }}</summary>
           {{ macro::page_toc(toc=page.toc) }}
         </details>
-
       </div>
-      {% endif %}
-      <section id="start"></section>
-      <article class="e-content entry-content">
-        {{ page.content | safe }}
-      </article>
-      {% if config.extra.edit_url_prefix %}
+    {% endif %}
+    <section id="start"></section>
+    <article class="e-content entry-content">
+      {{ page.content | safe }}
+    </article>
+    {% if config.extra.edit_url_prefix %}
       <section>
         <hr>
-        <a class="muted" href="{{config.extra.edit_url_prefix~page.relative_path}}">📝 {{trans(key="label_edit",lang=lang)}}</a>
-      </section>
+          <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">📝 {{ trans(key="label_edit",lang=lang) }}</a>
+        </section>
       {% endif %}
-      {{ macro::webmentions(backlinks=page.backlinks)}}
+      {{ macro::webmentions(backlinks=page.backlinks) }}
       {% if config.extra.disqus and page.extra.comments %}
-      <div id="disqus">
-        <div id="disqus_thread"></div>
-        <script>
-          (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://{{config.extra.disqus}}.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-            Disqus.</a></noscript>
-      </div>
+        <div id="disqus">
+          <div id="disqus_thread"></div>
+          <script>
+            (function () { // DON'T EDIT BELOW THIS LINE
+              var d = document,
+                s = d.createElement('script');
+              s.src = 'https://   {{ config.extra.disqus }}.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', + new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          </noscript>
+        </div>
       {% endif %}
-
     </section>
-    
-   
   </section>
-</div>
-   
-{% endblock main%}
-
-{% block sidebar %}
+</div>{% endblock main %}{% block sidebar %}
 <aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
-{% if page.toc %}
-<h2>{{trans(key="label_table_contents",lang=lang)}}</h2>
-{{ macro::page_toc(toc=page.toc) }}
-{% endif %}
-</aside>
-
-{% endblock sidebar %}
+  {% if page.toc %}
+    <h2>{{ trans(key="label_table_contents",lang=lang) }}</h2>
+    {{ macro::page_toc(toc=page.toc) }}
+  {% endif %}
+</aside>{% endblock sidebar %}

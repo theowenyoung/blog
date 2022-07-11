@@ -1,285 +1,284 @@
 {% macro post_max(page) %}
-<article class="h-entry hentry">
-  <div class="display-none p-author h-card vcard">
-    <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}" />
-    <a class="p-name u-url url"
-    href="{{ config.base_url }}" 
-   >{{ config.extra.author }}</a> 
-   <p class="p-note">{{ config.extra.bio }}</p>
-  </div>
-  <section class="muted pt">
-    <time class="dt-published published" datetime="{{page.date}}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
-    {% if page.taxonomies.categories %}
-    <span>{{trans(key="label_published_on",lang=lang)}} </span>
-    <a class="no-underline p-category" rel="category tag"  href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
-      {{ page.taxonomies.categories[0] }}
-    </a> 
-  {% endif %}
+  <article class="h-entry hentry">
+    <div class="display-none p-author h-card vcard">
+      <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
+      <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
+      <p class="p-note">{{ config.extra.bio }}</p>
+    </div>
+    <section class="muted pt">
+      <time class="dt-published published" datetime="{{ page.date }}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
+      {% if page.taxonomies.categories %}
+        <span>{{ trans(key="label_published_on",lang=lang) }}
+        </span>
+        <a class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
+          {{ page.taxonomies.categories[0] }}
+        </a>
+      {% endif %}
     </section>
-  <h1 class="no-border pb-sm"><a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a></h1>
-
-  {% if page.summary -%}
-  <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
-  {% elif page.description -%}
-  <p class="p-summary entry-summary">{{ page.description }}</p>
-  {% endif -%}
-  <!-- {% if page.taxonomies.tags %}
-  <p>
-    {% for tag in page.taxonomies.tags %}
-    <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">#{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}
-    {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}{% endif %}
-  {% endfor %}
-  </p>
- 
-  {% endif %} -->
-  <!-- <div class="muted">
-    <section>
-      <a class="text text-color" href="{{ page.permalink }}#continue-reading"><span>{{ trans(key="label_read_more",lang=lang) }} </span>
-        <span>{{ page.reading_time }} min &rarr;</span> </a>
-    </section>
-  </div>  
-   <br> -->
-  <hr class="w-1__2">
-</article>
-{% endmacro post_max %}
-
-
-{% macro post_min(page) %}
-<a href="{{ page.permalink }}">{{ page.title }}</a> <span class="muted text-sm">Updated on {{ page.updated }}</span>
-{% endmacro post_min %}
-{% macro backlink(pages) %}
-{% if pages and pages | length >0 %}
-<section class="backlinks ">
-  <h3>{{trans(key="label_backlinks",lang=lang)}} ({{pages | length}})<a href="#backlinks" id="backlinks" class="zola-anchor">🔗</a></h3>
-  <ul class="">
-    {% for page in pages%}
-    <li>
-      <a href="{{ page.permalink }}">{{ page.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-
-</section>
-
-
-{% endif %}
-{% endmacro backlink %}
-
-{% macro page_toc(toc)%}
-<section class="sidebar-table-content">
-  <ul >
-    <li><a href="#start">{{trans(key="label_back_to_start",lang=lang)}}</a></li>
-  {% for h1 in toc %}
-      <li>
-          <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
-          {% if h1.children %}
-              <ul>
-                  {% for h2 in h1.children %}
-                      <li>
-                          <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-                      </li>
-                  {% endfor %}
-              </ul>
-          {% endif %}
-      </li>
-  {% endfor %}
-  <li>
-    <a href="#response">{{ trans(key="label_response",lang=lang) }}</a>
-</li>
-<li>
-  <a href="{{config.extra.edit_url_prefix~page.relative_path}}">{{ trans(key="label_edit",lang=lang) }}</a>
-</li>
-  </ul>
-</section>
-{% endmacro page_toc %}
-
-{% macro paginator(ref, extra) %}
-<div class="pagination py">
-  <ul class="list-none flex justify-between">
-    {% if ref.current_index != 1 %}
-      <li><a class="no-underline" href="{{ ref.first }}">&larrb;</a></li>
-    {% else %}
-      <li class="disabled"><a class="no-underline" href="{{ ref.first }}">&larrb;</a></li>
-    {% endif %}
-
-    {% if ref.previous %}
-      <li><a class="no-underline" href="{{ ref.previous }}">&larr;</a></li>
-    {% else %}
-      <li class="disabled"><a class="no-underline" href="#">&larr;</a></li>
-    {% endif %}
-
-    <li><a class="no-underline" href="{{get_url(path="@/pages/archive.md",lang=lang)}}">{{ ref.current_index }}/{{ ref.number_pagers }}</a></li>
-    
-    {% if ref.next %}
-      <li><a class="no-underline" href="{{ ref.next }}">&rarr;</a></li>
-    {% else %}
-      <li class="disabled"><a class="no-underline" href="#">&rarr;</a></li>
-    {% endif %}
-
-    {% if ref.current_index != ref.number_pagers %}
-      <li><a class="no-underline" href="{{ ref.last }}">&rarrb;</a></li>
-    {% else %}
-      <li class="disabled"><a class="no-underline" href="{{ ref.last }}">&rarrb;</a></li>
-    {% endif %}
-  </ul>
-</div>
-{% endmacro paginator %}
-
-{% macro subscribe() %}
-<div id="revue-embed">
-  <form action="http://digests.owenyoung.com/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
-  <div class="revue-form-group">
-    <label for="member_email">Email address</label>
-    <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
-  </div>
-  <div class="revue-form-group">
-    <label for="member_first_name">First name <span class="optional">(Optional)</span></label>
-    <input class="revue-form-field" placeholder="First name... (Optional)" type="text" name="member[first_name]" id="member_first_name">
-  </div>
-  <div class="revue-form-group">
-    <label for="member_last_name">Last name <span class="optional">(Optional)</span></label>
-    <input class="revue-form-field" placeholder="Last name... (Optional)" type="text" name="member[last_name]" id="member_last_name">
-  </div>
-  <div class="revue-form-actions">
-    <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
-  </div>
-  <div class="revue-form-footer">By subscribing, you agree with Revue’s <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a> and <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
-  </form>
-</div>
-{% endmacro subscribe %}
-
-{% macro webmention(type,item) %}
-{% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
-<li class="list-none" id="{{item['wm-id']}}">
-  <a
-        class="reaction"
-        rel="nofollow ugc"
-        title="{{item.author.name}} {% if item.published %}at {{ item.published }}{% endif %}"
-        href="{{item.url}}"
-      >
-        {% if item.author.photo %}
-        <img alt="{{item.author.name}}" class="icon rounded-full" src="{{item.author.photo}}">
-        {% else %}
-       <span class="icon text-lg">👤</span>
-        {% endif%}
-      </a>
-</li>
-{% elif item.content.html %}
-<li class="card mb-lg rounded-lg list-none px py h-cite p-comment h-entry" id="{{item['wm-id']}}">
-  <div class="flex items-center flex-wrap p-author h-card">
-    {% if item.author.photo %}
-      <a
-      rel="nofollow ugc"
-      title="{{item.author.name}}"
-      href="{{item.author.url}}"
-      class="mr-sm p-name u-url"
-    >
-      <img alt="{{item.author.name}}" class="u-photo rounded-full icon" src="{{item.author.photo}}">
-    </a>
-  {% endif%}
-{% if item.author and item.author.name %}
-  <a
-  rel="nofollow ugc"
-  class="mr-sm p-name u-url"
-  title="{{item.author.name}}"
-  href="{{item.author.url}}"
->
-{{ item.author.name }}
-</a>
-{% else %}
-<span class="mr-sm">Unknown</span>
-{% endif %}
-{% if item.published %}
-{% set key = "label_action_"~type %}
-<a id="{{item['wm-id']}}" class="mr-sm" href="#{{item['wm-id']}}">{{config.extra[key]}}</a>
-<span class="mr-sm"> at</span>
-<a
-  rel="nofollow ugc"
-  class="u-url"
-  title="{{ item.published }}"
-  href="{{item.url}}"
-><time class="dt-published published" datetime="{{item.published}}">{{ item.published | date(format="%Y-%m-%d %H:%M") }}</time></a>
-{% endif %}
-<span>:</span>
-  </div>
-  
-<div class="p-content p-name">
-  {{ item.content.html | safe }}   
-</div>
-</li>
-{% endif %}
-
-{% endmacro webmention %}
-
-{% macro webmention_form() %}
-<form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
-  {% if config.extra.email %}
-  {% if page and page.title %}
-  {% set_global title = page.title  %}
-  {% elif section and section.title %}
-  {% set_global title = section.title %}
-  {% else %}
-  {% set_global title = "Untitled" %}
-  {% endif %}
-  <div id="email-comment" class="muted text-sm">
-    {% if config.default_language != lang %}
-     <p>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL,
-       Or, you can send your response via <a href="mailto:owen@owenyoung.com?subject={{ "Reply: " ~ title | urlencode }}">mail </a><code>owen@owenyoung.com</code>
-     </p>
-    {% else %}
-    <p>
-      你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject={{"回复："~title | urlencode }}">邮件  </a><code>owen@owenyoung.com</code> 和我讨论。
-    </p>
-    {% endif %}
-  
-  </div>
-  {% endif %}
-  <div class="flex items-center flex-wrap pb">
-    <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
-    <input type="submit" class="px py-sm" value="Send Webmention">
-  </div>
-
-  <input type="hidden" name="target" value="{{current_url}}">
-</form>
-{% endmacro webmention_form %}
-
-{% macro webmentions(backlinks) %}
-{% if config.extra.webmention_path %}
-{% if current_path == "/"%}
-{% set_global current_webmention_file_name = current_path %}
-{% else %}
-{% set_global current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
-{% endif %}
-{% set webmention_data = load_data(path=config.extra.webmention_path~current_webmention_file_name~".json",required=false,format="json") %}
-<section class="p-comments h-feed">
-  <hr />
-<h2>{{trans(key="label_response",lang=lang)}}<a href="#response" id="response" class="zola-anchor" >🔗</a></h2>
-  {{ macro::webmention_form()}}
-  {{macro::backlink(pages=backlinks)}}
-  {% if webmention_data %}
-    {% set_global mentions = [] %}
-    {% for ignored, item in webmention_data %}
-        {% set_global mentions = mentions | concat(with=item) %}
-    {% endfor %}
- 
-    {% for type, items in mentions | group_by(attribute="wm-property") %}
-        <h3>{{trans(key="label_"~type,lang=lang)}} ({{items | length}})<a href="#{{type}}" id="{{type}}" class="zola-anchor" >🔗</a></h3>
-        {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
-          <ul class="list-none flex items-center flex-wrap">
-            {% for item in items %}
-              {{ macro::webmention(type=type, item=item) }}
-            {% endfor %}
-          </ul>
-        {% else %}
-        <ul class="list-none">
-          {% for item in items %}
-          {{ macro::webmention(type=type, item=item) }}
+    <h1 class="no-border pb-sm">
+      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
+    </h1>
+    {% if page.summary -%}
+      <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
+    {% elif page.description -%}
+      <p class="p-summary entry-summary">{{ page.description }}</p>
+    {% endif -%}
+    <!-- {% if page.taxonomies.tags %} <p> {% for tag in page.taxonomies.tags %} <a class="muted text-sm no-underline"
+    href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">#{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}
+    {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}{% endif %} {% endfor %} </p> {% endif %} -->
+    <!-- <div class="muted"> <section>
+        <a class="text text-color" href="{{ page.permalink }}#continue-reading"><span>{{ trans(key="label_read_more",lang=lang) }} </span>
+          <span>{{ page.reading_time }} min &rarr;</span> </a>
+    </section> </div> <br> -->
+    <hr class="w-1__2"></article>
+  {% endmacro post_max %}
+  {% macro post_min(page) %}
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+    <span class="muted text-sm">Updated on {{ page.updated }}</span>
+  {% endmacro post_min %}
+  {% macro backlink(pages) %}
+    {% if pages and pages | length >0 %}
+      <section class="backlinks ">
+        <h3>{{ trans(key="label_backlinks",lang=lang) }} ({{ pages | length }})<a href="#backlinks" id="backlinks" class="zola-anchor">🔗</a>
+        </h3>
+        <ul class="">
+          {% for page in pages %}
+            <li>
+              <a href="{{ page.permalink }}">{{ page.title }}</a>
+            </li>
           {% endfor %}
         </ul>
+      </section>
+    {% endif %}
+  {% endmacro backlink %}
+  {% macro page_toc(toc) %}
+    <section class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">{{ trans(key="label_back_to_start",lang=lang) }}</a>
+        </li>
+        {% for h1 in toc %}
+          <li>
+            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            {% if h1.children %}
+              <ul>
+                {% for h2 in h1.children %}
+                  <li>
+                    <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+        <li>
+          <a href="#response">{{ trans(key="label_response",lang=lang) }}</a>
+        </li>
+        <li>
+          <a href="{{ config.extra.edit_url_prefix~page.relative_path }}">{{ trans(key="label_edit",lang=lang) }}</a>
+        </li>
+      </ul>
+    </section>
+  {% endmacro page_toc %}
+  {% macro paginator(ref, extra) %}
+    <div class="pagination py">
+      <ul class="list-none flex justify-between">
+        {% if ref.current_index != 1 %}
+          <li>
+            <a class="no-underline" href="{{ ref.first }}">&larrb;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a class="no-underline" href="{{ ref.first }}">&larrb;</a>
+          </li>
         {% endif %}
-    {% endfor %}
-    <p class="muted text-sm">{{trans(key="label_response_description",lang=lang)| markdown(inline=true) | safe}}</p>
-  {% endif %}
-  {% endif %}
-
-{% endmacro webmentions%}
+        {% if ref.previous %}
+          <li>
+            <a class="no-underline" href="{{ ref.previous }}">&larr;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a class="no-underline" href="#">&larr;</a>
+          </li>
+        {% endif %}
+        <li>
+          <a class="no-underline" href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ ref.current_index }}/{{ ref.number_pagers }}</a>
+        </li>
+        {% if ref.next %}
+          <li>
+            <a class="no-underline" href="{{ ref.next }}">&rarr;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a class="no-underline" href="#">&rarr;</a>
+          </li>
+        {% endif %}
+        {% if ref.current_index != ref.number_pagers %}
+          <li>
+            <a class="no-underline" href="{{ ref.last }}">&rarrb;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a class="no-underline" href="{{ ref.last }}">&rarrb;</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  {% endmacro paginator %}
+  {% macro subscribe() %}
+    <div id="revue-embed">
+      <form
+        action="http://digests.owenyoung.com/add_subscriber"
+        method="post"
+        id="revue-form"
+        name="revue-form"
+        target="_blank">
+        <div class="revue-form-group">
+          <label for="member_email">Email address</label>
+          <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email"></div>
+          <div class="revue-form-group">
+            <label for="member_first_name">First name
+              <span class="optional">(Optional)</span>
+            </label>
+            <input
+              class="revue-form-field"
+              placeholder="First name... (Optional)"
+              type="text"
+              name="member[first_name]"
+              id="member_first_name"></div>
+            <div class="revue-form-group">
+              <label for="member_last_name">Last name
+                <span class="optional">(Optional)</span>
+              </label>
+              <input
+                class="revue-form-field"
+                placeholder="Last name... (Optional)"
+                type="text"
+                name="member[last_name]"
+                id="member_last_name"></div>
+              <div class="revue-form-actions">
+                <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"></div>
+                <div class="revue-form-footer">By subscribing, you agree with Revue’s
+                  <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a>
+                  and
+                  <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.</div>
+              </form>
+            </div>
+          {% endmacro subscribe %}
+          {% macro webmention(type,item) %}
+            {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
+              <li class="list-none" id="{{ item['wm-id'] }}">
+                <a class="reaction" rel="nofollow ugc" title="{{ item.author.name }} {% if item.published %}at {{ item.published }}{% endif %}" href="{{ item.url }}">
+                  {% if item.author.photo %}
+                    <img alt="{{ item.author.name }}" class="icon rounded-full" src="{{ item.author.photo }}">
+                    {% else %}
+                      <span class="icon text-lg">👤</span>
+                    {% endif %}
+                  </a>
+                </li>
+              {% elif item.content.html %}
+                <li class="card mb-lg rounded-lg list-none px py h-cite p-comment h-entry" id="{{ item['wm-id'] }}">
+                  <div class="flex items-center flex-wrap p-author h-card">
+                    {% if item.author.photo %}
+                      <a rel="nofollow ugc" title="{{ item.author.name }}" href="{{ item.author.url }}" class="mr-sm p-name u-url">
+                        <img alt="{{ item.author.name }}" class="u-photo rounded-full icon" src="{{ item.author.photo }}"></a>
+                      {% endif %}
+                      {% if item.author and item.author.name %}
+                        <a rel="nofollow ugc" class="mr-sm p-name u-url" title="{{ item.author.name }}" href="{{ item.author.url }}">
+                          {{ item.author.name }}
+                        </a>
+                      {% else %}
+                        <span class="mr-sm">Unknown</span>
+                      {% endif %}
+                      {% if item.published %}
+                        {% set key = "label_action_"~type %}
+                        <a id="{{ item['wm-id'] }}" class="mr-sm" href="#{{ item['wm-id'] }}">{{ config.extra[key] }}</a>
+                        <span class="mr-sm">
+                          at</span>
+                        <a rel="nofollow ugc" class="u-url" title="{{ item.published }}" href="{{ item.url }}">
+                          <time class="dt-published published" datetime="{{ item.published }}">{{ item.published | date(format="%Y-%m-%d %H:%M") }}</time>
+                        </a>
+                      {% endif %}
+                      <span>:</span>
+                    </div>
+                    <div class="p-content p-name">
+                      {{ item.content.html | safe }}
+                    </div>
+                  </li>
+                {% endif %}
+              {% endmacro webmention %}
+              {% macro webmention_form() %}
+                <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+                  {% if config.extra.email %}
+                    {% if page and page.title %}
+                      {% set_global title = page.title %}
+                    {% elif section and section.title %}
+                      {% set_global title = section.title %}
+                    {% else %}
+                      {% set_global title = "Untitled" %}
+                    {% endif %}
+                    <div id="email-comment" class="muted text-sm">
+                      {% if config.default_language != lang %}
+                        <p>Have you written a
+                          <a href="https://indieweb.org/responses">response</a>
+                          to this? Let me know the URL,
+                                 Or, you can send your response via
+                          <a href="mailto:owen@owenyoung.com?subject={{ " Reply: " ~ title | urlencode }}">mail
+                          </a>
+                          <code>owen@owenyoung.com</code>
+                        </p>
+                      {% else %}
+                        <p>
+                          你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址，或者你也可以通过<a href="mailto:owen@owenyoung.com?subject={{ " 回复："~title | urlencode }}">邮件
+                          </a>
+                          <code>owen@owenyoung.com</code>
+                          和我讨论。
+                        </p>
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                  <div class="flex items-center flex-wrap pb">
+                    <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
+                      <input type="submit" class="px py-sm" value="Send Webmention"></div>
+                      <input type="hidden" name="target" value="{{ current_url }}"></form>
+                    {% endmacro webmention_form %}
+                    {% macro webmentions(backlinks) %}
+                      {% if config.extra.webmention_path %}
+                        {% if current_path == "/" %}
+                          {% set_global current_webmention_file_name = current_path %}
+                        {% else %}
+                          {% set_global current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
+                        {% endif %}
+                        {% set webmention_data = load_data(path=config.extra.webmention_path~current_webmention_file_name~".json",required=false,format="json") %}
+                        <section class="p-comments h-feed">
+                          <hr/>
+                          <h2>{{ trans(key="label_response",lang=lang) }}<a href="#response" id="response" class="zola-anchor">🔗</a>
+                          </h2>
+                          {{ macro::webmention_form() }}
+                          {{ macro::backlink(pages=backlinks) }}
+                          {% if webmention_data %}
+                            {% set_global mentions = [] %}
+                            {% for ignored, item in webmention_data %}
+                              {% set_global mentions = mentions | concat(with=item) %}
+                            {% endfor %}
+                            {% for type, items in mentions | group_by(attribute="wm-property") %}
+                              <h3>{{ trans(key="label_"~type,lang=lang) }} ({{ items | length }})<a href="#{{ type }}" id="{{ type }}" class="zola-anchor">🔗</a>
+                              </h3>
+                              {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
+                                <ul class="list-none flex items-center flex-wrap">
+                                  {% for item in items %}
+                                    {{ macro::webmention(type=type, item=item) }}
+                                  {% endfor %}
+                                </ul>
+                              {% else %}
+                                <ul class="list-none">
+                                  {% for item in items %}
+                                    {{ macro::webmention(type=type, item=item) }}
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            {% endfor %}
+                            <p class="muted text-sm">{{ trans(key="label_response_description",lang=lang)| markdown(inline=true) | safe }}</p>
+                          {% endif %}
+                        {% endif %}
+                      {% endmacro webmentions %}

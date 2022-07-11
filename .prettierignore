@@ -2,4 +2,5 @@
 .obsidian
 .vscode
 .static
-activity.html
+*.html
+public/
