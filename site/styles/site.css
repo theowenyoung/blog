@@ -91,7 +91,7 @@ html {
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-background: #f9f5e9;
-
+  --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
@@ -277,7 +277,9 @@ input[type="submit"]:hover {
 }
 
 input[type="url"],
-input[type="text"] {
+input[type="text"],
+input[type="search"] {
+  /* -webkit-appearance: none; */
   background: none;
   border: 2px solid var(--colors-text);
   border-bottom-left-radius: 15px 255px;
@@ -289,12 +291,38 @@ input[type="text"] {
   font-size: 1rem;
   outline: 0;
   padding: 0.75rem;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+
+  /* -webkit-border-radius: 0px; */
 }
 
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border: 2px solid var(--colors-blue);
+}
+
+#search-bar-input {
+}
+
+:focus:not(:focus-visible) {
+  border: 2px solid var(--colors-text);
+}
+:focus-visible {
+  border: 2px solid var(--colors-blue);
+}
 .no-underline {
   text-decoration: none;
 }
-
+.meilisearch-autocomplete .dsb-dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 420px;
+  width: 100%;
+}
+.meilisearch-autocomplete {
+  display: block;
+}
 a:link,
 a:visited {
   -webkit-transition: color 200ms ease;
@@ -318,7 +346,9 @@ a:visited {
 .sidebar a:visited {
   text-decoration: none;
 }
-
+.sidebar {
+  overflow-x: visible;
+}
 .no-underline:hover,
 a:hover {
   color: var(--colors-primary);
