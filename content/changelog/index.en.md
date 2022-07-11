@@ -4,7 +4,7 @@ date: 2022-06-13T23:15:27+08:00
 updated: 2022-06-13
 taxonomies:
   categories:
-    - Notes
+    - About
   tags:
     - ChangeLog
     - About
