@@ -1,0 +1,84 @@
+{
+  "1432161": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Yu ZHANG",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6b0acfbfd61d0e3f3ecda9d981945fe14556ad248c2056121f088da10369e438.jpg",
+      "url": "https://twitter.com/pseudo_yu"
+    },
+    "url": "https://twitter.com/pseudo_yu/status/1546648041134125056",
+    "published": "2022-07-12T00:10:02+00:00",
+    "wm-received": "2022-07-12T00:26:19Z",
+    "wm-id": 1432161,
+    "wm-source": "https://brid.gy/repost/twitter/OwenYoungZh/1546642850414137345/1546648041134125056",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "photo": [
+      "https://pbs.twimg.com/media/FXbHcNXUcAEL4V7.jpg"
+    ],
+    "content": {
+      "text": "研究了几个现有的静态博客搜索方案之后，最终用 Meilisearch 给我的 Zola 博客添加了搜索功能，但是还是更喜欢 github.com/wilsonzlin/edg… 的方案，把WASM搜索部署到Clouflare Workers，只是牵引力不够。 owenyoung.com/blog/add-searc…"
+    },
+    "repost-of": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "repost-of",
+    "wm-private": false
+  },
+  "1432175": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546642850414137345#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-07-12T01:16:42Z",
+    "wm-id": 1432175,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546642850414137345/159287109",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "like-of": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1432176": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/WuPingJu/status/1546656263886745600",
+    "published": "2022-07-12T00:42:43+00:00",
+    "wm-received": "2022-07-12T01:16:43Z",
+    "wm-id": 1432176,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1546656263886745600",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "content": {
+      "html": "好好看⋯好讚！之後來研究看看！\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/add-search/\"></a>\n<a href=\"https://twitter.com/owenyoungzh/status/1546642850414137345\">twitter.com/owenyoungzh/st…</a>",
+      "text": "好好看⋯好讚！之後來研究看看！\n\ntwitter.com/owenyoungzh/st…"
+    },
+    "mention-of": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1432200": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "为也行",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/9d49806c38c4cbc7a184fb58959927c47fecca2293cbe066ea7c9e4e5a92d0e2.jpg",
+      "url": "https://twitter.com/Richard_Nick_"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546642850414137345#favorited-by-742320176964603907",
+    "published": null,
+    "wm-received": "2022-07-12T02:05:26Z",
+    "wm-id": 1432200,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546642850414137345/742320176964603907",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "like-of": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}
