@@ -336,3 +336,5 @@ ca
 [helix](https://github.com/helix-editor/helix) 和[kakoune](https://github.com/mawww/kakoune),kak 更成熟，但是更喜欢 helix，我买了[alfred](https://www.alfredapp.com/)的终身版，现在它已经升级到 alfred5 了（但是 alfred 的配置文件太恶心了，不适合在 dotfiles 里管理，因为是自动生成的，由于这一点我想找一个替代品，但是没有体验更好的），我用[navi](https://github.com/denisidoro/navi) 管理常见的 [cheatsheets](https://github.com/theowenyoung/dotfiles/tree/main/modules/navi/files/cheats), [fzf](https://github.com/junegunn/fzf)查找文件（太好用了，强烈推荐），以及很多其他的好东西，上述的一些 module 有的已经没有在用了，但是配置文件我想留着，以防将来有一天想再试试。
 
 在[这里查看整个 dotfiles repo](https://github.com/theowenyoung/dotfiles/)
+
+> 最后还要建议 web3 的大佬们，你们应该投资密码管理器才对，把更好用的密码管理器免费带给大家！
