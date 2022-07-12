@@ -40,6 +40,7 @@ pub fn get_reading_analytics(content: &str) -> (usize, usize) {
   {% else %}
     {{ minutes }}
   {% endif %}
+{% endmacro get_reading_time %}
 ```
 
 然后在`page.html`里可以这样调用：

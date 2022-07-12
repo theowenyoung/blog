@@ -80,6 +80,8 @@ th {
 c35
 f9f5e9
 ea4c89
+fffef8
+#f4ecd8;
 */
 html {
   font-size: 16px;
@@ -90,10 +92,11 @@ html {
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-code-background: rgba(0, 0, 0, 0.08);
-  --colors-background: #f9f5e9;
+  --colors-background: #fffef8;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
+  --colors-background-surface: #f9f5e9;
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
     Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
     "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -674,7 +677,7 @@ li.inline {
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    background-color: #fff;
+    background-color: var(--colors-background-surface);
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */

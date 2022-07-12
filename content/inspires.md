@@ -163,6 +163,6 @@ taxonomies:
 
 - [Ask HN： 你遇到过最酷的网站](https://news.ycombinator.com/item?id=31708366)
 
-## 配色 UI
+## 配色 UI/Color
 
 - [一个很舒服的背景色的博客](https://ruudvanasseldonk.com/)

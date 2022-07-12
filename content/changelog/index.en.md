@@ -14,6 +14,12 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.07.12 Change Surface Background Color
+
+Now it looks like this:
+
+![new background](./new-backgroup-color-2022-07-12.png)
+
 ## 2022.07.12 Support Search
 
 Powerd by [Meilisearch](https://github.com/meilisearch/meilisearch)
