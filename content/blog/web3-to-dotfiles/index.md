@@ -256,3 +256,83 @@ ca
 在做完以上的一切后，我的数字生活开始变得更加的得心应手，系统也更加的 robust，基本上可以随时 reset 重来。以及我终于拥有了自己的第一个以后会稳定使用的 web3 身份了（以前注册的 metamask 真的找不到了，不过反正也没钱），也许我应该把之前在 [matters](https://matters.news/) 上赚的一点点 like 币（被我在交易所换成了 200 usdt 了）转到这里？以及我还需要开哪些 web3 账户？
 
 > 上次看了这个[nostr](https://branle.netlify.app/)协议，觉得很喜欢，现在终于可以生成一个永久账户了：[astral](https://astral.ninja/57c22f1ceef806230690b0932e3bc850d485f34ee722378b0f6f2e403097caa1)
+
+以及这是我当前的[全部模块](https://github.com/theowenyoung/dotfiles/tree/main/modules),里面有我精心调试的最优配置（对于我），以及由于刚开始维护，还在频繁不断完善中（但是我对当前的文件结构很满意）：
+
+```bash
+├── modules
+│   ├── acme
+│   ├── alacritty
+│   ├── alfred
+│   ├── anki
+│   ├── automator
+│   ├── bash-language-server
+│   ├── bat
+│   ├── broot
+│   ├── caddy
+│   ├── cargo-generate
+│   ├── clash
+│   ├── comtrya
+│   ├── curl
+│   ├── dashflare
+│   ├── dufs
+│   ├── editor
+│   ├── fd
+│   ├── font
+│   ├── fzf
+│   ├── git
+│   ├── git-filter-repo
+│   ├── gnupg2
+│   ├── gost
+│   ├── helix
+│   ├── homebrew
+│   ├── hurl
+│   ├── jq
+│   ├── kakoune
+│   ├── keepassxc
+│   ├── kitty
+│   ├── lua_language_server
+│   ├── macos
+│   ├── macports
+│   ├── meilisearch
+│   ├── microsoft_edge
+│   ├── miller
+│   ├── napa
+│   ├── navi
+│   ├── nodejs
+│   ├── nvim
+│   ├── pass
+│   ├── passwd
+│   ├── pepper
+│   ├── pip3
+│   ├── podman
+│   ├── podman-compose
+│   ├── postman
+│   ├── qBittorrent
+│   ├── qmk
+│   ├── rage
+│   ├── rust
+│   ├── rust-analyzer
+│   ├── shadowsocks-rust
+│   ├── simple-torrent
+│   ├── ssh
+│   ├── ssh-agent
+│   ├── starship
+│   ├── systemd
+│   ├── taplo
+│   ├── tiny
+│   ├── tmux
+│   ├── translate-shell
+│   ├── vscode
+│   ├── wasm-pack
+│   ├── wezterm
+│   ├── wrangler
+│   ├── yaml-language-server
+│   ├── zellij
+│   └── zsh
+```
+
+我用[tmux](https://github.com/tmux/tmux) 管理窗口，终端用[Alacritty](https://github.com/alacritty/alacritty) ,模态编辑器
+[helix](https://github.com/helix-editor/helix) 和[kakoune](https://github.com/mawww/kakoune),kak 更成熟，但是更喜欢 helix，我买了[alfred](https://www.alfredapp.com/)的终身版，现在它已经升级到 alfred5 了（但是 alfred 的配置文件太恶心了，不适合在 dotfiles 里管理，因为是自动生成的，由于这一点我想找一个替代品，但是没有体验更好的），我用[navi](https://github.com/denisidoro/navi) 管理常见的 [cheatsheets](https://github.com/theowenyoung/dotfiles/tree/main/modules/navi/files/cheats), [fzf](https://github.com/junegunn/fzf)查找文件（太好用了，强烈推荐），以及很多其他的好东西，上述的一些 module 有的已经没有在用了，但是配置文件我想留着，以防将来有一天想再试试。
+
+在[这里查看整个 dotfiles repo](https://github.com/theowenyoung/dotfiles/)
