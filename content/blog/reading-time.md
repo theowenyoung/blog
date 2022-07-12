@@ -17,6 +17,8 @@ taxonomies:
 
 我就纳闷我这是写了一篇 essay 吗，于是就是查它的[实现](https://github.com/getzola/zola/blob/39cf436b1174a3d5f2fbe4bac20e942795005f05/components/content/src/utils.rs#L55-L61), 发现实现很简单，就是基于 unicode 字符除以了一个数：
 
+<!-- more -->
+
 ```rust
 /// Get word count and estimated reading time
 pub fn get_reading_analytics(content: &str) -> (usize, usize) {
