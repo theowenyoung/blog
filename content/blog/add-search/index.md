@@ -78,7 +78,28 @@ taxonomies:
 
 ### [Meilisearch](https://github.com/meilisearch/meilisearch)
 
-[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](/content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！）
+[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](/content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！），这个层次感是我决定采用它的最重要的原因，因为它是针对文章的各种二级，三级标题，以及内容所在的标题区做的更有细节的索引，所以在搜索结果中，可以直接从结果中点击进入到对应文章的部分。核心配置在扫描的地方：
+
+```json
+{
+  "selectors": {
+    "lvl0": {
+      "selector": ".detail-page .p-category",
+      "default_value": "Random"
+    },
+    "lvl1": {
+      "selector": ".detail-page .p-tags",
+      "default_value": "Notes"
+    },
+    "lvl2": ".detail-page .entry-title",
+    "lvl3": ".e-content h2",
+    "lvl4": ".e-content h3",
+    "text": ".e-content p, .e-content li"
+  }
+}
+```
+
+这样的配置的话 meilisearch 建立索引是细节到具体的小标题和段落上的，可以让搜索体验直接上升一个层次。所有配置见[这里](https://github.com/theowenyoung/blog/blob/84f139a47658ff31482d4b36ba0acd86f08b071f/meilisearch-docs-scraper-config.json)
 
 ### 我的部署过程
 
@@ -94,4 +115,12 @@ Over! 其实说的简单，但是我在建立索引的过程中多次调整了�
 
 ## 结论
 
-虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢[Edgesearch](https://github.com/wilsonzlin/edgesearch)的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<https://meilisearch.owenyoung.com/>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～
+虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢[Edgesearch](https://github.com/wilsonzlin/edgesearch)的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我的理想方案应该是这样，它是一个通用的站内搜索引擎：
+
+1. 通过 Fork 一个 Cloudflare Worker 项目即可部署自己的搜索引擎，带一些很少的配置。
+2. 这个搜索引擎会暴露一个开始索引的路由，你会给这个路由提供一个配置文件，然后告诉他`sitemap`文件，以及要索引的区块配置。
+3. 这个搜索引擎暴露几个类似 Algolia 的接口让前端可以搜索，以及管理索引。
+
+基本上就是把我在 meilisearch 上做的事搬到 wasm 上，但是我更喜欢在 cloudflare workers 上部署搜索服务的方案，因为它更简单，更快，更具有扩展性。
+
+我目前是把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<https://meilisearch.owenyoung.com/>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～
