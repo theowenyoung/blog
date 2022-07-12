@@ -198,7 +198,7 @@
             
               阅读时间: 
   
-    10
+    11
   
  min
           </div>
@@ -447,6 +447,81 @@
 <blockquote>
 <p>上次看了这个<a rel="noopener nofollow noreferrer" target="_blank" href="https://branle.netlify.app/">nostr</a>协议，觉得很喜欢，现在终于可以生成一个永久账户了：<a rel="noopener nofollow noreferrer" target="_blank" href="https://astral.ninja/57c22f1ceef806230690b0932e3bc850d485f34ee722378b0f6f2e403097caa1">astral</a></p>
 </blockquote>
+<p>以及这是我当前的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/dotfiles/tree/main/modules">全部模块</a>,里面有我精心调试的最优配置（对于我），以及由于刚开始维护，还在频繁不断完善中（但是我对当前的文件结构很满意）：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">├──</span><span> modules
+</span><span style="color:#bf616a;">│</span><span>   ├── acme
+</span><span style="color:#bf616a;">│</span><span>   ├── alacritty
+</span><span style="color:#bf616a;">│</span><span>   ├── alfred
+</span><span style="color:#bf616a;">│</span><span>   ├── anki
+</span><span style="color:#bf616a;">│</span><span>   ├── automator
+</span><span style="color:#bf616a;">│</span><span>   ├── bash-language-server
+</span><span style="color:#bf616a;">│</span><span>   ├── bat
+</span><span style="color:#bf616a;">│</span><span>   ├── broot
+</span><span style="color:#bf616a;">│</span><span>   ├── caddy
+</span><span style="color:#bf616a;">│</span><span>   ├── cargo-generate
+</span><span style="color:#bf616a;">│</span><span>   ├── clash
+</span><span style="color:#bf616a;">│</span><span>   ├── comtrya
+</span><span style="color:#bf616a;">│</span><span>   ├── curl
+</span><span style="color:#bf616a;">│</span><span>   ├── dashflare
+</span><span style="color:#bf616a;">│</span><span>   ├── dufs
+</span><span style="color:#bf616a;">│</span><span>   ├── editor
+</span><span style="color:#bf616a;">│</span><span>   ├── fd
+</span><span style="color:#bf616a;">│</span><span>   ├── font
+</span><span style="color:#bf616a;">│</span><span>   ├── fzf
+</span><span style="color:#bf616a;">│</span><span>   ├── git
+</span><span style="color:#bf616a;">│</span><span>   ├── git-filter-repo
+</span><span style="color:#bf616a;">│</span><span>   ├── gnupg2
+</span><span style="color:#bf616a;">│</span><span>   ├── gost
+</span><span style="color:#bf616a;">│</span><span>   ├── helix
+</span><span style="color:#bf616a;">│</span><span>   ├── homebrew
+</span><span style="color:#bf616a;">│</span><span>   ├── hurl
+</span><span style="color:#bf616a;">│</span><span>   ├── jq
+</span><span style="color:#bf616a;">│</span><span>   ├── kakoune
+</span><span style="color:#bf616a;">│</span><span>   ├── keepassxc
+</span><span style="color:#bf616a;">│</span><span>   ├── kitty
+</span><span style="color:#bf616a;">│</span><span>   ├── lua_language_server
+</span><span style="color:#bf616a;">│</span><span>   ├── macos
+</span><span style="color:#bf616a;">│</span><span>   ├── macports
+</span><span style="color:#bf616a;">│</span><span>   ├── meilisearch
+</span><span style="color:#bf616a;">│</span><span>   ├── microsoft_edge
+</span><span style="color:#bf616a;">│</span><span>   ├── miller
+</span><span style="color:#bf616a;">│</span><span>   ├── napa
+</span><span style="color:#bf616a;">│</span><span>   ├── navi
+</span><span style="color:#bf616a;">│</span><span>   ├── nodejs
+</span><span style="color:#bf616a;">│</span><span>   ├── nvim
+</span><span style="color:#bf616a;">│</span><span>   ├── pass
+</span><span style="color:#bf616a;">│</span><span>   ├── passwd
+</span><span style="color:#bf616a;">│</span><span>   ├── pepper
+</span><span style="color:#bf616a;">│</span><span>   ├── pip3
+</span><span style="color:#bf616a;">│</span><span>   ├── podman
+</span><span style="color:#bf616a;">│</span><span>   ├── podman-compose
+</span><span style="color:#bf616a;">│</span><span>   ├── postman
+</span><span style="color:#bf616a;">│</span><span>   ├── qBittorrent
+</span><span style="color:#bf616a;">│</span><span>   ├── qmk
+</span><span style="color:#bf616a;">│</span><span>   ├── rage
+</span><span style="color:#bf616a;">│</span><span>   ├── rust
+</span><span style="color:#bf616a;">│</span><span>   ├── rust-analyzer
+</span><span style="color:#bf616a;">│</span><span>   ├── shadowsocks-rust
+</span><span style="color:#bf616a;">│</span><span>   ├── simple-torrent
+</span><span style="color:#bf616a;">│</span><span>   ├── ssh
+</span><span style="color:#bf616a;">│</span><span>   ├── ssh-agent
+</span><span style="color:#bf616a;">│</span><span>   ├── starship
+</span><span style="color:#bf616a;">│</span><span>   ├── systemd
+</span><span style="color:#bf616a;">│</span><span>   ├── taplo
+</span><span style="color:#bf616a;">│</span><span>   ├── tiny
+</span><span style="color:#bf616a;">│</span><span>   ├── tmux
+</span><span style="color:#bf616a;">│</span><span>   ├── translate-shell
+</span><span style="color:#bf616a;">│</span><span>   ├── vscode
+</span><span style="color:#bf616a;">│</span><span>   ├── wasm-pack
+</span><span style="color:#bf616a;">│</span><span>   ├── wezterm
+</span><span style="color:#bf616a;">│</span><span>   ├── wrangler
+</span><span style="color:#bf616a;">│</span><span>   ├── yaml-language-server
+</span><span style="color:#bf616a;">│</span><span>   ├── zellij
+</span><span style="color:#bf616a;">│</span><span>   └── zsh
+</span></code></pre>
+<p>我用<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/tmux/tmux">tmux</a> 管理窗口，终端用<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/alacritty/alacritty">Alacritty</a> ,模态编辑器
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/helix-editor/helix">helix</a> 和<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mawww/kakoune">kakoune</a>,kak 更成熟，但是更喜欢 helix，我买了<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.alfredapp.com/">alfred</a>的终身版，现在它已经升级到 alfred5 了（但是 alfred 的配置文件太恶心了，不适合在 dotfiles 里管理，因为是自动生成的，由于这一点我想找一个替代品，但是没有体验更好的），我用<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/denisidoro/navi">navi</a> 管理常见的 <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/dotfiles/tree/main/modules/navi/files/cheats">cheatsheets</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/junegunn/fzf">fzf</a>查找文件（太好用了，强烈推荐），以及很多其他的好东西，上述的一些 module 有的已经没有在用了，但是配置文件我想留着，以防将来有一天想再试试。</p>
+<p>在<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/dotfiles/">这里查看整个 dotfiles repo</a></p>
 
     </article>
     
