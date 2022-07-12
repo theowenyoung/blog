@@ -17,6 +17,9 @@
     </title>
     <meta name="description" itemprop="about" content="
   
+    我发现 Zola 给中文文章的阅读时间预估特别高，比如我刚发布的这篇给 Zola 博客增加搜索功能, 显示要 20 分钟才能阅读完:发布于: 2022-07-12 · 最后更新时间: 2022-07-12 · 阅读时间: 20 min我就纳闷我这是写了一篇 essay 吗，于是就是查它的实现, 发现实现很简单，就是基于 unicode 字符除以了一个数：
+
+  
 "/>
     <meta name="keywords" itemprop="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
     <meta name="author" itemprop="author" content="Owen Young"/>
@@ -46,6 +49,9 @@
   Zola 博客的中文阅读时间预估误差很大，所以我做了一个修复 - Owen的博客
 "/>
     <meta property="og:description" content="
+  
+    我发现 Zola 给中文文章的阅读时间预估特别高，比如我刚发布的这篇给 Zola 博客增加搜索功能, 显示要 20 分钟才能阅读完:发布于: 2022-07-12 · 最后更新时间: 2022-07-12 · 阅读时间: 20 min我就纳闷我这是写了一篇 essay 吗，于是就是查它的实现, 发现实现很简单，就是基于 unicode 字符除以了一个数：
+
   
 "/>
     <meta property="og:url" content="
@@ -199,7 +205,12 @@
 <section>
   <section class="main">
     <div class="display-none p-summary">
-      
+      <p>我发现 Zola 给中文文章的阅读时间预估特别高，比如我刚发布的这篇<a href="https://www.owenyoung.com/blog/add-search/">给 Zola 博客增加搜索功能</a>, 显示要 20 分钟才能阅读完:</p>
+<blockquote>
+<p>发布于: 2022-07-12 · 最后更新时间: 2022-07-12 · 阅读时间: 20 min</p>
+</blockquote>
+<p>我就纳闷我这是写了一篇 essay 吗，于是就是查它的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/getzola/zola/blob/39cf436b1174a3d5f2fbe4bac20e942795005f05/components/content/src/utils.rs#L55-L61">实现</a>, 发现实现很简单，就是基于 unicode 字符除以了一个数：</p>
+
     </div>
     <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;reading-time&#x2F;">Permanent Link</a>
     
@@ -210,7 +221,7 @@
 <p>发布于: 2022-07-12 · 最后更新时间: 2022-07-12 · 阅读时间: 20 min</p>
 </blockquote>
 <p>我就纳闷我这是写了一篇 essay 吗，于是就是查它的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/getzola/zola/blob/39cf436b1174a3d5f2fbe4bac20e942795005f05/components/content/src/utils.rs#L55-L61">实现</a>, 发现实现很简单，就是基于 unicode 字符除以了一个数：</p>
-<pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#65737e;">/// Get word count and estimated reading time
+<span id="continue-reading"></span><pre data-lang="rust" style="background-color:#2b303b;color:#c0c5ce;" class="language-rust "><code class="language-rust" data-lang="rust"><span style="color:#65737e;">/// Get word count and estimated reading time
 </span><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">get_reading_analytics</span><span>(</span><span style="color:#bf616a;">content</span><span>: &amp;</span><span style="color:#b48ead;">str</span><span>) -&gt; (</span><span style="color:#b48ead;">usize</span><span>, </span><span style="color:#b48ead;">usize</span><span>) {
 </span><span>    </span><span style="color:#b48ead;">let</span><span> word_count: </span><span style="color:#b48ead;">usize </span><span>= content.</span><span style="color:#96b5b4;">unicode_words</span><span>().</span><span style="color:#96b5b4;">count</span><span>();
 </span><span>    (word_count, ((word_count + </span><span style="color:#d08770;">199</span><span>) / </span><span style="color:#d08770;">200</span><span>))
