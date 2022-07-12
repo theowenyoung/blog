@@ -87,8 +87,8 @@
       // sourcegraph search
       document.getElementById('sourcegraph-search').addEventListener('submit', function (e) {
         e.preventDefault(); // to prevent form submission
-        var searchUrl = 'https://sourcegraph.com/search?patternType=literal&q=context:global+repo:%5Egithub%5C.com/theowenyoung/blog%24+' +
-            encodeURIComponent(document.getElementById('sourcegraph-search-term').value);
+        var searchUrl = 'https://sourcegraph.com/search?patternType=literal&q=context:global+repo:%5Egithub%5C.com/theowenyoung/blog%24+file%3A%5' +
+            'C.(md%7Cmdx)%24+' + encodeURIComponent(document.getElementById('sourcegraph-search-term').value);
         window.open(searchUrl, '_blank');
       });
       // google search
