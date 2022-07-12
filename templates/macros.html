@@ -1,3 +1,10 @@
+{% macro get_reading_time(minutes) %}
+  {% if lang=="zh" %}
+    {{ minutes/1.88 | round }}
+  {% else %}
+    {{ minutes }}
+  {% endif %}
+{% endmacro get_reading_time %}
 {% macro post_max(page) %}
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
@@ -221,8 +228,8 @@
                       {% if config.default_language != lang %}
                         <p>Have you written a
                           <a href="https://indieweb.org/responses">response</a>
-                          to this? Let me know the URL,
-                                 Or, you can send your response via
+                          to this? Let me know the URL, Or, you can send your response
+                          via
                           <a href="mailto:owen@owenyoung.com?subject={{ " Reply: " ~ title | urlencode }}">mail
                           </a>
                           <code>owen@owenyoung.com</code>
