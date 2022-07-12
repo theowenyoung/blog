@@ -35,6 +35,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;  {% else %}
 &lt;&#x2F;span&gt;&lt;span&gt;    {{ minutes }}
 &lt;&#x2F;span&gt;&lt;span&gt;  {% endif %}
+&lt;&#x2F;span&gt;&lt;span&gt;{% endmacro get_reading_time %}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;然后在&lt;code&gt;page.html&lt;&#x2F;code&gt;里可以这样调用：&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;njk&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-njk &quot;&gt;&lt;code class=&quot;language-njk&quot; data-lang=&quot;njk&quot;&gt;&lt;span&gt;{{ macro::get_reading_time(minutes=page.reading_time) }}

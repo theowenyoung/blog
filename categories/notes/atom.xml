@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-03T00:00:00+00:00</updated>
+	<updated>2022-07-12T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>女权主义</title>
@@ -1909,7 +1909,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=31708366&quot;&gt;Ask HN： 你遇到过最酷的网站&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;pei-se-ui&quot;&gt;配色 UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#pei-se-ui&quot; aria-label=&quot;Anchor link for: pei-se-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;pei-se-ui-color&quot;&gt;配色 UI&#x2F;Color&lt;a class=&quot;zola-anchor&quot; href=&quot;#pei-se-ui-color&quot; aria-label=&quot;Anchor link for: pei-se-ui-color&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ruudvanasseldonk.com&#x2F;&quot;&gt;一个很舒服的背景色的博客&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -2660,10 +2660,16 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-05-29T00:00:00+00:00</updated>
+		<updated>2022-07-12T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;如果你在家里还有马桶盖困扰的话，有一个很简单的办法，就是所有人都蹲下尿尿，这对男士来说是一个不成比例的微小付出。我这样做已经 5 年了，现在我已经不习惯站着尿尿了。 – 2022.07.13&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;想做一个 telegram bot，我分享给它链接，然后可以点击他的整理功能，按天，或按星期的排列好一个组合，这样就可以辅助我记录今天或本周阅读了什么，然后再手动转移到笔记里。 – 2022.07.13&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Zola 的 next 分支支持双向链接了，刚给这个博客的文章末尾加了展示双向链接的地方！ – 2022.06.21&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;

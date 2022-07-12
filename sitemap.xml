@@ -257,6 +257,10 @@
         <lastmod>2022-03-10</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/web3-to-dotfiles/</loc>
+        <lastmod>2022-07-13</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/what-if-hell-exists-youre-wrong/</loc>
         <lastmod>2022-04-27</lastmod>
     </url>
@@ -734,6 +738,12 @@
         <loc>https://www.owenyoung.com/tags/dev/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/dotfiles/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/dotfiles/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/dystopia/</loc>
     </url>
     <url>
@@ -968,6 +978,12 @@
         <loc>https://www.owenyoung.com/tags/nsfw/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/password-manager/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/password-manager/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/php/</loc>
     </url>
     <url>
@@ -1118,6 +1134,12 @@
         <loc>https://www.owenyoung.com/tags/vscode/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/web3/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/web3/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/webmention/</loc>
     </url>
     <url>
@@ -1155,7 +1177,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/thoughts/</loc>
-        <lastmod>2022-05-29</lastmod>
+        <lastmod>2022-07-12</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tips/</loc>
