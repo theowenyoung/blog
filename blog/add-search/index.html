@@ -191,7 +191,7 @@
               ·
             
             
-              阅读时间: 18 min
+              阅读时间: 20 min
           </div>
         </div>
       
@@ -334,7 +334,25 @@
 <p>你可以在谷歌的搜索框里加上<code>site:www.owenyoung.com</code>来指定搜索对应的网站，速度极快，缺点是可能收录不全。Anyway, 我在<a href="https://www.owenyoung.com/search/">Search</a>也添加了一个表单搜索链接了过去，你可以体验一下。</p>
 <h2 id="zi-tuo-guan-fang-an">自托管方案<a class="zola-anchor" href="#zi-tuo-guan-fang-an" aria-label="Anchor link for: zi-tuo-guan-fang-an">🔗</a></h2>
 <h3 id="meilisearch"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">Meilisearch</a><a class="zola-anchor" href="#meilisearch" aria-label="Anchor link for: meilisearch">🔗</a></h3>
-<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">美丽搜索？</a>是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-searchbar.js">客户端 js 库</a>一键接入。我研究了美丽自己的<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.meilisearch.com/">文档网站</a> (<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/documentation">源码</a>),发现他的接入流程更美丽，用 Github 的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml">Action</a>去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在<a href="https://www.owenyoung.com/search/">Search 页面</a>体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！）</p>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">美丽搜索？</a>是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-searchbar.js">客户端 js 库</a>一键接入。我研究了美丽自己的<a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.meilisearch.com/">文档网站</a> (<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/documentation">源码</a>),发现他的接入流程更美丽，用 Github 的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml">Action</a>去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在<a href="https://www.owenyoung.com/search/">Search 页面</a>体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！），这个层次感是我决定采用它的最重要的原因，因为它是针对文章的各种二级，三级标题，以及内容所在的标题区做的更有细节的索引，所以在搜索结果中，可以直接从结果中点击进入到对应文章的部分。核心配置在扫描的地方：</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">selectors</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl0</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">selector</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.detail-page .p-category</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">default_value</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Random</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl1</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">selector</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.detail-page .p-tags</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">default_value</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Notes</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl2</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.detail-page .entry-title</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl3</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.e-content h2</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl4</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.e-content h3</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">text</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.e-content p, .e-content li</span><span>&quot;
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>这样的配置的话 meilisearch 建立索引是细节到具体的小标题和段落上的，可以让搜索体验直接上升一个层次。所有配置见<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/84f139a47658ff31482d4b36ba0acd86f08b071f/meilisearch-docs-scraper-config.json">这里</a></p>
 <h3 id="wo-de-bu-shu-guo-cheng">我的部署过程<a class="zola-anchor" href="#wo-de-bu-shu-guo-cheng" aria-label="Anchor link for: wo-de-bu-shu-guo-cheng">🔗</a></h3>
 <ol>
 <li>先在 VPS 上搭建 Meili,见<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/dotfiles/blob/main/modules/meilisearch/meilisearch.yml">我的 meilisearch dotfile 配置</a>，并不复杂，是我最喜欢的单一二进制文件，无依赖。</li>
@@ -345,7 +363,14 @@
 <p><img src="https://www.owenyoung.com/blog/add-search/./meilisearch.png" alt="meilisearch" /></p>
 <p>搜索页面的模版文件<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/search.html">在这里</a></p>
 <h2 id="jie-lun">结论<a class="zola-anchor" href="#jie-lun" aria-label="Anchor link for: jie-lun">🔗</a></h2>
-<p>虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/wilsonzlin/edgesearch">Edgesearch</a>的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<a rel="noopener nofollow noreferrer" target="_blank" href="https://meilisearch.owenyoung.com/">https://meilisearch.owenyoung.com/</a>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～</p>
+<p>虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/wilsonzlin/edgesearch">Edgesearch</a>的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我的理想方案应该是这样，它是一个通用的站内搜索引擎：</p>
+<ol>
+<li>通过 Fork 一个 Cloudflare Worker 项目即可部署自己的搜索引擎，带一些很少的配置。</li>
+<li>这个搜索引擎会暴露一个开始索引的路由，你会给这个路由提供一个配置文件，然后告诉他<code>sitemap</code>文件，以及要索引的区块配置。</li>
+<li>这个搜索引擎暴露几个类似 Algolia 的接口让前端可以搜索，以及管理索引。</li>
+</ol>
+<p>基本上就是把我在 meilisearch 上做的事搬到 wasm 上，但是我更喜欢在 cloudflare workers 上部署搜索服务的方案，因为它更简单，更快，更具有扩展性。</p>
+<p>我目前是把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<a rel="noopener nofollow noreferrer" target="_blank" href="https://meilisearch.owenyoung.com/">https://meilisearch.owenyoung.com/</a>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～</p>
 
     </article>
     
