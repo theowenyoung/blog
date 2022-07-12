@@ -5,8 +5,43 @@
 	<link href="https://www.owenyoung.com/tags/about/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-04-06T00:00:00+00:00</updated>
+	<updated>2022-07-12T21:11:21+08:00</updated>
 	<id>https://www.owenyoung.com/tags/about/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Zola 博客的中文阅读时间预估误差很大，所以我做了一个修复</title>
+		<published>2022-07-12T21:11:21+08:00</published>
+		<updated>2022-07-12T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/reading-time/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/reading-time/</id>
+		<content type="html">&lt;p&gt;我发现 Zola 给中文文章的阅读时间预估特别高，比如我刚发布的这篇&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;&quot;&gt;给 Zola 博客增加搜索功能&lt;&#x2F;a&gt;, 显示要 20 分钟才能阅读完:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;发布于: 2022-07-12 · 最后更新时间: 2022-07-12 · 阅读时间: 20 min&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;我就纳闷我这是写了一篇 essay 吗，于是就是查它的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&#x2F;blob&#x2F;39cf436b1174a3d5f2fbe4bac20e942795005f05&#x2F;components&#x2F;content&#x2F;src&#x2F;utils.rs#L55-L61&quot;&gt;实现&lt;&#x2F;a&gt;, 发现实现很简单，就是基于 unicode 字符除以了一个数：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F;&#x2F; Get word count and estimated reading time
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;pub fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;get_reading_analytics&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;content&lt;&#x2F;span&gt;&lt;span&gt;: &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;) -&amp;gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; word_count: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize &lt;&#x2F;span&gt;&lt;span&gt;= content.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;unicode_words&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;count&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    (word_count, ((word_count + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;199&lt;&#x2F;span&gt;&lt;span&gt;) &#x2F; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;200&lt;&#x2F;span&gt;&lt;span&gt;))
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;然后他在注释里链接了这个数字的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;help.medium.com&#x2F;hc&#x2F;en-us&#x2F;articles&#x2F;214991667-Read-time&quot;&gt;来源&lt;&#x2F;a&gt;，证明它不是拍脑袋决定的, 来源是 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;&quot;&gt;Medium&lt;&#x2F;a&gt; 的文档：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Read time is based on the average reading speed of an adult (roughly 265 WPM). We take the total word count of a post and translate it into minutes, with an adjustment made for images. For posts in Chinese, Japanese and Korean, it’s a function of number of characters (500 characters&#x2F;min) with an adjustment made for images.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;这篇文档说英文这类字符大约是 265 个单词每分钟，中日韩这类文字是 500 个字符每分钟，所以对于中文来讲，zola 这个计算是有大约 1 倍的误差的，所以我加了一个判断：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;njk&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-njk &quot;&gt;&lt;code class=&quot;language-njk&quot; data-lang=&quot;njk&quot;&gt;&lt;span&gt;{% macro get_reading_time(minutes) %}
+&lt;&#x2F;span&gt;&lt;span&gt;  {% if lang==&amp;quot;zh&amp;quot; %}
+&lt;&#x2F;span&gt;&lt;span&gt;    {{ minutes&#x2F;1.88 | round }}
+&lt;&#x2F;span&gt;&lt;span&gt;  {% else %}
+&lt;&#x2F;span&gt;&lt;span&gt;    {{ minutes }}
+&lt;&#x2F;span&gt;&lt;span&gt;  {% endif %}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;然后在&lt;code&gt;page.html&lt;&#x2F;code&gt;里可以这样调用：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;njk&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-njk &quot;&gt;&lt;code class=&quot;language-njk&quot; data-lang=&quot;njk&quot;&gt;&lt;span&gt;{{ macro::get_reading_time(minutes=page.reading_time) }}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;这样应该就能修正中文的预估时间了。修正后，开头提到的文章现在预估时间大约是 11 分钟，比较合理了。&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>迁移博客和Wiki到 Zola</title>
 		<published>2022-04-06T00:00:00+00:00</published>
