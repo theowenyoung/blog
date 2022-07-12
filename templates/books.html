@@ -34,15 +34,15 @@
         <h1 class="no-border pb-sm">
           <a class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
         </h1>
-        <div class="muted">
+        <div class="muted pb">
           <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
           {% if page.extra.author %}
-            &nbsp;
+            ·
             <span>{{ trans(key="label_book_author",lang=lang) }}：{{ page.extra.author }}
             </span>
           {% endif %}
         </a>
-        &nbsp;
+        ·
         <span>{{ trans(key="label_rating",lang=lang) }}：</span>
         <span>{{ page.extra.rating }}/10</span>
       </div>
@@ -57,23 +57,10 @@
           {% endfor %}
         </p>
       {% endif %}
-      <div class="muted">
-        <section>
-          <a class="text text-color" href="{{ page.permalink }}#continue-reading">
-            <span>{{ trans(key="label_read_more",lang=lang) }}
-            </span>
-            <span>{{ page.reading_time }} min &rarr;</span>
-          </a>
-        </section>
-        <div>
-          <hr>
-            <p></p>
-          </article>
-        {% endfor %}
-        {% if paginator %}
-          {{ macro::paginator(ref=paginator, extra=config.extra) }}
-        {% endif %}
-      </section>
-      {{ macro::webmentions(backlinks=[]) }}
-    </div>
-  {% endblock main -%}
+    </article>
+  {% endfor %}
+  {% if paginator %}
+    {{ macro::paginator(ref=paginator, extra=config.extra) }}
+  {% endif %}
+</section>
+{{ macro::webmentions(backlinks=[]) }}</div>{% endblock main -%}
