@@ -1,0 +1,56 @@
+{
+  "1432860": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "ZaiZaiChen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/e2f45ab34a2655aec447456609b2266c73bb6a8de74a3fa678ab86b0d7a52196.jpg",
+      "url": "https://twitter.com/zzciweb"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546982866554617856#favorited-by-313297730",
+    "published": null,
+    "wm-received": "2022-07-12T23:29:22Z",
+    "wm-id": 1432860,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546982866554617856/313297730",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1432930": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "P.J. Wu 吳秉儒",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bfbd725e5423fe3831f17915e874d0dcd2a42e54642841b5de8769f200a374a0.jpg",
+      "url": "https://twitter.com/WuPingJu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546982866554617856#favorited-by-159287109",
+    "published": null,
+    "wm-received": "2022-07-13T01:06:56Z",
+    "wm-id": 1432930,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546982866554617856/159287109",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1432935": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Yu ZHANG",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6b0acfbfd61d0e3f3ecda9d981945fe14556ad248c2056121f088da10369e438.jpg",
+      "url": "https://twitter.com/pseudo_yu"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546982866554617856#favorited-by-1293983659125440512",
+    "published": null,
+    "wm-received": "2022-07-13T01:44:40Z",
+    "wm-id": 1432935,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546982866554617856/1293983659125440512",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "like-of",
+    "wm-private": false
+  }
+}
