@@ -4109,7 +4109,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>收集 Javascript 相关的资源</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-08T00:00:00+00:00</updated>
+		<updated>2022-07-13T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/javascript/" type="text/html"/>
 		<id>https://www.owenyoung.com/javascript/</id>
 		<content type="html">&lt;p&gt;收集用过的，好用的 Javascipt 库。&lt;&#x2F;p&gt;
@@ -4152,6 +4152,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;htmx.org&#x2F;&quot;&gt;HTMX&lt;&#x2F;a&gt; - low js, html to js&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bigskysoftware&#x2F;_hyperscript&quot;&gt;hyperscript&lt;&#x2F;a&gt; - 一种用于 Web 的小型脚本语言&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;refine.dev&#x2F;docs&#x2F;getting-started&#x2F;overview&#x2F;&quot;&gt;Refine&lt;&#x2F;a&gt; - A React-based framework for building internal tools, rapidly.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;fu-wu-duan-kuang-jia&quot;&gt;服务端框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu-duan-kuang-jia&quot; aria-label=&quot;Anchor link for: fu-wu-duan-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -4562,7 +4563,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>探索互联网上高质量的内容</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-11T00:00:00+00:00</updated>
+		<updated>2022-07-13T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/sources/" type="text/html"/>
 		<id>https://www.owenyoung.com/sources/</id>
 		<content type="html">&lt;p&gt;我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。&lt;&#x2F;p&gt;
@@ -4721,6 +4722,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getizumo.com&#x2F;shibei&quot;&gt;云海拾贝&lt;&#x2F;a&gt; - 出云整理的国外高质量网站系列&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;shuziyimin.org&#x2F;&quot;&gt;数字移民导航&lt;&#x2F;a&gt; - 数字移民整理的国外网站导航&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.yitianshijie.net&#x2F;2019&#x2F;12&#x2F;10&#x2F;rss-feeds-recommendation&#x2F;&quot;&gt;一天世界的 RSS 订阅列表&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ideas&quot;&gt;Ideas&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideas&quot; aria-label=&quot;Anchor link for: ideas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;

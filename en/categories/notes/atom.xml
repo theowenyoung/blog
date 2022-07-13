@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/en/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-14T00:00:00+00:00</updated>
+	<updated>2022-07-14T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/en/categories/notes/atom.xml</id>
 	<entry xml:lang="en">
 		<title>About the World</title>
@@ -650,7 +650,7 @@
 	<entry xml:lang="en">
 		<title>Awesome Self-hosted</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-07-14T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/self-hosted/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/self-hosted/</id>
 		<content type="html">&lt;h2 id=&quot;file&quot;&gt;File&lt;a class=&quot;zola-anchor&quot; href=&quot;#file&quot; aria-label=&quot;Anchor link for: file&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -721,6 +721,10 @@
 &lt;h2 id=&quot;music&quot;&gt;Music&lt;a class=&quot;zola-anchor&quot; href=&quot;#music&quot; aria-label=&quot;Anchor link for: music&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;izderadicka&#x2F;audioserve&quot;&gt;music server in rust&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;forum&quot;&gt;Forum&lt;a class=&quot;zola-anchor&quot; href=&quot;#forum&quot; aria-label=&quot;Anchor link for: forum&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;metahkg&#x2F;metahkg&quot;&gt;Metahkg&lt;&#x2F;a&gt; - lihkg opensource alternatives&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
