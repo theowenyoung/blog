@@ -1,7 +1,7 @@
 ---
 title: Awesome Self-hosted
 date: 2022-03-25
-updated: 2022-03-25
+updated: 2022-07-14
 taxonomies:
   categories:
     - Notes
@@ -74,3 +74,7 @@ taxonomies:
 ## Music
 
 - [music server in rust](https://github.com/izderadicka/audioserve)
+
+## Forum
+
+- [Metahkg](https://gitlab.com/metahkg/metahkg) - lihkg opensource alternatives

@@ -1,7 +1,7 @@
 ---
 title: 收集 Javascript 相关的资源
 date: 2022-03-25
-updated: 2022-06-08
+updated: 2022-07-13
 taxonomies:
   categories:
     - Notes
@@ -47,6 +47,7 @@ taxonomies:
   - [sapper](https://github.com/sveltejs/sapper) - The next small thing in web development, powered by Svelte
   - [svelte kit](https://github.com/sveltejs/kit)
 - [HTMX](https://htmx.org/) - low js, html to js
+- [hyperscript](https://github.com/bigskysoftware/_hyperscript) - 一种用于 Web 的小型脚本语言
 - [Refine](https://refine.dev/docs/getting-started/overview/) - A React-based framework for building internal tools, rapidly.
 
 ## 服务端框架

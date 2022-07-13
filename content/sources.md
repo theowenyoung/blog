@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-06-11
+updated: 2022-07-13
 taxonomies:
   categories:
     - Notes
@@ -159,6 +159,7 @@ taxonomies:
 
 - [云海拾贝](https://getizumo.com/shibei) - 出云整理的国外高质量网站系列
 - [数字移民导航](https://shuziyimin.org/) - 数字移民整理的国外网站导航
+- [一天世界的 RSS 订阅列表](https://blog.yitianshijie.net/2019/12/10/rss-feeds-recommendation/)
 
 ## Ideas
 
