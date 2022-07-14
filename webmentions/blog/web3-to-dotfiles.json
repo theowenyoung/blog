@@ -52,5 +52,150 @@
     "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1432965": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "yukang",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b2b352760671a91972846e50bceeb8fb9d775dfb97ee9fedcb30f2dcffef1c0b.jpg",
+      "url": "https://twitter.com/cyukang"
+    },
+    "url": "https://twitter.com/cyukang/status/1547057665448230913",
+    "published": "2022-07-13T03:17:45+00:00",
+    "wm-received": "2022-07-13T03:40:10Z",
+    "wm-id": 1432965,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1546982866554617856/1547057665448230913",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "content": {
+      "html": "很好！之前也想过整理自己的配置，结果只是维护了几个常用的 config 文件。我有个问题，是否能有一个配置，让这些 tracking 的文件如果本地改了，自动更新到 Git repo? 这样也会不用每次改了之后再去 copy 覆盖。\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>",
+      "text": "很好！之前也想过整理自己的配置，结果只是维护了几个常用的 config 文件。我有个问题，是否能有一个配置，让这些 tracking 的文件如果本地改了，自动更新到 Git repo? 这样也会不用每次改了之后再去 copy 覆盖。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1432966": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1547059411390451712",
+    "published": "2022-07-13T03:24:41+00:00",
+    "wm-received": "2022-07-13T03:40:10Z",
+    "wm-id": 1432966,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1546982866554617856/1547059411390451712",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "content": {
+      "html": "大多数配置文件我是用软链接的形式link到repo里的，所以更改是直接同步到本地repo里的，比如vscode的配置文件，有小部分配置文件需要用到模板（比如带有密码的的配置文件），如果是这部分配置的话，建议修改repo的配置，修改后很容易同步过去。 感觉你可以考虑这个库来管理： <a href=\"https://www.chezmoi.io/\">chezmoi.io</a>\n<a class=\"u-mention\" href=\"https://twitter.com/cyukang\"></a>",
+      "text": "大多数配置文件我是用软链接的形式link到repo里的，所以更改是直接同步到本地repo里的，比如vscode的配置文件，有小部分配置文件需要用到模板（比如带有密码的的配置文件），如果是这部分配置的话，建议修改repo的配置，修改后很容易同步过去。 感觉你可以考虑这个库来管理： chezmoi.io"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1432976": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1547064542802640896",
+    "published": "2022-07-13T03:45:04+00:00",
+    "wm-received": "2022-07-13T04:21:57Z",
+    "wm-id": 1432976,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1546982866554617856/1547064542802640896",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "content": {
+      "html": "公开会促使我在设计之初就考虑通用性以及良好的文档，如果是私有的话，可能就会随便应付下哈哈\n<a class=\"u-mention\" href=\"https://twitter.com/cyukang\"></a>",
+      "text": "公开会促使我在设计之初就考虑通用性以及良好的文档，如果是私有的话，可能就会随便应付下哈哈"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1432977": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "yukang",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b2b352760671a91972846e50bceeb8fb9d775dfb97ee9fedcb30f2dcffef1c0b.jpg",
+      "url": "https://twitter.com/cyukang"
+    },
+    "url": "https://twitter.com/cyukang/status/1547063426278629376",
+    "published": "2022-07-13T03:40:38+00:00",
+    "wm-received": "2022-07-13T04:21:57Z",
+    "wm-id": 1432977,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1546982866554617856/1547063426278629376",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "content": {
+      "html": "好吧，我也软链，然后一个脚本自动和Git同步。我把 dotfiles 默认都private，以免万一不小心弄进去什么....😁\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>",
+      "text": "好吧，我也软链，然后一个脚本自动和Git同步。我把 dotfiles 默认都private，以免万一不小心弄进去什么....😁"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1433069": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "ShiYongKang",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/1c608cdad637f6beb6497161b5f7ee067e9cf2a360f960af60f748c4d9871779.jpg",
+      "url": "https://twitter.com/Micon142"
+    },
+    "url": "https://twitter.com/Micon142/status/1547112984819814400",
+    "published": "2022-07-13T06:57:34+00:00",
+    "wm-received": "2022-07-13T07:29:28Z",
+    "wm-id": 1433069,
+    "wm-source": "https://brid.gy/repost/twitter/OwenYoungZh/1546982866554617856/1547112984819814400",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "content": {
+      "text": "感觉以前白冲浪了，都不知道 dotfiles 是什么。。在最近重装系统的契机之下，终于把自己的整个macOS配置和debian的配置以及密码，环境变量等都“优雅”地放在一个纯文本 dotfiles repo了，同时，刚申请了新的web3身份。记录了一篇长文： owenyoung.com/blog/web3-to-d…"
+    },
+    "repost-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "repost-of",
+    "wm-private": false
+  },
+  "1433086": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "DouO",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/286e67c5ac3788cb3997f330b60a9d35dd8a674e7509f9ffe41de5ab4e851a04.jpg",
+      "url": "https://twitter.com/dourok"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546982866554617856#favorited-by-43122375",
+    "published": null,
+    "wm-received": "2022-07-13T08:49:41Z",
+    "wm-id": 1433086,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546982866554617856/43122375",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1433087": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Leafee",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/2b0f3fa9b46f31b1bd8b122d2c62980770dd4439e20719b8ca693a5271a73d5c.jpg",
+      "url": "https://twitter.com/leafee98"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546982866554617856#favorited-by-975522721449721857",
+    "published": null,
+    "wm-received": "2022-07-13T08:50:11Z",
+    "wm-id": 1433087,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546982866554617856/975522721449721857",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
