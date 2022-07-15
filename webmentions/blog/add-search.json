@@ -1420,5 +1420,23 @@
     "like-of": "https://www.owenyoung.com/blog/add-search/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1433779": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Jiafu Zhang",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/24c931a21da5472b227e3300575704df6cebd8c97d7ffedae32b29c22464a2d3.jpg",
+      "url": "https://twitter.com/josephchang23"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546642850414137345#favorited-by-1680166718",
+    "published": null,
+    "wm-received": "2022-07-14T03:06:30Z",
+    "wm-id": 1433779,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546642850414137345/1680166718",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "like-of": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
