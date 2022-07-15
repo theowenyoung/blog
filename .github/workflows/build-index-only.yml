@@ -3,7 +3,6 @@ on:
   workflow_dispatch:
 jobs:
   scrape-and-build-search-index:
-    needs: build-deploy
     runs-on: ubuntu-latest
     steps:
       - name: Run docs-scraper
