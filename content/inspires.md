@@ -77,7 +77,8 @@ taxonomies:
 - [Throw app](https://www.throwapp.com/) - 匿名发送问题，然后等待响应
 - [Hacker News 报纸版](https://www.wolfgangfaust.com/project/paper-hn/)
 - [Reddit 报纸版](https://unim.press/)
-- [这个网站将会自毁](https://www.thiswebsitewillselfdestruct.com/) - 在 xxx s 后
+- [这个网站将会自毁](https://www.thiswebsitewillselfdestruct.com/) - 如果 24 小时内没有人发帖，这个网站将会自动关闭。
+- [Boomers](https://boomers.dog/) - 可以匿名，实名发布东西的留言板，挺好看。
 
 ## 服务
 
@@ -166,3 +167,4 @@ taxonomies:
 ## 配色 UI/Color
 
 - [一个很舒服的背景色的博客](https://ruudvanasseldonk.com/)
+- [把格式融入到整体网站里，很舒服](https://surma.dev/things/js-to-asc/)
