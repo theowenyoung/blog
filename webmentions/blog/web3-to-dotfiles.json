@@ -197,5 +197,23 @@
     "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1434527": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "sleepycat",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6ed9ac113955f782143678a6e19ed7fea11bd6e9f64ad7915f1d815ddac0acf8.jpg",
+      "url": "https://twitter.com/sleepcat571"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546982866554617856#favorited-by-980648570767446021",
+    "published": null,
+    "wm-received": "2022-07-15T15:18:04Z",
+    "wm-id": 1434527,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1546982866554617856/980648570767446021",
+    "wm-target": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "like-of": "https://www.owenyoung.com/blog/web3-to-dotfiles/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
