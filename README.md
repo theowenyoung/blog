@@ -4,13 +4,11 @@ The blog is built with [Zola](https://www.getzola.org/), for my personal need, I
 
 The only change is that I use `/content/xxx.md` instead of `@/xxx.md` to refer the internal markdown files, so that the editor can also go to the linked file.
 
->[Related docments](https://www.getzola.org/documentation/content/linking/)
-> 
+> [Related docments](https://www.getzola.org/documentation/content/linking/)
+>
 > [Related Issue 1](https://github.com/getzola/zola/issues/686)
 
-
 [Visit it Online](https://www.owenyoung.com)
-
 
 ## Install
 
@@ -30,8 +28,35 @@ make serve
 make build
 ```
 
+## Usage
 
-## 中文说明
+### Write
 
+I use [Foam Lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode) to help me write the blog, generate the post template and quick input internal links.
 
-推荐使用 VSCode 进行编辑，我使用我修改的[Foam Lite 插件](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode)进行辅助输入。主要是方便插入内部链接，和用模版生成初始文章。
+### Search
+
+I use [Meilisearch](https://github.com/meilisearch/meilisearch) to index my blog, and I introduced it in [this article](https://www.owenyoung.com/blog/add-search/).
+
+How to init the search? the install script is in my [dotfiles](https://github.com/theowenyoung/dotfiles):
+
+```bash
+./modules/meilisearch/install_meilisearch_debian.sh
+ca meilisearch
+```
+
+Get the meilisear admin api key:
+
+```bash
+# TEMP_MEILISEARCH_API_KEY is the master key
+curl \
+  -X GET 'https://meilisearch.owenyoung.com/keys' \
+  -H "Authorization: Bearer $TEMP_MEILISEARCH_API_KEY" \
+  | json_pp
+```
+
+Then add the admin api key to [github actions secrets](https://github.com/theowenyoung/blog/settings/secrets/actions), then run [build site search index](https://github.com/theowenyoung/blog/actions/workflows/build-index-only.yml).
+
+Then, change the `config.toml` -> `meilisearch_api_key` to the user search api key with the above result.
+
+In the future, the [build workflow](https://github.com/theowenyoung/blog/blob/main/.github/workflows/build.yml) will take care of the search indexing automatically.

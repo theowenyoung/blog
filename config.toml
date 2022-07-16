@@ -32,7 +32,7 @@ email = "owen@owenyoung.com"
 prefix_url = "https://www.owenyoung.com"
 theme_color = "#f9f5e9"
 meilisearch_url = "https://meilisearch.owenyoung.com"
-meilisearch_api_key="eqrJjBH7a89c5f8e295ebb61a47c6c0149c5f04700b150dd3e0fbd20e0e773295ec93ffa"
+meilisearch_api_key="LGvb8WSR06c388646f56791f98f0aed0a51ae5004227f43f47d82dd67664004c8cc32f5f"
 ### indieweb note
 bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
 ### THIRD PARTY
