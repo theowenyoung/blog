@@ -33,52 +33,53 @@ Let's see how to set it up:
 
 Just click ADD button, and fill in the form.
 
-## Step 2: Create a new service
+## Step 2: Create a new servicee
 
-Enter to the cloudspace, and click the add button to create a new service with `Bring your own code`
+Enter to the cloudspace, and click the add button to create a new service with `Use a template`, and search `meilisearch`
 
 ## Step 3: Configure the service
 
-1. Fill the servicename
-2. Set the repository to `https://github.com/meilisearch/meilisearch.git`
-3. Choose the branch to `release-v0.27.2`, the latest version 0.28 is not supported by [docs-scrape](https://github.com/meilisearch/docs-scraper), I have submitted [an issue](https://github.com/meilisearch/docs-scraper/issues/231)
+1. Fill the servicename, for me I just type `meilisearch`
+2. Connect your github account(you can give it only selected repo permissions, you must selected at least one repo, it can be any public repo)
+
+   Screenshot:
+   ![0](0.png)
+
+3. Click `Add repository`, input the repo name, I input it as `meili`, and with `public` permission.
 
    Screenshot:
 
    ![1](./1.png)
 
-4. set resources limit to max(or as your need).
+4. set resources limit (if needed, the default value is a recomendation from Mogenius).
+
+5. set environment variables:
+
+   1. add `MEILI_MASTER_KEY` as key vault to protect your master key. (Click `create new secret` to fill the secret)
+   2. the following environment variables can be plain text type.
+
+      ```bash
+      MEILI_NO_ANALYTICS=true
+      MEILI_ENV=production
+      ```
+
+      All environment options are [here](https://docs.meilisearch.com/learn/configuration/instance_options.html#environment)
 
    Screenshot:
 
    ![2](./2.png)
 
-5. set environment variables:
-
-   ```bash
-   MEILI_MASTER_KEY=<your master key>
-   MEILI_NO_ANALYTICS=true
-   MEILI_ENV=production
-   ```
-
-   All environment options are [here](https://docs.meilisearch.com/learn/configuration/instance_options.html#environment)
-
-6. set internal http port to `7700`
-
-7. optional, set custom domain. I set it to `meili.owenyoung.com`, I set a CNAME record `meili.owenyoung.com` to `meilisearch-prod-meilisearch-r4efxz.mo2.mogenius.io`, you will get the endpoint after the service created.
+6. optional, set custom domain. I set it to `meili.owenyoung.com`, I set a CNAME record `meili.owenyoung.com` to `meilisearch-prod-meilisearch-r4efxz.mo2.mogenius.io`, you will get the endpoint after the service created.
 
    Screenshot:
 
-   ![3](./3.png)
+   ![3](./4.png)
 
-8. Then, click the `Create Service` button. It may take 5 minutes to build and deploy the service.
-
-   Screenshot:
-   ![4](./4.png)
+7. Then, click the `Create Service` button. It may take 1 minute to build and deploy the service.
 
 ## Step 5: Get your meilisearch admin key, and user key
 
-After the service is created, the meilisearch is ready to use, you can visit <https://meili.owenyoung.com/> to test if everything is worked fine. For version `0.27.2`, the following is the success output:
+After the service is created, the meilisearch is ready to use, you can visit <https://meili.owenyoung.com/> to test if everything is worked fine. At this moment, the default meilisearch template version is [`v0.27.0rc1`](https://docs.mogenius.com/services/various/meilisearch), the following is the success output:
 
 ```json
 { "status": "Meilisearch is running" }
@@ -98,6 +99,8 @@ We'll use them in the next step.
 ## Step 6: Setup doc-scraper
 
 We need to build search index after every updates of our blogs, I use Github Actions to build my blog, so I just add a job after the site is deployed. We'll use [docs-scraper](https://github.com/meilisearch/docs-scraper) to scrape our whole site with `sitemap.xml` file. [docs-scraper](https://github.com/meilisearch/docs-scraper) will help us to build heading and content level search index, it'll bring the best search experience for our readers.
+
+> The current [docs-scrape is only adapted with `0.27.x`](https://github.com/meilisearch/docs-scraper#-compatibility-with-meilisearch), at this moment, the latest meilisearch version 0.28 is not supported, I have submitted [an issue](https://github.com/meilisearch/docs-scraper/issues/231), so the default Mogenius meilisearch template version `0.27.0rc1` is fine, we can also upgrade it to `v0.27.2`.(I have done this by change the [Dockerfile](https://github.com/theowenyoung/meili/blob/main/Dockerfile), Mongenius will monitor the updates, and automatically deploy the updates)
 
 See the [`.github/workflows/build.yml`](https://github.com/theowenyoung/blog/blob/main/.github/workflows/build.yml)
 
@@ -205,8 +208,12 @@ docsSearchBar({
 
 You can see the all source code on [my blog source code](https://github.com/theowenyoung/blog).
 
-As a programmer, it's not a big deal to setup those things with [mogenius](https://mogenius.com/home), sometimes their UI prompts are not very friendly, for example, the git address I entered at the beginning was `https://github.com/meilisearch/meilisearch`, then I can't create the service, the error message is: `This field is required.`, finally I tried another git url with suffix `.git`, then the form is valid, and I can choose the git branch. I don't know why they don't allow me to choose a tag branch, only the normal branches are allowed, luckily, Meilisearch has [one normal release branch](https://github.com/meilisearch/meilisearch/tree/release-v0.27.2), so I can choose it.
+As a programmer, it's not a big deal to setup those things with [mogenius](https://mogenius.com/home), sometimes their UI prompts are not very friendly, for example:
 
-I don't know if they will offer a config file to setup those form, like `vercel.josn` or `netlify.toml`, if so, it'll be easy for other non-programmers to setup those things.
+1. Firstly, I tried to create meilisearch without the template, the git address I entered at the beginning was `https://github.com/meilisearch/meilisearch`, then I can't create the service, the error message is: `This field is required.`, finally I tried another git url with suffix `.git`, then the form is valid, and I can choose the git branch. I don't know why they don't allow me to choose a tag branch, only the normal branches are allowed, luckily, Meilisearch has [one normal release branch](https://github.com/meilisearch/meilisearch/tree/release-v0.27.2), so I can choose it.
+2. Their log UI is broken on Firefox browser, the edge browser is okay.
+3. Even in Edge browser, the CI/CD monitor UI is broken, with an always refreshed page.
+
+I don't know if they will offer a config file to setup those form, like `vercel.json` or `netlify.toml`, if so, it'll be easy for other non-programmers to setup those things.
 
 Finally, I'm appreciate that they can offer a so decent free plan, I hope I don't need to migrate it to another service. Let's see.
