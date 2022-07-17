@@ -2,7 +2,7 @@
 title: Adding search to zola blog with meilisearch deployed on Mogenius
 date: 2022-07-17T08:50:12+08:00
 updated: 2022-07-17
-draft: true
+draft: false
 taxonomies:
   categories:
     - Random
@@ -16,12 +16,16 @@ I deployed [Meilisearch](https://meilisearch.com/) on my VPS [a couple of days a
 
 > [mogenius](https://mogenius.com/home) - A code-to-cloud platform to easily deploy any service, from static website to advanced microservice architectures. mogenius comes with fully managed hyper-scaling cloud resources, Kubernetes, CI/CD and security from Cloudflare. Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.
 
+**The main point:**
+
 - Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.
 - from static website to advanced microservice architectures.
 
+I think it's enough for my blog's search index.
+
 <!-- more -->
 
-It seems this is for static websites, and they have a decent plan for free tier. I decided to try it out. After completing the registration, it requires a mandatory mobile number verification. It's a bit annoying, but I'm glad to have a free tier, and it's a good way to avoid abuse. (There is a bug when you verify your mobile number, I'am using firefox, it seems the country code select can not show list correctly, so I just change a vpn to fix it. (maybe I should use chrome to test it, I almost give up because of this bug))
+[Mogenius](https://mogenius.com/home) said they "from static website to advanced microservice architectures", and they also have a decent plan for free tier. I decided to try it out. After completing the registration, it requires a mandatory mobile number verification. It's a bit annoying, but I'm glad to have a free tier, and it's a good way to avoid abuse. (There is a bug when you verify your mobile number, I'am using firefox, it seems the country code select can not show list correctly, so I just change a vpn to fix it. (maybe I should use chrome to test it, I almost give up because of this bug))
 
 Let's see how to set it up:
 
@@ -39,52 +43,53 @@ Enter to the cloudspace, and click the add button to create a new service with `
 2. Set the repository to `https://github.com/meilisearch/meilisearch.git`
 3. Choose the branch to `release-v0.27.2`, the latest version 0.28 is not supported by [docs-scrape](https://github.com/meilisearch/docs-scraper), I have submitted [an issue](https://github.com/meilisearch/docs-scraper/issues/231)
 
-Screenshot:
+   Screenshot:
 
-![1](./1.png)
+   ![1](./1.png)
 
 4. set resources limit to max(or as your need).
 
-Screenshot:
+   Screenshot:
 
-![2](./2.png)
+   ![2](./2.png)
 
 5. set environment variables:
 
-```bash
-MEILI_MASTER_KEY=<your master key>
-MEILI_NO_ANALYTICS=true
-MEILI_ENV=production
-```
+   ```bash
+   MEILI_MASTER_KEY=<your master key>
+   MEILI_NO_ANALYTICS=true
+   MEILI_ENV=production
+   ```
 
-All environment options are [here](https://docs.meilisearch.com/learn/configuration/instance_options.html#environment)
+   All environment options are [here](https://docs.meilisearch.com/learn/configuration/instance_options.html#environment)
 
 6. set internal http port to `7700`
 
 7. optional, set custom domain. I set it to `meili.owenyoung.com`, I set a CNAME record `meili.owenyoung.com` to `meilisearch-prod-meilisearch-r4efxz.mo2.mogenius.io`, you will get the endpoint after the service created.
 
-Screenshot:
+   Screenshot:
 
-![3](./3.png)
+   ![3](./3.png)
 
-Then, click the `Create Service` button. It may take 5 minutes to build and deploy the service.
+8. Then, click the `Create Service` button. It may take 5 minutes to build and deploy the service.
 
-![4](./4.png)
+   Screenshot:
+   ![4](./4.png)
 
 ## Step 5: Get your meilisearch admin key, and user key
 
-After the service is created, the meilisearch is ready to use, you can visit <https://meili.owenyoung.com/> to test if everything is working. For version `0.27.2`, the following is the success output:
+After the service is created, the meilisearch is ready to use, you can visit <https://meili.owenyoung.com/> to test if everything is worked fine. For version `0.27.2`, the following is the success output:
 
 ```json
 { "status": "Meilisearch is running" }
 ```
 
-You can run the bash script to get the admin key and user key:
+You need to run the bash script to get the admin key and user key:
 
 ```bash
 curl \
   -X GET 'https://meili.owenyoung.com/keys' \
-  -H "Authorization: Bearer you-api-key" \
+  -H "Authorization: Bearer you-master-key" \
   | json_pp
 ```
 
@@ -197,3 +202,11 @@ docsSearchBar({
 ```
 
 ## Conclusion
+
+You can see the all source code on [my blog source code](https://github.com/theowenyoung/blog).
+
+As a programmer, it's not a big deal to setup those things with [mogenius](https://mogenius.com/home), sometimes their UI prompts are not very friendly, for example, the git address I entered at the beginning was `https://github.com/meilisearch/meilisearch`, then I can't create the service, the error message is: `This field is required.`, finally I tried another git url with suffix `.git`, then the form is valid, and I can choose the git branch. I don't know why they don't allow me to choose a tag branch, only the normal branches are allowed, luckily, Meilisearch has [one normal release branch](https://github.com/meilisearch/meilisearch/tree/release-v0.27.2), so I can choose it.
+
+I don't know if they will offer a config file to setup those form, like `vercel.josn` or `netlify.toml`, if so, it'll be easy for other non-programmers to setup those things.
+
+Finally, I'm appreciate that they can offer a so decent free plan, I hope I don't need to migrate it to another service. Let's see.
