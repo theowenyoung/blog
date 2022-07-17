@@ -25,6 +25,8 @@
 &lt;p&gt;I think it’s enough for my blog’s search index.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mogenius.com&#x2F;home&quot;&gt;Mogenius&lt;&#x2F;a&gt; said they “from static website to advanced microservice architectures”, and they also have a decent plan for free tier. I decided to try it out. After completing the registration, it requires a mandatory mobile number verification. It’s a bit annoying, but I’m glad to have a free tier, and it’s a good way to avoid abuse. (There is a bug when you verify your mobile number, I’am using firefox, it seems the country code select can not show list correctly, so I just change a vpn to fix it. (maybe I should use chrome to test it, I almost give up because of this bug))&lt;&#x2F;p&gt;
+&lt;p&gt;For those who want to see the final results, here is the final result:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;.&#x2F;meilisearch.png&quot; alt=&quot;meilisearch&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Let’s see how to set it up:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;step-1-create-cloudspace&quot;&gt;Step 1: Create cloudspace&lt;a class=&quot;zola-anchor&quot; href=&quot;#step-1-create-cloudspace&quot; aria-label=&quot;Anchor link for: step-1-create-cloudspace&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Just click ADD button, and fill in the form.&lt;&#x2F;p&gt;
