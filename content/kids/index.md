@@ -13,6 +13,10 @@ taxonomies:
 
 <!-- more -->
 
+## 网站
+
+- [Stop having kids](https://www.stophavingkids.org/) - 停止生孩子
+
 ## 讨论
 
 - [我不想要孩子 - reddit 讨论](https://www.reddit.com/r/CasualConversation/comments/umgu59/i_dont_want_kids/)
