@@ -357,6 +357,10 @@
         <loc>https://www.owenyoung.com/en/blog/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/</loc>
+        <lastmod>2022-07-17</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/en/blog/bazarr-setup/</loc>
         <lastmod>2022-03-26</lastmod>
     </url>
@@ -928,6 +932,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/media/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/mogenius/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/mogenius/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/motivation/</loc>

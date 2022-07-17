@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Blog">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <link rel="me" href="https://twitter.com/TheOwenYoung"/>
+    <link rel="me" href="https://twitter.com/OwenYoungZh"/>
+    <link rel="me" href="https://github.com/theowenyoung"/>
+    <link rel="me" href="mailto:owen@owenyoung.com"/>
+    <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
+    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=b57b2d603b518947ad904169a5dab53ff267c8a3b5b9e5767a118e4906a861e4">
+    <title>
+      
+  Adding search to zola blog with meilisearch deployed on Mogenius - Owen Young&#x27;s Blog
+
+    </title>
+    <meta name="description" itemprop="about" content="
+  
+    I deployed Meilisearch on my VPS a couple of days ago, but I’m panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it’s not a stable environment to deploy meilisearch. So I started to browse free-for-dev, see if there are some good(and cheap) solutions for me. I saw this:mogenius - A code-to-cloud platform to easily deploy any service, from static website to advanced microservice architectures. mogenius comes with fully managed hyper-scaling cloud resources, Kubernetes, CI&#x2F;CD and security from Cloudflare. Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.The main point:Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.from static website to advanced microservice architectures.I think it’s enough for my blog’s search index.
+
+  
+"/>
+    <meta name="keywords" itemprop="keywords" content="Focus, Reading, Tool sharing, Plain text, English learning"/>
+    <meta name="author" itemprop="author" content="Owen Young"/>
+    <meta itemprop="headline" content="
+  Adding search to zola blog with meilisearch deployed on Mogenius - Owen Young&#x27;s Blog
+"/>
+    <meta itemprop="copyrightYear" content="2022"/>
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa">
+    <link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#f9f5e9"/>
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="#f9f5e9"/>
+    <meta property="og:title" content="
+  Adding search to zola blog with meilisearch deployed on Mogenius - Owen Young&#x27;s Blog
+"/>
+    <meta property="og:description" content="
+  
+    I deployed Meilisearch on my VPS a couple of days ago, but I’m panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it’s not a stable environment to deploy meilisearch. So I started to browse free-for-dev, see if there are some good(and cheap) solutions for me. I saw this:mogenius - A code-to-cloud platform to easily deploy any service, from static website to advanced microservice architectures. mogenius comes with fully managed hyper-scaling cloud resources, Kubernetes, CI&#x2F;CD and security from Cloudflare. Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.The main point:Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.from static website to advanced microservice architectures.I think it’s enough for my blog’s search index.
+
+  
+"/>
+    <meta property="og:url" content="
+  
+    https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;
+  
+"/>
+    <meta property="og:site_name" content="Owen Young&#x27;s Blog"/>
+    
+      <meta property="og:image" content="
+  
+"/>
+    
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:site" content="TheOwenYoung"/>
+      <meta name="twitter:creator" content="TheOwenYoung"/>
+      <meta name="twitter:image:alt" content="Owen Young&#x27;s Blog"/>
+    
+    
+      <link rel="alternate" type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://www.owenyoung.com/atom.xml">
+    
+    
+    <meta name="title" content="Adding search to zola blog with meilisearch deployed on Mogenius">
+  <style>
+    .sidebar {
+      display: none;
+    }
+    @media(min-width: 67.5rem) {
+      .sidebar {
+        display: block;
+      }
+    }
+  </style>
+
+  </head>
+  <body>
+    <section id="top"></section>
+    <section id="root">
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/en/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
+            </img>
+          </a>
+        </div>
+        <div>
+          <ul class="flex menu list-none items-center justify-center">
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Search"
+                href="/search/">
+                <span class="text-sm">🔍</span>
+              </a>
+            </li>
+            
+            
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                  title="中文站点"
+                  class="only-show-small"
+                  href="/">
+                  <span class="text-sm">中</span>
+                </a>
+              </li>
+            
+            <div class="nav-divider"></div>
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Back to Top"
+                href="#top">
+                <span class="">
+                  &#8593;</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                title="Go to Bottom"
+                class="only-show-small"
+                href="#bottom">
+                <span class="">
+                  &#8595;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="body-zone flex justify-between flex-1">
+        <section class="main flex-1 py">
+          <div class="main-inner"> 
+<div class="h-entry hentry detail-page">
+  <header id="overview">
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="https://www.owenyoung.com/en/">Home</a>
+      
+        <span class="divider">/</span>
+        <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/en/categories/random/">Random</a>
+        <span class="divider">/</span>
+          <div class="inline-block p-tags">
+            
+              <a class="p-tag" href="https://www.owenyoung.com/en/tags/zola/">Zola</a>
+              
+                ,
+              
+            
+              <a class="p-tag" href="https://www.owenyoung.com/en/tags/search/">Search</a>
+              
+                ,
+              
+            
+              <a class="p-tag" href="https://www.owenyoung.com/en/tags/mogenius/">Mogenius</a>
+              
+                
+              
+            
+          </div>
+        
+      
+    </div>
+    <div>
+      <h1 class="p-name entry-title" style="font-size:1.8rem;">Adding search to zola blog with meilisearch deployed on Mogenius</h1>
+      <div class="display-none p-author h-card vcard">
+        <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
+        <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
+        <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+      </div>
+      
+        <div class="pb muted">
+          <div>
+            
+              Published:
+              <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022-07-17</time>
+            
+            
+              · Updated:
+              <time class="dt-updated updated" datetime="2022-07-17">2022-07-17</time>
+              ·
+            
+            
+              Reading Time: 
+  
+    7
+  
+ min
+          </div>
+        </div>
+      
+    </div>
+    
+  </header>
+<section>
+  <section class="main">
+    <div class="display-none p-summary">
+      <p>I deployed <a rel="noopener nofollow noreferrer" target="_blank" href="https://meilisearch.com/">Meilisearch</a> on my VPS <a href="https://www.owenyoung.com/blog/add-search/">a couple of days ago</a>, but I’m panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it’s not a stable environment to deploy meilisearch. So I started to browse <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.trackawesomelist.com/ripienaar/free-for-dev/">free-for-dev</a>, see if there are some good(and cheap) solutions for me. I saw this:</p>
+<blockquote>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://mogenius.com/home">mogenius</a> - A code-to-cloud platform to easily deploy any service, from static website to advanced microservice architectures. mogenius comes with fully managed hyper-scaling cloud resources, Kubernetes, CI/CD and security from Cloudflare. Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.</p>
+</blockquote>
+<p><strong>The main point:</strong></p>
+<ul>
+<li>Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.</li>
+<li>from static website to advanced microservice architectures.</li>
+</ul>
+<p>I think it’s enough for my blog’s search index.</p>
+
+    </div>
+    <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">Permanent Link</a>
+    
+      <div class="main-toc pt">
+        <details>
+          <summary>On this page</summary>
+          
+    <section class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">Get Started</a>
+        </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-1-create-cloudspace">Step 1: Create cloudspace</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-2-create-a-new-servicee">Step 2: Create a new servicee</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-3-configure-the-service">Step 3: Configure the service</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-5-get-your-meilisearch-admin-key-and-user-key">Step 5: Get your meilisearch admin key, and user key</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-6-setup-doc-scraper">Step 6: Setup doc-scraper</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-7-setup-the-frontend">Step 7: Setup the frontend</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#conclusion">Conclusion</a>
+            
+          </li>
+        
+        <li>
+          <a href="#response">Response</a>
+        </li>
+        <li>
+          <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md">Edit this page</a>
+        </li>
+      </ul>
+    </section>
+  
+        </details>
+      </div>
+    
+    <section id="start"></section>
+    <article class="e-content entry-content">
+      <p>I deployed <a rel="noopener nofollow noreferrer" target="_blank" href="https://meilisearch.com/">Meilisearch</a> on my VPS <a href="https://www.owenyoung.com/blog/add-search/">a couple of days ago</a>, but I’m panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it’s not a stable environment to deploy meilisearch. So I started to browse <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.trackawesomelist.com/ripienaar/free-for-dev/">free-for-dev</a>, see if there are some good(and cheap) solutions for me. I saw this:</p>
+<blockquote>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://mogenius.com/home">mogenius</a> - A code-to-cloud platform to easily deploy any service, from static website to advanced microservice architectures. mogenius comes with fully managed hyper-scaling cloud resources, Kubernetes, CI/CD and security from Cloudflare. Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.</p>
+</blockquote>
+<p><strong>The main point:</strong></p>
+<ul>
+<li>Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.</li>
+<li>from static website to advanced microservice architectures.</li>
+</ul>
+<p>I think it’s enough for my blog’s search index.</p>
+<span id="continue-reading"></span>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://mogenius.com/home">Mogenius</a> said they “from static website to advanced microservice architectures”, and they also have a decent plan for free tier. I decided to try it out. After completing the registration, it requires a mandatory mobile number verification. It’s a bit annoying, but I’m glad to have a free tier, and it’s a good way to avoid abuse. (There is a bug when you verify your mobile number, I’am using firefox, it seems the country code select can not show list correctly, so I just change a vpn to fix it. (maybe I should use chrome to test it, I almost give up because of this bug))</p>
+<p>Let’s see how to set it up:</p>
+<h2 id="step-1-create-cloudspace">Step 1: Create cloudspace<a class="zola-anchor" href="#step-1-create-cloudspace" aria-label="Anchor link for: step-1-create-cloudspace">🔗</a></h2>
+<p>Just click ADD button, and fill in the form.</p>
+<h2 id="step-2-create-a-new-servicee">Step 2: Create a new servicee<a class="zola-anchor" href="#step-2-create-a-new-servicee" aria-label="Anchor link for: step-2-create-a-new-servicee">🔗</a></h2>
+<p>Enter to the cloudspace, and click the add button to create a new service with <code>Use a template</code>, and search <code>meilisearch</code></p>
+<h2 id="step-3-configure-the-service">Step 3: Configure the service<a class="zola-anchor" href="#step-3-configure-the-service" aria-label="Anchor link for: step-3-configure-the-service">🔗</a></h2>
+<ol>
+<li>
+<p>Fill the servicename, for me I just type <code>meilisearch</code></p>
+</li>
+<li>
+<p>Connect your github account(you can give it only selected repo permissions, you must selected at least one repo, it can be any public repo)</p>
+<p>Screenshot:
+<img src="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/0.png" alt="0" /></p>
+</li>
+<li>
+<p>Click <code>Add repository</code>, input the repo name, I input it as <code>meili</code>, and with <code>public</code> permission.</p>
+<p>Screenshot:</p>
+<p><img src="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/./1.png" alt="1" /></p>
+</li>
+<li>
+<p>set resources limit (if needed, the default value is a recomendation from Mogenius).</p>
+</li>
+<li>
+<p>set environment variables:</p>
+<ol>
+<li>
+<p>add <code>MEILI_MASTER_KEY</code> as key vault to protect your master key. (Click <code>create new secret</code> to fill the secret)</p>
+</li>
+<li>
+<p>the following environment variables can be plain text type.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">MEILI_NO_ANALYTICS</span><span>=</span><span style="color:#a3be8c;">true
+</span><span style="color:#bf616a;">MEILI_ENV</span><span>=</span><span style="color:#a3be8c;">production
+</span></code></pre>
+<p>All environment options are <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.meilisearch.com/learn/configuration/instance_options.html#environment">here</a></p>
+</li>
+</ol>
+<p>Screenshot:</p>
+<p><img src="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/./2.png" alt="2" /></p>
+</li>
+<li>
+<p>optional, set custom domain. I set it to <code>meili.owenyoung.com</code>, I set a CNAME record <code>meili.owenyoung.com</code> to <code>meilisearch-prod-meilisearch-r4efxz.mo2.mogenius.io</code>, you will get the endpoint after the service created.</p>
+<p>Screenshot:</p>
+<p><img src="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/./4.png" alt="3" /></p>
+</li>
+<li>
+<p>Then, click the <code>Create Service</code> button. It may take 1 minute to build and deploy the service.</p>
+</li>
+</ol>
+<h2 id="step-5-get-your-meilisearch-admin-key-and-user-key">Step 5: Get your meilisearch admin key, and user key<a class="zola-anchor" href="#step-5-get-your-meilisearch-admin-key-and-user-key" aria-label="Anchor link for: step-5-get-your-meilisearch-admin-key-and-user-key">🔗</a></h2>
+<p>After the service is created, the meilisearch is ready to use, you can visit <a rel="noopener nofollow noreferrer" target="_blank" href="https://meili.owenyoung.com/">https://meili.owenyoung.com/</a> to test if everything is worked fine. At this moment, the default meilisearch template version is <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.mogenius.com/services/various/meilisearch"><code>v0.27.0rc1</code></a>, the following is the success output:</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{ &quot;</span><span style="color:#a3be8c;">status</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Meilisearch is running</span><span>&quot; }
+</span></code></pre>
+<p>You need to run the bash script to get the admin key and user key:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">curl </span><span>\
+</span><span style="color:#bf616a;">  -X</span><span> GET &#39;</span><span style="color:#a3be8c;">https://meili.owenyoung.com/keys</span><span>&#39; \
+</span><span style="color:#bf616a;">  -H </span><span>&quot;</span><span style="color:#a3be8c;">Authorization: Bearer you-master-key</span><span>&quot; \
+</span><span>  | </span><span style="color:#bf616a;">json_pp
+</span></code></pre>
+<p>We’ll use them in the next step.</p>
+<h2 id="step-6-setup-doc-scraper">Step 6: Setup doc-scraper<a class="zola-anchor" href="#step-6-setup-doc-scraper" aria-label="Anchor link for: step-6-setup-doc-scraper">🔗</a></h2>
+<p>We need to build search index after every updates of our blogs, I use Github Actions to build my blog, so I just add a job after the site is deployed. We’ll use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-scraper">docs-scraper</a> to scrape our whole site with <code>sitemap.xml</code> file. <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-scraper">docs-scraper</a> will help us to build heading and content level search index, it’ll bring the best search experience for our readers.</p>
+<blockquote>
+<p>The current <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-scraper#-compatibility-with-meilisearch">docs-scrape is only adapted with <code>0.27.x</code></a>, at this moment, the latest meilisearch version 0.28 is not supported, I have submitted <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-scraper/issues/231">an issue</a>, so the default Mogenius meilisearch template version <code>0.27.0rc1</code> is fine, we can also upgrade it to <code>v0.27.2</code>.(I have done this by change the <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/meili/blob/main/Dockerfile">Dockerfile</a>, Mongenius will monitor the updates, and automatically deploy the updates)</p>
+</blockquote>
+<p>See the <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/.github/workflows/build.yml"><code>.github/workflows/build.yml</code></a></p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Deploy Site
+</span><span style="color:#d08770;">on</span><span>:
+</span><span>  </span><span style="color:#bf616a;">workflow_dispatch</span><span>:
+</span><span>  </span><span style="color:#bf616a;">push</span><span>:
+</span><span>    </span><span style="color:#bf616a;">branches</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">main
+</span><span style="color:#bf616a;">jobs</span><span>:
+</span><span>  </span><span style="color:#bf616a;">build-deploy</span><span>:
+</span><span>    </span><span style="color:#bf616a;">runs-on</span><span>: </span><span style="color:#a3be8c;">ubuntu-latest
+</span><span>    </span><span style="color:#bf616a;">steps</span><span>:
+</span><span>      - </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/checkout@v3
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make install
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Build Site
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make build
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Deploy
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">peaceiris/actions-gh-pages@v3
+</span><span>        </span><span style="color:#bf616a;">with</span><span>:
+</span><span>          </span><span style="color:#bf616a;">publish_dir</span><span>: </span><span style="color:#a3be8c;">./public
+</span><span>          </span><span style="color:#bf616a;">github_token</span><span>: </span><span style="color:#a3be8c;">${{ secrets.GITHUB_TOKEN }}
+</span><span>  </span><span style="color:#bf616a;">scrape-and-build-search-index</span><span>:
+</span><span>    </span><span style="color:#bf616a;">needs</span><span>: </span><span style="color:#a3be8c;">build-deploy
+</span><span>    </span><span style="color:#bf616a;">runs-on</span><span>: </span><span style="color:#a3be8c;">ubuntu-latest
+</span><span>    </span><span style="color:#bf616a;">steps</span><span>:
+</span><span>      </span><span style="color:#65737e;"># wait github pages publish
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">sleep 1m
+</span><span>      - </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/checkout@v3
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Run docs-scraper
+</span><span>        </span><span style="color:#bf616a;">env</span><span>:
+</span><span>          </span><span style="color:#bf616a;">HOST_URL</span><span>: &quot;</span><span style="color:#a3be8c;">https://meili.owenyoung.com</span><span>&quot;
+</span><span>          </span><span style="color:#bf616a;">API_KEY</span><span>: </span><span style="color:#a3be8c;">${{ secrets.MEILISEARCH_API_KEY }}
+</span><span>          </span><span style="color:#bf616a;">CONFIG_FILE_PATH</span><span>: </span><span style="color:#a3be8c;">${{ github.workspace }}/meilisearch-docs-scraper-config.json
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#b48ead;">|
+</span><span style="color:#a3be8c;">          docker run -t --rm \
+</span><span style="color:#a3be8c;">            -e MEILISEARCH_HOST_URL=$HOST_URL \
+</span><span style="color:#a3be8c;">            -e MEILISEARCH_API_KEY=$API_KEY \
+</span><span style="color:#a3be8c;">            -v $CONFIG_FILE_PATH:/docs-scraper/config.json \
+</span><span style="color:#a3be8c;">            getmeili/docs-scraper:v0.12.2 pipenv run ./docs_scraper config.json
+</span></code></pre>
+<p><code>MEILISEARCH_API_KEY</code> will be the admin key from the previous step.</p>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json"><code>meilisearch-docs-scraper-config.json</code></a> will be placed in the root of the repository, and it will be used by <code>docs-scraper</code> to scrape the site. Here is my config file:</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">index_uid</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">owen-blog</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">sitemap_urls</span><span>&quot;: [&quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/sitemap.xml</span><span>&quot;],
+</span><span>  &quot;</span><span style="color:#a3be8c;">start_urls</span><span>&quot;: [&quot;&quot;],
+</span><span>  &quot;</span><span style="color:#a3be8c;">scrap_start_urls</span><span>&quot;: </span><span style="color:#d08770;">false</span><span>,
+</span><span>  &quot;</span><span style="color:#a3be8c;">stop_urls</span><span>&quot;: [
+</span><span>    &quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/categories/</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/tags/</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/en/tags/</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/en/categories/</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/pages/</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">https://www.owenyoung.com/en/pages/</span><span>&quot;
+</span><span>  ],
+</span><span>  &quot;</span><span style="color:#a3be8c;">selectors</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl0</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">selector</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.detail-page .p-category</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">default_value</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Random</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl1</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">selector</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.detail-page .p-tags</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">default_value</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Notes</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl2</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.detail-page .entry-title</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl3</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.e-content h2</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">lvl4</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.e-content h3</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">text</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">.e-content p, .e-content li</span><span>&quot;
+</span><span>  },
+</span><span>  &quot;</span><span style="color:#a3be8c;">strip_chars</span><span>&quot;: &quot;</span><span style="color:#a3be8c;"> .,;:#</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">min_indexed_level</span><span>&quot;: </span><span style="color:#d08770;">2</span><span>,
+</span><span>  &quot;</span><span style="color:#a3be8c;">custom_settings</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">synonyms</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">js</span><span>&quot;: [&quot;</span><span style="color:#a3be8c;">javascript</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">nodejs</span><span>&quot;]
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">stopWords</span><span>&quot;: [&quot;</span><span style="color:#a3be8c;">一</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">的</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">是</span><span>&quot;]
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<blockquote>
+<p>Cause I’m using Chinese and English, so I added <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json">a lot of stop words of Chinese.</a></p>
+</blockquote>
+<p>Then the Github Actions workflow will run <code>docs-scraper</code> to scrape the site after the site is deployed.</p>
+<h2 id="step-7-setup-the-frontend">Step 7: Setup the frontend<a class="zola-anchor" href="#step-7-setup-the-frontend" aria-label="Anchor link for: step-7-setup-the-frontend">🔗</a></h2>
+<p>See my <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/blob/main/templates/search.html">search template</a>, basically, you need to include the <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/docs-searchbar.js">docs-searchbar</a> css and js, and add an <code>&lt;input type=&quot;search&quot; id=&quot;search-bar-input&quot; placeholder=&quot;Search&quot; /&gt;</code> to whereever you want to include the search bar. And add the following script to init:</p>
+<pre data-lang="js" style="background-color:#2b303b;color:#c0c5ce;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#8fa1b3;">docsSearchBar</span><span>({
+</span><span>  hostUrl: &quot;</span><span style="color:#a3be8c;">https://meili.owenyoung.com</span><span>&quot;,
+</span><span>  apiKey: &quot;</span><span style="color:#a3be8c;">your-user-api-key</span><span>&quot;,
+</span><span>  indexUid: &quot;</span><span style="color:#a3be8c;">owen-blog</span><span>&quot;,
+</span><span>  inputSelector: &quot;</span><span style="color:#a3be8c;">#search-bar-input</span><span>&quot;,
+</span><span>});
+</span></code></pre>
+<h2 id="conclusion">Conclusion<a class="zola-anchor" href="#conclusion" aria-label="Anchor link for: conclusion">🔗</a></h2>
+<p>You can see the all source code on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my blog source code</a>.</p>
+<p>As a programmer, it’s not a big deal to setup those things with <a rel="noopener nofollow noreferrer" target="_blank" href="https://mogenius.com/home">mogenius</a>, sometimes their UI prompts are not very friendly, for example:</p>
+<ol>
+<li>Firstly, I tried to create meilisearch without the template, the git address I entered at the beginning was <code>https://github.com/meilisearch/meilisearch</code>, then I can’t create the service, the error message is: <code>This field is required.</code>, finally I tried another git url with suffix <code>.git</code>, then the form is valid, and I can choose the git branch. I don’t know why they don’t allow me to choose a tag branch, only the normal branches are allowed, luckily, Meilisearch has <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch/tree/release-v0.27.2">one normal release branch</a>, so I can choose it.</li>
+<li>Their log UI is broken on Firefox browser, the edge browser is okay.</li>
+<li>Even in Edge browser, the CI/CD monitor UI is broken, with an always refreshed page.</li>
+</ol>
+<p>I don’t know if they will offer a config file to setup those form, like <code>vercel.json</code> or <code>netlify.toml</code>, if so, it’ll be easy for other non-programmers to setup those things.</p>
+<p>Finally, I’m appreciate that they can offer a so decent free plan, I hope I don’t need to migrate it to another service. Let’s see.</p>
+
+    </article>
+    
+      <section>
+        <hr>
+          <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md">📝 Edit this page</a>
+        </section>
+      
+      
+                      
+                        
+                          
+                        
+                        
+                        <section class="p-comments h-feed">
+                          <hr/>
+                          <h2>Response<a href="#response" id="response" class="zola-anchor">🔗</a>
+                          </h2>
+                          
+                <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+                  
+                    
+                      
+                    
+                    <div id="email-comment" class="muted text-sm">
+                      
+                        <p>Have you written a
+                          <a href="https://indieweb.org/responses">response</a>
+                          to this? Let me know the URL, Or, you can send your response
+                          via
+                          <a href="mailto:owen@owenyoung.com?subject=%20Reply%3A%20Adding%20search%20to%20zola%20blog%20with%20meilisearch%20deployed%20on%20Mogenius">mail
+                          </a>
+                          <code>owen@owenyoung.com</code>
+                        </p>
+                      
+                    </div>
+                  
+                  <div class="flex items-center flex-wrap pb">
+                    <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm">
+                      <input type="submit" class="px py-sm" value="Send Webmention"></div>
+                      <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;"></form>
+                    
+                          
+    
+  
+                          
+                        
+                      
+      
+    </section>
+  </section>
+</div>
+            </div>
+          </section>
+          
+<aside class="sidebar px ">
+  
+    <h2>On this page</h2>
+    
+    <section class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">Get Started</a>
+        </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-1-create-cloudspace">Step 1: Create cloudspace</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-2-create-a-new-servicee">Step 2: Create a new servicee</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-3-configure-the-service">Step 3: Configure the service</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-5-get-your-meilisearch-admin-key-and-user-key">Step 5: Get your meilisearch admin key, and user key</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-6-setup-doc-scraper">Step 6: Setup doc-scraper</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#step-7-setup-the-frontend">Step 7: Setup the frontend</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#conclusion">Conclusion</a>
+            
+          </li>
+        
+        <li>
+          <a href="#response">Response</a>
+        </li>
+        <li>
+          <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md">Edit this page</a>
+        </li>
+      </ul>
+    </section>
+  
+  
+</aside>
+    </main>
+  </section>
+<section id="bottom"></section>
+</body></html>
