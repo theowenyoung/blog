@@ -214,6 +214,8 @@ As a programmer, it's not a big deal to setup those things with [mogenius](https
 2. Their log UI is broken on Firefox browser, the edge browser is okay.
 3. Even in Edge browser, the CI/CD monitor UI is broken, with an always refreshed page.
 
+> Update: 2. it's not their fault, it's my default broswer settings that disabled the canvas rendering.
+
 I don't know if they will offer a config file to setup those form, like `vercel.json` or `netlify.toml`, if so, it'll be easy for other non-programmers to setup those things.
 
 Finally, I'm appreciate that they can offer a so decent free plan, I hope I don't need to migrate it to another service. Let's see.
