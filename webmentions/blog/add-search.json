@@ -1438,5 +1438,27 @@
     "like-of": "https://www.owenyoung.com/blog/add-search/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1434738": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Save to Notion ",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/2f0c632ed1537901f6ed2bf83aee45dd482d9747125c3f6ddb546e6d1a1acc60.jpg",
+      "url": "https://twitter.com/SaveToNotion"
+    },
+    "url": "https://twitter.com/SaveToNotion/status/1547099761911762949",
+    "published": "2022-07-13T06:05:01+00:00",
+    "wm-received": "2022-07-16T03:17:23Z",
+    "wm-id": 1434738,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1546642850414137345/1547099761911762949",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "content": {
+      "html": "Saved this Tweet to your Notion database.\n\nTags: [Edge, Search]\n<a class=\"u-mention\" href=\"https://twitter.com/luoyjx\"></a>",
+      "text": "Saved this Tweet to your Notion database.\n\nTags: [Edge, Search]"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
