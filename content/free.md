@@ -1,7 +1,7 @@
 ---
 title: 互联网上的免费资源汇总
 date: 2022-03-25
-updated: 2022-06-08
+updated: 2022-07-17
 taxonomies:
   categories:
     - Notes
@@ -79,3 +79,7 @@ taxonomies:
 ## 服务器
 
 - [scaleway](https://www.scaleway.com/) - 免费对象存储 75GB
+
+## Paas
+
+- [Mogenius](https://mogenius.com) - 方便的部署 docker 资源，1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.
