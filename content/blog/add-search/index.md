@@ -125,4 +125,4 @@ Over! 其实说的简单，但是我在建立索引的过程中多次调整了�
 
 我目前是把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<https://meilisearch.owenyoung.com/>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～
 
-> 更新：我目前把 Meilisearch 从我的 VPS 迁移到免费的[Mogenius](https://mogenius.com/home),更省心，这样就算我弄乱 VPS 的情况下，搜索也不会轻易下线，我也写了[一篇文章](<(/content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md)>)记录整个过程
+> 更新：我目前把 Meilisearch 从我的 VPS 迁移到免费的[Mogenius](https://mogenius.com/home),更省心，这样就算我弄乱 VPS 的情况下，搜索也不会轻易下线，我也写了[一篇文章](/content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md)记录整个过程
