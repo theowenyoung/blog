@@ -27,6 +27,10 @@ I think it's enough for my blog's search index.
 
 [Mogenius](https://mogenius.com/home) said they "from static website to advanced microservice architectures", and they also have a decent plan for free tier. I decided to try it out. After completing the registration, it requires a mandatory mobile number verification. It's a bit annoying, but I'm glad to have a free tier, and it's a good way to avoid abuse. (There is a bug when you verify your mobile number, I'am using firefox, it seems the country code select can not show list correctly, so I just change a vpn to fix it. (maybe I should use chrome to test it, I almost give up because of this bug))
 
+For those who want to see the final results, here is the final result:
+
+![meilisearch](./meilisearch.png)
+
 Let's see how to set it up:
 
 ## Step 1: Create cloudspace
