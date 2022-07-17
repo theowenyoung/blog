@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-13T00:55:21+08:00</updated>
+	<updated>2022-07-17T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>通过创建 dotfiles, 我终于拥有了一个 web3 身份</title>
@@ -321,7 +321,7 @@
 	<entry xml:lang="zh">
 		<title>给Zola博客增加搜索功能</title>
 		<published>2022-07-12T00:54:03+08:00</published>
-		<updated>2022-07-12T00:00:00+00:00</updated>
+		<updated>2022-07-17T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/blog/add-search/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/add-search/</id>
 		<content type="html">&lt;p&gt;我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;search&#x2F;&quot;&gt;搜索页面&lt;&#x2F;a&gt;，以及首页也添加了一个搜索框。&lt;&#x2F;p&gt;
@@ -396,6 +396,9 @@
 &lt;&#x2F;ol&gt;
 &lt;p&gt;基本上就是把我在 meilisearch 上做的事搬到 wasm 上，但是我更喜欢在 cloudflare workers 上部署搜索服务的方案，因为它更简单，更快，更具有扩展性。&lt;&#x2F;p&gt;
 &lt;p&gt;我目前是把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;meilisearch.owenyoung.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;meilisearch.owenyoung.com&#x2F;&lt;&#x2F;a&gt;建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更新：我目前把 Meilisearch 从我的 VPS 迁移到免费的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mogenius.com&#x2F;home&quot;&gt;Mogenius&lt;&#x2F;a&gt;,更省心，这样就算我弄乱 VPS 的情况下，搜索也不会轻易下线，我也写了&lt;a href=&quot;(&#x2F;content&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;index.en.md)&quot;&gt;一篇文章&lt;&#x2F;a&gt;记录整个过程&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
