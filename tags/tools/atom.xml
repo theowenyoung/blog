@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/tools/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-30T00:00:00+00:00</updated>
+	<updated>2022-07-17T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tools/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>互联网上的免费资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-08T00:00:00+00:00</updated>
+		<updated>2022-07-17T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/free/" type="text/html"/>
 		<id>https://www.owenyoung.com/free/</id>
 		<content type="html">&lt;p&gt;收集互联网上免费的资源。&lt;&#x2F;p&gt;
@@ -82,6 +82,10 @@
 &lt;h2 id=&quot;fu-wu-qi&quot;&gt;服务器&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu-qi&quot; aria-label=&quot;Anchor link for: fu-wu-qi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.scaleway.com&#x2F;&quot;&gt;scaleway&lt;&#x2F;a&gt; - 免费对象存储 75GB&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;paas&quot;&gt;Paas&lt;a class=&quot;zola-anchor&quot; href=&quot;#paas&quot; aria-label=&quot;Anchor link for: paas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mogenius.com&quot;&gt;Mogenius&lt;&#x2F;a&gt; - 方便的部署 docker 资源，1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
