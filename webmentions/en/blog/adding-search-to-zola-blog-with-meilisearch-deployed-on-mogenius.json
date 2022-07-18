@@ -1,0 +1,24 @@
+{
+  "1435025": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen Young",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/d52fdcf87da92dce0eaee8240931376821157dfd28aa91fa32f2d178b843a4b5.jpg",
+      "url": "https://twitter.com/TheOwenYoung"
+    },
+    "url": "https://twitter.com/TheOwenYoung/status/1548522529396244480",
+    "published": "2022-07-17T04:18:35+00:00",
+    "wm-received": "2022-07-17T04:51:51Z",
+    "wm-id": 1435025,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1548522529396244480",
+    "wm-target": "https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/",
+    "content": {
+      "html": "Adding search to Zola blog with Meilisearch deployed on Mogenius\n<a href=\"https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/\">owenyoung.com/en/blog/adding…</a>",
+      "text": "Adding search to Zola blog with Meilisearch deployed on Mogenius\nowenyoung.com/en/blog/adding…"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
