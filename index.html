@@ -4,21 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <title>
+      
+        Owen的博客
+      
+    </title>
     <link rel="me" href="https://twitter.com/TheOwenYoung"/>
     <link rel="me" href="https://twitter.com/OwenYoungZh"/>
     <link rel="me" href="https://github.com/theowenyoung"/>
     <link rel="me" href="mailto:owen@owenyoung.com"/>
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
   
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/docs-searchbar.min.css?h=3a6e300a80b79b0e900005835f0f3b4b4e87e1dd9ee9951c2e2c56ea48a6c4b4">
+    <link rel="preload" href="https://www.owenyoung.com/site/styles/docs-searchbar.min.css?h=3a6e300a80b79b0e900005835f0f3b4b4e87e1dd9ee9951c2e2c56ea48a6c4b4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/docs-searchbar.min.css?h=3a6e300a80b79b0e900005835f0f3b4b4e87e1dd9ee9951c2e2c56ea48a6c4b4"></noscript>
+      
     
-  
-    <link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=b57b2d603b518947ad904169a5dab53ff267c8a3b5b9e5767a118e4906a861e4">
-    <title>
-      
-        Owen的博客
-      
-    </title>
     <meta name="description" itemprop="about" content="主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"/>
     <meta name="keywords" itemprop="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
     <meta name="author" itemprop="author" content="Owen Young"/>
@@ -38,7 +39,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6">
     <link rel="icon" type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
     <link rel="icon" type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa">
-    <link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json">
     <meta name="msapplication-TileColor" content="#f9f5e9"/>
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
     <meta name="theme-color" content="#f9f5e9"/>
@@ -58,6 +58,738 @@
     
       <link rel="alternate" type="application/atom+xml" title="Owen的博客 - RSS" href="https://www.owenyoung.com/atom.xml">
     
+    <style>@charset "UTF-8";
+
+html,
+body,
+p,
+dt,
+dd,
+figure,
+fieldset,
+blockquote,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* --reset end -- */
+/* 
+ #d2bf9e 
+ #fcfcfc 
+ #fffff8 
+ #41403e 
+ backanother #e6ddd0 
+ divider: rgb(226, 232, 240);
+ code back: edf0f3
+ rgb(249, 245, 233)
+/* rgba(0, 0, 0, 0.8)*/
+/*#fffef8
+c35
+f9f5e9
+ea4c89
+fffef8
+#f4ecd8;
+*/
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  --colors-text: #41403e;
+  --colors-muted: rgb(117, 117, 117);
+  --colors-primary: #cc3355;
+  --colors-divider: rgba(0, 0, 0, 0.06);
+  --colors-primary-light: rgba(234, 76, 137, 0.5);
+  --colors-code-background: rgba(0, 0, 0, 0.08);
+  --colors-background: #fffef8;
+  --colors-blue: #1ca9c9;
+  --colors-secondary: #14213d;
+  --colors-surface: rgba(0, 0, 0, 0.04);
+  --colors-background-surface: #f9f5e9;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  color: var(--colors-text);
+  background-color: var(--colors-background);
+}
+
+[lang]:lang(zh) {
+  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120rem;
+}
+
+h1,
+h2,
+h3 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  border-bottom: 1px solid var(--colors-divider);
+  position: relative;
+}
+
+.relative {
+  position: relative;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.mb-absolute {
+  margin-bottom: -0.8rem;
+}
+
+.no-border {
+  border: none;
+}
+
+h1::after,
+h2::after,
+h3::after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1.1px;
+  background-color: var(--colors-background);
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+pre {
+  color: rgb(57, 58, 52);
+  background-color: rgb(246, 248, 250);
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+code {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem;
+  background-color: var(--colors-code-background);
+}
+
+pre > code {
+  font-size: 0.9rem;
+  display: block;
+}
+
+pre code {
+  background: none;
+}
+
+code,
+pre > code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--colors-divider);
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0.8rem;
+}
+
+ul > details > summary {
+  margin-left: -1.4rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  padding: 1px 0 1px 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-left: 5px solid var(--colors-primary);
+}
+
+blockquote p {
+  margin: 0.5rem 0;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+button,
+input[type="submit"] {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+  transition: all 235ms ease-in-out 0s;
+  align-self: center;
+  background: 0 0;
+  border: 2px solid var(--colors-text);
+  color: var(--colors-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  font-family: Neucha, sans-serif;
+}
+
+button,
+input[type="submit"]:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+input[type="url"],
+input[type="text"],
+input[type="search"] {
+  /* -webkit-appearance: none; */
+  background: none;
+  border: 2px solid var(--colors-text);
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: var(--colors-text);
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+
+  /* -webkit-border-radius: 0px; */
+}
+.display-block {
+  display: block;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border: 2px solid var(--colors-blue);
+}
+
+#search-bar-input {
+  width: 80%;
+  min-width: 320px;
+}
+
+.meilisearch-autocomplete {
+  display: block !important;
+}
+.meilisearch-autocomplete .dsb-dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 320px;
+  width: 100%;
+}
+:focus:not(:focus-visible) {
+  border: 2px solid var(--colors-text);
+}
+:focus-visible {
+  border: 2px solid var(--colors-blue);
+}
+.no-underline {
+  text-decoration: none;
+}
+
+.meilisearch-autocomplete {
+  display: block;
+}
+a:link,
+a:visited {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  text-decoration: underline;
+  color: inherit;
+  text-decoration-thickness: 0.1rem;
+}
+
+:target {
+  scroll-margin-top: 56px;
+}
+
+.body-zone {
+  flex-direction: column;
+}
+
+.no-underline:link,
+.no-underline:visited,
+.sidebar a:link,
+.sidebar a:visited {
+  text-decoration: none;
+}
+.sidebar {
+  overflow-x: visible;
+}
+.no-underline:hover,
+a:hover {
+  color: var(--colors-primary);
+  text-decoration: underline;
+}
+
+.no-hover-underline:hover {
+  text-decoration: none;
+}
+
+.muted,
+a.muted,
+.muted:link,
+.muted:visited {
+  color: var(--colors-muted);
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.text-color,
+.text-color:link,
+.text-color:visited {
+  color: var(--colors-text);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-1-auto {
+  flex: 1 1 auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.list-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.border-muted {
+  border: 1px solid var(--colors-muted);
+}
+
+.rounded-full {
+  border-radius: 999rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-sm {
+  padding: 0.25rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.m-l-2 {
+  margin-left: 0.5rem;
+}
+
+.py {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.py-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.my {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.my-2 {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.px {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.px-2xl {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.pr-sm {
+  padding-right: 0.5rem;
+}
+
+.pl-sm {
+  padding-left: 0.5rem;
+}
+
+.pt {
+  padding-top: 1.4rem;
+}
+
+.pl {
+  padding-left: 1.4rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--colors-background);
+}
+
+.navbar-inner {
+  padding: 0.5rem 1.4rem;
+  display: flex;
+}
+
+.zola-anchor {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.zola-anchor:link,
+.zola-anchor:visited {
+  text-decoration: none;
+}
+
+.sidebar {
+  border-top: 1px solid var(--colors-divider);
+}
+
+li.inline {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.text-sm p {
+  font-size: 1rem;
+}
+
+.pb {
+  padding-bottom: 1.4rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.no-toc {
+  width: auto;
+}
+
+.sidebar ul {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+.sidebar li {
+  font-size: 1rem;
+}
+
+.nav-divider {
+  border-right: 2px solid var(--colors-divider);
+  height: 24px;
+  margin: 0 1.6rem 0 0.6rem;
+}
+
+.h-card {
+  display: flex;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.mb {
+  margin-bottom: 1.4rem;
+}
+
+.mb-li {
+  margin-bottom: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
+
+.mr {
+  margin-right: 1.4rem;
+}
+
+.mr-sm {
+  margin-right: 0.5rem;
+}
+
+.card {
+  /* background: #fff; */
+  background: var(--colors-surface);
+}
+
+.main-inner {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+@media (min-width: 48rem) {
+  .nav-divider {
+    border-top: 2px solid var(--colors-divider);
+    width: 24px;
+    margin: 0.6rem 0 1.6rem 0;
+    height: 0;
+    border-right: none;
+  }
+
+  .navbar {
+    height: 100%;
+    /*
+    border-right: 1px solid var(--colors-divider);
+ */
+  }
+
+  .navbar-inner {
+    padding: 1.4rem 0.875rem;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  #root {
+    display: flex;
+  }
+
+  .body-zone {
+    /* prevent overflow */
+    min-width: 0;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  .main-inner {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: var(--colors-background-surface);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;
+  }
+  .no-toc {
+    width: 20rem;
+  }
+
+  .main-toc {
+    display: none;
+  }
+
+  .body-zone {
+    flex-direction: row;
+  }
+
+  .main-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    position: sticky;
+    border-top: none;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    overflow-y: auto;
+    width: 20rem;
+  }
+
+  .sidebar ul {
+    border-left: 1px solid var(--colors-divider);
+    list-style: none;
+  }
+
+  .sidebar li {
+    font-size: 0.9rem;
+  }
+
+  .sidebar h2,
+  .sidebar h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    padding-bottom: 1rem;
+    border: none;
+  }
+}
+</style>
+    <link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json">
     
     
   </head>
@@ -119,183 +851,183 @@
       <main class="body-zone flex justify-between flex-1">
         <section class="main flex-1 py">
           <div class="main-inner"> <div class="index-page">
-    <section>
-      
-        <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="https://www.owenyoung.com/archive/">
-            88</a>
-          篇文章，大约 133731 字，最后更新时间：<a href="https://www.owenyoung.com/archive/">2022-07-17</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
-          <a href="https://www.owenyoung.com/now/">点击了解我现在在做的事情</a>
-        </p>
-      
-    </section>
-    <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
-    <h2><a href="/categories/notes/">最近更新的10篇笔记</a>：<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
-    </h2>
-    <section class="articles">
-      <ul class="root-ul">
+      <section>
         
-          <li>
+          <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="https://www.owenyoung.com/archive/">
+              88</a>
+            篇文章，大约 133731 字，最后更新时间：<a href="https://www.owenyoung.com/archive/">2022-07-17</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
+            <a href="https://www.owenyoung.com/now/">点击了解我现在在做的事情</a>
+          </p>
+        
+      </section>
+      <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+      <h2><a href="/categories/notes/">最近更新的10篇笔记</a>：<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
+      </h2>
+      <section class="articles">
+        <ul class="root-ul">
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;free&#x2F;">互联网上的免费资源汇总</a>
     <span class="muted text-sm">Updated on 2022-07-17</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;thoughts&#x2F;">短想法</a>
     <span class="muted text-sm">Updated on 2022-07-13</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;sources&#x2F;">探索互联网上高质量的内容</a>
     <span class="muted text-sm">Updated on 2022-07-13</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;javascript&#x2F;">收集 Javascript 相关的资源</a>
     <span class="muted text-sm">Updated on 2022-07-13</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books-guide&#x2F;">阅读指南</a>
     <span class="muted text-sm">Updated on 2022-07-03</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tools&#x2F;">最好用的工具集合</a>
     <span class="muted text-sm">Updated on 2022-06-30</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;articles&#x2F;">收集值得阅读的文章</a>
     <span class="muted text-sm">Updated on 2022-06-29</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;inspires&#x2F;">收集一些给人灵感的东西</a>
     <span class="muted text-sm">Updated on 2022-06-15</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jobs&#x2F;">工作相关的资源汇总</a>
     <span class="muted text-sm">Updated on 2022-06-11</span>
   </li>
-        
-        <details>
-          <summary>展开全部</summary>
           
-            <li>
+          <details>
+            <summary>展开全部</summary>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;">开发技巧收藏</a>
     <span class="muted text-sm">Updated on 2022-06-09</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;">值得收藏的截图</a>
     <span class="muted text-sm">Updated on 2022-06-08</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;music&#x2F;">音乐收藏</a>
     <span class="muted text-sm">Updated on 2022-06-08</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;feminism&#x2F;">女权主义</a>
     <span class="muted text-sm">Updated on 2022-06-07</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;quotes&#x2F;">收集发人深省的话</a>
     <span class="muted text-sm">Updated on 2022-06-06</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;you-should-know&#x2F;">你应该知道的一些冷知识</a>
     <span class="muted text-sm">Updated on 2022-06-06</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-resources&#x2F;">开发相关的资源汇总</a>
     <span class="muted text-sm">Updated on 2022-06-06</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;">电视剧笔记</a>
     <span class="muted text-sm">Updated on 2022-06-04</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;kids&#x2F;">关于丁克&#x2F;不生孩子</a>
     <span class="muted text-sm">Updated on 2022-05-11</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;communities&#x2F;">收集一些有意思的社区</a>
     <span class="muted text-sm">Updated on 2022-05-10</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;todos&#x2F;">Todos</a>
     <span class="muted text-sm">Updated on 2022-04-27</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;english-learning&#x2F;">英语学习相关资源</a>
     <span class="muted text-sm">Updated on 2022-04-15</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;satire-quotes&#x2F;">讽刺言论收集</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;">电影笔记</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;awesome-list&#x2F;">各种清单，列表，目录收集 - Notes List</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;stop&#x2F;">你应该立即停止做的事</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jokes&#x2F;">笑话收集</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;">生活技巧</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;answers&#x2F;">有意思的问题收集</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;rust&#x2F;">Rust相关的资源</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;investing&#x2F;">投资&#x2F;股票相关的资源分享</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-          
-            <li>
+            
+              <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;flutter&#x2F;">Flutter相关资源汇总</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-          
-        </details>
-      </ul>
-    </section>
-    <h2 id="wo-zai-yue-du-shi-yao">我在阅读什么？<a class="zola-anchor" href="#wo-zai-yue-du-shi-yao" aria-label="Anchor link for: wo-zai-yue-du-shi-yao">🔗</a></h2>
+            
+          </details>
+        </ul>
+      </section>
+      <h2 id="wo-zai-yue-du-shi-yao">我在阅读什么？<a class="zola-anchor" href="#wo-zai-yue-du-shi-yao" aria-label="Anchor link for: wo-zai-yue-du-shi-yao">🔗</a></h2>
 <p>我喜欢看 <a rel="noopener nofollow noreferrer" target="_blank" href="https://news.ycombinator.com/">HackerNews</a> 和一些英文博主的内容，但是阅读英文效率太低，所以我把对应的中文标题也放在旁边，加快阅读效率和提高英语，公开发布到：<a rel="noopener nofollow noreferrer" target="_blank" href="https://myfeed.owenyoung.com/"><strong>Owen’s Feed</strong></a></p>
 <h2 id="re-men-bi-ji">热门笔记<a class="zola-anchor" href="#re-men-bi-ji" aria-label="Anchor link for: re-men-bi-ji">🔗</a></h2>
 <ul>
@@ -310,11 +1042,11 @@
 <li><a href="https://www.owenyoung.com/english-learning/">英语学习相关资源</a></li>
 </ul>
 
-    <h2><a href="/blog/">最新</a>的5篇文章：<a href="#latest" id="latest" class="zola-anchor">🔗</a>
-    </h2>
-    <section class="articles h-feed hfeed">
-      
+      <h2><a href="/blog/">最新</a>的5篇文章：<a href="#latest" id="latest" class="zola-anchor">🔗</a>
+      </h2>
+      <section class="articles h-feed hfeed">
         
+          
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
@@ -349,8 +1081,8 @@
     </section> </div> <br> -->
     <hr class="w-1__2"></article>
   
-      
         
+          
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
@@ -387,8 +1119,8 @@
     </section> </div> <br> -->
     <hr class="w-1__2"></article>
   
-      
         
+          
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
@@ -422,8 +1154,8 @@
     </section> </div> <br> -->
     <hr class="w-1__2"></article>
   
-      
         
+          
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
@@ -454,8 +1186,8 @@
     </section> </div> <br> -->
     <hr class="w-1__2"></article>
   
-      
         
+          
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
@@ -487,15 +1219,15 @@
     </section> </div> <br> -->
     <hr class="w-1__2"></article>
   
+        
+        <h3 class="no-border"><a href="/blog/">点击查看所有文章🔥🔥</a></h3>
+      </section>
+      <hr class="w-full"/>
+      <h2>最新的几条<a href="/thoughts/">短想法</a>：<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </h2>
       
-      <h3 class="no-border"><a href="/blog/">点击查看所有文章🔥🔥</a></h3>
-    </section>
-    <hr class="w-full"/>
-    <h2>最新的几条<a href="/thoughts/">短想法</a>：<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-    </h2>
-    
-    <section class="articles">
-      <blockquote>
+      <section class="articles">
+        <blockquote>
 <p>最近把主力浏览器换成了<a rel="noopener nofollow noreferrer" target="_blank" href="https://librewolf.net/">librewolf</a>,火狐的 fork 版，基本上是一个比火狐更激进，更注重隐私的版本。删除了绝大多数火狐自己的东西比如 Pocket，和遥测等，以及一份默认隐私的配置。既可以充分享受火狐的插件，又能更隐私的使用它。我最喜欢火狐的功能是容器功能，这样就可以在一个窗口下，不同的 tab 使用不同的容器登录不同的小号，容器之间不共享 Cookie. 但是非主流浏览器的一大痛点就是缺失网页翻译功能，所以我还是把 Edge 作为备用浏览器，在需要翻译网页的时候切换过去。– 2022.07.13</p>
 </blockquote>
 <blockquote>
@@ -535,174 +1267,174 @@
 <p>大多数中国人没有宗教信仰在我看来是好事，我一直认为人们应该相信某种哲学，而不是某种宗教。所以我觉得要是中国能一条路走向自由，那么绝对会很快成功一个真正的超级大国。 – 2022.05.15</p>
 </blockquote>
 
-      <h3 class="no-border"><a href="/thoughts/">点击查看所有短想法🔥🔥</a></h3>
-    </section>
-    <hr class="w-full"/>
-    <h2><a href="/categories/notes/">全部笔记(更新时间排序)</a>
-      <a href="#all-notes" id="all-notes" class="zola-anchor">🔗</a>
-    </h2>
-    <section class="articles">
-      <ul class="root-ul">
-        
-          <li>
+        <h3 class="no-border"><a href="/thoughts/">点击查看所有短想法🔥🔥</a></h3>
+      </section>
+      <hr class="w-full"/>
+      <h2><a href="/categories/notes/">全部笔记(更新时间排序)</a>
+        <a href="#all-notes" id="all-notes" class="zola-anchor">🔗</a>
+      </h2>
+      <section class="articles">
+        <ul class="root-ul">
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;free&#x2F;">互联网上的免费资源汇总</a>
     <span class="muted text-sm">Updated on 2022-07-17</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;thoughts&#x2F;">短想法</a>
     <span class="muted text-sm">Updated on 2022-07-13</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;sources&#x2F;">探索互联网上高质量的内容</a>
     <span class="muted text-sm">Updated on 2022-07-13</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;javascript&#x2F;">收集 Javascript 相关的资源</a>
     <span class="muted text-sm">Updated on 2022-07-13</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books-guide&#x2F;">阅读指南</a>
     <span class="muted text-sm">Updated on 2022-07-03</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tools&#x2F;">最好用的工具集合</a>
     <span class="muted text-sm">Updated on 2022-06-30</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;articles&#x2F;">收集值得阅读的文章</a>
     <span class="muted text-sm">Updated on 2022-06-29</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;inspires&#x2F;">收集一些给人灵感的东西</a>
     <span class="muted text-sm">Updated on 2022-06-15</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jobs&#x2F;">工作相关的资源汇总</a>
     <span class="muted text-sm">Updated on 2022-06-11</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;">开发技巧收藏</a>
     <span class="muted text-sm">Updated on 2022-06-09</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;">值得收藏的截图</a>
     <span class="muted text-sm">Updated on 2022-06-08</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;music&#x2F;">音乐收藏</a>
     <span class="muted text-sm">Updated on 2022-06-08</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;feminism&#x2F;">女权主义</a>
     <span class="muted text-sm">Updated on 2022-06-07</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;quotes&#x2F;">收集发人深省的话</a>
     <span class="muted text-sm">Updated on 2022-06-06</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;you-should-know&#x2F;">你应该知道的一些冷知识</a>
     <span class="muted text-sm">Updated on 2022-06-06</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-resources&#x2F;">开发相关的资源汇总</a>
     <span class="muted text-sm">Updated on 2022-06-06</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;">电视剧笔记</a>
     <span class="muted text-sm">Updated on 2022-06-04</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;kids&#x2F;">关于丁克&#x2F;不生孩子</a>
     <span class="muted text-sm">Updated on 2022-05-11</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;communities&#x2F;">收集一些有意思的社区</a>
     <span class="muted text-sm">Updated on 2022-05-10</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;todos&#x2F;">Todos</a>
     <span class="muted text-sm">Updated on 2022-04-27</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;english-learning&#x2F;">英语学习相关资源</a>
     <span class="muted text-sm">Updated on 2022-04-15</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;satire-quotes&#x2F;">讽刺言论收集</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;">电影笔记</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;awesome-list&#x2F;">各种清单，列表，目录收集 - Notes List</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;stop&#x2F;">你应该立即停止做的事</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jokes&#x2F;">笑话收集</a>
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;">生活技巧</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;answers&#x2F;">有意思的问题收集</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;rust&#x2F;">Rust相关的资源</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;investing&#x2F;">投资&#x2F;股票相关的资源分享</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-        
-          <li>
+          
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;flutter&#x2F;">Flutter相关资源汇总</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
-        
-      </ul>
-    </section>
-  </div>
-
+          
+        </ul>
+      </section>
+    </div>
+  
             </div>
           </section>
           
@@ -1007,21 +1739,21 @@
   </section>
 <section id="bottom"></section>
 
-  
-    <script defer src="https://www.owenyoung.com/site/js/docs-searchbar.min.js?h=1c8dced776c63a17b391eeb9cf904360c8977f284b341877f33d4b38cc80f1fe"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        docsSearchBar({
-          hostUrl: 'https://meili.owenyoung.com',
-          apiKey: 'BeoB0dmTf1da9d234f9c4a109c1ef2e68b897b1609adb016f24394b46db242c464963ce1',
-          indexUid: 'owen-blog',
-          inputSelector: '#search-bar-input',
-          meilisearchOptions: {
-            limit: 10
-          },
-          debug: false, // Set debug to true if you want to inspect the dropdown
-        })
-      });
-    </script>
-  
-</body></html>
+    
+      <script defer src="https://www.owenyoung.com/site/js/docs-searchbar.min.js?h=1c8dced776c63a17b391eeb9cf904360c8977f284b341877f33d4b38cc80f1fe"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          docsSearchBar({
+            hostUrl: 'https://meili.owenyoung.com',
+            apiKey: 'BeoB0dmTf1da9d234f9c4a109c1ef2e68b897b1609adb016f24394b46db242c464963ce1',
+            indexUid: 'owen-blog',
+            inputSelector: '#search-bar-input',
+            meilisearchOptions: {
+              limit: 10
+            },
+            debug: false, // Set debug to true if you want to inspect the dropdown
+          })
+        });
+      </script>
+    
+  </body></html>
