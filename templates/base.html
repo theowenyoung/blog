@@ -9,7 +9,9 @@
 {%- if config.default_language != lang -%}
   {%- set_global file_lang_path = "." ~ lang -%}
 {%- endif -%}
-{%- set css = load_data(path="static/site/styles/site.css") -%}
+{%- if config.mode=="serve" -%}
+  {%- set_global css = load_data(path="static/site/styles/site.css") -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
   <head>
@@ -21,6 +23,9 @@
         {{ config.title }}
       {% endblock title %}
     </title>
+    {%- if config.mode!="serve" -%}
+      <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
+    {%- endif -%}
     <link rel="me" href="https://twitter.com/TheOwenYoung"/>
     <link rel="me" href="https://twitter.com/OwenYoungZh"/>
     <link rel="me" href="https://github.com/theowenyoung"/>
@@ -64,7 +69,9 @@
     {% block rss %}
       <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(path="atom.xml") }}">
     {% endblock rss %}
-    <style>{{css | safe}}</style>
+    {%- if config.mode=="serve" -%}
+      <style>{{css | safe}}</style>
+    {%- endif -%}
     <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}">
     {% if config.extra.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics }}"></script>
