@@ -460,7 +460,7 @@ a.muted,
 }
 
 .menu li:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }
 
 .m-l-2 {
@@ -591,7 +591,7 @@ li.inline {
 .nav-divider {
   border-right: 2px solid var(--colors-divider);
   height: 24px;
-  margin: 0 1.6rem 0 0.6rem;
+  margin: 0 1rem 0 0rem;
 }
 
 .h-card {
