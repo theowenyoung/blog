@@ -1,109 +1,111 @@
 {% extends "base.html" -%}
 {% block before_meta %}
   {% if config.extra.meilisearch_url %}
-    <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
-    {% endif %}
-  {% endblock before_meta %}
-  {% block sidebar_top %}{% endblock sidebar_top %}
-  {% block main -%}
-  {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
-  {% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse -%}
-  {% set total_word_count = 0 -%}
-  {% for page_item in all_section_pages.pages -%}
-    {% set_global total_word_count = total_word_count+page_item.word_count -%}
-  {% endfor -%}
-  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
-  {% set_global note_pages = [] -%}
-  {% for cat in all_categories.items -%}
-    {% if cat.name == "Notes" -%}
-      {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
-    {% endif -%}
-  {% endfor -%}
-  {% set_global latest_note_pages = note_pages | slice(end=9) -%}
-  <div class="index-page">
-    <section>
-      {% if config.default_language != lang %}
-        <p>I'm Owen Young, I've written
-          <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
-            {{ all_section_pages.pages | length }}</a>
-          articles so far, about {{ total_word_count }} words, last updated on
-          <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ all_pages_sort_by_date[0].updated }}</a>. I position
-            this as my personal digital garden, where all my notes, ideas are stored here. Cause I'm not a English native speaker,
-            so there are also
-          <a href="/">many posts/notes written by Chinese</a>,
-          <a href="{{ get_url(path="@/pages/now.md") }}">click to find out what I'm doing now</a>
-        </p>
-      {% else %}
-        <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
-            {{ all_section_pages.pages | length }}</a>
-          篇文章，大约 {{ total_word_count }} 字，最后更新时间：<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ all_pages_sort_by_date[0].updated }}</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
-          <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
-        </p>
+    <link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}"></noscript>
       {% endif %}
-    </section>
-    <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
-    <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
-    </h2>
-    <section class="articles">
-      <ul class="root-ul">
-        {% for page in latest_note_pages %}
-          <li>{{ macro::post_min(page=page) }}</li>
-        {% endfor %}
-        <details>
-          <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-          {% for page in note_pages | slice(start=9) %}
+    {% endblock before_meta %}
+    {% block sidebar_top %}{% endblock sidebar_top %}
+    {% block main -%}
+    {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
+    {% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse -%}
+    {% set total_word_count = 0 -%}
+    {% for page_item in all_section_pages.pages -%}
+      {% set_global total_word_count = total_word_count+page_item.word_count -%}
+    {% endfor -%}
+    {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+    {% set_global note_pages = [] -%}
+    {% for cat in all_categories.items -%}
+      {% if cat.name == "Notes" -%}
+        {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+      {% endif -%}
+    {% endfor -%}
+    {% set_global latest_note_pages = note_pages | slice(end=9) -%}
+    <div class="index-page">
+      <section>
+        {% if config.default_language != lang %}
+          <p>I'm Owen Young, I've written
+            <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
+              {{ all_section_pages.pages | length }}</a>
+            articles so far, about {{ total_word_count }} words, last updated on
+            <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ all_pages_sort_by_date[0].updated }}</a>. I position
+              this as my personal digital garden, where all my notes, ideas are stored here. Cause I'm not a English native speaker,
+              so there are also
+            <a href="/">many posts/notes written by Chinese</a>,
+            <a href="{{ get_url(path="@/pages/now.md") }}">click to find out what I'm doing now</a>
+          </p>
+        {% else %}
+          <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
+              {{ all_section_pages.pages | length }}</a>
+            篇文章，大约 {{ total_word_count }} 字，最后更新时间：<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ all_pages_sort_by_date[0].updated }}</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
+            <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
+          </p>
+        {% endif %}
+      </section>
+      <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+      <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
+      </h2>
+      <section class="articles">
+        <ul class="root-ul">
+          {% for page in latest_note_pages %}
             <li>{{ macro::post_min(page=page) }}</li>
           {% endfor %}
-        </details>
-      </ul>
-    </section>
-    {{ section.content | safe }}
-    <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
-    </h2>
-    <section class="articles h-feed hfeed">
-      {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
-      {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
-        {{ macro::post_max(page=page) }}
-      {% endfor %}
-      <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
-    </section>
-    <hr class="w-full"/>
-    <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-    </h2>
-    {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
-    <section class="articles">
-      {{ thoughts_page.summary | safe }}
-      <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
-    </section>
-    <hr class="w-full"/>
-    <h2>{{ trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe }}
-      <a href="#all-notes" id="all-notes" class="zola-anchor">🔗</a>
-    </h2>
-    <section class="articles">
-      <ul class="root-ul">
-        {% for page in note_pages %}
-          <li>{{ macro::post_min(page=page) }}</li>
+          <details>
+            <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+            {% for page in note_pages | slice(start=9) %}
+              <li>{{ macro::post_min(page=page) }}</li>
+            {% endfor %}
+          </details>
+        </ul>
+      </section>
+      {{ section.content | safe }}
+      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
+      </h2>
+      <section class="articles h-feed hfeed">
+        {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+        {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
+          {{ macro::post_max(page=page) }}
         {% endfor %}
-      </ul>
-    </section>
-  </div>
-{% endblock main -%}
-{% block before_body_end %}
-  {% if config.extra.meilisearch_url %}
-    <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        docsSearchBar({
-          hostUrl: '{{ config.extra.meilisearch_url | safe }}',
-          apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
-          indexUid: 'owen-blog',
-          inputSelector: '#search-bar-input',
-          meilisearchOptions: {
-            limit: 10
-          },
-          debug: false, // Set debug to true if you want to inspect the dropdown
-        })
-      });
-    </script>
-  {% endif %}
-{% endblock before_body_end %}
+        <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
+      </section>
+      <hr class="w-full"/>
+      <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </h2>
+      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
+      <section class="articles">
+        {{ thoughts_page.summary | safe }}
+        <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
+      </section>
+      <hr class="w-full"/>
+      <h2>{{ trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe }}
+        <a href="#all-notes" id="all-notes" class="zola-anchor">🔗</a>
+      </h2>
+      <section class="articles">
+        <ul class="root-ul">
+          {% for page in note_pages %}
+            <li>{{ macro::post_min(page=page) }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  {% endblock main -%}
+  {% block before_body_end %}
+    {% if config.extra.meilisearch_url %}
+      <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          docsSearchBar({
+            hostUrl: '{{ config.extra.meilisearch_url | safe }}',
+            apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
+            indexUid: 'owen-blog',
+            inputSelector: '#search-bar-input',
+            meilisearchOptions: {
+              limit: 10
+            },
+            debug: false, // Set debug to true if you want to inspect the dropdown
+          })
+        });
+      </script>
+    {% endif %}
+  {% endblock before_body_end %}

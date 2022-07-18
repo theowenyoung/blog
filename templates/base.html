@@ -1,31 +1,31 @@
-{% import "macros.html" as macro -%}
-{% set_global target_lang = "en" -%}
-{% set_global lang_prefix_path = "/" -%}
-{% if config.default_language != lang -%}
-  {% set_global target_lang = "zh" -%}
-  {% set_global lang_prefix_path = "/"~lang~"/" -%}
-{% endif -%}
-{% set_global file_lang_path = "" -%}
-{% if config.default_language != lang -%}
-  {% set_global file_lang_path = "." ~ lang -%}
-{% endif -%}
+{%- import "macros.html" as macro -%}
+{%- set_global target_lang = "en" -%}
+{%- set_global lang_prefix_path = "/" -%}
+{%- if config.default_language != lang -%}
+  {%- set_global target_lang = "zh" -%}
+  {%- set_global lang_prefix_path = "/"~lang~"/" -%}
+{%- endif -%}
+{%- set_global file_lang_path = "" -%}
+{%- if config.default_language != lang -%}
+  {%- set_global file_lang_path = "." ~ lang -%}
+{%- endif -%}
+{%- set css = load_data(path="static/site/styles/site.css") -%}
 <!DOCTYPE html>
 <html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    <link rel="me" href="https://twitter.com/TheOwenYoung"/>
-    <link rel="me" href="https://twitter.com/OwenYoungZh"/>
-    <link rel="me" href="https://github.com/theowenyoung"/>
-    <link rel="me" href="mailto:owen@owenyoung.com"/>
-    <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> {% block before_meta %}{% endblock before_meta %}
-    <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
     <title>
       {% block title %}
         {{ config.title }}
       {% endblock title %}
     </title>
+    <link rel="me" href="https://twitter.com/TheOwenYoung"/>
+    <link rel="me" href="https://twitter.com/OwenYoungZh"/>
+    <link rel="me" href="https://github.com/theowenyoung"/>
+    <link rel="me" href="mailto:owen@owenyoung.com"/>
+    <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> {% block before_meta %}{% endblock before_meta %}
     <meta name="description" itemprop="about" content="{% block description -%}{{ config.description }}{% endblock description -%}"/>
     <meta name="keywords" itemprop="keywords" content="{{ trans(key="keywords",lang=lang) }}"/>
     <meta name="author" itemprop="author" content="{{ config.extra.author }}"/>
@@ -45,7 +45,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="site/images/favicon-32x32.png",cachebust=true) }}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="site/images/favicon-16x16.png",cachebust=true) }}">
-    <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}">
     <meta name="msapplication-TileColor" content="{{ config.extra.theme_color }}"/>
     <meta name="msapplication-TileImage" content="{{ get_url(path="site/images/ms-icon-144x144.png",cachebust=true) }}">
     <meta name="theme-color" content="{{ config.extra.theme_color }}"/>
@@ -65,6 +64,8 @@
     {% block rss %}
       <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(path="atom.xml") }}">
     {% endblock rss %}
+    <style>{{css | safe}}</style>
+    <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}">
     {% if config.extra.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics }}"></script>
       <script>

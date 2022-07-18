@@ -14,6 +14,30 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.07.18 Inline Style
+
+For better performance, I have inline my pages css;
+
+```html
+{%- set css = load_data(path="static/site/styles/site.css") -%}
+<style>
+  {{css | safe}}
+</style>
+```
+
+Also, for better performance, docs search css will be loaded defer:
+
+```html
+<link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css",
+trailing_slash=false,cachebust=true) | safe }}" as="style"
+onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="{{
+  get_url(path="site/styles/docs-searchbar.min.css",
+  trailing_slash=false,cachebust=true) | safe }}"></noscript
+>
+```
+
 ## 2022.07.12 Change Surface Background Color
 
 Now it looks like this:
