@@ -20,5 +20,27 @@
     "mention-of": "https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/",
     "wm-property": "mention-of",
     "wm-private": false
+  },
+  "1435514": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Benedikt Iltisberger",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/36a1263189d90455520a74c8f48a0627280b9b513e2238fd285f06aa5ea732a3.jpg",
+      "url": "https://twitter.com/iltisberger"
+    },
+    "url": "https://twitter.com/iltisberger/status/1548688232610766851",
+    "published": "2022-07-17T15:17:02+00:00",
+    "wm-received": "2022-07-18T10:59:14Z",
+    "wm-id": 1435514,
+    "wm-source": "https://brid.gy/comment/twitter/TheOwenYoung/1548522529396244480/1548688232610766851",
+    "wm-target": "https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/",
+    "content": {
+      "html": "🤩 we promise to fix the he bugs you found asap. Hopefully on Monday. Thanks for your awesome tutorial.\n<a class=\"u-mention\" href=\"http://actionsflow.github.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/TheOwenYoung\"></a>\n<a class=\"u-mention\" href=\"https://www.buzzing.cc/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/\"></a>\n<a class=\"u-mention\" href=\"https://www.trackawesomelist.com/\"></a>",
+      "text": "🤩 we promise to fix the he bugs you found asap. Hopefully on Monday. Thanks for your awesome tutorial."
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
