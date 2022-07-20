@@ -309,7 +309,7 @@ input[type="search"]:focus {
 
 #search-bar-input {
   width: 80%;
-  min-width: 320px;
+  min-width: 260px;
 }
 
 .meilisearch-autocomplete {
@@ -318,7 +318,7 @@ input[type="search"]:focus {
 .meilisearch-autocomplete .dsb-dropdown-menu {
   max-height: 400px;
   overflow-y: auto;
-  min-width: 320px;
+  min-width: 300px;
   width: 100%;
 }
 :focus:not(:focus-visible) {
@@ -333,6 +333,9 @@ input[type="search"]:focus {
 
 .meilisearch-autocomplete {
   display: block;
+}
+a {
+  word-break: break-all;
 }
 a:link,
 a:visited {
