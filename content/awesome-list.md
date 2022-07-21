@@ -1,7 +1,7 @@
 ---
 title: 各种清单，列表，目录收集 - Notes List
 date: 2021-03-26
-updated: 2022-03-26
+updated: 2022-07-21
 taxonomies:
   categories:
     - Notes
@@ -86,3 +86,7 @@ taxonomies:
 ## Emails
 
 - [Inbox World](https://inboxworld.io/) - 订阅推荐
+
+## Search
+
+- [Hacker Search Engines](https://github.com/edoardottt/awesome-hacker-search-engines)
