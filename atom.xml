@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-18T00:00:00+00:00</updated>
+	<updated>2022-07-21T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>通过创建 dotfiles, 我终于拥有了一个 web3 身份</title>
@@ -3355,6 +3355,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=31928736&quot;&gt;what’s your cheatsheet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;online-test-run-code&quot;&gt;Online Test&#x2F;Run code&lt;a class=&quot;zola-anchor&quot; href=&quot;#online-test-run-code&quot; aria-label=&quot;Anchor link for: online-test-run-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;replit.com&quot;&gt;Replit&lt;&#x2F;a&gt; - 可以在线运行示例代码的网站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
@@ -6524,7 +6528,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>各种清单，列表，目录收集 - Notes List</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-03-26T00:00:00+00:00</updated>
+		<updated>2022-07-21T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
 		<id>https://www.owenyoung.com/awesome-list/</id>
 		<content type="html">&lt;p&gt;收集各种清单，列表，目录。&lt;&#x2F;p&gt;
@@ -6604,6 +6608,10 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;emails&quot;&gt;Emails&lt;a class=&quot;zola-anchor&quot; href=&quot;#emails&quot; aria-label=&quot;Anchor link for: emails&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;inboxworld.io&#x2F;&quot;&gt;Inbox World&lt;&#x2F;a&gt; - 订阅推荐&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;search&quot;&gt;Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#search&quot; aria-label=&quot;Anchor link for: search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;edoardottt&#x2F;awesome-hacker-search-engines&quot;&gt;Hacker Search Engines&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
