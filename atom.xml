@@ -5279,7 +5279,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-06-30T00:00:00+00:00</updated>
+		<updated>2022-07-23T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -5579,6 +5579,16 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;cheatsheets&quot;&gt;Cheatsheets&lt;a class=&quot;zola-anchor&quot; href=&quot;#cheatsheets&quot; aria-label=&quot;Anchor link for: cheatsheets&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;devhints.io&#x2F;&quot;&gt;Devhints Cheatsheets&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;xaay&quot;&gt;XaaY&lt;a class=&quot;zola-anchor&quot; href=&quot;#xaay&quot; aria-label=&quot;Anchor link for: xaay&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;X as a Y services.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pulumi&#x2F;pulumi&quot;&gt;Pulumi&lt;&#x2F;a&gt; - 通用的基础设施即代码，用 js 或者 go 或者 python 编写部署在各种云(AWS,Google Cloud, Azure, Kubenetes)上的应用&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dhall-lang.org&#x2F;&quot;&gt;Dhall&lt;&#x2F;a&gt; - 可维护的配置文件, 配置语言
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jsonnet.org&#x2F;&quot;&gt;JSONNet&lt;&#x2F;a&gt; - JSON 的简单扩展,可配置&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -6902,7 +6912,7 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 	<entry xml:lang="zh">
 		<title>收集发人深省的话</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-07-18T00:00:00+00:00</updated>
+		<updated>2022-07-23T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/quotes/</id>
 		<content type="html">&lt;p&gt;收集看到的一些有意思的话。值得高亮再次回味的话。&lt;&#x2F;p&gt;
@@ -6951,6 +6961,10 @@ This &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot
 &lt;p&gt;读完一本新书是一条好规则，在你读完一本旧书之前，永远不要让自己再读一本新书。 ― C.S.刘易斯&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;h2 id=&quot;wei-fen-lei&quot;&gt;未分类&lt;a class=&quot;zola-anchor&quot; href=&quot;#wei-fen-lei&quot; aria-label=&quot;Anchor link for: wei-fen-lei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;基于 Yaml 的编程语言是由那些想知道 lisp 是什么但不知道的人构建的。 – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=26275343&quot;&gt;hacker news 网友&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;被戳到。。刚发明了一种 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yamlscript&#x2F;yamlscript&quot;&gt;yamlscript&lt;&#x2F;a&gt; 语言的编程。然后去学习了一下&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;learnxinyminutes.com&#x2F;docs&#x2F;common-lisp&#x2F;&quot;&gt;Common Lisp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“小孩子都是这样。如果父母没在一旁看着，他们就觉得做的事情没意思。毫无疑问” – 高堡奇人&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
