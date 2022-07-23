@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-06-30
+updated: 2022-07-23
 taxonomies:
   categories:
     - Notes
@@ -299,3 +299,11 @@ taxonomies:
 ## Cheatsheets
 
 - [Devhints Cheatsheets](https://devhints.io/)
+
+## XaaY
+
+X as a Y services.
+
+- [Pulumi](https://github.com/pulumi/pulumi) - 通用的基础设施即代码，用 js 或者 go 或者 python 编写部署在各种云(AWS,Google Cloud, Azure, Kubenetes)上的应用
+- [Dhall](https://dhall-lang.org/) - 可维护的配置文件, 配置语言
+  - [JSONNet](https://jsonnet.org/) - JSON 的简单扩展,可配置

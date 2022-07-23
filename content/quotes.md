@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2022-07-18
+updated: 2022-07-23
 taxonomies:
   categories:
     - Notes
@@ -46,6 +46,10 @@ taxonomies:
 > 读完一本新书是一条好规则，在你读完一本旧书之前，永远不要让自己再读一本新书。 ― C.S.刘易斯
 
 ## 未分类
+
+> 基于 Yaml 的编程语言是由那些想知道 lisp 是什么但不知道的人构建的。 -- [hacker news 网友](https://news.ycombinator.com/item?id=26275343)
+>
+> 被戳到。。刚发明了一种 [yamlscript](https://github.com/yamlscript/yamlscript) 语言的编程。然后去学习了一下[Common Lisp](https://learnxinyminutes.com/docs/common-lisp/)
 
 > “小孩子都是这样。如果父母没在一旁看着，他们就觉得做的事情没意思。毫无疑问” -- 高堡奇人
 
