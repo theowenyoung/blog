@@ -1,11 +1,21 @@
 {% extends "base.html" -%}
 {% block before_meta %}
   {% if config.extra.meilisearch_url %}
+  {%- if config.mode=="Build" -%}
+  {%- set_global meilicss = load_data(path="static/site/styles/docs-searchbar.min.css") -%}
+  {%- else -%}
     <link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript>
-        <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}"></noscript>
-      {% endif %}
+    <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}"></noscript>
+    {%- endif -%}
+    {% endif %}
     {% endblock before_meta %}
+    {% block post_meta %}
+    {%- if config.mode=="Build" -%}
+      <style>{{meilicss | safe}}</style>
+    {%- endif -%}
+    {% endblock post_meta %}
+
     {% block sidebar_top %}{% endblock sidebar_top %}
     {% block main -%}
     {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}

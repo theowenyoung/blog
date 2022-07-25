@@ -9,7 +9,7 @@
 {%- if config.default_language != lang -%}
   {%- set_global file_lang_path = "." ~ lang -%}
 {%- endif -%}
-{%- if config.mode=="serve" -%}
+{%- if config.mode=="Build" -%}
   {%- set_global css = load_data(path="static/site/styles/site.css") -%}
 {%- endif -%}
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
         {{ config.title }}
       {% endblock title %}
     </title>
-    {%- if config.mode!="serve" -%}
+    {%- if config.mode!="Build" -%}
       <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
     {%- endif -%}
     <link rel="me" href="https://twitter.com/TheOwenYoung"/>
@@ -69,10 +69,10 @@
     {% block rss %}
       <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(path="atom.xml") }}">
     {% endblock rss %}
-    {%- if config.mode=="serve" -%}
+    {%- if config.mode=="Build" -%}
       <style>{{css | safe}}</style>
     {%- endif -%}
-    <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}">
+    <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}" >
     {% if config.extra.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics }}"></script>
       <script>
