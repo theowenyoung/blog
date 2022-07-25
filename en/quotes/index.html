@@ -8,7 +8,7 @@
       
   Quotes - Owen Young&#x27;s Blog
 
-    </title><link rel="stylesheet" href="https://www.owenyoung.com/site/styles/site.css?h=5a347a83e800fb4321a73e15c5ac7c985db8aafd4b3f254b2261fc55333fc6c8"><link rel="me" href="https://twitter.com/TheOwenYoung"/>
+    </title><link rel="me" href="https://twitter.com/TheOwenYoung"/>
     <link rel="me" href="https://twitter.com/OwenYoungZh"/>
     <link rel="me" href="https://github.com/theowenyoung"/>
     <link rel="me" href="mailto:owen@owenyoung.com"/>
@@ -70,7 +70,880 @@
     
     
       <link rel="alternate" type="application/atom+xml" title="Owen Young&#x27;s Blog - RSS" href="https://www.owenyoung.com/atom.xml">
-    <link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json">
+    <style>@charset "UTF-8";
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  unicode-range: U+0025-00FF;
+}
+html,
+body,
+p,
+dt,
+dd,
+figure,
+fieldset,
+blockquote,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* --reset end -- */
+/* 
+ #d2bf9e 
+ #fcfcfc 
+ #fffff8 
+ #41403e 
+ backanother #e6ddd0 
+ divider: rgb(226, 232, 240);
+ code back: edf0f3
+ rgb(249, 245, 233)
+/* rgba(0, 0, 0, 0.8)*/
+/*#fffef8
+c35
+f9f5e9
+ea4c89
+fffef8
+#f4ecd8;
+*/
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  --colors-text: #41403e;
+  --colors-muted: rgb(117, 117, 117);
+  --colors-primary: #cc3355;
+  --colors-divider: rgba(0, 0, 0, 0.06);
+  --colors-primary-light: rgba(234, 76, 137, 0.5);
+  --colors-code-background: rgba(0, 0, 0, 0.08);
+  --colors-background: #fffef8;
+  --colors-blue: #1ca9c9;
+  --colors-secondary: #14213d;
+  --colors-surface: rgba(0, 0, 0, 0.04);
+  --colors-background-surface: #f9f5e9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
+    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", Palatino, sans-serif;
+}
+
+body {
+  color: var(--colors-text);
+  background-color: var(--colors-background);
+}
+
+[lang]:lang(zh) {
+  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+[lang]:lang(en) {
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+}
+
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120rem;
+}
+
+h1,
+h2,
+h3 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  border-bottom: 1px solid var(--colors-divider);
+  position: relative;
+}
+
+.relative {
+  position: relative;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.mb-absolute {
+  margin-bottom: -0.8rem;
+}
+
+.no-border {
+  border: none;
+}
+
+.tweet-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--colors-divider);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  background: white;
+}
+
+.tweet-content {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-size: 1rem;
+  white-space: pre-line;
+}
+.tweet-box .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.tweet-box .overlay:hover {
+  background-color: #efefef;
+}
+.tweet-box .inner {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tweet-box .inner a {
+  pointer-events: all;
+  position: relative;
+}
+p.tweet-content {
+  line-height: 2;
+  padding-right: 1.5rem;
+}
+.tweet-content a:link,
+.tweet-content a:visited {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgb(27, 149, 224);
+}
+.tweet-avatar-wrapper {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  width: 48px;
+  min-width: 48px;
+  border-radius: 9999px;
+}
+.tweet-icon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+.tweet-icon-svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(27, 149, 224);
+  fill: currentcolor;
+}
+
+h1::after,
+h2::after,
+h3::after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1.1px;
+  background-color: var(--colors-background);
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+pre {
+  color: rgb(57, 58, 52);
+  background-color: rgb(246, 248, 250);
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+code {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem;
+  background-color: var(--colors-code-background);
+}
+
+pre > code {
+  font-size: 0.9rem;
+  display: block;
+}
+
+pre code {
+  background: none;
+}
+
+code,
+pre > code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--colors-divider);
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0.8rem;
+}
+
+ul > details > summary {
+  margin-left: -1.4rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  padding: 1px 0 1px 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-left: 5px solid var(--colors-primary);
+}
+
+blockquote p {
+  margin: 0.5rem 0;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+p:lang(en),
+dl:lang(en),
+ol:lang(en),
+ul:lang(en) {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+button,
+input[type="submit"] {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+  transition: all 235ms ease-in-out 0s;
+  align-self: center;
+  background: 0 0;
+  border: 2px solid var(--colors-text);
+  color: var(--colors-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  font-family: Neucha, sans-serif;
+}
+
+button,
+input[type="submit"]:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+input[type="url"],
+input[type="text"],
+input[type="search"] {
+  /* -webkit-appearance: none; */
+  background: none;
+  border: 2px solid var(--colors-text);
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: var(--colors-text);
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+
+  /* -webkit-border-radius: 0px; */
+}
+.display-block {
+  display: block;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border: 2px solid var(--colors-blue);
+}
+
+#search-bar-input {
+  width: 80%;
+  min-width: 260px;
+}
+
+.meilisearch-autocomplete {
+  display: block !important;
+}
+.meilisearch-autocomplete .dsb-dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 300px;
+  width: 100%;
+}
+input:focus:not(:focus-visible) {
+  border: 2px solid var(--colors-text);
+}
+input:focus-visible {
+  border: 2px solid var(--colors-blue);
+}
+.no-underline {
+  text-decoration: none;
+}
+
+.meilisearch-autocomplete {
+  display: block;
+}
+a {
+  word-break: break-all;
+}
+a:link,
+a:visited {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  text-decoration: underline;
+  color: inherit;
+  text-decoration-thickness: 0.1rem;
+}
+
+:target {
+  scroll-margin-top: 56px;
+}
+
+.body-zone {
+  flex-direction: column;
+}
+
+.no-underline:link,
+.no-underline:visited,
+.sidebar a:link,
+.sidebar a:visited {
+  text-decoration: none;
+}
+.sidebar {
+  overflow-x: visible;
+}
+.no-underline:hover,
+a:hover {
+  color: var(--colors-primary);
+  text-decoration: underline;
+}
+
+.no-hover-underline:hover {
+  text-decoration: none;
+}
+
+.muted,
+a.muted,
+.muted:link,
+.muted:visited {
+  color: var(--colors-muted);
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.text-color,
+.text-color:link,
+.text-color:visited {
+  color: var(--colors-text);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-1-auto {
+  flex: 1 1 auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.list-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.border-muted {
+  border: 1px solid var(--colors-muted);
+}
+
+.rounded-full {
+  border-radius: 999rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-sm {
+  padding: 0.25rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
+.m-l-2 {
+  margin-left: 0.5rem;
+}
+
+.py {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.py-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.my {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.my-2 {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.px {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.px-2xl {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.pr-sm {
+  padding-right: 0.5rem;
+}
+
+.pl-sm {
+  padding-left: 0.5rem;
+}
+
+.pt {
+  padding-top: 1.4rem;
+}
+
+.pl {
+  padding-left: 1.4rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--colors-background);
+}
+
+.navbar-inner {
+  padding: 0.5rem 1.4rem;
+  display: flex;
+}
+
+.zola-anchor {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.zola-anchor:link,
+.zola-anchor:visited {
+  text-decoration: none;
+}
+
+.sidebar {
+  border-top: 1px solid var(--colors-divider);
+}
+
+li.inline {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.text-sm p {
+  font-size: 1rem;
+}
+
+.pb {
+  padding-bottom: 1.4rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.no-toc {
+  width: auto;
+}
+
+.sidebar ul {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+.sidebar li {
+  font-size: 1rem;
+}
+
+.nav-divider {
+  border-right: 2px solid var(--colors-divider);
+  height: 24px;
+  margin: 0 1rem 0 0rem;
+}
+
+.h-card {
+  display: flex;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.mb {
+  margin-bottom: 1.4rem;
+}
+
+.mb-li {
+  margin-bottom: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
+
+.mr {
+  margin-right: 1.4rem;
+}
+
+.mr-sm {
+  margin-right: 0.5rem;
+}
+
+.card {
+  /* background: #fff; */
+  background: var(--colors-surface);
+}
+
+.main-inner {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+@media (min-width: 48rem) {
+  .nav-divider {
+    border-top: 2px solid var(--colors-divider);
+    width: 24px;
+    margin: 0.6rem 0 1.6rem 0;
+    height: 0;
+    border-right: none;
+  }
+
+  .navbar {
+    height: 100%;
+    /*
+    border-right: 1px solid var(--colors-divider);
+ */
+  }
+
+  .navbar-inner {
+    padding: 1.4rem 0.875rem;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  #root {
+    display: flex;
+  }
+
+  .body-zone {
+    /* prevent overflow */
+    min-width: 0;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  .main-inner {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: var(--colors-background-surface);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;
+  }
+  .no-toc {
+    width: 20rem;
+  }
+
+  .main-toc {
+    display: none;
+  }
+
+  .body-zone {
+    flex-direction: row;
+  }
+
+  .main-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    position: sticky;
+    border-top: none;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    overflow-y: auto;
+    width: 20rem;
+  }
+
+  .sidebar ul {
+    border-left: 1px solid var(--colors-divider);
+    list-style: none;
+  }
+
+  .sidebar li {
+    font-size: 0.9rem;
+  }
+
+  .sidebar h2,
+  .sidebar h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    padding-bottom: 1rem;
+    border: none;
+  }
+}
+</style><link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json" >
     
     <meta name="title" content="Quotes">
   <style>
