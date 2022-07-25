@@ -21,7 +21,7 @@
     {% elif page.description -%}
       <p class="p-summary entry-summary">{{ page.description }}</p>
     {% endif -%}
-    <section class="muted text-sm">
+    <section class="muted text-sm pb">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">
         <time class="dt-published published" datetime="{{ page.date }}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
       </a>
