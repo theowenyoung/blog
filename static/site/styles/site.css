@@ -461,10 +461,10 @@ input[type="search"]:focus {
   min-width: 300px;
   width: 100%;
 }
-:focus:not(:focus-visible) {
+input:focus:not(:focus-visible) {
   border: 2px solid var(--colors-text);
 }
-:focus-visible {
+input:focus-visible {
   border: 2px solid var(--colors-blue);
 }
 .no-underline {
