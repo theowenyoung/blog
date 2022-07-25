@@ -4,7 +4,7 @@ date: 2021-03-26
 updated: 2021-12-26
 taxonomies:
   categories:
-    - Random
+    - Journal
   tags:
     - Journal
 ---

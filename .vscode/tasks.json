@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "daily",
+      "type": "shell",
+      "command": "make daily",
+      "presentation": {
+        "reveal": "silent",
+        "close": true
+      }
+    },
+    {
+      "label": "random",
+      "type": "shell",
+      "command": "./scripts/random.sh ${input:filename}",
+      "presentation": {
+        "reveal": "silent",
+        "close": true
+      }
+    },
+    {
+      "label": "notes",
+      "type": "shell",
+      "command": "./scripts/notes.sh ${input:filename}",
+      "presentation": {
+        "reveal": "silent",
+        "close": true
+      }
+    },
+    {
+      "label": "book",
+      "type": "shell",
+      "command": "./scripts/book.sh ${input:filename}",
+      "presentation": {
+        "reveal": "silent",
+        "close": true
+      }
+    }
+
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "filename",
+      "description": "You article path.",
+      "default": "",
+    }
+  ]
+}

@@ -4,7 +4,7 @@ date: 2022-03-26
 updated: 2022-07-09
 taxonomies:
   categories:
-    - Random
+    - Journal
   tags:
     - Journal
 ---
@@ -16,6 +16,7 @@ taxonomies:
 ## Reading List
 
 > 这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。
+
 
 - [我如何为我的博客构建无服务器搜索](https://www.morling.dev/blog/how-i-built-a-serverless-search-for-my-blog/)
 - [荷兰如何养活世界](https://news.ycombinator.com/from?site=nationalgeographic.com)

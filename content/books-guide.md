@@ -1,7 +1,7 @@
 ---
 title: 阅读指南
 date: 2022-03-29
-updated: 2022-07-03
+updated: 2022-07-23
 taxonomies:
   categories:
     - Notes
@@ -33,6 +33,7 @@ taxonomies:
 - [史上最佳商业书籍排行](https://hacktheentrepreneur.com/best-business-books/)
 - [适合小孩的书 6-14 岁](https://www.bookvine.io/)
 - [牛津：所有事情的简短介绍](https://www.goodreads.com/list/show/43502.The_Oxford_Very_Short_Introductions_Series)
+- [hn ask: 你正在读什么书？](https://news.ycombinator.com/item?id=32196791)
 
 ## 资源
 
@@ -50,7 +51,7 @@ taxonomies:
 - [鸠摩电子书搜索](https://www.jiumodiary.com/)
 - [知识库电子书中文](https://book.zhishikoo.com/)
 - [elib 中文](https://elib.cc/)
-- [ahhhfs分享](https://www.ahhhhfs.com/?cat=&s=%E7%94%B5%E5%AD%90%E4%B9%A6)
+- [ahhhfs 分享](https://www.ahhhhfs.com/?cat=&s=%E7%94%B5%E5%AD%90%E4%B9%A6)
 - [网友整理](https://tyi45di4ct.jiandaoyun.com/dash/5e7d915c6c56d8000674a8b8)
 - [书伴整理](https://bookfere.com/ebook)
 

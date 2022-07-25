@@ -20,3 +20,19 @@ dev-webmention:
 .Phony: install
 install:
 	./scripts/install_zola.sh
+
+.Phony: daily
+daily:
+	./scripts/daily.sh
+
+.Phony: random
+random:
+	./scripts/random.sh $(name)
+
+.Phony: book
+book:
+	./scripts/book.sh $(name)
+
+.Phony: notes
+notes:
+	./scripts/notes.sh $(name)
