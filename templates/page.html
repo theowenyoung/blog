@@ -116,29 +116,13 @@
       {{ page.content | safe }}
     </article>
     {% if config.extra.edit_url_prefix %}
-      <section>
+      <section class="pb">
         <hr>
           <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">📝 {{ trans(key="label_edit",lang=lang) }}</a>
         </section>
       {% endif %}
+      {{ macro::backlink(pages=page.backlinks) }}
       {{ macro::webmentions(backlinks=page.backlinks) }}
-      {% if config.extra.disqus and page.extra.comments %}
-        <div id="disqus">
-          <div id="disqus_thread"></div>
-          <script>
-            (function () { // DON'T EDIT BELOW THIS LINE
-              var d = document,
-                s = d.createElement('script');
-              s.src = 'https://           {{ config.extra.disqus }}.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', + new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-          </noscript>
-        </div>
-      {% endif %}
     </section>
   </section>
 </div>{% endblock main %}{% block sidebar %}

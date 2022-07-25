@@ -146,6 +146,80 @@ h3 {
   border: none;
 }
 
+.tweet-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--colors-divider);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  background: white;
+}
+
+.tweet-content {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  font-size: 1rem;
+  white-space: pre-line;
+}
+.tweet-box .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.tweet-box .overlay:hover {
+  background-color: #efefef;
+}
+.tweet-box .inner {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tweet-box .inner a {
+  pointer-events: all;
+  position: relative;
+}
+p.tweet-content {
+  line-height: 2;
+  padding-right: 1.5rem;
+}
+.tweet-content a:link,
+.tweet-content a:visited {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgb(27, 149, 224);
+}
+.tweet-avatar-wrapper {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  width: 48px;
+  min-width: 48px;
+  border-radius: 9999px;
+}
+.tweet-icon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+.tweet-icon-svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(27, 149, 224);
+  fill: currentcolor;
+}
+
 h1::after,
 h2::after,
 h3::after {

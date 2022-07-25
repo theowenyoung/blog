@@ -1,7 +1,7 @@
 ---
 title: ChangeLog
 date: 2022-06-13T23:15:27+08:00
-updated: 2022-06-13
+updated: 2022-07-25
 taxonomies:
   categories:
     - About
@@ -13,6 +13,12 @@ taxonomies:
 All Updates about this blog.
 
 <!-- more -->
+
+## 2022.07.25 Support Tweet Reply
+
+Show tweet reply:
+
+![tweet](./tweet-reply.png)
 
 ## 2022.07.18 Inline Style
 

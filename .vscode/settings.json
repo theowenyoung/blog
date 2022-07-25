@@ -26,9 +26,6 @@
     "prettier.singleQuote": false,
     "deno.enable": true,
     "deno.lint": true,
-    "deno.unstable": true,
-    "files.associations": {
-      "**/templates/**/*.html": "njk" 
-    },
+    "deno.unstable": true
     
 }
