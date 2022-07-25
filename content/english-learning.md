@@ -1,7 +1,7 @@
 ---
 title: 英语学习相关资源
 date: 2021-03-25
-updated: 2022-04-15
+updated: 2022-07-25
 taxonomies:
   categories:
     - Notes
@@ -43,6 +43,7 @@ taxonomies:
   - [Deepl 翻译](https://www.deepl.com/en/translator) - 相对最准确的翻译
   - [腾讯翻译](https://fanyi.qq.com/) - 也比较准确
 - [English Vocabulary game](https://jklm.fun/) - 英文游戏，拼单词
+- [语言学习之路](https://languageroadmap.com/) - 找到对应语言中有趣的内容去学习
 
 ## 资源
 

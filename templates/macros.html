@@ -209,7 +209,13 @@
                       <span>:</span>
                     </div>
                     <div class="p-content p-name">
-                      {{ item.content.html | safe }}
+                      {%- if item.url is starting_with("https://twitter.com/") -%}
+                        <p>
+                        {%- endif -%}
+                        {{ item.content.html | safe }}
+                        {%- if item.url is starting_with("https://twitter.com/") -%}
+                        </p>
+                      {%- endif -%}
                     </div>
                   </li>
                 {% endif %}
@@ -229,7 +235,7 @@
                         <p>Have you written a
                           <a href="https://indieweb.org/responses">response</a>
                           to this? Let me know the URL, Or, you can send your response
-                          via
+                                                    via
                           <a href="mailto:owen@owenyoung.com?subject={{ " Reply: " ~ title | urlencode }}">mail
                           </a>
                           <code>owen@owenyoung.com</code>
