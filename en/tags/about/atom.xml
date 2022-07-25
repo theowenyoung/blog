@@ -5,16 +5,19 @@
 	<link href="https://www.owenyoung.com/en/tags/about/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-13T23:15:27+08:00</updated>
+	<updated>2022-07-25T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/en/tags/about/atom.xml</id>
 	<entry xml:lang="en">
 		<title>ChangeLog</title>
 		<published>2022-06-13T23:15:27+08:00</published>
-		<updated>2022-06-13T00:00:00+00:00</updated>
+		<updated>2022-07-25T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/changelog/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/changelog/</id>
 		<content type="html">&lt;p&gt;All Updates about this blog.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-18-inline-style&quot;&gt;2022.07.18 Inline Style&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-18-inline-style&quot; aria-label=&quot;Anchor link for: 2022-07-18-inline-style&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;2022-07-25-support-tweet-reply&quot;&gt;2022.07.25 Support Tweet Reply&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-25-support-tweet-reply&quot; aria-label=&quot;Anchor link for: 2022-07-25-support-tweet-reply&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Show tweet reply:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;.&#x2F;tweet-reply.png&quot; alt=&quot;tweet&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2022-07-18-inline-style&quot;&gt;2022.07.18 Inline Style&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-07-18-inline-style&quot; aria-label=&quot;Anchor link for: 2022-07-18-inline-style&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;For better performance, I have inline my pages css;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span&gt;{%- set css = load_data(path=&amp;quot;static&#x2F;site&#x2F;styles&#x2F;site.css&amp;quot;) -%}
 &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
