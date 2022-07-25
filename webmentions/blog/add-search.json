@@ -1460,5 +1460,30 @@
     "in-reply-to": "https://www.owenyoung.com/blog/add-search/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1440682": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1546642850414137345",
+    "published": "2022-07-11T23:49:25+00:00",
+    "wm-received": "2022-07-25T08:33:09Z",
+    "wm-id": 1440682,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1546642850414137345",
+    "wm-target": "https://www.owenyoung.com/blog/add-search/",
+    "photo": [
+      "https://pbs.twimg.com/media/FXbHcNXUcAEL4V7.jpg"
+    ],
+    "content": {
+      "html": "研究了几个现有的静态博客搜索方案之后，最终用 Meilisearch 给我的 Zola 博客添加了搜索功能，但是还是更喜欢 <a href=\"https://github.com/wilsonzlin/edgesearch\">github.com/wilsonzlin/edg…</a> 的方案，把WASM搜索部署到Clouflare Workers，只是牵引力不够。 <a href=\"https://www.owenyoung.com/blog/add-search/\">owenyoung.com/blog/add-searc…</a>",
+      "text": "研究了几个现有的静态博客搜索方案之后，最终用 Meilisearch 给我的 Zola 博客添加了搜索功能，但是还是更喜欢 github.com/wilsonzlin/edg… 的方案，把WASM搜索部署到Clouflare Workers，只是牵引力不够。 owenyoung.com/blog/add-searc…"
+    },
+    "mention-of": "https://www.owenyoung.com/blog/add-search/",
+    "wm-property": "mention-of",
+    "wm-private": false
   }
 }
