@@ -2,7 +2,7 @@
 
 The blog is built with [Zola](https://www.getzola.org/), for my personal need, I've use [my forked version](https://github.com/theowenyoung/zola) to build it.
 
-The only change is that I use `/content/xxx.md` instead of `@/xxx.md` to refer the internal markdown files, so that the editor can also go to the linked file.
+> The only change is that I use `/content/xxx.md` instead of `@/xxx.md` to refer the internal markdown files, so that the editor can also go to the linked file.
 
 > [Related docments](https://www.getzola.org/documentation/content/linking/)
 >
@@ -32,7 +32,11 @@ make build
 
 ### Write
 
-I use [Foam Lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode) to help me write the blog, generate the post template and quick input internal links.
+I use [Foam Lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode) to help me input internal links quickly.
+
+![](https://i.imgur.com/sYmKeKO.gif)
+
+I also use [Simple bash to generate template markdown file for the initial blog post](/content/blog/generate-template-markdown-file-with-bash/index.en.md).
 
 ### Search
 
