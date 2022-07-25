@@ -286,15 +286,13 @@ h3 {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
   background: white;
 }
 
 .tweet-content {
   box-sizing: border-box;
-  margin: 0;
-  min-width: 0;
-  font-size: 1rem;
-  white-space: pre-line;
+  font-size: 0.9rem;
 }
 .tweet-box .overlay {
   position: absolute;
@@ -318,7 +316,8 @@ h3 {
 }
 p.tweet-content {
   line-height: 2;
-  padding-right: 1.5rem;
+  padding-right: 2rem;
+  margin-bottom: 0.6rem;
 }
 .tweet-content a:link,
 .tweet-content a:visited {
@@ -341,7 +340,7 @@ p.tweet-content {
   text-decoration: none;
   position: absolute;
   right: 0;
-  top: 2rem;
+  top: 0.2rem;
 }
 .tweet-icon-svg {
   width: 25px;
@@ -1650,9 +1649,12 @@ li.inline {
           <article class="tweet-box rounded-lg relative mb">
             <a class="overlay" href="https://twitter.com/OwenYoungZh/status/1546642850414137345" title="Visit tweet"></a>
             <div class="inner">
-              <p class="tweet-content">
-                研究了几个现有的静态博客搜索方案之后，最终用 Meilisearch 给我的 Zola 博客添加了搜索功能，但是还是更喜欢 <a href="https://github.com/wilsonzlin/edgesearch">github.com/wilsonzlin/edg…</a> 的方案，把WASM搜索部署到Clouflare Workers，只是牵引力不够。 <a href="https://www.owenyoung.com/blog/add-search/">owenyoung.com/blog/add-searc…</a><br/> &mdash; Owen on 2022.07.11
-              </p>
+              <div >
+               <p class="tweet-content"> 研究了几个现有的静态博客搜索方案之后，最终用 Meilisearch 给我的 Zola 博客添加了搜索功能，但是还是更喜欢 <a href="https://github.com/wilsonzlin/edgesearch">github.com/wilsonzlin/edg…</a> 的方案，把WASM搜索部署到Clouflare Workers，只是牵引力不够。 <a href="https://www.owenyoung.com/blog/add-search/">owenyoung.com/blog/add-searc…</a></p> 
+               <div class="text-sm"> &mdash; Owen on 2022.07.11 &nbsp; 
+                <a href="https://twitter.com/OwenYoungZh/status/1546642850414137345" class="">回应</a></div>
+              
+              </div>
               <span target="_blank" rel="noopener noreferrer" class="tweet-icon">
                 <svg viewBox="0 0 24 24" class="tweet-icon-svg">
                   <g>
