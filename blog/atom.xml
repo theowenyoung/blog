@@ -5,8 +5,21 @@
 	<link href="https://www.owenyoung.com/blog/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com/blog/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-17T00:00:00+00:00</updated>
+	<updated>2022-07-25T10:51:28+08:00</updated>
 	<id>https://www.owenyoung.com/blog/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.07.25: 各种链接</title>
+		<published>2022-07-25T10:51:28+08:00</published>
+		<updated>2022-07-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-07-25/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-07-25/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cambridge.org&#x2F;core&#x2F;journals&#x2F;psychological-medicine&#x2F;article&#x2F;porn-use-and-mens-and-womens-sexual-performance-evidence-from-a-large-longitudinal-sample&#x2F;665B68D9E195A19B5825F9411B059927&quot;&gt;色情片使用和男女的性表现：来自大型纵向样本的证据&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matt-rickard.com&#x2F;non-obvious-docker-uses&#x2F;&quot;&gt;用Docker来本地构建&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;magazine&#x2F;archive&#x2F;2022&#x2F;05&#x2F;social-media-democracy-trust-babel&#x2F;629369&#x2F;&quot;&gt;为什么过去10年的美国人生活是独一无二的愚蠢 - twitter转发按钮的发明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>通过创建 dotfiles, 我终于拥有了一个 web3 身份</title>
 		<published>2022-07-13T00:55:21+08:00</published>

@@ -5,8 +5,21 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-23T00:00:00+00:00</updated>
+	<updated>2022-07-25T10:51:28+08:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.07.25: 各种链接</title>
+		<published>2022-07-25T10:51:28+08:00</published>
+		<updated>2022-07-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-07-25/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-07-25/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cambridge.org&#x2F;core&#x2F;journals&#x2F;psychological-medicine&#x2F;article&#x2F;porn-use-and-mens-and-womens-sexual-performance-evidence-from-a-large-longitudinal-sample&#x2F;665B68D9E195A19B5825F9411B059927&quot;&gt;色情片使用和男女的性表现：来自大型纵向样本的证据&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matt-rickard.com&#x2F;non-obvious-docker-uses&#x2F;&quot;&gt;用Docker来本地构建&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;magazine&#x2F;archive&#x2F;2022&#x2F;05&#x2F;social-media-democracy-trust-babel&#x2F;629369&#x2F;&quot;&gt;为什么过去10年的美国人生活是独一无二的愚蠢 - twitter转发按钮的发明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>通过创建 dotfiles, 我终于拥有了一个 web3 身份</title>
 		<published>2022-07-13T00:55:21+08:00</published>
@@ -1835,7 +1848,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>阅读指南</title>
 		<published>2022-03-29T00:00:00+00:00</published>
-		<updated>2022-07-03T00:00:00+00:00</updated>
+		<updated>2022-07-23T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/books-guide/" type="text/html"/>
 		<id>https://www.owenyoung.com/books-guide/</id>
 		<content type="html">&lt;p&gt;收集书籍推荐列表，以及资源。&lt;&#x2F;p&gt;
@@ -1867,6 +1880,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hacktheentrepreneur.com&#x2F;best-business-books&#x2F;&quot;&gt;史上最佳商业书籍排行&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bookvine.io&#x2F;&quot;&gt;适合小孩的书 6-14 岁&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;list&#x2F;show&#x2F;43502.The_Oxford_Very_Short_Introductions_Series&quot;&gt;牛津：所有事情的简短介绍&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=32196791&quot;&gt;hn ask: 你正在读什么书？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;zi-yuan&quot;&gt;资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-yuan&quot; aria-label=&quot;Anchor link for: zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1887,7 +1901,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.jiumodiary.com&#x2F;&quot;&gt;鸠摩电子书搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.zhishikoo.com&#x2F;&quot;&gt;知识库电子书中文&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;elib.cc&#x2F;&quot;&gt;elib 中文&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ahhhhfs.com&#x2F;?cat=&amp;amp;s=%E7%94%B5%E5%AD%90%E4%B9%A6&quot;&gt;ahhhfs分享&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ahhhhfs.com&#x2F;?cat=&amp;amp;s=%E7%94%B5%E5%AD%90%E4%B9%A6&quot;&gt;ahhhfs 分享&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tyi45di4ct.jiandaoyun.com&#x2F;dash&#x2F;5e7d915c6c56d8000674a8b8&quot;&gt;网友整理&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bookfere.com&#x2F;ebook&quot;&gt;书伴整理&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;

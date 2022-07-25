@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Journal</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/categories/journal/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-07-25T10:51:28+08:00</updated>
+	<id>https://www.owenyoung.com/categories/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.07.25: 各种链接</title>
+		<published>2022-07-25T10:51:28+08:00</published>
+		<updated>2022-07-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-07-25/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-07-25/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cambridge.org&#x2F;core&#x2F;journals&#x2F;psychological-medicine&#x2F;article&#x2F;porn-use-and-mens-and-womens-sexual-performance-evidence-from-a-large-longitudinal-sample&#x2F;665B68D9E195A19B5825F9411B059927&quot;&gt;色情片使用和男女的性表现：来自大型纵向样本的证据&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matt-rickard.com&#x2F;non-obvious-docker-uses&#x2F;&quot;&gt;用Docker来本地构建&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;magazine&#x2F;archive&#x2F;2022&#x2F;05&#x2F;social-media-democracy-trust-babel&#x2F;629369&#x2F;&quot;&gt;为什么过去10年的美国人生活是独一无二的愚蠢 - twitter转发按钮的发明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>2022年的一些记录</title>
+		<published>2022-03-26T00:00:00+00:00</published>
+		<updated>2022-07-09T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/journal-2022/" type="text/html"/>
+		<id>https://www.owenyoung.com/journal-2022/</id>
+		<content type="html">&lt;p&gt;2022 年的记录汇总。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.morling.dev&#x2F;blog&#x2F;how-i-built-a-serverless-search-for-my-blog&#x2F;&quot;&gt;我如何为我的博客构建无服务器搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;from?site=nationalgeographic.com&quot;&gt;荷兰如何养活世界&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Ha-31FEFX8s&quot;&gt;摩洛哥的乡村女教师们&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;FDKV22VnBOayDlEwFAtzmw&quot;&gt;徐州丰县目前为止的总结&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.forbes.com&#x2F;sites&#x2F;georgecalhoun&#x2F;2021&#x2F;06&#x2F;07&#x2F;the-sad-end-of-jack-ma-inc&#x2F;?sh=55c1fd0c123a&quot;&gt;马云公司的悲惨结局&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wwsww.cn&#x2F;qkl&#x2F;10173.html&quot;&gt;Arweave（AR）－为永存网络（Permaweb）提供动力的区块链&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;t.me&#x2F;douban_read&#x2F;110380&quot;&gt;一条豆瓣动态引发的“疫情文学”复兴&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;interaktiv.morgenpost.de&#x2F;klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar&#x2F;en.html&quot;&gt;由于气候变暖，2100 年地球将不适合居住的地方的地图&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;granta.com&#x2F;russia-verge-nervous-breakdown&#x2F;&quot;&gt;俄罗斯处于精神崩溃的边缘&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=qBfyIQbxXPs&quot;&gt;朝鲜裔日本人在日本怀念北朝鲜&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;books&quot;&gt;Books&lt;a class=&quot;zola-anchor&quot; href=&quot;#books&quot; aria-label=&quot;Anchor link for: books&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;大多数书都记录在&lt;a href=&quot;&#x2F;books&#x2F;&quot;&gt;读书记录里&lt;&#x2F;a&gt; ，这里记得基本都是一些没咋读完的书。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;chu-mai-zhong-guo&quot;&gt;出卖中国&lt;a class=&quot;zola-anchor&quot; href=&quot;#chu-mai-zhong-guo&quot; aria-label=&quot;Anchor link for: chu-mai-zhong-guo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨&lt;&#x2F;p&gt;
+&lt;p&gt;偏统计性的，里面的大多数数据年代又有点久远，所以就有点看不下去。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;don-t-let-me-think&quot;&gt;Don’t let me think&lt;a class=&quot;zola-anchor&quot; href=&quot;#don-t-let-me-think&quot; aria-label=&quot;Anchor link for: don-t-let-me-think&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨&lt;&#x2F;p&gt;
+&lt;p&gt;中文版叫《点石成金》，主要设计理念是：不要让我思考，不要在网页设计中做出让用户 confuse 的设计。但是本书的出版有点早，所以里面其实有不少东西稍微有点过时。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ru-he-sheng-huo&quot;&gt;如何生活&lt;a class=&quot;zola-anchor&quot; href=&quot;#ru-he-sheng-huo&quot; aria-label=&quot;Anchor link for: ru-he-sheng-huo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨，德里克西佛斯&lt;&#x2F;p&gt;
+&lt;p&gt;未读完，有点混乱，有点像诗歌，主要是前后不一致，前面说不要社交，后面又说要多交朋友。。读不下去。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;永远不要在听到某个观点的同一天就同意任何事情。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大多数问题是人际关系，成为社会的一部分就是失去自己，切断与社会的联系。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提供产品而不是个人服务，这样你的产品没有你也能跑&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;jing-ji-xue-de-si-wei-fang-shi&quot;&gt;经济学的思维方式&lt;a class=&quot;zola-anchor&quot; href=&quot;#jing-ji-xue-de-si-wei-fang-shi&quot; aria-label=&quot;Anchor link for: jing-ji-xue-de-si-wei-fang-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;✨✨✨✨&lt;&#x2F;p&gt;
+&lt;p&gt;又一本经典的经济学著作。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在封建经济或社会主义经济中，领导人可以持续无限地犯着同样的错误，后果则由其他人来承担，承受着由于稀缺资源的不当利用而造成的生活水平低下的结果。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;di-san-di-guo-de-yu-yan&quot;&gt;第三帝国的语言&lt;a class=&quot;zola-anchor&quot; href=&quot;#di-san-di-guo-de-yu-yan&quot; aria-label=&quot;Anchor link for: di-san-di-guo-de-yu-yan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;随便翻了一下，有点晦涩&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我根本不相信他真正读过任何东西，他只是抓取了最一般教育里的片段，只是找出了其中对他疯狂体系中有用的东西，进行不断的鹦鹉学舌和无度夸张。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;qian-bo-hu-lian-wang-ru-he-du-hua-liao-wo-men-de-da-nao&quot;&gt;浅薄 - 互联网如何毒化了我们的大脑&lt;a class=&quot;zola-anchor&quot; href=&quot;#qian-bo-hu-lian-wang-ru-he-du-hua-liao-wo-men-de-da-nao&quot; aria-label=&quot;Anchor link for: qian-bo-hu-lian-wang-ru-he-du-hua-liao-wo-men-de-da-nao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;作者是： 尼古拉斯·卡尔，这本读起来的确不如 &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;stolen-focus&#x2F;&quot;&gt;被偷走的注意力&lt;&#x2F;a&gt; 那么多有说服力。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我没有像以前那样思考。当我阅读时，我最强烈地感受到了这一点。我曾经发现很容易让自己沉浸在一本书或一篇长篇文章中。我的思绪会陷入叙事的曲折或争论的转折中，我会花几个小时在长长的散文中漫步。这种情况已经很少见了。现在，我的注意力在一两页之后开始漂移。我变得烦躁不安，失去了线索，开始寻找其他事情来做。我觉得我总是把我任性的大脑拖回到文本上。过去自然而然的深度阅读已经成为一种挣扎&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;ying-xiang-li-fang-cheng-shi&quot;&gt;影响力方程式&lt;a class=&quot;zola-anchor&quot; href=&quot;#ying-xiang-li-fang-cheng-shi&quot; aria-label=&quot;Anchor link for: ying-xiang-li-fang-cheng-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;真正的价值来自于你倾听别人在说什么，并学会以拥抱这些新互动的方式发表评论，而不是仅仅销售你的产品&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;讲述有关社区中人们的故事。即使你在这个新频道中的社区少于五十人，你也可以谈论那里的人。尽早做。经常这样做。人们想要看到自己，想要认同，想要归属感。商业是关于归属感的。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;简明扼要。不要浪费人们的时间。在需要之前开发和建立一个渠道时，洪水和压倒性的人是没有帮助的。在这个移动设备占主导地位和过度消耗我们时间的世界里，人们想要消费一口大小的信息块。这是小吃，不是自助餐。确保尽可能频繁地以简短的格式共享。（请参阅此项目符号列表？我们休息我们的案子。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;这是一个有趣的新声音;&lt;&#x2F;li&gt;
+&lt;li&gt;我一直在想这个问题;终于有人说了出来;或&lt;&#x2F;li&gt;
+&lt;li&gt;我以前从未想过这个问题！&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;qian-yin-li&quot;&gt;牵引力&lt;a class=&quot;zola-anchor&quot; href=&quot;#qian-yin-li&quot; aria-label=&quot;Anchor link for: qian-yin-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个常见的故事是这样的：创始人通过花时间根据早期客户所说的他们想要的东西进行调整来构建人们想要的东西。然后，当他们认为自己已经准备好了，他们就会发起并刺伤以获得更多客户，但当客户没有蜂拥而至时，他们就会感到沮丧。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;keep-going&quot;&gt;Keep Going&lt;a class=&quot;zola-anchor&quot; href=&quot;#keep-going&quot; aria-label=&quot;Anchor link for: keep-going&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我让自己的感情受到伤害的最简单方法是在早上第一件事就是打开手机。即使在极少数情况下，我也不会让我的感情受到伤害，我的时间已经一去不复返了，我的大脑也分散了。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;阅读遥远而听起来的事物，会让我们轻视那些显然又近又小的东西。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果您正在使用手机醒来，并且它正在破坏您的早晨，请尝试以下操作：在睡觉前，将手机插入房间对面的插座或触手可及的地方。当你醒来时，尽量不要看它。醒来有很多更好的方法：去你的幸福站，吃早餐，伸展，做一些运动，散步，跑步，听莫扎特，洗澡，读书，和你的孩子一起玩，或者只是沉默一会儿。即使是十五分钟，早上给自己一些时间，不要被这个消息完全吓坏。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;社交媒体创造了一种名为 FOMO 的人类现象：对错过的恐惧。这是一种感觉，滚动浏览你的提要，那里的每个人都比你过得更好。唯一的解药是 JOMO：错过的喜悦。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;kan-bu-jian-de-nu-ren&quot;&gt;看不见的女人&lt;a class=&quot;zola-anchor&quot; href=&quot;#kan-bu-jian-de-nu-ren&quot; aria-label=&quot;Anchor link for: kan-bu-jian-de-nu-ren&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;book&#x2F;show&#x2F;41104077-invisible-women&quot;&gt;wiki&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;2013 年联合国的一项凶杀案调查发现，全世界 96%的杀人案肇事者是男性&lt;&#x2F;li&gt;
+&lt;li&gt;1975 年被联合国宣布为妇女年，在冰岛，妇女决心让其名副其实。成立了一个由冰岛五大妇女组织的代表组成的委员会。经过一番讨论，她们想出了罢工的想法。10 月 24 日，冰岛所有女人都停止工作。没有带薪工作，同时也没有做饭，没有清洁，没有托儿服务等。让冰岛的男人看看，如果没有女性每天为保持国家运转所做的无形工作，他们是如何应对的。&lt;&#x2F;li&gt;
+&lt;li&gt;在全球范围内，75%的无偿工作由女性完成，她们每天花费三到六个小时，而男性的平均无偿工作时间为 30 分钟到 2 小时。
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.oecd.org&#x2F;dev&#x2F;development-gender&#x2F;Unpaid_care_work.pdf&quot;&gt;在印度，妇女每天六小时的无偿劳动中有五小时花在家务上，而男子则有 13 分钟。&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;在美国，男性每天比女性多出一个多小时的业余时间，19 而在英国，男性每周享受的闲暇时间比女性多五个小时。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;for-the-love-of-men&quot;&gt;For the Love of Men&lt;a class=&quot;zola-anchor&quot; href=&quot;#for-the-love-of-men&quot; aria-label=&quot;Anchor link for: for-the-love-of-men&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;前面写的挺好的，很吸引人，用语比较 informal,适合英语小白看。但是后面有点乱。但是还是获得了很多新知识。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们生活在一种文化中，这种文化教导男孩坚忍主义而不是真实性，支配而不是同理心，如果他们不遵循他们的剧本，有人会注意到并拿走他们的“男人卡”。男孩们被教导不要问问题，因为寻求帮助会表明缺乏领导力，而不是视为这是一个简单的寻求帮助的行为。&lt;&#x2F;p&gt;
+&lt;p&gt;We live in a culture that teaches boys stoicism over authenticity, dominance over empathy, and that if they don’t follow their script, someone will take notice and take their “man card” away. Boys are taught not to ask questions because asking for help would suggest a lack of leadership, instead of being an acute sign of it.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;男孩们被教导不要问问题，因为寻求帮助会表明缺乏领导力，所以“真正的男人”都不会问路。而任何曾经坐过男人车的女人都知道兜圈子却死活不问路的痛苦。&lt;&#x2F;p&gt;
+&lt;p&gt;Boys also learn that “real men” don’t ask for directions. Any woman who’s ever driven with a man knows the agony of driving in circles rather than asking for directions.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在美国，男性伴侣是美国孕妇的第二大死因。每一天，三个男人都会杀死他们的女朋友，妻子或前任。在最终被谋杀的所有女性中，近一半是被现任或前任浪漫伴侣杀害的&lt;&#x2F;p&gt;
+&lt;p&gt;Male partners are the second leading cause of death for pregnant women in the United States. Every single day three men will end up killing their girlfriend, wife or ex. Nearly half of all women who end up murdered are killed by a current or former romantic partner&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;男人的朋友越来越少，友谊也越来越深，随着年龄的增长，他们变得越来越孤立。孤独是一个不成比例的男性问题。仅在英国，就有 250 万男性报告没有亲密的朋友。&lt;&#x2F;p&gt;
+&lt;p&gt;Men have fewer friends and less in-depth friendships and become increasingly isolated with age. Loneliness is a disproportionately male problem. In the UK alone, there are 2.5 million men who report having zero close friends.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我刚开始意识到我与生活中的女性有着如此丰富的关系，为什么在与男人的关系方面，我会降低标准？&lt;&#x2F;p&gt;
+&lt;p&gt;I just started realizing I have such rich relationships with the women in my life,Why would I lower my standards when it comes to my relationships with men?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;女性在婚姻中的幸福感与丈夫所做的“情感工作”程度有关。感觉被理解并与丈夫有联系是女性婚姻满意度的最强预测因素。&lt;&#x2F;p&gt;
+&lt;p&gt;a woman’s happiness in a marriage is correlated with how much “emotional work” her husband performs. Feeling understood and connected to her husband was the strongest predictor for a woman’s level of marital satisfaction.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;lin-shi-xiang-fa-bei-fen&quot;&gt;临时想法备份&lt;a class=&quot;zola-anchor&quot; href=&quot;#lin-shi-xiang-fa-bei-fen&quot; aria-label=&quot;Anchor link for: lin-shi-xiang-fa-bei-fen&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;2022-05-01-2022-07-09&quot;&gt;2022-05-01~2022-07-09&lt;a class=&quot;zola-anchor&quot; href=&quot;#2022-05-01-2022-07-09&quot; aria-label=&quot;Anchor link for: 2022-05-01-2022-07-09&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;最近特别想交新的长期朋友，可能有受到这篇&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2012&#x2F;07&#x2F;15&#x2F;fashion&#x2F;the-challenge-of-making-friends-as-an-adult.html&quot;&gt;为什么 30 岁以上交朋友很难&lt;&#x2F;a&gt;的文章的影响，反正就是觉得自己很久没有新朋友了。希望对方会喜欢逛 Hacker News，拥有自己的个人博客。希望能建立某种长期联系，但又不那么实时在线的联系。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;mailto:owen@owenyoung.com&quot;&gt;给我发一封邮件吧&lt;&#x2F;a&gt;: &lt;code&gt;owen@owenyoung.com&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;如果有机会，我们还应该在线下见面。&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
+		<title>2021年的一些记录</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2021-12-26T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/journal-2021/" type="text/html"/>
+		<id>https://www.owenyoung.com/journal-2021/</id>
+		<content type="html">&lt;p&gt;2021 日记汇总。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;reading-list&quot;&gt;Reading List&lt;a class=&quot;zola-anchor&quot; href=&quot;#reading-list&quot; aria-label=&quot;Anchor link for: reading-list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;deno.com&#x2F;blog&#x2F;deploy-beta2&quot;&gt;Deno Deploy Beta2&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.robertsapolskyrocks.com&#x2F;depression.html&quot;&gt;罗伯特-萨波尔斯基谈抑郁症(2009)&lt;&#x2F;a&gt; - #Depression&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cj.sina.com.cn&#x2F;articles&#x2F;view&#x2F;1154814715&#x2F;44d512fb01900wn2x&quot;&gt;深圳准留学生花 15800 元“围观”的厂妹，曾让我羡慕死了&lt;&#x2F;a&gt; - #Society&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;slc.is&#x2F;#The%20Best%20TLD%20is%20Not%20.com&quot;&gt;最好的域名不是.com, 而是.is, The Best TLD is Not .com&lt;&#x2F;a&gt; - #Domains , the best tld is &lt;code&gt;.is&lt;&#x2F;code&gt;, by Iceland&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;thehelm.com&#x2F;&quot;&gt;Helm&lt;&#x2F;a&gt; - 个人服务器，类似树莓派，$399 1T, #Privacy&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.mozilla.org&#x2F;en&#x2F;internet-culture&#x2F;deep-dives&#x2F;why-are-hyperlinks-blue&#x2F;&quot;&gt;为什么超链接是蓝色的？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;b6TLj4b2rhexEjDT-u4jHA&quot;&gt;幼儿园，一孩难求&lt;&#x2F;a&gt; - 小孩数量在减少&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;XhRf8pvVxljAAzAd81_bLg&quot;&gt;「不长大」，是怎么成为越来越多人的愿望？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s&#x2F;5uKyMHd2G4bunZIZ9YFYYg&quot;&gt;浪漫是怎么一步步在现代爱情中消失的？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.e-pistolas.org&#x2F;entire-battlestar-galactica-timeline-explained&quot;&gt;《太空堡垒卡拉狄加》时间轴的说明&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;briansunter.com&#x2F;blog&#x2F;five-minute-journal&#x2F;&quot;&gt;五分钟日记 - 技巧和提示&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;text.npr.org&#x2F;1039313011&quot;&gt;reddit 上的人通过复制国会议员的所作所为来交易股票&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;colors.jaylow.se&#x2F;&quot;&gt;艺术品生成器&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.failory.com&#x2F;startups&#x2F;new-zealand&quot;&gt;新西兰创业公司&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;42matters.com&#x2F;ios-apple-app-store-statistics-and-trends&quot;&gt;app store 2021 stats&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hacker-recommended-books.vercel.app&#x2F;category&#x2F;0&#x2F;past-6-months&#x2F;page&#x2F;0&#x2F;5&quot;&gt;妈妈测试- hn 图书推荐&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;book.douban.com&#x2F;review&#x2F;10002244&#x2F;&quot;&gt;妈妈测试书评&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=28682173&quot;&gt;hn shows 去哪了&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bryanbraun.com&#x2F;2021&#x2F;09&#x2F;21&#x2F;i-keep-making-things-out-of-checkboxes&#x2F;&quot;&gt;all things using check box&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=25644817&quot;&gt;问 hn： 谁在寻找联合创始人&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=26990815&quot;&gt;问 hn：你用过最昂贵的服务是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;forum-rules&#x2F;forum-rules&#x2F;&quot;&gt;something awful rule&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dev.to&#x2F;antoniopk&#x2F;firstdevrole-1-what-are-the-real-requirements-for-becoming-a-programmer-2e1p&quot;&gt;👨💻[FirstDevRole #1] 成为一名程序员的真正要求是什么？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.joshwcomeau.com&#x2F;blog&#x2F;how-to-learn-stuff-quickly&#x2F;#%2F%2F%2F%2F%2F%2F&#x2F;&quot;&gt;如何快速学习&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
