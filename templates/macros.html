@@ -305,9 +305,12 @@
           <article class="tweet-box rounded-lg relative mb">
             <a class="overlay" href="{{ twitter_post_link | safe }}" title="Visit tweet"></a>
             <div class="inner">
-              <p class="tweet-content">
-                {{ twitter_post.content.html | safe }}<br/> &mdash; {{twitter_post.author.name}} on {{twitter_post.published | date(format="%Y.%m.%d")}}
-              </p>
+              <div >
+               <p class="tweet-content"> {{ twitter_post.content.html | safe }}</p> 
+               <div class="text-sm"> &mdash; {{twitter_post.author.name}} on {{twitter_post.published | date(format="%Y.%m.%d")}} &nbsp; 
+                <a href="{{ twitter_post_link | safe }}" class="">{{trans(key="label_reply",lang=lang) }}</a></div>
+              
+              </div>
               <span target="_blank" rel="noopener noreferrer" class="tweet-icon">
                 <svg viewBox="0 0 24 24" class="tweet-icon-svg">
                   <g>
