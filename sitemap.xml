@@ -406,10 +406,6 @@
         <lastmod>2022-03-29</lastmod>
     </url>
     <url>
-        <loc>https://www.owenyoung.com/en/blog/generate-template-markdown-file-with-bash/</loc>
-        <lastmod>2022-07-25</lastmod>
-    </url>
-    <url>
         <loc>https://www.owenyoung.com/en/blog/how-to-check-if-there-are-uncommited-changes-in-github/</loc>
         <lastmod>2022-03-26</lastmod>
     </url>
@@ -485,6 +481,10 @@
     <url>
         <loc>https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/</loc>
         <lastmod>2022-06-01</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/</loc>
+        <lastmod>2022-07-25</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/en/blog/sonarr-setup/</loc>

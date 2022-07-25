@@ -8,11 +8,11 @@
 	<updated>2022-07-25T10:50:28+08:00</updated>
 	<id>https://www.owenyoung.com/en/tags/markdown/atom.xml</id>
 	<entry xml:lang="en">
-		<title>Generate template markdown files with bash</title>
+		<title>Simple bash to generate template markdown file for the initial blog post</title>
 		<published>2022-07-25T10:50:28+08:00</published>
 		<updated>2022-07-25T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://www.owenyoung.com/en/blog/generate-template-markdown-file-with-bash/" type="text/html"/>
-		<id>https://www.owenyoung.com/en/blog/generate-template-markdown-file-with-bash/</id>
+		<link rel="alternate" href="https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/" type="text/html"/>
+		<id>https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/</id>
 		<content type="html">&lt;p&gt;When you’re using markdown to write your blog, you can use the following template to generate a new markdown file, you may use some template like this to generate a new markdown file:&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;pre data-lang=&quot;yaml&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-yaml &quot;&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span&gt;---
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;title&lt;&#x2F;span&gt;&lt;span&gt;: 
@@ -27,14 +27,14 @@
 &lt;&#x2F;span&gt;&lt;span&gt;---
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;I used to generate these markdown articles with VSCode extention &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;foam-lite&lt;&#x2F;a&gt;, which is like this:&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;generate-template-markdown-file-with-bash&#x2F;.&#x2F;vscode-foam.gif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;.&#x2F;vscode-foam.gif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;The problem is that it’s an VSCode extention, not an general tool, and the tool also has a little limitations.
 for example, the default generated file path is based on the current directory, so I always need to navigate to the correct directory to generate the markdown file.&lt;&#x2F;p&gt;
 &lt;p&gt;And recent days, I started to use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;dotfiles&quot;&gt;Dotfiles&lt;&#x2F;a&gt; to manage all my configuration files, and I used a lot of bash scripts to manage my dotfiles. So why not to use bash scripts to generate the initial markdown files? It’s general enough, and it’s easy to use, and it can be reused in any editors.&lt;&#x2F;p&gt;
 &lt;p&gt;Here is the final workflow for creating a daily markdown file:&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;generate-template-markdown-file-with-bash&#x2F;.&#x2F;bash-daily.gif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;.&#x2F;bash-daily.gif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Here is the workflow for creating a normal post:&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;generate-template-markdown-file-with-bash&#x2F;.&#x2F;bash-random.gif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;.&#x2F;bash-random.gif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;how-to-do-this&quot;&gt;How to do this?&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-do-this&quot; aria-label=&quot;Anchor link for: how-to-do-this&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tests-always-included&#x2F;mo&quot;&gt;Bash Mustache&lt;&#x2F;a&gt; as the template engine, it’s simple but powerful, and it’s just a simple bash file, I place it in my blog repo &lt;code&gt;.&#x2F;scripts&#x2F;mo.sh&lt;&#x2F;code&gt;, then I write an function in &lt;code&gt;.&#x2F;scripts&#x2F;common.sh&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;#!&#x2F;bin&#x2F;bash
