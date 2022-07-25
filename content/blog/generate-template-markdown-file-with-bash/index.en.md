@@ -32,7 +32,7 @@ taxonomies:
 
 I used to generate these markdown articles with VSCode extention [foam-lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode), which is like this:
 
-![](./foam.gif)
+![](./vscode-foam.gif)
 
 The problem is that it's an VSCode extention, not an general tool, and the tool also has a little limitations.
 for example, the default generated file path is based on the current directory, so I always need to navigate to the correct directory to generate the markdown file.
@@ -41,11 +41,11 @@ And recent days, I started to use [Dotfiles](https://github.com/theowenyoung/dot
 
 Here is the final workflow for creating a daily markdown file:
 
-![](./vscode-bash-daily.gif)
+![](./bash-daily.gif)
 
 Here is the workflow for creating a normal post:
 
-![](./vscode-bash-random.gif)
+![](./bash-random.gif)
 
 ## How to do this?
 
