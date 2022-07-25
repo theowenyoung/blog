@@ -97,9 +97,11 @@ html {
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
   --colors-background-surface: #f9f5e9;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
+    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", Palatino, sans-serif;
 }
 
 body {
@@ -323,6 +325,14 @@ dl,
 ol,
 ul {
   font-size: 1rem;
+  line-height: 2;
+}
+
+p:lang(en),
+dl:lang(en),
+ol:lang(en),
+ul:lang(en) {
+  font-size: 1.2rem;
   line-height: 2;
 }
 
