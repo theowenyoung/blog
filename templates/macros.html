@@ -12,16 +12,7 @@
       <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
       <p class="p-note">{{ config.extra.bio }}</p>
     </div>
-    <section class="muted pt">
-      <time class="dt-published published" datetime="{{ page.date }}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
-      {% if page.taxonomies.categories %}
-        <span>{{ trans(key="label_published_on",lang=lang) }}
-        </span>
-        <a class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
-          {{ page.taxonomies.categories[0] }}
-        </a>
-      {% endif %}
-    </section>
+
     <h1 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
     </h1>
@@ -30,6 +21,28 @@
     {% elif page.description -%}
       <p class="p-summary entry-summary">{{ page.description }}</p>
     {% endif -%}
+    <section class="muted text-sm">
+      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">
+        <time class="dt-published published" datetime="{{ page.date }}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
+      </a>
+      {% if page.taxonomies.categories %}&nbsp;<span>{{ trans(key="label_published_on",lang=lang) }}
+      </span>
+      <a class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
+          {{ page.taxonomies.categories[0] }}
+        </a>
+      {% endif %}
+      <!-- {% if page.taxonomies.tags %}
+      <span class="divider">/</span>
+      {% for tag in page.taxonomies.tags %} 
+
+      <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">{{ tag }}</a>
+      {% if page.taxonomies.tags | length > 1 %}
+        {% if loop.index != page.taxonomies.tags | length %},&nbsp;
+        {% endif %}
+        {% endif %} 
+        {% endfor %}
+      {% endif %}  -->
+    </section>
     <hr class="w-1__2"></article>
   {% endmacro post_max %}
   {% macro post_min(page) %}
