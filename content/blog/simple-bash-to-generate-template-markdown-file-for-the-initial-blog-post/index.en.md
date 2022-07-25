@@ -1,5 +1,5 @@
 ---
-title: Generate template markdown files with bash
+title: Simple bash to generate template markdown file for the initial blog post
 date: 2022-07-25T10:50:28+08:00
 updated: 2022-07-25
 taxonomies:
