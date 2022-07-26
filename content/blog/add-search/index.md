@@ -32,7 +32,7 @@ taxonomies:
 }
 ```
 
-有了这个索引，就能很快的找到最相关的文章。这种索引对于类似英语的语言来说很好实现，因为英语中分词很简单，只需要根据空格就能把所有词语分开，但是中文没有用空格分开的习惯，所以需要很大的词语字典，然后从字典里找到相关的词语，然后再建立分词索引。这才完成第一步（这个比较好解决，因为这一步发生在编译阶段，有足够的资源去做这件事）。第二步是从客户端发出搜索请求，这一步入依然需要分词，比如用户搜索`如何给zola博客添加索引`，搜索引擎首先要把这句话分为`如何`,`给`,`Zola`,`博客`,`添加`,`索引`，然后再去对应的索引里进行最佳匹配查询。所以我觉得对于中文搜索，在客户端做是不现实的，因为基本上没法在客户端上进行复杂的分词，而且随着文档的增加，全文搜索的索引还会进一步增加，全部加载到客户端看起来也不是一个很道德的选择。
+有了这个索引，就能很快的找到最相关的文章。这种索引对于类似英语的语言来说很好实现，因为英语中分词很简单，只需要根据空格就能把所有词语分开，但是中文没有用空格分开的习惯，所以需要很大的词语字典，然后从字典里找到相关的词语，然后再建立分词索引。这才完成第一步（这个比较好解决，因为这一步发生在编译阶段，有足够的资源去做这件事）。第二步是从客户端发出搜索请求，这一步依然需要分词，比如用户搜索`如何给zola博客添加索引`，搜索引擎首先要把这句话分为`如何`,`给`,`Zola`,`博客`,`添加`,`索引`，然后再去对应的索引里进行最佳匹配查询。所以我觉得对于中文搜索，在客户端做是不现实的，因为基本上没法在客户端上进行复杂的分词，而且随着文档的增加，全文搜索的索引还会进一步增加，全部加载到客户端看起来也不是一个很道德的选择。
 
 **WASM 怎么样？**
 
@@ -78,7 +78,7 @@ taxonomies:
 
 ### [Meilisearch](https://github.com/meilisearch/meilisearch)
 
-[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是在服务端启动服务后，静态博客编译后先请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，然后客户端可以使用 meili 提供的[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描你整个站点的 sitemap 文件，然后做一些简单的配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](/content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！），这个层次感是我决定采用它的最重要的原因，因为它是针对文章的各种二级，三级标题，以及内容所在的标题区做的更有细节的索引，所以在搜索结果中，可以直接从结果中点击进入到对应文章的部分。核心配置在扫描的地方：
+[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是：在服务端启动服务后，每次你的静态博客编译后，请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，客户端就可以搜索里。meili 提供了[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)让我们可以方便地一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描整个站点的 sitemap 文件，然后做一些针对网站排版的简单配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](/content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！），这个层次感是我决定采用它的最重要的原因，因为它是针对文章的各种二级，三级标题，以及内容所在的大标题做的更有细节的索引，所以在搜索结果中，可以直接从结果中点击进入到对应文章的锚点。以下是扫描全站的核心配置：
 
 ```json
 {
@@ -99,7 +99,7 @@ taxonomies:
 }
 ```
 
-这样的配置的话 meilisearch 建立索引是细节到具体的小标题和段落上的，可以让搜索体验直接上升一个层次。所有配置见[这里](https://github.com/theowenyoung/blog/blob/84f139a47658ff31482d4b36ba0acd86f08b071f/meilisearch-docs-scraper-config.json)
+这样的配置的话， meilisearch 建立的索引是细节到具体的小标题和段落上的，可以让搜索体验直接上升一个层次。所有配置见[这里](https://github.com/theowenyoung/blog/blob/84f139a47658ff31482d4b36ba0acd86f08b071f/meilisearch-docs-scraper-config.json)
 
 ### 我的部署过程
 
