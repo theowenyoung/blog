@@ -14,7 +14,7 @@
     </div>
 
     <h1 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
+      <a title="{{ page.title }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
     </h1>
     {% if page.summary -%}
       <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
@@ -22,12 +22,12 @@
       <p class="p-summary entry-summary">{{ page.description }}</p>
     {% endif -%}
     <section class="muted text-sm pb">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">
+      <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">
         <time class="dt-published published" datetime="{{ page.date }}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
       </a>
       {% if page.taxonomies.categories %}&nbsp;<span>{{ trans(key="label_published_on",lang=lang) }}
       </span>
-      <a class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
+      <a title="{{ page.taxonomies.categories[0] }}" class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
           {{ page.taxonomies.categories[0] }}
         </a>
       {% endif %}
@@ -98,41 +98,41 @@
       <ul class="list-none flex justify-between">
         {% if ref.current_index != 1 %}
           <li>
-            <a class="no-underline" href="{{ ref.first }}">&larrb;</a>
+            <a title="First" class="no-underline" href="{{ ref.first }}">&larrb;</a>
           </li>
         {% else %}
           <li class="disabled">
-            <a class="no-underline" href="{{ ref.first }}">&larrb;</a>
+            <a title="First" class="no-underline" href="{{ ref.first }}">&larrb;</a>
           </li>
         {% endif %}
         {% if ref.previous %}
           <li>
-            <a class="no-underline" href="{{ ref.previous }}">&larr;</a>
+            <a title="Previous" class="no-underline" href="{{ ref.previous }}">&larr;</a>
           </li>
         {% else %}
           <li class="disabled">
-            <a class="no-underline" href="#">&larr;</a>
+            <a title="Previous"  class="no-underline" href="#">&larr;</a>
           </li>
         {% endif %}
         <li>
-          <a class="no-underline" href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ ref.current_index }}/{{ ref.number_pagers }}</a>
+          <a title="All Posts" class="no-underline" href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ ref.current_index }}/{{ ref.number_pagers }}</a>
         </li>
         {% if ref.next %}
           <li>
-            <a class="no-underline" href="{{ ref.next }}">&rarr;</a>
+            <a title="Next" class="no-underline" href="{{ ref.next }}">&rarr;</a>
           </li>
         {% else %}
           <li class="disabled">
-            <a class="no-underline" href="#">&rarr;</a>
+            <a title="Next" class="no-underline" href="#">&rarr;</a>
           </li>
         {% endif %}
         {% if ref.current_index != ref.number_pagers %}
           <li>
-            <a class="no-underline" href="{{ ref.last }}">&rarrb;</a>
+            <a title="Last" class="no-underline" href="{{ ref.last }}">&rarrb;</a>
           </li>
         {% else %}
           <li class="disabled">
-            <a class="no-underline" href="{{ ref.last }}">&rarrb;</a>
+            <a title="Last" class="no-underline" href="{{ ref.last }}">&rarrb;</a>
           </li>
         {% endif %}
       </ul>

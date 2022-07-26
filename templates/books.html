@@ -32,7 +32,7 @@
     {% for page in section_pages %}
       <article>
         <h1 class="no-border pb-sm">
-          <a class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
+          <a title="{{ page.title }}" class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
         </h1>
         <div class="muted pb">
           <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
@@ -50,7 +50,7 @@
       {% if page.taxonomies.tags %}
         <p>
           {% for tag in page.taxonomies.tags %}
-            <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">#{{ tag }}</a>
+            <a class="muted text-sm no-underline" title="{{ tag }}" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">#{{ tag }}</a>
             {% if page.taxonomies.tags | length > 1 %}
               {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}
             {% endif %}
