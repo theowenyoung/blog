@@ -1408,5 +1408,121 @@
     "repost-of": "https://www.owenyoung.com/en/blog/indieweb/",
     "wm-property": "repost-of",
     "wm-private": false
+  },
+  "1440774": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1551532725730807808",
+    "published": "2022-07-25T11:40:02+00:00",
+    "wm-received": "2022-07-25T11:53:35Z",
+    "wm-id": 1440774,
+    "wm-source": "https://brid.gy/post/twitter/TheOwenYoung/1551532725730807808",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "photo": [
+      "https://pbs.twimg.com/media/FYgkUo1UUAA4cKP.jpg"
+    ],
+    "content": {
+      "html": "用推特回复作为静态博客的评论系统，既可以过滤spam，又可以增加推特互动，<a href=\"http://webmention.io\">webmention.io</a> 也支持抓取推特的响应，然后每天自动同步一次webmention的数据到repo里就能显示了，和我之前的indieweb完美结合。刚给我博客加了一个仿推特的卡片，博客本身依然是静态的！ <a href=\"https://www.owenyoung.com/en/blog/indieweb/\">owenyoung.com/en/blog/indiew…</a>\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>",
+      "text": "用推特回复作为静态博客的评论系统，既可以过滤spam，又可以增加推特互动，webmention.io 也支持抓取推特的响应，然后每天自动同步一次webmention的数据到repo里就能显示了，和我之前的indieweb完美结合。刚给我博客加了一个仿推特的卡片，博客本身依然是静态的！ owenyoung.com/en/blog/indiew…"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1440851": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1551532725730807808",
+    "published": "2022-07-25T11:40:02+00:00",
+    "wm-received": "2022-07-25T14:23:26Z",
+    "wm-id": 1440851,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1551532725730807808",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "photo": [
+      "https://pbs.twimg.com/media/FYgkUo1UUAA4cKP.jpg"
+    ],
+    "content": {
+      "html": "用推特回复作为静态博客的评论系统，既可以过滤spam，又可以增加推特互动，<a href=\"http://webmention.io\">webmention.io</a> 也支持抓取推特的响应，然后每天自动同步一次webmention的数据到repo里就能显示了，和我之前的indieweb完美结合。刚给我博客加了一个仿推特的卡片，博客本身依然是静态的！ <a href=\"https://www.owenyoung.com/en/blog/indieweb/\">owenyoung.com/en/blog/indiew…</a>\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>",
+      "text": "用推特回复作为静态博客的评论系统，既可以过滤spam，又可以增加推特互动，webmention.io 也支持抓取推特的响应，然后每天自动同步一次webmention的数据到repo里就能显示了，和我之前的indieweb完美结合。刚给我博客加了一个仿推特的卡片，博客本身依然是静态的！ owenyoung.com/en/blog/indiew…"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1440892": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "wely",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b9d48cc30973843b2e463dc6813b12fa85a1b168cc38d5a6e76f6450f4c5e4d2.jpg",
+      "url": "https://twitter.com/j26DLv"
+    },
+    "url": "https://twitter.com/j26DLv/status/1551552814379565061",
+    "published": "2022-07-25T12:59:52+00:00",
+    "wm-received": "2022-07-25T15:08:08Z",
+    "wm-id": 1440892,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551552814379565061",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "超酷的idea\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "超酷的idea"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1440893": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Reorx",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/93207c009f2cb695c62a9f4a6c3311f80f491d61923d1c84f808c30af498307a.png",
+      "url": "https://twitter.com/novoreorx"
+    },
+    "url": "https://twitter.com/novoreorx/status/1551546452366991361",
+    "published": "2022-07-25T12:34:35+00:00",
+    "wm-received": "2022-07-25T15:08:08Z",
+    "wm-id": 1440893,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551546452366991361",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "哈哈，我也是这个想法，所以在接入评论系统之前先做了 twitter 卡片\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "哈哈，我也是这个想法，所以在接入评论系统之前先做了 twitter 卡片"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1440895": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "米随随 (*•̀ᴗ•́*)و ̑̑ 🇨🇳",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/282c9eda06d0f7af663052adf0edd5ee1473e98f78c06ae7dbd93f802ca3c020.jpg",
+      "url": "https://twitter.com/s5s5"
+    },
+    "url": "https://twitter.com/s5s5/status/1551535027137048577",
+    "published": "2022-07-25T11:49:11+00:00",
+    "wm-received": "2022-07-25T15:08:09Z",
+    "wm-id": 1440895,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551535027137048577",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "🐮\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "🐮"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
