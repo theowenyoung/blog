@@ -1,7 +1,7 @@
 ---
 title: Awesome Alternatives
 date: 2022-02-25
-updated: 2022-03-25
+updated: 2022-07-26
 taxonomies:
   categories:
     - Notes
@@ -73,3 +73,7 @@ Curating awesome alternative resources.
 ## Pocket
 
 - [shiori](https://github.com/go-shiori/shiori) - Pocket open-source alternative.
+
+## Grammarly
+
+- [Languagetool](https://languagetool.org/) - LanguageTool's core functionality is open source. Anyone can set up their own LanguageTool server locally or in the cloud. Furthermore, we are looking for contributions to further improve our proofreading technology.
