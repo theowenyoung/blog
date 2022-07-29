@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/en/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-25T10:50:28+08:00</updated>
+	<updated>2022-07-26T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/en/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Simple bash to generate template markdown file for the initial blog post</title>
@@ -2092,7 +2092,7 @@ if you want change to the exact version every time, you can set the config to&lt
 	<entry xml:lang="en">
 		<title>Awesome Alternatives</title>
 		<published>2022-02-25T00:00:00+00:00</published>
-		<updated>2022-03-25T00:00:00+00:00</updated>
+		<updated>2022-07-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/alternatives/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/alternatives/</id>
 		<content type="html">&lt;p&gt;Curating awesome alternative resources.&lt;&#x2F;p&gt;
@@ -2172,6 +2172,10 @@ if you want change to the exact version every time, you can set the config to&lt
 &lt;h2 id=&quot;pocket&quot;&gt;Pocket&lt;a class=&quot;zola-anchor&quot; href=&quot;#pocket&quot; aria-label=&quot;Anchor link for: pocket&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;go-shiori&#x2F;shiori&quot;&gt;shiori&lt;&#x2F;a&gt; - Pocket open-source alternative.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;grammarly&quot;&gt;Grammarly&lt;a class=&quot;zola-anchor&quot; href=&quot;#grammarly&quot; aria-label=&quot;Anchor link for: grammarly&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;languagetool.org&#x2F;&quot;&gt;Languagetool&lt;&#x2F;a&gt; - LanguageTool’s core functionality is open source. Anyone can set up their own LanguageTool server locally or in the cloud. Furthermore, we are looking for contributions to further improve our proofreading technology.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
