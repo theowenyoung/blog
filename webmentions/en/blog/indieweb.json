@@ -1524,5 +1524,228 @@
     "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1441427": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "🆃🅻",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/8fb986ff5d8e7cbd56dffac2e288b022bbe8eb8a145d861eb67164ba6ce11598.jpg",
+      "url": "https://twitter.com/tony19821016"
+    },
+    "url": "https://twitter.com/tony19821016/status/1551821588693061632",
+    "published": "2022-07-26T06:47:52+00:00",
+    "wm-received": "2022-07-26T06:49:04Z",
+    "wm-id": 1441427,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1551821588693061632",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "有意思\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>\n<a href=\"https://twitter.com/owenyoungzh/status/1551532725730807808\">twitter.com/owenyoungzh/st…</a>",
+      "text": "有意思\n\ntwitter.com/owenyoungzh/st…"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1441463": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "卢东东",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/17794e57fd9ca834825fc14d56a8df370d493587097ce49a19b2e5c7dba66365.jpg",
+      "url": "https://twitter.com/xJoyLu"
+    },
+    "url": "https://twitter.com/xJoyLu/status/1551838077831680000",
+    "published": "2022-07-26T07:53:24+00:00",
+    "wm-received": "2022-07-26T07:58:12Z",
+    "wm-id": 1441463,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551838077831680000",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "绝了，昨天刚想到，今天就刷到，有种大脑被窥探的爽感\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "绝了，昨天刚想到，今天就刷到，有种大脑被窥探的爽感"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1441464": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "laike9m",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/507af54b433bf73ce0df94492fff81855271870a92f07f7c1e4bae90867ee3c2.jpg",
+      "url": "https://twitter.com/laike9m"
+    },
+    "url": "https://twitter.com/laike9m/status/1551834059273170944",
+    "published": "2022-07-26T07:37:26+00:00",
+    "wm-received": "2022-07-26T07:58:15Z",
+    "wm-id": 1441464,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1551834059273170944",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "Webmention looks interesting \n<a href=\"https://www.w3.org/TR/webmention/#sotd_patent\">w3.org/TR/webmention/…</a>\n\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "Webmention looks interesting \nw3.org/TR/webmention/…"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1441478": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "GeekPlux",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/474e5a59254e678ed29203a77919d7e5fcec52521a4c78304274e96398162b33.jpg",
+      "url": "https://twitter.com/GeekPlux"
+    },
+    "url": "https://twitter.com/GeekPlux/status/1551845398750236672",
+    "published": "2022-07-26T08:22:29+00:00",
+    "wm-received": "2022-07-26T08:35:11Z",
+    "wm-id": 1441478,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551845398750236672",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "这个看起来很棒啊，<a href=\"https://twitter.com/randyloop\">@randyloop</a> 的 <a href=\"https://twitter.com/cusdis_hq\">@cusdis_hq</a> 啥时候能跟进一下\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "这个看起来很棒啊，@randyloop 的 @cusdis_hq 啥时候能跟进一下"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1441497": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Clu",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/afbb8133cb055f314d2cdeb2a8204481668999be5b51e5357f734e289fcfdd7a.jpg",
+      "url": "https://twitter.com/designedbyclu"
+    },
+    "url": "https://twitter.com/designedbyclu/status/1551869188188164097",
+    "published": "2022-07-26T09:57:01+00:00",
+    "wm-received": "2022-07-26T10:08:13Z",
+    "wm-id": 1441497,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1551869188188164097",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "这个idea 挺好的\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "这个idea 挺好的"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1441498": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "jimmylv.eth (🐣, 🐣) 吕立青 2𐃏22 🇨🇳",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/6ec29064788f4904270ca3c746c804cd31fd41eda630bb0fb4ba8df16e2b04df.jpg",
+      "url": "https://twitter.com/Jimmy_JingLv"
+    },
+    "url": "https://twitter.com/Jimmy_JingLv/status/1551866696431910913",
+    "published": "2022-07-26T09:47:07+00:00",
+    "wm-received": "2022-07-26T10:08:14Z",
+    "wm-id": 1441498,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1551866696431910913",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "主动聚合 👍\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "主动聚合 👍"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1441666": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Hanchin Hsieh",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b66fa6d5a6bdc965b2f6df32c1517ad26b16c16f94c2efb0ba4890125e66d0bf.jpg",
+      "url": "https://twitter.com/realyuchanns"
+    },
+    "url": "https://twitter.com/realyuchanns/status/1551907903137009666",
+    "published": "2022-07-26T12:30:51+00:00",
+    "wm-received": "2022-07-26T12:35:09Z",
+    "wm-id": 1441666,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551907903137009666",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "photo": [
+      "https://pbs.twimg.com/media/FYl79-DacAArlrw.png"
+    ],
+    "content": {
+      "html": "Hmm...Interesting\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "Hmm...Interesting"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1441748": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "steven 🇺🇦 🇹🇼 🇺🇸认证1450",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/cfd9545306f35ab689483a7dfa7ca4a26f7b7719aebcced5c78005a1d9cb0df8.jpg",
+      "url": "https://twitter.com/steven662607004"
+    },
+    "url": "https://twitter.com/steven662607004/status/1551939464250810368",
+    "published": "2022-07-26T14:36:16+00:00",
+    "wm-received": "2022-07-26T14:55:12Z",
+    "wm-id": 1441748,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1551939464250810368",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "还能这么玩\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>\n<a href=\"https://twitter.com/owenyoungzh/status/1551532725730807808\">twitter.com/owenyoungzh/st…</a>",
+      "text": "还能这么玩\n\ntwitter.com/owenyoungzh/st…"
+    },
+    "mention-of": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1441783": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Zhenbo 'endle' Li",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/0b58d16d0e31231653f0ebc2480ede3fbd020db503be0f2941e6dcda8de2016e.jpg",
+      "url": "https://twitter.com/ZhenboLi1"
+    },
+    "url": "https://twitter.com/ZhenboLi1/status/1551947839613374466",
+    "published": "2022-07-26T15:09:33+00:00",
+    "wm-received": "2022-07-26T15:26:34Z",
+    "wm-id": 1441783,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1551947839613374466",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "这个想法我觉得真的不错。相比于 Disqus 或是 gitment 一类工具，使用推特的社交属性强得多，也能增强曝光度\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "这个想法我觉得真的不错。相比于 Disqus 或是 gitment 一类工具，使用推特的社交属性强得多，也能增强曝光度"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1442532": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "tortorse",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/73bf03273244e74de28293f8d46c60b76d5b2b917d8bd7ff1f124df853834fad.jpg",
+      "url": "https://twitter.com/tortorse"
+    },
+    "url": "https://twitter.com/tortorse/status/1552089695110443010",
+    "published": "2022-07-27T00:33:14+00:00",
+    "wm-received": "2022-07-27T01:01:10Z",
+    "wm-id": 1442532,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1551532725730807808/1552089695110443010",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "想法真棒，感觉一下子把静态博客用社交网络串联起来了\n<a class=\"u-mention\" href=\"http://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://webmention.io/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/en/blog/indieweb/\"></a>",
+      "text": "想法真棒，感觉一下子把静态博客用社交网络串联起来了"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
