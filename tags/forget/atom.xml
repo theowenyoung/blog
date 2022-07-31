@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Forget</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/forget/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-07-31T22:05:32+08:00</updated>
+	<id>https://www.owenyoung.com/tags/forget/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>不要忘记这些事情</title>
+		<published>2022-07-31T22:05:32+08:00</published>
+		<updated>2022-07-31T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/dont-forget/" type="text/html"/>
+		<id>https://www.owenyoung.com/dont-forget/</id>
+		<content type="html">&lt;p&gt;最近搬家，发现总会在一些不常见的操作中忘记一些事情，所以决定开一篇笔记记录下一些常见的不能忘的小事。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;ban-jia&quot;&gt;搬家&lt;a class=&quot;zola-anchor&quot; href=&quot;#ban-jia&quot; aria-label=&quot;Anchor link for: ban-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;一定要留下租房合同和租房押金在原房子里，退房的时候要用到。&lt;&#x2F;li&gt;
+&lt;li&gt;检查水龙头，以及多媒体弱电箱里的路由器要带走。&lt;&#x2F;li&gt;
+&lt;li&gt;打包东西的时候第一时间准备一个放最常用的东西的箱子（搬过去之后用于 setup 的）见&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;life-required-list&#x2F;&quot;&gt;生活必备清单&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;退掉门禁的押金和门禁卡&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
