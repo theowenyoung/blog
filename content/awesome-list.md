@@ -1,7 +1,7 @@
 ---
 title: 各种清单，列表，目录收集 - Notes List
 date: 2021-03-26
-updated: 2022-07-21
+updated: 2022-08-01
 taxonomies:
   categories:
     - Notes
@@ -74,6 +74,7 @@ taxonomies:
 ## Website
 
 - [awesome lite websites](https://github.com/mdibaiee/awesome-lite-websites)
+- [Hacker News Top Users' Websites](https://jessimekirk.com/blog/hn_users_links/)
 
 ## Low Code
 
