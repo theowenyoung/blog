@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-31T22:05:32+08:00</updated>
+	<updated>2022-08-01T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>不要忘记这些事情</title>
@@ -4715,7 +4715,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>探索互联网上高质量的内容</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-07-13T00:00:00+00:00</updated>
+		<updated>2022-08-01T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/sources/" type="text/html"/>
 		<id>https://www.owenyoung.com/sources/</id>
 		<content type="html">&lt;p&gt;我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。&lt;&#x2F;p&gt;
@@ -4875,6 +4875,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getizumo.com&#x2F;shibei&quot;&gt;云海拾贝&lt;&#x2F;a&gt; - 出云整理的国外高质量网站系列&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;shuziyimin.org&#x2F;&quot;&gt;数字移民导航&lt;&#x2F;a&gt; - 数字移民整理的国外网站导航&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.yitianshijie.net&#x2F;2019&#x2F;12&#x2F;10&#x2F;rss-feeds-recommendation&#x2F;&quot;&gt;一天世界的 RSS 订阅列表&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jessimekirk.com&#x2F;blog&#x2F;hn_users_links&#x2F;&quot;&gt;Hacker News Top Users’ Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ideas&quot;&gt;Ideas&lt;a class=&quot;zola-anchor&quot; href=&quot;#ideas&quot; aria-label=&quot;Anchor link for: ideas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -6690,7 +6691,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>各种清单，列表，目录收集 - Notes List</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-07-21T00:00:00+00:00</updated>
+		<updated>2022-08-01T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
 		<id>https://www.owenyoung.com/awesome-list/</id>
 		<content type="html">&lt;p&gt;收集各种清单，列表，目录。&lt;&#x2F;p&gt;
@@ -6758,6 +6759,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;website&quot;&gt;Website&lt;a class=&quot;zola-anchor&quot; href=&quot;#website&quot; aria-label=&quot;Anchor link for: website&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mdibaiee&#x2F;awesome-lite-websites&quot;&gt;awesome lite websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jessimekirk.com&#x2F;blog&#x2F;hn_users_links&#x2F;&quot;&gt;Hacker News Top Users’ Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;low-code&quot;&gt;Low Code&lt;a class=&quot;zola-anchor&quot; href=&quot;#low-code&quot; aria-label=&quot;Anchor link for: low-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;

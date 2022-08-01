@@ -5,12 +5,12 @@
 	<link href="https://www.owenyoung.com/tags/list/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-21T00:00:00+00:00</updated>
+	<updated>2022-08-01T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/list/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>各种清单，列表，目录收集 - Notes List</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-07-21T00:00:00+00:00</updated>
+		<updated>2022-08-01T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/awesome-list/" type="text/html"/>
 		<id>https://www.owenyoung.com/awesome-list/</id>
 		<content type="html">&lt;p&gt;收集各种清单，列表，目录。&lt;&#x2F;p&gt;
@@ -78,6 +78,7 @@
 &lt;h2 id=&quot;website&quot;&gt;Website&lt;a class=&quot;zola-anchor&quot; href=&quot;#website&quot; aria-label=&quot;Anchor link for: website&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mdibaiee&#x2F;awesome-lite-websites&quot;&gt;awesome lite websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jessimekirk.com&#x2F;blog&#x2F;hn_users_links&#x2F;&quot;&gt;Hacker News Top Users’ Websites&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;low-code&quot;&gt;Low Code&lt;a class=&quot;zola-anchor&quot; href=&quot;#low-code&quot; aria-label=&quot;Anchor link for: low-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
