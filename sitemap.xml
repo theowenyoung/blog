@@ -157,6 +157,10 @@
         <lastmod>2022-03-24</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/booting/</loc>
+        <lastmod>2022-08-09</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/debian-gost-setup/</loc>
         <lastmod>2022-06-12</lastmod>
     </url>
@@ -720,6 +724,12 @@
         <loc>https://www.owenyoung.com/tags/books/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/tags/boot/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/boot/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/tags/centos/</loc>
     </url>
     <url>
@@ -742,6 +752,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/communities/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/computer/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/computer/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/country/</loc>
@@ -1243,7 +1259,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/thoughts/</loc>
-        <lastmod>2022-07-23</lastmod>
+        <lastmod>2022-08-08</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tips/</loc>
@@ -1255,7 +1271,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tools/</loc>
-        <lastmod>2022-07-23</lastmod>
+        <lastmod>2022-08-09</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tv-shows/</loc>

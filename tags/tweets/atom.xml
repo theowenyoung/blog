@@ -5,15 +5,21 @@
 	<link href="https://www.owenyoung.com/tags/tweets/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-23T00:00:00+00:00</updated>
+	<updated>2022-08-08T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tweets/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-08-08T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;成年后学了 2 样东西：1. 双拼输入法 2. 自己接网线水晶头 – 2022.08.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每次看到中国明星离婚的消息，我在心里都暗暗为女方叫好，我不咱相信中国成功男明星能配得上女明星。普通中国男的已经够糟了，成功的男明星大多都是粪坑吧。 – 2022.08.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;以下这几个别名和函数节省了我至少一吨的时间。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;gg&lt;&#x2F;span&gt;&lt;span&gt;() { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -a &lt;&#x2F;span&gt;&lt;span&gt;}
@@ -54,6 +60,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;就觉得这个世界被浪费的才华真的太多了，以至于几乎只有西方世界的人能发挥自己的才华，中国，中东，非洲，南美有太多地方的人没法发挥自己的才华，让这个世界少了多少的精彩啊。 – 2022.05.29&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;GenZedong&#x2F;&quot;&gt;目前见过最可怕的 Reddit 小组&lt;&#x2F;a&gt; – 2022.05.26&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -69,7 +76,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;大多数中国人没有宗教信仰在我看来是好事，我一直认为人们应该相信某种哲学，而不是某种宗教。所以我觉得要是中国能一条路走向自由，那么绝对会很快成功一个真正的超级大国。 – 2022.05.15&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.pewresearch.org&#x2F;global&#x2F;2021&#x2F;06&#x2F;30&#x2F;large-majorities-say-china-does-not-respect-the-personal-freedoms-of-its-people&#x2F;&quot;&gt;年龄有时在人们如何看待中国方面起着重要作用&lt;&#x2F;a&gt; ，65 岁及以上的人比 18 至 29 岁的人更有可能对中国持负面看法。在加拿大尤其如此，83%的老年人对中国持负面看法，而只有 54%的加拿大年轻人持这种观点。然而，这种模式在台湾和韩国被逆转了。例如，在韩国，65 岁及以上的成年人中有 67%对中国持负面看法，而 18 至 29 岁的这一比例为 84%。– 2022.05.15&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;

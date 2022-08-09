@@ -5,8 +5,84 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-01T00:00:00+00:00</updated>
+	<updated>2022-08-09T00:43:39+08:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>电脑的启动流程</title>
+		<published>2022-08-09T00:43:39+08:00</published>
+		<updated>2022-08-09T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/booting/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/booting/</id>
+		<content type="html">&lt;p&gt;以前看过一个面试题，当你从浏览器地址栏输入 url 后，按下回车，具体会发生什么，这对这道题还挺有信心的，但是你要我说按下电脑开机键会发生什么，我是真的不知道。通过这次学习终于知道了一些：）&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;但是我绝对不是专家，只是一个刚接触这一块的新手，这篇文章里的所有东西都是根据&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;#References&quot;&gt;很多文章和论文&lt;&#x2F;a&gt;，以及我自己的实践得来的，所以里面的信息如果有错误，请帮助我更正它！&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;liu-cheng&quot;&gt;流程&lt;a class=&quot;zola-anchor&quot; href=&quot;#liu-cheng&quot; aria-label=&quot;Anchor link for: liu-cheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-cpu-zhi-xing-firmware-setup-cheng-xu&quot;&gt;1. CPU 执行 Firmware setup 程序&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-cpu-zhi-xing-firmware-setup-cheng-xu&quot; aria-label=&quot;Anchor link for: 1-cpu-zhi-xing-firmware-setup-cheng-xu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;当用户按下开机键，电脑就通电了，这个时候 CPU 先启动，它的工作就是不断的执行给他的指令，而初始指令就是主板写在硬件里的 Firmware setup 程序, 现代电脑的 Firmware setup 程序（2014 年后生产的电脑）基本上使用的都是 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;uefi.org&#x2F;&quot;&gt;Unified Extensible Firmware Interface&lt;&#x2F;a&gt; (UEFI)标准。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;UEFI 是一种“固件程序”，固化在一个焊接或插在主板上 EEPROM (electrically erasable programmable read-only memory) 芯片上，并且暴露一些接口以和软件进行交互。&lt;&#x2F;p&gt;
+&lt;p&gt;EEPROM 是带电可擦可编程只读存储器。 是一种掉电后数据不丢失的存储芯片，所以很适合存放这种固件程序，轻易不咋变动，但要变动的时候，也能比较容易的变动。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;UEFI 是 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;BIOS&quot;&gt;Basic Input&#x2F;Output System (BIOS) &lt;&#x2F;a&gt; 的现代版本,基本上 2014 年之后的机器附带的主板用的都是 UEFI 程序了。&lt;&#x2F;p&gt;
+&lt;p&gt;当你看到以下这个菜单图片：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;.&#x2F;uefi-text-menu.jpeg&quot; alt=&quot;uefi-text-menu&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这并不是代表你的电脑用的是传统的 BIOS，虽然这个界面看起来很原始，但是其实这也是 UEFI 程序的，只是他的界面和 BIOS 一样是文本用户界面 (TUI)，更现代的 UEFI 可能会带有酷酷的图形化 (GUI) 操作界面，像这样的：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;.&#x2F;asus-UEFI.jpg&quot; alt=&quot;uefi-gui&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;我们可以通过在电脑开机的时候，连续按 F1 键（或者别的什么键）进入 UEFI 的设置 菜单。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;很多人会混用 UEFI,BIOS 这些名词，我觉得这个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;superuser.com&#x2F;a&#x2F;1722488&quot;&gt;回答&lt;&#x2F;a&gt;解释的特别好。&lt;&#x2F;p&gt;
+&lt;p&gt;PS. 我觉得现在应该弃用 BIOS 这个名字，用 Firmware setup 程序来代替它。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;2-firmware-setup-cheng-xu-kai-shi-yun-xing-bing-cong-cmos-li-mian-du-qu-dang-qian-xi-tong-shi-jian&quot;&gt;2. Firmware setup 程序开始运行，并从 CMOS 里面读取当前系统时间&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-firmware-setup-cheng-xu-kai-shi-yun-xing-bing-cong-cmos-li-mian-du-qu-dang-qian-xi-tong-shi-jian&quot; aria-label=&quot;Anchor link for: 2-firmware-setup-cheng-xu-kai-shi-yun-xing-bing-cong-cmos-li-mian-du-qu-dang-qian-xi-tong-shi-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;CMOS 是位于主板上的一个简单的存储装置，现在的实际使用中，只被用于记录时钟 RTC 信息，所以这个东西需要一直有电才能保持系统时间的正确性，所以 CMOS 被设计为：开机的时候用电源供电，关机的时候就用纽扣电池供电。如图：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;.&#x2F;cmos-battery-backup.webp&quot; alt=&quot;cmos&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;但其实操作系统在有网的时候，一般也用不到 CMOS 里的时钟信息，因为它都是访问网络上的时间去校准时间的，除非没有网络才会用这个值。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;网络上很多文章说 Firmware setup 程序会把用户的配置信息（比如启动项配置等）存放到 CMOS 里面，其实现代的电脑都不会这样做了，因为只有时钟信息需要持续的电源来运行，别的东西都可以存在文件系统里，UEFI 的配置信息都是存放在文件系统里的。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;3-firmware-setup-cheng-xu-kai-shi-zhi-xing-dian-nao-an-quan-zi-jian&quot;&gt;3. Firmware setup 程序开始执行电脑安全自检&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-firmware-setup-cheng-xu-kai-shi-zhi-xing-dian-nao-an-quan-zi-jian&quot; aria-label=&quot;Anchor link for: 3-firmware-setup-cheng-xu-kai-shi-zhi-xing-dian-nao-an-quan-zi-jian&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;这个阶段被称为：SEC，security 阶段，做一些硬件方面的安全检查，看下各种东西都 ok 不 ok，之后的整个流程大概是这样：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;.&#x2F;sequence.png&quot; alt=&quot;sequence&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;4-chu-shi-hua-efi-de-zhi-xing-huan-jing-bi-ru-cpu-ge-chong-gong-neng-xin-pian-deng&quot;&gt;4. 初始化 EFI 的执行环境， 比如 cpu ，各种功能芯片等&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-chu-shi-hua-efi-de-zhi-xing-huan-jing-bi-ru-cpu-ge-chong-gong-neng-xin-pian-deng&quot; aria-label=&quot;Anchor link for: 4-chu-shi-hua-efi-de-zhi-xing-huan-jing-bi-ru-cpu-ge-chong-gong-neng-xin-pian-deng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;这个阶段被称为 PEI，Pre Extensible Firmware Interface，Pre-EFI，EFI 是 UEFI 给系统引导程序（Boot Loader）准备的运行环境，就像 Bash 脚本环境一样，这个环境可以执行&lt;code&gt;.efi&lt;&#x2F;code&gt;文件。&lt;code&gt;.eft&lt;&#x2F;code&gt;文件就是系统引导程序的入口文件。在这个阶段会把 CPU，主内存，其他专用功能芯片组（比如音频芯片）啥的都准备好。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;5-dxe-jie-duan&quot;&gt;5. DXE 阶段&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-dxe-jie-duan&quot; aria-label=&quot;Anchor link for: 5-dxe-jie-duan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Drive Execution Environment, 在这个阶段，DXE 调度程序将发现并执行相关固件卷中可用的 DXE 驱动程序，这些驱动程序负责更高级别的平台初始化和服务，比如系统管理模式（SMM）的设置，更高级别的固件驱动程序，如网络，启动盘，热量管理等，并且为后面的阶段提供运行时的服务接口。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;6-bds-jie-duan&quot;&gt;6. BDS 阶段&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-bds-jie-duan&quot; aria-label=&quot;Anchor link for: 6-bds-jie-duan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Boot Device Selection 阶段，这个阶段，UEFI 会加载各种设备的驱动程序，比如硬盘，U 盘的驱动，并运行 Boot Loader 引导程序：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;初始化控制台 console 设备，看看系统有多少可以启动的设备&lt;&#x2F;li&gt;
+&lt;li&gt;加载必要的设备驱动比如硬盘，u 盘等&lt;&#x2F;li&gt;
+&lt;li&gt;加载输入输出设备驱动，比如键盘，鼠标等&lt;&#x2F;li&gt;
+&lt;li&gt;搜索可用的启动设备（其实就是搜索具有 FAT32 分区格式的设备，FAT32 分区是微软设计的格式，单文件最大 4G，格式化 U 盘的时候可以看到这种格式选项）&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;我们一般会在硬盘里分出一个专门的 EFI 分区用来存放引导程序：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;.&#x2F;EFI-Partition-Disk-Management.webp&quot; alt=&quot;efi&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这个磁盘分区里的文件结构大概如下：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;.&#x2F;efi-folder.jpeg&quot; alt=&quot;efi-folder&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;如果你有多个引导程序的话，你可以在 UEFI 提供的 boot 菜单里选择使用哪一个（按 F12 可以进入 boot 引导程序菜单），默认的话就是进入排名第一的那个。UEFI 提供的引导菜单其实是一级引导，然后进入二级引导程序：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二级引导程序有 Grub2, Windows boot manager 等, 如果你电脑预装的是 Windows 系统的话，那就只有 Windows Boot mananer ，如果你装了双系统，比如 Ubuntu 等 Linux 系统的话，Linux 系统会使用 Grub2 作为二级引导系统， Grub2 支持 windows，linux，macos 等系统的引导。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;到了这里，二级引导程序就会根据用户的配置，把 CPU 的控制权交给真正的操作系统了，至此，电脑才算开始启动 OS 了。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;a class=&quot;zola-anchor&quot; href=&quot;#zong-jie&quot; aria-label=&quot;Anchor link for: zong-jie&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;这篇文章有太多名词了，如果没有装过几次操作系统的，可能听的云里雾里的，所以如果你感到云里雾里的也没必要深究，等你装过几次系统，遇到一些错误，然后在解决的过程中，你就慢慢理解这些东西了。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;a class=&quot;zola-anchor&quot; href=&quot;#references&quot; aria-label=&quot;Anchor link for: references&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;neucrack.com&#x2F;p&#x2F;330&quot;&gt;实体机安装双系统多系统教程 及引导修复指南&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;yuxiayizhengwan&#x2F;p&#x2F;15132486.html&quot;&gt;如何在 Windows10 下安装 ubuntu 双系统(无 U 盘)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;32280478&quot;&gt;浅谈操作系统-启动过程&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.shenzeyu.cn&#x2F;2015&#x2F;12&#x2F;06&#x2F;%E6%B5%85%E8%B0%88UEFI%E5%90%AF%E5%8A%A8&#x2F;&quot;&gt;浅谈 UEFI 启动&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2013&#x2F;02&#x2F;booting.html&quot;&gt;阮一峰: 计算机是如何启动的？&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;pipci&#x2F;p&#x2F;13280030.html&quot;&gt;BIOS 与 UEFI 引导流程&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;superuser.com&#x2F;questions&#x2F;1722483&#x2F;what-is-the-terminologically-correct-way-to-call-the-setup-screen-before-boot&quot;&gt;What is the terminologically correct way to call the setup screen before boot?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;edk2-docs.gitbook.io&#x2F;edk-ii-build-specification&#x2F;2_design_discussion&#x2F;23_boot_sequence&quot;&gt;Boot Sequence&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.osdev.org&#x2F;CMOS&quot;&gt;CMOS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;depletionmode.com&#x2F;uefi-boot.html&quot;&gt;了解基于 UEFI 的现代平台启动&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_45279063&#x2F;article&#x2F;details&#x2F;115508961&quot;&gt;BIOS 追 Code 之 BDS phase -＞ TSL-＞ RT-＞ AL&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>不要忘记这些事情</title>
 		<published>2022-07-31T22:05:32+08:00</published>
@@ -80,7 +156,12 @@
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;qi-ta&quot;&gt;其他&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta&quot; aria-label=&quot;Anchor link for: qi-ta&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;常用工具盒&lt;&#x2F;li&gt;
+&lt;li&gt;常用工具盒
+&lt;ul&gt;
+&lt;li&gt;U 盘&lt;&#x2F;li&gt;
+&lt;li&gt;网线钳，网线测试仪，若干网线水晶头（每次搬家，都会发现房东的弱电箱根本没接水晶头）&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -5159,10 +5240,16 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-08-08T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;成年后学了 2 样东西：1. 双拼输入法 2. 自己接网线水晶头 – 2022.08.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每次看到中国明星离婚的消息，我在心里都暗暗为女方叫好，我不咱相信中国成功男明星能配得上女明星。普通中国男的已经够糟了，成功的男明星大多都是粪坑吧。 – 2022.08.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;以下这几个别名和函数节省了我至少一吨的时间。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;gg&lt;&#x2F;span&gt;&lt;span&gt;() { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -a &lt;&#x2F;span&gt;&lt;span&gt;}
@@ -5203,6 +5290,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;就觉得这个世界被浪费的才华真的太多了，以至于几乎只有西方世界的人能发挥自己的才华，中国，中东，非洲，南美有太多地方的人没法发挥自己的才华，让这个世界少了多少的精彩啊。 – 2022.05.29&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;GenZedong&#x2F;&quot;&gt;目前见过最可怕的 Reddit 小组&lt;&#x2F;a&gt; – 2022.05.26&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -5218,7 +5306,6 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;大多数中国人没有宗教信仰在我看来是好事，我一直认为人们应该相信某种哲学，而不是某种宗教。所以我觉得要是中国能一条路走向自由，那么绝对会很快成功一个真正的超级大国。 – 2022.05.15&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.pewresearch.org&#x2F;global&#x2F;2021&#x2F;06&#x2F;30&#x2F;large-majorities-say-china-does-not-respect-the-personal-freedoms-of-its-people&#x2F;&quot;&gt;年龄有时在人们如何看待中国方面起着重要作用&lt;&#x2F;a&gt; ，65 岁及以上的人比 18 至 29 岁的人更有可能对中国持负面看法。在加拿大尤其如此，83%的老年人对中国持负面看法，而只有 54%的加拿大年轻人持这种观点。然而，这种模式在台湾和韩国被逆转了。例如，在韩国，65 岁及以上的成年人中有 67%对中国持负面看法，而 18 至 29 岁的这一比例为 84%。– 2022.05.15&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -5413,7 +5500,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-08-09T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -5430,7 +5517,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.freehoro.net&#x2F;FreeHoro&#x2F;index.php&quot;&gt;八字，命理测试&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;zhui-zei&quot;&gt;追贼&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zei&quot; aria-label=&quot;Anchor link for: zhui-zei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;zhui-zong&quot;&gt;追踪&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zong&quot; aria-label=&quot;Anchor link for: zhui-zong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iknowwhatyoudownload.com&#x2F;&quot;&gt;I Know what your download&lt;&#x2F;a&gt; - 我知道你下载了什么，追踪 ip 的下载列表，有点可怕。。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -5723,6 +5810,10 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jsonnet.org&#x2F;&quot;&gt;JSONNet&lt;&#x2F;a&gt; - JSON 的简单扩展,可配置&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tui&quot;&gt;TUI&lt;a class=&quot;zola-anchor&quot; href=&quot;#tui&quot; aria-label=&quot;Anchor link for: tui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Phantas0s&#x2F;devdash&quot;&gt;DEV Dash&lt;&#x2F;a&gt; - 🍱 面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

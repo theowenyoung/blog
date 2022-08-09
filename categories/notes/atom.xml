@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-01T00:00:00+00:00</updated>
+	<updated>2022-08-09T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>不要忘记这些事情</title>
@@ -80,7 +80,12 @@
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;qi-ta&quot;&gt;其他&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta&quot; aria-label=&quot;Anchor link for: qi-ta&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;常用工具盒&lt;&#x2F;li&gt;
+&lt;li&gt;常用工具盒
+&lt;ul&gt;
+&lt;li&gt;U 盘&lt;&#x2F;li&gt;
+&lt;li&gt;网线钳，网线测试仪，若干网线水晶头（每次搬家，都会发现房东的弱电箱根本没接水晶头）&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -2755,10 +2760,16 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-08-08T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;成年后学了 2 样东西：1. 双拼输入法 2. 自己接网线水晶头 – 2022.08.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;每次看到中国明星离婚的消息，我在心里都暗暗为女方叫好，我不咱相信中国成功男明星能配得上女明星。普通中国男的已经够糟了，成功的男明星大多都是粪坑吧。 – 2022.08.08&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;以下这几个别名和函数节省了我至少一吨的时间。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;gg&lt;&#x2F;span&gt;&lt;span&gt;() { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; commit&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -m &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -a &lt;&#x2F;span&gt;&lt;span&gt;}
@@ -2799,6 +2810,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;就觉得这个世界被浪费的才华真的太多了，以至于几乎只有西方世界的人能发挥自己的才华，中国，中东，非洲，南美有太多地方的人没法发挥自己的才华，让这个世界少了多少的精彩啊。 – 2022.05.29&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;GenZedong&#x2F;&quot;&gt;目前见过最可怕的 Reddit 小组&lt;&#x2F;a&gt; – 2022.05.26&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -2814,7 +2826,6 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;大多数中国人没有宗教信仰在我看来是好事，我一直认为人们应该相信某种哲学，而不是某种宗教。所以我觉得要是中国能一条路走向自由，那么绝对会很快成功一个真正的超级大国。 – 2022.05.15&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.pewresearch.org&#x2F;global&#x2F;2021&#x2F;06&#x2F;30&#x2F;large-majorities-say-china-does-not-respect-the-personal-freedoms-of-its-people&#x2F;&quot;&gt;年龄有时在人们如何看待中国方面起着重要作用&lt;&#x2F;a&gt; ，65 岁及以上的人比 18 至 29 岁的人更有可能对中国持负面看法。在加拿大尤其如此，83%的老年人对中国持负面看法，而只有 54%的加拿大年轻人持这种观点。然而，这种模式在台湾和韩国被逆转了。例如，在韩国，65 岁及以上的成年人中有 67%对中国持负面看法，而 18 至 29 岁的这一比例为 84%。– 2022.05.15&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -3009,7 +3020,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-08-09T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -3026,7 +3037,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.freehoro.net&#x2F;FreeHoro&#x2F;index.php&quot;&gt;八字，命理测试&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;zhui-zei&quot;&gt;追贼&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zei&quot; aria-label=&quot;Anchor link for: zhui-zei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;zhui-zong&quot;&gt;追踪&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zong&quot; aria-label=&quot;Anchor link for: zhui-zong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iknowwhatyoudownload.com&#x2F;&quot;&gt;I Know what your download&lt;&#x2F;a&gt; - 我知道你下载了什么，追踪 ip 的下载列表，有点可怕。。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -3319,6 +3330,10 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jsonnet.org&#x2F;&quot;&gt;JSONNet&lt;&#x2F;a&gt; - JSON 的简单扩展,可配置&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tui&quot;&gt;TUI&lt;a class=&quot;zola-anchor&quot; href=&quot;#tui&quot; aria-label=&quot;Anchor link for: tui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Phantas0s&#x2F;devdash&quot;&gt;DEV Dash&lt;&#x2F;a&gt; - 🍱 面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/tags/tools/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-23T00:00:00+00:00</updated>
+	<updated>2022-08-09T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tools/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>互联网上的免费资源汇总</title>
@@ -92,7 +92,7 @@
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-08-09T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -109,7 +109,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.freehoro.net&#x2F;FreeHoro&#x2F;index.php&quot;&gt;八字，命理测试&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;zhui-zei&quot;&gt;追贼&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zei&quot; aria-label=&quot;Anchor link for: zhui-zei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;zhui-zong&quot;&gt;追踪&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhui-zong&quot; aria-label=&quot;Anchor link for: zhui-zong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iknowwhatyoudownload.com&#x2F;&quot;&gt;I Know what your download&lt;&#x2F;a&gt; - 我知道你下载了什么，追踪 ip 的下载列表，有点可怕。。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -402,6 +402,10 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jsonnet.org&#x2F;&quot;&gt;JSONNet&lt;&#x2F;a&gt; - JSON 的简单扩展,可配置&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tui&quot;&gt;TUI&lt;a class=&quot;zola-anchor&quot; href=&quot;#tui&quot; aria-label=&quot;Anchor link for: tui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Phantas0s&#x2F;devdash&quot;&gt;DEV Dash&lt;&#x2F;a&gt; - 🍱 面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
