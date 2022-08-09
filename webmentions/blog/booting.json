@@ -1,0 +1,24 @@
+{
+  "1454217": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1556986729936322560",
+    "published": "2022-08-09T12:52:18+00:00",
+    "wm-received": "2022-08-09T12:52:43Z",
+    "wm-id": 1454217,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1556986729936322560",
+    "wm-target": "https://www.owenyoung.com/blog/booting/",
+    "content": {
+      "html": "最近给一台闲置的笔记本电脑安装Ubuntu Server双系统，学到了好多电脑的启动流程知识，记了一篇《电脑的启动流程》笔记：<a href=\"https://www.owenyoung.com/blog/booting/\">owenyoung.com/blog/booting/</a>",
+      "text": "最近给一台闲置的笔记本电脑安装Ubuntu Server双系统，学到了好多电脑的启动流程知识，记了一篇《电脑的启动流程》笔记：owenyoung.com/blog/booting/"
+    },
+    "mention-of": "https://www.owenyoung.com/blog/booting/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
