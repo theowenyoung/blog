@@ -84,6 +84,73 @@
 </content>
 	</entry>
 	<entry xml:lang="zh">
+		<title>不用 U 盘在 Windows 10 上安装Ubuntu Server 22 双系统</title>
+		<published>2022-08-07T23:31:06+08:00</published>
+		<updated>2022-08-07T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/windows-10-ubuntu-22-dual-system-without-usb-flash-drive/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/windows-10-ubuntu-22-dual-system-without-usb-flash-drive/</id>
+		<content type="html">&lt;p&gt;这篇文章是一篇笔记，记录一下安装期间遇到的坑，不算是教程，因为我走了一遍流程之后决定放弃这样安装，还是乖乖的买一块新的 U 盘去安装系统，劝你也这样做（我为啥要这样装系统，是因为我的旧 U 盘是一个 360wifi 的 u 盘，试了用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rufus.ie&#x2F;en&#x2F;&quot;&gt;refus&lt;&#x2F;a&gt;,&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ventoy.net&#x2F;en&#x2F;faq.html&quot;&gt;ventoy&lt;&#x2F;a&gt;等工具创建引导 u 盘，电脑都无法启动这块 u 盘的引导系统，这才尝试无 U 盘安装）。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;背景是：最近刚搬家，无意中找到一个 dp 的转接头，神奇的发现之前屏幕坏掉的 Thinkpad T450 笔记本可以外接到房东的大电视上显示，（之前拿到联想售后店，售后告诉我整个显卡都坏掉，外接显示屏也无法显示，我也就没尝试过），所以准备给这台旧笔记本额外安装一个 Linux 系统，用作家庭服务器，可以跑旁路由，和一些媒体中心等等。这样的需求最适合装一个 headless 系统，平时都通过 ssh 连接和操作，把废旧笔记本当作树莓派一样用。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;我发现装系统的时候最能学到一些更底层的知识，我虽然是程序员，但还是有超多基本知识都不了解，通过这次装系统，又学了好多新知识。在查找教程的过程中，有一点感触很深，就是写教程的人，最好解释清楚每一步操作都干了啥，这样读者才能从中学到真正的东西，但是网络上有很多中文的教程就只是告诉你说这几行命令能解决问题，这就搞得人很虚。所以自己写教程或者笔记的时候，一定不要怕冗余，努力说清楚每一个操作实际上干了什么。&lt;&#x2F;p&gt;
+&lt;p&gt;装完之后，总算理解了一点点电脑的启动流程，写了一篇笔记：&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;booting&#x2F;&quot;&gt;电脑的启动流程&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下面文章里提到的很多名词，我会默认你已经读过上面这篇操作系统启动的综述了，所以就不再重复解释。&lt;&#x2F;p&gt;
+&lt;p&gt;这篇文章是靠回忆完成的，所以可能会有一些步骤的遗失，如果你遇到问题，欢迎帮助我一起编辑这篇文章。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;1-guan-bi-kuai-su-qi-dong&quot;&gt;1. 关闭快速启动&lt;a class=&quot;zola-anchor&quot; href=&quot;#1-guan-bi-kuai-su-qi-dong&quot; aria-label=&quot;Anchor link for: 1-guan-bi-kuai-su-qi-dong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;电源选项 -&amp;gt; 选择电源按钮的功能 -&amp;gt; 更改当前不可用的设置，取消勾选启用快速启动.这样电源按钮就恢复为单纯的电源按钮了。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;快速启动是 Windows 把传统的完全关机模式，升级为“关机+休眠唤醒”的混合启动模式。在传统的关机模式中，执行关机命令后，Windows 会彻底结束正在运行的应用程序、停止系统服务、注销登录用户账户、关闭计算机电源，而不刷入缓存、写入文件。故下次开机时，所有资源项都必须重新启动一遍、全新加载、全新读取，因而在进入桌面后，仍会有一段的等待加载时间(体现在鼠标转圈圈)。而在“快速启动”模式下执行关机，Windows 8、8.1、10 等系统版本会将系统当前的运行状态(包括进程、服务、会话、内核等)写入到休眠缓存文件中，待下次开机时，系统便直接读取该休眠文件，并将其加载到内存，从而实现快速唤醒、快速恢复、快速启动，故等待时间较短，所以有些时候关机前没有关掉的窗口开机后可能会再次出现。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;2-zhuan-huan-fen-qu-ge-shi-mbr-dao-gpt&quot;&gt;2. 转换分区格式 MBR 到 GPT&lt;a class=&quot;zola-anchor&quot; href=&quot;#2-zhuan-huan-fen-qu-ge-shi-mbr-dao-gpt&quot; aria-label=&quot;Anchor link for: 2-zhuan-huan-fen-qu-ge-shi-mbr-dao-gpt&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;我的笔记本的主板是用的 UEFI，但是它的默认设置却用了 Legacy boot 的模式，磁盘也是使用 Master Boot Record (MBR)作为分区格式。这是一种过时的配置，所以第一步，我就把整个电脑的分区格式从 Master Boot Record (MBR)改为 GUID Partition Table (GPT) 格式，全面 UEFI 化。这一步其实很底层，有可能丢失数据，但是我的电脑啥都没有，所以我不担心这个问题，如果你有重要数据，请一定做好备份。我使用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.disktool.cn&#x2F;&quot;&gt;傲梅分区助手&lt;&#x2F;a&gt;把整个磁盘转换为 GPT 格式，我只有一个磁盘。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;windows-10-ubuntu-22-dual-system-without-usb-flash-drive&#x2F;.&#x2F;convert-to-gpt-disk.png&quot; alt=&quot;conver&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;转换完成之后，重启系统，按 F1 进入 UEFI 的 Boot 设置菜单,把 Boot Mode 改为 UEFI，同时确认 Security Boot 是关闭状态，CSM 也是关闭状态。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Security Boot 开启后，uefi 将会用公钥验证操作系统是否由认证的厂商发型，当时好像只内置了 Windows，Ubuntu 的支持，所以其实我觉得爱折腾的人，家用电脑没必要开启这个选项&lt;&#x2F;p&gt;
+&lt;p&gt;CSM（兼容性支持模块）,因为我们全面使用 UEFI，所以关闭 CSM 的支持，CSM 用于支持 MBR 引导&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;windows-10-ubuntu-22-dual-system-without-usb-flash-drive&#x2F;.&#x2F;mblegacyboot.jpg&quot; alt=&quot;uefi&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3-ci-pan-hua-fen&quot;&gt;3. 磁盘划分&lt;a class=&quot;zola-anchor&quot; href=&quot;#3-ci-pan-hua-fen&quot; aria-label=&quot;Anchor link for: 3-ci-pan-hua-fen&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;开机后，使用 Windows 的磁盘管理工具，新建一个 8G 左右大小的 FAT32 格式的分区，用于代替 U 盘，存放 Ubuntu 的系统镜像文件。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;windows-10-ubuntu-22-dual-system-without-usb-flash-drive&#x2F;.&#x2F;disk-fat32.png&quot; alt=&quot;disk&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;然后在&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ubuntu.com&#x2F;download&#x2F;server&quot;&gt;Ubuntu Server 的下载页面&lt;&#x2F;a&gt;, 下载最新版的 Server 镜像文件，然后把镜像文件解压到这个分区里。注意是把根目录的所有文件解压进去，不带根目录&lt;&#x2F;p&gt;
+&lt;p&gt;解压完成之后，我们需要修改一个 grub 的引导启动项参数, 找到&lt;code&gt;boot&#x2F;grub&#x2F;grub.cfg&lt;&#x2F;code&gt;文件，然后用记事本打开，找到以下行：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;menuentry &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Try or Install Ubuntu Server&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; {
+&lt;&#x2F;span&gt;&lt;span&gt;	set gfxpayload=keep
+&lt;&#x2F;span&gt;&lt;span&gt;	linux	&#x2F;casper&#x2F;vmlinuz  ---
+&lt;&#x2F;span&gt;&lt;span&gt;	initrd	&#x2F;casper&#x2F;initrd
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;修改为：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;menuentry &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Try or Install Ubuntu Server&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; {
+&lt;&#x2F;span&gt;&lt;span&gt;	set gfxpayload=keep
+&lt;&#x2F;span&gt;&lt;span&gt;	linux	&#x2F;casper&#x2F;vmlinuz toram  ---
+&lt;&#x2F;span&gt;&lt;span&gt;	initrd	&#x2F;casper&#x2F;initrd
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;我们添加了一个&lt;code&gt;toram&lt;&#x2F;code&gt;参数，这个参数告诉 grub 把整个 ubuntu 系统加载到内存中，这样我们就不依赖硬盘了，也就能在安装的过程中操作硬盘了。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-xin-jian-xi-tong-yin-dao-xiang&quot;&gt;4. 新建系统引导项&lt;a class=&quot;zola-anchor&quot; href=&quot;#4-xin-jian-xi-tong-yin-dao-xiang&quot; aria-label=&quot;Anchor link for: 4-xin-jian-xi-tong-yin-dao-xiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;下载 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.easyuefi.com&#x2F;index-us.html&quot;&gt;EasyUEFI&lt;&#x2F;a&gt; 软件，进入系统启动项管理，点击新建启动项，名字可以叫&lt;code&gt;ubuntuinstaller&lt;&#x2F;code&gt;,选择你刚新建的 Fat32 分区，引导文件选择&lt;code&gt;EFI -&amp;gt; BOOT -&amp;gt; grubx64.efi&lt;&#x2F;code&gt;，使用 grub 来引导，然后确定即可。这样就创建了一个启动盘，代替 U 盘。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;5-xin-jian-ubuntu-de-fen-qu&quot;&gt;5. 新建 ubuntu 的分区&lt;a class=&quot;zola-anchor&quot; href=&quot;#5-xin-jian-ubuntu-de-fen-qu&quot; aria-label=&quot;Anchor link for: 5-xin-jian-ubuntu-de-fen-qu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;接着再分出一个 80GB 左右的磁盘空间，用于安装 ubuntu 系统，具体操作是在磁盘管理里，先压缩 C 盘，压缩出大概 80G 的空间，然后把这个空间格式化为 nfts 格式&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果不格式化成 nfts 格式的话，ubuntu server 的安装程序无法发现未分配的磁盘，所以这一步先随便格式化一下，到时候安装的时候再让 ubuntu 安装程序格式化成 ext4 格式&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;6-an-zhuang-ubuntu&quot;&gt;6. 安装 ubuntu&lt;a class=&quot;zola-anchor&quot; href=&quot;#6-an-zhuang-ubuntu&quot; aria-label=&quot;Anchor link for: 6-an-zhuang-ubuntu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;重启电脑，按 F12 选择启动项，选择刚刚创建的&lt;code&gt;ubuntuinstaller&lt;&#x2F;code&gt;启动项启动，这时会进入 grub 的引导菜单，选择&lt;code&gt;Try or Install Ubuntu Server&lt;&#x2F;code&gt;,接下来就按照菜单里的提示一步步来，到了 disk 选择那一步要注意：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;windows-10-ubuntu-22-dual-system-without-usb-flash-drive&#x2F;.&#x2F;ubuntu-disk.png&quot; alt=&quot;disk&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;这一步要选择 Custom Storage layout, 然后选择你刚创建给 ubuntu 的分区，进入&lt;code&gt;edit&lt;&#x2F;code&gt;菜单，&lt;code&gt;Format&lt;&#x2F;code&gt;选择&lt;code&gt;ext4&lt;&#x2F;code&gt;格式，Mount 选择&lt;code&gt;&#x2F;&lt;&#x2F;code&gt;即可，其他的设置根据自己的喜好来就好。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;7-wan-cheng-an-zhuang&quot;&gt;7. 完成安装&lt;a class=&quot;zola-anchor&quot; href=&quot;#7-wan-cheng-an-zhuang&quot; aria-label=&quot;Anchor link for: 7-wan-cheng-an-zhuang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;我的电脑完成安装后，好像会丢失 windows 的 UEFI 一级引导项，但是 grub 作为二级引导程序， 会在这里加上 Windows 的引导，开机后按&lt;code&gt;esc&lt;&#x2F;code&gt;键会进入 grub 的系统选择菜单，在这里可以进入 Windows，然后可以再打开 EasyUEFI，好像打开一下，它就会修复一级系统引导了，这样之后按 F12 就可以选择不同的系统了。另外完成安装后，就可以删除磁盘里的 ubuntu 安装分区里。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;8-xie-zai-ubuntu&quot;&gt;8. 卸载 Ubuntu&lt;a class=&quot;zola-anchor&quot; href=&quot;#8-xie-zai-ubuntu&quot; aria-label=&quot;Anchor link for: 8-xie-zai-ubuntu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;卸载 Ubuntu 很简单，进入 Windows 系统后，直接删除 ubuntu 的分区磁盘，然后在 easyuefi 软件里也删除 ubuntu 的启动项即可。&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="zh">
 		<title>通过创建 dotfiles, 我终于拥有了一个 web3 身份</title>
 		<published>2022-07-13T00:55:21+08:00</published>
 		<updated>2022-07-13T00:00:00+00:00</updated>
