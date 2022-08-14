@@ -79,6 +79,8 @@ taxonomies:
 - [Reddit 报纸版](https://unim.press/)
 - [这个网站将会自毁](https://www.thiswebsitewillselfdestruct.com/) - 如果 24 小时内没有人发帖，这个网站将会自动关闭。
 - [Boomers](https://boomers.dog/) - 可以匿名，实名发布东西的留言板，挺好看。
+- [Mother fucking website](https://motherfuckingwebsite.com/) - 只使用简单的 html 也可以是一个正常的网站。控诉现代网站
+- [Txti](https://txti.es/) - 简约的文本网页创建服务，像电报的[telegraf](https://telegra.ph/)，
 
 ## 服务
 

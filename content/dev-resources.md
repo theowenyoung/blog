@@ -1,7 +1,7 @@
 ---
 title: 开发相关的资源汇总
 date: 2022-03-25
-updated: 2022-06-06
+updated: 2022-08-15
 taxonomies:
   categories:
     - Notes
@@ -478,3 +478,9 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Online Test/Run code
 
 - [Replit](https://replit.com) - 可以在线运行示例代码的网站
+
+## VPS
+
+- [servarica](https://servarica.com/) - 大容量的廉价 vps
+- [RCP](https://www.rcp.net/) - 低延迟的 vps，5 美元/月，日本，香港线路不错
+- [interserver](https://www.interserver.net/) - 大容量 vps
