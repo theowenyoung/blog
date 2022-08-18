@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-09T00:43:39+08:00</updated>
+	<updated>2022-08-19T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>电脑的启动流程</title>
@@ -3182,7 +3182,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>开发相关的资源汇总</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-06T00:00:00+00:00</updated>
+		<updated>2022-08-15T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/dev-resources/" type="text/html"/>
 		<id>https://www.owenyoung.com/dev-resources/</id>
 		<content type="html">&lt;p&gt;收集开发相关的资源。&lt;&#x2F;p&gt;
@@ -3641,6 +3641,12 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;online-test-run-code&quot;&gt;Online Test&#x2F;Run code&lt;a class=&quot;zola-anchor&quot; href=&quot;#online-test-run-code&quot; aria-label=&quot;Anchor link for: online-test-run-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;replit.com&quot;&gt;Replit&lt;&#x2F;a&gt; - 可以在线运行示例代码的网站&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;vps&quot;&gt;VPS&lt;a class=&quot;zola-anchor&quot; href=&quot;#vps&quot; aria-label=&quot;Anchor link for: vps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;servarica.com&#x2F;&quot;&gt;servarica&lt;&#x2F;a&gt; - 大容量的廉价 vps&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.rcp.net&#x2F;&quot;&gt;RCP&lt;&#x2F;a&gt; - 低延迟的 vps，5 美元&#x2F;月，日本，香港线路不错&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.interserver.net&#x2F;&quot;&gt;interserver&lt;&#x2F;a&gt; - 大容量 vps&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
@@ -4286,6 +4292,8 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;unim.press&#x2F;&quot;&gt;Reddit 报纸版&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thiswebsitewillselfdestruct.com&#x2F;&quot;&gt;这个网站将会自毁&lt;&#x2F;a&gt; - 如果 24 小时内没有人发帖，这个网站将会自动关闭。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;boomers.dog&#x2F;&quot;&gt;Boomers&lt;&#x2F;a&gt; - 可以匿名，实名发布东西的留言板，挺好看。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;motherfuckingwebsite.com&#x2F;&quot;&gt;Mother fucking website&lt;&#x2F;a&gt; - 只使用简单的 html 也可以是一个正常的网站。控诉现代网站&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;txti.es&#x2F;&quot;&gt;Txti&lt;&#x2F;a&gt; - 简约的文本网页创建服务，像电报的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;telegra.ph&#x2F;&quot;&gt;telegraf&lt;&#x2F;a&gt;，&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;fu-wu&quot;&gt;服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu&quot; aria-label=&quot;Anchor link for: fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -4863,7 +4871,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>探索互联网上高质量的内容</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-08-01T00:00:00+00:00</updated>
+		<updated>2022-08-19T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/sources/" type="text/html"/>
 		<id>https://www.owenyoung.com/sources/</id>
 		<content type="html">&lt;p&gt;我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。&lt;&#x2F;p&gt;
@@ -4904,9 +4912,16 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;zhong-wen-du-li-mei-ti&quot;&gt;中文独立媒体&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhong-wen-du-li-mei-ti&quot; aria-label=&quot;Anchor link for: zhong-wen-du-li-mei-ti&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thenewslens.com&#x2F;&quot;&gt;thenewslens&lt;&#x2F;a&gt; - Taiwan indie media&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thestandnews.com&#x2F;&quot;&gt;The Stand News&lt;&#x2F;a&gt; - Hong Kong indie media&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;theinitium.com&#x2F;&quot;&gt;The Initium News &lt;&#x2F;a&gt; - Taiwan&#x2F;Hong Kong media&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;yi-si&quot;&gt;已死&lt;a class=&quot;zola-anchor&quot; href=&quot;#yi-si&quot; aria-label=&quot;Anchor link for: yi-si&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hkcnews.com&#x2F;&quot;&gt;HK CNews&lt;&#x2F;a&gt; - Hong Kong indie media&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.thestandnews.com&#x2F;&quot;&gt;The Stand News&lt;&#x2F;a&gt; - Hong Kong indie media&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;ying-wen-du-li-mei-ti&quot;&gt;英文独立媒体&lt;a class=&quot;zola-anchor&quot; href=&quot;#ying-wen-du-li-mei-ti&quot; aria-label=&quot;Anchor link for: ying-wen-du-li-mei-ti&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.the961.com&#x2F;&quot;&gt;The 961&lt;&#x2F;a&gt; - 来自黎巴嫩的英文独立媒体&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;zhuan-lan&quot;&gt;专栏&lt;a class=&quot;zola-anchor&quot; href=&quot;#zhuan-lan&quot; aria-label=&quot;Anchor link for: zhuan-lan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
