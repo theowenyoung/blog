@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-08-01
+updated: 2022-08-19
 taxonomies:
   categories:
     - Notes
@@ -50,9 +50,16 @@ taxonomies:
 ## 中文独立媒体
 
 - [thenewslens](https://www.thenewslens.com/) - Taiwan indie media
-- [The Stand News](https://www.thestandnews.com/) - Hong Kong indie media
 - [The Initium News ](https://theinitium.com/) - Taiwan/Hong Kong media
+
+### 已死
+
 - [HK CNews](https://www.hkcnews.com/) - Hong Kong indie media
+- [The Stand News](https://www.thestandnews.com/) - Hong Kong indie media
+
+## 英文独立媒体
+
+- [The 961](https://www.the961.com/) - 来自黎巴嫩的英文独立媒体
 
 ## 专栏
 
