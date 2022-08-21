@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-08-09
+updated: 2022-08-21
 taxonomies:
   categories:
     - Notes
@@ -311,3 +311,7 @@ X as a Y services.
 ## TUI
 
 - [DEV Dash](https://github.com/Phantas0s/devdash) - 🍱 面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等
+
+## 文件分享
+
+- [bash upload](https://bashupload.com/) - 简单的文件上传于下载，bash 友好
