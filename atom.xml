@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-19T00:00:00+00:00</updated>
+	<updated>2022-08-21T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>电脑的启动流程</title>
@@ -5582,7 +5582,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-08-09T00:00:00+00:00</updated>
+		<updated>2022-08-21T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -5896,6 +5896,10 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;tui&quot;&gt;TUI&lt;a class=&quot;zola-anchor&quot; href=&quot;#tui&quot; aria-label=&quot;Anchor link for: tui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Phantas0s&#x2F;devdash&quot;&gt;DEV Dash&lt;&#x2F;a&gt; - 🍱 面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wen-jian-fen-xiang&quot;&gt;文件分享&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-jian-fen-xiang&quot; aria-label=&quot;Anchor link for: wen-jian-fen-xiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bashupload.com&#x2F;&quot;&gt;bash upload&lt;&#x2F;a&gt; - 简单的文件上传于下载，bash 友好&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
