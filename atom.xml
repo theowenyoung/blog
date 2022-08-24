@@ -5326,7 +5326,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
-&lt;p&gt;我们追求笔记文本化，但是我发现 git 本身的版本控制等等根本也不是文本的，也是一个大的黑盒子。所以 Changelog 的信息还是要保存到文本文件里,像这个博客的&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;&quot;&gt;变更记录&lt;&#x2F;a&gt; – 2022.08.25&lt;&#x2F;p&gt;
+&lt;p&gt;我们用 git 存储来储存静态文本文件，以追求笔记的文本化以及可持续维护性，但是我发现 git 本身的版本控制并不是文本的，算是一个大的黑盒子。所以 Changelog 的信息还是要保存到文本文件里,像这个博客的&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;&quot;&gt;变更记录&lt;&#x2F;a&gt; – 2022.08.25&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;我发现开着台灯工作更有幸福感。所以极简生活最好也投资一个台灯吧，我用的是宜家的双头灯（之前房东的房子灯太暗了买的） – 2022.08.25&lt;&#x2F;p&gt;
