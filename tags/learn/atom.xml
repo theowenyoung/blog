@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - Learn</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/learn/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-08-25T08:41:32+08:00</updated>
+	<id>https://www.owenyoung.com/tags/learn/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>学习任何东西的教程</title>
+		<published>2022-08-25T08:41:32+08:00</published>
+		<updated>2022-08-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/learn/" type="text/html"/>
+		<id>https://www.owenyoung.com/learn/</id>
+		<content type="html">&lt;p&gt;收集一些学习资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;yin-le&quot;&gt;音乐&lt;a class=&quot;zola-anchor&quot; href=&quot;#yin-le&quot; aria-label=&quot;Anchor link for: yin-le&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;go.licknriff.com&#x2F;academy216243817994907&quot;&gt;免费的吉他教程&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
