@@ -16,3 +16,4 @@ taxonomies:
 ## 音乐
 
 - [免费的吉他教程](https://go.licknriff.com/academy216243817994907)
+  - [真正的教程链接](https://go.licknriff.com/lesson-no-316243818183201)
