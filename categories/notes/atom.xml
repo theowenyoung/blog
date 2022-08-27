@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-25T08:41:32+08:00</updated>
+	<updated>2022-08-27T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>学习任何东西的教程</title>
@@ -2792,10 +2792,13 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>短想法</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-08-25T00:00:00+00:00</updated>
+		<updated>2022-08-27T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;每次联系苹果客服都一肚子气，我都是试过网上的各种解决方法不管用才找客服看下有没有准确的方法，结果客服每次都是浪费你一个小时时间试一些网上的解决方法。再也不联系客服了，找罪受。 – 2022.08.27&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;我们用 git 存储来储存静态文本文件，以追求笔记的文本化以及可持续维护性，但是我发现 git 本身的版本控制并不是文本的，算是一个大的黑盒子。所以 Changelog 的信息还是要保存到文本文件里,像这个博客的&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;changelog&#x2F;&quot;&gt;变更记录&lt;&#x2F;a&gt; – 2022.08.25&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;
