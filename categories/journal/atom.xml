@@ -5,8 +5,33 @@
 	<link href="https://www.owenyoung.com/categories/journal/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-29T09:32:49+08:00</updated>
+	<updated>2022-08-29T09:23:02+08:00</updated>
 	<id>https://www.owenyoung.com/categories/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.08.29: 各种链接</title>
+		<published>2022-08-29T09:23:02+08:00</published>
+		<updated>2022-08-29T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-08-29/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-08-29/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;readable.sourceforge.io&#x2F;&quot;&gt;可读的 Lisp S 表达式项目&lt;&#x2F;a&gt; - 去掉 Lisp 的括号，用缩进替代！&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Kindelia&#x2F;Kindelia&quot;&gt;P2P，非加密货币&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;2022&#x2F;08&#x2F;26&#x2F;opinion&#x2F;sunday&#x2F;maternal-instinct-myth.html&quot;&gt;母性本能是男人创造的神话&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rdrimmel&#x2F;status&#x2F;1563158073694310401&quot;&gt;马斯克的 Starlink 可能是一场灾难&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rwmalonemd.substack.com&#x2F;p&#x2F;the-psychology-of-totalitarianism&quot;&gt;极权主义的心理学&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;作者认为下一个极权主义将是技术官僚极权主义，针对新冠病毒的专家建议像动物农场里的猪一样，一步步改变规则，完全对人的自由的控制。（我感觉论点不是很充分）&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mfcallahan.blog&#x2F;2022&#x2F;08&#x2F;26&#x2F;the-microsoft-edge-dev-tools-extension-for-vs-code-is-so-awesome-that-im-ditching-chrome-for-web-development&#x2F;&quot;&gt;VS Code 的 Microsoft Edge Dev Tools 扩展非常棒，以至于我正在放弃 Chrome 进行 Web 开发&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;直接使用 VS Code 进行 web 调试&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;danluu&#x2F;status&#x2F;1564292487744978946&quot;&gt;在网络中处于不利地位的普通人在用广告交税，而程序员们却几乎都在使用广告拦截器&lt;&#x2F;a&gt;&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.07.29: 各种链接</title>
 		<published>2022-07-29T09:32:49+08:00</published>
