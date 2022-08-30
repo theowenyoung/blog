@@ -443,6 +443,7 @@ See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-w
 ## Lisp
 
 - [通往 Common Lisp 之路](https://stevelosh.com/blog/2018/08/a-road-to-common-lisp/)
+- [可读的 Lisp S 表达式项目](https://readable.sourceforge.io/)
 
 ## Search
 
