@@ -72,4 +72,53 @@
 &lt;p&gt;另一个就是快速从模版生成初始文章。&lt;&#x2F;p&gt;
 </content>
 	</entry>
+	<entry xml:lang="zh">
+		<title>Now</title>
+		<published>2022-03-25T00:00:00+00:00</published>
+		<updated>2022-06-12T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/now/" type="text/html"/>
+		<id>https://www.owenyoung.com/now/</id>
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;This is a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nownownow.com&#x2F;about&quot;&gt;now&lt;&#x2F;a&gt; page, read more about me at &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;about&#x2F;&quot;&gt;关于我和这个博客&lt;&#x2F;a&gt; page or &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;&quot;&gt;Projects&lt;&#x2F;a&gt; page.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;jin-xing-zhong&quot;&gt;进行中&lt;&#x2F;h2&gt;
+&lt;p&gt;开了一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;digests.owenyoung.com&#x2F;&quot;&gt;Newsletter&lt;&#x2F;a&gt;，初步想法是每隔一段时间整理一些我觉得不能错过的东西。但是只有我觉得必须联系你的时候，我才会给你发一封邮件。&lt;&#x2F;p&gt;
+&lt;p&gt;也就是说在邮件通讯里我只会发我觉得不能错过的东西，其他大多数“狗屎”，我只会让它们留在我的博客里，这可以让你选择主动阅读，而不是被迫听我的“狗屎”。我主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，反直觉，深度工作等方面。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zheng-zai-ting&quot;&gt;正在听&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;live:bbc_6music&quot;&gt;BBC Radio 6 Music&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;live:bbc_radio_fourfm&quot;&gt;BBC 4&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.bbc.co.uk&#x2F;sounds&#x2F;play&#x2F;live:bbc_radio_one_relax&quot;&gt;BBC Radio 1 Relax&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;lian-xi-ying-yu&quot;&gt;练习英语&lt;&#x2F;h3&gt;
+&lt;p&gt;I’m a failure of English learning. I’ve learned English more than 10 years, but it still sucks, so I registered a Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt; for only English tweets, and this &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;blog&lt;&#x2F;a&gt; to force me to use more English. It’s Feb, 01, 2021 today when I writing this, I hope this is my last goal after making so many goals. Once I reach my goal, I’ll update here.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;projects&quot;&gt;Projects&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;maintaining-denoflow&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt; is an automate workflows based on Deno&#x2F;Typescript&#x2F;Javascript&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;maintaining-gatsby-theme-primer-wiki&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-primer-wiki&quot;&gt;Gatsby Theme Primer Wiki&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;maintaining-track-awesome-list&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&quot;&gt;Track Awesome List&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;maintaining-actionsflow&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; helps you automate workflows - it’s a free &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ifttt.com&#x2F;&quot;&gt;IFTTT&lt;&#x2F;a&gt;&#x2F;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zapier.com&#x2F;&quot;&gt;Zapier&lt;&#x2F;a&gt; alternative for developers. With &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; you can connect your favorite apps, data, and APIs, receive notifications of actions as they occur, sync files, collect data, and more.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;maintaining-buzzing&quot;&gt;Maintaining &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.buzzing.cc&#x2F;&quot;&gt;Buzzing&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;You can use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.buzzing.cc&#x2F;&quot;&gt;Buzzing&lt;&#x2F;a&gt; to see hot discussions in your native language. Browse in your native language, Read more into the original text. Currently, it supports Chinese, I hope it can support more languages, and more topics.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;goals&quot;&gt;Goals&lt;&#x2F;h2&gt;
+&lt;p&gt;如果今年还是没有流利英语，我就是傻逼。&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+90 天挑战，每天录一条英文视频。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+More patient about stocks.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+Significantly improve English level&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
+读者达到 1000 人。包括 twitter newsletter&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 </feed>
