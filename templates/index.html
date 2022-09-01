@@ -78,17 +78,9 @@
       </h2>
       <section class="articles">
         <ul class="root-ul">
-          {% for page in article_pages | slice(end=10) %}
+          {% for page in article_pages %}
             <li>{{ macro::post_min(page=page) }}</li>
           {% endfor %}
-          {%if article_pages | slice(start=10) | length > 0%}
-          <details>
-            <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-            {% for page in article_pages | slice(start=10) %}
-              <li>{{ macro::post_min(page=page) }}</li>
-            {% endfor %}
-          </details>
-          {% endif %}
         </ul>
       </section>
       <hr class="w-full"/>
