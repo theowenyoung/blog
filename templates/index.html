@@ -26,12 +26,10 @@
     {% endfor -%}
     {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
     {% set_global note_pages = [] -%}
-    {% set_global article_pages = [] -%}
+    {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
     {% for cat in all_categories.items -%}
       {% if cat.name == "Notes" -%}
-        {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
-      {% else %}
-        {% set_global article_pages = cat.pages | sort(attribute="date") | reverse -%}    
+        {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}   
       {% endif -%}
     {% endfor -%}
     <div class="index-page">
@@ -78,7 +76,7 @@
       </h2>
       <section class="articles">
         <ul class="root-ul">
-          {% for page in article_pages %}
+          {% for page in all_blog_pages.pages %}
             <li>{{ macro::post_min(page=page) }}</li>
           {% endfor %}
         </ul>
@@ -94,7 +92,7 @@
       <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </h2>
       <section class="articles h-feed hfeed">
-        {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+   
         {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
           {{ macro::post_max(page=page) }}
         {% endfor %}
