@@ -4,12 +4,6 @@ date: 2021-03-29
 updated: 2022-06-04
 ---
 
-## Home Navigation
-
-- [Latest Articles](/en/#latest)
-- [Short Thoughts](/en/#thoughts)
-- [All Notes](/en/#all-notes)
-
 ## Impornant Links
 
 - [RSS Feed](/en/blog/atom.xml)

@@ -1,10 +1,10 @@
 ---
 title: ChangeLog
 date: 2022-06-13T23:15:27+08:00
-updated: 2022-07-25
+updated: 2022-09-01
 taxonomies:
   categories:
-    - About
+    - Notes
   tags:
     - ChangeLog
     - About
@@ -13,6 +13,12 @@ taxonomies:
 All Updates about this blog.
 
 <!-- more -->
+
+## 2022.09.01 Show short title
+
+Show short title for all posts in home page:
+
+![short title](./show-short-title.png)
 
 ## 2022.07.25 Support Tweet Reply
 

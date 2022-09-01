@@ -6,8 +6,8 @@ description = "主要关注技术，读书，摘抄，杂谈，文章评论，�
 generate_feed = true
 generate_rss = true
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 25},
-  {name = "categories", feed = true, paginate_by = 25},
+  { name = "tags", feed = true, paginate_by = 25 },
+  { name = "categories", feed = true, paginate_by = 25 },
 ]
 title = "Owen的博客"
 
@@ -32,7 +32,7 @@ email = "owen@owenyoung.com"
 prefix_url = "https://www.owenyoung.com"
 theme_color = "#f9f5e9"
 meilisearch_url = "https://meili.owenyoung.com"
-meilisearch_api_key="BeoB0dmTf1da9d234f9c4a109c1ef2e68b897b1609adb016f24394b46db242c464963ce1"
+meilisearch_api_key = "BeoB0dmTf1da9d234f9c4a109c1ef2e68b897b1609adb016f24394b46db242c464963ce1"
 ### indieweb note
 bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
 ### THIRD PARTY
@@ -60,11 +60,11 @@ paths = "on"
 taxonomies = "on"
 
 [translations]
-label_toggle_more="展开全部"
+label_toggle_more = "展开全部"
 keywords = "注意力, 读书, 工具分享, 纯文本, 英语学习"
 label_activity = "动态"
-label_all_posts = "[点击查看所有文章🔥🔥](/blog/)"
-label_all_thoughts = "[点击查看所有短想法🔥🔥](/thoughts/)"
+label_all_posts = "[点击查看所有文章](/blog/)"
+label_all_thoughts = "[点击查看所有短想法](/thoughts/)"
 label_archive = "全部文章归档"
 label_back_to_start = "正文开始"
 label_book_author = "图书作者"
@@ -78,6 +78,7 @@ label_edit = "帮我完善这个页面？"
 label_home = "首页"
 "label_in-reply-to" = "回复"
 label_latest_notes_title = "[最近更新的10篇笔记](/categories/notes/)："
+label_latest_articles_title = "[最近发布的10篇文章](/blog/)："
 "label_like-of" = "喜欢"
 label_links = "一些可能有用的链接"
 "label_mention-of" = "提及"
@@ -95,7 +96,7 @@ label_rss = "订阅RSS"
 "label_rsvp" = "答复"
 label_table_contents = "快速导航"
 label_tag = "标签"
-label_backlinks="博客内双向链接文章"
+label_backlinks = "博客内双向链接文章"
 label_tags = "标签"
 label_target_language = "English Blog"
 label_taxonomy = "类别"
@@ -106,20 +107,20 @@ build_search_index = false
 generate_feed = true
 description = "Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"
 taxonomies = [
-  {name = "tags", feed = true, paginate_by = 25},
-  {name = "categories", feed = true, paginate_by = 25},
+  { name = "tags", feed = true, paginate_by = 25 },
+  { name = "categories", feed = true, paginate_by = 25 },
 ]
 title = "Owen Young's Blog"
 [languages.en.translations]
 keywords = "Focus, Reading, Tool sharing, Plain text, English learning"
 label_activity = "Activity"
 label_all_posts = "[View all posts](/en/blog/)"
-label_all_thoughts = "[View all thoughts🔥🔥](/en/thoughts/)"
+label_all_thoughts = "[View all thoughts](/en/thoughts/)"
 label_archive = "Archive"
 label_toggle_more = "View All"
 label_back_to_start = "Get Started"
 label_book_author = "Book Author"
-label_backlinks="Internal Linked References"
+label_backlinks = "Internal Linked References"
 "label_bookmark-of" = "Bookmarks"
 label_books = "All books reviews"
 label_categories = "Categories"
@@ -129,7 +130,8 @@ label_edit = "Edit this page"
 "label_follow-of" = "Follows"
 label_home = "Home"
 "label_in-reply-to" = "Replies"
-label_latest_notes_title = "[Recently Updated](/categories/notes/)："
+label_latest_notes_title = "[Recently Updated Notes](/en/categories/notes/):"
+label_latest_articles_title = "[Recently Updated Posts](/en/blog/):"
 "label_like-of" = "Likes"
 label_links = "Links"
 "label_mention-of" = "Mentions"

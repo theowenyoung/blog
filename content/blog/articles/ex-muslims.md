@@ -1,7 +1,7 @@
 ---
 title: 伊斯兰教中的“叛教者” - 前穆斯林们
 date: 2022-04-20T21:46:04+08:00
-updated: 2022-06-08
+updated: 2022-09-01
 taxonomies:
   categories:
     - Articles
@@ -187,3 +187,4 @@ Khalil Bilici 研究的结果表明，在具有智力/意识形态动机的前�
 ## 其他 Links
 
 - [女性生殖器割礼](https://en.wikipedia.org/wiki/Female_genital_mutilation)
+- [印度-前穆斯林社区](https://exmuslims.in/)

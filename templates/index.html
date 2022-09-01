@@ -26,12 +26,14 @@
     {% endfor -%}
     {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
     {% set_global note_pages = [] -%}
+    {% set_global article_pages = [] -%}
     {% for cat in all_categories.items -%}
       {% if cat.name == "Notes" -%}
         {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+      {% else %}
+        {% set_global article_pages = cat.pages | sort(attribute="date") | reverse -%}    
       {% endif -%}
     {% endfor -%}
-    {% set_global latest_note_pages = note_pages | slice(end=9) -%}
     <div class="index-page">
       <section>
         {% if config.default_language != lang %}
@@ -58,26 +60,36 @@
       </h2>
       <section class="articles">
         <ul class="root-ul">
-          {% for page in latest_note_pages %}
+          {% for page in note_pages | slice(end=10) %}
             <li>{{ macro::post_min(page=page) }}</li>
           {% endfor %}
+          {%if note_pages | slice(start=10) | length > 0%}
           <details>
             <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-            {% for page in note_pages | slice(start=9) %}
+            {% for page in note_pages | slice(start=10) %}
               <li>{{ macro::post_min(page=page) }}</li>
             {% endfor %}
           </details>
+          {% endif %}
         </ul>
       </section>
-      {{ section.content | safe }}
-      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
+
+      <h2>{{ trans(key="label_latest_articles_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-articles" id="latest-articles" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles h-feed hfeed">
-        {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
-        {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
-          {{ macro::post_max(page=page) }}
-        {% endfor %}
-        <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
+      <section class="articles">
+        <ul class="root-ul">
+          {% for page in article_pages | slice(end=10) %}
+            <li>{{ macro::post_min(page=page) }}</li>
+          {% endfor %}
+          {%if article_pages | slice(start=10) | length > 0%}
+          <details>
+            <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+            {% for page in article_pages | slice(start=10) %}
+              <li>{{ macro::post_min(page=page) }}</li>
+            {% endfor %}
+          </details>
+          {% endif %}
+        </ul>
       </section>
       <hr class="w-full"/>
       <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
@@ -87,17 +99,17 @@
         {{ thoughts_page.summary | safe }}
         <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
       </section>
-      <hr class="w-full"/>
-      <h2>{{ trans(key="label_notes_title",lang=lang) | markdown(inline=true) | safe }}
-        <a href="#all-notes" id="all-notes" class="zola-anchor">🔗</a>
+      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles">
-        <ul class="root-ul">
-          {% for page in note_pages %}
-            <li>{{ macro::post_min(page=page) }}</li>
-          {% endfor %}
-        </ul>
+      <section class="articles h-feed hfeed">
+        {% set all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+        {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
+          {{ macro::post_max(page=page) }}
+        {% endfor %}
+      <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
       </section>
+      {{ section.content | safe }}
+  
     </div>
   {% endblock main -%}
   {% block before_body_end %}

@@ -6,7 +6,9 @@ insert_anchor_links: "right"
 
 ## 我在阅读什么？
 
-我喜欢看 [HackerNews](https://news.ycombinator.com/) 和一些英文博主的内容，但是阅读英文效率太低，所以我把对应的中文标题也放在旁边，加快阅读效率和提高英语，公开发布到：[**Owen's Feed**](https://myfeed.owenyoung.com/)
+- [HN 最新](https://hnnew.buzzing.cc/)
+- [纽约客](https://newyorker.buzzing.cc/)
+- [精神食粮](https://depth.buzzing.cc/)
 
 ## 热门笔记
 

@@ -4,13 +4,6 @@ date: 2021-03-29
 updated: 2022-06-04
 ---
 
-## 首页导航
-
-- [热门笔记](/#re-men-bi-ji)
-- [最新文章](/#latest)
-- [短想法](/#thoughts)
-- [全部笔记](/#all-notes)
-
 ## 重要链接
 
 - [邮件订阅](https://digests.owenyoung.com/)

@@ -6,7 +6,7 @@ updated: 2022-07-12
 template: about.html
 taxonomies:
   categories:
-    - About
+    - Notes
   tags:
     - Me
 ---
