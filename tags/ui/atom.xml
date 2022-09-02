@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+	<title>Owen的博客 - UI</title>
+	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
+	<link href="https://www.owenyoung.com/tags/ui/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.owenyoung.com"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-09-02T11:25:06+08:00</updated>
+	<id>https://www.owenyoung.com/tags/ui/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Awesome UI</title>
+		<published>2022-09-02T11:25:06+08:00</published>
+		<updated>2022-09-02T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/ui/" type="text/html"/>
+		<id>https://www.owenyoung.com/ui/</id>
+		<content type="html">&lt;p&gt;收集 UI 相关的资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jgthms.com&#x2F;web-design-in-4-minutes&#x2F;&quot;&gt;Web Design in 4 minutes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alexmercedcoder.medium.com&#x2F;the-renaissance-of-server-side-rendering-with-alipine-and-htmx-reactivity-with-minimal-js-809e5442480f&quot;&gt;Alpine &amp;amp; HTMX 服务器端渲染的复兴&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;search?q=rgb+to+hex&amp;amp;oq=rgb+to+hex&amp;amp;aqs=edge.0.0i433i512l4j0i512l2j69i65.2649j0j1&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;RGB to hex, hsl convert tool by Google&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screely.com&quot;&gt;screely&lt;&#x2F;a&gt; - Instantly Turn a Screenshot into a Browser Mockup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;formito.com&#x2F;tools&#x2F;favicon&quot;&gt;Logo generator&lt;&#x2F;a&gt; - generate logo like stripe or hacker news&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;command-tools&quot;&gt;Command Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#command-tools&quot; aria-label=&quot;Anchor link for: command-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap-npm-starter&quot;&gt;Bootstrap npm starter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;free-resources&quot;&gt;Free Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-resources&quot; aria-label=&quot;Anchor link for: free-resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;illlustrations.co&#x2F;&quot;&gt;Open source illustrations kit&lt;&#x2F;a&gt; - Free illustrations images resource, #Free #Image #UI&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pravatar.cc&#x2F;&quot;&gt;placeholder avatar&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openmoji.org&#x2F;&quot;&gt;开源 emoji 库&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;demos&quot;&gt;Demos&lt;a class=&quot;zola-anchor&quot; href=&quot;#demos&quot; aria-label=&quot;Anchor link for: demos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shejidaren.com&#x2F;30-best-webgl-demo-examples.html&quot;&gt;体验 3D 互动 30 个使用 WebGL 技术的优秀网页设计案例&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;css-kuang-jia&quot;&gt;CSS 框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-kuang-jia&quot; aria-label=&quot;Anchor link for: css-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jgthms&#x2F;bulma&quot;&gt;bulma&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss&quot;&gt;tailwindcss&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;heybourn&#x2F;headwind&quot;&gt;headwind&lt;&#x2F;a&gt; vscode extension for sort class name&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss-forms&quot;&gt;tailwindcss-forms&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;daisyui.com&#x2F;&quot;&gt;daisy ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;aniftyco&#x2F;awesome-tailwindcss&#x2F;readme#ui-libraries-components--templates&quot;&gt;track awesome tailwind&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kutty.netlify.app&#x2F;docs&#x2F;&quot;&gt;kutty ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cruip&#x2F;tailwind-landing-page-template&quot;&gt;tailwind landing page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;milligram&#x2F;milligram&quot;&gt;milligram&lt;&#x2F;a&gt; - 极简主义 css&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;headlessui&quot;&gt;headlessui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;picocss&#x2F;pico&quot;&gt;Picocss&lt;&#x2F;a&gt; - 语义化的 CSS 框架，极简&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;unocss&#x2F;unocss&quot;&gt;Unocss&lt;&#x2F;a&gt; - 工具 css，集成了 tailwind 等&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tachyons.io&#x2F;&quot;&gt;Tachyons&lt;&#x2F;a&gt; - 另一个工具性 css 框架&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;react-ui&quot;&gt;React UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#react-ui&quot; aria-label=&quot;Anchor link for: react-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mantine.dev&#x2F;&quot;&gt;Mantine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;css-tools&quot;&gt;CSS Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-tools&quot; aria-label=&quot;Anchor link for: css-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;saadeghi&#x2F;theme-change&quot;&gt;theme-change&lt;&#x2F;a&gt; - Change CSS theme with toggle, buttons or select using CSS custom properties and localStorage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;realworld-inspiration&quot;&gt;Realworld inspiration&lt;a class=&quot;zola-anchor&quot; href=&quot;#realworld-inspiration&quot; aria-label=&quot;Anchor link for: realworld-inspiration&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.remotestories.com&quot;&gt;remotestories&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;themes&quot;&gt;Themes&lt;a class=&quot;zola-anchor&quot; href=&quot;#themes&quot; aria-label=&quot;Anchor link for: themes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thomaspark&#x2F;bootswatch&#x2F;&quot;&gt;bootstrap themes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;others&quot;&gt;Others&lt;a class=&quot;zola-anchor&quot; href=&quot;#others&quot; aria-label=&quot;Anchor link for: others&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.webdesignmuseum.org&#x2F;&quot;&gt;网页设计博物馆&lt;&#x2F;a&gt; - 列举历史的网页设计变迁史&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

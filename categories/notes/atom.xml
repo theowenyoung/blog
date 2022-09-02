@@ -5,8 +5,81 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-27T00:00:00+00:00</updated>
+	<updated>2022-09-02T11:25:06+08:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>Awesome UI</title>
+		<published>2022-09-02T11:25:06+08:00</published>
+		<updated>2022-09-02T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/ui/" type="text/html"/>
+		<id>https://www.owenyoung.com/ui/</id>
+		<content type="html">&lt;p&gt;收集 UI 相关的资源。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;articles&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles&quot; aria-label=&quot;Anchor link for: articles&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jgthms.com&#x2F;web-design-in-4-minutes&#x2F;&quot;&gt;Web Design in 4 minutes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alexmercedcoder.medium.com&#x2F;the-renaissance-of-server-side-rendering-with-alipine-and-htmx-reactivity-with-minimal-js-809e5442480f&quot;&gt;Alpine &amp;amp; HTMX 服务器端渲染的复兴&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;search?q=rgb+to+hex&amp;amp;oq=rgb+to+hex&amp;amp;aqs=edge.0.0i433i512l4j0i512l2j69i65.2649j0j1&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;RGB to hex, hsl convert tool by Google&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screely.com&quot;&gt;screely&lt;&#x2F;a&gt; - Instantly Turn a Screenshot into a Browser Mockup&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;formito.com&#x2F;tools&#x2F;favicon&quot;&gt;Logo generator&lt;&#x2F;a&gt; - generate logo like stripe or hacker news&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;command-tools&quot;&gt;Command Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#command-tools&quot; aria-label=&quot;Anchor link for: command-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap-npm-starter&quot;&gt;Bootstrap npm starter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;free-resources&quot;&gt;Free Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-resources&quot; aria-label=&quot;Anchor link for: free-resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;illlustrations.co&#x2F;&quot;&gt;Open source illustrations kit&lt;&#x2F;a&gt; - Free illustrations images resource, #Free #Image #UI&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pravatar.cc&#x2F;&quot;&gt;placeholder avatar&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openmoji.org&#x2F;&quot;&gt;开源 emoji 库&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;demos&quot;&gt;Demos&lt;a class=&quot;zola-anchor&quot; href=&quot;#demos&quot; aria-label=&quot;Anchor link for: demos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shejidaren.com&#x2F;30-best-webgl-demo-examples.html&quot;&gt;体验 3D 互动 30 个使用 WebGL 技术的优秀网页设计案例&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;css-kuang-jia&quot;&gt;CSS 框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-kuang-jia&quot; aria-label=&quot;Anchor link for: css-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jgthms&#x2F;bulma&quot;&gt;bulma&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss&quot;&gt;tailwindcss&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;heybourn&#x2F;headwind&quot;&gt;headwind&lt;&#x2F;a&gt; vscode extension for sort class name&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss-forms&quot;&gt;tailwindcss-forms&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;daisyui.com&#x2F;&quot;&gt;daisy ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;aniftyco&#x2F;awesome-tailwindcss&#x2F;readme#ui-libraries-components--templates&quot;&gt;track awesome tailwind&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kutty.netlify.app&#x2F;docs&#x2F;&quot;&gt;kutty ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cruip&#x2F;tailwind-landing-page-template&quot;&gt;tailwind landing page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;milligram&#x2F;milligram&quot;&gt;milligram&lt;&#x2F;a&gt; - 极简主义 css&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;headlessui&quot;&gt;headlessui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;picocss&#x2F;pico&quot;&gt;Picocss&lt;&#x2F;a&gt; - 语义化的 CSS 框架，极简&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;unocss&#x2F;unocss&quot;&gt;Unocss&lt;&#x2F;a&gt; - 工具 css，集成了 tailwind 等&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tachyons.io&#x2F;&quot;&gt;Tachyons&lt;&#x2F;a&gt; - 另一个工具性 css 框架&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;react-ui&quot;&gt;React UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#react-ui&quot; aria-label=&quot;Anchor link for: react-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mantine.dev&#x2F;&quot;&gt;Mantine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;css-tools&quot;&gt;CSS Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-tools&quot; aria-label=&quot;Anchor link for: css-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;saadeghi&#x2F;theme-change&quot;&gt;theme-change&lt;&#x2F;a&gt; - Change CSS theme with toggle, buttons or select using CSS custom properties and localStorage&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;realworld-inspiration&quot;&gt;Realworld inspiration&lt;a class=&quot;zola-anchor&quot; href=&quot;#realworld-inspiration&quot; aria-label=&quot;Anchor link for: realworld-inspiration&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.remotestories.com&quot;&gt;remotestories&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;themes&quot;&gt;Themes&lt;a class=&quot;zola-anchor&quot; href=&quot;#themes&quot; aria-label=&quot;Anchor link for: themes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thomaspark&#x2F;bootswatch&#x2F;&quot;&gt;bootstrap themes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;others&quot;&gt;Others&lt;a class=&quot;zola-anchor&quot; href=&quot;#others&quot; aria-label=&quot;Anchor link for: others&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.webdesignmuseum.org&#x2F;&quot;&gt;网页设计博物馆&lt;&#x2F;a&gt; - 列举历史的网页设计变迁史&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>学习任何东西的教程</title>
 		<published>2022-08-25T08:41:32+08:00</published>
@@ -1182,67 +1255,6 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;docuemnts-templates&quot;&gt;Docuemnts Templates&lt;a class=&quot;zola-anchor&quot; href=&quot;#docuemnts-templates&quot; aria-label=&quot;Anchor link for: docuemnts-templates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kbariotis&#x2F;templatesf&quot;&gt;Document template&lt;&#x2F;a&gt; - A set of standard document templates.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;awesome-ui&quot;&gt;Awesome UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#awesome-ui&quot; aria-label=&quot;Anchor link for: awesome-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;h3 id=&quot;articles-1&quot;&gt;Articles&lt;a class=&quot;zola-anchor&quot; href=&quot;#articles-1&quot; aria-label=&quot;Anchor link for: articles-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jgthms.com&#x2F;web-design-in-4-minutes&#x2F;&quot;&gt;Web Design in 4 minutes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;alexmercedcoder.medium.com&#x2F;the-renaissance-of-server-side-rendering-with-alipine-and-htmx-reactivity-with-minimal-js-809e5442480f&quot;&gt;Alpine &amp;amp; HTMX 服务器端渲染的复兴&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;tools-1&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools-1&quot; aria-label=&quot;Anchor link for: tools-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;search?q=rgb+to+hex&amp;amp;oq=rgb+to+hex&amp;amp;aqs=edge.0.0i433i512l4j0i512l2j69i65.2649j0j1&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8&quot;&gt;RGB to hex, hsl convert tool by Google&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screely.com&quot;&gt;screely&lt;&#x2F;a&gt; - Instantly Turn a Screenshot into a Browser Mockup&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;formito.com&#x2F;tools&#x2F;favicon&quot;&gt;Logo generator&lt;&#x2F;a&gt; - generate logo like stripe or hacker news&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;command-tools-1&quot;&gt;Command Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#command-tools-1&quot; aria-label=&quot;Anchor link for: command-tools-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;twbs&#x2F;bootstrap-npm-starter&quot;&gt;Bootstrap npm starter&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;free-resources&quot;&gt;Free Resources&lt;a class=&quot;zola-anchor&quot; href=&quot;#free-resources&quot; aria-label=&quot;Anchor link for: free-resources&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;illlustrations.co&#x2F;&quot;&gt;Open source illustrations kit&lt;&#x2F;a&gt; - Free illustrations images resource, #Free #Image #UI&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pravatar.cc&#x2F;&quot;&gt;placeholder avatar&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openmoji.org&#x2F;&quot;&gt;开源 emoji 库&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;demos&quot;&gt;Demos&lt;a class=&quot;zola-anchor&quot; href=&quot;#demos&quot; aria-label=&quot;Anchor link for: demos&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shejidaren.com&#x2F;30-best-webgl-demo-examples.html&quot;&gt;体验 3D 互动 30 个使用 WebGL 技术的优秀网页设计案例&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;css-kuang-jia&quot;&gt;CSS 框架&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-kuang-jia&quot; aria-label=&quot;Anchor link for: css-kuang-jia&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jgthms&#x2F;bulma&quot;&gt;bulma&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss&quot;&gt;tailwindcss&lt;&#x2F;a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;heybourn&#x2F;headwind&quot;&gt;headwind&lt;&#x2F;a&gt; vscode extension for sort class name&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;tailwindcss-forms&quot;&gt;tailwindcss-forms&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;daisyui.com&#x2F;&quot;&gt;daisy ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;aniftyco&#x2F;awesome-tailwindcss&#x2F;readme#ui-libraries-components--templates&quot;&gt;track awesome tailwind&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kutty.netlify.app&#x2F;docs&#x2F;&quot;&gt;kutty ui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cruip&#x2F;tailwind-landing-page-template&quot;&gt;tailwind landing page&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;milligram&#x2F;milligram&quot;&gt;milligram&lt;&#x2F;a&gt; - 极简主义 css&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tailwindlabs&#x2F;headlessui&quot;&gt;headlessui&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;picocss&#x2F;pico&quot;&gt;Picocss&lt;&#x2F;a&gt; - 语义化的 CSS 框架，极简&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;unocss&#x2F;unocss&quot;&gt;Unocss&lt;&#x2F;a&gt; - 工具 css，集成了 tailwind 等&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tachyons.io&#x2F;&quot;&gt;Tachyons&lt;&#x2F;a&gt; - 另一个工具性 css 框架&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;react-ui&quot;&gt;React UI&lt;a class=&quot;zola-anchor&quot; href=&quot;#react-ui&quot; aria-label=&quot;Anchor link for: react-ui&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mantine.dev&#x2F;&quot;&gt;Mantine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;css-tools&quot;&gt;CSS Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#css-tools&quot; aria-label=&quot;Anchor link for: css-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;saadeghi&#x2F;theme-change&quot;&gt;theme-change&lt;&#x2F;a&gt; - Change CSS theme with toggle, buttons or select using CSS custom properties and localStorage&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;realworld-inspiration&quot;&gt;Realworld inspiration&lt;a class=&quot;zola-anchor&quot; href=&quot;#realworld-inspiration&quot; aria-label=&quot;Anchor link for: realworld-inspiration&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.remotestories.com&quot;&gt;remotestories&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;themes&quot;&gt;Themes&lt;a class=&quot;zola-anchor&quot; href=&quot;#themes&quot; aria-label=&quot;Anchor link for: themes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thomaspark&#x2F;bootswatch&#x2F;&quot;&gt;bootstrap themes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;windows&quot;&gt;Windows&lt;a class=&quot;zola-anchor&quot; href=&quot;#windows&quot; aria-label=&quot;Anchor link for: windows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -3723,55 +3735,12 @@ Significantly improve English level&lt;&#x2F;li&gt;
 	<entry xml:lang="zh">
 		<title>收集发人深省的话</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-07-23T00:00:00+00:00</updated>
+		<updated>2022-09-01T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/quotes/</id>
-		<content type="html">&lt;p&gt;收集看到的一些有意思的话。值得高亮再次回味的话。&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;qi-ta-ren-de-quotes&quot;&gt;其他人的 Quotes&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-quotes&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-quotes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;quotes&quot;&gt;Good Reads 上的 Quotes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;guan-yu-du-shu&quot;&gt;关于读书&lt;a class=&quot;zola-anchor&quot; href=&quot;#guan-yu-du-shu&quot; aria-label=&quot;Anchor link for: guan-yu-du-shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;也许小说是一种同理心健身房，可以提高你同情他人的能力。 - 被偷走的注意力&lt;&#x2F;p&gt;
+		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;我们长期以来一直想象的持续无休止的扩张的未来已经结束，一个由收缩定义的新未来即将到来 – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theguardian.com&#x2F;books&#x2F;2022&#x2F;aug&#x2F;31&#x2F;an-inconvenient-apocalypse-climate-crisis-book&quot;&gt;韦斯·杰克逊&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我喜欢读很多书时的那个我, 我不喜欢花了很多时间在社交媒体上的那个我。 - 被偷走的注意力&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;是书籍喂养了我天性中丑陋和浅薄的部分。 - 被偷走的注意力&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;不读书的人比不识字的人没有优势。 ― 马克吐温&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一个读者在死前活了一千次，但是从不读书的人只活了一次。 —— 乔治·R·R·马丁&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果你只读别人都在读的书，你只能想到别人在想什么。 - 村上春树&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;永远不要相信任何没有带着书的人。 ― Lemony Snicket, Horseradish&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我们通过阅读知道我们并不孤独。 - William Nicholson, Shadowlands&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;永远不要给孩子一本你自己不会读的书 – 萧伯纳&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;读一本书有两个动机：一，你喜欢它;另一个，你可以吹嘘它。 - 罗素&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;没有比喜欢同一本书的人之间建立的友谊更快或更牢固的友谊了。 —— 欧文·斯通&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我最好的朋友是一个会给我一本我没有读过的书的人。 ― 亚伯拉罕·林肯&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;读完一本新书是一条好规则，在你读完一本旧书之前，永远不要让自己再读一本新书。 ― C.S.刘易斯&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;h2 id=&quot;wei-fen-lei&quot;&gt;未分类&lt;a class=&quot;zola-anchor&quot; href=&quot;#wei-fen-lei&quot; aria-label=&quot;Anchor link for: wei-fen-lei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;基于 Yaml 的编程语言是由那些想知道 lisp 是什么但不知道的人构建的。 – &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=26275343&quot;&gt;hacker news 网友&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;被戳到。。刚发明了一种 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;yamlscript&#x2F;yamlscript&quot;&gt;yamlscript&lt;&#x2F;a&gt; 语言的编程。然后去学习了一下&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;learnxinyminutes.com&#x2F;docs&#x2F;common-lisp&#x2F;&quot;&gt;Common Lisp&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -3785,6 +3754,7 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;中国是世界上第一个进入大流行的国家，也是世界上最晚走出大流行的国家。 – 网络&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;blockquote&gt;
 &lt;p&gt;小偷认为每个人都偷东西。 – 丹麦谚语&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -4109,6 +4079,46 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“有些事情在我们的控制之下，有些事情不是”。因此我们唯一应该担心的事情，就是我们自己对什么是好的判断。如果我們渴望金錢、健康、性或名聲，我們將不可避免地不快樂。如果我們真心希望避免貧窮、疾病、孤獨和默默無聞，我們將生活在不斷的焦慮和沮喪中。当然，恐惧和欲望是不可避免的。每个人都能感受到那些恐惧或期待的闪光。作为一个斯多葛主义者意味着质疑这些所谓的成功，询问它们是否适用于你无法控制的事情，如果它们适用，那么这就不是你应该关心的东西。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;guan-yu-du-shu&quot;&gt;关于读书&lt;a class=&quot;zola-anchor&quot; href=&quot;#guan-yu-du-shu&quot; aria-label=&quot;Anchor link for: guan-yu-du-shu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;也许小说是一种同理心健身房，可以提高你同情他人的能力。 - 被偷走的注意力&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我喜欢读很多书时的那个我, 我不喜欢花了很多时间在社交媒体上的那个我。 - 被偷走的注意力&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;是书籍喂养了我天性中丑陋和浅薄的部分。 - 被偷走的注意力&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不读书的人比不识字的人没有优势。 ― 马克吐温&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一个读者在死前活了一千次，但是从不读书的人只活了一次。 —— 乔治·R·R·马丁&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你只读别人都在读的书，你只能想到别人在想什么。 - 村上春树&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;永远不要相信任何没有带着书的人。 ― Lemony Snicket, Horseradish&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们通过阅读知道我们并不孤独。 - William Nicholson, Shadowlands&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;永远不要给孩子一本你自己不会读的书 – 萧伯纳&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;读一本书有两个动机：一，你喜欢它;另一个，你可以吹嘘它。 - 罗素&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;没有比喜欢同一本书的人之间建立的友谊更快或更牢固的友谊了。 —— 欧文·斯通&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我最好的朋友是一个会给我一本我没有读过的书的人。 ― 亚伯拉罕·林肯&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;读完一本新书是一条好规则，在你读完一本旧书之前，永远不要让自己再读一本新书。 ― C.S.刘易斯&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
 &lt;h2 id=&quot;shi-jian-bei-lun&quot;&gt;时间悖论&lt;a class=&quot;zola-anchor&quot; href=&quot;#shi-jian-bei-lun&quot; aria-label=&quot;Anchor link for: shi-jian-bei-lun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;来自 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sive.rs&#x2F;book&#x2F;TimeParadox&quot;&gt;https:&#x2F;&#x2F;sive.rs&#x2F;book&#x2F;TimeParadox&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -4306,6 +4316,10 @@ by 《银河帝国》&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;大多数重大问题，无论是个人的还是社会的，都集中在自我控制的失败上。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;qi-ta-ren-de-quotes&quot;&gt;其他人的 Quotes&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-quotes&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-quotes&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.goodreads.com&#x2F;quotes&quot;&gt;Good Reads 上的 Quotes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
