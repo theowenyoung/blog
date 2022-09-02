@@ -354,7 +354,7 @@ h3::after {
   display: block;
   content: "";
   width: 50%;
-  height: 1.1px;
+  height: 1px;
   background-color: var(--colors-background);
   position: absolute;
   right: 0;
@@ -885,6 +885,11 @@ li.inline {
 }
 
 @media (min-width: 67.5rem) {
+  h1::after,
+  h2::after,
+  h3::after {
+    background-color: var(--colors-background-surface);
+  }
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1069,7 +1074,7 @@ li.inline {
     </div>
     <p class="muted text-sm">
   Latest build at:
-  2022.09.02 20:44
+  2022.09.02 22:33
 </p>
   </header>
 <section>
