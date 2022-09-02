@@ -89,7 +89,6 @@
           {% endif %}
         </ul>
       </section>
-      <hr class="w-full"/>
       <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
       </h2>
       {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
@@ -108,6 +107,10 @@
    
         {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
           {{ macro::post_max(page=page) }}
+          {% if loop.last %}
+          {% else %}
+            <hr class="w-1__2" />
+          {% endif %}
         {% endfor %}
       </section>
       <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
