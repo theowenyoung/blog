@@ -89,6 +89,17 @@
         {{ thoughts_page.summary | safe }}
         <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
       </section>
+
+      <hr class="w-full"/>
+      <h2>{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
+      </h2>
+      {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
+      <section class="articles">
+        {{ quotes_page.summary | safe }}
+        <h3 class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</h3>
+      </section>
+
+
       <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </h2>
       <section class="articles h-feed hfeed">
