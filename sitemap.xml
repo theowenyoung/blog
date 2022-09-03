@@ -247,6 +247,10 @@
         <lastmod>2022-04-12</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/new-buzzing/</loc>
+        <lastmod>2022-09-03</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/page/1/</loc>
     </url>
     <url>
@@ -677,7 +681,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/sources/</loc>
-        <lastmod>2022-08-19</lastmod>
+        <lastmod>2022-09-03</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/stop/</loc>
@@ -745,6 +749,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/boot/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/buzzing/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/buzzing/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/centos/</loc>
@@ -1321,6 +1331,10 @@
     <url>
         <loc>https://www.owenyoung.com/ui/</loc>
         <lastmod>2022-09-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/what-is/</loc>
+        <lastmod>2022-09-03</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/you-should-know/</loc>

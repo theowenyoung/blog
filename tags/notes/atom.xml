@@ -5,8 +5,26 @@
 	<link href="https://www.owenyoung.com/tags/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-31T22:05:32+08:00</updated>
+	<updated>2022-09-03T18:43:53+08:00</updated>
 	<id>https://www.owenyoung.com/tags/notes/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>什么是 XX ？</title>
+		<published>2022-09-03T18:43:53+08:00</published>
+		<updated>2022-09-03T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/what-is/" type="text/html"/>
+		<id>https://www.owenyoung.com/what-is/</id>
+		<content type="html">&lt;p&gt;收集各种事物的介绍。&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.bittorrent.org&#x2F;introduction.html&quot;&gt;什么是 Bit Torrent？&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;“BitTorrent 是一个言论自由的工具。BitTorrent 为您提供了与以前只有少数人使用特殊设备和大量资金所享有的相同的发布自由。（“新闻自由仅限于拥有新闻自由的人”——记者 A.J. Liebling。”&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ssl.com&#x2F;faqs&#x2F;faq-what-is-ssl&#x2F;&quot;&gt;什么是 SSL&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>不要忘记这些事情</title>
 		<published>2022-07-31T22:05:32+08:00</published>

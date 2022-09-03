@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="zh" itemscope itemtype="http://schema.org/Blog">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <title>
+      
+  New Buzzing - Owen的博客
+
+    </title><link rel="me" href="https://twitter.com/TheOwenYoung"/>
+    <link rel="me" href="https://twitter.com/OwenYoungZh"/>
+    <link rel="me" href="https://github.com/theowenyoung"/>
+    <link rel="me" href="mailto:owen@owenyoung.com"/>
+    <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
+    <meta name="description" content="
+  
+    我在最近两周里，用 Deno 重写了Buzzing，这是一个把英文世界热门的讨论，尤其是用户产生的内容，比如 reddit 上，推特上，以及我最喜欢的 hackernews 上，把这些优质内容标题翻译成中文，然后根据不同的主题汇总到不同的子网站。我将在本文分享 Buzzing 的一些技术细节和制作历程。
+
+  
+"/>
+    <meta name="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
+    <meta name="author" content="Owen Young"/>
+    <meta itemprop="headline" content="
+  New Buzzing - Owen的博客
+"/>
+    <meta itemprop="copyrightYear" content="2022"/>
+    <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.owenyoung.com/site/images/apple-icon-57x57.png?h=4f2caa895f8778fc9c8afc6173d2bf4711c82ba1db300d9378a8f5e90f75c6e4">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.owenyoung.com/site/images/apple-icon-60x60.png?h=7eab63f6f6ad0d3f7c4858613eb6d5c86cb0eff7d52a04208a6cda526c94b65b">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.owenyoung.com/site/images/apple-icon-72x72.png?h=2deb7fdcbb705196d1e77a75bd4952aba52bfbbb176af203a790a7ab7b7b0c64">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.owenyoung.com/site/images/apple-icon-76x76.png?h=f7399cc2fb4a26b40dba3ef47377b78d10b9b71aa6650719bb0ca6225d82350a">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.owenyoung.com/site/images/apple-icon-114x114.png?h=ff5d19a568c1a6f16fd7691e977f9bc0a93a67e549025140e907e0437ac0a020">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.owenyoung.com/site/images/apple-icon-120x120.png?h=f7b7916df875e4ba50c8ba87794d6932b436b4760d530c740ce989c794567c50">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.owenyoung.com/site/images/apple-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.owenyoung.com/site/images/apple-icon-152x152.png?h=9f5a1ed5380948afb2a65a11af385bac584e3c38eb99c41c4b008ca9ccb71d70">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.owenyoung.com/site/images/apple-icon-180x180.png?h=cdb4da969c5ed2fe8e358cd6fff1bd76006815c6bfb8a10dfac056de10db8fb1">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.owenyoung.com/site/images/android-icon-192x192.png?h=552ba48807682a3e49d1f2b34dfe273b166139cb056b49d96425117987c046ac">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa">
+    <meta name="msapplication-TileColor" content="#f9f5e9"/>
+    <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
+    <meta name="theme-color" content="#f9f5e9"/>
+    <meta property="og:title" content="
+  New Buzzing - Owen的博客
+"/>
+    <meta property="og:description" content="
+  
+    我在最近两周里，用 Deno 重写了Buzzing，这是一个把英文世界热门的讨论，尤其是用户产生的内容，比如 reddit 上，推特上，以及我最喜欢的 hackernews 上，把这些优质内容标题翻译成中文，然后根据不同的主题汇总到不同的子网站。我将在本文分享 Buzzing 的一些技术细节和制作历程。
+
+  
+"/>
+    <meta property="og:url" content="
+  
+    https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;new-buzzing&#x2F;
+  
+"/>
+    <meta property="og:site_name" content="Owen的博客"/>
+    
+      <meta property="og:image" content="
+  
+"/>
+    
+    <meta name="twitter:card" content="summary"/>
+    
+      <meta name="twitter:site" content="TheOwenYoung"/>
+      <meta name="twitter:creator" content="TheOwenYoung"/>
+      <meta name="twitter:image:alt" content="Owen的博客"/>
+    
+    
+      <link rel="alternate" type="application/atom+xml" title="Owen的博客 - RSS" href="https://www.owenyoung.com/atom.xml">
+    <style>@charset "UTF-8";
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  unicode-range: U+0025-00FF;
+}
+html,
+body,
+p,
+dt,
+dd,
+figure,
+fieldset,
+blockquote,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* --reset end -- */
+/* 
+ #d2bf9e 
+ #fcfcfc 
+ #fffff8 
+ #41403e 
+ backanother #e6ddd0 
+ divider: rgb(226, 232, 240);
+ code back: edf0f3
+ rgb(249, 245, 233)
+/* rgba(0, 0, 0, 0.8)*/
+/*#fffef8
+c35
+f9f5e9
+ea4c89
+fffef8
+#f4ecd8;
+*/
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  --colors-text: #41403e;
+  --colors-muted: rgb(117, 117, 117);
+  --colors-primary: #cc3355;
+  --colors-divider: rgba(0, 0, 0, 0.06);
+  --colors-primary-light: rgba(234, 76, 137, 0.5);
+  --colors-code-background: rgba(0, 0, 0, 0.08);
+  --colors-background: #fffef8;
+  --colors-blue: #1ca9c9;
+  --colors-secondary: #14213d;
+  --colors-surface: rgba(0, 0, 0, 0.04);
+  --colors-background-surface: #f9f5e9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
+    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", Palatino, sans-serif;
+}
+
+body {
+  color: var(--colors-text);
+  background-color: var(--colors-background);
+}
+
+[lang]:lang(zh) {
+  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+[lang]:lang(en) {
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+}
+
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120rem;
+}
+
+h1,
+h2,
+h3 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-weight: 600;
+  border-bottom: 1px solid var(--colors-divider);
+  position: relative;
+}
+
+.relative {
+  position: relative;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.mb-absolute {
+  margin-bottom: -0.8rem;
+}
+
+.no-border {
+  border: none;
+}
+
+.tweet-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--colors-divider);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  background: white;
+}
+
+.tweet-box .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.tweet-box .overlay:hover {
+  background-color: #efefef;
+}
+.tweet-box .inner {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tweet-box .inner a {
+  pointer-events: all;
+  position: relative;
+}
+p.tweet-content {
+  line-height: 1.5rem !important;
+  padding-right: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem !important;
+}
+.tweet-content a:link,
+.tweet-content a:visited {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgb(27, 149, 224);
+}
+.tweet-avatar-wrapper {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  width: 48px;
+  min-width: 48px;
+  border-radius: 9999px;
+}
+.tweet-icon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+}
+.tweet-icon-svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(27, 149, 224);
+  fill: currentcolor;
+}
+
+h1::after,
+h2::after,
+h3::after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: var(--colors-background);
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+
+h1 {
+  font-size: 1.625rem;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+pre {
+  color: rgb(57, 58, 52);
+  background-color: rgb(246, 248, 250);
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+code {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem;
+  background-color: var(--colors-code-background);
+}
+
+pre > code {
+  font-size: 0.9rem;
+  display: block;
+}
+
+pre code {
+  background: none;
+}
+
+code,
+pre > code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--colors-divider);
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0.8rem;
+}
+
+ul > details > summary {
+  margin-left: -1.4rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  padding: 1px 0 1px 1.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-left: 5px solid var(--colors-primary);
+}
+
+blockquote p {
+  margin: 0.5rem 0;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+p:lang(en),
+dl:lang(en),
+ol:lang(en),
+ul:lang(en) {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+button,
+input[type="submit"] {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+  transition: all 235ms ease-in-out 0s;
+  align-self: center;
+  background: 0 0;
+  border: 2px solid var(--colors-text);
+  color: var(--colors-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  font-family: Neucha, sans-serif;
+}
+
+button,
+input[type="submit"]:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+input[type="url"],
+input[type="text"],
+input[type="search"] {
+  /* -webkit-appearance: none; */
+  background: none;
+  border: 2px solid var(--colors-text);
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: var(--colors-text);
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+
+  /* -webkit-border-radius: 0px; */
+}
+.display-block {
+  display: block;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border: 2px solid var(--colors-blue);
+}
+
+#search-bar-input {
+  width: 80%;
+  min-width: 260px;
+}
+
+.meilisearch-autocomplete {
+  display: block !important;
+}
+.meilisearch-autocomplete .dsb-dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 300px;
+  width: 100%;
+}
+input:focus:not(:focus-visible) {
+  border: 2px solid var(--colors-text);
+}
+input:focus-visible {
+  border: 2px solid var(--colors-blue);
+}
+.no-underline {
+  text-decoration: none;
+}
+
+.meilisearch-autocomplete {
+  display: block;
+}
+a {
+  word-break: break-all;
+}
+a:link,
+a:visited {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  text-decoration: underline;
+  color: inherit;
+  text-decoration-thickness: 0.1rem;
+}
+
+:target {
+  scroll-margin-top: 56px;
+}
+
+.body-zone {
+  flex-direction: column;
+}
+
+.no-underline:link,
+.no-underline:visited,
+.sidebar a:link,
+.sidebar a:visited {
+  text-decoration: none;
+}
+.sidebar {
+  overflow-x: visible;
+}
+.no-underline:hover,
+a:hover {
+  color: var(--colors-primary);
+  text-decoration: underline;
+}
+
+.no-hover-underline:hover {
+  text-decoration: none;
+}
+
+.muted,
+a.muted,
+.muted:link,
+.muted:visited {
+  color: var(--colors-muted);
+}
+
+.text {
+  font-size: 1rem;
+}
+
+.text-color,
+.text-color:link,
+.text-color:visited {
+  color: var(--colors-text);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-1-auto {
+  flex: 1 1 auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.list-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.border-muted {
+  border: 1px solid var(--colors-muted);
+}
+
+.rounded-full {
+  border-radius: 999rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-sm {
+  padding: 0.25rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
+.m-l-2 {
+  margin-left: 0.5rem;
+}
+
+.py {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.py-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.my {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.my-2 {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.px {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.px-2xl {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.pr-sm {
+  padding-right: 0.5rem;
+}
+
+.pl-sm {
+  padding-left: 0.5rem;
+}
+
+.pt {
+  padding-top: 1.4rem;
+}
+
+.pl {
+  padding-left: 1.4rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--colors-background);
+}
+
+.navbar-inner {
+  padding: 0.5rem 1.4rem;
+  display: flex;
+}
+
+.zola-anchor {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.zola-anchor:link,
+.zola-anchor:visited {
+  text-decoration: none;
+}
+
+.sidebar {
+  border-top: 1px solid var(--colors-divider);
+}
+
+li.inline {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-sm p {
+  font-size: 0.9rem;
+}
+
+.pb {
+  padding-bottom: 1.4rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.no-toc {
+  width: auto;
+}
+
+.sidebar ul {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+.sidebar li {
+  font-size: 1rem;
+}
+
+.nav-divider {
+  border-right: 2px solid var(--colors-divider);
+  height: 24px;
+  margin: 0 1rem 0 0rem;
+}
+
+.h-card {
+  display: flex;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.mb {
+  margin-bottom: 1.4rem;
+}
+
+.mb-li {
+  margin-bottom: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
+
+.mr {
+  margin-right: 1.4rem;
+}
+
+.mr-sm {
+  margin-right: 0.5rem;
+}
+
+.card {
+  /* background: #fff; */
+  background: var(--colors-surface);
+}
+
+.main-inner {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+@media (min-width: 48rem) {
+  .nav-divider {
+    border-top: 2px solid var(--colors-divider);
+    width: 24px;
+    margin: 0.6rem 0 1.6rem 0;
+    height: 0;
+    border-right: none;
+  }
+
+  .navbar {
+    height: 100%;
+    /*
+    border-right: 1px solid var(--colors-divider);
+ */
+  }
+
+  .navbar-inner {
+    padding: 1.4rem 0.875rem;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  #root {
+    display: flex;
+  }
+
+  .body-zone {
+    /* prevent overflow */
+    min-width: 0;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  h1::after,
+  h2::after,
+  h3::after {
+    background-color: var(--colors-background-surface);
+  }
+  .main-inner {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: var(--colors-background-surface);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;
+  }
+  .no-toc {
+    width: 20rem;
+  }
+
+  .main-toc {
+    display: none;
+  }
+
+  .body-zone {
+    flex-direction: row;
+  }
+
+  .main-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    position: sticky;
+    border-top: none;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    overflow-y: auto;
+    width: 20rem;
+  }
+
+  .sidebar ul {
+    border-left: 1px solid var(--colors-divider);
+    list-style: none;
+  }
+
+  .sidebar li {
+    font-size: 0.9rem;
+  }
+
+  .sidebar h2,
+  .sidebar h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    padding-bottom: 1rem;
+    border: none;
+  }
+}
+</style><link rel="manifest" href="https://www.owenyoung.com/site/images/manifest.json" >
+    
+    <meta name="title" content="New Buzzing">
+  <style>
+    .sidebar {
+      display: none;
+    }
+    @media(min-width: 67.5rem) {
+      .sidebar {
+        display: block;
+      }
+    }
+  </style>
+
+  </head>
+  <body>
+    <div id="top"></div>
+    <div id="root">
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="https://www.owenyoung.com/">
+              <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
+            </a>
+          </div>
+            <ul class="flex menu list-none items-center justify-center">
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Search"
+                  href="/search/">
+                  <span class="text-sm">🔍</span>
+                </a>
+              </li>
+              
+                <li>
+                  <a
+                    class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                    title="English Site"
+                    href="/en/">
+                    <span class="text-sm">EN</span>
+                  </a>
+                </li>
+              
+              
+              <li class="list-none nav-divider"></li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Back to Top"
+                  href="#top">
+                  <span class="">
+                    &#8593;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline only-show-small"
+                  title="Go to Bottom"
+                  href="#bottom">
+                  <span class="">
+                    &#8595;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <div class="body-zone flex justify-between flex-1">
+        <div class="main flex-1 py">
+          <div class="main-inner">
+            
+<div class="h-entry hentry detail-page">
+  <header id="overview">
+    <div class="pt">
+      <span>&gt;&gt;</span>
+      <a href="https://www.owenyoung.com/">首页</a>
+      
+        <span class="divider">/</span>
+        <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/categories/random/">Random</a>
+        <span class="divider">/</span>
+          <div class="inline-block p-tags">
+            
+              <a class="p-tag" href="https://www.owenyoung.com/tags/buzzing/">Buzzing</a>
+              
+            
+          </div>
+        
+      
+    </div>
+    <div>
+      <h1 class="p-name entry-title" style="font-size:1.8rem;">New Buzzing</h1>
+      <div class="display-none p-author h-card vcard">
+        <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
+        <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
+        <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
+      </div>
+      
+        <div class="pb muted">
+          <div>
+            
+              发布于:
+              <time class="dt-published published" datetime="2022-09-03T18:54:10+08:00">2022-09-03</time>
+            
+            
+              · 最后更新时间:
+              <time class="dt-updated updated" datetime="2022-09-03">2022-09-03</time>
+              ·
+            
+            
+              阅读时间: 
+  
+    7
+  
+ min
+          </div>
+        </div>
+      
+    </div>
+    
+  </header>
+<div>
+  <div class="main">
+    <div class="display-none p-summary">
+      <p>我在最近两周里，用 Deno 重写了<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.buzzing.cc">Buzzing</a>，这是一个把英文世界热门的讨论，尤其是用户产生的内容，比如 reddit 上，推特上，以及我最喜欢的 <a rel="noopener nofollow noreferrer" target="_blank" href="https://news.ycombinator.com/">hackernews</a> 上，把这些优质内容标题翻译成中文，然后根据不同的主题汇总到不同的子网站。我将在本文分享 Buzzing 的一些技术细节和制作历程。</p>
+
+    </div>
+    <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;new-buzzing&#x2F;">Permanent Link</a>
+    
+      <div class="main-toc pt">
+        <details>
+          <summary>快速导航</summary>
+          
+    <div class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">正文开始</a>
+        </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/new-buzzing/#zong-jie">总结</a>
+            
+          </li>
+        
+        <li>
+          <a href="#response">回应区</a>
+        </li>
+        <li>
+          <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/new-buzzing/index.md">帮我完善这个页面？</a>
+        </li>
+      </ul>
+    </div>
+  
+        </details>
+      </div>
+    
+    <div id="start"></div>
+    <article class="e-content entry-content">
+      <p>我在最近两周里，用 Deno 重写了<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.buzzing.cc">Buzzing</a>，这是一个把英文世界热门的讨论，尤其是用户产生的内容，比如 reddit 上，推特上，以及我最喜欢的 <a rel="noopener nofollow noreferrer" target="_blank" href="https://news.ycombinator.com/">hackernews</a> 上，把这些优质内容标题翻译成中文，然后根据不同的主题汇总到不同的子网站。我将在本文分享 Buzzing 的一些技术细节和制作历程。</p>
+<span id="continue-reading"></span>
+<p>听描述，其实这很像是一个标准的垃圾站，内容农场，做 SEO， 卖广告赚钱。</p>
+<p>但我对这样的“垃圾站是有真实的需求的”，我非常好奇世界上奇怪的人，固执的人，以及有趣的人在做什么，在读什么，在思考什么问题，但很难在中文世界中找到这样的家园。而在英文世界中，不仅有许多专业的新闻/杂志网站，比如：</p>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.newyorker.com/">New Yorker</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.theatlantic.com/">The Atlantic</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.axios.com/">Axios</a> - 简明扼要的新闻，有重点的新闻，几句话新闻的精髓</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.huffpost.com/">赫芬顿邮报</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.politico.com/">Politico</a> - 政治评论和报道</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.theguardian.com/">卫报</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.telegraph.co.uk/">每日电讯报</a> - 英国</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://restofworld.org/">The Rest of World</a> - 科技报道</li>
+<li><a href="https://www.owenyoung.com/sources/">还有更多请参见我的笔记</a></li>
+</ul>
+<p>还有很多网址聚合类的网站，比如 <a rel="noopener nofollow noreferrer" target="_blank" href="https://news.ycombinator.com">Hacker News</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://lobste.rs/">Lobster</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com">Reddit</a></p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/hackernews.png" alt="hackernews" /></p>
+<p>这些网址聚合类由用户提交，然后其他用户投票，最终决定哪些内容会被展示在首页，为不同兴趣的人提供了一个绝佳的互联网冲浪入口，所以 Reddit 的 slogan 就是：“The Front Page of the Internet” , (刚去查证了一下，发现 Reddit 已经改了自己的 Slogan，<a rel="noopener nofollow noreferrer" target="_blank" href="https://old.reddit.com/">旧的 reddit</a>的标题依然是这个，<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/">新的</a>已经变成了：“Dive into anything”)</p>
+<p>由于目前中文网络环境的言论管控，自我审查等，我觉得我的生活已经离不开这些英文信息网站了。但是由于语言墙，快速浏览过量的非母语信息，并找出自己真正感兴趣的内容对我来说真的很难。所以我非常感谢现代翻译技术的发展，尤其是<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.deepl.com/translator">deepl</a>的翻译质量。在此之前，各种翻译工具对技术文章的翻译经常令人啼笑皆非，比如各种 stackoverflow 垃圾站，我在测试各种工具之后，发现 deepl 的翻译的确是最好的（虽然对于小部分技术名词，也有一些问题）。可以看下<a rel="noopener nofollow noreferrer" target="_blank" href="https://hn.buzzing.cc/">hn 站点下</a> Deepl 和微软的翻译对比效果：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/deepl-vs-microsoft.png" alt="deepl-vs-microsoft" /></p>
+<p>所以基于以上的需求，我在 2020 年末制作了 Buzzing 的第一个版本，大概长这样：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./index1.png" alt="buzzing" /></p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./index2.png" alt="buzzing2" /></p>
+<p>各个主题的子网站长这样：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./cmv.png" alt="buzzing3" /></p>
+<p>推出一年后，我觉得自己可能 Buzzing 里最重度的用户，以至于我自己最常逛的主题<code>hn.buzzing.cc</code>的内容根本不够我看，所以我专门为自己写了<code>Feed for Owen</code>:</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./myfeed.png" alt="feed-for-owen" /></p>
+<p>这个网站抓取 Hacker News 上 Points 大于 1 的提交，基本上就是能看到所有的提交，同时过滤掉最低质量的提交。由于可以用中文快速浏览标题，所以只有这样的频率才能满足我的阅读诉求。我在使用这个专门为我自己写的网站半年之后发现，光看热门的 HN 提交，真的会让你错过超多有意思人，固执的人写的东西，这其中大多数东西都不会进入 Hacker News 首页。</p>
+<p>然后来看看这两周的成果：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./hn.png" alt="hn" /></p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./hn-lite.png" alt="hn-lite" /></p>
+<p>每个主题都有一个 lite 的版本，无图版，无干扰的快速浏览大量信息。同时每个站点都提供了 JSON Feed 和 Atom Feed，方便使用 RSS 阅读器订阅。并且同时支持 4 种语言，中文简体，中文繁体，英文，日文，每条内容均会显示原文，方便对比参照。</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./hn-about.png" alt="hn-about" /></p>
+<p>可以说这个版本的 Buzzing 是完全受 Hacker News 社区影响的产物，纯 HTML，无 JS，无额外的 CSS 文件， 总共只有 100 多行 CSS 样式，内嵌在 HTML 页面里面，所以如果你访问<a rel="noopener nofollow noreferrer" target="_blank" href="https://hn.buzzing.cc/lite/">https://hn.buzzing.cc/lite/</a>的话，你只会加载一个 HTML 页面，没有多余的请求（icon 是浏览器为了渲染 favicon 请求的）：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./network.png" alt="network" /></p>
+<p>30KB 的页面里其实包含了多达 200 条最近的热门内容。于此同时，当我打开百度的首页（一个我们用来测网络是否正常的网站,页面如此简洁！）：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./baidu.png" alt="baidu" /></p>
+<p>你会发现他加载了多达 60 个请求，数据量多达 2.53M。</p>
+<p>接下来分享一些 New Buzzing 的技术细节：）</p>
+<p>Buzzing 之前部署在 Github Pages 里，New Buzzing 迁移到了 Cloudflare 的 Pages 服务：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./pages.png" alt="CloudFlare Pages" /></p>
+<p>其实为啥要搞 New Buzzing，就是因为 Github 的客服说我的 Buzzing 占的空间太大了，最大的一个站点占用了 60 多 G！因为之前的设计不合理，太依赖静态网站，每个 Tag，每月的 Archive 页面，每个文章的详情页面都生成了 HTML，所以整个网站变得越来越大，由于网站太大，用 force push 到 Github 很容易失败，所以只能正常 push，导致 repo 越来越大，知道 Github 都受不了了联系我。。</p>
+<p>所以新版的 Buzzing，痛定思痛，决定网页全面精简化，那就是每个子网站只有 1 个页面! <code>index.html</code>(有点吹牛，但是核心就是只有 1 个页面)，以下：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">.
+</span><span style="color:#bf616a;">├──</span><span> 404.html
+</span><span style="color:#bf616a;">├──</span><span> _redirects
+</span><span style="color:#bf616a;">├──</span><span> en
+</span><span style="color:#bf616a;">│</span><span>   ├── feed.json
+</span><span style="color:#bf616a;">│</span><span>   ├── feed.xml
+</span><span style="color:#bf616a;">│</span><span>   ├── index.html
+</span><span style="color:#bf616a;">│</span><span>   └── lite
+</span><span style="color:#bf616a;">│</span><span>       ├── feed.json
+</span><span style="color:#bf616a;">│</span><span>       ├── feed.xml
+</span><span style="color:#bf616a;">│</span><span>       └── index.html
+</span><span style="color:#bf616a;">├──</span><span> favicon.ico
+</span><span style="color:#bf616a;">├──</span><span> feed.json
+</span><span style="color:#bf616a;">├──</span><span> feed.xml
+</span><span style="color:#bf616a;">├──</span><span> icon.png
+</span><span style="color:#bf616a;">├──</span><span> index.html
+</span><span style="color:#bf616a;">├──</span><span> ja
+</span><span style="color:#bf616a;">│</span><span>   ├── feed.json
+</span><span style="color:#bf616a;">│</span><span>   ├── feed.xml
+</span><span style="color:#bf616a;">│</span><span>   ├── index.html
+</span><span style="color:#bf616a;">│</span><span>   └── lite
+</span><span style="color:#bf616a;">│</span><span>       ├── feed.json
+</span><span style="color:#bf616a;">│</span><span>       ├── feed.xml
+</span><span style="color:#bf616a;">│</span><span>       └── index.html
+</span><span style="color:#bf616a;">├──</span><span> lite
+</span><span style="color:#bf616a;">│</span><span>   ├── feed.json
+</span><span style="color:#bf616a;">│</span><span>   ├── feed.xml
+</span><span style="color:#bf616a;">│</span><span>   └── index.html
+</span><span style="color:#bf616a;">├──</span><span> robots.txt
+</span><span style="color:#bf616a;">└──</span><span> zh-Hant
+</span><span>    </span><span style="color:#bf616a;">├──</span><span> feed.json
+</span><span>    </span><span style="color:#bf616a;">├──</span><span> feed.xml
+</span><span>    </span><span style="color:#bf616a;">├──</span><span> index.html
+</span><span>    </span><span style="color:#bf616a;">└──</span><span> lite
+</span><span>        </span><span style="color:#bf616a;">├──</span><span> feed.json
+</span><span>        </span><span style="color:#bf616a;">├──</span><span> feed.xml
+</span><span>        </span><span style="color:#bf616a;">└──</span><span> index.html
+</span></code></pre>
+<p>这样 Build 速度都不到 1s，目前 20 多个站点的 build 时间 30s 以内搞定（用 Deno），同时用一个动态站点<code>i.buzzing.cc</code> 来提供不常被访问的 Tag <a rel="noopener nofollow noreferrer" target="_blank" href="https://i.buzzing.cc/hn/tags/show-hn/">页面</a>，Archive <a rel="noopener nofollow noreferrer" target="_blank" href="https://i.buzzing.cc/hn/issues/2022/31/">页面</a>, 以及<a rel="noopener nofollow noreferrer" target="_blank" href="https://i.buzzing.cc/hn/posts/2022/32/en_hn_2022_08_11__32426777/">详情页面</a>，这些页面都属于低频访问，如果每次都生成静态页面的话，会用掉大量的时间。</p>
+<p>同时，新增了<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.buzzing.cc/">www.buzzing.cc</a>作为所有子站点的聚合页面，在每次子站点生成之后生成。</p>
+<p>具体的生成过程如下：</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cache
+</span><span style="color:#bf616a;">├──</span><span> 1-raw
+</span><span style="color:#bf616a;">│</span><span>   └── 2022
+</span><span style="color:#bf616a;">│</span><span>       └── 09
+</span><span style="color:#bf616a;">│</span><span>           └── 03
+</span><span style="color:#bf616a;">│</span><span>               └── hn
+</span><span style="color:#bf616a;">│</span><span>                   ├── en_hn_2022_09_03_21_13_18_954_44__32700019.json
+</span><span style="color:#bf616a;">│</span><span>                   └── en_hn_2022_09_03_21_13_18_954_45__32700066.json
+</span><span style="color:#bf616a;">├──</span><span> 2-formated
+</span><span style="color:#bf616a;">│</span><span>   └── 2022
+</span><span style="color:#bf616a;">│</span><span>       └── 09
+</span><span style="color:#bf616a;">│</span><span>           └── 03
+</span><span style="color:#bf616a;">│</span><span>               └── hn
+</span><span style="color:#bf616a;">│</span><span>                   ├── en_hn_2022_09_03__32696241.json
+</span><span style="color:#bf616a;">│</span><span>                   └── en_hn_2022_09_03__32700066.json
+</span><span style="color:#bf616a;">└──</span><span> 3-translated
+</span><span>    </span><span style="color:#bf616a;">└──</span><span> 2022
+</span><span>        </span><span style="color:#bf616a;">└──</span><span> 09
+</span><span>            </span><span style="color:#bf616a;">└──</span><span> 03
+</span><span>                </span><span style="color:#bf616a;">└──</span><span> hn
+</span><span>                    </span><span style="color:#bf616a;">├──</span><span> en_hn_2022_09_03__32696241.json
+</span><span>                    </span><span style="color:#bf616a;">└──</span><span> en_hn_2022_09_03__32700066.json
+</span><span style="color:#bf616a;">current
+</span><span style="color:#bf616a;">└──</span><span> items
+</span><span>    </span><span style="color:#bf616a;">└──</span><span> hn
+</span><span style="color:#bf616a;">archive
+</span><span style="color:#bf616a;">└──</span><span> hn
+</span><span>    </span><span style="color:#bf616a;">├──</span><span> archive
+</span><span>    </span><span style="color:#bf616a;">│</span><span>   └── 2022
+</span><span>    </span><span style="color:#bf616a;">│</span><span>       └── 35
+</span><span>    </span><span style="color:#bf616a;">│</span><span>           └── items.json
+</span><span>    </span><span style="color:#bf616a;">├──</span><span> issues
+</span><span>    </span><span style="color:#bf616a;">│</span><span>   └── 2022
+</span><span>    </span><span style="color:#bf616a;">│</span><span>       └── 32
+</span><span>    </span><span style="color:#bf616a;">│</span><span>           └── items.json
+</span><span>    </span><span style="color:#bf616a;">└──</span><span> tags
+</span><span>        </span><span style="color:#bf616a;">└──</span><span> show-hn
+</span><span>            </span><span style="color:#bf616a;">└──</span><span> items.json
+</span></code></pre>
+<p><code>1-raw</code> 用来存放从<code>Hacker News</code>或其他站点抓取的原始数据</p>
+<p>使用以下 adapter，把原始数据格式化到<code>2-formated</code>目录下:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">adapters
+</span><span style="color:#bf616a;">├──</span><span> devto.ts
+</span><span style="color:#bf616a;">├──</span><span> googlenews.ts
+</span><span style="color:#bf616a;">├──</span><span> hn.ts
+</span><span style="color:#bf616a;">├──</span><span> hn_test.ts
+</span><span style="color:#bf616a;">├──</span><span> lobste.ts
+</span><span style="color:#bf616a;">├──</span><span> lobste_test.ts
+</span><span style="color:#bf616a;">├──</span><span> mod.ts
+</span><span style="color:#bf616a;">├──</span><span> newyorker.ts
+</span><span style="color:#bf616a;">├──</span><span> ph.ts
+</span><span style="color:#bf616a;">├──</span><span> reddit.ts
+</span><span style="color:#bf616a;">├──</span><span> rss.ts
+</span><span style="color:#bf616a;">├──</span><span> source.ts
+</span><span style="color:#bf616a;">├──</span><span> twitter.ts
+</span><span style="color:#bf616a;">└──</span><span> twitter_test.ts
+</span></code></pre>
+<p>格式化后的数据长这样：</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">id</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">en_hn_2022_09_02__32677727</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">url</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://www.commonsense.news/p/will-i-ever-see-the-36-million-oberlin</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">date_published</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">2022-09-02T01:35:39.646Z</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">date_modified</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">2022-09-02T01:35:39.646Z</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_original_published</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">2022-09-01T15:25:05.000Z</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_original_language</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">en</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_translations</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">en</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">title</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Will I Ever See the $36MM Oberlin College Owes Me?</span><span>&quot;
+</span><span>    }
+</span><span>  },
+</span><span>  &quot;</span><span style="color:#a3be8c;">_links</span><span>&quot;: [],
+</span><span>  &quot;</span><span style="color:#a3be8c;">authors</span><span>&quot;: [
+</span><span>    {
+</span><span>      &quot;</span><span style="color:#a3be8c;">name</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">fortran77</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">url</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://news.ycombinator.com/user?id=fortran77</span><span>&quot;
+</span><span>    }
+</span><span>  ],
+</span><span>  &quot;</span><span style="color:#a3be8c;">_score</span><span>&quot;: </span><span style="color:#d08770;">200</span><span>,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_num_comments</span><span>&quot;: </span><span style="color:#d08770;">194</span><span>,
+</span><span>  &quot;</span><span style="color:#a3be8c;">external_url</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://news.ycombinator.com/item?id=32677727</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">image</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://substackcdn.com/image/fetch/w_1200,h_600,c_limit,f_jpg,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb00ec25-b252-44f2-a06a-87cea18ea630_1440x1440.jpeg</span><span>&quot;
+</span><span>}
+</span></code></pre>
+<p>我让它的格式尽量和<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.jsonfeed.org/">jsonfeed</a>保持一致，同时扩展少量的自有属性。格式化后，会删除<code>1-raw</code>的原始文件。</p>
+<p>全部格式化完成之后，进入翻译环节，翻译程序只需要读取标准的 formated 文件，然后把<code>_translations</code>下的字段翻译成多个 target 语言，翻译后文件存放在<code>3-translated</code>下，变成如下模样：</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">id</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">en_reddit_2022_09_02__r--Bogleheads--comments--x3bi2g--what_to_invest_in_mega_backdoor</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">url</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://www.reddit.com/r/Bogleheads/comments/x3bi2g/what_to_invest_in_mega_backdoor/</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">date_published</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">2022-09-02T01:35:40.828Z</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">date_modified</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">2022-09-02T01:35:40.828Z</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_original_published</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">2022-09-01T16:07:45.000Z</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_original_language</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">en</span><span>&quot;,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_translations</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">en</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">title</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">What to invest in mega backdoor</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">zh-Hans</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">title</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">投资于巨型后门的内容</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">zh-Hant</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">title</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">投資於巨型後門的內容</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">ja</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">title</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">メガ・バックドアに何を投資するか</span><span>&quot;
+</span><span>    }
+</span><span>  },
+</span><span>  &quot;</span><span style="color:#a3be8c;">_links</span><span>&quot;: [],
+</span><span>  &quot;</span><span style="color:#a3be8c;">tags</span><span>&quot;: [&quot;</span><span style="color:#a3be8c;">Bogleheads</span><span>&quot;],
+</span><span>  &quot;</span><span style="color:#a3be8c;">authors</span><span>&quot;: [
+</span><span>    {
+</span><span>      &quot;</span><span style="color:#a3be8c;">name</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">oswestrywalesmate</span><span>&quot;,
+</span><span>      &quot;</span><span style="color:#a3be8c;">url</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://old.reddit.com/user/oswestrywalesmate</span><span>&quot;
+</span><span>    }
+</span><span>  ],
+</span><span>  &quot;</span><span style="color:#a3be8c;">_score</span><span>&quot;: </span><span style="color:#d08770;">3</span><span>,
+</span><span>  &quot;</span><span style="color:#a3be8c;">_num_comments</span><span>&quot;: </span><span style="color:#d08770;">6</span><span>,
+</span><span>  &quot;</span><span style="color:#a3be8c;">external_url</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">https://old.reddit.com/r/Bogleheads/comments/x3bi2g/what_to_invest_in_mega_backdoor/</span><span>&quot;
+</span><span>}
+</span></code></pre>
+<p>接下来进入存档环节，存档程序读取<code>3-translated</code>下的文件，根据文件的内容，把 items 分别存放到：<code>current</code>和<code>archive</code>目录下，同时删除<code>3-translated</code>下的文件：</p>
+<p>比如<code>current/hn/items.json</code>下的文件，大概结构是这样：</p>
+<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>  &quot;</span><span style="color:#a3be8c;">items</span><span>&quot;: {
+</span><span>    &quot;</span><span style="color:#a3be8c;">en_hn_2022_09_02__32678664</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">...</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">...</span><span>&quot;
+</span><span>    },
+</span><span>    &quot;</span><span style="color:#a3be8c;">en_hn_2022_09_02__32678665</span><span>&quot;: {
+</span><span>      &quot;</span><span style="color:#a3be8c;">...</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">...</span><span>&quot;
+</span><span>    }
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>这个文件会被永久存储，这就是当前网站的显示的所有条目，只存放最近 200 条数据，同时每条数据都会在这个时候归档，归档，目前是按周存放的。比如<code>archive/hn/2022/35/items.json</code>存放第 35 周的数据，同时<code>archive/hn/tags/show-hn/items.json</code>会存放<code>Show HN</code>标签下最近 200 条的内容。</p>
+<p>当 build hn 站点的静态网页时，只需要读取<code>current/hn/items.json</code>下的数据，然后按照模板渲染出对应的<code>index.html</code>, <code>feed.json</code>,<code>feed.xml</code>页面，然后上传至 cloudflare pages 即可。</p>
+<p>对于动态页面，比如<code>https://i.buzzing.cc/hn/tags/show-hn/</code>, 会实时读取<code>archive/hn/tags/show-hn/items.json</code>下的数据，然后按照模板渲染。</p>
+<p>目前动态页面的程序部署在<a rel="noopener nofollow noreferrer" target="_blank" href="https://deno.com/deploy">Deno Deploy</a>上，<code>current</code>,<code>archive</code>,<code>cache</code>文件存放在<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cloudflare.com/products/r2/">Cloudflare R2</a>上，静态网页部署在<a rel="noopener nofollow noreferrer" target="_blank" href="https://pages.cloudflare.com/">Cloudflare Pages</a>上。同时使用 Github Actions 来运行定时任务，每半个小时运行一次，20 多个站点，目前每次仅需要 3 分多钟就能完成全部的更新，翻译，发布静态网页。对比以前，抓取数据的时间差不多，但是构建和发布一个静态网站的时间就要多达 30 分钟。</p>
+<h2 id="zong-jie">总结<a class="zola-anchor" href="#zong-jie" aria-label="Anchor link for: zong-jie">🔗</a></h2>
+<p>用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
+Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的<code>feed.json</code>来生成一个体验良好的 APP</p>
+
+    </article>
+    
+      <div class="pb">
+        <hr>
+          <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/new-buzzing/index.md">📝 帮我完善这个页面？</a>
+        </div>
+      
+      
+    
+  
+      
+    
+      
+        
+      
+      
+      <div class="response-area">
+        <hr/>
+        <h2>回应区<a href="#response" id="response" class="zola-anchor">🔗</a>
+        </h2>
+        
+        <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+          
+            
+              
+            
+            <div id="email-comment" class="muted text-sm">
+              
+                <p>
+                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址：
+                </p>
+              
+            </div>
+          
+          <div class="flex items-center flex-wrap pb">
+            <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm"/>
+            <input type="submit" class="px py-sm" value="Send Webmention"/>
+          </div>
+          <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;new-buzzing&#x2F;"/>
+        </form>
+        
+        
+        </div>
+      
+    
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        
+<aside class="sidebar px ">
+  
+    <h2>快速导航</h2>
+    
+    <div class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">正文开始</a>
+        </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/new-buzzing/#zong-jie">总结</a>
+            
+          </li>
+        
+        <li>
+          <a href="#response">回应区</a>
+        </li>
+        <li>
+          <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/new-buzzing/index.md">帮我完善这个页面？</a>
+        </li>
+      </ul>
+    </div>
+  
+  
+</aside>
+      </div>
+      </div>
+    <div id="bottom"></div>
+    
+  </body>
+</html>
