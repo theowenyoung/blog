@@ -1055,7 +1055,7 @@ li.inline {
             
               阅读时间: 
   
-    7
+    8
   
  min
           </div>
@@ -1081,6 +1081,11 @@ li.inline {
         <li>
           <a href="#start">正文开始</a>
         </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/new-buzzing/#ji-zhu-xi-jie">技术细节</a>
+            
+          </li>
         
           <li>
             <a href="https://www.owenyoung.com/blog/new-buzzing/#zong-jie">总结</a>
@@ -1126,23 +1131,27 @@ li.inline {
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./index2.png" alt="buzzing2" /></p>
 <p>各个主题的子网站长这样：</p>
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./cmv.png" alt="buzzing3" /></p>
-<p>推出一年后，我觉得自己可能 Buzzing 里最重度的用户，以至于我自己最常逛的主题<code>hn.buzzing.cc</code>的内容根本不够我看，所以我专门为自己写了<code>Feed for Owen</code>:</p>
+<p>推出了一年，我觉得自己应该是 Buzzing 里最重度的用户吧，以至于我自己最常逛的主题<code>hn.buzzing.cc</code>的内容根本不够我看，所以我甚至专门为自己写了<code>Feed for Owen</code>:</p>
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./myfeed.png" alt="feed-for-owen" /></p>
-<p>这个网站抓取 Hacker News 上 Points 大于 1 的提交，基本上就是能看到所有的提交，同时过滤掉最低质量的提交。由于可以用中文快速浏览标题，所以只有这样的频率才能满足我的阅读诉求。我在使用这个专门为我自己写的网站半年之后发现，光看热门的 HN 提交，真的会让你错过超多有意思人，固执的人写的东西，这其中大多数东西都不会进入 Hacker News 首页。</p>
-<p>然后来看看这两周的成果：</p>
+<p>这个网站抓取 Hacker News 上 Points 大于 1 的提交，基本上就是 HN 上所有的提交了，同时过滤掉最低质量的提交。但由于可以用中文快速浏览标题，所以这样的信息量对我来说就是小菜一碟。</p>
+<p>我在使用这个专门为我自己写的网站半年之后得出的结论就是，光看热门的 HN 提交，真的会让你错过超多有意思的人，有意思的事。这其中大多数都不会进入到 Hacker News 首页。</p>
+<p>再来看看我最终的成果，也就是<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.buzzing.cc">New Buzzing</a>：</p>
+<p>默认版：</p>
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./hn.png" alt="hn" /></p>
+<p>Lite 版：</p>
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./hn-lite.png" alt="hn-lite" /></p>
-<p>每个主题都有一个 lite 的版本，无图版，无干扰的快速浏览大量信息。同时每个站点都提供了 JSON Feed 和 Atom Feed，方便使用 RSS 阅读器订阅。并且同时支持 4 种语言，中文简体，中文繁体，英文，日文，每条内容均会显示原文，方便对比参照。</p>
+<p>每个主题都有一个 lite 的版本，无图，可以无干扰的快速浏览大量信息。同时每个站点都提供了 <a rel="noopener nofollow noreferrer" target="_blank" href="https://hn.buzzing.cc/feed.json">JSON Feed</a> 和 <a rel="noopener nofollow noreferrer" target="_blank" href="https://hn.buzzing.cc/feed.xml">Atom Feed</a>，方便使用 RSS 阅读器订阅。站点像之前一样，同时支持 4 种语言，中文简体，中文繁体，英文，日文，并且每条内容均会显示原文，方便对比参照。</p>
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./hn-about.png" alt="hn-about" /></p>
-<p>可以说这个版本的 Buzzing 是完全受 Hacker News 社区影响的产物，纯 HTML，无 JS，无额外的 CSS 文件， 总共只有 100 多行 CSS 样式，内嵌在 HTML 页面里面，所以如果你访问<a rel="noopener nofollow noreferrer" target="_blank" href="https://hn.buzzing.cc/lite/">https://hn.buzzing.cc/lite/</a>的话，你只会加载一个 HTML 页面，没有多余的请求（icon 是浏览器为了渲染 favicon 请求的）：</p>
-<p><img src="https://www.owenyoung.com/blog/new-buzzing/./network.png" alt="network" /></p>
-<p>30KB 的页面里其实包含了多达 200 条最近的热门内容。于此同时，当我打开百度的首页（一个我们用来测网络是否正常的网站,页面如此简洁！）：</p>
-<p><img src="https://www.owenyoung.com/blog/new-buzzing/./baidu.png" alt="baidu" /></p>
-<p>你会发现他加载了多达 60 个请求，数据量多达 2.53M。</p>
+<p>可以说这个版本的 Buzzing 完全是受 Hacker News 社区影响的产物，纯静态 HTML，无 JS，无额外的 CSS 文件， 总共只有 100 多行 CSS 样式，内嵌在 HTML 页面里面，所以如果你访问<a rel="noopener nofollow noreferrer" target="_blank" href="https://hn.buzzing.cc/lite/">https://hn.buzzing.cc/lite/</a>的话，你只会加载一个 HTML 页面，没有多余的请求（icon 是浏览器为了渲染 favicon 请求的）：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./network.png?v=2" alt="network" /></p>
+<p>30KB 的页面里其实包含了多达 200 条的内容。而于此同时，当我打开百度的首页（一个我们用来测网络是否正常的网站，页面看起来如此简洁！）：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./baidu-network.png" alt="baidu" /></p>
+<p>你会发现他加载了多达 60 个请求，数据量多达 2.53M。吓人。</p>
 <p>接下来分享一些 New Buzzing 的技术细节：）</p>
-<p>Buzzing 之前部署在 Github Pages 里，New Buzzing 迁移到了 Cloudflare 的 Pages 服务：</p>
+<h2 id="ji-zhu-xi-jie">技术细节<a class="zola-anchor" href="#ji-zhu-xi-jie" aria-label="Anchor link for: ji-zhu-xi-jie">🔗</a></h2>
+<p>之前的 Buzzing 部署在 Github Pages 里，New Buzzing 迁移到了 Cloudflare 的 <a rel="noopener nofollow noreferrer" target="_blank" href="https://pages.cloudflare.com/">Pages 服务</a>：</p>
 <p><img src="https://www.owenyoung.com/blog/new-buzzing/./pages.png" alt="CloudFlare Pages" /></p>
-<p>其实为啥要搞 New Buzzing，就是因为 Github 的客服说我的 Buzzing 占的空间太大了，最大的一个站点占用了 60 多 G！因为之前的设计不合理，太依赖静态网站，每个 Tag，每月的 Archive 页面，每个文章的详情页面都生成了 HTML，所以整个网站变得越来越大，由于网站太大，用 force push 到 Github 很容易失败，所以只能正常 push，导致 repo 越来越大，知道 Github 都受不了了联系我。。</p>
+<p>（其实为啥要搞 New Buzzing，就是因为 Github 的客服说我的 Buzzing 占的空间太大了，其中最大的一个站点占用了 60 多 G！因为之前设计的不合理，太依赖静态网站，每个 Tag，每月的 Archive 页面，甚至每个文章的详情页面都生成了 HTML，一开始还好，后来整个网站就变得越来越大，由于网站太大，用 force push 到 Github 很容易失败，所以只能正常 push，导致 repo 越积越大，直到 Github 都受不了了联系我。。而我对维护工作也变得越来越害怕）</p>
 <p>所以新版的 Buzzing，痛定思痛，决定网页全面精简化，那就是每个子网站只有 1 个页面! <code>index.html</code>(有点吹牛，但是核心就是只有 1 个页面)，以下：</p>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">.
 </span><span style="color:#bf616a;">├──</span><span> 404.html
@@ -1184,7 +1193,7 @@ li.inline {
 </span></code></pre>
 <p>这样 Build 速度都不到 1s，目前 20 多个站点的 build 时间 30s 以内搞定（用 Deno），同时用一个动态站点<code>i.buzzing.cc</code> 来提供不常被访问的 Tag <a rel="noopener nofollow noreferrer" target="_blank" href="https://i.buzzing.cc/hn/tags/show-hn/">页面</a>，Archive <a rel="noopener nofollow noreferrer" target="_blank" href="https://i.buzzing.cc/hn/issues/2022/31/">页面</a>, 以及<a rel="noopener nofollow noreferrer" target="_blank" href="https://i.buzzing.cc/hn/posts/2022/32/en_hn_2022_08_11__32426777/">详情页面</a>，这些页面都属于低频访问，如果每次都生成静态页面的话，会用掉大量的时间。</p>
 <p>同时，新增了<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.buzzing.cc/">www.buzzing.cc</a>作为所有子站点的聚合页面，在每次子站点生成之后生成。</p>
-<p>具体的生成过程如下：</p>
+<p>具体的生成过程如下，以 HN 站点为例：</p>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cache
 </span><span style="color:#bf616a;">├──</span><span> 1-raw
 </span><span style="color:#bf616a;">│</span><span>   └── 2022
@@ -1210,6 +1219,7 @@ li.inline {
 </span><span style="color:#bf616a;">current
 </span><span style="color:#bf616a;">└──</span><span> items
 </span><span>    </span><span style="color:#bf616a;">└──</span><span> hn
+</span><span>        </span><span style="color:#bf616a;">└──</span><span> items.json
 </span><span style="color:#bf616a;">archive
 </span><span style="color:#bf616a;">└──</span><span> hn
 </span><span>    </span><span style="color:#bf616a;">├──</span><span> archive
@@ -1255,7 +1265,6 @@ li.inline {
 </span><span>      &quot;</span><span style="color:#a3be8c;">title</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">Will I Ever See the $36MM Oberlin College Owes Me?</span><span>&quot;
 </span><span>    }
 </span><span>  },
-</span><span>  &quot;</span><span style="color:#a3be8c;">_links</span><span>&quot;: [],
 </span><span>  &quot;</span><span style="color:#a3be8c;">authors</span><span>&quot;: [
 </span><span>    {
 </span><span>      &quot;</span><span style="color:#a3be8c;">name</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">fortran77</span><span>&quot;,
@@ -1317,13 +1326,74 @@ li.inline {
 </span><span>  }
 </span><span>}
 </span></code></pre>
-<p>这个文件会被永久存储，这就是当前网站的显示的所有条目，只存放最近 200 条数据，同时每条数据都会在这个时候归档，归档，目前是按周存放的。比如<code>archive/hn/2022/35/items.json</code>存放第 35 周的数据，同时<code>archive/hn/tags/show-hn/items.json</code>会存放<code>Show HN</code>标签下最近 200 条的内容。</p>
+<p>这个文件会被永久存储，这就是当前网站的显示的所有条目，只存放最近 200 条数据。</p>
+<p>同时每条数据都会在这个时候归档，归档，目前是按周存放的。比如<code>archive/hn/2022/35/items.json</code>存放第 35 周的数据，同时<code>archive/hn/tags/show-hn/items.json</code>会存放<code>Show HN</code>标签下最近 200 条的内容。数据格式和<code>current/hn/items.json</code>一致。</p>
 <p>当 build hn 站点的静态网页时，只需要读取<code>current/hn/items.json</code>下的数据，然后按照模板渲染出对应的<code>index.html</code>, <code>feed.json</code>,<code>feed.xml</code>页面，然后上传至 cloudflare pages 即可。</p>
 <p>对于动态页面，比如<code>https://i.buzzing.cc/hn/tags/show-hn/</code>, 会实时读取<code>archive/hn/tags/show-hn/items.json</code>下的数据，然后按照模板渲染。</p>
 <p>目前动态页面的程序部署在<a rel="noopener nofollow noreferrer" target="_blank" href="https://deno.com/deploy">Deno Deploy</a>上，<code>current</code>,<code>archive</code>,<code>cache</code>文件存放在<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cloudflare.com/products/r2/">Cloudflare R2</a>上，静态网页部署在<a rel="noopener nofollow noreferrer" target="_blank" href="https://pages.cloudflare.com/">Cloudflare Pages</a>上。同时使用 Github Actions 来运行定时任务，每半个小时运行一次，20 多个站点，目前每次仅需要 3 分多钟就能完成全部的更新，翻译，发布静态网页。对比以前，抓取数据的时间差不多，但是构建和发布一个静态网站的时间就要多达 30 分钟。</p>
+<p>具体的 Github Actions 配置如下：</p>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">steps</span><span>:
+</span><span>  - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Check out repository code
+</span><span>    </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/checkout@v3
+</span><span>  - </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/setup-node@v3
+</span><span>    </span><span style="color:#bf616a;">with</span><span>:
+</span><span>      </span><span style="color:#bf616a;">node-version</span><span>: </span><span style="color:#d08770;">16
+</span><span>      </span><span style="color:#bf616a;">cache</span><span>: &quot;</span><span style="color:#a3be8c;">npm</span><span>&quot;
+</span><span>  - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">install wrangler
+</span><span>    </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">npm install -g wrangler
+</span><span>  - </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">denoland/setup-deno@v1
+</span><span>    </span><span style="color:#bf616a;">with</span><span>:
+</span><span>      </span><span style="color:#bf616a;">deno-version</span><span>: </span><span style="color:#a3be8c;">v1.x
+</span><span>  - </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/cache@v3
+</span><span>    </span><span style="color:#bf616a;">with</span><span>:
+</span><span>      </span><span style="color:#bf616a;">path</span><span>: </span><span style="color:#b48ead;">|
+</span><span style="color:#a3be8c;">        ~/.deno
+</span><span style="color:#a3be8c;">        ~/.cache/deno
+</span><span>      </span><span style="color:#bf616a;">key</span><span>: </span><span style="color:#a3be8c;">${{ runner.os }}-deno-${{ hashFiles(&#39;**/*deps.ts&#39;) }}
+</span><span>  - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make prod-load
+</span><span>    </span><span style="color:#bf616a;">env</span><span>:
+</span><span>      </span><span style="color:#bf616a;">AWS_ACCESS_KEY_ID</span><span>: </span><span style="color:#a3be8c;">${{ secrets.AWS_ACCESS_KEY_ID }}
+</span><span>      </span><span style="color:#bf616a;">AWS_SECRET_ACCESS_KEY</span><span>: </span><span style="color:#a3be8c;">${{ secrets.AWS_SECRET_ACCESS_KEY }}
+</span><span>      </span><span style="color:#bf616a;">AWS_DEFAULT_REGION</span><span>: </span><span style="color:#a3be8c;">${{secrets.AWS_DEFAULT_REGION}}
+</span><span>      </span><span style="color:#bf616a;">AWS_ENDPOINT</span><span>: </span><span style="color:#a3be8c;">${{secrets.AWS_ENDPOINT}}
+</span><span>  - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make install
+</span><span>  - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make prod-source
+</span><span>    </span><span style="color:#bf616a;">id</span><span>: </span><span style="color:#a3be8c;">source
+</span><span>    </span><span style="color:#bf616a;">continue-on-error</span><span>: </span><span style="color:#d08770;">true
+</span><span>    </span><span style="color:#bf616a;">env</span><span>:
+</span><span>      </span><span style="color:#bf616a;">AWS_ACCESS_KEY_ID</span><span>: </span><span style="color:#a3be8c;">${{ secrets.AWS_ACCESS_KEY_ID }}
+</span><span>      </span><span style="color:#bf616a;">AWS_SECRET_ACCESS_KEY</span><span>: </span><span style="color:#a3be8c;">${{ secrets.AWS_SECRET_ACCESS_KEY }}
+</span><span>      </span><span style="color:#bf616a;">AWS_DEFAULT_REGION</span><span>: </span><span style="color:#a3be8c;">${{secrets.AWS_DEFAULT_REGION}}
+</span><span>      </span><span style="color:#bf616a;">AWS_ENDPOINT</span><span>: </span><span style="color:#a3be8c;">${{secrets.AWS_ENDPOINT}}
+</span><span>      </span><span style="color:#bf616a;">TWITTER_BEARER_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.TWITTER_BEARER_TOKEN}}
+</span><span>      </span><span style="color:#bf616a;">TWITTER_ACCESS_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.TWITTER_ACCESS_TOKEN}}
+</span><span>      </span><span style="color:#bf616a;">TWITTER_ACCESS_TOKEN_SECRET</span><span>: </span><span style="color:#a3be8c;">${{secrets.TWITTER_ACCESS_TOKEN_SECRET}}
+</span><span>      </span><span style="color:#bf616a;">TWITTER_CONSUMER_SECRET</span><span>: </span><span style="color:#a3be8c;">${{secrets.TWITTER_CONSUMER_SECRET}}
+</span><span>      </span><span style="color:#bf616a;">PRODUCTHUNT_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.PRODUCTHUNT_TOKEN}}
+</span><span>      </span><span style="color:#bf616a;">TRANSLATE_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.TRANSLATE_TOKEN}}
+</span><span>  - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">upload files
+</span><span>    </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make prod-upload
+</span><span>    </span><span style="color:#bf616a;">env</span><span>:
+</span><span>      </span><span style="color:#bf616a;">AWS_ACCESS_KEY_ID</span><span>: </span><span style="color:#a3be8c;">${{ secrets.AWS_ACCESS_KEY_ID }}
+</span><span>      </span><span style="color:#bf616a;">AWS_SECRET_ACCESS_KEY</span><span>: </span><span style="color:#a3be8c;">${{ secrets.AWS_SECRET_ACCESS_KEY }}
+</span><span>      </span><span style="color:#bf616a;">AWS_DEFAULT_REGION</span><span>: </span><span style="color:#a3be8c;">${{secrets.AWS_DEFAULT_REGION}}
+</span><span>      </span><span style="color:#bf616a;">AWS_ENDPOINT</span><span>: </span><span style="color:#a3be8c;">${{secrets.AWS_ENDPOINT}}
+</span><span>      </span><span style="color:#bf616a;">DUFS_URL</span><span>: </span><span style="color:#a3be8c;">${{secrets.DUFS_URL}}
+</span><span>      </span><span style="color:#bf616a;">DUFS_SECRETS</span><span>: </span><span style="color:#a3be8c;">${{secrets.DUFS_SECRETS}}
+</span><span>  - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">throw if source failed
+</span><span>    </span><span style="color:#bf616a;">if</span><span>: </span><span style="color:#a3be8c;">steps.source.outcome == &#39;failure&#39;
+</span><span>    </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#b48ead;">|
+</span><span style="color:#a3be8c;">      echo &quot;::error::Source build failed&quot;
+</span><span style="color:#a3be8c;">      exit 1
+</span><span>  - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Publish pages
+</span><span>    </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">make prod-publishall
+</span><span>    </span><span style="color:#bf616a;">env</span><span>:
+</span><span>      </span><span style="color:#bf616a;">CLOUDFLARE_ACCOUNT_ID</span><span>: </span><span style="color:#a3be8c;">${{secrets.CLOUDFLARE_ACCOUNT_ID}}
+</span><span>      </span><span style="color:#bf616a;">CLOUDFLARE_API_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.CLOUDFLARE_API_TOKEN}}
+</span></code></pre>
 <h2 id="zong-jie">总结<a class="zola-anchor" href="#zong-jie" aria-label="Anchor link for: zong-jie">🔗</a></h2>
 <p>用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
-Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的<code>feed.json</code>来生成一个体验良好的 APP</p>
+Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的<code>feed.json</code>来生成一个体验良好的 APP.</p>
 
     </article>
     
@@ -1385,6 +1455,11 @@ Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都�
         <li>
           <a href="#start">正文开始</a>
         </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/new-buzzing/#ji-zhu-xi-jie">技术细节</a>
+            
+          </li>
         
           <li>
             <a href="https://www.owenyoung.com/blog/new-buzzing/#zong-jie">总结</a>
