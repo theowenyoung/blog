@@ -48,39 +48,47 @@ taxonomies:
 
 ![buzzing3](./cmv.png)
 
-推出一年后，我觉得自己可能 Buzzing 里最重度的用户，以至于我自己最常逛的主题`hn.buzzing.cc`的内容根本不够我看，所以我专门为自己写了`Feed for Owen`:
+推出了一年，我觉得自己应该是 Buzzing 里最重度的用户吧，以至于我自己最常逛的主题`hn.buzzing.cc`的内容根本不够我看，所以我甚至专门为自己写了`Feed for Owen`:
 
 ![feed-for-owen](./myfeed.png)
 
-这个网站抓取 Hacker News 上 Points 大于 1 的提交，基本上就是能看到所有的提交，同时过滤掉最低质量的提交。由于可以用中文快速浏览标题，所以只有这样的频率才能满足我的阅读诉求。我在使用这个专门为我自己写的网站半年之后发现，光看热门的 HN 提交，真的会让你错过超多有意思人，固执的人写的东西，这其中大多数东西都不会进入 Hacker News 首页。
+这个网站抓取 Hacker News 上 Points 大于 1 的提交，基本上就是 HN 上所有的提交了，同时过滤掉最低质量的提交。但由于可以用中文快速浏览标题，所以这样的信息量对我来说就是小菜一碟。
 
-然后来看看这两周的成果：
+我在使用这个专门为我自己写的网站半年之后得出的结论就是，光看热门的 HN 提交，真的会让你错过超多有意思的人，有意思的事。这其中大多数都不会进入到 Hacker News 首页。
+
+再来看看我最终的成果，也就是[New Buzzing](https://www.buzzing.cc)：
+
+默认版：
 
 ![hn](./hn.png)
 
+Lite 版：
+
 ![hn-lite](./hn-lite.png)
 
-每个主题都有一个 lite 的版本，无图版，无干扰的快速浏览大量信息。同时每个站点都提供了 JSON Feed 和 Atom Feed，方便使用 RSS 阅读器订阅。并且同时支持 4 种语言，中文简体，中文繁体，英文，日文，每条内容均会显示原文，方便对比参照。
+每个主题都有一个 lite 的版本，无图，可以无干扰的快速浏览大量信息。同时每个站点都提供了 [JSON Feed](https://hn.buzzing.cc/feed.json) 和 [Atom Feed](https://hn.buzzing.cc/feed.xml)，方便使用 RSS 阅读器订阅。站点像之前一样，同时支持 4 种语言，中文简体，中文繁体，英文，日文，并且每条内容均会显示原文，方便对比参照。
 
 ![hn-about](./hn-about.png)
 
-可以说这个版本的 Buzzing 是完全受 Hacker News 社区影响的产物，纯 HTML，无 JS，无额外的 CSS 文件， 总共只有 100 多行 CSS 样式，内嵌在 HTML 页面里面，所以如果你访问<https://hn.buzzing.cc/lite/>的话，你只会加载一个 HTML 页面，没有多余的请求（icon 是浏览器为了渲染 favicon 请求的）：
+可以说这个版本的 Buzzing 完全是受 Hacker News 社区影响的产物，纯静态 HTML，无 JS，无额外的 CSS 文件， 总共只有 100 多行 CSS 样式，内嵌在 HTML 页面里面，所以如果你访问<https://hn.buzzing.cc/lite/>的话，你只会加载一个 HTML 页面，没有多余的请求（icon 是浏览器为了渲染 favicon 请求的）：
 
-![network](./network.png)
+![network](./network.png?v=2)
 
-30KB 的页面里其实包含了多达 200 条最近的热门内容。于此同时，当我打开百度的首页（一个我们用来测网络是否正常的网站,页面如此简洁！）：
+30KB 的页面里其实包含了多达 200 条的内容。而于此同时，当我打开百度的首页（一个我们用来测网络是否正常的网站，页面看起来如此简洁！）：
 
-![baidu](./baidu.png)
+![baidu](./baidu-network.png)
 
-你会发现他加载了多达 60 个请求，数据量多达 2.53M。
+你会发现他加载了多达 60 个请求，数据量多达 2.53M。吓人。
 
 接下来分享一些 New Buzzing 的技术细节：）
 
-Buzzing 之前部署在 Github Pages 里，New Buzzing 迁移到了 Cloudflare 的 Pages 服务：
+## 技术细节
+
+之前的 Buzzing 部署在 Github Pages 里，New Buzzing 迁移到了 Cloudflare 的 [Pages 服务](https://pages.cloudflare.com/)：
 
 ![CloudFlare Pages](./pages.png)
 
-其实为啥要搞 New Buzzing，就是因为 Github 的客服说我的 Buzzing 占的空间太大了，最大的一个站点占用了 60 多 G！因为之前的设计不合理，太依赖静态网站，每个 Tag，每月的 Archive 页面，每个文章的详情页面都生成了 HTML，所以整个网站变得越来越大，由于网站太大，用 force push 到 Github 很容易失败，所以只能正常 push，导致 repo 越来越大，知道 Github 都受不了了联系我。。
+（其实为啥要搞 New Buzzing，就是因为 Github 的客服说我的 Buzzing 占的空间太大了，其中最大的一个站点占用了 60 多 G！因为之前设计的不合理，太依赖静态网站，每个 Tag，每月的 Archive 页面，甚至每个文章的详情页面都生成了 HTML，一开始还好，后来整个网站就变得越来越大，由于网站太大，用 force push 到 Github 很容易失败，所以只能正常 push，导致 repo 越积越大，直到 Github 都受不了了联系我。。而我对维护工作也变得越来越害怕）
 
 所以新版的 Buzzing，痛定思痛，决定网页全面精简化，那就是每个子网站只有 1 个页面! `index.html`(有点吹牛，但是核心就是只有 1 个页面)，以下：
 
@@ -128,7 +136,7 @@ Buzzing 之前部署在 Github Pages 里，New Buzzing 迁移到了 Cloudflare �
 
 同时，新增了[www.buzzing.cc](https://www.buzzing.cc/)作为所有子站点的聚合页面，在每次子站点生成之后生成。
 
-具体的生成过程如下：
+具体的生成过程如下，以 HN 站点为例：
 
 ```bash
 cache
@@ -156,6 +164,7 @@ cache
 current
 └── items
     └── hn
+        └── items.json
 archive
 └── hn
     ├── archive
@@ -208,7 +217,6 @@ adapters
       "title": "Will I Ever See the $36MM Oberlin College Owes Me?"
     }
   },
-  "_links": [],
   "authors": [
     {
       "name": "fortran77",
@@ -279,7 +287,9 @@ adapters
 }
 ```
 
-这个文件会被永久存储，这就是当前网站的显示的所有条目，只存放最近 200 条数据，同时每条数据都会在这个时候归档，归档，目前是按周存放的。比如`archive/hn/2022/35/items.json`存放第 35 周的数据，同时`archive/hn/tags/show-hn/items.json`会存放`Show HN`标签下最近 200 条的内容。
+这个文件会被永久存储，这就是当前网站的显示的所有条目，只存放最近 200 条数据。
+
+同时每条数据都会在这个时候归档，归档，目前是按周存放的。比如`archive/hn/2022/35/items.json`存放第 35 周的数据，同时`archive/hn/tags/show-hn/items.json`会存放`Show HN`标签下最近 200 条的内容。数据格式和`current/hn/items.json`一致。
 
 当 build hn 站点的静态网页时，只需要读取`current/hn/items.json`下的数据，然后按照模板渲染出对应的`index.html`, `feed.json`,`feed.xml`页面，然后上传至 cloudflare pages 即可。
 
@@ -287,7 +297,70 @@ adapters
 
 目前动态页面的程序部署在[Deno Deploy](https://deno.com/deploy)上，`current`,`archive`,`cache`文件存放在[Cloudflare R2](https://www.cloudflare.com/products/r2/)上，静态网页部署在[Cloudflare Pages](https://pages.cloudflare.com/)上。同时使用 Github Actions 来运行定时任务，每半个小时运行一次，20 多个站点，目前每次仅需要 3 分多钟就能完成全部的更新，翻译，发布静态网页。对比以前，抓取数据的时间差不多，但是构建和发布一个静态网站的时间就要多达 30 分钟。
 
+具体的 Github Actions 配置如下：
+
+```yaml
+steps:
+  - name: Check out repository code
+    uses: actions/checkout@v3
+  - uses: actions/setup-node@v3
+    with:
+      node-version: 16
+      cache: "npm"
+  - name: install wrangler
+    run: npm install -g wrangler
+  - uses: denoland/setup-deno@v1
+    with:
+      deno-version: v1.x
+  - uses: actions/cache@v3
+    with:
+      path: |
+        ~/.deno
+        ~/.cache/deno
+      key: ${{ runner.os }}-deno-${{ hashFiles('**/*deps.ts') }}
+  - run: make prod-load
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{secrets.AWS_DEFAULT_REGION}}
+      AWS_ENDPOINT: ${{secrets.AWS_ENDPOINT}}
+  - run: make install
+  - run: make prod-source
+    id: source
+    continue-on-error: true
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{secrets.AWS_DEFAULT_REGION}}
+      AWS_ENDPOINT: ${{secrets.AWS_ENDPOINT}}
+      TWITTER_BEARER_TOKEN: ${{secrets.TWITTER_BEARER_TOKEN}}
+      TWITTER_ACCESS_TOKEN: ${{secrets.TWITTER_ACCESS_TOKEN}}
+      TWITTER_ACCESS_TOKEN_SECRET: ${{secrets.TWITTER_ACCESS_TOKEN_SECRET}}
+      TWITTER_CONSUMER_SECRET: ${{secrets.TWITTER_CONSUMER_SECRET}}
+      PRODUCTHUNT_TOKEN: ${{secrets.PRODUCTHUNT_TOKEN}}
+      TRANSLATE_TOKEN: ${{secrets.TRANSLATE_TOKEN}}
+  - name: upload files
+    run: make prod-upload
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{secrets.AWS_DEFAULT_REGION}}
+      AWS_ENDPOINT: ${{secrets.AWS_ENDPOINT}}
+      DUFS_URL: ${{secrets.DUFS_URL}}
+      DUFS_SECRETS: ${{secrets.DUFS_SECRETS}}
+  - name: throw if source failed
+    if: steps.source.outcome == 'failure'
+    run: |
+      echo "::error::Source build failed"
+      exit 1
+  - name: Publish pages
+    run: make prod-publishall
+    env:
+      CLOUDFLARE_ACCOUNT_ID: ${{secrets.CLOUDFLARE_ACCOUNT_ID}}
+      CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN}}
+```
+
 ## 总结
 
 用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
-Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的`feed.json`来生成一个体验良好的 APP
+Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的`feed.json`来生成一个体验良好的 APP.
