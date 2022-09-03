@@ -13,14 +13,14 @@
     <link rel="me" href="https://github.com/theowenyoung"/>
     <link rel="me" href="mailto:owen@owenyoung.com"/>
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
-    <meta name="description" itemprop="about" content="
+    <meta name="description" content="
   
     这篇文章是一篇笔记，记录一下安装期间遇到的坑，不算是教程，因为我走了一遍流程之后决定放弃这样安装，还是乖乖的买一块新的 U 盘去安装系统，劝你也这样做（我为啥要这样装系统，是因为我的旧 U 盘是一个 360wifi 的 u 盘，试了用refus,ventoy等工具创建引导 u 盘，电脑都无法启动这块 u 盘的引导系统，这才尝试无 U 盘安装）。背景是：最近刚搬家，无意中找到一个 dp 的转接头，神奇的发现之前屏幕坏掉的 Thinkpad T450 笔记本可以外接到房东的大电视上显示，（之前拿到联想售后店，售后告诉我整个显卡都坏掉，外接显示屏也无法显示，我也就没尝试过），所以准备给这台旧笔记本额外安装一个 Linux 系统，用作家庭服务器，可以跑旁路由，和一些媒体中心等等。这样的需求最适合装一个 headless 系统，平时都通过 ssh 连接和操作，把废旧笔记本当作树莓派一样用。我发现装系统的时候最能学到一些更底层的知识，我虽然是程序员，但还是有超多基本知识都不了解，通过这次装系统，又学了好多新知识。在查找教程的过程中，有一点感触很深，就是写教程的人，最好解释清楚每一步操作都干了啥，这样读者才能从中学到真正的东西，但是网络上有很多中文的教程就只是告诉你说这几行命令能解决问题，这就搞得人很虚。所以自己写教程或者笔记的时候，一定不要怕冗余，努力说清楚每一个操作实际上干了什么。装完之后，总算理解了一点点电脑的启动流程，写了一篇笔记：电脑的启动流程
 
   
 "/>
-    <meta name="keywords" itemprop="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
-    <meta name="author" itemprop="author" content="Owen Young"/>
+    <meta name="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
+    <meta name="author" content="Owen Young"/>
     <meta itemprop="headline" content="
   不用 U 盘在 Windows 10 上安装Ubuntu Server 22 双系统 - Owen的博客
 "/>
@@ -960,63 +960,61 @@ li.inline {
 
   </head>
   <body>
-    <section id="top"></section>
-    <section id="root">
+    <div id="top"></div>
+    <div id="root">
       <nav class="navbar">
         <div class="navbar-inner justify-between">
           <div>
             <a class="brand" href="https://www.owenyoung.com/">
               <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
-            </img>
-          </a>
-        </div>
-        <div>
-          <ul class="flex menu list-none items-center justify-center">
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Search"
-                href="/search/">
-                <span class="text-sm">🔍</span>
-              </a>
-            </li>
-            
+            </a>
+          </div>
+            <ul class="flex menu list-none items-center justify-center">
               <li>
                 <a
-                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
-                  title="English Site"
-                  href="/en/">
-                  <span class="text-sm">EN</span>
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Search"
+                  href="/search/">
+                  <span class="text-sm">🔍</span>
                 </a>
               </li>
-            
-            
-            <div class="nav-divider"></div>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Back to Top"
-                href="#top">
-                <span class="">
-                  &#8593;</span>
-              </a>
-            </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Go to Bottom"
-                class="only-show-small"
-                href="#bottom">
-                <span class="">
-                  &#8595;</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+              
+                <li>
+                  <a
+                    class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                    title="English Site"
+                    href="/en/">
+                    <span class="text-sm">EN</span>
+                  </a>
+                </li>
+              
+              
+              <li class="list-none nav-divider"></li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Back to Top"
+                  href="#top">
+                  <span class="">
+                    &#8593;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline only-show-small"
+                  title="Go to Bottom"
+                  href="#bottom">
+                  <span class="">
+                    &#8595;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
       </nav>
-      <main class="body-zone flex justify-between flex-1">
-        <section class="main flex-1 py">
-          <div class="main-inner"> 
+      <div class="body-zone flex justify-between flex-1">
+        <div class="main flex-1 py">
+          <div class="main-inner">
+            
 <div class="h-entry hentry detail-page">
   <header id="overview">
     <div class="pt">
@@ -1073,8 +1071,8 @@ li.inline {
     </div>
     
   </header>
-<section>
-  <section class="main">
+<div>
+  <div class="main">
     <div class="display-none p-summary">
       <p>这篇文章是一篇笔记，记录一下安装期间遇到的坑，不算是教程，因为我走了一遍流程之后决定放弃这样安装，还是乖乖的买一块新的 U 盘去安装系统，劝你也这样做（我为啥要这样装系统，是因为我的旧 U 盘是一个 360wifi 的 u 盘，试了用<a rel="noopener nofollow noreferrer" target="_blank" href="https://rufus.ie/en/">refus</a>,<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ventoy.net/en/faq.html">ventoy</a>等工具创建引导 u 盘，电脑都无法启动这块 u 盘的引导系统，这才尝试无 U 盘安装）。</p>
 <blockquote>
@@ -1090,7 +1088,7 @@ li.inline {
         <details>
           <summary>快速导航</summary>
           
-    <section class="sidebar-table-content">
+    <div class="sidebar-table-content">
       <ul>
         <li>
           <a href="#start">正文开始</a>
@@ -1143,12 +1141,12 @@ li.inline {
           <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/windows-10-ubuntu-22-dual-system-without-usb-flash-drive/index.md">帮我完善这个页面？</a>
         </li>
       </ul>
-    </section>
+    </div>
   
         </details>
       </div>
     
-    <section id="start"></section>
+    <div id="start"></div>
     <article class="e-content entry-content">
       <p>这篇文章是一篇笔记，记录一下安装期间遇到的坑，不算是教程，因为我走了一遍流程之后决定放弃这样安装，还是乖乖的买一块新的 U 盘去安装系统，劝你也这样做（我为啥要这样装系统，是因为我的旧 U 盘是一个 360wifi 的 u 盘，试了用<a rel="noopener nofollow noreferrer" target="_blank" href="https://rufus.ie/en/">refus</a>,<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ventoy.net/en/faq.html">ventoy</a>等工具创建引导 u 盘，电脑都无法启动这块 u 盘的引导系统，这才尝试无 U 盘安装）。</p>
 <blockquote>
@@ -1212,10 +1210,10 @@ li.inline {
 
     </article>
     
-      <section class="pb">
+      <div class="pb">
         <hr>
           <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/windows-10-ubuntu-22-dual-system-without-usb-flash-drive/index.md">📝 帮我完善这个页面？</a>
-        </section>
+        </div>
       
       
     
@@ -1226,7 +1224,7 @@ li.inline {
         
       
       
-      <section class="response-area">
+      <div class="response-area">
         <hr/>
         <h2>回应区<a href="#response" id="response" class="zola-anchor">🔗</a>
         </h2>
@@ -1252,19 +1250,20 @@ li.inline {
         </form>
         
         
+        </div>
       
     
-    </section>
-  </section>
+    </div>
+  </div>
 </div>
-            </div>
-          </section>
-          
+          </div>
+        </div>
+        
 <aside class="sidebar px ">
   
     <h2>快速导航</h2>
     
-    <section class="sidebar-table-content">
+    <div class="sidebar-table-content">
       <ul>
         <li>
           <a href="#start">正文开始</a>
@@ -1317,11 +1316,13 @@ li.inline {
           <a href="https://github.com/theowenyoung/blog/edit/main/content/blog/windows-10-ubuntu-22-dual-system-without-usb-flash-drive/index.md">帮我完善这个页面？</a>
         </li>
       </ul>
-    </section>
+    </div>
   
   
 </aside>
-    </main>
-  </section>
-<section id="bottom"></section>
-</body></html>
+      </div>
+      </div>
+    <div id="bottom"></div>
+    
+  </body>
+</html>

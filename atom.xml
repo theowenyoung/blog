@@ -93,7 +93,7 @@
 &lt;li&gt;我们的生活方式让我们“陷入了一个大的庞氏骗局，我们可能已经有 1 万年了. 这个庞氏骗局的答案是将人类从目前的 77 亿人缩小到更可持续的 20 亿或 30 亿人。&lt;&#x2F;li&gt;
 &lt;li&gt;我们长期以来一直想象的持续无休止的扩张的未来已经结束，一个由收缩定义的新未来即将到来&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;interactive&#x2F;2022&#x2F;08&#x2F;25&#x2F;world&#x2F;asia&#x2F;china-taiwan-conflict-blockade.html&quot;&gt;中国如何用封锁扼杀台湾经济 - 纽约时报&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;trending&quot;&gt;Github 宣布 Trending 页面即将下线&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nypost.com&#x2F;2012&#x2F;02&#x2F;05&#x2F;extroverts-destroy-the-world&#x2F;&quot;&gt;外向的人毁灭世界 - NYPost&lt;&#x2F;a&gt;
@@ -104,7 +104,7 @@
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-</content>
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>2022.08.29: 各种链接</title>
@@ -127,9 +127,9 @@
 &lt;li&gt;直接使用 VS Code 进行 web 调试&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;danluu&#x2F;status&#x2F;1564292487744978946&quot;&gt;在网络中处于不利地位的普通人在用广告交税，而程序员们却几乎都在使用广告拦截器&lt;&#x2F;a&gt;&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;danluu&#x2F;status&#x2F;1564292487744978946&quot;&gt;在网络中处于不利地位的普通人在用广告交税，而程序员们却几乎都在使用广告拦截器&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-</content>
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>学习任何东西的教程</title>
@@ -399,9 +399,9 @@
 &lt;li&gt;贝莱德（Blackrock）是世界金融巨头中的巨头，拥有超过 10 万亿美元，这个数字几乎是德国国内生产总值（GDP）的三倍。芬克确信，国际公司将退出一些国家。不仅因为经济风险，还因为道德风险。“今天的公司必须在一个非常不同的层面上面对政治和社会问题，”。他确实列举了一些可能从这种转变中受益的国家。例如，墨西哥和巴西。生产成本较低，但人权仍然在很大程度上得到尊重的国家。&lt;&#x2F;li&gt;
 &lt;li&gt;这位总理如何看待即将到来的世界，可以从他邀请参加最近 G-7 峰会的其他客人以及其他六个主要工业化国家和欧盟（印度，印度尼西亚，南非，塞内加尔和阿根廷）中看到。来自三大洲的五个国家 - 塞内加尔总统 Macky Sall 也是非洲联盟的代表，非洲联盟有 55 个成员国。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-</content>
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>2022.07.25: 各种链接</title>
@@ -5284,8 +5284,10 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;p&gt;所以：&lt;&#x2F;p&gt;
 &lt;ol&gt;
 &lt;li&gt;非运营商锁定很重要，离线很重要，我们不能指望一个公司，或者一个在线服务能服务好一个以一生为尺度的个人系统。&lt;&#x2F;li&gt;
-&lt;li&gt;笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;所以我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;wiki&quot;&gt;以一生为尺度设计的笔记系统&lt;&#x2F;a&gt;就是一个纯文本的文件夹，里面保存了我所有能公开的笔记。至于公开笔记的原因，一方面，公开笔记能让我更有动力一直维护下去，另一方面，也许在某时可以给别人某种灵感，这会让我很满足。&lt;&#x2F;li&gt;
+&lt;li&gt;笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;所以我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;wiki&quot;&gt;以一生为尺度设计的笔记系统&lt;&#x2F;a&gt;就是一个纯文本的文件夹，里面保存了我所有能公开的笔记。至于公开笔记的原因，一方面，公开笔记能让我更有动力一直维护下去，另一方面，也许在某时可以给别人某种灵感，这会让我很满足。&lt;&#x2F;p&gt;
 &lt;p&gt;近年来越来越多的人开始用&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;258561003&quot;&gt;卢曼卡片盒笔记法&lt;&#x2F;a&gt;来记笔记，大多数人都是倾向于建立大量的笔记，然后再把这些笔记互相链接起来，以形成一个所谓的第二大脑。我的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;笔记系统&lt;&#x2F;a&gt;的也采用了这种形式。现在的链接情况大概是这个样子的：&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;about-notes&#x2F;.&#x2F;note-cuts.jpg&quot; alt=&quot;note-cuts&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;大概快记了一年吧，笔记条目现在急剧增加，我发现多卡片式的笔记系统开始出现经典的“日记问题”，类似我们以前可能会写很多日记，但是随着时间的增长，这些日记其实已经变成了一个类似&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archiveprogram.github.com&#x2F;&quot;&gt;Github 北极封存&lt;&#x2F;a&gt;的项目了。由于条目过多，所以很困难去再次检索，翻阅。&lt;&#x2F;p&gt;
@@ -5994,6 +5996,11 @@ Significantly improve English level&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;wen-jian-fen-xiang&quot;&gt;文件分享&lt;a class=&quot;zola-anchor&quot; href=&quot;#wen-jian-fen-xiang&quot; aria-label=&quot;Anchor link for: wen-jian-fen-xiang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bashupload.com&#x2F;&quot;&gt;bash upload&lt;&#x2F;a&gt; - 简单的文件上传于下载，bash 友好&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;web-developer&quot;&gt;Web developer&lt;a class=&quot;zola-anchor&quot; href=&quot;#web-developer&quot; aria-label=&quot;Anchor link for: web-developer&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.webpagetest.org&#x2F;&quot;&gt;web page test&lt;&#x2F;a&gt; - 通过这个网站，可以测试网站的性能&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;validator.w3.org&quot;&gt;validator.w3.org&lt;&#x2F;a&gt; - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>

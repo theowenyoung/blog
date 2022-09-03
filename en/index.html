@@ -14,10 +14,10 @@
     <link rel="me" href="mailto:owen@owenyoung.com"/>
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
   
-    
-    <meta name="description" itemprop="about" content="Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"/>
-    <meta name="keywords" itemprop="keywords" content="Focus, Reading, Tool sharing, Plain text, English learning"/>
-    <meta name="author" itemprop="author" content="Owen Young"/>
+
+    <meta name="description" content="Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"/>
+    <meta name="keywords" content="Focus, Reading, Tool sharing, Plain text, English learning"/>
+    <meta name="author" content="Owen Young"/>
     <meta itemprop="headline" content="Owen Young&#x27;s Blog"/>
     <meta itemprop="copyrightYear" content="2022"/>
     <link rel="icon" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6" type="image/x-icon">
@@ -934,65 +934,62 @@ li.inline {
 </style>
   </head>
   <body>
-    <section id="top"></section>
-    <section id="root">
+    <div id="top"></div>
+    <div id="root">
       <nav class="navbar">
         <div class="navbar-inner justify-between">
           <div>
             <a class="brand" href="https://www.owenyoung.com/en/">
               <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
-            </img>
-          </a>
-        </div>
-        <div>
-          <ul class="flex menu list-none items-center justify-center">
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Search"
-                href="/search/">
-                <span class="text-sm">🔍</span>
-              </a>
-            </li>
-            
-            
+            </a>
+          </div>
+            <ul class="flex menu list-none items-center justify-center">
               <li>
                 <a
-                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
-                  title="中文站点"
-                  class="only-show-small"
-                  href="/">
-                  <span class="text-sm">中</span>
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Search"
+                  href="/search/">
+                  <span class="text-sm">🔍</span>
                 </a>
               </li>
-            
-            <div class="nav-divider"></div>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Back to Top"
-                href="#top">
-                <span class="">
-                  &#8593;</span>
-              </a>
-            </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Go to Bottom"
-                class="only-show-small"
-                href="#bottom">
-                <span class="">
-                  &#8595;</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+              
+              
+                <li>
+                  <a
+                    class="only-show-small flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                    title="中文站点"
+                    href="/">
+                    <span class="text-sm">中</span>
+                  </a>
+                </li>
+              
+              <li class="list-none nav-divider"></li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Back to Top"
+                  href="#top">
+                  <span class="">
+                    &#8593;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline only-show-small"
+                  title="Go to Bottom"
+                  href="#bottom">
+                  <span class="">
+                    &#8595;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
       </nav>
-      <main class="body-zone flex justify-between flex-1">
-        <section class="main flex-1 py">
-          <div class="main-inner"> <div class="index-page">
-      <section>
+      <div class="body-zone flex justify-between flex-1">
+        <div class="main flex-1 py">
+          <div class="main-inner">
+            <div class="index-page">
+      <div>
         
           <p>I'm Owen Young, I've written
             <a href="https://www.owenyoung.com/en/archive/">
@@ -1005,11 +1002,11 @@ li.inline {
             <a href="https://www.owenyoung.com/now/">click to find out what I'm doing now</a>
           </p>
         
-      </section>
+      </div>
       <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
       <h2><a href="/en/categories/notes/">Recently Updated Notes</a>:<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles">
+      <div class="articles">
         <ul class="root-ul">
           
             <li>
@@ -1062,38 +1059,40 @@ li.inline {
     <span class="muted text-sm">Updated on 2022-05-15</span>
   </li>
           
-          
-          <details>
-            <summary>View All</summary>
+        </ul>
+        
+        <details>
+          <summary>View All</summary>
+          <ul>
             
-              <li>
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;videos&#x2F;">Videos You Should Watch</a>
     <span class="muted text-sm">Updated on 2022-05-11</span>
   </li>
             
-              <li>
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;quotes&#x2F;">Quotes</a>
     <span class="muted text-sm">Updated on 2022-05-10</span>
   </li>
             
-              <li>
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;startups&#x2F;">Awesome Startups</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
             
-              <li>
+            <li>
     <a href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;nsfw&#x2F;">NSFW Resource</a>
     <span class="muted text-sm">Updated on 2022-03-25</span>
   </li>
             
-          </details>
-          
-        </ul>
-      </section>
+          </ul>
+        </details>
+        
+      </div>
 
       <h2><a href="/en/blog/">Recently Updated Posts</a>:<a href="#latest-articles" id="latest-articles" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles">
+      <div class="articles">
         <ul class="root-ul">
           
             <li>
@@ -1171,13 +1170,14 @@ li.inline {
     <span class="muted text-sm">Updated on 2022-03-26</span>
   </li>
           
-          
+
         </ul>
-      </section>
+        
+      </div>
       <h2>Latest <a href="/en/thoughts/">Short Thoughts</a>：<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
       </h2>
       
-      <section class="articles">
+      <div class="articles">
         <blockquote>
 <p>The main reason that why I’m not in the web3, is I don’t have a good password/dotfiles manager, so it’s difficult for to login with MetaMask, cause I don’t know where to store my recover code.</p>
 </blockquote>
@@ -1186,16 +1186,16 @@ li.inline {
 </blockquote>
 
         <h3 class="no-border"><a href="/en/thoughts/">View all thoughts</a></h3>
-      </section>
+      </div>
 
       <hr class="w-full"/>
  
 
 
-      <h2><a href="/en/blog/">Latest</a> Articles:<a href="#latest" id="latest" class="zola-anchor">🔗</a>
+      <h2><a href="/en/blog/">Latest</a> Articles:
+        <a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles h-feed hfeed">
-   
+      <div class="articles h-feed hfeed">  
         
           
   <article class="h-entry hentry">
@@ -1210,42 +1210,18 @@ li.inline {
     </h1>
     <div class="p-summary entry-summary"><p>When you’re using markdown to write your blog, you can use the following template to generate a new markdown file, you may use some template like this to generate a new markdown file:</p>
 </div>
-    <section class="muted text-sm pb">
-      <a title="2022-07-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;">
-        <time class="dt-published published" datetime="2022-07-25T10:50:28+08:00" pubdate>2022-07-25</time>
+    <div class="muted text-sm pb">
+      <a title="2022-07-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/">
+        <time class="dt-published published" datetime="2022-07-25T10:50:28+08:00">2022-07-25</time>
       </a>
-      &nbsp;<span>on
-      </span>
+      
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/en/categories/random/">
           Random
         </a>
       
-      <!-- 
-      <span class="divider">/</span>
-       
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/markdown/">Markdown</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/bash/">Bash</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/mustache/">Mustache</a>
-      
-        
-         
-        
-        -->
-    </section>
-    </article>
+    </div>
+  </article>
   
           
             <hr class="w-1__2" />
@@ -1273,42 +1249,18 @@ li.inline {
 </ul>
 <p>I think it’s enough for my blog’s search index.</p>
 </div>
-    <section class="muted text-sm pb">
-      <a title="2022-07-17" class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">
-        <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00" pubdate>2022-07-17</time>
+    <div class="muted text-sm pb">
+      <a title="2022-07-17" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/">
+        <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022-07-17</time>
       </a>
-      &nbsp;<span>on
-      </span>
+      
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/en/categories/random/">
           Random
         </a>
       
-      <!-- 
-      <span class="divider">/</span>
-       
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/zola/">Zola</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/search/">Search</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/mogenius/">Mogenius</a>
-      
-        
-         
-        
-        -->
-    </section>
-    </article>
+    </div>
+  </article>
   
           
             <hr class="w-1__2" />
@@ -1327,42 +1279,18 @@ li.inline {
     </h1>
     <div class="p-summary entry-summary"><p>Since I saw the concept of <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/IndieWeb">IndieWeb</a> last year, I’ve been wanting to support it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my Zola blog</a>. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.</p>
 </div>
-    <section class="muted text-sm pb">
-      <a title="2022-06-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">
-        <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00" pubdate>2022-06-12</time>
+    <div class="muted text-sm pb">
+      <a title="2022-06-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/indieweb/">
+        <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>
       </a>
-      &nbsp;<span>on
-      </span>
+      
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/en/categories/random/">
           Random
         </a>
       
-      <!-- 
-      <span class="divider">/</span>
-       
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/indieweb/">IndieWeb</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/zola/">Zola</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/webmention/">Webmention</a>
-      
-        
-         
-        
-        -->
-    </section>
-    </article>
+    </div>
+  </article>
   
           
             <hr class="w-1__2" />
@@ -1382,26 +1310,18 @@ li.inline {
     <div class="p-summary entry-summary"><p>It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=2DH4v6FnbvM">This Bill Maher’s video </a> clearly shows us that even though the host is so smart and cares so much about freedom of speech, there is no hiding his envy for all that the Chinese government has accomplished through dictatorship.</p>
 </div>
-    <section class="muted text-sm pb">
-      <a title="2022-04-30" class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;why-foreigners-envy-china&#x2F;">
-        <time class="dt-published published" datetime="2022-04-30T19:17:39+08:00" pubdate>2022-04-30</time>
+    <div class="muted text-sm pb">
+      <a title="2022-04-30" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/">
+        <time class="dt-published published" datetime="2022-04-30T19:17:39+08:00">2022-04-30</time>
       </a>
-      &nbsp;<span>on
-      </span>
+      
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/en/categories/random/">
           Random
         </a>
       
-      <!-- 
-      <span class="divider">/</span>
-       
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/china/">China</a>
-       
-        
-        -->
-    </section>
-    </article>
+    </div>
+  </article>
   
           
             <hr class="w-1__2" />
@@ -1420,47 +1340,28 @@ li.inline {
     </h1>
     <div class="p-summary entry-summary"><p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
 </div>
-    <section class="muted text-sm pb">
-      <a title="2022-03-27" class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">
-        <time class="dt-published published" datetime="2022-03-27" pubdate>2022-03-27</time>
+    <div class="muted text-sm pb">
+      <a title="2022-03-27" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/">
+        <time class="dt-published published" datetime="2022-03-27">2022-03-27</time>
       </a>
-      &nbsp;<span>on
-      </span>
+      
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/en/categories/random/">
           Random
         </a>
       
-      <!-- 
-      <span class="divider">/</span>
-       
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/wiki-links/">Wiki Links</a>
-      
-        ,&nbsp;
-        
-         
-         
-
-      <a class="muted text-sm no-underline" href="https://www.owenyoung.com/en/tags/vscode/">VSCode</a>
-      
-        
-         
-        
-        -->
-    </section>
-    </article>
+    </div>
+  </article>
   
           
           
         
-      </section>
+      </div>
       <h3 class="no-border"><a href="/en/blog/">View all posts</a></h3>
-
-
       <h2>Latest <a href="/en/quotes/">Quotes</a>：<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
       </h2>
       
-      <section class="articles">
+      <div class="articles">
         <blockquote>
 <p>Chinese people are not stupid, they are not incapable of distinguishing right from wrong, it’s just that the whole environment of speech is so unfair that only one voice is allowed. I am optimistic that most people will be able to distinguish between right and wrong within a year’s time if they are allowed to compete fairly.</p>
 </blockquote>
@@ -1478,25 +1379,23 @@ li.inline {
 </blockquote>
 
         <h3 class="no-border"><a href="/en/quotes/">View all quotes</a></h3>
-      </section>
-
+      </div>
       
-  
     </div>
   
-            </div>
-          </section>
+          </div>
+        </div>
+        
+        <aside class="sidebar px">
           
-          <aside class="sidebar px">
-            
           <div class="display-none h-card pt">
-            <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
+            <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
             <a class="p-name u-url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
             <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
           </div>
           <h2>
-            <a title="Categories" class="no-underline" href="&#x2F;en&#x2F;categories/">Categories</h2>
-          </a>
+            <a title="Categories" class="no-underline" href="&#x2F;en&#x2F;categories/">Categories</a>
+          </h2>
           <ul>
             
             
@@ -1681,11 +1580,11 @@ li.inline {
             <a title="Next" href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/next">→</a>
           </div>
         </aside>
-      
-    </main>
-  </section>
-<section id="bottom"></section>
-
+        
+      </div>
+      </div>
+    <div id="bottom"></div>
+    
     
       <script defer src="https://www.owenyoung.com/site/js/docs-searchbar.min.js?h=1c8dced776c63a17b391eeb9cf904360c8977f284b341877f33d4b38cc80f1fe"></script>
       <script>
@@ -1703,4 +1602,6 @@ li.inline {
         });
       </script>
     
-  </body></html>
+  
+  </body>
+</html>

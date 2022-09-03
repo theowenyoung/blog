@@ -13,13 +13,14 @@
     <link rel="me" href="https://github.com/theowenyoung"/>
     <link rel="me" href="mailto:owen@owenyoung.com"/>
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
-    <meta name="description" itemprop="about" content="
+    <meta name="description" content="
   
     笔记很重要，一个好的笔记系统应该以一生的尺度去设计和维护，让我们自己受益一生。所以：非运营商锁定很重要，离线很重要，我们不能指望一个公司，或者一个在线服务能服务好一个以一生为尺度的个人系统。笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！
+
   
 "/>
-    <meta name="keywords" itemprop="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
-    <meta name="author" itemprop="author" content="Owen Young"/>
+    <meta name="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
+    <meta name="author" content="Owen Young"/>
     <meta itemprop="headline" content="
   不要再碎片化笔记了 - 关于笔记的思考 - Owen的博客
 "/>
@@ -47,6 +48,7 @@
     <meta property="og:description" content="
   
     笔记很重要，一个好的笔记系统应该以一生的尺度去设计和维护，让我们自己受益一生。所以：非运营商锁定很重要，离线很重要，我们不能指望一个公司，或者一个在线服务能服务好一个以一生为尺度的个人系统。笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！
+
   
 "/>
     <meta property="og:url" content="
@@ -958,63 +960,61 @@ li.inline {
 
   </head>
   <body>
-    <section id="top"></section>
-    <section id="root">
+    <div id="top"></div>
+    <div id="root">
       <nav class="navbar">
         <div class="navbar-inner justify-between">
           <div>
             <a class="brand" href="https://www.owenyoung.com/">
               <img class="icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
-            </img>
-          </a>
-        </div>
-        <div>
-          <ul class="flex menu list-none items-center justify-center">
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Search"
-                href="/search/">
-                <span class="text-sm">🔍</span>
-              </a>
-            </li>
-            
+            </a>
+          </div>
+            <ul class="flex menu list-none items-center justify-center">
               <li>
                 <a
-                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
-                  title="English Site"
-                  href="/en/">
-                  <span class="text-sm">EN</span>
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Search"
+                  href="/search/">
+                  <span class="text-sm">🔍</span>
                 </a>
               </li>
-            
-            
-            <div class="nav-divider"></div>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Back to Top"
-                href="#top">
-                <span class="">
-                  &#8593;</span>
-              </a>
-            </li>
-            <li>
-              <a
-                class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                title="Go to Bottom"
-                class="only-show-small"
-                href="#bottom">
-                <span class="">
-                  &#8595;</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+              
+                <li>
+                  <a
+                    class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline "
+                    title="English Site"
+                    href="/en/">
+                    <span class="text-sm">EN</span>
+                  </a>
+                </li>
+              
+              
+              <li class="list-none nav-divider"></li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Back to Top"
+                  href="#top">
+                  <span class="">
+                    &#8593;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline only-show-small"
+                  title="Go to Bottom"
+                  href="#bottom">
+                  <span class="">
+                    &#8595;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
       </nav>
-      <main class="body-zone flex justify-between flex-1">
-        <section class="main flex-1 py">
-          <div class="main-inner"> 
+      <div class="body-zone flex justify-between flex-1">
+        <div class="main flex-1 py">
+          <div class="main-inner">
+            
 <div class="h-entry hentry detail-page">
   <header id="overview">
     <div class="pt">
@@ -1064,25 +1064,29 @@ li.inline {
     </div>
     
   </header>
-<section>
-  <section class="main">
+<div>
+  <div class="main">
     <div class="display-none p-summary">
       <p>笔记很重要，一个好的笔记系统应该以一生的尺度去设计和维护，让我们自己受益一生。</p>
 <p>所以：</p>
 <ol>
 <li>非运营商锁定很重要，离线很重要，我们不能指望一个公司，或者一个在线服务能服务好一个以一生为尺度的个人系统。</li>
-<li>笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！
+<li>笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！</li>
+</ol>
+
     </div>
     <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;about-notes&#x2F;">Permanent Link</a>
     
-    <section id="start"></section>
+    <div id="start"></div>
     <article class="e-content entry-content">
       <p>笔记很重要，一个好的笔记系统应该以一生的尺度去设计和维护，让我们自己受益一生。</p>
 <p>所以：</p>
 <ol>
 <li>非运营商锁定很重要，离线很重要，我们不能指望一个公司，或者一个在线服务能服务好一个以一生为尺度的个人系统。</li>
-<li>笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！<span id="continue-reading"></span>所以我的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/wiki">以一生为尺度设计的笔记系统</a>就是一个纯文本的文件夹，里面保存了我所有能公开的笔记。至于公开笔记的原因，一方面，公开笔记能让我更有动力一直维护下去，另一方面，也许在某时可以给别人某种灵感，这会让我很满足。</li>
+<li>笔记其实很简单，纯文本文件作为笔记完全够用，我们不需要任何运营商绑定的服务，重要的是笔记的内容，而不是形式。我们可以有很多辅助性的工具，但是最终的储存一定是一个简单易读的纯文本文件。进可攻，退可守！</li>
 </ol>
+<span id="continue-reading"></span>
+<p>所以我的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/wiki">以一生为尺度设计的笔记系统</a>就是一个纯文本的文件夹，里面保存了我所有能公开的笔记。至于公开笔记的原因，一方面，公开笔记能让我更有动力一直维护下去，另一方面，也许在某时可以给别人某种灵感，这会让我很满足。</p>
 <p>近年来越来越多的人开始用<a rel="noopener nofollow noreferrer" target="_blank" href="https://zhuanlan.zhihu.com/p/258561003">卢曼卡片盒笔记法</a>来记笔记，大多数人都是倾向于建立大量的笔记，然后再把这些笔记互相链接起来，以形成一个所谓的第二大脑。我的<a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com/">笔记系统</a>的也采用了这种形式。现在的链接情况大概是这个样子的：</p>
 <p><img src="https://www.owenyoung.com/blog/about-notes/./note-cuts.jpg" alt="note-cuts" /></p>
 <p>大概快记了一年吧，笔记条目现在急剧增加，我发现多卡片式的笔记系统开始出现经典的“日记问题”，类似我们以前可能会写很多日记，但是随着时间的增长，这些日记其实已经变成了一个类似<a rel="noopener nofollow noreferrer" target="_blank" href="https://archiveprogram.github.com/">Github 北极封存</a>的项目了。由于条目过多，所以很困难去再次检索，翻阅。</p>
@@ -1106,10 +1110,10 @@ li.inline {
 
     </article>
     
-      <section class="pb">
+      <div class="pb">
         <hr>
           <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/about-notes/index.md">📝 帮我完善这个页面？</a>
-        </section>
+        </div>
       
       
     
@@ -1132,7 +1136,7 @@ li.inline {
         
       
       
-      <section class="response-area">
+      <div class="response-area">
         <hr/>
         <h2>回应区<a href="#response" id="response" class="zola-anchor">🔗</a>
         </h2>
@@ -1158,18 +1162,21 @@ li.inline {
         </form>
         
         
+        </div>
       
     
-    </section>
-  </section>
+    </div>
+  </div>
 </div>
-            </div>
-          </section>
-          
+          </div>
+        </div>
+        
 <aside class="sidebar px no-toc">
   
 </aside>
-    </main>
-  </section>
-<section id="bottom"></section>
-</body></html>
+      </div>
+      </div>
+    <div id="bottom"></div>
+    
+  </body>
+</html>
