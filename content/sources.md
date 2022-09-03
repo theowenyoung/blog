@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-08-19
+updated: 2022-09-03
 taxonomies:
   categories:
     - Notes
@@ -23,6 +23,7 @@ taxonomies:
 - [卫报](https://www.theguardian.com/)
 - [每日电讯报](https://www.telegraph.co.uk/) - 英国
 - [The Rest of World](https://restofworld.org/) - 科技报道
+- [Boing Boing](https://boingboing.net/) - 一个有意思的在线杂志，科技，政治，生活
 
 ## 文章聚合
 
@@ -37,6 +38,7 @@ taxonomies:
 ## 专人维护的 Reading List
 
 - [Marginal Revolution](https://marginalrevolution.com/)
+- [Art and Letters Daily](https://www.aldaily.com/) - 引用各种杂志，日报的文章
 
 ## 视频
 
