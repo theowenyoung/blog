@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-08-21
+updated: 2022-09-03
 taxonomies:
   categories:
     - Notes
@@ -320,3 +320,5 @@ X as a Y services.
 
 - [web page test](https://www.webpagetest.org/) - 通过这个网站，可以测试网站的性能
 - [validator.w3.org](https://validator.w3.org) - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误
+- [wave](https://wave.webaim.org/) - 检测网站的可访问性，可帮助作者使其网络内容更易于残障人士访问
+- [Wahts my dns](https://www.whatsmydns.net/) - 查看网站的 DNS 传播情况，当你更换 dns 后，可以用这个网站 check 是否全部生效
