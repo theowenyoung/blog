@@ -28,7 +28,7 @@ lang %}
   <link rel="alternate" type="application/atom+xml" title="{{ section.title }} - {{ config.title }} RSS" href="{{ get_url(path=rss_path, trailing_slash=false) }}">
   {% endblock rss %}
   <div class="section-page">
-    <section class="h-feed hfeed">
+    <div class="h-feed hfeed">
       <div class="display-none">
         <div class="p-name site-title">{{ config.title }}</div>
         <p class="p-summary site-description">{{ config.description }}</p>
@@ -56,6 +56,6 @@ lang %}
           {{ macro::post_max(page=page) }}
         {% endfor %}
       {% endif %}
-    </section>
+    </div>
   </div>
 {% endblock main -%}

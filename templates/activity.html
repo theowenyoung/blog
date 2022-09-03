@@ -19,9 +19,9 @@ headline %}
 <div class="activity-page">
   {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
   <h1>{{ trans(key="label_activity",lang=lang) }}</h1>
-  <setion>
+  <div>
     {{ page.content | safe }}
-  </setion>
+  </div>
   {% set_global mentions = [] %}
   {% set_global mentions_pages = [] %}
   <ul class="pl-sm">
@@ -72,7 +72,10 @@ mention.author.url %}
                 <span class="icon text-lg mr-sm pr-sm pl-sm">👤</span>
               {% endif %}
               {% if mention.author.name %}
-                {{ mention.author.name }}{% else %}Unknown{% endif %}
+                <span>{{ mention.author.name }}</span>
+              {% else %}
+              Unknown
+              {% endif %}
             </a>
             <span class="mr-sm">{{ config.extra[key] }}</span>
             <a class="" href="{{ current_post.permalink }}#{{ mention['wm-id'] }}">{{ current_post.title }}</a>

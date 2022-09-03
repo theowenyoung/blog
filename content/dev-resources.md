@@ -12,7 +12,7 @@ taxonomies:
 
 收集开发相关的资源。
 
-  <!-- more -->
+<!-- more -->
 
 ## API Token
 

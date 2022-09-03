@@ -1,39 +1,40 @@
 {% extends "base.html" -%}
 {% block before_meta %}
   {% if config.extra.meilisearch_url %}
-  {%- if config.mode=="build" -%}
-  {%- set_global meilicss = load_data(path="static/site/styles/docs-searchbar.min.css") -%}
-  {%- else -%}
-    <link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-      <noscript>
-    <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}"></noscript>
-    {%- endif -%}
-    {% endif %}
-    {% endblock before_meta %}
-    {% block post_meta %}
     {%- if config.mode=="build" -%}
-      <style>{{meilicss | safe}}</style>
+    {%- set_global meilicss = load_data(path="static/site/styles/docs-searchbar.min.css") -%}
+    {%- else -%}
+      <link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
+      </noscript>
     {%- endif -%}
-    {% endblock post_meta %}
+  {% endif %}
+{% endblock before_meta %}
+{% block post_meta %}
+  {%- if config.mode=="build" -%}
+    <style>{{meilicss | safe}}</style>
+  {%- endif -%}
+{% endblock post_meta %}
 
-    {% block sidebar_top %}{% endblock sidebar_top %}
-    {% block main -%}
-    {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
-    {% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse -%}
-    {% set total_word_count = 0 -%}
-    {% for page_item in all_section_pages.pages -%}
-      {% set_global total_word_count = total_word_count+page_item.word_count -%}
-    {% endfor -%}
-    {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
-    {% set_global note_pages = [] -%}
-    {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
-    {% for cat in all_categories.items -%}
-      {% if cat.name == "Notes" -%}
-        {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}   
-      {% endif -%}
-    {% endfor -%}
-    <div class="index-page">
-      <section>
+{% block sidebar_top %}{% endblock sidebar_top %}
+{% block main -%}
+  {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
+  {% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse -%}
+  {% set total_word_count = 0 -%}
+  {% for page_item in all_section_pages.pages -%}
+    {% set_global total_word_count = total_word_count+page_item.word_count -%}
+  {% endfor -%}
+  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+  {% set_global note_pages = [] -%}
+  {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+  {% for cat in all_categories.items -%}
+    {% if cat.name == "Notes" -%}
+      {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}   
+    {% endif -%}
+  {% endfor -%}
+  <div class="index-page">
+      <div>
         {% if config.default_language != lang %}
           <p>I'm Owen Young, I've written
             <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
@@ -52,59 +53,64 @@
             <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
           </p>
         {% endif %}
-      </section>
+      </div>
       <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
       <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles">
+      <div class="articles">
         <ul class="root-ul">
           {% for page in note_pages | slice(end=10) %}
             <li>{{ macro::post_min(page=page) }}</li>
           {% endfor %}
-          {%if note_pages | slice(start=10) | length > 0%}
-          <details>
-            <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-            {% for page in note_pages | slice(start=10) %}
-              <li>{{ macro::post_min(page=page) }}</li>
-            {% endfor %}
-          </details>
-          {% endif %}
         </ul>
-      </section>
+        {%if note_pages | slice(start=10) | length > 0%}
+        <details>
+          <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+          <ul>
+            {% for page in note_pages | slice(start=10) %}
+            <li>{{ macro::post_min(page=page) }}</li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      </div>
 
       <h2>{{ trans(key="label_latest_articles_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-articles" id="latest-articles" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles">
+      <div class="articles">
         <ul class="root-ul">
           {% for page in all_blog_pages.pages | slice(end=15) %}
             <li>{{ macro::post_min(page=page) }}</li>
           {% endfor %}
-          {%if note_pages | slice(start=15) | length > 0%}
-          <details>
-            <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+
+        </ul>
+        {%if note_pages | slice(start=15) | length > 0%}
+        <details>
+          <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+          <ul>
             {% for page in all_blog_pages.pages | slice(start=15) %}
               <li>{{ macro::post_min(page=page) }}</li>
             {% endfor %}
-          </details>
-          {% endif %}
-        </ul>
-      </section>
+          </ul>
+        </details>
+        {% endif %}
+      </div>
       <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
       </h2>
       {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
-      <section class="articles">
+      <div class="articles">
         {{ thoughts_page.summary | safe }}
         <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
-      </section>
+      </div>
 
       <hr class="w-full"/>
  
 
 
-      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest" id="latest" class="zola-anchor">🔗</a>
+      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
+        <a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </h2>
-      <section class="articles h-feed hfeed">
-   
+      <div class="articles h-feed hfeed">  
         {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
           {{ macro::post_max(page=page) }}
           {% if loop.last %}
@@ -112,20 +118,16 @@
             <hr class="w-1__2" />
           {% endif %}
         {% endfor %}
-      </section>
+      </div>
       <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
-
-
       <h2>{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
       </h2>
       {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
-      <section class="articles">
+      <div class="articles">
         {{ quotes_page.summary | safe }}
         <h3 class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</h3>
-      </section>
-
+      </div>
       {{ section.content | safe }}
-  
     </div>
   {% endblock main -%}
   {% block before_body_end %}

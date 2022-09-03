@@ -9,9 +9,11 @@
   {% endblock before_meta %}
   {% block main -%}
   <div class="search-page">
-    <h1>{{ page.title }}</h1>
     <section>
-      {{ page.content | safe }}
+      <h1>{{ page.title }}</h1>
+      <div>
+        {{ page.content | safe }}
+      </div>
     </section>
     <section>
       <h2>

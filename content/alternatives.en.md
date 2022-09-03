@@ -11,7 +11,7 @@ taxonomies:
 
 Curating awesome alternative resources.
 
-  <!-- more -->
+<!-- more -->
 
 ## List
 

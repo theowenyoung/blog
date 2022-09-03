@@ -315,3 +315,8 @@ X as a Y services.
 ## 文件分享
 
 - [bash upload](https://bashupload.com/) - 简单的文件上传于下载，bash 友好
+
+## Web developer
+
+- [web page test](https://www.webpagetest.org/) - 通过这个网站，可以测试网站的性能
+- [validator.w3.org](https://validator.w3.org) - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误

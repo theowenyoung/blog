@@ -25,23 +25,22 @@
   {% set_global section_content = book_section.content %}
 {% endif %}
 <div class="books-page">
-  <setion>
+  <div>
     {{ section_content | safe }}
-  </setion>
-  <section>
+  </div>
+  <div>
     {% for page in section_pages %}
       <article>
         <h1 class="no-border pb-sm">
           <a title="{{ page.title }}" class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
         </h1>
         <div class="muted pb">
-          <time pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
+          <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
           {% if page.extra.author %}
             ·
             <span>{{ trans(key="label_book_author",lang=lang) }}：{{ page.extra.author }}
             </span>
           {% endif %}
-        </a>
         ·
         <span>{{ trans(key="label_rating",lang=lang) }}：</span>
         <span>{{ page.extra.rating }}/10</span>
@@ -57,10 +56,12 @@
           {% endfor %}
         </p>
       {% endif %}
-    </article>
-  {% endfor %}
+      </article>
+    {% endfor %}
   {% if paginator %}
     {{ macro::paginator(ref=paginator, extra=config.extra) }}
   {% endif %}
-</section>
-{{ macro::webmentions(backlinks=[]) }}</div>{% endblock main -%}
+  </div>
+{{ macro::webmentions(backlinks=[]) }}
+</div>
+{% endblock main -%}

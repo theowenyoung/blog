@@ -42,7 +42,7 @@
           {% endif -%}
         </div>
       </header>
-      <section>
+      <div>
         {% if paginator %}
           {% for page in paginator.pages %}
             {{ macro::post_max(page=page) }}
@@ -54,6 +54,6 @@
             {{ macro::post_max(page=page) }}
           {% endfor %}
         {% endif %}
-      </section>
+      </div>
     </div>
   {% endblock main %}

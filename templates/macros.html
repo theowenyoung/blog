@@ -21,29 +21,18 @@
     {% elif page.description -%}
       <p class="p-summary entry-summary">{{ page.description }}</p>
     {% endif -%}
-    <section class="muted text-sm pb">
-      <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">
-        <time class="dt-published published" datetime="{{ page.date }}" pubdate>{{ page.date | date(format="%Y-%m-%d") }}</time>
+    <div class="muted text-sm pb">
+      <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
+        <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
       </a>
-      {% if page.taxonomies.categories %}&nbsp;<span>{{ trans(key="label_published_on",lang=lang) }}
-      </span>
-      <a title="{{ page.taxonomies.categories[0] }}" class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) }}">
+      {% if page.taxonomies.categories %}
+      <span>&nbsp;{{ trans(key="label_published_on",lang=lang) }}</span>
+      <a title="{{ page.taxonomies.categories[0] }}" class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) | safe }}">
           {{ page.taxonomies.categories[0] }}
         </a>
       {% endif %}
-      <!-- {% if page.taxonomies.tags %}
-      <span class="divider">/</span>
-      {% for tag in page.taxonomies.tags %} 
-
-      <a class="muted text-sm no-underline" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">{{ tag }}</a>
-      {% if page.taxonomies.tags | length > 1 %}
-        {% if loop.index != page.taxonomies.tags | length %},&nbsp;
-        {% endif %}
-        {% endif %} 
-        {% endfor %}
-      {% endif %}  -->
-    </section>
-    </article>
+    </div>
+  </article>
   {% endmacro post_max %}
   {% macro post_min(page) %}
     <a href="{{ page.permalink }}">{{ page.title }}</a>
@@ -65,7 +54,7 @@
     {% endif %}
   {% endmacro backlink %}
   {% macro page_toc(toc) %}
-    <section class="sidebar-table-content">
+    <div class="sidebar-table-content">
       <ul>
         <li>
           <a href="#start">{{ trans(key="label_back_to_start",lang=lang) }}</a>
@@ -91,7 +80,7 @@
           <a href="{{ config.extra.edit_url_prefix~page.relative_path }}">{{ trans(key="label_edit",lang=lang) }}</a>
         </li>
       </ul>
-    </section>
+    </div>
   {% endmacro page_toc %}
   {% macro paginator(ref, extra) %}
     <div class="pagination py">
@@ -242,7 +231,7 @@
         {% set_global current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
       {% endif %}
       {% set webmention_data = load_data(path=config.extra.webmention_path~current_webmention_file_name~".json",required=false,format="json") %}
-      <section class="response-area">
+      <div class="response-area">
         <hr/>
         <h2>{{ trans(key="label_response",lang=lang) }}<a href="#response" id="response" class="zola-anchor">🔗</a>
         </h2>
@@ -338,8 +327,6 @@
             和我讨论。
           </p>
           {% endif %}
-          
-          
         {% endif %}
         {% if webmention_data %}
         <section class="p-comments h-feed">
@@ -362,5 +349,6 @@
           {% endfor %}
         </section>
         {% endif %}
+        </div>
       {% endif %}
     {% endmacro webmentions %}

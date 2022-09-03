@@ -97,8 +97,8 @@
     {% block detail_meta_slot %}{% endblock detail_meta_slot %}
   </header>
 {% endblock detail_meta -%}
-<section>
-  <section class="main">
+<div>
+  <div class="main">
     <div class="display-none p-summary">
       {{ page.summary | safe }}
     </div>
@@ -111,20 +111,20 @@
         </details>
       </div>
     {% endif %}
-    <section id="start"></section>
+    <div id="start"></div>
     <article class="e-content entry-content">
       {{ page.content | safe }}
     </article>
     {% if config.extra.edit_url_prefix %}
-      <section class="pb">
+      <div class="pb">
         <hr>
           <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">📝 {{ trans(key="label_edit",lang=lang) }}</a>
-        </section>
+        </div>
       {% endif %}
       {{ macro::backlink(pages=page.backlinks) }}
       {{ macro::webmentions(backlinks=page.backlinks) }}
-    </section>
-  </section>
+    </div>
+  </div>
 </div>{% endblock main %}{% block sidebar %}
 <aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
   {% if page.toc %}
