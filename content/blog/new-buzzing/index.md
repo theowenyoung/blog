@@ -68,7 +68,7 @@ Lite 版：
 
 ![hn-lite](./hn-lite.png)
 
-每个主题都有一个 lite 的版本，无图，可以无干扰的快速浏览大量信息。同时每个站点都提供了 [JSON Feed](https://hn.buzzing.cc/feed.json) 和 [Atom Feed](https://hn.buzzing.cc/feed.xml)，方便使用 RSS 阅读器订阅。站点像之前一样，同时支持 4 种语言，中文简体，中文繁体，英文，日文，并且每条内容均会显示原文，方便对比参照。
+每个主题都有一个 lite 的版本，无图，可以无干扰的快速浏览大量信息。同时每个站点都提供了 [JSON Feed](https://hn.buzzing.cc/feed.json) 和 [Atom Feed](https://hn.buzzing.cc/feed.xml)，方便使用 RSS 阅读器订阅。站点像之前一样，同时支持 4 种语言，中文简体，中文繁体，英文，日文，并且每条内容均会显示原文，方便对比参照。同时新增了 4 个子网站，[纽约客](https://newyorker.buzzing.cc), [Lobste](https://lobste.buzzing.cc), [下饭视频](https://videos.buzzing.cc/)，[Linux](https://linux.buzzing.cc/)以及我最爱的[HN 最新](https://hnnew.buzzing.cc/)
 
 ![hn-about](./hn-about.png)
 
