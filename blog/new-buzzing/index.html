@@ -1393,6 +1393,7 @@ li.inline {
 </span><span>      </span><span style="color:#bf616a;">CLOUDFLARE_ACCOUNT_ID</span><span>: </span><span style="color:#a3be8c;">${{secrets.CLOUDFLARE_ACCOUNT_ID}}
 </span><span>      </span><span style="color:#bf616a;">CLOUDFLARE_API_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.CLOUDFLARE_API_TOKEN}}
 </span></code></pre>
+<p>最后，使用<a rel="noopener nofollow noreferrer" target="_blank" href="https://pipedream.com">Pipedream</a>,每一个小时拉取 feedjson，然后分别发布到 Twitter：<a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/HackerNewsZh">@HackerNewsZh</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/NewsBotZh">@NewsBotZh</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/AskRedditZh">@AskRedditZh</a>.</p>
 <h2 id="zong-jie">总结<a class="zola-anchor" href="#zong-jie" aria-label="Anchor link for: zong-jie">🔗</a></h2>
 <p>用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
 Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的<code>feed.json</code>来生成一个体验良好的 APP.</p>
