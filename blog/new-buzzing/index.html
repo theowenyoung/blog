@@ -1057,7 +1057,7 @@ li.inline {
             
               阅读时间: 
   
-    8
+    9
   
  min
           </div>
@@ -1086,6 +1086,19 @@ li.inline {
         
           <li>
             <a href="https://www.owenyoung.com/blog/new-buzzing/#ji-zhu-xi-jie">技术细节</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/new-buzzing/#xiao-xi-jie">小细节</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="https://www.owenyoung.com/blog/new-buzzing/#youtube-shi-pin-de-lan-jia-zai">Youtube 视频的懒加载</a>
+                  </li>
+                
+              </ul>
             
           </li>
         
@@ -1394,6 +1407,22 @@ li.inline {
 </span><span>      </span><span style="color:#bf616a;">CLOUDFLARE_API_TOKEN</span><span>: </span><span style="color:#a3be8c;">${{secrets.CLOUDFLARE_API_TOKEN}}
 </span></code></pre>
 <p>最后，使用<a rel="noopener nofollow noreferrer" target="_blank" href="https://pipedream.com">Pipedream</a>,每一个小时拉取 feedjson，然后分别发布到 Twitter：<a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/HackerNewsZh">@HackerNewsZh</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/NewsBotZh">@NewsBotZh</a>, <a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/AskRedditZh">@AskRedditZh</a>.</p>
+<h2 id="xiao-xi-jie">小细节<a class="zola-anchor" href="#xiao-xi-jie" aria-label="Anchor link for: xiao-xi-jie">🔗</a></h2>
+<h3 id="youtube-shi-pin-de-lan-jia-zai">Youtube 视频的懒加载<a class="zola-anchor" href="#youtube-shi-pin-de-lan-jia-zai" aria-label="Anchor link for: youtube-shi-pin-de-lan-jia-zai">🔗</a></h3>
+<p>如果你引入 Youtube 视频的全部 Embed 代码，那么你的网页每次会加载 Youtube 内部超多的资源，这很不道德，所以我们可以用<code>iframe</code>的<code>srcdoc</code>属性来实现只加载一个预览页面，而不实际加载整个 iframe。当用户主动点击播放的时候，这个时候才去真正的 loading,效果如下：</p>
+<p><img src="https://www.owenyoung.com/blog/new-buzzing/./youtube.gif" alt="youtube" /></p>
+<p>具体代码如下：</p>
+<pre data-lang="html" style="background-color:#2b303b;color:#c0c5ce;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#bf616a;">iframe
+</span><span>  </span><span style="color:#d08770;">class</span><span>=&quot;</span><span style="color:#a3be8c;">embed-video</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">loading</span><span>=&quot;</span><span style="color:#a3be8c;">lazy</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">src</span><span>=&quot;</span><span style="color:#a3be8c;">https://www.youtube.com/embed/${embedUrlVideoId}&amp;autoplay=1</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">srcdoc</span><span>=&quot;</span><span style="color:#a3be8c;">&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=https://www.youtube.com/embed/${embedUrlVideoId}?autoplay=1&gt;&lt;img src=https://img.youtube.com/vi/${embedUrlVideoId}/hqdefault.jpg loading=&#39;lazy&#39; alt=&#39;Youtube Preview Image&#39;&gt;&lt;span&gt;▶&lt;/span&gt;&lt;/a&gt;</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">frameborder</span><span>=&quot;</span><span style="color:#a3be8c;">0</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">allow</span><span>=&quot;</span><span style="color:#a3be8c;">accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture</span><span>&quot;
+</span><span>  </span><span style="color:#d08770;">allowfullscreen
+</span><span>&gt;&lt;/</span><span style="color:#bf616a;">iframe
+</span><span>&gt;`
+</span></code></pre>
 <h2 id="zong-jie">总结<a class="zola-anchor" href="#zong-jie" aria-label="Anchor link for: zong-jie">🔗</a></h2>
 <p>用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
 Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都让我非常享受，同时 Deno 生态的不完整性，也让我更少的依赖别人的东西，整个网站做下来感觉非常的健壮。也许谁有时间可以利用站点提供的<code>feed.json</code>来生成一个体验良好的 APP.</p>
@@ -1461,6 +1490,19 @@ Deno 开箱即用的 Typescript 支持，以及 Deno Deploy 的无缝部署都�
         
           <li>
             <a href="https://www.owenyoung.com/blog/new-buzzing/#ji-zhu-xi-jie">技术细节</a>
+            
+          </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/blog/new-buzzing/#xiao-xi-jie">小细节</a>
+            
+              <ul>
+                
+                  <li>
+                    <a href="https://www.owenyoung.com/blog/new-buzzing/#youtube-shi-pin-de-lan-jia-zai">Youtube 视频的懒加载</a>
+                  </li>
+                
+              </ul>
             
           </li>
         
