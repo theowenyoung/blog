@@ -5,8 +5,43 @@
 	<link href="https://www.owenyoung.com/tags/journal/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-02T11:02:52+08:00</updated>
+	<updated>2022-09-03T10:04:51+08:00</updated>
 	<id>https://www.owenyoung.com/tags/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.03: 各种链接</title>
+		<published>2022-09-03T10:04:51+08:00</published>
+		<updated>2022-09-03T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-03/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-03/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.independent.co.uk&#x2F;news&#x2F;world&#x2F;europe&#x2F;gazprom-russia-gas-europe-pipeline-b2158642.html&quot;&gt;俄罗斯天然气工业股份公司（Gazprom）在能源危机升级之际无限期关闭欧洲天然气管道&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;’这证明了俄罗斯天然气工业股份公司作为供应商的“不可靠”‘, 展开来看，专制社会下的公司本质上都是党产，都不可靠。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.businessinsider.com&#x2F;photos-storylines-residential-cruise-ship-travelers-live-sea-1-million-2022-8#but-unlike-the-typical-carnival-or-msc-cruise-ship-the-narrative-will-also-have-plenty-of-unique-amenities-like-a-bowling-alley-and-microbrewery-37&quot;&gt;一艘将于 2025 年推出的豪华游轮将允许旅行者永久居住在海上，住宅起价为 100 万美元&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;最高售价为 800 万美元，有游泳池，健身设施，图书馆，等等，3 年半环游一圈地球，每年停留在不同的地方，每个港口停留 3-5 天。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.hanselman.com&#x2F;blog&#x2F;urls-are-ui&quot;&gt;URLs 就是 UI 问题&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;设计好你最重要的 UI&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.wsj.com&#x2F;articles&#x2F;will-chinas-economy-surpass-the-u-s-s-some-now-doubt-it-11662123945&quot;&gt;一些人现在预测: 中国经济不会超过美国&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;“它永远不会在美国建立有意义的领先优势，即使到本世纪中叶，人均繁荣和生产力也会远不如美国”&lt;&#x2F;li&gt;
+&lt;li&gt;“长期以来，很多人都高估了中国领导层的能力，并对 Covid 和房地产行业的失误感到震惊”&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.webpagetest.org&#x2F;&quot;&gt;web page test&lt;&#x2F;a&gt; - 通过这个网站，可以测试网站的性能&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;validator.w3.org&quot;&gt;validator.w3.org&lt;&#x2F;a&gt; - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wave.webaim.org&#x2F;&quot;&gt;wave&lt;&#x2F;a&gt; - 检测网站的可访问性，可帮助作者使其网络内容更易于残障人士访问&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.whatsmydns.net&#x2F;&quot;&gt;Wahts my dns&lt;&#x2F;a&gt; - 查看网站的 DNS 传播情况，当你更换 dns 后，可以用这个网站 check 是否全部生效&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.02: 各种链接</title>
 		<published>2022-09-02T11:02:52+08:00</published>

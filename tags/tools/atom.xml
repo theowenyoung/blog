@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/tags/tools/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-08-21T00:00:00+00:00</updated>
+	<updated>2022-09-03T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tools/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>互联网上的免费资源汇总</title>
@@ -92,7 +92,7 @@
 	<entry xml:lang="zh">
 		<title>最好用的工具集合</title>
 		<published>2022-03-10T00:00:00+00:00</published>
-		<updated>2022-08-21T00:00:00+00:00</updated>
+		<updated>2022-09-03T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tools/" type="text/html"/>
 		<id>https://www.owenyoung.com/tools/</id>
 		<content type="html">&lt;p&gt;收集各种好用的，有用的工具。&lt;&#x2F;p&gt;
@@ -415,6 +415,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.webpagetest.org&#x2F;&quot;&gt;web page test&lt;&#x2F;a&gt; - 通过这个网站，可以测试网站的性能&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;validator.w3.org&quot;&gt;validator.w3.org&lt;&#x2F;a&gt; - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wave.webaim.org&#x2F;&quot;&gt;wave&lt;&#x2F;a&gt; - 检测网站的可访问性，可帮助作者使其网络内容更易于残障人士访问&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.whatsmydns.net&#x2F;&quot;&gt;Wahts my dns&lt;&#x2F;a&gt; - 查看网站的 DNS 传播情况，当你更换 dns 后，可以用这个网站 check 是否全部生效&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
 	</entry>
