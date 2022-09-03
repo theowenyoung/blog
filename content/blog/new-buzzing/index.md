@@ -364,6 +364,29 @@ steps:
 
 最后，使用[Pipedream](https://pipedream.com),每一个小时拉取 feedjson，然后分别发布到 Twitter：[@HackerNewsZh](https://twitter.com/HackerNewsZh), [@NewsBotZh](https://twitter.com/NewsBotZh), [@AskRedditZh](https://twitter.com/AskRedditZh).
 
+## 小细节
+
+### Youtube 视频的懒加载
+
+如果你引入 Youtube 视频的全部 Embed 代码，那么你的网页每次会加载 Youtube 内部超多的资源，这很不道德，所以我们可以用`iframe`的`srcdoc`属性来实现只加载一个预览页面，而不实际加载整个 iframe。当用户主动点击播放的时候，这个时候才去真正的 loading,效果如下：
+
+![youtube](./youtube.gif)
+
+具体代码如下：
+
+```html
+<iframe
+  class="embed-video"
+  loading="lazy"
+  src="https://www.youtube.com/embed/${embedUrlVideoId}&autoplay=1"
+  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/${embedUrlVideoId}?autoplay=1><img src=https://img.youtube.com/vi/${embedUrlVideoId}/hqdefault.jpg loading='lazy' alt='Youtube Preview Image'><span>▶</span></a>"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe
+>`
+```
+
 ## 总结
 
 用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
