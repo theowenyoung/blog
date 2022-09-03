@@ -362,6 +362,8 @@ steps:
       CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN}}
 ```
 
+最后，使用[Pipedream](https://pipedream.com),每一个小时拉取 feedjson，然后分别发布到 Twitter：[@HackerNewsZh](https://twitter.com/HackerNewsZh), [@NewsBotZh](https://twitter.com/NewsBotZh), [@AskRedditZh](https://twitter.com/AskRedditZh).
+
 ## 总结
 
 用 Deno 做完这一切之后，只能用神清气爽来形容（可以说这是我最满意的一次应用结构设计）。再也不怕新增站点了！
