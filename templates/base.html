@@ -165,7 +165,7 @@
             <p class="p-note">{{ config.extra.bio }}</p>
           </div>
           <h2>
-            <a title="{{ trans(key='label_categories',lang=lang) }}" class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</a>
+            <a class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</a>
           </h2>
           <ul>
             {% set categories = get_taxonomy(kind="categories",lang=lang) %}

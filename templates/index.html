@@ -40,7 +40,7 @@
             <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
               {{ all_section_pages.pages | length }}</a>
             articles so far, about {{ total_word_count }} words, last updated on
-            <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ all_pages_sort_by_date[0].updated }}</a>. I position
+            <time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>. I position
               this as my personal digital garden, where all my notes, ideas are stored here. Cause I'm not a English native speaker,
               so there are also
             <a href="/">many posts/notes written by Chinese</a>,
@@ -49,12 +49,12 @@
         {% else %}
           <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
               {{ all_section_pages.pages | length }}</a>
-            篇文章，大约 {{ total_word_count }} 字，最后更新时间：<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ all_pages_sort_by_date[0].updated }}</a>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
+            篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
             <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
           </p>
         {% endif %}
       </div>
-      <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+      <input aria-label="search input" role="combobox" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
       <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
       </h2>
       <div class="articles">
