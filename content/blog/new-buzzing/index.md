@@ -1,5 +1,5 @@
 ---
-title: New Buzzing
+title: New Buzzing 已发布！
 date: 2022-09-03T18:54:10+08:00
 updated: 2022-09-03
 draft: false
