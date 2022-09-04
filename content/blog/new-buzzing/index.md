@@ -258,7 +258,6 @@ adapters
       "title": "メガ・バックドアに何を投資するか"
     }
   },
-  "_links": [],
   "tags": ["Bogleheads"],
   "authors": [
     {
@@ -383,8 +382,7 @@ steps:
   frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
-></iframe
->`
+></iframe>
 ```
 
 ## 总结
