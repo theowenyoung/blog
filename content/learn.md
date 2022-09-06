@@ -17,3 +17,8 @@ taxonomies:
 
 - [免费的吉他教程](https://go.licknriff.com/academy216243817994907)
   - [真正的教程链接](https://go.licknriff.com/lesson-no-316243818183201)
+
+## Emacs
+
+- [Emacs From Scratch - Video](https://www.youtube.com/watch?v=74zOY-vgkyw&list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ)
+  - [Awesome Emacs](https://github.com/emacs-tw/awesome-emacs#starter-kit)
