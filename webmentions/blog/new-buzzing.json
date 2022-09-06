@@ -200,5 +200,49 @@
     "in-reply-to": "https://www.owenyoung.com/blog/new-buzzing/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1511029": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1566709575545278465",
+    "published": "2022-09-05T08:47:25+00:00",
+    "wm-received": "2022-09-05T09:09:38Z",
+    "wm-id": 1511029,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1566075587818504192/1566709575545278465",
+    "wm-target": "https://www.owenyoung.com/blog/new-buzzing/",
+    "content": {
+      "html": "感谢！已修复。 首页没有lite模式，因为本身已经是lite模式了！\n<a class=\"u-mention\" href=\"http://www.buzzing.cc/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/Richard_Nick_\"></a>\n<a class=\"u-mention\" href=\"https://www.buzzing.cc/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/new-buzzing/\"></a>",
+      "text": "感谢！已修复。 首页没有lite模式，因为本身已经是lite模式了！"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/new-buzzing/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1511030": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "为也行",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/9d49806c38c4cbc7a184fb58959927c47fecca2293cbe066ea7c9e4e5a92d0e2.jpg",
+      "url": "https://twitter.com/Richard_Nick_"
+    },
+    "url": "https://twitter.com/Richard_Nick_/status/1566690079728631808",
+    "published": "2022-09-05T07:29:57+00:00",
+    "wm-received": "2022-09-05T09:10:05Z",
+    "wm-id": 1511030,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1566075587818504192/1566690079728631808",
+    "wm-target": "https://www.owenyoung.com/blog/new-buzzing/",
+    "content": {
+      "html": "反馈一个无伤大雅的小问题：<a href=\"https://www.buzzing.cc/lite/\">buzzing.cc/lite/</a> 访问会404. 之所以会访问到这个地址，是按照如下路径：HN 热门 - 关于 - 无图模式 - 点击Buzzing首页触发\n<a class=\"u-mention\" href=\"http://www.buzzing.cc/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.buzzing.cc/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/new-buzzing/\"></a>",
+      "text": "反馈一个无伤大雅的小问题：buzzing.cc/lite/ 访问会404. 之所以会访问到这个地址，是按照如下路径：HN 热门 - 关于 - 无图模式 - 点击Buzzing首页触发"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/new-buzzing/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
