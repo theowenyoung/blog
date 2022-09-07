@@ -22,3 +22,7 @@ taxonomies:
 
 - [Emacs From Scratch - Video](https://www.youtube.com/watch?v=74zOY-vgkyw&list=PLEoMzSkcN8oPH1au7H6B7bBJ4ZO7BXjSZ)
   - [Awesome Emacs](https://github.com/emacs-tw/awesome-emacs#starter-kit)
+
+## Javascript
+
+- [学习 React 前要了解的顶级 Javascript 概念](https://www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/)
