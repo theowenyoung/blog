@@ -5,8 +5,20 @@
 	<link href="https://www.owenyoung.com/tags/journal/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-05T14:06:35+08:00</updated>
+	<updated>2022-09-07T14:01:26+08:00</updated>
 	<id>https://www.owenyoung.com/tags/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.07: 各种链接</title>
+		<published>2022-09-07T14:01:26+08:00</published>
+		<updated>2022-09-07T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-07/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-07/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.freecodecamp.org&#x2F;news&#x2F;top-javascript-concepts-to-know-before-learning-react&#x2F;&quot;&gt;学习 React 前要了解的顶级 Javascript 概念&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;newsboat&#x2F;newsboat&quot;&gt;命令行的 RSS 阅读器&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.05: 各种链接</title>
 		<published>2022-09-05T14:06:35+08:00</published>
