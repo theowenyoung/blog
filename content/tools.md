@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-09-03
+updated: 2022-09-11
 taxonomies:
   categories:
     - Notes
@@ -322,3 +322,7 @@ X as a Y services.
 - [validator.w3.org](https://validator.w3.org) - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误
 - [wave](https://wave.webaim.org/) - 检测网站的可访问性，可帮助作者使其网络内容更易于残障人士访问
 - [Wahts my dns](https://www.whatsmydns.net/) - 查看网站的 DNS 传播情况，当你更换 dns 后，可以用这个网站 check 是否全部生效
+
+## Epub
+
+- [离线电子书](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
