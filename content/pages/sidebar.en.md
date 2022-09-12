@@ -7,7 +7,6 @@ updated: 2022-06-04
 ## Impornant Links
 
 - [RSS Feed](/en/blog/atom.xml)
-- [Global Search by VSCode](https://github1s.com/theowenyoung/blog)
 
 ## About
 
