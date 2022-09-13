@@ -1747,5 +1747,27 @@
     "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1516470": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1569156871046705153",
+    "published": "2022-09-12T02:52:06+00:00",
+    "wm-received": "2022-09-12T03:30:24Z",
+    "wm-id": 1516470,
+    "wm-source": "https://brid.gy/comment/twitter/as790726/1569134516098441216/1569156871046705153",
+    "wm-target": "https://www.owenyoung.com/en/blog/indieweb/",
+    "content": {
+      "html": "有插件真方便！zola 没插件 全靠手撸.. <a href=\"https://www.owenyoung.com/en/blog/indieweb/\">owenyoung.com/en/blog/indiew…</a>\n<a class=\"u-mention\" href=\"http://jason-memo.dev/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/as790726\"></a>",
+      "text": "有插件真方便！zola 没插件 全靠手撸.. owenyoung.com/en/blog/indiew…"
+    },
+    "in-reply-to": "https://www.owenyoung.com/en/blog/indieweb/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
