@@ -5,8 +5,20 @@
 	<link href="https://www.owenyoung.com/blog/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com/blog/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-10T02:12:52+08:00</updated>
+	<updated>2022-09-14T19:44:11+08:00</updated>
 	<id>https://www.owenyoung.com/blog/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.14: 各种链接</title>
+		<published>2022-09-14T19:44:11+08:00</published>
+		<updated>2022-09-14T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-14/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-14/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.destroyallsoftware.com&#x2F;compendium&#x2F;network-protocols?share_key=97d3ba4c24d21147&quot;&gt;网络协议概述，从HTTP到电缆&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.core77.com&#x2F;posts&#x2F;116849&#x2F;Sticky-Notes-Replacement-A-Whiteboard-Between-Your-Keyboard-and-Monitor&quot;&gt;电脑显示屏和键盘之间的便签板，可擦除，要卖60美元&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.10: 各种链接</title>
 		<published>2022-09-10T02:12:52+08:00</published>
