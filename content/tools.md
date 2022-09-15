@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-09-11
+updated: 2022-09-15
 taxonomies:
   categories:
     - Notes
@@ -61,7 +61,7 @@ taxonomies:
 - [另一个代码截图生成器](https://carbon.now.sh/)
 - [52 斗图](https://www.52doutu.cn/) - 表情包在线生成
 - [rust 生成线条图片](https://github.com/lf94/img2utf)
-
+- [AI Stable 扩散图片生成接口](https://computerender.com/) - 低成本的众包
 ## URL 缩短器
 
 - [利用 github Issues 缩短网址](https://github.com/nelsontky/gh-pages-url-shortener)
@@ -122,6 +122,7 @@ taxonomies:
 
 - [爆米花种子播放器，边下边播](https://github.com/popcorn-official/popcorn-desktop)
 - [Good Vids](https://www.goodvids.so/) - 通过你的推特 Twitter 好友，找到推荐的视频 Videos
+- [asciinema](https://asciinema.org/) - 录制终端视频，并不是真正的录制，但是是用文本生成整个视频，非常酷
 
 ## Newsletter
 
