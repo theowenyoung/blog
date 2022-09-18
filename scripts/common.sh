@@ -6,6 +6,7 @@ export CURRENT_HOUR=$(date +%H)
 export CURRENT_MINUTE=$(date +%M)
 export CURRENT_SECOND=$(date +%S)
 
+my_dir="$(dirname "$0")"
 
 # template functions
 function template() {
@@ -21,7 +22,7 @@ function template() {
   if [ -f $target_path ]; then
       echo "$target_path file exists"
   else
-      cat $template_path | ./scripts/mo.sh > $target_path
-      echo "$target_path created!"  
+      cat $template_path | ${my_dir}/mo.sh > $target_path
+      echo "$target_path created!"
   fi
 }

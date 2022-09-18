@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2022-06-15
+updated: 2022-09-15
 taxonomies:
   categories:
     - Notes
@@ -81,7 +81,7 @@ taxonomies:
 - [Boomers](https://boomers.dog/) - 可以匿名，实名发布东西的留言板，挺好看。
 - [Mother fucking website](https://motherfuckingwebsite.com/) - 只使用简单的 html 也可以是一个正常的网站。控诉现代网站
 - [Txti](https://txti.es/) - 简约的文本网页创建服务，像电报的[telegraf](https://telegra.ph/)，
-
+- [Realtime](http://realtime.info/) - 实时查看各大平台正在发生什么...真正的实时
 ## 服务
 
 - [Rover](https://www.rover.com/uk/) - The world’s largest network of 5‑star pet sitters and dog walkers. 遛狗服务
