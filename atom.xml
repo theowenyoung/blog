@@ -5,8 +5,16 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-15T00:00:00+00:00</updated>
+	<updated>2022-09-19T03:26:31+08:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.19: 各种链接</title>
+		<published>2022-09-19T03:26:31+08:00</published>
+		<updated>2022-09-19T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-19/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-19/</id>
+		<content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.14: 各种链接</title>
 		<published>2022-09-14T19:44:11+08:00</published>
@@ -4721,7 +4729,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>收集一些给人灵感的东西</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-15T00:00:00+00:00</updated>
+		<updated>2022-09-15T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/inspires/" type="text/html"/>
 		<id>https://www.owenyoung.com/inspires/</id>
 		<content type="html">&lt;p&gt;网上冲浪多年，看到过太多有意思的东西了，一定要记下来！&lt;&#x2F;p&gt;
@@ -4808,6 +4816,7 @@ Here are my picks, in no particular order:&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;boomers.dog&#x2F;&quot;&gt;Boomers&lt;&#x2F;a&gt; - 可以匿名，实名发布东西的留言板，挺好看。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;motherfuckingwebsite.com&#x2F;&quot;&gt;Mother fucking website&lt;&#x2F;a&gt; - 只使用简单的 html 也可以是一个正常的网站。控诉现代网站&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;txti.es&#x2F;&quot;&gt;Txti&lt;&#x2F;a&gt; - 简约的文本网页创建服务，像电报的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;telegra.ph&#x2F;&quot;&gt;telegraf&lt;&#x2F;a&gt;，&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;realtime.info&#x2F;&quot;&gt;Realtime&lt;&#x2F;a&gt; - 实时查看各大平台正在发生什么…真正的实时&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;fu-wu&quot;&gt;服务&lt;a class=&quot;zola-anchor&quot; href=&quot;#fu-wu&quot; aria-label=&quot;Anchor link for: fu-wu&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
