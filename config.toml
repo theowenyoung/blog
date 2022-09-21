@@ -30,7 +30,7 @@ smart_punctuation = true
 author = "Owen Young"
 email = "owen@owenyoung.com"
 prefix_url = "https://www.owenyoung.com"
-theme_color = "#f9f5e9"
+theme_color = "#fffef8"
 meilisearch_url = "https://meili.owenyoung.com"
 meilisearch_api_key = "BeoB0dmTf1da9d234f9c4a109c1ef2e68b897b1609adb016f24394b46db242c464963ce1"
 ### indieweb note
