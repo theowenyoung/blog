@@ -35,9 +35,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://www.owenyoung.com/site/images/favicon-32x32.png?h=ca02fcaedf5905bad24cad048d2c0ead87ee7df6ff599938026255c876b644a6">
     <link rel="icon" type="image/png" sizes="96x96" href="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f">
     <link rel="icon" type="image/png" sizes="16x16" href="https://www.owenyoung.com/site/images/favicon-16x16.png?h=781fb877b71ebad12e3c244f99d49e304999806e16b5d300aad21c5cf745eaaa">
-    <meta name="msapplication-TileColor" content="#f9f5e9"/>
+    <meta name="msapplication-TileColor" content="#fffef8"/>
     <meta name="msapplication-TileImage" content="https://www.owenyoung.com/site/images/ms-icon-144x144.png?h=3f1d58f726fa497889b5fbb0d6f3ed6035b1bf7a566d22483a2d64c26dd23363">
-    <meta name="theme-color" content="#f9f5e9"/>
+    <meta name="theme-color" content="#fffef8"/>
     <meta property="og:title" content="
   tags: Books - Owen的博客
 "/>
@@ -149,11 +149,8 @@ input,
 select {
   margin: 0;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+div {
+  box-sizing: border-box;
 }
 
 img,
@@ -177,12 +174,12 @@ th {
 }
 
 /* --reset end -- */
-/* 
- #d2bf9e 
- #fcfcfc 
- #fffff8 
- #41403e 
- backanother #e6ddd0 
+/*
+ #d2bf9e
+ #fcfcfc
+ #fffff8
+ #41403e
+ backanother #e6ddd0
  divider: rgb(226, 232, 240);
  code back: edf0f3
  rgb(249, 245, 233)
@@ -730,6 +727,7 @@ a.muted,
 
 .navbar-inner {
   padding: 0.5rem 1.4rem;
+  box-sizing: border-box;
   display: flex;
 }
 
@@ -883,11 +881,9 @@ li.inline {
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    background-color: var(--colors-background-surface);
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    /* background-color: var(--colors-background-surface); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
   }
   .no-toc {
     width: 20rem;
@@ -1000,7 +996,7 @@ li.inline {
         <p class="p-summary site-description">主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</p>
       </div>
       <header id="overview">
-        <div class="pt">
+        <div class="">
           <span>&gt;&gt;</span>
           <a href="https://www.owenyoung.com/">首页</a>
           <span class="divider">

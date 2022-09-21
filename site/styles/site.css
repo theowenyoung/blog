@@ -87,11 +87,8 @@ input,
 select {
   margin: 0;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+div {
+  box-sizing: border-box;
 }
 
 img,
@@ -115,12 +112,12 @@ th {
 }
 
 /* --reset end -- */
-/* 
- #d2bf9e 
- #fcfcfc 
- #fffff8 
- #41403e 
- backanother #e6ddd0 
+/*
+ #d2bf9e
+ #fcfcfc
+ #fffff8
+ #41403e
+ backanother #e6ddd0
  divider: rgb(226, 232, 240);
  code back: edf0f3
  rgb(249, 245, 233)
@@ -668,6 +665,7 @@ a.muted,
 
 .navbar-inner {
   padding: 0.5rem 1.4rem;
+  box-sizing: border-box;
   display: flex;
 }
 
@@ -821,11 +819,9 @@ li.inline {
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    background-color: var(--colors-background-surface);
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    /* background-color: var(--colors-background-surface); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
   }
   .no-toc {
     width: 20rem;
