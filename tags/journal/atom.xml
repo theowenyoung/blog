@@ -5,15 +5,30 @@
 	<link href="https://www.owenyoung.com/tags/journal/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-19T03:26:31+08:00</updated>
+	<updated>2022-09-21T15:57:44+08:00</updated>
 	<id>https://www.owenyoung.com/tags/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.21: 各种链接</title>
+		<published>2022-09-21T15:57:44+08:00</published>
+		<updated>2022-09-21T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-21/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-21/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;8thlight.com&#x2F;blog&#x2F;makefile-make-developing-easier&#x2F;&quot;&gt;Makefile教程&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zh.m.wikipedia.org&#x2F;zh-hans&#x2F;%E6%96%AF%E5%A4%9A%E8%91%9B%E4%B8%BB%E7%BE%A9&quot;&gt;斯多葛主义&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.19: 各种链接</title>
 		<published>2022-09-19T03:26:31+08:00</published>
 		<updated>2022-09-19T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-19/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/journals/2022-09-19/</id>
-		<content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.zenrows.com&#x2F;blog&#x2F;bypass-cloudflare#conclusion&quot;&gt;如何绕过Cloudflare的机器人检测&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
 	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.14: 各种链接</title>
