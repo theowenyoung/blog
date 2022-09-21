@@ -6,8 +6,8 @@ description = "主要关注技术，读书，摘抄，杂谈，文章评论，�
 generate_feed = true
 generate_rss = true
 taxonomies = [
-  { name = "tags", feed = true, paginate_by = 25 },
-  { name = "categories", feed = true, paginate_by = 25 },
+  { name = "tags", feed = true, paginate_by = 50 },
+  { name = "categories", feed = true, paginate_by = 50 },
 ]
 title = "Owen的博客"
 
