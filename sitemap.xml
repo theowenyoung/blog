@@ -255,6 +255,10 @@
         <lastmod>2022-09-21</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/journals/2022-09-23/</loc>
+        <lastmod>2022-09-23</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/know-vs-do/</loc>
         <lastmod>2022-04-06</lastmod>
     </url>
@@ -279,12 +283,6 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/blog/page/2/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/blog/page/3/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/blog/page/4/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/blog/reading-time/</loc>
@@ -505,9 +503,6 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/en/blog/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/en/blog/page/2/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/</loc>
@@ -1275,6 +1270,12 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/videos/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/vim/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/vim/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/vscode/</loc>
