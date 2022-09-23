@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
 ---
 
+> 大多数人坚持他们一开始的任何事情——不管是什么原因决定了他们的选择。 - [reddit user](https://www-reddit-com.translate.goog/r/neovim/comments/kmyj66/comment/ghjlp4q/?utm_source=reddit&utm_medium=web2x&context=3&_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=zh-CN)
+
 > 我们长期以来一直想象的持续无休止的扩张的未来已经结束，一个由收缩定义的新未来即将到来 -- [韦斯·杰克逊](https://www.theguardian.com/books/2022/aug/31/an-inconvenient-apocalypse-climate-crisis-book)
 
 > 基于 Yaml 的编程语言是由那些想知道 lisp 是什么但不知道的人构建的。 -- [hacker news 网友](https://news.ycombinator.com/item?id=26275343)
