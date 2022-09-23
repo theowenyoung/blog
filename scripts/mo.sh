@@ -202,7 +202,7 @@ moCallFunction() {
         moFunctionResult=$?
         # shellcheck disable=SC2031
         if [[ -n "${MO_FAIL_ON_FUNCTION-}" && "$moFunctionResult" != 0 ]]; then
-            echo "Function '$2' with args (${moArgs[*]+"${moArgs[@]}"}) failed with status code $moFunctionResult"
+            echo "Function '$2' with args (${moArgs[*]+"${moArgs[@]}"}) failed with status $TMUX_EDITOR $moFunctionResult"
             exit "$moFunctionResult"
         fi
     }

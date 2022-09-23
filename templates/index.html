@@ -56,26 +56,29 @@
       </div>
       <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
 
-      <h2>{{ trans(key="label_latest_articles_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-articles" id="latest-articles" class="zola-anchor">🔗</a>
+      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
+        <a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </h2>
-      <div class="articles">
-        <ul class="root-ul">
-          {% for page in all_blog_pages.pages | slice(end=15) %}
-            <li>{{ macro::post_min(page=page) }}</li>
-          {% endfor %}
-
-        </ul>
-        {%if note_pages | slice(start=15) | length > 0%}
-        <details>
-          <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-          <ul>
-            {% for page in all_blog_pages.pages | slice(start=15) %}
-              <li>{{ macro::post_min(page=page) }}</li>
-            {% endfor %}
-          </ul>
-        </details>
-        {% endif %}
+      <div class="articles h-feed hfeed">
+        {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
+          {{ macro::post_max(page=page) }}
+          {% if loop.last %}
+          {% else %}
+            <hr class="w-1__2" />
+          {% endif %}
+        {% endfor %}
       </div>
+      <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
+      <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </h2>
+      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
+      <div class="articles">
+        {{ thoughts_page.summary | safe }}
+        <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
+      </div>
+
+      <hr class="w-full"/>
+
       <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
       </h2>
       <div class="articles">
@@ -95,31 +98,6 @@
         </details>
         {% endif %}
       </div>
-      <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-      </h2>
-      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
-      <div class="articles">
-        {{ thoughts_page.summary | safe }}
-        <h3 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h3>
-      </div>
-
-      <hr class="w-full"/>
-
-
-
-      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
-        <a href="#latest" id="latest" class="zola-anchor">🔗</a>
-      </h2>
-      <div class="articles h-feed hfeed">
-        {% for page in all_blog_pages.pages | slice(start=0,end=5) %}
-          {{ macro::post_max(page=page) }}
-          {% if loop.last %}
-          {% else %}
-            <hr class="w-1__2" />
-          {% endif %}
-        {% endfor %}
-      </div>
-      <h3 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h3>
       <h2>{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
       </h2>
       {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}

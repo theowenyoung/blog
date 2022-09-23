@@ -14,6 +14,7 @@ updated: 2022-06-04
 - [搜索本站](/content/pages/search.md)
 - [图书阅读指南](/content/books-guide.md)
 - [探索互联网上高质量的内容](/content/sources.md)
+- [热门笔记](/#re-men-bi-ji)
 - [我在阅读什么？](https://myfeed.owenyoung.com/)
 
 ## 关于

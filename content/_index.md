@@ -4,12 +4,6 @@ sort_direction: "decending"
 insert_anchor_links: "right"
 ---
 
-## 我在阅读什么？
-
-- [HN 最新](https://hnnew.buzzing.cc/)
-- [纽约客](https://newyorker.buzzing.cc/)
-- [精神食粮](https://depth.buzzing.cc/)
-
 ## 热门笔记
 
 - [读书笔记](/content/blog/books/_index.md)
@@ -21,3 +15,10 @@ insert_anchor_links: "right"
 - [收集值得阅读的文章](/content/articles.md)
 - [收集一些有意思的社区](/content/communities.md)
 - [英语学习相关资源](/content/english-learning.md)
+
+## 我在阅读什么？
+
+- [HN 最新](https://hnnew.buzzing.cc/)
+- [纽约客](https://newyorker.buzzing.cc/)
+- [精神食粮](https://depth.buzzing.cc/)
+

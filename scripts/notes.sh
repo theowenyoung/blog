@@ -15,4 +15,4 @@ target_path="${my_dir}/../content/$filename.md"
 
 template $template_path $target_path;
 
-code $target_path;
+$TMUX_EDITOR $target_path;

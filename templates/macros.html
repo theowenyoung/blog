@@ -13,9 +13,9 @@
       <p class="p-note">{{ config.extra.bio }}</p>
     </div>
 
-    <h1 class="no-border pb-sm">
+    <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
-    </h1>
+    </h2>
     {% if page.summary -%}
       <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
     {% elif page.description -%}
