@@ -5,8 +5,16 @@
 	<link href="https://www.owenyoung.com/tags/journal/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-23T16:39:15+08:00</updated>
+	<updated>2022-09-24T20:29:05+08:00</updated>
 	<id>https://www.owenyoung.com/tags/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.24: 各种链接</title>
+		<published>2022-09-24T20:29:05+08:00</published>
+		<updated>2022-09-24T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-24/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-24/</id>
+		<content type="html">&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.23: 各种链接</title>
 		<published>2022-09-23T16:39:15+08:00</published>
