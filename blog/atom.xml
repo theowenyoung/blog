@@ -5,8 +5,19 @@
 	<link href="https://www.owenyoung.com/blog/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com/blog/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-24T20:29:05+08:00</updated>
+	<updated>2022-09-25T03:41:37+08:00</updated>
 	<id>https://www.owenyoung.com/blog/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.25: 各种链接</title>
+		<published>2022-09-25T03:41:37+08:00</published>
+		<updated>2022-09-25T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-25/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-25/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;acko.net&#x2F;blog&#x2F;get-in-zoomer-we-re-saving-react&#x2F;&quot;&gt;react的真正问题&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.24: 各种链接</title>
 		<published>2022-09-24T20:29:05+08:00</published>
