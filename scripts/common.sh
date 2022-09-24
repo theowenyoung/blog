@@ -19,10 +19,9 @@ function template() {
   fi
 
   # check target file is exists
-  if [ -f $target_path ]; then
-      echo "$target_path file exists"
-  else
+  if [ ! -f $target_path ]; then
+      # echo "$target_path file exists"
       cat $template_path | ${my_dir}/mo.sh > $target_path
-      echo "$target_path created!"
+      # echo "$target_path created!"
   fi
 }

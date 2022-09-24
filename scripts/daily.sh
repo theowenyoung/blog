@@ -6,4 +6,5 @@ template_path="$my_dir/templates/daily.md.tmpl"
 target_path="$my_dir/../content/blog/journals/$(date +%Y-%m-%d).md"
 
 template $template_path $target_path;
-$TMUX_EDITOR $target_path;
+# $TMUX_EDITOR $target_path;
+printf "$target_path"

@@ -15,4 +15,5 @@ target_path="${my_dir}/../content/blog/books/$filename.md"
 
 template $template_path $target_path;
 
-$TMUX_EDITOR $target_path;
+# $TMUX_EDITOR $target_path;
+printf "$target_path"
