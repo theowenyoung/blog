@@ -36,3 +36,6 @@ book:
 .Phony: notes
 notes:
 	./scripts/notes.sh $(name)
+.Phony: tt
+tt:
+	echo tt "${NVIM}"
