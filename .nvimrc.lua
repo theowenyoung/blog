@@ -13,10 +13,10 @@ function mysplit(inputstr, sep)
 	return t
 end
 
-local function print_table(t)
-	local output = vim.api.nvim_exec(string.format("!%s", "./scripts/" .. t.args .. ".sh"), true)
+local function new_file(t)
+	local output = vim.api.nvim_exec(string.format("!%s", "./scripts/" .. t.args), true)
 	local splited = mysplit(output, "\n")
 	vim.api.nvim_exec(string.format("edit %s", splited[2]), false)
 end
 
-vim.api.nvim_create_user_command("New", print_table, { nargs = 1 })
+vim.api.nvim_create_user_command("New", new_file, { nargs = 1 })
