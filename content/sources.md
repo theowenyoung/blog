@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-09-03
+updated: 2022-09-26
 taxonomies:
   categories:
     - Notes
@@ -32,7 +32,8 @@ taxonomies:
 - [Meta Filter](https://www.metafilter.com/)
 - [Soylentnews](https://soylentnews.org/)
 - [Read Something Interesting](https://readsomethinginteresting.com/)
-- [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/) - 一句话总结文章内容，所以你不用点进去看文章了
+- [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/) -
+  一句话总结文章内容，所以你不用点进去看文章了
 - [True Reddit 小组的每月排行](https://old.reddit.com/r/Foodforthought/top/?t=month)
 
 ## 专人维护的 Reading List
@@ -42,9 +43,12 @@ taxonomies:
 
 ## 视频
 
-- [Vox](https://www.youtube.com/c/Vox/featured) - Youtube 上的一个分享各种各样事情解释的博主，比如塔利班，比如新冠病毒等等，视频质量非常高。
+- [Vox](https://www.youtube.com/c/Vox/featured) - Youtube
+  上的一个分享各种各样事情解释的博主，比如塔利班，比如新冠病毒等等，视频质量非常高。
 - [Good Vids](https://www.goodvids.so/) - 通过你的推特 Twitter 好友，找到推荐的视频 Videos
-- [Ad Commercials Videos Reddit](https://www.reddit.com/r/ObscureMedia/) - Films and shorts, Drug PSA's, random music video's, odd cartoons, Media of all sorts ETC.
+- [Ad Commercials Videos Reddit](https://www.reddit.com/r/ObscureMedia/) - Films
+  and shorts, Drug PSA's, random music video's, odd cartoons, Media of all sorts
+  ETC.
 - [视频讲座 - Reddit 小组](https://www.reddit.com/r/lectures/)
 - [观看并学习 - Reddit 小组](https://www.reddit.com/r/WatchandLearn/)
 - [下饭视频 - Reddit 小组](https://www.reddit.com/r/mealtimevideos/)
@@ -52,7 +56,8 @@ taxonomies:
 ## 中文独立媒体
 
 - [thenewslens](https://www.thenewslens.com/) - Taiwan indie media
-- [The Initium News ](https://theinitium.com/) - Taiwan/Hong Kong media
+- [The Initium News](https://theinitium.com/) - Taiwan/Hong Kong media
+- [中国 - 历史与未来](https://www.chinese-future.org/) - 立足欧洲的博客平台，刊登一些专栏作品
 
 ### 已死
 
@@ -65,11 +70,12 @@ taxonomies:
 
 ## 专栏
 
-- [Cal Newport ](https://www.newyorker.com/contributors/cal-newport) - 深度工作作者
+- [Cal Newport](https://www.newyorker.com/contributors/cal-newport) - 深度工作作者
 - [纽约客专栏作家作品列表](https://www.newyorker.com/news/our-columnists)
 - [Tynan 的博客](https://tynan.com/) - 关于财富，投资
 - [Noah](https://noahpinion.substack.com/)
-- [Tyler Cowen 的专栏](https://www.bloomberg.com/opinion/authors/AS6n2t3d_iA/tyler-cowen) - 经济相关
+- [Tyler Cowen 的专栏](https://www.bloomberg.com/opinion/authors/AS6n2t3d_iA/tyler-cowen) -
+  经济相关
 - [Adam Grant](https://adamgrant.bulletin.com/)
 - [Austin Kleon](https://austinkleon.substack.com/) - 像艺术家一样偷窃作者
 - [Paul Graham](http://paulgraham.com/articles.html) - YC 创始人
@@ -77,7 +83,8 @@ taxonomies:
 
 ## Product
 
-- [Product Hunt Trending (producthunt-trending.js.org)](https://producthunt-trending.js.org/?range=monthly) - Browser producthunk by ranking, weekly, monthly, yearly.
+- [Product Hunt Trending (producthunt-trending.js.org)](https://producthunt-trending.js.org/?range=monthly) -
+  Browser producthunk by ranking, weekly, monthly, yearly.
 - [r/SideProject - A community for sharing side projects (reddit.com)](https://www.reddit.com/r/SideProject/)
 - [Product Hunt](https://www.producthunt.com/) - The best new products in tech
 - [Hacker News Show](https://news.ycombinator.com/show)
@@ -90,7 +97,8 @@ taxonomies:
   - [被管理员重新顶上去的帖子](https://news.ycombinator.com/invited)
 - [Betalist](https://betalist.com/) - Discover tomorrow's startups, today.
 - [startupbase](https://startupbase.io/) - Discover early access products.
-- [10words](https://10words.io/) - 10words: Discover new apps and startups in 10 words or less
+- [10words](https://10words.io/) - 10words: Discover new apps and startups in 10
+  words or less
 - [Read.cv explore](https://read.cv/explore) - profile 聚合,个人简历聚合
 - [Website Hunt](https://www.websitehunt.co/) - 发现好网站
 
@@ -113,12 +121,15 @@ taxonomies:
 
 ## Trends
 
-- [Discover Exploding Topics](https://explodingtopics.com/) - We surface rapidly growing topics before they take off.
-- [treendly](https://treendly.com/) - Discover rising trends you haven't heard of
+- [Discover Exploding Topics](https://explodingtopics.com/) - We surface rapidly
+  growing topics before they take off.
+- [treendly](https://treendly.com/) - Discover rising trends you haven't heard
+  of
 
 ## Github
 
-- [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) - GitHubDaily 分享内容定期整理与分类。
+- [GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) - GitHubDaily
+  分享内容定期整理与分类。
 
 ## Tech
 
@@ -138,7 +149,7 @@ taxonomies:
 
 - [用中文浏览 Product Hunt 热门 App，网站和产品 - Product Hunt 热门 (buzzing.cc)](https://ph.buzzing.cc/)
 - [用中文浏览 reddit 业余项目讨论 - 业余项目分享交流 (buzzing.cc)](https://sideproject.buzzing.cc/)
-- [沉迷优秀 App 不能自拔-豆瓣小组 ](https://www.douban.com/group/689011/)
+- [沉迷优秀 App 不能自拔-豆瓣小组](https://www.douban.com/group/689011/)
 - [这小程序针不戳啊-豆瓣小组](https://www.douban.com/group/718741/)
 - [分享创造-v2ex](https://v2ex.com/go/create)
 - [分享发现-v2ex](https://v2ex.com/go/share)
@@ -198,7 +209,8 @@ taxonomies:
 - [The Browswer](https://thebrowser.com/) - 每天推荐 5 篇值得阅读的文章
   - [存档](https://thebrowser.com/archive/)
 - [Inbox World](https://inboxworld.io/) - 订阅推荐
-- [laskie](https://laskie.substack.com/) - We create products and services to save your company time and make you more money. 创业相关，企业管理相关
+- [laskie](https://laskie.substack.com/) - We create products and services to
+  save your company time and make you more money. 创业相关，企业管理相关
 -
 
 ## 人权
@@ -223,7 +235,8 @@ taxonomies:
 
 ## Influence
 
-- [Tyler Cowen](https://publicchoice.gmu.edu/tylercowen) - 乔治梅森大学和公共选择研究中心的经济学教授, 每天都会为博客 《边缘革命》（The Marginal Revolution）撰稿
+- [Tyler Cowen](https://publicchoice.gmu.edu/tylercowen) -
+  乔治梅森大学和公共选择研究中心的经济学教授, 每天都会为博客 《边缘革命》（The Marginal Revolution）撰稿
   - [专栏](https://www.bloomberg.com/opinion/authors/AS6n2t3d_iA/tyler-cowen)
 
 ## 搜索引擎
