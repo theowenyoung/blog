@@ -5,8 +5,21 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-26T19:29:54+08:00</updated>
+	<updated>2022-09-27T10:23:11+08:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.09.27: 各种链接</title>
+		<published>2022-09-27T10:23:11+08:00</published>
+		<updated>2022-09-27T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-09-27/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-09-27/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;newrepublic.com&#x2F;article&#x2F;167857&#x2F;axios-smart-brevity-book-hell-world&quot;&gt;地狱的样子就是每个人都像Axios那样写作&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;China&#x2F;comments&#x2F;xooxud&#x2F;a_chinese_leeks_response_to_the_ccp_sickle_in&#x2F;&quot;&gt;我们是最后一代的5种语言&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;datagubbe.se&#x2F;famous&#x2F;&quot;&gt;这些伟大的计算机先驱们并不像他们应得的那样出名&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.26: 各种链接</title>
 		<published>2022-09-26T19:29:54+08:00</published>
