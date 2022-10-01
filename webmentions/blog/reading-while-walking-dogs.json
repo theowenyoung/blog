@@ -1,0 +1,24 @@
+{
+  "1530813": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1576012103436992513",
+    "published": "2022-10-01T00:52:21+00:00",
+    "wm-received": "2022-10-01T01:08:57Z",
+    "wm-id": 1530813,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1576012103436992513",
+    "wm-target": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "content": {
+      "html": "分享我在遛狗的时候用 Kindle 读书的体验： <a href=\"https://www.owenyoung.com/blog/reading-while-walking-dogs/\">owenyoung.com/blog/reading-w…</a>",
+      "text": "分享我在遛狗的时候用 Kindle 读书的体验： owenyoung.com/blog/reading-w…"
+    },
+    "mention-of": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
