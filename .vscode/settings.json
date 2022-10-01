@@ -11,6 +11,7 @@
         "other": "on"
       }
     },
+    "task.problemMatchers.neverPrompt":true,
     "files.defaultLanguage": "markdown",
     "files.exclude": {
       "**/node_modules": true

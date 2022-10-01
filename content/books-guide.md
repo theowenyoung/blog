@@ -1,7 +1,7 @@
 ---
 title: 阅读指南
 date: 2022-03-29
-updated: 2022-07-23
+updated: 2022-10-01
 taxonomies:
   categories:
     - Notes
@@ -10,8 +10,7 @@ taxonomies:
     - Guide
 ---
 
-收集书籍推荐列表，以及资源。
-
+收集书籍推荐列表，以及资源,  我的个人读书笔记[在这里](/blog/books/)
 <!-- more -->
 
 ## 其他人的书籍推荐资源

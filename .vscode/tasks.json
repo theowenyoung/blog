@@ -4,7 +4,7 @@
     {
       "label": "daily",
       "type": "shell",
-      "command": "make daily",
+      "command": "codium $(./scripts/daily.sh)",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -13,7 +13,7 @@
     {
       "label": "random",
       "type": "shell",
-      "command": "./scripts/random.sh ${input:filename}",
+      "command": "codium $(./scripts/random.sh ${input:filename})",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -22,7 +22,7 @@
     {
       "label": "notes",
       "type": "shell",
-      "command": "./scripts/notes.sh ${input:filename}",
+      "command": "codium $(./scripts/notes.sh ${input:filename})",
       "presentation": {
         "reveal": "silent",
         "close": true
@@ -31,7 +31,7 @@
     {
       "label": "book",
       "type": "shell",
-      "command": "./scripts/book.sh ${input:filename}",
+      "command": "codium $(./scripts/book.sh ${input:filename})",
       "presentation": {
         "reveal": "silent",
         "close": true
