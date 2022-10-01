@@ -1,5 +1,5 @@
 ---
-title: 阅读指南
+title: 图书阅读相关资源
 date: 2022-03-29
 updated: 2022-10-02
 taxonomies:
@@ -10,7 +10,8 @@ taxonomies:
     - Guide
 ---
 
-收集书籍推荐列表，以及资源,  我的个人读书笔记[在这里](/blog/books/)
+收集书籍推荐列表，以及资源, 我的个人读书笔记[在这里](/blog/books/)
+
 <!-- more -->
 
 ## 其他人的书籍推荐资源
@@ -56,7 +57,7 @@ taxonomies:
 
 ## 工具
 
-- [Google推出的AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai从谷歌成千上万本书里给出最相关的段落。
+- [Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的段落。
 
 ## 讨论
 
