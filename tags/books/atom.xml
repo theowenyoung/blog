@@ -8,12 +8,12 @@
 	<updated>2022-10-02T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/books/atom.xml</id>
 	<entry xml:lang="zh">
-		<title>阅读指南</title>
+		<title>图书阅读相关资源</title>
 		<published>2022-03-29T00:00:00+00:00</published>
 		<updated>2022-10-02T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/books-guide/" type="text/html"/>
 		<id>https://www.owenyoung.com/books-guide/</id>
-		<content type="html">&lt;p&gt;收集书籍推荐列表，以及资源,  我的个人读书笔记&lt;a href=&quot;&#x2F;blog&#x2F;books&#x2F;&quot;&gt;在这里&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;收集书籍推荐列表，以及资源, 我的个人读书笔记&lt;a href=&quot;&#x2F;blog&#x2F;books&#x2F;&quot;&gt;在这里&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;其他人的书籍推荐资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot; aria-label=&quot;Anchor link for: qi-ta-ren-de-shu-ji-tui-jian-zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hacker-recommended-books.vercel.app&#x2F;&quot;&gt;汇总了 hacker news 上评论里提到的书籍的排名&lt;&#x2F;a&gt;
@@ -69,7 +69,7 @@
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;gong-ju&quot;&gt;工具&lt;a class=&quot;zola-anchor&quot; href=&quot;#gong-ju&quot; aria-label=&quot;Anchor link for: gong-ju&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;books.google.com&#x2F;talktobooks&#x2F;&quot;&gt;Google推出的AI： 与书籍对话&lt;&#x2F;a&gt; - 输入一个问题，ai从谷歌成千上万本书里给出最相关的段落。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;books.google.com&#x2F;talktobooks&#x2F;&quot;&gt;Google 推出的 AI： 与书籍对话&lt;&#x2F;a&gt; - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的段落。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;tao-lun&quot;&gt;讨论&lt;a class=&quot;zola-anchor&quot; href=&quot;#tao-lun&quot; aria-label=&quot;Anchor link for: tao-lun&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
