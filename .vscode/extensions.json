@@ -3,6 +3,6 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     // Foam Lite extension
-    "theowenyoung.foam-lite-vscode"
+    // "theowenyoung.foam-lite-vscode"
   ]
 }

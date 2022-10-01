@@ -11,6 +11,14 @@ if [ -z "$filename" ]; then
     read filename
 fi
 
+# title case to kebab case
+# check is gsed command exists , if not then use sed
+sedcmd="gsed"
+if [ ! -x "$(command -v gsed)" ]; then
+   sedcmd="sed"
+fi
+filename=$(echo $filename | $sedcmd "s/ /-/g" | $sedcmd 's/[A-Z]/\L&/g')
+
 target_path="${my_dir}/../content/blog/books/$filename.md"
 
 template $template_path $target_path;

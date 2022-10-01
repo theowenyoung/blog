@@ -13,8 +13,7 @@ page_template: "book.html"
 
 我整理了一份[阅读指南](/content/books-guide.md)，里面有各种人，机构推荐的书籍列表以及电子书资源，有需要的话也可以看看。
 
-还有一些我草草读过的，或者觉得没有必要单独列出的书，我记录在我的[年度日记文件里](/content/journal-2022.md#books)
+还有一些我草草读过的，或者觉得没有必要单独列出的书，记录在： 
 
-> 从2021年开始记录，[2021年读书笔记在这里](/content/blog/books-2021.md)
-
----
+- [2022年其他读书笔记](/content/blog/books/2022.md)
+- [2021年读书笔记](/content/blog/books-2021.md)
