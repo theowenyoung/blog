@@ -1,7 +1,7 @@
 ---
 title: 阅读指南
 date: 2022-03-29
-updated: 2022-10-01
+updated: 2022-10-02
 taxonomies:
   categories:
     - Notes
@@ -53,6 +53,10 @@ taxonomies:
 - [ahhhfs 分享](https://www.ahhhhfs.com/?cat=&s=%E7%94%B5%E5%AD%90%E4%B9%A6)
 - [网友整理](https://tyi45di4ct.jiandaoyun.com/dash/5e7d915c6c56d8000674a8b8)
 - [书伴整理](https://bookfere.com/ebook)
+
+## 工具
+
+- [Google推出的AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai从谷歌成千上万本书里给出最相关的段落。
 
 ## 讨论
 

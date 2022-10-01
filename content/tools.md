@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-09-15
+updated: 2022-10-02
 taxonomies:
   categories:
     - Notes
@@ -327,3 +327,7 @@ X as a Y services.
 ## Epub
 
 - [离线电子书](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
+
+## Search
+
+- [Google推出的AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai从谷歌成千上万本书里给出最相关的答案。
