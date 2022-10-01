@@ -5,8 +5,22 @@
 	<link href="https://www.owenyoung.com/categories/journal/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-30T00:40:23+08:00</updated>
+	<updated>2022-10-02T01:03:32+08:00</updated>
 	<id>https://www.owenyoung.com/categories/journal/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.10.02: 各种链接</title>
+		<published>2022-10-02T01:03:32+08:00</published>
+		<updated>2022-10-02T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-10-02/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-10-02/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;radar.cloudflare.com&quot;&gt;Clouflare的雷达服务&lt;&#x2F;a&gt; - Cloudfalre利用自己的数据优势，推出了全球网络概况的雷达服务。其中全球域名排行可以替代倒闭的Alexa排名服务，而且更科学，因为它是基于Cloudflare的全球dns 1.1.1.1 的流量来排名的。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;edition.cnn.com&#x2F;2020&#x2F;11&#x2F;28&#x2F;asia&#x2F;japan-suicide-women-covid-dst-intl-hnk&#x2F;index.html&quot;&gt;在日本，上个月死于自杀的人数比2020年全年死于Covid的人数还要多，其中女性受到的影响最大&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;restofworld.org&#x2F;2022&#x2F;chinese-same-sex-couples-married-zoom-utah&#x2F;&quot;&gt;来自中国的LGBTQ+通过Zoom视频连线美国的犹他州登记结婚&lt;&#x2F;a&gt; - 美国犹他州允许非公民登记结婚，新冠疫情以来允许在网上登记结婚。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;books.google.com&#x2F;talktobooks&#x2F;&quot;&gt;Google推出的AI： 与书籍对话&lt;&#x2F;a&gt; - 输入一个问题，ai从谷歌成千上万本书里给出最相关的答案。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>2022.09.30: 各种链接</title>
 		<published>2022-09-30T00:40:23+08:00</published>
