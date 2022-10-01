@@ -82,6 +82,14 @@
         <lastmod>2022-04-26</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/books/2022/</loc>
+        <lastmod>2022-10-02</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/blog/books/a-year-of-no-significance/</loc>
+        <lastmod>2022-10-02</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/books/disprezzo/</loc>
         <lastmod>2022-03-27</lastmod>
     </url>
@@ -102,7 +110,14 @@
         <lastmod>2022-03-27</lastmod>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/books/one-hundred-years-of-solitude/</loc>
+        <lastmod>2022-10-02</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/books/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/blog/books/page/2/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/blog/books/so-good-they-cannot-ignore-you/</loc>
@@ -155,6 +170,10 @@
     <url>
         <loc>https://www.owenyoung.com/blog/books/too-old-to-understand/</loc>
         <lastmod>2022-03-24</lastmod>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/blog/books/ubik/</loc>
+        <lastmod>2022-10-02</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/blog/booting/</loc>
@@ -714,7 +733,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/quotes/</loc>
-        <lastmod>2022-09-29</lastmod>
+        <lastmod>2022-10-02</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/rust/</loc>
