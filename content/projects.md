@@ -19,17 +19,21 @@ This is a list of projects I've done and am doing.
 
   You can use [Buzzing](https://www.buzzing.cc/) to see hot discussions in your native language. Browse in your native language, Read more into the original text. Currently, it supports Chinese, Japanese, English, you can find topics like [Buzzing on Reddit](https://reddit.buzzing.cc), [Buzzing on Stocks](https://stocks.buzzing.cc), [Buzzing on Product Hunt](https://ph.buzzing.cc), [Buzzing on Hacker News](https://hn.buzzing.cc/), [Buzzing on Reddit ASK](https://ask.buzzing.cc/), etc.
 
-- **Maintaining [Denoflow](https://github.com/denoflow/denoflow)**
+### [YAMLscript](https://github.com/yamlscript/yamlscript)
 
-  [Denoflow](https://github.com/denoflow/denoflow)\*\* is an automate workflows based on Deno/Typescript/Javascript
+YAML as code. Lisp in YAML.
 
 - **[Track Awesome List](https://www.trackawesomelist.com)**
 
-  Track your favorite github awesome repo, not just star it. trackawesomelist.com provides website, newsletter, RSS for tracking the popular awesome list by daily and weekly.
+Track your favorite github awesome repo, not just star it. trackawesomelist.com provides website, newsletter, RSS for tracking the popular awesome list by daily and weekly.
 
 - **[Gatsby Theme Primer Wiki](https://github.com/theowenyoung/gatsby-theme-primer-wiki)**
 
   A gatsby theme for wiki site. Like this site is using the theme to generate. Cause this wiki is a thing that I want to maintain the whole life, so the theme would be maintain for a long time.
+
+- **Maintaining [Denoflow](https://github.com/denoflow/denoflow)**
+
+  [Denoflow](https://github.com/denoflow/denoflow)\*\* is an automate workflows based on Deno/Typescript/Javascript
 
 - **[Actionsflow](https://github.com/actionsflow/actionsflow)**
 
@@ -38,7 +42,3 @@ This is a list of projects I've done and am doing.
 - **[Gatsby Theme Timeline](https://github.com/theowenyoung/gatsby-theme-timeline)**
 
   A Gatsby theme, you can use it to show your all posts, tweets, instagram posts etc into one blog. In my opinion, this is a real personal home.
-
-### [YAMLscript](https://github.com/yamlscript/yamlscript)
-
-YAML as code. Lisp in YAML.
