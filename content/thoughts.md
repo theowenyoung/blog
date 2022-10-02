@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
 ---
 
+> [印尼 - 超过 120 人在足球踩踏事件中丧生](https://www.bbc.com/news/world-asia-63105945)，虽然这是一个巨大的悲剧，但是我想知道这件事和性别到底有没有关系？印尼是一个穆斯林国家，而照常理来说，足球场的球迷大多数应该都是男性。 -- 2022.10.02
+
 > 男性防止自己变爹的办法，就是社交媒体上别关注男的 -- 2022.10.02
 
 > [报告称，中国告诉高盛（Goldman Sachs）和摩根大通（JPMorgan）等美国银行，避免在中共 20 大之前发表具有政治敏感性的研究。](https://markets.businessinsider.com/news/stocks/china-bank-goldman-sachs-jpmorgan-government-political-research-communist-party-2022-9) 。我朋友的网站也收到类似的要求，甚至要求在期间关站一个月。依我看，中国所有的这些大会都没必要开。开个破会，全社会不仅没有任何实际参与，还要被迫配合他们表演，这和古代皇帝举办的各种仪式有啥区别？ -- 2022.10.02
