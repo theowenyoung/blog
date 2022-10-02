@@ -29,35 +29,19 @@ taxonomies:
 
 - [BBC Radio 1 Relax](https://www.bbc.co.uk/sounds/play/live:bbc_radio_one_relax)
 
+## 正在读
+
+最近在利用[遛狗时间](/content/blog/reading-while-walking-dogs.md) 读《王小波全集》
+
 ### 练习英语
 
 I'm a failure of English learning. I've learned English more than 10 years, but it still sucks, so I registered a Twitter [@TheOwenYoung](https://twitter.com/TheOwenYoung) for only English tweets, and this [blog](https://blog.owenyoung.com) to force me to use more English. It's Feb, 01, 2021 today when I writing this, I hope this is my last goal after making so many goals. Once I reach my goal, I'll update here.
 
 ## Projects
 
+前段时间重构了 [New Buzzing](/content/blog/new-buzzing/index.md), 最近在重构 [track awesome list](https://www.trackawesomelist.com/), 都用 Deno 写。
 
-### Maintaining [Buzzing](https://www.buzzing.cc/)
-
-You can use [Buzzing](https://www.buzzing.cc/) to see hot discussions in your native language. Browse in your native language, Read more into the original text. Currently, it supports Chinese, I hope it can support more languages, and more topics.
-
-### Maintaining [Track Awesome List](https://www.trackawesomelist.com)
-
-Track awesome list easily.
-
-### [YAMLscript](https://github.com/yamlscript/yamlscript)
-
-YAML as code. Lisp in YAML.
-
-###  [Denoflow](https://github.com/denoflow/denoflow)
-
-[Denoflow](https://github.com/denoflow/denoflow) is an automate workflows based on Deno/Typescript/Javascript
-
-### Maintaining [Gatsby Theme Primer Wiki](https://github.com/theowenyoung/gatsby-theme-primer-wiki)
-
-
-### Maintaining [Actionsflow](https://github.com/actionsflow/actionsflow)
-
-[Actionsflow](https://github.com/actionsflow/actionsflow) helps you automate workflows - it's a free [IFTTT](https://ifttt.com/)/[Zapier](https://zapier.com/) alternative for developers. With [Actionsflow](https://github.com/actionsflow/actionsflow) you can connect your favorite apps, data, and APIs, receive notifications of actions as they occur, sync files, collect data, and more.
+查看所有 [Projects](/content/projects.md)
 
 ## Goals
 
