@@ -31,6 +31,10 @@
           {{ page.taxonomies.categories[0] }}
         </a>
       {% endif %}
+        <span>·</span>
+      <a class="no-underline" rel="bookmark" href="{{ page.permalink | safe }}">
+        {{ trans(key="label_full_reading",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
+      </a>
     </div>
   </article>
   {% endmacro post_max %}
