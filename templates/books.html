@@ -31,9 +31,9 @@
   <div>
     {% for page in section_pages %}
       <article>
-        <h1 class="no-border pb-sm">
+        <h2 class="no-border pb-sm">
           <a title="{{ page.title }}" class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
-        </h1>
+        </h2>
         <div class="muted pb">
           <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
           {% if page.extra.author %}
