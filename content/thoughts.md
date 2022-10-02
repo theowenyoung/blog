@@ -3,13 +3,15 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2022-10-02
+updated: 2022-10-03
 taxonomies:
   categories:
     - Notes
   tags:
     - Tweets
 ---
+
+> 推特的 Web3 大军有点可怕啊...发了一条推火了之后引来了好几百个 follower...但是其中的一半可能都是 Web 大军。我很喜欢 p2p 的工作方式，我对 [Solid](https://solidproject.org/), [Zero Net](https://zeronet.io/), [scuttlebutt](https://scuttlebutt.nz/get-started/) [nostr](https://github.com/nostr-protocol/nostr), Tor 等协议很有兴趣，我希望能看到门槛更低 p2p 协议，我希望货币化是这些项目的辅助工具，而不是必要门槛。本质上我希望去中心化首先要解决穷人的问题，而不是成为又一个收割穷人的工具。 --2022.10.03
 
 > “我们自二战以来首次将俄罗斯城市交给了敌人”。在俄罗斯撤离莱曼后，海外俄罗斯人关系的政府机构负责人叶夫根尼·普里马科夫（Yevgeny Primakov）在 Telegram 上写道。因为就在 24 小时前莱曼被俄罗斯宣布吞并，所以他认为莱曼是俄罗斯联邦的一部分了。虽然这个宣传员很不要脸，但是这则消息就是很好笑啊哈哈哈。 报道见[这里](https://www.nytimes.com/live/2022/10/01/world/russia-ukraine-war-news?smid=tw-nytimes&smtyp=cur#ukraine-moves-to-encircle-lyman-a-strategic-eastern-rail-hub) -- 2022.10.02
 
