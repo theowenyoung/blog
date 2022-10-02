@@ -48,6 +48,6 @@ I'm a failure of English learning. I've learned English more than 10 years, but 
 如果今年还是没有流利英语，我就是傻逼。
 
 - [ ] 90 天挑战，每天录一条英文视频。
-- [ ] More patient about stocks.
+- [x] More patient about stocks.
 - [ ] Significantly improve English level
-- [ ] 读者达到 1000 人。包括 twitter newsletter
+- [x] 读者达到 1000 人。包括 twitter newsletter
