@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
 ---
 
+> 在俄罗斯撤离莱曼后，海外俄罗斯人关系的政府机构负责人叶夫根尼·普里马科夫（Yevgeny Primakov）在 Telegram 上写道，“我们自二战以来首次将俄罗斯城市交给了敌人”。(因为就在 24 小时前莱曼才被俄罗斯宣布吞并) 虽然这个俄罗斯宣传员很不要脸，但是这则消息就是很好笑啊哈哈哈。 报道见[这里](https://www.nytimes.com/live/2022/10/01/world/russia-ukraine-war-news?smid=tw-nytimes&smtyp=cur#ukraine-moves-to-encircle-lyman-a-strategic-eastern-rail-hub) -- 2022.10.02
+
 > [印尼 - 超过 120 人在足球踩踏事件中丧生](https://www.bbc.com/news/world-asia-63105945)，虽然这是一个巨大的悲剧，但是我想知道这件事和性别到底有没有关系？印尼是一个穆斯林国家，而照常理来说，足球场的球迷大多数应该都是男性。 -- 2022.10.02
 
 > 男性防止自己变爹的办法，就是社交媒体上别关注男的 -- 2022.10.02
