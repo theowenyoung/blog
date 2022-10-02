@@ -16,9 +16,10 @@ insert_anchor_links: "right"
 - [收集一些有意思的社区](/content/communities.md)
 - [英语学习相关资源](/content/english-learning.md)
 
+[点击查看全部笔记](/categories/notes/)
+
 ## 我在阅读什么？
 
 - [HN 最新](https://hnnew.buzzing.cc/)
 - [纽约客](https://newyorker.buzzing.cc/)
 - [精神食粮](https://depth.buzzing.cc/)
-

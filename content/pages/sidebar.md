@@ -15,7 +15,10 @@ updated: 2022-06-04
 - [图书阅读资源](/content/books-guide.md)
 - [探索互联网上高质量的内容](/content/sources.md)
 - [热门笔记](/#re-men-bi-ji)
-- [我在阅读什么？](https://hnnew.buzzing.cc/)
+- [读书笔记](/blog/books/)
+- [每日阅读分享](/categories/journal/)
+- [所有文章存档](/archive/)
+- [本站源码](https://github.com/theowenyoung/blog)
 
 ## 关于
 
@@ -28,8 +31,3 @@ updated: 2022-06-04
 
 - [Twitter](https://twitter.com/OwenYoungZh)
 - [Github](https://github.com/theowenyoung)
-
-## 存档
-
-- [所有文章存档](/archive/)
-- [本站源码](https://github.com/theowenyoung/blog)
