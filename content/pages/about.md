@@ -23,15 +23,17 @@ taxonomies:
 
 我在使用[VSCode](https://code.visualstudio.com/)配合我开发的[Markdown 输入插件 Foam Lite](https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode)来编辑这个博客的所有内容。
 
-### 我现在在做什么？
+我有一个 [Now 页面](/content/pages/now.md)，这个页面是响应[Derek Sivers](https://sive.rs/)的呼吁，用[Now 页面](https://nownownow.com/about)顶替 About 页面，Now 页面`/now/`用于记录最近在做的事，而`/about/`页面是一个概览页面。 [点这里查看我最近在做什么](/content/pages/now.md)
 
-[看看我现在在做什么](/content/pages/now.md)
+我有开一个 [Newsletter](https://digests.owenyoung.com/) ，但是还没发过东西，主要是没有什么东西非要推送给别人知道，你可以通过 [RSS](/atom.xml) 来订阅，或者像老朋友一样隔一段时间来看看就好了。不看也不会错过什么。
 
-## 通过邮件通讯保持联系
+这个网站遵循 [IndieWeb](/content/blog/indieweb.en.md) 的规范，支持 [webmention](https://indieweb.org/Webmention).
 
-我开了一个[Newsletter](https://digests.owenyoung.com/)，初步想法是每隔一段时间整理一些我觉得不能错过的东西。但是只有我觉得必须联系你的时候，我才会给你发一封邮件。
+我很喜欢 [Webring](https://xn--sr8hvo.ws/) 的古早互联网概念，大概是这样：加入 Webring 的博客，需要在底部加一个如下的链接：
 
-也就是说在邮件通讯里我只会发我觉得不能错过的东西，其他大多数“狗屎”，我只会让它们留在我的博客里，这可以让你选择主动阅读，而不是被迫听我的“狗屎”。我主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，反直觉，深度工作等方面。
+[←](https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/previous) An IndieWeb Webring 🕸💍 [→](https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/next)
+
+点击前后的箭头链接，会随机的跳转到另一个 Webring 里的博客，这样就大大的增加了独立博客的可发现性，经常能发现一些很有意思的博客，比友情链接这种方式更好。
 
 ## 联系我
 
