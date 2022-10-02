@@ -11,7 +11,7 @@ taxonomies:
     - About
 ---
 
-> This is a [now](https://nownownow.com/about) page, read more about me at [关于我和这个博客](/content/pages/about.md) page or [Projects](/content/projects.md) page.
+> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](/content/pages/about.md) 了解更多。
 
 ## 进行中
 
