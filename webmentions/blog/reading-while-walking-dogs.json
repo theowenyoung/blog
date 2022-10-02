@@ -64,5 +64,49 @@
     "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1530925": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "yukang",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b2b352760671a91972846e50bceeb8fb9d775dfb97ee9fedcb30f2dcffef1c0b.jpg",
+      "url": "https://twitter.com/cyukang"
+    },
+    "url": "https://twitter.com/cyukang/status/1576033028811370496",
+    "published": "2022-10-01T02:15:30+00:00",
+    "wm-received": "2022-10-01T06:40:31Z",
+    "wm-id": 1530925,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1576012103436992513/1576033028811370496",
+    "wm-target": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "content": {
+      "html": "我溜娃的时候听书，微信读书有不少非 AI 读的。遛狗不用一直走动么？感觉不能看 kindle，哈哈。\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/reading-while-walking-dogs/\"></a>",
+      "text": "我溜娃的时候听书，微信读书有不少非 AI 读的。遛狗不用一直走动么？感觉不能看 kindle，哈哈。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1530926": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1576041853513654272",
+    "published": "2022-10-01T02:50:33+00:00",
+    "wm-received": "2022-10-01T06:40:32Z",
+    "wm-id": 1530926,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1576012103436992513/1576041853513654272",
+    "wm-target": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "content": {
+      "html": "边走边看呀。我感觉文字阅读更高效一点，可以预览，跳过一些不感兴趣的，声音就不太好控制这些，文字还可以高亮一些笔记。\n<a class=\"u-mention\" href=\"https://twitter.com/cyukang\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/reading-while-walking-dogs/\"></a>",
+      "text": "边走边看呀。我感觉文字阅读更高效一点，可以预览，跳过一些不感兴趣的，声音就不太好控制这些，文字还可以高亮一些笔记。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
