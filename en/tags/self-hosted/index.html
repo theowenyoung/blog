@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,11 +1036,24 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;">Caddy File Server Browser with URL Scheme</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p>Copy the <a rel="noopener nofollow noreferrer" target="_blank" href="https://gist.github.com/theowenyoung/e09cb6e2c59f247fdc3f4e6fe4401481">Template</a> to your local caddy config folder.</p>
+<p>This template will display the follow page:
+<img src="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/./caddy-file-template-screenshot.png" alt="screenshot" /></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">localhost </span><span>{
+</span><span>  root * /root
+</span><span>  encode gzip
+</span><span>  file_server {
+</span><span>    browse ./file-browser-template-for-caddy.html
+</span><span>    hide .*
+</span><span>  }
+</span><span>}
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/">
         <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
       </a>
@@ -1042,17 +1063,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1061,11 +1078,66 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mastdon-setup&#x2F;">Mastdon Development Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.joinmastodon.org/dev/setup/">dev/setup</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.joinmastodon.org/admin/install/">admin/install</a></p>
+<ol>
+<li>Install Ruby</li>
+</ol>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ruby-lang.org/en/documentation/installation/">Installing Ruby</a> 2. Install Node</p>
+<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/nvm-sh/nvm">nvm</a></p>
+<ol start="3">
+<li>Install postgres</li>
+</ol>
+<p><a href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/">Postgres Setup for Debian</a></p>
+<ol start="4">
+<li>Install redit</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">brew</span><span> install redis
+</span><span style="color:#bf616a;">brew</span><span> services start redis
+</span></code></pre>
+<ol start="5">
+<li>Clone</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">git</span><span> clone git@github.com:mastodon/mastodon.git live
+</span></code></pre>
+<ol start="6">
+<li>Install ruby dependences</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">cd</span><span> live
+</span><span style="color:#bf616a;">bundle</span><span> config set</span><span style="color:#bf616a;"> --local</span><span> with &#39;</span><span style="color:#a3be8c;">development</span><span>&#39;
+</span><span style="color:#bf616a;">bundle</span><span> install
+</span></code></pre>
+<ol start="6">
+<li>Install yarn</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">npm</span><span> install</span><span style="color:#bf616a;"> --global</span><span> yarn
+</span></code></pre>
+<ol start="7">
+<li>Install nodejs dependences</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">yarn
+</span></code></pre>
+<ol>
+<li>Init database</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">RAILS_ENV</span><span>=</span><span style="color:#a3be8c;">development </span><span style="color:#bf616a;">bundle</span><span> exec rails db:setup
+</span></code></pre>
+<ol start="8">
+<li>Install foreman for multiple run</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">gem</span><span> install foreman</span><span style="color:#bf616a;"> --no-document
+</span></code></pre>
+<ol start="9">
+<li>Open</li>
+</ol>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="http://localhost:3000">http://localhost:3000</a></p>
+<p>email: <code>admin@localhost:3000</code>
+password: <code>mastodonadmin</code></p>
+
+    <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/mastdon-setup/">
         <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
       </a>
@@ -1075,17 +1147,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/mastdon-setup/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1094,11 +1162,85 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;self-hosted&#x2F;">Awesome Self-hosted</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="file">File<a class="zola-anchor" href="#file" aria-label="Anchor link for: file">🔗</a></h2>
+<ul>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/filebrowser/filebrowser">GitHub - filebrowser/filebrowser: 📂 Web File Browser</a></p>
+</li>
+<li>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://larrywonss.github.io/#/">OpenWrt 简明教程</a></p>
+</li>
+</ul>
+<h2 id="kol">KOL<a class="zola-anchor" href="#kol" aria-label="Anchor link for: kol">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/calendso/calendso">calendso/calendso: The open-source Calendly alternative. (github.com)</a> - Make an appointment, connect with your calendar</li>
+</ul>
+<h2 id="time-tracking">Time tracking<a class="zola-anchor" href="#time-tracking" aria-label="Anchor link for: time-tracking">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/almarklein/timetagger">timetagger</a> - Tag your time, get the insight</li>
+</ul>
+<h2 id="shopping">Shopping<a class="zola-anchor" href="#shopping" aria-label="Anchor link for: shopping">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/medusajs/medusa">Mpedussa</a> - Shopify alternative #Alternative</li>
+</ul>
+<h2 id="services">Services<a class="zola-anchor" href="#services" aria-label="Anchor link for: services">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/LibreTranslate/LibreTranslate">LibreTranslate</a> - Free and Open Source Machine Translation API. 100% self-hosted, no limits, no ties to proprietary translation services.</li>
+</ul>
+<h2 id="medias">Medias<a class="zola-anchor" href="#medias" aria-label="Anchor link for: medias">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/hauxir/rapidbay">RapidBay</a> - Self-hosted torrent video streaming service compatible with Chromecast and AppleTV deployable in the cloud</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Dusk-Labs/dim">Dim</a> - Dim, a media manager fueled by dark forces.</li>
+</ul>
+<h2 id="paas">PAAS<a class="zola-anchor" href="#paas" aria-label="Anchor link for: paas">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cloudron.io/index.html">cloudron</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://sandstorm.io/">sandstorm</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://freedombox.org/">freedombox</a></li>
+</ul>
+<h2 id="federation">Federation<a class="zola-anchor" href="#federation" aria-label="Anchor link for: federation">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://joinmobilizon.org/en/">Mobilizon</a> - Mobilizon is a tool that helps you find, create and organize events.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/orbitdb/orbit">Orbit</a> - A distributed, serverless, peer-to-peer chat application on IPFS.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/irislib/iris-messenger">Iris</a> - Decentralized messenger</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://twt.social/">Twt.social</a> - Twt.social is a new Social Media platform</li>
+</ul>
+<h2 id="old-school">Old school<a class="zola-anchor" href="#old-school" aria-label="Anchor link for: old-school">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gemini.circumlunar.space/">gemini</a> - Gemini is a new internet protocol which: Is heavier than gopher, Is lighter than the web, Will not replace either, Strives for maximum power to weight ratio, Takes user privacy very seriously</li>
+</ul>
+<h2 id="livestreaming">Livestreaming<a class="zola-anchor" href="#livestreaming" aria-label="Anchor link for: livestreaming">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/GRVYDEV/Project-Lightspeed">Lightspeed</a> - A self contained OBS -&gt; FTL -&gt; WebRTC live streaming server. Comprised of 3 parts once configured anyone can achieve sub-second OBS to the browser livestreaming</li>
+</ul>
+<h2 id="admin">Admin<a class="zola-anchor" href="#admin" aria-label="Anchor link for: admin">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ToolJet/ToolJet/">ToolJet</a> - ToolJet is an open-source low-code platform for building and deploying internal tools with minimal engineering efforts 🚀</li>
+</ul>
+<h2 id="chat">Chat<a class="zola-anchor" href="#chat" aria-label="Anchor link for: chat">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/mattermost/mattermost-server">mattermost</a> - Mattermost is an open source platform for secure collaboration across the entire software development lifecycle.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gitlab.com/famedly/conduit">conduit</a> - Conduit is a simple, fast and reliable chat server powered by Matrix</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://harmonyapp.io/">Harmony Chat</a> - An open protocol for open, harmonious communication.</li>
+</ul>
+<h2 id="deploy">Deploy<a class="zola-anchor" href="#deploy" aria-label="Anchor link for: deploy">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/adnanh/webhook">Webhook</a> - webhook is a lightweight incoming webhook server to run shell commands</li>
+</ul>
+<h2 id="music">Music<a class="zola-anchor" href="#music" aria-label="Anchor link for: music">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/izderadicka/audioserve">music server in rust</a></li>
+</ul>
+<h2 id="forum">Forum<a class="zola-anchor" href="#forum" aria-label="Anchor link for: forum">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://gitlab.com/metahkg/metahkg">Metahkg</a> - lihkg opensource alternatives</li>
+</ul>
+
+    <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/self-hosted/">
         <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
       </a>
@@ -1108,17 +1250,13 @@ li.inline {
           Notes
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/self-hosted/">
-        Reading Time: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1127,11 +1265,33 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;file-browser-setup&#x2F;">FileBrowser Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">curl -fsSL</span><span> https://raw.githubusercontent.com/filebrowser/get/master/get.sh | </span><span style="color:#bf616a;">bash
+</span></code></pre>
+<h2 id="systemd">Systemd<a class="zola-anchor" href="#systemd" aria-label="Anchor link for: systemd">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/filebrowser.service
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
+</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">File </span><span style="color:#bf616a;">browser: </span><span>%</span><span style="color:#bf616a;">I
+</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">network.target
+</span><span>
+</span><span style="color:#bf616a;">[Service]
+</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">www-data
+</span><span style="color:#bf616a;">Group</span><span>=</span><span style="color:#a3be8c;">www-data
+</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/usr/local/sbin/filebrowser </span><span style="color:#bf616a;">-c</span><span> /etc/filebrowser/%</span><span style="color:#bf616a;">I -d</span><span> /etc/filebrowser/filebrowser.db
+</span><span>
+</span><span style="color:#bf616a;">[Install]
+</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
+</span><span style="color:#bf616a;">sudo</span><span> systemctl enable</span><span style="color:#bf616a;"> --now</span><span> filebrowser
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2022-02-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/file-browser-setup/">
         <time class="dt-published published" datetime="2022-02-26">2022-02-26</time>
       </a>
@@ -1141,17 +1301,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/file-browser-setup/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1160,13 +1316,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;">Bazarr Setup</a>
     </h2>
     <div class="p-summary entry-summary"><p>Bazarr setup.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/bazarr-setup/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    2
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/bazarr-setup/">
         <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
       </a>
@@ -1176,17 +1341,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/bazarr-setup/">
-        Reading Time: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1195,11 +1356,28 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy2-setup-for-debian&#x2F;">Caddy2 Setup for Debian</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://caddyserver.com/v2">Official Site</a></p>
+<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> apt install</span><span style="color:#bf616a;"> -y</span><span> debian-keyring debian-archive-keyring apt-transport-https
+</span><span style="color:#bf616a;">curl -1sLf </span><span>&#39;</span><span style="color:#a3be8c;">https://dl.cloudsmith.io/public/caddy/stable/gpg.key</span><span>&#39; | </span><span style="color:#bf616a;">sudo</span><span> tee /etc/apt/trusted.gpg.d/caddy-stable.asc
+</span><span style="color:#bf616a;">curl -1sLf </span><span>&#39;</span><span style="color:#a3be8c;">https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt</span><span>&#39; | </span><span style="color:#bf616a;">sudo</span><span> tee /etc/apt/sources.list.d/caddy-stable.list
+</span><span style="color:#bf616a;">sudo</span><span> apt update
+</span><span style="color:#bf616a;">sudo</span><span> apt install caddy
+</span></code></pre>
+<p>Once installed, caddy is running.</p>
+<p>The default config file at <code>/etc/caddy/Caddyfile</code></p>
+<h2 id="resources">Resources<a class="zola-anchor" href="#resources" aria-label="Anchor link for: resources">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/greenpau/caddy-auth-portal">GitHub - greenpau/caddy-auth-portal: Authentication Plugin for Caddy v2 implementing Form-Based, Basic, Local, LDAP, OpenID Connect, OAuth 2.0 (Github, Google, Facebook, Okta, etc.), SAML Authentication</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/greenpau/caddy-auth-jwt">GitHub - greenpau/caddy-auth-jwt: JWT Authorization Plugin for Caddy v2</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://caddyserver.com/docs/caddyfile/directives/basicauth#basicauth">basicauth (Caddyfile directive) — Caddy Documentation</a></li>
+</ul>
+
+    <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/">
         <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
       </a>
@@ -1209,17 +1387,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1228,11 +1402,103 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;">qBittorrent setup for Debian</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<p>Because there is no official ppa of qBittorrent for debian, so we use a <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/userdocs/qbittorrent-nox-static">third party service - qbittorrent-nox-static</a> to compile qb.</p>
+<ol>
+<li>Download script</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">wget -qO ~</span><span>/qbittorrent-nox-static.sh https://git.io/qbstatic
+</span><span style="color:#bf616a;">chmod</span><span> +x </span><span style="color:#bf616a;">~</span><span>/qbittorrent-nox-static.sh
+</span><span style="color:#65737e;"># pre
+</span><span style="color:#bf616a;">sudo ~</span><span>/qbittorrent-nox-static.sh
+</span><span style="color:#65737e;"># build
+</span><span style="color:#bf616a;">~/qbittorrent-nox-static.sh</span><span> all
+</span><span style="color:#65737e;"># install
+</span><span style="color:#bf616a;">sudo ~</span><span>/qbittorrent-nox-static.sh install
+</span></code></pre>
+<h2 id="configure">Configure<a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">🔗</a></h2>
+<p>Read more at <a rel="noopener nofollow noreferrer" target="_blank" href="https://userdocs.github.io/qbittorrent-nox-static/#/install-qbittorrent?id=configuring-qbittorrent">qbittorrent-nox configure</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vim ~</span><span>/.config/qBittorrent/qBittorrent.conf
+</span></code></pre>
+<p>With follow config:</p>
+<pre data-lang="ini" style="background-color:#2b303b;color:#c0c5ce;" class="language-ini "><code class="language-ini" data-lang="ini"><span style="color:#b48ead;">[LegalNotice]
+</span><span style="color:#bf616a;">Accepted</span><span>=</span><span style="color:#d08770;">true
+</span><span>
+</span><span style="color:#b48ead;">[Preferences]
+</span><span style="color:#bf616a;">WebUI</span><span>\Port=</span><span style="color:#d08770;">8080
+</span><span style="color:#bf616a;">WebUI</span><span>\HostHeaderValidation=</span><span style="color:#d08770;">false
+</span></code></pre>
+<h2 id="systemd-service">Systemd service<a class="zola-anchor" href="#systemd-service" aria-label="Anchor link for: systemd-service">🔗</a></h2>
+<p>Reference at <a rel="noopener nofollow noreferrer" target="_blank" href="https://userdocs.github.io/qbittorrent-nox-static/#/systemd">here</a></p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#65737e;"># create a user
+</span><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/qbittorrent.service
+</span></code></pre>
+<p>Config:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
+</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">qBittorrent-nox </span><span style="color:#bf616a;">service
+</span><span style="color:#bf616a;">Wants</span><span>=</span><span style="color:#a3be8c;">network-online.target
+</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">network-online.target </span><span style="color:#bf616a;">nss-lookup.target
+</span><span>
+</span><span style="color:#bf616a;">[Service]
+</span><span style="color:#bf616a;">Type</span><span>=</span><span style="color:#a3be8c;">exec
+</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">qbtuser
+</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/usr/local/bin/qbittorrent-nox
+</span><span style="color:#bf616a;">Restart</span><span>=</span><span style="color:#a3be8c;">on-failure
+</span><span style="color:#bf616a;">SyslogIdentifier</span><span>=</span><span style="color:#a3be8c;">qbittorrent-nox
+</span><span>
+</span><span style="color:#bf616a;">[Install]
+</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
+</span></code></pre>
+<p>After any changes to the services reload using this command.</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
+</span></code></pre>
+<p>Now you can enable the service</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl enable</span><span style="color:#bf616a;"> --now</span><span> qbittorrent.service
+</span></code></pre>
+<p>Now you can use these commands</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">systemctl</span><span> stop qbittorrent
+</span><span style="color:#bf616a;">systemctl</span><span> start qbittorrent
+</span><span style="color:#bf616a;">systemctl</span><span> restart qbittorrent
+</span><span style="color:#bf616a;">systemctl</span><span> status qbittorrent
+</span><span>
+</span></code></pre>
+<h2 id="reverse-proxy-optional">Reverse Proxy (Optional)<a class="zola-anchor" href="#reverse-proxy-optional" aria-label="Anchor link for: reverse-proxy-optional">🔗</a></h2>
+<p>Use Caddy to access qBittorrent with domain. This should install <a href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/">Caddy2 Setup for Debian</a></p>
+<p>Config:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">example.com </span><span>{
+</span><span>   push
+</span><span>   reverse_proxy 127.0.0.1:8080
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>Now, you can access your qBittorrent web UI at: example.com, the default username and password is : admin/adminadmin</p>
+<blockquote>
+<p>Note, you should change the default username/password</p>
+</blockquote>
+<h2 id="config">Config<a class="zola-anchor" href="#config" aria-label="Anchor link for: config">🔗</a></h2>
+<ul>
+<li>Download directory, <code>/data/Downloads</code></li>
+<li>Settings, auto add <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/XIU2/TrackersListCollection">China</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://trackerslist.com/best.txt">https://trackerslist.com/best.txt</a> , <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/ngosang/trackerslist">US</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://ngosang.github.io/trackerslist/trackers_best.txt">https://ngosang.github.io/trackerslist/trackers_best.txt</a></li>
+<li>Open <code>announce_to_all_trackers</code> at settings.</li>
+</ul>
+<h2 id="install-search-plugin-jackett">Install Search Plugin Jackett<a class="zola-anchor" href="#install-search-plugin-jackett" aria-label="Anchor link for: install-search-plugin-jackett">🔗</a></h2>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Jackett/Jackett">Jackett</a> is a server program that provides support for more than 400 torrent sites (public and private).</p>
+<h3 id="install-jackett">Install Jackett<a class="zola-anchor" href="#install-jackett" aria-label="Anchor link for: install-jackett">🔗</a></h3>
+<p>See <a href="https://www.owenyoung.com/blog/jackett-setup/">Jackett Setup</a></p>
+<h3 id="install-jackett-plugin">Install Jackett Plugin<a class="zola-anchor" href="#install-jackett-plugin" aria-label="Anchor link for: install-jackett-plugin">🔗</a></h3>
+<p>See also at <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/qbittorrent/search-plugins/wiki/How-to-configure-Jackett-plugin">here</a></p>
+<p>Open qBittorrent Web UI, In the Search tab, click the Search plugins… button (bottom-right) -&gt; add new plugin -&gt; <code>https://raw.githubusercontent.com/qbittorrent/search-plugins/master/nova3/engines/jackett.py</code></p>
+<p>Change API key settings, You can get it from Jackett UI</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vim ~</span><span>/.local/share/qBittorrent/nova3/engines/jackett.json
+</span></code></pre>
+<h2 id="resource">Resource<a class="zola-anchor" href="#resource" aria-label="Anchor link for: resource">🔗</a></h2>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://sleele.com/2020/03/16/%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/">高阶教程-追剧全流程自动化</a></p>
+
+    <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/">
         <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
       </a>
@@ -1242,17 +1508,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/">
-        Reading Time: 
-  
-    3
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1261,11 +1523,36 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;open-bbr-for-debian&#x2F;">Open BBR for Debian</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="steps">Steps<a class="zola-anchor" href="#steps" aria-label="Anchor link for: steps">🔗</a></h2>
+<ol>
+<li>Open the following configuration file to enable enable TCP BBR.</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vi</span><span> /etc/sysctl.conf
+</span></code></pre>
+<ol start="2">
+<li>At the end of the config file, add the following lines.</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">net.core.default_qdisc</span><span>=</span><span style="color:#a3be8c;">fq
+</span><span style="color:#bf616a;">net.ipv4.tcp_congestion_control</span><span>=</span><span style="color:#a3be8c;">bbr
+</span></code></pre>
+<ol start="3">
+<li>reload</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sysctl -p
+</span></code></pre>
+<p>Now, Verify if BBR is enabled in your system,</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sysctl</span><span> net.ipv4.tcp_congestion_control
+</span></code></pre>
+<p>Output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">root@vps:~#</span><span> sysctl net.ipv4.tcp_congestion_control
+</span><span style="color:#bf616a;">net.ipv4.tcp_congestion_control</span><span> = bbr
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2021-01-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/">
         <time class="dt-published published" datetime="2021-01-26">2021-01-26</time>
       </a>
@@ -1275,17 +1562,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1294,11 +1577,32 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;metube-setup&#x2F;">Metube Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="list">List<a class="zola-anchor" href="#list" aria-label="Anchor link for: list">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/alexta69/metube">GitHub - alexta69/metube: youtube-dl web UI</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://chrome.google.com/webstore/detail/metube-downloader/fbmkmdnlhacefjljljlbhkodfmfkijdh">Metube chrome extension</a></li>
+</ul>
+<h2 id="setup">Setup<a class="zola-anchor" href="#setup" aria-label="Anchor link for: setup">🔗</a></h2>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.docker.com/engine/install/">Docker Install</a></p>
+<h2 id="config">Config<a class="zola-anchor" href="#config" aria-label="Anchor link for: config">🔗</a></h2>
+<pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">version</span><span>: &quot;</span><span style="color:#a3be8c;">3</span><span>&quot;
+</span><span style="color:#bf616a;">services</span><span>:
+</span><span>  </span><span style="color:#bf616a;">metube</span><span>:
+</span><span>    </span><span style="color:#bf616a;">image</span><span>: </span><span style="color:#a3be8c;">alexta69/
+</span><span>
+</span><span>    </span><span style="color:#bf616a;">container_name</span><span>: </span><span style="color:#a3be8c;">metube
+</span><span>    </span><span style="color:#bf616a;">restart</span><span>: </span><span style="color:#a3be8c;">unless-stopped
+</span><span>    </span><span style="color:#bf616a;">ports</span><span>:
+</span><span>      - &quot;</span><span style="color:#a3be8c;">10005:8081</span><span>&quot;
+</span><span>    </span><span style="color:#bf616a;">volumes</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">/data/youtube:/downloads
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2020-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/metube-setup/">
         <time class="dt-published published" datetime="2020-03-26">2020-03-26</time>
       </a>
@@ -1308,17 +1612,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/metube-setup/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1327,11 +1627,55 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;nginx-setup-for-debian&#x2F;">Nginx Setup for Debian</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p>Install latest stable nginx for debian</p>
+<blockquote>
+<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.nginx.com/resources/wiki/start/topics/tutorials/install/">here</a></p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> su
+</span><span style="color:#bf616a;">cat </span><span>&lt;&lt;</span><span style="color:#b48ead;">EOF </span><span>&gt;&gt; /etc/apt/sources.list.d/nginx.list
+</span><span style="color:#a3be8c;">deb http://nginx.org/packages/debian/ buster nginx
+</span><span style="color:#a3be8c;">deb-src http://nginx.org/packages/debian/ buster nginx
+</span><span style="color:#b48ead;">EOF
+</span><span style="color:#96b5b4;">exit
+</span><span style="color:#bf616a;">curl -L</span><span> https://nginx.org/keys/nginx_signing.key | </span><span style="color:#bf616a;">sudo</span><span> apt-key add -
+</span><span style="color:#bf616a;">sudo</span><span> apt update
+</span><span style="color:#bf616a;">sudo</span><span> apt install nginx
+</span></code></pre>
+<h2 id="optional-generate-nginx-conf-online">Optional generate nginx conf online<a class="zola-anchor" href="#optional-generate-nginx-conf-online" aria-label="Anchor link for: optional-generate-nginx-conf-online">🔗</a></h2>
+<p>Generate a nginx conf online at <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.digitalocean.com/community/tools/nginx">here</a></p>
+<p>If nginx conf need dhparam.pem, run :<code>cd /etc/nginx sudo openssl dhparam -dsaparam -out dhparam.pem 4096</code></p>
+<h2 id="optional-install-acme-sh">Optional install acme.sh<a class="zola-anchor" href="#optional-install-acme-sh" aria-label="Anchor link for: optional-install-acme-sh">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> su
+</span><span style="color:#bf616a;">wget -O</span><span> -  https://get.acme.sh | </span><span style="color:#bf616a;">sh -s</span><span> email=my@example.com
+</span></code></pre>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#96b5b4;">source </span><span style="color:#bf616a;">~</span><span>/.bashrc
+</span><span style="color:#bf616a;">acme.sh --issue -d</span><span> example.com</span><span style="color:#bf616a;"> --nginx
+</span></code></pre>
+<h2 id="optional-install-certbot">Optional Install certbot<a class="zola-anchor" href="#optional-install-certbot" aria-label="Anchor link for: optional-install-certbot">🔗</a></h2>
+<h3 id="install-snap">Install snap<a class="zola-anchor" href="#install-snap" aria-label="Anchor link for: install-snap">🔗</a></h3>
+<blockquote>
+<p>https://snapcraft.io/docs/installing-snapd</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> apt</span><span style="color:#bf616a;"> -y</span><span> install snapd
+</span><span style="color:#bf616a;">sudo</span><span> snap install core; </span><span style="color:#bf616a;">sudo</span><span> snap refresh core
+</span><span>
+</span></code></pre>
+<blockquote>
+<p>https://certbot.eff.org/lets-encrypt/debianbuster-nginx</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> snap install</span><span style="color:#bf616a;"> --classic</span><span> certbot
+</span><span style="color:#bf616a;">sudo</span><span> snap install certbot-dns-cloudflare
+</span><span style="color:#bf616a;">sudo</span><span> ln</span><span style="color:#bf616a;"> -s</span><span> /snap/bin/certbot /usr/bin/certbot
+</span></code></pre>
+<h2 id="generate-ssl">Generate SSL<a class="zola-anchor" href="#generate-ssl" aria-label="Anchor link for: generate-ssl">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> certbot</span><span style="color:#bf616a;"> --nginx
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2020-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/nginx-setup-for-debian/">
         <time class="dt-published published" datetime="2020-03-26">2020-03-26</time>
       </a>
@@ -1341,17 +1685,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/nginx-setup-for-debian/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1360,13 +1700,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;peertube-setup-with-caddy-server&#x2F;">Peertube Setup with Caddy Server</a>
     </h2>
     <div class="p-summary entry-summary"><p>Peertube is an activityPub-federated video streaming platform using P2P directly in your web browser.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    13
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2020-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/">
         <time class="dt-published published" datetime="2020-03-26">2020-03-26</time>
       </a>
@@ -1376,17 +1725,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/peertube-setup-with-caddy-server/">
-        Reading Time: 
-  
-    13
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1395,11 +1740,34 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;radarr-setup&#x2F;">Radarr Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Radarr/Radarr">repo</a></p>
+<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<p>See also <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.servarr.com/radarr/installation#linux">here</a></p>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Radarr/Radarr/releases">Latest Release</a></p>
+<h3 id="systemd">Systemd<a class="zola-anchor" href="#systemd" aria-label="Anchor link for: systemd">🔗</a></h3>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cat </span><span>&lt;&lt; </span><span style="color:#b48ead;">EOF </span><span>| </span><span style="color:#bf616a;">sudo</span><span> tee /etc/systemd/system/radarr.service &gt; /dev/null
+</span><span style="color:#a3be8c;">[Unit]
+</span><span style="color:#a3be8c;">Description=Radarr Daemon
+</span><span style="color:#a3be8c;">After=syslog.target network.target
+</span><span style="color:#a3be8c;">[Service]
+</span><span style="color:#a3be8c;">User=green
+</span><span style="color:#a3be8c;">Group=admin
+</span><span style="color:#a3be8c;">Type=simple
+</span><span style="color:#a3be8c;">
+</span><span style="color:#a3be8c;">ExecStart=/home/green/radarr/Radarr -nobrowser -data=/home/green/.config/radarr/
+</span><span style="color:#a3be8c;">TimeoutStopSec=20
+</span><span style="color:#a3be8c;">KillMode=process
+</span><span style="color:#a3be8c;">Restart=always
+</span><span style="color:#a3be8c;">[Install]
+</span><span style="color:#a3be8c;">WantedBy=multi-user.target
+</span><span style="color:#b48ead;">EOF
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2020-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/radarr-setup/">
         <time class="dt-published published" datetime="2020-03-26">2020-03-26</time>
       </a>
@@ -1409,17 +1777,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/radarr-setup/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1428,11 +1792,43 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;sonarr-setup&#x2F;">Sonarr Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p>Before setup sonarr, you should setup <a href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/">qBittorrent setup for Debian</a></p>
+<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<p>See <a rel="noopener nofollow noreferrer" target="_blank" href="https://sonarr.tv/#downloads-v3-linux">here</a></p>
+<p>Once installed, visit <a rel="noopener nofollow noreferrer" target="_blank" href="http://ip:8989">http://ip:8989</a></p>
+<h2 id="restart">Restart<a class="zola-anchor" href="#restart" aria-label="Anchor link for: restart">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl restart sonarr
+</span></code></pre>
+<h2 id="setup">Setup<a class="zola-anchor" href="#setup" aria-label="Anchor link for: setup">🔗</a></h2>
+<p>See also <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.servarr.com/sonarr/quick-start-guide">Sonarr Quick Start Guide | WikiArr</a></p>
+<ol>
+<li>
+<p>Click on <code>Settings =&gt; Media Management</code> on the left menu.</p>
+<p>Check <code>Rename Episodes</code></p>
+</li>
+<li>
+<p>Check left top <code>Show Advanced</code></p>
+<p><code>Importing</code> -&gt; <code>Import Extra Files</code> <code>.srt,.ass,.sub</code></p>
+</li>
+<li>
+<p>Add <code>/data/TV</code> to <code>Root Folders</code></p>
+</li>
+<li>
+<p>Indexers, Add <code>eztv</code>, <code>RARBG</code> as Indexers, see jackett home page.</p>
+</li>
+</ol>
+<h3 id="add-qbittorrent-client">Add qBittorrent Client:<a class="zola-anchor" href="#add-qbittorrent-client" aria-label="Anchor link for: add-qbittorrent-client">🔗</a></h3>
+<p><code>Setting</code> -&gt; <code>Download Clients </code> -&gt; <code>qBittorrent</code></p>
+<h2 id="resource">Resource<a class="zola-anchor" href="#resource" aria-label="Anchor link for: resource">🔗</a></h2>
+<ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://sleele.com/2020/03/16/%E9%AB%98%E9%98%B6%E6%95%99%E7%A8%8B-%E8%BF%BD%E5%89%A7%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E5%8C%96/">高阶教程-追剧全流程自动化</a></li>
+</ul>
+
+    <div class="muted text-sm">
       <a title="2020-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/sonarr-setup/">
         <time class="dt-published published" datetime="2020-03-26">2020-03-26</time>
       </a>
@@ -1442,17 +1838,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/sonarr-setup/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

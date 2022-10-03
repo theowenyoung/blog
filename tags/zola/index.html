@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,7 +1036,7 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;reading-time&#x2F;">Zola 博客的中文阅读时间预估误差很大，所以我做了一个修复</a>
     </h2>
@@ -1038,7 +1046,16 @@ li.inline {
 </blockquote>
 <p>我就纳闷我这是写了一篇 essay 吗，于是就是查它的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/getzola/zola/blob/39cf436b1174a3d5f2fbe4bac20e942795005f05/components/content/src/utils.rs#L55-L61">实现</a>, 发现实现很简单，就是基于 unicode 字符除以了一个数：</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/blog/reading-time/#continue-reading">
+       &rarr;&nbsp; 继续阅读需要: 
+  
+    1
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-07-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/reading-time/">
         <time class="dt-published published" datetime="2022-07-12T21:11:21+08:00">2022-07-12</time>
       </a>
@@ -1048,17 +1065,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/reading-time/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1067,14 +1080,23 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;">给Zola博客增加搜索功能</a>
     </h2>
     <div class="p-summary entry-summary"><p>我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个<a href="https://www.owenyoung.com/search/">搜索页面</a>，以及首页也添加了一个搜索框。</p>
 <p>我一直在这个博客里存放自己的所有公开内容，包括笔记和文章，我经常需要搜索自己的笔记，在此之前，我一直用 VSCode 在本地搜索文档。但是 VSCode 其实启动挺慢的，而且如果不在电脑边，也没法用，所以最近就研究了几种搜索方案。最终我选择了自托管 Rust 开发的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">Meilisearch</a>，但是这也不是特别理想的方案，因为需要在自己的 VPS 服务器上托管，对于静态博客来说，多了一环需要动态运行的服务需要维护。但是这已经是目前最不差的方案了。</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/blog/add-search/#continue-reading">
+       &rarr;&nbsp; 继续阅读需要: 
+  
+    11
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-07-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/add-search/">
         <time class="dt-published published" datetime="2022-07-12T00:54:03+08:00">2022-07-12</time>
       </a>
@@ -1084,17 +1106,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/add-search/">
-        全文阅读: 
-  
-    11
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1103,14 +1121,23 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;migrate-to-zola&#x2F;">迁移博客和Wiki到 Zola</a>
     </h2>
     <div class="p-summary entry-summary"><p>我在之前建立了一个个人的公开 <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com/">Wiki</a>和 <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/">Blog</a>，这让我养成了记笔记，多写东西的习惯。但是随着时间的增长，我感到维护 2 个 repo 实在有点麻烦，并且由于 Wiki 和博客都是基于<a href="https://www.owenyoung.com/blog/gatsby-cons/">Gatsby 框架</a>的，更新，维护，还有编译都挺花时间的。</p>
 <p>总的来说就是太复杂了，而由于我对自己的<a href="https://www.owenyoung.com/blog/about-notes/">笔记/博客系统</a>是以一生的尺度去设计和维护的，所以我想让它保持简单。</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/blog/migrate-to-zola/#continue-reading">
+       &rarr;&nbsp; 继续阅读需要: 
+  
+    3
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-04-06" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/migrate-to-zola/">
         <time class="dt-published published" datetime="2022-04-06">2022-04-06</time>
       </a>
@@ -1120,17 +1147,12 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/migrate-to-zola/">
-        全文阅读: 
-  
-    3
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">
@@ -1208,7 +1230,7 @@ li.inline {
             
               
               <li>
-                <a class="no-underline" title="Random" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(35)</a>
+                <a class="no-underline" title="Random" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(36)</a>
               </li>
             
           </ul>
@@ -1248,7 +1270,7 @@ li.inline {
           <ul class="list-none text-sm">
             
             <li class="inline">
-                <a class="no-underline" title="About" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;about&#x2F;">About(3)</a>
+                <a class="no-underline" title="About" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;about&#x2F;">About(4)</a>
               </li>
             <li class="inline">
                 <a class="no-underline" title="Actionsflow" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;actionsflow&#x2F;">Actionsflow(1)</a>
@@ -1447,6 +1469,9 @@ li.inline {
               </li>
             <li class="inline">
                 <a class="no-underline" title="Self-hosted" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-hosted&#x2F;">Self-hosted(2)</a>
+              </li>
+            <li class="inline">
+                <a class="no-underline" title="Self Improvement" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-improvement&#x2F;">Self Improvement(1)</a>
               </li>
             <li class="inline">
                 <a class="no-underline" title="Server" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;server&#x2F;">Server(1)</a>

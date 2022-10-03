@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,11 +1036,98 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mini-reset-css&#x2F;">Mini Reset CSS</a>
     </h2>
-    <div class="muted text-sm pb">
+    <blockquote>
+<p>Forked by <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/jgthms/minireset.css/blob/master/minireset.css">https://github.com/jgthms/minireset.css/blob/master/minireset.css</a></p>
+</blockquote>
+<pre data-lang="css" style="background-color:#2b303b;color:#c0c5ce;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#bf616a;">html </span><span>{
+</span><span>  font-family: &quot;</span><span style="color:#a3be8c;">SF Pro SC</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">SF Pro Text</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">SF Pro Icons</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">PingFang SC</span><span>&quot;,
+</span><span>    &quot;</span><span style="color:#a3be8c;">Helvetica Neue</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">Helvetica</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">Arial</span><span>&quot;, sans-serif;
+</span><span>}
+</span><span style="color:#bf616a;">body </span><span>{
+</span><span>  overflow-wrap: break-word;
+</span><span>  word-wrap: break-word;
+</span><span>  -ms-word-break: break-all;
+</span><span>  word-break: break-word;
+</span><span>  -ms-hyphens: auto;
+</span><span>  -moz-hyphens: auto;
+</span><span>  -webkit-hyphens: auto;
+</span><span>  hyphens: auto;
+</span><span>}
+</span><span style="color:#bf616a;">html</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">body</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">p</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">dt</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">dd</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">blockquote</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">figure</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">fieldset</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">legend</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">textarea</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">pre</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">iframe</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">hr</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h1</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h2</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h3</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h4</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h5</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h6 </span><span>{
+</span><span>  margin: </span><span style="color:#d08770;">0</span><span>;
+</span><span>  padding: </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">h1</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h2</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h3</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h4</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h5</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">h6 </span><span>{
+</span><span>  font-size: </span><span style="color:#d08770;">100%</span><span>;
+</span><span>  font-weight: normal;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">button</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">input</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">select </span><span>{
+</span><span>  margin: </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">html </span><span>{
+</span><span>  box-sizing: border-box;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">*</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">*</span><span style="color:#8fa1b3;">::</span><span style="color:#b48ead;">before,
+</span><span style="color:#bf616a;">*</span><span style="color:#8fa1b3;">::</span><span style="color:#b48ead;">after </span><span>{
+</span><span>  box-sizing: inherit;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">img</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">video </span><span>{
+</span><span>  height: auto;
+</span><span>  max-width: </span><span style="color:#d08770;">100%</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">iframe </span><span>{
+</span><span>  border: </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">table </span><span>{
+</span><span>  border-collapse: collapse;
+</span><span>  border-spacing: </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#bf616a;">td</span><span style="color:#b48ead;">,
+</span><span style="color:#bf616a;">th </span><span>{
+</span><span>  padding: </span><span style="color:#d08770;">0</span><span>;
+</span><span>}
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/mini-reset-css/">
         <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
       </a>
@@ -1042,17 +1137,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/mini-reset-css/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

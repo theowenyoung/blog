@@ -256,7 +256,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -780,6 +782,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1269,7 +1277,7 @@ li.inline {
               
                 <p>Have you written a
                   <a href="https://indieweb.org/responses">response</a>
-                  to this? Let me know the URL:
+                  to this? Let me know the article or tweet URL (Article or tweet content needs to include the URL of this article, learn more about webmention <a href="https://indieweb.org/webmention">here</a>).
                 </p>
               
             </div>
@@ -1280,6 +1288,11 @@ li.inline {
           </div>
           <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;alternatives&#x2F;"/>
         </form>
+        
+        
+        <p class="text-sm">
+          The response will be automatically collected by <a href="https://webmention.io/">webmention.io bot</a>, and another <a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">bot</a> will automatically post it here within 24 hours, I wrote <a href="/en/blog/indieweb/">an article</a> about how to achieve this. You can also send your response via <a href="mailto:owen@owenyoung.com?subject=%20Reply%3A%20Awesome%20Alternatives">mail</a> <code>owen@owenyoung.com</code>
+        </p>
         
         
         </div>

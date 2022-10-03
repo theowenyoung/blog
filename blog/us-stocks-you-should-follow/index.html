@@ -256,7 +256,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -780,6 +782,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1177,7 +1185,7 @@ li.inline {
             <div id="email-comment" class="muted text-sm">
               
                 <p>
-                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址：
+                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址或者推特链接（文章或推特内容需要包含这篇文章的地址，点击<a href="https://indieweb.org/Webmention">这里</a>了解 Webmention）：
                 </p>
               
             </div>
@@ -1188,6 +1196,14 @@ li.inline {
           </div>
           <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;us-stocks-you-should-follow&#x2F;"/>
         </form>
+        
+        
+        <p class="text-sm">
+          回应内容会被 <a href="https://webmention.io/">webmention.io 机器人</a>收集，另一位<a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">机器人</a>会在24小时内把回应展示到这里, 我记了<a href="/en/blog/indieweb/">一篇</a>如何实现这个的笔记，也欢迎通过<a href="mailto:owen@owenyoung.com?subject=%20%E5%9B%9E%E5%A4%8D%EF%BC%9A2021%E5%B9%B4%E7%BE%8E%E8%82%A1%E5%80%BC%E5%BE%97%E5%85%B3%E6%B3%A8%E7%9A%84%E4%BF%A1%E6%81%AF%E6%BA%90%E5%8C%85%E6%8B%AC%E6%8E%A8%E7%89%B9%EF%BC%8C%E7%BD%91%E7%AB%99%EF%BC%8CReddit%E5%B0%8F%E7%BB%84">邮件
+          </a>
+          <code>owen@owenyoung.com</code>
+          和我讨论。
+        </p>
         
         
         </div>

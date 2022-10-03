@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,11 +1036,41 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;how-to-check-if-there-are-uncommited-changes-in-github&#x2F;">How to check if there are uncommited changes in Github Actions?</a>
     </h2>
-    <div class="muted text-sm pb">
+    <pre data-lang="yaml" style="background-color:#2b303b;color:#c0c5ce;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Github Actions check if there are uncommited changes
+</span><span style="color:#d08770;">on</span><span>:
+</span><span>  </span><span style="color:#bf616a;">repository_dispatch</span><span>:
+</span><span>  </span><span style="color:#bf616a;">workflow_dispatch</span><span>:
+</span><span>  </span><span style="color:#bf616a;">push</span><span>:
+</span><span>    </span><span style="color:#bf616a;">branches</span><span>:
+</span><span>      - </span><span style="color:#a3be8c;">main
+</span><span style="color:#bf616a;">jobs</span><span>:
+</span><span>  </span><span style="color:#bf616a;">test</span><span>:
+</span><span>    </span><span style="color:#bf616a;">runs-on</span><span>: </span><span style="color:#a3be8c;">ubuntu-latest
+</span><span>    </span><span style="color:#bf616a;">steps</span><span>:
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">Check out repository code
+</span><span>        </span><span style="color:#bf616a;">uses</span><span>: </span><span style="color:#a3be8c;">actions/checkout@v2
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">touch index.html
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">chown
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">sudo chown -R $USER:$USER ./
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">git config
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git config --global user.name &quot;github-actions[bot]&quot; &amp;&amp; git config --global user.email github-actions-bot@users.noreply.github.com
+</span><span>      - </span><span style="color:#bf616a;">name</span><span>: </span><span style="color:#a3be8c;">git add
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git add .
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git status
+</span><span>      - </span><span style="color:#bf616a;">id</span><span>: </span><span style="color:#a3be8c;">isChanged
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">git diff-index --cached --quiet HEAD || echo &#39;::set-output name=changed::true&#39;
+</span><span>      - </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">echo ${{ steps.isChanged.outputs.changed }}
+</span><span>      - </span><span style="color:#bf616a;">if</span><span>: </span><span style="color:#a3be8c;">${{ steps.isChanged.outputs.changed == &#39;true&#39; }}
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">echo &#39;yes, changed&#39;
+</span><span>      - </span><span style="color:#bf616a;">if</span><span>: </span><span style="color:#a3be8c;">${{ steps.isChanged.outputs.changed != &#39;true&#39; }}
+</span><span>        </span><span style="color:#bf616a;">run</span><span>: </span><span style="color:#a3be8c;">echo &#39;no any change&#39;
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/how-to-check-if-there-are-uncommited-changes-in-github/">
         <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
       </a>
@@ -1042,17 +1080,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/how-to-check-if-there-are-uncommited-changes-in-github/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

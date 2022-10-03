@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,11 +1036,23 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;rclone-setup&#x2F;">Rclone Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">curl</span><span> https://rclone.org/install.sh | </span><span style="color:#bf616a;">sudo</span><span> bash
+</span></code></pre>
+<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://rclone.org/drive/">here</a></p>
+<h2 id="transfer">Transfer<a class="zola-anchor" href="#transfer" aria-label="Anchor link for: transfer">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cat ~</span><span>/.config/rclone
+</span></code></pre>
+<p>Copy that to another machine.</p>
+<h2 id="web-ui">Web UI<a class="zola-anchor" href="#web-ui" aria-label="Anchor link for: web-ui">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">rclone</span><span> rcd</span><span style="color:#bf616a;"> --rc-web-gui --rc-user</span><span>=test</span><span style="color:#bf616a;"> --rc-pass</span><span>=test</span><span style="color:#bf616a;"> --rc-web-gui-update --stats</span><span>=24h</span><span style="color:#bf616a;"> --rc-enable-metrics --rc-web-gui-no-open-browser
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/rclone-setup/">
         <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
       </a>
@@ -1042,17 +1062,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/rclone-setup/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1061,11 +1077,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;postgres-setup-for-debian&#x2F;">Postgres Setup for Debian</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> sh</span><span style="color:#bf616a;"> -c </span><span>&#39;</span><span style="color:#a3be8c;">echo &quot;deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main&quot; &gt; /etc/apt/sources.list.d/pgdg.list</span><span>&#39;
+</span><span style="color:#bf616a;">wget --quiet -O</span><span> - https://www.postgresql.org/media/keys/ACCC4CF8.asc | </span><span style="color:#bf616a;">sudo</span><span> apt-key add -
+</span><span style="color:#bf616a;">sudo</span><span> apt-get update
+</span><span style="color:#bf616a;">sudo</span><span> apt-get</span><span style="color:#bf616a;"> -y</span><span> install postgresql
+</span></code></pre>
+<h3 id="optional">Optional<a class="zola-anchor" href="#optional" aria-label="Anchor link for: optional">🔗</a></h3>
+<p>Install postgis</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> apt</span><span style="color:#bf616a;"> -y</span><span> install postgis
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/">
         <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
       </a>
@@ -1075,17 +1102,13 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1094,11 +1117,36 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;open-bbr-for-debian&#x2F;">Open BBR for Debian</a>
     </h2>
-    <div class="muted text-sm pb">
+    <h2 id="steps">Steps<a class="zola-anchor" href="#steps" aria-label="Anchor link for: steps">🔗</a></h2>
+<ol>
+<li>Open the following configuration file to enable enable TCP BBR.</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">vi</span><span> /etc/sysctl.conf
+</span></code></pre>
+<ol start="2">
+<li>At the end of the config file, add the following lines.</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">net.core.default_qdisc</span><span>=</span><span style="color:#a3be8c;">fq
+</span><span style="color:#bf616a;">net.ipv4.tcp_congestion_control</span><span>=</span><span style="color:#a3be8c;">bbr
+</span></code></pre>
+<ol start="3">
+<li>reload</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sysctl -p
+</span></code></pre>
+<p>Now, Verify if BBR is enabled in your system,</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sysctl</span><span> net.ipv4.tcp_congestion_control
+</span></code></pre>
+<p>Output:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">root@vps:~#</span><span> sysctl net.ipv4.tcp_congestion_control
+</span><span style="color:#bf616a;">net.ipv4.tcp_congestion_control</span><span> = bbr
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2021-01-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/">
         <time class="dt-published published" datetime="2021-01-26">2021-01-26</time>
       </a>
@@ -1108,17 +1156,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

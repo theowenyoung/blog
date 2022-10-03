@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,13 +1036,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;nodejs-monorepo&#x2F;">Nodejs Monorepo</a>
     </h2>
     <div class="p-summary entry-summary"><p>Use changesets as monorepo mananger.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/nodejs-monorepo/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    4
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/nodejs-monorepo/">
         <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
       </a>
@@ -1044,17 +1061,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/nodejs-monorepo/">
-        Reading Time: 
-  
-    4
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

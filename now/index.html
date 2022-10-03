@@ -15,6 +15,9 @@
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
     <meta name="description" content="
   
+    这是一个 now 页面, 在关于页面 了解更多。
+
+  
 "/>
     <meta name="keywords" content="注意力, 读书, 工具分享, 纯文本, 英语学习"/>
     <meta name="author" content="Owen Young"/>
@@ -43,6 +46,9 @@
   Now - Owen的博客
 "/>
     <meta property="og:description" content="
+  
+    这是一个 now 页面, 在关于页面 了解更多。
+
   
 "/>
     <meta property="og:url" content="
@@ -250,7 +256,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -774,6 +782,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1073,7 +1087,10 @@ li.inline {
 <div>
   <div class="main">
     <div class="display-none p-summary">
-      
+      <blockquote>
+<p>这是一个 <a rel="noopener nofollow noreferrer" target="_blank" href="https://nownownow.com/about">now</a> 页面, 在<a href="https://www.owenyoung.com/about/">关于页面</a> 了解更多。</p>
+</blockquote>
+
     </div>
     <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;now&#x2F;">Permanent Link</a>
     
@@ -1137,7 +1154,7 @@ li.inline {
       <blockquote>
 <p>这是一个 <a rel="noopener nofollow noreferrer" target="_blank" href="https://nownownow.com/about">now</a> 页面, 在<a href="https://www.owenyoung.com/about/">关于页面</a> 了解更多。</p>
 </blockquote>
-<h2 id="jin-xing-zhong">进行中</h2>
+<span id="continue-reading"></span><h2 id="jin-xing-zhong">进行中</h2>
 <p>开了一个<a rel="noopener nofollow noreferrer" target="_blank" href="https://digests.owenyoung.com/">Newsletter</a>，初步想法是每隔一段时间整理一些我觉得不能错过的东西。但是只有我觉得必须联系你的时候，我才会给你发一封邮件。</p>
 <p>也就是说在邮件通讯里我只会发我觉得不能错过的东西，其他大多数“狗屎”，我只会让它们留在我的博客里，这可以让你选择主动阅读，而不是被迫听我的“狗屎”。我主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，反直觉，深度工作等方面。</p>
 <p>事实证明，截止目前（距离开通这个邮件通讯已经半年了），我还没发现有什么必须让别人知道的东西，所以还没发布过东西。但是我每天都会把我看到的一些有意思的东西发在我博客里的<a href="/categories/journal/">日记栏目</a>里</p>
@@ -1218,7 +1235,7 @@ Significantly improve English level</li>
             <div id="email-comment" class="muted text-sm">
               
                 <p>
-                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址：
+                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址或者推特链接（文章或推特内容需要包含这篇文章的地址，点击<a href="https://indieweb.org/Webmention">这里</a>了解 Webmention）：
                 </p>
               
             </div>
@@ -1229,6 +1246,14 @@ Significantly improve English level</li>
           </div>
           <input type="hidden" name="target" value="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;now&#x2F;"/>
         </form>
+        
+        
+        <p class="text-sm">
+          回应内容会被 <a href="https://webmention.io/">webmention.io 机器人</a>收集，另一位<a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">机器人</a>会在24小时内把回应展示到这里, 我记了<a href="/en/blog/indieweb/">一篇</a>如何实现这个的笔记，也欢迎通过<a href="mailto:owen@owenyoung.com?subject=%20%E5%9B%9E%E5%A4%8D%EF%BC%9ANow">邮件
+          </a>
+          <code>owen@owenyoung.com</code>
+          和我讨论。
+        </p>
         
         
         </div>

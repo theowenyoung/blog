@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,11 +1036,91 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;debian-server-setup&#x2F;">Debian Server Setup</a>
     </h2>
-    <div class="muted text-sm pb">
+    <blockquote>
+<p>For linux common commands, see <a href="https://www.owenyoung.com/dev-tips/#linux-common-commands">开发技巧收藏</a></p>
+</blockquote>
+<ol>
+<li>
+<p>Update Source</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">apt</span><span> update</span><span style="color:#bf616a;"> --yes </span><span>&amp;&amp; </span><span style="color:#bf616a;">apt</span><span> upgrade</span><span style="color:#bf616a;"> --yes
+</span></code></pre>
+</li>
+<li>
+<p>Install sudo package</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">apt</span><span> install</span><span style="color:#bf616a;"> -y</span><span> sudo
+</span></code></pre>
+</li>
+<li>
+<p>Open BBR: <a href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/">Open BBR for Debian</a></p>
+</li>
+<li>
+<p>Use ssh key login instead of password, for more details see <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server">How To Configure SSH Key-Based Authentication on a Linux Server</a></p>
+</li>
+<li>
+<p>In your local machine:</p>
+</li>
+</ol>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">ssh-copy-id -i ~</span><span>/.ssh/id_rsa.pub username@remote_host
+</span></code></pre>
+<blockquote>
+<p>This will copy your id_rsa.pub to remote machine <code>~/.ssh/authorized_keys</code></p>
+</blockquote>
+<ol start="3">
+<li>
+<p>Change the default password</p>
+<ol>
+<li><code>passwd</code></li>
+</ol>
+</li>
+<li>
+<p>Create an admin group</p>
+<ol>
+<li><code>groupadd admin</code></li>
+<li>Give admin group root access, and no password sudo
+<ol>
+<li>Backup sudo files <code>cp /etc/sudoers /root/sudoers.bak</code></li>
+<li>Edit the <code>/etc/sudoers</code> file by typing the command: <code>visudo</code></li>
+<li>Add <code>%admin ALL=(ALL:ALL) NOPASSWD:ALL</code> after <code>sudo</code> group</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Create a admin group user</p>
+<ol>
+<li><code>useradd username -g admin</code></li>
+</ol>
+</li>
+<li>
+<p>Use ssh key login instead of password for normal user</p>
+<ol>
+<li><code>ssh-copy-id -i ~/.ssh/id_rsa.pub username@remote_host</code></li>
+</ol>
+</li>
+<li>
+<p>Login with new normal user <code>ssh username@ip</code></p>
+</li>
+<li>
+<p>Install common utils:</p>
+<ol>
+<li><code>sudo apt install build-essential software-properties-common curl vim unzip git pkg-config libssl-dev --yes</code></li>
+</ol>
+</li>
+<li>
+<p>Create <code>/data</code> for store data files with <code>777</code> permissions, avoid to use <code>/home</code> directory</p>
+</li>
+</ol>
+<p>You might want to read also:</p>
+<ul>
+<li><a href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/">Shadowsocks Rust Setup for Debian</a></li>
+<li><a href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/">Caddy2 Setup for Debian</a></li>
+</ul>
+
+    <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/debian-server-setup/">
         <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
       </a>
@@ -1042,17 +1130,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/debian-server-setup/">
-        Reading Time: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

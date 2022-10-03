@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,11 +1036,19 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;install-php8-on-centos7&#x2F;">Install PHP 8.0 On CentOS 7 &#x2F; RHEL 7</a>
     </h2>
-    <div class="muted text-sm pb">
+    <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span>
+</span><span style="color:#bf616a;">yum</span><span> install</span><span style="color:#bf616a;"> -y</span><span> https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+</span><span>
+</span><span style="color:#bf616a;">yum</span><span> install</span><span style="color:#bf616a;"> -y</span><span> https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+</span><span style="color:#bf616a;">yum</span><span> install</span><span style="color:#bf616a;"> -y --enablerepo</span><span>=remi-php80 php php-cli
+</span><span style="color:#bf616a;">php -v
+</span></code></pre>
+
+    <div class="muted text-sm">
       <a title="2020-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/install-php8-on-centos7/">
         <time class="dt-published published" datetime="2020-03-26">2020-03-26</time>
       </a>
@@ -1042,17 +1058,12 @@ li.inline {
           Dev
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/install-php8-on-centos7/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

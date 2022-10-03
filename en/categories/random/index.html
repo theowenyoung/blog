@@ -246,7 +246,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -770,6 +772,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1028,13 +1036,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;">Simple bash to generate template markdown file for the initial blog post</a>
     </h2>
     <div class="p-summary entry-summary"><p>When you’re using markdown to write your blog, you can use the following template to generate a new markdown file, you may use some template like this to generate a new markdown file:</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    3
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-07-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/">
         <time class="dt-published published" datetime="2022-07-25T10:50:28+08:00">2022-07-25</time>
       </a>
@@ -1044,17 +1061,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/">
-        Reading Time: 
-  
-    3
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1063,7 +1076,7 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">Adding search to zola blog with meilisearch deployed on Mogenius</a>
     </h2>
@@ -1078,7 +1091,16 @@ li.inline {
 </ul>
 <p>I think it’s enough for my blog’s search index.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    7
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-07-17" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/">
         <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022-07-17</time>
       </a>
@@ -1088,17 +1110,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/">
-        Reading Time: 
-  
-    7
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1107,13 +1125,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a>
     </h2>
     <div class="p-summary entry-summary"><p>Since I saw the concept of <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/IndieWeb">IndieWeb</a> last year, I’ve been wanting to support it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my Zola blog</a>. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/indieweb/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    11
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-06-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/indieweb/">
         <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>
       </a>
@@ -1123,17 +1150,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/indieweb/">
-        Reading Time: 
-  
-    11
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1142,14 +1165,23 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;why-foreigners-envy-china&#x2F;">Why foreigners envy China?</a>
     </h2>
     <div class="p-summary entry-summary"><p>It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=2DH4v6FnbvM">This Bill Maher’s video </a> clearly shows us that even though the host is so smart and cares so much about freedom of speech, there is no hiding his envy for all that the Chinese government has accomplished through dictatorship.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    1
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-04-30" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/">
         <time class="dt-published published" datetime="2022-04-30T19:17:39+08:00">2022-04-30</time>
       </a>
@@ -1159,17 +1191,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1178,7 +1206,7 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;how-live-happy-life&#x2F;">How to Live a Happy Life</a>
     </h2>
@@ -1196,7 +1224,16 @@ li.inline {
 <li>Track your happiness, then do more of what you like and less of what you don’t.</li>
 </ol>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/how-live-happy-life/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    2
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-04-04" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/how-live-happy-life/">
         <time class="dt-published published" datetime="2022-04-04">2022-04-04</time>
       </a>
@@ -1206,17 +1243,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/how-live-happy-life/">
-        Reading Time: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1225,13 +1258,22 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Wiki Links to Markdown Links for VSCode</a>
     </h2>
     <div class="p-summary entry-summary"><p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    2
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-03-27" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/">
         <time class="dt-published published" datetime="2022-03-27">2022-03-27</time>
       </a>
@@ -1241,17 +1283,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/">
-        Reading Time: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1260,7 +1298,7 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;thoughts&#x2F;">Tweets</a>
     </h2>
@@ -1271,7 +1309,16 @@ li.inline {
 <p>As a result of decades of hate education by the Chinese government, it seems that most Chinese people have a paranoia of persecution. They think that America want to hurt China, Japan want to hurt China, India want hurt China and so on. And they can not distinguish the government and the people. In particular, if you are a journalist or you are filming something, you are likely to be suspected by many people of being a government spy. Western journalists here have as bad a reputation as Western governments. – 2022.05.16</p>
 </blockquote>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/thoughts/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    1
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-03-10" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/thoughts/">
         <time class="dt-published published" datetime="2022-03-10">2022-03-10</time>
       </a>
@@ -1281,17 +1328,13 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/thoughts/">
-        Reading Time: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+              <hr class="w-1__2" />
+            
           
             
   <article class="h-entry hentry">
@@ -1300,11 +1343,37 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;gatsby-timeline-theme&#x2F;">A new Gatsby theme [Timeline] - Show your all posts, tweets, instagram posts into one</a>
     </h2>
-    <div class="muted text-sm pb">
+    <p>Don’t you think there are too many different personal profile for us? Like twitter, instagram, facebook, blog, etc, So do I, I suppose there is an elegant site to show all my creative work, that’s the new gatsby theme <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/gatsby-theme-timeline">Timeline</a>, a <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gatsbyjs.com/">Gatsby</a> theme, you can use it to show your all posts, tweets, instagram posts etc into one blog. In my opinion, this is a real personal home.</p>
+<p>Checkout my blog: https://blog.owenyoung.com/</p>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/gatsby-theme-timeline">Source Repo</a></p>
+<p><a rel="noopener nofollow noreferrer" target="_blank" href="https://gatsby-theme-timeline.owenyoung.com/">Live Demo</a></p>
+<p><img src="https://camo.githubusercontent.com/b3a1a92a41a81707b6690eb4710194e5d6e79895082e329d9d3bfe35944c0207/68747470733a2f2f692e696d6775722e636f6d2f367949544934452e706e67" alt="Screen" /></p>
+<p>Here are the features for now:</p>
+<ul>
+<li>Support markdown, tweet, instagram posts, youtube videos, hacker news, reddit post</li>
+<li>Support i18n by <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gatsbyjs.com/plugins/gatsby-theme-i18n/">gatsby-theme-i18n</a>, you can choose your own <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/gatsbyjs/themes/tree/master/packages">i18n library</a></li>
+<li>Support comments platform <a rel="noopener nofollow noreferrer" target="_blank" href="https://disqus.com/">disqus</a> or <a rel="noopener nofollow noreferrer" target="_blank" href="https://utteranc.es/">utterances</a></li>
+<li>Support Tags</li>
+<li>Pagination, even tag pages support pagination</li>
+<li>SEO Optimization</li>
+</ul>
+<p>Just start a new blog for yourself:</p>
+<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">gatsby</span><span> new my-themed-blog https://github.com/theowenyoung/gatsby-starter-timeline
+</span></code></pre>
+<blockquote>
+<p>For more about installation please see <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/gatsby-theme-timeline/tree/main/packages/gatsby-theme-timeline#installation">here</a></p>
+</blockquote>
+<h2 id="note">Note<a class="zola-anchor" href="#note" aria-label="Anchor link for: note">🔗</a></h2>
+<p>In the starter demo, I use two gatsby plugins <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/G100g/gatsby-source-twitter">gatsby-source-twitter</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/gatsby-source-instagram">gatsby-source-instagram</a> as the blog’s sources. But in <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com">my blog</a>, I use <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow">Actionsflow</a> to get my tweets, instagram data, sync the JSON file to <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/story">my content source repository</a> ((Why Actionsflow? For more stably, and I can store all my creative work into one)), and <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/theowenyoung.github.io">site repository</a> use plugin <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/gatsby-source-git">gatsby-source-git</a> to sync those data, and my markdown posts, for more tech stack, you can see <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/en/posts/how-i-built-my-blog/">How I Built my Blog?</a></p>
+<blockquote>
+<p>Disclaimer: I made the <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/actionsflow/actionsflow">Actionsflow</a> :)</p>
+</blockquote>
+
+    <div class="muted text-sm">
       <a title="2021-01-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/gatsby-timeline-theme/">
         <time class="dt-published published" datetime="2021-01-29">2021-01-29</time>
       </a>
@@ -1314,17 +1383,12 @@ li.inline {
           Random
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/en/blog/gatsby-timeline-theme/">
-        Reading Time: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+            
+            
           
           
     <div class="pagination py">

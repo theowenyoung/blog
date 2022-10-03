@@ -247,7 +247,9 @@ h3 {
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
-h4,h5,h6 { 
+h4,
+h5,
+h6 {
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
@@ -771,6 +773,12 @@ li.inline {
 .text-sm p {
   font-size: 0.9rem;
 }
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
 
 .pb {
   padding-bottom: 1.4rem;
@@ -1030,17 +1038,17 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-10-03&#x2F;">2022.10.03: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://esrh.me/posts/2021-12-18-switching-to-meow.html">切换到 emacs 的 meow 方案</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/China/comments/xuk3du/chinas_double_reduction_policy_created_a_large/">中国的双减政策创造了一个巨大的地下课后培训市场</a> - 一位外教的评论</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.theatlantic.com/technology/archive/2017/03/aristotle-computer/518697/">亚里士多德对现代计算机的影响</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-10-03" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-10-03/">
         <time class="dt-published published" datetime="2022-10-03T10:12:41+08:00">2022-10-03</time>
       </a>
@@ -1050,17 +1058,13 @@ li.inline {
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-10-03/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1069,19 +1073,19 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-10-02&#x2F;">2022.10.02: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://radar.cloudflare.com">Clouflare的雷达服务</a> - Cloudfalre利用自己的数据优势，推出了全球网络概况的雷达服务。其中全球域名排行可以替代倒闭的Alexa排名服务，而且更科学，因为它是基于Cloudflare的全球dns 1.1.1.1 的流量来排名的。</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://edition.cnn.com/2020/11/28/asia/japan-suicide-women-covid-dst-intl-hnk/index.html">在日本，上个月死于自杀的人数比2020年全年死于Covid的人数还要多，其中女性受到的影响最大</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://restofworld.org/2022/chinese-same-sex-couples-married-zoom-utah/">来自中国的LGBTQ+通过Zoom视频连线美国的犹他州登记结婚</a> - 美国犹他州允许非公民登记结婚，新冠疫情以来允许在网上登记结婚。</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://books.google.com/talktobooks/">Google推出的AI： 与书籍对话</a> - 输入一个问题，ai从谷歌成千上万本书里给出最相关的段落。</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.newyorker.com/tech/annals-of-technology/the-thorny-problem-of-keeping-the-internets-time">互联网“时间之父”- David Mills</a> -  NTP协议的发明者的采访</li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://radar.cloudflare.com">Clouflare 的雷达服务</a> - Cloudfalre 利用自己的数据优势，推出了全球网络概况的雷达服务。其中全球域名排行可以替代倒闭的 Alexa 排名服务，而且更科学，因为它是基于 Cloudflare 的全球 dns 1.1.1.1 的流量来排名的。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://edition.cnn.com/2020/11/28/asia/japan-suicide-women-covid-dst-intl-hnk/index.html">在日本，上个月死于自杀的人数比 2020 年全年死于 Covid 的人数还要多，其中女性受到的影响最大</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://restofworld.org/2022/chinese-same-sex-couples-married-zoom-utah/">来自中国的 LGBTQ+通过 Zoom 视频连线美国的犹他州登记结婚</a> - 美国犹他州允许非公民登记结婚，新冠疫情以来允许在网上登记结婚。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://books.google.com/talktobooks/">Google 推出的 AI： 与书籍对话</a> - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的段落。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.newyorker.com/tech/annals-of-technology/the-thorny-problem-of-keeping-the-internets-time">互联网“时间之父”- David Mills</a> - NTP 协议的发明者的采访</li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-10-02" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-10-02/">
         <time class="dt-published published" datetime="2022-10-02T01:03:32+08:00">2022-10-02</time>
       </a>
@@ -1091,17 +1095,13 @@ li.inline {
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-10-02/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1110,19 +1110,19 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-30&#x2F;">2022.09.30: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://pldb.com/lists/originCommunities.html">编程语言的起源</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.nytimes.com/interactive/2022/09/28/world/europe/russian-soldiers-phone-calls-ukraine.html?smtyp=cur&amp;smid=tw-nytimes">纽约时报获取的俄罗士兵的通话记录</a> -
 记录显示了俄罗斯士兵的抱怨，以及承认了杀人和抢劫的事实。纽约时报的专题网页经常做的特别的用心。</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://rutar.org/writing/how-to-build-a-personal-webpage-from-scratch/">如何从头开始做一个网页</a> -
 这篇文章写的真是深入浅出。</li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-30" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-30/">
         <time class="dt-published published" datetime="2022-09-30T00:40:23+08:00">2022-09-30</time>
       </a>
@@ -1132,17 +1132,13 @@ li.inline {
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-30/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1151,13 +1147,13 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-29&#x2F;">2022.09.29: 各种链接</a>
     </h2>
     <div class="p-summary entry-summary"><ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/DoubanFeministGroup/comments/uyldls/%E8%A1%A8%E9%9D%A2%E6%98%AF%E6%94%AF%E6%8C%81%E5%A6%93%E5%A5%B3%E5%AE%9E%E9%99%85%E4%B8%8A%E5%88%99%E6%98%AF%E6%94%AF%E6%8C%81%E5%AB%96%E5%AE%A2/">NSFW - 表面是支持性工作者，实则是支持嫖客</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/DoubanFeministGroup/comments/wzw1de/%E5%8C%96%E5%A6%86%E4%B8%8D%E6%98%AF%E8%AE%A9%E5%A5%B3%E4%BA%BA%E6%9B%B4%E6%9C%89power%E8%80%8C%E6%98%AF%E8%AE%A9%E5%A5%B3%E4%BA%BA%E6%9B%B4%E5%8A%A0%E7%9A%84powerless/">化妆不是让女人更有power，而是让女人更加的Powerless</a>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/DoubanFeministGroup/comments/wzw1de/%E5%8C%96%E5%A6%86%E4%B8%8D%E6%98%AF%E8%AE%A9%E5%A5%B3%E4%BA%BA%E6%9B%B4%E6%9C%89power%E8%80%8C%E6%98%AF%E8%AE%A9%E5%A5%B3%E4%BA%BA%E6%9B%B4%E5%8A%A0%E7%9A%84powerless/">化妆不是让女人更有 power，而是让女人更加的 Powerless</a>
 <ul>
 <li>你的鱼尾纹，法令纹，颈纹，老年斑……等本属于你身体的一部分，全都是羞耻的，需要修饰的，相当于温和的指着女人骂，有这些缺陷的脸，居然还敢出来，还不赶紧修饰一下，别丢人现眼了！</li>
 <li>这种缺陷，是专属于女人的。一样的机理，一样的人体自然变化 ，在女人身上，是缺陷，需要修饰，到了男人身上，则是一种天然的存在</li>
@@ -1167,12 +1163,21 @@ li.inline {
 </ul>
 <blockquote>
 <p>父权制是怎么产生的?</p>
-<p>回答：在节育、抗生素和新生儿重症监护病房发明之前，大多数女性的一辈子都消耗在怀孕、分娩、死于分娩、和生一堆孩子上，由于婴儿死亡率高，然后又没有节育措施，所以16-40岁的女性人口就被排除在发展自我之外了，否则，她们在领导/权力分配上会有很大的发言权。
+<p>回答：在节育、抗生素和新生儿重症监护病房发明之前，大多数女性的一辈子都消耗在怀孕、分娩、死于分娩、和生一堆孩子上，由于婴儿死亡率高，然后又没有节育措施，所以 16-40 岁的女性人口就被排除在发展自我之外了，否则，她们在领导/权力分配上会有很大的发言权。
 与此同时，几千年来，所有的其他男人，由于不需要承担这项令人精疲力尽的致命工作，所以他们就利用所有的空闲时间，到处去玩战争和国王的游戏，这时，一个有利于他们的社会结构 – “父权制”, 就被创造出来了。 by
-<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/AskFeminists/comments/t9hxf7/comment/hzuhg82/?utm_source=share&amp;utm_medium=web2x&amp;context=3">reddit网友</a></p>
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/AskFeminists/comments/t9hxf7/comment/hzuhg82/?utm_source=share&amp;utm_medium=web2x&amp;context=3">reddit 网友</a></p>
 </blockquote>
 </div>
-    <div class="muted text-sm pb">
+      <p><a rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-29/#continue-reading">
+       &rarr;&nbsp; 继续阅读需要: 
+  
+    2
+  
+ min
+      </a></p>
+      
+  
+    <div class="muted text-sm">
       <a title="2022-09-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-29/">
         <time class="dt-published published" datetime="2022-09-29T02:06:26+08:00">2022-09-29</time>
       </a>
@@ -1182,17 +1187,13 @@ li.inline {
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-29/">
-        全文阅读: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1201,21 +1202,21 @@ li.inline {
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-27&#x2F;">2022.09.27: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://newrepublic.com/article/167857/axios-smart-brevity-book-hell-world">地狱的样子就是每个人都像Axios那样写作</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://old.reddit.com/r/China/comments/xooxud/a_chinese_leeks_response_to_the_ccp_sickle_in/">我们是最后一代的5种语言</a></li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://newrepublic.com/article/167857/axios-smart-brevity-book-hell-world">地狱的样子就是每个人都像 Axios 那样写作</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://old.reddit.com/r/China/comments/xooxud/a_chinese_leeks_response_to_the_ccp_sickle_in/">我们是最后一代的 5 种语言</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://datagubbe.se/famous/">这些伟大的计算机先驱们并不像他们应得的那样出名</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://tldrussia.substack.com/p/why-arent-russians-protesting-more">为什么俄罗斯人不更多的抗议？</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.cloudflare.com/configuration-rules/">cloudflare推出了配置规则</a> -
-是以前的Page Rules的升级版，更多维度的操作，相当于ifttt -&gt;
-zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开始做eSim卡了。我自己也用了很多Cloudflare的服务。比如现在我把所有的域名都迁移到cloudflare了，我的很多网站也用了他的Pages，以及他的s3存储等等.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.cloudflare.com/configuration-rules/">cloudflare 推出了配置规则</a> -
+是以前的 Page Rules 的升级版，更多维度的操作，相当于 ifttt -&gt;
+zapier 的转变。cloudfalre 涉及的领域真是越来越多了，甚至还开始做 eSim 卡了。我自己也用了很多 Cloudflare 的服务。比如现在我把所有的域名都迁移到 cloudflare 了，我的很多网站也用了他的 Pages，以及他的 s3 存储等等.</li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-27" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-27/">
         <time class="dt-published published" datetime="2022-09-27T10:23:11+08:00">2022-09-27</time>
       </a>
@@ -1225,17 +1226,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-27/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1244,19 +1241,19 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-26&#x2F;">2022.09.26: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.chinese-future.org/articles/9bebalsph4dz3eleflcmpcwknf7brn">中国和西方语境下的左右之分</a>
 <ul>
-<li>中国的左右则是相对于国家政权而言。1957年，毛泽东提出“百花齐放、百家争鸣”，引来知识分子对政权潮水般的批评，次年统统被打成“右派”，而实际上他们和右派立场未必有什么关系。“右派”的意思是这个政权本来是左的，所以批评政权就成了“右”。当然，政权追求的许多政策本身为左，如“大跃进”、“人民公社”，反之则自然为右，如包产到户。但在一个左翼极权国家定义左右的根本标准是对待政权的态度，而不是具体的主张。无论是毛泽东的既反“右”也反“左”（“左倾机会主义”），还是邓小平的“中国要警惕右，但主要是防止‘左’”，都体现了极权统治无所谓左右。</li>
+<li>中国的左右则是相对于国家政权而言。1957 年，毛泽东提出“百花齐放、百家争鸣”，引来知识分子对政权潮水般的批评，次年统统被打成“右派”，而实际上他们和右派立场未必有什么关系。“右派”的意思是这个政权本来是左的，所以批评政权就成了“右”。当然，政权追求的许多政策本身为左，如“大跃进”、“人民公社”，反之则自然为右，如包产到户。但在一个左翼极权国家定义左右的根本标准是对待政权的态度，而不是具体的主张。无论是毛泽东的既反“右”也反“左”（“左倾机会主义”），还是邓小平的“中国要警惕右，但主要是防止‘左’”，都体现了极权统治无所谓左右。</li>
 </ul>
 </li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-26/">
         <time class="dt-published published" datetime="2022-09-26T19:29:54+08:00">2022-09-26</time>
       </a>
@@ -1266,17 +1263,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-26/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1285,24 +1278,24 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-25&#x2F;">2022.09.25: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://acko.net/blog/get-in-zoomer-we-re-saving-react/">react的真正问题</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://adumb-codes.github.io/">用AI计算出来的最佳键盘布局</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://thisxdoesnotexist.com/">这个XXX不存在</a> -
-包含各种ai生成的不存在的东西，我会在需要实名的网站使用里面ai生成真人作为头像照片，比如facebook</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://macos1.vercel.app/">macos的UI网页版</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/roapi/roapi">把sql，表格等数据源转化为json api rust roapi</a></li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://acko.net/blog/get-in-zoomer-we-re-saving-react/">react 的真正问题</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://adumb-codes.github.io/">用 AI 计算出来的最佳键盘布局</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://thisxdoesnotexist.com/">这个 XXX 不存在</a> -
+包含各种 ai 生成的不存在的东西，我会在需要实名的网站使用里面 ai 生成真人作为头像照片，比如 facebook</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://macos1.vercel.app/">macos 的 UI 网页版</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/roapi/roapi">把 sql，表格等数据源转化为 json api rust roapi</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://edwest.substack.com/p/the-rational-case-for-monarchy">君主制的合理理由</a> -
 作者认为现实中平均而言君主制国家的人生活更幸福，现代社会中的最恶劣的暴行基本都是非君主制国家犯下的。</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/adoolotkeldieva/status/1571387946955046912">塔吉克斯坦和吉尔吉斯斯坦发生了什么？</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=tE0-ki-CBfs">德国有个村，能源自给</a> - 靠风能和太阳能</li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-25/">
         <time class="dt-published published" datetime="2022-09-25T03:41:37+08:00">2022-09-25</time>
       </a>
@@ -1312,17 +1305,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-25/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1331,17 +1320,17 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-24&#x2F;">2022.09.24: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.axios.com/2022/09/23/ukrainian-mp-china-not-our-friend">乌克兰国会议员：“中国不是我们的朋友”</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://qwik.builder.io/">Qwik</a> - 类似react，但是用更懒的加载，更小的运行时</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://frontendmastery.com/posts/the-new-wave-of-javascript-web-frameworks/">新一波的Javascript框架</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://qwik.builder.io/">Qwik</a> - 类似 react，但是用更懒的加载，更小的运行时</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://frontendmastery.com/posts/the-new-wave-of-javascript-web-frameworks/">新一波的 Javascript 框架</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-24" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-24/">
         <time class="dt-published published" datetime="2022-09-24T20:29:05+08:00">2022-09-24</time>
       </a>
@@ -1351,17 +1340,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-24/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1370,15 +1355,15 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-23&#x2F;">2022.09.23: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim">你最具有生产力的VIM配置是什么？</a> </li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim">你最具有生产力的 VIM 配置是什么？</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-23" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-23/">
         <time class="dt-published published" datetime="2022-09-23T16:39:15+08:00">2022-09-23</time>
       </a>
@@ -1388,17 +1373,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-23/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1407,16 +1388,16 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-21&#x2F;">2022.09.21: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://8thlight.com/blog/makefile-make-developing-easier/">Makefile教程</a></li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://8thlight.com/blog/makefile-make-developing-easier/">Makefile 教程</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://zh.m.wikipedia.org/zh-hans/%E6%96%AF%E5%A4%9A%E8%91%9B%E4%B8%BB%E7%BE%A9">斯多葛主义</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-21" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-21/">
         <time class="dt-published published" datetime="2022-09-21T15:57:44+08:00">2022-09-21</time>
       </a>
@@ -1426,17 +1407,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-21/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1445,15 +1422,15 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-19&#x2F;">2022.09.19: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.zenrows.com/blog/bypass-cloudflare#conclusion">如何绕过Cloudflare的机器人检测</a></li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.zenrows.com/blog/bypass-cloudflare#conclusion">如何绕过 Cloudflare 的机器人检测</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-19" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-19/">
         <time class="dt-published published" datetime="2022-09-19T03:26:31+08:00">2022-09-19</time>
       </a>
@@ -1463,17 +1440,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-19/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1482,16 +1455,16 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-14&#x2F;">2022.09.14: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.destroyallsoftware.com/compendium/network-protocols?share_key=97d3ba4c24d21147">网络协议概述，从HTTP到电缆</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.core77.com/posts/116849/Sticky-Notes-Replacement-A-Whiteboard-Between-Your-Keyboard-and-Monitor">电脑显示屏和键盘之间的便签板，可擦除，要卖60美元</a></li>
+    <ul>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.destroyallsoftware.com/compendium/network-protocols?share_key=97d3ba4c24d21147">网络协议概述，从 HTTP 到电缆</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.core77.com/posts/116849/Sticky-Notes-Replacement-A-Whiteboard-Between-Your-Keyboard-and-Monitor">电脑显示屏和键盘之间的便签板，可擦除，要卖 60 美元</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-14" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-14/">
         <time class="dt-published published" datetime="2022-09-14T19:44:11+08:00">2022-09-14</time>
       </a>
@@ -1501,17 +1474,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-14/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1520,15 +1489,15 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-10&#x2F;">2022.09.10: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gapminder.org/dollar-street">用美元分类的不同国家的生活照片</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-10" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-10/">
         <time class="dt-published published" datetime="2022-09-10T02:12:52+08:00">2022-09-10</time>
       </a>
@@ -1538,17 +1507,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-10/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1557,17 +1522,17 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-07&#x2F;">2022.09.07: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/">学习 React 前要了解的顶级 Javascript 概念</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/newsboat/newsboat">命令行的 RSS 阅读器</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://bitbucket.org/durdn/cfg/src/master/">只使用 Git Bare 作为管理工具的 dotfiles repo</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-07" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-07/">
         <time class="dt-published published" datetime="2022-09-07T14:01:26+08:00">2022-09-07</time>
       </a>
@@ -1577,17 +1542,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-07/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1596,16 +1557,16 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-05&#x2F;">2022.09.05: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://terminalguide.namepad.de/">终端指南</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.wesleyac.com/posts/subdomains-as-identity">使用子域名作为用户的身份</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-05" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-05/">
         <time class="dt-published published" datetime="2022-09-05T14:06:35+08:00">2022-09-05</time>
       </a>
@@ -1615,17 +1576,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-05/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1634,11 +1591,11 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-03&#x2F;">2022.09.03: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.independent.co.uk/news/world/europe/gazprom-russia-gas-europe-pipeline-b2158642.html">俄罗斯天然气工业股份公司（Gazprom）在能源危机升级之际无限期关闭欧洲天然气管道</a>
 <ul>
 <li>’这证明了俄罗斯天然气工业股份公司作为供应商的“不可靠”‘, 展开来看，专制社会下的公司本质上都是党产，都不可靠。</li>
@@ -1672,8 +1629,8 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ssl.com/faqs/faq-what-is-ssl/">什么是 SSL</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ssl.com/faqs/what-is-an-x-509-certificate/">什么是 X509 证书？</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-03" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-03/">
         <time class="dt-published published" datetime="2022-09-03T10:04:51+08:00">2022-09-03</time>
       </a>
@@ -1683,17 +1640,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-03/">
-        全文阅读: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1702,11 +1655,11 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-09-02&#x2F;">2022.09.02: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.theguardian.com/books/2022/aug/31/an-inconvenient-apocalypse-climate-crisis-book">“我们将付出大笔代价”：一本关于气候危机的令人震惊的新书</a>
 <ul>
 <li>社会需要为不可避免的崩溃做好更充分的准备</li>
@@ -1724,8 +1677,8 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
 </ul>
 </li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-09-02" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-02/">
         <time class="dt-published published" datetime="2022-09-02T11:02:52+08:00">2022-09-02</time>
       </a>
@@ -1735,17 +1688,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-09-02/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1754,11 +1703,11 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-08-29&#x2F;">2022.08.29: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://readable.sourceforge.io/">可读的 Lisp S 表达式项目</a> - 去掉 Lisp 的括号，用缩进替代！</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Kindelia/Kindelia">P2P，非加密货币</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.nytimes.com/2022/08/26/opinion/sunday/maternal-instinct-myth.html">母性本能是男人创造的神话</a></li>
@@ -1775,8 +1724,8 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
 </li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://twitter.com/danluu/status/1564292487744978946">在网络中处于不利地位的普通人在用广告交税，而程序员们却几乎都在使用广告拦截器</a></li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-08-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-08-29/">
         <time class="dt-published published" datetime="2022-08-29T09:23:02+08:00">2022-08-29</time>
       </a>
@@ -1786,17 +1735,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-08-29/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1805,11 +1750,11 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-07-29&#x2F;">2022.07.29: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><h2 id="zhou-wu-de-ge-chong-lian-jie">周五的各种链接</h2>
+    <h2 id="zhou-wu-de-ge-chong-lian-jie">周五的各种链接</h2>
 <ul>
 <li>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.speedtest.net/">人类愚蠢的基本法则</a></p>
@@ -1831,8 +1776,8 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
 </ul>
 </li>
 </ul>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-07-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-07-29/">
         <time class="dt-published published" datetime="2022-07-29T09:32:49+08:00">2022-07-29</time>
       </a>
@@ -1842,17 +1787,13 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-07-29/">
-        全文阅读: 
-  
-    2
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+            <hr class="w-1__2" />
+          
         
           
   <article class="h-entry hentry">
@@ -1861,11 +1802,11 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
       <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
       <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;journals&#x2F;2022-07-25&#x2F;">2022.07.25: 各种链接</a>
     </h2>
-    <div class="p-summary entry-summary"><ul>
+    <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://twobithistory.org/2018/10/14/lisp.html">Lisp 如何成为上帝自己的编程语言</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.thefitzwilliam.com/p/hispaniolas-great-divergence">同在一个岛上，多米尼加为什么比海底富裕的多？</a></li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.cambridge.org/core/journals/psychological-medicine/article/porn-use-and-mens-and-womens-sexual-performance-evidence-from-a-large-longitudinal-sample/665B68D9E195A19B5825F9411B059927">色情片使用和男女的性表现：来自大型纵向样本的证据</a></li>
@@ -1884,8 +1825,8 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
 <blockquote>
 <p>百分之九十三的 Twitter 用户<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.key4biz.it/files/000270/00027033.pdf">只有不到 100 个关注者 2009</a></p>
 </blockquote>
-</div>
-    <div class="muted text-sm pb">
+
+    <div class="muted text-sm">
       <a title="2022-07-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-07-25/">
         <time class="dt-published published" datetime="2022-07-25T10:51:28+08:00">2022-07-25</time>
       </a>
@@ -1895,17 +1836,12 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           Journal
         </a>
       
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="https://www.owenyoung.com/blog/journals/2022-07-25/">
-        全文阅读: 
-  
-    1
-  
- min
-      </a>
+     
     </div>
   </article>
   
+          
+          
         
       
     </div>
@@ -1954,7 +1890,7 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
             
               
               <li>
-                <a class="no-underline" title="Random" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(35)</a>
+                <a class="no-underline" title="Random" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;categories&#x2F;random&#x2F;">Random(36)</a>
               </li>
             
           </ul>
@@ -1994,7 +1930,7 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
           <ul class="list-none text-sm">
             
             <li class="inline">
-                <a class="no-underline" title="About" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;about&#x2F;">About(3)</a>
+                <a class="no-underline" title="About" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;about&#x2F;">About(4)</a>
               </li>
             <li class="inline">
                 <a class="no-underline" title="Actionsflow" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;actionsflow&#x2F;">Actionsflow(1)</a>
@@ -2193,6 +2129,9 @@ zapier的转变。cloudfalre涉及的领域真是越来越多了，甚至还开�
               </li>
             <li class="inline">
                 <a class="no-underline" title="Self-hosted" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-hosted&#x2F;">Self-hosted(2)</a>
+              </li>
+            <li class="inline">
+                <a class="no-underline" title="Self Improvement" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;self-improvement&#x2F;">Self Improvement(1)</a>
               </li>
             <li class="inline">
                 <a class="no-underline" title="Server" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tags&#x2F;server&#x2F;">Server(1)</a>
