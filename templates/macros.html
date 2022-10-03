@@ -12,16 +12,23 @@
       <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
       <p class="p-note">{{ config.extra.bio }}</p>
     </div>
-
+   
     <h2 class="no-border pb-sm">
       <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
     </h2>
     {% if page.summary -%}
       <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
+      <p><a rel="bookmark" href="{{ page.permalink | safe }}#continue-reading">
+       &rarr;&nbsp; {{ trans(key="label_read_more",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
+      </a></p>
+      
+  
     {% elif page.description -%}
       <p class="p-summary entry-summary">{{ page.description }}</p>
+    {% elif page.content -%}
+      {{ page.content | safe }}
     {% endif -%}
-    <div class="muted text-sm pb">
+    <div class="muted text-sm">
       <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
         <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
       </a>
@@ -31,10 +38,7 @@
           {{ page.taxonomies.categories[0] }}
         </a>
       {% endif %}
-        <span>·</span>
-      <a class="no-underline" rel="bookmark" href="{{ page.permalink | safe }}">
-        {{ trans(key="label_full_reading",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
-      </a>
+     
     </div>
   </article>
   {% endmacro post_max %}
@@ -227,6 +231,7 @@
       </li>
     {% endif %}
   {% endmacro webmention %}
+
   {% macro webmentions(backlinks) %}
     {% if config.extra.webmention_path %}
       {% if current_path == "/" %}
@@ -268,11 +273,11 @@
               {% if config.default_language != lang %}
                 <p>Have you written a
                   <a href="https://indieweb.org/responses">response</a>
-                  to this? Let me know the URL:
+                  to this? Let me know the article or tweet URL (Article or tweet content needs to include the URL of this article, learn more about webmention <a href="https://indieweb.org/webmention">here</a>).
                 </p>
               {% else %}
                 <p>
-                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址：
+                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址或者推特链接（文章或推特内容需要包含这篇文章的地址，点击<a href="https://indieweb.org/Webmention">这里</a>了解 Webmention）：
                 </p>
               {% endif %}
             </div>
@@ -319,18 +324,19 @@
               </span>
             </div>
           </article>
-          {% if config.default_language != lang %}
-          <p>
-            The response will be automatically collected by <a href="https://webmention.io/">webmention.io bot</a>, and another <a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">bot</a> will automatically post it here within 24 hours, I wrote <a href="/en/blog/indieweb/">an article</a> about how to achieve this. You can also send your response via <a href="mailto:owen@owenyoung.com?subject={{ " Reply: " ~ title | urlencode }}">mail</a> <code>owen@owenyoung.com</code>
-          </p>
-          {% else %}
-          <p>
-            回复的内容会被 <a href="https://webmention.io/">webmention.io 机器人</a>收集，另一位<a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">机器人</a>会在24小时内把回应展示到这里, 我记了<a href="/en/blog/indieweb/">一篇</a>如何实现这个的笔记，也欢迎通过<a href="mailto:owen@owenyoung.com?subject={{ " 回复："~title | urlencode }}">邮件
-            </a>
-            <code>owen@owenyoung.com</code>
-            和我讨论。
-          </p>
-          {% endif %}
+       
+        {% endif %}
+        {% if config.default_language != lang %}
+        <p class="text-sm">
+          The response will be automatically collected by <a href="https://webmention.io/">webmention.io bot</a>, and another <a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">bot</a> will automatically post it here within 24 hours, I wrote <a href="/en/blog/indieweb/">an article</a> about how to achieve this. You can also send your response via <a href="mailto:owen@owenyoung.com?subject={{ " Reply: " ~ title | urlencode }}">mail</a> <code>owen@owenyoung.com</code>
+        </p>
+        {% else %}
+        <p class="text-sm">
+          回应内容会被 <a href="https://webmention.io/">webmention.io 机器人</a>收集，另一位<a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">机器人</a>会在24小时内把回应展示到这里, 我记了<a href="/en/blog/indieweb/">一篇</a>如何实现这个的笔记，也欢迎通过<a href="mailto:owen@owenyoung.com?subject={{ " 回复："~title | urlencode }}">邮件
+          </a>
+          <code>owen@owenyoung.com</code>
+          和我讨论。
+        </p>
         {% endif %}
         {% if webmention_data %}
         <section class="p-comments h-feed">

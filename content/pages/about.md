@@ -9,6 +9,7 @@ taxonomies:
     - Notes
   tags:
     - Me
+    - About
 ---
 
 我在之前建立了一个个人的公开 [Wiki](https://wiki.owenyoung.com/)和 [Blog](https://blog.owenyoung.com/)，让我养成了记笔记，多写东西的习惯，由于习惯已经养成，所以就不再纠结博客的形式问题了，把个人的笔记，博客所有的产出通通都放在这里，这样让我自己更好维护，更省心，之前需要两个地方来回切换，有点麻烦，博客全部内容托管在这个[Github 的 Repo 里](https://github.com/theowenyoung/blog)。

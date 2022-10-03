@@ -13,6 +13,8 @@ taxonomies:
 
 > 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](/content/pages/about.md) 了解更多。
 
+<!-- more -->
+
 ## 进行中
 
 开了一个[Newsletter](https://digests.owenyoung.com/)，初步想法是每隔一段时间整理一些我觉得不能错过的东西。但是只有我觉得必须联系你的时候，我才会给你发一封邮件。
