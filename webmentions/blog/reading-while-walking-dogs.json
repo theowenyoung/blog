@@ -108,5 +108,27 @@
     "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1531841": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "jack.ma",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b9f7c25a5209f1356e6fe3fef02332ebb0ea4e861c1d4d56df000aa1e709f307.jpg",
+      "url": "https://twitter.com/ponyma001"
+    },
+    "url": "https://twitter.com/ponyma001/status/1576733534261489664",
+    "published": "2022-10-03T00:39:03+00:00",
+    "wm-received": "2022-10-03T01:20:32Z",
+    "wm-id": 1531841,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1576012103436992513/1576733534261489664",
+    "wm-target": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "content": {
+      "html": "是时候列一些书单了\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/reading-while-walking-dogs/\"></a>",
+      "text": "是时候列一些书单了"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
