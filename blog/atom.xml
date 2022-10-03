@@ -5,8 +5,21 @@
 	<link href="https://www.owenyoung.com/blog/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com/blog/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-10-02T12:51:17+08:00</updated>
+	<updated>2022-10-03T10:12:41+08:00</updated>
 	<id>https://www.owenyoung.com/blog/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.10.03: 各种链接</title>
+		<published>2022-10-03T10:12:41+08:00</published>
+		<updated>2022-10-03T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-10-03/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-10-03/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;esrh.me&#x2F;posts&#x2F;2021-12-18-switching-to-meow.html&quot;&gt;切换到 emacs 的 meow 方案&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;China&#x2F;comments&#x2F;xuk3du&#x2F;chinas_double_reduction_policy_created_a_large&#x2F;&quot;&gt;中国的双减政策创造了一个巨大的地下课后培训市场&lt;&#x2F;a&gt; - 一位外教的评论&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.theatlantic.com&#x2F;technology&#x2F;archive&#x2F;2017&#x2F;03&#x2F;aristotle-computer&#x2F;518697&#x2F;&quot;&gt;亚里士多德对现代计算机的影响&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>从汉代到近代，全中国那么多聪明人，可不都在闲着?</title>
 		<published>2022-10-02T12:51:17+08:00</published>
