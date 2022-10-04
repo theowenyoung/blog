@@ -9,6 +9,10 @@ taxonomies:
     - Server
 ---
 
+Postgres Setup for Debian.
+
+<!-- more -->
+
 ## Install
 
 ```bash

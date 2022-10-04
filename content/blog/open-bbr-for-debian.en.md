@@ -10,10 +10,13 @@ taxonomies:
     - Server
 ---
 
+Enable TCP BBR on Debian.
+
+<!-- more -->
 
 ## Steps
 
-1. Open the following configuration file to enable enable TCP BBR.
+1. Open the following configuration file to enable TCP BBR.
 
 ```bash
 vi /etc/sysctl.conf

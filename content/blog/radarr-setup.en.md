@@ -9,8 +9,9 @@ taxonomies:
     - Self-hosted
 ---
 
-
 [repo](https://github.com/Radarr/Radarr)
+
+<!-- more -->
 
 ## Install
 

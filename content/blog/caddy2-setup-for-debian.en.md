@@ -9,8 +9,9 @@ taxonomies:
     - Self-hosted
 ---
 
-
 [Official Site](https://caddyserver.com/v2)
+
+<!-- more -->
 
 ## Install
 

@@ -47,7 +47,7 @@ lang %}
       </header>
       {% if paginator %}
         {% for page in paginator.pages %}
-          {{ macro::post_max(page=page) }}
+          {{ macro::post_max(page=page,index=loop.index) }}
           {% if loop.last %}
           {% else %}
             <hr class="w-1__2" />
@@ -57,7 +57,7 @@ lang %}
   extra=config.extra) }}
       {% else %}
         {% for page in section.pages %}
-          {{ macro::post_max(page=page) }}
+          {{ macro::post_max(page=page,index=loop.index) }}
           {% if loop.last %}
           {% else %}
             <hr class="w-1__2" />

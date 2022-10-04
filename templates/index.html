@@ -61,17 +61,16 @@
       </h2>
       <div class="articles h-feed hfeed">
         {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
-          {{ macro::post_max(page=page) }}
+          {{ macro::post_max(page=page,index=loop.index) }}
           {% if loop.last %}
           {% else %}
             <hr class="w-1__2" />
           {% endif %}
         {% endfor %}
       </div>
-      <h4 class="no-border">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</h4>
       {%if all_blog_pages.pages | slice(start=10) | length > 0%}
-        <details>
-          <summary>{{ trans(key="label_or_toggle_more",lang=lang) }}</summary>
+        <details class="py">
+          <summary>{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
           <ul>
             {% for page in all_blog_pages.pages | slice(start=10) %}
             <li>{{ macro::post_min(page=page) }}</li>

@@ -9,9 +9,11 @@ taxonomies:
     - Self-hosted
 ---
 
-## Install
-
 Because there is no official ppa of qBittorrent for debian, so we use a [third party service - qbittorrent-nox-static](https://github.com/userdocs/qbittorrent-nox-static) to compile qb.
+
+<!-- more -->
+
+## Install
 
 1. Download script
 

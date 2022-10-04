@@ -11,6 +11,8 @@ taxonomies:
 
 Also see [dev/setup](https://docs.joinmastodon.org/dev/setup/) [admin/install](https://docs.joinmastodon.org/admin/install/)
 
+<!-- more -->
+
 1. Install Ruby
 
 [Installing Ruby](https://www.ruby-lang.org/en/documentation/installation/) 2. Install Node

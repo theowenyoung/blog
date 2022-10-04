@@ -11,6 +11,8 @@ taxonomies:
 
 Before setup sonarr, you should setup [qBittorrent setup for Debian](/content/blog/qbittorrent-setup-for-debian.en.md)
 
+<!-- more -->
+
 ## Install
 
 See [here](https://sonarr.tv/#downloads-v3-linux)

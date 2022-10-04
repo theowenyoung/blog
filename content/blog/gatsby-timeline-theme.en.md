@@ -19,6 +19,8 @@ Checkout my blog: https://blog.owenyoung.com/
 
 [Live Demo](https://gatsby-theme-timeline.owenyoung.com/)
 
+<!-- more -->
+
 ![Screen](https://camo.githubusercontent.com/b3a1a92a41a81707b6690eb4710194e5d6e79895082e329d9d3bfe35944c0207/68747470733a2f2f692e696d6775722e636f6d2f367949544934452e706e67)
 
 Here are the features for now:

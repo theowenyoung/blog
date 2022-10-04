@@ -13,6 +13,8 @@ Install latest stable nginx for debian
 
 > Also see [here](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 
+<!-- more -->
+
 ```bash
 sudo su
 cat <<EOF >> /etc/apt/sources.list.d/nginx.list

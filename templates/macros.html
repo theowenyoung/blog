@@ -5,7 +5,7 @@
     {{ minutes }}
   {% endif %}
 {% endmacro get_reading_time %}
-{% macro post_max(page) %}
+{% macro post_max(page,index) %}
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
@@ -14,7 +14,7 @@
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a>
+      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
     </h2>
     {% if page.summary -%}
       <div class="p-summary entry-summary">{{ page.summary | safe }}</div>

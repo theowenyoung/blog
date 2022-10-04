@@ -9,7 +9,9 @@ taxonomies:
     - Git
 ---
 
+Check if there are uncommited changes in Github Actions workflow file.
 
+<!-- more -->
 
 ```yaml
 name: Github Actions check if there are uncommited changes

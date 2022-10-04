@@ -11,6 +11,8 @@ taxonomies:
 
 > For linux common commands, see [开发技巧收藏](/content/dev-tips/index.md#linux-common-commands)
 
+<!-- more -->
+
 1. Update Source
 
    ```bash

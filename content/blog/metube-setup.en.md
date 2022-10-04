@@ -9,6 +9,10 @@ taxonomies:
     - Self-hosted
 ---
 
+Metube Setup with docker.
+
+<!-- more -->
+
 ## List
 
 - [GitHub - alexta69/metube: youtube-dl web UI](https://github.com/alexta69/metube)

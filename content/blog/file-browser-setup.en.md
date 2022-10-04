@@ -9,7 +9,9 @@ taxonomies:
     - Self-hosted
 ---
 
- 
+[File Browser](https://github.com/filebrowser/filebrowser) Setup.
+
+<!-- more -->
 
 ## Install
 

@@ -11,6 +11,8 @@ taxonomies:
 
 Copy the [Template](https://gist.github.com/theowenyoung/e09cb6e2c59f247fdc3f4e6fe4401481) to your local caddy config folder.
 
+<!-- more -->
+
 This template will display the follow page:
 ![screenshot](./caddy-file-template-screenshot.png)
 

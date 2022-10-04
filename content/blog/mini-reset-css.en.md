@@ -11,6 +11,8 @@ taxonomies:
 
 > Forked by <https://github.com/jgthms/minireset.css/blob/master/minireset.css>
 
+<!-- more -->
+
 ```css
 html {
   font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
