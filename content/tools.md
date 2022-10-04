@@ -62,6 +62,7 @@ taxonomies:
 - [52 斗图](https://www.52doutu.cn/) - 表情包在线生成
 - [rust 生成线条图片](https://github.com/lf94/img2utf)
 - [AI Stable 扩散图片生成接口](https://computerender.com/) - 低成本的众包
+
 ## URL 缩短器
 
 - [利用 github Issues 缩短网址](https://github.com/nelsontky/gh-pages-url-shortener)
@@ -233,8 +234,8 @@ taxonomies:
 
 ### Paid Browser
 
-- https://sizzy.co/ - The browser for developers, view one page with multiple devices once
-- https://www.meetsidekick.com/ - The fastest browser for work ever made, Designed to be the ultimate online work experience, it brings together your team and every web tool you use – all in one interface. Actually, not so fast, but the UI, the workflow, the sidebar, will give your new experience.
+- <https://sizzy.co/> - The browser for developers, view one page with multiple devices once
+- <https://www.meetsidekick.com/> - The fastest browser for work ever made, Designed to be the ultimate online work experience, it brings together your team and every web tool you use – all in one interface. Actually, not so fast, but the UI, the workflow, the sidebar, will give your new experience.
 
 ## 笔记
 
@@ -330,4 +331,4 @@ X as a Y services.
 
 ## Search
 
-- [Google推出的AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai从谷歌成千上万本书里给出最相关的答案。
+- [Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的答案。
