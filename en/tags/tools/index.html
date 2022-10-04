@@ -1038,84 +1038,20 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;shadowsocks-rust-setup-for-debian&#x2F;">Shadowsocks Rust Setup for Debian</a>
+      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;shadowsocks-rust-setup-for-debian&#x2F;">Shadowsocks Rust Setup for Debian</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
-    <p>Shadowsocks Repo: <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/shadowsocks/shadowsocks-rust">https://github.com/shadowsocks/shadowsocks-rust</a></p>
+    <div class="p-summary entry-summary"><p>Shadowsocks Repo: <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/shadowsocks/shadowsocks-rust">https://github.com/shadowsocks/shadowsocks-rust</a></p>
 <p>Setup rust first: <a href="https://www.owenyoung.com/blog/rust-environment-setup-for-debian/">Debian 初始化 Rust 环境</a></p>
-<h2 id="install">Install<a class="zola-anchor" href="#install" aria-label="Anchor link for: install">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">rustup</span><span> default nightly
-</span><span style="color:#bf616a;">cargo</span><span> install shadowsocks-rust
-</span></code></pre>
-<h2 id="configure">Configure<a class="zola-anchor" href="#configure" aria-label="Anchor link for: configure">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">mkdir</span><span> ss
-</span></code></pre>
-<p>Server config sample:</p>
-<pre data-lang="json" style="background-color:#2b303b;color:#c0c5ce;" class="language-json "><code class="language-json" data-lang="json"><span>{
-</span><span>  &quot;</span><span style="color:#a3be8c;">servers</span><span>&quot;: [
-</span><span>    {
-</span><span>      &quot;</span><span style="color:#a3be8c;">address</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">::</span><span>&quot;,
-</span><span>      &quot;</span><span style="color:#a3be8c;">port</span><span>&quot;: </span><span style="color:#d08770;">9982</span><span>,
-</span><span>      &quot;</span><span style="color:#a3be8c;">method</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">chacha20-ietf-poly1305</span><span>&quot;,
-</span><span>      &quot;</span><span style="color:#a3be8c;">password</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">strong-password</span><span>&quot;,
-</span><span>      &quot;</span><span style="color:#a3be8c;">mode</span><span>&quot;: &quot;</span><span style="color:#a3be8c;">tcp_and_udp</span><span>&quot;,
-</span><span>      &quot;</span><span style="color:#a3be8c;">fast_open</span><span>&quot;: </span><span style="color:#d08770;">false</span><span>,
-</span><span>      &quot;</span><span style="color:#a3be8c;">timeout</span><span>&quot;: </span><span style="color:#d08770;">7200
-</span><span>    }
-</span><span>  ]
-</span><span>}
-</span></code></pre>
-<h2 id="add-as-a-system-service">Add as a system service<a class="zola-anchor" href="#add-as-a-system-service" aria-label="Anchor link for: add-as-a-system-service">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> vim /etc/systemd/system/ss.service
-</span></code></pre>
-<blockquote>
-<p>Note: Change <code>username</code> to your own username</p>
-</blockquote>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">[Unit]
-</span><span style="color:#bf616a;">Description</span><span>=</span><span style="color:#a3be8c;">ssserver </span><span style="color:#bf616a;">service
-</span><span style="color:#bf616a;">After</span><span>=</span><span style="color:#a3be8c;">network.target
-</span><span>
-</span><span style="color:#bf616a;">[Service]
-</span><span style="color:#bf616a;">ExecStart</span><span>=</span><span style="color:#a3be8c;">/home/username/.cargo/bin/ssserver </span><span style="color:#bf616a;">-c</span><span> /home/username/ss/config.json
-</span><span style="color:#bf616a;">ExecStop</span><span>=</span><span style="color:#a3be8c;">/usr/bin/killall </span><span style="color:#bf616a;">ssserver
-</span><span style="color:#bf616a;">Restart</span><span>=</span><span style="color:#a3be8c;">on-failure
-</span><span style="color:#bf616a;">StandardOutput</span><span>=</span><span style="color:#a3be8c;">syslog               </span><span style="color:#65737e;"># Output to syslog
-</span><span style="color:#bf616a;">StandardError</span><span>=</span><span style="color:#a3be8c;">syslog                </span><span style="color:#65737e;"># Output to syslog
-</span><span style="color:#bf616a;">SyslogIdentifier</span><span>=</span><span style="color:#a3be8c;">ss
-</span><span style="color:#bf616a;">User</span><span>=</span><span style="color:#a3be8c;">username
-</span><span style="color:#bf616a;">Group</span><span>=</span><span style="color:#a3be8c;">admin
-</span><span>
-</span><span style="color:#bf616a;">[Install]
-</span><span style="color:#bf616a;">WantedBy</span><span>=</span><span style="color:#a3be8c;">multi-user.target
-</span></code></pre>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl daemon-reload
-</span><span style="color:#bf616a;">sudo</span><span> systemctl enable</span><span style="color:#bf616a;"> --now</span><span> ss
-</span></code></pre>
-<h2 id="run">Run<a class="zola-anchor" href="#run" aria-label="Anchor link for: run">🔗</a></h2>
-<h2 id="status">Status<a class="zola-anchor" href="#status" aria-label="Anchor link for: status">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl status ss
-</span></code></pre>
-<h2 id="stop">Stop<a class="zola-anchor" href="#stop" aria-label="Anchor link for: stop">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> systemctl stop ss
-</span></code></pre>
-<h2 id="update">Update<a class="zola-anchor" href="#update" aria-label="Anchor link for: update">🔗</a></h2>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">cargo</span><span> install shadowsocks-rust
-</span></code></pre>
-<h2 id="multiple-ports">Multiple Ports<a class="zola-anchor" href="#multiple-ports" aria-label="Anchor link for: multiple-ports">🔗</a></h2>
-<p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://gfw.report/blog/ss_tutorial/zh/">here</a></p>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -A</span><span> PREROUTING</span><span style="color:#bf616a;"> -p</span><span> tcp</span><span style="color:#bf616a;"> --dport</span><span> 12000:12010</span><span style="color:#bf616a;"> -j</span><span> REDIRECT</span><span style="color:#bf616a;"> --to-port</span><span> 9982
-</span><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -A</span><span> PREROUTING</span><span style="color:#bf616a;"> -p</span><span> udp</span><span style="color:#bf616a;"> --dport</span><span> 12000:12010</span><span style="color:#bf616a;"> -j</span><span> REDIRECT</span><span style="color:#bf616a;"> --to-port</span><span> 9982
-</span></code></pre>
-<h3 id="show-if-success">Show if success:<a class="zola-anchor" href="#show-if-success" aria-label="Anchor link for: show-if-success">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -L</span><span> PREROUTING</span><span style="color:#bf616a;"> -nv --line-number
-</span></code></pre>
-<h3 id="delete-the-rule">Delete the rule:<a class="zola-anchor" href="#delete-the-rule" aria-label="Anchor link for: delete-the-rule">🔗</a></h3>
-<pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#bf616a;">sudo</span><span> iptables</span><span style="color:#bf616a;"> -t</span><span> nat</span><span style="color:#bf616a;"> -D</span><span> PREROUTING &lt;number&gt;
-</span></code></pre>
-<h2 id="other-resources">Other Resources<a class="zola-anchor" href="#other-resources" aria-label="Anchor link for: other-resources">🔗</a></h2>
-<ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/haoel/haoel.github.io">Through out Firewall</a></li>
-</ul>
-
+</div>
+      <p><a rel="bookmark" href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/#continue-reading">
+       &rarr;&nbsp; Continue to Read: 
+  
+    2
+  
+ min
+      </a></p>
+      
+  
     <div class="muted text-sm">
       <a title="2021-03-10" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/shadowsocks-rust-setup-for-debian/">
         <time class="dt-published published" datetime="2021-03-10">2021-03-10</time>

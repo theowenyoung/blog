@@ -13,7 +13,8 @@
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/rclone-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/rclone-setup/</id>
-		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rclone.org&#x2F;&quot;&gt;Rclone&lt;&#x2F;a&gt; setup.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;rclone.org&#x2F;install.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; bash
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;rclone.org&#x2F;drive&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -32,7 +33,8 @@
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/postgres-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/postgres-setup-for-debian/</id>
-		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;Postgres Setup for Debian.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; sh&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -c &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;echo &amp;quot;deb http:&#x2F;&#x2F;apt.postgresql.org&#x2F;pub&#x2F;repos&#x2F;apt $(lsb_release -cs)-pgdg main&amp;quot; &amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;pgdg.list&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;wget --quiet -O&lt;&#x2F;span&gt;&lt;span&gt; - https:&#x2F;&#x2F;www.postgresql.org&#x2F;media&#x2F;keys&#x2F;ACCC4CF8.asc | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-key add -
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt-get update
@@ -50,9 +52,10 @@
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/open-bbr-for-debian/</id>
-		<content type="html">&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;Enable TCP BBR on Debian.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Open the following configuration file to enable enable TCP BBR.&lt;&#x2F;li&gt;
+&lt;li&gt;Open the following configuration file to enable TCP BBR.&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vi&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;sysctl.conf
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;

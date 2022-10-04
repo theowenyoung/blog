@@ -14,6 +14,7 @@
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/</id>
 		<content type="html">&lt;p&gt;Copy the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;theowenyoung&#x2F;e09cb6e2c59f247fdc3f4e6fe4401481&quot;&gt;Template&lt;&#x2F;a&gt; to your local caddy config folder.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;This template will display the follow page:
 &lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;.&#x2F;caddy-file-template-screenshot.png&quot; alt=&quot;screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;localhost &lt;&#x2F;span&gt;&lt;span&gt;{
@@ -34,6 +35,7 @@
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/mastdon-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/mastdon-setup/</id>
 		<content type="html">&lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinmastodon.org&#x2F;dev&#x2F;setup&#x2F;&quot;&gt;dev&#x2F;setup&lt;&#x2F;a&gt; &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.joinmastodon.org&#x2F;admin&#x2F;install&#x2F;&quot;&gt;admin&#x2F;install&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;ol&gt;
 &lt;li&gt;Install Ruby&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
@@ -176,7 +178,8 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/file-browser-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/file-browser-setup/</id>
-		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;filebrowser&#x2F;filebrowser&quot;&gt;File Browser&lt;&#x2F;a&gt; Setup.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -fsSL&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;filebrowser&#x2F;get&#x2F;master&#x2F;get.sh | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bash
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -266,7 +269,7 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/caddy2-setup-for-debian/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;caddyserver.com&#x2F;v2&quot;&gt;Official Site&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; apt install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt; -y&lt;&#x2F;span&gt;&lt;span&gt; debian-keyring debian-archive-keyring apt-transport-https
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -1sLf &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;dl.cloudsmith.io&#x2F;public&#x2F;caddy&#x2F;stable&#x2F;gpg.key&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; tee &#x2F;etc&#x2F;apt&#x2F;trusted.gpg.d&#x2F;caddy-stable.asc
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;curl -1sLf &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;https:&#x2F;&#x2F;dl.cloudsmith.io&#x2F;public&#x2F;caddy&#x2F;stable&#x2F;debian.deb.txt&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; tee &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;caddy-stable.list
@@ -289,8 +292,8 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/qbittorrent-setup-for-debian/</id>
-		<content type="html">&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;Because there is no official ppa of qBittorrent for debian, so we use a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;userdocs&#x2F;qbittorrent-nox-static&quot;&gt;third party service - qbittorrent-nox-static&lt;&#x2F;a&gt; to compile qb.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;Because there is no official ppa of qBittorrent for debian, so we use a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;userdocs&#x2F;qbittorrent-nox-static&quot;&gt;third party service - qbittorrent-nox-static&lt;&#x2F;a&gt; to compile qb.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Download script&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
@@ -388,9 +391,10 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/open-bbr-for-debian/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/open-bbr-for-debian/</id>
-		<content type="html">&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;Enable TCP BBR on Debian.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;steps&quot;&gt;Steps&lt;a class=&quot;zola-anchor&quot; href=&quot;#steps&quot; aria-label=&quot;Anchor link for: steps&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Open the following configuration file to enable enable TCP BBR.&lt;&#x2F;li&gt;
+&lt;li&gt;Open the following configuration file to enable TCP BBR.&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;vi&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;sysctl.conf
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
@@ -420,7 +424,8 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 		<updated>2022-03-26T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/metube-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/metube-setup/</id>
-		<content type="html">&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+		<content type="html">&lt;p&gt;Metube Setup with docker.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alexta69&#x2F;metube&quot;&gt;GitHub - alexta69&#x2F;metube: youtube-dl web UI&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;metube-downloader&#x2F;fbmkmdnlhacefjljljlbhkodfmfkijdh&quot;&gt;Metube chrome extension&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -452,7 +457,7 @@ password: &lt;code&gt;mastodonadmin&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Also see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nginx.com&#x2F;resources&#x2F;wiki&#x2F;start&#x2F;topics&#x2F;tutorials&#x2F;install&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
-&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; su
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; su
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;cat &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;EOF &lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;nginx.list
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;deb http:&#x2F;&#x2F;nginx.org&#x2F;packages&#x2F;debian&#x2F; buster nginx
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;deb-src http:&#x2F;&#x2F;nginx.org&#x2F;packages&#x2F;debian&#x2F; buster nginx
@@ -957,7 +962,7 @@ to your own administrator password, although it must be 6 characters or more.&lt
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/radarr-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/radarr-setup/</id>
 		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Radarr&#x2F;Radarr&quot;&gt;repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;See also &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.servarr.com&#x2F;radarr&#x2F;installation#linux&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Radarr&#x2F;Radarr&#x2F;releases&quot;&gt;Latest Release&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;systemd&quot;&gt;Systemd&lt;a class=&quot;zola-anchor&quot; href=&quot;#systemd&quot; aria-label=&quot;Anchor link for: systemd&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
@@ -987,7 +992,7 @@ to your own administrator password, although it must be 6 characters or more.&lt
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/sonarr-setup/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/sonarr-setup/</id>
 		<content type="html">&lt;p&gt;Before setup sonarr, you should setup &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;install&quot;&gt;Install&lt;a class=&quot;zola-anchor&quot; href=&quot;#install&quot; aria-label=&quot;Anchor link for: install&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sonarr.tv&#x2F;#downloads-v3-linux&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Once installed, visit &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;ip:8989&quot;&gt;http:&#x2F;&#x2F;ip:8989&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;restart&quot;&gt;Restart&lt;a class=&quot;zola-anchor&quot; href=&quot;#restart&quot; aria-label=&quot;Anchor link for: restart&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
