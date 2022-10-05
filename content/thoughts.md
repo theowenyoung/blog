@@ -3,13 +3,15 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2022-10-03
+updated: 2022-10-06
 taxonomies:
   categories:
     - Notes
   tags:
     - Tweets
 ---
+
+> 女性支持性积极主义还可以理解，因为至少那是人家的body，人家的choice，但是男性也跟着瞎起哄，那就是鸡贼了。 --2022.10.06
 
 > 中东小粉红小组: [/r/AskMiddleEast](https://www.reddit.com/r/AskMiddleEast/) --
 > 2022.10.04
