@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/en/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-09-29T00:00:00+00:00</updated>
+	<updated>2022-10-06T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/en/categories/notes/atom.xml</id>
 	<entry xml:lang="en">
 		<title>ChangeLog</title>
@@ -571,10 +571,14 @@
 	<entry xml:lang="en">
 		<title>Quotes</title>
 		<published>2022-04-25T00:00:00+00:00</published>
-		<updated>2022-09-29T00:00:00+00:00</updated>
+		<updated>2022-10-06T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/quotes/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;“I was lucky.” “Women always say that when they’ve done something
+extraordinary”. – The handmaids tale S05E03&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;Why does the patriarchy exist?&lt;&#x2F;p&gt;
 &lt;p&gt;Very easy answer. A short time ago, historically, before birth control,
 antibiotics and NICUs, a huge portion of most women’s lives was consumed with
