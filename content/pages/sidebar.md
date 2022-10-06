@@ -17,7 +17,7 @@ updated: 2022-06-04
 - [热门笔记](/#re-men-bi-ji)
 - [读书笔记](/blog/books/)
 - [短想法](/content/thoughts.md)
-- [收集发人深省的话](/content/quotes.md))
+- [收集发人深省的话](/content/quotes.md)
 - [每日阅读分享](/categories/journal/)
 - [所有文章存档](/archive/)
 - [本站源码](https://github.com/theowenyoung/blog)
