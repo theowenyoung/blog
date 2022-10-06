@@ -1,13 +1,16 @@
 ---
 title: Quotes
 date: 2022-04-25
-updated: 2022-09-29
+updated: 2022-10-06
 taxonomies:
   categories:
     - Notes
   tags:
     - Quotes
 ---
+
+> "I was lucky." "Women always say that when they've done something
+> extraordinary". -- The handmaids tale S05E03
 
 > Why does the patriarchy exist?
 >
