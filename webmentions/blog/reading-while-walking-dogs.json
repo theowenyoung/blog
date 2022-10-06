@@ -130,5 +130,27 @@
     "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1533105": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "yibao 📷🐦🔋📚💻🏞️",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/542a9e665d558f9e6e46a70329cc6e48109ff898d09afbf99cb636a0b549d3ae.jpg",
+      "url": "https://twitter.com/yibaoAC"
+    },
+    "url": "https://twitter.com/yibaoAC/status/1577522173019033601",
+    "published": "2022-10-05T04:52:49+00:00",
+    "wm-received": "2022-10-05T05:28:10Z",
+    "wm-id": 1533105,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1576012103436992513/1577522173019033601",
+    "wm-target": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "content": {
+      "html": "如果人在美国可以通过Kindle从图书馆借书：<a href=\"https://help.overdrive.com/en-us/0431.html\">help.overdrive.com/en-us/0431.html</a>。 在加拿大的话，需要入手Kobo，体验同样出色。<a href=\"https://twitter.com/search?q=%23kindle\">#kindle</a> <a href=\"https://twitter.com/search?q=%23Read\">#Read</a>\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/reading-while-walking-dogs/\"></a>",
+      "text": "如果人在美国可以通过Kindle从图书馆借书：help.overdrive.com/en-us/0431.html。 在加拿大的话，需要入手Kobo，体验同样出色。#kindle #Read"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/reading-while-walking-dogs/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
