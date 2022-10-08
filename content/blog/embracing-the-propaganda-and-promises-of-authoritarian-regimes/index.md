@@ -38,3 +38,5 @@ taxonomies:
 我喜欢这家波兰电视台给普京的title：
 
 ![putin](./putin.jpeg)
+
+战犯普京。
