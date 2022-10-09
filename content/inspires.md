@@ -25,12 +25,16 @@ taxonomies:
 
 - [Reddit 小组趋势](https://subredditstats.com/) 在这可以发现很多有意思的 Reddit 小组，有各种维度的排序
 - [Your Stack 你的工具栈](https://yourstack.com/) 分享自己使用的产品，在这可以发现不少好用的东西，App
-- [Hacker News 黑客新闻](https://news.ycombinator.com/news) 著名的 HN，很多互联网用户的聚集地，上面的新闻还有讨论大多数是技术相关，也有少数社会新闻，当你有新产品要冷启动的时候，里面的子版块 Show HN 很适合去宣传，当然也有可能收到评论里的不看好。
-- [Hacker News 热门](https://hn.buzzing.cc/) 这是我做的一款抓取 Hacker News 的热门条目，然后用 Deepl 翻译标题和简介，帮助英文不是特别的非母语者做中文导读的站点，对我自己英文提升帮助很大，因为更容易找到感兴趣的文章，然后才点进去详读
+- [Hacker News 黑客新闻](https://news.ycombinator.com/news) 著名的
+  HN，很多互联网用户的聚集地，上面的新闻还有讨论大多数是技术相关，也有少数社会新闻，当你有新产品要冷启动的时候，里面的子版块 Show HN
+  很适合去宣传，当然也有可能收到评论里的不看好。
+- [Hacker News 热门](https://hn.buzzing.cc/) 这是我做的一款抓取 Hacker News 的热门条目，然后用 Deepl
+  翻译标题和简介，帮助英文不是特别的非母语者做中文导读的站点，对我自己英文提升帮助很大，因为更容易找到感兴趣的文章，然后才点进去详读
 
 ## 有意思
 
-- [我今天的上网体验](https://how-i-experience-web-today.com/) - 嘲讽的网站，展示了 21 世纪的今天，是如何被网站强奸眼睛的。
+- [我今天的上网体验](https://how-i-experience-web-today.com/) - 嘲讽的网站，展示了 21
+  世纪的今天，是如何被网站强奸眼睛的。
 - [stumbled](https://stumbled.cc/stumble) - 随机发现有意思的网站
 - [哪个艺术品更贵](https://expensivetaste.art/)
 - [ipod 复古界面听音乐](https://tannerv.com/ipod/)
@@ -61,7 +65,8 @@ taxonomies:
 - [2017:未来 4 年内某个生物袭击事件将导致 100 万人丧生](https://longbets.org/9/)
 - [Dwitter javascript 社交，像推特一样，140 字符限制，写一些有意思的 javascript 代码](https://beta.dwitter.net/)
   - [Source Code](https://github.com/lionleaf/dwitter)
-- [awesome lite website](https://github.com/mdibaiee/awesome-lite-websites) - 轻量级网站汇总
+- [awesome lite website](https://github.com/mdibaiee/awesome-lite-websites) -
+  轻量级网站汇总
 - [模拟 90 年代的电视](https://www.my90stv.com)
   - [80 年代](https://www.my80stv.com/)
 - [太阳能供电的网站](https://solar.lowtechmagazine.com/power.html)
@@ -70,23 +75,37 @@ taxonomies:
 - [To dont](https://crazymarvin.com/to-dont/) - Todo 的反向操作，不要做的事清单
 - [Sincerely Me](https://www.sincerelyme.us/) - 用互联网给真人写信
 - [diggz](https://www.diggz.co/) - Find Roommates & Rooms today.找室友
-- [digitalhumani](https://digitalhumani.com/) A platform which easily integrates with your products to reforest the planet，提供 API，让你能更方便为环境做贡献，API 种树？
-- [Wedding Planning ](https://planning.wedding/) - Online Wedding Planning Assistant，在线婚礼策划
-- [boss as a service](https://bossasaservice.life/) - We make sure you achieve your goals，老板即服务，为了让你达成你的目标，给你分配一个老板监督你。
-- [make passport photo](https://makepassportphoto.com/?utm_campaign) - Get your biometric Passport/Visa/ID photos in minutes, 在线打印护照需要的照片 #Photos #Print
+- [digitalhumani](https://digitalhumani.com/) A platform which easily integrates
+  with your products to reforest the planet，提供 API，让你能更方便为环境做贡献，API 种树？
+- [Wedding Planning](https://planning.wedding/) - Online Wedding Planning
+  Assistant，在线婚礼策划
+- [boss as a service](https://bossasaservice.life/) - We make sure you achieve
+  your goals，老板即服务，为了让你达成你的目标，给你分配一个老板监督你。
+- [make passport photo](https://makepassportphoto.com/?utm_campaign) - Get your
+  biometric Passport/Visa/ID photos in minutes, 在线打印护照需要的照片 #Photos #Print
 - [Throw app](https://www.throwapp.com/) - 匿名发送问题，然后等待响应
 - [Hacker News 报纸版](https://www.wolfgangfaust.com/project/paper-hn/)
 - [Reddit 报纸版](https://unim.press/)
-- [这个网站将会自毁](https://www.thiswebsitewillselfdestruct.com/) - 如果 24 小时内没有人发帖，这个网站将会自动关闭。
+- [这个网站将会自毁](https://www.thiswebsitewillselfdestruct.com/) - 如果 24
+  小时内没有人发帖，这个网站将会自动关闭。
 - [Boomers](https://boomers.dog/) - 可以匿名，实名发布东西的留言板，挺好看。
-- [Mother fucking website](https://motherfuckingwebsite.com/) - 只使用简单的 html 也可以是一个正常的网站。控诉现代网站
+- [Mother fucking website](https://motherfuckingwebsite.com/) - 只使用简单的 html
+  也可以是一个正常的网站。控诉现代网站
 - [Txti](https://txti.es/) - 简约的文本网页创建服务，像电报的[telegraf](https://telegra.ph/)，
 - [Realtime](http://realtime.info/) - 实时查看各大平台正在发生什么...真正的实时
+
 ## 服务
 
-- [Rover](https://www.rover.com/uk/) - The world’s largest network of 5‑star pet sitters and dog walkers. 遛狗服务
-  - [dog spot](https://hellodogspot.com/) - A DogSpot is a smart sidewalk sanctuary, providing your dog a safe and cozy home away from home while you briefly go somewhere they aren't allowed. With DogSpot, you don't have to choose between adventures and spending time with your dog. You have the freedom to live your life with your dog... without having to take risks like tying them up or leaving them in the car. 另一个遛狗服务
-- [Never Install](https://neverinstall.com/) - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。
+- [Rover](https://www.rover.com/uk/) - The world’s largest network of 5‑star pet
+  sitters and dog walkers. 遛狗服务
+  - [dog spot](https://hellodogspot.com/) - A DogSpot is a smart sidewalk
+    sanctuary, providing your dog a safe and cozy home away from home while you
+    briefly go somewhere they aren't allowed. With DogSpot, you don't have to
+    choose between adventures and spending time with your dog. You have the
+    freedom to live your life with your dog... without having to take risks like
+    tying them up or leaving them in the car. 另一个遛狗服务
+- [Never Install](https://neverinstall.com/) -
+  浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。
 - [白噪音](https://www.shhhsound.com/)
 - [Wordle for World Map](https://worldle.teuteuf.fr/) - 猜国家 wordle 游戏
 - [哲学笔记](https://gainedin.site/) - 哲学/抽象常识书。它是从成千上万的文章，书籍，视频和讨论中收集的。
@@ -97,7 +116,8 @@ taxonomies:
 ## 硬件
 
 - [情侣闹钟，互相不吵醒的戒指设计](https://www.coroflot.com/mengfandi/if-concept-awards-2008Best-of-Best)
-- [DeadDrop](https://news.ycombinator.com/item?id=1851088) - 用 U 盘作为 P2P 的载体，安装在城市的不同地方
+- [DeadDrop](https://news.ycombinator.com/item?id=1851088) - 用 U 盘作为 P2P
+  的载体，安装在城市的不同地方
 
 ## 通知类
 
@@ -107,17 +127,23 @@ taxonomies:
 
 ### 文字交友
 
-- [SLOWLY](https://slowly.app/en/) - SLOWLY 让你从你的智能手机上认识笔友！按照距离远近，和不同的人发信有不同的发送时间，有的高达 10 多个小时才能发出去。与有共同爱好的人配对，写信并收集来自世界各地的邮票。说出你的想法--一次一封信!
-- [Addchat](https://apps.apple.com/us/app/addchat-random-chat/id1464989529) - Make Random Friends and Chat !
+- [SLOWLY](https://slowly.app/en/) - SLOWLY
+  让你从你的智能手机上认识笔友！按照距离远近，和不同的人发信有不同的发送时间，有的高达 10
+  多个小时才能发出去。与有共同爱好的人配对，写信并收集来自世界各地的邮票。说出你的想法--一次一封信!
+- [Addchat](https://apps.apple.com/us/app/addchat-random-chat/id1464989529) -
+  Make Random Friends and Chat !
 
 ### Location based
 
-- [Zown](http://www.zown.co) - Zown 让你看到离你超级近的人（半径 500 米内）。
-  一旦你与某人建立联系，它只给你 15 分钟的聊天时间，所以它迫使你在现实生活中与对方见面以保持联系。
+- [Zown](http://www.zown.co) - Zown 让你看到离你超级近的人（半径 500 米内）。 一旦你与某人建立联系，它只给你 15
+  分钟的聊天时间，所以它迫使你在现实生活中与对方见面以保持联系。
 
 ### 视频对话
 
-- [Superpeer](https://superpeer.com/) - Host cohort-based courses, live events, or 1:1 sessions, an all-in-one video platform that gives you the tools you need to engage with your audience through video, and connect in a more authentic way.
+- [Superpeer](https://superpeer.com/) - Host cohort-based courses, live events,
+  or 1:1 sessions, an all-in-one video platform that gives you the tools you
+  need to engage with your audience through video, and connect in a more
+  authentic way.
   - [Awesome Peers](https://awesomepeers.com/) - A list includes 900+ free peers
 
 ### 协作社交
@@ -135,7 +161,12 @@ taxonomies:
 
 ### 匿名
 
-- [Turtle - Chat Anonymously ](https://apps.apple.com/us/app/turtle-chat-anonymously/id1313518475) - Turtle is an app that lets you message people and remain anonymous for three days. After three days, the other person will be able to see who you are. In an essence, it’s almost like meeting someone with a blindfold on. There is no room for implicit bias. The first impressions will be based off character, instead of appearance or status.
+- [Turtle - Chat Anonymously](https://apps.apple.com/us/app/turtle-chat-anonymously/id1313518475) -
+  Turtle is an app that lets you message people and remain anonymous for three
+  days. After three days, the other person will be able to see who you are. In
+  an essence, it’s almost like meeting someone with a blindfold on. There is no
+  room for implicit bias. The first impressions will be based off character,
+  instead of appearance or status.
 
 ### 约会
 
@@ -144,7 +175,8 @@ taxonomies:
 
 ### All in one chat
 
-- [beeper](https://www.beeper.com/?hn) - 真正的 all in one 聊天，整合 15 个 app 的聊天，降维打击啊这是。
+- [beeper](https://www.beeper.com/?hn) - 真正的 all in one 聊天，整合 15 个 app
+  的聊天，降维打击啊这是。
 
 ### 复古
 
@@ -156,7 +188,8 @@ taxonomies:
 
 ## 标准
 
-- [Business.txt](https://github.com/fesja/businesstxt) - 商家信息 txt，就像 robots.txt 但是是为商家
+- [Business.txt](https://github.com/fesja/businesstxt) - 商家信息 txt，就像 robots.txt
+  但是是为商家
 
 ## God
 
@@ -170,3 +203,4 @@ taxonomies:
 
 - [一个很舒服的背景色的博客](https://ruudvanasseldonk.com/)
 - [把格式融入到整体网站里，很舒服](https://surma.dev/things/js-to-asc/)
+- [沉浸式体验的杂志](https://magazine.atavist.com/the-voyagers-russia-bering-strait-stalin-alaska-ukraine/)
