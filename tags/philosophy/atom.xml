@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
-	<title>Owen的博客 - Life</title>
+	<title>Owen的博客 - Philosophy</title>
 	<subtitle>主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向</subtitle>
-	<link href="https://www.owenyoung.com/tags/life/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://www.owenyoung.com/tags/philosophy/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2022-10-09T08:49:30+08:00</updated>
-	<id>https://www.owenyoung.com/tags/life/atom.xml</id>
+	<id>https://www.owenyoung.com/tags/philosophy/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>个人的问题还是体制的问题？</title>
 		<published>2022-10-09T08:49:30+08:00</published>
@@ -52,72 +52,6 @@
 &lt;&#x2F;blockquote&gt;
 &lt;p&gt;当然罗素在文中指的是经济和身体条件上不适合生孩子的父母。但是在我们这里，教育是一个重要考量点。&lt;&#x2F;p&gt;
 &lt;p&gt;写到最后有点跑题了，但是随便吧，想到哪写到哪了。&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="zh">
-		<title>生活必备清单</title>
-		<published>2022-07-31T21:56:06+08:00</published>
-		<updated>2022-07-31T00:00:00+00:00</updated>
-		<link rel="alternate" href="https://www.owenyoung.com/life-required-list/" type="text/html"/>
-		<id>https://www.owenyoung.com/life-required-list/</id>
-		<content type="html">&lt;p&gt;最近刚搬家，顺手整理下我第一时间拿出来要用的东西，我认为这应该属于我的生活必备品，其他的可能都可以丢掉。&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;tong-yong&quot;&gt;通用&lt;a class=&quot;zola-anchor&quot; href=&quot;#tong-yong&quot; aria-label=&quot;Anchor link for: tong-yong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;纸巾&lt;&#x2F;li&gt;
-&lt;li&gt;杯子&lt;&#x2F;li&gt;
-&lt;li&gt;充电线，数据线&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;shu-fang&quot;&gt;书房&lt;a class=&quot;zola-anchor&quot; href=&quot;#shu-fang&quot; aria-label=&quot;Anchor link for: shu-fang&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;宜家 1.8 米桌子&lt;&#x2F;li&gt;
-&lt;li&gt;人体工学椅&lt;&#x2F;li&gt;
-&lt;li&gt;路由器&lt;&#x2F;li&gt;
-&lt;li&gt;电脑，键盘，电脑支架等&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;chu-fang-yong-pin&quot;&gt;厨房用品&lt;a class=&quot;zola-anchor&quot; href=&quot;#chu-fang-yong-pin&quot; aria-label=&quot;Anchor link for: chu-fang-yong-pin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;洗碗机&lt;&#x2F;li&gt;
-&lt;li&gt;烤箱&lt;&#x2F;li&gt;
-&lt;li&gt;5L 烧水壶&lt;&#x2F;li&gt;
-&lt;li&gt;洗洁精&lt;&#x2F;li&gt;
-&lt;li&gt;刷子&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;wo-shi&quot;&gt;卧室&lt;a class=&quot;zola-anchor&quot; href=&quot;#wo-shi&quot; aria-label=&quot;Anchor link for: wo-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;常用衣物（内裤）&lt;&#x2F;li&gt;
-&lt;li&gt;立式衣架（放卧室里，方便取用）&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;ke-ting&quot;&gt;客厅&lt;a class=&quot;zola-anchor&quot; href=&quot;#ke-ting&quot; aria-label=&quot;Anchor link for: ke-ting&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;扫地机器人&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;yu-shi&quot;&gt;浴室&lt;a class=&quot;zola-anchor&quot; href=&quot;#yu-shi&quot; aria-label=&quot;Anchor link for: yu-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;电动牙刷&lt;&#x2F;li&gt;
-&lt;li&gt;常用洗浴用品&lt;&#x2F;li&gt;
-&lt;li&gt;香皂等&lt;&#x2F;li&gt;
-&lt;li&gt;毛巾&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;chu-wu-shi&quot;&gt;储物室&lt;a class=&quot;zola-anchor&quot; href=&quot;#chu-wu-shi&quot; aria-label=&quot;Anchor link for: chu-wu-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;吸尘器&lt;&#x2F;li&gt;
-&lt;li&gt;2 个行李箱&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;shou-na&quot;&gt;收纳&lt;a class=&quot;zola-anchor&quot; href=&quot;#shou-na&quot; aria-label=&quot;Anchor link for: shou-na&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;3 个桌面垃圾盒&lt;&#x2F;li&gt;
-&lt;li&gt;1 个桌面插座收纳盒&lt;&#x2F;li&gt;
-&lt;li&gt;4 个桌面常用物品收纳盒&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;qi-ta&quot;&gt;其他&lt;a class=&quot;zola-anchor&quot; href=&quot;#qi-ta&quot; aria-label=&quot;Anchor link for: qi-ta&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;常用工具盒
-&lt;ul&gt;
-&lt;li&gt;U 盘&lt;&#x2F;li&gt;
-&lt;li&gt;网线钳，网线测试仪，若干网线水晶头（每次搬家，都会发现房东的弱电箱根本没接水晶头）&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 </feed>
