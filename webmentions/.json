@@ -222,5 +222,26 @@
     "like-of": "https://www.owenyoung.com/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1535031": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "photo": "",
+      "url": ""
+    },
+    "url": "https://domain.glass/www.owenyoung.com?utm_source=pingback",
+    "published": null,
+    "wm-received": "2022-10-08T15:06:06Z",
+    "wm-id": 1535031,
+    "wm-source": "https://domain.glass/www.owenyoung.com?utm_source=pingback",
+    "wm-target": "https://www.owenyoung.com",
+    "mention-of": "https://www.owenyoung.com",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https://domain.glass/www.owenyoung.com"
+    }
   }
 }
