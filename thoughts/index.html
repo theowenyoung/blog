@@ -248,7 +248,6 @@ h3 {
   padding-bottom: 1.4rem;
   margin-bottom: 1rem;
   line-height: 1;
-  font-weight: 400;
   position: relative;
 }
 h4,
@@ -269,7 +268,6 @@ h6 {
 .bold {
   font-weight: 600;
 }
-
 .mb-absolute {
   margin-bottom: -0.8rem;
 }
@@ -355,7 +353,7 @@ h1 {
 h2 {
   font-size: 1.675rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
 
 }
 
@@ -423,13 +421,14 @@ p {
 }
 
 blockquote {
-  margin: 3.5rem 0;
+  margin: 2.5rem 0;
   position: relative;
 
 }
 
 blockquote p {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
 }
 
 blockquote p:lang(en) {
@@ -447,14 +446,14 @@ blockquote::before{
   font-family: Courier, monospace;
 }
 blockquote > p:first-child {
-  text-indent: 1.675rem;
+  text-indent: 2rem;
 }
 p,
 dl,
 ol,
 ul {
-  font-size: 1.175rem;
-  line-height: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
 }
 
 p:lang(en),
@@ -594,7 +593,7 @@ a.muted,
 }
 
 .text {
-  font-size: 1.175rem;
+  font-size: 1.125rem;
 }
 
 .text-color,
@@ -1278,7 +1277,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
 <span id="continue-reading"></span>
 <blockquote>
 <p>以下这几个别名和函数节省了我至少一吨的时间。</p>
-</blockquote>
 <pre data-lang="bash" style="background-color:#2b303b;color:#c0c5ce;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">gg</span><span>() { </span><span style="color:#bf616a;">git</span><span> commit</span><span style="color:#bf616a;"> -m </span><span>&quot;$</span><span style="color:#bf616a;">*</span><span>&quot;</span><span style="color:#bf616a;"> -a </span><span>}
 </span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">gp</span><span>() { </span><span style="color:#bf616a;">git</span><span> commit</span><span style="color:#bf616a;"> -a -m </span><span>&quot;$</span><span style="color:#bf616a;">*</span><span>&quot; &amp;&amp; </span><span style="color:#bf616a;">git</span><span> push }
 </span><span style="color:#b48ead;">function </span><span style="color:#8fa1b3;">ga</span><span>() { </span><span style="color:#bf616a;">git</span><span> add . }
@@ -1290,6 +1288,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
 </span><span style="color:#96b5b4;">alias </span><span style="color:#8fa1b3;">gs</span><span>=&quot;</span><span style="color:#a3be8c;">git status 2&gt;/dev/null</span><span>&quot;
 </span><span style="color:#96b5b4;">alias </span><span style="color:#8fa1b3;">gv</span><span>=&quot;</span><span style="color:#a3be8c;">git remote -v</span><span>&quot;
 </span></code></pre>
+</blockquote>
 <blockquote>
 <p>两个人有两个人好处，一个人也有一个人的好处。在家办公的情况下，两个人必须独立分开办公才行（公司同理）。一起办公无法提高效率，也会限制很多东西，比如 A
 想要语音聊天，或者外放音乐，外放教程等等等等。但是我也不是很支持公司的远程办公，我认为员工应该有独立办公室，同时也应该有很快能聚集的大厅，这样效率才能最大化。
