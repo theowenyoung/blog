@@ -14,7 +14,7 @@
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
     </h2>
     {% if page.summary -%}
       <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
@@ -30,7 +30,7 @@
     {% endif -%}
     <div class="muted text-sm">
       <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
-        <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+        <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
       </a>
       {% if page.taxonomies.categories %}
       <span>&nbsp;{{ trans(key="label_published_on",lang=lang) }}</span>

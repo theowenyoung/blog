@@ -62,10 +62,6 @@
       <div class="articles h-feed hfeed">
         {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
           {{ macro::post_max(page=page,index=loop.index) }}
-          {% if loop.last %}
-          {% else %}
-            <hr class="w-1__2" />
-          {% endif %}
         {% endfor %}
       </div>
       </details>
@@ -87,8 +83,6 @@
         {{ thoughts_page.summary | safe }}
         <p class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</p>
       </div>
-
-      <hr class="w-full"/>
       </details>
 
       <details open class="py">
