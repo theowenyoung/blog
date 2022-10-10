@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;">给Zola博客增加搜索功能</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;add-search&#x2F;">给Zola博客增加搜索功能</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个<a href="https://www.owenyoung.com/search/">搜索页面</a>，以及首页也添加了一个搜索框。</p>
 <p>我一直在这个博客里存放自己的所有公开内容，包括笔记和文章，我经常需要搜索自己的笔记，在此之前，我一直用 VSCode 在本地搜索文档。但是 VSCode 其实启动挺慢的，而且如果不在电脑边，也没法用，所以最近就研究了几种搜索方案。最终我选择了自托管 Rust 开发的<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/meilisearch/meilisearch">Meilisearch</a>，但是这也不是特别理想的方案，因为需要在自己的 VPS 服务器上托管，对于静态博客来说，多了一环需要动态运行的服务需要维护。但是这已经是目前最不差的方案了。</p>
@@ -1073,10 +1060,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-07-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/add-search/">
-        <time class="dt-published published" datetime="2022-07-12T00:54:03+08:00">2022-07-12</time>
+        <time class="dt-published published" datetime="2022-07-12T00:54:03+08:00">2022.07.12</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
           Random
         </a>
@@ -1085,8 +1072,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;about&#x2F;">关于我和这个博客</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;about&#x2F;">关于我和这个博客</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <p>我在之前建立了一个个人的公开 <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com/">Wiki</a>和 <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/">Blog</a>，让我养成了记笔记，多写东西的习惯，由于习惯已经养成，所以就不再纠结博客的形式问题了，把个人的笔记，博客所有的产出通通都放在这里，这样让我自己更好维护，更省心，之前需要两个地方来回切换，有点麻烦，博客全部内容托管在这个<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">Github 的 Repo 里</a>。</p>
 <p>我更喜欢用明文纯文本记录东西。不喜欢把博客存放到数据库中，这样更有掌控感，更自由，同时也能不被运营商锁定。</p>
@@ -1087,10 +1074,10 @@ ul.text-sm:lang(en) {
 
     <div class="muted text-sm">
       <a title="2022-03-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/about/">
-        <time class="dt-published published" datetime="2022-03-29">2022-03-29</time>
+        <time class="dt-published published" datetime="2022-03-29">2022.03.29</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1099,9 +1086,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1112,7 +1096,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;">Projects</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;">Projects</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>This is a list of projects I’ve done and am doing.</p>
 </div>
@@ -1127,10 +1111,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/projects/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
           Random
         </a>
@@ -1139,8 +1123,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

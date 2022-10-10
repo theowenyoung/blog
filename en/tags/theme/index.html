@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1054,7 +1041,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;gatsby-timeline-theme&#x2F;">A new Gatsby theme [Timeline] - Show your all posts, tweets, instagram posts into one</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;gatsby-timeline-theme&#x2F;">A new Gatsby theme [Timeline] - Show your all posts, tweets, instagram posts into one</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Don’t you think there are too many different personal profile for us? Like twitter, instagram, facebook, blog, etc, So do I, I suppose there is an elegant site to show all my creative work, that’s the new gatsby theme <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/gatsby-theme-timeline">Timeline</a>, a <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.gatsbyjs.com/">Gatsby</a> theme, you can use it to show your all posts, tweets, instagram posts etc into one blog. In my opinion, this is a real personal home.</p>
 <p>Checkout my blog: https://blog.owenyoung.com/</p>
@@ -1072,7 +1059,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2021-01-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/gatsby-timeline-theme/">
-        <time class="dt-published published" datetime="2021-01-29">2021-01-29</time>
+        <time class="dt-published published" datetime="2021-01-29">2021.01.29</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1084,8 +1071,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

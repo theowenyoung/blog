@@ -251,7 +251,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -262,12 +261,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -354,28 +350,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -442,7 +425,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -944,6 +927,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1058,7 +1045,7 @@ ul.text-sm:lang(en) {
       
     </div>
     <div>
-      <h1 class="p-name entry-title" >收集 Javascript 相关的资源</h1>
+      <h1 class="no-border p-name entry-title" >收集 Javascript 相关的资源</h1>
       <div class="display-none p-author h-card vcard">
         <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
         <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>

@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;articles&#x2F;russia-verge-nervous-breakdown&#x2F;">俄罗斯的现状</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;articles&#x2F;russia-verge-nervous-breakdown&#x2F;">俄罗斯的现状</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>在俄罗斯，反对派不会站在反对派的立场上。公民不会为公民权利挺身而出。俄罗斯人民遭受着受害者情结的折磨：他们认为没有什么可以依靠他们，他们无法改变任何事情。</p>
@@ -1081,10 +1068,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-04-10" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/articles/russia-verge-nervous-breakdown/">
-        <time class="dt-published published" datetime="2022-04-10">2022-04-10</time>
+        <time class="dt-published published" datetime="2022-04-10">2022.04.10</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Articles" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/articles/">
           Articles
         </a>
@@ -1093,8 +1080,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;what-is&#x2F;">什么是 XX ？</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;what-is&#x2F;">什么是 XX ？</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集各种事物的介绍。</p>
 </div>
@@ -1072,10 +1059,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-09-03" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/what-is/">
-        <time class="dt-published published" datetime="2022-09-03T18:43:53+08:00">2022-09-03</time>
+        <time class="dt-published published" datetime="2022-09-03T18:43:53+08:00">2022.09.03</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1084,9 +1071,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1097,7 +1081,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;ui&#x2F;">Awesome UI</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;ui&#x2F;">Awesome UI</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集 UI 相关的资源。</p>
 </div>
@@ -1112,10 +1096,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-09-02" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/ui/">
-        <time class="dt-published published" datetime="2022-09-02T11:25:06+08:00">2022-09-02</time>
+        <time class="dt-published published" datetime="2022-09-02T11:25:06+08:00">2022.09.02</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1124,9 +1108,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1137,7 +1118,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;learn&#x2F;">学习任何东西的教程</a> <a href="#index-3" id="index-3" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;learn&#x2F;">学习任何东西的教程</a> <a href="#index-3" id="index-3" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集一些学习资源。</p>
 </div>
@@ -1152,10 +1133,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-08-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/learn/">
-        <time class="dt-published published" datetime="2022-08-25T08:41:32+08:00">2022-08-25</time>
+        <time class="dt-published published" datetime="2022-08-25T08:41:32+08:00">2022.08.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1164,9 +1145,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1177,7 +1155,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dont-forget&#x2F;">不要忘记这些事情</a> <a href="#index-4" id="index-4" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dont-forget&#x2F;">不要忘记这些事情</a> <a href="#index-4" id="index-4" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>最近搬家，发现总会在一些不常见的操作中忘记一些事情，所以决定开一篇笔记记录下一些常见的不能忘的小事。</p>
 </div>
@@ -1192,10 +1170,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-07-31" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/dont-forget/">
-        <time class="dt-published published" datetime="2022-07-31T22:05:32+08:00">2022-07-31</time>
+        <time class="dt-published published" datetime="2022-07-31T22:05:32+08:00">2022.07.31</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1204,9 +1182,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1217,7 +1192,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;life-required-list&#x2F;">生活必备清单</a> <a href="#index-5" id="index-5" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;life-required-list&#x2F;">生活必备清单</a> <a href="#index-5" id="index-5" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>最近刚搬家，顺手整理下我第一时间拿出来要用的东西，我认为这应该属于我的生活必备品，其他的可能都可以丢掉。</p>
 </div>
@@ -1232,10 +1207,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-07-31" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/life-required-list/">
-        <time class="dt-published published" datetime="2022-07-31T21:56:06+08:00">2022-07-31</time>
+        <time class="dt-published published" datetime="2022-07-31T21:56:06+08:00">2022.07.31</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1244,9 +1219,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1257,7 +1229,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;feminism&#x2F;">女权主义</a> <a href="#index-6" id="index-6" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;feminism&#x2F;">女权主义</a> <a href="#index-6" id="index-6" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>女权主义是一系列社会政治运动和意识形态，旨在定义和建立性别的政治，经济，个人和社会平等。女权主义包含了这样一种立场，即社会优先考虑男性的观点，而女性在这些社会中受到不公正的对待。努力改变，并且打击性别歧视的传统观念，为妇女建立与男子平等的教育、职业和人际关系机会和成果。女权运动一直在为妇女权利而运动，包括：投票权、担任公职权、工作权、同工同酬权、拥有财产权、接受教育权、签订合同权、婚内享有平等权利和产假权。女权主义者还努力确保获得避孕药具、合法堕胎和社会融合，并保护妇女和女童免遭强奸、性骚扰和家庭暴力。女性着装标准的变化和女性可接受的身体活动往往是女权主义运动的一部分。</p>
 <p>多年来，许多女权主义运动和意识形态不断发展，代表了不同的观点和目标。传统上，自 19 世纪以来，第一波自由主义女权主义通过在自由民主框架内的改革寻求政治和法律平等，与基于劳工的无产阶级妇女运动形成鲜明对比，后者随着时间的推移发展成为基于阶级斗争理论的社会主义和马克思主义女权主义。自 1960 年代以来，这两种传统也与激进女权主义形成鲜明对比，后者源于第二波女权主义的激进派别，并要求对社会进行彻底的重新排序以消除男性至上;自由主义，社会主义和激进女权主义有时被称为女权主义思想的“三大”学派。</p>
@@ -1274,10 +1246,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-06-07" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/feminism/">
-        <time class="dt-published published" datetime="2022-06-07T16:18:24+08:00">2022-06-07</time>
+        <time class="dt-published published" datetime="2022-06-07T16:18:24+08:00">2022.06.07</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1286,9 +1258,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1299,7 +1268,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;kids&#x2F;">关于丁克&#x2F;不生孩子</a> <a href="#index-7" id="index-7" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;kids&#x2F;">关于丁克&#x2F;不生孩子</a> <a href="#index-7" id="index-7" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集丁克相关的文章和帖子。</p>
 </div>
@@ -1314,10 +1283,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-05-11" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/kids/">
-        <time class="dt-published published" datetime="2022-05-11T19:23:16+08:00">2022-05-11</time>
+        <time class="dt-published published" datetime="2022-05-11T19:23:16+08:00">2022.05.11</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1326,9 +1295,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1339,7 +1305,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;todos&#x2F;">Todos</a> <a href="#index-8" id="index-8" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;todos&#x2F;">Todos</a> <a href="#index-8" id="index-8" class="zola-anchor"></a>
     </h2>
     <p>Todo Lists.</p>
 <h2 id="movies">Movies<a class="zola-anchor" href="#movies" aria-label="Anchor link for: movies">🔗</a></h2>
@@ -1411,10 +1377,10 @@ Here are my picks, in no particular order:</p>
 
     <div class="muted text-sm">
       <a title="2022-04-27" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/todos/">
-        <time class="dt-published published" datetime="2022-04-27T20:01:52+08:00">2022-04-27</time>
+        <time class="dt-published published" datetime="2022-04-27T20:01:52+08:00">2022.04.27</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1423,9 +1389,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1436,7 +1399,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;about&#x2F;">关于我和这个博客</a> <a href="#index-9" id="index-9" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;about&#x2F;">关于我和这个博客</a> <a href="#index-9" id="index-9" class="zola-anchor"></a>
     </h2>
     <p>我在之前建立了一个个人的公开 <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com/">Wiki</a>和 <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/">Blog</a>，让我养成了记笔记，多写东西的习惯，由于习惯已经养成，所以就不再纠结博客的形式问题了，把个人的笔记，博客所有的产出通通都放在这里，这样让我自己更好维护，更省心，之前需要两个地方来回切换，有点麻烦，博客全部内容托管在这个<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">Github 的 Repo 里</a>。</p>
 <p>我更喜欢用明文纯文本记录东西。不喜欢把博客存放到数据库中，这样更有掌控感，更自由，同时也能不被运营商锁定。</p>
@@ -1466,10 +1429,10 @@ Here are my picks, in no particular order:</p>
 
     <div class="muted text-sm">
       <a title="2022-03-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/about/">
-        <time class="dt-published published" datetime="2022-03-29">2022-03-29</time>
+        <time class="dt-published published" datetime="2022-03-29">2022.03.29</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1478,9 +1441,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1491,7 +1451,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books-guide&#x2F;">图书阅读相关资源</a> <a href="#index-10" id="index-10" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books-guide&#x2F;">图书阅读相关资源</a> <a href="#index-10" id="index-10" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集书籍推荐列表，以及资源, 我的个人读书笔记<a href="/blog/books/">在这里</a></p>
 </div>
@@ -1506,10 +1466,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-29" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/books-guide/">
-        <time class="dt-published published" datetime="2022-03-29">2022-03-29</time>
+        <time class="dt-published published" datetime="2022-03-29">2022.03.29</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1518,9 +1478,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1531,7 +1488,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;articles&#x2F;">收集值得阅读的文章</a> <a href="#index-11" id="index-11" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;articles&#x2F;">收集值得阅读的文章</a> <a href="#index-11" id="index-11" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集值得一看的文章。</p>
 </div>
@@ -1546,10 +1503,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/articles/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1558,9 +1515,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1571,7 +1525,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;communities&#x2F;">收集一些有意思的社区</a> <a href="#index-12" id="index-12" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;communities&#x2F;">收集一些有意思的社区</a> <a href="#index-12" id="index-12" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集一些有意思的社区，人间观察。</p>
 </div>
@@ -1586,10 +1540,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/communities/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1598,9 +1552,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1611,7 +1562,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-resources&#x2F;">开发相关的资源汇总</a> <a href="#index-13" id="index-13" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-resources&#x2F;">开发相关的资源汇总</a> <a href="#index-13" id="index-13" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集开发相关的资源。</p>
 </div>
@@ -1626,10 +1577,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/dev-resources/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1638,9 +1589,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1651,7 +1599,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;">开发技巧收藏</a> <a href="#index-14" id="index-14" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;dev-tips&#x2F;">开发技巧收藏</a> <a href="#index-14" id="index-14" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集开发相关的技巧，比如中国需要的镜像服务等。</p>
 </div>
@@ -1666,10 +1614,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/dev-tips/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1678,9 +1626,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1691,7 +1636,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;flutter&#x2F;">Flutter相关资源汇总</a> <a href="#index-15" id="index-15" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;flutter&#x2F;">Flutter相关资源汇总</a> <a href="#index-15" id="index-15" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集 Flutter 相关资源。</p>
 </div>
@@ -1706,10 +1651,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/flutter/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1718,9 +1663,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1731,7 +1673,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;free&#x2F;">互联网上的免费资源汇总</a> <a href="#index-16" id="index-16" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;free&#x2F;">互联网上的免费资源汇总</a> <a href="#index-16" id="index-16" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集互联网上免费的资源。</p>
 </div>
@@ -1746,10 +1688,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/free/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1758,9 +1700,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1771,7 +1710,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;inspires&#x2F;">收集一些给人灵感的东西</a> <a href="#index-17" id="index-17" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;inspires&#x2F;">收集一些给人灵感的东西</a> <a href="#index-17" id="index-17" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>网上冲浪多年，看到过太多有意思的东西了，一定要记下来！</p>
 </div>
@@ -1786,10 +1725,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/inspires/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1798,9 +1737,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1811,7 +1747,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;investing&#x2F;">投资&#x2F;股票相关的资源分享</a> <a href="#index-18" id="index-18" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;investing&#x2F;">投资&#x2F;股票相关的资源分享</a> <a href="#index-18" id="index-18" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>有关投资的一切资源。</p>
 </div>
@@ -1826,10 +1762,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/investing/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1838,9 +1774,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1851,7 +1784,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;javascript&#x2F;">收集 Javascript 相关的资源</a> <a href="#index-19" id="index-19" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;javascript&#x2F;">收集 Javascript 相关的资源</a> <a href="#index-19" id="index-19" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集用过的，好用的 Javascipt 库。</p>
 </div>
@@ -1866,10 +1799,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/javascript/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1878,9 +1811,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1891,7 +1821,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jobs&#x2F;">工作相关的资源汇总</a> <a href="#index-20" id="index-20" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jobs&#x2F;">工作相关的资源汇总</a> <a href="#index-20" id="index-20" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Curating awesome jobs.</p>
 </div>
@@ -1906,10 +1836,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/jobs/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1918,9 +1848,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1931,7 +1858,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;music&#x2F;">音乐收藏</a> <a href="#index-21" id="index-21" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;music&#x2F;">音乐收藏</a> <a href="#index-21" id="index-21" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集喜欢的音乐。</p>
 </div>
@@ -1946,10 +1873,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/music/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -1958,9 +1885,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1971,7 +1895,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;now&#x2F;">Now</a> <a href="#index-22" id="index-22" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;now&#x2F;">Now</a> <a href="#index-22" id="index-22" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>这是一个 <a rel="noopener nofollow noreferrer" target="_blank" href="https://nownownow.com/about">now</a> 页面, 在<a href="https://www.owenyoung.com/about/">关于页面</a> 了解更多。</p>
@@ -1988,10 +1912,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/now/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2000,9 +1924,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2013,7 +1934,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;rust&#x2F;">Rust相关的资源</a> <a href="#index-23" id="index-23" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;rust&#x2F;">Rust相关的资源</a> <a href="#index-23" id="index-23" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Curating awesome rust resources.</p>
 </div>
@@ -2028,10 +1949,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/rust/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2040,9 +1961,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2053,7 +1971,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;sources&#x2F;">探索互联网上高质量的内容</a> <a href="#index-24" id="index-24" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;sources&#x2F;">探索互联网上高质量的内容</a> <a href="#index-24" id="index-24" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。</p>
 </div>
@@ -2068,10 +1986,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/sources/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2080,9 +1998,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2093,7 +2008,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;you-should-know&#x2F;">你应该知道的一些冷知识</a> <a href="#index-25" id="index-25" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;you-should-know&#x2F;">你应该知道的一些冷知识</a> <a href="#index-25" id="index-25" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集冷知识，维基百科以及一些数据。</p>
 </div>
@@ -2108,10 +2023,10 @@ Here are my picks, in no particular order:</p>
   
     <div class="muted text-sm">
       <a title="2022-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/you-should-know/">
-        <time class="dt-published published" datetime="2022-03-25">2022-03-25</time>
+        <time class="dt-published published" datetime="2022-03-25">2022.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2120,9 +2035,6 @@ Here are my picks, in no particular order:</p>
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2133,7 +2045,7 @@ Here are my picks, in no particular order:</p>
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;thoughts&#x2F;">短想法</a> <a href="#index-26" id="index-26" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;thoughts&#x2F;">短想法</a> <a href="#index-26" id="index-26" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>今天看到推特关注的一些台湾网友在讨论<a rel="noopener nofollow noreferrer" target="_blank" href="https://tw.news.yahoo.com/%E5%AE%9A%E5%AD%A4%E6%94%AF-%E6%96%AF%E5%9D%A6%E5%85%A8%E9%9D%A2%E5%AE%A3%E6%88%B0%E7%99%BE%E9%9D%88%E6%9E%9C-%E6%80%92%E8%BD%9F-%E5%85%AC%E5%AF%A9%E9%9C%B8%E5%87%8C-%E7%B4%84%E7%9B%B4%E6%92%AD%E8%BC%B8%E8%B4%8F-141505234.html">百灵果和詹姆士</a>
@@ -2254,10 +2166,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2022-03-10" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/thoughts/">
-        <time class="dt-published published" datetime="2022-03-10">2022-03-10</time>
+        <time class="dt-published published" datetime="2022-03-10">2022.03.10</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2266,9 +2178,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2279,7 +2188,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tools&#x2F;">最好用的工具集合</a> <a href="#index-27" id="index-27" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tools&#x2F;">最好用的工具集合</a> <a href="#index-27" id="index-27" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集各种好用的，有用的工具。</p>
 </div>
@@ -2294,10 +2203,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2022-03-10" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/tools/">
-        <time class="dt-published published" datetime="2022-03-10">2022-03-10</time>
+        <time class="dt-published published" datetime="2022-03-10">2022.03.10</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2306,9 +2215,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2319,7 +2225,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jokes&#x2F;">笑话收集</a> <a href="#index-28" id="index-28" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;jokes&#x2F;">笑话收集</a> <a href="#index-28" id="index-28" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集笑话, 有的时候和外国人交流的时候，经常需要讲一些笑话，但是脑子里很少能立刻想到几个，在这记录一些。</p>
 </div>
@@ -2334,10 +2240,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2022-01-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/jokes/">
-        <time class="dt-published published" datetime="2022-01-26">2022-01-26</time>
+        <time class="dt-published published" datetime="2022-01-26">2022.01.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2346,9 +2252,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2359,7 +2262,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;stop&#x2F;">你应该立即停止做的事</a> <a href="#index-29" id="index-29" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;stop&#x2F;">你应该立即停止做的事</a> <a href="#index-29" id="index-29" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>有点标题党，但是确实是我的肺腑之言啊。</p>
 </div>
@@ -2374,10 +2277,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-10-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/stop/">
-        <time class="dt-published published" datetime="2021-10-26">2021-10-26</time>
+        <time class="dt-published published" datetime="2021-10-26">2021.10.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2386,9 +2289,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2399,7 +2299,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;awesome-list&#x2F;">各种清单，列表，目录收集 - Notes List</a> <a href="#index-30" id="index-30" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;awesome-list&#x2F;">各种清单，列表，目录收集 - Notes List</a> <a href="#index-30" id="index-30" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集各种清单，列表，目录。</p>
 </div>
@@ -2414,10 +2314,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/awesome-list/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2426,9 +2326,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2439,7 +2336,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;">值得收藏的截图</a> <a href="#index-31" id="index-31" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;image-quotes&#x2F;">值得收藏的截图</a> <a href="#index-31" id="index-31" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>一个穷人什么时候有时间发疯啊</p>
@@ -2457,10 +2354,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/image-quotes/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2469,9 +2366,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2482,7 +2376,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;">电影笔记</a> <a href="#index-32" id="index-32" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;">电影笔记</a> <a href="#index-32" id="index-32" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>记录自己看过的电影，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021 开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。</p>
 </div>
@@ -2497,10 +2391,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/movies/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2509,9 +2403,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2522,7 +2413,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;quotes&#x2F;">收集发人深省的话</a> <a href="#index-33" id="index-33" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;quotes&#x2F;">收集发人深省的话</a> <a href="#index-33" id="index-33" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>这几年的伊朗，从 2017 年开始，社会问题层出不穷，我们开始有各种各样激烈的抗争，工人阶级的、女性运动、气候（一些地区严重缺水）抗争、少数群体的抗争，这些年一个有一个抗争持续累积的过程，是不同被压迫群体团结的过程，也是一个社会建立共识和相互理解的过程，“现在我们也感受到被压迫了，更能理解其它群体处于被压迫的状态是什么感受了”。在 2009 年绿色革命时期，抗争的人们绝不会说，我们也要把注意力放在边缘群体上，看看他们的处境是怎么样。 – 端</p>
@@ -2574,10 +2465,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/quotes/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2586,9 +2477,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2599,7 +2487,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;satire-quotes&#x2F;">讽刺言论收集</a> <a href="#index-34" id="index-34" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;satire-quotes&#x2F;">讽刺言论收集</a> <a href="#index-34" id="index-34" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>我大概数了数，能进入乌克兰站地的中国记者，比能进入徐州的中国记者还多。 – 微博网友 @鲁镇旧闻</p>
@@ -2617,10 +2505,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/satire-quotes/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2629,9 +2517,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2642,7 +2527,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;">电视剧笔记</a> <a href="#index-35" id="index-35" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;">电视剧笔记</a> <a href="#index-35" id="index-35" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>记录自己看过的剧，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021 开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。有一些剧是看的解说，但是有点后悔，当时是为了节省时间，早知道那么精彩就应该看原剧。</p>
 </div>
@@ -2657,10 +2542,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/tv-shows/">
-        <time class="dt-published published" datetime="2021-03-26">2021-03-26</time>
+        <time class="dt-published published" datetime="2021-03-26">2021.03.26</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2669,9 +2554,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2682,7 +2564,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;answers&#x2F;">有意思的问题收集</a> <a href="#index-36" id="index-36" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;answers&#x2F;">有意思的问题收集</a> <a href="#index-36" id="index-36" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://news.ycombinator.com/item?id=23092657">Ask HN: 说出一个改变你生活的想法</a></p>
@@ -2700,10 +2582,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/answers/">
-        <time class="dt-published published" datetime="2021-03-25">2021-03-25</time>
+        <time class="dt-published published" datetime="2021-03-25">2021.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2712,9 +2594,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2725,7 +2604,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;english-learning&#x2F;">英语学习相关资源</a> <a href="#index-37" id="index-37" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;english-learning&#x2F;">英语学习相关资源</a> <a href="#index-37" id="index-37" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集英语学习相关的工具，资源。</p>
 </div>
@@ -2740,10 +2619,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/english-learning/">
-        <time class="dt-published published" datetime="2021-03-25">2021-03-25</time>
+        <time class="dt-published published" datetime="2021-03-25">2021.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2752,9 +2631,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -2765,7 +2641,7 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;">生活技巧</a> <a href="#index-38" id="index-38" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tips&#x2F;">生活技巧</a> <a href="#index-38" id="index-38" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>收集一些关于生活中的 Tips</p>
 </div>
@@ -2780,10 +2656,10 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
   
     <div class="muted text-sm">
       <a title="2021-03-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/tips/">
-        <time class="dt-published published" datetime="2021-03-25">2021-03-25</time>
+        <time class="dt-published published" datetime="2021-03-25">2021.03.25</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Notes" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/notes/">
           Notes
         </a>
@@ -2792,8 +2668,6 @@ Changelog 的信息还是要保存到文本文件里,像这个博客的<a href="
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

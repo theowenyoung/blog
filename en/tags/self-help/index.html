@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1054,7 +1041,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;books&#x2F;12-rules-for-life&#x2F;">12 Rules for Life</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;books&#x2F;12-rules-for-life&#x2F;">12 Rules for Life</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>I know this book from <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=8wLCmDtCDAM">this video</a>, but actually it’s not my type. It’s basically based by experience not by science.</p>
 <p>The best part is the foreword. But it’s not written by the author. Maybe I should read some books written by this guy.</p>
@@ -1070,7 +1057,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-04-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/books/12-rules-for-life/">
-        <time class="dt-published published" datetime="2022-04-26T02:19:51+08:00">2022-04-26</time>
+        <time class="dt-published published" datetime="2022-04-26T02:19:51+08:00">2022.04.26</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1082,8 +1069,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

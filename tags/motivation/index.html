@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;know-vs-do&#x2F;">知道该做什么和真正去做之间的差距是巨大的</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;know-vs-do&#x2F;">知道该做什么和真正去做之间的差距是巨大的</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>有一位医生曾经被问到：“你工作中最难的部分是什么？”。医生回答：“不是压力或责任，那些都太基本了，最难的是让我的病人按照我要求的去做。“</p>
 <p>如果你去看过病，你就会知道，医生有的时候嘱咐我们该吃什么，以及不该吃什么。我们知道医生是对的，这代表我们会严格遵守医嘱吗？不，正常情况下，我们可能只会在前几天有所注意，过不了多久我们又会回到自己以前的生活方式。我们只期待那该死的药能帮我们快捷的解决所有问题。</p>
@@ -1076,10 +1063,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-04-06" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/know-vs-do/">
-        <time class="dt-published published" datetime="2022-04-06">2022-04-06</time>
+        <time class="dt-published published" datetime="2022-04-06">2022.04.06</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
           Random
         </a>
@@ -1088,8 +1075,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

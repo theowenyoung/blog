@@ -233,7 +233,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -244,12 +243,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -336,28 +332,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -424,7 +407,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -926,6 +909,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1048,7 +1035,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;journals&#x2F;2022-09-12&#x2F;">2022.09.12: Assorted Links</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;journals&#x2F;2022-09-12&#x2F;">2022.09.12: Assorted Links</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.sanejs.dev/docs/overview">Sanejs - a starter-kit for server-rendered templates built with HTMX, Express, and Mongoose</a></li>
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
 
     <div class="muted text-sm">
       <a title="2022-09-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/journals/2022-09-12/">
-        <time class="dt-published published" datetime="2022-09-12T13:47:59+08:00">2022-09-12</time>
+        <time class="dt-published published" datetime="2022-09-12T13:47:59+08:00">2022.09.12</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1069,9 +1056,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1082,7 +1066,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;">Simple bash to generate template markdown file for the initial blog post</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post&#x2F;">Simple bash to generate template markdown file for the initial blog post</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>When you’re using markdown to write your blog, you can use the following template to generate a new markdown file, you may use some template like this to generate a new markdown file:</p>
 </div>
@@ -1097,7 +1081,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-07-25" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/simple-bash-to-generate-template-markdown-file-for-the-initial-blog-post/">
-        <time class="dt-published published" datetime="2022-07-25T10:50:28+08:00">2022-07-25</time>
+        <time class="dt-published published" datetime="2022-07-25T10:50:28+08:00">2022.07.25</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1109,9 +1093,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1122,7 +1103,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">Adding search to zola blog with meilisearch deployed on Mogenius</a> <a href="#index-3" id="index-3" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">Adding search to zola blog with meilisearch deployed on Mogenius</a> <a href="#index-3" id="index-3" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>I deployed <a rel="noopener nofollow noreferrer" target="_blank" href="https://meilisearch.com/">Meilisearch</a> on my VPS <a href="https://www.owenyoung.com/blog/add-search/">a couple of days ago</a>, but I’m panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it’s not a stable environment to deploy meilisearch. So I started to browse <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.trackawesomelist.com/ripienaar/free-for-dev/">free-for-dev</a>, see if there are some good(and cheap) solutions for me. I saw this:</p>
 <blockquote>
@@ -1146,7 +1127,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-07-17" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/">
-        <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022-07-17</time>
+        <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022.07.17</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1158,9 +1139,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1171,7 +1149,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a> <a href="#index-4" id="index-4" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a> <a href="#index-4" id="index-4" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Since I saw the concept of <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/IndieWeb">IndieWeb</a> last year, I’ve been wanting to support it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my Zola blog</a>. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.</p>
 </div>
@@ -1186,7 +1164,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-06-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/indieweb/">
-        <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>
+        <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022.06.12</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1198,9 +1176,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1211,7 +1186,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;why-foreigners-envy-china&#x2F;">Why foreigners envy China?</a> <a href="#index-5" id="index-5" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;why-foreigners-envy-china&#x2F;">Why foreigners envy China?</a> <a href="#index-5" id="index-5" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>It would be easy for me to admire China’s supposedly efficient government if I were a result-oriented foreigner and didn’t understand how China got there, but I’ve been there and I know how their exploitation, their deception, their propaganda, their education. I know how the people’s lives and minds are controlled in every way, not obviously for life before, but since Covid-19, their intrusion into normal life has reached a very serious part.</p>
 <p><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.youtube.com/watch?v=2DH4v6FnbvM">This Bill Maher’s video </a> clearly shows us that even though the host is so smart and cares so much about freedom of speech, there is no hiding his envy for all that the Chinese government has accomplished through dictatorship.</p>
@@ -1227,7 +1202,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-04-30" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/why-foreigners-envy-china/">
-        <time class="dt-published published" datetime="2022-04-30T19:17:39+08:00">2022-04-30</time>
+        <time class="dt-published published" datetime="2022-04-30T19:17:39+08:00">2022.04.30</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1239,9 +1214,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1252,7 +1224,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Wiki Links to Markdown Links for VSCode</a> <a href="#index-6" id="index-6" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Wiki Links to Markdown Links for VSCode</a> <a href="#index-6" id="index-6" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
 </div>
@@ -1267,7 +1239,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-03-27" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/">
-        <time class="dt-published published" datetime="2022-03-27">2022-03-27</time>
+        <time class="dt-published published" datetime="2022-03-27">2022.03.27</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1279,9 +1251,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1292,7 +1261,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;">Caddy File Server Browser with URL Scheme</a> <a href="#index-7" id="index-7" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;">Caddy File Server Browser with URL Scheme</a> <a href="#index-7" id="index-7" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Copy the <a rel="noopener nofollow noreferrer" target="_blank" href="https://gist.github.com/theowenyoung/e09cb6e2c59f247fdc3f4e6fe4401481">Template</a> to your local caddy config folder.</p>
 </div>
@@ -1307,7 +1276,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/caddy-file-server-browser-with-url-scheme/">
-        <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
+        <time class="dt-published published" datetime="2022-03-26">2022.03.26</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1319,9 +1288,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1332,7 +1298,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;makefile-template&#x2F;">Makefile Template</a> <a href="#index-8" id="index-8" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;makefile-template&#x2F;">Makefile Template</a> <a href="#index-8" id="index-8" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Common Makefile Template.</p>
 </div>
@@ -1347,7 +1313,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/makefile-template/">
-        <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
+        <time class="dt-published published" datetime="2022-03-26">2022.03.26</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1359,9 +1325,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1372,7 +1335,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mastdon-setup&#x2F;">Mastdon Development Setup</a> <a href="#index-9" id="index-9" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mastdon-setup&#x2F;">Mastdon Development Setup</a> <a href="#index-9" id="index-9" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Also see <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.joinmastodon.org/dev/setup/">dev/setup</a> <a rel="noopener nofollow noreferrer" target="_blank" href="https://docs.joinmastodon.org/admin/install/">admin/install</a></p>
 </div>
@@ -1387,7 +1350,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/mastdon-setup/">
-        <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
+        <time class="dt-published published" datetime="2022-03-26">2022.03.26</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1399,9 +1362,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-            <hr class="w-1__2" />
-          
         
           
   <article class="h-entry hentry">
@@ -1412,7 +1372,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mini-reset-css&#x2F;">Mini Reset CSS</a> <a href="#index-10" id="index-10" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;mini-reset-css&#x2F;">Mini Reset CSS</a> <a href="#index-10" id="index-10" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><blockquote>
 <p>Forked by <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/jgthms/minireset.css/blob/master/minireset.css">https://github.com/jgthms/minireset.css/blob/master/minireset.css</a></p>
@@ -1429,7 +1389,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-03-26" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/mini-reset-css/">
-        <time class="dt-published published" datetime="2022-03-26">2022-03-26</time>
+        <time class="dt-published published" datetime="2022-03-26">2022.03.26</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1441,8 +1401,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-          
-          
         
       </div>
       </details>
@@ -1561,10 +1519,8 @@ ul.text-sm:lang(en) {
 <p>As a result of decades of hate education by the Chinese government, it seems that most Chinese people have a paranoia of persecution. They think that America want to hurt China, Japan want to hurt China, India want hurt China and so on. And they can not distinguish the government and the people. In particular, if you are a journalist or you are filming something, you are likely to be suspected by many people of being a government spy. Western journalists here have as bad a reputation as Western governments. – 2022.05.16</p>
 </blockquote>
 
-        <p class="no-border"><a href="/en/thoughts/">View all thoughts</a></p>
+        <p class="no-border"><a href="/en/thoughts/#continue-reading">View all thoughts</a></p>
       </div>
-
-      <hr class="w-full"/>
       </details>
 
       <details open class="py">
@@ -1716,7 +1672,7 @@ the same axis. –
 <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/Ask_Politics/comments/uleb6a/comment/i7xh2x0/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3">reddit comment</a></p>
 </blockquote>
 
-        <p class="no-border"><a href="/en/quotes/">View all quotes</a></p>
+        <p class="no-border"><a href="/en/quotes/#continue-reading">View all quotes</a></p>
       </div>
       </details>
       

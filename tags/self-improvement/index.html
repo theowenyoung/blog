@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;de-roboticization&#x2F;">我想让自己说话不那么“端着”</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;de-roboticization&#x2F;">我想让自己说话不那么“端着”</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>如果你在社交网络上泡久了，久而久之你会发现越来越多的博主说话都有点“端着”，就明明他是一个人，但是他说话的方式却像是一个媒体，或者说是小编，甚至是机器人。这给人一种距离感，无聊感，有的时候还会觉得这个人高高在上。并且就我观察而言，男的说话比女的要端的多。我分析这主要是因为男的从小被教育不要轻易表露自己的情绪，遇到事尽量避免求助别人造成的，所以男的在日常生活中也很少与人进行很深层次的交流，久而久之，他们失去了“不端着”地与他人交流的能力。相比之下，你会发现互联网上的女博主们发言就很自然，很真诚。</p>
 <p>我觉得这很可惜，因为真诚在人类社会中是一种非常珍贵的能力，但是大多数男性已经失去了这种能力，而这种能力一旦失去，就很难再找回来。</p>
@@ -1073,10 +1060,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-10-04" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/de-roboticization/">
-        <time class="dt-published published" datetime="2022-10-04T02:17:46+08:00">2022-10-04</time>
+        <time class="dt-published published" datetime="2022-10-04T02:17:46+08:00">2022.10.04</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
           Random
         </a>
@@ -1085,8 +1072,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

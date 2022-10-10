@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1054,7 +1041,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">Adding search to zola blog with meilisearch deployed on Mogenius</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius&#x2F;">Adding search to zola blog with meilisearch deployed on Mogenius</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>I deployed <a rel="noopener nofollow noreferrer" target="_blank" href="https://meilisearch.com/">Meilisearch</a> on my VPS <a href="https://www.owenyoung.com/blog/add-search/">a couple of days ago</a>, but I’m panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it’s not a stable environment to deploy meilisearch. So I started to browse <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.trackawesomelist.com/ripienaar/free-for-dev/">free-for-dev</a>, see if there are some good(and cheap) solutions for me. I saw this:</p>
 <blockquote>
@@ -1078,7 +1065,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-07-17" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/">
-        <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022-07-17</time>
+        <time class="dt-published published" datetime="2022-07-17T08:50:12+08:00">2022.07.17</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1090,9 +1077,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-              <hr class="w-1__2" />
-            
           
             
   <article class="h-entry hentry">
@@ -1103,7 +1087,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;">Now, I&#x27;m in IndieWeb?</a> <a href="#index-2" id="index-2" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>Since I saw the concept of <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/IndieWeb">IndieWeb</a> last year, I’ve been wanting to support it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog">my Zola blog</a>. Before that my blog had never had a commenting system, and this time with Webmention I was finally able to get a static blog to display responses to articles on the web in plain html. I will document how I did it in this article.</p>
 </div>
@@ -1118,7 +1102,7 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-06-12" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/en/blog/indieweb/">
-        <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022-06-12</time>
+        <time class="dt-published published" datetime="2022-06-12T03:40:31+08:00">2022.06.12</time>
       </a>
       
       <span>&nbsp;on</span>
@@ -1130,8 +1114,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

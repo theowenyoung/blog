@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;how-to-spend-everyday&#x2F;">自由职业者如何度过每一天？</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;how-to-spend-everyday&#x2F;">自由职业者如何度过每一天？</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>自由职业的好处是时间变多，不用通勤，减少了很多不必要的社交，随心所欲的做自己的事情，但是确实要提升自我管理能力，不得不说，我走了很多弯路。其中最现实的问题就是：<strong>如何为碎片化的时间/吃饭时间/不想工作的时间找到源源不断的事做</strong>，我把这类时间统称为放松时间。</p>
 <p>放松时间做的事情对一个人的幸福感至关重要，你在放松时间里做的事情越有意义，自由职业的幸福感就越高。</p>
@@ -1073,10 +1060,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2021-12-31" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/how-to-spend-everyday/">
-        <time class="dt-published published" datetime="2021-12-31">2021-12-31</time>
+        <time class="dt-published published" datetime="2021-12-31">2021.12.31</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
           Random
         </a>
@@ -1085,8 +1072,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">

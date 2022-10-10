@@ -241,7 +241,6 @@ h3 {
   margin-bottom: 1rem;
   line-height: 1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 h4,
@@ -252,12 +251,9 @@ h6 {
   margin-bottom: 0.5rem;
   line-height: 1.1;
   font-weight: 400;
-  border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
-.header {
-}
 .relative {
   position: relative;
 }
@@ -344,28 +340,15 @@ p.tweet-content {
   fill: currentcolor;
 }
 
-h1::after,
-h2::after,
-h3::after {
-  padding: 0;
-  margin: 0;
-  display: block;
-  content: "";
-  width: 50%;
-  height: 1px;
-  background-color: var(--colors-background);
-  position: absolute;
-  right: 0;
-  bottom: -1px;
-}
-
 h1 {
   font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.675rem;
   font-style: italic;
+  font-weight: 400;
+
 }
 
 h3 {
@@ -432,7 +415,7 @@ p {
 }
 
 blockquote {
-  margin: 3rem 0;
+  margin: 3.5rem 0;
   position: relative;
 
 }
@@ -934,6 +917,10 @@ ul.text-sm:lang(en) {
     max-width: 56rem;
     margin: 0 auto;
   }
+  article {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 
   .sidebar {
     /* position: sticky; */
@@ -1057,7 +1044,7 @@ ul.text-sm:lang(en) {
     </div>
    
     <h2 class="no-border pb-sm">
-      <a class="no-underline u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;windows-10-ubuntu-22-dual-system-without-usb-flash-drive&#x2F;">不用 U 盘在 Windows 10 上安装Ubuntu Server 22 双系统</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
+      <a class="u-url p-name entry-title" rel="bookmark" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;windows-10-ubuntu-22-dual-system-without-usb-flash-drive&#x2F;">不用 U 盘在 Windows 10 上安装Ubuntu Server 22 双系统</a> <a href="#index-1" id="index-1" class="zola-anchor"></a>
     </h2>
     <div class="p-summary entry-summary"><p>这篇文章是一篇笔记，记录一下安装期间遇到的坑，不算是教程，因为我走了一遍流程之后决定放弃这样安装，还是乖乖的买一块新的 U 盘去安装系统，劝你也这样做（我为啥要这样装系统，是因为我的旧 U 盘是一个 360wifi 的 u 盘，试了用<a rel="noopener nofollow noreferrer" target="_blank" href="https://rufus.ie/en/">refus</a>,<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.ventoy.net/en/faq.html">ventoy</a>等工具创建引导 u 盘，电脑都无法启动这块 u 盘的引导系统，这才尝试无 U 盘安装）。</p>
 <blockquote>
@@ -1077,10 +1064,10 @@ ul.text-sm:lang(en) {
   
     <div class="muted text-sm">
       <a title="2022-08-07" class="no-underline u-url p-name entry-title" rel="bookmark" href="https://www.owenyoung.com/blog/windows-10-ubuntu-22-dual-system-without-usb-flash-drive/">
-        <time class="dt-published published" datetime="2022-08-07T23:31:06+08:00">2022-08-07</time>
+        <time class="dt-published published" datetime="2022-08-07T23:31:06+08:00">2022.08.07</time>
       </a>
       
-      <span>&nbsp;发布在</span>
+      <span>&nbsp;on</span>
       <a title="Random" class="no-underline p-category" rel="category tag" href="https://www.owenyoung.com/categories/random/">
           Random
         </a>
@@ -1089,8 +1076,6 @@ ul.text-sm:lang(en) {
     </div>
   </article>
   
-            
-            
           
           
     <div class="pagination py">
