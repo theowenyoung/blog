@@ -202,24 +202,22 @@ fffef8
 #f4ecd8;
 */
 html {
-  font-size: 16px;
+  font-size: 15px;
   box-sizing: border-box;
   --colors-text: #41403e;
-  --colors-muted: rgb(117, 117, 117);
+  --colors-muted: #718096;
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-background: #fffef8;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
-  --colors-background-surface: #f9f5e9;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
-    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", Palatino, sans-serif;
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
 }
 
 body {
@@ -227,16 +225,16 @@ body {
   background-color: var(--colors-background);
 }
 
-[lang]:lang(zh) {
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-[lang]:lang(en) {
-  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    html {
+        --colors-background: #202124;
+        --colors-text: rgb(236, 237, 238);
+    }
+    body {
+      backgroup-color: var(--colors-background);
+    }
 }
 
 #root {
@@ -251,8 +249,8 @@ h3 {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   margin-bottom: 1rem;
-  line-height: 1.1;
-  font-weight: 600;
+  line-height: 1;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
@@ -263,11 +261,13 @@ h6 {
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
+.header {
+}
 .relative {
   position: relative;
 }
@@ -370,15 +370,17 @@ h3::after {
 }
 
 h1 {
-  font-size: 1.625rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.375rem;
+  font-style: italic;
 }
 
 pre {
@@ -395,7 +397,6 @@ pre {
 code {
   border-radius: 0.25rem;
   padding: 0.375rem 0.5rem;
-  background-color: var(--colors-code-background);
 }
 
 pre > code {
@@ -422,7 +423,7 @@ hr {
   width: 55%;
   border: 0;
   border-top: 1px solid var(--colors-divider);
-  margin: 1em 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -441,30 +442,45 @@ p {
 }
 
 blockquote {
-  padding: 1px 0 1px 1.5rem;
-  margin: 1.5rem 0;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-left: 5px solid var(--colors-primary);
+  margin: 3rem 0;
+  position: relative;
+
 }
 
 blockquote p {
-  margin: 0.5rem 0;
+  font-size: 1.4rem;
 }
 
+blockquote p:lang(en) {
+  font-size: 1.6rem;
+}
+blockquote::before{
+  position: absolute;
+  content:"\201C"; 
+  top: 0.875rem;
+  font-size: 2.5rem;
+  color: var(--colors-primary);
+  line-height: .1em;
+  vertical-align: -.4em;
+  font-weight: bold;
+  font-family: Courier, monospace;
+}
+blockquote > p:first-child {
+  text-indent: 1.675rem;
+}
 p,
 dl,
 ol,
 ul {
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 1.175rem;
+  line-height: 2rem;
 }
 
 p:lang(en),
 dl:lang(en),
 ol:lang(en),
 ul:lang(en) {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
 
@@ -559,7 +575,7 @@ a:visited {
   transition: color 200ms ease;
   text-decoration: underline;
   color: inherit;
-  text-decoration-thickness: 0.1rem;
+  text-decoration-thickness: 1px;
 }
 
 :target {
@@ -597,7 +613,7 @@ a.muted,
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.175rem;
 }
 
 .text-color,
@@ -903,12 +919,12 @@ ul.text-sm:lang(en) {
   h1::after,
   h2::after,
   h3::after {
-    background-color: var(--colors-background-surface);
+    background-color: var(--colors-background);
   }
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    /* background-color: var(--colors-background-surface); */
+    /* background-color: var(--colors-background); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
     /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
   }
@@ -925,17 +941,17 @@ ul.text-sm:lang(en) {
   }
 
   .main-inner {
-    max-width: 48rem;
+    max-width: 52rem;
     margin: 0 auto;
   }
 
   .sidebar {
-    position: sticky;
+    /* position: sticky; */
     border-top: none;
-    top: 0;
-    z-index: 1;
-    height: 100vh;
-    overflow-y: auto;
+    /* top: 0; */
+    /* z-index: 1; */
+    /* height: 100vh; */
+    /* overflow-y: auto; */
     width: 20rem;
   }
 
@@ -1029,58 +1045,22 @@ ul.text-sm:lang(en) {
           <div class="main-inner">
             
 <div class="h-entry hentry detail-page">
-  <header id="overview">
+  <header class="header" id="overview">
     <div class="">
       <span>&gt;&gt;</span>
       <a href="https://www.owenyoung.com/en/">Home</a>
       
         <span class="divider">/</span>
         <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/en/categories/notes/">Notes</a>
-        <span class="divider">/</span>
-          <div class="inline-block p-tags">
-            
-              <a class="p-tag" href="https://www.owenyoung.com/en/tags/changelog/">ChangeLog</a>
-              
-                ,
-              
-            
-              <a class="p-tag" href="https://www.owenyoung.com/en/tags/about/">About</a>
-              
-                
-              
-            
-          </div>
-        
       
     </div>
     <div>
-      <h1 class="p-name entry-title" style="font-size:1.8rem;">ChangeLog</h1>
+      <h1 class="p-name entry-title" >ChangeLog</h1>
       <div class="display-none p-author h-card vcard">
         <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
         <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
         <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
       </div>
-      
-        <div class="pb muted">
-          <div>
-            
-              Published:
-              <time class="dt-published published" datetime="2022-06-13T23:15:27+08:00">2022-06-13</time>
-            
-            
-              · Updated:
-              <time class="dt-updated updated" datetime="2022-09-01">2022-09-01</time>
-              ·
-            
-            
-              Reading Time: 
-  
-    3
-  
- min
-          </div>
-        </div>
-      
     </div>
     
   </header>
@@ -1101,6 +1081,11 @@ ul.text-sm:lang(en) {
         <li>
           <a href="#start">Get Started</a>
         </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/changelog/#2022-10-10-blockquote-ui">2022.10.10 Blockquote ui</a>
+            
+          </li>
         
           <li>
             <a href="https://www.owenyoung.com/en/changelog/#2022-09-01-show-short-title">2022.09.01 Show short title</a>
@@ -1207,7 +1192,9 @@ ul.text-sm:lang(en) {
     <div id="start"></div>
     <article class="e-content entry-content">
       <p>All Updates about this blog.</p>
-<span id="continue-reading"></span><h2 id="2022-09-01-show-short-title">2022.09.01 Show short title<a class="zola-anchor" href="#2022-09-01-show-short-title" aria-label="Anchor link for: 2022-09-01-show-short-title">🔗</a></h2>
+<span id="continue-reading"></span><h2 id="2022-10-10-blockquote-ui">2022.10.10 Blockquote ui<a class="zola-anchor" href="#2022-10-10-blockquote-ui" aria-label="Anchor link for: 2022-10-10-blockquote-ui">🔗</a></h2>
+<p>from <code>|</code> to <code>&quot;</code></p>
+<h2 id="2022-09-01-show-short-title">2022.09.01 Show short title<a class="zola-anchor" href="#2022-09-01-show-short-title" aria-label="Anchor link for: 2022-09-01-show-short-title">🔗</a></h2>
 <p>Show short title for all posts in home page:</p>
 <p><img src="https://www.owenyoung.com/en/changelog/./show-short-title.png" alt="short title" /></p>
 <h2 id="2022-07-25-support-tweet-reply">2022.07.25 Support Tweet Reply<a class="zola-anchor" href="#2022-07-25-support-tweet-reply" aria-label="Anchor link for: 2022-07-25-support-tweet-reply">🔗</a></h2>
@@ -1239,17 +1226,22 @@ ul.text-sm:lang(en) {
 <h2 id="2022-07-09-support-backlinks">2022.07.09 Support backlinks.<a class="zola-anchor" href="#2022-07-09-support-backlinks" aria-label="Anchor link for: 2022-07-09-support-backlinks">🔗</a></h2>
 <p><img src="https://www.owenyoung.com/en/changelog/./backlinks.png" alt="backlinks" /></p>
 <h2 id="2022-07-09-fix-large-building-time">2022.07.09 Fix large building time<a class="zola-anchor" href="#2022-07-09-fix-large-building-time" aria-label="Anchor link for: 2022-07-09-fix-large-building-time">🔗</a></h2>
-<p>I wrote a heavy logic in the <code>base.html</code> template, this can increase much building time, actually the logic is only dependent by two page, so I move it, now the building time is about 1 second again, also <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/getzola/zola/issues/1902#issuecomment-1178845667">see here</a></p>
+<p>I wrote a heavy logic in the <code>base.html</code> template, this can increase much
+building time, actually the logic is only dependent by two page, so I move it,
+now the building time is about 1 second again, also
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/getzola/zola/issues/1902#issuecomment-1178845667">see here</a></p>
 <h2 id="2022-07-06-desktop-read-mode">2022.07.06 Desktop Read Mode<a class="zola-anchor" href="#2022-07-06-desktop-read-mode" aria-label="Anchor link for: 2022-07-06-desktop-read-mode">🔗</a></h2>
-<p>when screen width greater than 67.5rem, then set the background color of main area as white, it’s like the safari reader mode, can be more focus to the reader.
-<img src="https://www.owenyoung.com/en/changelog/./2022-07-06-home-page-screen-shot.png" alt="home page" /></p>
+<p>when screen width greater than 67.5rem, then set the background color of main
+area as white, it’s like the safari reader mode, can be more focus to the
+reader. <img src="https://www.owenyoung.com/en/changelog/./2022-07-06-home-page-screen-shot.png" alt="home page" /></p>
 <h2 id="2022-07-03-decrease-base-fontsize">2022.07.03 Decrease Base fontsize<a class="zola-anchor" href="#2022-07-03-decrease-base-fontsize" aria-label="Anchor link for: 2022-07-03-decrease-base-fontsize">🔗</a></h2>
 <p>Change base font size to 15px</p>
 <h2 id="2022-06-30-index-toggle-more-button">2022.06.30 index toggle more button<a class="zola-anchor" href="#2022-06-30-index-toggle-more-button" aria-label="Anchor link for: 2022-06-30-index-toggle-more-button">🔗</a></h2>
 <p>Add Toggle More Button.</p>
 <p><img src="https://www.owenyoung.com/en/changelog/./toggle-more.png" alt="toggle more screenshot" /></p>
 <h2 id="2022-06-18-refactor-sidebar-archive">2022.06.18 refactor sidebar/archive<a class="zola-anchor" href="#2022-06-18-refactor-sidebar-archive" aria-label="Anchor link for: 2022-06-18-refactor-sidebar-archive">🔗</a></h2>
-<p>Migrate <code>sidebar/_index.md</code> to <code>pages/sidebar.md</code>, all spectified page located in <code>content/pages</code> directories.</p>
+<p>Migrate <code>sidebar/_index.md</code> to <code>pages/sidebar.md</code>, all spectified page located
+in <code>content/pages</code> directories.</p>
 <h2 id="2022-06-14-activity-page"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/7a87eb29b6e3eaafdae14488a8f42de817073f3f">2022.06.14</a> - Activity Page<a class="zola-anchor" href="#2022-06-14-activity-page" aria-label="Anchor link for: 2022-06-14-activity-page">🔗</a></h2>
 <p>Adding <a href="https://www.owenyoung.com/en/activity/">Activity</a> page.</p>
 <h2 id="2022-06-13-indieweb"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/c20bb4c97540e91ed2f555800d36ebbe05379155">2022.06.13</a> - IndieWeb<a class="zola-anchor" href="#2022-06-13-indieweb" aria-label="Anchor link for: 2022-06-13-indieweb">🔗</a></h2>
@@ -1258,19 +1250,23 @@ ul.text-sm:lang(en) {
 <p>Support <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieauth.net/">IndieAuth</a></p>
 </li>
 <li>
-<p>Joining <a rel="noopener nofollow noreferrer" target="_blank" href="https://xn--sr8hvo.ws/">IndieWeb Webring</a>, See home page bottom right corner</p>
+<p>Joining <a rel="noopener nofollow noreferrer" target="_blank" href="https://xn--sr8hvo.ws/">IndieWeb Webring</a>, See home page bottom
+right corner</p>
 </li>
 </ol>
 <p><img src="https://www.owenyoung.com/en/changelog/./indiewebring.jpg" alt="" /></p>
 <ol start="3">
-<li>Support <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/Webmention">Webmention</a>, see example <a href="https://www.owenyoung.com/en/blog/indieweb/">Now, I’m in IndieWeb?</a></li>
+<li>Support <a rel="noopener nofollow noreferrer" target="_blank" href="https://indieweb.org/Webmention">Webmention</a>, see example
+<a href="https://www.owenyoung.com/en/blog/indieweb/">Now, I’m in IndieWeb?</a></li>
 </ol>
 <p><img src="https://www.owenyoung.com/en/changelog/./webmention-response.jpg" alt="" /></p>
 <h2 id="2022-05-14-latest-updates"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/cb7e8ec8cc115a35948906c2c91679826e561c79">2022.05.14</a> - Latest Updates<a class="zola-anchor" href="#2022-05-14-latest-updates" aria-label="Anchor link for: 2022-05-14-latest-updates">🔗</a></h2>
 <p>Add Latest Updates to home page.</p>
 <p><img src="https://www.owenyoung.com/en/changelog/./recently-updated.jpg" alt="" /></p>
 <h2 id="2022-04-25-random-category"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/ebe57d4b3717c5052ea3319e8e1f04e9d7b80153">2022.04.25</a> - Random Category<a class="zola-anchor" href="#2022-04-25-random-category" aria-label="Anchor link for: 2022-04-25-random-category">🔗</a></h2>
-<p>Change category <code>Misc</code> to <code>Random</code>, I prefer <code>Random</code> than <code>Misc</code>, cause I even don’t know what <code>Misc</code> is. It’s inspired by <a rel="noopener nofollow noreferrer" target="_blank" href="https://pinchlime.com/categories/random/">Pin 起來</a></p>
+<p>Change category <code>Misc</code> to <code>Random</code>, I prefer <code>Random</code> than <code>Misc</code>, cause I even
+don’t know what <code>Misc</code> is. It’s inspired by
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://pinchlime.com/categories/random/">Pin 起來</a></p>
 <h2 id="2022-04-24-seo"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/cfc2b4dc4c96c1e16e8f4a257da2d30b254f8afc">2022.04.24</a> - SEO<a class="zola-anchor" href="#2022-04-24-seo" aria-label="Anchor link for: 2022-04-24-seo">🔗</a></h2>
 <p>Add <code>og:title</code>,<code>description</code> to pages for better SEO.</p>
 <h2 id="2022-04-08-edit-link"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/06f1d35a7a5a8e4c97d4189cf3204b4b7c4bdea2">2022.04.08</a> - Edit Link<a class="zola-anchor" href="#2022-04-08-edit-link" aria-label="Anchor link for: 2022-04-08-edit-link">🔗</a></h2>
@@ -1279,19 +1275,56 @@ ul.text-sm:lang(en) {
 <h2 id="2022-03-29-birthday"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/blog/commit/0f8244f2e8a8799ce6b6cbd82914db734af33f30">2022.03.29</a> - Birthday<a class="zola-anchor" href="#2022-03-29-birthday" aria-label="Anchor link for: 2022-03-29-birthday">🔗</a></h2>
 <ol>
 <li>
-<p>Today is this blog’s birthday, and I’m happy to announce that I’ve migrated from <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com/">Wiki</a> and <a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/">Blog</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.owenyoung.com/">New Blog</a>. The Blog is built with <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>, I also wrote <a href="https://www.owenyoung.com/blog/migrate-to-zola/">迁移博客和 Wiki 到 Zola</a> to record it. The biggest difference is the blazing building speed of Zola, for now, it only takes 2 seconds to build the whole site.</p>
+<p>Today is this blog’s birthday, and I’m happy to announce that I’ve migrated
+from <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com/">Wiki</a> and
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://blog.owenyoung.com/">Blog</a> to
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.owenyoung.com/">New Blog</a>. The Blog is built with
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>, I also wrote
+<a href="https://www.owenyoung.com/blog/migrate-to-zola/">迁移博客和 Wiki 到 Zola</a> to record it. The
+biggest difference is the blazing building speed of Zola, for now, it only
+takes 2 seconds to build the whole site.</p>
 </li>
 <li>
-<p>Support <a href="https://www.owenyoung.com/blog/books/">读书笔记</a> Templates, show my review score of the book, and show <a href="https://www.owenyoung.com/books/">Books Sort By Rating</a></p>
+<p>Support <a href="https://www.owenyoung.com/blog/books/">读书笔记</a> Templates, show my review score
+of the book, and show <a href="https://www.owenyoung.com/books/">Books Sort By Rating</a></p>
 </li>
 </ol>
 <p><img src="https://www.owenyoung.com/en/changelog/./books-template.jpg" alt="" /></p>
 
     </article>
-    
-      <div class="pb">
-        <hr>
-          <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/changelog/index.en.md">📝 Edit this page</a>
+      
+        <div class="py muted">
+          <div>
+            
+            
+            
+              Published:
+              <time class="dt-published published" datetime="2022-06-13T23:15:27+08:00">2022.06.13</time>
+            
+            
+              · Updated:
+              <time class="dt-updated updated" datetime="2022-09-01">2022.09.01</time>
+            
+            
+              <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/changelog/index.en.md">&nbsp;📝 Edit this page</a>
+            
+        <div class="py">
+          <div class="inline-block p-tags">
+            
+              <a class="p-tag" href="https://www.owenyoung.com/en/tags/changelog/">#ChangeLog</a>
+              
+                &nbsp;
+              
+            
+              <a class="p-tag" href="https://www.owenyoung.com/en/tags/about/">#About</a>
+              
+                
+              
+            
+          </div>
+        </div>
+        
+        </div>
         </div>
       
       
@@ -1373,6 +1406,11 @@ ul.text-sm:lang(en) {
         <li>
           <a href="#start">Get Started</a>
         </li>
+        
+          <li>
+            <a href="https://www.owenyoung.com/en/changelog/#2022-10-10-blockquote-ui">2022.10.10 Blockquote ui</a>
+            
+          </li>
         
           <li>
             <a href="https://www.owenyoung.com/en/changelog/#2022-09-01-show-short-title">2022.09.01 Show short title</a>

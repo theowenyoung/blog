@@ -184,24 +184,22 @@ fffef8
 #f4ecd8;
 */
 html {
-  font-size: 16px;
+  font-size: 15px;
   box-sizing: border-box;
   --colors-text: #41403e;
-  --colors-muted: rgb(117, 117, 117);
+  --colors-muted: #718096;
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-background: #fffef8;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
-  --colors-background-surface: #f9f5e9;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
-    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", Palatino, sans-serif;
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
 }
 
 body {
@@ -209,16 +207,16 @@ body {
   background-color: var(--colors-background);
 }
 
-[lang]:lang(zh) {
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-[lang]:lang(en) {
-  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    html {
+        --colors-background: #202124;
+        --colors-text: rgb(236, 237, 238);
+    }
+    body {
+      backgroup-color: var(--colors-background);
+    }
 }
 
 #root {
@@ -233,8 +231,8 @@ h3 {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   margin-bottom: 1rem;
-  line-height: 1.1;
-  font-weight: 600;
+  line-height: 1;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
@@ -245,11 +243,13 @@ h6 {
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
+.header {
+}
 .relative {
   position: relative;
 }
@@ -352,15 +352,17 @@ h3::after {
 }
 
 h1 {
-  font-size: 1.625rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.375rem;
+  font-style: italic;
 }
 
 pre {
@@ -377,7 +379,6 @@ pre {
 code {
   border-radius: 0.25rem;
   padding: 0.375rem 0.5rem;
-  background-color: var(--colors-code-background);
 }
 
 pre > code {
@@ -404,7 +405,7 @@ hr {
   width: 55%;
   border: 0;
   border-top: 1px solid var(--colors-divider);
-  margin: 1em 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -423,30 +424,45 @@ p {
 }
 
 blockquote {
-  padding: 1px 0 1px 1.5rem;
-  margin: 1.5rem 0;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-left: 5px solid var(--colors-primary);
+  margin: 3rem 0;
+  position: relative;
+
 }
 
 blockquote p {
-  margin: 0.5rem 0;
+  font-size: 1.4rem;
 }
 
+blockquote p:lang(en) {
+  font-size: 1.6rem;
+}
+blockquote::before{
+  position: absolute;
+  content:"\201C"; 
+  top: 0.875rem;
+  font-size: 2.5rem;
+  color: var(--colors-primary);
+  line-height: .1em;
+  vertical-align: -.4em;
+  font-weight: bold;
+  font-family: Courier, monospace;
+}
+blockquote > p:first-child {
+  text-indent: 1.675rem;
+}
 p,
 dl,
 ol,
 ul {
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 1.175rem;
+  line-height: 2rem;
 }
 
 p:lang(en),
 dl:lang(en),
 ol:lang(en),
 ul:lang(en) {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
 
@@ -541,7 +557,7 @@ a:visited {
   transition: color 200ms ease;
   text-decoration: underline;
   color: inherit;
-  text-decoration-thickness: 0.1rem;
+  text-decoration-thickness: 1px;
 }
 
 :target {
@@ -579,7 +595,7 @@ a.muted,
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.175rem;
 }
 
 .text-color,
@@ -885,12 +901,12 @@ ul.text-sm:lang(en) {
   h1::after,
   h2::after,
   h3::after {
-    background-color: var(--colors-background-surface);
+    background-color: var(--colors-background);
   }
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    /* background-color: var(--colors-background-surface); */
+    /* background-color: var(--colors-background); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
     /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
   }
@@ -907,17 +923,17 @@ ul.text-sm:lang(en) {
   }
 
   .main-inner {
-    max-width: 48rem;
+    max-width: 52rem;
     margin: 0 auto;
   }
 
   .sidebar {
-    position: sticky;
+    /* position: sticky; */
     border-top: none;
-    top: 0;
-    z-index: 1;
-    height: 100vh;
-    overflow-y: auto;
+    /* top: 0; */
+    /* z-index: 1; */
+    /* height: 100vh; */
+    /* overflow-y: auto; */
     width: 20rem;
   }
 
@@ -1007,7 +1023,7 @@ ul.text-sm:lang(en) {
           <p>I'm Owen Young, I've written
             <a href="https://www.owenyoung.com/en/archive/">
               44</a>
-            articles so far, about 16685 words, last updated on
+            articles so far, about 16690 words, last updated on
             <time datetime="2022-10-06">2022-10-06</time>. I position
               this as my personal digital garden, where all my notes, ideas are stored here. Cause I'm not a English native speaker,
               so there are also
@@ -1017,10 +1033,10 @@ ul.text-sm:lang(en) {
         
       </div>
       <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
-
-      <h2><a href="/en/blog/">Latest</a> Articles:
+      <details open class="py">
+      <summary class="text-lg"><a href="/en/blog/">Latest</a> Articles:
         <a href="#latest" id="latest" class="zola-anchor">🔗</a>
-      </h2>
+      </summary>
       <div class="articles h-feed hfeed">
         
           
@@ -1429,9 +1445,10 @@ ul.text-sm:lang(en) {
           
         
       </div>
+      </details>
       
         <details class="py">
-          <summary class="bold">Click to expand the more articles or <a href="/en/blog/#index-11">open next page</a></summary>
+          <summary class="bold text">Click to expand the more articles or <a href="/en/blog/#index-11">open next page</a></summary>
           <ul>
             
             <li>
@@ -1532,9 +1549,9 @@ ul.text-sm:lang(en) {
           </ul>
         </details>
         
-
-      <h2>Latest <a href="/en/thoughts/">Short Thoughts</a>：<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-      </h2>
+      <details open class="py">
+      <summary class="text-lg">Latest <a href="/en/thoughts/">Short Thoughts</a>：<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </summary>
       
       <div class="articles">
         <blockquote>
@@ -1544,13 +1561,15 @@ ul.text-sm:lang(en) {
 <p>As a result of decades of hate education by the Chinese government, it seems that most Chinese people have a paranoia of persecution. They think that America want to hurt China, Japan want to hurt China, India want hurt China and so on. And they can not distinguish the government and the people. In particular, if you are a journalist or you are filming something, you are likely to be suspected by many people of being a government spy. Western journalists here have as bad a reputation as Western governments. – 2022.05.16</p>
 </blockquote>
 
-        <h4 class="no-border"><a href="/en/thoughts/">View all thoughts</a></h4>
+        <p class="no-border"><a href="/en/thoughts/">View all thoughts</a></p>
       </div>
 
       <hr class="w-full"/>
+      </details>
 
-      <h2><a href="/en/categories/notes/">Recently Updated Notes</a>:<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
-      </h2>
+      <details open class="py">
+      <summary class="text-lg"><a href="/en/categories/notes/">Recently Updated Notes</a>:<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
+      </summary>
       <div class="articles">
         <ul class="root-ul">
           
@@ -1607,7 +1626,7 @@ ul.text-sm:lang(en) {
         </ul>
         
         <details>
-          <summary>Toggle more</summary>
+          <summary class="text">Toggle more</summary>
           <ul>
             
             <li>
@@ -1634,8 +1653,11 @@ ul.text-sm:lang(en) {
         </details>
         
       </div>
-      <h2>Latest <a href="/en/quotes/">Quotes</a>：<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
-      </h2>
+      </details>
+
+      <details open class="py">
+      <summary class="text-lg">Latest <a href="/en/quotes/">Quotes</a>：<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
+      </summary>
       
       <div class="articles">
         <blockquote>
@@ -1694,8 +1716,9 @@ the same axis. –
 <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.reddit.com/r/Ask_Politics/comments/uleb6a/comment/i7xh2x0/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3">reddit comment</a></p>
 </blockquote>
 
-        <h4 class="no-border"><a href="/en/quotes/">View all quotes</a></h4>
+        <p class="no-border"><a href="/en/quotes/">View all quotes</a></p>
       </div>
+      </details>
       
     </div>
   

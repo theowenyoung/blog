@@ -202,24 +202,22 @@ fffef8
 #f4ecd8;
 */
 html {
-  font-size: 16px;
+  font-size: 15px;
   box-sizing: border-box;
   --colors-text: #41403e;
-  --colors-muted: rgb(117, 117, 117);
+  --colors-muted: #718096;
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-background: #fffef8;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
-  --colors-background-surface: #f9f5e9;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
-    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", Palatino, sans-serif;
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
 }
 
 body {
@@ -227,16 +225,16 @@ body {
   background-color: var(--colors-background);
 }
 
-[lang]:lang(zh) {
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-[lang]:lang(en) {
-  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    html {
+        --colors-background: #202124;
+        --colors-text: rgb(236, 237, 238);
+    }
+    body {
+      backgroup-color: var(--colors-background);
+    }
 }
 
 #root {
@@ -251,8 +249,8 @@ h3 {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   margin-bottom: 1rem;
-  line-height: 1.1;
-  font-weight: 600;
+  line-height: 1;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
@@ -263,11 +261,13 @@ h6 {
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
+.header {
+}
 .relative {
   position: relative;
 }
@@ -370,15 +370,17 @@ h3::after {
 }
 
 h1 {
-  font-size: 1.625rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.375rem;
+  font-style: italic;
 }
 
 pre {
@@ -395,7 +397,6 @@ pre {
 code {
   border-radius: 0.25rem;
   padding: 0.375rem 0.5rem;
-  background-color: var(--colors-code-background);
 }
 
 pre > code {
@@ -422,7 +423,7 @@ hr {
   width: 55%;
   border: 0;
   border-top: 1px solid var(--colors-divider);
-  margin: 1em 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -441,30 +442,45 @@ p {
 }
 
 blockquote {
-  padding: 1px 0 1px 1.5rem;
-  margin: 1.5rem 0;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-left: 5px solid var(--colors-primary);
+  margin: 3rem 0;
+  position: relative;
+
 }
 
 blockquote p {
-  margin: 0.5rem 0;
+  font-size: 1.4rem;
 }
 
+blockquote p:lang(en) {
+  font-size: 1.6rem;
+}
+blockquote::before{
+  position: absolute;
+  content:"\201C"; 
+  top: 0.875rem;
+  font-size: 2.5rem;
+  color: var(--colors-primary);
+  line-height: .1em;
+  vertical-align: -.4em;
+  font-weight: bold;
+  font-family: Courier, monospace;
+}
+blockquote > p:first-child {
+  text-indent: 1.675rem;
+}
 p,
 dl,
 ol,
 ul {
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 1.175rem;
+  line-height: 2rem;
 }
 
 p:lang(en),
 dl:lang(en),
 ol:lang(en),
 ul:lang(en) {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
 
@@ -559,7 +575,7 @@ a:visited {
   transition: color 200ms ease;
   text-decoration: underline;
   color: inherit;
-  text-decoration-thickness: 0.1rem;
+  text-decoration-thickness: 1px;
 }
 
 :target {
@@ -597,7 +613,7 @@ a.muted,
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.175rem;
 }
 
 .text-color,
@@ -903,12 +919,12 @@ ul.text-sm:lang(en) {
   h1::after,
   h2::after,
   h3::after {
-    background-color: var(--colors-background-surface);
+    background-color: var(--colors-background);
   }
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    /* background-color: var(--colors-background-surface); */
+    /* background-color: var(--colors-background); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
     /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
   }
@@ -925,17 +941,920 @@ ul.text-sm:lang(en) {
   }
 
   .main-inner {
-    max-width: 48rem;
+    max-width: 52rem;
     margin: 0 auto;
   }
 
   .sidebar {
-    position: sticky;
+    /* position: sticky; */
     border-top: none;
-    top: 0;
-    z-index: 1;
+    /* top: 0; */
+    /* z-index: 1; */
+    /* height: 100vh; */
+    /* overflow-y: auto; */
+    width: 20rem;
+  }
+
+  .sidebar ul {
+    border-left: 1px solid var(--colors-divider);
+    list-style: none;
+  }
+
+  .sidebar li {
+    font-size: 0.9rem;
+  }
+
+  .sidebar h2,
+  .sidebar h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    padding-bottom: 1rem;
+    border: none;
+  }
+}
+</style><style>@charset "UTF-8";
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff2")
+      format("woff2"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix")
+      format("embedded-opentype"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff")
+      format("woff"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf")
+      format("truetype"),
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  unicode-range: U+0025-00FF;
+}
+html,
+body,
+p,
+dt,
+dd,
+figure,
+fieldset,
+blockquote,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* --reset end -- */
+/*
+ #d2bf9e
+ #fcfcfc
+ #fffff8
+ #41403e
+ backanother #e6ddd0
+ divider: rgb(226, 232, 240);
+ code back: edf0f3
+ rgb(249, 245, 233)
+/* rgba(0, 0, 0, 0.8)*/
+/*#fffef8
+c35
+f9f5e9
+ea4c89
+fffef8
+#f4ecd8;
+*/
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+  --colors-text: #41403e;
+  --colors-muted: #718096;
+  --colors-primary: #cc3355;
+  --colors-divider: rgba(0, 0, 0, 0.06);
+  --colors-primary-light: rgba(234, 76, 137, 0.5);
+  --colors-background: #fffef8;
+  --colors-blue: #1ca9c9;
+  --colors-secondary: #14213d;
+  --colors-surface: rgba(0, 0, 0, 0.04);
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+}
+
+body {
+  color: var(--colors-text);
+  background-color: var(--colors-background);
+}
+
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    html {
+        --colors-background: #202124;
+        --colors-text: rgb(236, 237, 238);
+    }
+    body {
+      backgroup-color: var(--colors-background);
+    }
+}
+
+#root {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120rem;
+}
+
+h1,
+h2,
+h3 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  border-bottom: 1px solid var(--colors-divider);
+  position: relative;
+}
+h4,
+h5,
+h6 {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+  border-bottom: 1px solid var(--colors-divider);
+  position: relative;
+}
+
+.header {
+}
+.relative {
+  position: relative;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.mb-absolute {
+  margin-bottom: -0.8rem;
+}
+
+.no-border {
+  border: none;
+}
+
+.tweet-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--colors-divider);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  background: white;
+}
+
+.tweet-box .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.tweet-box .overlay:hover {
+  background-color: #efefef;
+}
+.tweet-box .inner {
+  position: relative;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tweet-box .inner a {
+  pointer-events: all;
+  position: relative;
+}
+p.tweet-content {
+  line-height: 1.5rem !important;
+  padding-right: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem !important;
+}
+.tweet-content a:link,
+.tweet-content a:visited {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: rgb(27, 149, 224);
+}
+.tweet-avatar-wrapper {
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+  width: 48px;
+  min-width: 48px;
+  border-radius: 9999px;
+}
+.tweet-icon {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+}
+.tweet-icon-svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(27, 149, 224);
+  fill: currentcolor;
+}
+
+h1::after,
+h2::after,
+h3::after {
+  padding: 0;
+  margin: 0;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: var(--colors-background);
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-style: italic;
+}
+
+pre {
+  color: rgb(57, 58, 52);
+  background-color: rgb(246, 248, 250);
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+code {
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.5rem;
+}
+
+pre > code {
+  font-size: 0.9rem;
+  display: block;
+}
+
+pre code {
+  background: none;
+}
+
+code,
+pre > code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.42;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--colors-divider);
+  margin: 2rem 0;
+  padding: 0;
+}
+
+ul {
+  margin-bottom: 0.8rem;
+}
+
+ul > details > summary {
+  margin-left: -1.4rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
+blockquote {
+  margin: 3rem 0;
+  position: relative;
+
+}
+
+blockquote p {
+  font-size: 1.4rem;
+}
+
+blockquote p:lang(en) {
+  font-size: 1.6rem;
+}
+blockquote::before{
+  position: absolute;
+  content:"\201C"; 
+  top: 0.875rem;
+  font-size: 2.5rem;
+  color: var(--colors-primary);
+  line-height: .1em;
+  vertical-align: -.4em;
+  font-weight: bold;
+  font-family: Courier, monospace;
+}
+blockquote > p:first-child {
+  text-indent: 1.675rem;
+}
+p,
+dl,
+ol,
+ul {
+  font-size: 1.175rem;
+  line-height: 2rem;
+}
+
+p:lang(en),
+dl:lang(en),
+ol:lang(en),
+ul:lang(en) {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+button,
+input[type="submit"] {
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  transition: all 235ms ease 0s;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+  transition: all 235ms ease-in-out 0s;
+  align-self: center;
+  background: 0 0;
+  border: 2px solid var(--colors-text);
+  color: var(--colors-text);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  font-family: Neucha, sans-serif;
+}
+
+button,
+input[type="submit"]:hover {
+  transform: translate3d(0, 2px, 0);
+  box-shadow: 2px 8px 8px -5px rgb(0 0 0 / 30%);
+}
+
+input[type="url"],
+input[type="text"],
+input[type="search"] {
+  /* -webkit-appearance: none; */
+  background: none;
+  border: 2px solid var(--colors-text);
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  color: var(--colors-text);
+  font-size: 1rem;
+  outline: 0;
+  padding: 0.75rem;
+  box-shadow: 15px 28px 25px -18px rgb(0 0 0 / 20%);
+
+  /* -webkit-border-radius: 0px; */
+}
+.display-block {
+  display: block;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="search"]:focus {
+  border: 2px solid var(--colors-blue);
+}
+
+#search-bar-input {
+  width: 80%;
+  min-width: 260px;
+}
+
+.meilisearch-autocomplete {
+  display: block !important;
+}
+.meilisearch-autocomplete .dsb-dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+  min-width: 300px;
+  width: 100%;
+}
+input:focus:not(:focus-visible) {
+  border: 2px solid var(--colors-text);
+}
+input:focus-visible {
+  border: 2px solid var(--colors-blue);
+}
+.no-underline {
+  text-decoration: none;
+}
+
+.meilisearch-autocomplete {
+  display: block;
+}
+a {
+  word-break: break-all;
+}
+a:link,
+a:visited {
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  text-decoration: underline;
+  color: inherit;
+  text-decoration-thickness: 1px;
+}
+
+:target {
+  scroll-margin-top: 56px;
+}
+
+.body-zone {
+  flex-direction: column;
+}
+
+.no-underline:link,
+.no-underline:visited,
+.sidebar a:link,
+.sidebar a:visited {
+  text-decoration: none;
+}
+.sidebar {
+  overflow-x: visible;
+}
+.no-underline:hover,
+a:hover {
+  color: var(--colors-primary);
+  text-decoration: underline;
+}
+
+.no-hover-underline:hover {
+  text-decoration: none;
+}
+
+.muted,
+a.muted,
+.muted:link,
+.muted:visited {
+  color: var(--colors-muted);
+}
+
+.text {
+  font-size: 1.175rem;
+}
+
+.text-color,
+.text-color:link,
+.text-color:visited {
+  color: var(--colors-text);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-1-auto {
+  flex: 1 1 auto;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.list-none {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.border-muted {
+  border: 1px solid var(--colors-muted);
+}
+
+.rounded-full {
+  border-radius: 999rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-sm {
+  padding: 0.25rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
+.m-l-2 {
+  margin-left: 0.5rem;
+}
+
+.py {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.py-sm {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-sm {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.my {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.my-2 {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.px {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+.px-2xl {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.pr-sm {
+  padding-right: 0.5rem;
+}
+
+.pl-sm {
+  padding-left: 0.5rem;
+}
+
+.pt {
+  padding-top: 1.4rem;
+}
+
+.pl {
+  padding-left: 1.4rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.navbar {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--colors-background);
+}
+
+.navbar-inner {
+  padding: 0.5rem 1.4rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.zola-anchor {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.zola-anchor:link,
+.zola-anchor:visited {
+  text-decoration: none;
+}
+
+.sidebar {
+  border-top: 1px solid var(--colors-divider);
+}
+
+li.inline {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.text-sm p {
+  font-size: 0.9rem;
+}
+p.text-sm:lang(en),
+dl.text-sm:lang(en),
+ol.text-sm:lang(en),
+ul.text-sm:lang(en) {
+  font-size: 0.9rem;
+}
+
+.pb {
+  padding-bottom: 1.4rem;
+}
+
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.no-toc {
+  width: auto;
+}
+
+.sidebar ul {
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+.sidebar li {
+  font-size: 1rem;
+}
+
+.nav-divider {
+  border-right: 2px solid var(--colors-divider);
+  height: 24px;
+  margin: 0 1rem 0 0rem;
+}
+
+.h-card {
+  display: flex;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+.mb {
+  margin-bottom: 1.4rem;
+}
+
+.mb-li {
+  margin-bottom: 1rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
+
+.mr {
+  margin-right: 1.4rem;
+}
+
+.mr-sm {
+  margin-right: 0.5rem;
+}
+
+.card {
+  /* background: #fff; */
+  background: var(--colors-surface);
+}
+
+.main-inner {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+@media (min-width: 48rem) {
+  .nav-divider {
+    border-top: 2px solid var(--colors-divider);
+    width: 24px;
+    margin: 0.6rem 0 1.6rem 0;
+    height: 0;
+    border-right: none;
+  }
+
+  .navbar {
+    height: 100%;
+    /*
+    border-right: 1px solid var(--colors-divider);
+ */
+  }
+
+  .navbar-inner {
+    padding: 1.4rem 0.875rem;
+    flex-direction: column;
     height: 100vh;
-    overflow-y: auto;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li:not(:last-child) {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  #root {
+    display: flex;
+  }
+
+  .body-zone {
+    /* prevent overflow */
+    min-width: 0;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  h1::after,
+  h2::after,
+  h3::after {
+    background-color: var(--colors-background);
+  }
+  .main-inner {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    /* background-color: var(--colors-background); */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
+  }
+  .no-toc {
+    width: 20rem;
+  }
+
+  .main-toc {
+    display: none;
+  }
+
+  .body-zone {
+    flex-direction: row;
+  }
+
+  .main-inner {
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    /* position: sticky; */
+    border-top: none;
+    /* top: 0; */
+    /* z-index: 1; */
+    /* height: 100vh; */
+    /* overflow-y: auto; */
     width: 20rem;
   }
 
@@ -1029,51 +1948,22 @@ ul.text-sm:lang(en) {
           <div class="main-inner">
             
 <div class="h-entry hentry detail-page">
-  <header id="overview">
+  <header class="header" id="overview">
     <div class="">
       <span>&gt;&gt;</span>
       <a href="https://www.owenyoung.com/">首页</a>
       
         <span class="divider">/</span>
         <a rel="category tag" class="p-category category" href="https://www.owenyoung.com/categories/notes/">Notes</a>
-        <span class="divider">/</span>
-          <div class="inline-block p-tags">
-            
-              <a class="p-tag" href="https://www.owenyoung.com/tags/tools/">Tools</a>
-              
-            
-          </div>
-        
       
     </div>
     <div>
-      <h1 class="p-name entry-title" style="font-size:1.8rem;">最好用的工具集合</h1>
+      <h1 class="p-name entry-title" >最好用的工具集合</h1>
       <div class="display-none p-author h-card vcard">
         <img class="u-photo icon" alt="Owen" src="https://www.owenyoung.com/site/images/favicon-96x96.png?h=c66003270d7feb6d9bac4bff4c9a3a6d1b9c06c0ea617703f2e962dfaa8b7f4f"/>
         <a class="p-name u-url url" href="https:&#x2F;&#x2F;www.owenyoung.com">Owen Young</a>
         <p class="p-note">Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog.</p>
       </div>
-      
-        <div class="pb muted">
-          <div>
-            
-              发布于:
-              <time class="dt-published published" datetime="2022-03-10">2022-03-10</time>
-            
-            
-              · 最后更新时间:
-              <time class="dt-updated updated" datetime="2022-10-02">2022-10-02</time>
-              ·
-            
-            
-              阅读时间: 
-  
-    6
-  
- min
-          </div>
-        </div>
-      
     </div>
     
   </header>
@@ -1466,12 +2356,14 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="zhui-zong">追踪<a class="zola-anchor" href="#zhui-zong" aria-label="Anchor link for: zhui-zong">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://iknowwhatyoudownload.com/">I Know what your download</a> - 我知道你下载了什么，追踪 ip 的下载列表，有点可怕。。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://iknowwhatyoudownload.com/">I Know what your download</a> - 我知道你下载了什么，追踪
+ip 的下载列表，有点可怕。。</li>
 </ul>
 <h2 id="zhuan-huan">转换<a class="zola-anchor" href="#zhuan-huan" aria-label="Anchor link for: zhuan-huan">🔗</a></h2>
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="http://www.html22.com/zh/">百度文库转 word 或 pdf</a> - 有瑕疵，勉强能用。</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.huomaqun.com/">微友活码</a> - 用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.huomaqun.com/">微友活码</a> -
+用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://epub.to">Epub to HTML</a></li>
 </ul>
 <h2 id="server">Server<a class="zola-anchor" href="#server" aria-label="Anchor link for: server">🔗</a></h2>
@@ -1480,13 +2372,16 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="developmenets">Developmenets<a class="zola-anchor" href="#developmenets" aria-label="Anchor link for: developmenets">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/jart/cosmopolitan">cosmopolitan - build-once run-anywhere c library</a> - 编译生成单一的可执行文件的服务器</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/jart/cosmopolitan">cosmopolitan - build-once run-anywhere c library</a> -
+编译生成单一的可执行文件的服务器</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://tio.run/#">try it online</a> - 在线运行几百种编程语言</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/glotcode/docker-run">Docker Run</a> - 使用 docker 来运行不信任的代码，运行后删除</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/glotcode/docker-run">Docker Run</a> - 使用 docker
+来运行不信任的代码，运行后删除</li>
 </ul>
 <h2 id="stocks">Stocks<a class="zola-anchor" href="#stocks" aria-label="Anchor link for: stocks">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/GamestonkTerminal/GamestonkTerminal">GamestonkTerminal</a> - Investment Research for Everyone. python 写的投资情绪等分析。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/GamestonkTerminal/GamestonkTerminal">GamestonkTerminal</a> -
+Investment Research for Everyone. python 写的投资情绪等分析。</li>
 </ul>
 <h2 id="wifi">Wifi<a class="zola-anchor" href="#wifi" aria-label="Anchor link for: wifi">🔗</a></h2>
 <ul>
@@ -1511,8 +2406,10 @@ ul.text-sm:lang(en) {
 <h2 id="tu-pian-cai-jian">图片裁剪<a class="zola-anchor" href="#tu-pian-cai-jian" aria-label="Anchor link for: tu-pian-cai-jian">🔗</a></h2>
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://photo16x9.com/">photo 16x9</a> - 填充背景色以使得图片满足 16:9 的推特比例</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://clideo.com/dpi-converter">DPI Converter — Change DPI of Image Online — Clideo</a> - DPI 在线转换</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://imresizer.com/">Resize image in cm, mm, inch or px online free | ImResizer</a> - 按照不同单位在线转换图片</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://clideo.com/dpi-converter">DPI Converter — Change DPI of Image Online — Clideo</a> -
+DPI 在线转换</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://imresizer.com/">Resize image in cm, mm, inch or px online free | ImResizer</a> -
+按照不同单位在线转换图片</li>
 </ul>
 <h2 id="bei-jing-yin-le-bai-zao-yin">背景音乐，白噪音<a class="zola-anchor" href="#bei-jing-yin-le-bai-zao-yin" aria-label="Anchor link for: bei-jing-yin-le-bai-zao-yin">🔗</a></h2>
 <ul>
@@ -1613,20 +2510,28 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="chrome-extensions">Chrome Extensions<a class="zola-anchor" href="#chrome-extensions" aria-label="Anchor link for: chrome-extensions">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle/related?hl=en">Save To one File</a> - 把文件保存到一个文件中</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle/related?hl=en">Save To one File</a> -
+把文件保存到一个文件中</li>
 </ul>
 <h2 id="only-macos">Only Macos<a class="zola-anchor" href="#only-macos" aria-label="Anchor link for: only-macos">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://getradar.co/">Radar</a> - Menu bar app to check the things that matter to you</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://getradar.co/">Radar</a> - Menu bar app to check the things that matter
+to you</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://menubarx.app/">Menubarx</a> - Menu bar app to browser website.</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.taskpaper.com/">Taskpaper</a>- Plain text task manager</li>
 </ul>
 <h2 id="ios">iOS<a class="zola-anchor" href="#ios" aria-label="Anchor link for: ios">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://bere.al/en">Logo BeReal</a> - Your Friends for Real. Everyday at a random time, everyone is notified simultaneously to capture and share a Photo in 2 Minutes. A new and unique way to discover who your friends really are in their daily life.</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/us/app/housebook/id1489866496?utm_campaign=newsletter-2020-07-17&amp;utm_medium=email&amp;utm_source=10words">HouseBook</a> - Keep track of your stuff.</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/app/id1474476414?utm_campaign=newsletter-2020-03-20&amp;utm_medium=email&amp;utm_source=10words">Your life weekly calendar</a> - List your life by weeks. every week is a dot.</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/cn/app/alarmy-alarm-clock-%E4%BD%BF%E5%91%BD%E9%97%B9%E9%92%9F/id1163786766">使命闹钟</a> - Alarmy 可以帮助您先起床，并让您每天早上成功完成所有“要做的事情”。借助各种有趣的任务和响亮的随机铃声，您可以轻松唤醒并刷新每天养成成功习惯的习惯</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://bere.al/en">Logo BeReal</a> - Your Friends for Real. Everyday at a
+random time, everyone is notified simultaneously to capture and share a Photo
+in 2 Minutes. A new and unique way to discover who your friends really are in
+their daily life.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/us/app/housebook/id1489866496?utm_campaign=newsletter-2020-07-17&amp;utm_medium=email&amp;utm_source=10words">HouseBook</a> -
+Keep track of your stuff.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/app/id1474476414?utm_campaign=newsletter-2020-03-20&amp;utm_medium=email&amp;utm_source=10words">Your life weekly calendar</a> -
+List your life by weeks. every week is a dot.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/cn/app/alarmy-alarm-clock-%E4%BD%BF%E5%91%BD%E9%97%B9%E9%92%9F/id1163786766">使命闹钟</a> -
+Alarmy 可以帮助您先起床，并让您每天早上成功完成所有“要做的事情”。借助各种有趣的任务和响亮的随机铃声，您可以轻松唤醒并刷新每天养成成功习惯的习惯</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/us/app/maskeraid/id1590163828">自动给图片里的人脸打一个表情符号</a>
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://apps.apple.com/us/app/anonymous-camera/id1504102584">自动给视频打码</a></li>
@@ -1635,7 +2540,8 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="web">Web<a class="zola-anchor" href="#web" aria-label="Anchor link for: web">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/gurov/stupid-rss-reader">Stupid RSS Reader</a> - ⊕ PWA RSS client on Angular 11</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/gurov/stupid-rss-reader">Stupid RSS Reader</a> - ⊕ PWA RSS
+client on Angular 11</li>
 </ul>
 <h2 id="all">All<a class="zola-anchor" href="#all" aria-label="Anchor link for: all">🔗</a></h2>
 <ul>
@@ -1655,7 +2561,8 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="backup">Backup<a class="zola-anchor" href="#backup" aria-label="Anchor link for: backup">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/VerifiedJoseph/Save-to-the-Wayback-Machine">Save-to-the-Wayback-Machine</a> - A browser extension that allow you to save the webpage to wayback machine</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/VerifiedJoseph/Save-to-the-Wayback-Machine">Save-to-the-Wayback-Machine</a> -
+A browser extension that allow you to save the webpage to wayback machine</li>
 </ul>
 <h2 id="browser">Browser<a class="zola-anchor" href="#browser" aria-label="Anchor link for: browser">🔗</a></h2>
 <h3 id="articles">Articles<a class="zola-anchor" href="#articles" aria-label="Anchor link for: articles">🔗</a></h3>
@@ -1664,15 +2571,18 @@ ul.text-sm:lang(en) {
 </ul>
 <h3 id="common-list">Common List<a class="zola-anchor" href="#common-list" aria-label="Anchor link for: common-list">🔗</a></h3>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a> - Microsoft Edge is the fast and secure browser, which I’m using now. its the best for now.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.microsoft.com/en-us/edge">Microsoft Edge</a> - Microsoft Edge is the
+fast and secure browser, which I’m using now. its the best for now.</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://vivaldi.com/">Vivaldi Browser | Now with built-in Translate, Mail, and Calendar</a></li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.waterfox.net/">Waterfox</a> - The way to surf the web. Striking the perfect balance of privacy and useability.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.waterfox.net/">Waterfox</a> - The way to surf the web. Striking the
+perfect balance of privacy and useability.</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://browser.kagi.com/">Orion</a> - 基于 safari webkit 的隐私优先的 mac/ios 浏览器</li>
 </ul>
 <h3 id="for-developer">For developer<a class="zola-anchor" href="#for-developer" aria-label="Anchor link for: for-developer">🔗</a></h3>
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://blisk.io/">Blisk</a>- Cross-Device Testing Done Right</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://bonsaibrowser.com/">bonsai</a> - Web-browser for research that helps programmers think clearly.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://bonsaibrowser.com/">bonsai</a> - Web-browser for research that helps
+programmers think clearly.</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.brow.sh/">Brow</a> - Text based broswer</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/atlas-engineer/nyxt">Nyxt</a> - 像 vim 一样的浏览器</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://beakerbrowser.com/">Beaker Browswer</a> - p2p 浏览器
@@ -1683,8 +2593,12 @@ ul.text-sm:lang(en) {
 </ul>
 <h3 id="paid-browser">Paid Browser<a class="zola-anchor" href="#paid-browser" aria-label="Anchor link for: paid-browser">🔗</a></h3>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://sizzy.co/">https://sizzy.co/</a> - The browser for developers, view one page with multiple devices once</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.meetsidekick.com/">https://www.meetsidekick.com/</a> - The fastest browser for work ever made, Designed to be the ultimate online work experience, it brings together your team and every web tool you use – all in one interface. Actually, not so fast, but the UI, the workflow, the sidebar, will give your new experience.</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://sizzy.co/">https://sizzy.co/</a> - The browser for developers, view one page with multiple
+devices once</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.meetsidekick.com/">https://www.meetsidekick.com/</a> - The fastest browser for work ever made,
+Designed to be the ultimate online work experience, it brings together your
+team and every web tool you use – all in one interface. Actually, not so fast,
+but the UI, the workflow, the sidebar, will give your new experience.</li>
 </ul>
 <h2 id="bi-ji">笔记<a class="zola-anchor" href="#bi-ji" aria-label="Anchor link for: bi-ji">🔗</a></h2>
 <ul>
@@ -1693,7 +2607,8 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="twitter-tools">Twitter Tools<a class="zola-anchor" href="#twitter-tools" aria-label="Anchor link for: twitter-tools">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.feedsmage.com/">feddsmage</a> - I found 40 feeds in your timeline ✨ 5 are newsletters 📨 11 are slow feeds 🐌 (usually lost in the noise).</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.feedsmage.com/">feddsmage</a> - I found 40 feeds in your timeline ✨
+5 are newsletters 📨 11 are slow feeds 🐌 (usually lost in the noise).</li>
 </ul>
 <h2 id="resume">Resume<a class="zola-anchor" href="#resume" aria-label="Anchor link for: resume">🔗</a></h2>
 <ul>
@@ -1707,14 +2622,16 @@ ul.text-sm:lang(en) {
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://sorz.github.io/asstosrt-wasm/">ass to srt</a> - ass to srt converter</li>
 <li><a href="https://www.owenyoung.com/en/blog/bazarr-setup/">Bazarr Setup</a> - Subtitle manager</li>
-<li>[subtitles translate](https://translate-s ubtitles.com/) - Google translate subtitles</li>
+<li>[subtitles translate](https://translate-s ubtitles.com/) - Google translate
+subtitles</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://subhd.tv/">Subhd</a> - Best Chinese subtitle</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://savesubs.com/">Youtube 字幕下载</a></li>
 </ul>
 <h2 id="lu-xing-shou-xu">旅行手续<a class="zola-anchor" href="#lu-xing-shou-xu" aria-label="Anchor link for: lu-xing-shou-xu">🔗</a></h2>
 <h3 id="list">List<a class="zola-anchor" href="#list" aria-label="Anchor link for: list">🔗</a></h3>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://zhuanlan.zhihu.com/p/25400818">如何给车辆办理“护照”出境自驾？</a> ，<a rel="noopener nofollow noreferrer" target="_blank" href="https://web.archive.org/web/20210825164831/https://zhuanlan.zhihu.com/p/25400818">备份</a></li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://zhuanlan.zhihu.com/p/25400818">如何给车辆办理“护照”出境自驾？</a>
+，<a rel="noopener nofollow noreferrer" target="_blank" href="https://web.archive.org/web/20210825164831/https://zhuanlan.zhihu.com/p/25400818">备份</a></li>
 </ul>
 <h3 id="communities">Communities<a class="zola-anchor" href="#communities" aria-label="Anchor link for: communities">🔗</a></h3>
 <ul>
@@ -1731,7 +2648,8 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="zai-xian-ping-tai-mo-ni">在线平台模拟<a class="zola-anchor" href="#zai-xian-ping-tai-mo-ni" aria-label="Anchor link for: zai-xian-ping-tai-mo-ni">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://neverinstall.com/">Never Install</a> - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://neverinstall.com/">Never Install</a> -
+浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。</li>
 </ul>
 <h2 id="si-wei-guan-li">思维管理<a class="zola-anchor" href="#si-wei-guan-li" aria-label="Anchor link for: si-wei-guan-li">🔗</a></h2>
 <ul>
@@ -1739,11 +2657,13 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="bash">Bash<a class="zola-anchor" href="#bash" aria-label="Anchor link for: bash">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command">Macos Default</a> - find command to change macos defaults</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command">Macos Default</a> -
+find command to change macos defaults</li>
 </ul>
 <h2 id="http-client">HTTP Client<a class="zola-anchor" href="#http-client" aria-label="Anchor link for: http-client">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Huachao/vscode-restclient">Rest Client</a> - Vscode http request by plain text</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Huachao/vscode-restclient">Rest Client</a> - Vscode http
+request by plain text</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://hurl.dev">HURL</a></li>
 </ul>
 <h2 id="cheatsheets">Cheatsheets<a class="zola-anchor" href="#cheatsheets" aria-label="Anchor link for: cheatsheets">🔗</a></h2>
@@ -1753,7 +2673,8 @@ ul.text-sm:lang(en) {
 <h2 id="xaay">XaaY<a class="zola-anchor" href="#xaay" aria-label="Anchor link for: xaay">🔗</a></h2>
 <p>X as a Y services.</p>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/pulumi/pulumi">Pulumi</a> - 通用的基础设施即代码，用 js 或者 go 或者 python 编写部署在各种云(AWS,Google Cloud, Azure, Kubenetes)上的应用</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/pulumi/pulumi">Pulumi</a> - 通用的基础设施即代码，用 js 或者 go 或者 python
+编写部署在各种云(AWS,Google Cloud, Azure, Kubenetes)上的应用</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://dhall-lang.org/">Dhall</a> - 可维护的配置文件, 配置语言
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://jsonnet.org/">JSONNet</a> - JSON 的简单扩展,可配置</li>
@@ -1762,7 +2683,8 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="tui">TUI<a class="zola-anchor" href="#tui" aria-label="Anchor link for: tui">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Phantas0s/devdash">DEV Dash</a> - 🍱 面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Phantas0s/devdash">DEV Dash</a> - 🍱
+面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等</li>
 </ul>
 <h2 id="wen-jian-fen-xiang">文件分享<a class="zola-anchor" href="#wen-jian-fen-xiang" aria-label="Anchor link for: wen-jian-fen-xiang">🔗</a></h2>
 <ul>
@@ -1771,9 +2693,11 @@ ul.text-sm:lang(en) {
 <h2 id="web-developer">Web developer<a class="zola-anchor" href="#web-developer" aria-label="Anchor link for: web-developer">🔗</a></h2>
 <ul>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.webpagetest.org/">web page test</a> - 通过这个网站，可以测试网站的性能</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://validator.w3.org">validator.w3.org</a> - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://validator.w3.org">validator.w3.org</a> - W3C 标记验证程序， 检查网站 HTML
+语法中的可改进项和错误</li>
 <li><a rel="noopener nofollow noreferrer" target="_blank" href="https://wave.webaim.org/">wave</a> - 检测网站的可访问性，可帮助作者使其网络内容更易于残障人士访问</li>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.whatsmydns.net/">Wahts my dns</a> - 查看网站的 DNS 传播情况，当你更换 dns 后，可以用这个网站 check 是否全部生效</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://www.whatsmydns.net/">Wahts my dns</a> - 查看网站的 DNS 传播情况，当你更换 dns
+后，可以用这个网站 check 是否全部生效</li>
 </ul>
 <h2 id="epub">Epub<a class="zola-anchor" href="#epub" aria-label="Anchor link for: epub">🔗</a></h2>
 <ul>
@@ -1781,14 +2705,37 @@ ul.text-sm:lang(en) {
 </ul>
 <h2 id="search">Search<a class="zola-anchor" href="#search" aria-label="Anchor link for: search">🔗</a></h2>
 <ul>
-<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://books.google.com/talktobooks/">Google 推出的 AI： 与书籍对话</a> - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的答案。</li>
+<li><a rel="noopener nofollow noreferrer" target="_blank" href="https://books.google.com/talktobooks/">Google 推出的 AI： 与书籍对话</a> - 输入一个问题，ai
+从谷歌成千上万本书里给出最相关的答案。</li>
 </ul>
 
     </article>
-    
-      <div class="pb">
-        <hr>
-          <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/tools.md">📝 帮我完善这个页面？</a>
+      
+        <div class="py muted">
+          <div>
+            
+            
+            
+              发布于:
+              <time class="dt-published published" datetime="2022-03-10">2022.03.10</time>
+            
+            
+              · 最后更新时间:
+              <time class="dt-updated updated" datetime="2022-10-02">2022.10.02</time>
+            
+            
+              <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/tools.md">&nbsp;📝 帮我完善这个页面？</a>
+            
+        <div class="py">
+          <div class="inline-block p-tags">
+            
+              <a class="p-tag" href="https://www.owenyoung.com/tags/tools/">#Tools</a>
+              
+            
+          </div>
+        </div>
+        
+        </div>
         </div>
       
       
