@@ -55,10 +55,10 @@
         {% endif %}
       </div>
       <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
-
-      <h2>{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
+      <details open class="py">
+      <summary class="text-lg">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
         <a href="#latest" id="latest" class="zola-anchor">🔗</a>
-      </h2>
+      </summary>
       <div class="articles h-feed hfeed">
         {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
           {{ macro::post_max(page=page,index=loop.index) }}
@@ -68,9 +68,10 @@
           {% endif %}
         {% endfor %}
       </div>
+      </details>
       {%if all_blog_pages.pages | slice(start=10) | length > 0%}
         <details class="py">
-          <summary class="bold">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
+          <summary class="bold text">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
           <ul>
             {% for page in all_blog_pages.pages | slice(start=10) %}
             <li>{{ macro::post_min(page=page) }}</li>
@@ -78,19 +79,21 @@
           </ul>
         </details>
         {% endif %}
-
-      <h2>{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-      </h2>
+      <details open class="py">
+      <summary class="text-lg">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </summary>
       {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
       <div class="articles">
         {{ thoughts_page.summary | safe }}
-        <h4 class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</h4>
+        <p class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</p>
       </div>
 
       <hr class="w-full"/>
+      </details>
 
-      <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
-      </h2>
+      <details open class="py">
+      <summary class="text-lg">{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
+      </summary>
       <div class="articles">
         <ul class="root-ul">
           {% for page in note_pages | slice(end=10) %}
@@ -99,7 +102,7 @@
         </ul>
         {%if note_pages | slice(start=10) | length > 0%}
         <details>
-          <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+          <summary class="text">{{ trans(key="label_toggle_more",lang=lang) }}</summary>
           <ul>
             {% for page in note_pages | slice(start=10) %}
             <li>{{ macro::post_min(page=page) }}</li>
@@ -108,13 +111,17 @@
         </details>
         {% endif %}
       </div>
-      <h2>{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
-      </h2>
+      </details>
+
+      <details open class="py">
+      <summary class="text-lg">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
+      </summary>
       {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
       <div class="articles">
         {{ quotes_page.summary | safe }}
-        <h4 class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</h4>
+        <p class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</p>
       </div>
+      </details>
       {{ section.content | safe }}
     </div>
   {% endblock main -%}

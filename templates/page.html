@@ -48,51 +48,22 @@
 {% block main %}
 <div class="h-entry hentry detail-page">
   {% block detail_meta -%}
-  <header id="overview">
+  <header class="header" id="overview">
     <div class="">
       <span>&gt;&gt;</span>
       <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
       {% if page.taxonomies %}
         <span class="divider">/</span>
         <a rel="category tag" class="p-category category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{ page.taxonomies.categories[0] }}</a>
-        {% if page.taxonomies.tags -%}
-          <span class="divider">/</span>
-          <div class="inline-block p-tags">
-            {% for tag in page.taxonomies.tags %}
-              <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
-              {% if page.taxonomies.tags | length > 1 %}
-                {% if
-      loop.index != page.taxonomies.tags | length %},{% endif %}
-              {% endif %}
-            {% endfor %}
-          </div>
-        {% endif %}
       {% endif %}
     </div>
     <div>
-      <h1 class="p-name entry-title" style="font-size:1.8rem;">{{ page.title }}</h1>
+      <h1 class="p-name entry-title" >{{ page.title }}</h1>
       <div class="display-none p-author h-card vcard">
         <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
         <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
         <p class="p-note">{{ config.extra.bio }}</p>
       </div>
-      {% if page.date %}
-        <div class="pb muted">
-          <div>
-            {% if page.date %}
-              {{ trans(key="label_created",lang=lang) }}:
-              <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date }}</time>
-            {% endif %}
-            {% if page.updated %}
-              · {{ trans(key="label_updated",lang=lang) }}:
-              <time class="dt-updated updated" datetime="{{ page.updated }}">{{ page.updated | date }}</time>
-              ·
-            {% endif %}
-            {% if page.date %}
-              {{ trans(key="label_reading",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min{% endif %}
-          </div>
-        </div>
-      {% endif %}
     </div>
     {% block detail_meta_slot %}{% endblock detail_meta_slot %}
   </header>
@@ -115,10 +86,36 @@
     <article class="e-content entry-content">
       {{ page.content | safe }}
     </article>
-    {% if config.extra.edit_url_prefix %}
-      <div class="pb">
-        <hr>
-          <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">📝 {{ trans(key="label_edit",lang=lang) }}</a>
+      {% if page.date %}
+        <div class="py muted">
+          <div>
+            {% set page_date = page.date | date(format="%Y.%m.%d") %}
+            {% set page_updated = page.updated | date(format="%Y.%m.%d") %}
+            {% if page.date %}
+              {{ trans(key="label_created",lang=lang) }}:
+              <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
+            {% endif %}
+            {% if page.updated and page_date != page_updated %}
+              · {{ trans(key="label_updated",lang=lang) }}:
+              <time class="dt-updated updated" datetime="{{ page.updated }}">{{ page.updated | date(format="%Y.%m.%d") }}</time>
+            {% endif %}
+            {% if config.extra.edit_url_prefix %}
+              <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">&nbsp;📝 {{ trans(key="label_edit",lang=lang) }}</a>
+            {% endif %}
+        {% if page.taxonomies.tags -%}
+        <div class="py">
+          <div class="inline-block p-tags">
+            {% for tag in page.taxonomies.tags %}
+              <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">#{{ tag }}</a>
+              {% if page.taxonomies.tags | length > 1 %}
+                {% if
+      loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+        </div>
         </div>
       {% endif %}
       {{ macro::backlink(pages=page.backlinks) }}

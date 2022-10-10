@@ -11,6 +11,9 @@
 {%- endif -%}
 {%- if config.mode=="build" -%}
   {%- set_global css = load_data(path="static/site/styles/site.css") -%}
+  {%- if lang == 'zh' -%}
+    {%- set_global post_css = load_data(path="static/site/styles/site.css") -%}
+  {%- endif -%}
 {%- endif -%}
 <!DOCTYPE html>
 <html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
@@ -25,6 +28,9 @@
     </title>
     {%- if config.mode!="build" -%}
       <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
+      {%- if lang == 'zh' -%}
+        <link rel="stylesheet" href="{{ get_url(path="site/styles/site-zh.css", trailing_slash=false,cachebust=true) | safe }}">
+      {%- endif -%}
     {%- endif -%}
     <link rel="me" href="https://twitter.com/TheOwenYoung"/>
     <link rel="me" href="https://twitter.com/OwenYoungZh"/>
@@ -71,6 +77,9 @@
     {% endblock rss %}
     {%- if config.mode=="build" -%}
       <style>{{css | safe}}</style>
+      {%- if post_css -%}
+        <style>{{post_css | safe}}</style>
+      {%- endif -%}
     {%- endif -%}
     <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}" >
     {% if config.extra.google_analytics %}

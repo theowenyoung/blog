@@ -130,24 +130,22 @@ fffef8
 #f4ecd8;
 */
 html {
-  font-size: 16px;
+  font-size: 15px;
   box-sizing: border-box;
   --colors-text: #41403e;
-  --colors-muted: rgb(117, 117, 117);
+  --colors-muted: #718096;
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-background: #fffef8;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
-  --colors-background-surface: #f9f5e9;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia,
-    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", Palatino, sans-serif;
+  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
 }
 
 body {
@@ -155,16 +153,16 @@ body {
   background-color: var(--colors-background);
 }
 
-[lang]:lang(zh) {
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-[lang]:lang(en) {
-  font-family: "et-book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
-    Georgia, "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
+
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    html {
+        --colors-background: #202124;
+        --colors-text: rgb(236, 237, 238);
+    }
+    body {
+      backgroup-color: var(--colors-background);
+    }
 }
 
 #root {
@@ -179,8 +177,8 @@ h3 {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
   margin-bottom: 1rem;
-  line-height: 1.1;
-  font-weight: 600;
+  line-height: 1;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
@@ -191,11 +189,13 @@ h6 {
   padding-bottom: 1.1rem;
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 400;
   border-bottom: 1px solid var(--colors-divider);
   position: relative;
 }
 
+.header {
+}
 .relative {
   position: relative;
 }
@@ -298,15 +298,17 @@ h3::after {
 }
 
 h1 {
-  font-size: 1.625rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.375rem;
+  font-style: italic;
 }
 
 pre {
@@ -323,7 +325,6 @@ pre {
 code {
   border-radius: 0.25rem;
   padding: 0.375rem 0.5rem;
-  background-color: var(--colors-code-background);
 }
 
 pre > code {
@@ -350,7 +351,7 @@ hr {
   width: 55%;
   border: 0;
   border-top: 1px solid var(--colors-divider);
-  margin: 1em 0;
+  margin: 2rem 0;
   padding: 0;
 }
 
@@ -369,30 +370,45 @@ p {
 }
 
 blockquote {
-  padding: 1px 0 1px 1.5rem;
-  margin: 1.5rem 0;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-left: 5px solid var(--colors-primary);
+  margin: 3rem 0;
+  position: relative;
+
 }
 
 blockquote p {
-  margin: 0.5rem 0;
+  font-size: 1.4rem;
 }
 
+blockquote p:lang(en) {
+  font-size: 1.6rem;
+}
+blockquote::before{
+  position: absolute;
+  content:"\201C"; 
+  top: 0.875rem;
+  font-size: 2.5rem;
+  color: var(--colors-primary);
+  line-height: .1em;
+  vertical-align: -.4em;
+  font-weight: bold;
+  font-family: Courier, monospace;
+}
+blockquote > p:first-child {
+  text-indent: 1.675rem;
+}
 p,
 dl,
 ol,
 ul {
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 1.175rem;
+  line-height: 2rem;
 }
 
 p:lang(en),
 dl:lang(en),
 ol:lang(en),
 ul:lang(en) {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
 
@@ -487,7 +503,7 @@ a:visited {
   transition: color 200ms ease;
   text-decoration: underline;
   color: inherit;
-  text-decoration-thickness: 0.1rem;
+  text-decoration-thickness: 1px;
 }
 
 :target {
@@ -525,7 +541,7 @@ a.muted,
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.175rem;
 }
 
 .text-color,
@@ -831,12 +847,12 @@ ul.text-sm:lang(en) {
   h1::after,
   h2::after,
   h3::after {
-    background-color: var(--colors-background-surface);
+    background-color: var(--colors-background);
   }
   .main-inner {
     padding-left: 5rem;
     padding-right: 5rem;
-    /* background-color: var(--colors-background-surface); */
+    /* background-color: var(--colors-background); */
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
     /* box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px 3px;*/
   }
@@ -853,17 +869,17 @@ ul.text-sm:lang(en) {
   }
 
   .main-inner {
-    max-width: 48rem;
+    max-width: 52rem;
     margin: 0 auto;
   }
 
   .sidebar {
-    position: sticky;
+    /* position: sticky; */
     border-top: none;
-    top: 0;
-    z-index: 1;
-    height: 100vh;
-    overflow-y: auto;
+    /* top: 0; */
+    /* z-index: 1; */
+    /* height: 100vh; */
+    /* overflow-y: auto; */
     width: 20rem;
   }
 
