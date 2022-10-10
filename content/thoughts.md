@@ -97,19 +97,19 @@ taxonomies:
 <!-- more -->
 
 > 以下这几个别名和函数节省了我至少一吨的时间。
-
-```bash
-function gg() { git commit -m "$*" -a }
-function gp() { git commit -a -m "$*" && git push }
-function ga() { git add . }
-alias ll="ls -GF -l"
-alias la="ls -GF -la"
-alias gpull="git pull"
-alias gpush="git push"
-alias gd="git diff"
-alias gs="git status 2>/dev/null"
-alias gv="git remote -v"
-```
+>
+> ```bash
+> function gg() { git commit -m "$*" -a }
+> function gp() { git commit -a -m "$*" && git push }
+> function ga() { git add . }
+> alias ll="ls -GF -l"
+> alias la="ls -GF -la"
+> alias gpull="git pull"
+> alias gpush="git push"
+> alias gd="git diff"
+> alias gs="git status 2>/dev/null"
+> alias gv="git remote -v"
+> ```
 
 > 两个人有两个人好处，一个人也有一个人的好处。在家办公的情况下，两个人必须独立分开办公才行（公司同理）。一起办公无法提高效率，也会限制很多东西，比如 A
 > 想要语音聊天，或者外放音乐，外放教程等等等等。但是我也不是很支持公司的远程办公，我认为员工应该有独立办公室，同时也应该有很快能聚集的大厅，这样效率才能最大化。
