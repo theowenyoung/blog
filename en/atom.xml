@@ -1398,15 +1398,36 @@ power.” — David Brin&lt;&#x2F;p&gt;
 		<updated>2022-07-12T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/about/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/about/</id>
-		<content type="html">&lt;p&gt;I established a personal public &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt; before, which let me develop the habit of taking notes and writing more things, as the habit has been developed, so I will no longer entangle the form of the blog problem, put Personal notes, all the outputs of the blog are placed here, so that I can maintain myself better and save my mind, before the two places to switch back and forth to make me a bit overwhelmed. Currently, all blog sources are placed in the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&quot;&gt;GitHub Repo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;I established a personal public &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt; before, which let me develop the habit of
+taking notes and writing more things, as the habit has been developed, so I will
+no longer entangle the form of the blog problem, put Personal notes, all the
+outputs of the blog are placed here, so that I can maintain myself better and
+save my mind, before the two places to switch back and forth to make me a bit
+overwhelmed. Currently, all blog sources are placed in the
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;blog&quot;&gt;GitHub Repo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;I’m using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;&quot;&gt;VSCode&lt;&#x2F;a&gt; with the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;Foam Lite Plugin&lt;&#x2F;a&gt; I developed to edit all the content of this blog. I prefer plain text to store notes, it gives me more control as well as not being locked out by the operator.&lt;&#x2F;p&gt;
-&lt;p&gt;I’m using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; to generate this static blog, Zola is written in Rust, I’ve basically used JS toolchain to generate the blog before, now I prefer to use a single binary tool, mainly because I’m scared of the third-party plugin ecosystem, and I want to keep my blog Zola actually provides a lot of capabilities, so it’s possible to implement most of the ideas, for example, I implemented this function for sorting books by rating: &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books&#x2F;&quot;&gt;books&lt;&#x2F;a&gt;, Indieweb capabilities: &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;&quot;&gt;Now, I’m in IndieWeb?&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’m using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;code.visualstudio.com&#x2F;&quot;&gt;VSCode&lt;&#x2F;a&gt; with the
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;Foam Lite Plugin&lt;&#x2F;a&gt;
+I developed to edit all the content of this blog. I prefer plain text to store
+notes, it gives me more control as well as not being locked out by the operator.&lt;&#x2F;p&gt;
+&lt;p&gt;I’m using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt; to generate this static blog, Zola is
+written in Rust, I’ve basically used JS toolchain to generate the blog before,
+now I prefer to use a single binary tool, mainly because I’m scared of the
+third-party plugin ecosystem, and I want to keep my blog Zola actually provides
+a lot of capabilities, so it’s possible to implement most of the ideas, for
+example, I implemented this function for sorting books by rating:
+&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;books&#x2F;&quot;&gt;books&lt;&#x2F;a&gt;, Indieweb capabilities:
+&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;indieweb&#x2F;&quot;&gt;Now, I’m in IndieWeb?&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;about-me&quot;&gt;About Me&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;a-failure-of-english-learning&quot;&gt;A failure of English learning&lt;&#x2F;h3&gt;
-&lt;p&gt;I’ve learned English more than 10 years, but it still sucks, so I registered a Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt; for only English tweets, and this &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;wiki&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;blog&lt;&#x2F;a&gt; to force me to use more English.&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve learned English more than 10 years, but it still sucks, so I registered a
+Twitter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;TheOwenYoung&quot;&gt;@TheOwenYoung&lt;&#x2F;a&gt; for only English
+tweets, and this &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;wiki&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;blog&lt;&#x2F;a&gt; to force me to use more English.&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;programmer&quot;&gt;Programmer&lt;&#x2F;h3&gt;
-&lt;p&gt;Full stack developer, main technology stack is javascript. Find more my projects &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;&quot;&gt;Projects&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Full stack developer, main technology stack is javascript. Find more my projects
+&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;projects&#x2F;&quot;&gt;Projects&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;what-am-i-doing-now&quot;&gt;What am I doing now?&lt;&#x2F;h3&gt;
 &lt;p&gt;See what am I doing now at &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;now&#x2F;&quot;&gt;Now&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;contact-me&quot;&gt;Contact Me&lt;&#x2F;h2&gt;
