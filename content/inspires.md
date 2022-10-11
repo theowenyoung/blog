@@ -204,3 +204,7 @@ taxonomies:
 - [一个很舒服的背景色的博客](https://ruudvanasseldonk.com/)
 - [把格式融入到整体网站里，很舒服](https://surma.dev/things/js-to-asc/)
 - [沉浸式体验的杂志](https://magazine.atavist.com/the-voyagers-russia-bering-strait-stalin-alaska-ukraine/)
+
+## 资源
+
+- [pilimi](http://pilimi.org/) - 海盗图书馆项目，保存人类的火种（盗版）
