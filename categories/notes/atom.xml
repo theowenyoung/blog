@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-10-10T00:00:00+00:00</updated>
+	<updated>2022-10-11T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/categories/notes/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>什么是 XX ？</title>
@@ -2178,6 +2178,10 @@ instead of appearance or status.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;surma.dev&#x2F;things&#x2F;js-to-asc&#x2F;&quot;&gt;把格式融入到整体网站里，很舒服&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;magazine.atavist.com&#x2F;the-voyagers-russia-bering-strait-stalin-alaska-ukraine&#x2F;&quot;&gt;沉浸式体验的杂志&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;zi-yuan&quot;&gt;资源&lt;a class=&quot;zola-anchor&quot; href=&quot;#zi-yuan&quot; aria-label=&quot;Anchor link for: zi-yuan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;pilimi.org&#x2F;&quot;&gt;pilimi&lt;&#x2F;a&gt; - 海盗图书馆项目，保存人类的火种（盗版）&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
 	</entry>
 	<entry xml:lang="zh">
@@ -2921,12 +2925,13 @@ save your company time and make you more money. 创业相关，企业管理相�
 	<entry xml:lang="zh">
 		<title>你应该知道的一些冷知识</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-06T00:00:00+00:00</updated>
+		<updated>2022-10-11T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/you-should-know/" type="text/html"/>
 		<id>https://www.owenyoung.com/you-should-know/</id>
 		<content type="html">&lt;p&gt;收集冷知识，维基百科以及一些数据。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;leng-zhi-shi&quot;&gt;冷知识&lt;a class=&quot;zola-anchor&quot; href=&quot;#leng-zhi-shi&quot; aria-label=&quot;Anchor link for: leng-zhi-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
+&lt;li&gt;惠更斯和莱布尼茨听到牛顿疯了的谣言喜出望外。 - 罗素全集&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;webdev&#x2F;comments&#x2F;gzr3cq&#x2F;fyi_you_can_bypass_youtube_ads_by_adding_a_dot&#x2F;&quot;&gt;您可以通过在域名后添加一个点来绕过 YouTube 广告&lt;&#x2F;a&gt; - For example,&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=DuB8VUICGqc&quot;&gt;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=DuB8VUICGqc&lt;&#x2F;a&gt; will occasionally show ads, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com.&#x2F;watch?v=DuB8VUICGqc&quot;&gt;https:&#x2F;&#x2F;www.youtube.com.&#x2F;watch?v=DuB8VUICGqc&lt;&#x2F;a&gt; will not show ads, and other pay wall.&lt;&#x2F;li&gt;
 &lt;li&gt;排名前 9%的账户持有以太坊区块链上&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;e95f5ac2-0476-41f4-abd4-8a99faa7737d?utm_campaign=etb&amp;amp;utm_medium=newsletter&amp;amp;utm_source=morning_brew&quot;&gt;NFT410 亿美元市值的 80%&lt;&#x2F;a&gt;,比特币更加集中：&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bitinfocharts.com&#x2F;top-100-richest-bitcoin-addresses.html&quot;&gt;前 2%的账户拥有 8000 亿美元比特币供应量的 95%&lt;&#x2F;a&gt;，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www-techspot-com.cdn.ampproject.org&#x2F;c&#x2F;s&#x2F;www.techspot.com&#x2F;amp&#x2F;news&#x2F;91937-bitcoin-largely-controlled-small-group-investors-miners-study.html&quot;&gt;0.1%的比特币矿工负责所有采矿产出的一半&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;correctiv.org&#x2F;en&#x2F;latest-stories&#x2F;2022&#x2F;03&#x2F;01&#x2F;sanctions-tracker-live-monitoring-of-all-sanctions-against-russia&#x2F;&quot;&gt;迄今为止制裁俄罗斯的公司清单&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -3000,6 +3005,9 @@ save your company time and make you more money. 创业相关，企业管理相�
 		<link rel="alternate" href="https://www.owenyoung.com/thoughts/" type="text/html"/>
 		<id>https://www.owenyoung.com/thoughts/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;罗素的第一部著作是《社会改造的原理》（1916）。但是在美国，出版商未经他许可擅自把书名改为《人们为什么打仗？》，我看现在的美国媒体也是一样的风气，篇篇标题不离 why xxxx. 相对而言欧洲的媒体要正常的多。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;在 reddit 上看到一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;China&#x2F;comments&#x2F;xz4a95&#x2F;i_want_to_go_to_china_but_i_am_afraid_to_go_to&#x2F;&quot;&gt;问题&lt;&#x2F;a&gt;,
 楼主是一位 6 岁时被收养的中国孤儿，现在在美国，他想去自己的故土看看，但是又有点害怕，所以发帖问怎么办？其中有一个回答说：“有一天你应该去，但是现在不是一个好的选择”，随后又一位网友回复这位答主，他说：“实际上，如果他现在去，反而会很好地体验中国和中共的文化。现在发生的事情就是中国文化的一部分。然后，他才会对中国文化形成一个公正的看法”。我附议。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -4126,10 +4134,16 @@ etc into one blog. In my opinion, this is a real personal home.&lt;&#x2F;p&gt;
 	<entry xml:lang="zh">
 		<title>收集发人深省的话</title>
 		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2022-10-02T00:00:00+00:00</updated>
+		<updated>2022-10-11T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/quotes/" type="text/html"/>
 		<id>https://www.owenyoung.com/quotes/</id>
 		<content type="html">&lt;blockquote&gt;
+&lt;p&gt;人们习惯于以某个统治集团的标准来定义客观正确性，只要这个集团的统治地位稳固。 - 罗素&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1920 年，罗素作为英国工党代表团的非正式成员，获得机会去访问刚刚建立的苏联。此次考察之旅使他对国家社会主义的批评比之前更加猛烈和尖锐，在他看来，人类生活中很多他极为珍视的东西都被一种狭隘和抽象的教条扼杀了。这种残暴的手段固然承诺人们能在未来过上更美好的生活，可是罗素不相信，一个人怎么能虐待人民多年然后指望他们有朝一日痊愈，就像什么都没发生过。和列宁面谈一小时也没有令罗素改变观点，反而让他更加厌恶这个制度。一回到英国，他就写出了《布尔什维克的理论与实践》（1920），很多左派觉得此书的出版不啻为公然背叛。1949 年，罗素又一字不改地再版了这本书，此时，当年批评过他的很多左派自己也不再对苏联抱有幻想。 – 罗素全集&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;这几年的伊朗，从 2017 年开始，社会问题层出不穷，我们开始有各种各样激烈的抗争，工人阶级的、女性运动、气候（一些地区严重缺水）抗争、少数群体的抗争，这些年一个有一个抗争持续累积的过程，是不同被压迫群体团结的过程，也是一个社会建立共识和相互理解的过程，“现在我们也感受到被压迫了，更能理解其它群体处于被压迫的状态是什么感受了”。在 2009 年绿色革命时期，抗争的人们绝不会说，我们也要把注意力放在边缘群体上，看看他们的处境是怎么样。 – 端&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;blockquote&gt;

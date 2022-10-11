@@ -124,6 +124,10 @@
         <loc>https://www.owenyoung.com/blog/books/page/2/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/blog/books/russell/</loc>
+        <lastmod>2022-10-11</lastmod>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/blog/books/so-good-they-cannot-ignore-you/</loc>
         <lastmod>2022-03-30</lastmod>
     </url>
@@ -765,7 +769,7 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/quotes/</loc>
-        <lastmod>2022-10-02</lastmod>
+        <lastmod>2022-10-11</lastmod>
     </url>
     <url>
         <loc>https://www.owenyoung.com/rust/</loc>
@@ -1474,6 +1478,6 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/you-should-know/</loc>
-        <lastmod>2022-06-06</lastmod>
+        <lastmod>2022-10-11</lastmod>
     </url>
 </urlset>

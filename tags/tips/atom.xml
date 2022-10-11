@@ -5,7 +5,7 @@
 	<link href="https://www.owenyoung.com/tags/tips/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-09T00:00:00+00:00</updated>
+	<updated>2022-10-11T00:00:00+00:00</updated>
 	<id>https://www.owenyoung.com/tags/tips/atom.xml</id>
 	<entry xml:lang="zh">
 		<title>开发技巧收藏</title>
@@ -354,12 +354,13 @@
 	<entry xml:lang="zh">
 		<title>你应该知道的一些冷知识</title>
 		<published>2022-03-25T00:00:00+00:00</published>
-		<updated>2022-06-06T00:00:00+00:00</updated>
+		<updated>2022-10-11T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/you-should-know/" type="text/html"/>
 		<id>https://www.owenyoung.com/you-should-know/</id>
 		<content type="html">&lt;p&gt;收集冷知识，维基百科以及一些数据。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;leng-zhi-shi&quot;&gt;冷知识&lt;a class=&quot;zola-anchor&quot; href=&quot;#leng-zhi-shi&quot; aria-label=&quot;Anchor link for: leng-zhi-shi&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
+&lt;li&gt;惠更斯和莱布尼茨听到牛顿疯了的谣言喜出望外。 - 罗素全集&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;old.reddit.com&#x2F;r&#x2F;webdev&#x2F;comments&#x2F;gzr3cq&#x2F;fyi_you_can_bypass_youtube_ads_by_adding_a_dot&#x2F;&quot;&gt;您可以通过在域名后添加一个点来绕过 YouTube 广告&lt;&#x2F;a&gt; - For example,&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=DuB8VUICGqc&quot;&gt;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=DuB8VUICGqc&lt;&#x2F;a&gt; will occasionally show ads, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com.&#x2F;watch?v=DuB8VUICGqc&quot;&gt;https:&#x2F;&#x2F;www.youtube.com.&#x2F;watch?v=DuB8VUICGqc&lt;&#x2F;a&gt; will not show ads, and other pay wall.&lt;&#x2F;li&gt;
 &lt;li&gt;排名前 9%的账户持有以太坊区块链上&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;e95f5ac2-0476-41f4-abd4-8a99faa7737d?utm_campaign=etb&amp;amp;utm_medium=newsletter&amp;amp;utm_source=morning_brew&quot;&gt;NFT410 亿美元市值的 80%&lt;&#x2F;a&gt;,比特币更加集中：&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bitinfocharts.com&#x2F;top-100-richest-bitcoin-addresses.html&quot;&gt;前 2%的账户拥有 8000 亿美元比特币供应量的 95%&lt;&#x2F;a&gt;，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www-techspot-com.cdn.ampproject.org&#x2F;c&#x2F;s&#x2F;www.techspot.com&#x2F;amp&#x2F;news&#x2F;91937-bitcoin-largely-controlled-small-group-investors-miners-study.html&quot;&gt;0.1%的比特币矿工负责所有采矿产出的一半&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;correctiv.org&#x2F;en&#x2F;latest-stories&#x2F;2022&#x2F;03&#x2F;01&#x2F;sanctions-tracker-live-monitoring-of-all-sanctions-against-russia&#x2F;&quot;&gt;迄今为止制裁俄罗斯的公司清单&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
