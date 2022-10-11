@@ -6,6 +6,8 @@ draft: true
 taxonomies:
   categories:
     - Books
+  tags:
+    - Books
 extra:
   rating: 6
   author: "Patrick J. Deneen" 

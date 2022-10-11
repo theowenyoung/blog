@@ -145,7 +145,7 @@ Adding Edit this article link to every post.
    [Blog](https://blog.owenyoung.com/) to
    [New Blog](https://www.owenyoung.com/). The Blog is built with
    [Zola](https://www.getzola.org/), I also wrote
-   [迁移博客和 Wiki 到 Zola](/content/blog/migrate-to-zola.md) to record it. The
+   [迁移博客和 Wiki 到 Zola](/content/blog/migrate-to-zola/index.md) to record it. The
    biggest difference is the blazing building speed of Zola, for now, it only
    takes 2 seconds to build the whole site.
 

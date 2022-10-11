@@ -1,10 +1,18 @@
-.Phony: serve build test webmention send dev-webmention win
+.Phon: serve build test webmention send dev-webmention win
 
 serve:
 	./bin/zola serve -p 8000
 
 build:
 	./bin/zola build
+
+.Phony: buildbook
+buildbook:
+	deno run -A ./book/build.ts
+
+.Phony: installbook
+installbook:
+	./scripts/install_mdbook-epub.sh
 
 
 test:

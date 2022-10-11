@@ -6,6 +6,8 @@ draft: false
 taxonomies:
   categories:
     - Books
+  tags:
+    - Random Book
 extra:
   rating: 8
   author: 黄仁宇

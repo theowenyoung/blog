@@ -1,6 +1,7 @@
 bin
 public
 .obsidian
+book-dist/
 # General
 .DS_Store
 .AppleDouble

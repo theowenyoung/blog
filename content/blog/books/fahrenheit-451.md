@@ -7,6 +7,7 @@ taxonomies:
     - Books
   tags:
     - Fiction
+    - Random Book
 extra:
   rating: 6
   author: "[美] 雷·布拉德伯里"

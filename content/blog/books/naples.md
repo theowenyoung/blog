@@ -7,6 +7,7 @@ taxonomies:
     - Books
   tags:
     - Fiction
+    - Random Book
 extra:
   rating: 10
   author: Elena Ferrante

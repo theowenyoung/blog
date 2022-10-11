@@ -7,6 +7,7 @@ taxonomies:
     - Books
   tags:
     - Fiction
+    - Random Book
 extra:
   rating: 6
   author: "[美] 苏珊·柯林斯"

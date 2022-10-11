@@ -8,6 +8,7 @@ taxonomies:
   tags:
     - Nonfiction
     - Advice
+    - Random Book
 extra:
   author: 戈登·利文斯顿
   rating: 6

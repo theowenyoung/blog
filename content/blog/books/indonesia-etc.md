@@ -9,11 +9,12 @@ taxonomies:
     - Nonfiction
     - Indonesia
 extra:
-  rating: 8
+  rating: 7
   author: 伊丽莎白·皮萨尼
 ---
 
-[印尼 Etc. (豆瓣) (douban.com)](https://book.douban.com/subject/34872741/) , 作者用一种温暖人心的方式向我们缓缓的讲述了在印尼的故事，看完之后你会对印尼有更多的认识。值得一看。
+[印尼 Etc. (豆瓣) (douban.com)](https://book.douban.com/subject/34872741/) ,
+作者用一种温暖人心的方式向我们缓缓的讲述了在印尼的故事，看完之后你会对印尼有更多的认识。值得一看。
 
 <!-- more -->
 

@@ -6,6 +6,9 @@ draft: false
 taxonomies:
   categories:
     - Books
+  tags:
+    - Books
+    - Random Book
 extra:
   rating: 7
   author: 菲利普迪克
