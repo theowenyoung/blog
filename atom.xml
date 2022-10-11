@@ -5,8 +5,24 @@
 	<link href="https://www.owenyoung.com/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.owenyoung.com"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-10-10T00:00:00+00:00</updated>
+	<updated>2022-10-11T09:52:40+08:00</updated>
 	<id>https://www.owenyoung.com/atom.xml</id>
+	<entry xml:lang="zh">
+		<title>2022.10.11: 各种链接</title>
+		<published>2022-10-11T09:52:40+08:00</published>
+		<updated>2022-10-11T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://www.owenyoung.com/blog/journals/2022-10-11/" type="text/html"/>
+		<id>https://www.owenyoung.com/blog/journals/2022-10-11/</id>
+		<content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;muskmessages.com&#x2F;&quot;&gt;国外网友做的马斯克短信记录的imessage 网页模拟版&lt;&#x2F;a&gt; - 好闲！&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;foreignpolicy.com&#x2F;2014&#x2F;03&#x2F;17&#x2F;why-is-japan-so-different&#x2F;&quot;&gt;为什么日本如此的不同？&lt;&#x2F;a&gt; -
+离开亚洲!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;kerkour.com&#x2F;hacking-a-kindle-note-taking-and-writing&quot;&gt;用kindle来写日记&lt;&#x2F;a&gt; -
+服了。。先用Google文档生成1周7天7本epub电子书，然后传输到kindle，然后在kindle上做笔记当日记。。但是我觉得这只是痛苦，kindle不适合做这种交互式操作，反应太慢了。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.nitinpai.in&#x2F;2022&#x2F;10&#x2F;10&#x2F;why-an-everything-app-is-bad-news-for-liberal-democracies-and-free-markets&quot;&gt;为什么像微信一样的超级App对于民主国家是个坏消息&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="zh">
 		<title>个人的问题还是体制的问题？</title>
 		<published>2022-10-09T08:49:30+08:00</published>
