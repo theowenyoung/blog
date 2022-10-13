@@ -1,9 +1,9 @@
 name: Build Book
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 jobs:
   build-deploy:
     concurrency: build-book
