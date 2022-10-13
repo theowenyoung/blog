@@ -13,13 +13,22 @@ jobs:
       - run: make install
       - name: Build Site
         run: make build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     publish_dir: ./public
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to pages 
+        uses: cloudflare/pages-action@1
         with:
-          publish_dir: ./public
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: owen # e.g. 'my-project'
+          directory: ./public # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
   scrape-and-build-search-index:
     needs: build-deploy
+    concurrency: search-index
     runs-on: ubuntu-latest
     steps:
       # wait github pages publish
