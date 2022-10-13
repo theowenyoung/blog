@@ -29,9 +29,9 @@ jobs:
         with:
           name: book
           path: |
-            ./dist/*.pdf
-            ./dist/*.epub
-            ./dist/*.zip
+            ./owen-blog-dist/*.pdf
+            ./owen-blog-dist/*.epub
+            ./owen-blog-dist/*.zip
 
       # - name: Upload assets
       #   uses: "marvinpinto/action-automatic-releases@v1.2.1"
@@ -41,6 +41,14 @@ jobs:
       #     prerelease: true
       #     title: "Blog Book"
       #     files: |
-      #       ./dist/*.pdf
-      #       ./dist/*.zip
-      #       ./dist/*.epub
+      #       ./owen-blog-dist/*.pdf
+      #       ./owen-blog-dist/*.zip
+      #       ./owen-blog-dist/*.epub
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: book # e.g. 'my-project'
+          directory: ./owen-blog-dist # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

@@ -424,8 +424,8 @@ async function main() {
       bookSourceFileDist,
       `book/epub/${book.config.book.title}.epub`,
     );
-    await fs.ensureDir(path.join(workDir, "dist"));
-    const distDir = path.join(workDir, "dist");
+    const distDir = path.join(workDir, key + "-dist");
+    await fs.ensureDir(distDir);
     const epubNewPath = path.join(distDir, `${key}.epub`);
     await Deno.copyFile(epubPath, epubNewPath);
 
@@ -441,12 +441,14 @@ async function main() {
         "zip",
         "-r",
         "-q",
-        path.join(workDir, "dist", `${key}-html.zip`),
+        path.join(distDir, `${key}-html.zip`),
         "./",
       ],
       cwd: htmlPath,
     });
     await zipProcess.status();
+    // copy all html files to distDir
+    await fs.copy(htmlPath, distDir, { overwrite: true });
     console.log("build book success");
   }
 }

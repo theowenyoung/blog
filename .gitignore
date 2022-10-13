@@ -3,6 +3,7 @@ dist/
 public
 .obsidian
 book-dist/
+*-dist/
 # General
 .DS_Store
 .AppleDouble
