@@ -29,6 +29,7 @@ interface BookConfig {
     html: Record<string, unknown>;
     markdown?: Record<string, unknown>;
     pdf?: Record<string, unknown>;
+    latex?: Record<string, unknown>;
   };
 }
 interface SubSection {
@@ -84,6 +85,10 @@ async function main() {
     pdf: {
       enable: true,
       "command": binDir + "/mdbook-pdf",
+    },
+    latex: {
+      latex: false,
+      pdf: true,
     },
   };
 
