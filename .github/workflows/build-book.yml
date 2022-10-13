@@ -24,15 +24,23 @@ jobs:
           key: ${{ runner.os }}-deno-${{ hashFiles('book/build.ts') }}
       - run: make installbook
       - name: Build Book
-        run: make buildbook
-      - name: Upload assets
-        uses: "marvinpinto/action-automatic-releases@v1.2.1"
+        run: make buildbo
+      - uses: actions/upload-artifact@v3
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "book"
-          prerelease: true
-          title: "Blog Book"
-          files: |
+          name: book
+          path: |
             ./dist/*.pdf
-            ./dist/*.zip
             ./dist/*.epub
+            ./dist/*.zip
+
+      # - name: Upload assets
+      #   uses: "marvinpinto/action-automatic-releases@v1.2.1"
+      #   with:
+      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      #     automatic_release_tag: "book"
+      #     prerelease: true
+      #     title: "Blog Book"
+      #     files: |
+      #       ./dist/*.pdf
+      #       ./dist/*.zip
+      #       ./dist/*.epub
