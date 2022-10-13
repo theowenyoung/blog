@@ -13,7 +13,8 @@
 		<updated>2022-06-04T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/tv-shows/" type="text/html"/>
 		<id>https://www.owenyoung.com/tv-shows/</id>
-		<content type="html">&lt;p&gt;记录自己看过的剧，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021 开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。有一些剧是看的解说，但是有点后悔，当时是为了节省时间，早知道那么精彩就应该看原剧。&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;记录自己看过的剧，按年份排序，星星 ✨ 是我自己的评分，如有笔记则另外链接。基本上从 2021
+开始记的，以前的由于没有及时建立这个第二大脑，基本都忘的差不多了。有一些剧是看的解说，但是有点后悔，当时是为了节省时间，早知道那么精彩就应该看原剧。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;Also see &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;books&#x2F;&quot;&gt;读书笔记&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;movies&#x2F;&quot;&gt;电影笔记&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;dian-shi-ju-lie-biao&quot;&gt;电视剧列表&lt;a class=&quot;zola-anchor&quot; href=&quot;#dian-shi-ju-lie-biao&quot; aria-label=&quot;Anchor link for: dian-shi-ju-lie-biao&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -21,7 +22,16 @@
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tomatotree.tv&#x2F;&quot;&gt;Tomato Tree&lt;&#x2F;a&gt; - 通过烂番茄网站找到你的下一个电视剧！&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;workflows&quot;&gt;workflows&lt;a class=&quot;zola-anchor&quot; href=&quot;#workflows&quot; aria-label=&quot;Anchor link for: workflows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;目前主要是用 &lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jackett-setup&#x2F;&quot;&gt;Jackett Setup&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;sonarr-setup&#x2F;&quot;&gt;Sonarr Setup&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;&quot;&gt;Bazarr Setup&lt;&#x2F;a&gt; 在下载和管理剧以及字幕，买了一台 1T 的 VPS 作为 NAS。本来想用&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jellyfin-setup&#x2F;&quot;&gt;Jellyfin 安装&lt;&#x2F;a&gt;为影视中心的，但是使用后感觉客户端并不是 native 的，略卡，可能暂时还不胜用，所以索性直接上&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;&quot;&gt;Caddy File Server Browser with URL Scheme&lt;&#x2F;a&gt;, 然后 mac 用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iina.io&#x2F;&quot;&gt;IINA&lt;&#x2F;a&gt;，或者&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;video.xunlei.com&#x2F;&quot;&gt;迅雷看看&lt;&#x2F;a&gt;（大多数剧的字幕匹配做的好一点），手机端用 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nplayer.com&#x2F;&quot;&gt;nplayer&lt;&#x2F;a&gt;或&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.videolan.org&#x2F;&quot;&gt;VLC&lt;&#x2F;a&gt; 打开流文件。目前这样的体验是最爽的。&lt;&#x2F;p&gt;
+&lt;p&gt;目前主要是用
+&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;qbittorrent-setup-for-debian&#x2F;&quot;&gt;qBittorrent setup for Debian&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jackett-setup&#x2F;&quot;&gt;Jackett Setup&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;sonarr-setup&#x2F;&quot;&gt;Sonarr Setup&lt;&#x2F;a&gt;,&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;bazarr-setup&#x2F;&quot;&gt;Bazarr Setup&lt;&#x2F;a&gt;
+在下载和管理剧以及字幕，买了一台 1T 的 VPS 作为
+NAS。本来想用&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;blog&#x2F;jellyfin-setup&#x2F;&quot;&gt;Jellyfin 安装&lt;&#x2F;a&gt;为影视中心的，但是使用后感觉客户端并不是
+native
+的，略卡，可能暂时还不胜用，所以索性直接上&lt;a href=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;caddy-file-server-browser-with-url-scheme&#x2F;&quot;&gt;Caddy File Server Browser with URL Scheme&lt;&#x2F;a&gt;,
+然后 mac 用
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;iina.io&#x2F;&quot;&gt;IINA&lt;&#x2F;a&gt;，或者&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;video.xunlei.com&#x2F;&quot;&gt;迅雷看看&lt;&#x2F;a&gt;（大多数剧的字幕匹配做的好一点），手机端用
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nplayer.com&#x2F;&quot;&gt;nplayer&lt;&#x2F;a&gt;或&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.videolan.org&#x2F;&quot;&gt;VLC&lt;&#x2F;a&gt;
+打开流文件。目前这样的体验是最爽的。&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;.&#x2F;caddy-root.png&quot; alt=&quot;Root Screenshot&quot; &#x2F;&gt;
 &lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;tv-shows&#x2F;.&#x2F;caddy-tv-demo.png&quot; alt=&quot;Rick and Morty Season 5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;ren-sheng-bi-kan-xi-lie&quot;&gt;人生必看系列&lt;a class=&quot;zola-anchor&quot; href=&quot;#ren-sheng-bi-kan-xi-lie&quot; aria-label=&quot;Anchor link for: ren-sheng-bi-kan-xi-lie&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
@@ -53,7 +63,8 @@
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
 瑞克与莫蒂，第五季， ✨✨✨✨，还行，但是有一点套路化了，没有第一季的惊喜了。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
-早间新闻，第一季，✨✨✨✨✨，全剧在多方面探讨了 Metoo 的影响，剧情也很精彩（虽然有部分地方有点戏剧化，但是不影响），有很多地方看的很揪心。反正在我看来这部剧就是既深刻又精彩。期待第二季。&lt;&#x2F;li&gt;
+早间新闻，第一季，✨✨✨✨✨，全剧在多方面探讨了 Metoo
+的影响，剧情也很精彩（虽然有部分地方有点戏剧化，但是不影响），有很多地方看的很揪心。反正在我看来这部剧就是既深刻又精彩。期待第二季。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
 半泽直树，第二季，✨✨✨✨，日本剧总感觉有那么一点含蓄，等级森严。虽然第二季引入了女性角色，但是还是有点不够饱满。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
@@ -63,7 +74,8 @@
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
 致命女人，第二季，✨✨✨，前面很精彩，但是后面走向有点套路。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;
-新闻编辑室，第一季，✨✨✨，看了 10 来集，暂时弃剧了，主要是里面的情感关系和幽默让我有点看《硅谷》的感觉，感情有点太脸谱化，幽默就更脸谱化了，笑不出来，深刻是有，但是如果只有深刻，没有剧情，就有点看不下去。&lt;&#x2F;li&gt;
+新闻编辑室，第一季，✨✨✨，看了 10
+来集，暂时弃剧了，主要是里面的情感关系和幽默让我有点看《硅谷》的感觉，感情有点太脸谱化，幽默就更脸谱化了，笑不出来，深刻是有，但是如果只有深刻，没有剧情，就有点看不下去。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&#x2F;&gt;
 太空堡垒卡拉狄加，✨✨✨，第一季+第二季，后面几季没看了，按现在的眼光来看有点套路，然后又有点太男女主光环，以及有点 迷信？&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;input disabled=&quot;&quot; type=&quot;checkbox&quot;&#x2F;&gt;

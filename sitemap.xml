@@ -456,6 +456,12 @@
         <loc>https://www.owenyoung.com/categories/notes/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.owenyoung.com/categories/random-book/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/categories/random-book/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.owenyoung.com/categories/random/</loc>
     </url>
     <url>
@@ -841,12 +847,6 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/bash/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/tags/book/</loc>
-    </url>
-    <url>
-        <loc>https://www.owenyoung.com/tags/book/page/1/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/books/</loc>
@@ -1249,6 +1249,15 @@
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/quotes/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/random-book/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/random-book/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.owenyoung.com/tags/random-book/page/2/</loc>
     </url>
     <url>
         <loc>https://www.owenyoung.com/tags/reconmendation/</loc>

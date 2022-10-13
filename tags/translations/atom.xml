@@ -13,8 +13,12 @@
 		<updated>2022-03-10T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/blog/soylentnews-guides/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/soylentnews-guides/</id>
-		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;soylentnews.org&#x2F;&quot;&gt;Soylent News&lt;&#x2F;a&gt; 是一个由志愿者维护的关于新闻和讨论的社区，重点关注网络上对每个人都很重要的文章或者书籍。允许注册或者匿名讨论。该社区的目标是成为一个关于技术，艺术，科学和政治良性讨论平台。&lt;&#x2F;p&gt;
-&lt;p&gt;通常我看到一个感兴趣的社区的时候，我就会去阅读一下它的社区规范，一般来说，氛围良好的社区都会有一个非常出色的社区指南，我之前也翻译过一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;zh&#x2F;posts&#x2F;share-a-forum-rule&#x2F;&quot;&gt;somethingawful.com 的论坛协议&lt;&#x2F;a&gt; , 今天又看到&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.soylentnews.org&#x2F;wiki&#x2F;Submission_guidelines&quot;&gt;Soylent News 的社区提交规范&lt;&#x2F;a&gt;, 很喜欢他们的社区规范，所以想简单翻译一下。&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;soylentnews.org&#x2F;&quot;&gt;Soylent News&lt;&#x2F;a&gt;
+是一个由志愿者维护的关于新闻和讨论的社区，重点关注网络上对每个人都很重要的文章或者书籍。允许注册或者匿名讨论。该社区的目标是成为一个关于技术，艺术，科学和政治良性讨论平台。&lt;&#x2F;p&gt;
+&lt;p&gt;通常我看到一个感兴趣的社区的时候，我就会去阅读一下它的社区规范，一般来说，氛围良好的社区都会有一个非常出色的社区指南，我之前也翻译过一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;zh&#x2F;posts&#x2F;share-a-forum-rule&#x2F;&quot;&gt;somethingawful.com 的论坛协议&lt;&#x2F;a&gt;
+,
+今天又看到&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.soylentnews.org&#x2F;wiki&#x2F;Submission_guidelines&quot;&gt;Soylent News 的社区提交规范&lt;&#x2F;a&gt;,
+很喜欢他们的社区规范，所以想简单翻译一下。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;ti-jiao-zhi-nan&quot;&gt;提交指南&lt;a class=&quot;zola-anchor&quot; href=&quot;#ti-jiao-zhi-nan&quot; aria-label=&quot;Anchor link for: ti-jiao-zhi-nan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;标题和摘要都中保持中立和事实&lt;&#x2F;strong&gt;，最好等到文章发布后再贴上链接，如有必要，请在摘要末尾明确标记为意见。&lt;&#x2F;li&gt;
@@ -25,7 +29,8 @@
 &lt;li&gt;对于有争议的问题，请使用来自具有相反观点的文章网页链接。&lt;strong&gt;如果一只狼说他想吃羊作为晚餐，不要问另一只狼这是不是一个好主意，而是问一只羊。&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;如果链接到的其中一篇文章中包含了重要引用链接，则还应包含该引用的链接&lt;&#x2F;strong&gt;。一些新闻网站链接到研究摘要，它们是主要引用。&lt;&#x2F;li&gt;
 &lt;li&gt;如果您要链接的新文章引用了较旧的文章，您也可以链接到它们以提供背景或引用。&lt;&#x2F;li&gt;
-&lt;li&gt;解释大多数事物的首字母缩略词，第一次使用它时，请将其拼写出来。然后在后续使用时，使用首字母缩略词。我们的目标是成为一个全球网站，美国联邦航空局或英国 OfCom 等公司对这些国家以外的人来说可能并不了解。&lt;&#x2F;li&gt;
+&lt;li&gt;解释大多数事物的首字母缩略词，第一次使用它时，请将其拼写出来。然后在后续使用时，使用首字母缩略词。我们的目标是成为一个全球网站，美国联邦航空局或英国
+OfCom 等公司对这些国家以外的人来说可能并不了解。&lt;&#x2F;li&gt;
 &lt;li&gt;维基百科链接是背景信息和统计数据的良好来源。&lt;&#x2F;li&gt;
 &lt;li&gt;检查你的链接是否是最新的，没有什么比警告斯诺克 5 年前反驳的事情更糟糕的了。&lt;&#x2F;li&gt;
 &lt;li&gt;引用一个或更少的句子时，请使用引号。当引用多个句子时，请使用块引用，因为这会使文本更加突出。&lt;&#x2F;li&gt;
@@ -39,7 +44,8 @@
 不要使用“诱导链接“，即包含名人姓名或故意误导主题以诱使人们从搜索引擎点击的做法。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;nei-rong&quot;&gt;内容&lt;a class=&quot;zola-anchor&quot; href=&quot;#nei-rong&quot; aria-label=&quot;Anchor link for: nei-rong&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;我们的目标是大约 70%的技术和科学文章，其余的是我们社区普遍感兴趣的内容。具有技术主题并且独特的文章很有可能被发表，而一些晦涩难懂且对我们社区吸引力有限的文章不太可能成为头条。&lt;&#x2F;p&gt;
+&lt;p&gt;我们的目标是大约
+70%的技术和科学文章，其余的是我们社区普遍感兴趣的内容。具有技术主题并且独特的文章很有可能被发表，而一些晦涩难懂且对我们社区吸引力有限的文章不太可能成为头条。&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;lian-jie&quot;&gt;链接&lt;a class=&quot;zola-anchor&quot; href=&quot;#lian-jie&quot; aria-label=&quot;Anchor link for: lian-jie&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;在提交中使用链接有一些限制。不遵守这些限制可能会导致提交被拒绝，或者更常见的是，编辑以更正或删除违规链接。限制是：&lt;&#x2F;p&gt;
 &lt;p&gt;提交时，您可以使用您的用户名或匿名发布。联系人电子邮件地址字段可以留空，但如果使用，则该链接应指向您的用户页面，个人电子邮件地址或个人（即非商业）网站。
@@ -168,7 +174,9 @@
 		<updated>2022-03-10T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/blog/share-a-forum-rule/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/share-a-forum-rule/</id>
-		<content type="html">&lt;p&gt;今天逛 hacker news，意外看到一个很有意思的论坛，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;&quot;&gt;Something Awful&lt;&#x2F;a&gt;,注册会员收费 10 美元，为了要过滤用户。好奇看了下他的论坛协议，觉得写的很有意思。尤其是这句：&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;今天逛 hacker
+news，意外看到一个很有意思的论坛，&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.somethingawful.com&#x2F;&quot;&gt;Something Awful&lt;&#x2F;a&gt;,注册会员收费 10
+美元，为了要过滤用户。好奇看了下他的论坛协议，觉得写的很有意思。尤其是这句：&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;不要使用任何口头禅、表情包、网络流行语或任何其他让您看起来像 12 岁孩子的废话。&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -177,10 +185,14 @@
 &lt;p&gt;以下是简单的翻译：&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;gei-xin-shou-de-yi-feng-xin&quot;&gt;给新手的一封信！&lt;a class=&quot;zola-anchor&quot; href=&quot;#gei-xin-shou-de-yi-feng-xin&quot; aria-label=&quot;Anchor link for: gei-xin-shou-de-yi-feng-xin&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;在 Something Awful 论坛上的我们既是精英，其实又都很混蛋,我们以经营互联网上最有娱乐性和没有垃圾用户的论坛之一为荣。&lt;&#x2F;p&gt;
-&lt;p&gt;我们通过收取 10 美元的费用来过滤掉那些不认真遵守规则的人，并禁止那些设法溜过和破坏规则的人。我们非常重视保持我们论坛的清洁和没有垃圾用户，所以请将您的账户视为一项投资，并小心地对待它。&lt;&#x2F;p&gt;
+&lt;p&gt;我们通过收取 10
+美元的费用来过滤掉那些不认真遵守规则的人，并禁止那些设法溜过和破坏规则的人。我们非常重视保持我们论坛的清洁和没有垃圾用户，所以请将您的账户视为一项投资，并小心地对待它。&lt;&#x2F;p&gt;
 &lt;p&gt;请阅读规则，运用常识，帮助 SA 论坛成为互联网上最好的论坛。&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;yi-ban-xing-wei&quot;&gt;一般行为&lt;a class=&quot;zola-anchor&quot; href=&quot;#yi-ban-xing-wei&quot; aria-label=&quot;Anchor link for: yi-ban-xing-wei&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
-&lt;p&gt;发帖前先潜水! 这一点我们怎么强调都不为过。每个版块的名称和描述都很清楚地说明了什么是可以接受的，什么是不可以接受的。在发帖之前，请确保你发在了合适的子版块。如果没有专门针对您想讨论的话题的版块，请使用 “通用“版块。不要在通用版块上发布色情或任何 “有问题 “的内容；如果你在工作中看到这些内容会感到不舒服，就不要在那里发布。把所有恶心的图片放在 FYAD。此外，请检查您的帖子是否是重复的（它已经被其他论坛成员发布过）。&lt;&#x2F;p&gt;
+&lt;p&gt;发帖前先潜水!
+这一点我们怎么强调都不为过。每个版块的名称和描述都很清楚地说明了什么是可以接受的，什么是不可以接受的。在发帖之前，请确保你发在了合适的子版块。如果没有专门针对您想讨论的话题的版块，请使用
+“通用“版块。不要在通用版块上发布色情或任何 “有问题 “的内容；如果你在工作中看到这些内容会感到不舒服，就不要在那里发布。把所有恶心的图片放在
+FYAD。此外，请检查您的帖子是否是重复的（它已经被其他论坛成员发布过）。&lt;&#x2F;p&gt;
 &lt;p&gt;在你发帖之前。在发帖之前，请问自己以下问题。“我发表的帖子是否有趣、有信息量、或在任何层面上都很有趣？”&lt;&#x2F;p&gt;
 &lt;p&gt;如果你能回答 “是”，那么请发帖。如果你不能，那就不要发帖。如果你还是发帖，管理员很可能会对你的主题发出警告，自动给予你 15 分钟的禁言。&lt;&#x2F;p&gt;
 &lt;p&gt;在你回复之前。在回帖之前，请问自己以下问题。“我的回复是否提供了任何重要的建议或有助于以任何方式促进对话？”&lt;&#x2F;p&gt;
@@ -188,10 +200,15 @@
 &lt;h3 id=&quot;fa-tie-gui-ze&quot;&gt;发帖规则&lt;a class=&quot;zola-anchor&quot; href=&quot;#fa-tie-gui-ze&quot; aria-label=&quot;Anchor link for: fa-tie-gui-ze&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;低质量贴&lt;&#x2F;strong&gt; 请不要发没什么内容的帖（比如说“第一篇帖子“、“你好，我是新来的 “等）。这些帖子只会让论坛变得更乱，由于有超过 10 万的注册用户，我们需要尽可能地减少这种帖子。如果你不喜欢一个主题，那么就给它投一个 “1”，然后继续看；仅由嘲讽组成的回复也属于这一类。通常来说，就是你要像在现实生活中对另一个人说话一样来发帖。不要使用任何口头禅、表情包、网络流行语，或任何其他让你看起来像 12 岁小孩的废话。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;低质量贴&lt;&#x2F;strong&gt; 请不要发没什么内容的帖（比如说“第一篇帖子“、“你好，我是新来的 “等）。这些帖子只会让论坛变得更乱，由于有超过 10
+万的注册用户，我们需要尽可能地减少这种帖子。如果你不喜欢一个主题，那么就给它投一个
+“1”，然后继续看；仅由嘲讽组成的回复也属于这一类。通常来说，就是你要像在现实生活中对另一个人说话一样来发帖。不要使用任何口头禅、表情包、网络流行语，或任何其他让你看起来像
+12 岁小孩的废话。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;无价值的帖子&lt;&#x2F;strong&gt; 我们不关心你是喝醉了还是很嗨，请不要通知我们这两种情况。请不要注册噱头性的账户，并将其作为噱头发帖，因为这并不好笑。请不要发布废话，要求我们在一些网站上为你投票，给你推荐免费的 iPod&#x2F;平板电脑&#x2F;备用轮胎，或其他半垃圾的东西。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;无价值的帖子&lt;&#x2F;strong&gt;
+我们不关心你是喝醉了还是很嗨，请不要通知我们这两种情况。请不要注册噱头性的账户，并将其作为噱头发帖，因为这并不好笑。请不要发布废话，要求我们在一些网站上为你投票，给你推荐免费的
+iPod&#x2F;平板电脑&#x2F;备用轮胎，或其他半垃圾的东西。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;破坏论坛氛围&lt;&#x2F;strong&gt;不要破坏论坛氛围或伤害论坛上的任何用户。如果你发布一个恶意链接（任何带有间谍软件或代码的网址，旨在惹恼人们），你将被禁言。不要因为你不喜欢发帖的人而和你的朋友一起投反对票；这使得投票功能毫无用处。不要制定计划来烦扰&#x2F;破坏其他论坛。&lt;&#x2F;p&gt;
@@ -203,10 +220,12 @@
 &lt;p&gt;&lt;strong&gt;遏制冲突&lt;&#x2F;strong&gt;将所有的冲突和其他争论放在适当的论坛（FYAD，YCS 等）。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;尊重版主和其他用户&lt;&#x2F;strong&gt; 版主们在这里是为了保持论坛的安全、理智和可靠。如果他们要求您做什么，请照做。请不要骚扰或故意惹恼版主或侮辱头版作者。如果你不喜欢版主或版主的工作，请不要在这里发帖。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;尊重版主和其他用户&lt;&#x2F;strong&gt;
+版主们在这里是为了保持论坛的安全、理智和可靠。如果他们要求您做什么，请照做。请不要骚扰或故意惹恼版主或侮辱头版作者。如果你不喜欢版主或版主的工作，请不要在这里发帖。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;骚扰和讽刺&lt;&#x2F;strong&gt;如果有人在论坛上骚扰你，请在联系版主之前通过 PM 或电子邮件与他们讨论。争论和侮辱并不构成骚扰。请不要发布他人的个人信息（电话号码、地址、电子邮件等）。尽量不要干涉他人的个人生活。请记住，互联网和现实生活之间是有很大区别的。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;骚扰和讽刺&lt;&#x2F;strong&gt;如果有人在论坛上骚扰你，请在联系版主之前通过 PM
+或电子邮件与他们讨论。争论和侮辱并不构成骚扰。请不要发布他人的个人信息（电话号码、地址、电子邮件等）。尽量不要干涉他人的个人生活。请记住，互联网和现实生活之间是有很大区别的。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;帐户功能&lt;&#x2F;strong&gt; 一个论坛账户只能有一个人使用。共享账户是一种被禁止的行为，所以请保持你的密码安全。&lt;&#x2F;p&gt;
@@ -215,10 +234,14 @@
 &lt;p&gt;&lt;strong&gt;搞小聪明&lt;&#x2F;strong&gt; 请不要试图利用漏洞来规避这里列出的一些规则。这些规则只是一般准则，非常灵活。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;FYAD 自由&lt;&#x2F;strong&gt; 你不能发布违法内容，不能通过发布他人的个人信息或裸体照片来骚扰他人，不能在主题行中加入垃圾信息来破坏论坛的秩序，不能骚扰任何管理员或版主，也不能在 FYAD 中发起论坛入侵行为。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;FYAD 自由&lt;&#x2F;strong&gt;
+你不能发布违法内容，不能通过发布他人的个人信息或裸体照片来骚扰他人，不能在主题行中加入垃圾信息来破坏论坛的秩序，不能骚扰任何管理员或版主，也不能在 FYAD
+中发起论坛入侵行为。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;我讨厌的言论&lt;&#x2F;strong&gt; 诸如 “faggot “或 “nigger “这样的攻击性词汇，根据句子的上下文，可能会被禁止，也可能不会被禁止。如果他们的意思是幽默，绝对没有攻击性的污言秽语，那么用户可能不会被禁言或者临时禁言。这条规则是完全的，100%的主观性，并且是是基于当时正在阅读该帖子的管理员, 使用时请自行承担风险。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;我讨厌的言论&lt;&#x2F;strong&gt; 诸如 “faggot “或 “nigger
+“这样的攻击性词汇，根据句子的上下文，可能会被禁止，也可能不会被禁止。如果他们的意思是幽默，绝对没有攻击性的污言秽语，那么用户可能不会被禁言或者临时禁言。这条规则是完全的，100%的主观性，并且是是基于当时正在阅读该帖子的管理员,
+使用时请自行承担风险。&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>

@@ -13,17 +13,31 @@
 		<updated>2022-03-10T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/blog/gatsby-cons/" type="text/html"/>
 		<id>https://www.owenyoung.com/blog/gatsby-cons/</id>
-		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby.js&lt;&#x2F;a&gt;是一个基于 React 生成静态网站的工具链，也称为静态网站生成器(SSG), 旨在让开发人员使用基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;&quot;&gt;React&lt;&#x2F;a&gt; 的框架和基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;graphql.org&#x2F;&quot;&gt;Gaphql&lt;&#x2F;a&gt; 的数据层去构建快速、安全且功能强大的网站，从而将不同的内容、API 和服务生成一个体验良好的静态网站。&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby.js&lt;&#x2F;a&gt;是一个基于 React 生成静态网站的工具链，也称为静态网站生成器(SSG),
+旨在让开发人员使用基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;reactjs.org&#x2F;&quot;&gt;React&lt;&#x2F;a&gt; 的框架和基于 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;graphql.org&#x2F;&quot;&gt;Gaphql&lt;&#x2F;a&gt;
+的数据层去构建快速、安全且功能强大的网站，从而将不同的内容、API 和服务生成一个体验良好的静态网站。&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;我第一眼看到它的时候就被它简单的思想和丰富的社区生态给吸引了。总体来讲，他是一切皆 source，source 生成一个 graphql 的 API，然后在 react 组件里按需使用 graphql 的数据以生成对应的页面。&lt;&#x2F;p&gt;
-&lt;p&gt;目前我的 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt;, 包括 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.buzzing.cc&#x2F;&quot;&gt;Buzzing&lt;&#x2F;a&gt;里面的所有子攒点, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;&quot;&gt;Track Awesome List&lt;&#x2F;a&gt;，其实都是用 Gatsby 构建的。&lt;&#x2F;p&gt;
+&lt;p&gt;我第一眼看到它的时候就被它简单的思想和丰富的社区生态给吸引了。总体来讲，他是一切皆 source，source 生成一个 graphql 的 API，然后在
+react 组件里按需使用 graphql 的数据以生成对应的页面。&lt;&#x2F;p&gt;
+&lt;p&gt;目前我的 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&#x2F;&quot;&gt;Wiki&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&quot;&gt;Blog&lt;&#x2F;a&gt;,
+包括 &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.buzzing.cc&#x2F;&quot;&gt;Buzzing&lt;&#x2F;a&gt;里面的所有子攒点,
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;&quot;&gt;Track Awesome List&lt;&#x2F;a&gt;，其实都是用 Gatsby 构建的。&lt;&#x2F;p&gt;
 &lt;p&gt;随着内容越来越多，以及 Gatsby 的升级，我发现在维护 Gatsby 的时候开始有点不喜欢它了。这主要是由于：&lt;&#x2F;p&gt;
 &lt;ol&gt;
-&lt;li&gt;Gatsby 的大多数功能都是通过插件提供，导致项目有大量的第三方依赖（也有很多是官方维护的插件），而 Nodejs 的&lt;code&gt;package-lock.json&lt;&#x2F;code&gt;总是在升级的时候搞错一些版本，让我很抓狂（我不确定这个问题有没有得到解决），对于多依赖项目，我经常需要删掉整个 lock 文件，然后重新生成新的 lock 索引。&lt;&#x2F;li&gt;
-&lt;li&gt;大量的第三方插件维护的质量参差不齐，维护不足。这其实很正常，我自己也维护了一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-plugin-intl&quot;&gt;国际化翻译的 Gatsby 插件&lt;&#x2F;a&gt;, 但是由于后面我自己都没在用了，所以我就失去了继续维护和更新的动力了，至今还有用户在提 Issue，我只能在 Readme 里面写这个项目已经不在维护了。&lt;&#x2F;li&gt;
-&lt;li&gt;Gatsby 目前还不支持&lt;code&gt;.mjs&lt;&#x2F;code&gt;,然而 gatsby 强依赖的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;syntax-tree&#x2F;unist&quot;&gt;unist&lt;&#x2F;a&gt;全生态系统都拥抱了&lt;code&gt;.mjs&lt;&#x2F;code&gt;,所以导致大量的 gatsby 第三方插件只能使用旧版的 unist 生态链。升级的时候会有很多依赖只能依赖旧版本。这导致了很多的混乱。&lt;&#x2F;li&gt;
-&lt;li&gt;Gatsby 的底层设计导致多内容处理的性能问题。Gatsby 把所有的内容都加载到 graphql 的内存数据里，这导致了庞大的开销。在内容很多的时候，比如&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;&quot;&gt;Track Awesome List&lt;&#x2F;a&gt;，每次构建需要 40 分钟左右的时间，好在这个网站每天只需要更新 2 次。&lt;&#x2F;li&gt;
-&lt;li&gt;Gatsby 虽然思想简单，但是其 API 现在已经变得非常庞大和复杂了，有点类似 Webpack，一个东西只要变得如此复杂，那么后期维护一定会很痛苦。与之相对的是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.11ty.dev&#x2F;&quot;&gt;11ty&lt;&#x2F;a&gt;的 API 就很简单，但是也很强大。&lt;&#x2F;li&gt;
+&lt;li&gt;Gatsby 的大多数功能都是通过插件提供，导致项目有大量的第三方依赖（也有很多是官方维护的插件），而 Nodejs
+的&lt;code&gt;package-lock.json&lt;&#x2F;code&gt;总是在升级的时候搞错一些版本，让我很抓狂（我不确定这个问题有没有得到解决），对于多依赖项目，我经常需要删掉整个
+lock 文件，然后重新生成新的 lock 索引。&lt;&#x2F;li&gt;
+&lt;li&gt;大量的第三方插件维护的质量参差不齐，维护不足。这其实很正常，我自己也维护了一个&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-plugin-intl&quot;&gt;国际化翻译的 Gatsby 插件&lt;&#x2F;a&gt;,
+但是由于后面我自己都没在用了，所以我就失去了继续维护和更新的动力了，至今还有用户在提 Issue，我只能在 Readme 里面写这个项目已经不在维护了。&lt;&#x2F;li&gt;
+&lt;li&gt;Gatsby 目前还不支持&lt;code&gt;.mjs&lt;&#x2F;code&gt;,然而 gatsby
+强依赖的&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;syntax-tree&#x2F;unist&quot;&gt;unist&lt;&#x2F;a&gt;全生态系统都拥抱了&lt;code&gt;.mjs&lt;&#x2F;code&gt;,所以导致大量的
+gatsby 第三方插件只能使用旧版的 unist 生态链。升级的时候会有很多依赖只能依赖旧版本。这导致了很多的混乱。&lt;&#x2F;li&gt;
+&lt;li&gt;Gatsby 的底层设计导致多内容处理的性能问题。Gatsby 把所有的内容都加载到 graphql
+的内存数据里，这导致了庞大的开销。在内容很多的时候，比如&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.trackawesomelist.com&#x2F;&quot;&gt;Track Awesome List&lt;&#x2F;a&gt;，每次构建需要
+40 分钟左右的时间，好在这个网站每天只需要更新 2 次。&lt;&#x2F;li&gt;
+&lt;li&gt;Gatsby 虽然思想简单，但是其 API 现在已经变得非常庞大和复杂了，有点类似
+Webpack，一个东西只要变得如此复杂，那么后期维护一定会很痛苦。与之相对的是&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.11ty.dev&#x2F;&quot;&gt;11ty&lt;&#x2F;a&gt;的 API
+就很简单，但是也很强大。&lt;&#x2F;li&gt;
 &lt;&#x2F;ol&gt;
 &lt;p&gt;最后，来体会一下我的项目中 Gatsby 的依赖：&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span&gt;{
