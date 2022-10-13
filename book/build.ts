@@ -70,6 +70,7 @@ async function main() {
     epub: {
       "cover-image": "cover.jpg",
       "command": binDir + "/mdbook-epub",
+      "use-default-css": false,
     },
     html: {
       "git-repository-url": "https://github.com/theowenyoung/blog",
@@ -418,13 +419,17 @@ async function main() {
       cmd: ["./bin/mdbook", isServe ? "serve" : "build", bookSourceFileDist],
     });
     await p.status();
+    const distDir = path.join(workDir, key + "-dist");
+    // clean dist folder
+    await Deno.remove(distDir, {
+      recursive: true,
+    });
 
     // copy epub file
     const epubPath = path.join(
       bookSourceFileDist,
       `book/epub/${book.config.book.title}.epub`,
     );
-    const distDir = path.join(workDir, key + "-dist");
     await fs.ensureDir(distDir);
     const epubNewPath = path.join(distDir, `${key}.epub`);
     await Deno.copyFile(epubPath, epubNewPath);
