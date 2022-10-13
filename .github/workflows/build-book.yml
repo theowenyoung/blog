@@ -1,0 +1,26 @@
+name: Build Book
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+jobs:
+  build-deploy:
+    concurrency: build-book
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make installbook
+      - name: Build Book
+        run: make buildbook
+      - name: Upload assets
+        uses: "marvinpinto/action-automatic-releases@v1.2.1"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "nightly-${{ env.NOW }}"
+          prerelease: true
+          title: "Blog Book"
+          files: |
+            ./dist/*.pdf
+            ./dist/*.zip
+            ./dist/*.epub

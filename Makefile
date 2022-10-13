@@ -10,6 +10,10 @@ build:
 buildbook:
 	deno run -A ./book/build.ts
 
+.Phony: servebook
+servebook:
+	deno run -A ./book/build.ts --serve
+
 .Phony: installbook
 installbook:
 	./scripts/install_mdbook-epub.sh

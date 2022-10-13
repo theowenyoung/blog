@@ -8,6 +8,7 @@ taxonomies:
   tags:
     - Books
     - Guide
+    - Random Book
 ---
 
 收集书籍推荐列表，以及资源, 我的个人读书笔记[在这里](/blog/books/)

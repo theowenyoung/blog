@@ -7,6 +7,7 @@ taxonomies:
     - Notes
   tags:
     - Tools
+    - Random Book
 ---
 
 收集各种好用的，有用的工具。

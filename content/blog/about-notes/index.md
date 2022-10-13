@@ -33,13 +33,13 @@ taxonomies:
 笔记多了，即使有“第二大脑”的帮助下，你也会发现，很难通过卡片间找到灵感，因为卡片是在是太多了，仅仅通过卡片间互相链接的形式很容易忘记/错过某些过去的卡片。我目前的采用的办法是：归类，而且归的类越少越好。事实证明纯文本很强大，一个纯文本文件可以放进去超级多内容而大小并不会有多少
 K。比如说，如果你在一个纯文本文件里面发送/放置你的原创推特，假设你平均每天发一条推特，假设你是活到 100 岁，其实这个推特的纯文本文件只有 36500
 行，对于一个纯文本文件来说，这并不算太大。
-我就用这个[纯文本文件](https://raw.githubusercontent.com/theowenyoung/wiki/main/thoughts.md)记录我的短想法。还有个很有名的[twtxt](https://github.com/buckket/twtxt)标准，就是用一个换行符作为分割的
+我就用这个[纯文本文件](https://raw.githubusercontent.com/theowenyoung/blog/main/content/thoughts.md)记录我的短想法。还有个很有名的[twtxt](https://github.com/buckket/twtxt)标准，就是用一个换行符作为分割的
 txt 文件写推特。
 
 以下是我目前整理出的大多数人可能会需要的几个纯文本文件笔记类型：
 
-- quotes, 记录一些别人的话，[收集发人深省的话](/content/blog/quotes.md)
-- thoughts, 记录一些自己的话,[短想法](content/blog//thoughts.md)
+- quotes, 记录一些别人的话，[收集发人深省的话](/content/quotes.md)
+- thoughts, 记录一些自己的话,[短想法](/content/thoughts.md)
 - journal, 日记，可按照不同年份保存，[2022 年的一些记录](/content/journal-2022.md)
 - tools, 记录好用的工具，[最好用的工具集合](/content/tools.md)
 - articles, 记录好文章, [收集值得阅读的文章](/content/articles.md)

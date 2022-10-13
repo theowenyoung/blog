@@ -9,6 +9,7 @@ taxonomies:
     - Notes
   tags:
     - About
+    - Random Book
 ---
 
 我在之前建立了一个个人的公开 [Wiki](https://wiki.owenyoung.com/)和

@@ -7,6 +7,7 @@ taxonomies:
     - Notes
   tags:
     - Sources
+    - Random Book
 ---
 
 我经常闲逛的一些互联网优质内容基地，大多数是英文站，很多时间我是用翻译的，这样效率最高。

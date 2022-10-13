@@ -7,6 +7,7 @@ taxonomies:
     - Notes
   tags:
     - Communities
+    - Random Book
 ---
 
 收集一些有意思的社区，人间观察。

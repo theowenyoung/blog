@@ -8,13 +8,14 @@ taxonomies:
     - Random
   tags:
     - Idle
+    - Random Book
 ---
 
 最近在[遛狗](/content/blog/reading-while-walking-dogs.md)的时候读《王小波全集》，看到这篇《智慧与国学》的一段话，觉得振聋发聩：
 
 > 要不是达·伽马找到好望角绕了过来，我们还真闲着没事干。从汉代到近代，全中国那么多聪明人，可不都在闲着?
 
-这让我想起前几天看到的视频，[视频](<(https://www.youtube.com/watch?v=9aHMrNexXDQ)>)中台湾人嘲笑中国人“做核酸，笑死人”，这句话竟意外成了中国网络的一个新流行语。
+这让我想起前几天看到的视频，[视频]((https://www.youtube.com/watch?v=9aHMrNexXDQ))中台湾人嘲笑中国人“做核酸，笑死人”，这句话竟意外成了中国网络的一个新流行语。
 
 <!-- more -->
 

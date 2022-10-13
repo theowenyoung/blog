@@ -10,6 +10,7 @@ taxonomies:
     - Life
     - Philosophy
     - Books
+    - Random Book
 ---
 
 最近在看罗素的书，看到这篇《我的信念》里，觉得很受触动。所以记录一下。在这本书里罗素阐述了自己对美好人生的想法，总的来说就是：

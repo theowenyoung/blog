@@ -7,6 +7,7 @@ taxonomies:
     - Notes
   tags:
     - Inspires
+    - Random Book
 ---
 
 网上冲浪多年，看到过太多有意思的东西了，一定要记下来！
