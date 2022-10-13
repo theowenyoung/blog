@@ -420,6 +420,7 @@ async function main() {
     });
     await p.status();
     const distDir = path.join(workDir, key + "-dist");
+    await fs.ensureDir(distDir);
     // clean dist folder
     await Deno.remove(distDir, {
       recursive: true,
