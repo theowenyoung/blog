@@ -8,7 +8,7 @@ epub book.
 ## Install
 
 ```bash
-cargo install --git https://github.com/dieterplex/mdbook-epub --branch fix-local-md-link mdbook-epub
+make installbook
 ```
 
 ## Build Book

@@ -13,24 +13,28 @@ import {
 import { toMarkdown } from "https://esm.sh/mdast-util-to-markdown@1.3.0";
 import { fromMarkdown } from "https://esm.sh/mdast-util-from-markdown@1.2.0";
 import { visit } from "https://esm.sh/unist-util-visit@4.1.1";
-
+import { default as groupBy } from "https://deno.land/x/lodash@4.17.15-es/groupBy.js";
+import { serve } from "https://deno.land/std@0.159.0/http/server.ts";
+import { serveDir } from "https://deno.land/std@0.159.0/http/file_server.ts";
 interface Chapter {
   relativePath: string;
   path: string;
   title: string;
   date: Date;
+  updated: Date;
   category: string;
   content: string;
 }
+interface OutputOptions {
+  epub?: Record<string, unknown>;
+  html: Record<string, unknown>;
+  markdown?: Record<string, unknown>;
+  pdf?: Record<string, unknown>;
+  latex?: Record<string, unknown>;
+}
 interface BookConfig {
   book: Record<string, unknown>;
-  output: {
-    epub: Record<string, unknown>;
-    html: Record<string, unknown>;
-    markdown?: Record<string, unknown>;
-    pdf?: Record<string, unknown>;
-    latex?: Record<string, unknown>;
-  };
+  output: OutputOptions;
 }
 interface SubSection {
   title: string;
@@ -63,15 +67,9 @@ async function main() {
   const args = Deno.args;
   const workDir = new URL("..", import.meta.url).pathname;
   const binDir = new URL("../bin", import.meta.url).pathname;
-  console.log("binDir", binDir);
   const isServe = args.includes("--serve");
   // walk content directory
-  const outputOptions = {
-    epub: {
-      "cover-image": "cover.jpg",
-      "command": binDir + "/mdbook-epub",
-      "use-default-css": false,
-    },
+  let outputOptions: OutputOptions = {
     html: {
       "git-repository-url": "https://github.com/theowenyoung/blog",
       "edit-url-template":
@@ -81,101 +79,130 @@ async function main() {
       },
     },
     markdown: {
-      enable: false,
-    },
-    pdf: {
       enable: true,
-      "command": binDir + "/mdbook-pdf",
     },
   };
+  if (!isServe) {
+    outputOptions = {
+      ...outputOptions,
+      epub: {
+        "cover-image": "cover.jpg",
+        "command": binDir + "/mdbook-epub",
+        "use-default-css": false,
+      },
+      pdf: {
+        enable: true,
+        "command": binDir + "/mdbook-pdf",
+      },
+    };
+  }
 
   const books: Record<string, Book> = {
-    "owen-blog": {
-      tags: ["Random Book"],
+    // "owen-blog": {
+    //   tags: ["Random Book"],
+    //   chapters: [],
+    //   introduction: {
+    //     title: "简介",
+    //     path: "README.md",
+    //   },
+    //   summary: [
+    //     {
+    //       title: "随笔",
+    //       path: "random-intro.md",
+    //       rules: [
+    //         {
+    //           condition: "contains",
+    //           key: "category",
+    //           value: "Random",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "短想法",
+    //       path: "thoughts.md",
+    //     },
+    //     {
+    //       title: "笔记",
+    //       path: "notes-intro.md",
+    //       rules: [
+    //         {
+    //           condition: "contains",
+    //           key: "category",
+    //           value: "Notes",
+    //         },
+    //         {
+    //           condition: "notContains",
+    //           key: "relativePath",
+    //           value: "content/thoughts.md",
+    //         },
+    //         {
+    //           condition: "notContains",
+    //           key: "relativePath",
+    //           value: "content/pages/now.md",
+    //         },
+    //         {
+    //           condition: "notContains",
+    //           key: "relativePath",
+    //           value: "content/pages/about.md",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "读书笔记",
+    //       path: "books-intro.md",
+    //       rules: [
+    //         {
+    //           condition: "contains",
+    //           key: "category",
+    //           value: "Books",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "文章笔记",
+    //       path: "articles-intro.md",
+    //       rules: [
+    //         {
+    //           condition: "contains",
+    //           key: "category",
+    //           value: "Articles",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "关于我",
+    //       path: "pages/about.md",
+    //       subSections: [
+    //         {
+    //           title: "现在",
+    //           path: "pages/now.md",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    //   config: {
+    //     book: {
+    //       "title": "Owen博客精选",
+    //       "description": "Owen的博客电子书版",
+    //       "src": "content",
+    //       "language": "zh",
+    //       "authors": ["Owen Young"],
+    //     },
+    //     output: outputOptions,
+    //   },
+    // },
+    "owen-blog-archive": {
+      tags: [],
       chapters: [],
       introduction: {
         title: "简介",
         path: "README.md",
       },
-      summary: [
-        {
-          title: "随笔",
-          path: "random-intro.md",
-          rules: [
-            {
-              condition: "contains",
-              key: "category",
-              value: "Random",
-            },
-          ],
-        },
-        {
-          title: "短想法",
-          path: "thoughts.md",
-        },
-        {
-          title: "笔记",
-          path: "notes-intro.md",
-          rules: [
-            {
-              condition: "contains",
-              key: "category",
-              value: "Notes",
-            },
-            {
-              condition: "notContains",
-              key: "relativePath",
-              value: "content/thoughts.md",
-            },
-            {
-              condition: "notContains",
-              key: "relativePath",
-              value: "content/pages/now.md",
-            },
-            {
-              condition: "notContains",
-              key: "relativePath",
-              value: "content/pages/about.md",
-            },
-          ],
-        },
-        {
-          title: "读书笔记",
-          path: "books-intro.md",
-          rules: [
-            {
-              condition: "contains",
-              key: "category",
-              value: "Books",
-            },
-          ],
-        },
-        {
-          title: "文章笔记",
-          path: "articles-intro.md",
-          rules: [
-            {
-              condition: "contains",
-              key: "category",
-              value: "Articles",
-            },
-          ],
-        },
-        {
-          title: "关于我",
-          path: "pages/about.md",
-          subSections: [
-            {
-              title: "现在",
-              path: "pages/now.md",
-            },
-          ],
-        },
-      ],
+      summary: [],
       config: {
         book: {
-          "title": "Owen博客精选",
-          "description": "Owen的博客电子书版",
+          "title": "Owen博客存档",
+          "description": "Owen的博客存档电子书版",
           "src": "content",
           "language": "zh",
           "authors": ["Owen Young"],
@@ -232,31 +259,43 @@ async function main() {
         const attrs = parsed.attrs as {
           title: string;
           date: string;
+          updated?: string;
+          draft?: boolean;
           taxonomies: {
             tags?: string[];
             categories: string[];
           };
         };
+        if (attrs.draft) {
+          continue;
+        }
         const taxonomies = attrs.taxonomies;
         const tags = taxonomies?.tags || [];
         const categories = taxonomies?.categories;
         const category = categories?.[0];
-
+        const relativePath = path.relative(markdownRootPath, filepath);
+        const chapter = {
+          path: filepath,
+          relativePath,
+          title: attrs.title,
+          date: new Date(attrs.date),
+          updated: attrs.updated
+            ? new Date(attrs.updated)
+            : new Date(attrs.date),
+          category,
+          content: body,
+        };
+        // add to archive
+        if (attrs.date) {
+          books["owen-blog-archive"].chapters.push(chapter);
+        }
         for (const tag of tags) {
           if (tagsMap[tag] && tagsMap[tag].length > 0) {
             for (const bookKey of tagsMap[tag]) {
               const bookConfig = books[bookKey].config;
               const expectedLanguage = bookConfig.book.language;
               if (expectedLanguage === fileLanguage) {
-                const relativePath = path.relative(markdownRootPath, filepath);
-                books[bookKey].chapters.push({
-                  path: filepath,
-                  relativePath,
-                  title: attrs.title,
-                  date: new Date(attrs.date),
-                  category,
-                  content: body,
-                });
+                books[bookKey].chapters.push(chapter);
               }
             }
           }
@@ -367,6 +406,32 @@ async function main() {
       }
     }
 
+    // for archive book gropu by year
+    if (key === "owen-blog-archive") {
+      const groups = groupBy(chapters, (chapter: Chapter) => {
+        return chapter.date.getUTCFullYear();
+      });
+      const years = Object.keys(groups).sort((a, b) => {
+        return parseInt(b) - parseInt(a);
+      });
+      for (const year of years) {
+        book.summary.push({
+          title: year,
+          path: `${year}-intro.md`,
+          subSections: groups[year].map((chapter: Chapter) => {
+            const relativePathToSummary = chapter.relativePath.replace(
+              /^content\//,
+              "",
+            );
+            return {
+              title: chapter.title,
+              path: relativePathToSummary,
+            };
+          }),
+        });
+      }
+    }
+
     let summary = `# Summary\n\n`;
     summary += `[${book.introduction.title}](${book.introduction.path})\n\n`;
     for (const section of book.summary) {
@@ -416,7 +481,7 @@ async function main() {
     console.log(`build book ${key} source files success`);
 
     const p = Deno.run({
-      cmd: ["./bin/mdbook", isServe ? "serve" : "build", bookSourceFileDist],
+      cmd: ["./bin/mdbook", "build", bookSourceFileDist],
     });
     await p.status();
     const distDir = path.join(workDir, key + "-dist");
@@ -425,37 +490,46 @@ async function main() {
     await Deno.remove(distDir, {
       recursive: true,
     });
-
-    // copy epub file
-    const epubPath = path.join(
-      bookSourceFileDist,
-      `book/epub/${book.config.book.title}.epub`,
-    );
-    await fs.ensureDir(distDir);
-    const epubNewPath = path.join(distDir, `${key}.epub`);
-    await Deno.copyFile(epubPath, epubNewPath);
-
-    // copy pdf file
-    const pdfPath = path.join(bookSourceFileDist, "book/pdf/output.pdf");
-    const pdfDistPath = path.join(distDir, `${key}.pdf`);
-    await Deno.copyFile(pdfPath, pdfDistPath);
-
-    // zip html files to dist
     const htmlPath = path.join(bookSourceFileDist, "book/html");
-    const zipProcess = Deno.run({
-      cmd: [
-        "zip",
-        "-r",
-        "-q",
-        path.join(distDir, `${key}-html.zip`),
-        "./",
-      ],
-      cwd: htmlPath,
-    });
-    await zipProcess.status();
+    if (!isServe) {
+      // copy epub file
+      const epubPath = path.join(
+        bookSourceFileDist,
+        `book/epub/${book.config.book.title}.epub`,
+      );
+      await fs.ensureDir(distDir);
+      const epubNewPath = path.join(distDir, `${key}.epub`);
+      await Deno.copyFile(epubPath, epubNewPath);
+
+      // copy pdf file
+      const pdfPath = path.join(bookSourceFileDist, "book/pdf/output.pdf");
+      const pdfDistPath = path.join(distDir, `${key}.pdf`);
+      await Deno.copyFile(pdfPath, pdfDistPath);
+
+      // zip html files to dist
+      const zipProcess = Deno.run({
+        cmd: [
+          "zip",
+          "-r",
+          "-q",
+          path.join(distDir, `${key}-html.zip`),
+          "./",
+        ],
+        cwd: htmlPath,
+      });
+      await zipProcess.status();
+    }
     // copy all html files to distDir
     await fs.copy(htmlPath, distDir, { overwrite: true });
     console.log("build book success");
+  }
+
+  if (isServe) {
+    serve((req) => {
+      return serveDir(req, {
+        fsRoot: path.join(workDir, "owen-blog-archive-dist"),
+      });
+    });
   }
 }
 
