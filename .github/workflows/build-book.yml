@@ -24,7 +24,7 @@ jobs:
           key: ${{ runner.os }}-deno-${{ hashFiles('book/build.ts') }}
       - run: make installbook
       - name: Build Book
-        run: make buildbo
+        run: make buildbook
       - uses: actions/upload-artifact@v3
         with:
           name: book
