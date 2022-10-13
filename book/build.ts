@@ -86,10 +86,6 @@ async function main() {
       enable: true,
       "command": binDir + "/mdbook-pdf",
     },
-    latex: {
-      latex: false,
-      pdf: true,
-    },
   };
 
   const books: Record<string, Book> = {
