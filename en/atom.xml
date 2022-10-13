@@ -1465,11 +1465,30 @@ tweets, and this &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot
 		<updated>2022-03-27T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/</id>
-		<content type="html">&lt;p&gt;Recently, I migrated my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;Wiki&lt;&#x2F;a&gt; to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;. Zola does not support relative internal links, it only support &lt;code&gt;@&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format. This is a bit painful, I posted a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zola.discourse.group&#x2F;t&#x2F;custom-content-dir-or-support-absolute-internal-link&#x2F;1242&#x2F;2&quot;&gt;feature request&lt;&#x2F;a&gt; to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use &lt;code&gt;&#x2F;content&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;Recently, I migrated my &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.owenyoung.com&quot;&gt;Wiki&lt;&#x2F;a&gt; to
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;. Zola does not support relative internal links,
+it only support &lt;code&gt;@&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format. This is a bit painful, I posted
+a
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zola.discourse.group&#x2F;t&#x2F;custom-content-dir-or-support-absolute-internal-link&#x2F;1242&#x2F;2&quot;&gt;feature request&lt;&#x2F;a&gt;
+to Zola. But for now, I will use my own edited version of Zola, this change will
+allow me to use &lt;code&gt;&#x2F;content&#x2F;xxx.md&lt;&#x2F;code&gt; internal link format.&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;So, the second thing is to input absolute internal link quickly, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; does have a feature that allows you type wiki links, then they will be converted to markdown links. I like this feature, but when I tried &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; seconds time, I still can’t use to it, and it’s also a bit slow compared to VSCode. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;foambubble&#x2F;foam&quot;&gt;Foam&lt;&#x2F;a&gt; can only auto generate markdown reference link, but that feature not a one-time task, it sometimes makes mistakes, like add multiple &lt;code&gt;&amp;quot;&lt;&#x2F;code&gt; at the end of reference zone. So, I decided to fork foam extension, and turn off the most features that I don’t need, only keep creating notes from template, and convert wiki links to markdown links.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;sYmKeKO.gif&quot; alt=&quot;Wiki Links to Markdown Links&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;I’m so lucky, Foam’s code structure is very clean, so I just changed a little bit to achieve what I wanted. Here is my final result: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;foam&quot;&gt;Foam&lt;&#x2F;a&gt;, if you need this, I also publish it on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;VSCode marketplace&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;So, the second thing is to input absolute internal link quickly,
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; does have a feature that allows you type wiki
+links, then they will be converted to markdown links. I like this feature, but
+when I tried &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot;&gt;Obsidian&lt;&#x2F;a&gt; seconds time, I still can’t use to
+it, and it’s also a bit slow compared to VSCode.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;foambubble&#x2F;foam&quot;&gt;Foam&lt;&#x2F;a&gt; can only auto generate markdown
+reference link, but that feature not a one-time task, it sometimes makes
+mistakes, like add multiple &lt;code&gt;&amp;quot;&lt;&#x2F;code&gt; at the end of reference zone. So, I decided to
+fork foam extension, and turn off the most features that I don’t need, only keep
+creating notes from template, and convert wiki links to markdown links.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;.&#x2F;foam-lite.gif&quot; alt=&quot;Wiki Links to Markdown Links&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’m so lucky, Foam’s code structure is very clean, so I just changed a little
+bit to achieve what I wanted. Here is my final result:
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;foam&quot;&gt;Foam&lt;&#x2F;a&gt;, if you need this, I also publish
+it on
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=theowenyoung.foam-lite-vscode&quot;&gt;VSCode marketplace&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
 	</entry>
 	<entry xml:lang="en">
@@ -2754,17 +2773,28 @@ fundamentally redefine the problem and then take action.&lt;&#x2F;p&gt;
 		<updated>2022-03-29T00:00:00+00:00</updated>
 		<link rel="alternate" href="https://www.owenyoung.com/en/blog/gatsby-timeline-theme/" type="text/html"/>
 		<id>https://www.owenyoung.com/en/blog/gatsby-timeline-theme/</id>
-		<content type="html">&lt;p&gt;Don’t you think there are too many different personal profile for us? Like twitter, instagram, facebook, blog, etc, So do I, I suppose there is an elegant site to show all my creative work, that’s the new gatsby theme &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-timeline&quot;&gt;Timeline&lt;&#x2F;a&gt;, a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby&lt;&#x2F;a&gt; theme, you can use it to show your all posts, tweets, instagram posts etc into one blog. In my opinion, this is a real personal home.&lt;&#x2F;p&gt;
+		<content type="html">&lt;p&gt;Don’t you think there are too many different personal profile for us? Like
+twitter, instagram, facebook, blog, etc, So do I, I suppose there is an elegant
+site to show all my creative work, that’s the new gatsby theme
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-timeline&quot;&gt;Timeline&lt;&#x2F;a&gt;, a
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;&quot;&gt;Gatsby&lt;&#x2F;a&gt; theme, you can use it to show your all
+posts, tweets, instagram posts etc into one blog. In my opinion, this is a real
+personal home.&lt;&#x2F;p&gt;
 &lt;p&gt;Checkout my blog: https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-timeline&quot;&gt;Source Repo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gatsby-theme-timeline.owenyoung.com&#x2F;&quot;&gt;Live Demo&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;camo.githubusercontent.com&#x2F;b3a1a92a41a81707b6690eb4710194e5d6e79895082e329d9d3bfe35944c0207&#x2F;68747470733a2f2f692e696d6775722e636f6d2f367949544934452e706e67&quot; alt=&quot;Screen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;gatsby-timeline-theme&#x2F;.&#x2F;screenshot.png&quot; alt=&quot;Screen&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Here are the features for now:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;Support markdown, tweet, instagram posts, youtube videos, hacker news, reddit post&lt;&#x2F;li&gt;
-&lt;li&gt;Support i18n by &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;plugins&#x2F;gatsby-theme-i18n&#x2F;&quot;&gt;gatsby-theme-i18n&lt;&#x2F;a&gt;, you can choose your own &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gatsbyjs&#x2F;themes&#x2F;tree&#x2F;master&#x2F;packages&quot;&gt;i18n library&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;Support comments platform &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;disqus.com&#x2F;&quot;&gt;disqus&lt;&#x2F;a&gt; or &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;utteranc.es&#x2F;&quot;&gt;utterances&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Support markdown, tweet, instagram posts, youtube videos, hacker news, reddit
+post&lt;&#x2F;li&gt;
+&lt;li&gt;Support i18n by
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.gatsbyjs.com&#x2F;plugins&#x2F;gatsby-theme-i18n&#x2F;&quot;&gt;gatsby-theme-i18n&lt;&#x2F;a&gt;, you
+can choose your own
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gatsbyjs&#x2F;themes&#x2F;tree&#x2F;master&#x2F;packages&quot;&gt;i18n library&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Support comments platform &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;disqus.com&#x2F;&quot;&gt;disqus&lt;&#x2F;a&gt; or
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;utteranc.es&#x2F;&quot;&gt;utterances&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;Support Tags&lt;&#x2F;li&gt;
 &lt;li&gt;Pagination, even tag pages support pagination&lt;&#x2F;li&gt;
 &lt;li&gt;SEO Optimization&lt;&#x2F;li&gt;
@@ -2773,12 +2803,26 @@ fundamentally redefine the problem and then take action.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;gatsby&lt;&#x2F;span&gt;&lt;span&gt; new my-themed-blog https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-starter-timeline
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;blockquote&gt;
-&lt;p&gt;For more about installation please see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-timeline&#x2F;tree&#x2F;main&#x2F;packages&#x2F;gatsby-theme-timeline#installation&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For more about installation please see
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-theme-timeline&#x2F;tree&#x2F;main&#x2F;packages&#x2F;gatsby-theme-timeline#installation&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;h2 id=&quot;note&quot;&gt;Note&lt;a class=&quot;zola-anchor&quot; href=&quot;#note&quot; aria-label=&quot;Anchor link for: note&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;In the starter demo, I use two gatsby plugins &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;G100g&#x2F;gatsby-source-twitter&quot;&gt;gatsby-source-twitter&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-source-instagram&quot;&gt;gatsby-source-instagram&lt;&#x2F;a&gt; as the blog’s sources. But in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;my blog&lt;&#x2F;a&gt;, I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; to get my tweets, instagram data, sync the JSON file to &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;story&quot;&gt;my content source repository&lt;&#x2F;a&gt; ((Why Actionsflow? For more stably, and I can store all my creative work into one)), and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;theowenyoung.github.io&quot;&gt;site repository&lt;&#x2F;a&gt; use plugin &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-source-git&quot;&gt;gatsby-source-git&lt;&#x2F;a&gt; to sync those data, and my markdown posts, for more tech stack, you can see &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;en&#x2F;posts&#x2F;how-i-built-my-blog&#x2F;&quot;&gt;How I Built my Blog?&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In the starter demo, I use two gatsby plugins
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;G100g&#x2F;gatsby-source-twitter&quot;&gt;gatsby-source-twitter&lt;&#x2F;a&gt; and
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-source-instagram&quot;&gt;gatsby-source-instagram&lt;&#x2F;a&gt;
+as the blog’s sources. But in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&quot;&gt;my blog&lt;&#x2F;a&gt;, I use
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; to get my tweets,
+instagram data, sync the JSON file to
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;story&quot;&gt;my content source repository&lt;&#x2F;a&gt; ((Why
+Actionsflow? For more stably, and I can store all my creative work into one)),
+and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;theowenyoung.github.io&quot;&gt;site repository&lt;&#x2F;a&gt;
+use plugin
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;theowenyoung&#x2F;gatsby-source-git&quot;&gt;gatsby-source-git&lt;&#x2F;a&gt; to sync
+those data, and my markdown posts, for more tech stack, you can see
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;blog.owenyoung.com&#x2F;en&#x2F;posts&#x2F;how-i-built-my-blog&#x2F;&quot;&gt;How I Built my Blog?&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Disclaimer: I made the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; :)&lt;&#x2F;p&gt;
+&lt;p&gt;Disclaimer: I made the
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;actionsflow&#x2F;actionsflow&quot;&gt;Actionsflow&lt;&#x2F;a&gt; :)&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 </content>
 	</entry>

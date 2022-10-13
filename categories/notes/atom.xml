@@ -1033,7 +1033,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.iana.org&#x2F;assignments&#x2F;jwt&#x2F;jwt.xhtml&quot;&gt;JSON Web Token (JWT) Claims&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.aws.amazon.com&#x2F;general&#x2F;latest&#x2F;gr&#x2F;sigv4_signing.html&quot;&gt;aws signature v4&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;actix-http&#x2F;2.2.1&#x2F;actix_http&#x2F;http&#x2F;struct.StatusCode.html&quot;&gt;actix http status code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webauthn.guide&#x2F;&quot;&gt;Web Auth &lt;&#x2F;a&gt; - A better alternative for securing our sensitive information online&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webauthn.guide&#x2F;&quot;&gt;Web Auth&lt;&#x2F;a&gt; - A better alternative for securing our
+sensitive information online&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;auth-xiang-guan&quot;&gt;Auth 相关&lt;a class=&quot;zola-anchor&quot; href=&quot;#auth-xiang-guan&quot; aria-label=&quot;Anchor link for: auth-xiang-guan&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1046,7 +1047,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;json-api&#x2F;json-api&quot;&gt;JSON API&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;cryptlex&#x2F;rest-api-response-format&quot;&gt;REST API response format&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;extract-table.com&#x2F;&quot;&gt;extract table&lt;&#x2F;a&gt; - Extract a table from an image or a PDF&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;extract-table.com&#x2F;&quot;&gt;extract table&lt;&#x2F;a&gt; - Extract a table from an image or
+a PDF&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;calganaygun&#x2F;MDcat&#x2F;blob&#x2F;main&#x2F;mdcat.py&quot;&gt;Github Markdown to HTML&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;apilist.fun&#x2F;&quot;&gt;API LIST&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -1058,7 +1060,9 @@ developers.&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;chat-manage&quot;&gt;Chat Manage&lt;a class=&quot;zola-anchor&quot; href=&quot;#chat-manage&quot; aria-label=&quot;Anchor link for: chat-manage&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;live-chat&quot;&gt;Live Chat&lt;a class=&quot;zola-anchor&quot; href=&quot;#live-chat&quot; aria-label=&quot;Anchor link for: live-chat&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;airyhq&#x2F;airy&quot;&gt;airy&lt;&#x2F;a&gt; - Open source conversational platform to power conversations with an open source Live Chat, Messengers like Facebook Messenger, WhatsApp and more&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;airyhq&#x2F;airy&quot;&gt;airy&lt;&#x2F;a&gt; - Open source conversational platform
+to power conversations with an open source Live Chat, Messengers like Facebook
+Messenger, WhatsApp and more&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;open-source-server&quot;&gt;Open source Server&lt;a class=&quot;zola-anchor&quot; href=&quot;#open-source-server&quot; aria-label=&quot;Anchor link for: open-source-server&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1086,7 +1090,9 @@ developers.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;connectycube.com&#x2F;&quot;&gt;connectycube&lt;&#x2F;a&gt; - free, 10k user&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;command-tools&quot;&gt;Command Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#command-tools&quot; aria-label=&quot;Anchor link for: command-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TomWright&#x2F;dasel&quot;&gt;Dasel&lt;&#x2F;a&gt; - Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TomWright&#x2F;dasel&quot;&gt;Dasel&lt;&#x2F;a&gt; - Select, put and delete data from
+JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion
+between formats and can be used as a Go package.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;image-process&quot;&gt;Image process&lt;a class=&quot;zola-anchor&quot; href=&quot;#image-process&quot; aria-label=&quot;Anchor link for: image-process&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;e1ven&#x2F;Robohash&quot;&gt;robohash&lt;&#x2F;a&gt; - generate image by any text&lt;&#x2F;li&gt;
@@ -1094,12 +1100,14 @@ developers.&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;learning&quot;&gt;Learning&lt;a class=&quot;zola-anchor&quot; href=&quot;#learning&quot; aria-label=&quot;Anchor link for: learning&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.freecodecamp.org&#x2F;&quot;&gt;Free code camp&lt;&#x2F;a&gt; - Learn to code — for free.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;learnxinyminutes.com&#x2F;&quot;&gt;Learn X in Y minutes&lt;&#x2F;a&gt; - Learn programming in a few minutes.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;learnxinyminutes.com&#x2F;&quot;&gt;Learn X in Y minutes&lt;&#x2F;a&gt; - Learn programming in a
+few minutes.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;bradtraversy&#x2F;50projects50days&quot;&gt;50 天内完成 50 个 web mini 项目 - HTML&#x2F;CSS 和 JavaScript&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;admin-dashboard&quot;&gt;Admin Dashboard&lt;a class=&quot;zola-anchor&quot; href=&quot;#admin-dashboard&quot; aria-label=&quot;Anchor link for: admin-dashboard&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToolJet&#x2F;ToolJet&#x2F;&quot;&gt;ToolJet&lt;&#x2F;a&gt; - Open-source low-code framework for building React-based web applications and internal tools 🚀&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToolJet&#x2F;ToolJet&#x2F;&quot;&gt;ToolJet&lt;&#x2F;a&gt; - Open-source low-code
+framework for building React-based web applications and internal tools 🚀&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;database&quot;&gt;Database&lt;a class=&quot;zola-anchor&quot; href=&quot;#database&quot; aria-label=&quot;Anchor link for: database&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;resource&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource&quot; aria-label=&quot;Anchor link for: resource&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
@@ -1114,26 +1122,37 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;orm&quot;&gt;ORM&lt;a class=&quot;zola-anchor&quot; href=&quot;#orm&quot; aria-label=&quot;Anchor link for: orm&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;prisma&#x2F;prisma&quot;&gt;prisma&lt;&#x2F;a&gt; - Next-generation ORM for Node.js &amp;amp; TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite &amp;amp; MongoDB (Preview)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;prisma&#x2F;prisma&quot;&gt;prisma&lt;&#x2F;a&gt; - Next-generation ORM for Node.js &amp;amp;
+TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite &amp;amp; MongoDB
+(Preview)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;neondatabase&#x2F;neon&quot;&gt;Neon&lt;&#x2F;a&gt; - Serverless Postgres&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;offline&quot;&gt;Offline&lt;a class=&quot;zola-anchor&quot; href=&quot;#offline&quot; aria-label=&quot;Anchor link for: offline&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pubkey&#x2F;rxdb&quot;&gt;rxdb&lt;&#x2F;a&gt; - 🔄 A realtime Database for JavaScript Applications&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apache&#x2F;couchdb&quot;&gt;couchdb&lt;&#x2F;a&gt; - Seamless multi-master syncing database with an intuitive HTTP&#x2F;JSON API, designed for reliability&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;localForage&#x2F;localForage&quot;&gt;localforage&lt;&#x2F;a&gt; - 💾 Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Kinto&#x2F;kinto.js&#x2F;&quot;&gt;kinto&lt;&#x2F;a&gt; - An Offline-First JavaScript Client for Kinto.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pouchdb&#x2F;pouchdb&quot;&gt;puchdb&lt;&#x2F;a&gt; - 🐨 - PouchDB is a pocket-sized database.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pubkey&#x2F;rxdb&quot;&gt;rxdb&lt;&#x2F;a&gt; - 🔄 A realtime Database for JavaScript
+Applications&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;apache&#x2F;couchdb&quot;&gt;couchdb&lt;&#x2F;a&gt; - Seamless multi-master syncing
+database with an intuitive HTTP&#x2F;JSON API, designed for reliability&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;localForage&#x2F;localForage&quot;&gt;localforage&lt;&#x2F;a&gt; - 💾 Offline storage,
+improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful
+API.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Kinto&#x2F;kinto.js&#x2F;&quot;&gt;kinto&lt;&#x2F;a&gt; - An Offline-First JavaScript
+Client for Kinto.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pouchdb&#x2F;pouchdb&quot;&gt;puchdb&lt;&#x2F;a&gt; - 🐨 - PouchDB is a pocket-sized
+database.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;tools&quot;&gt;Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#tools&quot; aria-label=&quot;Anchor link for: tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sqlime.org&#x2F;&quot;&gt;sqlite playgound&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;supabase&#x2F;postgres&quot;&gt;supabase&#x2F;postgres&lt;&#x2F;a&gt; - Unmodified Postgres with some useful plugins&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;supabase&#x2F;postgres&quot;&gt;supabase&#x2F;postgres&lt;&#x2F;a&gt; - Unmodified
+Postgres with some useful plugins&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;sqlite&quot;&gt;Sqlite&lt;a class=&quot;zola-anchor&quot; href=&quot;#sqlite&quot; aria-label=&quot;Anchor link for: sqlite&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;phiresky&#x2F;sql.js-httpvfs&quot;&gt;Sqllite httpvfs&lt;&#x2F;a&gt; - Query Sqlite with static files&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;benbjohnson&#x2F;litestream&quot;&gt;Litestream&lt;&#x2F;a&gt; - Streaming replication for SQLite.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;phiresky&#x2F;sql.js-httpvfs&quot;&gt;Sqllite httpvfs&lt;&#x2F;a&gt; - Query Sqlite
+with static files&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;benbjohnson&#x2F;litestream&quot;&gt;Litestream&lt;&#x2F;a&gt; - Streaming
+replication for SQLite.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;version&quot;&gt;Version&lt;a class=&quot;zola-anchor&quot; href=&quot;#version&quot; aria-label=&quot;Anchor link for: version&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1146,7 +1165,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;deno&quot;&gt;Deno&lt;a class=&quot;zola-anchor&quot; href=&quot;#deno&quot; aria-label=&quot;Anchor link for: deno&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;framework&quot;&gt;Framework&lt;a class=&quot;zola-anchor&quot; href=&quot;#framework&quot; aria-label=&quot;Anchor link for: framework&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alephjs&#x2F;aleph.js&quot;&gt;aleph&lt;&#x2F;a&gt; - The Full-stack Framework, ssr, next.js alternative in Deno.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;alephjs&#x2F;aleph.js&quot;&gt;aleph&lt;&#x2F;a&gt; - The Full-stack Framework, ssr,
+next.js alternative in Deno.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;exhibitionist-digital&#x2F;ultra&quot;&gt;ultra&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;serverless&quot;&gt;Serverless&lt;a class=&quot;zola-anchor&quot; href=&quot;#serverless&quot; aria-label=&quot;Anchor link for: serverless&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
@@ -1162,25 +1182,32 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;ai-enhance&quot;&gt;AI Enhance&lt;a class=&quot;zola-anchor&quot; href=&quot;#ai-enhance&quot; aria-label=&quot;Anchor link for: ai-enhance&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;copilot.github.com&#x2F;&quot;&gt;GitHub Copilot · Your AI pair programmer&lt;&#x2F;a&gt; - Github Copilot&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;copilot.github.com&#x2F;&quot;&gt;GitHub Copilot · Your AI pair programmer&lt;&#x2F;a&gt; -
+Github Copilot&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;front-end&quot;&gt;Front-End&lt;a class=&quot;zola-anchor&quot; href=&quot;#front-end&quot; aria-label=&quot;Anchor link for: front-end&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;suren-atoyan&#x2F;monaco-react&quot;&gt;Monaco React&lt;&#x2F;a&gt; - Code Editor UI for React&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;suren-atoyan&#x2F;monaco-react&quot;&gt;Monaco React&lt;&#x2F;a&gt; - Code Editor UI
+for React&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;broswer-extensioon-dev&quot;&gt;Broswer Extensioon Dev&lt;a class=&quot;zola-anchor&quot; href=&quot;#broswer-extensioon-dev&quot; aria-label=&quot;Anchor link for: broswer-extensioon-dev&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;webextension-polyfill&quot;&gt;WebExtension browser API Polyfill&lt;&#x2F;a&gt; - A lightweight polyfill library for Promise-based WebExtension APIs in Chrome&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mozilla&#x2F;webextension-polyfill&quot;&gt;WebExtension browser API Polyfill&lt;&#x2F;a&gt; -
+A lightweight polyfill library for Promise-based WebExtension APIs in Chrome&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;configure-as-frontend&quot;&gt;Configure as FrontEnd&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure-as-frontend&quot; aria-label=&quot;Anchor link for: configure-as-frontend&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;instawork&#x2F;hyperview&quot;&gt;Hyperview&lt;&#x2F;a&gt; - Backend xml to native app. #ReactNative&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;instawork&#x2F;hyperview&quot;&gt;Hyperview&lt;&#x2F;a&gt; - Backend xml to native
+app. #ReactNative&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;gatby-framework&quot;&gt;Gatby Framework&lt;a class=&quot;zola-anchor&quot; href=&quot;#gatby-framework&quot; aria-label=&quot;Anchor link for: gatby-framework&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;plugins&quot;&gt;Plugins&lt;a class=&quot;zola-anchor&quot; href=&quot;#plugins&quot; aria-label=&quot;Anchor link for: plugins&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kraynel&#x2F;gatsby-transformer-gitinfo&quot;&gt;GitHub - kraynel&#x2F;gatsby-transformer-gitinfo&lt;&#x2F;a&gt; - Add git info to file, so you can get last update date for your files.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;angeloashmore&#x2F;gatsby-plugin-local-search&quot;&gt;gatsby-plugin-local-search&lt;&#x2F;a&gt; - Gatsby plugin for providing client-side search for data available in Gatsby’s GraphQL layer using a variety of engines&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kraynel&#x2F;gatsby-transformer-gitinfo&quot;&gt;GitHub - kraynel&#x2F;gatsby-transformer-gitinfo&lt;&#x2F;a&gt; -
+Add git info to file, so you can get last update date for your files.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;angeloashmore&#x2F;gatsby-plugin-local-search&quot;&gt;gatsby-plugin-local-search&lt;&#x2F;a&gt; -
+Gatsby plugin for providing client-side search for data available in Gatsby’s
+GraphQL layer using a variety of engines&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;tutorials&quot;&gt;Tutorials&lt;a class=&quot;zola-anchor&quot; href=&quot;#tutorials&quot; aria-label=&quot;Anchor link for: tutorials&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;56025679&#x2F;how-to-get-last-update-date-of-a-blog-post-in-gatsby-js&quot;&gt;How to get ‘Last Update Date’ of a blog post in GATSBY.js - Stack Overflow&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1200,7 +1227,9 @@ developers.&lt;&#x2F;li&gt;
 &lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;you-dont-need&#x2F;You-Dont-Need-Momentjs&quot;&gt;GitHub - you-dont-need&#x2F;You-Dont-Need-Momentjs: List of functions which you can use to replace moment.js + ESLint Plugin&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;low-code&quot;&gt;Low Code&lt;a class=&quot;zola-anchor&quot; href=&quot;#low-code&quot; aria-label=&quot;Anchor link for: low-code&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lowdefy&#x2F;lowdefy&quot;&gt;lowdefy&lt;&#x2F;a&gt; - An open-source, self-hosted, low-code framework to build internal tools, web apps, admin panels, BI dashboards, workflows, and CRUD apps with YAML or JSON. 用 yaml 生成内部工具&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lowdefy&#x2F;lowdefy&quot;&gt;lowdefy&lt;&#x2F;a&gt; - An open-source, self-hosted,
+low-code framework to build internal tools, web apps, admin panels, BI
+dashboards, workflows, and CRUD apps with YAML or JSON. 用 yaml 生成内部工具&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;forum&quot;&gt;Forum&lt;a class=&quot;zola-anchor&quot; href=&quot;#forum&quot; aria-label=&quot;Anchor link for: forum&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1209,13 +1238,19 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;search&quot;&gt;Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#search&quot; aria-label=&quot;Anchor link for: search&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;typesense&#x2F;typesense&quot;&gt;typesense&lt;&#x2F;a&gt; - Fast, typo tolerant, fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;typesense&#x2F;typesense&quot;&gt;typesense&lt;&#x2F;a&gt; - Fast, typo tolerant,
+fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open
+Source alternative to Algolia and an Easier-to-Use alternative to
+ElasticSearch.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lucaong&#x2F;minisearch&quot;&gt;MiniSearch&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jameslittle230&#x2F;stork&quot;&gt;Stork&lt;&#x2F;a&gt; - 🔎 Impossibly fast web search, made for static sites.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tinysearch&#x2F;tinysearch&quot;&gt;Tiny Search&lt;&#x2F;a&gt; - 🔍 Tiny, full-text search engine for static websites built with Rust and Wasm&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jameslittle230&#x2F;stork&quot;&gt;Stork&lt;&#x2F;a&gt; - 🔎 Impossibly fast web
+search, made for static sites.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tinysearch&#x2F;tinysearch&quot;&gt;Tiny Search&lt;&#x2F;a&gt; - 🔍 Tiny, full-text
+search engine for static websites built with Rust and Wasm&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;hackernoon.com&#x2F;static-full-text-search-in-nextjs-with-webassembly-rust-and-xor-filters-tldr&quot;&gt;Next 中的静态全文搜索.js 使用 WebAssembly、Rust 和 Xor Filters&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ahmadrosid.com&#x2F;blog&#x2F;fulltext-search-with-inverted-index&quot;&gt;在 Javascript 中为 Next.js 静态站点编写全文搜索&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nextapps-de&#x2F;flexsearch&quot;&gt;flexsearch&lt;&#x2F;a&gt; - 浏览器和 nodejs 的下一代全文搜索库.js&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nextapps-de&#x2F;flexsearch&quot;&gt;flexsearch&lt;&#x2F;a&gt; - 浏览器和 nodejs
+的下一代全文搜索库.js&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;protocol&quot;&gt;Protocol&lt;a class=&quot;zola-anchor&quot; href=&quot;#protocol&quot; aria-label=&quot;Anchor link for: protocol&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1232,18 +1267,22 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;encode-decode&quot;&gt;Encode&#x2F;Decode&lt;a class=&quot;zola-anchor&quot; href=&quot;#encode-decode&quot; aria-label=&quot;Anchor link for: encode-decode&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;KilledByAPixel&#x2F;JSONCrush&quot;&gt;json crush&lt;&#x2F;a&gt; - json to url friendly&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;KilledByAPixel&#x2F;JSONCrush&quot;&gt;json crush&lt;&#x2F;a&gt; - json to url
+friendly&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;schema&quot;&gt;Schema&lt;a class=&quot;zola-anchor&quot; href=&quot;#schema&quot; aria-label=&quot;Anchor link for: schema&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jviotti&#x2F;awesome-jsonschema&quot;&gt;Awesome Jsonschema&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;react-schemaorg&quot;&gt;react-schemaorg&lt;&#x2F;a&gt; - Type-checked Schema.org JSON-LD for React&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rjsf-team&#x2F;react-jsonschema-form&quot;&gt;react-jsonschema-form&lt;&#x2F;a&gt; - A React component for building Web forms from JSON Schema.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;react-schemaorg&quot;&gt;react-schemaorg&lt;&#x2F;a&gt; - Type-checked
+Schema.org JSON-LD for React&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rjsf-team&#x2F;react-jsonschema-form&quot;&gt;react-jsonschema-form&lt;&#x2F;a&gt; -
+A React component for building Web forms from JSON Schema.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;semantic&quot;&gt;Semantic&lt;a class=&quot;zola-anchor&quot; href=&quot;#semantic&quot; aria-label=&quot;Anchor link for: semantic&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;list&quot;&gt;List&lt;a class=&quot;zola-anchor&quot; href=&quot;#list&quot; aria-label=&quot;Anchor link for: list&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dbohdan&#x2F;classless-css&quot;&gt;Classless CSS&lt;&#x2F;a&gt; - A list of Classless CSS frameworks.
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dbohdan&#x2F;classless-css&quot;&gt;Classless CSS&lt;&#x2F;a&gt; - A list of
+Classless CSS frameworks.
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mblode.github.io&#x2F;marx&#x2F;documentation&#x2F;&quot;&gt;Marx&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;edwardtufte&#x2F;tufte-css&quot;&gt;Tufte&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -1261,11 +1300,13 @@ developers.&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;seo&quot;&gt;SEO&lt;a class=&quot;zola-anchor&quot; href=&quot;#seo&quot; aria-label=&quot;Anchor link for: seo&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cards-dev.twitter.com&#x2F;validator&quot;&gt;Twitter Card Validator&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screenstab.com&#x2F;editor&#x2F;&quot;&gt;screen stab&lt;&#x2F;a&gt; - convert image to a more seo mode.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.screenstab.com&#x2F;editor&#x2F;&quot;&gt;screen stab&lt;&#x2F;a&gt; - convert image to a more
+seo mode.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;monitors&quot;&gt;Monitors&lt;a class=&quot;zola-anchor&quot; href=&quot;#monitors&quot; aria-label=&quot;Anchor link for: monitors&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;littlewarden.com&quot;&gt;Little Warden&lt;&#x2F;a&gt; - Monitor your websides for things like expires, ssl error. £24.99&#x2F;Month&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;littlewarden.com&quot;&gt;Little Warden&lt;&#x2F;a&gt; - Monitor your websides for things
+like expires, ssl error. £24.99&#x2F;Month&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;sample&quot;&gt;Sample&lt;a class=&quot;zola-anchor&quot; href=&quot;#sample&quot; aria-label=&quot;Anchor link for: sample&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1273,7 +1314,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;suan-fa&quot;&gt;算法&lt;a class=&quot;zola-anchor&quot; href=&quot;#suan-fa&quot; aria-label=&quot;Anchor link for: suan-fa&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhenghaoz&#x2F;gorse&quot;&gt;Gorse&lt;&#x2F;a&gt; - An open source recommender system service written in Go&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zhenghaoz&#x2F;gorse&quot;&gt;Gorse&lt;&#x2F;a&gt; - An open source recommender
+system service written in Go&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;code-in-cloud&quot;&gt;Code in Cloud&lt;a class=&quot;zola-anchor&quot; href=&quot;#code-in-cloud&quot; aria-label=&quot;Anchor link for: code-in-cloud&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1297,11 +1339,13 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;comments&quot;&gt;Comments&lt;a class=&quot;zola-anchor&quot; href=&quot;#comments&quot; aria-label=&quot;Anchor link for: comments&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;eduardoboucas&#x2F;staticman&quot;&gt;Static Man&lt;&#x2F;a&gt; - 💪 User-generated content for Git-powered websites, comment save to repo.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;eduardoboucas&#x2F;staticman&quot;&gt;Static Man&lt;&#x2F;a&gt; - 💪 User-generated
+content for Git-powered websites, comment save to repo.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;marddown-tools&quot;&gt;Marddown Tools&lt;a class=&quot;zola-anchor&quot; href=&quot;#marddown-tools&quot; aria-label=&quot;Anchor link for: marddown-tools&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wooorm&#x2F;xdm&quot;&gt;xdm&lt;&#x2F;a&gt; - Just a &lt;em&gt;really&lt;&#x2F;em&gt; good MDX compiler. No runtime. With esbuild, Rollup, and webpack plugins&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wooorm&#x2F;xdm&quot;&gt;xdm&lt;&#x2F;a&gt; - Just a &lt;em&gt;really&lt;&#x2F;em&gt; good MDX compiler. No
+runtime. With esbuild, Rollup, and webpack plugins&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;swift&quot;&gt;Swift&lt;a class=&quot;zola-anchor&quot; href=&quot;#swift&quot; aria-label=&quot;Anchor link for: swift&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;resource-1&quot;&gt;Resource&lt;a class=&quot;zola-anchor&quot; href=&quot;#resource-1&quot; aria-label=&quot;Anchor link for: resource-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
@@ -1312,7 +1356,11 @@ developers.&lt;&#x2F;li&gt;
 &lt;h2 id=&quot;template&quot;&gt;Template&lt;a class=&quot;zola-anchor&quot; href=&quot;#template&quot; aria-label=&quot;Anchor link for: template&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;h3 id=&quot;saas&quot;&gt;SAAS&lt;a class=&quot;zola-anchor&quot; href=&quot;#saas&quot; aria-label=&quot;Anchor link for: saas&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gmpetrov&#x2F;utlimate-saas-js&quot;&gt;utlimate-saas-js&lt;&#x2F;a&gt; - Ultimate SAAS template Typescript&#x2F;Next.js&#x2F;NextAuth.js&#x2F;Prisma&#x2F;Stripe&#x2F;Tailwindcss&#x2F;Postgresql , Stop loosing time implementing authentication and payment over and over again. Focus on what brings value to your customers&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gmpetrov&#x2F;utlimate-saas-js&quot;&gt;utlimate-saas-js&lt;&#x2F;a&gt; - Ultimate
+SAAS template
+Typescript&#x2F;Next.js&#x2F;NextAuth.js&#x2F;Prisma&#x2F;Stripe&#x2F;Tailwindcss&#x2F;Postgresql , Stop
+loosing time implementing authentication and payment over and over again.
+Focus on what brings value to your customers&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;template-engine&quot;&gt;Template Engine&lt;a class=&quot;zola-anchor&quot; href=&quot;#template-engine&quot; aria-label=&quot;Anchor link for: template-engine&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1329,7 +1377,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;boilerplate&quot;&gt;Boilerplate&lt;a class=&quot;zola-anchor&quot; href=&quot;#boilerplate&quot; aria-label=&quot;Anchor link for: boilerplate&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;makenew&#x2F;&quot;&gt;makenew&lt;&#x2F;a&gt; - Tested project skeletons to instantly bootstrap and reliably maintain your next project.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;makenew&#x2F;&quot;&gt;makenew&lt;&#x2F;a&gt; - Tested project skeletons to instantly
+bootstrap and reliably maintain your next project.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.matuzo.at&#x2F;blog&#x2F;html-boilerplate&#x2F;&quot;&gt;html boilerplate&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;landing-page&quot;&gt;Landing page&lt;a class=&quot;zola-anchor&quot; href=&quot;#landing-page&quot; aria-label=&quot;Anchor link for: landing-page&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
@@ -1340,16 +1389,22 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;docuemnts-templates&quot;&gt;Docuemnts Templates&lt;a class=&quot;zola-anchor&quot; href=&quot;#docuemnts-templates&quot; aria-label=&quot;Anchor link for: docuemnts-templates&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kbariotis&#x2F;templatesf&quot;&gt;Document template&lt;&#x2F;a&gt; - A set of standard document templates.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kbariotis&#x2F;templatesf&quot;&gt;Document template&lt;&#x2F;a&gt; - A set of
+standard document templates.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;windows&quot;&gt;Windows&lt;a class=&quot;zola-anchor&quot; href=&quot;#windows&quot; aria-label=&quot;Anchor link for: windows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dowww.spencerwoo.com&#x2F;&quot;&gt;在 Windows 上用 WSL 优雅开发&lt;&#x2F;a&gt; - 可能是市面上最详尽的中文 WSL 开发环境配置指南 的文档现场，本章我们将对 WSL 本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows 上面开发学习的基础知识。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dowww.spencerwoo.com&#x2F;&quot;&gt;在 Windows 上用 WSL 优雅开发&lt;&#x2F;a&gt; - 可能是市面上最详尽的中文 WSL
+开发环境配置指南 的文档现场，本章我们将对 WSL 本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows
+上面开发学习的基础知识。&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;configure-as-server&quot;&gt;Configure as Server&lt;a class=&quot;zola-anchor&quot; href=&quot;#configure-as-server&quot; aria-label=&quot;Anchor link for: configure-as-server&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;daptin&#x2F;daptin&quot;&gt;Daptin&lt;&#x2F;a&gt; - Daptin - Backend As A Service - GraphQL&#x2F;JSON-API Headless CMS&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt; - Configuration as Code, use YAML to write automated workflows that run on Deno, with any Deno modules, Typescript&#x2F;Javascript codes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;daptin&#x2F;daptin&quot;&gt;Daptin&lt;&#x2F;a&gt; - Daptin - Backend As A Service -
+GraphQL&#x2F;JSON-API Headless CMS&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;denoflow&#x2F;denoflow&quot;&gt;Denoflow&lt;&#x2F;a&gt; - Configuration as Code, use
+YAML to write automated workflows that run on Deno, with any Deno modules,
+Typescript&#x2F;Javascript codes&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;bash-as-workflows&quot;&gt;Bash as Workflows&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash-as-workflows&quot; aria-label=&quot;Anchor link for: bash-as-workflows&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1362,8 +1417,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;iina:&#x2F;&#x2F;weblink?url&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;{encoed url}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h2 id=&quot;git-workflow&quot;&gt;Git Workflow&lt;a class=&quot;zola-anchor&quot; href=&quot;#git-workflow&quot; aria-label=&quot;Anchor link for: git-workflow&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
-&lt;p&gt;See &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;comparing-workflows&#x2F;gitflow-workflow&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;wac-cdn.atlassian.com&#x2F;dam&#x2F;jcr:8f00f1a4-ef2d-498a-a2c6-8020bb97902f&#x2F;03%20Release%20branches.svg?cdnVersion=1770&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;See
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.atlassian.com&#x2F;git&#x2F;tutorials&#x2F;comparing-workflows&#x2F;gitflow-workflow&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mac&quot;&gt;Mac&lt;a class=&quot;zola-anchor&quot; href=&quot;#mac&quot; aria-label=&quot;Anchor link for: mac&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vendasta&#x2F;setup-new-computer-script&quot;&gt;mac developer new computer script&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -1374,7 +1429,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;ji-suan-ji-jiao-cheng&quot;&gt;计算机教程&lt;a class=&quot;zola-anchor&quot; href=&quot;#ji-suan-ji-jiao-cheng&quot; aria-label=&quot;Anchor link for: ji-suan-ji-jiao-cheng&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cs50.harvard.edu&#x2F;law&#x2F;2019&#x2F;&quot;&gt;CS50 针对律师的计算机课程&lt;&#x2F;a&gt; - 哈佛大学的教授出品，课程设计的很好，非常适合计算机基础学习&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;cs50.harvard.edu&#x2F;law&#x2F;2019&#x2F;&quot;&gt;CS50 针对律师的计算机课程&lt;&#x2F;a&gt; -
+哈佛大学的教授出品，课程设计的很好，非常适合计算机基础学习&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;jian-li&quot;&gt;简历&lt;a class=&quot;zola-anchor&quot; href=&quot;#jian-li&quot; aria-label=&quot;Anchor link for: jian-li&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -1387,19 +1443,25 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;search-1&quot;&gt;Search&lt;a class=&quot;zola-anchor&quot; href=&quot;#search-1&quot; aria-label=&quot;Anchor link for: search-1&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;commoncrawl.org&#x2F;the-data&#x2F;get-started&#x2F;&quot;&gt;Common Crawl&lt;&#x2F;a&gt; - 全球网站抓取免费数据集，适用本地搜索引擎数据库&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;commoncrawl.org&#x2F;the-data&#x2F;get-started&#x2F;&quot;&gt;Common Crawl&lt;&#x2F;a&gt; -
+全球网站抓取免费数据集，适用本地搜索引擎数据库&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;indie-web&quot;&gt;Indie Web&lt;a class=&quot;zola-anchor&quot; href=&quot;#indie-web&quot; aria-label=&quot;Anchor link for: indie-web&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;brid.gy&#x2F;&quot;&gt;Bird.gy&lt;&#x2F;a&gt; - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention 推送给你。&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;brid.gy&#x2F;&quot;&gt;Bird.gy&lt;&#x2F;a&gt; - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention
+推送给你。&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;xn--sr8hvo.ws&#x2F;&quot;&gt;Indie Webring&lt;&#x2F;a&gt; - 独立网站的 Webring 服务&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;telegraph.p3k.io&#x2F;&quot;&gt;Telegraph&lt;&#x2F;a&gt; - Easily send Webmentions from your website&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webmention.io&#x2F;&quot;&gt;Webmention.io&lt;&#x2F;a&gt; - Webmention.io is a hosted service created to easily receive webmentions on any web page.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;telegraph.p3k.io&#x2F;&quot;&gt;Telegraph&lt;&#x2F;a&gt; - Easily send Webmentions from your
+website&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;webmention.io&#x2F;&quot;&gt;Webmention.io&lt;&#x2F;a&gt; - Webmention.io is a hosted service
+created to easily receive webmentions on any web page.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;fediring.net&#x2F;&quot;&gt;Fediring&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;system-os&quot;&gt;System OS&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-os&quot; aria-label=&quot;Anchor link for: system-os&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;guix.gnu.org&#x2F;&quot;&gt;Guix&lt;&#x2F;a&gt; - Guix comes with thousands of packages which include applications, system tools, documentation, fonts, and other digital goods readily available for installing with the GNU Guix package manager.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;guix.gnu.org&#x2F;&quot;&gt;Guix&lt;&#x2F;a&gt; - Guix comes with thousands of packages which
+include applications, system tools, documentation, fonts, and other digital
+goods readily available for installing with the GNU Guix package manager.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;myme.no&#x2F;posts&#x2F;2022-06-14-nixos-confederation.html&quot;&gt;NixOS 联盟&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -1409,7 +1471,8 @@ developers.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;bash&quot;&gt;Bash&lt;a class=&quot;zola-anchor&quot; href=&quot;#bash&quot; aria-label=&quot;Anchor link for: bash&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;zx&quot;&gt;zx&lt;&#x2F;a&gt; - A tool for writing better scripts, using Javascript&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;google&#x2F;zx&quot;&gt;zx&lt;&#x2F;a&gt; - A tool for writing better scripts, using
+Javascript&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;vim&quot;&gt;Vim&lt;a class=&quot;zola-anchor&quot; href=&quot;#vim&quot; aria-label=&quot;Anchor link for: vim&quot;&gt;🔗&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;ul&gt;

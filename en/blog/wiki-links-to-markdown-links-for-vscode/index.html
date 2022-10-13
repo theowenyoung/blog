@@ -15,7 +15,13 @@
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> 
     <meta name="description" content="
   
-    Recently, I migrated my Wiki to Zola. Zola does not support relative internal links, it only support @&#x2F;xxx.md internal link format. This is a bit painful, I posted a feature request to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use &#x2F;content&#x2F;xxx.md internal link format.
+    Recently, I migrated my Wiki to
+Zola. Zola does not support relative internal links,
+it only support @&#x2F;xxx.md internal link format. This is a bit painful, I posted
+a
+feature request
+to Zola. But for now, I will use my own edited version of Zola, this change will
+allow me to use &#x2F;content&#x2F;xxx.md internal link format.
 
   
 "/>
@@ -47,7 +53,13 @@
 "/>
     <meta property="og:description" content="
   
-    Recently, I migrated my Wiki to Zola. Zola does not support relative internal links, it only support @&#x2F;xxx.md internal link format. This is a bit painful, I posted a feature request to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use &#x2F;content&#x2F;xxx.md internal link format.
+    Recently, I migrated my Wiki to
+Zola. Zola does not support relative internal links,
+it only support @&#x2F;xxx.md internal link format. This is a bit painful, I posted
+a
+feature request
+to Zola. But for now, I will use my own edited version of Zola, this change will
+allow me to use &#x2F;content&#x2F;xxx.md internal link format.
 
   
 "/>
@@ -1056,18 +1068,43 @@ ul.text-sm:lang(en) {
 <div>
   <div class="main">
     <div class="display-none p-summary">
-      <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
+      <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links,
+it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted
+a
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a>
+to Zola. But for now, I will use my own edited version of Zola, this change will
+allow me to use <code>/content/xxx.md</code> internal link format.</p>
 
     </div>
     <a class="display-none u-url" href="https:&#x2F;&#x2F;www.owenyoung.com&#x2F;en&#x2F;blog&#x2F;wiki-links-to-markdown-links-for-vscode&#x2F;">Permanent Link</a>
     
     <div id="start"></div>
     <article class="e-content entry-content">
-      <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to <a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links, it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted a <a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a> to Zola. But for now, I will use my own edited version of Zola, this change will allow me to use <code>/content/xxx.md</code> internal link format.</p>
+      <p>Recently, I migrated my <a rel="noopener nofollow noreferrer" target="_blank" href="https://wiki.owenyoung.com">Wiki</a> to
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://www.getzola.org/">Zola</a>. Zola does not support relative internal links,
+it only support <code>@/xxx.md</code> internal link format. This is a bit painful, I posted
+a
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242/2">feature request</a>
+to Zola. But for now, I will use my own edited version of Zola, this change will
+allow me to use <code>/content/xxx.md</code> internal link format.</p>
 <span id="continue-reading"></span>
-<p>So, the second thing is to input absolute internal link quickly, <a rel="noopener nofollow noreferrer" target="_blank" href="https://obsidian.md/">Obsidian</a> does have a feature that allows you type wiki links, then they will be converted to markdown links. I like this feature, but when I tried <a rel="noopener nofollow noreferrer" target="_blank" href="https://obsidian.md/">Obsidian</a> seconds time, I still can’t use to it, and it’s also a bit slow compared to VSCode. <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/foambubble/foam">Foam</a> can only auto generate markdown reference link, but that feature not a one-time task, it sometimes makes mistakes, like add multiple <code>&quot;</code> at the end of reference zone. So, I decided to fork foam extension, and turn off the most features that I don’t need, only keep creating notes from template, and convert wiki links to markdown links.</p>
-<p><img src="https://i.imgur.com/sYmKeKO.gif" alt="Wiki Links to Markdown Links" /></p>
-<p>I’m so lucky, Foam’s code structure is very clean, so I just changed a little bit to achieve what I wanted. Here is my final result: <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/foam">Foam</a>, if you need this, I also publish it on <a rel="noopener nofollow noreferrer" target="_blank" href="https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode">VSCode marketplace</a>.</p>
+<p>So, the second thing is to input absolute internal link quickly,
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://obsidian.md/">Obsidian</a> does have a feature that allows you type wiki
+links, then they will be converted to markdown links. I like this feature, but
+when I tried <a rel="noopener nofollow noreferrer" target="_blank" href="https://obsidian.md/">Obsidian</a> seconds time, I still can’t use to
+it, and it’s also a bit slow compared to VSCode.
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/foambubble/foam">Foam</a> can only auto generate markdown
+reference link, but that feature not a one-time task, it sometimes makes
+mistakes, like add multiple <code>&quot;</code> at the end of reference zone. So, I decided to
+fork foam extension, and turn off the most features that I don’t need, only keep
+creating notes from template, and convert wiki links to markdown links.</p>
+<p><img src="https://www.owenyoung.com/en/blog/wiki-links-to-markdown-links-for-vscode/./foam-lite.gif" alt="Wiki Links to Markdown Links" /></p>
+<p>I’m so lucky, Foam’s code structure is very clean, so I just changed a little
+bit to achieve what I wanted. Here is my final result:
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/theowenyoung/foam">Foam</a>, if you need this, I also publish
+it on
+<a rel="noopener nofollow noreferrer" target="_blank" href="https://marketplace.visualstudio.com/items?itemName=theowenyoung.foam-lite-vscode">VSCode marketplace</a>.</p>
 
     </article>
       
@@ -1081,7 +1118,7 @@ ul.text-sm:lang(en) {
             
             
             
-              <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/wiki-links-to-markdown-links-for-vscode.en.md">&nbsp;📝 Edit this page</a>
+              <a class="muted" href="https://github.com/theowenyoung/blog/edit/main/content/blog/wiki-links-to-markdown-links-for-vscode/index.en.md">&nbsp;📝 Edit this page</a>
             
         <div class="py">
           <div class="inline-block p-tags">
