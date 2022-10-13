@@ -51,6 +51,7 @@ jobs:
         uses: johnwbyrd/update-release@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          release: book
           files: |
             ./owen-blog-dist/owen-blog.pdf
             ./owen-blog-dist/owen-blog-html.zip
@@ -65,4 +66,12 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: book # e.g. 'my-project'
           directory: ./owen-blog-dist # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish Archive
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: archive-book # e.g. 'my-project'
+          directory: ./book-dist/owen-blog-archive/book/html # e.g. 'dist'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
