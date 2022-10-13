@@ -354,5 +354,27 @@
     "in-reply-to": "https://www.owenyoung.com/blog/new-buzzing/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1536625": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1580124451546746880",
+    "published": "2022-10-12T09:13:21+00:00",
+    "wm-received": "2022-10-12T11:19:55Z",
+    "wm-id": 1536625,
+    "wm-source": "https://brid.gy/comment/twitter/as790726/1580122329744830464/1580124451546746880",
+    "wm-target": "https://www.owenyoung.com/blog/new-buzzing/#youtube-shi-pin-de-lan-jia-zai",
+    "content": {
+      "html": "我在 <a href=\"http://videos.buzzing.cc\">videos.buzzing.cc</a> 用了类似的办法，但是没有用js，利用iframe的srcdoc属性，只加载一个预览图片，点击的时候才载入整个embed网页，具体代码：  <a href=\"https://www.owenyoung.com/blog/new-buzzing/#youtube-shi-pin-de-lan-jia-zai\">owenyoung.com/blog/new-buzzi…</a>\n<a class=\"u-mention\" href=\"http://jason-memo.dev/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/as790726\"></a>",
+      "text": "我在 videos.buzzing.cc 用了类似的办法，但是没有用js，利用iframe的srcdoc属性，只加载一个预览图片，点击的时候才载入整个embed网页，具体代码：  owenyoung.com/blog/new-buzzi…"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/new-buzzing/#youtube-shi-pin-de-lan-jia-zai",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }
