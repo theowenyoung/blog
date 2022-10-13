@@ -98,99 +98,99 @@ async function main() {
   }
 
   const books: Record<string, Book> = {
-    // "owen-blog": {
-    //   tags: ["Random Book"],
-    //   chapters: [],
-    //   introduction: {
-    //     title: "简介",
-    //     path: "README.md",
-    //   },
-    //   summary: [
-    //     {
-    //       title: "随笔",
-    //       path: "random-intro.md",
-    //       rules: [
-    //         {
-    //           condition: "contains",
-    //           key: "category",
-    //           value: "Random",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "短想法",
-    //       path: "thoughts.md",
-    //     },
-    //     {
-    //       title: "笔记",
-    //       path: "notes-intro.md",
-    //       rules: [
-    //         {
-    //           condition: "contains",
-    //           key: "category",
-    //           value: "Notes",
-    //         },
-    //         {
-    //           condition: "notContains",
-    //           key: "relativePath",
-    //           value: "content/thoughts.md",
-    //         },
-    //         {
-    //           condition: "notContains",
-    //           key: "relativePath",
-    //           value: "content/pages/now.md",
-    //         },
-    //         {
-    //           condition: "notContains",
-    //           key: "relativePath",
-    //           value: "content/pages/about.md",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "读书笔记",
-    //       path: "books-intro.md",
-    //       rules: [
-    //         {
-    //           condition: "contains",
-    //           key: "category",
-    //           value: "Books",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "文章笔记",
-    //       path: "articles-intro.md",
-    //       rules: [
-    //         {
-    //           condition: "contains",
-    //           key: "category",
-    //           value: "Articles",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "关于我",
-    //       path: "pages/about.md",
-    //       subSections: [
-    //         {
-    //           title: "现在",
-    //           path: "pages/now.md",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   config: {
-    //     book: {
-    //       "title": "Owen博客精选",
-    //       "description": "Owen的博客电子书版",
-    //       "src": "content",
-    //       "language": "zh",
-    //       "authors": ["Owen Young"],
-    //     },
-    //     output: outputOptions,
-    //   },
-    // },
+    "owen-blog": {
+      tags: ["Random Book"],
+      chapters: [],
+      introduction: {
+        title: "简介",
+        path: "README.md",
+      },
+      summary: [
+        {
+          title: "随笔",
+          path: "random-intro.md",
+          rules: [
+            {
+              condition: "contains",
+              key: "category",
+              value: "Random",
+            },
+          ],
+        },
+        {
+          title: "短想法",
+          path: "thoughts.md",
+        },
+        {
+          title: "笔记",
+          path: "notes-intro.md",
+          rules: [
+            {
+              condition: "contains",
+              key: "category",
+              value: "Notes",
+            },
+            {
+              condition: "notContains",
+              key: "relativePath",
+              value: "content/thoughts.md",
+            },
+            {
+              condition: "notContains",
+              key: "relativePath",
+              value: "content/pages/now.md",
+            },
+            {
+              condition: "notContains",
+              key: "relativePath",
+              value: "content/pages/about.md",
+            },
+          ],
+        },
+        {
+          title: "读书笔记",
+          path: "books-intro.md",
+          rules: [
+            {
+              condition: "contains",
+              key: "category",
+              value: "Books",
+            },
+          ],
+        },
+        {
+          title: "文章笔记",
+          path: "articles-intro.md",
+          rules: [
+            {
+              condition: "contains",
+              key: "category",
+              value: "Articles",
+            },
+          ],
+        },
+        {
+          title: "关于我",
+          path: "pages/about.md",
+          subSections: [
+            {
+              title: "现在",
+              path: "pages/now.md",
+            },
+          ],
+        },
+      ],
+      config: {
+        book: {
+          "title": "Owen博客精选",
+          "description": "Owen的博客电子书版",
+          "src": "content",
+          "language": "zh",
+          "authors": ["Owen Young"],
+        },
+        output: outputOptions,
+      },
+    },
     "owen-blog-archive": {
       tags: [],
       chapters: [],
