@@ -17,4 +17,10 @@ make installbook
 make buildbook
 ```
 
+## Preview
+
+```bash
+make servebook
+```
+
 Then the book will be generated on `book-dist/random/epub/xxx.epub`

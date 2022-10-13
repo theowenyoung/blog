@@ -26,13 +26,7 @@ jobs:
           projectName: owen # e.g. 'my-project'
           directory: ./public # e.g. 'dist'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-  scrape-and-build-search-index:
-    needs: build-deploy
-    concurrency: search-index
-    runs-on: ubuntu-latest
-    steps:
-      # wait github pages publish
-      - run: sleep 1m
+      - run: sleep 30
       - uses: actions/checkout@v3
       - name: Run docs-scraper
         env:

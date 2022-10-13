@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-10-02
+updated: 2022-10-14
 taxonomies:
   categories:
     - Notes
@@ -368,3 +368,7 @@ X as a Y services.
 
 - [Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai
   从谷歌成千上万本书里给出最相关的答案。
+
+## 图书封面
+
+- [o'rly 封面在线生成](https://orly.nanmu.me/)

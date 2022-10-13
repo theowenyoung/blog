@@ -1,7 +1,5 @@
 ---
 title: Sidebar
-date: 2021-03-29
-updated: 2022-06-04
 ---
 
 ## Impornant Links
