@@ -472,6 +472,42 @@ async function main() {
         await Deno.copyFile(asset.path, assetDistPath);
       }
     }
+
+    // add summary sections to section file
+    for (const section of book.summary) {
+      if (section.subSections && section.subSections.length > 0) {
+        const sectionPath = path.join(
+          bookSourceFileDist,
+          bookConfig.book.src as string,
+          section.path,
+        );
+        let subSectionsMarkdown = "";
+
+        for (const subSection of section.subSections) {
+          subSectionsMarkdown +=
+            `- [${subSection.title}](${subSection.path})\n`;
+        }
+
+        let sectionContent = `# ${section.title}\n\n`;
+        try {
+          sectionContent = await Deno.readTextFile(sectionPath);
+        } catch (_e) {
+          // ignore
+        }
+        const newSectionContent = `${sectionContent}
+
+## 包含以下文章
+
+${subSectionsMarkdown}
+`;
+        await fs.ensureDir(path.dirname(sectionPath));
+        await Deno.writeTextFile(
+          sectionPath,
+          newSectionContent,
+        );
+      }
+    }
+
     // write book.toml
     const bookToml = stringify(
       book.config as unknown as Record<string, unknown>,
