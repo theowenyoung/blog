@@ -7,7 +7,7 @@ on:
 jobs:
   build-deploy:
     concurrency: build-book
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Set current date as env variable
         run: echo "NOW=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_ENV
