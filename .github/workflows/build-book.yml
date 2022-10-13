@@ -32,21 +32,32 @@ jobs:
       #       ./owen-blog-dist/*.epub
       #       ./owen-blog-dist/*.zip
 
-      - name: Upload assets
-        uses: "marvinpinto/action-automatic-releases@v1.2.1"
+      # - name: Upload assets
+      #   uses: "marvinpinto/action-automatic-releases@v1.2.1"
+      #   with:
+      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      #     automatic_release_tag: "book"
+      #     prerelease: true
+      #     draft: true
+      #     title: "Blog Book"
+      #     files: |
+      #       ./owen-blog-dist/*.pdf
+      #       ./owen-blog-dist/*.zip
+      #       ./owen-blog-dist/*.epub
+      #       ./owen-blog-archive-dist/*.zip
+      #       ./owen-blog-archive-dist/*.pdf
+      #       ./owen-blog-archive-dist/*.epub
+      - name: Update release
+        uses: johnwbyrd/update-release@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "book"
-          prerelease: true
-          draft: true
-          title: "Blog Book"
+          token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            ./owen-blog-dist/*.pdf
-            ./owen-blog-dist/*.zip
-            ./owen-blog-dist/*.epub
-            ./owen-blog-archive-dist/*.zip
-            ./owen-blog-archive-dist/*.pdf
-            ./owen-blog-archive-dist/*.epub
+            ./owen-blog-dist/owen-blog.pdf
+            ./owen-blog-dist/owen-blog-html.zip
+            ./owen-blog-dist/owen-blog.epub
+            ./owen-blog-archive-dist/owen-blog-archive-html.zip
+            ./owen-blog-archive-dist/owen-blog-archive.pdf
+            ./owen-blog-archive-dist/owen-blog-archive.epub
       - name: Publish
         uses: cloudflare/pages-action@1
         with:
