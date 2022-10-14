@@ -151,7 +151,15 @@ use-default-css = false
 enable = true
 ```
 
-可以在<https://orly.nanmu.me/>中生成一个 o'rly 风格的封面。
+可以在<https://orly.nanmu.me/>中生成一个 o'rly
+风格的封面。同时我并不想要搜索引擎收录电子书里的文章，所以我指定了`robots.txt`文件：
+
+```
+User-agent: *
+Allow: /$
+Allow: /robots.txt
+Disallow: /
+```
 
 dist构建完毕后，再使用Github Workflow把生成的东西上传到release的附件里，同时也把生成的html版本发布到Cloudflare
 的page里：
