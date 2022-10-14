@@ -151,6 +151,8 @@ use-default-css = false
 enable = true
 ```
 
+可以在<https://orly.nanmu.me/>中生成一个 o'rly 风格的封面。
+
 dist构建完毕后，再使用Github Workflow把生成的东西上传到release的附件里，同时也把生成的html版本发布到Cloudflare
 的page里：
 
