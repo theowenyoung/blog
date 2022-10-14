@@ -12,3 +12,5 @@
 - 源码: <https://github.com/theowenyoung/blog>
 
 或者在线阅读这本电子书： <https://book.owenyoung.com>
+
+另外我还打包了一本包含所有博文的电子书作为博客的存档：<https://archive.owenyoung.com/>

@@ -6,6 +6,7 @@ title: 侧边栏
 
 - [邮件订阅](https://digests.owenyoung.com/)
 - [RSS 订阅地址](/atom.xml)
+- [电子书版本](https://book.owenyoung.com)
 
 ## 导航
 
