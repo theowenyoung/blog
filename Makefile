@@ -1,7 +1,7 @@
 .Phon: serve build test webmention send dev-webmention win
 
 serve:
-	./bin/zola serve -p 8000
+	./bin/zola serve -p 8000 --drafts
 
 build:
 	./bin/zola build

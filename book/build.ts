@@ -182,8 +182,8 @@ async function main() {
       ],
       config: {
         book: {
-          "title": "Owen博客精选",
-          "description": "Owen的博客电子书版",
+          "title": "Owen博客节选",
+          "description": "Owen的博客节选电子书版",
           "src": "content",
           "language": "zh",
           "authors": ["Owen Young"],
@@ -201,7 +201,7 @@ async function main() {
       summary: [],
       config: {
         book: {
-          "title": "Owen博客存档",
+          "title": "Owen的博客存档",
           "description": "Owen的博客存档电子书版",
           "src": "content",
           "language": "zh",

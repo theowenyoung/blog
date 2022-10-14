@@ -4,7 +4,7 @@
 部分内容的节选,这本电子书的内容会随着博客的更新实时打包，如果感兴趣我如何制作这本电子书，请查看
 <https://www.owenyoung.com/blog/blog-to-book/>
 
-你也可以下载这本电子书的以下版本：
+你也可以下载这本电子书的其他版本：
 
 - epub版本: <https://book.owenyoung.com/owen-blog.epub>
 - pdf版本: <https://book.owenyoung.com/owen-blog.pdf>

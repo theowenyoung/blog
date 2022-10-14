@@ -1,6 +1,6 @@
 这是我的博客存档 <https://www.owenyoung.com/archive/> 的电子书版,包含我所有的博文，文章按年份归类，倒序。
 
-你也可以下载这本电子书的以下版本：
+你也可以下载这本电子书的其他版本：
 
 - epub版本：
   <https://github.com/theowenyoung/blog/releases/download/book/owen-blog-archive.epub>
