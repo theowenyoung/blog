@@ -52,7 +52,6 @@ taxonomies:
 - [你们国家有什么奇怪的传统？](https://www.reddit.com/r/TellMeAFact/comments/emukdw/tmaf_about_weird_traditions_in_your_country/)
 
 ## 预测
-
 - [Ask HN: 新的十年，有什么预测？2020 版](https://news.ycombinator.com/item?id=21941278)
 
 ## 生产力
