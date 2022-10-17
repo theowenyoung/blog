@@ -140,6 +140,8 @@ html {
   --colors-background: #fffef8;
   --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-quote-background: rgb(247, 249, 249);
+  /* --colors-quote-background: #f6f8fa; */
+  --colors-quote-hover-background: #efefef;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
@@ -157,6 +159,7 @@ html {
         --colors-text: rgb(236, 237, 238);
         --colors-code-background: rgba(0, 0, 0, 0.08);
         --colors-quote-background: hsl(226, 15%, 17%);
+        --colors-quote-hover-background: hsl(226, 15%,20%);
     }
 }
 body {
@@ -219,7 +222,7 @@ h6 {
   padding-right: 1rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  background: white;
+  background: var(--colors-quote-background);
 }
 
 .tweet-box .overlay {
@@ -230,7 +233,7 @@ h6 {
   right: 0;
 }
 .tweet-box .overlay:hover {
-  background-color: #efefef;
+  background-color: var(--colors-quote-hover-background);
 }
 .tweet-box .inner {
   position: relative;
@@ -298,8 +301,7 @@ article {
   margin-bottom: 4rem;
 }
 pre {
-  color: rgb(57, 58, 52);
-  background-color: rgb(246, 248, 250);
+  background-color: var(--colors-quote-background);
   margin-top: 0px;
   margin-bottom: 1rem;
   padding: 1.5rem 1rem;
@@ -363,7 +365,7 @@ blockquote {
   background-color:var(--colors-quote-background);
   /* background-color: #efefef; */
   /* background-color: hsl(60, 9%, 87%); */
-  padding:1.4rem 1rem 0rem 1rem;
+  padding:1.4rem 1.4rem 0rem 1.4rem;
   border-top: 1px solid var(--colors-divider);
   box-sizing: border-box;
   overflow: auto;
