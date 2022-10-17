@@ -139,6 +139,7 @@ html {
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-background: #fffef8;
   --colors-code-background: rgba(0, 0, 0, 0.08);
+  --colors-quote-background: rgb(247, 249, 249);
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
@@ -149,22 +150,21 @@ html {
     "Segoe UI Emoji", "Segoe UI Symbol", Palatino, sans-serif;
 }
 
+/* Adds dark mode */
+@media (prefers-color-scheme: dark) {
+    html {
+        --colors-background: #202124;
+        --colors-text: rgb(236, 237, 238);
+        --colors-code-background: rgba(0, 0, 0, 0.08);
+        --colors-quote-background: hsl(226, 15%, 17%);
+    }
+}
 body {
   color: var(--colors-text);
   background-color: var(--colors-background);
 }
 
 
-/* Adds dark mode */
-@media (prefers-color-scheme: dark) {
-    html {
-        --colors-background: #202124;
-        --colors-text: rgb(236, 237, 238);
-    }
-    body {
-      background-color: var(--colors-background);
-    }
-}
 
 #root {
   /* margin-left: auto; */
@@ -360,11 +360,11 @@ blockquote {
   margin: 2rem 0;
   position: relative;
   border-radius: 4px;
-  background-color:rgb(247, 249, 249);
+  background-color:var(--colors-quote-background);
   /* background-color: #efefef; */
   /* background-color: hsl(60, 9%, 87%); */
   padding:1.4rem 1rem 0rem 1rem;
-  border-top: 1px solid hsl(197, 37%, 91%);
+  border-top: 1px solid var(--colors-divider);
   box-sizing: border-box;
   overflow: auto;
 }
