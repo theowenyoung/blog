@@ -1,16 +1,6 @@
 {% extends "base.html" -%}
 {% block post_meta -%}
 <meta name="title" content="{{ page.title }}">
-  <style>
-    .sidebar {
-      display: none;
-    }
-    @media(min-width: 67.5rem) {
-      .sidebar {
-        display: block;
-      }
-    }
-  </style>
 {% endblock post_meta -%}
 {% block title %}
   {{ page.title }} - {{ config.title }}
@@ -45,20 +35,11 @@
     {{ page.extra.image }}
   {% endif %}
 {% endblock ogimg %}
-{% block main %}
-<div class="h-entry hentry detail-page">
+{% block header %}
   {% block detail_meta -%}
   <header class="header" id="overview">
-    <div class="">
-      <span>&gt;&gt;</span>
-      <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
-      {% if page.taxonomies %}
-        <span class="divider">/</span>
-        <a rel="category tag" class="p-category category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{ page.taxonomies.categories[0] }}</a>
-      {% endif %}
-    </div>
     <div>
-      <h1 class="no-border p-name entry-title" >{{ page.title }}</h1>
+      <h1 class="no-border pt0 p-name entry-title" >{{ page.title }}</h1>
       <div class="display-none p-author h-card vcard">
         <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
         <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
@@ -68,14 +49,17 @@
     {% block detail_meta_slot %}{% endblock detail_meta_slot %}
   </header>
 {% endblock detail_meta -%}
-<div>
-  <div class="main">
+{% endblock header %}
+{% block main %}
+<div class="h-entry hentry detail-page">
+<div class="page-body">
+  <div>
     <div class="display-none p-summary">
       {{ page.summary | safe }}
     </div>
     <a class="display-none u-url" href="{{ current_url }}">Permanent Link</a>
     {% if page.toc %}
-      <div class="main-toc pt">
+      <div class="main-toc pb">
         <details>
           <summary>{{ trans(key="label_table_contents",lang=lang) }}</summary>
           {{ macro::page_toc(toc=page.toc) }}
@@ -87,45 +71,53 @@
       {{ page.content | safe }}
     </article>
       {% if page.date %}
-        <div class="py muted">
-          <div>
-            {% set page_date = page.date | date(format="%Y.%m.%d") %}
-            {% set page_updated = page.updated | date(format="%Y.%m.%d") %}
-            {% if page.date %}
-              {{ trans(key="label_created",lang=lang) }}:
-              <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
+        <div class="muted">
+          <div class="pb">
+            {% if page.taxonomies and page.taxonomies.categories %}
+            <span>{{ trans(key="label_category",lang=lang) }}</span>: <a rel="category tag" class="p-category category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0],lang=lang) }}">{{ page.taxonomies.categories[0] }}</a>&nbsp;
             {% endif %}
-            {% if page.updated and page_date != page_updated %}
-              · {{ trans(key="label_updated",lang=lang) }}:
-              <time class="dt-updated updated" datetime="{{ page.updated }}">{{ page.updated | date(format="%Y.%m.%d") }}</time>
-            {% endif %}
-            {% if config.extra.edit_url_prefix %}
-              <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">&nbsp;📝 {{ trans(key="label_edit",lang=lang) }}</a>
-            {% endif %}
-        {% if page.taxonomies.tags -%}
-        <div class="py">
-          <div class="inline-block p-tags">
-            {% for tag in page.taxonomies.tags %}
-              <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">#{{ tag }}</a>
-              {% if page.taxonomies.tags | length > 1 %}
-                {% if
-      loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}
-              {% endif %}
-            {% endfor %}
           </div>
-        </div>
-        {% endif %}
-        </div>
-        </div>
+          {% if page.taxonomies.tags %}
+            <div class="inline-block p-tags pb">
+              {% if  page.taxonomies.tags | length > 0 %}
+              <span>{{ trans(key="label_tags",lang=lang) }}</span>:&nbsp;
+              {% endif %}
+              {% for tag in page.taxonomies.tags %}
+                <a class="p-tag" href="{{ get_taxonomy_url(kind="tags", name=tag,lang=lang) }}">{{ tag }}</a>
+                {% if page.taxonomies.tags | length > 1 %}
+                  {% if
+        loop.index != page.taxonomies.tags | length %},&nbsp;{% endif %}
+                {% endif %}
+              {% endfor %}
+              </div>
+          {% endif %}
+            <div class="pb">
+              {% set page_date = page.date | date(format="%Y.%m.%d") %}
+              {% set page_updated = page.updated | date(format="%Y.%m.%d") %}
+              {% if page.date %}
+                {{ trans(key="label_created",lang=lang) }}:&nbsp;
+                <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
+              {% endif %}
+              {% if page.updated and page_date != page_updated %}
+                · {{ trans(key="label_updated",lang=lang) }}:&nbsp;
+                <time class="dt-updated updated" datetime="{{ page.updated }}">{{ page.updated | date(format="%Y.%m.%d") }}</time>
+              {% endif %}
+              {% if config.extra.edit_url_prefix %}
+                <a class="muted" href="{{ config.extra.edit_url_prefix~page.relative_path }}">&nbsp;📝 {{ trans(key="label_edit",lang=lang) }}</a>
+              {% endif %}
+            </div>
+          </div>
       {% endif %}
       {{ macro::backlink(pages=page.backlinks) }}
       {{ macro::webmentions(backlinks=page.backlinks) }}
-    </div>
   </div>
-</div>{% endblock main %}{% block sidebar %}
+</div>
+{% endblock main %}
+{% block sidebar %}
 <aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
-  {% if page.toc %}
-    <h2>{{ trans(key="label_table_contents",lang=lang) }}</h2>
-    {{ macro::page_toc(toc=page.toc) }}
-  {% endif %}
-</aside>{% endblock sidebar %}
+    {% if page.toc %}
+      <h2 class="pt0">{{ trans(key="label_table_contents",lang=lang) }}</h2>
+      {{ macro::page_toc(toc=page.toc) }}
+    {% endif %}
+  </aside>
+{% endblock sidebar %}

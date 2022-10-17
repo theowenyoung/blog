@@ -17,6 +17,20 @@
 {% block ogurl %}
   {{ current_url }}
 {% endblock ogurl %}
+{% block header %}
+      <header id="overview" class="pt">
+        <div class="">
+          <span>&gt;&gt;</span>
+          <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
+          {% if section.title -%}
+            <span class="divider">
+              /
+            </span>
+            {{ section.title }}
+          {% endif -%}
+        </div>
+      </header>
+{% endblock header %}
 {% block main -%}
 {% set_global file_lang_path = "" %}
 {% if config.default_language != lang %}
@@ -33,18 +47,6 @@ lang %}
         <div class="p-name site-title">{{ config.title }}</div>
         <p class="p-summary site-description">{{ config.description }}</p>
       </div>
-      <header id="overview">
-        <div class="">
-          <span>&gt;&gt;</span>
-          <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
-          {% if section.title -%}
-            <span class="divider">
-              /
-            </span>
-            {{ section.title }}
-          {% endif -%}
-        </div>
-      </header>
       {% if paginator %}
         {% for page in paginator.pages %}
           {{ macro::post_max(page=page,index=loop.index) }}

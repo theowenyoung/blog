@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
     {% endif %}
   {% endblock before_meta %}
-  {% block main -%}
-  <div class="search-page">
-    <section>
+  {% block header %}
+      <section>
       <h1>{{ page.title }}</h1>
       <div>
         {{ page.content | safe }}
       </div>
     </section>
+  {% endblock header %}
+  {% block main -%}
+  <div class="search-page">
     <section>
       <h2>
         Search with
@@ -102,3 +104,6 @@
     </script>
   {% endif %}
 {% endblock before_body_end %}
+
+{% block sidebar %}
+{% endblock sidebar %}

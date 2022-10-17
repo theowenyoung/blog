@@ -3,12 +3,14 @@
 {% endblock title %}
 {% block ogtitle %}All {{ taxonomy.name }} - {{ config.title }}
 {% endblock ogtitle %}
+{% block header %}
+    <div class="page-header">
+      <h1>All {{ taxonomy.name }}</h1>
+    </div>
+{% endblock header %}
 {% block main %}
   <div class="taxonomy-list-page">
     <div class="main-box-block">
-      <div class="page-header">
-        <h1>All {{ taxonomy.name }}</h1>
-      </div>
       <ul class="root-ul">
         {% for category in terms %}
           <li>

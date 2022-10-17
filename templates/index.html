@@ -18,23 +18,15 @@
 {% endblock post_meta %}
 
 {% block sidebar_top %}{% endblock sidebar_top %}
-{% block main -%}
+{% block header %}
   {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
   {% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse -%}
   {% set total_word_count = 0 -%}
   {% for page_item in all_section_pages.pages -%}
     {% set_global total_word_count = total_word_count+page_item.word_count -%}
   {% endfor -%}
-  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
-  {% set_global note_pages = [] -%}
-  {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
-  {% for cat in all_categories.items -%}
-    {% if cat.name == "Notes" -%}
-      {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
-    {% endif -%}
-  {% endfor -%}
-  <div class="index-page">
-      <div>
+      <div class="header">
+        <div class="header-inner">
         {% if config.default_language != lang %}
           <p>I'm Owen Young, I've written
             <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
@@ -53,8 +45,20 @@
             <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
           </p>
         {% endif %}
+        <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+        </div>
       </div>
-      <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+{% endblock%}
+{% block main -%}
+  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+  {% set_global note_pages = [] -%}
+  {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+  {% for cat in all_categories.items -%}
+    {% if cat.name == "Notes" -%}
+      {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+    {% endif -%}
+  {% endfor -%}
+  <div class="index-page">
       <details open class="py">
       <summary class="text-lg">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
         <a href="#latest" id="latest" class="zola-anchor">🔗</a>

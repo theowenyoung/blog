@@ -7,7 +7,7 @@ taxonomies:
   categories:
     - Random
   tags:
-    -
+    - Project
 ---
 
 <!-- more -->
