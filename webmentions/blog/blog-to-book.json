@@ -221,5 +221,27 @@
     "in-reply-to": "https://www.owenyoung.com/blog/blog-to-book/",
     "wm-property": "in-reply-to",
     "wm-private": false
+  },
+  "1539775": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "jiakai",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/178ad43e8d3b23f5739792a5c4059ae1855642f4f6add9ba3682b85f86c2f0a7.jpg",
+      "url": "https://twitter.com/real_jiakai"
+    },
+    "url": "https://twitter.com/real_jiakai/status/1581561895672086528",
+    "published": "2022-10-16T08:25:14+00:00",
+    "wm-received": "2022-10-16T09:09:05Z",
+    "wm-id": 1539775,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1580875178506010624/1581561895672086528",
+    "wm-target": "https://www.owenyoung.com/blog/blog-to-book/",
+    "content": {
+      "html": "其实，你的博客已经在<a href=\"http://archive.org\">archive.org</a>互联网档案馆有存档页面了。只有当github、互联网档案馆、其余类似vercel的服务全寄了，那才真的是个人网站在这个世界消失。\n\n将博客变成电子书是一个不错的想法，值得学习。\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/blog/blog-to-book/\"></a>",
+      "text": "其实，你的博客已经在archive.org互联网档案馆有存档页面了。只有当github、互联网档案馆、其余类似vercel的服务全寄了，那才真的是个人网站在这个世界消失。\n\n将博客变成电子书是一个不错的想法，值得学习。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/blog-to-book/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
   }
 }

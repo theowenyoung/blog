@@ -1,0 +1,24 @@
+{
+  "1539785": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Harold Wu",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/7413ddfbb812be85972fb1d5cce27ee80a0a67272b80a08b08581ec3cc3172a7.jpg",
+      "url": "https://twitter.com/yfw3u"
+    },
+    "url": "https://twitter.com/yfw3u/status/1581583014139637761",
+    "published": "2022-10-16T09:49:09+00:00",
+    "wm-received": "2022-10-16T09:49:46Z",
+    "wm-id": 1539785,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1581583014139637761",
+    "wm-target": "https://www.owenyoung.com/about/",
+    "content": {
+      "html": "很有趣啊 這個人\n<a href=\"https://www.owenyoung.com/about/\">owenyoung.com/about/</a>",
+      "text": "很有趣啊 這個人\nowenyoung.com/about/"
+    },
+    "mention-of": "https://www.owenyoung.com/about/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
