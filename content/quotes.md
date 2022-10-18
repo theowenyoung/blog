@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2022-10-16
+updated: 2022-10-18
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,11 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 《CNN》駐亞洲記者王詩琳（Selina
+> Wang）用3句话总结中共二十大：“習近平的地位凌駕於共產黨，黨的地位又在中國之上，而中國又稱霸於世界”。原文：“Xi sits on top of the
+> party, the party sits on top of China, and China sits on top of the world.”
+> 见[tweet](https://twitter.com/selinawangtv/status/1581499918237466626)
 
 > “就连那些沦落到像马一样工作的人似乎也没有意识到自己的痛苦。特别像畜群的民族，”他写道，“他们往往更像机器人，而不像人。” --
 > 爱因斯坦1922年的日记中评价当时的中国人

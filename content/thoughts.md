@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2022-10-16
+updated: 2022-10-18
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 普通人都那么难被说服，何况是Elon Musk -- 2022.10.18
 
 > 一开始就优先把线上持续部署弄好对于自由职业开发者太重要了，不然开发了好久再弄上线的东西，就会效率很低，不想干。 -- 2022.10.16
 
