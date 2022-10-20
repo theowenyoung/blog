@@ -26,56 +26,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    {% block social_meta %} 
-      {% if page.title %}
-        {% set_global title = page.title %}
-      {% elif term.name %}
-        {% set titled_type_name = taxonomy.name | title %}
-        {% set_global title = titled_type_name ~ " | " ~ term.name  %}
-      {% elif taxonomy.name  %}
-        {% set_global title = taxonomy.name | title %}
-      {% elif section.title %}
-        {% set_global title = section.title %}
-      {% endif %}
-      {% if title %}
-        {% set_global full_title = title ~ " - " ~ config.title %}
-      {% elif is_index == true %}
-        {% set_global title = config.title %}
-        {% set_global full_title = config.title %}
-      {% endif %}
-      {% if page.description %}
-        {% set_global description =  page.description %}
-      {% elif page.summary %}
-        {% set_global description =  page.summary | spaceless | striptags %}
-      {% elif page.content %}
-        {% set_global description = page.content | spaceless | striptags | truncate(length=200) %}
-      {% elif is_index %}
-        {% set_global description = config.description %}
-      {% elif section.content %}
-        {% set_global description = section.content | spaceless | striptags | truncate(length=200) %}
-      {% else %}
-        {% set_global description = config.description %}
-      {% endif %}
+    {%- block social_meta -%} 
+      {%- if page.title -%}
+        {%- set_global title = page.title -%}
+      {%- elif term.name -%}
+        {%- set titled_type_name = taxonomy.name | title -%}
+        {%- set_global title = titled_type_name ~ " | " ~ term.name  -%}
+      {%- elif taxonomy.name  -%}
+        {%- set_global title = taxonomy.name | title -%}
+      {%- elif section.title -%}
+        {%- set_global title = section.title -%}
+      {%- endif -%}
+      {%- if title -%}
+        {%- set_global full_title = title ~ " - " ~ config.title -%}
+      {%- elif is_index == true -%}
+        {%- set_global title = config.title -%}
+        {%- set_global full_title = config.title -%}
+      {%- endif -%}
+      {%- if page.description -%}
+        {%- set_global description =  page.description -%}
+      {%- elif page.summary -%}
+        {%- set_global description =  page.summary | spaceless | striptags -%}
+      {%- elif page.content -%}
+        {%- set_global description = page.content | spaceless | striptags | truncate(length=200) -%}
+      {%- elif is_index -%}
+        {%- set_global description = config.description -%}
+      {%- elif section.content -%}
+        {%- set_global description = section.content | spaceless | striptags | truncate(length=200) -%}
+      {%- else -%}
+        {%- set_global description = config.description -%}
+      {%- endif -%}
       <title>{{full_title}}</title>
       <meta property="og:title" content="{{title}}"/>
       <meta itemprop="headline" content="{{title}}"/>
       <meta property="og:description" content="{{description}}"/>
       <meta name="description" content="{{description}}"/>
-      <meta property="og:url" content="{{current_url}}"/>
-      {% if page and page.extra and page.extra.image %}
-        <meta name="og:type" content="summary_large_image"/>
-        <meta property="twitter:card" content="summary_large_image"/>
-        <meta property="og:image" content="{{ page.extra.image | safe }}"/>
-        <meta property="og:image:alt" content="{{ title }}"/>
-      {% elif is_index and config.extra.image %}
-        <meta name="og:type" content="summary_large_image"/>
-        <meta property="twitter:card" content="summary_large_image"/>
-        <meta property="og:image" content="{{ config.extra.image | safe }}"/>
-        <meta property="og:image:alt" content="{{ title }}"/>
-      {% else %}
-        <meta name="og:type" content="summary"/>
-      {% endif %}
-    {% endblock social_meta %}
+    <meta property="og:url" content="{{current_url | safe}}"/>
+      {%- if page and page.extra and page.extra.image -%}
+      <meta name="og:type" content="summary_large_image"/>
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="og:image" content="{{ page.extra.image | safe }}"/>
+      <meta property="og:image:alt" content="{{ title }}"/>
+      {%- elif is_index and config.extra.image -%}
+      <meta name="og:type" content="summary_large_image"/>
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="og:image" content="{{ config.extra.image | safe }}"/>
+      <meta property="og:image:alt" content="{{ title }}"/>
+      {%- else -%}
+      <meta name="og:type" content="summary"/>
+      {%- endif -%}
+    {%- endblock social_meta -%}
     {%- if config.mode!="build" -%}
       <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
       {%- if lang == 'zh' -%}

@@ -4,23 +4,22 @@
 {% endblock post_meta -%}
 {% block header %}
   {% block detail_meta -%}
-  <header class="header" id="overview">
-    <div>
-      <h1 class="no-border pt0 p-name entry-title" >{{ page.title }}</h1>
-      <div class="display-none p-author h-card vcard">
-        <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
-        <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
-        <p class="p-note">{{ config.extra.bio }}</p>
+    <header class="header" id="overview">
+      <div>
+        <h1 class="no-border pt0 p-name entry-title" >{{ page.title }}</h1>
+        <div class="display-none p-author h-card vcard">
+          <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
+          <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
+          <p class="p-note">{{ config.extra.bio }}</p>
+        </div>
       </div>
-    </div>
-    {% block detail_meta_slot %}{% endblock detail_meta_slot %}
-  </header>
-{% endblock detail_meta -%}
+      {% block detail_meta_slot %}{% endblock detail_meta_slot %}
+    </header>
+  {% endblock detail_meta -%}
 {% endblock header %}
 {% block main %}
 <div class="h-entry hentry detail-page">
 <div class="page-body">
-  <div>
     <div class="display-none p-summary">
       {{ page.summary | safe }}
     </div>
@@ -81,7 +80,7 @@
 </div>
 {% endblock main %}
 {% block sidebar %}
-<aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
+  <aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
     {% if page.toc %}
       <h2 class="pt0">{{ trans(key="label_table_contents",lang=lang) }}</h2>
       {{ macro::page_toc(toc=page.toc) }}
