@@ -9,8 +9,6 @@ taxonomies:
   tags:
     - Vim
     - Random Book
-extra:
-  image: https://www.owenyoung.com/blog/vimium/help.png
 ---
 
 我发现互联网上真正改善生产力的东西总是开源和免费的，反而小众的东西，要么体验欠佳，要么是需要付费。就像阿莫西林胶囊对比“天价“救命药一样，因为更多人需要，所以总有更多人进入这一领域生产出更好用的东西。
@@ -39,7 +37,7 @@ Vim 的核心理念是模态编辑，它认为我们在使用代码编辑器的�
 
 下面这个是 Vimium 的默认键位配置：
 
-![vimium keysmap](./help.png)
+![vimium keysmap](./1-help.png)
 
 其中我最常用的键位是：
 

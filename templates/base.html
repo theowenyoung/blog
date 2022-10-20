@@ -56,21 +56,28 @@
       {%- else -%}
         {%- set_global description = config.description -%}
       {%- endif -%}
-      <title>{{full_title}}</title>
+      {%- if page.extra.image -%}
+        {%- set_global image = page.extra.image -%}
+      {%- elif is_index and config.extra.image -%}
+        {%- set_global image = config.extra.image -%}
+      {%- elif page.assets -%}
+        {%- for asset in page.assets -%}
+          {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
+              {%- set_global image=get_url(path=asset) -%} 
+              {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    <title>{{full_title}}</title>
       <meta property="og:title" content="{{title}}"/>
       <meta itemprop="headline" content="{{title}}"/>
       <meta property="og:description" content="{{description}}"/>
       <meta name="description" content="{{description}}"/>
     <meta property="og:url" content="{{current_url | safe}}"/>
-      {%- if page and page.extra and page.extra.image -%}
+      {%- if image -%}
       <meta name="og:type" content="summary_large_image"/>
       <meta property="twitter:card" content="summary_large_image"/>
-      <meta property="og:image" content="{{ page.extra.image | safe }}"/>
-      <meta property="og:image:alt" content="{{ title }}"/>
-      {%- elif is_index and config.extra.image -%}
-      <meta name="og:type" content="summary_large_image"/>
-      <meta property="twitter:card" content="summary_large_image"/>
-      <meta property="og:image" content="{{ config.extra.image | safe }}"/>
+      <meta property="og:image" content="{{ image }}"/>
       <meta property="og:image:alt" content="{{ title }}"/>
       {%- else -%}
       <meta name="og:type" content="summary"/>

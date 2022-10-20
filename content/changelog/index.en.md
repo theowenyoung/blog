@@ -14,6 +14,10 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2022.10.20 og:img use asset image
+
+use asset image as the default og:img
+
 ## 2022.10.10 Blockquote ui
 
 from `|` to `"`

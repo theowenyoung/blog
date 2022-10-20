@@ -8,8 +8,6 @@ taxonomies:
     - Random
   tags:
     - Buzzing
-extra:
-  image: https://www.owenyoung.com/blog/new-buzzing/hn.png
 ---
 
 在最近两周里，我用 [Deno](https://deno.land/)
