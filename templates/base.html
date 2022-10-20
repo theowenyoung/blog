@@ -61,7 +61,7 @@
       {%- elif is_index and config.extra.image -%}
         {%- set_global image = config.extra.image -%}
       {%- elif page.assets -%}
-        {%- for asset in page.assets -%}
+        {%- for asset in page.assets | sort -%}
           {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
               {%- set_global image=get_url(path=asset) -%} 
               {%- break -%}
