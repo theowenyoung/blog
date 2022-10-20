@@ -1,0 +1,24 @@
+{
+  "1542257": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1583089729255272448",
+    "published": "2022-10-20T13:36:18+00:00",
+    "wm-received": "2022-10-20T13:56:24Z",
+    "wm-id": 1542257,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1583089729255272448",
+    "wm-target": "https://www.owenyoung.com/blog/vimium/",
+    "content": {
+      "html": "我发现我比想象中更需要浏览器中的 Vim 模式： <a href=\"https://www.owenyoung.com/blog/vimium/\">owenyoung.com/blog/vimium/</a>",
+      "text": "我发现我比想象中更需要浏览器中的 Vim 模式： owenyoung.com/blog/vimium/"
+    },
+    "mention-of": "https://www.owenyoung.com/blog/vimium/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
