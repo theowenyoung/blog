@@ -9,6 +9,8 @@ taxonomies:
   tags:
     - Vim
     - Random Book
+extra:
+  image: https://www.owenyoung.com/blog/vimium/help.png
 ---
 
 我发现互联网上真正改善生产力的东西总是开源和免费的，反而小众的东西，要么体验欠佳，要么是需要付费。就像阿莫西林胶囊对比“天价“救命药一样，因为更多人需要，所以总有更多人进入这一领域生产出更好用的东西。
