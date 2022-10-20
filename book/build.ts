@@ -328,7 +328,7 @@ async function main() {
         for await (const asset of assets) {
           if (
             asset.isFile && !asset.path.endsWith(".md") &&
-            !asset.path.startsWith(".")
+            !asset.name.startsWith(".")
           ) {
             const assetRelativePath = path.relative(
               markdownRootPath,
@@ -461,13 +461,14 @@ async function main() {
         includeDirs: false,
       })
     ) {
-      if (asset.isFile && !asset.path.startsWith(".")) {
+      if (asset.isFile && !asset.name.startsWith(".")) {
         const assetRelativePath = path.relative(bookAssetsPath, asset.path);
         const assetDistPath = path.join(
           bookSourceFileDist,
           bookConfig.book.src as string,
           assetRelativePath,
         );
+        console.log("asset", asset);
         await fs.ensureDir(path.dirname(assetDistPath));
         await Deno.copyFile(asset.path, assetDistPath);
       }
