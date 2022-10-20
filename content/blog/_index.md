@@ -5,5 +5,5 @@ sort_direction: "decending"
 transparent: true
 insert_anchor_links: "right"
 generate_feed: true
-title: "全部文章"
+title: "全部博文"
 ---

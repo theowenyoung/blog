@@ -1,7 +1,4 @@
 {% extends "base.html" -%}
-{% block title %}
-  {{ page.title }} - {{ config.title }}
-{% endblock title %}
 {% block before_meta %}
   {% if config.extra.meilisearch_url %}
     <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">

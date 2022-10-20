@@ -1,23 +1,4 @@
 {% extends "base.html" %}
-{% block title %}
-  {{ config.title }} - Archive{% endblock title %}
-{% block ogtitle %}
-  {{ config.title }} - Archive
-{% endblock
-ogtitle %}
-{% block headline %}
-  {{ config.title }} - Archive
-{% endblock
-  headline %}
-{% block ogdesc %}Archive Articles{% endblock ogdesc %}
-{% block
-ogurl %}
-  {{ config.base_url~lang_prefix_path }}archive/{% endblock ogurl %}
-{% block ogimg %}
-  {% if page.extra.image %}
-    {{ page.extra.image }}
-  {% endif %}
-{% endblock ogimg %}
 {% block main %}
   <div class="archive-page">
     {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}

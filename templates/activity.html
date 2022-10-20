@@ -1,20 +1,6 @@
 {% extends "base.html" -%}
 {% set all_section_pages =
 get_section(path="_index.md") %}
-{% block title %}
-  {{ trans(key="label_activity",lang=lang) }} - {{ config.title }}
-{% endblock
-title %}
-{% block ogtitle %}
-  {{ trans(key="label_activity",lang=lang) }} - {{ config.title }}
-{% endblock ogtitle %}
-{% block headline %}
-  {{ trans(key="label_activity",lang=lang) }} - {{ config.title }}
-{% endblock
-headline %}
-{% block description %}
-  {{ trans(key="label_activity",lang=lang) }}
-{% endblock description %}
 {% block main -%}
 <div class="activity-page">
   {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}

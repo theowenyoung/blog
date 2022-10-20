@@ -1,6 +1,8 @@
-{% extends "base.html" %} {% block title %}{{ config.title }} - 404{% endblock
-title %} {% block ogurl %}{% endblock ogurl%} {% block main %}
-
+{% extends "base.html" %} 
+{% block social_meta %}
+<title>404 - {{config.title}}</title>
+{% endblock social_meta %} 
+{% block main %}
 <div class="alert alert-error navmargin">
   <h1>404 - Not found</h1>
 </div>

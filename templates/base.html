@@ -15,17 +15,65 @@
     {%- set_global post_css = load_data(path="static/site/styles/site-zh.css") -%}
   {%- endif -%}
 {%- endif -%}
+{%- if section and section.relative_path is starting_with("_index.") -%}
+{%- set_global is_index = true -%}
+{%- else -%}
+{%- set_global is_index = false -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    <title>
-      {% block title %}
-        {{ config.title }}
-      {% endblock title %}
-    </title>
+    {% block social_meta %} 
+      {% if page.title %}
+        {% set_global title = page.title %}
+      {% elif term.name %}
+        {% set titled_type_name = taxonomy.name | title %}
+        {% set_global title = titled_type_name ~ " | " ~ term.name  %}
+      {% elif taxonomy.name  %}
+        {% set_global title = taxonomy.name | title %}
+      {% elif section.title %}
+        {% set_global title = section.title %}
+      {% endif %}
+      {% if title %}
+        {% set_global full_title = title ~ " - " ~ config.title %}
+      {% elif is_index == true %}
+        {% set_global title = config.title %}
+        {% set_global full_title = config.title %}
+      {% endif %}
+      {% if page.description %}
+        {% set_global description =  page.description %}
+      {% elif page.summary %}
+        {% set_global description =  page.summary | spaceless | striptags %}
+      {% elif page.content %}
+        {% set_global description = page.content | spaceless | striptags | truncate(length=200) %}
+      {% elif is_index %}
+        {% set_global description = config.description %}
+      {% elif section.content %}
+        {% set_global description = section.content | spaceless | striptags | truncate(length=200) %}
+      {% else %}
+        {% set_global description = config.description %}
+      {% endif %}
+      <title>{{full_title}}</title>
+      <meta property="og:title" content="{{title}}"/>
+      <meta itemprop="headline" content="{{title}}"/>
+      <meta property="og:description" content="{{description}}"/>
+      <meta name="description" content="{{description}}"/>
+      <meta property="og:url" content="{{current_url}}"/>
+      {% if page and page.extra and page.extra.image %}
+        <meta name="og:type" content="summary_large_image"/>
+        <meta property="og:image" content="{{ page.extra.image | safe }}"/>
+        <meta property="og:image:alt" content="{{ title }}"/>
+      {% elif is_index and config.extra.image %}
+        <meta name="og:type" content="summary_large_image"/>
+        <meta property="og:image" content="{{ config.extra.image | safe }}"/>
+        <meta property="og:image:alt" content="{{ title }}"/>
+      {% else %}
+        <meta name="og:type" content="summary"/>
+      {% endif %}
+    {% endblock social_meta %}
     {%- if config.mode!="build" -%}
       <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
       {%- if lang == 'zh' -%}
@@ -37,10 +85,8 @@
     <link rel="me" href="https://github.com/theowenyoung"/>
     <link rel="me" href="mailto:owen@owenyoung.com"/>
     <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> {% block before_meta %}{% endblock before_meta %}
-    <meta name="description" content="{% block description -%}{{ config.description }}{% endblock description -%}"/>
     <meta name="keywords" content="{{ trans(key="keywords",lang=lang) }}"/>
     <meta name="author" content="{{ config.extra.author }}"/>
-    <meta itemprop="headline" content="{% block headline %}{{ config.title }}{% endblock headline %}"/>
     <meta itemprop="copyrightYear" content="{{ now() | date(format="%Y") }}"/>
     <link rel="icon" href="{{ get_url(path="site/images/favicon-32x32.png",cachebust=true) }}" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path="site/images/apple-icon-57x57.png",cachebust=true) }}">
@@ -59,18 +105,10 @@
     <meta name="msapplication-TileColor" content="{{ config.extra.theme_color }}"/>
     <meta name="msapplication-TileImage" content="{{ get_url(path="site/images/ms-icon-144x144.png",cachebust=true) }}">
     <meta name="theme-color" content="{{ config.extra.theme_color }}"/>
-    <meta property="og:title" content="{% block ogtitle %}{{ config.title }}{% endblock ogtitle %}"/>
-    <meta property="og:description" content="{% block ogdesc %}{{ config.description }}{% endblock ogdesc %}"/>
-    <meta property="og:url" content="{% block ogurl %}{{ current_url }}{% endblock ogurl %}"/>
     <meta property="og:site_name" content="{{ config.title }}"/>
-    {% if config.extra.image %}
-      <meta property="og:image" content="{% block ogimg %}{{ config.extra.image | safe }}{% endblock ogimg %}"/>
-    {% endif %}
-    <meta name="twitter:card" content="summary"/>
     {% if config.extra.twitter_user %}
       <meta name="twitter:site" content="{{ config.extra.twitter_user }}"/>
       <meta name="twitter:creator" content="{{ config.extra.twitter_user }}"/>
-      <meta name="twitter:image:alt" content="{% block ogaltimg %}{{ config.title }}{% endblock ogaltimg %}"/>
     {% endif %}
     {% block rss %}
       <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(path="atom.xml") }}">

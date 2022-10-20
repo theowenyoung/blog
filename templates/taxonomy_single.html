@@ -1,20 +1,4 @@
 {% extends "base.html" %}
-{% block title %}
-  {{ taxonomy.name }}: {{ term.name }} - {{ config.title }}
-{% endblock title %}
-{% block ogtitle %}
-  {{ taxonomy.name }}: {{ term.name }} - {{ config.title }}
-{% endblock ogtitle %}
-{% block headline %}
-  {{ taxonomy.name }}: {{ term.name }} - {{ config.title }}
-{% endblock headline %}
-{% block description %}All posts in {{ term.name }}
-{% endblock description %}
-{% block ogdesc %}All posts in {{ term.name }}
-{% endblock ogdesc %}
-{% block ogurl %}
-  {{ get_taxonomy_url(kind=taxonomy.name,lang=lang, name=term.name) }}
-{% endblock ogurl %}
 {% block rss %}
   {% set term_name_slugify = term.name | slugify %}
   {% set rss_path = taxonomy.name ~ "/" ~ term_name_slugify ~ "/atom.xml" %}

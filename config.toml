@@ -43,7 +43,7 @@ bio = "Web developer, I like reading and explore the internet, so I have collect
 # https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md
 edit_url_prefix = "https://github.com/theowenyoung/blog/edit/main/content/"
 github_user = "theowenyoung"
-image = "https://www.owenyoung.com/logo.png"
+image = "https://www.owenyoung.com/heading.jpg"
 "label_action_in-reply-to" = "replied"
 "label_action_like-of" = "liked"
 "label_action_mention-of" = "mentioned"
