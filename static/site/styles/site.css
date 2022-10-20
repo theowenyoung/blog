@@ -102,13 +102,15 @@ iframe {
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    text-align: justify;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.4em;
 }
-
-td,
-th {
-  padding: 0;
+td, th {
+    padding: 0.5em;
+    border-bottom: 1px solid var(--colors-divider);
 }
 
 /* --reset end -- */
