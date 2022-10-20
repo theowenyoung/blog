@@ -64,10 +64,12 @@
       <meta property="og:url" content="{{current_url}}"/>
       {% if page and page.extra and page.extra.image %}
         <meta name="og:type" content="summary_large_image"/>
+        <meta property="twitter:card" content="summary_large_image"/>
         <meta property="og:image" content="{{ page.extra.image | safe }}"/>
         <meta property="og:image:alt" content="{{ title }}"/>
       {% elif is_index and config.extra.image %}
         <meta name="og:type" content="summary_large_image"/>
+        <meta property="twitter:card" content="summary_large_image"/>
         <meta property="og:image" content="{{ config.extra.image | safe }}"/>
         <meta property="og:image:alt" content="{{ title }}"/>
       {% else %}

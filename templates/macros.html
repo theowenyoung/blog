@@ -12,7 +12,6 @@
       <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
       <p class="p-note">{{ config.extra.bio }}</p>
     </div>
-   
     <h2 class="no-border pb-sm">
       <a class="no-underline  u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
     </h2>
@@ -21,8 +20,6 @@
       <p><a rel="bookmark" href="{{ page.permalink | safe }}#continue-reading">
        &rarr;&nbsp; {{ trans(key="label_read_more",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
       </a></p>
-      
-  
     {% elif page.description -%}
       <p class="p-summary entry-summary">{{ page.description }}</p>
     {% elif page.content -%}
