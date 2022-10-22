@@ -1,7 +1,7 @@
 ---
 title: 收集一些有意思的社区
 date: 2022-03-25
-updated: 2022-09-30
+updated: 2022-10-22
 taxonomies:
   categories:
     - Notes
@@ -26,10 +26,11 @@ taxonomies:
 - [reddit subreddistats](https://subredditstats.com/)
 - [查看相似的 reddit 小组](https://anvaka.github.io/redsim/)
 - [Reddit Subreddits Wiki](https://www.reddit.com/r/ListOfSubreddits/wiki/listofsubreddits)
+- [freddit](https://freddit.rahul.biz/) - 又一个 reddit 的目录
 
 ## 中文
 
-- [Reddit中文小组聚合](https://www.reddit.com/r/DoubanFeministGroup+DoubanGoosegroup+real_China_irl+Taiwanese)
+- [Reddit 中文小组聚合](https://www.reddit.com/r/DoubanFeministGroup+DoubanGoosegroup+real_China_irl+Taiwanese)
 
 ## 服务器
 
