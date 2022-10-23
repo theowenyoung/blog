@@ -21,5 +21,5 @@ insert_anchor_links: "right"
 ## 我在阅读什么？
 
 - [HN 最新](https://hnnew.buzzing.cc/)
-- [纽约客](https://newyorker.buzzing.cc/)
+- [Buzzing](https://www.buzzing.cc/)
 - [精神食粮](https://depth.buzzing.cc/)
