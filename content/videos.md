@@ -13,6 +13,6 @@ taxonomies:
 
 <!-- more -->
 
-# 短视频
+## 短视频
 
 - [中国自秦制以来就没有儒家](https://twitter.com/nainaibao/status/1584154771057176577)
