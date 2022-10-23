@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 你拼命生活了几十年，到时候历史教科书上只会用一句话概括：我们领导走了一小段弯路。 - [tweet](https://twitter.com/NoCoLoRMoNkEy/status/1584046270859313152)
+
 > 如今，梁家河村是共产党的迪斯尼乐园，到处都是穿着红军制服的游客。 - [经济学人](https://www.economist.com/1843/2022/10/19/xi-jinping-the-making-of-a-dictator?utm_content=discovery.content)
 
 > 《CNN》駐亞洲記者王詩琳（Selina
