@@ -58,7 +58,7 @@ taxonomies:
 - [Picocss](https://github.com/picocss/pico) - 语义化的 CSS 框架，极简
 - [Unocss](https://github.com/unocss/unocss) - 工具 css，集成了 tailwind 等
 - [Tachyons](https://tachyons.io/) - 另一个工具性 css 框架
-- [mkws的极简css主题](https://t.mkws.sh/)
+- [mkws 的极简 css 主题](https://t.mkws.sh/)
 
 ## React UI
 

@@ -16,3 +16,4 @@ taxonomies:
 ## 短视频
 
 - [中国自秦制以来就没有儒家](https://twitter.com/nainaibao/status/1584154771057176577)
+- [习在 2012 年对胡裸退表示崇高的敬意](https://twitter.com/shaochengCD/status/1584434559935868928)
