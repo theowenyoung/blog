@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2022-09-15
+updated: 2022-10-24
 taxonomies:
   categories:
     - Notes
@@ -94,6 +94,7 @@ taxonomies:
   也可以是一个正常的网站。控诉现代网站
 - [Txti](https://txti.es/) - 简约的文本网页创建服务，像电报的[telegraf](https://telegra.ph/)，
 - [Realtime](http://realtime.info/) - 实时查看各大平台正在发生什么...真正的实时
+- [Mudita 手机](https://mudita.com/products/phones/mudita-pure/) - 墨水屏手机，极简，有实体按键，发财后要入手的东西之一！
 
 ## 服务
 
