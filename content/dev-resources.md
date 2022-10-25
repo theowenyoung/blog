@@ -401,6 +401,7 @@ between formats and can be used as a Go package.
 ## Bash as Workflows
 
 - [Patchbay](https://patchbay.pub/) - Poor man ifttt
+- [Use bash strict mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
 
 ### Common URL Scheme
 

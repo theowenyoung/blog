@@ -26,6 +26,10 @@ taxonomies:
 - [The Rest of World](https://restofworld.org/) - 科技报道
 - [Boing Boing](https://boingboing.net/) - 一个有意思的在线杂志，科技，政治，生活
 
+## 深度报道
+
+- [Grid](https://www.grid.news/) - 更有深度的观点和报道。
+
 ## 文章聚合
 
 - [精神食粮 Reddit 小组](https://old.reddit.com/r/Foodforthought/)

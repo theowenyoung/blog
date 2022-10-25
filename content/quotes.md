@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2022-10-18
+updated: 2022-10-25
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 这些是恐怖分子，他们并不完全知道自己想要什么。因为每天他们的位置都会根据他们的情绪而变化。 -- [泽连斯基](https://www.yahoo.com/video/zelenskyy-putin-difficult-agreements-inadequate-140508280.html)
 
 > 你拼命生活了几十年，到时候历史教科书上只会用一句话概括：我们领导走了一小段弯路。 - [tweet](https://twitter.com/NoCoLoRMoNkEy/status/1584046270859313152)
 
