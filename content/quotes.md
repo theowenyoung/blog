@@ -10,6 +10,10 @@ taxonomies:
     - Random Book
 ---
 
+> 毛毛前几天有句话让我印象很深刻，“身在苦中不知苦”。
+>
+> 而在此之前，洼地人总是以教训的口吻规训女生，“你不要身在福中不知福”。 - [推友](https://twitter.com/Maine859467491/status/1584580106390888448)
+
 > 这些是恐怖分子，他们并不完全知道自己想要什么。因为每天他们的位置都会根据他们的情绪而变化。 -- [泽连斯基](https://www.yahoo.com/video/zelenskyy-putin-difficult-agreements-inadequate-140508280.html)
 
 > 你拼命生活了几十年，到时候历史教科书上只会用一句话概括：我们领导走了一小段弯路。 - [tweet](https://twitter.com/NoCoLoRMoNkEy/status/1584046270859313152)
