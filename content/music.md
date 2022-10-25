@@ -1,7 +1,7 @@
 ---
 title: 音乐收藏
 date: 2022-03-25
-updated: 2022-06-08
+updated: 2022-10-26
 taxonomies:
   categories:
     - Notes
@@ -26,3 +26,4 @@ taxonomies:
 - [六月某时 - 秀场寡头](https://soundcloud.com/show-oligarch/sometimes-in-june)
 - [吳吞 : 一萬個名字](https://www.youtube.com/watch?v=poYDiJU2HJQ)
 - [1990 年的春天: 李志](https://www.youtube.com/watch?v=nmTvasFpovs)
+- [李志作品在线播放](https://lizhi.turkyden.com)
