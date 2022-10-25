@@ -109,10 +109,7 @@ taxonomies:
 > 五分之一的男性承认没有亲密的朋友 -
 > [泰晤士报](https://www.thetimes.co.uk/article/all-the-lonely-people-are-men-a-fifth-have-no-friends-6rzvhl736)
 
-> 当你需要和半裸女孩说话时，你的大脑会更有动力去学习英语. -
-> [HN 网友](https://news.ycombinator.com/item?id=16787675)
-
-> "我们都在阴沟里，但我们中的一些人正在看星星。 —— 奥斯卡·王尔德， 温德米尔夫人的粉丝
+> "我们都在阴沟里，但仍有人仰望星空“。 —— 奥斯卡·王尔德， 温德米尔夫人的粉丝
 
 > 童话远远比现实真实，不是因为它们告诉我们龙的存在，而是因为它们告诉我们龙是可以被打败的。 ― Neil Gaiman, Coraline
 
@@ -293,7 +290,7 @@ taxonomies:
 > YouTube 推动的从印刷品向电视的演变，这种协同效应可能会消失。 --
 > [书的黄昏](https://www.newyorker.com/magazine/2007/12/24/twilight-of-the-books)
 
-> ## 福特、爱迪生和其他工业大师使自己变得富有，并偶然创造了中产阶级，这反过来又巩固了美国的民主制度。新的科技霸主使自己变得富有，并偶然消灭了中产阶级，同时削弱了民主。
+> 福特、爱迪生和其他工业大师使自己变得富有，并偶然创造了中产阶级，这反过来又巩固了美国的民主制度。新的科技霸主使自己变得富有，并偶然消灭了中产阶级，同时削弱了民主。
 >
 > [扎克伯格令人愤怒的纯真](https://www.newyorker.com/culture/cultural-comment/the-infuriating-innocence-of-mark-zuckerberg)
 
