@@ -261,5 +261,23 @@
     "like-of": "https://www.owenyoung.com/blog/blog-to-book/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1544339": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "DwayneXXXX🦇🔊🐼",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/2cdfae0d43a2dbc1e0b2339b4aed49ca7b5c7e4da21f3b76a918e2c6e44bc70c.jpg",
+      "url": "https://twitter.com/DwayneX87361186"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1580875178506010624#favorited-by-1407892858124701696",
+    "published": null,
+    "wm-received": "2022-10-25T01:40:26Z",
+    "wm-id": 1544339,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1580875178506010624/1407892858124701696",
+    "wm-target": "https://www.owenyoung.com/blog/blog-to-book/",
+    "like-of": "https://www.owenyoung.com/blog/blog-to-book/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
