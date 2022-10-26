@@ -279,5 +279,23 @@
     "like-of": "https://www.owenyoung.com/blog/blog-to-book/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1544540": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "高҈桥҈凉介",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/e795a6bb82d146017cefdcd980fe2925c75f258d0cf5b026f1d97a10928e84d1.jpg",
+      "url": "https://twitter.com/zkb5d2ac7pg"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1580875178506010624#favorited-by-1426465807349870595",
+    "published": null,
+    "wm-received": "2022-10-25T13:45:26Z",
+    "wm-id": 1544540,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1580875178506010624/1426465807349870595",
+    "wm-target": "https://www.owenyoung.com/blog/blog-to-book/",
+    "like-of": "https://www.owenyoung.com/blog/blog-to-book/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
