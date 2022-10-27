@@ -90,28 +90,6 @@
       </details>
 
       <details open class="py">
-      <summary class="text-lg">{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#latest-notes" id="latest-notes" class="zola-anchor">🔗</a>
-      </summary>
-      <div class="articles">
-        <ul class="root-ul">
-          {% for page in note_pages | slice(end=10) %}
-            <li>{{ macro::post_min(page=page) }}</li>
-          {% endfor %}
-        </ul>
-        {%if note_pages | slice(start=10) | length > 0%}
-        <details>
-          <summary class="text">{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-          <ul>
-            {% for page in note_pages | slice(start=10) %}
-            <li>{{ macro::post_min(page=page) }}</li>
-            {% endfor %}
-          </ul>
-        </details>
-        {% endif %}
-      </div>
-      </details>
-
-      <details open class="py">
       <summary class="text-lg">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
       </summary>
       {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
@@ -120,7 +98,6 @@
         <p class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</p>
       </div>
       </details>
-      {{ section.content | safe }}
     </div>
   {% endblock main -%}
   {% block before_body_end %}

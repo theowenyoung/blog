@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2022-10-14
+updated: 2022-10-27
 taxonomies:
   categories:
     - Notes
@@ -372,3 +372,7 @@ X as a Y services.
 ## 图书封面
 
 - [o'rly 封面在线生成](https://orly.nanmu.me/)
+
+## 密码安全分享
+
+- [horuspass](https://horuspass.com/send) - 一次性信息分享

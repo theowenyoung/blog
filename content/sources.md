@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-09-26
+updated: 2022-10-26
 taxonomies:
   categories:
     - Notes
@@ -40,6 +40,7 @@ taxonomies:
 - [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/) -
   一句话总结文章内容，所以你不用点进去看文章了
 - [True Reddit 小组的每月排行](https://old.reddit.com/r/Foodforthought/top/?t=month)
+- [Bear Blog Trending](https://bearblog.dev/discover/) - mark 下它的排序算法
 
 ## 专人维护的 Reading List
 
@@ -251,3 +252,7 @@ taxonomies:
 ## 打发时间
 
 - [Entertaining space](https://entertaining.space/) - 无聊，不知道看点什么？这里有一些推荐
+
+## 媒体（非独立，请谨慎辨别）
+
+- [Radii](https://radii.co/about) - 用英文报道中国年轻人（向世界讲好中国年轻人故事）

@@ -218,11 +218,38 @@
           {% block sidebar %}
           <aside class="sidebar px">
             {% block sidebar_top %}{% endblock sidebar_toop %}
+            {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+            {% set_global note_pages = [] -%}
+            {% for cat in all_categories.items -%}
+              {% if cat.name == "Notes" -%}
+                {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+              {% endif -%}
+            {% endfor -%}
             <div class="display-none h-card pt">
               <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
               <a class="p-name u-url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
               <p class="p-note">{{ config.extra.bio }}</p>
             </div>
+
+            <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}</h2>
+            <div class="articles">
+              <ul class="root-ul">
+                {% for page in note_pages | slice(end=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                {% endfor %}
+              </ul>
+              {%if note_pages | slice(start=10) | length > 0%}
+              <details>
+                <summary class="text-sm">{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+                <ul>
+                  {% for page in note_pages | slice(start=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                  {% endfor %}
+                </ul>
+              </details>
+              {% endif %}
+            </div>
+            </details>
             <h2>
               <a class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</a>
             </h2>

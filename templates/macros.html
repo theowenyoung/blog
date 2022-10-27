@@ -41,7 +41,7 @@
   {% endmacro post_max %}
   {% macro post_min(page) %}
     <a href="{{ page.permalink }}">{{ page.title }}</a>
-    <span class="muted text-sm">Updated on {{ page.updated }}</span>
+    <span class="muted text-sm">{{ page.updated }}</span>
   {% endmacro post_min %}
   {% macro backlink(pages) %}
     {% if pages and pages | length >0 %}

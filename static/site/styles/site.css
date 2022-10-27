@@ -300,6 +300,9 @@ h3 {
 article {
   margin-bottom: 4rem;
 }
+article:last-child {
+  margin-bottom: 0;
+}
 pre {
   background-color: var(--colors-quote-background);
   margin-top: 0px;
