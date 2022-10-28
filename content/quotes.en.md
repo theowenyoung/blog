@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
 ---
 
+> Sadly, as we see in the world today, it turns out that fascism is the most optimized ideology available given the limited cognitive bandwidth constraints of a 280-character post. This is because the answer is always simple with fascism: generally a death threat towards the marginalized group of the day will do just fine, which easily fits into 280 characters: “Storm the capitol building!”? “Hang Mike Pence!”? Yep, even congressional members and vice presidents can be marginalized under the right circumstances, and it’s under 280 characters. - [Source](https://ariadne.space/2022/10/27/the-internet-is-broken-due-to-structural-injustice/)
+
 > "I was lucky." "Women always say that when they've done something
 > extraordinary". -- The handmaids tale S05E03
 
