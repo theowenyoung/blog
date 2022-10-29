@@ -588,5 +588,41 @@
     "like-of": "https://www.owenyoung.com/blog/vimium/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1545999": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Aether_Q",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/023554ee14b98f349fbea093b5f76130b9e8cbc4c3019a276221f96de61db6d1.jpg",
+      "url": "https://twitter.com/Aether2022"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1583089729255272448#favorited-by-1455690662670598148",
+    "published": null,
+    "wm-received": "2022-10-28T06:55:13Z",
+    "wm-id": 1545999,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1583089729255272448/1455690662670598148",
+    "wm-target": "https://www.owenyoung.com/blog/vimium/",
+    "like-of": "https://www.owenyoung.com/blog/vimium/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1546000": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Alan Fan",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/2a80f9dfa70fc046bbc5837c1143e55b871935da14900f08572e283767bcb094.png",
+      "url": "https://twitter.com/AlanFan1234"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1583089729255272448#favorited-by-1565578533182664704",
+    "published": null,
+    "wm-received": "2022-10-28T06:55:13Z",
+    "wm-id": 1546000,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1583089729255272448/1565578533182664704",
+    "wm-target": "https://www.owenyoung.com/blog/vimium/",
+    "like-of": "https://www.owenyoung.com/blog/vimium/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
