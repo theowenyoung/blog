@@ -97,6 +97,7 @@ taxonomies:
 - [Mudita 手机](https://mudita.com/products/phones/mudita-pure/) - 墨水屏手机，极简，有实体按键，发财后要入手的东西之一！
 - [笑话视频网站，每个人讲一个笑话](https://www.human.com/)
 - [失败博物馆](https://museumoffailure.com/)
+- [Conv911](https://conv911.com/active) - 一个设计挺有意思的社区，有一个 breaking 的版本，在 breaking 里的消息理论上能得到更快的回复：
 
 ## 服务
 
