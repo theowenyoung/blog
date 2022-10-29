@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 一个想成为自己统治者的民族，必须用知识赋予的权力武装自己。一个没有大众信息或获取信息的手段的民主政府，只不过是一场闹剧或悲剧或两者兼而有之的序幕。- 詹姆斯·麦迪逊（[民主的危险性](https://javani.substack.com/p/why-democracy-is-dangerous)）
+
 > 把中国当成地狱润出去的人，大概率会很开心。
 >
 > 把外国当成天堂润出去的人，大概率会很后悔。 - [推友](https://twitter.com/NoCoLoRMoNkEy/status/1585097071048404992)
