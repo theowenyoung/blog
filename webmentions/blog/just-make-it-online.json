@@ -1,0 +1,24 @@
+{
+  "1547233": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370",
+    "published": "2022-10-30T14:33:44+00:00",
+    "wm-received": "2022-10-30T14:34:03Z",
+    "wm-id": 1547233,
+    "wm-source": "https://brid.gy/post/twitter/OwenYoungZh/1586728060241338370",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "content": {
+      "html": "Fuck it, 我不执着于完美主义了，直接上线就好，在线上迭代才是最健康的： <a href=\"https://www.owenyoung.com/blog/just-make-it-online/\">owenyoung.com/blog/just-make…</a>",
+      "text": "Fuck it, 我不执着于完美主义了，直接上线就好，在线上迭代才是最健康的： owenyoung.com/blog/just-make…"
+    },
+    "mention-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  }
+}
