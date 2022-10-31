@@ -20,5 +20,255 @@
     "mention-of": "https://www.owenyoung.com/blog/just-make-it-online/",
     "wm-property": "mention-of",
     "wm-private": false
+  },
+  "1547267": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Miiigger",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/ae382688f3ac1edb32b4f10e1df5af624a07cd8c8654179d1aa33e48bca1482a.jpg",
+      "url": "https://twitter.com/Miiigger"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1523691071040983042",
+    "published": null,
+    "wm-received": "2022-10-30T15:31:55Z",
+    "wm-id": 1547267,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1523691071040983042",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547290": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586754256438460418",
+    "published": "2022-10-30T16:17:49+00:00",
+    "wm-received": "2022-10-30T16:26:37Z",
+    "wm-id": 1547290,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1586728060241338370/1586754256438460418",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "content": {
+      "html": "<a href=\"https://news.ycombinator.com/item?id=16334557\">news.ycombinator.com/item?id=163345…</a> 这篇下面的评论也特别的好！\n<a class=\"u-mention\" href=\"https://twitter.com/kecrily\"></a>",
+      "text": "news.ycombinator.com/item?id=163345… 这篇下面的评论也特别的好！"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1547291": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586751472842461184",
+    "published": "2022-10-30T16:06:46+00:00",
+    "wm-received": "2022-10-30T16:26:38Z",
+    "wm-id": 1547291,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1586728060241338370/1586751472842461184",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "content": {
+      "html": "而且我觉得完美主义是一个自我感觉良好，实则是一种有害的气质。我一年前的推特简介还标榜自己：完美主义者！但是现在世界不是这样运作的，所以就不断的克服。\n<a class=\"u-mention\" href=\"https://twitter.com/kecrily\"></a>",
+      "text": "而且我觉得完美主义是一个自我感觉良好，实则是一种有害的气质。我一年前的推特简介还标榜自己：完美主义者！但是现在世界不是这样运作的，所以就不断的克服。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1547292": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Owen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/82f6a1c41d72463894a9f9fa23a0c1de8e7d0018c2a6f9af2629157e4c875b01.jpg",
+      "url": "https://twitter.com/OwenYoungZh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586750641103605760",
+    "published": "2022-10-30T16:03:27+00:00",
+    "wm-received": "2022-10-30T16:26:38Z",
+    "wm-id": 1547292,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1586728060241338370/1586750641103605760",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "content": {
+      "html": "我喜欢这篇文章： <a href=\"https://www.boristhebrave.com/2022/09/14/learning-to-finish-things/\">boristhebrave.com/2022/09/14/lea…</a> 完成小事。hn上有不少关于克服完美主义的文章： <a href=\"https://hn.algolia.com/?dateRange=all&amp;page=0&amp;prefix=false&amp;query=perfectionist&amp;sort=byPopularity&amp;type=story\">hn.algolia.com/?dateRange=all…</a> ，我觉得看这些文章也给了我很多鼓励。\n<a class=\"u-mention\" href=\"https://twitter.com/kecrily\"></a>",
+      "text": "我喜欢这篇文章： boristhebrave.com/2022/09/14/lea… 完成小事。hn上有不少关于克服完美主义的文章： hn.algolia.com/?dateRange=all… ，我觉得看这些文章也给了我很多鼓励。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1547293": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "James Tsang 北岛",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/bf747aebf69b6f56adb95ed9ca880d88eedd12f07ffb6e886969af0935283a60.jpg",
+      "url": "https://twitter.com/JamesTsang19"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1091306993011150848",
+    "published": null,
+    "wm-received": "2022-10-30T16:26:39Z",
+    "wm-id": 1547293,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1091306993011150848",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547294": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Xiangyi Li",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/f4a2d3b493905ac74261de8829088a92fc94e532fb8b9a237dfe297855d6de4a.jpg",
+      "url": "https://twitter.com/l1xiangyi"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1484803981050200067",
+    "published": null,
+    "wm-received": "2022-10-30T16:26:39Z",
+    "wm-id": 1547294,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1484803981050200067",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547295": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Percy Ma",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b404c78442e5c84c6f7520ba8481ba3711fd4b1c2ef7cc2b136f4ecd345c7268.jpg",
+      "url": "https://twitter.com/kecrily"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1402269076613910530",
+    "published": null,
+    "wm-received": "2022-10-30T16:26:40Z",
+    "wm-id": 1547295,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1402269076613910530",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547296": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Percy Ma",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b404c78442e5c84c6f7520ba8481ba3711fd4b1c2ef7cc2b136f4ecd345c7268.jpg",
+      "url": "https://twitter.com/kecrily"
+    },
+    "url": "https://twitter.com/kecrily/status/1586748819017908224",
+    "published": "2022-10-30T15:56:13+00:00",
+    "wm-received": "2022-10-30T16:27:07Z",
+    "wm-id": 1547296,
+    "wm-source": "https://brid.gy/comment/twitter/OwenYoungZh/1586728060241338370/1586748819017908224",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "content": {
+      "html": "是的，完美主义真的非常困扰我，能力有限但却对哪哪都不满意，发不出又担心自己写的屎山被人笑话。\n\n我所谓的「完美主义」其实就是虚荣心作怪，怕丢脸。我知道问题在哪但不知道怎么解决它。\n<a class=\"u-mention\" href=\"https://twitter.com/OwenYoungZh\"></a>\n<a class=\"u-mention\" href=\"https://www.owenyoung.com/\"></a>",
+      "text": "是的，完美主义真的非常困扰我，能力有限但却对哪哪都不满意，发不出又担心自己写的屎山被人笑话。\n\n我所谓的「完美主义」其实就是虚荣心作怪，怕丢脸。我知道问题在哪但不知道怎么解决它。"
+    },
+    "in-reply-to": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "in-reply-to",
+    "wm-private": false
+  },
+  "1547308": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Hugo",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/36482e5e648f959c6ba5b0021a64538bd2c9a8f374173812fa4859ab9ac664f0.jpg",
+      "url": "https://twitter.com/HugozouHugo"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1153528836",
+    "published": null,
+    "wm-received": "2022-10-30T17:33:49Z",
+    "wm-id": 1547308,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1153528836",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547312": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "吃饱撑的",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/98646af6607e9745078627c19b12d964fd6561fe17bd9643ee8ab70f9f6a8fac.jpg",
+      "url": "https://twitter.com/tjjtdsttt"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-140475485",
+    "published": null,
+    "wm-received": "2022-10-30T18:46:48Z",
+    "wm-id": 1547312,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/140475485",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547412": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "DwayneXXXX🦇🔊🐼",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/2cdfae0d43a2dbc1e0b2339b4aed49ca7b5c7e4da21f3b76a918e2c6e44bc70c.jpg",
+      "url": "https://twitter.com/DwayneX87361186"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1407892858124701696",
+    "published": null,
+    "wm-received": "2022-10-31T00:40:56Z",
+    "wm-id": 1547412,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1407892858124701696",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547413": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Zihan Chen",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/f36f90d7952e59190c11da01d240ed0b02d99b70fba7156efb7ee4998c4b3f9b.png",
+      "url": "https://twitter.com/zihanch"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1555091227334553601",
+    "published": null,
+    "wm-received": "2022-10-31T00:40:56Z",
+    "wm-id": 1547413,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1555091227334553601",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547425": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "pimgeek",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/f0beb72155126c16e4838c55523208ae20869bfc79378afc54f2eba7fa457a69.png",
+      "url": "https://twitter.com/pimgeek"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1264122530",
+    "published": null,
+    "wm-received": "2022-10-31T01:54:19Z",
+    "wm-id": 1547425,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1264122530",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
