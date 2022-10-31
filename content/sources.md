@@ -65,7 +65,7 @@ taxonomies:
 - [The Initium News](https://theinitium.com/) - Taiwan/Hong Kong media
 - [中国 - 历史与未来](https://www.chinese-future.org/) - 立足欧洲的博客平台，刊登一些专栏作品
 
-### 已死
+## 已死
 
 - [HK CNews](https://www.hkcnews.com/) - Hong Kong indie media
 - [The Stand News](https://www.thestandnews.com/) - Hong Kong indie media
