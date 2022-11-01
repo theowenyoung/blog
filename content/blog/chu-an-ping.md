@@ -2,7 +2,6 @@
 title: 储安平：“吾人以此事衡量共产党，共产党是否能容许今日生活在共产党统治区域中的人民有批评共产主义或反对共产党的自由？”
 date: 2022-11-01T03:24:50+08:00
 updated: 2022-11-01
-draft: true
 taxonomies:
   categories:
     - Random
