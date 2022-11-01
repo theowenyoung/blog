@@ -5,7 +5,7 @@ updated: 2022-04-10
 draft: false
 taxonomies:
   categories:
-    - Articles
+    - Random
   tags:
     - Russia
     - Random Book

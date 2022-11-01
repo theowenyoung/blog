@@ -4,7 +4,7 @@ date: 2022-04-10
 updated: 2022-04-10
 taxonomies:
   categories:
-    - Articles
+    - Random
   tags:
     - Notes
     - Random Book

@@ -208,7 +208,9 @@ taxonomies:
 
 ## 大杂烩
 
-- [一个页面聚合了多个新闻源](https://upstract.com/)
+- [一个页面聚合了多个新闻源](https://upstract.com/) - Upstract
+- [设计良好的聚合新闻](https://spike.news/) - Spike
+- [daily.dev](https://app.daily.dev) - 聚合网站
 
 ## 邮件订阅
 
@@ -256,3 +258,7 @@ taxonomies:
 ## 媒体（非独立，请谨慎辨别）
 
 - [Radii](https://radii.co/about) - 用英文报道中国年轻人（向世界讲好中国年轻人故事）
+
+## 中文独立博客
+
+- [杨飞自选作品集](http://www.999kg.com/) - 摄影与杂文

@@ -5,7 +5,7 @@ updated: 2022-10-24
 draft: false
 taxonomies:
   categories:
-    - Articles
+    - Random
   tags:
     - Articles
 ---
