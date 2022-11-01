@@ -270,5 +270,77 @@
     "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1547482": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "izayl (💙,🧡)",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/7e4cbf11cfe35f64d0ed1d2affc05235c6598af60bb5d2692798512557b47665.jpg",
+      "url": "https://twitter.com/izayl_"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-3049993370",
+    "published": null,
+    "wm-received": "2022-10-31T06:48:16Z",
+    "wm-id": 1547482,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/3049993370",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547483": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Geronimo",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/0f5a545fd2af52067be91f74b8728fb6e13ad6bb1ebe410060a4a48afe5027b7.jpg",
+      "url": "https://twitter.com/geronimo_hsieh"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1160562659625803776",
+    "published": null,
+    "wm-received": "2022-10-31T06:48:16Z",
+    "wm-id": 1547483,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1160562659625803776",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1547484": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "photo": "",
+      "url": ""
+    },
+    "url": "https://eindex.me/thoughts/1667198331/",
+    "published": null,
+    "wm-received": "2022-10-31T06:52:05Z",
+    "wm-id": 1547484,
+    "wm-source": "https://eindex.me/thoughts/1667198331/",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "mention-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  "1547498": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "岛民",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/4f188caa384432dcc04476de8791139b8fe41b0e3010e3020e3d3311d273254b.jpg",
+      "url": "https://twitter.com/csdaomin"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-336661049",
+    "published": null,
+    "wm-received": "2022-10-31T07:50:33Z",
+    "wm-id": 1547498,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/336661049",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
