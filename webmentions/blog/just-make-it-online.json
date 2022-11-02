@@ -342,5 +342,23 @@
     "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1548477": {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Archi🦇🔊",
+      "photo": "https://webmention.io/avatar/pbs.twimg.com/b7ab87bfa542f8825a679bf956f4f78f7f4a229e5ce1017880dab233b8ded77d.jpg",
+      "url": "https://twitter.com/Archi52449622"
+    },
+    "url": "https://twitter.com/OwenYoungZh/status/1586728060241338370#favorited-by-1111213454797398019",
+    "published": null,
+    "wm-received": "2022-11-01T05:17:38Z",
+    "wm-id": 1548477,
+    "wm-source": "https://brid.gy/like/twitter/OwenYoungZh/1586728060241338370/1111213454797398019",
+    "wm-target": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "like-of": "https://www.owenyoung.com/blog/just-make-it-online/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
