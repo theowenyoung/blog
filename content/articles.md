@@ -52,7 +52,7 @@ taxonomies:
 ## 人生/哲学
 
 - [无知是大多数人最终失败的原因](https://www.floordaily.net/floorfocus/cluelessness-is-the-reason-most-people-eventually-)
-- [过去10年美国人的生活为何如此愚蠢？](https://mp.weixin.qq.com/s/M_OOo9X1k4IioNmv7rGk9w)
+- [过去 10 年美国人的生活为何如此愚蠢？](https://mp.weixin.qq.com/s/M_OOo9X1k4IioNmv7rGk9w)
 
 ## 人物
 
