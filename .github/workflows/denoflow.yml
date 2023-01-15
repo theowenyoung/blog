@@ -1,0 +1,70 @@
+name: Denoflow
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  schedule:
+    - cron: "1 0 * * *"
+jobs:
+  denoflow:
+    runs-on: ubuntu-latest
+    concurrency: denoflow
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - run: make prod-load
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{secrets.AWS_DEFAULT_REGION}}
+          AWS_ENDPOINT: ${{secrets.AWS_ENDPOINT}}
+      - run: deno run -A https://deno.land/x/denoflow/cli.ts run
+        env:
+          WEBMENTION_TOKEN: ${{secrets.WEBMENTION_TOKEN}}
+          WEBMENTION_APP_TOKEN: ${{secrets.WEBMENTION_APP_TOKEN}}
+        continue-on-error: true
+      - run: make prod-upload
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{secrets.AWS_DEFAULT_REGION}}
+          AWS_ENDPOINT: ${{secrets.AWS_ENDPOINT}}
+      - run: make install
+      - name: Build Site
+        run: make build
+      - name: Publish to pages 
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: owen # e.g. 'my-project'
+          directory: ./public # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: chown
+      #   run: sudo chown -R $USER:$USER ./
+      # - name: git config
+      #   run: git config --global user.name "github-actions[bot]" && git config --global user.email github-actions-bot@users.noreply.github.com
+      # - name: git add
+      #   run: git add data && git add webmentions
+      # - run: git status
+      # - id: isChanged
+      #   run: git diff-index --cached --quiet HEAD || echo '::set-output name=changed::true'
+      # - name: Create pull request
+      #   uses: peter-evans/create-pull-request@v3
+      #   if: ${{ steps.isChanged.outputs.changed == 'true' }}
+      #   with:
+      #     token: ${{ secrets.PERSONAL_TOKEN }}
+      #     labels: automerge
+      #     add-paths: data,webmentions
+      #     commit-message: "chore: new item"
+      #     committer: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
+      #     author: "github-actions[bot] <github-actions-bot@users.noreply.github.com>"
+      #     branch: new-item
+      #     delete-branch: true
+      #     title: New item update

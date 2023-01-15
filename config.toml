@@ -1,0 +1,165 @@
+base_url = "https://www.owenyoung.com"
+build_search_index = false
+compile_sass = false
+default_language = "zh"
+description = "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向"
+generate_feed = true
+generate_rss = true
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 50 },
+  { name = "categories", feed = true, paginate_by = 50 },
+]
+title = "Owen的博客"
+
+[markdown]
+# When set to "true", all code blocks are highlighted.
+highlight_code = true
+highlight_theme = "material-light"
+# Whether external links are to be opened in a new tab
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons
+external_links_target_blank = true
+
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = true
+
+# Whether to set rel="noreferrer" for all external links
+external_links_no_referrer = true
+smart_punctuation = true
+
+[extra]
+author = "Owen Young"
+email = "owen@owenyoung.com"
+prefix_url = "https://www.owenyoung.com"
+indieweb_url = "https://owenyoung.com/"
+theme_color = "#fffcf9"
+meilisearch_url = "https://meili.owenyoung.com"
+meilisearch_api_key = "260a3a9db28158f0fec6e65ce3a0cd4a7c7d453c29b351dd26ca862a8ebe0f3b"
+### indieweb note
+bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
+### THIRD PARTY
+# google_analytics = "UA-012345-67"
+# disqus = "disqus-user"
+
+### SOCIAL MEDIA
+# https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md
+edit_url_prefix = "https://github.com/theowenyoung/blog/edit/main/content/"
+github_user = "theowenyoung"
+image = "https://www.owenyoung.com/heading.jpg"
+"label_action_in-reply-to" = "replied"
+"label_action_like-of" = "liked"
+"label_action_mention-of" = "mentioned"
+"label_action_reply-to" = "replied"
+"label_action_repost-of" = "reposted"
+"label_action_rsvp" = "answered"
+twitter_user = "TheOwenYoung"
+webmention_path = "webmentions"
+### I18N WORDS
+
+[slugify]
+anchors = "on"
+paths = "on"
+taxonomies = "on"
+
+[translations]
+label_toggle_more = "展开全部"
+label_or_toggle_more = "或展开剩余文章"
+keywords = "注意力, 读书, 工具分享, 纯文本, 英语学习"
+label_activity = "动态"
+label_all_posts = "点击展开其余文章或进入[下一页](/blog/#index-11)"
+label_all_thoughts = "[点击查看所有短想法](/thoughts/#continue-reading)"
+label_all_quotes = "[点击查看所有摘录](/quotes/#continue-reading)"
+label_archive = "全部文章归档"
+label_back_to_start = "正文开始"
+label_book_author = "图书作者"
+"label_bookmark-of" = "收藏"
+label_books = "全部书评"
+label_categories = "所有分类"
+label_category = "分类"
+label_created = "发布于"
+label_edit = "帮我完善这个页面？"
+"label_follow-of" = "关注"
+label_home = "首页"
+"label_in-reply-to" = "回复"
+label_latest_notes_title = "最近更新的[笔记](/categories/notes/)："
+label_latest_articles_title = "最近发布的[文章](/blog/)："
+"label_like-of" = "喜欢"
+label_links = "一些可能有用的链接"
+"label_mention-of" = "提及"
+label_new_posts_list_title = "最新[文章](/blog/)"
+label_notes_title = "全部[笔记](/categories/notes/)(更新时间排序)"
+label_published_on = "on"
+label_rating = "我的评分"
+label_read_more = "继续阅读需要"
+label_reading = "阅读时间"
+label_full_reading = "全文阅读"
+"label_repost-of" = "转发"
+label_response = "回应区"
+label_reply = "回应"
+label_response_description = "以上的响应由 [webmention.io](https://webmention.io/) 收集，我记了[一篇](/content/blog/indieweb.en.md)如何实现这个的笔记。"
+label_rss = "订阅RSS"
+"label_rsvp" = "答复"
+label_table_contents = "快速导航"
+label_tag = "标签"
+label_backlinks = "博客内双向链接文章"
+label_tags = "标签"
+label_target_language = "English Blog"
+label_taxonomy = "类别"
+label_thoughts_title = "最新的[短想法](/thoughts/)："
+label_quotes_title = "最新的[摘录](/quotes/)："
+label_updated = "最后更新时间"
+[languages.en]
+build_search_index = false
+generate_feed = true
+description = "Mainly focus on technology, reading, excerpts, miscellaneous, article review, tool sharing, workflow, inspiration, English learning, attention management, deep work and other directions"
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 25 },
+  { name = "categories", feed = true, paginate_by = 25 },
+]
+title = "Owen Young's Blog"
+[languages.en.translations]
+keywords = "Focus, Reading, Tool sharing, Plain text, English learning"
+label_activity = "Activity"
+label_all_posts = "Click to expand the more articles or [open next page](/en/blog/#index-11)"
+label_all_thoughts = "[View all thoughts](/en/thoughts/#continue-reading)"
+label_or_toggle_more = "Or, toggle more posts"
+label_archive = "Archive"
+label_toggle_more = "Toggle more"
+label_back_to_start = "Get Started"
+label_book_author = "Book Author"
+label_backlinks = "Internal Linked References"
+"label_bookmark-of" = "Bookmarks"
+label_books = "All books reviews"
+label_categories = "Categories"
+label_category = "Category"
+label_created = "Published"
+label_full_reading = "Reading Time"
+label_edit = "Edit this page"
+"label_follow-of" = "Follows"
+label_home = "Home"
+"label_in-reply-to" = "Replies"
+label_latest_notes_title = "[Recently Updated Notes](/en/categories/notes/):"
+label_latest_articles_title = "[Recently Updated Posts](/en/blog/):"
+"label_like-of" = "Likes"
+label_links = "Links"
+"label_mention-of" = "Mentions"
+label_new_posts_list_title = "[Latest](/en/blog/) Articles:"
+label_notes_title = "All Notes [(sort by update time)](/en/categories/notes/):"
+label_published_on = "on"
+label_rating = "Rating"
+label_reply = "Reply"
+label_read_more = "Continue to Read"
+label_reading = "Reading Time"
+"label_repost-of" = "Reposts"
+label_response = "Response"
+label_response_description = "The above responses are collected by the [webmention.io](https://webmention.io/) service. I also wrote [an article](/content/blog/indieweb.en.md) about how to achieve this."
+label_rss = "Subscribe RSS"
+"label_rsvp" = "RSVP"
+label_table_contents = "On this page"
+label_tag = "Tag"
+label_tags = "Tags"
+label_target_language = "中文博客"
+label_taxonomy = "Taxonomy"
+label_thoughts_title = "Latest [Short Thoughts](/en/thoughts/)："
+label_updated = "Updated"
+label_quotes_title = "Latest [Quotes](/en/quotes/)："
+label_all_quotes = "[View all quotes](/en/quotes/#continue-reading)"

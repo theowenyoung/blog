@@ -1,0 +1,361 @@
+{% macro get_reading_time(minutes) %}
+  {% if lang=="zh" %}
+    {{ minutes/1.88 | round }}
+  {% else %}
+    {{ minutes }}
+  {% endif %}
+{% endmacro get_reading_time %}
+{% macro post_max(page,index) %}
+  <article class="h-entry hentry">
+    <div class="display-none p-author h-card vcard">
+      <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
+      <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
+      <p class="p-note">{{ config.extra.bio }}</p>
+    </div>
+    <h2 class="no-border pb-sm">
+      <a class="no-underline  u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
+    </h2>
+    {% if page.summary -%}
+      <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
+      <p><a rel="bookmark" href="{{ page.permalink | safe }}#continue-reading">
+       &rarr;&nbsp; {{ trans(key="label_read_more",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
+      </a></p>
+    {% elif page.description -%}
+      <p class="p-summary entry-summary">{{ page.description }}</p>
+    {% elif page.content -%}
+      {{ page.content | safe }}
+    {% endif -%}
+    <div class="muted text-sm">
+      <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
+        <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
+      </a>
+      {% if page.taxonomies.categories %}
+      <span>&nbsp;{{ trans(key="label_published_on",lang=lang) }}</span>
+      <a title="{{ page.taxonomies.categories[0] }}" class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) | safe }}">
+          {{ page.taxonomies.categories[0] }}
+        </a>
+      {% endif %}
+     
+    </div>
+  </article>
+  {% endmacro post_max %}
+  {% macro post_min(page) %}
+    <a href="{{ page.permalink }}">{{ page.title }}</a>
+    <span class="muted text-sm">{{ page.updated }}</span>
+  {% endmacro post_min %}
+  {% macro backlink(pages) %}
+    {% if pages and pages | length >0 %}
+      <section class="backlinks ">
+        <h3>{{ trans(key="label_backlinks",lang=lang) }} ({{ pages | length }})<a href="#backlinks" id="backlinks" class="zola-anchor">🔗</a>
+        </h3>
+        <ul class="">
+          {% for page in pages %}
+            <li>
+              <a href="{{ page.permalink }}">{{ page.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  {% endmacro backlink %}
+  {% macro page_toc(toc) %}
+    <div class="sidebar-table-content">
+      <ul>
+        <li>
+          <a href="#start">{{ trans(key="label_back_to_start",lang=lang) }}</a>
+        </li>
+        {% for h1 in toc %}
+          <li>
+            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            {% if h1.children %}
+              <ul>
+                {% for h2 in h1.children %}
+                  <li>
+                    <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+        <li>
+          <a href="#response">{{ trans(key="label_response",lang=lang) }}</a>
+        </li>
+        <li>
+          <a href="{{ config.extra.edit_url_prefix~page.relative_path }}">{{ trans(key="label_edit",lang=lang) }}</a>
+        </li>
+      </ul>
+    </div>
+  {% endmacro page_toc %}
+  {% macro paginator(ref, extra) %}
+    <div class="pagination py">
+      <ul class="list-none flex justify-between">
+        {% if ref.current_index != 1 %}
+          <li>
+            <a title="First" class="no-underline" href="{{ ref.first }}">&larrb;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a title="First" class="no-underline" href="{{ ref.first }}">&larrb;</a>
+          </li>
+        {% endif %}
+        {% if ref.previous %}
+          <li>
+            <a title="Previous" class="no-underline" href="{{ ref.previous }}">&larr;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a title="Previous"  class="no-underline" href="#">&larr;</a>
+          </li>
+        {% endif %}
+        <li>
+          <a title="All Posts" class="no-underline" href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">{{ ref.current_index }}/{{ ref.number_pagers }}</a>
+        </li>
+        {% if ref.next %}
+          <li>
+            <a title="Next" class="no-underline" href="{{ ref.next }}">&rarr;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a title="Next" class="no-underline" href="#">&rarr;</a>
+          </li>
+        {% endif %}
+        {% if ref.current_index != ref.number_pagers %}
+          <li>
+            <a title="Last" class="no-underline" href="{{ ref.last }}">&rarrb;</a>
+          </li>
+        {% else %}
+          <li class="disabled">
+            <a title="Last" class="no-underline" href="{{ ref.last }}">&rarrb;</a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  {% endmacro paginator %}
+  {% macro subscribe() %}
+    <div id="revue-embed">
+      <form
+        action="http://digests.owenyoung.com/add_subscriber"
+        method="post"
+        id="revue-form"
+        name="revue-form"
+        target="_blank">
+        <div class="revue-form-group">
+          <label for="member_email">Email address</label>
+          <input
+            class="revue-form-field"
+            placeholder="Your email address..."
+            type="email"
+            name="member[email]"
+            id="member_email"/></div>
+        <div class="revue-form-group">
+          <label for="member_first_name">First name
+            <span class="optional">(Optional)</span>
+          </label>
+          <input
+            class="revue-form-field"
+            placeholder="First name... (Optional)"
+            type="text"
+            name="member[first_name]"
+            id="member_first_name"/></div>
+        <div class="revue-form-group">
+          <label for="member_last_name">Last name
+            <span class="optional">(Optional)</span>
+          </label>
+          <input
+            class="revue-form-field"
+            placeholder="Last name... (Optional)"
+            type="text"
+            name="member[last_name]"
+            id="member_last_name"/></div>
+        <div class="revue-form-actions">
+          <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"/>
+        </div>
+        <div class="revue-form-footer">By subscribing, you agree with Revue’s
+          <a target="_blank" href="https://www.getrevue.co/terms">Terms of Service</a>
+          and
+          <a target="_blank" href="https://www.getrevue.co/privacy">Privacy Policy</a>.
+        </div>
+      </form>
+    </div>
+  {% endmacro subscribe %}
+  {% macro webmention(type,item) %}
+    {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
+      <li class="list-none" id="{{ item['wm-id'] }}">
+        <a class="reaction" rel="nofollow ugc" title="{{ item.author.name }} {% if item.published %}at {{ item.published }}{% endif %}" href="{{ item.url }}">
+          {% if item.author.photo %}
+            <img alt="{{ item.author.name }}" class="icon rounded-full" src="{{ item.author.photo }}"/>
+          {% else %}
+            <span class="icon text-lg">👤</span>
+          {% endif %}
+        </a>
+      </li>
+    {% elif item.content.html %}
+      <li class="card mb-lg rounded-lg list-none px py h-cite p-comment h-entry" id="{{ item['wm-id'] }}">
+        <div class="flex items-center flex-wrap p-author h-card">
+          {% if item.author.photo %}
+            <a rel="nofollow ugc" title="{{ item.author.name }}" href="{{ item.author.url }}" class="mr-sm p-name u-url">
+              <img alt="{{ item.author.name }}" class="u-photo rounded-full icon" src="{{ item.author.photo }}"/>
+            </a>
+          {% endif %}
+          {% if item.author and item.author.name %}
+            <a rel="nofollow ugc" class="mr-sm p-name u-url" title="{{ item.author.name }}" href="{{ item.author.url }}">
+              {{ item.author.name }}
+            </a>
+          {% else %}
+            <span class="mr-sm">Unknown</span>
+          {% endif %}
+          {% if item.published %}
+            {% set key = "label_action_"~type %}
+            <a id="{{ item['wm-id'] }}" class="mr-sm" href="#{{ item['wm-id'] }}">{{ config.extra[key] }}</a>
+            <span class="mr-sm">
+              at</span>
+            <a rel="nofollow ugc" class="u-url" title="{{ item.published }}" href="{{ item.url }}">
+              <time class="dt-published published" datetime="{{ item.published }}">{{ item.published | date(format="%Y-%m-%d %H:%M") }}</time>
+            </a>
+          {% endif %}
+          <span>:</span>
+        </div>
+        <div class="p-content p-name">
+          {%- if item.url is starting_with("https://twitter.com/") -%}
+            <p>
+            {%- endif -%}
+            {{ item.content.html | safe }}
+            {%- if item.url is starting_with("https://twitter.com/") -%}
+            </p>
+          {%- endif -%}
+        </div>
+      </li>
+    {% endif %}
+  {% endmacro webmention %}
+
+  {% macro webmentions(backlinks) %}
+    {% if config.extra.webmention_path %}
+      {% if current_path == "/" %}
+        {% set_global current_webmention_file_name = current_path %}
+      {% else %}
+        {% set_global current_webmention_file_name = current_path | trim_end_matches(pat="/") %}
+      {% endif %}
+      {% set webmention_data = load_data(path=config.extra.webmention_path~current_webmention_file_name~".json",required=false,format="json") %}
+      <div class="response-area">
+        <hr/>
+        <h2>{{ trans(key="label_response",lang=lang) }}<a href="#response" id="response" class="zola-anchor">🔗</a>
+        </h2>
+        {% if webmention_data %}
+          {% set_global mentions = [] %}
+          {% for ignored, item in webmention_data %}
+            {% set_global mentions = mentions | concat(with=item) %}
+          {% endfor %}
+          {% for type, items in mentions | group_by(attribute="wm-property") %}
+            {% for item in items %}
+              {% if item["wm-property"] == "mention-of" %}
+                {% if item.url is starting_with("https://twitter.com/TheOwenYoung") or item.url is starting_with("https://twitter.com/OwenYoungZh") %}
+                  {% set_global twitter_post_link = item.url %}
+                  {% set_global twitter_post = item %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endif %}
+        <form class="webmention-form" action="https://webmention.io/www.owenyoung.com/webmention" method="post">
+          {% if config.extra.email %}
+            {% if page and page.title %}
+              {% set_global title = page.title %}
+            {% elif section and section.title %}
+              {% set_global title = section.title %}
+            {% else %}
+              {% set_global title = "Untitled" %}
+            {% endif %}
+            <div id="email-comment" class="muted text-sm">
+              {% if config.default_language != lang %}
+                <p>Have you written a
+                  <a href="https://indieweb.org/responses">response</a>
+                  to this? Let me know the article or tweet URL (Article or tweet content needs to include the URL of this article, learn more about webmention <a href="https://indieweb.org/webmention">here</a>).
+                </p>
+              {% else %}
+                <p>
+                  你有对这篇文章写<a href="https://indieweb.org/responses">回应</a>吗? 你可以在这里提交你的文章网址或者推特链接（文章或推特内容需要包含这篇文章的地址，点击<a href="https://indieweb.org/Webmention">这里</a>了解 Webmention）：
+                </p>
+              {% endif %}
+            </div>
+          {% endif %}
+          <div class="flex items-center flex-wrap pb">
+            <input type="url" name="source" class="flex-3 mr-sm w-full py-sm px-sm"/>
+            <input type="submit" class="px py-sm" value="Send Webmention"/>
+          </div>
+          <input type="hidden" name="target" value="{{ current_url }}"/>
+        </form>
+        {% if twitter_post_link %}
+        {% if config.default_language != lang %}
+        <p>
+          Or, you can simply reply to
+          <a href="{{ twitter_post_link | safe }}">this tweet</a>:
+        </p>
+        {% else %}
+        <p>
+          或者, 你可以回复<a href="{{ twitter_post_link | safe }}">这条推特</a>:
+        </p>
+        {% endif %}
+         
+          <article class="tweet-box rounded-lg relative mb">
+            <a class="overlay" href="{{ twitter_post_link | safe }}" title="Visit tweet"></a>
+            <div class="inner">
+              <div >
+               <p class="tweet-content"> {{ twitter_post.content.html | safe }}</p> 
+               <div class="text-sm"> &mdash; {{twitter_post.author.name}} on {{twitter_post.published | date(format="%Y.%m.%d")}} &nbsp; 
+                <a href="{{ twitter_post_link | safe }}" class="">{{trans(key="label_reply",lang=lang) }}</a></div>
+              
+              </div>
+              <span target="_blank" rel="noopener noreferrer" class="tweet-icon">
+                <svg viewBox="0 0 24 24" class="tweet-icon-svg">
+                  <g>
+                    <path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958
+                      1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12
+                      1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072
+                      3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3
+                      0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065
+                      2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477
+                      2.323-2.41z"></path>
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </article>
+       
+        {% endif %}
+        {% if config.default_language != lang %}
+        <p class="text-sm">
+    The response will be automatically collected by <a href="https://webmention.io/">webmention.io bot</a>, and another <a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">bot</a> will automatically post it here within 24 hours, I wrote <a href="/en/blog/indieweb/">an article</a> about how to achieve this. You can also send your response via <a href="mailto:owen@owenyoung.com?subject={{ " Reply: " ~ title | urlencode }}">mail</a> <code>owen@owenyoung.com</code> or <a href="https://twitter.com/TheOwenYoung">Twitter DM</a>
+        </p>
+        {% else %}
+        <p class="text-sm">
+          回应内容会被 <a href="https://webmention.io/">webmention.io 机器人</a>收集，另一位<a href=" https://github.com/theowenyoung/blog/blob/main/.github/workflows/denoflow.yml">机器人</a>会在24小时内把回应展示到这里, 我记了<a href="/en/blog/indieweb/">一篇</a>如何实现这个的笔记，也欢迎通过<a href="mailto:owen@owenyoung.com?subject={{ " 回复："~title | urlencode }}">邮件
+          </a>
+          <code>owen@owenyoung.com</code>
+    或 <a href="https://twitter.com/OwenYoungZh">Twitter DM</a> 和我讨论。
+        </p>
+        {% endif %}
+        {% if webmention_data %}
+        <section class="p-comments h-feed">
+        {% for type, items in mentions | group_by(attribute="wm-property") %}
+            <h3>{{ trans(key="label_"~type,lang=lang) }} ({{ items | length }})<a href="#{{ type }}" id="{{ type }}" class="zola-anchor">🔗</a>
+            </h3>
+            {% if type == 'like-of' or type == "repost-of" or type == "bookmark-of" or type == "follow-of" %}
+              <ul class="list-none flex items-center flex-wrap">
+                {% for item in items %}
+                  {{ macro::webmention(type=type, item=item) }}
+                {% endfor %}
+              </ul>
+            {% else %}
+              <ul class="list-none">
+                {% for item in items %}
+                  {{ macro::webmention(type=type, item=item) }}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        </section>
+        {% endif %}
+        </div>
+      {% endif %}
+    {% endmacro webmentions %}

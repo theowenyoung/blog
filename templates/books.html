@@ -1,0 +1,52 @@
+{% extends "base.html" -%}
+{% block main -%}
+{% if paginator %}
+  {% set_global section_pages = paginator.pages %}
+  {% set_global section_content = section.content %}
+{% else %}
+  {% set_global book_section = get_section(path="blog/books/_index.md") -%}
+  {% set_global section_pages = book_section.pages | sort(attribute="extra.rating") %}
+  {% set_global section_pages = section_pages | reverse %}
+  {% set_global section_content = book_section.content %}
+{% endif %}
+<div class="books-page">
+  <p>
+    {{ section_content | safe }}
+  </p>
+  <div>
+    {% for page in section_pages %}
+      <article>
+        <h2 class="no-border pb-sm">
+          <a title="{{ page.title }}" class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
+        </h2>
+        <div class="muted pb">
+          <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+          {% if page.extra.author %}
+            ·
+            <span>{{ trans(key="label_book_author",lang=lang) }}：{{ page.extra.author }}
+            </span>
+          {% endif %}
+        ·
+        <span>{{ trans(key="label_rating",lang=lang) }}：</span>
+        <span>{{ page.extra.rating }}/10</span>
+      </div>
+      <div>{{ page.summary | safe }}</div>
+      {% if page.taxonomies.tags %}
+        <p>
+          {% for tag in page.taxonomies.tags %}
+            <a class="muted text-sm no-underline" title="{{ tag }}" href="{{ get_taxonomy_url(kind="tags",lang=lang, name=tag) }}">#{{ tag }}</a>
+            {% if page.taxonomies.tags | length > 1 %}
+              {% if loop.index != page.taxonomies.tags | length %}&nbsp;{% endif %}
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+      </article>
+    {% endfor %}
+  {% if paginator %}
+    {{ macro::paginator(ref=paginator, extra=config.extra) }}
+  {% endif %}
+  </div>
+{{ macro::webmentions(backlinks=[]) }}
+</div>
+{% endblock main -%}

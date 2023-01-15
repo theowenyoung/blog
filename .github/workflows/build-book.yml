@@ -1,0 +1,75 @@
+name: Build Book
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build-deploy:
+    concurrency: build-book
+    runs-on: macos-latest
+    steps:
+      - name: Set current date as env variable
+        run: echo "NOW=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_ENV
+      - uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.deno
+            ~/.cache/deno
+          key: ${{ runner.os }}-deno-${{ hashFiles('book/build.ts') }}
+      - run: make installbook
+      - name: Build Book
+        run: make buildbook
+      # - uses: actions/upload-artifact@v3
+      #   with:
+      #     name: book
+      #     path: |
+      #       ./owen-blog-dist/*.pdf
+      #       ./owen-blog-dist/*.epub
+      #       ./owen-blog-dist/*.zip
+
+      # - name: Upload assets
+      #   uses: "marvinpinto/action-automatic-releases@v1.2.1"
+      #   with:
+      #     repo_token: "${{ secrets.GITHUB_TOKEN }}"
+      #     automatic_release_tag: "book"
+      #     prerelease: true
+      #     draft: true
+      #     title: "Blog Book"
+      #     files: |
+      #       ./owen-blog-dist/*.pdf
+      #       ./owen-blog-dist/*.zip
+      #       ./owen-blog-dist/*.epub
+      #       ./owen-blog-archive-dist/*.zip
+      #       ./owen-blog-archive-dist/*.pdf
+      #       ./owen-blog-archive-dist/*.epub
+      - name: Update release
+        uses: johnwbyrd/update-release@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release: book
+          files: |
+            ./owen-blog-dist/owen-blog-html.zip
+            ./owen-blog-dist/owen-blog.epub
+            ./owen-blog-archive-dist/owen-blog-archive-html.zip
+            ./owen-blog-archive-dist/owen-blog-archive.epub
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: book # e.g. 'my-project'
+          directory: ./owen-blog-dist # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish Archive
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: archive-book # e.g. 'my-project'
+          directory: ./book-dist/owen-blog-archive/book/html # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

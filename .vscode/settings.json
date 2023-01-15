@@ -1,0 +1,33 @@
+{
+    "foamLite.internalLink.enableRelativeLink": false,
+    "editor.minimap.enabled": false,
+    "editor.wrappingIndent": "indent",
+    "editor.overviewRulerBorder": false,
+    "editor.lineHeight": 24,
+    "[markdown]": {
+      "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+      }
+    },
+    "task.problemMatchers.neverPrompt":true,
+    "files.defaultLanguage": "markdown",
+    "files.exclude": {
+      "**/node_modules": true
+    },
+    "files.watcherExclude": {
+      "**/node_modules": true
+    },
+    "git.enableSmartCommit": true,
+    "git.postCommitCommand": "sync",
+    "markdown.preview.breaks": true,
+    "pasteImage.path": "${projectRoot}/attachments",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    "prettier.singleQuote": false,
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": true,
+    "editor.formatOnSave": true
+    
+}

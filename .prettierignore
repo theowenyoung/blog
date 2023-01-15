@@ -1,0 +1,6 @@
+.foam
+.obsidian
+.vscode
+.static
+*.html
+public/

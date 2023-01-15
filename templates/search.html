@@ -1,0 +1,106 @@
+{% extends "base.html" -%}
+{% block before_meta %}
+  {% if config.extra.meilisearch_url %}
+    <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
+    {% endif %}
+  {% endblock before_meta %}
+  {% block header %}
+      <section>
+      <h1>{{ page.title }}</h1>
+      <div>
+        {{ page.content | safe }}
+      </div>
+    </section>
+  {% endblock header %}
+  {% block main -%}
+  <div class="search-page">
+    <section>
+      <h2>
+        Search with
+        <a href="https://github.com/meilisearch/meilisearch">Meilisearch</a>
+      </h2>
+      <input type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+    </section>
+    <section>
+      <h2>
+        Search with
+        <a href="https://sourcegraph.com/search?q=context:global+repo:^github\.com/theowenyoung/blog%24">Sourcegraph</a>
+      </h2>
+      <form id="sourcegraph-search" class="flex items-center flex-wrap pb">
+        <input class="flex-3 mr-sm w-full py-sm px-sm" type="search" id="sourcegraph-search-term"/>
+        <input class="px py-sm" type="submit" value="Search"/>
+      </form>
+    </section>
+    <section>
+      <h2>
+        Search with
+        <a href="https://github.com/theowenyoung/blog/search">Github</a>
+      </h2>
+      <form
+        target="_blank"
+        id="github-search"
+        class="flex items-center flex-wrap pb"
+        action="https://github.com/theowenyoung/blog/search"
+        method="get">
+        <input class="flex-3 mr-sm w-full py-sm px-sm" type="search" name="q" id="github-search-term"/>
+        <input class="px py-sm" type="submit" value="Search"/>
+      </form>
+    </section>
+    <section>
+      <h2>Search with
+        <a href="https://github1s.com/theowenyoung/blog">Github1s</a>
+      </h2>
+      <blockquote>
+        <p>Enter
+          <a href="https://github1s.com/theowenyoung/blog">Github1s</a>
+          and click the search button</p>
+      </blockquote>
+    </section>
+    <section>
+      <h2>
+        Search with
+        <a href="https://www.google.com/search?q=site%3Awww.owenyoung.com">Google</a>
+      </h2>
+      <form id="google-search" class="flex items-center flex-wrap pb">
+        <input class="flex-3 mr-sm w-full py-sm px-sm" type="search" id="google-search-term"/>
+        <input class="px py-sm" type="submit" value="Search"/>
+      </form>
+    </section>
+    <hr/>
+  </div>
+{% endblock main -%}
+{% block before_body_end %}
+  {% if config.extra.meilisearch_url %}
+    <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        docsSearchBar({
+          hostUrl: '{{ config.extra.meilisearch_url | safe }}',
+          apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
+          indexUid: 'owen-blog',
+          inputSelector: '#search-bar-input',
+          meilisearchOptions: {
+            limit: 10
+          },
+          debug: false, // Set debug to true if you want to inspect the dropdown
+        })
+      });
+      // sourcegraph search
+      document.getElementById('sourcegraph-search').addEventListener('submit', function (e) {
+        e.preventDefault(); // to prevent form submission
+        var searchUrl = 'https://sourcegraph.com/search?patternType=literal&q=context:global+repo:%5Egithub%5C.com/theowenyoung/blog%24+file%3A%5' +
+            'C.(md%7Cmdx)%24+' + encodeURIComponent(document.getElementById('sourcegraph-search-term').value);
+        window.open(searchUrl, '_blank');
+      });
+      // google search
+      document.getElementById('google-search').addEventListener('submit', function (e) {
+        e.preventDefault(); // to prevent form submission
+        var searchUrl = 'https://www.google.com/search?q=site%3Awww.owenyoung.com+' + encodeURIComponent(document.getElementById('google-search-term').value);
+        window.open(searchUrl, '_blank');
+      });
+    </script>
+  {% endif %}
+{% endblock before_body_end %}
+
+{% block sidebar %}
+{% endblock sidebar %}

@@ -1,0 +1,38 @@
+bin
+deno.lock
+dist/
+public
+prod-db.zip
+.obsidian
+.env
+data/
+webmentions/
+book-dist/
+*-dist/
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode/*.log
+# Icon must end with two \r
+Icon
+wrangler.toml
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

@@ -1,0 +1,47 @@
+name: Deploy Site
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  build-deploy:
+    concurrency: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make install
+      - run: make prod-load
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{secrets.AWS_DEFAULT_REGION}}
+          AWS_ENDPOINT: ${{secrets.AWS_ENDPOINT}}
+      - name: Build Site
+        run: make build
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     publish_dir: ./public
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish to pages 
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: owen # e.g. 'my-project'
+          directory: ./public # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - run: sleep 30
+      - uses: actions/checkout@v3
+      - name: Run docs-scraper
+        env:
+          HOST_URL: "https://meili.owenyoung.com"
+          API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
+          CONFIG_FILE_PATH: ${{ github.workspace }}/meilisearch-docs-scraper-config.json
+        run: |
+          docker run -t --rm \
+            -e MEILISEARCH_HOST_URL=$HOST_URL \
+            -e MEILISEARCH_API_KEY=$API_KEY \
+            -v $CONFIG_FILE_PATH:/docs-scraper/config.json \
+            getmeili/docs-scraper:v0.12.6 pipenv run ./docs_scraper config.json
