@@ -9,7 +9,7 @@ taxonomies:
     - About
 ---
 
-This is a list of projects I've done and am doing.
+This is a list of projects I've done and am doing. Maybe you should consider [sponsor](https://github.com/sponsors/theowenyoung) me, thanks for you time.
 
 <!-- more -->
 
