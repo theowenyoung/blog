@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2022-11-24
+updated: 2023-01-22
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 一个人的时候，音乐是一种很重要的陪伴，谢谢音乐家们！ - 2023.01.22
 
 > 人好难承认自己坚持了很久的事从根上就是错的这件事，简称：魔怔了。 - 2023.01.14
 
