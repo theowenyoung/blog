@@ -68,6 +68,7 @@ taxonomies:
 - [52 斗图](https://www.52doutu.cn/) - 表情包在线生成
 - [rust 生成线条图片](https://github.com/lf94/img2utf)
 - [AI Stable 扩散图片生成接口](https://computerender.com/) - 低成本的众包
+- [app screenshot generate](https://studio.app-mockup.com/)
 
 ## URL 缩短器
 
