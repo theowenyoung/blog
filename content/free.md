@@ -1,7 +1,7 @@
 ---
 title: 互联网上的免费资源汇总
 date: 2022-03-25
-updated: 2022-07-17
+updated: 2023-01-23
 taxonomies:
   categories:
     - Notes
@@ -83,3 +83,7 @@ taxonomies:
 ## Paas
 
 - [Mogenius](https://mogenius.com) - 方便的部署 docker 资源，1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.
+
+## Cron
+
+- [cron-job](https://cron-job.org/en/) - 免费的定时任务执行，最大可以每分钟 1 次。
