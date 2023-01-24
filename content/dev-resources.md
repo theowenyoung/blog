@@ -44,6 +44,10 @@ taxonomies:
 - [GitHub - NickMRamirez/Proxy-Benchmarks: Benchmarks for several proxies](https://github.com/NickMRamirez/Proxy-Benchmarks)
 - [rust templates](https://github.com/djc/template-benchmarks-rs)
 
+## HTML
+
+- [HTML Content Type](https://russmaxdesign.github.io/html5-content-types/)
+
 ## Chat Manage
 
 ### Live Chat
