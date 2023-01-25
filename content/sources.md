@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2022-12-20
+updated: 2023-01-25
 taxonomies:
   categories:
     - Notes
@@ -27,6 +27,7 @@ taxonomies:
 - [Boing Boing](https://boingboing.net/) - 一个有意思的在线杂志，科技，政治，生活
 - [Newstatesman - 新政治家](https://www.newstatesman.com/) - 英国领先的进步政治和文化杂志
 - [The Intercept](https://theintercept.com/) - 拦截，ebay 创办的在线媒体。
+- [Mcsweeneys](https://www.mcsweeneys.net/) - 幽默与讽刺的在线杂志
 
 ## 深度报道
 
