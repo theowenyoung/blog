@@ -1,0 +1,298 @@
+{%- import "macros.html" as macro -%}
+{%- set_global target_lang = "en" -%}
+{%- set_global lang_prefix_path = "/" -%}
+{%- if config.default_language != lang -%}
+  {%- set_global target_lang = "zh" -%}
+  {%- set_global lang_prefix_path = "/"~lang~"/" -%}
+{%- endif -%}
+{%- set_global file_lang_path = "" -%}
+{%- if config.default_language != lang -%}
+  {%- set_global file_lang_path = "." ~ lang -%}
+{%- endif -%}
+{%- if config.mode=="build" -%}
+  {%- set_global css = load_data(path="static/site/styles/site.css") -%}
+  {%- if lang == 'zh' -%}
+    {%- set_global post_css = load_data(path="static/site/styles/site-zh.css") -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if section and section.relative_path is starting_with("_index.") -%}
+{%- set_global is_index = true -%}
+{%- else -%}
+{%- set_global is_index = false -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    {%- block social_meta -%} 
+      {%- if page.title -%}
+        {%- set_global title = page.title -%}
+      {%- elif term.name -%}
+        {%- set titled_type_name = taxonomy.name | title -%}
+        {%- set_global title = titled_type_name ~ " | " ~ term.name  -%}
+      {%- elif taxonomy.name  -%}
+        {%- set_global title = taxonomy.name | title -%}
+      {%- elif section.title -%}
+        {%- set_global title = section.title -%}
+      {%- endif -%}
+      {%- if title -%}
+        {%- set_global full_title = title ~ " - " ~ config.title -%}
+      {%- elif is_index == true -%}
+        {%- set_global title = config.title -%}
+        {%- set_global full_title = config.title -%}
+      {%- endif -%}
+      {%- if page.description -%}
+        {%- set_global description =  page.description -%}
+      {%- elif page.summary -%}
+        {%- set_global description =  page.summary | spaceless | striptags -%}
+      {%- elif page.content -%}
+        {%- set_global description = page.content | spaceless | striptags | truncate(length=200) -%}
+      {%- elif is_index -%}
+        {%- set_global description = config.description -%}
+      {%- elif section.content -%}
+        {%- set_global description = section.content | spaceless | striptags | truncate(length=200) -%}
+      {%- else -%}
+        {%- set_global description = config.description -%}
+      {%- endif -%}
+      {%- if page.extra.image -%}
+        {%- set_global image = page.extra.image -%}
+      {%- elif is_index and config.extra.image -%}
+        {%- set_global image = config.extra.image -%}
+      {%- elif page.assets -%}
+        {%- for asset in page.assets | sort -%}
+          {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
+              {%- set_global image=get_url(path=asset) -%} 
+              {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    <title>{{full_title}}</title>
+      <meta property="og:title" content="{{title}}"/>
+      <meta itemprop="headline" content="{{title}}"/>
+      <meta property="og:description" content="{{description}}"/>
+      <meta name="description" content="{{description}}"/>
+    <meta property="og:url" content="{{current_url | safe}}"/>
+      {%- if image -%}
+      <meta name="og:type" content="summary_large_image"/>
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="og:image" content="{{ image }}"/>
+      <meta property="og:image:alt" content="{{ title }}"/>
+      {%- else -%}
+      <meta name="og:type" content="summary"/>
+      {%- endif -%}
+    {%- endblock social_meta -%}
+    {%- if config.mode!="build" -%}
+      <link rel="stylesheet" href="{{ get_url(path="site/styles/site.css", trailing_slash=false,cachebust=true) | safe }}">
+      {%- if lang == 'zh' -%}
+        <link rel="stylesheet" href="{{ get_url(path="site/styles/site-zh.css", trailing_slash=false,cachebust=true) | safe }}">
+      {%- endif -%}
+    {%- endif -%}
+    <link rel="me" href="https://twitter.com/TheOwenYoung"/>
+    <link rel="me" href="https://twitter.com/OwenYoungZh"/>
+    <link rel="me" href="https://github.com/theowenyoung"/>
+    <link rel="me" href="mailto:owen@owenyoung.com"/>
+    <link rel="webmention" href="https://webmention.io/www.owenyoung.com/webmention"/> {% block before_meta %}{% endblock before_meta %}
+    <meta name="keywords" content="{{ trans(key="keywords",lang=lang) }}"/>
+    <meta name="author" content="{{ config.extra.author }}"/>
+    <meta itemprop="copyrightYear" content="{{ now() | date(format="%Y") }}"/>
+    <link rel="icon" href="{{ get_url(path="site/images/favicon-32x32.png",cachebust=true) }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path="site/images/apple-icon-57x57.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ get_url(path="site/images/apple-icon-60x60.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ get_url(path="site/images/apple-icon-72x72.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ get_url(path="site/images/apple-icon-76x76.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ get_url(path="site/images/apple-icon-114x114.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ get_url(path="site/images/apple-icon-120x120.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ get_url(path="site/images/apple-icon-144x144.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ get_url(path="site/images/apple-icon-152x152.png",cachebust=true) }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="site/images/apple-icon-180x180.png",cachebust=true) }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path="site/images/android-icon-192x192.png",cachebust=true) }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="site/images/favicon-32x32.png",cachebust=true) }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="site/images/favicon-16x16.png",cachebust=true) }}">
+    <meta name="msapplication-TileColor" content="{{ config.extra.theme_color }}"/>
+    <meta name="msapplication-TileImage" content="{{ get_url(path="site/images/ms-icon-144x144.png",cachebust=true) }}">
+    <meta name="theme-color" content="{{ config.extra.theme_color }}"/>
+    <meta property="og:site_name" content="{{ config.title }}"/>
+    {% if config.extra.twitter_user %}
+      <meta name="twitter:site" content="{{ config.extra.twitter_user }}"/>
+      <meta name="twitter:creator" content="{{ config.extra.twitter_user }}"/>
+    {% endif %}
+    {% block rss %}
+      <link rel="alternate" type="application/atom+xml" title="{{ config.title }} - RSS" href="{{ get_url(path="atom.xml") }}">
+    {% endblock rss %}
+    {%- if config.mode=="build" -%}
+      <style>{{css | safe}}</style>
+      {%- if post_css -%}
+        <style>{{post_css | safe}}</style>
+      {%- endif -%}
+    {%- endif -%}
+    <link rel="manifest" href="{{ get_url(path="site/images/manifest.json") }}" >
+    {% if config.extra.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "{{ config.extra.google_analytics }}");
+      </script>
+    {% endif %}
+    {% block post_meta %}{% endblock post_meta %}
+  </head>
+  <body>
+    <div id="top"></div>
+    <div id="root">
+      <nav class="navbar">
+        <div class="navbar-inner justify-between">
+          <div>
+            <a class="brand" href="{{ config.base_url~lang_prefix_path }}">
+              <img class="icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
+            </a>
+          </div>
+            <ul class="flex menu list-none items-center justify-center">
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Search"
+                  href="/search/">
+                  <span class="text-sm">🔍</span>
+                </a>
+              </li>
+              {% if lang=='zh' %}
+                <li>
+                  <a
+                    class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='en'
+                      -%}muted{% endif -%}"
+                    title="English Site"
+                    href="/en/">
+                    <span class="text-sm">EN</span>
+                  </a>
+                </li>
+              {% endif %}
+              {% if lang=='en' %}
+                <li>
+                  <a
+                    class="only-show-small flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='zh'
+                      -%}muted{% endif -%}"
+                    title="中文站点"
+                    href="/">
+                    <span class="text-sm">中</span>
+                  </a>
+                </li>
+              {% endif %}
+              <li class="list-none nav-divider"></li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
+                  title="Back to Top"
+                  href="#top">
+                  <span class="">
+                    &#8593;</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline only-show-small"
+                  title="Go to Bottom"
+                  href="#bottom">
+                  <span class="">
+                    &#8595;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      {% block body_zone -%}
+      <div class="body-zone">
+        {% block header %}
+        {% endblock header %}
+        <div class="main-zone relative">
+          <div class="main">
+            <div class="main-inner">
+              {% block main %}{% endblock main %}
+            </div>
+          </div>
+          {% block sidebar %}
+          <aside class="sidebar px">
+            {% block sidebar_top %}{% endblock sidebar_toop %}
+            {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+            {% set_global note_pages = [] -%}
+            {% for cat in all_categories.items -%}
+              {% if cat.name == "Notes" -%}
+                {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+              {% endif -%}
+            {% endfor -%}
+            <div class="display-none h-card pt">
+              <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
+              <a class="p-name u-url u-uid" href="{{ config.extra.indieweb_url }}" rel="me">{{ config.extra.author }}</a>
+              <p class="p-note">{{ config.extra.bio }}</p>
+            </div>
+
+            <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}</h2>
+            <div class="articles">
+              <ul class="root-ul">
+                {% for page in note_pages | slice(end=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                {% endfor %}
+              </ul>
+              {%if note_pages | slice(start=10) | length > 0%}
+              <details>
+                <summary class="text-sm">{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+                <ul>
+                  {% for page in note_pages | slice(start=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                  {% endfor %}
+                </ul>
+              </details>
+              {% endif %}
+            </div>
+            </details>
+            <h2>
+              <a class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</a>
+            </h2>
+            <ul>
+              {% set categories = get_taxonomy(kind="categories",lang=lang) %}
+              {% for cat in
+              categories.items %}
+                {% set url = get_taxonomy_url(kind="categories",lang=lang, name=cat.name) %}
+                <li>
+                  <a class="no-underline" title="{{ cat.name }}" href="{{ url }}">{{ cat.name }}({{ cat.pages | length }})</a>
+                </li>
+              {% endfor %}
+            </ul>
+            {% set custom_sidebar = get_page(path="pages/sidebar"~file_lang_path~".md") %}
+            {{ custom_sidebar.content | safe }}
+            <h2>
+              <a class="no-underline" title="{{ trans(key='label_tags',lang=lang) }}" href="{{ lang_prefix_path }}tags/">{{ trans(key="label_tags",lang=lang) }}</a>
+            </h2>
+            <ul class="list-none text-sm">
+              {% set tags = get_taxonomy(kind="tags",lang=lang) %}
+              {% for tag in tags.items -%}
+                {% set url = get_taxonomy_url(kind="tags",lang=lang, name=tag.name) -%}
+                <li class="inline">
+                  <a class="no-underline" title="{{ tag.name }}" href="{{ url }}">{{ tag.name }}({{ tag.pages | length }})</a>
+                </li>
+              {% endfor %}
+            </ul>
+            <h2>
+              <a class="no-underline" title="IndieWeb" href="https://indieweb.org/">IndieWeb</a>
+            </h2>
+            <div class="pb">
+              <a title="Previous" href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/previous">←</a>
+              An IndieWeb Webring 🕸💍
+              <a title="Next" href="https://xn--sr8hvo.ws/%F0%9F%93%AE%F0%9F%86%99%F0%9F%93%A9/next">→</a>
+            </div>
+          </aside>
+          {% endblock sidebar %}
+        </div>
+      </div>
+      {% endblock body_zone -%}
+    </div>
+    <div id="bottom"></div>
+    {% block before_body_end -%}
+    {% endblock before_body_end -%}
+  </body>
+</html>

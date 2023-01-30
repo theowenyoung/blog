@@ -6,41 +6,6 @@
   {% endif %}
 {% endmacro get_reading_time %}
 {% macro post_max(page,index) %}
-  <article class="h-entry hentry article-card">
-    <div class="display-none p-author h-card vcard">
-      <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
-      <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
-      <p class="p-note">{{ config.extra.bio }}</p>
-    </div>
-    <h2 class="no-border pb-sm">
-      <a class="no-underline  u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
-    </h2>
-    {% if page.summary -%}
-      <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
-      <p><a rel="bookmark" href="{{ page.permalink | safe }}#continue-reading">
-       &rarr;&nbsp; {{ trans(key="label_read_more",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
-      </a></p>
-    {% elif page.description -%}
-      <p class="p-summary entry-summary">{{ page.description }}</p>
-    {% elif page.content -%}
-      {{ page.content | safe }}
-    {% endif -%}
-    <div class="muted text-sm">
-      <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
-        <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
-      </a>
-      {% if page.taxonomies.categories %}
-      <span>&nbsp;{{ trans(key="label_published_on",lang=lang) }}</span>
-      <a title="{{ page.taxonomies.categories[0] }}" class="no-underline p-category" rel="category tag" href="{{ get_taxonomy_url(kind="categories",lang=lang, name=page.taxonomies.categories[0]) | safe }}">
-          {{ page.taxonomies.categories[0] }}
-        </a>
-      {% endif %}
-     
-    </div>
-  </article>
-  {% endmacro post_max %}
-
-{% macro post_max_detail(page,index) %}
   <article class="h-entry hentry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>

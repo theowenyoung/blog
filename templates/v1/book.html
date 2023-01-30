@@ -1,0 +1,11 @@
+{% extends "page.html" %}
+{% block detail_meta_slot -%}
+<p class="muted text-sm">
+  {% if page.extra.author %}
+    <span>{{ trans(key="label_book_author",lang=lang) }}：{{ page.extra.author }}
+    </span>
+  {% endif %}
+  &nbsp;
+  <span>{{ trans(key="label_rating",lang=lang) }}：</span>
+  <span>{{ page.extra.rating }}/10</span>
+</p>{% endblock detail_meta_slot -%}

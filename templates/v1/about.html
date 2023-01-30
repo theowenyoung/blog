@@ -1,0 +1,6 @@
+{% extends "page.html" %}
+{% block detail_meta_slot -%}
+<p class="muted text-sm">
+  Latest build at:
+  {{ now() | date(format="%Y.%m.%d %H:%M",timezone="Asia/Shanghai") }}
+</p>{% endblock detail_meta_slot -%}

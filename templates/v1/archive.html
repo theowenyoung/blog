@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block main %}
+  <div class="archive-page">
+    {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
+    <div class="main-box-block">
+      {% for year, posts in
+all_section_pages.pages | group_by(attribute="year") %}
+        <h2>{{ year }}</h2>
+        <ul>
+          {% for post in posts %}
+            <li>{{ macro::post_min(page=post) }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+  {{ macro::webmentions(backlinks=page.backlinks) }}
+</div>{% endblock main %}

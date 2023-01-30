@@ -821,18 +821,6 @@ ul.text-sm:lang(en) {
   max-width: 52rem;
 }
 
-.article-card {
-  font-size: 1rem;
-  flex: 1 1 15.625em;
-  margin: 0.2em;
-  border-radius: 0.5em;
-  background-color: #fff;
-  box-shadow: 0 -0.5px 0.5px rgba(135, 116, 87, 0.1),
-    0 -0.5px 0.5px rgba(135, 116, 87, 0.1), 0 2px 1px rgba(135, 116, 87, 0.1),
-    0 10px 15px -5px rgba(135, 116, 87, 0.1), 0 2px 3px rgba(135, 116, 87, 0.1);
-  border: 0;
-}
-
 @media (min-width: 48rem) {
   .navbar {
     position: fixed;

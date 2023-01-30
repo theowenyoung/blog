@@ -63,7 +63,7 @@
       <summary class="text-lg mb">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
         <a href="#latest" id="latest" class="zola-anchor">🔗</a>
       </summary>
-      <div class="articles h-feed hfeed flex flex-wrap">
+      <div class="articles h-feed hfeed">
         {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
           {{ macro::post_max(page=page,index=loop.index) }}
         {% endfor %}
@@ -119,5 +119,3 @@
       </script>
     {% endif %}
   {% endblock before_body_end %}
-{% block sidebar %}
-{% endblock sidebar %}
