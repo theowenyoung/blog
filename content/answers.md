@@ -1,7 +1,7 @@
 ---
 title: 有意思的问题收集
 date: 2021-03-25
-updated: 2022-03-25
+updated: 2023-02-01
 taxonomies:
   categories:
     - Notes
@@ -52,6 +52,7 @@ taxonomies:
 - [你们国家有什么奇怪的传统？](https://www.reddit.com/r/TellMeAFact/comments/emukdw/tmaf_about_weird_traditions_in_your_country/)
 
 ## 预测
+
 - [Ask HN: 新的十年，有什么预测？2020 版](https://news.ycombinator.com/item?id=21941278)
 
 ## 生产力
@@ -76,3 +77,7 @@ taxonomies:
 ## 抑郁症
 
 - [问 HN：使用或不使用抗抑郁药来战胜抑郁症？](https://news.ycombinator.com/item?id=30923701)
+
+## 讲座
+
+- [问 HN：你见过的最好的讲座系列是什么？ |黑客新闻](https://news.ycombinator.com/item?id=34591291)

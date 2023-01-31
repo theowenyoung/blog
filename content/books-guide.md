@@ -63,6 +63,9 @@ taxonomies:
 ## 讨论
 
 - [Book Forum](https://www.bookforum.com/) - 高质量的书籍推荐/评论平台
+- [Book Shelf](https://www.reddit.com/r/bookshelf/) - Reddit 书架小组
+- [Book Suggestions](https://www.reddit.com/r/booksuggestions/) - Reddit 书籍建议小组
+- [Book Porn](https://www.reddit.com/r/bookporn/) - 书籍的艺术
 
 ## 免费电子书
 
