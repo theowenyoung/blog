@@ -43,3 +43,5 @@ extra:
 1. 虚假的自由要求世界遵从你的意志，真正的自由不需要世界的任何东西。
 
 [点此](https://github.com/theowenyoung/blog/releases/download/book/everythingfucked.epub)可以阅读我机翻后的 epub
+
+> 在这本书里，作者有提到他希望 AI 能通过更加理性的判断来提高自己。所以我有点想做一个 推特机器人，叫做 @correctme ，当我发布一些错误的事情之后，自动通过推特回复来纠正我。
