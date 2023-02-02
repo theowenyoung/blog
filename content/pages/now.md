@@ -25,15 +25,12 @@ taxonomies:
 
 ## 正在听
 
+- [美国校园广播](https://www.campus-fm.com/)
 - [BBC Radio 6 Music](https://www.bbc.co.uk/sounds/play/live:bbc_6music)
-
-- [BBC 4](https://www.bbc.co.uk/sounds/play/live:bbc_radio_fourfm)
-
-- [BBC Radio 1 Relax](https://www.bbc.co.uk/sounds/play/live:bbc_radio_one_relax)
 
 ## 正在读
 
-最近在利用[遛狗时间](/content/blog/reading-while-walking-dogs.md) 读《王小波全集》
+最近在利用[遛狗时间](/content/blog/reading-while-walking-dogs.md) 读《米德尔马契》
 
 ### 练习英语
 
