@@ -22,6 +22,7 @@ taxonomies:
 - 记录我每天阅读后希望分享的链接，发布在[日记栏目](/categories/journal/)里
 - 开发[沉浸式翻译](https://immersive-translate.owenyoung.com/)扩展，已支持 firefox,chrome,油猴.
 - 在[https://clip.owenyoung.com/](https://clip.owenyoung.com/) 分享我阅读的文章的双语对照快照。
+- 新开了一个 [Telegram频道](https://t.me/owenyoungzh) 做一些及时的分享
 
 ## 正在听
 
