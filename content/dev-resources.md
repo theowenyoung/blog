@@ -22,6 +22,7 @@ taxonomies:
 - [actix http status code](https://docs.rs/actix-http/2.2.1/actix_http/http/struct.StatusCode.html)
 - [Web Auth](https://webauthn.guide/) - A better alternative for securing our
   sensitive information online
+- [Twitter unofficial key](https://gist.github.com/shobotch/5160017)
 
 ## Auth 相关
 
