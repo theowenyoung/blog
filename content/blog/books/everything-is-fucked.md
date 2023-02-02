@@ -17,7 +17,7 @@ extra:
 
 看完这本之后，我会觉得作者的论点有点意思，但又没有提出足够多的论据证明他的论点。但是鉴于这些论点也挺值得探讨，所以我还是想分享一下作者（一个白人男性）的思考。
 
-> 这也是我第一次使用我刚发布的[沉浸式双语网页翻译扩展](https://immersive-translate.owenyoung.com/)后翻译的第一本英文电子书。首先在[离线电子书](1paragraph.app/)网站导入 epub 文件，使用扩展翻译后保存为离线 html，再使用 [html to epub](https://www.onlineconverter.com/html-to-epub) 工具重新导出为电子书，最后发送到 Kindle 和手机上阅读。
+> 这也是我第一次使用我刚发布的[沉浸式双语网页翻译扩展](https://immersive-translate.owenyoung.com/)后翻译的第一本英文电子书。首先在[离线电子书](https://1paragraph.app/)网站导入 epub 文件，使用扩展翻译后保存为离线 html，再使用 [html to epub](https://www.onlineconverter.com/html-to-epub) 工具重新导出为电子书，最后发送到 Kindle 和手机上阅读。
 
 > 此书的观点（通过我的转述）被我的 partner 评价为西方老白男教我们东亚人如何忍受痛苦（事实是教西方 Z 时代如何忍受痛苦）的作品。
 
