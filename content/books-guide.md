@@ -40,7 +40,6 @@ taxonomies:
 ## 资源
 
 - [z-lib 全球最大的电子书资源库](https://annas-archive.org/)
-  - [Telegram Bot](https://t.me/ZLibrary1_bot)
   - [登录地址](https://singlelogin.me)
   - [洋葱网络地址](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/) - `http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/`
 - [编程随想整理的电子书资源](https://program-think.blogspot.com/2021/05/share-books.html)
