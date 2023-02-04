@@ -294,6 +294,7 @@ taxonomies:
   - [Dualsub](https://addons.mozilla.org/en-US/firefox/addon/dualsub/)
 - [最的浏览器翻译插件 - TPW](https://github.com/FilipePS/Traduzir-paginas-web)
 - [youtube 字幕在线提取](https://youtubetranscript.com/)
+- [annotate tv](https://annotate.tv/)
 
 ## 旅行手续
 
