@@ -11,6 +11,10 @@ taxonomies:
 
 Todo Lists.
 
+## Articles
+
+- [ ] 好吧，我戒掉刷手机了。通过在日常生活中使用一个 64g 的 pixel 3a 安卓。
+
 ## Movies
 
 - [清醒的生活](https://en.wikipedia.org/wiki/Waking_Life) - 动画，哲学总览
