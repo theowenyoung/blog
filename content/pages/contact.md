@@ -16,6 +16,7 @@ taxonomies:
 - Telegram 私人账户: <https://t.me/itsowenyoung>
 - Twitter [@TheOwenYoung](https://twitter.com/TheOwenYoung)
 - 中文推 [@OwenYoungZh](https://twitter.com/OwenYoungZh)
+- 博客[owenyoung.com](https://www.owenyoung.com)
 
 ## 其他链接
 
