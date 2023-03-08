@@ -14,7 +14,7 @@ title = "Owen的博客"
 [markdown]
 # When set to "true", all code blocks are highlighted.
 highlight_code = true
-highlight_theme = "material-light"
+# highlight_theme = "material-dark"
 # Whether external links are to be opened in a new tab
 # If this is true, a `rel="noopener"` will always automatically be added for security reasons
 external_links_target_blank = true

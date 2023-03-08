@@ -5,7 +5,7 @@ const jsonBin = new JSONBin({
   key: "abc",
 });
 
-const sentArr = await jsonBin.get("/rss/abc", []);
+const sentArr: string[] = await jsonBin.get("/rss/abc", []) as string[];
 
 console.log("current sentArr", sentArr);
 
