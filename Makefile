@@ -72,3 +72,6 @@ prod-zipdb:
 prod-unzipdb:
 	unzip -q -o prod-db.zip
 
+.Phony: tag
+tag:
+	git tag -a v$(v) -m "tag v$(v)" && git push
