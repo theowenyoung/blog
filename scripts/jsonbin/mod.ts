@@ -1,13 +1,23 @@
+export interface ConstructorOptioins {
+  api: string;
+  key: string;
+}
 export default class JSONBin {
-  constructor({ api, key }) {
-    this.api = api || "https://json.owenyoung.com";
+  private api: string;
+  private key: string;
+  constructor(options: ConstructorOptioins) {
+    const { api, key } = options;
+    if (!api) {
+      throw new Error("api is required");
+    }
+    this.api = api;
     if (!key) {
       throw new Error("key is required");
     }
     this.key = key;
   }
 
-  async get(path, defaultValue) {
+  async get(path: string, defaultValue: unknown) {
     const url = `${this.api}${path || "/"}?key=${this.key}`;
     let sentArr = defaultValue;
     const response = await fetch(url);
@@ -23,7 +33,7 @@ export default class JSONBin {
     return sentArr;
   }
 
-  async set(path, value) {
+  async set(path: string, value: unknown) {
     if (!path) {
       throw new Error("path is required");
     }

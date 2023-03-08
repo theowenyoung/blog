@@ -70,6 +70,15 @@ if (!writeResponse.ok) {
 }
 ```
 
+### 更简单一点？
+
+好吧，上面那一坨有点烦，我封装了一个类，我喜欢用 Deno 写这种小脚本，所以你可以在 Deno 中这样使用：
+
+```
+
+
+```
+
 # Cloudfalre Workers JSON Bin
 
 一个简单的 JSON 文件存储和读取接口。
@@ -80,11 +89,9 @@ if (!writeResponse.ok) {
 
 如果你想运行的话，请在代码里修改一下密钥。
 
-1. 先在 [Cloudfalre](https://dash.cloudflare.com/) 创建一个 KV 命名空间, `Workers -> KV` , 名字可以叫：`jsonbase`
-2. 然后在[Cloudfalre](https://dash.cloudflare.com/) 创建一个 Worker, 在该 Worker 的 Settings -> Variables -> KV Namespace Bindings , 绑定刚刚创建的 KV， Variable name 填：`JSONBASE`, kv namespace 选择刚刚那个就可以了.
+1. 先在 [Cloudfalre](https://dash.cloudflare.com/) 创建一个 KV 命名空间, `Workers -> KV` , 名字可以叫：`jsonbin`
+2. 然后在[Cloudfalre](https://dash.cloudflare.com/) 创建一个 Worker, 在该 Worker 的 Settings -> Variables -> KV Namespace Bindings , 绑定刚刚创建的 KV， Variable name 填：`JSONBIN`, kv namespace 选择刚刚那个就可以了.
 3. 点击快速编辑，把 `main.js` 里的代码粘贴进去, 记得修改一下密钥。
 4. 如果有需要，可以在 Triggers 里面配置绑定的自定义域名，我绑定了一个 `json.owenyoung.com`
 
-> 灵感和初始代码来自 [这里](https://github.com/huhuhang/jsonbase/blob/master/index.js)， 我重新组装了一下，添加了 `Authorization` 验证
-
-## 如何使用？
+> 灵感和初始代码来自 [这里 jsonbase ](https://github.com/huhuhang/jsonbase/blob/master/index.js)，我加了一点鲁棒性在里面！

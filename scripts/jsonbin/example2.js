@@ -1,4 +1,4 @@
-import JSONBin from "xxxx";
+import JSONBin from "https://deno.land/x/jsonbin@v0.0.4/mod.ts";
 
 const jsonBin = new JSONBin({
   api: "https://json.owenyoung.com",
