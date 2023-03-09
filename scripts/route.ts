@@ -35,9 +35,9 @@ export async function handleRequest(request: Request) {
 
   // if authorized, route it
   const { pathname } = urlObj;
-  console.log("pathname", pathname);
   if (pathname === "/runHackernewszhTask") {
     await runHackernewszhTask();
+    return;
   }
 
   // throw 404 if not found

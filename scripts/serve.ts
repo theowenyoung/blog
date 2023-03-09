@@ -3,7 +3,12 @@ import { errorToResponse } from "./error.ts";
 import { handleRequest } from "./route.ts";
 serve(async (request) => {
   try {
-    const responseBody = await handleRequest(request);
+    let responseBody = await handleRequest(request);
+    // @ts-ignore: it's ok
+    if (!responseBody) {
+      // @ts-ignore: it's ok
+      responseBody = { ok: true };
+    }
     return new Response(JSON.stringify(responseBody, null, 2), {
       headers: {
         "Content-Type": "application/json",
