@@ -80,6 +80,6 @@ tag:
 	git tag -a v$(v) -m "tag v$(v)" && git push
 
 
-.PHONY: easyapi
-easyapi:
-	deno run -A ./scripts/easyapi/main.ts
+.PHONY: task
+task:
+	deno run -A ./scripts/serve.ts

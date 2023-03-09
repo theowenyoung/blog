@@ -1,10 +1,16 @@
 import { request } from "../request.ts";
 import JSONBin from "../jsonbin/mod.ts";
-const jsonBin = new JSONBin({
-  api: "https://json.owenyoung.com",
-  key: Deno.env.get("JSONBIN_KEY") || "abc",
-});
 const jsonBinPath = "/hackernewszh-task-data";
+
+let jsonBin = null;
+export function setup() {
+  const jsonBinKey = Deno.env.get("JSONBIN_KEY");
+  jsonBin = new JSONBin({
+    api: "https://json.owenyoung.com",
+    key: jsonBinKey,
+  });
+}
+
 export async function runHackernewszhTask() {
   // get last run
   const { keys, lastRunAt } = await jsonBin.get(jsonBinPath, {
@@ -51,13 +57,22 @@ async function getNextTweet(jsonFeed, keys) {
       return {
         id: item.id,
         text,
+        predictedText:
+          item.title +
+          "(" +
+          item.title +
+          ")" +
+          "\n\n" +
+          item.content_text.replace(/\n/g, "\n\n"),
+        item: item,
+
         sensitive: !!item._sensitive,
       };
     })
     .filter((item) => {
       // remove url
       // get final text
-      const textWithoutUrl = item.text.replace(
+      const textWithoutUrl = item.predictedText.replace(
         /(?:https?|ftp):\/\/[\n\S]+/g,
         ""
       );
@@ -77,9 +92,32 @@ async function getNextTweet(jsonFeed, keys) {
       if (keys.length > 1000) {
         keys = keys.slice(0, 1000);
       }
+
+      // use open ai to translate title.
+
+      const originalItem = item.item;
+      const originalEnTitle = originalItem._translations.en.title;
+      const openAiTitleResult = await translateWithOpenAi(originalEnTitle);
+      const content = originalItem.content_text.replace(/\n/g, "\n\n");
+
+      const finalZhText = originalItem.title;
+
+      let gpt = "";
+      if (
+        !openAiTitleResult.text.includes(
+          "This translation may not make complete sense"
+        )
+      ) {
+        if (openAiTitleResult.text !== originalItem.title) {
+          gpt = `\n\n🤔: ${openAiTitleResult.text}`;
+        }
+      }
+
+      const text = `${finalZhText}${gpt}\n\n${content}`;
+
       chosedItem = {
         keys: keys,
-        text: item.text,
+        text: text,
         sensitive: !!item._sensitive,
       };
       break;
@@ -93,7 +131,6 @@ function sendTweet(text) {
   if (!IFTTT_KEY) {
     throw new Error("IFTTT_KEY is not set");
   }
-  return;
   return request(
     `https://maker.ifttt.com/trigger/newhntweet/with/key/${IFTTT_KEY}`,
     {
@@ -107,4 +144,66 @@ function sendTweet(text) {
       }),
     }
   );
+}
+const prefixies = [
+  "Show HN: ",
+  "Ask HN: ",
+  "Tell HN: ",
+  "Poll: ",
+  "Launch HN: ",
+];
+
+async function translateWithOpenAi(text) {
+  const prefix = prefixies.find((prefix) => text.startsWith(prefix));
+  const textWithoutPrefix = prefix ? text.slice(prefix.length) : text;
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + Deno.env.get("OPENAI_KEY"),
+    },
+    body: JSON.stringify({
+      model: "gpt-3.5-turbo",
+      temperature: 0,
+      max_tokens: 2048,
+      messages: [
+        {
+          role: "system",
+          content: `You are a helpful assistant that translates to zh-Hans`,
+        },
+
+        {
+          role: "user",
+          content:
+            "Translate the following text to zh-Hans: ```\n" +
+            textWithoutPrefix +
+            "\n```",
+        },
+
+        {
+          role: "user",
+          content: "Context: this is a hacker news title",
+        },
+      ],
+    }),
+  };
+
+  const response = await request(
+    "https://api.openai.com/v1/chat/completions",
+    options
+  );
+  if (
+    response &&
+    response.choices &&
+    response.choices.length > 0 &&
+    response.choices[0].message &&
+    response.choices[0].message.content
+  ) {
+    const text = response.choices[0].message.content.trim();
+    return {
+      text: prefix ? prefix + text : text,
+    };
+  } else {
+    throw new Error("server response invalid: " + JSON.stringify(response));
+  }
 }
