@@ -35,7 +35,7 @@ export async function handleRequest(request: Request) {
 
   // if authorized, route it
   const { pathname } = urlObj;
-  if (pathname === "/hackernewszh/tweet") {
+  if (pathname === "/runHackernewszhTask") {
     await runHackernewszhTask();
   }
 
