@@ -45,6 +45,9 @@ export default class JSONBin {
     if (!writeResponse.ok) {
       throw new Error(`${writeResponse.status}: ${writeResponse.statusText}`);
     }
+    if (writeResponse.body) {
+      await writeResponse.body.cancel();
+    }
     return;
   }
 }

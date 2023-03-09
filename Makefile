@@ -2,7 +2,7 @@ ifneq (,$(wildcard ./.env))
     include .env
     export
 endif
-.Phon: serve build test webmention send dev-webmention win prod-serve
+.Phony: serve build test webmention send dev-webmention win prod-serve
 
 serve:
 	./bin/zola serve -p 8000 --drafts
@@ -78,3 +78,8 @@ prod-unzipdb:
 .Phony: tag
 tag:
 	git tag -a v$(v) -m "tag v$(v)" && git push
+
+
+.PHONY: easyapi
+easyapi:
+	deno run -A ./scripts/easyapi/main.ts
