@@ -73,7 +73,7 @@ if (!writeResponse.ok) {
 好吧，上面那一坨有点烦，我[封装了一个叫 JSONBin 的类](https://github.com/theowenyoung/blog/blob/main/scripts/jsonbin/mod.ts)，我喜欢用 Deno 写这种小脚本，所以你可以在 Deno 中这样使用：
 
 ```typescript
-import JSONBin from "https://deno.land/x/jsonbin@v0.0.4/mod.ts";
+import JSONBin from "https://deno.land/x/jsonbin@v0.0.5/mod.ts";
 
 const jsonBin = new JSONBin({
   api: "https://json.owenyoung.com",
