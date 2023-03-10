@@ -200,6 +200,65 @@ async function handleRequest(request, env) {
           "The requested resource was not found"
         );
       }
+      // first we should save it.
+
+      const formData = await request.formData();
+      const interval = formData.get("interval");
+      const url = formData.get("url");
+      if (!interval) {
+        throw new HTTPError(
+          "intervalRequired",
+          "interval is required",
+          400,
+          "Bad Request"
+        );
+      }
+
+      // check interval is valid
+      if (!isValidNumber(interval)) {
+        throw new HTTPError(
+          "invalidInterval",
+          "interval is invalid",
+          400,
+          "Bad Request"
+        );
+      }
+      if (!url) {
+        throw new HTTPError(
+          "urlRequired",
+          "url is required",
+          400,
+          "Bad Request"
+        );
+      }
+
+      if (!isValidUrl(url)) {
+        throw new HTTPError("invalidUrl", "url is invalid", 400, "Bad Request");
+      }
+      let note = formData.get("note") || "";
+      if (note) {
+        note = note.slice(0, 150);
+      }
+
+      // check is same
+      //
+      if (
+        !(
+          data.tasks[id].interval === interval &&
+          data.tasks[id].url === url &&
+          data.tasks[id].note === note
+        )
+      ) {
+        // find the largest task key
+        data.tasks[id] = {
+          ...task,
+          interval,
+          url,
+          note,
+        };
+        await setData(env, data);
+      }
+
       // run task
       await runTasks([id], data, env);
       // redirect to /
@@ -530,6 +589,7 @@ function getIndexHtml(data, _clientOffset) {
         {
           display:table-cell;
           padding: 8px;
+          max-width: 30rem;
           border: 1px solid black;
           border-collapse: collapse;
         }
