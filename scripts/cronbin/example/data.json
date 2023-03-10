@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "1": {
+      "url": "https://test.com",
+      "interval": 5,
+      "logs": [
+        {
+          "url": "https://test.com",
+          "ok": true,
+          "message": "success",
+          "run_at": "2019-01-01 00:00:00"
+        }
+      ]
+    }
+  }
+}
