@@ -660,7 +660,7 @@ function timeToText(time, clientOffset) {
     // get hour, minutes, second
     const hour = clientDate.getUTCHours();
     const minutes = clientDate.getUTCMinutes();
-    return `${hour}:${minutes}`;
+    return `${addZero(hour)}:${addZero(minutes)}`;
   }
   const diffInDays = Math.floor(diffInHours / 24);
   if (diffInDays < 7) {
@@ -702,4 +702,7 @@ function isValidUrl(url) {
   } catch (err) {
     return false;
   }
+}
+function addZero(num) {
+  return num < 10 ? "0" + num : num;
 }
