@@ -25,7 +25,7 @@ taxonomies:
 - Cron 任务
 - 需要 Oauth2.0 授权的第三方接口调用，比如推特等
 
-今天用部署在 Cloudflare Workers 之上单一 Javascript 文件，几百行代码，完全满足了我的 Cron 任务需求。最终效果如下：
+今天用部署在 Cloudflare Workers 之上的几百行代码的单一 Javascript 文件，满足了我的 Cron 任务需求。最终效果如下：
 
 ![screenshot](./cronbin.png)
 
