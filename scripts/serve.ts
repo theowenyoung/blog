@@ -15,6 +15,7 @@ serve(async (request) => {
       },
     });
   } catch (e) {
+    console.warn("Error in request:", e);
     return errorToResponse(e);
   }
 });

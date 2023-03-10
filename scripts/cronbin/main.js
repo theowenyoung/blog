@@ -134,6 +134,15 @@ async function handleRequest(request, env) {
           "Bad Request"
         );
       }
+      // check interval is valid
+      if (!isValidNumber(interval)) {
+        throw new HTTPError(
+          "invalidInterval",
+          "interval is invalid",
+          400,
+          "Bad Request"
+        );
+      }
       if (!url) {
         throw new HTTPError(
           "urlRequired",
@@ -142,6 +151,15 @@ async function handleRequest(request, env) {
           "Bad Request"
         );
       }
+
+      if (!isValidUrl(url)) {
+        throw new HTTPError("invalidUrl", "url is invalid", 400, "Bad Request");
+      }
+      let note = formData.get("note") || "";
+      if (note) {
+        note = note.slice(0, 150);
+      }
+
       const { tasks } = data;
       const taskKeys = Object.keys(tasks);
       const sortedTaskKeys = taskKeys.sort((a, b) => {
@@ -153,6 +171,7 @@ async function handleRequest(request, env) {
       data.tasks[nextTaskKey] = {
         interval,
         url,
+        note,
       };
       await setData(env, data);
       return ["/", "redirect"];
@@ -219,6 +238,16 @@ async function handleRequest(request, env) {
             "Bad Request"
           );
         }
+
+        // check interval is valid
+        if (!isValidNumber(interval)) {
+          throw new HTTPError(
+            "invalidInterval",
+            "interval is invalid",
+            400,
+            "Bad Request"
+          );
+        }
         if (!url) {
           throw new HTTPError(
             "urlRequired",
@@ -227,10 +256,26 @@ async function handleRequest(request, env) {
             "Bad Request"
           );
         }
+
+        if (!isValidUrl(url)) {
+          throw new HTTPError(
+            "invalidUrl",
+            "url is invalid",
+            400,
+            "Bad Request"
+          );
+        }
+        let note = formData.get("note") || "";
+        if (note) {
+          note = note.slice(0, 150);
+        }
+
         // find the largest task key
         data.tasks[id] = {
+          ...task,
           interval,
           url,
+          note,
         };
         await setData(env, data);
         return ["/", "redirect"];
@@ -385,7 +430,7 @@ export function getCurrentTaskIds(now, data) {
     }
 
     const diff = nowDate.getTime() - lastRunAt.getTime();
-    if (diff >= interval) {
+    if (diff >= interval * 60 * 1000) {
       finalTasks.push(key);
     }
   }
@@ -500,7 +545,10 @@ function getIndexHtml(data, _clientOffset) {
       if (!task) {
         return "";
       }
-      const { interval, url, logs } = task;
+      let { interval, url, logs, note } = task;
+      if (!note) {
+        note = "";
+      }
       let logsHtml = "";
       if (logs && logs.length > 0) {
         const latestLog = encodeHTML(logToText(logs[0], _clientOffset));
@@ -519,9 +567,10 @@ function getIndexHtml(data, _clientOffset) {
         logsHtml = `<details><summary>${latestLog}</summary>${moreLogsHtml}</details>`;
       }
       return `<form class="tr" method="POST">
-   <span class="td">${key}</span><span class="td"><input type="submit" formaction="/tasks/${key}/edit" style="visibility: hidden; display: none;"><input class="w-md" type="number" min="1" max="43200" name="interval" value="${interval}" required placeholder="minutes" /></span>
-  <span class="td"><input class="w-lg" type="url" name="url" value="${url}" rqeuired placeholder="url" /></span>     
+   <span class="td">${key}</span><span class="td"><input type="submit" formaction="/tasks/${key}/edit" style="visibility: hidden; display: none;"><input class="w-md" type="number" autocomplete="off" min="1" max="43200" name="interval" value="${interval}" required placeholder="minutes" /></span>
+  <span class="td"><input class="w-lg" type="url" name="url" autocomplete="off" value="${url}" rqeuired placeholder="URL" /></span>     
   <span class="td"><input class="mr mb" type="submit" formaction="/tasks/${key}/edit" value="Save"><button formaction="/tasks/${key}/run" class="mr mb">Run</button><button formaction="/tasks/${key}/delete">Delete</button></span>
+  <span class="td"><input class="w-md" value="${note}" autocomplete="off" type="text" name="note" placeholder="Note" /></span>
   <span class="td">${logsHtml}</span>
   </form>`;
     })
@@ -529,16 +578,17 @@ function getIndexHtml(data, _clientOffset) {
 
   const body = `<main>
   <h2>Cronbin</h2>
-  <p><a href="https://github.com/theowenyoung/blog/tree/main/scripts">Source Code</a></p>
+  <p>Made by ❤️ <a href="https://www.owenyoung.com/">Owen</a> (<a href="https://github.com/theowenyoung/blog/tree/main/scripts/cronbin">Source Code</a>) </p>
 
 <div class="table">
 <div class="tr">
-  <span class="td"><b>ID</b></span><span class="td"><b>Interval</b></span><span class="td"><b>URL</b></span><span class="td"><b>Actions</b></span><span class="td"><b>Logs</b></span>
+  <span class="td"><b>ID</b></span><span class="td"><b>Interval</b></span><span class="td"><b>URL</b></span><span class="td"><b>Actions</b></span><span class="td"><b>Notes</b></span><span class="td"><b>Logs</b></span>
 </div>
 <form class="tr" method="POST">
-  <span class="td"></span><span class="td"><input type="submit" formaction="/tasks" style="visibility: hidden; display: none;"><input class="w-md" type="number" name="interval" value="30" min="1" max="43200" required placeholder="minutes" /></span>
-  <span class="td"><input class="w-lg" type="url" name="url" rqeuired placeholder="url" /></span>
+  <span class="td"></span><span class="td"><input type="submit" formaction="/tasks" style="visibility: hidden; display: none;"><input class="w-md" type="number" autocomplete="off" name="interval" value="30" min="1" max="43200" required placeholder="minutes" /></span>
+  <span class="td"><input class="w-lg" type="url" name="url" autocomplete="off" rqeuired placeholder="URL" /></span>
   <span class="td"><button formaction="/tasks">Add</button></span>
+<span class="td"><input class="w-md" type="text" name="note" autocomplete="off" placeholder="Note" /></span>
 </form>
 ${tasksLists}
 </div>
@@ -639,4 +689,17 @@ function encodeHTML(str) {
   return str.replace(/[\u00A0-\u9999<>\&]/g, function (i) {
     return "&#" + i.charCodeAt(0) + ";";
   });
+}
+
+function isValidNumber(num) {
+  return !isNaN(num) && num >= 1 && num <= 43200;
+}
+
+function isValidUrl(url) {
+  try {
+    new URL(url);
+    return true;
+  } catch (err) {
+    return false;
+  }
 }

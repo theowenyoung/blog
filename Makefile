@@ -82,7 +82,7 @@ tag:
 
 .PHONY: task
 task:
-	deno run -A ./scripts/serve.ts
+	deno run -A --watch ./scripts/serve.ts ./scripts/serve.ts
 
 .PHONY: cronserve
 cronserve:

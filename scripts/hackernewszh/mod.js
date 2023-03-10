@@ -12,6 +12,9 @@ export function setup() {
 }
 
 export async function runHackernewszhTask() {
+  if (!jsonBin) {
+    setup();
+  }
   // get last run
   const { keys, lastRunAt } = await jsonBin.get(jsonBinPath, {
     keys: [],
@@ -24,13 +27,13 @@ export async function runHackernewszhTask() {
   const diff = now.getTime() - lastRunAtDate.getTime();
 
   // is < 30 min
-  // if (diff < 30 * 60 * 1000) {
-  //   throw new HTTPError(
-  //     "tooManyRequest",
-  //     "last run at is less than 30 min ago",
-  //     429
-  //   );
-  // }
+  if (diff < 30 * 60 * 1000) {
+    throw new HTTPError(
+      "tooManyRequest",
+      "last run at is less than 30 min ago",
+      429
+    );
+  }
 
   const feedResult = await request("https://hnfront.buzzing.cc/feed.json");
   const nextTweet = await getNextTweet(feedResult, keys);
