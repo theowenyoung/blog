@@ -379,6 +379,7 @@ export async function runTasks(taksIds, data, env) {
     )
   );
   const now = new Date();
+  let globalError = null;
   for (let i = 0; i < results.length; i++) {
     const result = results[i];
     const taskId = taksIds[i];
@@ -399,6 +400,8 @@ export async function runTasks(taksIds, data, env) {
       let failedMessage = reason.message || "unknownError";
       failedMessage = failedMessage.slice(0, 150);
 
+      globalError = globalError || failedMessage;
+      console.warn("task failed", reason);
       data.tasks[taskId].logs.unshift({
         run_at: now.toISOString(),
         ok: false,
@@ -406,6 +409,7 @@ export async function runTasks(taksIds, data, env) {
       });
     }
   }
+
   // if data is changed, update it
   await setData(env, data);
 }
