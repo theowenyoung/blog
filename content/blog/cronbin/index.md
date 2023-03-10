@@ -2,7 +2,7 @@
 title: 在 Cloudflare Workers 部署一个带有 Dashboard 的 Cron 服务
 date: 2023-03-10T11:04:55+08:00
 updated: 2023-03-10
-draft: true
+draft: false
 taxonomies:
   categories:
     - Dev
