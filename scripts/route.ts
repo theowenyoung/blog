@@ -1,5 +1,6 @@
 import { sendNotice } from "./tasks/send_notice.ts";
 import { onAfdian } from "./tasks/on_afdian.js";
+import { onGithubSponsor } from "./tasks/on_github_sponsor.js";
 import { runHackernewszhTask } from "./tasks/hackernewszh/mod.js";
 import { checkTrackawesomelistIsOk } from "./tasks/check_trackawesomelist_is_ok.ts";
 import { checkBuzzingIsOk } from "./tasks/check_buzzing_is_ok.ts";
@@ -80,6 +81,11 @@ export async function handleRequest(request: Request) {
       // get body
       const body = await request.json();
       return onAfdian(body);
+    }
+  } else if (pathname === "/onGithubSporsor") {
+    if (method === "POST") {
+      const body = await request.json();
+      return onGithubSponsor(body);
     }
   }
   // throw 404 if not found
