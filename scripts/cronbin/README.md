@@ -22,4 +22,4 @@ First, visit <https://yourdomain.com/?key=abc>, then, the browser will remember 
 
 ## Screenshot
 
-![screenshot](./cronbin.png)
+![screenshot](./cronbin2.png)
