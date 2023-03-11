@@ -1,6 +1,28 @@
 import { getCurrentTaskIds } from "./main.js";
 import { parseCurl } from "./main.js";
 import { assertEquals } from "https://deno.land/std@0.178.0/testing/asserts.ts";
+import { checkAndRunTasks } from "./main.js";
+
+Deno.test("check task", async () => {
+  // await checkAndRunTasks({
+  //   CRONBIN: {
+  //     get: async (key) => {
+  //       try {
+  //         const value = await Deno.readTextFile(`./data/${key}.json`);
+  //
+  //         return value;
+  //       } catch (_e) {
+  //         return null;
+  //       }
+  //     },
+  //     put: async (key, value) => {
+  //       // ensure folder exists
+  //       await Deno.mkdir("./data", { recursive: true });
+  //       await Deno.writeTextFile(`./data/${key}.json`, value);
+  //     },
+  //   },
+  // });
+});
 Deno.test("getCurrentUrls", () => {
   const data = {
     tasks: {

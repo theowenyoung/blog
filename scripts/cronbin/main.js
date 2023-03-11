@@ -1378,7 +1378,7 @@ export function getCurrentTaskIds(now, data) {
 
     const diff = nowDate.getTime() - lastRunAt.getTime();
 
-    const num = parseInt(interval);
+    const num = Number(interval);
 
     if (!isNaN(num)) {
       if (num >= 1) {
