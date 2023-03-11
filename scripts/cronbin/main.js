@@ -1,4 +1,4 @@
-// Modify this
+// Modify thisurlToFetchOptions
 const APIKEY = "abc";
 
 export default {
@@ -964,6 +964,7 @@ async function handleRequest(request, env) {
         interval,
         url,
         note,
+        fetch_options: urlToFetchOptions(url),
       };
       await setData(env, data);
       return ["/", "redirect"];
@@ -1047,6 +1048,7 @@ async function handleRequest(request, env) {
           interval,
           url,
           note,
+          fetch_options: urlToFetchOptions(url),
         };
         await setData(env, data);
       }
@@ -1127,6 +1129,7 @@ async function handleRequest(request, env) {
           interval,
           url,
           note,
+          fetch_options: urlToFetchOptions(url),
         };
         await setData(env, data);
         return ["/", "redirect"];
@@ -1169,16 +1172,8 @@ async function handleRequest(request, env) {
   } else if (pathname === "/notification") {
     const data = await getData(env);
     const formData = await request.formData();
-    const notification_curl = formData.get("notification_curl");
-    if (!notification_curl) {
-      throw new HTTPError(
-        "notification_curlRequired",
-        "notification_curl is required",
-        400,
-        "Bad Request"
-      );
-    }
-    if (!isValidUrl(notification_curl)) {
+    const notification_curl = formData.get("notification_curl") || "";
+    if (notification_curl && !isValidUrl(notification_curl)) {
       throw new HTTPError(
         "invalidNotification_curl",
         "notification_curl is invalid",
@@ -1187,6 +1182,12 @@ async function handleRequest(request, env) {
       );
     }
     data.notification_curl = notification_curl;
+    if (notification_curl) {
+      data.notification_fetch_options = urlToFetchOptions(notification_curl);
+    } else {
+      delete data.notification_fetch_options;
+    }
+
     await setData(env, data);
     return ["/", "redirect"];
   } else if (pathname === "/api/data") {
@@ -1230,49 +1231,23 @@ export async function checkAndRunTasks(env) {
 }
 
 export async function runTasks(taksIds, data, env) {
-  const urls = [];
+  const fetchOptionsArr = [];
   for (const taskId of taksIds) {
     const task = data.tasks[taskId];
     if (!task) {
       continue;
     }
-    const { url } = task;
-    urls.push(url);
+    const { fetch_options } = task;
+    if (fetch_options) {
+      fetchOptionsArr.push(fetch_options);
+    }
   }
-  const notification_curl = data.notification_curl;
+  const notification_fetch_options = data.notification_fetch_options;
 
   // promise settled
   const results = await Promise.allSettled(
-    urls.map((url) => {
-      let finalUrl = "";
-      const finalOptions = {};
-      // check url is valid url or curl
-      try {
-        new URL(url);
-        finalUrl = url;
-      } catch (_e) {
-        // not valid url, try to parse it as curl
-        const curlOptions = parseCurl(url);
-        finalUrl = curlOptions.url;
-        if (curlOptions.method) {
-          finalOptions.method = curlOptions.method;
-        }
-
-        if (curlOptions.headers) {
-          finalOptions.headers = curlOptions.headers;
-        }
-        if (curlOptions.body) {
-          finalOptions.body = curlOptions.body;
-        }
-      }
-      if (!finalOptions.headers) {
-        finalOptions.headers = {};
-      }
-      if (!finalOptions.headers["User-Agent"]) {
-        finalOptions.headers["User-Agent"] =
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/110.0";
-      }
-      return fetch(finalUrl, finalOptions).then((res) => {
+    fetchOptionsArr.map((options) => {
+      return fetch(options.url, options).then((res) => {
         return res.text().then((body) => {
           if (res.ok) {
             return body;
@@ -1317,12 +1292,8 @@ export async function runTasks(taksIds, data, env) {
 
   // if data is changed, update it
   await setData(env, data);
-  if (globalError && notification_curl) {
-    let notificationFetchOptions = null;
-    if (notification_curl) {
-      notificationFetchOptions = parseCurl(notification_curl);
-    }
-    let { url, method, headers, body } = notificationFetchOptions;
+  if (globalError && notification_fetch_options) {
+    let { url, method, headers, body } = notification_fetch_options;
     const finalHeaders = {
       "User-Agent":
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/110.0",
@@ -1354,6 +1325,39 @@ export async function runTasks(taksIds, data, env) {
       console.warn("notification error", notificationError);
     }
   }
+}
+
+export function urlToFetchOptions(url) {
+  let finalUrl = "";
+  const finalOptions = {};
+  // check url is valid url or curl
+  try {
+    new URL(url);
+    finalUrl = url;
+  } catch (_e) {
+    // not valid url, try to parse it as curl
+    const curlOptions = parseCurl(url);
+    finalUrl = curlOptions.url;
+    if (curlOptions.method) {
+      finalOptions.method = curlOptions.method;
+    }
+
+    if (curlOptions.headers) {
+      finalOptions.headers = curlOptions.headers;
+    }
+    if (curlOptions.body) {
+      finalOptions.body = curlOptions.body;
+    }
+  }
+  if (!finalOptions.headers) {
+    finalOptions.headers = {};
+  }
+  if (!finalOptions.headers["User-Agent"]) {
+    finalOptions.headers["User-Agent"] =
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/110.0";
+  }
+  finalOptions.url = finalUrl;
+  return finalOptions;
 }
 
 export function getCurrentTaskIds(now, data) {
