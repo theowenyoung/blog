@@ -16,9 +16,17 @@ export async function request(url: string, options?: RequestOptions) {
   const response = await fetchWithTimeout(url, fetchOptions);
   if (response.ok && response.status >= 200 && response.status < 400) {
     if (responseType === "json") {
+      if (response.status === 204) {
+        return null;
+      }
+
       const data = await response.json();
       return data;
     } else if (responseType === "text") {
+      if (response.status === 204) {
+        return "";
+      }
+
       const data = await response.text();
       // log.debug("response", data);
       return data;

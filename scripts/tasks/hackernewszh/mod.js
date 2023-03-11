@@ -1,5 +1,7 @@
-import { request } from "../request.ts";
-import JSONBin from "../jsonbin/mod.ts";
+import { request } from "../../request.ts";
+import { HTTPError } from "../../error.ts";
+import { sendNotice } from "../send_notice.ts";
+import JSONBin from "../../jsonbin/mod.ts";
 const jsonBinPath = "/hackernewszh-task-data";
 
 let jsonBin = null;
@@ -36,13 +38,19 @@ export async function runHackernewszhTask() {
   }
 
   const feedResult = await request("https://hnfront.buzzing.cc/feed.json");
-  const nextTweet = await getNextTweet(feedResult, keys);
-  if (nextTweet) {
-    await jsonBin.set(jsonBinPath, {
-      keys: nextTweet.keys,
-      lastRunAt: now.toISOString(),
+  try {
+    const nextTweet = await getNextTweet(feedResult, keys);
+    if (nextTweet) {
+      await jsonBin.set(jsonBinPath, {
+        keys: nextTweet.keys,
+        lastRunAt: now.toISOString(),
+      });
+      await sendTweet(nextTweet.text);
+    }
+  } catch (e) {
+    await sendNotice({
+      text: "hnbot error" + e.message.slice(0, 200),
     });
-    await sendTweet(nextTweet.text);
   }
 }
 
