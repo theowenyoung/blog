@@ -82,7 +82,7 @@ export async function handleRequest(request: Request) {
       const body = await request.json();
       return onAfdian(body);
     }
-  } else if (pathname === "/onGithubSporsor") {
+  } else if (pathname === "/onGithubSponsor") {
     if (method === "POST") {
       const body = await request.json();
       return onGithubSponsor(body);
