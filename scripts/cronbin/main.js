@@ -538,7 +538,9 @@ export async function runTasks(taksIds, data, env) {
     };
     // replace \n  for json
 
-    let finalGlobalMessage = globalError.replace(/\n/g, "\\n");
+    let finalGlobalMessage = globalError
+      .replace(/\n/g, "\\n")
+      .replace(/"/g, '\\"');
     finalGlobalMessage = finalGlobalMessage + " -- cronbin";
     const finalBody = body.replace(/{{message}}/g, finalGlobalMessage);
     if (url.includes("{{message}}")) {
