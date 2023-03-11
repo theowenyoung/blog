@@ -30,11 +30,11 @@ export async function runHackernewszhTask() {
 
   // is < 30 min
   if (diff < 30 * 60 * 1000) {
-    throw new HTTPError(
-      "tooManyRequest",
-      "last run at is less than 30 min ago",
-      429
-    );
+    // throw new HTTPError(
+    //   "tooManyRequest",
+    //   "last run at is less than 30 min ago",
+    //   429
+    // );
   }
 
   const feedResult = await request("https://hnfront.buzzing.cc/feed.json");
@@ -142,6 +142,9 @@ function sendTweet(text) {
   if (!IFTTT_KEY) {
     throw new Error("IFTTT_KEY is not set");
   }
+  // buffer not support \n as newline, use <br> instead.
+  text = text.replace(/\n/g, "<br>");
+
   return request(
     `https://maker.ifttt.com/trigger/newhntweet/with/key/${IFTTT_KEY}`,
     {
