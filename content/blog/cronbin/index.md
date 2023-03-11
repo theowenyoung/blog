@@ -27,9 +27,9 @@ taxonomies:
 
 今天用部署在 Cloudflare Workers 之上的几百行代码的单一 Javascript 文件，满足了我的 Cron 任务需求。最终效果如下：
 
-![screenshot](./cronbin.png)
+![screenshot](./cronbin2.png)
 
-该工具的功能很简单，就是定时对配置里的 URL 发出请求，并且记录每个 URL 最近 10 条的日志，方便定位问题。
+该工具的功能很简单，就是定时对配置里的 URL 或者 curl 命令发出请求，并且记录每个 URL 最近 10 条的日志，方便定位问题。
 
 最终源码都在这[一个文件](https://github.com/theowenyoung/blog/blob/main/scripts/cronbin/main.js)里，可以很方便的部署在 Cloudflare Worker 之上。
 
@@ -55,7 +55,7 @@ HTML 文件也只有一个，增删改查都在一个页面进行。数据存储
 
 ```
 
-用户（我）首先在这个简单的 UI 里增删改查 Task，然后利用 Cloudflare Workers 的 [Schedule 事件](https://developers.cloudflare.com/workers/runtime-apis/scheduled-event/)，每分钟运行一次[`CheckAndRunTasks`](https://github.com/theowenyoung/blog/blob/53afd7aaf518523544a1fc37cddbe00c6f2f3b4a/scripts/cronbin/main.js#L348)函数,该函数通过检查每个 Task 里`logs`字段里最近的`run_at`和任务本身的`interval`,来确定要不要运行该任务，随后计算出一个该次需要运行的 urls 列表，然后`Promise.allSettled`并行发出请求，最后，记录各 URL 执行的情况。
+用户（我）首先在这个简单的 UI 里增删改查 Task，然后利用 Cloudflare Workers 的 [Schedule 事件](https://developers.cloudflare.com/workers/runtime-apis/scheduled-event/)，每分钟运行一次[`CheckAndRunTasks`](https://github.com/theowenyoung/blog/blob/53afd7aaf518523544a1fc37cddbe00c6f2f3b4a/scripts/cronbin/main.js#L348)函数,该函数通过检查每个 Task 里`logs`字段里最近的`run_at`和任务本身的`interval`,来确定要不要运行该任务，随后计算出一个该次需要运行的 url/curl 命令列表，如果是 curl 命令，则解析为 fetch options, 然后`Promise.allSettled`并行发出请求，最后，记录各 URL 执行的情况。如果有失败，则还会调用 dashborad 里配置的通知 curl 命令，及时的发送错误消息。
 
 有了这个之后，我就可以执行一些定时的任务了，比如我刚把定时发送[Hacker News 中文精选](https://twitter.com/HackerNewsZh)的推特 Bot 的[服务](https://github.com/theowenyoung/blog/blob/main/scripts/hackernewszh/mod.js#L14)放在了 Deno Deploy 里，然后在这个 Cronbin 里添加一个每`60`分钟的定时请求： `https://task.owenyoung.com/runHackernewszhTask?key=abc`，这样就搞定了这个 bot 的定时发布程序。
 

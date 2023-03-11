@@ -396,3 +396,7 @@ X as a Y services.
 ## Webmention
 
 - [Send a webmention manually](https://telegraph.p3k.io/send-a-webmention) - 手动发送 webmention
+
+## AI
+
+- [explain papers](https://www.explainpaper.com) - ai 解释学术文章的意思。

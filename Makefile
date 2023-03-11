@@ -86,5 +86,4 @@ task:
 
 .PHONY: cronserve
 cronserve:
-	deno run -A --watch ./scripts/cronbin/serve.js ./scripts/cronbin/serve.js
-
+	deno run --watch  -A ./scripts/cronbin/serve.js 

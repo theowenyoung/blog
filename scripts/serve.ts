@@ -1,9 +1,8 @@
 import { serve } from "https://deno.land/std@0.178.0/http/server.ts";
 import { errorToResponse } from "./error.ts";
 import { handleRequest } from "./route.ts";
-serve(async (request) => {
-  try {
-    let responseBody = await handleRequest(request);
+serve((request) => {
+  return handleRequest(request).then((responseBody) => {
     // @ts-ignore: it's ok
     if (!responseBody) {
       // @ts-ignore: it's ok
@@ -14,8 +13,8 @@ serve(async (request) => {
         "Content-Type": "application/json",
       },
     });
-  } catch (e) {
+  }).catch((e) => {
     console.warn("Error in request:", e);
     return errorToResponse(e);
-  }
+  });
 });

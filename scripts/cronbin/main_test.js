@@ -1,11 +1,12 @@
 import { getCurrentTaskIds } from "./main.js";
+import { parseCurl } from "./main.js";
 import { assertEquals } from "https://deno.land/std@0.178.0/testing/asserts.ts";
 Deno.test("getCurrentUrls", () => {
   const data = {
     tasks: {
       1: {
         url: "https://www.google.com",
-        interval: 5 * 60 * 1000,
+        interval: 5,
         logs: [
           {
             run_at: "2021-01-01T00:00:00.000Z",
@@ -34,4 +35,79 @@ Deno.test("url match", () => {
   // check if url match run pattern
   const match = taskRunPattern.exec("http://localhost:8000/tasks/2/run");
   assertEquals(match.pathname.groups.id, "2");
+});
+
+Deno.test("parseCurl", () => {
+  const result = parseCurl(
+    "curl -X POST -H 'Content-Type: application/json' -d '{\"name\": \"John\"}' http://localhost:8000/tasks/2/run"
+  );
+  assertEquals(result.method, "POST");
+  assertEquals(result.headers, {
+    "Content-Type": "application/json",
+  });
+  assertEquals(result.body, `{"name": "John"}`);
+});
+
+Deno.test("parseCurl #2", () => {
+  const result = parseCurl("curl https://test.com");
+  assertEquals(result.method, "GET");
+  assertEquals(result.url, "https://test.com");
+});
+
+Deno.test("parseCurl put #3", () => {
+  const result = parseCurl("curl -X PUT https://test.com");
+  assertEquals(result.method, "PUT");
+  assertEquals(result.url, "https://test.com");
+});
+
+Deno.test("parseCurl #4", () => {
+  const result = parseCurl(`
+curl --location 'https://jsonplaceholder.typicode.com/posts' \
+--header 'Authorization: Bearer abc' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title":"test"
+}'
+`);
+
+  assertEquals(result.method, "POST");
+  assertEquals(result.url, "https://jsonplaceholder.typicode.com/posts");
+  assertEquals(result.headers, {
+    Authorization: "Bearer abc",
+    "Content-Type": "application/json",
+  });
+});
+
+Deno.test("parseCurl #5", () => {
+  const result =
+    parseCurl(`curl --location 'https://jsonplaceholder.typicode.com/posts' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title":"test"
+}'`);
+  assertEquals(
+    result.body,
+    `{
+    "title":"test"
+}`
+  );
+});
+
+Deno.test("parseCurl #6", () => {
+  const result = parseCurl(
+    `curl -L -H 'Authorization: Bearer abc' -H 'Content-Type: application/json' https://api.github.com/repos/xxx/yyy/dispatches -d '{"event_type":"schedule"}'`
+  );
+  assertEquals(result.method, "POST");
+  assertEquals(result.url, "https://api.github.com/repos/xxx/yyy/dispatches");
+});
+
+Deno.test("parseCurl #7", () => {
+  const result =
+    parseCurl(`curl --location 'https://api.telegram.org/xxxxx:xxx/sendMessage' \
+--header 'Content-Type: application/json' \
+--data '{
+    "chat_id":"-22",
+    "text":"{{message}}"
+}'`);
+  assertEquals(result.method, "POST");
 });

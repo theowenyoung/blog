@@ -374,6 +374,29 @@ async function handleRequest(request, env) {
         "The requested resource was not found"
       );
     }
+  } else if (pathname === "/notification") {
+    const data = await getData(env);
+    const formData = await request.formData();
+    const notification_curl = formData.get("notification_curl");
+    if (!notification_curl) {
+      throw new HTTPError(
+        "notification_curlRequired",
+        "notification_curl is required",
+        400,
+        "Bad Request"
+      );
+    }
+    if (!isValidUrl(notification_curl)) {
+      throw new HTTPError(
+        "invalidNotification_curl",
+        "notification_curl is invalid",
+        400,
+        "Bad Request"
+      );
+    }
+    data.notification_curl = notification_curl;
+    await setData(env, data);
+    return ["/", "redirect"];
   } else if (pathname === "/api/data") {
     // yes authorized, continue
     if (request.method === "POST") {
@@ -424,18 +447,49 @@ export async function runTasks(taksIds, data, env) {
     const { url } = task;
     urls.push(url);
   }
+  const notification_curl = data.notification_curl;
+
   // promise settled
   const results = await Promise.allSettled(
-    urls.map((url) =>
-      fetch(url).then(async (res) => {
-        const body = await res.text();
-        if (res.ok) {
-          return body;
-        } else {
-          throw new Error(`${res.status}: ${res.statusText}, body: ${body}`);
+    urls.map((url) => {
+      let finalUrl = "";
+      const finalOptions = {};
+      // check url is valid url or curl
+      try {
+        new URL(url);
+        finalUrl = url;
+      } catch (_e) {
+        // not valid url, try to parse it as curl
+        const curlOptions = parseCurl(url);
+        finalUrl = curlOptions.url;
+        if (curlOptions.method) {
+          finalOptions.method = curlOptions.method;
         }
-      })
-    )
+
+        if (curlOptions.headers) {
+          finalOptions.headers = curlOptions.headers;
+        }
+        if (curlOptions.body) {
+          finalOptions.body = curlOptions.body;
+        }
+      }
+      if (!finalOptions.headers) {
+        finalOptions.headers = {};
+      }
+      if (!finalOptions.headers["User-Agent"]) {
+        finalOptions.headers["User-Agent"] =
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/110.0";
+      }
+      return fetch(finalUrl, finalOptions).then((res) => {
+        return res.text().then((body) => {
+          if (res.ok) {
+            return body;
+          } else {
+            throw new Error(`${res.status}: ${res.statusText}, \n${body}`);
+          }
+        });
+      });
+    })
   );
   const now = new Date();
   let globalError = null;
@@ -471,6 +525,41 @@ export async function runTasks(taksIds, data, env) {
 
   // if data is changed, update it
   await setData(env, data);
+  if (globalError && notification_curl) {
+    let notificationFetchOptions = null;
+    if (notification_curl) {
+      notificationFetchOptions = parseCurl(notification_curl);
+    }
+    let { url, method, headers, body } = notificationFetchOptions;
+    const finalHeaders = {
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/110.0",
+      ...headers,
+    };
+    // replace \n  for json
+
+    let finalGlobalMessage = globalError.replace(/\n/g, "\\n");
+    finalGlobalMessage = finalGlobalMessage + " -- cronbin";
+    const finalBody = body.replace(/{{message}}/g, finalGlobalMessage);
+    if (url.includes("{{message}}")) {
+      url = url.replace(/{{message}}/g, encodeURIComponent(finalGlobalMessage));
+    }
+
+    const res = await fetch(url, {
+      method,
+      headers: finalHeaders,
+      body: finalBody,
+    });
+    await res.text();
+    if (!res.ok) {
+      const notificationError = new Error(
+        `notification failed: ${res.status}: ${
+          res.statusText
+        }, ${await res.text()}`
+      );
+      console.warn("notification error", notificationError);
+    }
+  }
 }
 
 export function getCurrentTaskIds(now, data) {
@@ -632,7 +721,7 @@ function getIndexHtml(data, _clientOffset) {
       }
       return `<form class="tr" method="POST">
    <span class="td">${key}</span><span class="td"><input type="submit" formaction="/tasks/${key}/edit" style="visibility: hidden; display: none;"><input class="w-md" type="number" autocomplete="off" min="1" max="43200" name="interval" value="${interval}" required placeholder="minutes" /></span>
-  <span class="td"><input class="w-lg" type="url" name="url" autocomplete="off" value="${url}" rqeuired placeholder="URL" /></span>     
+  <span class="td"><textarea rows="1" class="w-lg" name="url" autocomplete="off" rqeuired placeholder="URL or curl command">${url}</textarea></span>     
   <span class="td"><input class="mr mb" type="submit" formaction="/tasks/${key}/edit" value="Save"><button formaction="/tasks/${key}/run" class="mr mb">Run</button><button formaction="/tasks/${key}/delete">Delete</button></span>
   <span class="td"><input class="w-md" value="${note}" autocomplete="off" type="text" name="note" placeholder="Note" /></span>
   <span class="td">${logsHtml}</span>
@@ -650,12 +739,23 @@ function getIndexHtml(data, _clientOffset) {
 </div>
 <form class="tr" method="POST">
   <span class="td"></span><span class="td"><input type="submit" formaction="/tasks" style="visibility: hidden; display: none;"><input class="w-md" type="number" autocomplete="off" name="interval" value="30" min="1" max="43200" required placeholder="minutes" /></span>
-  <span class="td"><input class="w-lg" type="url" name="url" autocomplete="off" rqeuired placeholder="URL" /></span>
+  <span class="td"><textarea rows="1" class="w-lg" name="url" autocomplete="off" rqeuired placeholder="URL or curl command"></textarea></span>
   <span class="td"><button formaction="/tasks">Add</button></span>
 <span class="td"><input class="w-md" type="text" name="note" autocomplete="off" placeholder="Note" /></span>
 </form>
 ${tasksLists}
 </div>
+<section>
+<h3>Notification when failed?</h3>
+<form action="/notification" method="POST">
+<textarea rows="2" cols="80" name="notification_curl" autocomplete="off" rqeuired placeholder="place a curl command, {{message}} is the error message placeholder.">${
+    data.notification_curl || ""
+  }</textarea>
+<br />
+<input type="submit" value="Save">
+</form>
+
+</section>
 </main>`;
   const script = `
 var clientOffset = getCookie("_clientOffset");
@@ -764,9 +864,535 @@ function isValidUrl(url) {
     new URL(url);
     return true;
   } catch (err) {
+    // is curl command
+    try {
+      parseCurl(url);
+      return true;
+    } catch (e) {
+      console.warn("parse curl command error", e);
+      return false;
+    }
+
     return false;
   }
 }
 function addZero(num) {
   return num < 10 ? "0" + num : num;
+}
+
+// parse curl
+
+export function parseCurl(curl_request) {
+  const argvsArr = stringToArgv(curl_request, {
+    removequotes: "always",
+  }).map((item) => {
+    let value = item.trim();
+    if (value.startsWith("\\")) {
+      value = value.slice(1).trim();
+    }
+    return value;
+  });
+
+  const argvs = parseArgv(argvsArr);
+  const json = {
+    headers: {},
+  };
+
+  const removeQuotes = (str) => str.replace(/['"]+/g, "");
+
+  const stringIsUrl = (url) => {
+    return /^(ftp|http|https):\/\/[^ "]+$/.test(url);
+  };
+
+  const parseField = (string) => {
+    return string.split(/: (.+)/);
+  };
+
+  const parseHeader = (header) => {
+    let parsedHeader = {};
+    if (Array.isArray(header)) {
+      header.forEach((item, index) => {
+        const field = parseField(item);
+        parsedHeader[field[0]] = field[1];
+      });
+    } else {
+      const field = parseField(header);
+      parsedHeader[field[0]] = field[1];
+    }
+
+    return parsedHeader;
+  };
+
+  for (const argv in argvs) {
+    switch (argv) {
+      case "_":
+        {
+          const _ = argvs[argv];
+          _.forEach((item) => {
+            item = removeQuotes(item);
+
+            if (stringIsUrl(item)) {
+              json.url = item;
+            }
+          });
+        }
+        break;
+
+      case "X":
+      case "request":
+        json.method = argvs[argv];
+        break;
+
+      case "H":
+      case "header":
+        {
+          const parsedHeader = parseHeader(argvs[argv]);
+          json.headers = {
+            ...json.header,
+            ...parsedHeader,
+          };
+        }
+        break;
+
+      case "u":
+      case "user":
+        json.header["Authorization"] = argvs[argv];
+        break;
+
+      case "A":
+      case "user-agent":
+        json.header["user-agent"] = argvs[argv];
+        break;
+
+      case "I":
+      case "head":
+        json.method = "HEAD";
+        break;
+
+      case "L":
+      case "location":
+        json.redirect = "follow";
+        const value = argvs[argv];
+        if (typeof value === "string") {
+          json.url = value;
+        }
+        break;
+
+      case "b":
+      case "cookie":
+        json.header["Set-Cookie"] = argvs[argv];
+        break;
+
+      case "d":
+      case "data":
+      case "data-raw":
+      case "data-ascii":
+        const dataValue = argvs[argv];
+        if (typeof dataValue === "string") {
+          json.body = argvs[argv];
+        } else {
+          throw new Error("Invalid curl command, data value is not string");
+        }
+        break;
+
+      case "data-urlencode":
+        json.body = argvs[argv];
+        break;
+
+      case "compressed":
+        if (!json.header["Accept-Encoding"]) {
+          json.header["Accept-Encoding"] = argvs[argv] || "deflate, gzip";
+        }
+        break;
+
+      default:
+        break;
+    }
+  }
+  if (!json.url) {
+    throw new Error("Invalid curl command, no url detected");
+  }
+
+  if (!json.method) {
+    if (json.body) {
+      json.method = "POST";
+    } else {
+      json.method = "GET";
+    }
+  }
+
+  return json;
+}
+
+// https://github.com/minimistjs/minimist/blob/main/index.js
+
+function hasKey(obj, keys) {
+  var o = obj;
+  keys.slice(0, -1).forEach(function (key) {
+    o = o[key] || {};
+  });
+
+  var key = keys[keys.length - 1];
+  return key in o;
+}
+
+function isNumber(x) {
+  if (typeof x === "number") {
+    return true;
+  }
+  if (/^0x[0-9a-f]+$/i.test(x)) {
+    return true;
+  }
+  return /^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(e[-+]?\d+)?$/.test(x);
+}
+
+function isConstructorOrProto(obj, key) {
+  return (
+    (key === "constructor" && typeof obj[key] === "function") ||
+    key === "__proto__"
+  );
+}
+
+function parseArgv(args, opts) {
+  if (!opts) {
+    opts = {};
+  }
+
+  var flags = {
+    bools: {},
+    strings: {},
+    unknownFn: null,
+  };
+
+  if (typeof opts.unknown === "function") {
+    flags.unknownFn = opts.unknown;
+  }
+
+  if (typeof opts.boolean === "boolean" && opts.boolean) {
+    flags.allBools = true;
+  } else {
+    []
+      .concat(opts.boolean)
+      .filter(Boolean)
+      .forEach(function (key) {
+        flags.bools[key] = true;
+      });
+  }
+
+  var aliases = {};
+
+  function aliasIsBoolean(key) {
+    return aliases[key].some(function (x) {
+      return flags.bools[x];
+    });
+  }
+
+  Object.keys(opts.alias || {}).forEach(function (key) {
+    aliases[key] = [].concat(opts.alias[key]);
+    aliases[key].forEach(function (x) {
+      aliases[x] = [key].concat(
+        aliases[key].filter(function (y) {
+          return x !== y;
+        })
+      );
+    });
+  });
+
+  []
+    .concat(opts.string)
+    .filter(Boolean)
+    .forEach(function (key) {
+      flags.strings[key] = true;
+      if (aliases[key]) {
+        [].concat(aliases[key]).forEach(function (k) {
+          flags.strings[k] = true;
+        });
+      }
+    });
+
+  var defaults = opts.default || {};
+
+  var argv = { _: [] };
+
+  function argDefined(key, arg) {
+    return (
+      (flags.allBools && /^--[^=]+$/.test(arg)) ||
+      flags.strings[key] ||
+      flags.bools[key] ||
+      aliases[key]
+    );
+  }
+
+  function setKey(obj, keys, value) {
+    var o = obj;
+    for (var i = 0; i < keys.length - 1; i++) {
+      var key = keys[i];
+      if (isConstructorOrProto(o, key)) {
+        return;
+      }
+      if (o[key] === undefined) {
+        o[key] = {};
+      }
+      if (
+        o[key] === Object.prototype ||
+        o[key] === Number.prototype ||
+        o[key] === String.prototype
+      ) {
+        o[key] = {};
+      }
+      if (o[key] === Array.prototype) {
+        o[key] = [];
+      }
+      o = o[key];
+    }
+
+    var lastKey = keys[keys.length - 1];
+    if (isConstructorOrProto(o, lastKey)) {
+      return;
+    }
+    if (
+      o === Object.prototype ||
+      o === Number.prototype ||
+      o === String.prototype
+    ) {
+      o = {};
+    }
+    if (o === Array.prototype) {
+      o = [];
+    }
+    if (
+      o[lastKey] === undefined ||
+      flags.bools[lastKey] ||
+      typeof o[lastKey] === "boolean"
+    ) {
+      o[lastKey] = value;
+    } else if (Array.isArray(o[lastKey])) {
+      o[lastKey].push(value);
+    } else {
+      o[lastKey] = [o[lastKey], value];
+    }
+  }
+
+  function setArg(key, val, arg) {
+    if (arg && flags.unknownFn && !argDefined(key, arg)) {
+      if (flags.unknownFn(arg) === false) {
+        return;
+      }
+    }
+
+    var value = !flags.strings[key] && isNumber(val) ? Number(val) : val;
+    setKey(argv, key.split("."), value);
+
+    (aliases[key] || []).forEach(function (x) {
+      setKey(argv, x.split("."), value);
+    });
+  }
+
+  Object.keys(flags.bools).forEach(function (key) {
+    setArg(key, defaults[key] === undefined ? false : defaults[key]);
+  });
+
+  var notFlags = [];
+
+  if (args.indexOf("--") !== -1) {
+    notFlags = args.slice(args.indexOf("--") + 1);
+    args = args.slice(0, args.indexOf("--"));
+  }
+
+  for (var i = 0; i < args.length; i++) {
+    var arg = args[i];
+    var key;
+    var next;
+
+    if (/^--.+=/.test(arg)) {
+      // Using [\s\S] instead of . because js doesn't support the
+      // 'dotall' regex modifier. See:
+      // http://stackoverflow.com/a/1068308/13216
+      var m = arg.match(/^--([^=]+)=([\s\S]*)$/);
+      key = m[1];
+      var value = m[2];
+      if (flags.bools[key]) {
+        value = value !== "false";
+      }
+      setArg(key, value, arg);
+    } else if (/^--no-.+/.test(arg)) {
+      key = arg.match(/^--no-(.+)/)[1];
+      setArg(key, false, arg);
+    } else if (/^--.+/.test(arg)) {
+      key = arg.match(/^--(.+)/)[1];
+      next = args[i + 1];
+      if (
+        next !== undefined &&
+        !/^(-|--)[^-]/.test(next) &&
+        !flags.bools[key] &&
+        !flags.allBools &&
+        (aliases[key] ? !aliasIsBoolean(key) : true)
+      ) {
+        setArg(key, next, arg);
+        i += 1;
+      } else if (/^(true|false)$/.test(next)) {
+        setArg(key, next === "true", arg);
+        i += 1;
+      } else {
+        setArg(key, flags.strings[key] ? "" : true, arg);
+      }
+    } else if (/^-[^-]+/.test(arg)) {
+      var letters = arg.slice(1, -1).split("");
+
+      var broken = false;
+      for (var j = 0; j < letters.length; j++) {
+        next = arg.slice(j + 2);
+
+        if (next === "-") {
+          setArg(letters[j], next, arg);
+          continue;
+        }
+
+        if (/[A-Za-z]/.test(letters[j]) && next[0] === "=") {
+          setArg(letters[j], next.slice(1), arg);
+          broken = true;
+          break;
+        }
+
+        if (
+          /[A-Za-z]/.test(letters[j]) &&
+          /-?\d+(\.\d*)?(e-?\d+)?$/.test(next)
+        ) {
+          setArg(letters[j], next, arg);
+          broken = true;
+          break;
+        }
+
+        if (letters[j + 1] && letters[j + 1].match(/\W/)) {
+          setArg(letters[j], arg.slice(j + 2), arg);
+          broken = true;
+          break;
+        } else {
+          setArg(letters[j], flags.strings[letters[j]] ? "" : true, arg);
+        }
+      }
+
+      key = arg.slice(-1)[0];
+      if (!broken && key !== "-") {
+        if (
+          args[i + 1] &&
+          !/^(-|--)[^-]/.test(args[i + 1]) &&
+          !flags.bools[key] &&
+          (aliases[key] ? !aliasIsBoolean(key) : true)
+        ) {
+          setArg(key, args[i + 1], arg);
+          i += 1;
+        } else if (args[i + 1] && /^(true|false)$/.test(args[i + 1])) {
+          setArg(key, args[i + 1] === "true", arg);
+          i += 1;
+        } else {
+          setArg(key, flags.strings[key] ? "" : true, arg);
+        }
+      }
+    } else {
+      if (!flags.unknownFn || flags.unknownFn(arg) !== false) {
+        argv._.push(flags.strings._ || !isNumber(arg) ? arg : Number(arg));
+      }
+      if (opts.stopEarly) {
+        argv._.push.apply(argv._, args.slice(i + 1));
+        break;
+      }
+    }
+  }
+
+  Object.keys(defaults).forEach(function (k) {
+    if (!hasKey(argv, k.split("."))) {
+      setKey(argv, k.split("."), defaults[k]);
+
+      (aliases[k] || []).forEach(function (x) {
+        setKey(argv, x.split("."), defaults[k]);
+      });
+    }
+  });
+
+  if (opts["--"]) {
+    argv["--"] = notFlags.slice();
+  } else {
+    notFlags.forEach(function (k) {
+      argv._.push(k);
+    });
+  }
+
+  return argv;
+}
+
+// https://raw.githubusercontent.com/binocarlos/spawn-args/master/index.js
+function stringToArgv(args, opts) {
+  opts = opts || {};
+  args = args || "";
+  var arr = [];
+
+  var current = null;
+  var quoted = null;
+  var quoteType = null;
+
+  function addcurrent() {
+    if (current) {
+      // trim extra whitespace on the current arg
+      arr.push(current.trim());
+      current = null;
+    }
+  }
+
+  // remove escaped newlines
+  args = args.replace(/\\\n/g, "");
+
+  for (var i = 0; i < args.length; i++) {
+    var c = args.charAt(i);
+
+    if (c == " ") {
+      if (quoted) {
+        quoted += c;
+      } else {
+        addcurrent();
+      }
+    } else if (c == "'" || c == '"') {
+      if (quoted) {
+        quoted += c;
+        // only end this arg if the end quote is the same type as start quote
+        if (quoteType === c) {
+          // make sure the quote is not escaped
+          if (quoted.charAt(quoted.length - 2) !== "\\") {
+            arr.push(quoted);
+            quoted = null;
+            quoteType = null;
+          }
+        }
+      } else {
+        addcurrent();
+        quoted = c;
+        quoteType = c;
+      }
+    } else {
+      if (quoted) {
+        quoted += c;
+      } else {
+        if (current) {
+          current += c;
+        } else {
+          current = c;
+        }
+      }
+    }
+  }
+
+  addcurrent();
+
+  if (opts.removequotes) {
+    arr = arr.map(function (arg) {
+      if (opts.removequotes === "always") {
+        return arg.replace(/^["']|["']$/g, "");
+      } else {
+        if (arg.match(/\s/)) return arg;
+        return arg.replace(/^"|"$/g, "");
+      }
+    });
+  }
+
+  return arr;
 }
