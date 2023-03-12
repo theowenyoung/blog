@@ -27,4 +27,6 @@ First, visit <https://yourdomain.com/?key=abc>, then, the browser will remember 
 
 ## Screenshot
 
-![screenshot](./cronbin2.png)
+![screenshot](./cronbin3.png)
+
+The checkbox is if enabled the task

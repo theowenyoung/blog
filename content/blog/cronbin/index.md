@@ -27,7 +27,7 @@ taxonomies:
 
 今天用部署在 Cloudflare Workers 之上的几百行代码的单一 Javascript 文件，满足了我的 Cron 任务需求。最终效果如下：
 
-![screenshot](./cronbin2.png)
+![screenshot](./cronbin3.png)
 
 该工具的功能很简单，就是定时对配置里的 URL 或者 curl 命令发出请求，并且记录每个 URL 最近 10 条的日志，方便定位问题。
 

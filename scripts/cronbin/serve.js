@@ -1,7 +1,11 @@
-import { serve } from "https://deno.land/std@0.179.0/http/server.ts";
+import { Server } from "https://deno.land/std@0.179.0/http/server.ts";
 import handler from "./main.js";
-serve(
-  (request) => {
+const hostname = "localhost";
+const port = 8000;
+const server = new Server({
+  hostname,
+  port,
+  handler: (request) => {
     return handler.fetch(request, {
       CRONBIN: {
         get: async (key) => {
@@ -21,7 +25,9 @@ serve(
       },
     });
   },
-  {
-    port: 8000,
-  }
-);
+});
+console.log(`Starting to listen on port ${port}`);
+server.listenAndServe();
+globalThis.addEventListener("unload", () => {
+  server.close();
+});

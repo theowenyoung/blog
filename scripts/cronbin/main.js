@@ -1083,6 +1083,7 @@ async function handleRequest(request, env) {
         const formData = await request.formData();
         const interval = formData.get("interval");
         const url = formData.get("url");
+        const enabled = formData.get("enabled");
         if (!interval) {
           throw new HTTPError(
             "intervalRequired",
@@ -1130,6 +1131,7 @@ async function handleRequest(request, env) {
           url,
           note,
           fetch_options: urlToFetchOptions(url),
+          enabled: enabled === "on" ? true : false,
         };
         await setData(env, data);
         return ["/", "redirect"];
@@ -1536,8 +1538,14 @@ function getIndexHtml(data, _clientOffset) {
 
         logsHtml = `<details><summary>${latestLog}</summary>${moreLogsHtml}</details>`;
       }
-      return `<form class="tr" method="POST">
-   <span class="td">${key}</span><span class="td"><input type="submit" formaction="/tasks/${key}/edit" style="visibility: hidden; display: none;"><input class="w-md" type="text" autocomplete="off" name="interval" value="${interval}" required placeholder="*/5 * * *" /></span>
+      let checked = true;
+      if (task.enabled === false) {
+        checked = false;
+      }
+      return `<form autocomplete="off" class="tr" method="POST">
+   <span class="td"><input name="enabled" type="checkbox" ${
+     checked ? 'checked="checked"' : ""
+   } autocomplete="false" >${key}</span><span class="td"><input type="submit" formaction="/tasks/${key}/edit" style="visibility: hidden; display: none;"><input class="w-md" type="text" autocomplete="off" name="interval" value="${interval}" required placeholder="*/5 * * *" /></span>
   <span class="td"><textarea rows="1" class="w-lg" name="url" autocomplete="off" rqeuired placeholder="URL or curl command">${url}</textarea></span>     
   <span class="td"><input class="mr mb" type="submit" formaction="/tasks/${key}/edit" value="Save"><button formaction="/tasks/${key}/run" class="mr mb">Run</button><button formaction="/tasks/${key}/delete">Delete</button></span>
   <span class="td"><input class="w-md" value="${note}" autocomplete="off" type="text" name="note" placeholder="Note" /></span>
@@ -1554,8 +1562,8 @@ function getIndexHtml(data, _clientOffset) {
 <div class="tr">
   <span class="td"><b>ID</b></span><span class="td"><b>Cron/Minutes</b></span><span class="td"><b>URL</b></span><span class="td"><b>Actions</b></span><span class="td"><b>Notes</b></span><span class="td"><b>Logs</b></span>
 </div>
-<form class="tr" method="POST">
-  <span class="td"></span><span class="td"><input type="submit" formaction="/tasks" style="visibility: hidden; display: none;"><input class="w-md" type="text" autocomplete="off" name="interval" value="30" required placeholder="*/5 * * *" /></span>
+<form class="tr" autocomplete="off"  method="POST">
+  <span class="td"><input type="hidden" name="enabled" value="on" ></span><span class="td"><input type="submit" formaction="/tasks" style="visibility: hidden; display: none;"><input class="w-md" type="text" autocomplete="off" name="interval" value="30" required placeholder="*/5 * * *" /></span>
   <span class="td"><textarea rows="1" class="w-lg" name="url" autocomplete="off" rqeuired placeholder="URL or curl command"></textarea></span>
   <span class="td"><button formaction="/tasks">Add</button></span>
 <span class="td"><input class="w-md" type="text" name="note" autocomplete="off" placeholder="Note" /></span>
