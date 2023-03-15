@@ -81,3 +81,7 @@ taxonomies:
 ## 讲座
 
 - [问 HN：你见过的最好的讲座系列是什么？ |黑客新闻](https://news.ycombinator.com/item?id=34591291)
+
+## 付费墙
+
+- [iOS 如何绕过付费墙](https://www.reddit.com/r/ios/comments/10htdu4/how_to_really_bypass_paywalls_in_safari_on_ios_in/)

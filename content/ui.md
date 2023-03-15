@@ -1,7 +1,7 @@
 ---
 title: Awesome UI
 date: 2022-09-02T11:25:06+08:00
-updated: 2022-10-15
+updated: 2023-03-12
 taxonomies:
   categories:
     - Notes
@@ -82,3 +82,7 @@ taxonomies:
 ## Others
 
 - [网页设计博物馆](https://www.webdesignmuseum.org/) - 列举历史的网页设计变迁史
+
+## Inspirations
+
+- [网页设计灵感](https://homepage.gallery/)
