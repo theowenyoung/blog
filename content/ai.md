@@ -40,7 +40,7 @@ taxonomies:
   - [app](https://zapbots.zapier.com/)
 - [自然语言来调用 API](https://zapier.com/l/natural-language-actions) - 用自然语言来调用 API，由 Zapier 出品，唯一需要的字段就是一段描述。
 - [分析你的推文，为你生成一个描述](https://twitter-bot.com/)
-- [用上传一个文本库](https://mottle.com/) - 然后于文本对话
+- [用户可以上传一个文本库，随后可以与之对话](https://mottle.com/) - 然后于文本对话
 - [Voice as chatgpt](https://talkto.chat/)
 
 ## OpenAI 替代 UI
@@ -67,7 +67,7 @@ taxonomies:
 ## 新闻
 
 - [hacker news 上的 ChatGPT 相关讨论](https://neontomo.com/play/chatgpt-news/)
-- [newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
+- [Ben's Bites newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
 
 ## Dev
 
