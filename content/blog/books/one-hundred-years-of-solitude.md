@@ -6,7 +6,6 @@ draft: false
 taxonomies:
   categories:
     - Books
-    - Random Book
 extra:
   rating: 8
   author: 加西亚·马尔克斯

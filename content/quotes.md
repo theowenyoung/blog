@@ -10,6 +10,12 @@ taxonomies:
     - Random Book
 ---
 
+> But this makes me think of Shannon Information Theory. What you're describing is something that has no actual information (in the Shannon sense) at all.
+> 但这让我想到了香农信息理论。你所描述的是根本没有实际信息（在香农意义上）的东西。
+>
+> And maybe that's why so much GPT output reads so blandly. Even the ones that are not glaringly wrong still read like... like food with no seasoning.
+> 也许这就是为什么这么多 GPT 输出读起来如此平淡。即使是那些没有明显错误的，读起来也像......像没有调料的食物。 -- [hn](https://news.ycombinator.com/item?id=35181611)
+
 > Somebody described Slack vs Teams this way:
 >
 > 有人这样描述 Slack vs Teams：

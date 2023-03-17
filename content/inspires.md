@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2022-11-25
+updated: 2023-03-17
 taxonomies:
   categories:
     - Notes
@@ -98,6 +98,9 @@ taxonomies:
 - [笑话视频网站，每个人讲一个笑话](https://www.human.com/)
 - [失败博物馆](https://museumoffailure.com/)
 - [Conv911](https://conv911.com/active) - 一个设计挺有意思的社区，有一个 breaking 的版本，在 breaking 里的消息理论上能得到更快的回复：
+- [Product Hunt but for Music(https://www.leets.it/)
+- [Tinder for local food](https://apps.apple.com/us/app/hot-local-food/id1621818779)
+- [纯文本相关网站导航](https://sjmulder.nl/en/textonly.html)
 
 ## 服务
 
@@ -215,3 +218,7 @@ taxonomies:
 ## 资源
 
 - [pilimi](http://pilimi.org/) - 海盗图书馆项目，保存人类的火种（盗版）
+
+## 购物
+
+- [looria](https://www.looria.com/) - 从可信来源收集购物推荐（比如 reddit），而不是虚假评论

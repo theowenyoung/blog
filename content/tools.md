@@ -396,11 +396,3 @@ X as a Y services.
 ## Webmention
 
 - [Send a webmention manually](https://telegraph.p3k.io/send-a-webmention) - 手动发送 webmention
-
-## AI
-
-- [explain papers](https://www.explainpaper.com) - ai 解释学术文章的意思。
-- [Thread GPT](https://threadgpt.vercel.app/)
-- [Open GPT](https://open-gpt.app/) - 创建多个 GPT 应用
-- [Awesome Prompts ](https://github.com/f/awesome-chatgpt-prompts)
-- [llm4](https://llm4.dev/) 论坛型的 ChatGPT
