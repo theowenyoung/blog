@@ -70,9 +70,7 @@ taxonomies:
 <<<<<<< HEAD
 - [newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
 - [Simon Willison](https://simonwillison.net/) - 关于 AI，技术向
-=======
 - [Ben's Bites newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
->>>>>>> 8b8d623321d42dfa674dbbc7f609bf58b6253618
 
 ## Dev
 
