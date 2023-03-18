@@ -64,10 +64,11 @@ taxonomies:
 - [骇客 Prompt](https://www.jailbreakchat.com/)
 - [语言学习相关的 Prompts](https://drorm.github.io/leah/)
 
-## 新闻
+## 博客/通讯
 
 - [hacker news 上的 ChatGPT 相关讨论](https://neontomo.com/play/chatgpt-news/)
 - [newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
+- [Simon Willison](https://simonwillison.net/) - 关于 AI，技术向
 
 ## Dev
 

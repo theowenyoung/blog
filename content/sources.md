@@ -272,6 +272,10 @@ taxonomies:
 
 - [Radii](https://radii.co/about) - 用英文报道中国年轻人（向世界讲好中国年轻人故事）
 
+## 博客
+
+- [Taoof mac](https://taoofmac.com/) - 技术博客
+
 ## 中文独立博客
 
 - [杨飞自选作品集](http://www.999kg.com/) - 摄影与杂文
