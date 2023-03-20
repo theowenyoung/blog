@@ -56,6 +56,8 @@ taxonomies:
 ## Cli 应用
 
 - [summarize 音频](https://github.com/mcdallas/summarize)
+- [AI Chat](https://github.com/sigoden/aichat/) - 用 Rust 写的 ChatGPT Cli 工具，交互非常地人体工学。
+  - [Chatblade](https://github.com/npiv/chatblade) - 用 python 写的 ChatGPT Cli 工具
 
 ## Prompt
 
@@ -67,7 +69,6 @@ taxonomies:
 ## 博客/通讯
 
 - [hacker news 上的 ChatGPT 相关讨论](https://neontomo.com/play/chatgpt-news/)
-<<<<<<< HEAD
 - [newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
 - [Simon Willison](https://simonwillison.net/) - 关于 AI，技术向
 - [Ben's Bites newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)

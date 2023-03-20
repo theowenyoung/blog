@@ -33,19 +33,14 @@ pub fn get_reading_analytics(content: &str) -> (usize, usize) {
 
 这篇文档说英文这类字符大约是 265 个单词每分钟，中日韩这类文字是 500 个字符每分钟，所以对于中文来讲，zola 这个计算是有大约 1 倍的误差的，所以我加了一个判断：
 
-```njk
-{% macro get_reading_time(minutes) %}
-  {% if lang=="zh" %}
-    {{ minutes/1.88 | round }}
-  {% else %}
-    {{ minutes }}
-  {% endif %}
-{% endmacro get_reading_time %}
+```html
+{% macro get_reading_time(minutes) %} {% if lang=="zh" %} {{ minutes/1.88 |
+round }} {% else %} {{ minutes }} {% endif %} {% endmacro get_reading_time %}
 ```
 
 然后在`page.html`里可以这样调用：
 
-```njk
+```html
 {{ macro::get_reading_time(minutes=page.reading_time) }}
 ```
 

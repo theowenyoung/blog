@@ -267,7 +267,7 @@ Then, I add a webmention form, so if people want to submit their mentions, they 
 </form>
 ```
 
-> Optional: I also added an [activity page](/content/pages/activity.en.md) for aggregating all response, the activity template page is [here](https://github.com/theowenyoung/blog/blob/main/templates/activity.html)
+> Optional: I also added an activity page for aggregating all response, the activity template page is [here](https://github.com/theowenyoung/blog/blob/main/templates/activity.html)
 
 > Cause I don't have too many mentions, so I use [sebastiandedeyne's](https://github.com/sebastiandedeyne/sebastiandedeyne.com/tree/master/data/webmentions) mention data as this article's webmention data.
 
