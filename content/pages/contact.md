@@ -27,16 +27,16 @@ taxonomies:
 - [爱发电](https://afdian.net/a/translate)
 - [Patreon](https://www.patreon.com/theowenyoung)
 
-### 加密货币地址
+## 加密货币地址
 
-### 1. USDT 或 USDC 或 ETH (ERC20): `0xA9e3dE8C304D907F92E6C73E21D07Cd3f2f2D708`
+1. USDT 或 USDC 或 ETH (ERC20): `0xA9e3dE8C304D907F92E6C73E21D07Cd3f2f2D708`
 
 <details>
 <summary>点击展开二维码</summary>
 <img src="https://immersive-translate.owenyoung.com/usdt-erc20-immersive-translate-400.jpg" alt="qrcode"></img>
 </details>
 
-### 2. USDT 或 USDC (TRC20): `TRWaYy8Z3Gnydm1mpKetX7ahwCbFqRszv6`
+2. USDT 或 USDC (TRC20): `TRWaYy8Z3Gnydm1mpKetX7ahwCbFqRszv6`
 
 <details>
 <summary>点击展开二维码</summary>
