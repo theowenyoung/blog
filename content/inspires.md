@@ -222,3 +222,9 @@ taxonomies:
 ## 购物
 
 - [looria](https://www.looria.com/) - 从可信来源收集购物推荐（比如 reddit），而不是虚假评论
+
+## Donate 页面
+
+- [signal donate](https://signal.org/donate/)
+- [archive](https://archive.org/donate/)
+- [sponsorkit](https://github.com/antfu/sponsorkit)
