@@ -49,6 +49,7 @@ taxonomies:
 - [English Vocabulary game](https://jklm.fun/) - 英文游戏，拼单词
 - [语言学习之路](https://languageroadmap.com/) - 找到对应语言中有趣的内容去学习
 - [Burning Vocabulary Chrome 插件](https://burningvocabulary.com/) - 可以高亮生词学英语
+- [readlang](https://readlang.com/) - chrome 插件，点击单词翻译。
 
 ## 资源
 
