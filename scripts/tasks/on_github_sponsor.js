@@ -35,5 +35,20 @@ export async function onGithubSponsor(body) {
     text: text,
   });
 
+  await request(
+    "https://api.github.com/repos/immersive-translate/immersive-translate/dispatches",
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${githubToken}`,
+        "Content-Type": "application/json",
+        "User-Agent": "Deno/1.0",
+      },
+      body: JSON.stringify({
+        event_type: "update_sponsor",
+      }),
+    }
+  );
+
   return { ec: 200 };
 }
