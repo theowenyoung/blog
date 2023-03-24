@@ -1,4 +1,5 @@
 import { sendNotice } from "./send_notice.ts";
+import { request } from "../request.ts";
 export async function onGithubSponsor(body) {
   let text = "Github Sponsor: ";
   try {
