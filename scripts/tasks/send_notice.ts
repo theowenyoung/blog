@@ -17,6 +17,7 @@ export async function sendNotice(options: NoticeOptions) {
   const raw = JSON.stringify({
     "chat_id": chatId,
     "text": text,
+    "disable_web_page_preview": true,
   });
 
   const requestOptions: RequestInit = {
