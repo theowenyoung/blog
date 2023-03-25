@@ -36,6 +36,11 @@ export async function onGithubSponsor(body) {
     text: text,
   });
 
+  const githubToken = Deno.env.get("PERSONAL_GITHUB_TOKEN");
+  if (!githubToken) {
+    throw new Error("PERSONAL_GITHUB_TOKEN is not set");
+  }
+
   await request(
     "https://api.github.com/repos/immersive-translate/immersive-translate/dispatches",
     {
