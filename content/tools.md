@@ -396,3 +396,7 @@ X as a Y services.
 ## Webmention
 
 - [Send a webmention manually](https://telegraph.p3k.io/send-a-webmention) - 手动发送 webmention
+
+## Writing
+
+- [Lunette](https://lunette.app/) - 辅助写作的编辑器，可以方便的在任何地方加入 note

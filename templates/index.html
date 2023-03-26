@@ -44,6 +44,7 @@
             篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
             <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
           </p>
+
         {% endif %}
         <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
         </div>
@@ -79,6 +80,8 @@
           </ul>
         </details>
         {% endif %}
+                  <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+
       <details open class="py">
       <summary class="text-lg">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
       </summary>

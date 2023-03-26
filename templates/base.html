@@ -265,6 +265,7 @@
             </ul>
             {% set custom_sidebar = get_page(path="pages/sidebar"~file_lang_path~".md") %}
             {{ custom_sidebar.content | safe }}
+
             <h2>
               <a class="no-underline" title="{{ trans(key='label_tags',lang=lang) }}" href="{{ lang_prefix_path }}tags/">{{ trans(key="label_tags",lang=lang) }}</a>
             </h2>
