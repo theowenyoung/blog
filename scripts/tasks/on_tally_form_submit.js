@@ -4,7 +4,7 @@ export async function onTallyFormSubmit(body) {
   const { formName, fields } = data;
   let text = `新回复 from: ${formName}:\n`;
 
-  let value = "";
+  let value = fields.value;
   if (typeof fields.value === "string") {
     value = fields.value;
   } else if (typeof fields.value === "object" && fields.value.url) {
