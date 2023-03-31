@@ -1,6 +1,7 @@
 import { request } from "../request.ts";
 export interface NoticeOptions {
   text: string;
+  image?: string;
 }
 export async function sendNotice(options: NoticeOptions) {
   const chatId = Deno.env.get("TELEGRAM_NOTICE_CHAT_ID");
@@ -10,15 +11,25 @@ export async function sendNotice(options: NoticeOptions) {
       "TELEGRAM_NOTICE_CHAT_ID or TELEGRAM_NOTICE_BOT_TOKEN is not set",
     );
   }
-  const { text } = options;
+  const { text, image } = options;
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
-  const raw = JSON.stringify({
+  let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+  let raw = JSON.stringify({
     "chat_id": chatId,
     "text": text,
     "disable_web_page_preview": true,
   });
+
+  if (image) {
+    url = `https://api.telegram.org/bot${botToken}/sendPhoto`;
+    raw = JSON.stringify({
+      "chat_id": chatId,
+      "photo": image,
+      "caption": text,
+    });
+  }
 
   const requestOptions: RequestInit = {
     method: "POST",
@@ -28,7 +39,7 @@ export async function sendNotice(options: NoticeOptions) {
   };
 
   await request(
-    `https://api.telegram.org/bot${botToken}/sendMessage`,
+    url,
     requestOptions,
   );
 }

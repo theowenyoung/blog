@@ -3,10 +3,16 @@ export async function onTallyFormSubmit(body) {
   const { data } = body;
   const { formName, fields } = data;
   let text = `新回复 from: ${formName}:\n`;
+  let photo = "";
 
   for (const field of fields) {
     let value = field.value;
-    if (typeof field.value === "string") {
+    const type = field.type;
+    if (type === "DROPDOWN") {
+      const options = field.options;
+      const option = options.find((option) => option.id === field.value);
+      value = option.text;
+    } else if (typeof field.value === "string") {
       value = field.value;
     } else if (
       field.value &&
@@ -14,7 +20,9 @@ export async function onTallyFormSubmit(body) {
       field.value.length > 0 &&
       field.value[0].url
     ) {
+      // yes photo
       value = field.value[0].url;
+      photo = value;
     }
     if (value) {
       text += `${field.label}: ${value}\n`;
@@ -26,6 +34,7 @@ export async function onTallyFormSubmit(body) {
   // send notice
   await sendNotice({
     text,
+    image: photo,
   });
 
   return { ec: 200 };
