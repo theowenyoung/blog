@@ -1,4 +1,4 @@
-import { request } from "../request.ts";
+import { request, RequestOptions } from "../request.ts";
 export interface NoticeOptions {
   text: string;
   image?: string;
@@ -40,23 +40,21 @@ export async function sendNotice(options: NoticeOptions) {
     const photoBlob = await b.blob();
     bodyFormData.append("photo", photoBlob);
     raw = bodyFormData;
-    console.log("raw", raw);
-    return {
-      test: "test",
-    };
   }
 
-  const requestOptions: RequestInit = {
+  const requestOptions: RequestOptions = {
     method: "POST",
     headers: myHeaders,
     body: raw,
     redirect: "follow",
+    responseType: "text",
   };
   console.log("url", url);
   console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
-  return await request(
+  const response = await request(
     url,
     requestOptions,
   );
+  return response;
 }

@@ -1,3 +1,4 @@
+import { HTTPError } from "./error.ts";
 export interface RequestOptions extends RequestInit {
   responseType?: "json" | "text" | "raw";
 }
@@ -55,18 +56,22 @@ export async function request(url: string, options?: RequestOptions) {
     let details: string | undefined;
     try {
       details = await response.text();
+      console.error("response text", details);
     } catch (_e) {
       // ignore
       console.warn("parse response failed", _e);
     }
-    throw new Error(
-      response.status + ": " + response.statusText || "" + " " + details || "",
+    throw new HTTPError(
+      "fetchError",
+      response.status + ": " + (response.statusText || "") + " " + details ||
+        "",
+      response.status,
     );
   }
 }
 
 async function fetchWithTimeout(resource: string | URL, options: RequestInit) {
-  let timeout = 15000;
+  let timeout = 60000;
   // @ts-ignore: it's ok
   if (options && options.timeout) {
     // @ts-ignore: it's ok
