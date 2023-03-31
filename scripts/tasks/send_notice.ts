@@ -16,7 +16,7 @@ export async function sendNotice(options: NoticeOptions) {
   myHeaders.append("Content-Type", "application/json");
 
   let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-  let raw = JSON.stringify({
+  let raw: string | FormData = JSON.stringify({
     "chat_id": chatId,
     "text": text,
     "disable_web_page_preview": true,
@@ -29,6 +29,23 @@ export async function sendNotice(options: NoticeOptions) {
       "photo": image,
       "caption": text,
     });
+
+    const bodyFormData = new FormData();
+    bodyFormData.append("chat_id", chatId);
+    bodyFormData.append(
+      "caption",
+      text,
+    );
+    // download photo url
+    const b = await fetch(image, {
+      method: "GET",
+      headers: {},
+      redirect: "follow",
+    });
+
+    const photoBlob = await b.blob();
+    bodyFormData.append("photo", photoBlob);
+    raw = bodyFormData;
   }
 
   const requestOptions: RequestInit = {
@@ -37,8 +54,6 @@ export async function sendNotice(options: NoticeOptions) {
     body: raw,
     redirect: "follow",
   };
-  console.log("url", url);
-  console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
   await request(
     url,

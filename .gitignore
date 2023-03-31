@@ -1,4 +1,5 @@
 bin
+temp*
 deno.lock
 dist/
 public
