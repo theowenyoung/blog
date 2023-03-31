@@ -32,10 +32,10 @@ export async function onTallyFormSubmit(body) {
   text += `\n主页地址:  https://tally.so/forms/${data.formId}/submissions`;
 
   // send notice
-  await sendNotice({
+  const response = await sendNotice({
     text,
     image: photo,
   });
 
-  return { ec: 200 };
+  return response;
 }

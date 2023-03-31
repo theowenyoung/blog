@@ -53,7 +53,7 @@ export async function sendNotice(options: NoticeOptions) {
   console.log("url", url);
   console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
-  await request(
+  return await request(
     url,
     requestOptions,
   );
