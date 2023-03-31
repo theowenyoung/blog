@@ -8,7 +8,11 @@ export async function onTallyFormSubmit(body) {
     let value = field.value;
     if (typeof field.value === "string") {
       value = field.value;
-    } else if (typeof field.value === "object" && field.value.url) {
+    } else if (
+      field.value &&
+      typeof field.value === "object" &&
+      field.value.url
+    ) {
       value = field.value.url;
     }
     text += `${field.label}: ${value}\n`;
