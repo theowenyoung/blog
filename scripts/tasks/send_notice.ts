@@ -24,18 +24,13 @@ export async function sendNotice(options: NoticeOptions) {
 
   if (image) {
     url = `https://api.telegram.org/bot${botToken}/sendPhoto`;
-    raw = JSON.stringify({
-      "chat_id": chatId,
-      "photo": image,
-      "caption": text,
-    });
-
     const bodyFormData = new FormData();
     bodyFormData.append("chat_id", chatId);
     bodyFormData.append(
       "caption",
       text,
     );
+    console.log("image", image);
     // download photo url
     const b = await fetch(image, {
       method: "GET",
@@ -46,6 +41,7 @@ export async function sendNotice(options: NoticeOptions) {
     const photoBlob = await b.blob();
     bodyFormData.append("photo", photoBlob);
     raw = bodyFormData;
+    console.log("raw", raw);
   }
 
   const requestOptions: RequestInit = {
