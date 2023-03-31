@@ -36,7 +36,9 @@ export async function onTallyFormSubmit(body) {
   };
 
   // send notice
-  const response = await sendNotice(noticeBody);
+  const _response = await sendNotice(noticeBody);
 
-  return response;
+  return {
+    ec: 200,
+  };
 }

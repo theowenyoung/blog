@@ -42,7 +42,6 @@ export async function sendNotice(options: NoticeOptions) {
     raw = bodyFormData;
     myHeaders = new Headers();
     // myHeaders.append("Content-Type", "multipart/form-data");
-    console.log("raw", raw);
   }
 
   const requestOptions: RequestOptions = {
@@ -50,19 +49,16 @@ export async function sendNotice(options: NoticeOptions) {
     headers: myHeaders,
     body: raw,
     redirect: "follow",
+    responseType: "text",
   };
-  console.log("url", url);
-  // console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
-  const response = await fetch(
+  const response = await request(
     url,
     requestOptions,
   );
 
-  if (response.ok) {
-    return response.json();
-  } else {
-    const responseText = await response.text();
-    throw new Error(response.status + ", " + responseText);
-  }
+  return {
+    status: response.status,
+    body: response,
+  };
 }
