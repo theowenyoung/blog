@@ -41,7 +41,8 @@ export async function sendNotice(options: NoticeOptions) {
     bodyFormData.append("photo", photoBlob);
     raw = bodyFormData;
     myHeaders = new Headers();
-    myHeaders.append("Content-Type", "multipart/form-data");
+    // myHeaders.append("Content-Type", "multipart/form-data");
+    console.log("raw", raw);
   }
 
   const requestOptions: RequestOptions = {
@@ -51,7 +52,7 @@ export async function sendNotice(options: NoticeOptions) {
     redirect: "follow",
   };
   console.log("url", url);
-  console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
+  // console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
   const response = await fetch(
     url,
