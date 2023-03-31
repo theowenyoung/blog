@@ -12,7 +12,7 @@ export async function sendNotice(options: NoticeOptions) {
     );
   }
   const { text, image } = options;
-  const myHeaders = new Headers();
+  let myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
 
   let url = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -40,6 +40,8 @@ export async function sendNotice(options: NoticeOptions) {
     const photoBlob = await b.blob();
     bodyFormData.append("photo", photoBlob);
     raw = bodyFormData;
+    myHeaders = new Headers();
+    myHeaders.append("Content-Type", "multipart/form-data");
   }
 
   const requestOptions: RequestOptions = {
