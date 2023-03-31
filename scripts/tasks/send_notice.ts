@@ -37,7 +37,7 @@ export async function sendNotice(options: NoticeOptions) {
     body: raw,
     redirect: "follow",
   };
-  console.log("requestOptions", requestOptions);
+  console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
   await request(
     url,
