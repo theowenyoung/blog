@@ -34,10 +34,9 @@ export async function onTallyFormSubmit(body) {
     text,
     image: photo,
   };
-  console.log("noticeBody", noticeBody);
 
   // send notice
-  // const response = await sendNotice(noticeBody);
+  const response = await sendNotice(noticeBody);
 
-  return noticeBody;
+  return response;
 }
