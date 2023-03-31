@@ -10,12 +10,15 @@ export async function onTallyFormSubmit(body) {
       value = field.value;
     } else if (
       field.value &&
-      typeof field.value === "object" &&
-      field.value.url
+      Array.isArray(field.value) &&
+      field.value.length > 0 &&
+      field.value[0].url
     ) {
-      value = field.value.url;
+      value = field.value[0].url;
     }
-    text += `${field.label}: ${value}\n`;
+    if (value) {
+      text += `${field.label}: ${value}\n`;
+    }
   }
 
   text += `\n主页地址:  https://tally.so/forms/${data.formId}/submissions`;
