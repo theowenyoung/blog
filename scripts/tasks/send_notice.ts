@@ -30,21 +30,20 @@ export async function sendNotice(options: NoticeOptions) {
       "caption",
       text,
     );
-    console.log("image", image);
-    return {
-      image: image,
-    };
     // download photo url
-    // const b = await fetch(image, {
-    //   method: "GET",
-    //   headers: {},
-    //   redirect: "follow",
-    // });
+    const b = await fetch(image, {
+      method: "GET",
+      headers: {},
+      redirect: "follow",
+    });
     //
-    // const photoBlob = await b.blob();
-    // bodyFormData.append("photo", photoBlob);
-    // raw = bodyFormData;
-    // console.log("raw", raw);
+    const photoBlob = await b.blob();
+    bodyFormData.append("photo", photoBlob);
+    raw = bodyFormData;
+    console.log("raw", raw);
+    return {
+      test: "test",
+    };
   }
 
   const requestOptions: RequestInit = {
