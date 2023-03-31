@@ -42,6 +42,7 @@ taxonomies:
 - [分析你的推文，为你生成一个描述](https://twitter-bot.com/)
 - [用户可以上传一个文本库，随后可以与之对话](https://mottle.com/) - 然后于文本对话
 - [Voice as chatgpt](https://talkto.chat/)
+- [youtube 双语字幕生成](https://alexzhangji-firelink-streamlit-webapp-9fdlcc.streamlit.app/)
 
 ## OpenAI 替代 UI
 
