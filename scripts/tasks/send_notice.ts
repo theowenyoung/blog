@@ -49,14 +49,19 @@ export async function sendNotice(options: NoticeOptions) {
     headers: myHeaders,
     body: raw,
     redirect: "follow",
-    responseType: "text",
   };
   console.log("url", url);
   console.log("requestOptions", JSON.stringify(requestOptions, null, 2));
 
-  const response = await request(
+  const response = await fetch(
     url,
     requestOptions,
   );
-  return response;
+
+  if (response.ok) {
+    return response.json();
+  } else {
+    const text = await response.text();
+    throw new Error(response.status + ", " + text);
+  }
 }
