@@ -61,7 +61,7 @@ export async function sendNotice(options: NoticeOptions) {
   if (response.ok) {
     return response.json();
   } else {
-    const text = await response.text();
-    throw new Error(response.status + ", " + text);
+    const responseText = await response.text();
+    throw new Error(response.status + ", " + responseText);
   }
 }
