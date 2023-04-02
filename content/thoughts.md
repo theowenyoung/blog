@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-01-31
+updated: 2023-04-02
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 好吧，hackernews 社区就像一个大型的怀旧会场，而怀旧最能让人感到感觉良好。 -- 2023.04.02
 
 > 一句当前不受欢迎的话，如果你使用 OpenAI 作为翻译工具，恭喜你，又浪费了生命的 5 秒钟。我的观点是 OpenAI 就算通了天，这个翻译速度也是绝对不能接受的，尤其对于实时的网页翻译。让我们再给 OpenAI 一点时间好吗，也许会出一个专门的翻译接口呢！目前来说 Deepl 还是很香的！ -- 2023.03.10
 
