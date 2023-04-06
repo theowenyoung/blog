@@ -1,7 +1,7 @@
 ---
 title: 开发相关的资源汇总
 date: 2022-03-25
-updated: 2022-12-22
+updated: 2023-04-07
 taxonomies:
   categories:
     - Notes
@@ -499,3 +499,7 @@ See
 - [servarica](https://servarica.com/) - 大容量的廉价 vps
 - [RCP](https://www.rcp.net/) - 低延迟的 vps，5 美元/月，日本，香港线路不错
 - [interserver](https://www.interserver.net/) - 大容量 vps
+
+## PDF
+
+- [免费的 PDF 标准文档](https://www.pdfa.org/sponsored-standards/)
