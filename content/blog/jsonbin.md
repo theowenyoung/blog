@@ -12,7 +12,7 @@ taxonomies:
 
 我特别喜欢[JSON](https://www.json.org/json-en.html), 因为它真的很小巧和简单，幸运的是，它还是我使用的主要语言 Javascript 和 Typescript 里的一级公民，也太幸运了吧！
 
-我经常用本地的 JSON 文件来存储一些需要持久化的数据，这样可以省掉要调试 sql 或者 redit 的大把时间，而且数据都是明文纯文本存储，搜索，定位问题都很方便，比如整个[Buzzing](https://www.buzzing.cc/) 还有整个[Track Awesome List](https://www.trackawesomelist.com/) 都只使用 JSON 作为持久化存储的格式。
+我经常用本地的 JSON 文件来存储一些需要持久化的数据，这样可以省掉要调试 sql 或者 redis 的大把时间，而且数据都是明文纯文本存储，搜索，定位问题都很方便，比如整个[Buzzing](https://www.buzzing.cc/) 还有整个[Track Awesome List](https://www.trackawesomelist.com/) 都只使用 JSON 作为持久化存储的格式。
 
 但是像这样比较大的项目，我会把 JSON 文件存储到 Cloudflare 的 R2 服务里（类似 AWS 的 S3 ），但是除此之外，我还有很多小小的工作流，这些东西通常也需要一个持久化的数据存储，比如一个 RSS 的监控服务，我需要记录哪些 ID 已经被发送过了，这是一个很常见的需求，但是要寻找一个适合的服务也不是一件容易的事，所以今天我尝试搜索了一下 JSON as a Storage 方案，最后决定采用 Cloudfalre 的 Workers 作为 host, 其实也就几十行代码的事，Workers 好就好在一次部署，终生不用再管，所以特别适合这种服务。
 
