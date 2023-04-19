@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2023-03-17
+updated: 2023-04-20
 taxonomies:
   categories:
     - Notes
@@ -120,6 +120,7 @@ taxonomies:
 - [在线吉他练习](https://react-guitar.com/)
 - [全球发现网络](https://www.gnod.com/) - 发现有趣的新东西
 - [找鼠标光标位置的有意思网页](https://pointerpointer.com/)
+- [互联网画布](https://paper.mmm.dev/) - 随便画一个网站出来.
 
 ## 硬件
 
