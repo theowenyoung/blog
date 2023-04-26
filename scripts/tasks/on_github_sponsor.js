@@ -1,7 +1,7 @@
 import { sendNotice } from "./send_notice.ts";
 import { request } from "../request.ts";
 export async function onGithubSponsor(body) {
-  let text = "Github Sponsor: ";
+  let text = "Github Sponsor: " + body.action + ", ";
   try {
     if (body) {
       if (body.sponsorship) {
@@ -24,6 +24,10 @@ export async function onGithubSponsor(body) {
               ", " +
               body.sponsorship.sponsor.html_url;
           }
+        }
+
+        if (body.sponsorship.created_at) {
+          text += ", created_at: " + body.sponsorship.created_at;
         }
       }
     }

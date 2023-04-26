@@ -120,11 +120,11 @@ async function getNextTweet(jsonFeed, keys) {
         )
       ) {
         if (openAiTitleResult.text !== originalItem.title) {
-          gpt = `\n\nGPT🤔: ${openAiTitleResult.text}`;
+          gpt = `${openAiTitleResult.text}`;
         }
       }
 
-      const text = `${finalZhText}${gpt}\n\n${content}`;
+      const text = `${gpt ? gpt : finalZhText}\n\n${content}`;
 
       chosedItem = {
         keys: keys,
