@@ -1,7 +1,7 @@
 ---
 title: Awesome Self-hosted
 date: 2022-03-25
-updated: 2022-07-14
+updated: 2023-04-27
 taxonomies:
   categories:
     - Notes
@@ -78,3 +78,4 @@ taxonomies:
 ## Forum
 
 - [Metahkg](https://gitlab.com/metahkg/metahkg) - lihkg opensource alternatives
+- [Linen](https://github.com/linen-dev/linen.dev) - Slack, Forum alternative
