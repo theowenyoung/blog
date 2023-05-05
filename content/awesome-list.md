@@ -1,7 +1,7 @@
 ---
 title: 各种清单，列表，目录收集 - Notes List
 date: 2021-03-26
-updated: 2022-08-01
+updated: 2023-05-05
 taxonomies:
   categories:
     - Notes
@@ -91,3 +91,7 @@ taxonomies:
 ## Search
 
 - [Hacker Search Engines](https://github.com/edoardottt/awesome-hacker-search-engines)
+
+## Vim
+
+- [Awesome Vim Keybindings](https://github.com/erikw/vim-keybindings-everywhere-the-ultimate-list)
