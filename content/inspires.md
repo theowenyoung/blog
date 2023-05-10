@@ -215,6 +215,7 @@ taxonomies:
 - [把格式融入到整体网站里，很舒服](https://surma.dev/things/js-to-asc/)
 - [沉浸式体验的杂志](https://magazine.atavist.com/the-voyagers-russia-bering-strait-stalin-alaska-ukraine/)
 - [日期放在博文左边](https://zellwk.com/blog/trying-your-best/)
+- [舒服的博客背景色](https://www.tabletmag.com/sections/news/articles/destined-live-quiet-times-progress-walter-russell-mead-via-meadia)
 
 ## 资源
 
@@ -229,3 +230,7 @@ taxonomies:
 - [signal donate](https://signal.org/donate/)
 - [archive](https://archive.org/donate/)
 - [sponsorkit](https://github.com/antfu/sponsorkit)
+
+## 字幕
+
+- [mac app, 自动识别语音字幕](https://www.engineerdraft.com/bemyears/)
