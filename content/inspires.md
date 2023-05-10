@@ -234,3 +234,8 @@ taxonomies:
 ## 字幕
 
 - [mac app, 自动识别语音字幕](https://www.engineerdraft.com/bemyears/)
+- [anylanguage](https://anylanguage.ai/)
+
+## 其他
+
+- [meetcala](https://meetcala.com/) - 取消会议的 Tinder , 所有人都同意，则会议取消。
