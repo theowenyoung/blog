@@ -1,7 +1,7 @@
 ---
 title: AI 相关的笔记收集
 date: 2023-03-17T00:04:28+08:00
-updated: 2023-03-17
+updated: 2023-05-17
 taxonomies:
   categories:
     - Notes
@@ -91,3 +91,7 @@ taxonomies:
 ## 文章
 
 - [使用 ChatGPT 进行对话](https://10millionsteps.com/gpt-4-language-learning)
+
+## 搜索
+
+- [perplexity](https://www.perplexity.ai/) 用 AI 搜索和询问实时的信息。
