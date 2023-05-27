@@ -1,7 +1,7 @@
 ---
 title: AI 相关的笔记收集
 date: 2023-03-17T00:04:28+08:00
-updated: 2023-05-17
+updated: 2023-05-28
 taxonomies:
   categories:
     - Notes
@@ -17,6 +17,7 @@ taxonomies:
 
 - [Awesome Prompts ](https://github.com/f/awesome-chatgpt-prompts)
 - [ai 相关的工具/播客](https://www.aicyclopedia.com/)
+- [ai 技术收集](https://bytedance.feishu.cn/sheets/TcHTsRSczhda3BtpLQ4cMeVNnSf)
 
 ## 学习资料
 
