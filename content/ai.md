@@ -44,6 +44,8 @@ taxonomies:
 - [用户可以上传一个文本库，随后可以与之对话](https://mottle.com/) - 然后于文本对话
 - [Voice as chatgpt](https://talkto.chat/)
 - [youtube 双语字幕生成](https://alexzhangji-firelink-streamlit-webapp-9fdlcc.streamlit.app/)
+- [60s 生成一个网站的 landing 页面](https://60sec.site)
+- [type.ai](https://type.ai/) - ai 帮你写文档
 
 ## OpenAI 替代 UI
 

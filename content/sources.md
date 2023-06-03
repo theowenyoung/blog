@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2023-03-31
+updated: 2023-06-03
 taxonomies:
   categories:
     - Notes
@@ -34,6 +34,7 @@ taxonomies:
 ## 深度报道
 
 - [Grid](https://www.grid.news/) - 更有深度的观点和报道。
+- [pudding](https://pudding.cool/) - 布丁报道，排版很舒服，用视觉解释事情。
 
 ## 文章聚合
 
@@ -165,6 +166,7 @@ taxonomies:
 - [一个聚合了 500 多个程序员博客的时间流](https://engineeringblogs.xyz/)
 - [Tildes](https://tildes.net/) - 开源的聚合器
   - [说明](https://blog.tildes.net/announcing-tildes)
+- [brutalist](https://brutalist.report/) - 聚合最权威的报道
 
 ## 中文社区
 
@@ -281,3 +283,7 @@ taxonomies:
 ## 中文独立博客
 
 - [杨飞自选作品集](http://www.999kg.com/) - 摄影与杂文
+
+## 其他人的推荐
+
+- [除了 Hacker News 你还看哪些新闻资讯](https://news.ycombinator.com/item?id=36175315)
