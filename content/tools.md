@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2023-01-03
+updated: 2023-06-04
 taxonomies:
   categories:
     - Notes
@@ -400,3 +400,7 @@ X as a Y services.
 ## Writing
 
 - [Lunette](https://lunette.app/) - 辅助写作的编辑器，可以方便的在任何地方加入 note
+
+## Damn
+
+- [damn good tools](https://damngood.tools) - 该死的好工具，生成 隐私政策等
