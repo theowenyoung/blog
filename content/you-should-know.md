@@ -1,7 +1,7 @@
 ---
 title: 你应该知道的一些冷知识
 date: 2022-03-25
-updated: 2022-10-11
+updated: 2023-06-04
 taxonomies:
   categories:
     - Notes
@@ -35,10 +35,12 @@ taxonomies:
 - 在全球范围内，75%的无偿工作由女性完成，她们每天花费三到六个小时，而男性的平均无偿工作时间为 30 分钟到 2 小时。
   - [在印度，妇女每天六小时的无偿劳动中有五小时花在家务上，而男子则有 13 分钟。](http://www.oecd.org/dev/development-gender/Unpaid_care_work.pdf)
   - 在美国，男性每天比女性多出一个多小时的业余时间，19 而在英国，男性每周享受的闲暇时间比女性多五个小时。
+- [什么是 Gap Day?](https://www.reddit.com/r/real_China_irl/comments/13zsnxr/%E7%9F%A5%E5%8F%8B%E9%94%90%E8%AF%84gap_day/)
+  - 在其他国家里 Gap Year 很常见，但是在中国很多时候显得很奇怪，所以不少中国人发明了【Gap Day】这个词，表示无所事事的一天。
 
 ## 维基百科
 
-- [改造学](https://en.wikipedia.org/wiki/Rehabilitation_(penology)) -
+- [改造学](<https://en.wikipedia.org/wiki/Rehabilitation_(penology)>) -
   挪威的监狱系统以正常化原则为基础，不再进行报复，而是注重改造。[3]囚犯可以使用他们在监狱外的设施，例如专用迷你冰箱，平板电视，私人浴室和户外环境。
 - [Webring](https://en.wikipedia.org/wiki/Webring) - Webring（或 Web
   环）是以圆形结构链接在一起的网站的集合，通常围绕特定主题进行组织，通常是教育或社交。[1]它们在 1990 年代和 2000
