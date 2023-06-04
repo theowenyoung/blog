@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2023-04-20
+updated: 2023-06-04
 taxonomies:
   categories:
     - Notes
@@ -239,3 +239,7 @@ taxonomies:
 ## 其他
 
 - [meetcala](https://meetcala.com/) - 取消会议的 Tinder , 所有人都同意，则会议取消。
+
+## Landing 页面
+
+- [The paige](https://thepaige.co) - ai 生成网站，landing 页很棒

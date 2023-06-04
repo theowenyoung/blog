@@ -46,6 +46,8 @@ taxonomies:
 - [youtube 双语字幕生成](https://alexzhangji-firelink-streamlit-webapp-9fdlcc.streamlit.app/)
 - [60s 生成一个网站的 landing 页面](https://60sec.site)
 - [type.ai](https://type.ai/) - ai 帮你写文档
+- [Caption AI](https://www.captionit.ai/) - 自动为照片生成文案
+- [Gamma](https://gamma.app/) - 完善你的 ppt
 
 ## OpenAI 替代 UI
 
