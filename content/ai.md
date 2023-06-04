@@ -48,6 +48,10 @@ taxonomies:
 - [type.ai](https://type.ai/) - ai 帮你写文档
 - [Caption AI](https://www.captionit.ai/) - 自动为照片生成文案
 - [Gamma](https://gamma.app/) - 完善你的 ppt
+- [Graphy](https://graphy.app/) - ai 生成漂亮的图标
+- [Micro1](https://www.micro1.ai) - 用 GPT-4 来评估技术候选人
+- [Fillout](https://www.fillout.com/) - ai 生成表格
+- [Quivr](https://github.com/StanGirard/quivr/) - 第二大脑，上传任何类型的文件，然后与之对话
 
 ## OpenAI 替代 UI
 
