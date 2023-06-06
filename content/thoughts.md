@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-04-02
+updated: 2023-06-06
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 我现在很珍惜自己的欲望，不大不小，刚好满足。别再涨了。 -- 2023.06.06
 
 > 好吧，hackernews 社区就像一个大型的怀旧会场，而怀旧最能让人感到感觉良好。 -- 2023.04.02
 
