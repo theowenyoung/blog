@@ -14,6 +14,10 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2023.06.10 Remove Activity Page
+
+For the heavy building times, like 250s.
+
 ## 2022.10.20 og:img use asset image
 
 use asset image as the default og:img
