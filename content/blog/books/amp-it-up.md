@@ -1,8 +1,8 @@
 ---
-title: 加速！
-date: 2023-04-16T17:39:17+08:00
-updated: 2023-04-16
-draft: true
+title: Amp it up（加速）- 摘抄
+date: 2023-06-15T17:39:17+08:00
+updated: 2023-06-15
+draft: false
 taxonomies:
   categories:
     - Books
@@ -12,6 +12,8 @@ extra:
   rating: 8
   author: 弗兰克·斯洛特曼
 ---
+
+在阮老师的[一期周刊](https://www.ruanyifeng.com/blog/2023/04/weekly-issue-249.html)里看到对这本书《加速》的推荐，所以下载后匆匆过了一遍，感觉和作者相处起来，应该属于压力很大的那种，但是作者的这种行事风格确实也自成一体，摘抄一些高亮语句到这里：
 
 <!-- more -->
 
