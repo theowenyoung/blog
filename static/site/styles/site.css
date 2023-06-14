@@ -294,6 +294,7 @@ h2 {
 }
 .h-entry h2.entry-title {
   font-size: 1.375rem;
+  font-style: normal;
 }
 
 h3 {
