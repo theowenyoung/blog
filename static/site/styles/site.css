@@ -817,6 +817,11 @@ ul.text-sm:lang(en) {
   max-width: 74rem;
   margin: 0 auto;
 }
+.post-header {
+    padding-top: 3rem;
+
+
+}
 .header-inner {
   max-width: 52rem;
 }

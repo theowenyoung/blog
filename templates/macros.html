@@ -35,7 +35,7 @@
           {{ page.taxonomies.categories[0] }}
         </a>
       {% endif %}
-     
+
     </div>
   </article>
   {% endmacro post_max %}
@@ -58,9 +58,13 @@
       </section>
     {% endif %}
   {% endmacro backlink %}
-  {% macro page_toc(toc) %}
+  {% macro page_toc(toc,lang_prefix_path) %}
     <div class="sidebar-table-content">
       <ul>
+
+        <li>
+          <a href="{{ config.base_url~lang_prefix_path }}">{{ trans(key="label_blog_home",lang=lang) }}</a>
+        </li>
         <li>
           <a href="#start">{{ trans(key="label_back_to_start",lang=lang) }}</a>
         </li>
@@ -296,15 +300,15 @@
           或者, 你可以回复<a href="{{ twitter_post_link | safe }}">这条推特</a>:
         </p>
         {% endif %}
-         
+
           <article class="tweet-box rounded-lg relative mb">
             <a class="overlay" href="{{ twitter_post_link | safe }}" title="Visit tweet"></a>
             <div class="inner">
               <div >
-               <p class="tweet-content"> {{ twitter_post.content.html | safe }}</p> 
-               <div class="text-sm"> &mdash; {{twitter_post.author.name}} on {{twitter_post.published | date(format="%Y.%m.%d")}} &nbsp; 
+               <p class="tweet-content"> {{ twitter_post.content.html | safe }}</p>
+               <div class="text-sm"> &mdash; {{twitter_post.author.name}} on {{twitter_post.published | date(format="%Y.%m.%d")}} &nbsp;
                 <a href="{{ twitter_post_link | safe }}" class="">{{trans(key="label_reply",lang=lang) }}</a></div>
-              
+
               </div>
               <span target="_blank" rel="noopener noreferrer" class="tweet-icon">
                 <svg viewBox="0 0 24 24" class="tweet-icon-svg">
@@ -321,7 +325,7 @@
               </span>
             </div>
           </article>
-       
+
         {% endif %}
         {% if config.default_language != lang %}
         <p class="text-sm">

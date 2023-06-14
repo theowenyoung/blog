@@ -1,10 +1,15 @@
 {% extends "base.html" -%}
+{%- set_global lang_prefix_path = "/" -%}
+{%- if config.default_language != lang -%}
+  {%- set_global target_lang = "zh" -%}
+  {%- set_global lang_prefix_path = "/"~lang~"/" -%}
+{%- endif -%}
 {% block post_meta -%}
 <meta name="title" content="{{ page.title }}">
 {% endblock post_meta -%}
 {% block header %}
   {% block detail_meta -%}
-    <header class="header" id="overview">
+    <header class="header post-header" id="overview">
       <div>
         <h1 class="no-border pt0 p-name entry-title" >{{ page.title }}</h1>
         <div class="display-none p-author h-card vcard">
@@ -28,7 +33,7 @@
       <div class="main-toc pb">
         <details>
           <summary>{{ trans(key="label_table_contents",lang=lang) }}</summary>
-          {{ macro::page_toc(toc=page.toc) }}
+          {{ macro::page_toc(toc=page.toc,lang_prefix_path=lang_prefix_path) }}
         </details>
       </div>
     {% endif %}
@@ -85,7 +90,7 @@
   <aside class="sidebar px {% if page.toc %}{% else %}no-toc{% endif %}">
     {% if page.toc %}
       <h2 class="pt0">{{ trans(key="label_table_contents",lang=lang) }}</h2>
-      {{ macro::page_toc(toc=page.toc) }}
+      {{ macro::page_toc(toc=page.toc,lang_prefix_path=lang_prefix_path) }}
     {% endif %}
   </aside>
 {% endblock sidebar %}

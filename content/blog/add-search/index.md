@@ -113,6 +113,14 @@ Over! 其实说的简单，但是我在建立索引的过程中多次调整了�
 
 搜索页面的模版文件[在这里](https://github.com/theowenyoung/blog/blob/main/templates/search.html)
 
+升级的时候可能比较麻烦，我通常就是直接删除数据库，反正可以重新构建，跑一下CI就可以了。
+
+升级后需要重新获取 admin key:
+
+```bash
+make meilikey
+```
+
 ## 结论
 
 虽然目前用 Meilisearch 解决了搜索的问题（而且体验超好），但是还是更喜欢[Edgesearch](https://github.com/wilsonzlin/edgesearch)的方案，这样我就能把搜索部署在类似 Workers 和 Deno Deploy 的平台上了。我不喜欢 Lambda 和 Vercel 的无服务器，虽然限制更少，但是相应的冷启动有点久，不够纯粹。我的理想方案应该是这样，它是一个通用的站内搜索引擎：

@@ -26,7 +26,7 @@ jobs:
       #   with:
       #     publish_dir: ./public
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish to pages 
+      - name: Publish to pages
         uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -46,4 +46,4 @@ jobs:
             -e MEILISEARCH_HOST_URL=$HOST_URL \
             -e MEILISEARCH_API_KEY=$API_KEY \
             -v $CONFIG_FILE_PATH:/docs-scraper/config.json \
-            getmeili/docs-scraper:v0.12.6 pipenv run ./docs_scraper config.json
+            getmeili/docs-scraper:v0.12.11 pipenv run ./docs_scraper config.json

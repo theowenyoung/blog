@@ -26,7 +26,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    {%- block social_meta -%} 
+    {%- block social_meta -%}
       {%- if page.title -%}
         {%- set_global title = page.title -%}
       {%- elif term.name -%}
@@ -63,7 +63,7 @@
       {%- elif page.assets -%}
         {%- for asset in page.assets | sort -%}
           {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
-              {%- set_global image=get_url(path=asset) -%} 
+              {%- set_global image=get_url(path=asset) -%}
               {%- break -%}
           {%- endif -%}
         {%- endfor -%}
@@ -145,66 +145,6 @@
   <body>
     <div id="top"></div>
     <div id="root">
-      <nav class="navbar">
-        <div class="navbar-inner justify-between">
-          <div>
-            <a class="brand" href="{{ config.base_url~lang_prefix_path }}">
-              <img class="icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
-            </a>
-          </div>
-            <ul class="flex menu list-none items-center justify-center">
-              <li>
-                <a
-                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                  title="Search"
-                  href="/search/">
-                  <span class="text-sm">🔍</span>
-                </a>
-              </li>
-              {% if lang=='zh' %}
-                <li>
-                  <a
-                    class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='en'
-                      -%}muted{% endif -%}"
-                    title="English Site"
-                    href="/en/">
-                    <span class="text-sm">EN</span>
-                  </a>
-                </li>
-              {% endif %}
-              {% if lang=='en' %}
-                <li>
-                  <a
-                    class="only-show-small flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline {% if lang=='zh'
-                      -%}muted{% endif -%}"
-                    title="中文站点"
-                    href="/">
-                    <span class="text-sm">中</span>
-                  </a>
-                </li>
-              {% endif %}
-              <li class="list-none nav-divider"></li>
-              <li>
-                <a
-                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline"
-                  title="Back to Top"
-                  href="#top">
-                  <span class="">
-                    &#8593;</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="flex border-muted rounded-full justify-center items-center icon no-underline no-hover-underline only-show-small"
-                  title="Go to Bottom"
-                  href="#bottom">
-                  <span class="">
-                    &#8595;</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-      </nav>
       {% block body_zone -%}
       <div class="body-zone">
         {% block header %}

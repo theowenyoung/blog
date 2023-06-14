@@ -14,6 +14,8 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2023.06-14 Remove nav bar
+
 ## 2023.06.10 Remove Activity Page
 
 For the heavy building times, like 250s.

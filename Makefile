@@ -2,7 +2,16 @@ ifneq (,$(wildcard ./.env))
     include .env
     export
 endif
+
+
+
+
 .Phony: serve build test webmention send dev-webmention win prod-serve
+
+
+.PHONY: meilikey
+meilikey:
+	./scripts/get_search_api_key.sh
 
 serve:
 	./bin/zola serve -p 8000 --drafts
@@ -61,7 +70,7 @@ tt:
 
 .Phony: prod-upload
 prod-upload:
-	make prod-zipdb && aws s3 cp ./prod-db.zip  s3://blog/prod-db.zip --endpoint-url $(AWS_ENDPOINT) 
+	make prod-zipdb && aws s3 cp ./prod-db.zip  s3://blog/prod-db.zip --endpoint-url $(AWS_ENDPOINT)
 
 .Phony: prod-load
 prod-load:
@@ -86,4 +95,4 @@ task:
 
 .PHONY: cronserve
 cronserve:
-	deno run --watch  -A ./scripts/cronbin/serve.js 
+	deno run --watch  -A ./scripts/cronbin/serve.js
