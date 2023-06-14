@@ -65,7 +65,7 @@
       <div class="by">{{ trans(key="label_by_category_title",lang=lang) | markdown(inline=true) | safe }}：</div>
         {% for category in all_categories.items %}
               <details class="pb-sm">
-                <summary>{{ category.name }}&nbsp;(<a href="{{ category.permalink }}">{{ category.pages | length }}</a>)</summary>
+                <summary class="text-bigger">{{ category.name }}&nbsp;(<a href="{{ category.permalink }}">{{ category.pages | length }}</a>)</summary>
                   <ul>
                     {% for page in category.pages %}
                       <li>{{ macro::post_min(page=page) }}</li>
@@ -83,7 +83,7 @@
           {% for year, posts in
               all_section_pages.pages | group_by(attribute="year") %}
               <details class="pb-sm">
-                <summary>{{ year }}</summary>
+                <summary class="text-bigger">{{ year }}</summary>
                 <ul>
                   {% for post in posts %}
                     <li>{{ macro::post_min(page=post) }}</li>
@@ -97,8 +97,7 @@
 
 
       <details open class="py">
-      <summary class="text-lg mb">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}
-        <a href="#latest" id="latest" class="zola-anchor">🔗</a>
+        <summary class="by ">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}:
       </summary>
       <div class="articles h-feed hfeed">
         {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
@@ -108,7 +107,7 @@
       </details>
       {%if all_blog_pages.pages | slice(start=10) | length > 0%}
         <details class="py">
-          <summary class="bold text">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
+          <summary class="by text">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
           <ul>
             {% for page in all_blog_pages.pages | slice(start=10) %}
             <li>{{ macro::post_min(page=page) }}</li>
@@ -119,7 +118,7 @@
                   <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
 
       <details open class="py">
-      <summary class="text-lg">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      <summary class="by">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
       </summary>
       {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
       <div class="articles">
@@ -129,7 +128,7 @@
       </details>
 
       <details open class="py">
-      <summary class="text-lg">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
+      <summary class="by">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
       </summary>
       {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
       <div class="articles">
@@ -137,6 +136,33 @@
         <p class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</p>
       </div>
       </details>
+      {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+            {% set_global note_pages = [] -%}
+            {% for cat in all_categories.items -%}
+              {% if cat.name == "Notes" -%}
+                {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+              {% endif -%}
+      {% endfor -%}
+
+            <div class="by">{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}</div>
+            <div class="articles pb-lg">
+              <ul class="root-ul">
+                {% for page in note_pages | slice(end=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                {% endfor %}
+              </ul>
+              {%if note_pages | slice(start=10) | length > 0%}
+              <details>
+                <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+                <ul>
+                  {% for page in note_pages | slice(start=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                  {% endfor %}
+                </ul>
+              </details>
+              {% endif %}
+            </div>
+
     </div>
   {% endblock main -%}
   {% block before_body_end %}

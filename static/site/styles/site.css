@@ -116,7 +116,7 @@ th {
 
 .by {
   font-size: 1.175rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
   font-weight:500;
 }
 
@@ -299,7 +299,7 @@ h2 {
   font-size: 1.125rem;
 }
 .feed-entry h2.entry-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: normal;
 }
 
@@ -739,6 +739,9 @@ li.inline {
   margin-right: 0.5rem;
 }
 
+.text-bigger {
+  font-size: 1rem;
+}
 .text-lg {
   font-size: 1.5rem;
 }
@@ -761,6 +764,9 @@ ul.text-sm:lang(en) {
   padding-bottom: 1.4rem;
 }
 
+.pb-lg {
+  padding-bottom: 3rem;
+}
 .pb-sm {
   padding-bottom: 0.5rem;
 }

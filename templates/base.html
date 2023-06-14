@@ -158,51 +158,12 @@
           {% block sidebar %}
           <aside class="sidebar px">
             {% block sidebar_top %}{% endblock sidebar_toop %}
-            {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
-            {% set_global note_pages = [] -%}
-            {% for cat in all_categories.items -%}
-              {% if cat.name == "Notes" -%}
-                {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
-              {% endif -%}
-            {% endfor -%}
             <div class="display-none h-card pt">
               <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}">
               <a class="p-name u-url u-uid" href="{{ config.extra.indieweb_url }}" rel="me">{{ config.extra.author }}</a>
               <p class="p-note">{{ config.extra.bio }}</p>
             </div>
 
-            <h2>{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}</h2>
-            <div class="articles">
-              <ul class="root-ul">
-                {% for page in note_pages | slice(end=10) %}
-                  <li>{{ macro::post_min(page=page) }}</li>
-                {% endfor %}
-              </ul>
-              {%if note_pages | slice(start=10) | length > 0%}
-              <details>
-                <summary class="text-sm">{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-                <ul>
-                  {% for page in note_pages | slice(start=10) %}
-                  <li>{{ macro::post_min(page=page) }}</li>
-                  {% endfor %}
-                </ul>
-              </details>
-              {% endif %}
-            </div>
-            </details>
-            <h2>
-              <a class="no-underline" href="{{ lang_prefix_path }}categories/">{{ trans(key="label_categories",lang=lang) }}</a>
-            </h2>
-            <ul>
-              {% set categories = get_taxonomy(kind="categories",lang=lang) %}
-              {% for cat in
-              categories.items %}
-                {% set url = get_taxonomy_url(kind="categories",lang=lang, name=cat.name) %}
-                <li>
-                  <a class="no-underline" title="{{ cat.name }}" href="{{ url }}">{{ cat.name }}({{ cat.pages | length }})</a>
-                </li>
-              {% endfor %}
-            </ul>
             {% set custom_sidebar = get_page(path="pages/sidebar"~file_lang_path~".md") %}
             {{ custom_sidebar.content | safe }}
 
