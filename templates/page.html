@@ -10,6 +10,23 @@
 {% block header %}
   {% block detail_meta -%}
     <header class="header post-header" id="overview">
+       {% block breadcrumbs -%}
+        <div class="pb">
+          <a class="" href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          <a class="" href="{{ lang_prefix_path }}categories/">All Categories</a>
+          {% if page.taxonomies.categories %}
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          <a  class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}"> {{ page.taxonomies.categories[0] }}</a>
+          {% endif %}
+          {% if page.taxonomies.kinds %}
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          <a class="category no-underline" href="{{ get_taxonomy_url(kind="kinds", name=page.taxonomies.kinds[0]) }}">{{ page.taxonomies.kinds[0] }}</a>
+          {% endif %}
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          {{ page.title }}
+        </div>
+      {% endblock breadcrumbs %}
       <div>
         <h1 class="no-border pt0 p-name entry-title" >{{ page.title }}</h1>
         <div class="display-none p-author h-card vcard">

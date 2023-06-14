@@ -6,7 +6,7 @@
   {% endif %}
 {% endmacro get_reading_time %}
 {% macro post_max(page,index) %}
-  <article class="h-entry hentry">
+  <article class="h-entry hentry feed-entry">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
       <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>

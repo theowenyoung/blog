@@ -2,12 +2,11 @@
 {% block header %}
       <header id="overview" class="pt">
         <div class="">
-          <span>&gt;&gt;</span>
           <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          <a class="" href="{{ lang_prefix_path }}categories/">All Categories</a>
           {% if section.title -%}
-            <span class="divider">
-              /
-            </span>
+            <span class="divider">&nbsp;&gt;&nbsp;</span>
             {{ section.title }}
           {% endif -%}
         </div>

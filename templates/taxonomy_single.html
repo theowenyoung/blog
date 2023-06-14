@@ -7,16 +7,11 @@
   {% block header %}
       <header id="overview" class="pt">
       <div class="">
-        <span>&gt;&gt;</span>
         <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
         {% if term.name -%}
-          <span class="divider">
-            /
-          </span>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
           <a href="{{ lang_prefix_path }}categories/">All {{ taxonomy.name }}</a>
-          <span class="divider">
-            /
-          </span>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
           {{ term.name }}
         {% endif -%}
       </div>

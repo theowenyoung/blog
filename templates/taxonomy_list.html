@@ -1,7 +1,14 @@
 {% extends "base.html" %}
+
 {% block header %}
-    <div class="page-header">
-      <h1>All {{ taxonomy.name }}</h1>
+    <div class="page-header pt">
+      {% block breadcrumbs -%}
+        <div class="">
+          <a class="" href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          All {{ taxonomy.name }}
+        </div>
+      {% endblock breadcrumbs -%}
     </div>
 {% endblock header %}
 {% block main %}

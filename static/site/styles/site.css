@@ -289,14 +289,22 @@ h2 {
   font-weight: 500;
 }
 
-.h-entry h2 {
+.feed-entry h2 {
   font-size: 1.125rem;
 }
-.h-entry h2.entry-title {
-  font-size: 1.375rem;
+.feed-entry h2.entry-title {
+  font-size: 1.4rem;
   font-style: normal;
 }
 
+.feed-entry h3 {
+  font-size: 1.05rem;
+  font-style: normal;
+}
+.feed-entry p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 h3 {
   font-size: 1.375rem;
   font-style: italic;
@@ -821,7 +829,6 @@ ul.text-sm:lang(en) {
   margin: 0 auto;
 }
 .post-header {
-    padding-top: 3rem;
 
 
 }
