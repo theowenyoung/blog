@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2023-06-04
+updated: 2023-06-14
 taxonomies:
   categories:
     - Notes
@@ -216,6 +216,7 @@ taxonomies:
 - [沉浸式体验的杂志](https://magazine.atavist.com/the-voyagers-russia-bering-strait-stalin-alaska-ukraine/)
 - [日期放在博文左边](https://zellwk.com/blog/trying-your-best/)
 - [舒服的博客背景色](https://www.tabletmag.com/sections/news/articles/destined-live-quiet-times-progress-walter-russell-mead-via-meadia)
+- [舒服的博客配色](https://remotive.com/blog/digital-nomad-visas/)
 
 ## 资源
 
