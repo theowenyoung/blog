@@ -20,18 +20,13 @@ taxonomies:
 ## 进行中
 
 - 记录我每天阅读后希望分享的链接，发布在[日记栏目](/categories/journal/)里
-- 开发[沉浸式翻译](https://immersive-translate.owenyoung.com/)扩展，已支持 firefox,chrome,油猴.
+- 开发[沉浸式翻译](https://immersive-translate.owenyoung.com/)扩展，已支持 firefox, chrome, safari, 油猴.
 - 在[https://clip.owenyoung.com/](https://clip.owenyoung.com/) 分享我阅读的文章的双语对照快照。
-- 新开了一个 [Telegram频道](https://t.me/owenyoungzh) 做一些及时的分享
-
-## 正在听
-
-- [美国校园广播](https://www.campus-fm.com/)
-- [BBC Radio 6 Music](https://www.bbc.co.uk/sounds/play/live:bbc_6music)
+- 新开了一个 [Telegram 频道](https://t.me/owenyoungzh) 做一些及时的分享
 
 ## 正在读
 
-最近在利用[遛狗时间](/content/blog/reading-while-walking-dogs.md) 读《米德尔马契》
+最近在利用[遛狗时间](/content/blog/reading-while-walking-dogs.md) 读《打造第二大脑》
 
 ### 练习英语
 
