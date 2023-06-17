@@ -5,6 +5,7 @@ title: Sidebar
 ## Impornant Links
 
 - [RSS Feed](/en/blog/atom.xml)
+- [中文版](/)
 
 ## About
 

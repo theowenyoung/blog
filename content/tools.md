@@ -400,6 +400,7 @@ X as a Y services.
 ## Writing
 
 - [Lunette](https://lunette.app/) - 辅助写作的编辑器，可以方便的在任何地方加入 note
+- [Novel](https://github.com/steven-tey/novel) - 开源的编辑器，类似 notion 的体验
 
 ## Damn
 
