@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-06-17
+updated: 2023-06-18
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,10 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 一捣鼓博客就不想工作了，阅读和写作真的好让人自我感觉良好啊 --2023.06.18
+
+> 看了下[Asciidoctor](https://docs.asciidoctor.org/)的文档,以及[为什么我们需要 AsciiDoc](https://asciidoctor.org/docs/what-is-asciidoc/)，感觉好喜欢啊，是时候抛弃 Markdown 了？ -- 2023.06.18
 
 > 阅读《打造第二大脑》之后意识到自己之前对与图片/音乐/视频等富媒体内容的轻视了。要想一想如何在博客里更多的存放这类内容。 2023.06.17
 
