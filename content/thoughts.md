@@ -12,7 +12,9 @@ taxonomies:
     - Random Book
 ---
 
-> 一捣鼓博客就不想工作了，阅读和写作真的好让人自我感觉良好啊 --2023.06.18
+> 产品经理“做自己的需求是最舒服的“，难点在于做别人的需求。 -- 2023.06.20
+
+> 一捣鼓博客就不想工作了，阅读和写作真的好让人自我感觉良好啊 -- 2023.06.18
 
 > 看了下[Asciidoctor](https://docs.asciidoctor.org/)的文档,以及[为什么我们需要 AsciiDoc](https://asciidoctor.org/docs/what-is-asciidoc/)，感觉好喜欢啊，是时候抛弃 Markdown 了？ -- 2023.06.18
 

@@ -150,9 +150,9 @@ html {
   --colors-primary-light: rgba(234, 76, 137, 0.5);
   --colors-background: linen;
   --colors-code-background: rgba(0, 0, 0, 0.08);
-  --colors-quote-background: rgb(247, 249, 249);
+  --colors-quote-background: rgba(255, 255, 255, 0.5);
   /* --colors-quote-background: #f6f8fa; */
-  --colors-quote-hover-background: #efefef;
+  --colors-quote-hover-background: rgba(255, 255, 255, 0.7);
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
