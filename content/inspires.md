@@ -121,6 +121,7 @@ taxonomies:
 - [全球发现网络](https://www.gnod.com/) - 发现有趣的新东西
 - [找鼠标光标位置的有意思网页](https://pointerpointer.com/)
 - [互联网画布](https://paper.mmm.dev/) - 随便画一个网站出来.
+- [Say somethings meaningful](https://www.obsessivefacts.com/fmiffel) - 发布必须超过 140 个字的网站
 
 ## 硬件
 
