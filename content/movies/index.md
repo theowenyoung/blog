@@ -1,7 +1,7 @@
 ---
 title: 电影笔记
 date: 2021-03-26
-updated: 2023-01-01
+updated: 2023-06-22
 taxonomies:
   categories:
     - Notes
@@ -30,6 +30,10 @@ Also see [电视剧笔记](/content/tv-shows/index.md), [读书笔记](/content/
 
 ![Root Screenshot](./caddy-root.png)
 ![Movie Demo](./movie-demo.png)
+
+## Todo
+
+- [Dark City](https://www.imdb.com/title/tt0118929/) - 类似黑客帝国，但是更早
 
 ## 人生必看系列
 
