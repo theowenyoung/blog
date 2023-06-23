@@ -229,14 +229,14 @@ taxonomies:
 - [设计良好的聚合新闻](https://spike.news/) - Spike
 - [daily.dev](https://app.daily.dev) - 聚合网站
 
-## 邮件订阅
+## 邮件订阅/Newsletter
 
 - [The Browswer](https://thebrowser.com/) - 每天推荐 5 篇值得阅读的文章
   - [存档](https://thebrowser.com/archive/)
 - [Inbox World](https://inboxworld.io/) - 订阅推荐
 - [laskie](https://laskie.substack.com/) - We create products and services to
   save your company time and make you more money. 创业相关，企业管理相关
--
+- [More to That](https://moretothat.com/money/)
 
 ## 女权
 
