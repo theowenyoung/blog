@@ -70,6 +70,7 @@ taxonomies:
 - [rust 生成线条图片](https://github.com/lf94/img2utf)
 - [AI Stable 扩散图片生成接口](https://computerender.com/) - 低成本的众包
 - [app screenshot generate](https://studio.app-mockup.com/)
+- [输入 Quote 生成好看的图片](https://kuote.shime.sh/)
 
 ## URL 缩短器
 

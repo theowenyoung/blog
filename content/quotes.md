@@ -10,6 +10,18 @@ taxonomies:
     - Random Book
 ---
 
+> 旅游最重要的事实是：我们已经知道回来时会是什么样子。度假不像移民到外国、入读大学、开始新工作或坠入爱河。我们开始这些追求时，会像进入一个隧道的人一样感到不安，不知道走出来时会变成什么样子。旅行者则自信地出发，相信回来时自己的基本兴趣、政治信仰和生活安排不会有太大变化。旅行就像一个回旋镖，它会把你带回原点。 -- [反对旅行的理由](https://www.newyorker.com/culture/the-weekend-essay/the-case-against-travel)
+
+> 游客是一种暂时闲暇的人，自愿离开家乡前往他处，以体验变化为目的。 - 主人与客人
+
+> 旅行为“愚人的天堂” -- 拉尔夫·沃尔多·爱默生
+
+> I abhor new ways of life and unfamiliar places. . . . The idea of travelling nauseates me. . . . Ah, let those who don’t exist travel! . . . Travel is for those who cannot feel. . . . Only extreme poverty of the imagination justifies having to move around to feel.
+>
+> 我厌恶新的生活方式和陌生的地方……旅行的想法让我恶心……啊，让那些不存在的人去旅行吧！旅行是给那些无法感受的人的……只有极度缺乏想象力才能理解为何需要四处流浪来感受生活。
+>
+> -- 葡萄牙作家费尔南多·佩索阿，《失落之书》
+
 > Fark site redesign is now live. Hope nothing breaks, we're all out drinking.
 >
 > Fark 网站重新设计现已上线。希望什么都没有坏，我们都出去喝酒了（fark.com）

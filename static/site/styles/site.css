@@ -137,6 +137,7 @@ f9f5e9
 ea4c89
 fffef8
 #f4ecd8;
+#FDF6E3
 background-color:rgb(255, 252, 249);
 
 */
@@ -148,7 +149,7 @@ html {
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-background: linen;
+  --colors-background: #fdf6e3;
   --colors-code-background: rgba(0, 0, 0, 0.08);
   --colors-quote-background: rgba(255, 255, 255, 0.5);
   /* --colors-quote-background: #f6f8fa; */
