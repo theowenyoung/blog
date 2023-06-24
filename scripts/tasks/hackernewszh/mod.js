@@ -38,18 +38,35 @@ export async function runHackernewszhTask() {
   }
 
   const feedResult = await request("https://hnfront.buzzing.cc/feed.json");
+  let nextTweet;
   try {
-    const nextTweet = await getNextTweet(feedResult, keys);
+    nextTweet = await getNextTweet(feedResult, keys);
+  } catch (e) {
+    await sendNotice({
+      text: "hnbot get feed error" + e.message.slice(0, 200),
+    });
+  }
+
+  try {
     if (nextTweet) {
       await jsonBin.set(jsonBinPath, {
         keys: nextTweet.keys,
         lastRunAt: now.toISOString(),
       });
+    }
+  } catch (e) {
+    await sendNotice({
+      text: "hnbot set json store error" + e.message.slice(0, 200),
+    });
+  }
+
+  try {
+    if (nextTweet) {
       await sendTweet(nextTweet.text);
     }
   } catch (e) {
     await sendNotice({
-      text: "hnbot error" + e.message.slice(0, 200),
+      text: "hnbot send tweet error" + e.message.slice(0, 200),
     });
   }
 }
