@@ -61,6 +61,7 @@ taxonomies:
 ## 工具
 
 - [Turborepo](https://github.com/vercel/turborepo) - vercel mono repo tool
+- [reveal.js](https://github.com/hakimel/reveal.js) - 创建演示页面，感觉可以用来做 landing 页面？
 
 ## Schema
 
