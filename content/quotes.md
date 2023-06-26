@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 当我在大学里是一名计算机科学学生时，我认识的每个人都读 Slashdot。该网站成立于 1997 年，致力于为 "书呆子提供新闻。重要的东西"。它有大约一打简短的、由用户提交的关于当天技术新闻的故事。在大多数情况下，这些故事包括一个简短的摘要和一个指向网络上其他地方的内容的链接。 - [Slashdot 创始人 Rob Malda 谈为什么不会有另一个 Hacker News](https://www.washingtonpost.com/news/the-switch/wp/2013/08/07/slashdot-founder-rob-malda-on-why-there-wont-be-another-hacker-news/)
+
 > 旅游最重要的事实是：我们已经知道回来时会是什么样子。度假不像移民到外国、入读大学、开始新工作或坠入爱河。我们开始这些追求时，会像进入一个隧道的人一样感到不安，不知道走出来时会变成什么样子。旅行者则自信地出发，相信回来时自己的基本兴趣、政治信仰和生活安排不会有太大变化。旅行就像一个回旋镖，它会把你带回原点。 -- [反对旅行的理由](https://www.newyorker.com/culture/the-weekend-essay/the-case-against-travel)
 
 > 游客是一种暂时闲暇的人，自愿离开家乡前往他处，以体验变化为目的。 - 主人与客人
