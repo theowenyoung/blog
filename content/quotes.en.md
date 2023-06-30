@@ -1,13 +1,15 @@
 ---
 title: Quotes
 date: 2022-04-25
-updated: 2022-11-04
+updated: 2023-06-30
 taxonomies:
   categories:
     - Notes
   tags:
     - Quotes
 ---
+
+> Basically. If there’s some nice free thing you use that’s too good to be true… wait a few years it will go to muck. - [HN](https://news.ycombinator.com/item?id=36529982)
 
 > Western multinationals today think about putting their next factory: “A.B.C. — Anywhere But China.” - [nytimes](https://www.nytimes.com/2022/11/01/opinion/china-united-states-trade-economy.html)
 
