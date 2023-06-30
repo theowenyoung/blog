@@ -10,6 +10,16 @@ taxonomies:
     - Random Book
 ---
 
+> People talk about the complexity of the infrastructure making it impossible to do everything yourself, but in my experience is exactly the opposite. The degree of abstration, automation, and high-level tools means that you kinda can do everything without knowing too much.
+>
+> 人们谈论基础设施的复杂性使得自己不可能做所有的事情，但根据我的经验，情况恰恰相反。简化、自动化和高级工具的程度意味着你不需要知道太多东西就可以做所有事情。
+>
+> - [HN](https://news.ycombinator.com/item?id=36524323)
+
+> If people are introduced to a company without enough seasoned mentors, and without its culture and vision established, they add process and produce documents because it feels like productive work. Your customer doesn't care about any of those things. - [More Pablo](https://morepablo.com/2023/06/creatives-industries.html)
+>
+> 如果人们被介绍到一个没有足够经验丰富的导师的公司，并且没有建立其文化和愿景，他们就会增加流程和制作文件，因为这感觉像是富有成效的工作。你的客户并不关心任何这些事情。
+
 > 我们的大部分时间和精力都被心胸狭小的社会竞争所消耗，而我们真的不愿意承认这一点。 - [我们的欲望有问题](https://everythingisbullshit.substack.com/p/theres-a-problem-with-our-desires)
 
 > 当我在大学里是一名计算机科学学生时，我认识的每个人都读 Slashdot。该网站成立于 1997 年，致力于为 "书呆子提供新闻。重要的东西"。它有大约一打简短的、由用户提交的关于当天技术新闻的故事。在大多数情况下，这些故事包括一个简短的摘要和一个指向网络上其他地方的内容的链接。 - [Slashdot 创始人 Rob Malda 谈为什么不会有另一个 Hacker News](https://www.washingtonpost.com/news/the-switch/wp/2013/08/07/slashdot-founder-rob-malda-on-why-there-wont-be-another-hacker-news/)

@@ -9,10 +9,6 @@ taxonomies:
     - Quotes
 ---
 
-> If people are introduced to a company without enough seasoned mentors, and without its culture and vision established, they add process and produce documents because it feels like productive work. Your customer doesn't care about any of those things. - [More Pablo](https://morepablo.com/2023/06/creatives-industries.html)
->
-> 如果人们被介绍到一个没有足够经验丰富的导师的公司，并且没有建立其文化和愿景，他们就会增加流程和制作文件，因为这感觉像是富有成效的工作。你的客户并不关心任何这些事情。
-
 > Basically. If there’s some nice free thing you use that’s too good to be true… wait a few years it will go to muck. - [HN](https://news.ycombinator.com/item?id=36529982)
 
 > Western multinationals today think about putting their next factory: “A.B.C. — Anywhere But China.” - [nytimes](https://www.nytimes.com/2022/11/01/opinion/china-united-states-trade-economy.html)
