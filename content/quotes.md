@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 如果你要为人们做一些东西，确保它是他们真正想要的东西。做到这一点的最好方法是制作你自己想要的东西。写下你想读的故事；建造你想使用的工具。由于你的朋友可能有类似的兴趣，这也将使你获得最初的观众。 - [pg](http://paulgraham.com/greatwork.html)
+
 > People talk about the complexity of the infrastructure making it impossible to do everything yourself, but in my experience is exactly the opposite. The degree of abstration, automation, and high-level tools means that you kinda can do everything without knowing too much.
 >
 > 人们谈论基础设施的复杂性使得自己不可能做所有的事情，但根据我的经验，情况恰恰相反。简化、自动化和高级工具的程度意味着你不需要知道太多东西就可以做所有事情。

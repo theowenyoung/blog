@@ -1,7 +1,7 @@
 ---
 title: AI 相关的笔记收集
 date: 2023-03-17T00:04:28+08:00
-updated: 2023-05-28
+updated: 2023-07-02
 taxonomies:
   categories:
     - Notes
@@ -52,6 +52,7 @@ taxonomies:
 - [Micro1](https://www.micro1.ai) - 用 GPT-4 来评估技术候选人
 - [Fillout](https://www.fillout.com/) - ai 生成表格
 - [Quivr](https://github.com/StanGirard/quivr/) - 第二大脑，上传任何类型的文件，然后与之对话
+- [DemoGPT](https://github.com/melih-unsal/DemoGPT) - 首先根据提示词创建一个表单模板，再根据表单模板里你填写的词，创建一个真正的产物。
 
 ## OpenAI 替代 UI
 
