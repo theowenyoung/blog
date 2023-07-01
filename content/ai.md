@@ -53,6 +53,12 @@ taxonomies:
 - [Fillout](https://www.fillout.com/) - ai 生成表格
 - [Quivr](https://github.com/StanGirard/quivr/) - 第二大脑，上传任何类型的文件，然后与之对话
 - [DemoGPT](https://github.com/melih-unsal/DemoGPT) - 首先根据提示词创建一个表单模板，再根据表单模板里你填写的词，创建一个真正的产物。
+- [Sudo Write](https://www.sudowrite.com/) - ai 写小说
+
+## 开源
+
+- [openai keys](https://github.com/BerriAI/reliableGPT)
+- [KOR](https://github.com/eyurtsev/kor) - 生成结构化数据的 ai
 
 ## OpenAI 替代 UI
 
