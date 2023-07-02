@@ -54,6 +54,7 @@ taxonomies:
 - [Quivr](https://github.com/StanGirard/quivr/) - 第二大脑，上传任何类型的文件，然后与之对话
 - [DemoGPT](https://github.com/melih-unsal/DemoGPT) - 首先根据提示词创建一个表单模板，再根据表单模板里你填写的词，创建一个真正的产物。
 - [Sudo Write](https://www.sudowrite.com/) - ai 写小说
+- [Shape](https://shape.town/) - 拥有电子邮件的虚拟 ai 人物
 
 ## 开源
 

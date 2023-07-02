@@ -10,6 +10,12 @@ taxonomies:
     - Random Book
 ---
 
+> Obsidian. A great app, but it gives me the heebee jeebies to put so much reliance in plug-in developers with no real motivation to keep developing/supporting them other than their good will. Local storage is nice.
+>
+> 黑曜石。一个伟大的应用程序，但它让我感到不安，因为它把这么多的依赖放在插件开发者身上，除了他们的良好意愿之外，没有真正的动机去继续开发/支持他们。本地存储很好。
+>
+> [Source](https://www.outlinersoftware.com/topics/viewt/10131/)
+
 > 如果你要为人们做一些东西，确保它是他们真正想要的东西。做到这一点的最好方法是制作你自己想要的东西。写下你想读的故事；建造你想使用的工具。由于你的朋友可能有类似的兴趣，这也将使你获得最初的观众。 - [pg](http://paulgraham.com/greatwork.html)
 
 > People talk about the complexity of the infrastructure making it impossible to do everything yourself, but in my experience is exactly the opposite. The degree of abstration, automation, and high-level tools means that you kinda can do everything without knowing too much.
