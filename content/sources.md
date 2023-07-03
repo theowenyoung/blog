@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2023-06-03
+updated: 2023-07-02
 taxonomies:
   categories:
     - Notes
@@ -167,6 +167,7 @@ taxonomies:
 - [Tildes](https://tildes.net/) - 开源的聚合器
   - [说明](https://blog.tildes.net/announcing-tildes)
 - [brutalist](https://brutalist.report/) - 聚合最权威的报道
+- [程序员应该访问的最好的网站](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
 
 ## 中文社区
 
