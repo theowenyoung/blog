@@ -284,6 +284,7 @@ taxonomies:
 ## 中文独立博客
 
 - [杨飞自选作品集](http://www.999kg.com/) - 摄影与杂文
+- [莫比乌斯](https://onojyun.com/)
 
 ## 其他人的推荐
 
