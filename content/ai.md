@@ -55,6 +55,11 @@ taxonomies:
 - [DemoGPT](https://github.com/melih-unsal/DemoGPT) - 首先根据提示词创建一个表单模板，再根据表单模板里你填写的词，创建一个真正的产物。
 - [Sudo Write](https://www.sudowrite.com/) - ai 写小说
 - [Shape](https://shape.town/) - 拥有电子邮件的虚拟 ai 人物
+- [Brew Note](https://app.looppanel.com/brewnote/) - 对录音进行分析，总结，标注重点
+- [Voice Translate](https://app.voicetranslate.app/) - 声音/视频翻译
+- [BlinKn](https://blinkn.shop/) - 亚马逊购物人工智能助手。
+- [Fliki](https://fliki.ai/) - 文本到视频的生成工具
+- [用 AI 生成专利文档](https://www.solveintelligence.com/)
 
 ## 开源
 
