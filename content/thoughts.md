@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-07-09
+updated: 2023-07-18
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 今天刚刚得知，我的这篇白日梦文章[《我要是有钱...》](https://www.owenyoung.com/blog/basic-income/) 被一个真正的有钱人看到了，还思考了至少几十分钟。大家加油啊，多做白日梦，也许有一天可以实现！ - 2023.07.18
 
 > 生病的时候，别人的关心，多少都不算多。。我以前像个 sb 一样，很少给生病的人多于一次的关心。同理心就靠自己有同样的痛苦才能建立。 -- 2023.07.09
 
