@@ -20,9 +20,9 @@ taxonomies:
 ## 进行中
 
 - 记录我每天阅读后希望分享的链接，发布在[日记栏目](/categories/journal/)里
-- 开发[沉浸式翻译](https://immersive-translate.owenyoung.com/)扩展，已支持 firefox, chrome, safari, 油猴.
+- 开发[沉浸式翻译](https://immersive-translate.owenyoung.com/)扩展。
 - 在[https://clip.owenyoung.com/](https://clip.owenyoung.com/) 分享我阅读的文章的双语对照快照。
-- 新开了一个 [Telegram 频道](https://t.me/owenyoungzh) 做一些及时的分享
+- 每天吃半个西瓜，很享受！
 
 ## 正在读
 
@@ -40,12 +40,3 @@ making so many goals. Once I reach my goal, I'll update here.
 ## Projects
 
 查看所有 [Projects](/content/projects.md)
-
-## Goals
-
-如果今年还是没有流利英语，我就是傻逼。
-
-- [ ] 90 天挑战，每天录一条英文视频。
-- [x] More patient about stocks.
-- [ ] Significantly improve English level
-- [x] 读者达到 1000 人。包括 twitter newsletter
