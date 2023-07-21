@@ -1,7 +1,7 @@
 ---
 title: 图书阅读相关资源
 date: 2022-03-29
-updated: 2022-12-10
+updated: 2023-07-21
 taxonomies:
   categories:
     - Notes
@@ -36,6 +36,7 @@ taxonomies:
 - [适合小孩的书 6-14 岁](https://www.bookvine.io/)
 - [牛津：所有事情的简短介绍](https://www.goodreads.com/list/show/43502.The_Oxford_Very_Short_Introductions_Series)
 - [hn ask: 你正在读什么书？](https://news.ycombinator.com/item?id=32196791)
+- [超过 5000 本 ai 生成的有声书](https://marhamilresearch4.blob.core.windows.net/gutenberg-public/Website/browse.html)
 
 ## 资源
 
