@@ -85,6 +85,7 @@ Curating awesome decentralized applications.
   - [rsslay](https://github.com/fiatjaf/rsslay)
   - [damus](https://damus.io/)
 - [Iris Messanger](https://github.com/irislib/iris-messenger) - Decentralized messenger
+- [Fire Fish](https://joinfirefish.org/) - Another mastodon alternative
 
 ## Mail
 
