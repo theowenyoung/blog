@@ -1,7 +1,7 @@
 ---
 title: 各种清单，列表，目录收集 - Notes List
 date: 2021-03-26
-updated: 2023-05-05
+updated: 2023-07-24
 taxonomies:
   categories:
     - Notes
@@ -36,6 +36,7 @@ taxonomies:
 ## Communities
 
 - [Hive Index](https://thehiveindex.com/) - Find online communities, find your people.
+- [中国独立开发者列表](https://github.com/1c7/chinese-independent-developer)
 
 ## Startup
 
