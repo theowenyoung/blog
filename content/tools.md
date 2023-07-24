@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2023-06-04
+updated: 2023-07-24
 taxonomies:
   categories:
     - Notes
@@ -265,6 +265,10 @@ taxonomies:
   Designed to be the ultimate online work experience, it brings together your
   team and every web tool you use – all in one interface. Actually, not so fast,
   but the UI, the workflow, the sidebar, will give your new experience.
+
+### Mobile Browser
+
+- [quiche browser](https://apps.apple.com/us/app/quiche-browser/id1668363952) - 极简 iOS 浏览器
 
 ## 笔记
 
