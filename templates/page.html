@@ -97,9 +97,10 @@
             </div>
           </div>
       {% endif %}
-<iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
       {{ macro::backlink(pages=page.backlinks) }}
-      {{ macro::webmentions(backlinks=page.backlinks) }}
+      <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+      <p class="text-sm mt mb-lg">该博客没有评论系统，我正在实验有意义的讨论是否更易在社群中发生，不知道为什么，人在社群中，似乎会有更好的行为规范。然后如果有高质量的讨论，我会手动再精选到原文。为此，我建立了一个 <a target="_blank" href="https://t.me/+c2drnwCso55mMjBh">Telegram 讨论群组</a>，你可以在里面讨论这篇文章，<a href="#" id="copyButton">点此复制文章标题和链接</a>&nbsp;<span id="copyStatus"></span>。</p>
+
   </div>
 </div>
 {% endblock main %}
@@ -111,3 +112,23 @@
     {% endif %}
   </aside>
 {% endblock sidebar %}
+
+{% block before_body_end -%}
+
+<script>
+  document.getElementById('copyButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    var text = '《{{ page.title }}》 ' + window.location.href;
+    var textArea = document.createElement('textarea');
+    textArea.textContent = text;
+    document.body.append(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    document.getElementById('copyStatus').textContent = '已复制 ✅';
+    setTimeout(function() {
+      document.getElementById('copyStatus').textContent = '';
+    }, 1500);
+  });
+</script>
+{% endblock before_body_end -%}

@@ -847,6 +847,12 @@ ul.text-sm:lang(en) {
 .header-inner {
   max-width: 52rem;
 }
+.mt {
+  margin-top: 1.4rem;
+}
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
 
 @media (min-width: 48rem) {
   .navbar {

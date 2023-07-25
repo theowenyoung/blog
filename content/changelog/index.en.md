@@ -14,6 +14,8 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2023.07.25 Use telegram group as comment system.
+
 ## 2023.06.14 Remove nav bar
 
 ## 2023.06.10 Remove Activity Page
