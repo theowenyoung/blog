@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-07-18
+updated: 2023-07-25
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,10 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 我们应该追求的是时间自由，而不是财富自由。前者更好实现，更有可操作性。 - 2023.07.25
+
+> Elon 有这么多钱做啥不好啊，把 440 亿刀的百分之一拿来做[《基本收入》](https://www.owenyoung.com/blog/basic-income/)多好啊。 - 2023.07.25
 
 > 今天刚刚得知，我的这篇白日梦文章[《我要是有钱...》](https://www.owenyoung.com/blog/basic-income/) 被一个真正的有钱人看到了，还思考了至少几十分钟。大家加油啊，多做白日梦，也许有一天可以实现！ - 2023.07.18
 
