@@ -30,6 +30,7 @@ taxonomies:
 ## Services
 
 - [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. 100% self-hosted, no limits, no ties to proprietary translation services.
+- [Lingvanex](https://lingvanex.com/translationserver/) - Self-hosted translation
 
 ## Medias
 

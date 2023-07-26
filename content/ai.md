@@ -60,6 +60,10 @@ taxonomies:
 - [BlinKn](https://blinkn.shop/) - 亚马逊购物人工智能助手。
 - [Fliki](https://fliki.ai/) - 文本到视频的生成工具
 - [用 AI 生成专利文档](https://www.solveintelligence.com/)
+- [用 AI 分析你的推销文案，同时收到反馈和改进的版本](https://www.pitchyouridea.ai/)
+- [ai 帮你自动分类，整理任何东西](https://fabric.so/fabric-for-ios-and-android)
+- [让 ai 帮你打电话给某个餐厅或者任何人](https://www.belva.ai/) - 你描述你的需求，ai 帮你完成
+- [语音转录工具](https://transcript.lol/)
 
 ## 开源
 
