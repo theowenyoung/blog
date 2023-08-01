@@ -376,6 +376,7 @@ X as a Y services.
 ## Epub
 
 - [离线电子书](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
+- [wikipedia 文章转 epub](https://wikepub.azurewebsites.net/)
 
 ## Search
 
