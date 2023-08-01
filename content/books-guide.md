@@ -38,6 +38,7 @@ taxonomies:
 - [hn ask: 你正在读什么书？](https://news.ycombinator.com/item?id=32196791)
 - [超过 5000 本 ai 生成的有声书](https://marhamilresearch4.blob.core.windows.net/gutenberg-public/Website/browse.html)
 - [100 本书的总结](https://playtext.app/books)
+- [patrickcollison 的书架](https://patrickcollison.com/bookshelf)
 
 ## 资源
 
