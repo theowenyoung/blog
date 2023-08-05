@@ -133,8 +133,6 @@ taxonomies:
 
 这件事我可以改进的是，尝试联系这些链接里的作者，告诉他们沉浸式翻译实际上是闭源项目，如果可以的话，请他们删掉开源的说法。
 
-进度：正在联系中，稍后更新进度。
-
 ![](https://files.owenyoung.com/file/owen-blog/2023-08-05-214508.png)
 
 ![](https://files.owenyoung.com/file/owen-blog/2023-08-05-214752.png)
@@ -142,6 +140,8 @@ taxonomies:
 ![](https://files.owenyoung.com/file/owen-blog/2023-08-05-215200.png)
 
 ![](https://files.owenyoung.com/file/owen-blog/2023-08-05-215348.png)
+
+进度：正在进行中
 
 > 6\. 沉浸式翻译的官网中，有一个 Github 链接，容易给人开源的印象
 
