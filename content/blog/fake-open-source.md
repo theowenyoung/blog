@@ -63,7 +63,7 @@ taxonomies:
 
 但是该文档其实存放在别的 repo 也可以，很容易就能迁移走。为了减少这里的疑问，我会把整个文档迁出，然后参考其他流行闭源项目的最佳实践，只留下`README`, `dist` 等必要文件。
 
-进度：✅ 已完成，[点此查看最新项目结构](github.com/immersive-translate/immersive-translate/)
+进度：✅ 已完成，[点此查看最新项目结构](https://github.com/immersive-translate/immersive-translate/)
 
 > 2\. 项目的 `README` 文档，看起来像开源项目，容易造成误导
 
@@ -73,7 +73,7 @@ taxonomies:
 
 这个的原因同上， `README.md` 文件渲染的是官网的主页，所以写了一大堆文字和图片介绍沉浸式翻译这个产品。既然我已将整个文档项目迁出，那么这个 `README.md` 文件也可以按照闭源最佳的实践，改为简单介绍这个 Repo 即可。
 
-进度：✅ 已完成，[点此查看最新项目结构](github.com/immersive-translate/immersive-translate/)
+进度：✅ 已完成，[点此查看最新项目结构](https://github.com/immersive-translate/immersive-translate/)
 
 > 3\. 当重写后的新项目改为闭源后，没有在显著位置提醒用户该新项目是一个闭源项目
 
@@ -127,9 +127,9 @@ taxonomies:
 
 评论区提到的几个链接，这些文章的作者确实提到了沉浸式翻译开源的，这也间接说明上面的 1，2 表达的关切是合理的。
 
-好消息是随后我在微信上尝试搜索更多推荐沉浸式翻译的文章，粗略估计大约有 95%的文章没有提到沉浸式翻译是开源的，有 5%的文章用开源来形容沉浸式翻译。
+随后我在微信上尝试搜索更多推荐沉浸式翻译的文章，粗略估计有 95% 的文章并没有提到沉浸式翻译是开源的，大概有 5% 的文章用开源来形容沉浸式翻译。
 
-不过有一点，就是帖子里关于软文的指控是明确不成立的，因为沉浸式翻译截止目前（2023 年 08 月 05 日）还没有请任何人写过推广，这件事很好证伪，因为随便找到任何一篇推广沉浸式翻译的文章，如果作者说那是软文，这件事就证伪了。
+还有一点，就是帖子里关于软文的指控是明确不符合事实的，因为沉浸式翻译截止目前（2023 年 08 月 05 日）还没有请任何人写过推广，这件事很好证伪，因为随便找到任何一篇推广沉浸式翻译的文章，如果作者说那是软文，这件事就证伪了。
 
 这件事我可以改进的是，尝试联系这些链接里的作者，告诉他们沉浸式翻译实际上是闭源项目，如果可以的话，请他们删掉开源的说法。
 
@@ -149,7 +149,7 @@ taxonomies:
 
 ![](https://files.owenyoung.com/file/owen-blog/2023-08-04-154126.jpg)
 
-我觉得这也是合理的关切，我计划用[Release](github.com/immersive-translate/immersive-translate/releases) 来代替原 Github 的描述。
+我觉得这也是合理的关切，我计划用[Release](https://github.com/immersive-translate/immersive-translate/releases) 来代替原 Github 的描述。
 
 进度：✅ 已完成，点此查看[官网](https://immersivetranslate.com)
 
@@ -169,7 +169,7 @@ taxonomies:
 
 但是我相信在完成上述变动之后，整个文档项目已迁移到其他地方，之后理论上就只有机器人在变更了，变更频率也会小很多。
 
-进度：✅ 已完成迁移，[点此查看](github.com/immersive-translate/immersive-translate/)
+进度：✅ 已完成迁移，[点此查看](https://github.com/immersive-translate/immersive-translate/)
 
 以上是我总结的 8 点主要的关切，以及我为其做的说明和解决方案。
 
@@ -184,7 +184,7 @@ taxonomies:
 
 我也想对那些在原帖中对沉浸式翻译表示理解的朋友们说声谢谢，接下来沉浸式翻译也会推出更多的开源计划，比如：
 
-1. [AI 翻译模型](github.com/immersive-translate/immersiveL)
+1. [AI 翻译模型](https://github.com/immersive-translate/immersiveL)
 2. PDF 文件解析引擎
 3. ePub 翻译
 4. ...
