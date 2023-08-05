@@ -113,7 +113,7 @@ taxonomies:
 
 > 本仓库用于发布沉浸式双语网页翻译扩展的 [Release 版本](https://github.com/immersive-translate/immersive-translate/releases)以及使用 [Github Issues](https://github.com/immersive-translate/immersive-translate/issues)收集和跟进用户反馈。
 >
-> [沉浸式翻译](https://immersivetranslate.com/) 并非开源软件，这个仓库并 **不包含** 沉浸式翻译的源代码。旧版的[沉浸式翻译开源项目](github.com/immersive-translate/old-immersive-translate)已于 2023 年 1 月 17 日被归档。
+> [沉浸式翻译](https://immersivetranslate.com/) 并非开源软件，这个仓库并 **不包含** 沉浸式翻译的源代码。旧版的[沉浸式翻译开源项目](https://github.com/immersive-translate/old-immersive-translate)已于 2023 年 1 月 17 日被归档。
 
 进度：✅ 已完成，[点此查看](https://github.com/immersive-translate/immersive-translate/)
 
