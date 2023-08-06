@@ -227,10 +227,8 @@ taxonomies:
 - AGPL (GNU Affero General Public License)：在 GPL 的基础上，进一步要求即使在网络上提供服务（不分发软件），也需要开源代码。
 - LGPL (GNU Lesser General Public License)：比 GPL 稍微宽松一点，对库或框架更友好，只要求对修改的部分开源，可以和商业软件链接。
 
-最后，我想说，虽然从公关角度上来说，目前原帖的热度已经下去了，我应该最好保持沉默。
-
-但是因为我随口问了 ChatGPT 一句， 它的回答极大的鼓励了我，让我在这个时间做了我觉得对的事，感谢 ChatGPT 呀。
+最后，我还想感谢 ChatGPT 给了我鼓励。虽然从公关角度上来说，目前原帖的热度已经下去了，此时保持沉默似乎是最好的选择。
 
 ![](https://files.owenyoung.com/file/owen-blog/2023-08-05-192439.png)
 
-周末愉快！
+我随口问了 ChatGPT 一句， 它的回答极大的鼓励了我，让我在这个时间做了我觉得对的事，感谢 ChatGPT 呀。
