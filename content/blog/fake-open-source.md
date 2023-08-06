@@ -45,7 +45,7 @@ taxonomies:
 
 我发现好像不止一个人会用这个来判断一个项目是否为开源项目，那我觉得如果对此有争议，我很乐意移除这个`Makefile`文件或者精简这个项目的目录结构。
 
-此外还有一些网友也补充了其他流行的闭源项目如[Obsdian](https://github.com/obsidianmd/obsidian-releases), [Clash for windows](https://github.com/Fndroid/clash_for_windows_pkg)的目录结构。我会参照这些项目重新修改 Repo 以减少任何可能的疑问。
+此外还有一些网友也补充了其他流行的闭源项目如[Obsidian](https://github.com/obsidianmd/obsidian-releases), [Clash for windows](https://github.com/Fndroid/clash_for_windows_pkg)的目录结构。我会参照这些项目重新修改 Repo 以减少任何可能的疑问。
 
 同时我也想在这里分享一下为什么这个项目会有`Makefile`文件？
 
