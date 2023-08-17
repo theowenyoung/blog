@@ -65,6 +65,7 @@ taxonomies:
 - [HN 提问： 你的不在乎结果的项目是？](https://news.ycombinator.com/item?id=25992782)
 - [HN 提问：给我看看你的半成品项目](https://news.ycombinator.com/item?id=25700135)
 - [HN 提问：分享你的个人网站](https://news.ycombinator.com/item?id=30934529)
+- [HN 提问：你最近有哪些项目希望得到反馈？](https://news.ycombinator.com/item?id=37156101)
 
 ## 产品
 

@@ -1,7 +1,7 @@
 ---
 title: 收集 Javascript 相关的资源
 date: 2022-03-25
-updated: 2022-07-13
+updated: 2023-08-18
 taxonomies:
   categories:
     - Notes
@@ -53,6 +53,7 @@ taxonomies:
 ## 服务端框架
 
 - [Deepkit](https://github.com/deepkit/deepkit-framework)
+- [Hono](https://hono.dev/) - Edge 端的框架，支持绝大多数 edge 平台，服务端 jsx
 
 ## 汇总资源
 
