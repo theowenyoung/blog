@@ -1,7 +1,7 @@
 ---
 title: 图书阅读相关资源
 date: 2022-03-29
-updated: 2023-07-26
+updated: 2023-08-19
 taxonomies:
   categories:
     - Notes
@@ -39,6 +39,7 @@ taxonomies:
 - [超过 5000 本 ai 生成的有声书](https://marhamilresearch4.blob.core.windows.net/gutenberg-public/Website/browse.html)
 - [100 本书的总结](https://playtext.app/books)
 - [patrickcollison 的书架](https://patrickcollison.com/bookshelf)
+- [有史以来最好的杂志文章](https://kk.org/cooltools/best-magazine-articles-ever/)
 
 ## 资源
 
