@@ -1,7 +1,7 @@
 ---
 title: 学习任何东西的教程
 date: 2022-08-25T08:41:32+08:00
-updated: 2022-08-25
+updated: 2023-08-22
 taxonomies:
   categories:
     - Notes
@@ -26,3 +26,7 @@ taxonomies:
 ## Javascript
 
 - [学习 React 前要了解的顶级 Javascript 概念](https://www.freecodecamp.org/news/top-javascript-concepts-to-know-before-learning-react/)
+
+## iOS
+
+- [斯坦福大学的 iOS 教程](https://cs193p.sites.stanford.edu/2023)
