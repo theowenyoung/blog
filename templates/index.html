@@ -28,7 +28,7 @@
       <div class="header">
         <div class="header-inner">
         {% if config.default_language != lang %}
-          <p>I'm Owen Young, I've written
+          <p class="index-intro">I'm Owen Young, I've written
             <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
               {{ all_section_pages.pages | length }}</a>
             articles so far, about {{ total_word_count }} words, last updated on
@@ -39,7 +39,7 @@
             <a href="{{ get_url(path="@/pages/now.md") }}">click to find out what I'm doing now</a>
           </p>
         {% else %}
-          <p>我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
+          <p class="index-intro">我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
               {{ all_section_pages.pages | length }}</a>
             篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。另外我会把英文内容发布在<a href="/en/">这里</a>,
             <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>

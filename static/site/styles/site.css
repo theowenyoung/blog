@@ -951,3 +951,6 @@ ul.text-sm:lang(en) {
     border: none;
   }
 }
+.index-intro {
+  font-size: 1rem;
+}
