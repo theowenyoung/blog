@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2023-06-14
+updated: 2023-08-28
 taxonomies:
   categories:
     - Notes
@@ -98,6 +98,7 @@ taxonomies:
 - [Product Hunt but for Music(https://www.leets.it/)
 - [Tinder for local food](https://apps.apple.com/us/app/hot-local-food/id1621818779)
 - [纯文本相关网站导航](https://sjmulder.nl/en/textonly.html)
+- [Slow journalism](https://www.slow-journalism.com/) - 慢杂志，每季度一次，不错过重要的文章。
 
 ## 服务
 

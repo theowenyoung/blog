@@ -12,6 +12,7 @@ title: 侧边栏
 ## 导航
 
 - [搜索本站](/content/pages/search.md)
+- [值得阅读的别人的文章](https://clip.owenyoung.com/)
 - [图书阅读资源](/content/books-guide.md)
 - [探索互联网上高质量的内容](/content/sources.md)
 - [热门笔记](/#re-men-bi-ji)
