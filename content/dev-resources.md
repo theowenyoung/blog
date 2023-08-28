@@ -257,6 +257,7 @@ between formats and can be used as a Go package.
 - [在 Javascript 中为 Next.js 静态站点编写全文搜索](https://www.ahmadrosid.com/blog/fulltext-search-with-inverted-index)
 - [flexsearch](https://github.com/nextapps-de/flexsearch) - 浏览器和 nodejs
   的下一代全文搜索库.js
+- [pagefind](https://github.com/cloudcannon/pagefind) - 在本地浏览器上搜索
 
 ## Protocol
 
