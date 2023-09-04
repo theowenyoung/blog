@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2023-01-28
+updated: 2023-09-04
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 我们硬是把常见的混乱秩序化。 - 2023.09.04
 
 > Obsidian. A great app, but it gives me the heebee jeebies to put so much reliance in plug-in developers with no real motivation to keep developing/supporting them other than their good will. Local storage is nice.
 >
