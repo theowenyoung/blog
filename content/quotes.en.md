@@ -1,13 +1,15 @@
 ---
 title: Quotes
 date: 2022-04-25
-updated: 2023-06-30
+updated: 2023-09-05
 taxonomies:
   categories:
     - Notes
   tags:
     - Quotes
 ---
+
+> If you're not the customer, you're the product. - [hn](https://news.ycombinator.com/item?id=37353729)
 
 > Basically. If there’s some nice free thing you use that’s too good to be true… wait a few years it will go to muck. - [HN](https://news.ycombinator.com/item?id=36529982)
 

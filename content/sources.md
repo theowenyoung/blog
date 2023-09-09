@@ -117,6 +117,8 @@ taxonomies:
   - [best hacker news comments](https://news.ycombinator.com/bestcomments)
   - [当前活跃的 hn 讨论](https://news.ycombinator.com/active)
   - [被管理员重新顶上去的帖子](https://news.ycombinator.com/invited)
+  - [awesome hn](https://github.com/cheeaun/awesome-hacker-news)
+  - [以前的 hn](https://hn.lindylearn.io/) - 99%的 hn 好内容都不是今天发的，历史上的好东西
 - [Betalist](https://betalist.com/) - Discover tomorrow's startups, today.
 - [startupbase](https://startupbase.io/) - Discover early access products.
 - [10words](https://10words.io/) - 10words: Discover new apps and startups in 10

@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2023-09-04
+updated: 2023-09-10
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,18 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 今天的计算机系统给个人和集体带来的危险，是我们在桥梁、摩天大楼、发电厂和导弹防御系统等更具体的结构中永远无法接受的。据报道，苹果公司的 iOS 9 更新导致某些手机 "变砖"，无法使用。谷歌文档等服务因神秘原因瘫痪，让那些工作依赖它们的人束手无策。与办公楼的结构完整性或国家核武库的安全相比，这些似乎都是小事。但仔细想想，你的晚期汽车经常莫名其妙地无法启动，或者你的办公室电梯经常把你困在井道里。计算机已经成为基础设施，但它的工作方式却不像基础设施。 -- [程序员，请不要再自称工程师](https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/)
+
+> How to be happy after joining Google as employee #23..
+>
+> 加入谷歌成为第 23 号员工后如何获得快乐？
+>
+> And quitting before it got bad.
+>
+> 并在情况恶化之前退出。
+>
+> [保罗-布赫希特谈加入谷歌](https://news.ycombinator.com/item?id=37385633)
 
 > 我们硬是把常见的混乱秩序化。 - 2023.09.04
 

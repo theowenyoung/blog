@@ -96,3 +96,7 @@ taxonomies:
 ## Vim
 
 - [Awesome Vim Keybindings](https://github.com/erikw/vim-keybindings-everywhere-the-ultimate-list)
+
+## HN
+
+- [Awesome HN](https://github.com/cheeaun/awesome-hacker-news)
