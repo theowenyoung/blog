@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-09-14
+updated: 2023-09-17
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 只需要把 self-hosted 和命令行工具转成一个方便的 GUI，你会发现用户数量成倍上升。 -- 2023.09.17
 
 > 我想重置电脑，想给手机刷机，想随便读读东西 写点东西...（如果你现在过着这样的生活，那么你应该庆幸！） -- 2023.09.14
 
