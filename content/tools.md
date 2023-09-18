@@ -378,6 +378,7 @@ X as a Y services.
 
 - [离线电子书](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
 - [wikipedia 文章转 epub](https://wikepub.azurewebsites.net/)
+- [self-hosed 电子书管理](https://www.kavitareader.com/) - 离线电子书管理
 
 ## Search
 
