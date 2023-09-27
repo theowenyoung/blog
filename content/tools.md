@@ -40,6 +40,10 @@ taxonomies:
 - [Epub to HTML](https://epub.to)
 - [制作 epub](http://sqqihao.github.io/EPubBuilder/src/index.html)
 
+## Tools
+
+- [cron task health check](https://healthchecks.io/) - 健康检查
+
 ## Server
 
 - [Nginx Playground](https://nginx-playground.wizardzines.com/) - 在线调试 nginx 服务器
