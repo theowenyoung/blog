@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 与该报主编沃尔特-科恩共同撰写的编者按指出："我们的一些文章很有趣，而另一些文章则是由那些非常生气或相信世界末日即将来临的人写的"。 - [美国新出版的纯印刷报纸重塑了慢慢阅读的艺术](https://www.theguardian.com/media/2023/oct/01/americas-new-print-only-newspaper-county-highway-reinvents-the-art-of-reading-slowly)
+
 > "Everybody lies." "每个人都在撒谎" -- House
 
 > 今天的计算机系统给个人和集体带来的危险，是我们在桥梁、摩天大楼、发电厂和导弹防御系统等更具体的结构中永远无法接受的。据报道，苹果公司的 iOS 9 更新导致某些手机 "变砖"，无法使用。谷歌文档等服务因神秘原因瘫痪，让那些工作依赖它们的人束手无策。与办公楼的结构完整性或国家核武库的安全相比，这些似乎都是小事。但仔细想想，你的晚期汽车经常莫名其妙地无法启动，或者你的办公室电梯经常把你困在井道里。计算机已经成为基础设施，但它的工作方式却不像基础设施。 -- [程序员，请不要再自称工程师](https://www.theatlantic.com/technology/archive/2015/11/programmers-should-not-call-themselves-engineers/414271/)

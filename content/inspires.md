@@ -98,7 +98,8 @@ taxonomies:
 - [Product Hunt but for Music(https://www.leets.it/)
 - [Tinder for local food](https://apps.apple.com/us/app/hot-local-food/id1621818779)
 - [纯文本相关网站导航](https://sjmulder.nl/en/textonly.html)
-- [Slow journalism](https://www.slow-journalism.com/) - 慢杂志，每季度一次，不错过重要的文章。
+- [Slow journalism](https://www.slow-journalism.com/) - 慢新闻，慢杂志，每季度一次，不错过重要的文章。
+  - [只有打印版的新闻](https://www.countyhighway.com/)
 
 ## 服务
 
