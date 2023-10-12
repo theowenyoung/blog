@@ -64,6 +64,7 @@ taxonomies:
 - [视频讲座 - Reddit 小组](https://www.reddit.com/r/lectures/)
 - [观看并学习 - Reddit 小组](https://www.reddit.com/r/WatchandLearn/)
 - [下饭视频 - Reddit 小组](https://www.reddit.com/r/mealtimevideos/)
+- [nebula](https://nebula.tv/) - 付费视频网站，创作者和平台5-5分成。
 
 ## 中文独立媒体
 
