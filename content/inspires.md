@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2023-08-28
+updated: 2023-10-17
 taxonomies:
   categories:
     - Notes
@@ -217,6 +217,7 @@ taxonomies:
 - [日期放在博文左边](https://zellwk.com/blog/trying-your-best/)
 - [舒服的博客背景色](https://www.tabletmag.com/sections/news/articles/destined-live-quiet-times-progress-walter-russell-mead-via-meadia)
 - [舒服的博客配色](https://remotive.com/blog/digital-nomad-visas/)
+- [设计师的博客](https://paulstamatiou.com/) - 左边导航栏很舒服
 
 ## 资源
 
