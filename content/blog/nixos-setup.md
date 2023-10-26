@@ -82,6 +82,14 @@ sh <(curl -L https://nixos.org/nix/install)
 1. General -> Selections -> double click performs smart selections
 1. Profile -> Text -> Font -> FiraCode Nerd Font
 
+## Python 临时项目测试
+
+```
+nix-shell -p python3 python3Packages.virtualenv
+virtualenv venv
+source ./venv/bin/activate
+```
+
 ## Tips
 
 1. 打印当前nix flake文件的输出：

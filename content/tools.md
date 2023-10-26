@@ -417,3 +417,8 @@ X as a Y services.
 ## Damn
 
 - [damn good tools](https://damngood.tools) - 该死的好工具，生成 隐私政策等
+
+## 网页归档(Archive)
+
+- [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
+- [SingleFile](https://github.com/gildas-lormeau/SingleFile) - 浏览器扩展，把网页保存为一个独立的html文件
