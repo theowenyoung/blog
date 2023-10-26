@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-10-11
+updated: 2023-10-26
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 尽量按我的需求做东西，不支持 dark 模式，按我的审美，只支持我用的平台，只支持最新的版本。 -- 2023.10.26
 
 > 手机还是难用一点好，我现在用红米，一打开就各种广告，根本不想玩。 -- 2023.10.11
 
