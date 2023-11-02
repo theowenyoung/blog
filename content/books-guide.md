@@ -25,7 +25,7 @@ taxonomies:
 - [豆瓣图书 top250](https://book.douban.com/top250)
 - [像在书店一样发现新的书](https://shepherd.com/)
 - [Ask HN: 那些书改变了你对所有事情的看法？](https://news.ycombinator.com/item?id=19087418)
-  - [Ask HN: 您推荐大家阅读的一本书是什么？](https://hn.buzzing.cc/hn/30241190/)
+  - [Ask HN: 您推荐大家阅读的一本书是什么？](https://news.ycombinator.com/item?id=30241190)
 - [Sive 的读书笔记](https://sive.rs/book)
 - [BBC 最有影响力的 100 本书籍](https://en.wikipedia.org/wiki/BBC_list_of_100_%22most_inspiring%22_novels)
 - [Good read 最受欢迎的书籍列表](https://www.goodreads.com/list/popular_lists)
