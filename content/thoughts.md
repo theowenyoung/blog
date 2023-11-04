@@ -12,6 +12,8 @@ taxonomies:
     - Random Book
 ---
 
+> 只要我开始认真阅读 hacker news, 大约3个小时后，hacker news 就会ban掉我的ip, 所以我收藏了解禁 ip 的网址（你必须换一个ip才能访问这个接口: http://news.ycombinator.com/unban?ip=ip）
+
 > 我现在看到一个产品，特别喜欢看他们的动机（为什么要做这个）以及核心理念。 -- 2023.11.04
 
 > 原来做一个产品，最先关注到你的永远都是竞争对手...（要小心！） -- 2023.10.30
