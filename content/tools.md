@@ -327,6 +327,10 @@ taxonomies:
 - [Blog Surf](https://blogsurf.io/) - 博客搜索引擎
 - [Kagi](https://kagi.com/) - 高级搜索引擎
 
+## 博客平台
+
+- [posthaven](https://posthaven.com) - 博客平台，永远不筹资，永远保持服务的简单平台
+
 ## 在线平台模拟
 
 - [Never Install](https://neverinstall.com/) -
