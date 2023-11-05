@@ -47,6 +47,7 @@ taxonomies:
   一句话总结文章内容，所以你不用点进去看文章了
 - [True Reddit 小组的每月排行](https://old.reddit.com/r/Foodforthought/top/?t=month)
 - [Bear Blog Trending](https://bearblog.dev/discover/) - mark 下它的排序算法
+- [LessWrong](https://www.lesswrong.com/) - LessWrong是一个致力于改善人类推理和决策能力的在线论坛和社区，追求拥有真实的信念，并在实现目标时高效。每一天的目标是比前一天更加正确地了解世界。
 
 ## 专人维护的 Reading List
 
