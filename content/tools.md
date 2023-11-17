@@ -170,6 +170,10 @@ taxonomies:
 
 - [monica](https://github.com/monicahq/monica) - 个人 CRM
 
+## 工具
+
+- [Detexify](https://detexify.kirelabs.org/classify.html) - 手写 Latex，所以你不需要自己找
+
 ## 硬件
 
 - [太阳能/家用大功率充电宝](https://sunboxlabs.com/solar-kit/) - $449

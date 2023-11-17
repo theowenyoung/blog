@@ -37,11 +37,33 @@ taxonomies:
   - 不适合作为多版本管理器，所以它适合管理你的全局环境，多版本管理器还是应该交给具体语言的版本管理器，
   - 也有一些工具来实现这个，但是我觉得有点拧巴，多版本应该作为非全局，临时的方案，而不是全局的。
 
+## 好处
+
+- 声明的
+
 ## 密钥管理
 
 我发现不管我用什么加密，我最终都需要把一个用来解密的密钥放在我的服务器上，如果我用一个永久的PGP Key, 或者永久的 ssh key 来做这个事，那么我势必需要把ssh key 不断的复制到每一台服务器，这样大大降低 ssh key的安全性。
 
 所以我需要有一种方式，最好是一个不需要我维护的线上身份管理，类似 AWS 的KMS 之类的系统。
+
+1. 生成age keys，
+
+```
+age-keygen -o key.txt
+```
+
+2. 移动 age 到 sops
+
+```
+mkdir -p "$HOME/Library/Application Support/sops/age/"
+```
+
+保存私钥到 [infisical](https://app.infisical.com/)
+
+## 更新软件
+
+先吧 sha256 清空
 
 ## home
 
