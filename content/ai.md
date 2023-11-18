@@ -65,6 +65,7 @@ taxonomies:
 - [ai 帮你自动分类，整理任何东西](https://fabric.so/fabric-for-ios-and-android)
 - [让 ai 帮你打电话给某个餐厅或者任何人](https://www.belva.ai/) - 你描述你的需求，ai 帮你完成
 - [语音转录工具](https://transcript.lol/)
+- [浏览器 llm](https://tinyllms.vercel.app/)
 
 ## 开源
 
@@ -100,6 +101,10 @@ taxonomies:
 - [newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
 - [Simon Willison](https://simonwillison.net/) - 关于 AI，技术向
 - [Ben's Bites newsletter 关于最新的 AI 资讯](https://www.bensbites.co/)
+
+## 财经
+
+- [ai总结的新闻和股票信息](https://wocstreet.com/ai-news)
 
 ## Dev
 

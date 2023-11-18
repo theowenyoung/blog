@@ -246,3 +246,7 @@ taxonomies:
 
 - [The paige](https://thepaige.co) - ai 生成网站，landing 页很棒
 - [Browser Horse](https://browser.horse/)
+
+## 工具
+
+- [间隔日记](https://www.interstitch.app/)

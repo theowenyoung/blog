@@ -504,3 +504,7 @@ See
 ## PDF
 
 - [免费的 PDF 标准文档](https://www.pdfa.org/sponsored-standards/)
+
+## 存储
+
+- [json 存储](https://highcontext.ai)
