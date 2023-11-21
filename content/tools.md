@@ -430,3 +430,8 @@ X as a Y services.
 
 - [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
 - [SingleFile](https://github.com/gildas-lormeau/SingleFile) - 浏览器扩展，把网页保存为一个独立的html文件
+
+## 付费apps
+
+- [homerow](https://www.homerow.app/) - 全局 vim mode 导航和滚动
+- [clean shot](https://cleanshot.com/) - 好用的截图工具

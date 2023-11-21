@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2023-11-04
+updated: 2023-11-19
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 我发现，一个产品，要么完全免费，要么完全收费，不然软件开发商和用户总是会有利益冲突。 -- 2023.11.19
 
 > 只要我开始认真阅读 hacker news, 大约3个小时后，hacker news 就会ban掉我的ip, 所以我收藏了解禁 ip 的网址（你必须换一个ip才能访问这个接口: http://news.ycombinator.com/unban?ip=ip）
 
