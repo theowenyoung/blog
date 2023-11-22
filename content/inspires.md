@@ -250,3 +250,7 @@ taxonomies:
 ## 工具
 
 - [间隔日记](https://www.interstitch.app/)
+
+## 媒体
+
+- [Pressreader](https://www.pressreader.com/) - 在线杂志，7000多种顶级杂志
