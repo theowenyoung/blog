@@ -102,7 +102,7 @@ taxonomies:
 - [Adam Grant](https://adamgrant.bulletin.com/)
 - [Austin Kleon](https://austinkleon.substack.com/) - 像艺术家一样偷窃作者
 - [Paul Graham](http://paulgraham.com/articles.html) - YC 创始人
-- [Gwern](https://www.gwern.net/index) - 美国作家和研究员
+- [Gwern](https://www.gwern.net/index) - 美国作家和研究员, 写作涉及人工智能、心理学和统计学，内容十分充实，硬核。
 - [Wait but Why](https://waitbutwhy.com/homepage) - Tim Urban 主持的博客，Wait But Why 是一个涵盖广泛主题的博客，从科学和技术到哲学和社会。该博客由蒂姆-乌尔班和安德鲁-芬恩于 2013 年创办，此后获得了大量的追随者，在 195 个国家拥有超过 2400 万读者。该博客以其深入和精心研究的文章而闻名，这些文章通常包括手绘插图。该博客的首要任务是每周二发表一篇新文章，但他们也会偶尔发表小型文章。该博客的目标是探索世界，并以一种有趣和吸引人的方式分享知识。
 
 ## Product
