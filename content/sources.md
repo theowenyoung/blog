@@ -259,9 +259,10 @@ taxonomies:
 - anderspitman, [patchbay](https://patchbay.pub/) 作者
   - [hn submitted](https://news.ycombinator.com/submitted?id=anderspitman)
 
-## 音乐博主
+## 音乐
 
 - [@Spylent 的个人主页 - 微博 (weibo.com)](https://weibo.com/u/7340378423) - 说唱
+- [Somafm](https://somafm.com/) - 捐赠运行的，人工策划的音乐FM网站
 
 ## Influence
 
@@ -293,3 +294,7 @@ taxonomies:
 ## 其他人的推荐
 
 - [除了 Hacker News 你还看哪些新闻资讯](https://news.ycombinator.com/item?id=36175315)
+
+## 网赚论坛
+
+- [谈论如何在网络上赚钱](https://www.blackhatworld.com/)

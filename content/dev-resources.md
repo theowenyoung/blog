@@ -1,7 +1,7 @@
 ---
 title: 开发相关的资源汇总
 date: 2022-03-25
-updated: 2023-04-07
+updated: 2023-11-24
 taxonomies:
   categories:
     - Notes
@@ -508,3 +508,7 @@ See
 ## 存储
 
 - [json 存储](https://highcontext.ai)
+
+## HTTP Server
+
+- [mini serve](https://github.com/svenstaro/miniserve) - HTTP Server

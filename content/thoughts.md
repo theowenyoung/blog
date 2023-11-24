@@ -12,6 +12,8 @@ taxonomies:
     - Random Book
 ---
 
+> 目前来看，我发现.com 的域名价格
+
 > 我发现，一个产品，要么完全免费，要么完全收费，不然软件开发商和用户总是会有利益冲突。 -- 2023.11.19
 
 > 只要我开始认真阅读 hacker news, 大约3个小时后，hacker news 就会ban掉我的ip, 所以我收藏了解禁 ip 的网址（你必须换一个ip才能访问这个接口: http://news.ycombinator.com/unban?ip=ip）
