@@ -186,3 +186,5 @@ Most people dramatically underestimate the impact that their writing has on othe
 打消写作积极性的最简单方法就是将自己的第一篇文章与自己最喜欢的作家的优秀作品进行比较，得出自己永远不会写得那么好的结论，然后放弃。这是错误的。几乎没有人的第一篇文章是惊世骇俗的（例如我的文章）；相反，大多数作家都是在发表更多文章的过程中逐步了解哪些有效，哪些无效。以上两条戒律就是关于如何尽快完成反馈周期。下面的所有具体建议都是为了优化这一点而提出的。
 
 ---
+
+[我希望有人告诉我的写作建议 ](http://web.archive.org/web/20090502012411/http://wwwstage.valpo.edu/english/vpr/mcdonaldessay.html)
