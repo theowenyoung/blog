@@ -1,7 +1,8 @@
 ---
-title:
+title: Paid Things
 date: 2023-11-24T18:54:37+08:00
 updated: 2023-11-24
+drafts: true
 taxonomies:
   categories:
     - Notes
