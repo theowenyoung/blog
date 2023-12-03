@@ -23,6 +23,7 @@ taxonomies:
 
 [Andy 的工作笔记](https://notes.andymatuschak.org/%C2%A7Note-writing_systems) - 作者正在实验一个新的笔记系统
 [Catelog](https://dev.to/amitnovick/a-catalog-of-your-files-2nd7) 一种分类方法
+[double loop 数字花园](https://commonplace.doubleloop.net/)
 
 1. 参考清单
 2. 阅读清单
