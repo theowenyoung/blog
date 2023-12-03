@@ -15,17 +15,17 @@ taxonomies:
 
 <!-- more -->
 
-Kobo 的 Hack 过程比较好做，因为官方留了一个口子给第三方插件，基本上安装任何第三方插件，都只需要连接 usb，然后你的电脑文件夹要能显示隐藏文件（也就是`.` 开头的文件），一般来说，第三方软件会提供一个名字是`KoboRoot.tgz`的安装包，你需要把它拖到kobo的存储盘里的 `.kobo`文件夹，然后安全弹出 Kobo USB 设备就可以了。
+Kobo 的 Hack 过程比较好做，因为官方留了一个口子给第三方插件，基本上安装任何第三方插件，都只需要连接 usb （你的电脑文件夹要能显示隐藏文件，也就是`.` 开头的文件）。一般来说，第三方插件会提供一个名字是`KoboRoot.tgz`的安装包，你需要把它拖到 kobo 存储盘里的 `.kobo`文件夹，然后安全弹出 Kobo USB 设备，再等待几秒就可以了。
 
-Kobo 会自动检测 `KoboRoot.tgz` 文件，然后运行里面的安装程序。一般来说，第三方程序并不会影响Kobo 的主系统，他们只是额外安装了自己，和主系统共存。
+Kobo 会自动检测 `KoboRoot.tgz` 文件，然后运行里面的安装程序。一般来说，第三方程序并不会影响 Kobo 的主系统，他们只是额外安装了自己，和主系统完美共存。
 
 目前比较热门的第三方程序有：
 
-- [koreader](https://github.com/koreader/koreader) - 可以高度定制化，有一堆功能的阅读器客户端，比如支持 calibre 无线传输，RSS，[Wallbag](https://github.com/wallabag/wallabagger) 等等等等
-- [Plato](https://github.com/baskerville/plato) - 一个简约的阅读器，性能好，用Rust编写，功能相对较少，但够用，还附带有一个计算器和涂写的小工具，有一个选中高亮的时候，便捷自动调整范围的小特性，（经常用墨水屏阅读器的人应该深有体会，很难精确的选中一个段落，所以这个特性我特别喜欢）
-- [kobocloud](https://github.com/fsantini/KoboCloud) 可以自动同步 Dropbox, Google Drive, Next Cloud 的书籍到Kobo上。
+- [koreader](https://github.com/koreader/koreader) - 可以高度定制的一个阅读器客户端，还有安卓版。有非常多的功能，比如支持 calibre 无线传输，RSS，[Wallbag](https://github.com/wallabag/wallabagger) 等等等等
+- [Plato](https://github.com/baskerville/plato) - 一个简约的阅读器，性能好，用Rust编写，功能相对较少，但够用，还附带有一个计算器和涂写的小工具。还有一个选中高亮便捷自动调整范围的小特性，（经常用墨水屏阅读器的人应该深有体会，很难精确的选中一个段落，所以这个特性我特别喜欢）
+- [kobocloud](https://github.com/fsantini/KoboCloud) 可以自动同步 Dropbox, Google Drive, Next Cloud 的书籍到 Kobo 上。
 
-这三个我都试用了一下，最后还是放弃了 koreader, 功能真的太多了...所以使用起来几乎一头雾水，界面也有点一言难尽，性能也没有 Plato 好，所以我决定只安装 KoboCloud 和 Plato.
+这三个我都试用了一下，最后还是放弃了 koreader, 功能真的太多了...所以使用起来几乎是一头雾水，界面也有点一言难尽，性能也没有 Plato 好，所以我决定只安装 KoboCloud 和 Plato.
 
 下面记录下我的安装和设置过程：
 
@@ -35,7 +35,7 @@ Kobo 会自动检测 `KoboRoot.tgz` 文件，然后运行里面的安装程序�
 
 开启这个，会让我们的【设置】【测试版功能】里多一些功能，甚至还有一些小游戏。
 
-只需要在 Kobo 的搜索框里输入 `devmodeon`, 即可自动打开。注意，kobo不会给你任何提示，我当时也一直疑惑怎么输入这个对我无效，原来是只要输入，按下回车键就好了，具体可以去【设置】【测试版功能】里面查看是否有数独小游戏入口来检查是否开启成功。里面有一个 Sketchpad 很实用，可以用手指写写画画，我打算把这个添加到我的 NickelMenu 菜单里。
+只需要在 Kobo 的搜索框里输入 `devmodeon`, 即可自动打开。注意，kobo不会给你任何提示，我当时也一直疑惑怎么输入这个对我无效，原来是只要输入，按下回车键就好了，具体可以去【设置】【测试版功能】里面查看有没有数独小游戏入口来确认有没有开启成功。实验功能里面还有一个 Sketchpad 很实用，可以用手指写写画画，我打算把这个添加到我的 NickelMenu 菜单里。
 
 同时在【设置】【设备信息】里面会多出来一个选项 【Developer options】 里面有很多选项可以用。
 
@@ -64,11 +64,11 @@ ExcludeSyncFolders=(\\.(?!kobo|adobe).+|([^.][^/]*/)+\\..+)
 
 > 不知道是错觉，还是什么，因为我尝试的次数比较多，似乎某些时候更改配置不生效，所以你可以重新插拔一下USB，再次打开该配置文件，确实是否生效。
 >
-> Kobo 会重新排序配置，所以虽然你刚刚在最后一行添加的配置，Kobo 会重新格式化到 字幕顺序排列。
+> Kobo 会重新排序配置，所以虽然你刚刚在最后一行添加的配置，Kobo 会重新格式化到 字母顺序排列。
 
 ## 3. 安装 [Kobo Cloud](https://github.com/fsantini/KoboCloud)
 
-这个工具用于同步 Google Drive 文件夹里的图书到 kobo设备里，因为我很不喜欢每次都需要用 USB 连接才能传输书，这个方案来同步书是最方便的。这样以后只需要把图书上传到 Google Drive 里面的指定文件夹，Kobo就能自动同步图书了。
+这个工具用于同步 Google Drive 文件夹里的图书到 kobo 设备里，因为我很不喜欢每次都需要用 USB 连接才能传输书，这个方案来同步书是最方便的。这样以后只需要把图书上传到 Google Drive 里面的指定文件夹，Kobo就能自动同步图书了。
 
 重新插拔USB，按照项目文档里的[说明](https://github.com/fsantini/KoboCloud)安装即可。
 
@@ -105,7 +105,7 @@ REMOVE_DELETED
 
 该安装包会同时帮你安装另外两个必须的插件，一个[kfmon](https://github.com/NiLuJe/kfmon), 另一个是 [NickelMenu](https://github.com/pgaskin/NickelMenu)
 
-> 这个安装脚本里，会自动帮我们做上面步骤2里的东西，就是忽略`.`文件夹的扫描，但是我实践操作过程中发现 似乎 和 Nickel 的自动扫描 有时序问题，有的时候还是被扫描到，所以我在第2步主动修改，并确认配置生效。
+> 这个安装脚本里，会自动帮我们执行我上面步骤2里手动的修改的配置，就是忽略`.`文件夹的扫描。但是我实践操作过程中发现似乎有时序问题，有的时候会失败，所以我才在第 2 步里手动修改，并确认配置生效。
 
 安全弹出设备，耐心等几秒，就会自动开始安装。
 
@@ -113,7 +113,11 @@ REMOVE_DELETED
 
 进入之后，点击左下角，选择【Library】，可以切换不同的仓库，以显示不同目录下的书籍。
 
-在 Kobocloud 里同步的书籍在这里的【removable】书架里。
+在 Kobocloud 里同步的书籍在这里的【Removable】书架里。
+
+如图：
+
+![](https://files.owenyoung.com/file/owen-blog/2023-12-03-telegram-cloud-photo-size-1-5145563038030605534-y.jpg)
 
 ## 6. 配置 NickelMenu, 添加一些快捷入口
 
@@ -144,14 +148,15 @@ menu_item :main    :Telnet (toggle)    :cmd_output         :500:quiet :/usr/bin/
     chain_always:skip:-1
   chain_success                        :dbg_toast          :Stopped Telnet server on port 2023
 
+
 ```
+
+效果如下：
+
+![](https://files.owenyoung.com/file/owen-blog/2023-12-03-telegram-cloud-photo-size-1-5145650556579195833-y.jpg)
 
 ## 7. 其他
 
 有的时候，如果没有扫描到你添加的图书，可能需要重启一下。
-
-## 8. 目前的扩展菜单
-
-![](https://files.owenyoung.com/file/owen-blog/2023-12-03-telegram-cloud-photo-size-1-5145650556579195833-y.jpg)
 
 目前就只探索到这么多，未来如果有新发现，再补充进来。
