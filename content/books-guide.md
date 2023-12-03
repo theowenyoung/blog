@@ -48,6 +48,7 @@ taxonomies:
   - [安娜档案](https://annas-archive.org/) - 索引了 z-library 的所有图书，可用于搜索和下载
   - [z-lib 登录地址](https://singlelogin.se/)
   - [z-lib 洋葱网络地址](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/) - `http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/`
+- [Global Grey Books](https://www.globalgreyebooks.com/index.html) - 由英国的一位女性维护，亲自制作超过2400本电子书。只提供免费的、已进入公共领域的无版权书籍。
 - [编程随想整理的电子书资源](https://program-think.blogspot.com/2021/05/share-books.html)
 - [Libgen](https://libgen.is) - 英文书籍
 - [公共领域有声读物](https://librivox.org/)
@@ -65,6 +66,7 @@ taxonomies:
   从谷歌成千上万本书里给出最相关的段落。 zsh:1: unknown file attribute: h
 - [离线电子书](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
 - [在线发送图书给 Kindle](https://www.amazon.com/sendtokindle)
+- [Epub 简繁在线转换](https://v.magiconch.com/epub-transform)
 
 ## 讨论
 
