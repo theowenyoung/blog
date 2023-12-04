@@ -516,3 +516,7 @@ See
 ## Browser 浏览器自动化工具
 
 - [aziom.ai](https://axiom.ai/)
+
+## 存储
+
+- [Garage](https://garagehq.deuxfleurs.fr/documentation/quick-start/) - S3 的自部署版本
