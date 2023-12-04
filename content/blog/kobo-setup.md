@@ -93,6 +93,8 @@ REMOVE_DELETED
 
 ## 4. 安装 [Plato](https://github.com/baskerville/plato)
 
+> 目前发现 Plato 在渲染 Epub 方面还是有点问题，我在沉浸式翻译里翻译的 epub 的换行符没法正确显示，我在 [issue](https://github.com/baskerville/plato/issues/180#issuecomment-1837883563) 里贴了相关代码, 所以目前还是官方的阅读器比较爽，但是官方的阅读器打开epub特别慢，我要想办法把 epub 自动转为 kepub 才行。
+
 重新插拔一下 USB，在设备上允许连接到电脑。
 
 使用官方安装说明中给出的这个[一键安装脚本](https://www.mobileread.com/forums/showthread.php?t=314220) 来安装plato
