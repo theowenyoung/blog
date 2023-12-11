@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 人生来只是无知，愚蠢是后天造成的。 -- 罗素
+
 > 与该报主编沃尔特-科恩共同撰写的编者按指出："我们的一些文章很有趣，而另一些文章则是由那些非常生气或相信世界末日即将来临的人写的"。 - [美国新出版的纯印刷报纸重塑了慢慢阅读的艺术](https://www.theguardian.com/media/2023/oct/01/americas-new-print-only-newspaper-county-highway-reinvents-the-art-of-reading-slowly)
 
 > "Everybody lies." "每个人都在撒谎" -- House
@@ -74,10 +76,8 @@ taxonomies:
 >
 > - Slack is so easy and fun to use that we use it for things we shouldn't be (fun channels, fun integrations). It creates too much noise and hard to extract signal. It ends up being distracting past 100+ people company.
 > - Slack 使用起来非常简单有趣，以至于我们将它用于我们不应该做的事情（有趣的频道、有趣的集成）。它会产生太多噪音并且难以提取信号。它最终会分散超过 100 人的公司的注意力。
->
 > - Teams is so bad that people try not to use it. It forces you to use it minimally because everything is terrible. It actually ends up being more productive than Slack.
 > - Teams 太糟糕了，以至于人们尽量不使用它。它迫使你最少地使用它，因为一切都很糟糕。它实际上最终比 Slack 更有效率。
->
 > - [hn](https://news.ycombinator.com/item?id=34540085)
 
 > 考察一个人的判断力，主要考察他信息来源的多样性。有无数的可怜人，长期活在单一的信息里，而且是一种被扭曲，颠倒的信息，这是导致人们愚昧且自信的最大原因。 -- 阿玛蒂亚·森（诺奖得主）

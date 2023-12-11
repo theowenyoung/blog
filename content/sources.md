@@ -140,6 +140,7 @@ taxonomies:
 
 - [Self-Hosted Reddit](https://www.reddit.com/r/selfhosted/)
 - [Track Awesome-Selfhosted](https://www.trackawesomelist.com/awesome-selfhosted/awesome-selfhosted/)
+- [开源软件](https://osssoftware.org/)
 
 ## Decentralized
 
