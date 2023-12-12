@@ -41,6 +41,7 @@ taxonomies:
 - [100 本书的总结](https://playtext.app/books)
 - [patrickcollison 的书架](https://patrickcollison.com/bookshelf)
 - [有史以来最好的杂志文章](https://kk.org/cooltools/best-magazine-articles-ever/)
+- [Neodb 推荐图书](https://neodb.social/discover/) - 豆瓣的开源替代品
 
 ## 资源
 
