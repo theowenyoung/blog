@@ -435,3 +435,7 @@ X as a Y services.
 
 - [homerow](https://www.homerow.app/) - 全局 vim mode 导航和滚动
 - [clean shot](https://cleanshot.com/) - 好用的截图工具
+
+## 油猴脚本
+
+- [Open-the-F-king-URL-Right-Now](https://github.com/OldPanda/Open-the-F-king-URL-Right-Now/tree/master) 不用经过中间页，直接跳转
