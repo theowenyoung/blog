@@ -82,3 +82,7 @@ taxonomies:
 ## 帖子
 
 - [推荐有关革命。骚乱。地下运动。内乱。分裂的社会的书籍？](https://www.reddit.com/r/suggestmeabook/comments/umi2gl/revolution_riots_underground_movements_civil/)
+
+## 杂项
+
+- [秘密知识之书](https://github.com/trimstray/the-book-of-secret-knowledge) 114K star, 分享各种各样的命令行工具。
