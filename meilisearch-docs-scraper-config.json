@@ -20,7 +20,7 @@
       "selector": ".detail-page .p-tags",
       "default_value": "Notes"
     },
-    "lvl2": ".detail-page .entry-title",
+    "lvl2": ".post-header .entry-title",
     "lvl3": ".e-content h2",
     "lvl4": "main h3",
     "text": ".e-content p, .e-content li, .p-content p, .p-content li"
