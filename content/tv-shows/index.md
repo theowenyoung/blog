@@ -1,7 +1,7 @@
 ---
 title: 电视剧笔记
 date: 2021-03-26
-updated: 2022-12-19
+updated: 2023-12-17
 taxonomies:
   categories:
     - Notes
@@ -19,6 +19,10 @@ Also see [读书笔记](/content/blog/books/_index.md), [电影笔记](/content/
 ## 电视剧列表
 
 - [Tomato Tree](https://tomatotree.tv/) - 通过烂番茄网站找到你的下一个电视剧！
+
+## TODO
+
+- [权力的堡垒 第一季 Borgen Sæson 1](https://movie.douban.com/subject/4082095/)
 
 ## workflows
 
