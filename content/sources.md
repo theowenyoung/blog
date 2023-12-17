@@ -68,6 +68,10 @@ taxonomies:
 - [下饭视频 - Reddit 小组](https://www.reddit.com/r/mealtimevideos/)
 - [nebula](https://nebula.tv/) - 付费视频网站，创作者和平台5-5分成。
 
+## Youtuber
+
+- [李天豪](https://www.youtube.com/@leecehao/videos) - 台湾历史老师
+
 ## 中文独立媒体
 
 - [thenewslens](https://www.thenewslens.com/) - Taiwan indie media
