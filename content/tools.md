@@ -439,3 +439,7 @@ X as a Y services.
 ## 油猴脚本
 
 - [Open-the-F-king-URL-Right-Now](https://github.com/OldPanda/Open-the-F-king-URL-Right-Now/tree/master) 不用经过中间页，直接跳转
+
+## 简历
+
+- [免费开源的在线简历制作工具](https://www.open-resume.com/resume-builder)

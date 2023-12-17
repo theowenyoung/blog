@@ -2,7 +2,7 @@
 title: 香港银行账户开通笔记（包括实体银行和虚拟银行）
 date: 2023-09-16T19:04:03+08:00
 updated: 2023-09-16
-draft: false
+draft: true
 taxonomies:
   categories:
     - Random
