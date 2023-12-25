@@ -12,6 +12,8 @@ taxonomies:
     - Random Book
 ---
 
+> 我喜欢和其他的书呆子打交道。 -- 2023.12.26
+
 > 以有用为目的做东西，如果顺便能赚钱那当然很好，如果不能，我也会很开心。 -- 2023.12.26
 
 > 如果 PinBoard 的所有者去世了[怎么办](https://www.reddit.com/r/pinboard/comments/qi5t6c/what_would_happen_if_pinboards_owner_passes_away/)？, 我一直梦想一种类似 [Solid](https://solidproject.org/) 的解决方案，数据库按照统一的格式存取，比如 存到 s3 里。 -- 2023.12.25

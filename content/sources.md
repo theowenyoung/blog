@@ -50,6 +50,7 @@ taxonomies:
 - [LessWrong](https://www.lesswrong.com/) - LessWrong是一个致力于改善人类推理和决策能力的在线论坛和社区，追求拥有真实的信念，并在实现目标时高效。每一天的目标是比前一天更加正确地了解世界。
 - [Read something wonderful](https://readsomethingwonderful.com) - 以前的好文章
 - [Pin Board 的流行书签收藏](https://pinboard.in/popular/) - 流行书签收藏.
+- [Boared reading](https://boredreading.com/?v4) - 专为书呆子设计的互联网阅读的最佳方式
 
 ## 专人维护的 Reading List
 

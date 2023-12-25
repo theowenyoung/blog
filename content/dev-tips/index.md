@@ -169,8 +169,8 @@ folder/*
 ## 开源许可证
 
 - [Unlicense](https://unlicense.org/) - 无版权许可证，公有领域许可证
-
-![License Comparison](./license-comparision.png)
+- [fsl](https://fsl.software/) -
+  ![License Comparison](./license-comparision.png)
 
 > By [如何选择开源许可证？](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 
@@ -535,7 +535,6 @@ Added the following shortcut to `keybindings.json`
 - [Visual Studio Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 - [GitHub - microsoft/vscode-tips-and-tricks: Collection of helpful tips and tricks for VS Code.](https://github.com/microsoft/vscode-tips-and-tricks)
 
-
 ## Robots.txt
 
 ```bash
@@ -545,7 +544,6 @@ Disallow: /
 ```
 
 ## Systemd
-
 
 ### stay active after your session is killed
 

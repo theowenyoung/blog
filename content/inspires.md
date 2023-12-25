@@ -254,3 +254,7 @@ taxonomies:
 ## 媒体
 
 - [Pressreader](https://www.pressreader.com/) - 在线杂志，7000多种顶级杂志
+
+## 帮助页面设计
+
+- [adblock 的页面设计](https://adblockplus.org/en/contribute?link=contribute&lang=en-US)
