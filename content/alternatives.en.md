@@ -77,3 +77,7 @@ Curating awesome alternative resources.
 ## Grammarly
 
 - [Languagetool](https://languagetool.org/) - LanguageTool's core functionality is open source. Anyone can set up their own LanguageTool server locally or in the cloud. Furthermore, we are looking for contributions to further improve our proofreading technology.
+
+## Anki
+
+- [Mochi](https://mochi.cards) - 付费，闭源
