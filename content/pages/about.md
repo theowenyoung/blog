@@ -14,7 +14,7 @@ taxonomies:
 
 我是 Owen, 我喜欢用明文纯文本记录东西，因为这是最通用的格式，不会被运营商锁定，在所有平台都能开箱即用的直接编辑。该博客全部内容托管在这个[Github 的 Repo 里](https://github.com/theowenyoung/blog)，用[Zola (getzola.org)](https://www.getzola.org/)生成，最终部署在[Cloudflare Pages](https://pages.cloudflare.com/)上。
 
-[Derek Sivers](https://sive.rs/) 曾经说过："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限经验来看，我也是，所以不要吝啬，如果你觉得我们的书呆子气质有点契合，那么 i 人也可以先建立一种联系（因为是 i 人所以我们可以只建立连接而暂时不说话）！
+[Derek Sivers](https://sive.rs/) 曾经说过："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限的经验来看，我也是，所以请不要吝啬，如果你觉得我们的书呆子气质有点契合，那么 i 人也可以先建立一种联系（因为是 i 人，所以我们可以只建立联系而暂时不说话）！
 
 找到我的方式：
 
