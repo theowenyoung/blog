@@ -258,3 +258,16 @@ taxonomies:
 ## 帮助页面设计
 
 - [adblock 的页面设计](https://adblockplus.org/en/contribute?link=contribute&lang=en-US)
+
+## 捐款呼吁
+
+This is important, and we’ll be blunt: Our December fundraising is at risk of coming up way short of the $350,000 we need. Heading into the long holiday weekend, we still need about $225,000 in donations to come in, and despite the awesome recent news, we can’t afford to come up short on these goals. With fewer people paying attention to the news, we urgently need people like you to consider supporting our reporting if there’s any way you can right now. Please help us pick up the pace.
+
+这一点很重要，而且我们会直言不讳：我们 12 月份的筹款额可能会远远低于我们所需的 35 万美元。进入长周末假期后，我们还需要大约 22.5 万美元的捐款，尽管最近有很多令人振奋的消息，但我们不能在这些目标上出现短缺。随着关注新闻的人越来越少，我们迫切需要像您这样的人考虑支持我们的报道，如果您现在有任何可以做的事情的话。请帮助我们加快步伐。
+
+- [source](https://www.motherjones.com/)
+
+## About 页面
+
+- [Jakese](https://jakeseliger.com/about/)
+  - 在《随心所欲》一书中，德里克-西弗斯说 "我遇到的最酷的人，都是通过我写的东西找到我的人"。我也一样。所以，如果你想打招呼，或者有问题，或者需要抱怨、表扬，或者发现错误，请登录 seligerj@gmail.com 打招呼。

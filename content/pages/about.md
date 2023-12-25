@@ -14,6 +14,18 @@ taxonomies:
 
 我是 Owen, 我喜欢用明文纯文本记录东西，因为这是最通用的格式，不会被运营商锁定，在所有平台都能开箱即用的直接编辑。该博客全部内容托管在这个[Github 的 Repo 里](https://github.com/theowenyoung/blog)，用[Zola (getzola.org)](https://www.getzola.org/)生成，最终部署在[Cloudflare Pages](https://pages.cloudflare.com/)上。
 
+[Derek Sivers](https://sive.rs/) 曾经说过："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限经验来看，我也是，所以不要吝啬，如果你觉得我们的书呆子气质有点契合，那么 i 人也可以先建立一种联系（因为是 i 人所以我们可以只建立连接而暂时不说话）！
+
+找到我的方式：
+
+- 我为这个博客建立的 Telegram 讨论群组：<https://t.me/+m124rcTl9FE3M2Vh>
+- 我的电子邮件：`owen#owenyoung.com` (把`#`换成`@`)
+- 推特 [@OwenYoungZh](https://twitter.com/OwenYoungZh)
+- Telegram 频道: <https://t.me/owenyoungzh>
+- Telegram 私人账户: <https://t.me/itsowenyoung>
+- 微信朋友圈（现在很少发朋友圈，但是我会看，请大胆通过邮件或者 [Telegram](https://t.me/itsowenyoung) 联系我索要微信号)
+- Twitter English [@TheOwenYoung](https://twitter.com/TheOwenYoung)
+
 ## 我的生活哲学
 
 **追求注意力自由而不是财富自由。**
@@ -24,7 +36,7 @@ taxonomies:
 
 我们需要多少钱才能辞职过上注意力自由的生活？换句话说，需要攒多少钱，就可以10-15年不用工作也没问题？
 
-在中国的语境下，维持一个健康而简朴的生活，每个人 5 万元/年可能是一个不错的平衡。也就是说没有负债，50 万元以上的存款，即可享受10年以上的注意力自由。
+在中国的语境下，维持一个健康而简朴的生活，每个人 5 万元/年可能是一个不错的平衡。也就是说没有负债，50 万元以上的存款，即可享受10年以上的注意力自由，我想称之为“穷有闲阶级”。
 
 但是注意力自由并不意味着我们完全不会收入，恰恰相反，只有注意力自由之后，我们才能发挥真正的创造力，没有边界的探索任何事情。而且，在这个过程中，我们非常有可能获得一些未知的财富。即便 10 年过后没有获得任何财富，在经历 10 年的闲暇时间之后，我们一定在各方面都成为了一个更好的自己，从而拥有更多的能力去做任何事情。
 
@@ -73,17 +85,8 @@ IndieWeb Webring 🕸💍
 
 点击前后的箭头链接，会随机的跳转到另一个 Webring 里的博客，这样就大大的增加了独立博客的可发现性，经常能发现一些很有意思的博客，比友情链接这种方式要更好。
 
-## 联系我
-
-- 电子邮件：`owen#owenyoung.com` (把`#`换成`@`)
-- Telegram 频道: <https://t.me/owenyoungzh>
-- Telegram 私人账户: <https://t.me/itsowenyoung>
-- Twitter [@TheOwenYoung](https://twitter.com/TheOwenYoung)
-- 中文推 [@OwenYoungZh](https://twitter.com/OwenYoungZh)
-
 ## 其他链接
 
 - Github [@theowenyoung](https://github.com/theowenyoung)
 - Github [Sponsors](https://github.com/sponsors/theowenyoung)
 - Patreon [@theowenyoung](https://www.patreon.com/theowenyoung)
-- Read.cv [@owenyoung](https://read.cv/owenyoung)

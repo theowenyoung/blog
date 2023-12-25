@@ -217,6 +217,7 @@ taxonomies:
 - [数字移民导航](https://shuziyimin.org/) - 数字移民整理的国外网站导航
 - [一天世界的 RSS 订阅列表](https://blog.yitianshijie.net/2019/12/10/rss-feeds-recommendation/)
 - [Hacker News Top Users' Websites](https://jessimekirk.com/blog/hn_users_links/)
+  - [hn 的博客列表](https://dm.hn/?q%5Bs%5D=karma+desc)
 
 ## Ideas
 
