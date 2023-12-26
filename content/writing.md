@@ -188,3 +188,5 @@ Most people dramatically underestimate the impact that their writing has on othe
 ---
 
 [我希望有人告诉我的写作建议 ](http://web.archive.org/web/20090502012411/http://wwwstage.valpo.edu/english/vpr/mcdonaldessay.html)
+
+- [为什么我保留这个研究博客](https://gregorygundersen.com/blog/2020/01/12/why-research-blog/)

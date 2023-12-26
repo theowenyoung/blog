@@ -271,3 +271,7 @@ This is important, and we’ll be blunt: Our December fundraising is at risk of 
 
 - [Jakese](https://jakeseliger.com/about/)
   - 在《随心所欲》一书中，德里克-西弗斯说 "我遇到的最酷的人，都是通过我写的东西找到我的人"。我也一样。所以，如果你想打招呼，或者有问题，或者需要抱怨、表扬，或者发现错误，请登录 seligerj@gmail.com 打招呼。
+
+## 书呆子气质
+
+- [我在你出版书籍](https://laniakeabooks.org/how-it-works/)
