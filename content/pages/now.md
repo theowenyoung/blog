@@ -27,6 +27,10 @@ taxonomies:
       - 成本最小化？
   - 开源+云托管
   - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～ [关于页面](/content/pages/about.md) 有我的联系方式.
+  - 这里有几个相关的讨论：
+    - <https://gavinhoward.com/2023/12/is-source-available-really-that-bad/>
+    - <https://drewdevault.com/2023/12/26/2023-12-26-Prusa-is-floundering.html>
+    - <https://news.ycombinator.com/item?id=38331173>
 
 ## 进行中
 
