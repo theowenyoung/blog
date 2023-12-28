@@ -34,6 +34,10 @@ taxonomies:
 - 我意识到我不想剥削别人。
 - 我不喜欢小红书那种氛围
 - 我喜欢hn 那种非商业化氛围
+- 没有太多边际成本的东西：
+  - 图书
+  - 音乐
+  - 软件
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
