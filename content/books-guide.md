@@ -17,6 +17,7 @@ taxonomies:
 
 ## 其他人的书籍推荐资源
 
+- [你死前应该读的 1000 本书](https://www.1000bookstoread.com/)
 - [汇总了 hacker news 上评论里提到的书籍的排名](https://hacker-recommended-books.vercel.app/)
   - [又一个 hacker news 提到的图书周报](https://hackernewsbooks.com/top-books-on-hacker-news)
   - [2022 版](https://news.ycombinator.com/item?id=33381791)
@@ -63,9 +64,9 @@ taxonomies:
 
 ## 工具
 
-- [Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai
+- [已倒闭：Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai
   从谷歌成千上万本书里给出最相关的段落。 zsh:1: unknown file attribute: h
-- [离线电子书](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
+- [在线epub电子书阅读器](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
 - [在线发送图书给 Kindle](https://www.amazon.com/sendtokindle)
 - [Epub 简繁在线转换](https://v.magiconch.com/epub-transform)
 
