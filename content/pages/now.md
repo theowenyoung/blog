@@ -33,6 +33,9 @@ taxonomies:
     - <https://news.ycombinator.com/item?id=38331173>
 - 我意识到我不想剥削别人。
 
+> Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
+> 开源就像慈善机构。不要称自己为慈善机构或将自己与慈善机构联系在一起，除非您确实是慈善机构。
+
 ## 进行中
 
 - 正在开发一个新项目，预期成为国际互联网的入口
