@@ -39,6 +39,9 @@ taxonomies:
   - 音乐
   - 软件
 - 我讨厌移动端，我喜欢桌面版。
+- 赚钱应该排在最前面吗？还是只作为副作用即可？
+- 如何培养自己的心态。
+  - 假设没有任何别人的眼光和别人的负担，你会怎么做？
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
