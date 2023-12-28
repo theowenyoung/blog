@@ -42,6 +42,9 @@ taxonomies:
 - 赚钱应该排在最前面吗？还是只作为副作用即可？
 - 如何培养自己的心态。
   - 假设没有任何别人的眼光和别人的负担，你会怎么做？
+- 劫富济贫？
+- 1. 先赚钱，赚钱之后再想办法用策略做慈善？
+- 2. 一开始就摆正心态，为人们的受教育做一些低成本有意义的东西，如此一生。
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
