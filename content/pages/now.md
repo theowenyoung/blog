@@ -32,8 +32,11 @@ taxonomies:
     - <https://drewdevault.com/2023/12/26/2023-12-26-Prusa-is-floundering.html>
     - <https://news.ycombinator.com/item?id=38331173>
 - 我意识到我不想剥削别人。
+- 我不喜欢小红书那种氛围
+- 我喜欢hn 那种非商业化氛围
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
+>
 > 开源就像慈善机构。不要称自己为慈善机构或将自己与慈善机构联系在一起，除非您确实是慈善机构。
 
 ## 进行中
