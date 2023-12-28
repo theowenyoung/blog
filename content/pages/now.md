@@ -38,6 +38,7 @@ taxonomies:
   - 图书
   - 音乐
   - 软件
+- 我讨厌移动端，我喜欢桌面版。
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
