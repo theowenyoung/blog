@@ -31,6 +31,7 @@ taxonomies:
     - <https://gavinhoward.com/2023/12/is-source-available-really-that-bad/>
     - <https://drewdevault.com/2023/12/26/2023-12-26-Prusa-is-floundering.html>
     - <https://news.ycombinator.com/item?id=38331173>
+- 我意识到我不想剥削别人。
 
 ## 进行中
 
