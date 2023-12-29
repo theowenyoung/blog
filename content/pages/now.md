@@ -49,6 +49,9 @@ taxonomies:
 - [金钱，健康，生活](https://todaypurpose.com/posts/time-money-health/)
 - 我觉得企业有让自己获得曝光的动机和需求，所以如何权衡广告？
 - 似乎我对这个世界有很多意见，但是我还不能完整的论述这件事。
+- 你可以过僧侣版的生活，那么你的家人呢？
+  - 不成家
+  - 父母呢？
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
