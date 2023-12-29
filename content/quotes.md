@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> "没有人死的时候会说 "我希望我有更多的钱"。" -- [source](https://todaypurpose.com/posts/time-money-health/)
+
 > "一旦某样东西具有专有性，那么随着时间的推移，其专有性也会逐渐增强。" -- [source](https://news.ycombinator.com/item?id=38772777)
 
 > 如果你的项目是赚钱的项目，那么你就很容易开展工作。不赚钱的项目就比较难做。最难的部分通常是士气。这也是成人比孩子更难的地方。孩子们只管投入地建造他们的树屋，而不用担心他们是否在浪费时间，也不用担心他们的树屋与其他树屋相比如何。老实说，我们可以从孩子身上学到很多东西。大多数成年人对 "真正 "工作的高标准并不总是适合我们。 - [source](https://paulgraham.com/own.html)

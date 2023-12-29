@@ -46,6 +46,7 @@ taxonomies:
 - or 公平的方式
 - 1. 先赚钱，赚钱之后再想办法用策略做慈善？
 - 2. 一开始就摆正心态，为人们的受教育做一些低成本有意义的东西，如此一生。
+- [金钱，健康，生活](https://todaypurpose.com/posts/time-money-health/)
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
