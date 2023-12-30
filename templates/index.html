@@ -41,8 +41,8 @@
         {% else %}
           <p class="index-intro">我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
               {{ all_section_pages.pages | length }}</a>
-          篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，想法。我在另一个 Clip 网站上存放我<a href="https://clip.owenyoung.com/">阅读过的优秀文章</a>，英文内容会发布在<a href="/en/">这里</a>,
-            <a href="{{ get_url(path="@/pages/now.md") }}">点击了解我现在在做的事情</a>
+          篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，想法，文章。我在另一个 Clip 网站上存放我<a href="https://clip.owenyoung.com/">阅读过的优秀文章</a>,
+          在 <a href="{{ get_url(path="@/pages/now.md") }}">About</a> 页面了解更多关于我的介绍，在 <a href="{{ get_url(path="@/pages/now.md") }}">Now 页面</a>了解我最近在做什么。
           </p>
 
         {% endif %}
