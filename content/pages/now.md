@@ -56,6 +56,8 @@ taxonomies:
 - 其实有不少人认同这个很多很好的道德理念，但是由于种种原因没有实践
   - 所以如果有人做了一些很好的理念，这些人会愿意资助这个人。
 - 接受谋生所需的“不感兴趣”工作，最好是计时工资
+- 好吧，由于大家都好忙，我有义务把真正的好东西给找出来。
+- 需要一个人很闲的，没有利益冲突的把真正的好东西找出来。
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
