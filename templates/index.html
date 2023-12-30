@@ -100,16 +100,16 @@
         <summary class="by ">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}:
       </summary>
       <div class="articles h-feed hfeed">
-        {% for page in all_blog_pages.pages | slice(start=0,end=10) %}
+        {% for page in all_blog_pages.pages | slice(start=0,end=3) %}
           {{ macro::post_max(page=page,index=loop.index) }}
         {% endfor %}
       </div>
       </details>
-      {%if all_blog_pages.pages | slice(start=10) | length > 0%}
+      {%if all_blog_pages.pages | slice(start=3) | length > 0%}
         <details class="py">
           <summary class="by text">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
           <ul>
-            {% for page in all_blog_pages.pages | slice(start=10) %}
+            {% for page in all_blog_pages.pages | slice(start=3) %}
             <li>{{ macro::post_min(page=page) }}</li>
             {% endfor %}
           </ul>
