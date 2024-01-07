@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 如果我们想变得更快乐，我认为首先要做的就是审视现有的各种选择，然后再想出该选择哪一种。在我看来，只有三种途径可以选择。我们可以改变我们的思维方式，改变我们消磨时间的方式，或者改变我们生活的外部事实。 - [source](https://www.ox.ac.uk/research/research-in-conversation/how-live-happy-life/michael-plant)
+
 > "没有人死的时候会说 "我希望我有更多的钱"。" -- [source](https://todaypurpose.com/posts/time-money-health/)
 
 > "一旦某样东西具有专有性，那么随着时间的推移，其专有性也会逐渐增强。" -- [source](https://news.ycombinator.com/item?id=38772777)

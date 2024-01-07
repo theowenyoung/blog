@@ -307,3 +307,9 @@ taxonomies:
 ## 网赚论坛
 
 - [谈论如何在网络上赚钱](https://www.blackhatworld.com/)
+
+## 博客
+
+- [Levels](https://levels.io/blog/)
+  - [为什么我遥不可及？](https://levels.io/contact/)
+  - 我对合作不感兴趣，我喜欢独自工作。或者与我雇佣的人合作。如果我雇的人是我找来的，你不需要给我留言。
