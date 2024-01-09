@@ -443,3 +443,8 @@ X as a Y services.
 ## 简历
 
 - [免费开源的在线简历制作工具](https://www.open-resume.com/resume-builder)
+
+## 截图上传工具
+
+- [dropshare](https://support.dropshare.app/hc/en-us) - 可以绑定超多平台的云上传工具。
+- [iPic](https://en.toolinbox.net/iPic/) - 图片上传工具
