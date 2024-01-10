@@ -2,7 +2,7 @@
 title: 首页
 ---
 
-### 被最多人点击的笔记
+### 被最多人点击的笔记：
 
 - [探索互联网上高质量的内容](/content/sources.md)
 - [收集发人深省的话](/content/quotes.md)
