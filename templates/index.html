@@ -41,7 +41,7 @@
         {% else %}
           <p class="index-intro">我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
               {{ all_section_pages.pages | length }}</a>
-          篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，想法，文章。我在另一个 Clip 网站上存放我<a href="https://clip.owenyoung.com/">阅读过的优秀文章</a>,
+          篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，<a href="/thoughts">短想法</a>（不愿意发在社交媒体上的），文章，我在另一个 Clip 网站上存放我<a href="https://clip.owenyoung.com/">阅读过的优秀文章</a>,
           在 <a href="{{ get_url(path="@/pages/about.md") }}">About</a> 页面了解更多关于我的介绍，在 <a href="{{ get_url(path="@/pages/now.md") }}">Now 页面</a>了解我最近在做什么。
           </p>
 
@@ -51,51 +51,18 @@
       </div>
 {% endblock%}
 {% block main -%}
-  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
   {% set_global note_pages = [] -%}
   {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
   {% for cat in all_categories.items -%}
     {% if cat.name == "Notes" -%}
       {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
     {% endif -%}
   {% endfor -%}
-  <div class="index-page">
-  <div class="taxonomy-list-page pt">
-    <div class="main-box-block">
-      <div class="by">{{ trans(key="label_by_category_title",lang=lang) | markdown(inline=true) | safe }}：</div>
-        {% for category in all_categories.items %}
-              <details class="pb-sm">
-                <summary class="text-bigger">{{ category.name }}&nbsp;(<a href="{{ category.permalink }}">{{ category.pages | length }}</a>)</summary>
-                  <ul>
-                    {% for page in category.pages %}
-                      <li>{{ macro::post_min(page=page) }}</li>
-                    {% endfor %}
-                  </ul>
-              </details>
-        {% endfor %}
-    </div>
-  </div>
+  <div class="index-page py">
 
-  <div class="taxonomy-list-page pt">
-    <div class="main-box-block">
-      <div class="main-box-block">
-          <div class="by">{{ trans(key="label_by_time_title",lang=lang) | markdown(inline=true) | safe }}：</div>
-          {% for year, posts in
-              all_section_pages.pages | group_by(attribute="year") %}
-              <details class="pb-sm">
-                <summary class="text-bigger">{{ year }}</summary>
-                <ul>
-                  {% for post in posts %}
-                    <li>{{ macro::post_min(page=post) }}</li>
-                  {% endfor %}
-                </ul>
-              </details>
-            {% endfor %}
-      </div>
-    </div>
-  </div>
-
-
+      {% set index_first = get_page(path="pages/index_first"~file_lang_path~".md") %}
+      {{ index_first.content | safe }}
       <details open class="py">
         <summary class="by ">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}:
       </summary>

@@ -14,6 +14,10 @@ All Updates about this blog.
 
 <!-- more -->
 
+## 2024-01-11
+
+Move hot notes to index.
+
 ## 2023.07.25 Use telegram group as comment system.
 
 ## 2023.06.14 Remove nav bar
