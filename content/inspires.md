@@ -100,6 +100,8 @@ taxonomies:
 - [纯文本相关网站导航](https://sjmulder.nl/en/textonly.html)
 - [Slow journalism](https://www.slow-journalism.com/) - 慢新闻，慢杂志，每季度一次，不错过重要的文章。
   - [只有打印版的新闻](https://www.countyhighway.com/)
+- [Good Enough](https://goodenough.us/) - 足够好的团队（制作一些小而美的东西）
+- [Ponder](https://ponder.us/) - 现代互联网应该有的论坛
 
 ## 服务
 
