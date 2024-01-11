@@ -57,6 +57,7 @@
     <div id="start"></div>
     <article class="e-content entry-content">
       {{ page.content | safe }}
+      {% block after_content %}{% endblock after_content %}
       <div class="display-none"><a class="u-bridgy-fed" href="https://fed.brid.gy/"></a></div>
     </article>
       {% if page.date %}

@@ -334,6 +334,7 @@ taxonomies:
 ## 博客平台
 
 - [posthaven](https://posthaven.com) - 博客平台，永远不筹资，永远保持服务的简单平台
+- [Pika](https://pika.page/) - Pika 让写博客变得简单而美丽。
 
 ## 在线平台模拟
 
@@ -448,3 +449,7 @@ X as a Y services.
 
 - [dropshare](https://support.dropshare.app/hc/en-us) - 可以绑定超多平台的云上传工具。
 - [iPic](https://en.toolinbox.net/iPic/) - 图片上传工具
+
+## 表单平台
+
+- [Letter Bird](https://letterbird.co/) - 简单的表单平台。

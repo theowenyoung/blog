@@ -3,6 +3,7 @@ title: Now
 path: now/
 date: 2022-03-25
 updated: 2022-12-29
+template: now.html
 taxonomies:
   categories:
     - Notes
