@@ -1,0 +1,10 @@
+{% extends "page.html" %}
+{% block detail_meta_slot -%}
+<p class="muted text-sm">
+  Latest build at:
+  {{ now() | date(format="%Y.%m.%d %H:%M",timezone="Asia/Shanghai") }}
+</p>{% endblock detail_meta_slot -%}
+{% block after_content %}
+<h4>你也可以通过填写下面的表单来联系我：</h4>
+<script data-letterbirduser="owen" src="https://letterbird.co/embed/v1.js"></script>
+{% endblock after_content %}
