@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2023-07-24
+updated: 2024-01-12
 taxonomies:
   categories:
     - Notes
@@ -457,3 +457,7 @@ X as a Y services.
 ## 现代的论坛
 
 - [Ponder](https://ponder.us/) - 现代互联网应该有的论坛
+
+## Youtube 工具
+
+- [Scribe](https://www.appblit.com/scribe) - Youtube 视频生成一个可读的文章。
