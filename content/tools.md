@@ -376,7 +376,7 @@ X as a Y services.
 
 ## 文件分享
 
-- [bash upload](https://bashupload.com/) - 简单的文件上传于下载，bash 友好
+- [bash upload](https://bashupload.com/) - 简单的文件上传于下载，bash 友好，临时文件
 
 ## Web developer
 
