@@ -32,6 +32,7 @@ taxonomies:
 
 ## 有意思
 
+- [有意思的 Landing 页](https://greatlandingpagecopy.com/)
 - [我今天的上网体验](https://how-i-experience-web-today.com/) - 嘲讽的网站，展示了 21 世纪的今天，是如何被网站强奸眼睛的。
 - [stumbled](https://stumbled.cc/stumble) - 随机发现有意思的网站
 - [哪个艺术品更贵](https://expensivetaste.art/)
