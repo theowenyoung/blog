@@ -520,3 +520,7 @@ See
 ## 存储
 
 - [Garage](https://garagehq.deuxfleurs.fr/documentation/quick-start/) - S3 的自部署版本
+
+## 代理
+
+- [gg](https://github.com/mzz2017/gg) linux 全局代理，vpn
