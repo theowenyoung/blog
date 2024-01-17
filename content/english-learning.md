@@ -1,7 +1,7 @@
 ---
 title: 英语学习相关资源
 date: 2021-03-25
-updated: 2022-11-20
+updated: 2023-11-20
 taxonomies:
   categories:
     - Notes
@@ -50,6 +50,7 @@ taxonomies:
 - [语言学习之路](https://languageroadmap.com/) - 找到对应语言中有趣的内容去学习
 - [Burning Vocabulary Chrome 插件](https://burningvocabulary.com/) - 可以高亮生词学英语
 - [readlang](https://readlang.com/) - chrome 插件，点击单词翻译。
+- [language reactor](https://www.languagereactor.com/) - Chrome 插件，嵌入式学习
 
 ## 资源
 
