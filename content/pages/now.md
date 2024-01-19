@@ -67,6 +67,7 @@ taxonomies:
 - 需要一个人很闲的，没有利益冲突的把真正的好东西找出来。
 - 一个理想的人生应该是啥样的？
 - 强者思维，弱者思维，谁是正确的？
+- 如果作为一个平台，提供多个有对比的返利链接，由消费者自己挑选，就好了。
 
 > Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
 >
