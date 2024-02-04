@@ -16,3 +16,7 @@ taxonomies:
 ## VPN
 
 - [Mullvad](https://mullvad.net/) VPN 服务，没用过，但是看介绍和简介，感觉是一个值得信赖的服务提供商。
+
+## 支付方案
+
+- [extension pay](https://extensionpay.com/) 扩展支付方案

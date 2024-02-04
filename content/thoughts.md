@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-01-28
+updated: 2024-02-05
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 服了，今天才第一次体验 Google Meet, 也太好用了吧。。。我傻逼兮兮的给对方说我还没下载 Google Meet 的客户端，结果一查发现 Google Meet 就只有网页版，然后聊了2个小时，体验真的太好了。。。所以我不明白为啥国内的任何视频会议都要做客户端？ -- 2024.02.05
 
 > 每个人的经历和性格都不一样，我感觉很难给别人建议，我们可能只能靠自己去摸索适合自己人生的哲学了。 -- 2024.01.28
 
