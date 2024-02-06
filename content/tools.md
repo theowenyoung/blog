@@ -461,3 +461,7 @@ X as a Y services.
 ## Youtube 工具
 
 - [Scribe](https://www.appblit.com/scribe) - Youtube 视频生成一个可读的文章。
+
+## 表格工具
+
+- [edit csv online](https://www.editcsvonline.com) - 在线编辑 CSV , 编辑表格
