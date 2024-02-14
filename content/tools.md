@@ -470,3 +470,7 @@ X as a Y services.
 ## 表格工具
 
 - [edit csv online](https://www.editcsvonline.com) - 在线编辑 CSV , 编辑表格
+
+## Stripe 联盟计划 SAAS
+
+- [Rewardful](https://www.rewardful.com/) - 联盟计划， aff man, 每月 $49 起
