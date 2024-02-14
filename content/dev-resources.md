@@ -524,3 +524,7 @@ See
 ## 代理
 
 - [gg](https://github.com/mzz2017/gg) linux 全局代理，vpn
+
+## 浏览器扩展
+
+- [wxt](https://github.com/wxt-dev/wxt) - 浏览器扩展框架

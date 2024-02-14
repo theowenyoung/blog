@@ -255,6 +255,11 @@ taxonomies:
   perfect balance of privacy and useability.
 - [Orion](https://browser.kagi.com/) - 基于 safari webkit 的隐私优先的 mac/ios 浏览器
 
+### open source
+
+- [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium) - 没有 Google 的 chromium
+- [Iridium Browser](https://github.com/iridium-browser/iridium-browser) - 更隐私的 chromium 浏览器
+
 ### For developer
 
 - [Blisk](https://blisk.io/)- Cross-Device Testing Done Right
