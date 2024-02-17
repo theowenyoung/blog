@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-02-06
+updated: 2024-02-17
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 看《十三邀》会觉得自己知道的人真是太少太少了...勉励一下自己要学杂，多了解不同领域的人，不同领域的事。 - 2024.02.17
 
 > 今天看匪夷所思采访[中指通](https://www.youtube.com/watch?v=Nh1YXz9kHbY) 的视频，里面提到，一个人一年如果看100部A片，那么一生至少会看3000部，每部正版A片的价格大概200多块，所以如果他一生都看盗版A片的话，那么总共少花了 60万 人民币。 - 2024.02.14
 
