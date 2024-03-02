@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-02-17
+updated: 2024-02-29
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 我喜欢这些人！看啥不爽就购买一个域名，然后制作一个网站来讽刺某个具体主题的行为，比如：[无服务器的恐怖](https://serverlesshorrors.com/) - 2024.02.29
 
 > 看《十三邀》会觉得自己知道的人真是太少太少了...勉励一下自己要学杂，多了解不同领域的人，不同领域的事。 - 2024.02.17
 
