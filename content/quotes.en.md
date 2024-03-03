@@ -9,6 +9,10 @@ taxonomies:
     - Quotes
 ---
 
+> Hi there, My name is Sam, I work on the team here at Reflect. Please let me know if there is anything I can do to help you get going on your note-taking journey! I can help with anything from getting set up on Reflect, to workflows, templates, and use case videos. Enjoy!
+>
+> p.s. this is an automated message but replies to my personal inbox. Some days I get more emails than others so please give me a day or two to respond! - Reflex first Email
+
 > If you're not the customer, you're the product. - [hn](https://news.ycombinator.com/item?id=37353729)
 
 > Basically. If there’s some nice free thing you use that’s too good to be true… wait a few years it will go to muck. - [HN](https://news.ycombinator.com/item?id=36529982)
