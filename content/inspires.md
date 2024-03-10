@@ -221,6 +221,7 @@ taxonomies:
 - [舒服的博客背景色](https://www.tabletmag.com/sections/news/articles/destined-live-quiet-times-progress-walter-russell-mead-via-meadia)
 - [舒服的博客配色](https://remotive.com/blog/digital-nomad-visas/)
 - [设计师的博客](https://paulstamatiou.com/) - 左边导航栏很舒服
+- [typefully 作者的博客](https://www.fabrizio.so/) - 分块设计，很好看
 
 ## 资源
 
