@@ -54,6 +54,7 @@ taxonomies:
    - 公开表达会促使我们有更深刻的思考。
    - 公开表达会让我们有更多的机会认识真正兴趣相投的人。
    - 公开表达会让我们有更多的机会得到反馈，从而提高我们的认知。
+   - 我喜欢这些公开的数字花园：[andy的工作笔记](https://notes.andymatuschak.org/About_these_notes) , [Everything I Know](https://wiki.nikiv.dev/)
 
 4. 你可以利用第二大脑里的内容来 DIY 一个任何主题的公开主页，比如你的博客，你的短想法，你的影评，或者你的食谱。
 
