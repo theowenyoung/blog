@@ -64,8 +64,10 @@ taxonomies:
 
 7. 支持类似推特 thread 那种上下文关联。
 
-8. 还有一些对 Capacities 小改进，比如：无标题的短想法成为一级公民。
+8. 由于里面的笔记都是原子笔记，所以可能需要有某种类似 Anki 的视图，来帮助我们复习。
 
-总的来说这可能是： Capacities +Ghost(CMS) + Notion(协作)+ Tumblr（DIY主页） 的结合怪。
+9. 还有一些对 Capacities 小改进，比如：无标题的短想法成为一级公民。
+
+总的来说这可能是： Capacities +Ghost(CMS) + Notion(协作)+ Anki + Tumblr（DIY主页） 的缝合怪。
 
 （事实上，我真的挺期待这样一个工具的，如果你有兴趣或者已经有类似的工具推荐，我建了一个 Telegram 群组： <https://t.me/+I2y-E_d_L4QxNTEx> ，我们可以在群里交流讨论一下～
