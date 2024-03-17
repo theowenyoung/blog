@@ -62,7 +62,9 @@ taxonomies:
 
 6. 增加订阅功能，或者付费订阅功能，这样你可以把你的内容变成一个付费的订阅内容。
 
-7. 还有一些对 Capacities 小改进，比如：无标题的短想法成为一级公民。
+7. 支持类似推特 thread 那种上下文关联。
+
+8. 还有一些对 Capacities 小改进，比如：无标题的短想法成为一级公民。
 
 总的来说这可能是： Capacities +Ghost(CMS) + Notion(协作)+ Tumblr（DIY主页） 的结合怪。
 
