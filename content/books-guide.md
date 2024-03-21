@@ -59,6 +59,7 @@ taxonomies:
 - [知识库电子书中文](https://book.zhishikoo.com/)
 - [elib 中文](https://elib.cc/)
 - [ahhhfs 分享](https://www.ahhhhfs.com/?cat=&s=%E7%94%B5%E5%AD%90%E4%B9%A6)
+- [DYT 副业](https://www.doyouta.com)
 - [网友整理](https://tyi45di4ct.jiandaoyun.com/dash/5e7d915c6c56d8000674a8b8)
 - [书伴整理](https://bookfere.com/ebook)
 
