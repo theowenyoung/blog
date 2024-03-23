@@ -1,7 +1,7 @@
 ---
 title: 图书阅读相关资源
 date: 2022-03-29
-updated: 2023-10-04
+updated: 2024-03-24
 taxonomies:
   categories:
     - Notes
@@ -61,6 +61,10 @@ taxonomies:
 - [ahhhfs 分享](https://www.ahhhhfs.com/?cat=&s=%E7%94%B5%E5%AD%90%E4%B9%A6)
 - [网友整理](https://tyi45di4ct.jiandaoyun.com/dash/5e7d915c6c56d8000674a8b8)
 - [书伴整理](https://bookfere.com/ebook)
+
+## 书评网站
+
+- [中国书籍评论](https://chinabooksreview.com/)
 
 ## 工具
 
