@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-03-05
+updated: 2024-03-24
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 前几天朋友发给我这个开在深圳的女性独立书店 [HalfBookstore](https://www.xiaohongshu.com/user/profile/64d9bda300000000010110c5)，从主页可以看到店长从装修到开业的整个过程，还有书的选品都很棒，希望老板能赚钱！（我从中发现了另一个角度：用你独特的兴趣来创业，做出来的东西是多么的不同。 - 2024-03-24
 
 > 独立开发者在开发某个 B 项目的时候，发现要用到 C 这个服务，但是 C 太贵了，所以就可以做一个 C 的平替。 - 2024-03-06
 
