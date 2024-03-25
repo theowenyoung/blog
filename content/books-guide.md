@@ -17,6 +17,7 @@ taxonomies:
 
 ## 其他人的书籍推荐资源
 
+- [不明白播客嘉宾推荐的书单](https://neodb.social/collection/O2XPjYaY66jvLKawBdhXU)
 - [你死前应该读的 1000 本书](https://www.1000bookstoread.com/)
 - [汇总了 hacker news 上评论里提到的书籍的排名](https://hacker-recommended-books.vercel.app/)
   - [又一个 hacker news 提到的图书周报](https://hackernewsbooks.com/top-books-on-hacker-news)
