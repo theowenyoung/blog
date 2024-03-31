@@ -60,6 +60,7 @@ Curating awesome decentralized applications.
 ## Social
 
 - [mastodon](https://github.com/mastodon/mastodon) - twitter open-source alternatives `ruby`
+- [Mobilizon](https://joinmobilizon.org/en/) - 联邦的活动平台
 - [pleroma](https://git.pleroma.social/pleroma/pleroma/) - another twitter open-source alternatives `erlang`
   - [soapbox](https://gitlab.com/soapbox-pub/soapbox-fe) - a fronend for pleroma
   - [docker-pleroma](https://github.com/angristan/docker-pleroma) -docker pleroma
