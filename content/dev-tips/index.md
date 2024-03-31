@@ -1,7 +1,7 @@
 ---
 title: 开发技巧收藏
 date: 2022-03-25
-updated: 2022-06-09
+updated: 2024-03-31
 taxonomies:
   categories:
     - Notes
@@ -166,11 +166,14 @@ folder/*
 - Parent Variable, `{{$.XX}}`
 - URL encode, `urlquery "https://test.com"`
 
-## 开源许可证
+## 开源许可证 License
 
 - [Unlicense](https://unlicense.org/) - 无版权许可证，公有领域许可证
 - [fsl](https://fsl.software/) -
   ![License Comparison](./license-comparision.png)
+- [Coopcycle](https://wiki.coopcycle.org/en:license) - 商业不友好开源许可
+  - <https://artlessdevices.com/>
+- [Prosperity Public License](https://prosperitylicense.com/versions/3.0.0) - 本许可证允许您免费将此软件用于非商业目的并分享，以及在商业目的下试用 30 天。
 
 > By [如何选择开源许可证？](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 
