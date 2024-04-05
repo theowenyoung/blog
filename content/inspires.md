@@ -14,8 +14,6 @@ taxonomies:
 
 <!-- more -->
 
-## 列表
-
 - [异想天开网站俱乐部](https://whimsical.club/) - 收集了奇奇怪怪的网站
 
 ## 线下
@@ -32,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [中国数字游民](https://guxiang.app/filter-home/)
 - [有意思的 Landing 页](https://greatlandingpagecopy.com/)
 - [我今天的上网体验](https://how-i-experience-web-today.com/) - 嘲讽的网站，展示了 21 世纪的今天，是如何被网站强奸眼睛的。
 - [stumbled](https://stumbled.cc/stumble) - 随机发现有意思的网站
