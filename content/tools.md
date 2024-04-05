@@ -1,7 +1,7 @@
 ---
 title: 最好用的工具集合
 date: 2022-03-10
-updated: 2024-01-12
+updated: 2024-04-05
 taxonomies:
   categories:
     - Notes
@@ -140,6 +140,7 @@ taxonomies:
 - [爆米花种子播放器，边下边播](https://github.com/popcorn-official/popcorn-desktop)
 - [Good Vids](https://www.goodvids.so/) - 通过你的推特 Twitter 好友，找到推荐的视频 Videos
 - [asciinema](https://asciinema.org/) - 录制终端视频，并不是真正的录制，但是是用文本生成整个视频，非常酷
+- [视频截图制作](https://join-screenshots.zhanghai.me/) - 制作视频截图，clip，图片拼接
 
 ## Newsletter
 
