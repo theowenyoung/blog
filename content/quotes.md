@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 在资本主义生产方式中，一切活动都以交换价值为目的，即以赚钱为目的。这种生产方式导致了对个人的强制，使个人无法选择职业、加班时间等。 - [source](https://podwise.ai/dashboard/episodes/1102067)
+
 > 网络效应对新闻的破坏莫过于搜索引擎优化，来自谷歌等搜索引擎的流量诱惑导致出版商创建内容的目的不是服务受众，而是吸引那些搜索 "超级碗什么时候开始 "的虚假流量。 [source](https://www.wheresyoured.at/the-anti-economy/)
 
 > 如果你不再关注忠诚度，只关心那些通过精心设计的 Facebook 标题或简介偶然进入你的页面的人，那么你的读者就会疏远你。 [source](https://www.wheresyoured.at/the-anti-economy/)
