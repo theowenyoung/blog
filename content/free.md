@@ -87,3 +87,7 @@ taxonomies:
 ## Cron
 
 - [cron-job](https://cron-job.org/en/) - 免费的定时任务执行，最大可以每分钟 1 次。
+
+## AI
+
+- [Mdb](https://mdb.ai/) - 免费的 GPT3.5, LLMA3-70b 等模型
