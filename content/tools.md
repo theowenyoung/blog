@@ -475,3 +475,7 @@ X as a Y services.
 ## Stripe 联盟计划 SAAS
 
 - [Rewardful](https://www.rewardful.com/) - 联盟计划， aff man, 每月 $49 起
+
+## 一起看视频
+
+- [kosmi](https://app.kosmi.io/) - 共同看视频
