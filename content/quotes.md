@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 曾经，富有意味着工作更少。 - [source](https://www.theatlantic.com/business/archive/2017/03/busyness-status-symbol/518178/)
+
 > 在资本主义生产方式中，一切活动都以交换价值为目的，即以赚钱为目的。这种生产方式导致了对个人的强制，使个人无法选择职业、加班时间等。 - [source](https://podwise.ai/dashboard/episodes/1102067)
 
 > 网络效应对新闻的破坏莫过于搜索引擎优化，来自谷歌等搜索引擎的流量诱惑导致出版商创建内容的目的不是服务受众，而是吸引那些搜索 "超级碗什么时候开始 "的虚假流量。 [source](https://www.wheresyoured.at/the-anti-economy/)
