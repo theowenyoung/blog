@@ -12,6 +12,8 @@ taxonomies:
     - Random Book
 ---
 
+> 我靠，新加坡人这么有钱，竟然只给女佣 [3000 块工资啊](https://wsgzao.github.io/post/singapore-fdw/) - 2024.04.24
+
 > 不喜欢看周刊形式的文章，希望每篇文章最好是一个标题下的内容，而不是汇总。个人觉得周刊形式的文章，作者写起来累，读者读起来也累。包括我博客里[《各种链接》](https://www.owenyoung.com/categories/journal/)系列，写起来累死，因为至少要凑够个4条才好意思发，累死，等我的 [EverEntry](https://everentry.com/) 上线，一举解决这个问题。 - 2024.04.24
 
 > 那些满脑子只想着怎么赚钱的人在看到别人免费在做一些有意义的事情，会不会偶尔也感到一丝惆怅？看到这个 [网站](https://morerss.com/zh.php?tag=推荐) 有感 - 2024.04.24
