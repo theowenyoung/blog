@@ -528,3 +528,7 @@ See
 ## 浏览器扩展
 
 - [wxt](https://github.com/wxt-dev/wxt) - 浏览器扩展框架
+
+## Rss
+
+- [微信rss](https://wechat2rss.xlab.app/deploy/)
