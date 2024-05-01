@@ -17,6 +17,7 @@ taxonomies:
 
 ## 其他人的书籍推荐资源
 
+- [Little Books](https://littlerbooks.com/) - 免费的，人工总结的非虚构类书籍
 - [不明白播客嘉宾推荐的书单](https://neodb.social/collection/O2XPjYaY66jvLKawBdhXU)
 - [你死前应该读的 1000 本书](https://www.1000bookstoread.com/)
 - [汇总了 hacker news 上评论里提到的书籍的排名](https://hacker-recommended-books.vercel.app/)

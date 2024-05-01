@@ -479,3 +479,7 @@ X as a Y services.
 ## 一起看视频
 
 - [kosmi](https://app.kosmi.io/) - 共同看视频
+
+## 插件
+
+- [全文搜索插件](https://chromewebstore.google.com/detail/full-text-tabs-forever/gfmbnlbnapjmffgcnbopfgmflmlfghel)
