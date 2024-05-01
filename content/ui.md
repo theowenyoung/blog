@@ -87,3 +87,4 @@ taxonomies:
 ## Inspirations
 
 - [网页设计灵感](https://homepage.gallery/)
+- [Kitemaker](https://toil.kitemaker.co/) - 很舒服的简约UI，适合笔记产品
