@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2023-09-17
+updated: 2024-05-02
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> "互联网如今已经腐烂到只有 5 个网站了，其中的每一个都充斥其他4个网站的文字截图。" - [source](https://twitter.com/tveastman/status/1069674780826071040)
 
 > 曾经，富有意味着工作更少。 - [source](https://www.theatlantic.com/business/archive/2017/03/busyness-status-symbol/518178/)
 
