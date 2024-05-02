@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'scripts/**'
+      - "scripts/**"
 jobs:
   build-deploy:
     concurrency: deploy
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run docs-scraper
         env:
-          HOST_URL: "https://meili.owenyoung.com"
+          HOST_URL: "https://meilisearch.owenyoung.com"
           API_KEY: ${{ secrets.MEILISEARCH_API_KEY }}
           CONFIG_FILE_PATH: ${{ github.workspace }}/meilisearch-docs-scraper-config.json
         run: |
