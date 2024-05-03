@@ -81,3 +81,7 @@ Curating awesome alternative resources.
 ## Anki
 
 - [Mochi](https://mochi.cards) - 付费，闭源
+
+## 知识星球
+
+- [Circle](https://circle.so/)
