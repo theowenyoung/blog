@@ -12,6 +12,8 @@ taxonomies:
     - Random Book
 ---
 
+> 做 “独立兔子洞研究员”。 - 2024.05.05
+
 > 昨天碎瓜在群里丢了一个中文 RSS 列表的链接： <https://morerss.com/zh.php> ，我全部导入到本地 RSS 客户端(NetNewsWire)中，然后看了有8个小时了... 挺上头的。
 >
 > 1. 有点像是在读小说里不同人的人生一样。
