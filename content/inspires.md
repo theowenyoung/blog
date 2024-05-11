@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [一分钟公园](https://oneminutepark.tv/) 每分钟展示世界上某个公园一分钟的视频
 - [中国数字游民](https://guxiang.app/filter-home/)
 - [有意思的 Landing 页](https://greatlandingpagecopy.com/)
 - [我今天的上网体验](https://how-i-experience-web-today.com/) - 嘲讽的网站，展示了 21 世纪的今天，是如何被网站强奸眼睛的。
