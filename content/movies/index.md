@@ -42,6 +42,7 @@ Also see [电视剧笔记](/content/tv-shows/index.md), [读书笔记](/content/
 - 黑客帝国
 - 智利说不
 - 谋杀绿脚指
+- 人猿星球
 - 地下
 
 ## 2024
