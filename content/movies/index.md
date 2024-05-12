@@ -44,6 +44,7 @@ Also see [电视剧笔记](/content/tv-shows/index.md), [读书笔记](/content/
 - 谋杀绿脚指
 - 人猿星球
 - 地下
+- 蝙蝠侠
 
 ## 2024
 
