@@ -12,7 +12,7 @@ taxonomies:
     - Random Book
 ---
 
-> 今天刷到这个 V 站上的帖子：[合伙创业靠谱吗？](https://fast.v2ex.com/t/1041105), 发现中国人多真"好"啊。另外准备找时间多看一些 V站上[类似的帖子](https://www.google.com/search?q=site%3Av2ex.com%2Ft+%E5%88%9B%E4%B8%9A&newwindow=1&sca_esv=31a3dd54a4fd3d08&sxsrf=ADLYWIKkXVBZLgyorWGfPj6wWxbWn955Bw%3A1716227829901&ei=9Y5LZrfNNu6mkPIPz4aJyAs&ved=0ahUKEwj3m57x5pyGAxVuE0QIHU9DArkQ4dUDCBA&uact=5&oq=site%3Av2ex.com%2Ft+%E5%88%9B%E4%B8%9A&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnNpdGU6djJleC5jb20vdCDliJvkuJpIkBNQjQxYhhFwAngAkAEAmAGyA6ABgQyqAQUzLTMuMbgBA8gBAPgBAZgCAKACAJgDAIgGAZIHAKAHzAE&sclient=gws-wiz-serp#ip=1) - 2024.05.21
+> 今天刷到这个 V 站上的帖子：[合伙创业靠谱吗？](https://fast.v2ex.com/t/1041105), 发现中国人多真"好"啊，这个想法隔前几年一定会被所有人群嘲这是“就差个程序员”系列，但是这个帖子下面会有不少程序员想试试合作，所以我觉得把自己的想法真诚的说出来比藏在心里真的要好得多，这可能就是公开表达的意义，你能获得很多意想不到的机会。准备找时间多看一些 V 站上[类似的帖子](https://www.google.com/search?q=site%3Av2ex.com%2Ft+%E5%88%9B%E4%B8%9A&newwindow=1&sca_esv=31a3dd54a4fd3d08&sxsrf=ADLYWIKkXVBZLgyorWGfPj6wWxbWn955Bw%3A1716227829901&ei=9Y5LZrfNNu6mkPIPz4aJyAs&ved=0ahUKEwj3m57x5pyGAxVuE0QIHU9DArkQ4dUDCBA&uact=5&oq=site%3Av2ex.com%2Ft+%E5%88%9B%E4%B8%9A&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnNpdGU6djJleC5jb20vdCDliJvkuJpIkBNQjQxYhhFwAngAkAEAmAGyA6ABgQyqAQUzLTMuMbgBA8gBAPgBAZgCAKACAJgDAIgGAZIHAKAHzAE&sclient=gws-wiz-serp#ip=1) - 2024.05.21
 
 > 推特像公寓房，但博客是别墅。 -2024.05.16
 
