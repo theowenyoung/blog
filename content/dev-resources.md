@@ -1,7 +1,7 @@
 ---
 title: 开发相关的资源汇总
 date: 2022-03-25
-updated: 2023-11-24
+updated: 2024-05-20
 taxonomies:
   categories:
     - Notes
@@ -98,6 +98,7 @@ between formats and can be used as a Go package.
 - [Learn X in Y minutes](https://learnxinyminutes.com/) - Learn programming in a
   few minutes.
 - [50 天内完成 50 个 web mini 项目 - HTML/CSS 和 JavaScript](https://github.com/bradtraversy/50projects50days)
+- [极客时间的付费课程](https://learn.lianglianglee.com/)
 
 ## Admin Dashboard
 
