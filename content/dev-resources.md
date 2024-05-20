@@ -99,6 +99,7 @@ between formats and can be used as a Go package.
   few minutes.
 - [50 天内完成 50 个 web mini 项目 - HTML/CSS 和 JavaScript](https://github.com/bradtraversy/50projects50days)
 - [极客时间的付费课程](https://learn.lianglianglee.com/)
+  - [Learning](https://freegeektime.com/posts/)
 
 ## Admin Dashboard
 
