@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [Quote Master](https://www.quotemaster.org/) - 一个收集名言的网站，可以按照作者，主题，关键词等等来查找.
 - [一分钟公园](https://oneminutepark.tv/) 每分钟展示世界上某个公园一分钟的视频
 - [中国数字游民](https://guxiang.app/filter-home/)
 - [有意思的 Landing 页](https://greatlandingpagecopy.com/)
