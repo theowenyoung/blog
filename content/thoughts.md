@@ -12,6 +12,13 @@ taxonomies:
     - Random Book
 ---
 
+> 今天听到这个播客节目 [抄就完了](https://www.xiaoyuzhoufm.com/podcast/6426744b3d32b1c48d2b13a2) 之后让我改变了对播客这个载体的看法。我以前会觉得播客是一种很低效的信息获取方式，所以我用 [Podwise](https://podwise.ai/dashboard/podcasts/2576) 来快速获取我感兴趣的播客内容，今天机缘巧合认识了 [Ryan](https://m.okjike.com/users/b7f9f3be-73bb-4bdb-a33d-46df01f1eb0d) 之后仔细浏览他的主页，看到他在做播客节目《抄就完了》，Slogan是：“向有结果的人学习”，主要会邀请一些同龄的创业者来分享他们的认知。听完之后我才意识到这些输出，只会发生在播客里。印象最深的是这一期：[《Vol. 002 19岁浙大休学 自媒体创业 半年八位数》](https://podwise.ai/dashboard/episodes/138108)，名字有点标题党，内容挺不错。
+>
+> - 嘉宾认为自己最大的动力来自于自己对赚很多钱的渴望（但是我似乎不太有，我比较希望不给自己压力。这会不会和嘉宾是温州人有关？周围的人都擅长赚钱，并且很有钱？)
+> - 嘉宾认为对自己帮助最大的人是海参哥
+> - 嘉宾认为有钱之后最让自己感到幸福的事是美食自由。
+> - 2024.05.26
+
 > 今天刷到这个 V 站上的帖子：[合伙创业靠谱吗？](https://fast.v2ex.com/t/1041105), 发现中国人多真"好"啊，这个想法隔前几年一定会被所有人群嘲这是“就差个程序员”系列，但是这个帖子下面会有不少程序员想试试合作，所以我觉得把自己的想法真诚的说出来比藏在心里真的要好得多，这可能就是公开表达的意义，你能获得很多意想不到的机会。准备找时间多看一些 V 站上[类似的帖子](https://www.google.com/search?q=site%3Av2ex.com%2Ft+%E5%88%9B%E4%B8%9A&newwindow=1&sca_esv=31a3dd54a4fd3d08&sxsrf=ADLYWIKkXVBZLgyorWGfPj6wWxbWn955Bw%3A1716227829901&ei=9Y5LZrfNNu6mkPIPz4aJyAs&ved=0ahUKEwj3m57x5pyGAxVuE0QIHU9DArkQ4dUDCBA&uact=5&oq=site%3Av2ex.com%2Ft+%E5%88%9B%E4%B8%9A&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnNpdGU6djJleC5jb20vdCDliJvkuJpIkBNQjQxYhhFwAngAkAEAmAGyA6ABgQyqAQUzLTMuMbgBA8gBAPgBAZgCAKACAJgDAIgGAZIHAKAHzAE&sclient=gws-wiz-serp#ip=1) - 2024.05.21
 
 > 推特像公寓房，但博客是别墅。 -2024.05.16
