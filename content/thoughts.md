@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-05-27
+updated: 2024-05-30
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 突然想到一个点，如果我只在博客更新，那么似乎在制造我博客的稀缺性，变相的抬高它的价值！ - 2024.05.30
 
 > 世界上还缺一家好评 95% 以上的大公司。不知道未来有没有机会见到。 - 2024.05.29
 
