@@ -1,7 +1,7 @@
 ---
 title: 图书阅读相关资源
 date: 2022-03-29
-updated: 2024-03-24
+updated: 2024-06-09
 taxonomies:
   categories:
     - Notes
@@ -17,6 +17,10 @@ taxonomies:
 
 ## 其他人的书籍推荐资源
 
+- [Less Wrong 的书评](https://www.lesswrong.com/tag/book-reviews-media-reviews?sortedBy=new)
+- [Nateliason 的书单](https://www.nateliason.com/notes)
+- [比尔盖茨读的书](https://www.gatesnotes.com/Books)
+- [billmei 的书籍推荐](https://billmei.net/bookshelf/)
 - [Little Books](https://littlerbooks.com/) - 免费的，人工总结的非虚构类书籍
 - [不明白播客嘉宾推荐的书单](https://neodb.social/collection/O2XPjYaY66jvLKawBdhXU)
 - [你死前应该读的 1000 本书](https://www.1000bookstoread.com/)
