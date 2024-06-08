@@ -1,7 +1,7 @@
 ---
 title: AI 相关的笔记收集
 date: 2023-03-17T00:04:28+08:00
-updated: 2023-08-18
+updated: 2024-06-08
 taxonomies:
   categories:
     - Notes
@@ -27,6 +27,7 @@ taxonomies:
 
 ## 应用
 
+- [草图变为现实的AI 应用](https://makereal.tldraw.com/) - 上传一个草图，ai 帮你完成
 - [explain papers](https://www.explainpaper.com) - ai 解释学术文章的意思。
 - [Thread GPT](https://threadgpt.vercel.app/)
 - [Open GPT](https://open-gpt.app/) - 创建多个 GPT 应用
