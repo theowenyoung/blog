@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-05-30
+updated: 2024-06-08
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 身边好像有好几对情侣是通过桌游认识的，如果政府想提高结婚率，可能最好补贴一下桌游行业。 - 2024.06.08
 
 > 当 i 人开始高质量的现充时，生活是真呀真美妙。 - 2024.06.05
 
