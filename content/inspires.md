@@ -30,6 +30,8 @@ taxonomies:
 
 ## 有意思
 
+- [四象限区分任务的优先级](https://quadra.day/)
+- [用 yaml 文件来定义一个标准的后端，有API，控制台和SDK, YAML BAAS ](https://manifest.build/)
 - [让浏览推特变得想浏览 PDF 的扩展](https://chromewebstore.google.com/detail/xdisguise/cjbdpinkahonnmoimjblhhhnfcfaapla)
 - [Paper Tube](https://papertube.site/) - 把Youtube 视频转为文本化的文章，可以发送到 Kindle
 - [Quote Master](https://www.quotemaster.org/) - 一个收集名言的网站，可以按照作者，主题，关键词等等来查找.
