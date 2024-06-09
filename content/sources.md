@@ -1,7 +1,7 @@
 ---
 title: 探索互联网上高质量的内容
 date: 2022-03-25
-updated: 2023-07-02
+updated: 2024-06-09
 taxonomies:
   categories:
     - Notes
@@ -53,6 +53,7 @@ taxonomies:
 - [Read something wonderful](https://readsomethingwonderful.com) - 以前的好文章
 - [Pin Board 的流行书签收藏](https://pinboard.in/popular/) - 流行书签收藏.
 - [Boared reading](https://boredreading.com/?v4) - 专为书呆子设计的互联网阅读的最佳方式
+- [V2EX 的独立博客聚合](https://www.v2ex.com/xna)
 
 ## 专人维护的 Reading List
 
@@ -90,11 +91,6 @@ taxonomies:
 ## 中文 Newsletter
 
 - [维舟](https://weizhou.substack.com/)
-
-## 已死
-
-- [HK CNews](https://www.hkcnews.com/) - Hong Kong indie media
-- [The Stand News](https://www.thestandnews.com/) - Hong Kong indie media
 
 ## 英文独立媒体
 
