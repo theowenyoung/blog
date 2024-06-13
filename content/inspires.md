@@ -30,6 +30,8 @@ taxonomies:
 
 ## 有意思
 
+- [Legendapp](https://legendapp.com/) - 个人任务管理
+- [Clay](https://clay.earth/) - 个人关系管理
 - [四象限区分任务的优先级](https://quadra.day/)
 - [用 yaml 文件来定义一个标准的后端，有API，控制台和SDK, YAML BAAS ](https://manifest.build/)
 - [让浏览推特变得想浏览 PDF 的扩展](https://chromewebstore.google.com/detail/xdisguise/cjbdpinkahonnmoimjblhhhnfcfaapla)
