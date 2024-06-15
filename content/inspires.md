@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2023-10-17
+updated: 2024-06-16
 taxonomies:
   categories:
     - Notes
@@ -30,6 +30,8 @@ taxonomies:
 
 ## 有意思
 
+- [Directus](https://docs.directus.io/self-hosted/quickstart.html) - Headless CMS 系统
+- [mycorrhiza](https://mycorrhiza.wik) - 类似 Mardkown 风格的Wiki
 - [Legendapp](https://legendapp.com/) - 个人任务管理
 - [Clay](https://clay.earth/) - 个人关系管理
 - [四象限区分任务的优先级](https://quadra.day/)
@@ -47,7 +49,7 @@ taxonomies:
 - [Gif.so](https://welcome.gif.so/) - 随便填个子域名，他会返回一个对应的表情包
 - [their news](https://www.their.news/) - 左派/右派新闻对比
 - [从图片/PDF 中提取表格](https://extract-table.com/)
-- [youtube 上的教程分类集合](ytt-tech.com)
+- [youtube 上的教程分类集合](https://www.ytt-tech.com/v/Six-Shuffle-Grooves)
 - [摄像头捕捉变成复选框动画](https://www.bryanbraun.com/checkboxland/docs/demos/webcam-test/)
   - [源代码库](https://github.com/bryanbraun/checkboxland)
 - [将网站的 console 控制台变成聊天室](https://www.consolechat.io/)
