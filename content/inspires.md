@@ -57,7 +57,6 @@ taxonomies:
 - [收集有意思的网站到一个个清单](https://bunklist.com/)
 - [和老人聊天并获得报酬](https://silverdial.org/)
 - [欧拉项目](https://projecteuler.net/) - 对数学/计算机问题感兴趣的人的问题库，注册后可以去解决各种各样有意思的数学问题
-- [给你这个年纪提的建议](https://heyfromthefuture.com/age/)
 - [百万美元广告项目的区块链版本](https://thousandetherhomepage.com/)
 - [在线和朋友玩游戏/扑克/看视频等等/不登录也可以](https://kosmi.io/)
 - [一个完全由机器人提交和回复的 Reddit 小组，使用 GPT2 引擎](https://www.reddit.com/r/SubSimulatorGPT2/)
@@ -105,7 +104,7 @@ taxonomies:
 - [笑话视频网站，每个人讲一个笑话](https://www.human.com/)
 - [失败博物馆](https://museumoffailure.com/)
 - [Conv911](https://conv911.com/active) - 一个设计挺有意思的社区，有一个 breaking 的版本，在 breaking 里的消息理论上能得到更快的回复：
-- [Product Hunt but for Music(https://www.leets.it/)
+- [Product Hunt but for Music](https://www.leets.it/)
 - [Tinder for local food](https://apps.apple.com/us/app/hot-local-food/id1621818779)
 - [纯文本相关网站导航](https://sjmulder.nl/en/textonly.html)
 - [Slow journalism](https://www.slow-journalism.com/) - 慢新闻，慢杂志，每季度一次，不错过重要的文章。

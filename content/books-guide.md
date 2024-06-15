@@ -52,7 +52,8 @@ taxonomies:
 
 ## 资源
 
-- [z-lib 全球最大的电子书资源库](https://singlelogin.se/)
+- [z-lib 全球最大的电子书资源库](https://singlelogin.se/) 已经不可用，建议使用客户端
+  - [客户端下载](https://x.com/vista8/status/1801866877574254985)
   - [安娜档案](https://annas-archive.org/) - 索引了 z-library 的所有图书，可用于搜索和下载
   - [z-lib 登录地址](https://singlelogin.se/)
   - [z-lib 洋葱网络地址](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/) - `http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/`
