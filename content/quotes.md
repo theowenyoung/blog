@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2024-05-02
+updated: 2024-06-25
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 谷歌在信息整理方面并没有人们想象的那么强大。它们在各种领域都比人们想象的要强大，比如收集你的行动数据。他们在这方面非常擅长。但在数据搜索中，结果总是有限的。一个有趣的实验是走进图书馆，翻开一本书，随意翻开一页，找到一个事实或一条信息，把它写下来。这样做十次，然后上网看看这十次中你能找到多少。我们的感觉是，90% 的信息都在网上。我怀疑真正的答案是 0.9% - [诺兰](https://x.com/nolananalyst/status/1804583892793643319)
 
 > 金钱无法购买专业知识。知识无法外包；我们必须自己理解事物。 - [source](https://www.lesswrong.com/posts/wEebEiPpEwjYvnyqq/when-money-is-abundant-knowledge-is-the-real-wealth)
 
