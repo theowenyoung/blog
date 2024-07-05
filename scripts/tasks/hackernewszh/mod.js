@@ -33,7 +33,7 @@ export async function runHackernewszhTask() {
     throw new HTTPError(
       "tooManyRequest",
       "last run at is less than 30 min ago",
-      429
+      429,
     );
   }
 
@@ -102,7 +102,7 @@ async function getNextTweet(jsonFeed, keys) {
       // get final text
       const textWithoutUrl = item.predictedText.replace(
         /(?:https?|ftp):\/\/[\n\S]+/g,
-        ""
+        "",
       );
       if (textWithoutUrl.length <= 240) {
         return true;
@@ -133,7 +133,7 @@ async function getNextTweet(jsonFeed, keys) {
       let gpt = "";
       if (
         !openAiTitleResult.text.includes(
-          "This translation may not make complete sense"
+          "This translation may not make complete sense",
         )
       ) {
         if (openAiTitleResult.text !== originalItem.title) {
@@ -174,7 +174,7 @@ function sendTweet(text) {
       body: JSON.stringify({
         value1: text,
       }),
-    }
+    },
   );
 }
 const prefixies = [
@@ -221,8 +221,8 @@ async function translateWithOpenAi(text) {
   };
 
   const response = await request(
-    "https://api.openai.com/v1/chat/completions",
-    options
+    "https://o.immersivetranslate.com/v1/chat/completions",
+    options,
   );
   if (
     response &&
