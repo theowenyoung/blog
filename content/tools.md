@@ -483,3 +483,7 @@ X as a Y services.
 ## 插件
 
 - [全文搜索插件](https://chromewebstore.google.com/detail/full-text-tabs-forever/gfmbnlbnapjmffgcnbopfgmflmlfghel)
+
+## app
+
+- [Ente Auth](https://ente.io/auth/) - 开源的两步认证应用
