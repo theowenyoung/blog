@@ -221,7 +221,7 @@ async function translateWithOpenAi(text) {
   };
 
   const response = await request(
-    "https://o.immersivetranslate.com/v1/chat/completions",
+    "https://o.immersivetranslate.net/v1/chat/completions",
     options,
   );
   if (
