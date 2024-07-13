@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [Minders](https://minders.ussherpress.com/) - 私人推特
 - [Directus](https://docs.directus.io/self-hosted/quickstart.html) - Headless CMS 系统
 - [mycorrhiza](https://mycorrhiza.wik) - 类似 Mardkown 风格的Wiki
 - [Legendapp](https://legendapp.com/) - 个人任务管理
