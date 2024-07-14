@@ -1,7 +1,7 @@
 ---
 title: 收集一些给人灵感的东西
 date: 2022-03-25
-updated: 2024-06-16
+updated: 2024-07-14
 taxonomies:
   categories:
     - Notes
@@ -30,6 +30,8 @@ taxonomies:
 
 ## 有意思
 
+- [Thinktype](https://thinktype.app/) - 输入框也是搜索框的在线笔记应用
+- [Airclap](https://airclap.app/) - 局域网文件传输应用
 - [Minders](https://minders.ussherpress.com/) - 私人推特
 - [Directus](https://docs.directus.io/self-hosted/quickstart.html) - Headless CMS 系统
 - [mycorrhiza](https://mycorrhiza.wik) - 类似 Mardkown 风格的Wiki
