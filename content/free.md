@@ -91,3 +91,7 @@ taxonomies:
 ## AI
 
 - [Mdb](https://mdb.ai/) - 免费的 GPT3.5, LLMA3-70b 等模型
+
+## mac
+
+- [mac上免费，无广告的应用](https://www.thriftmac.com/)

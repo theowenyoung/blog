@@ -30,6 +30,9 @@ taxonomies:
 
 ## 有意思
 
+- [Quick Notes](https://quicknotes.co/) - 快速记录笔记，可以一键保存pdf或者发送邮件.
+- [User Onboard](https://www.useronboard.com/) - 新手指引设计
+  - [Zapier 的新手设计](https://www.useronboard.com/how-zapier-activates-users/?slide=4)
 - [Thinktype](https://thinktype.app/) - 输入框也是搜索框的在线笔记应用
 - [Airclap](https://airclap.app/) - 局域网文件传输应用
 - [Minders](https://minders.ussherpress.com/) - 私人推特
