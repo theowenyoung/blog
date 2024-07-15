@@ -54,7 +54,7 @@ Get the meilisear admin api key:
 ```bash
 # TEMP_MEILISEARCH_API_KEY is the master key
 curl \
-  -X GET 'https://meilisearch.k3s.owenyoung.com/keys' \
+  -X GET 'https://meilisearch.owenyoung.com/keys' \
   -H "Authorization: Bearer $TEMP_MEILISEARCH_API_KEY" \
   | json_pp
 ```
