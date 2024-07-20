@@ -27,6 +27,7 @@ taxonomies:
 
 ## 应用
 
+- [MaxFocus](https://chromewebstore.google.com/detail/maxfocus-%E9%93%BE%E6%8E%A5%E9%A2%84%E8%A7%88/bnacincmbaknlbegecpioobkfgejlojp?utm_campaign=own-arc) - Chrome 应用，可以预览链接，AI 总结.
 - [Answer AI](https://www.answer.ai/) - 一种新的老式研发实验室, Answer.AI 将找出驯服人工智能所需的基础研究，以及使其在实践中变得有用所需的发展路径。
 - [草图变为现实的AI 应用](https://makereal.tldraw.com/) - 上传一个草图，ai 帮你完成
 - [explain papers](https://www.explainpaper.com) - ai 解释学术文章的意思。

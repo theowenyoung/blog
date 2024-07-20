@@ -95,3 +95,7 @@ taxonomies:
 ## mac
 
 - [mac上免费，无广告的应用](https://www.thriftmac.com/)
+
+## API
+
+- [dictionaryapi](https://dictionaryapi.dev/) - 免费的单词查询 API
