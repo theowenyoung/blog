@@ -10,6 +10,10 @@ taxonomies:
     - Random Book
 ---
 
+> “我们不做‘艺术’ — 我们解决问题。” 在 1950 年购买家具，你必须在经济实惠和经久耐用之间、坚固耐用和时尚潮流之间做出选择。查尔斯和雷设计了一款兼具上述优点的椅子，售价为 20.95 美元。他们称之为 LCW。 - [source](https://matthewstrom.com/writing/copying/)
+
+> 比尔-盖茨后来对这些案件进行了反思："我们都有一个叫施乐的有钱邻居......。我闯进他家想偷电视机，结果发现[乔布斯]已经偷过了。 - [source](https://matthewstrom.com/writing/copying/)
+
 > 现在描述了你如何度过过去，而你的未来将表明你如何度过现在。 - [source](https://medium.com/@thejohnoke/a-good-time-investor-is-a-good-money-investor-36508e143e12)
 
 > 人们不会通过阅读深刻的智慧片段来学习。他们通过经验来学习。一旦他们学会了，智慧片段就会显得深刻。智慧片段只是作者所拥有的一些经验组合的指针，只有当读者拥有类似的经验时，读者才会觉得智慧片段很深刻。 - [2024.07.21](https://thequestion.diy/answer/45)

@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "et-book";
-  src: url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2")
+  src:
+    url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff2")
       format("woff2"),
     url("/site/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix")
       format("embedded-opentype"),
@@ -18,7 +19,8 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff2")
+  src:
+    url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff2")
       format("woff2"),
     url("/site/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix")
       format("embedded-opentype"),
@@ -35,7 +37,8 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff2")
+  src:
+    url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff2")
       format("woff2"),
     url("/site/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix")
       format("embedded-opentype"),
@@ -140,17 +143,18 @@ fffef8
 #FDF6E3
 #faf8f1
 background-color:rgb(255, 252, 249);
+#272629
 
 */
 html {
   font-size: 15px;
   box-sizing: border-box;
-  --colors-text: #41403e;
+  --colors-text: #18181c;
   --colors-muted: #718096;
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-background: #faf8f1;
+  --colors-background: #fff;
   --colors-code-background: rgba(0, 0, 0, 0.08);
   /* --colors-quote-background: rgba(255, 255, 255, 0.5); */
   --colors-quote-background: rgb(0 0 0/3%);
@@ -158,9 +162,21 @@ html {
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
-    apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    segoe ui,
+    Roboto,
+    helvetica neue,
+    Arial,
+    noto sans,
+    sans-serif,
+    apple color emoji,
+    segoe ui emoji,
+    segoe ui symbol,
+    noto color emoji;
   font-feature-settings: normal;
   font-variation-settings: normal;
 }

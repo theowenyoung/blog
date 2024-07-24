@@ -17,6 +17,7 @@ taxonomies:
 
 ## 其他人的书籍推荐资源
 
+- [我们应该在学校学习的书汇总](https://www.humblebundle.com/books/subjects-we-should-have-learned-in-school-books)
 - [Less Wrong 的书评](https://www.lesswrong.com/tag/book-reviews-media-reviews?sortedBy=new)
 - [Nateliason 的书单](https://www.nateliason.com/notes)
 - [比尔盖茨读的书](https://www.gatesnotes.com/Books)
