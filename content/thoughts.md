@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-07-21
+updated: 2024-07-25
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 大多数成年人经常装模作样（草台班子的另一个表述） - 2024.07.25
 
 > 最讨厌商家侮辱顾客的智商。 - 2024.07.20
 
