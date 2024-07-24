@@ -63,6 +63,16 @@
 
       {% set index_first = get_page(path="pages/index_first"~file_lang_path~".md") %}
       {{ index_first.content | safe }}
+
+      <details open class="py">
+      <summary class="by">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </summary>
+      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
+      <div class="articles">
+        {{ thoughts_page.summary | safe }}
+        <p class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</p>
+      </div>
+      </details>
       <details open class="py">
         <summary class="by ">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}:
       </summary>
@@ -84,15 +94,6 @@
         {% endif %}
                   <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
 
-      <details open class="py">
-      <summary class="by">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-      </summary>
-      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
-      <div class="articles">
-        {{ thoughts_page.summary | safe }}
-        <p class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</p>
-      </div>
-      </details>
 
       <details open class="py">
       <summary class="by">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
