@@ -39,6 +39,7 @@ taxonomies:
   用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！
 - [Epub to HTML](https://epub.to)
 - [制作 epub](http://sqqihao.github.io/EPubBuilder/src/index.html)
+- [让pdf 变得像扫描版](https://zh.lookscanned.io/scan)
 
 ## Tools
 
