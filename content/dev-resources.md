@@ -534,3 +534,7 @@ See
 ## Rss
 
 - [微信rss](https://wechat2rss.xlab.app/deploy/)
+
+## 本地优先
+
+- [Tinybase](https://github.com/tinyplex/tinybase) 本地优先的 js 库
