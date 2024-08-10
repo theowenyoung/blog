@@ -13,14 +13,14 @@ taxonomies:
     - Random Book
 ---
 
-> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](/content/pages/about.md)
+> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](/content/pages/contact.md)
 > 了解更多。
 
 <!-- more -->
 
 ## 最近在哪？
 
-2024.08.01-09.01 在清迈～ 准备找一个短租公寓～
+2024.08.01-09.01 在清迈，欢迎约饭，约活动，约咖啡～ [联系方式](/content/pages/about.md)
 
 ## 在思考的问题
 
