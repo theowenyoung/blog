@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 如果我的娱乐方式是买一艘船，在海岸线上航行，一边喝着Clase Azul，一边看着大屏幕上的电视，那么当然，为了负担得起这一切，我可能会每周工作50小时。但是，如果我的娱乐方式是上 X 和埃隆-马斯克争论，看大学生们抱怨文化挪用的 TikToks，那我为什么还要拼命工作呢？ - [source](https://www.noahpinion.blog/p/yes-we-still-have-to-work?utm_source=profile&utm_medium=reader2)
+
 > “我们不做‘艺术’ — 我们解决问题。” 在 1950 年购买家具，你必须在经济实惠和经久耐用之间、坚固耐用和时尚潮流之间做出选择。查尔斯和雷设计了一款兼具上述优点的椅子，售价为 20.95 美元。他们称之为 LCW。 - [source](https://matthewstrom.com/writing/copying/)
 
 > 比尔-盖茨后来对这些案件进行了反思："我们都有一个叫施乐的有钱邻居......。我闯进他家想偷电视机，结果发现[乔布斯]已经偷过了。 - [source](https://matthewstrom.com/writing/copying/)

@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [Youtube 作为电视](https://ytch.xyz/)
 - [Quick Notes](https://quicknotes.co/) - 快速记录笔记，可以一键保存pdf或者发送邮件.
 - [User Onboard](https://www.useronboard.com/) - 新手指引设计
   - [Zapier 的新手设计](https://www.useronboard.com/how-zapier-activates-users/?slide=4)
