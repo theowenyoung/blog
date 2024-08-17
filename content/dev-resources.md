@@ -538,3 +538,7 @@ See
 ## 本地优先
 
 - [Tinybase](https://github.com/tinyplex/tinybase) 本地优先的 js 库
+
+## 错误上报
+
+- [glitchtip](https://glitchtip.com/documentation) - sentry 替代， 错误日志上报平台
