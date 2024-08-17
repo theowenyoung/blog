@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [Wikipedia 作为浏览器](https://steezeburger.com/wikipedia-browser/) - 用窗口滑动的形式来浏览 Wiki 维基百科
 - [Youtube 作为电视](https://ytch.xyz/)
 - [Quick Notes](https://quicknotes.co/) - 快速记录笔记，可以一键保存pdf或者发送邮件.
 - [User Onboard](https://www.useronboard.com/) - 新手指引设计
