@@ -1,7 +1,7 @@
 ---
 title: 电视剧笔记
 date: 2021-03-26
-updated: 2024-05-06
+updated: 2024-09-29
 taxonomies:
   categories:
     - Notes
@@ -24,6 +24,7 @@ Also see [读书笔记](/content/blog/books/_index.md), [电影笔记](/content/
 
 - [权力的堡垒 第一季 Borgen Sæson 1](https://movie.douban.com/subject/4082095/)
 - Deadloch - 女性主义黑色犯罪剧(直接看了解说，好吧，其实也就那样...)
+- Ted Lasso - 该剧第一季获得了 20 项艾美奖（Primetime Emmy Awards）提名，成为艾美奖历史上获得提名最多的第一季喜剧。
 
 ## 播客TODO
 
