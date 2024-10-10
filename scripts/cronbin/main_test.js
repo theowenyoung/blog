@@ -87,7 +87,7 @@ Deno.test("url match", () => {
 
 Deno.test("parseCurl", () => {
   const result = parseCurl(
-    "curl -X POST -H 'Content-Type: application/json' -d '{\"name\": \"John\"}' http://localhost:8000/tasks/2/run"
+    "curl -X POST -H 'Content-Type: application/json' -d '{\"name\": \"John\"}' http://localhost:8000/tasks/2/run",
   );
   assertEquals(result.method, "POST");
   assertEquals(result.headers, {
@@ -137,13 +137,13 @@ Deno.test("parseCurl #5", () => {
     result.body,
     `{
     "title":"test"
-}`
+}`,
   );
 });
 
 Deno.test("parseCurl #6", () => {
   const result = parseCurl(
-    `curl -L -H 'Authorization: Bearer abc' -H 'Content-Type: application/json' https://api.github.com/repos/xxx/yyy/dispatches -d '{"event_type":"schedule"}'`
+    `curl -L -H 'Authorization: Bearer abc' -H 'Content-Type: application/json' https://api.github.com/repos/xxx/yyy/dispatches -d '{"event_type":"schedule"}'`,
   );
   assertEquals(result.method, "POST");
   assertEquals(result.url, "https://api.github.com/repos/xxx/yyy/dispatches");
@@ -158,4 +158,12 @@ Deno.test("parseCurl #7", () => {
     "text":"{{message}}"
 }'`);
   assertEquals(result.method, "POST");
+});
+
+Deno.test("parseCurl #8", () => {
+  const result = parseCurl(
+    `curl https://api.day.app/5oZSh36eJ83HjAG3Hsi4V8/hello`,
+  );
+  // console.log(result);
+  assertEquals(result.method, "GET");
 });

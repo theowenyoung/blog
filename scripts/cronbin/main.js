@@ -204,7 +204,10 @@ export const cronSchedule = (() => {
       __privateSet(
         this,
         _intervalId,
-        setInterval(this.processTasks.bind(this), __privateGet(this, _interval))
+        setInterval(
+          this.processTasks.bind(this),
+          __privateGet(this, _interval),
+        ),
       );
     }
     stop() {
@@ -215,7 +218,8 @@ export const cronSchedule = (() => {
     }
     insertTask(newTask) {
       const index = __privateGet(this, _tasks).findIndex(
-        (task) => task.nextExecution.getTime() > newTask.nextExecution.getTime()
+        (task) =>
+          task.nextExecution.getTime() > newTask.nextExecution.getTime(),
       );
       __privateGet(this, _tasks).splice(index, 0, newTask);
     }
@@ -238,7 +242,7 @@ export const cronSchedule = (() => {
     }
     unregisterTask(id) {
       const taskIndex = __privateGet(this, _tasks).findIndex(
-        (task) => task.id === id
+        (task) => task.id === id,
       );
       if (taskIndex === -1) throw new Error("Task not found.");
       __privateGet(this, _tasks).splice(taskIndex, 1);
@@ -271,8 +275,8 @@ export const cronSchedule = (() => {
           this,
           _tasks,
           __privateGet(this, _tasks).filter(
-            (task) => task.nextExecution.getTime() > now
-          )
+            (task) => task.nextExecution.getTime() > now,
+          ),
         );
       }
       if (taskExecuted) {
@@ -292,7 +296,7 @@ export const cronSchedule = (() => {
       const timeout = nextSchedule.getTime() - Date.now();
       return longTimeout(
         wrapFunction(task, opts == null ? void 0 : opts.errorHandler),
-        timeout
+        timeout,
       );
     }
     static setInterval(cron, task, opts) {
@@ -306,7 +310,7 @@ export const cronSchedule = (() => {
         this.setInterval(
           cron,
           task,
-          __spreadProps(__spreadValues({}, opts), { handle })
+          __spreadProps(__spreadValues({}, opts), { handle }),
         );
       });
       handle.timeoutId = timeoutId;
@@ -345,11 +349,11 @@ export const cronSchedule = (() => {
               typeof x !== "number" ||
               x % 1 !== 0 ||
               x < constraint.min ||
-              x > constraint.max
+              x > constraint.max,
           )
         ) {
           throw new Error(
-            `${name} must only consist of integers which are within the range of ${constraint.min} and ${constraint.max}`
+            `${name} must only consist of integers which are within the range of ${constraint.min} and ${constraint.max}`,
           );
         }
       };
@@ -396,7 +400,7 @@ export const cronSchedule = (() => {
               } else {
                 minute = this.findAllowedMinute(
                   dir,
-                  dir === "next" ? startTime.minute + 1 : startTime.minute - 1
+                  dir === "next" ? startTime.minute + 1 : startTime.minute - 1,
                 );
                 if (minute !== void 0) {
                   return {
@@ -420,7 +424,7 @@ export const cronSchedule = (() => {
           }
           hour = this.findAllowedHour(
             dir,
-            dir === "next" ? startTime.hour + 1 : startTime.hour - 1
+            dir === "next" ? startTime.hour + 1 : startTime.hour - 1,
           );
           if (hour !== void 0) {
             return {
@@ -472,9 +476,9 @@ export const cronSchedule = (() => {
               ? _a
               : this.weekdays[0]
             : (_b = this.reversed.weekdays.find((x) => x <= startWeekday)) !=
-              null
-            ? _b
-            : this.reversed.weekdays[0];
+                null
+              ? _b
+              : this.reversed.weekdays[0];
         if (nearestAllowedWeekday !== void 0) {
           const daysBetweenWeekdays =
             dir === "next"
@@ -506,7 +510,7 @@ export const cronSchedule = (() => {
       const startDateElements = extractDateElements(startDate);
       let minYear = startDateElements.year;
       let startIndexMonth = this.months.findIndex(
-        (x) => x >= startDateElements.month
+        (x) => x >= startDateElements.month,
       );
       if (startIndexMonth === -1) {
         startIndexMonth = 0;
@@ -523,7 +527,7 @@ export const cronSchedule = (() => {
           "next",
           year,
           month,
-          isStartMonth ? startDateElements.day : 1
+          isStartMonth ? startDateElements.day : 1,
         );
         let isStartDay = isStartMonth && day === startDateElements.day;
         if (day !== void 0 && isStartDay) {
@@ -535,7 +539,7 @@ export const cronSchedule = (() => {
               day,
               nextTime.hour,
               nextTime.minute,
-              nextTime.second
+              nextTime.second,
             );
           }
           day = this.findAllowedDayInMonth("next", year, month, day + 1);
@@ -548,7 +552,7 @@ export const cronSchedule = (() => {
             day,
             this.hours[0],
             this.minutes[0],
-            this.seconds[0]
+            this.seconds[0],
           );
         }
       }
@@ -578,7 +582,7 @@ export const cronSchedule = (() => {
       const startDateElements = extractDateElements(startDate);
       let maxYear = startDateElements.year;
       let startIndexMonth = this.reversed.months.findIndex(
-        (x) => x <= startDateElements.month
+        (x) => x <= startDateElements.month,
       );
       if (startIndexMonth === -1) {
         startIndexMonth = 0;
@@ -599,7 +603,7 @@ export const cronSchedule = (() => {
           "prev",
           year,
           month,
-          isStartMonth ? startDateElements.day : 31
+          isStartMonth ? startDateElements.day : 31,
         );
         let isStartDay = isStartMonth && day === startDateElements.day;
         if (day !== void 0 && isStartDay) {
@@ -611,7 +615,7 @@ export const cronSchedule = (() => {
               day,
               prevTime.hour,
               prevTime.minute,
-              prevTime.second
+              prevTime.second,
             );
           }
           if (day > 1) {
@@ -626,7 +630,7 @@ export const cronSchedule = (() => {
             day,
             this.reversed.hours[0],
             this.reversed.minutes[0],
-            this.reversed.seconds[0]
+            this.reversed.seconds[0],
           );
         }
       }
@@ -763,7 +767,7 @@ export const cronSchedule = (() => {
       }
       if (parsedElement < constraint.min || parsedElement > constraint.max) {
         throw new Error(
-          `Failed to parse ${element}: ${singleElement} is outside of constraint range of ${constraint.min} - ${constraint.max}.`
+          `Failed to parse ${element}: ${singleElement} is outside of constraint range of ${constraint.min} - ${constraint.max}.`,
         );
       }
       return parsedElement;
@@ -784,7 +788,7 @@ export const cronSchedule = (() => {
         : parseSingleElement(rangeSegments[4]);
     if (parsedStart > parsedEnd) {
       throw new Error(
-        `Failed to parse ${element}: Invalid range (start: ${parsedStart}, end: ${parsedEnd}).`
+        `Failed to parse ${element}: Invalid range (start: ${parsedStart}, end: ${parsedEnd}).`,
       );
     }
     const step = rangeSegments[6];
@@ -795,7 +799,7 @@ export const cronSchedule = (() => {
         throw new Error(`Failed to parse step: ${step} is NaN.`);
       } else if (parsedStep < 1) {
         throw new Error(
-          `Failed to parse step: Expected ${step} to be greater than 0.`
+          `Failed to parse step: Expected ${step} to be greater than 0.`,
         );
       }
     }
@@ -829,7 +833,7 @@ export const cronSchedule = (() => {
       hours: parseElement(rawHours, hourConstraint),
       days: parseElement(rawDays, dayConstraint),
       months: new Set(
-        Array.from(parseElement(rawMonths, monthConstraint)).map((x) => x - 1)
+        Array.from(parseElement(rawMonths, monthConstraint)).map((x) => x - 1),
       ),
       weekdays: parseElement(rawWeekdays, weekdayConstraint),
     });
@@ -843,7 +847,7 @@ async function handleRequest(request, env) {
       "kvNotFound",
       "Not Found KV Database Bind",
       500,
-      "Interval Server Error"
+      "Interval Server Error",
     );
   }
 
@@ -861,7 +865,7 @@ async function handleRequest(request, env) {
         "unauthorized",
         "Authrorization Bearer abc is required",
         401,
-        "Unauthorized"
+        "Unauthorized",
       );
     }
   } else if (urlObj.searchParams.has("key")) {
@@ -871,7 +875,7 @@ async function handleRequest(request, env) {
         "unauthorized",
         "search query key=abc is required",
         401,
-        "Unauthorized"
+        "Unauthorized",
       );
     }
   } else {
@@ -883,7 +887,7 @@ async function handleRequest(request, env) {
         "unauthorized",
         "Authrorization Bearer abc or search query key=abc is required",
         401,
-        "Unauthorized"
+        "Unauthorized",
       );
     }
   }
@@ -923,7 +927,7 @@ async function handleRequest(request, env) {
           "intervalRequired",
           "interval is required",
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
       // check interval is valid
@@ -932,7 +936,7 @@ async function handleRequest(request, env) {
           "invalidInterval",
           "interval is invalid",
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
       if (!url) {
@@ -940,7 +944,7 @@ async function handleRequest(request, env) {
           "urlRequired",
           "url is required",
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
 
@@ -990,7 +994,7 @@ async function handleRequest(request, env) {
           "taskNotFound",
           "Task not found",
           404,
-          "The requested resource was not found"
+          "The requested resource was not found",
         );
       }
       // first we should save it.
@@ -1003,7 +1007,7 @@ async function handleRequest(request, env) {
           "intervalRequired",
           "interval is required",
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
 
@@ -1013,7 +1017,7 @@ async function handleRequest(request, env) {
           "invalidInterval",
           "interval is invalid",
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
       if (!url) {
@@ -1021,7 +1025,7 @@ async function handleRequest(request, env) {
           "urlRequired",
           "url is required",
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
 
@@ -1076,7 +1080,7 @@ async function handleRequest(request, env) {
             "taskNotFound",
             "Task not found",
             404,
-            "The requested resource was not found"
+            "The requested resource was not found",
           );
         }
 
@@ -1089,7 +1093,7 @@ async function handleRequest(request, env) {
             "intervalRequired",
             "interval is required",
             400,
-            "Bad Request"
+            "Bad Request",
           );
         }
 
@@ -1099,7 +1103,7 @@ async function handleRequest(request, env) {
             "invalidInterval",
             "interval is invalid",
             400,
-            "Bad Request"
+            "Bad Request",
           );
         }
         if (!url) {
@@ -1107,7 +1111,7 @@ async function handleRequest(request, env) {
             "urlRequired",
             "url is required",
             400,
-            "Bad Request"
+            "Bad Request",
           );
         }
 
@@ -1116,7 +1120,7 @@ async function handleRequest(request, env) {
             "invalidUrl",
             "url is invalid",
             400,
-            "Bad Request"
+            "Bad Request",
           );
         }
         let note = formData.get("note") || "";
@@ -1155,7 +1159,7 @@ async function handleRequest(request, env) {
             "taskNotFound",
             "Task not found",
             404,
-            "The requested resource was not found"
+            "The requested resource was not found",
           );
         }
         // delete task
@@ -1168,7 +1172,7 @@ async function handleRequest(request, env) {
         "taskRouteNotFound",
         "Task route not found",
         404,
-        "The requested resource was not found"
+        "The requested resource was not found",
       );
     }
   } else if (pathname === "/notification") {
@@ -1180,7 +1184,7 @@ async function handleRequest(request, env) {
         "invalidNotification_curl",
         "notification_curl is invalid",
         400,
-        "Bad Request"
+        "Bad Request",
       );
     }
     data.notification_curl = notification_curl;
@@ -1204,7 +1208,7 @@ async function handleRequest(request, env) {
           "jsonParseError",
           "request body JSON is not valid, " + e.message,
           400,
-          "Bad Request"
+          "Bad Request",
         );
       }
       await setData(env, json);
@@ -1218,7 +1222,7 @@ async function handleRequest(request, env) {
     "notFound",
     "Not Found",
     404,
-    "The requested resource was not found"
+    "The requested resource was not found",
   );
 }
 
@@ -1258,7 +1262,7 @@ export async function runTasks(taksIds, data, env) {
           }
         });
       });
-    })
+    }),
   );
   const now = new Date();
   let globalError = null;
@@ -1307,22 +1311,28 @@ export async function runTasks(taksIds, data, env) {
       .replace(/\n/g, "\\n")
       .replace(/"/g, '\\"');
     finalGlobalMessage = finalGlobalMessage + " -- cronbin";
-    const finalBody = body.replace(/{{message}}/g, finalGlobalMessage);
+    let finalBody = "";
+    if (body) {
+      finalBody = body.replace(/{{message}}/g, finalGlobalMessage);
+    }
     if (url.includes("{{message}}")) {
       url = url.replace(/{{message}}/g, encodeURIComponent(finalGlobalMessage));
     }
-
-    const res = await fetch(url, {
+    const fetchOptions = {
       method,
       headers: finalHeaders,
-      body: finalBody,
-    });
+    };
+    if (method !== "GET" && method !== "HEAD" && finalBody) {
+      fetchOptions.body = finalBody;
+    }
+
+    const res = await fetch(url, fetchOptions);
     await res.text();
     if (!res.ok) {
       const notificationError = new Error(
         `notification failed: ${res.status}: ${
           res.statusText
-        }, ${await res.text()}`
+        }, ${await res.text()}`,
       );
       console.warn("notification error", notificationError);
     }
@@ -1627,7 +1637,7 @@ function logToText(log, _clientOffset) {
 
   return `${ok ? "✅" : "❌"} ${timeToText(
     new Date(run_at),
-    _clientOffset
+    _clientOffset,
   )} ${message}`;
 }
 
@@ -1937,7 +1947,7 @@ function parseArgv(args, opts) {
       aliases[x] = [key].concat(
         aliases[key].filter(function (y) {
           return x !== y;
-        })
+        }),
       );
     });
   });

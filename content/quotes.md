@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+"没有人会在早上醒来时想："我想要一些软件"。" - [source](https://www.characterworks.co/blog/nobody-wants-to-use-any-software)
+
 > "科技平台不像佛罗伦萨的美第奇家族，也不像其他那些富有的艺术赞助人。他们不想寻找下一个米开朗基罗或莫扎特。他们想创造一个瘾君子的世界--因为他们将成为经销商。" - [source](https://www.nytimes.com/2024/09/05/opinion/entertainment-junk-psychology.html)
 
 > 如果我的娱乐方式是买一艘船，在海岸线上航行，一边喝着Clase Azul，一边看着大屏幕上的电视，那么当然，为了负担得起这一切，我可能会每周工作50小时。但是，如果我的娱乐方式是上 X 和埃隆-马斯克争论，看大学生们抱怨文化挪用的 TikToks，那我为什么还要拼命工作呢？ - [source](https://www.noahpinion.blog/p/yes-we-still-have-to-work?utm_source=profile&utm_medium=reader2)
