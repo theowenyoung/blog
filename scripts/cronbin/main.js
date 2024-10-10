@@ -1327,12 +1327,10 @@ export async function runTasks(taksIds, data, env) {
     }
 
     const res = await fetch(url, fetchOptions);
-    await res.text();
+    const text = await res.text();
     if (!res.ok) {
       const notificationError = new Error(
-        `notification failed: ${res.status}: ${
-          res.statusText
-        }, ${await res.text()}`,
+        `notification failed: ${res.status}: ${res.statusText}, ${text}`,
       );
       console.warn("notification error", notificationError);
     }
