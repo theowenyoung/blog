@@ -1384,7 +1384,10 @@ export function getCurrentTaskIds(now, data) {
       continue;
     }
     let lastRunAt = new Date(0);
-    let { interval, logs } = task;
+    let { interval, logs, enabled } = task;
+    if (enabled === false) {
+      continue;
+    }
 
     if (logs && logs.length > 0) {
       lastRunAt = new Date(logs[0].run_at);
