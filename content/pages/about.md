@@ -23,7 +23,7 @@ taxonomies:
 - 推特 [@OwenYoungZh](https://twitter.com/OwenYoungZh)
 - Telegram 频道: <https://t.me/owenyoungzh>
 - Telegram 私人账户: <https://t.me/itsowenyoung>
-- 微信朋友圈（现在很少发朋友圈，但是我会看，请大胆通过邮件或者 [Telegram](https://t.me/itsowenyoung) 联系我索要微信号)
+- 微信朋友圈（现在很少发朋友圈，但是我会看，请大胆通过邮件或者 [Telegram](https://t.me/itsowenyoung) 联系我索要微信号，或者告诉我你的微信号～)
 - Twitter English [@TheOwenYoung](https://twitter.com/TheOwenYoung)
 
 ## 我的生活哲学
