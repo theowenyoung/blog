@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2024-06-25
+updated: 2024-10-21
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> “做内容让我感觉重新和世界建立了连接” - 轻刀快马
 
 "没有人会在早上醒来时想："我想要一些软件"。" - [source](https://www.characterworks.co/blog/nobody-wants-to-use-any-software)
 
