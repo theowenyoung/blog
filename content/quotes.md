@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> "大厂无法给我提供我喜欢且擅长的东西" - 大草老师
+
 > “做内容让我感觉重新和世界建立了连接” - 轻刀快马
 
 "没有人会在早上醒来时想："我想要一些软件"。" - [source](https://www.characterworks.co/blog/nobody-wants-to-use-any-software)
