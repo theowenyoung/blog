@@ -14,7 +14,7 @@ taxonomies:
 
 > “做内容让我感觉重新和世界建立了连接” - 轻刀快马
 
-"没有人会在早上醒来时想："我想要一些软件"。" - [source](https://www.characterworks.co/blog/nobody-wants-to-use-any-software)
+> "没有人会在早上醒来时想："我想要一些软件"。" - [source](https://www.characterworks.co/blog/nobody-wants-to-use-any-software)
 
 > "科技平台不像佛罗伦萨的美第奇家族，也不像其他那些富有的艺术赞助人。他们不想寻找下一个米开朗基罗或莫扎特。他们想创造一个瘾君子的世界--因为他们将成为经销商。" - [source](https://www.nytimes.com/2024/09/05/opinion/entertainment-junk-psychology.html)
 
