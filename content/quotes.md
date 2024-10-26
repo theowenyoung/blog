@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> "人一生不能只是谋生啊，你还得干点别的，如果你不直接为谋生所做的事情越多，你的一生其实是越幸福的。如果你一生做的所有事情都是为了谋生，那你一生就是一个苦役" -- 十三邀第八季林小英
+
 > 不要害怕成为理想主义者，作家的作用是 "提升人们，而不是降低他们" - [source](https://www.themarginalian.org/2024/10/22/marginalian-18/)
 
 > “你认为你的痛苦和心碎在世界历史上是前所未有的"，"但后来你读到了" - [source](https://www.themarginalian.org/2017/05/24/james-baldwin-life-magazine-1963/)
