@@ -271,7 +271,7 @@ taxonomies:
 
 ## 工具
 
-- [间隔日记](https://www.interstitch.app/)
+- [间隔日记](https://www.interstitch.app/) - 记录你一天中的日程，干了啥。
 
 ## 媒体
 
