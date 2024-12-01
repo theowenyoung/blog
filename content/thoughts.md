@@ -3,7 +3,7 @@ title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 language: zh
 date: 2022-03-10
-updated: 2024-12-01
+updated: 2024-12-02
 taxonomies:
   categories:
     - Notes
@@ -11,6 +11,7 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+> 每次遇到高配得感的人 我会本能先列入不喜欢名单… 好像有点狭隘，但是好像也挺难改。 - 2024.12.2
 
 > 羡慕那些说话特别“精确”的人，希望自己能拥有那种能力。 - 2024-12-01
 
