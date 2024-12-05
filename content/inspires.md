@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [Edna](https://github.com/kjk/edna) 浏览器中的记事本笔记应用，将一个 txt 区分为虚拟的多个笔记
 - [展示全世界不同收入家庭他们的住房情况](https://www.gapminder.org/dollar-street)
 - [开源/免费的计算机科学学位课程](https://github.com/ForrestKnight/open-source-cs) - 这是一个由麻省理工学院、斯坦福大学和普林斯顿大学等知名大学提供的免费课程精选列表，满足本科计算机科学学位的同等要求，但不包括通识教育。
 - [Wikipedia 作为浏览器](https://steezeburger.com/wikipedia-browser/) - 用窗口滑动的形式来浏览 Wiki 维基百科
