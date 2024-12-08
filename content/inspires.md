@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [对比大模型价格](https://countless.dev/)
 - [Justjot](https://justjot.app/help) - Justjot, 键盘驱动的笔记应用
 - [dvlg](https://github.com/underthreaded/dvlg) - 一种笔记语法，用于区分 todo, 标签等
 - [Edna](https://github.com/kjk/edna) 浏览器中的记事本笔记应用，将一个 txt 区分为虚拟的多个笔记
