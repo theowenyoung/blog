@@ -12,19 +12,7 @@ taxonomies:
     - Random Book
 ---
 
-我是 Owen, 我喜欢用明文纯文本记录东西，因为这是最通用的格式，不会被运营商锁定，在所有平台都能开箱即用的直接编辑。该博客全部内容托管在这个[Github 的 Repo 里](https://github.com/theowenyoung/blog)，用[Zola (getzola.org)](https://www.getzola.org/)生成，最终部署在[Cloudflare Pages](https://pages.cloudflare.com/)上。
-
-[Derek Sivers](https://sive.rs/) 曾经说过："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限的经验来看，我也是，所以请不要吝啬，如果你觉得我们的书呆子气质有点契合，那么 i 人也可以先建立一种联系（因为是 i 人，所以我们可以只建立联系而暂时不说话）！
-
-找到我的方式：
-
-- 我为这个博客建立的 Telegram 讨论群组：<https://t.me/+m124rcTl9FE3M2Vh>
-- 我的电子邮件：`owen#owenyoung.com` (把`#`换成`@`)
-- 推特 [@OwenYoungZh](https://twitter.com/OwenYoungZh)
-- Telegram 频道: <https://t.me/owenyoungzh>
-- Telegram 私人账户: <https://t.me/itsowenyoung>
-- 微信朋友圈（现在很少发朋友圈，但是我会看，请大胆通过邮件或者 [Telegram](https://t.me/itsowenyoung) 联系我索要微信号，或者告诉我你的微信号～)
-- Twitter English [@TheOwenYoung](https://twitter.com/TheOwenYoung)
+[Derek Sivers](https://sive.rs/) 在[《Anything You Want》](https://sive.rs/a)中写道："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限的经验来看，我也是，所以请不要吝啬，如果你觉得我们的书呆子气质有点契合，那么 i 人也可以先建立一种联系（因为是 i 人，所以我们可以只建立联系而暂时不说话）！
 
 ## 我的生活哲学
 
@@ -44,7 +32,19 @@ taxonomies:
 
 在这里强调我的生活哲学是因为我很遗憾没有在更早的时候看到类似的想法，这导致我以前对闲暇时间感到焦虑。我想给那些正在经历闲暇时间并感到焦虑的同学一个笃定的视角，希望我们最终都能获得注意力自由。
 
+## 找到我的方式
+
+- 我为这个博客建立的 Telegram 讨论群组：<https://t.me/+m124rcTl9FE3M2Vh>
+- 我的电子邮件：`owen#owenyoung.com` (把`#`换成`@`)
+- 推特 [@OwenYoungZh](https://twitter.com/OwenYoungZh)
+- Telegram 频道: <https://t.me/owenyoungzh>
+- Telegram 私人账户: <https://t.me/itsowenyoung>
+- 微信朋友圈（现在很少发朋友圈，但是我会看，请大胆通过邮件或者 [Telegram](https://t.me/itsowenyoung) 联系我索要微信号，或者告诉我你的微信号～)
+- Twitter English [@TheOwenYoung](https://twitter.com/TheOwenYoung)
+
 ## 关于这个博客
+
+我喜欢用明文纯文本记录东西，因为这是最通用的格式，不会被运营商锁定，在所有平台都能开箱即用的直接编辑。该博客全部内容托管在这个[Github 的 Repo 里](https://github.com/theowenyoung/blog)，用[Zola (getzola.org)](https://www.getzola.org/)生成，最终部署在[Cloudflare Pages](https://pages.cloudflare.com/)上。
 
 和大多数的博客不一样的是，这个博客不只是文章，我把这里当成是我的数字花园，里面主要包含[6 类内容](/categories/)：
 
