@@ -35,7 +35,8 @@ title: 侧边栏
 
 ## 我的项目
 
-- [沉浸式翻译扩展](https://immersive-translate.owenyoung.com/)
+- [沉浸式翻译扩展](https://immersivetranslate.com)
+- [Artab](https://artab.owenyoung.com/)
 - [EverEntry](https://everentry.com/)
 - [Buzzing](https://www.buzzing.cc) - 国外头条
 - [Track Awesome List](https://www.trackawesomelist.com)

@@ -15,7 +15,11 @@ This is a list of projects I've done and am doing. Maybe you should consider [sp
 
 ## List
 
-### [Immersive Translate](https://immersive-translate.owenyoung.com/) - 沉浸式翻译扩展
+### [Artab](https://artab.owenyoung.com/)
+
+- Get Inspired by the World's Greatest Artworks Every Time You Open a New Tab. Extension Available for Chrome, Edge, and Firefox.
+
+### [Immersive Translate](https://immersivetranslate.com) - 沉浸式翻译扩展
 
 - Support Firefox/Chrome/GreaseMonkey
 - Show both Dual Languages
