@@ -195,6 +195,10 @@ between formats and can be used as a Go package.
   A lightweight polyfill library for Promise-based WebExtension APIs in Chrome
 - [Bypass paywalls clean](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean)
 
+## Pay
+
+- [Xor](https://xorpay.com/doc/) - 微信，支付宝支付工具
+
 ## Configure as FrontEnd
 
 - [Hyperview](https://github.com/instawork/hyperview) - Backend xml to native
