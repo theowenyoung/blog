@@ -198,6 +198,7 @@ between formats and can be used as a Go package.
 ## Pay
 
 - [Xor](https://xorpay.com/doc/) - 微信，支付宝支付工具
+- [Bufpay](https://bufpay.com/) - 微信，支付宝支付工具
 
 ## Configure as FrontEnd
 
