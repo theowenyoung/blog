@@ -15,8 +15,8 @@ taxonomies:
 
 ## 视频主页
 
-- [青蛙刀圣](https://www.youtube.com/@frogfrog1993) - 主要解说电影，会从很多历史的知识中先帮你理清楚上下文。
+- [3Blue1Brown](https://www.youtube.com/@3Blue1Brown) - 很有趣也很清晰的数学以及其它学科（主要是数学和AI）的讲解。
 
-## 短视频
+- [Rachel's English](https://www.youtube.com/@rachelsenglish) - 美式发音的口语学习，非常详细且系统，如果想学习美式发音，可以看这个。
 
-- [中国自秦制以来就没有儒家](https://twitter.com/nainaibao/status/1584154771057176577)
+- [漫士沉思录](https://www.youtube.com/@manshi_math) - 类似3Blue1Brown，但是是中文的，讲解的也主要是数学。

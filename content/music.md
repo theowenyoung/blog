@@ -1,7 +1,7 @@
 ---
-title: 音乐收藏
+title: 音乐
 date: 2022-03-25
-updated: 2022-10-26
+updated: 2024-12-22
 taxonomies:
   categories:
     - Notes
@@ -9,21 +9,13 @@ taxonomies:
     - Music
 ---
 
-收集喜欢的音乐。
+收集一些[喜欢的音乐](https://m.cmx.im/tags/%E5%90%AC%E4%BA%86%E4%BB%80%E4%B9%88)。
+
+[豆瓣](https://music.douban.com/mine?status=collect)
+
+[网易云](https://music.163.com/#/user/home?id=133122119)
 
 <!-- more -->
 
-## 说唱
 
-- 这首[父亲不让我出门，然后…](https://weibo.com/7340378423/Lkqwot4KB?pagetype=profilefeed) 说唱可能会改变你关于中国说唱的认知。
 
-## 欧美
-
-- [Radiohead - Creep](https://www.youtube.com/watch?v=j-Jj5vY0e9I)
-
-## 404
-
-- [六月某时 - 秀场寡头](https://soundcloud.com/show-oligarch/sometimes-in-june)
-- [吳吞 : 一萬個名字](https://www.youtube.com/watch?v=poYDiJU2HJQ)
-- [1990 年的春天: 李志](https://www.youtube.com/watch?v=nmTvasFpovs)
-- [李志作品在线播放](https://lizhi.turkyden.com)

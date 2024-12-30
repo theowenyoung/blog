@@ -1,4 +1,4 @@
-base_url = "https://www.owenyoung.com"
+base_url = "https://www.yaoyaoyao.com"
 build_search_index = false
 compile_sass = false
 default_language = "zh"
@@ -9,7 +9,7 @@ taxonomies = [
   { name = "tags", feed = true, paginate_by = 50 },
   { name = "categories", feed = true, paginate_by = 50 },
 ]
-title = "Owen的博客"
+title = "Yao的博客"
 
 [markdown]
 # When set to "true", all code blocks are highlighted.
@@ -27,12 +27,12 @@ external_links_no_referrer = true
 smart_punctuation = true
 
 [extra]
-author = "Owen Young"
-email = "owen@owenyoung.com"
-prefix_url = "https://www.owenyoung.com"
-indieweb_url = "https://owenyoung.com/"
+author = "Yao Young"
+email = "Yao@Yaoyoung.com"
+prefix_url = "https://www.Yaoyoung.com"
+indieweb_url = "https://Yaoyoung.com/"
 theme_color = "#fffcf9"
-meilisearch_url = "https://meilisearch.owenyoung.com"
+meilisearch_url = "https://meilisearch.Yaoyoung.com"
 meilisearch_api_key = "fb8ab67a7ec1d9f57008c0c610dfc0743ed0f62619097fc259921dfd7d691ea5"
 ### indieweb note
 bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
@@ -41,17 +41,17 @@ bio = "Web developer, I like reading and explore the internet, so I have collect
 # disqus = "disqus-user"
 
 ### SOCIAL MEDIA
-# https://github.com/theowenyoung/blog/edit/main/content/blog/indieweb.en.md
-edit_url_prefix = "https://github.com/theowenyoung/blog/edit/main/content/"
-github_user = "theowenyoung"
-image = "https://www.owenyoung.com/heading.jpg"
+# https://github.com/theYaoyoung/blog/edit/main/content/blog/indieweb.en.md
+edit_url_prefix = "https://github.com/theYaoyoung/blog/edit/main/content/"
+github_user = "theYaoyoung"
+image = "https://www.Yaoyoung.com/heading.jpg"
 "label_action_in-reply-to" = "replied"
 "label_action_like-of" = "liked"
 "label_action_mention-of" = "mentioned"
 "label_action_reply-to" = "replied"
 "label_action_repost-of" = "reposted"
 "label_action_rsvp" = "answered"
-twitter_user = "TheOwenYoung"
+twitter_user = "TheYaoYoung"
 webmention_path = "webmentions"
 ### I18N WORDS
 
@@ -118,7 +118,7 @@ taxonomies = [
   { name = "tags", feed = true, paginate_by = 25 },
   { name = "categories", feed = true, paginate_by = 25 },
 ]
-title = "Owen Young's Blog"
+title = "Yao Young's Blog"
 [languages.en.translations]
 keywords = "Focus, Reading, Tool sharing, Plain text, English learning"
 label_activity = "Activity"
