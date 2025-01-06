@@ -31,6 +31,7 @@ taxonomies:
 ## 有意思
 
 - [Good reads Quotes](https://www.goodreads.com/quotes/recently_added) - Good Reads 上的公开 quotes
+- [Quote Garden](https://www.quotegarden.com/) - Quote 数据库
 - [对比大模型价格](https://countless.dev/)
 - [Justjot](https://justjot.app/help) - Justjot, 键盘驱动的笔记应用
 - [dvlg](https://github.com/underthreaded/dvlg) - 一种笔记语法，用于区分 todo, 标签等
