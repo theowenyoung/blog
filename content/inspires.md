@@ -248,6 +248,7 @@ taxonomies:
 - [设计师的博客](https://paulstamatiou.com/) - 左边导航栏很舒服
 - [typefully 作者的博客](https://www.fabrizio.so/) - 分块设计，很好看
 - [多个好看的卡片背景配色](https://hallofshame.design/collection/)
+- [Muse](https://museapp.com/#pricing) - 浅黄色配色，好看
 
 ## 资源
 
