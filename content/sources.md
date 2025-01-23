@@ -55,6 +55,7 @@ taxonomies:
 - [Boared reading](https://boredreading.com/?v4) - 专为书呆子设计的互联网阅读的最佳方式
 - [V2EX 的独立博客聚合](https://www.v2ex.com/xna)
 - [BlueSky的列表聚合](https://www.bskyinfo.com/feeds/)
+- [More RSS 的独立博客推荐](https://morerss.com/zh/%E6%8E%A8%E8%8D%90)
 
 ## 专人维护的 Reading List
 

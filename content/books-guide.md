@@ -17,6 +17,7 @@ taxonomies:
 
 ## 其他人的书籍推荐资源
 
+- [Dan Wang 的推荐](https://danwang.co/books/)
 - [HN： 你今年读过的最好的书](https://news.ycombinator.com/item?id=42268570)
 - [我们应该在学校学习的书汇总](https://www.humblebundle.com/books/subjects-we-should-have-learned-in-school-books)
 - [Less Wrong 的书评](https://www.lesswrong.com/tag/book-reviews-media-reviews?sortedBy=new)
