@@ -54,6 +54,7 @@ taxonomies:
 - [Pin Board 的流行书签收藏](https://pinboard.in/popular/) - 流行书签收藏.
 - [Boared reading](https://boredreading.com/?v4) - 专为书呆子设计的互联网阅读的最佳方式
 - [V2EX 的独立博客聚合](https://www.v2ex.com/xna)
+- [BlueSky的列表聚合](https://www.bskyinfo.com/feeds/)
 
 ## 专人维护的 Reading List
 
