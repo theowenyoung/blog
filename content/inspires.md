@@ -30,6 +30,8 @@ taxonomies:
 
 ## 有意思
 
+- [TextPod](https://github.com/freetonik/textpod) - 只用一个单 markdown 文件保存的笔记应用，Rust 开发
+- [Mindapp](https://github.com/mileung/mindapp) - 嵌套的笔记应用，公开笔记应用
 - [Good reads Quotes](https://www.goodreads.com/quotes/recently_added) - Good Reads 上的公开 quotes
 - [Quote Garden](https://www.quotegarden.com/) - Quote 数据库
 - [对比大模型价格](https://countless.dev/)
