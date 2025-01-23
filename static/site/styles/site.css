@@ -133,6 +133,8 @@ th {
  divider: rgb(226, 232, 240);
  code back: edf0f3
  rgb(249, 245, 233)
+239
+#EFEDEA
 /* rgba(0, 0, 0, 0.8)*/
 /*#fffef8
 c35
@@ -145,16 +147,17 @@ fffef8
 background-color:rgb(255, 252, 249);
 #272629
 
+  --colors-text: #18181c;
 */
 html {
   font-size: 15px;
   box-sizing: border-box;
-  --colors-text: #18181c;
+  --colors-text: rgba(0, 0, 0, 0.75);
   --colors-muted: #718096;
   --colors-primary: #cc3355;
   --colors-divider: rgba(0, 0, 0, 0.06);
   --colors-primary-light: rgba(234, 76, 137, 0.5);
-  --colors-background: #fff;
+  --colors-background: #efedea;
   --colors-code-background: rgba(0, 0, 0, 0.08);
   /* --colors-quote-background: rgba(255, 255, 255, 0.5); */
   --colors-quote-background: rgb(0 0 0/3%);
