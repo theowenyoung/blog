@@ -334,9 +334,9 @@ h2 {
   font-style: normal;
 }
 .feed-entry p,
-li,
-ul,
-ol {
+.feed-entry li,
+.feed-entry ul,
+.feed-entry ol {
   font-size: 1rem;
   line-height: 1.8rem;
 }

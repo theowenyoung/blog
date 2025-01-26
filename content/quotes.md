@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 这个时代，你在推特上发布“我建造了一个破环互联网但可以谋取个人私利的老虎机”，你将会收到一堆回复说：“哇，酷！我迫不及待想为了个人利益而破坏互联网。” - [source](https://benjamincongdon.me/blog/2025/01/25/AI-Slop-Suspicion-and-Writing-Back/)
+
 > 我们大多数人花太多时间在紧急的事情上，而在重要的事情上花的时间却不够。 - [source](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/)
 
 > 聪明人的一句赞美抵得过庸俗者的一千次揶揄…… - 《柳比歇夫奇特的一生》
