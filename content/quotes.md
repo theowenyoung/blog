@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2024-12-15
+updated: 2025-01-26
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 我们大多数人花太多时间在紧急的事情上，而在重要的事情上花的时间却不够。 - [source](https://cacm.acm.org/opinion/life-lessons-from-the-first-half-century-of-my-career/)
 
 > 聪明人的一句赞美抵得过庸俗者的一千次揶揄…… - 《柳比歇夫奇特的一生》
 
