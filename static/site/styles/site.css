@@ -123,6 +123,10 @@ th {
   font-weight: 500;
 }
 
+li {
+  margin-bottom: 0.5rem;
+}
+
 /* --reset end -- */
 /*
  #d2bf9e
