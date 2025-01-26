@@ -62,7 +62,9 @@
   <div class="index-page py">
 
       {% set index_first = get_page(path="pages/index_first"~file_lang_path~".md") %}
-      {{ index_first.content | safe }}
+      <div class="index-block">
+        {{ index_first.summary | safe }}
+      </div>
 
       <details open class="py">
       <summary class="by">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
