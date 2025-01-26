@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [Are.na](https://www.are.na) - 可以在上面策展自己收集的作品
 - [知识库导航](https://zsk.ai)
 - [Ask 小宇宙](https://ask.xiaoyuzhoufm.com/) - 作为播客的全文搜索，很好用。
 - [TextPod](https://github.com/freetonik/textpod) - 只用一个单 markdown 文件保存的笔记应用，Rust 开发
