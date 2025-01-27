@@ -337,18 +337,10 @@ h2 {
   font-size: 1.05rem;
   font-style: normal;
 }
-.feed-entry p,
-.feed-entry li,
-.feed-entry ul,
-.feed-entry ol {
-  font-size: 1rem;
-  line-height: 1.8rem;
-}
-
-.index-block p,
-.index-block li,
-.index-block ul,
-.index-block ol {
+p,
+li,
+ul,
+ol {
   font-size: 1rem;
   line-height: 1.8rem;
 }
@@ -461,8 +453,7 @@ p,
 dl,
 ol,
 ul {
-  font-size: 1.15rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 p {
   line-height: 2.1rem;
