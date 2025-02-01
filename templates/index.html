@@ -63,7 +63,7 @@
 
       {% set index_first = get_page(path="pages/index_first"~file_lang_path~".md") %}
       <div class="index-block">
-        {{ index_first.summary | safe }}
+        {{ index_first.content | safe }}
       </div>
 
       <details open class="py">
