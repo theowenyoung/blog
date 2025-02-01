@@ -328,6 +328,7 @@ taxonomies:
 ### Communities
 
 - [Long term visas](https://longtermvisas.com/) - Travel decisions, simplified.
+- [Localazy](https://localazy.com/) - 翻译平台, i18n 国际化， Kagi 团队在用。
 
 ### Tools
 
