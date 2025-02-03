@@ -255,6 +255,7 @@ taxonomies:
 - [多个好看的卡片背景配色](https://hallofshame.design/collection/)
 - [Muse](https://museapp.com/#pricing) - 浅黄色配色，好看
 - [Pinterest blog](https://business.pinterest.com/en-gb/blog/)
+- [paulstamatiou blog](https://paulstamatiou.com) - 配色像 Claude 的博客
 
 ## 资源
 
