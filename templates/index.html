@@ -17,141 +17,70 @@
   {%- endif -%}
 {% endblock post_meta %}
 
-{% block sidebar_top %}{% endblock sidebar_top %}
-{% block header %}
-  {% set all_section_pages = get_section(path="_index"~file_lang_path~".md") -%}
-  {% set all_pages_sort_by_date = all_section_pages.pages | sort(attribute="updated") | reverse -%}
-  {% set total_word_count = 0 -%}
-  {% for page_item in all_section_pages.pages -%}
-    {% set_global total_word_count = total_word_count+page_item.word_count -%}
-  {% endfor -%}
-      <div class="header">
-        <div class="header-inner">
-        {% if config.default_language != lang %}
-          <p class="index-intro">I'm Owen Young, I've written
-            <a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
-              {{ all_section_pages.pages | length }}</a>
-            articles so far, about {{ total_word_count }} words, last updated on
-            <time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>. I position
-              this as my personal digital garden, where all my notes, ideas are stored here. Cause I'm not a English native speaker,
-              so there are also
-            <a href="/">many posts/notes written by Chinese</a>,
-            <a href="{{ get_url(path="@/pages/now.md") }}">click to find out what I'm doing now</a>
-          </p>
-        {% else %}
-          <p class="index-intro">我是<a href="/about/">Owen</a>，截止目前已写了<a href="{{ get_url(path="@/pages/archive.md",lang=lang) }}">
-              {{ all_section_pages.pages | length }}</a>
-          篇文章，大约 {{ total_word_count }} 字，最后更新时间：<time datetime="{{ all_pages_sort_by_date[0].updated }}">{{ all_pages_sort_by_date[0].updated }}</time>。 我把这里定位成我的数字个人花园，存放我的笔记，<a href="/thoughts">短想法</a>（不愿意发在社交媒体上的短想法），我在另一个 Clip 网站上存放我<a href="https://clip.owenyoung.com/">阅读过的优秀文章</a>,
-          在 <a href="{{ get_url(path="@/pages/about.md") }}">About</a> 页面了解更多关于我的介绍，在 <a href="{{ get_url(path="@/pages/now.md") }}">Now 页面</a>了解我最近在做什么。
-          </p>
+{% block main %}
 
-        {% endif %}
-        <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
-        </div>
-      </div>
-{% endblock%}
-{% block main -%}
   {% set_global note_pages = [] -%}
   {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
-  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
-  {% for cat in all_categories.items -%}
-    {% if cat.name == "Notes" -%}
-      {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
-    {% endif -%}
-  {% endfor -%}
-  <div class="index-page py">
+  {% set_global note_pages_term = get_taxonomy_term(kind="categories", term="Notes")  %}
+  {% set_global note_pages =  note_pages_term.pages | sort(attribute="updated") | reverse %}
+  {% set_global pinned_pages_term = get_taxonomy_term(kind="tags", term="Pin")  %}
+  {% set_global pinned_pages =  pinned_pages_term.pages | sort(attribute="updated") | reverse %}
+  {% set_global story_pages_term = get_taxonomy_term(kind="tags", term="Story")  %}
+  {% set_global story_pages =  story_pages_term.pages | sort(attribute="updated") | reverse %}
 
-      {% set index_first = get_page(path="pages/index_first"~file_lang_path~".md") %}
-      <div class="index-block">
-        {{ index_first.content | safe }}
-      </div>
+<div class="wrapper">
+    <header class="index-header">
+      <div class="stories is-flex">
+        <div>
+          <div class="story">
+             <div class="story-header">
+               <div class="story-content">
+                 <h1><a href="/">Owen's Blog</a></h1>
+                 <ul>
+                   <li><a href="/about">RSS</a></li>
+                   <li><a href="/tags">Categories</a></li>
+                   <li><a href="/categories">Archive</a></li>
+                   <li><a href="/about">Twitter</a></li>
+                   <li><a href="/tags">即刻</a></li>
+                   <li><a href="/categories">Changelog</a></li>
+                 </ul>
+               </div>
+             </div>
+          </div>
+        </div>
+        {% for page in pinned_pages %}
+            <div>
+              <div class="story">
+                 <div class="story-header">
+                   <h2 class="story-title">{{ page.title | safe }}</h2>
+                   <div class="story-content">
+                     {{ page.content | spaceless | striptags | truncate(length=200) }}
+                   </div>
+                 </div>
+              </div>
+            </div>
+        {% endfor %}
 
-      <details open class="py">
-      <summary class="by">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
-      </summary>
-      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
-      <div class="articles">
-        {{ thoughts_page.summary | safe }}
-        <p class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</p>
-      </div>
-      </details>
-      <details open class="py">
-        <summary class="by ">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}:
-      </summary>
-      <div class="articles h-feed hfeed">
-        {% for page in all_blog_pages.pages | slice(start=0,end=3) %}
-          {{ macro::post_max(page=page,index=loop.index) }}
+        {% for page in story_pages %}
+            <div>
+              <div class="story">
+                 <div class="story-header">
+                   <h2 class="story-title">{{ page.title | safe }}</h2>
+                   <div class="story-content">
+                     {{ page.content | spaceless | striptags | truncate(length=200) }}
+                   </div>
+                 </div>
+              </div>
+            </div>
         {% endfor %}
       </div>
-      </details>
-      {%if all_blog_pages.pages | slice(start=3) | length > 0%}
-        <details class="py">
-          <summary class="by text">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
-          <ul>
-            {% for page in all_blog_pages.pages | slice(start=3) %}
-            <li>{{ macro::post_min(page=page) }}</li>
-            {% endfor %}
-          </ul>
-        </details>
-        {% endif %}
-                  <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+  </header>
+
+    {% for page in all_blog_pages.pages | slice(start=0,end=50) %}
+          {{ macro::post_max(page=page,index=loop.index) }}
+    {% endfor %}
+
+</div>
 
 
-      <details open class="py">
-      <summary class="by">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
-      </summary>
-      {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
-      <div class="articles">
-        {{ quotes_page.summary | safe }}
-        <p class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</p>
-      </div>
-      </details>
-      {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
-            {% set_global note_pages = [] -%}
-            {% for cat in all_categories.items -%}
-              {% if cat.name == "Notes" -%}
-                {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
-              {% endif -%}
-      {% endfor -%}
-
-            <div class="by">{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}</div>
-            <div class="articles pb-lg">
-              <ul class="root-ul">
-                {% for page in note_pages | slice(end=10) %}
-                  <li>{{ macro::post_min(page=page) }}</li>
-                {% endfor %}
-              </ul>
-              {%if note_pages | slice(start=10) | length > 0%}
-              <details>
-                <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
-                <ul>
-                  {% for page in note_pages | slice(start=10) %}
-                  <li>{{ macro::post_min(page=page) }}</li>
-                  {% endfor %}
-                </ul>
-              </details>
-              {% endif %}
-            </div>
-
-    </div>
-
-  {% endblock main -%}
-  {% block before_body_end %}
-    {% if config.extra.meilisearch_url %}
-      <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          docsSearchBar({
-            hostUrl: '{{ config.extra.meilisearch_url | safe }}',
-            apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
-            indexUid: 'owen-blog',
-            inputSelector: '#search-bar-input',
-            meilisearchOptions: {
-              limit: 10
-            },
-            debug: false, // Set debug to true if you want to inspect the dropdown
-          })
-        });
-      </script>
-    {% endif %}
-  {% endblock before_body_end %}
+{% endblock main %}

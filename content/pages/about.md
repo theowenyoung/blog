@@ -10,6 +10,7 @@ taxonomies:
   tags:
     - About
     - Random Book
+    - Pin
 ---
 
 [Derek Sivers](https://sive.rs/) 在[《Anything You Want》](https://sive.rs/a)中写道："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限的经验来看，我也是，所以请不要吝啬，如果你觉得我们的书呆子气质有点契合，那么 i 人也可以先建立一种联系（因为是 i 人，所以我们可以只建立联系而暂时不说话）！
@@ -22,9 +23,9 @@ taxonomies:
 
 如果我们能抱着一种朴素主义的生活态度，其实根本不需要那么多的财富去获取注意力自由。
 
-我们需要多少钱才能辞职过上注意力自由的生活？换句话说，需要攒多少钱，就可以10-15年不用工作也没问题？
+我们需要多少钱才能辞职过上注意力自由的生活？换句话说，需要攒多少钱，就可以 10-15 年不用工作也没问题？
 
-在中国的语境下，维持一个健康而简朴的生活，每个人 5 万元/年可能是一个不错的平衡。也就是说没有负债，50 万元以上的存款，即可享受10年以上的注意力自由，我想称之为“穷有闲阶级”。
+在中国的语境下，维持一个健康而简朴的生活，每个人 5 万元/年可能是一个不错的平衡。也就是说没有负债，50 万元以上的存款，即可享受 10 年以上的注意力自由，我想称之为“穷有闲阶级”。
 
 但是注意力自由并不意味着我们完全不会收入，恰恰相反，只有注意力自由之后，我们才能发挥真正的创造力，没有边界的探索任何事情。而且，在这个过程中，我们非常有可能获得一些未知的财富。即便 10 年过后没有获得任何财富，在经历 10 年的闲暇时间之后，我们一定在各方面都成为了一个更好的自己，从而拥有更多的能力去做任何事情。
 
@@ -55,25 +56,25 @@ taxonomies:
 
 - [我在阅读什么](/categories/journal/) 我会把定期把我最近看过的优质文章的链接，以及我的对此的简要总结放在这个分类下。
 - [笔记](/categories/notes/)，我会精心收集某个主题下相关的链接，然后把他们归类到某个主题的笔记里，比如：
-  - [探索互联网上高质量的内容](/content/sources.md)
-  - [最好用的工具集合](/content/tools.md)
-  - [有意思的问题收集](/content/answers.md)
-  - [收集一些给人灵感的东西](/content/inspires.md)
-  - [收集值得阅读的文章](/content/articles.md)
-  - [收集一些有意思的社区](/content/communities.md)
-  - [英语学习相关资源](/content/english-learning.md)
+  - [探索互联网上高质量的内容](@content/sources.md)
+  - [最好用的工具集合](@content/tools.md)
+  - [有意思的问题收集](@content/answers.md)
+  - [收集一些给人灵感的东西](@content/inspires.md)
+  - [收集值得阅读的文章](@content/articles.md)
+  - [收集一些有意思的社区](@content/communities.md)
+  - [英语学习相关资源](@content/english-learning.md)
 - [读书笔记](/categories/books/) 读书如果只是阅读的话，那么随着时间的流逝，总会慢慢淡忘，所以我要求自己对每本书都要写读书笔记，大多数时候是摘抄其中的一些高亮段落。
 - [短想法](/thoughts/) 其实就只是一篇长期更新的[普通的文章](https://github.com/theowenyoung/blog/edit/main/content/thoughts.md)，但是我在里面写我的各种短想法，相当于推特，但是不会出现在别人的时间轴上，所以我可以在里面随便写，不用担心别人的眼光。
 - [引用](/quotes/) 也是一篇长期更新的[普通文章](https://github.com/theowenyoung/blog/edit/main/content/quotes.md)，我在里面记录我看到的一些有意思的高亮段落。
 
 我有一个
-[Now 页面](/content/pages/now.md)，这个页面是响应[Derek Sivers](https://sive.rs/)的呼吁，用[Now 页面](https://nownownow.com/about) `/now/` 代替
+[Now 页面](@content/pages/now.md)，这个页面是响应[Derek Sivers](https://sive.rs/)的呼吁，用[Now 页面](https://nownownow.com/about) `/now/` 代替
 About 页面，用于记录最近在做的事，`/about/`页面是只是一个概览页面。
-[点这里查看我最近在做什么](/content/pages/now.md)
+[点这里查看我最近在做什么](@content/pages/now.md)
 
 我还有一个[Change Log](/en/changelog/)页面，里面会存放这个博客本身的更新日志。
 
-这个网站遵循 [IndieWeb](/content/blog/indieweb.en.md) 的规范，支持
+这个网站遵循 [IndieWeb](@content/blog/indieweb.en.md) 的规范，支持
 [webmention](https://indieweb.org/Webmention)， 但是我现在有点无感了，因为现在对于这种高门槛的技术越来越失去兴趣，它没有促进交流，反而增加了很多障碍，但是我一时之间又没找到什么喜欢的替代品，很可能最后会自己再造一个轮子。
 
 这个博客加入了[Webring](https://xn--sr8hvo.ws/)，这是一个古早的互联网概念，大概是这样：加入 Webring

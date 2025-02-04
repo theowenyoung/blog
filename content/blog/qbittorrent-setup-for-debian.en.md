@@ -99,7 +99,7 @@ systemctl status qbittorrent
 
 ## Reverse Proxy (Optional)
 
-Use Caddy to access qBittorrent with domain. This should install [Caddy2 Setup for Debian](/content/blog/caddy2-setup-for-debian.en.md)
+Use Caddy to access qBittorrent with domain. This should install [Caddy2 Setup for Debian](@content/blog/caddy2-setup-for-debian.en.md)
 
 Config:
 
@@ -127,7 +127,7 @@ Now, you can access your qBittorrent web UI at: example.com, the default usernam
 
 ### Install Jackett
 
-See [Jackett Setup](/content/blog/jackett-setup.md)
+See [Jackett Setup](@content/blog/jackett-setup.md)
 
 ### Install Jackett Plugin
 

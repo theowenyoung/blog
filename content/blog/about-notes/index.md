@@ -38,14 +38,14 @@ txt 文件写推特。
 
 以下是我目前整理出的大多数人可能会需要的几个纯文本文件笔记类型：
 
-- quotes, 记录一些别人的话，[收集发人深省的话](/content/quotes.md)
-- thoughts, 记录一些自己的话,[短想法](/content/thoughts.md)
-- journal, 日记，可按照不同年份保存，[2022 年的一些记录](/content/journal-2022.md)
-- tools, 记录好用的工具，[最好用的工具集合](/content/tools.md)
-- articles, 记录好文章, [收集值得阅读的文章](/content/articles.md)
-- sources, 记录常用的内容源， [探索互联网上高质量的内容](/content/sources.md)
-- answers，记录一些好的答案，[有意思的问题收集](/content/answers.md)
-- inspires, 记录一些启发灵感的，有意思的东西, [收集一些给人灵感的东西](/content/inspires.md)
-- tips，记录一些常用的技巧 [生活技巧](/content/tips/index.md)
+- quotes, 记录一些别人的话，[收集发人深省的话](@content/quotes.md)
+- thoughts, 记录一些自己的话,[短想法](@content/thoughts.md)
+- journal, 日记，可按照不同年份保存，[2022 年的一些记录](@content/journal-2022.md)
+- tools, 记录好用的工具，[最好用的工具集合](@content/tools.md)
+- articles, 记录好文章, [收集值得阅读的文章](@content/articles.md)
+- sources, 记录常用的内容源， [探索互联网上高质量的内容](@content/sources.md)
+- answers，记录一些好的答案，[有意思的问题收集](@content/answers.md)
+- inspires, 记录一些启发灵感的，有意思的东西, [收集一些给人灵感的东西](@content/inspires.md)
+- tips，记录一些常用的技巧 [生活技巧](@content/tips/index.md)
 
 以上这些就是我觉得大多数人都需要的一些公共类型的笔记，其他的类型就根据自己的类型来分类了。原则就是尽量少一点类型，这样更容易碰撞灵感和回顾，整理。

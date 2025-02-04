@@ -6,7 +6,8 @@
   {% endif %}
 {% endmacro get_reading_time %}
 {% macro post_max(page,index) %}
-  <article class="h-entry hentry feed-entry">
+  <article class="h-entry hentry feed-entry ">
+  <div class="article-wrapper">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
       <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
@@ -25,7 +26,7 @@
     {% elif page.content -%}
       {{ page.content | safe }}
     {% endif -%}
-    <div class="muted text-sm">
+    <div class="muted item-footer">
       <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
         <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
       </a>
@@ -37,11 +38,12 @@
       {% endif %}
 
     </div>
+  </div>
   </article>
   {% endmacro post_max %}
   {% macro post_min(page) %}
     <a href="{{ page.permalink }}">{{ page.title }}</a>
-    <span class="muted text-sm">{{ page.updated }}</span>
+    <span class="muted item-footer">{{ page.updated }}</span>
   {% endmacro post_min %}
   {% macro backlink(pages) %}
     {% if pages and pages | length >0 %}

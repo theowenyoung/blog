@@ -128,7 +128,7 @@ Adding Activity page.
 ![](./indiewebring.jpg)
 
 3. Support [Webmention](https://indieweb.org/Webmention), see example
-   [Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)
+   [Now, I'm in IndieWeb?](@content/blog/indieweb.en.md)
 
 ![](./webmention-response.jpg)
 
@@ -161,11 +161,11 @@ Adding Edit this article link to every post.
    [Blog](https://blog.owenyoung.com/) to
    [New Blog](https://www.owenyoung.com/). The Blog is built with
    [Zola](https://www.getzola.org/), I also wrote
-   [迁移博客和 Wiki 到 Zola](/content/blog/migrate-to-zola/index.md) to record it. The
+   [迁移博客和 Wiki 到 Zola](@content/blog/migrate-to-zola/index.md) to record it. The
    biggest difference is the blazing building speed of Zola, for now, it only
    takes 2 seconds to build the whole site.
 
-2. Support [读书笔记](/content/blog/books/_index.md) Templates, show my review score
-   of the book, and show [Books Sort By Rating](/content/pages/books.md)
+2. Support [读书笔记](@content/blog/books/_index.md) Templates, show my review score
+   of the book, and show [Books Sort By Rating](@content/pages/books.md)
 
 ![](./books-template.jpg)

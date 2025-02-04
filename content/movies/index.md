@@ -13,7 +13,7 @@ taxonomies:
 
 <!-- more -->
 
-Also see [电视剧笔记](/content/tv-shows/index.md), [读书笔记](/content/blog/books/_index.md)
+Also see [电视剧笔记](@content/tv-shows/index.md), [读书笔记](@content/blog/books/_index.md)
 
 ## 其他人的推荐列表
 
@@ -26,7 +26,7 @@ Also see [电视剧笔记](/content/tv-shows/index.md), [读书笔记](/content/
 
 ## workflows
 
-目前主要是用 [qBittorrent setup for Debian](/content/blog/qbittorrent-setup-for-debian.en.md),[Jackett Setup](/content/blog/jackett-setup.md)载电影，买了一台 1T 的 VPS 作为 NAS。本来想用[Jellyfin 安装](/content/blog/jellyfin-setup.md)为影视中心的，但是使用后感觉客户端并不是 native 的，略卡，可能暂时还不胜用，所以索性直接上[Caddy File Server Browser with URL Scheme](/content/blog/caddy-file-server-browser-with-url-scheme/index.en.md), 然后 mac 用 [IINA](https://iina.io/)，或者[迅雷看看](https://video.xunlei.com/)（大多数剧的字幕匹配做的好一点），手机端用 [nplayer](https://nplayer.com/)或[VLC](https://www.videolan.org/) 打开流文件。目前这样的体验是最爽的。
+目前主要是用 [qBittorrent setup for Debian](@content/blog/qbittorrent-setup-for-debian.en.md),[Jackett Setup](@content/blog/jackett-setup.md)载电影，买了一台 1T 的 VPS 作为 NAS。本来想用[Jellyfin 安装](@content/blog/jellyfin-setup.md)为影视中心的，但是使用后感觉客户端并不是 native 的，略卡，可能暂时还不胜用，所以索性直接上[Caddy File Server Browser with URL Scheme](@content/blog/caddy-file-server-browser-with-url-scheme/index.en.md), 然后 mac 用 [IINA](https://iina.io/)，或者[迅雷看看](https://video.xunlei.com/)（大多数剧的字幕匹配做的好一点），手机端用 [nplayer](https://nplayer.com/)或[VLC](https://www.videolan.org/) 打开流文件。目前这样的体验是最爽的。
 
 ![Root Screenshot](./caddy-root.png)
 ![Movie Demo](./movie-demo.png)

@@ -8,6 +8,7 @@ taxonomies:
   tags:
     - Quotes
     - Random Book
+    - Story
 ---
 
 > “就改善你自己好了,”后来维特根斯坦对许多朋友说,“那是你为改善世界能做的一切。” - 《维特根斯坦传》

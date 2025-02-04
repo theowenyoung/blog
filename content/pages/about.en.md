@@ -9,6 +9,7 @@ taxonomies:
     - Notes
   tags:
     - About
+    - Pin
 ---
 
 I established a personal public [Wiki](https://wiki.owenyoung.com/) and
@@ -33,8 +34,8 @@ now I prefer to use a single binary tool, mainly because I'm scared of the
 third-party plugin ecosystem, and I want to keep my blog Zola actually provides
 a lot of capabilities, so it's possible to implement most of the ideas, for
 example, I implemented this function for sorting books by rating:
-[books](/content/pages/books.md), Indieweb capabilities:
-[Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)
+[books](@content/pages/books.md), Indieweb capabilities:
+[Now, I'm in IndieWeb?](@content/blog/indieweb.en.md)
 
 ## About Me
 
@@ -48,11 +49,11 @@ tweets, and this [wiki](https://wiki.owenyoung.com) and
 ### Programmer
 
 Full stack developer, main technology stack is javascript. Find more my projects
-[Projects](/content/projects.md)
+[Projects](@content/projects.md)
 
 ### What am I doing now?
 
-See what am I doing now at [Now](/content/pages/now.md)
+See what am I doing now at [Now](@content/pages/now.md)
 
 ## Contact Me
 

@@ -11,7 +11,7 @@ taxonomies:
     - Zola
 ---
 
-我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个[搜索页面](/content/pages/search.md)，以及首页也添加了一个搜索框。
+我觉得个人博客的一个最大的好处就是我可以把它当成任何东西的试验田，弄坏也没事，反正这只是我的个人数字花园而已。所以昨天我给博客新加了一个[搜索页面](@content/pages/search.md)，以及首页也添加了一个搜索框。
 
 我一直在这个博客里存放自己的所有公开内容，包括笔记和文章，我经常需要搜索自己的笔记，在此之前，我一直用 VSCode 在本地搜索文档。但是 VSCode 其实启动挺慢的，而且如果不在电脑边，也没法用，所以最近就研究了几种搜索方案。最终我选择了自托管 Rust 开发的[Meilisearch](https://github.com/meilisearch/meilisearch)，但是这也不是特别理想的方案，因为需要在自己的 VPS 服务器上托管，对于静态博客来说，多了一环需要动态运行的服务需要维护。但是这已经是目前最不差的方案了。
 
@@ -62,7 +62,7 @@ taxonomies:
 
 ### [Sourcegraph](https://sourcegraph.com/)
 
-我在[阮老师的科技周刊](https://github.com/ruanyf/weekly)里看到阮老师给用户的其中一个搜索选项是利用 <https://sourcegraph.com/github.com/theowenyoung/blog> 提供的对 Github 源码的免费搜索服务，我试了一下，搜索准确度非常高，但是只能链接到源文件，没法回到对应的网页，但是由于博客内容是用 markdown 写的，所以纯文本也没问题。所以，这是一个不错的替代品。我在[Search](/content/pages/search.md)也添加了一个表单搜索链接过去，你可以体验一下。
+我在[阮老师的科技周刊](https://github.com/ruanyf/weekly)里看到阮老师给用户的其中一个搜索选项是利用 <https://sourcegraph.com/github.com/theowenyoung/blog> 提供的对 Github 源码的免费搜索服务，我试了一下，搜索准确度非常高，但是只能链接到源文件，没法回到对应的网页，但是由于博客内容是用 markdown 写的，所以纯文本也没问题。所以，这是一个不错的替代品。我在[Search](@content/pages/search.md)也添加了一个表单搜索链接过去，你可以体验一下。
 
 ### [VSCode Web 版(Github1s)](https://github1s.com/theowenyoung/blog)
 
@@ -72,13 +72,13 @@ taxonomies:
 
 ### Google 网站搜索
 
-你可以在谷歌的搜索框里加上`site:www.owenyoung.com`来指定搜索对应的网站，速度极快，缺点是可能收录不全。Anyway, 我在[Search](/content/pages/search.md)也添加了一个表单搜索链接了过去，你可以体验一下。
+你可以在谷歌的搜索框里加上`site:www.owenyoung.com`来指定搜索对应的网站，速度极快，缺点是可能收录不全。Anyway, 我在[Search](@content/pages/search.md)也添加了一个表单搜索链接了过去，你可以体验一下。
 
 ## 自托管方案
 
 ### [Meilisearch](https://github.com/meilisearch/meilisearch)
 
-[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是：在服务端启动服务后，每次你的静态博客编译后，请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，客户端就可以搜索里。meili 提供了[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)让我们可以方便地一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描整个站点的 sitemap 文件，然后做一些针对网站排版的简单配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](/content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！），这个层次感是我决定采用它的最重要的原因，因为它是针对文章的各种二级，三级标题，以及内容所在的大标题做的更有细节的索引，所以在搜索结果中，可以直接从结果中点击进入到对应文章的锚点。以下是扫描全站的核心配置：
+[美丽搜索？](https://github.com/meilisearch/meilisearch)是一个用 Rust 写的美丽的 Algolia 的开源替代，我喜欢这个名字哈哈哈，美丽！Evething is ok, 就是界面相比 Algolia 还是差了那么一点点。使用流程是：在服务端启动服务后，每次你的静态博客编译后，请求 meili 的接口，把要索引的文档通通丢给他，然后他就会立刻建立索引，客户端就可以搜索里。meili 提供了[客户端 js 库](https://github.com/meilisearch/docs-searchbar.js)让我们可以方便地一键接入。我研究了美丽自己的[文档网站](https://docs.meilisearch.com/) ([源码](https://github.com/meilisearch/documentation)),发现他的接入流程更美丽，用 Github 的[Action](https://github.com/meilisearch/documentation/blob/master/.github/workflows/gh-pages-scraping.yml)去扫描整个站点的 sitemap 文件，然后做一些针对网站排版的简单配置，就可以美丽的，有层次的索引你整个网站了。本来以为建立索引挺慢的，但是后面发现 1 分钟左右就能扫描完成，可以在[Search 页面](@content/pages/search.md)体验一下这个搜索结果的层次感！（顺便说一下，这些功能 Algolia 都有哈！），这个层次感是我决定采用它的最重要的原因，因为它是针对文章的各种二级，三级标题，以及内容所在的大标题做的更有细节的索引，所以在搜索结果中，可以直接从结果中点击进入到对应文章的锚点。以下是扫描全站的核心配置：
 
 ```json
 {
@@ -104,7 +104,7 @@ taxonomies:
 ### 我的部署过程
 
 1. 先在 VPS 上搭建 Meili,见[我的 meilisearch dotfile 配置](https://github.com/theowenyoung/dotfiles/blob/main/modules/meilisearch/meilisearch.yml)，并不复杂，是我最喜欢的单一二进制文件，无依赖。
-2. 在 Github Actions 的中添加步骤，在网站更新后，立刻爬取整个网站.见[build.yml](https://github.com/theowenyoung/blog/blob/ee82d2d783c3b08b98862a7700a6a29a301e164e/.github/workflows/build.yml#L20-L37) 以及[爬取的配置文件](https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json),得益于我上次在[Now, I'm in IndieWeb?](/content/blog/indieweb.en.md)中给网站的结构添加了很多有用的标记，所以很好定位到我的一级标题，二级标题，分类等, 我在配置中排除了列表页面，让他只爬取文章页。
+2. 在 Github Actions 的中添加步骤，在网站更新后，立刻爬取整个网站.见[build.yml](https://github.com/theowenyoung/blog/blob/ee82d2d783c3b08b98862a7700a6a29a301e164e/.github/workflows/build.yml#L20-L37) 以及[爬取的配置文件](https://github.com/theowenyoung/blog/blob/main/meilisearch-docs-scraper-config.json),得益于我上次在[Now, I'm in IndieWeb?](@content/blog/indieweb.en.md)中给网站的结构添加了很多有用的标记，所以很好定位到我的一级标题，二级标题，分类等, 我在配置中排除了列表页面，让他只爬取文章页。
 3. 在前端网页引入相应的 [css](https://github.com/theowenyoung/blog/blob/37de4f670b3b2d28a77e39b1804ce986c99f0a6a/templates/search.html#L6-L8) 和 [js 脚本](https://github.com/theowenyoung/blog/blob/37de4f670b3b2d28a77e39b1804ce986c99f0a6a/templates/search.html#L71-L85)
 
 Over! 其实说的简单，但是我在建立索引的过程中多次调整了页面中 tag 的层级和 class 以便机器人可以更好的定位到需要的内容（面向机器人编程），最终打磨出来的效果就是：
@@ -113,7 +113,7 @@ Over! 其实说的简单，但是我在建立索引的过程中多次调整了�
 
 搜索页面的模版文件[在这里](https://github.com/theowenyoung/blog/blob/main/templates/search.html)
 
-升级的时候可能比较麻烦，我通常就是直接删除数据库，反正可以重新构建，跑一下CI就可以了。
+升级的时候可能比较麻烦，我通常就是直接删除数据库，反正可以重新构建，跑一下 CI 就可以了。
 
 升级后需要重新获取 admin key:
 
@@ -133,4 +133,4 @@ make meilikey
 
 我目前是把 Meili 部署在我的一个 4g 内存位于日本的服务器，这台服务器还部署了我很多其他的东西，如果你也想要接入美丽搜索，但是不想自己部署服务端（我懂），可以邮件或者私信我，我告诉你我的 Master Key，然后你也可以利用<https://meilisearch.owenyoung.com/>建立你的博客索引了。但是这是玩具产品，不能保证可用性，后续也可能被替换，但是终止前我会提前通知你～
 
-> 更新：我目前把 Meilisearch 从我的 VPS 迁移到免费的[Mogenius](https://mogenius.com/home),更省心，这样就算我弄乱 VPS 的情况下，搜索也不会轻易下线，我也写了[一篇文章](/content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md)记录整个过程
+> 更新：我目前把 Meilisearch 从我的 VPS 迁移到免费的[Mogenius](https://mogenius.com/home),更省心，这样就算我弄乱 VPS 的情况下，搜索也不会轻易下线，我也写了[一篇文章](@content/blog/adding-search-to-zola-blog-with-meilisearch-deployed-on-mogenius/index.en.md)记录整个过程

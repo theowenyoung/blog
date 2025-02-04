@@ -18,7 +18,7 @@ extra:
 
 最好的部分是前言。但它不是由作者写的。也许我应该读一些写前言的哥们写的书。
 
-另外摘抄了一些英文原文在[English Version](/content/blog/books/12-rules-for-life.en.md)
+另外摘抄了一些英文原文在[English Version](@content/blog/books/12-rules-for-life.en.md)
 
 <!-- more -->
 

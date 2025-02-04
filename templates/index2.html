@@ -1,0 +1,124 @@
+{% extends "base.html" -%}
+{% block before_meta %}
+  {% if config.extra.meilisearch_url %}
+    {%- if config.mode=="build" -%}
+    {%- set_global meilicss = load_data(path="static/site/styles/docs-searchbar.min.css") -%}
+    {%- else -%}
+      <link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript>
+        <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
+      </noscript>
+    {%- endif -%}
+  {% endif %}
+{% endblock before_meta %}
+{% block post_meta %}
+  {%- if config.mode=="build" -%}
+    <style>{{meilicss | safe}}</style>
+  {%- endif -%}
+{% endblock post_meta %}
+
+{% block main -%}
+  {% set_global note_pages = [] -%}
+  {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+  {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+  {% for cat in all_categories.items -%}
+    {% if cat.name == "Notes" -%}
+      {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+    {% endif -%}
+  {% endfor -%}
+  <div class="index-page py">
+
+      {% set index_first = get_page(path="pages/index_first"~file_lang_path~".md") %}
+      <div class="index-block">
+        {{ index_first.content | safe }}
+      </div>
+
+      <details open class="py">
+      <summary class="by">{{ trans(key="label_thoughts_title",lang=lang) | markdown(inline=true) | safe }}<a href="#thoughts" id="thoughts" class="zola-anchor">🔗</a>
+      </summary>
+      {% set thoughts_page = get_page(path="thoughts" ~ file_lang_path ~ ".md",lang=lang) %}
+      <div class="articles">
+        {{ thoughts_page.summary | safe }}
+        <p class="no-border">{{ trans(key="label_all_thoughts",lang=lang) | markdown(inline=true) | safe }}</p>
+      </div>
+      </details>
+      <details open class="py">
+        <summary class="by ">{{ trans(key="label_new_posts_list_title",lang=lang) | markdown(inline=true) | safe }}:
+      </summary>
+      <div class="articles h-feed hfeed">
+        {% for page in all_blog_pages.pages | slice(start=0,end=3) %}
+          {{ macro::post_max(page=page,index=loop.index) }}
+        {% endfor %}
+      </div>
+      </details>
+      {%if all_blog_pages.pages | slice(start=3) | length > 0%}
+        <details class="py">
+          <summary class="by text">{{ trans(key="label_all_posts",lang=lang) | markdown(inline=true) | safe }}</summary>
+          <ul>
+            {% for page in all_blog_pages.pages | slice(start=3) %}
+            <li>{{ macro::post_min(page=page) }}</li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+                  <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+
+
+      <details open class="py">
+      <summary class="by">{{ trans(key="label_quotes_title",lang=lang) | markdown(inline=true) | safe }}<a href="#quotes" id="quotes" class="zola-anchor">🔗</a>
+      </summary>
+      {% set quotes_page = get_page(path="quotes" ~ file_lang_path ~ ".md",lang=lang) %}
+      <div class="articles">
+        {{ quotes_page.summary | safe }}
+        <p class="no-border">{{ trans(key="label_all_quotes",lang=lang) | markdown(inline=true) | safe }}</p>
+      </div>
+      </details>
+      {% set all_categories = get_taxonomy(kind="categories",lang=lang) -%}
+            {% set_global note_pages = [] -%}
+            {% for cat in all_categories.items -%}
+              {% if cat.name == "Notes" -%}
+                {% set_global note_pages = cat.pages | sort(attribute="updated") | reverse -%}
+              {% endif -%}
+      {% endfor -%}
+
+            <div class="by">{{ trans(key="label_latest_notes_title",lang=lang) | markdown(inline=true) | safe }}</div>
+            <div class="articles pb-lg">
+              <ul class="root-ul">
+                {% for page in note_pages | slice(end=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                {% endfor %}
+              </ul>
+              {%if note_pages | slice(start=10) | length > 0%}
+              <details>
+                <summary>{{ trans(key="label_toggle_more",lang=lang) }}</summary>
+                <ul>
+                  {% for page in note_pages | slice(start=10) %}
+                  <li>{{ macro::post_min(page=page) }}</li>
+                  {% endfor %}
+                </ul>
+              </details>
+              {% endif %}
+            </div>
+
+    </div>
+
+  {% endblock main -%}
+  {% block before_body_end %}
+    {% if config.extra.meilisearch_url %}
+      <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          docsSearchBar({
+            hostUrl: '{{ config.extra.meilisearch_url | safe }}',
+            apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
+            indexUid: 'owen-blog',
+            inputSelector: '#search-bar-input',
+            meilisearchOptions: {
+              limit: 10
+            },
+            debug: false, // Set debug to true if you want to inspect the dropdown
+          })
+        });
+      </script>
+    {% endif %}
+  {% endblock before_body_end %}

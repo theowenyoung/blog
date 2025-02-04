@@ -4,4 +4,4 @@ path: books
 template: books.html
 ---
 
-按 rating 排序
+我所有的读书笔记。

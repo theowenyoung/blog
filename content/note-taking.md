@@ -6,8 +6,6 @@ drafts: true
 taxonomies:
   categories:
     - Notes
-  tags:
-    -
 ---
 
 关于笔记，笔记工具

@@ -12,16 +12,16 @@ title: 侧边栏
 
 - [关于我](/about/)
 - [现在在做的事](/now/)
-- [博客更新日志](/content/changelog/index.en.md)
+- [博客更新日志](@content/changelog/index.en.md)
 
 ## 导航
 
-- [搜索本站](/content/pages/search.md)
-- [图书阅读资源](/content/books-guide.md)
-- [探索互联网上高质量的内容](/content/sources.md)
+- [搜索本站](@content/pages/search.md)
+- [图书阅读资源](@content/books-guide.md)
+- [探索互联网上高质量的内容](@content/sources.md)
 - [读书笔记](/blog/books/)
-- [短想法](/content/thoughts.md)
-- [收集发人深省的话](/content/quotes.md)
+- [短想法](@content/thoughts.md)
+- [收集发人深省的话](@content/quotes.md)
 - [每日阅读分享](/categories/journal/)
 - [英文文章](/en/)
 - [所有文章存档](/archive/)

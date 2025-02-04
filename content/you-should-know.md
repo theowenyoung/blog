@@ -48,7 +48,7 @@ taxonomies:
   的一部分，每个站点都有一个共同的导航栏;它包含指向上一个站点和下一个站点的链接。通过重复选择下一个（或上一个），用户最终将到达他们开始的站点;这就是术语
   Webring 的起源。
 - [Ex Muslims](https://en.wikipedia.org/wiki/Ex-Muslims) -
-  前穆斯林是那些被培养成穆斯林或皈依伊斯兰教，后来放弃宗教的人。[这里有我从里面摘抄的内容](/content/blog/articles/ex-muslims.md)
+  前穆斯林是那些被培养成穆斯林或皈依伊斯兰教，后来放弃宗教的人。[这里有我从里面摘抄的内容](@content/blog/articles/ex-muslims.md)
   - [倒退的左翼自由主义](https://en.wikipedia.org/wiki/Regressive_left)
   - [上帝并不伟大（书）](https://en.wikipedia.org/wiki/God_Is_Not_Great)
   - [邪恶问题](https://en.wikipedia.org/wiki/Problem_of_evil#cite_note-2009Meister-39)
