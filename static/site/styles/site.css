@@ -172,6 +172,7 @@ html {
   /* --colors-quote-background: rgb(0 0 0/3%); */
   --colors-quote-background: hsla(37, 17%, 85%, 0.5);
   --colors-quote-hover-background: rgba(255, 255, 255, 0.7);
+  --inline-widget-hover-bg: #e6e6e8;
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
@@ -1040,21 +1041,57 @@ ul.text-sm:lang(en) {
 }
 .story {
   background-color: var(--colors-secondary-background);
-  width: 300px;
-  height: 250px;
+  width: 280px;
+  height: 300px;
   border-radius: 24px;
   font-size: 13px;
   padding: 16px;
   overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
 }
-.story h1,
-.story h2,
-.story h3 {
-  font-size: 16px;
+.story:hover {
+  background-color: var(--inline-widget-hover-bg);
+}
+.story-wrapper {
+  position: relative;
+}
+
+.story-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.story-content {
+  position: relative;
+  z-index: 2;
+}
+
+.story h1 {
+  font-size: 18px;
   color: var(--colors-text);
   font-weight: 500;
   margin-bottom: 8px;
   padding: 6px 0;
+}
+.story h2,
+.story h3 {
+  font-size: 1em;
+  color: var(--colors-text);
+  font-weight: 500;
+  margin-bottom: 8px;
+  padding: 6px 0;
+}
+
+.story blockquote {
+  background-color: unset;
+  margin: 0;
+  padding: 0;
 }
 .story-content {
   color: var(--colors-text-light);

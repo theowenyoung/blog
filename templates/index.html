@@ -48,28 +48,20 @@
              </div>
           </div>
         </div>
-        {% for page in pinned_pages %}
+        {% for page in pinned_pages | concat(with=story_pages) %}
+            {% set raw_content = load_data(path=page.relative_path) %}
+            {% set data = raw_content | split(pat='---')  %}
+            {% set frontmatter = '---' ~ data[1] ~ '---' %}
+            {% set raw_markdown = raw_content | replace(from=frontmatter, to='') | trim %}
             <div>
-              <div class="story">
-                 <div class="story-header">
-                   <h2 class="story-title">{{ page.title | safe }}</h2>
-                   <div class="story-content">
-                     {{ page.content | spaceless | striptags | truncate(length=200) }}
+              <div class="story-wrapper">
+                <div class="story">
+                   <div class="story-header">
+                     <h1 class="story-title">{{ page.title | safe }}</h1>
+                     <div class="story-content">{{ raw_markdown | split(pat="\n") | slice(end=15) | join(sep="\n") | markdown | safe }}</div>
                    </div>
-                 </div>
-              </div>
-            </div>
-        {% endfor %}
-
-        {% for page in story_pages %}
-            <div>
-              <div class="story">
-                 <div class="story-header">
-                   <h2 class="story-title">{{ page.title | safe }}</h2>
-                   <div class="story-content">
-                     {{ page.content | spaceless | striptags | truncate(length=200) }}
-                   </div>
-                 </div>
+                </div>
+                <a href="{{ page.permalink }}" class="story-link" aria-label="{{ page.title }}"></a>
               </div>
             </div>
         {% endfor %}
