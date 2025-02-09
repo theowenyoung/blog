@@ -1,5 +1,5 @@
 {% extends "base.html" -%}
-{% block main -%}
+{% block root -%}
 {% if paginator %}
   {% set_global section_pages = paginator.pages %}
   {% set_global section_content = section.content %}
@@ -9,13 +9,26 @@
   {% set_global section_pages = section_pages | reverse %}
   {% set_global section_content = book_section.content %}
 {% endif %}
-<div class="books-page">
-  <p>
+<div class="books-page ">
+  <div class="feed-entry">
+    <div class="article-wrapper">
+      <div class="page-header pb">
+      {% block breadcrumbs -%}
+        <div class="post-header-breadcrumbs">
+          <a class="" href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          Books
+        </div>
+      {% endblock breadcrumbs -%}
+    </div>
+
     {{ section_content | safe }}
-  </p>
-  <div>
+    </div>
+  </div>
     {% for page in section_pages %}
-      <article>
+      <article class="h-entry hentry feed-entry">
+            <div class="article-wrapper">
+
         <h2 class="no-border pb-sm">
           <a title="{{ page.title }}" class="no-underline" href="{{ page.permalink }}">{{ page.title }}</a>
         </h2>
@@ -41,12 +54,11 @@
           {% endfor %}
         </p>
       {% endif %}
+            </div>
       </article>
     {% endfor %}
   {% if paginator %}
     {{ macro::paginator(ref=paginator, extra=config.extra) }}
   {% endif %}
-  </div>
-{{ macro::webmentions(backlinks=[]) }}
 </div>
-{% endblock main -%}
+{% endblock root -%}
