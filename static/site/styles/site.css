@@ -1059,25 +1059,39 @@ ul.text-sm:lang(en) {
   position: relative;
 }
 
+.story-content {
+  position: relative;
+  color: var(--colors-text-light);
+}
+
+/* 内容区域的链接样式 */
+.story-content a {
+  color: var(--colors-text);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  font-weight: 500;
+  border-bottom: 1px solid var(--colors-divider);
+  opacity: 0.8;
+}
+
+.story-content a:hover {
+  color: var(--colors-primary);
+  opacity: 1;
+  border-bottom-color: var(--colors-primary);
+}
+
+/* 整个卡片的链接 */
 .story-link {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 4;
+  z-index: 1;
 }
 
-.story-content {
-  position: relative;
-  z-index: 2;
-}
-
-.story-wrapper:hover .story {
-  background-color: var(--inline-widget-hover-bg);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
+/* 渐变遮罩 */
 .story::after {
   content: "";
   position: absolute;
@@ -1087,21 +1101,47 @@ ul.text-sm:lang(en) {
   height: 100px;
   background: linear-gradient(
     to bottom,
-    transparent 0%,
+    rgba(249, 247, 244, 0) 0%,
     var(--colors-secondary-background) 90%
   );
   pointer-events: none;
-  z-index: 3;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  z-index: 5;
+}
+
+/* 标题样式 */
+.story-title {
+  font-size: 18px;
+  color: var(--colors-text);
+  font-weight: 500;
+  margin-bottom: 8px;
+  padding: 6px 0;
+  position: relative;
+}
+
+/* hover 状态 */
+.story-wrapper:hover .story {
+  background-color: var(--inline-widget-hover-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .story-wrapper:hover .story::after {
   background: linear-gradient(
     to bottom,
-    transparent 0%,
+    rgba(230, 230, 232, 0) 0%,
     var(--inline-widget-hover-bg) 90%
   );
+}
+
+/* 链接的层级关系 */
+.story a {
+  position: relative;
+  z-index: 2;
+}
+
+.story a:hover {
+  z-index: 6;
 }
 
 .story h1,
