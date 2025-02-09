@@ -1035,10 +1035,11 @@ ul.text-sm:lang(en) {
 }
 .index-header {
   margin: 0 auto;
-  padding: 40px 40px;
+  padding: 40px 0px 40px 0px;
 }
 .stories {
   overflow-x: auto;
+  padding: 0 40px 40px 40px;
 }
 .story {
   background-color: var(--colors-secondary-background);
@@ -1049,7 +1050,9 @@ ul.text-sm:lang(en) {
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 .story-wrapper {
@@ -1072,6 +1075,7 @@ ul.text-sm:lang(en) {
 
 .story-wrapper:hover .story {
   background-color: var(--inline-widget-hover-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .story::after {
@@ -1080,25 +1084,28 @@ ul.text-sm:lang(en) {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 120px;
+  height: 100px;
   background: linear-gradient(
     to bottom,
-    transparent,
-    var(--colors-secondary-background) 85%
+    transparent 0%,
+    var(--colors-secondary-background) 90%
   );
   pointer-events: none;
   z-index: 3;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .story-wrapper:hover .story::after {
   background: linear-gradient(
     to bottom,
-    transparent,
-    var(--inline-widget-hover-bg) 85%
+    transparent 0%,
+    var(--inline-widget-hover-bg) 90%
   );
 }
 
-.story h1 {
+.story h1,
+.story-title {
   font-size: 18px;
   color: var(--colors-text);
   font-weight: 500;

@@ -57,7 +57,7 @@
               <div class="story-wrapper">
                 <div class="story">
                    <div class="story-header">
-                     <h1 class="story-title">{{ page.title | safe }}</h1>
+                     <div class="story-title">{{ page.title | safe }}</div>
                      <div class="story-content">{{ raw_markdown | split(pat="\n") | slice(end=15) | join(sep="\n") | markdown | safe }}</div>
                    </div>
                 </div>
