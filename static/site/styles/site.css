@@ -172,7 +172,7 @@ html {
   /* --colors-quote-background: rgb(0 0 0/3%); */
   --colors-quote-background: hsla(37, 17%, 85%, 0.5);
   --colors-quote-hover-background: rgba(255, 255, 255, 0.7);
-  --inline-widget-hover-bg: #e6e6e8;
+  --inline-widget-hover-bg: #e6e6e8; /* Twitter 的 hover 背景色 */
   --colors-blue: #1ca9c9;
   --colors-secondary: #14213d;
   --colors-surface: rgba(0, 0, 0, 0.04);
@@ -202,6 +202,7 @@ html {
     noto color emoji;
   font-feature-settings: normal;
   font-variation-settings: normal;
+  --white: 0 0% 100%;
 }
 
 /* Adds dark mode */
@@ -1043,7 +1044,6 @@ ul.text-sm:lang(en) {
   background-color: var(--colors-secondary-background);
   width: 280px;
   height: 300px;
-  border-radius: 24px;
   font-size: 13px;
   padding: 16px;
   overflow: hidden;
@@ -1051,9 +1051,7 @@ ul.text-sm:lang(en) {
   position: relative;
   transition: background-color 0.2s ease;
 }
-.story:hover {
-  background-color: var(--inline-widget-hover-bg);
-}
+
 .story-wrapper {
   position: relative;
 }
@@ -1064,12 +1062,40 @@ ul.text-sm:lang(en) {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 4;
 }
 
 .story-content {
   position: relative;
   z-index: 2;
+}
+
+.story-wrapper:hover .story {
+  background-color: var(--inline-widget-hover-bg);
+}
+
+.story::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--colors-secondary-background) 85%
+  );
+  pointer-events: none;
+  z-index: 3;
+}
+
+.story-wrapper:hover .story::after {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--inline-widget-hover-bg) 85%
+  );
 }
 
 .story h1 {
