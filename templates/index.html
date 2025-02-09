@@ -31,23 +31,6 @@
 <div class="wrapper">
     <header class="index-header">
       <div class="stories is-flex">
-        <div>
-          <div class="story">
-             <div class="story-header">
-               <div class="story-content">
-                 <h1><a href="/">Owen's Blog</a></h1>
-                 <ul>
-                   <li><a href="/about">RSS</a></li>
-                   <li><a href="/tags">Categories</a></li>
-                   <li><a href="/categories">Archive</a></li>
-                   <li><a href="/about">Twitter</a></li>
-                   <li><a href="/tags">即刻</a></li>
-                   <li><a href="/categories">Changelog</a></li>
-                 </ul>
-               </div>
-             </div>
-          </div>
-        </div>
         {% for page in pinned_pages | concat(with=story_pages) %}
             {% set raw_content = load_data(path=page.relative_path) %}
             {% set data = raw_content | split(pat='---')  %}

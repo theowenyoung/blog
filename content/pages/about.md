@@ -2,7 +2,7 @@
 title: 关于
 path: about/
 date: 2022-03-29
-updated: 2023-12-26
+updated: 2025-02-08
 template: about.html
 taxonomies:
   categories:
