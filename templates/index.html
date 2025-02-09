@@ -20,7 +20,7 @@
 {% block root %}
 
   {% set_global note_pages = [] -%}
-  {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
+  {% set_global all_blog_pages = get_section(path="_index"~file_lang_path~".md") -%}
   {% set_global note_pages_term = get_taxonomy_term(kind="categories", term="Notes")  %}
   {% set_global note_pages =  note_pages_term.pages | sort(attribute="updated") | reverse %}
   {% set_global pinned_pages_term = get_taxonomy_term(kind="tags", term="Pin")  %}

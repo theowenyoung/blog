@@ -4,6 +4,7 @@ compile_sass = false
 default_language = "zh"
 description = "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向。"
 generate_feeds = true
+minify_html = true
 taxonomies = [
   { name = "tags", feed = true, paginate_by = 50 },
   { name = "categories", feed = true, paginate_by = 50 },
@@ -24,6 +25,8 @@ external_links_no_follow = true
 # Whether to set rel="noreferrer" for all external links
 external_links_no_referrer = true
 smart_punctuation = true
+# wait https://github.com/getzola/zola/issues/2679
+lazy_async_image = false
 
 [extra]
 author = "Owen Young"
