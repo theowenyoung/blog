@@ -9,7 +9,7 @@ taxonomies:
     - Debian
 ---
 
-> For linux common commands, see [开发技巧收藏](@content/dev-tips/index.md#linux-common-commands)
+> For linux common commands, see [开发技巧收藏](@/dev-tips/index.md#linux-common-commands)
 
 <!-- more -->
 
@@ -25,7 +25,7 @@ taxonomies:
    apt install -y sudo
    ```
 
-3. Open BBR: [Open BBR for Debian](@content/blog/open-bbr-for-debian.en.md)
+3. Open BBR: [Open BBR for Debian](@/blog/open-bbr-for-debian.en.md)
 
 4. Use ssh key login instead of password, for more details see [How To Configure SSH Key-Based Authentication on a Linux Server](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
@@ -58,5 +58,5 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub username@remote_host
 
 You might want to read also:
 
-- [Shadowsocks Rust Setup for Debian](@content/blog/shadowsocks-rust-setup-for-debian.en.md)
-- [Caddy2 Setup for Debian](@content/blog/caddy2-setup-for-debian.en.md)
+- [Shadowsocks Rust Setup for Debian](@/blog/shadowsocks-rust-setup-for-debian.en.md)
+- [Caddy2 Setup for Debian](@/blog/caddy2-setup-for-debian.en.md)

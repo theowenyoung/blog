@@ -16,7 +16,7 @@ taxonomies:
 
 读书又比阅读文章要好吗？
 
-最近在用[遛狗的时间](@content/blog/reading-while-walking-dogs.md)读一本叫《打造第二大腦》的书，读完之后，我对此有了新的想法。
+最近在用[遛狗的时间](@/blog/reading-while-walking-dogs.md)读一本叫《打造第二大腦》的书，读完之后，我对此有了新的想法。
 
 <!-- more -->
 

@@ -1,7 +1,7 @@
 ---
 title: 从这里开始...
 path: best/
-date: 2022-03-29
+date: 2025-02-09
 updated: 2025-02-09
 taxonomies:
   categories:
@@ -11,7 +11,7 @@ taxonomies:
     - Pin
 ---
 
-- [探索互联网上高质量的内容](/sources/)
+- [探索互联网上高质量的内容](@/sources.md)
 - [收集发人深省的话](/quotes/)
 - [我的短想法](/thoughts/)
 - [收集一些给人灵感的东西](/inspires/)

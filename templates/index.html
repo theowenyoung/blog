@@ -17,7 +17,7 @@
   {%- endif -%}
 {% endblock post_meta %}
 
-{% block main %}
+{% block root %}
 
   {% set_global note_pages = [] -%}
   {% set_global all_blog_pages = get_section(path="blog/_index"~file_lang_path~".md") -%}
@@ -58,4 +58,4 @@
 </div>
 
 
-{% endblock main %}
+{% endblock root %}

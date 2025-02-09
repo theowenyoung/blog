@@ -181,7 +181,7 @@ html {
   --arrow-file: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="128" viewBox="0 0 1000 128" preserveAspectRatio="none"><path fill="%23fff" d="M0 0l500 64 500-64v64l-500 64L0 64z"/></svg>');
   --base: 0.8em;
   --arrow-height: calc(2 * var(--base));
-  --width: 960px;
+  --max-width: 960px;
   --grid-gutter: var(--base);
   --grid-height: calc(2 * var(--base));
 
@@ -886,14 +886,21 @@ ul.text-sm:lang(en) {
   padding-right: 1.4em;
 }
 .header {
-  padding-top: 1.4em;
-  max-width: 74em;
+  padding-top: 1.4rem;
+  max-width: vare(--max-width);
   margin: 0 auto;
 }
-.post-header {
+.article-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1em 0 2.5em 0;
 }
 .header-inner {
   max-width: 52em;
+}
+.pagination {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 .mt {
   margin-top: 1.4em;
@@ -997,12 +1004,18 @@ ul.text-sm:lang(en) {
 .feed-entry {
   padding-top: 32px;
 }
-
-.article-wrapper {
-  max-width: 960px;
+.root-wrapper {
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 40px 0;
 }
+
+.page-body {
+  padding: 0;
+}
+.post-header h1 {
+  padding: 0.5em 0 0 0;
+}
+
 .feed-entry:nth-child(even) {
   background-color: var(--colors-secondary-background);
   position: relative;
@@ -1179,4 +1192,14 @@ ul.text-sm:lang(en) {
 }
 .stories {
   gap: 16px;
+}
+
+.post-header-breadcrumbs,
+.post-header-breadcrumbs a:link,
+.post-header-breadcrumbs a:visited {
+  color: var(--colors-muted);
+}
+
+.post-header-breadcrumbs a:hover {
+  color: var(--colors-primary);
 }

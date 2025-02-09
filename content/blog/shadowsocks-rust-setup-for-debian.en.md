@@ -11,7 +11,7 @@ taxonomies:
 
 Shadowsocks Repo: <https://github.com/shadowsocks/shadowsocks-rust>
 
-Setup rust first: [Debian 初始化 Rust 环境](@content/blog/rust-environment-setup-for-debian.md)
+Setup rust first: [Debian 初始化 Rust 环境](@/blog/rust-environment-setup-for-debian.md)
 
 <!-- more -->
 

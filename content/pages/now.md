@@ -14,7 +14,7 @@ taxonomies:
     - Story
 ---
 
-> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](@content/pages/about.md)
+> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](@/pages/about.md)
 > 了解更多。
 
 <!-- more -->
@@ -32,7 +32,7 @@ taxonomies:
     - 低价卖东西，自己能接受，但是如何对待员工？
       - 成本最小化？
   - 开源+云托管
-  - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～ [关于页面](@content/pages/about.md) 有我的联系方式.
+  - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～ [关于页面](@/pages/about.md) 有我的联系方式.
   - 这里有几个相关的讨论：
     - <https://gavinhoward.com/2023/12/is-source-available-really-that-bad/>
     - <https://drewdevault.com/2023/12/26/2023-12-26-Prusa-is-floundering.html>
@@ -83,4 +83,4 @@ taxonomies:
 
 ## Projects
 
-查看所有 [Projects](@content/projects.md)
+查看所有 [Projects](@/projects.md)

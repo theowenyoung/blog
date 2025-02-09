@@ -145,8 +145,12 @@
   <body>
     <div id="top"></div>
     <div id="root">
-
-              {% block main %}{% endblock main %}
+      {% block root %}
+        <div class="root-wrapper">
+          {% block header %}{% endblock header %}
+          {% block main %}{% endblock main %}
+        </div>
+      {% endblock root %}
     </div>
     <div id="bottom"></div>
     {% block before_body_end -%}

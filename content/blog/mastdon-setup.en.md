@@ -21,7 +21,7 @@ See [nvm](https://github.com/nvm-sh/nvm)
 
 3. Install postgres
 
-[Postgres Setup for Debian](@content/blog/postgres-setup-for-debian.en.md)
+[Postgres Setup for Debian](@/blog/postgres-setup-for-debian.en.md)
 
 4. Install redit
 

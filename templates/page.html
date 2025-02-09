@@ -11,7 +11,7 @@
   {% block detail_meta -%}
     <header class="header post-header" id="overview">
        {% block breadcrumbs -%}
-        <div class="pb">
+        <div class="pb post-header-breadcrumbs">
           <a class="" href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
           <span class="divider">&nbsp;&gt;&nbsp;</span>
           <a class="" href="{{ lang_prefix_path }}categories/">All Categories</a>
@@ -35,7 +35,6 @@
           <p class="p-note">{{ config.extra.bio }}</p>
         </div>
       </div>
-      {% block detail_meta_slot %}{% endblock detail_meta_slot %}
     </header>
   {% endblock detail_meta -%}
 {% endblock header %}
@@ -102,7 +101,10 @@
       <iframe src="https://embeds.beehiiv.com/482231fd-f9a5-4134-8237-6f00fdadf0e1?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
       <p class="text-sm mt mb-lg">该博客没有评论系统，我正在实验有意义的讨论是否更易在社群中发生，不知道为什么，人在社群中，似乎会有更好的行为规范。然后如果有高质量的讨论，我会手动再精选到原文。为此，我建立了一个 <a target="_blank" href="https://t.me/+c2drnwCso55mMjBh">Telegram 讨论群组</a>，你可以在里面讨论这篇文章，<a href="#" id="copyButton">点此复制文章标题和链接</a>&nbsp;<span id="copyStatus"></span>。</p>
 
+
   </div>
+        {% block detail_meta_slot %}{% endblock detail_meta_slot %}
+
 </div>
 {% endblock main %}
 {% block sidebar %}

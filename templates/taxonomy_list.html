@@ -3,7 +3,7 @@
 {% block header %}
     <div class="page-header pt">
       {% block breadcrumbs -%}
-        <div class="">
+        <div class="post-header-breadcrumbs">
           <a class="" href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
           <span class="divider">&nbsp;&gt;&nbsp;</span>
           All {{ taxonomy.name }}

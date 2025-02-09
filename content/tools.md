@@ -307,7 +307,7 @@ taxonomies:
 ## 字幕工具
 
 - [ass to srt](https://sorz.github.io/asstosrt-wasm/) - ass to srt converter
-- [Bazarr Setup](@content/blog/bazarr-setup.en.md) - Subtitle manager
+- [Bazarr Setup](@/blog/bazarr-setup.en.md) - Subtitle manager
 - [subtitles translate](https://translate-s ubtitles.com/) - Google translate
   subtitles
 - [Subhd](https://subhd.tv/) - Best Chinese subtitle
