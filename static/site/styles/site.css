@@ -1203,3 +1203,10 @@ ul.text-sm:lang(en) {
 .post-header-breadcrumbs a:hover {
   color: var(--colors-primary);
 }
+.feed-entry-thought .p-content {
+  font-size: 1.25em;
+}
+
+.feed-entry-quote .p-content {
+  font-size: 1.5em;
+}

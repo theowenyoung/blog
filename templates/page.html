@@ -5,7 +5,7 @@
   {%- set_global lang_prefix_path = "/"~lang~"/" -%}
 {%- endif -%}
 {% block post_meta -%}
-<meta name="title" content="{{ page.title }}">
+<meta name="title" content="{{ title }}">
 {% endblock post_meta -%}
 {% block header %}
   {% block detail_meta -%}
@@ -23,12 +23,12 @@
           <span class="divider">&nbsp;&gt;&nbsp;</span>
           <a class="category no-underline" href="{{ get_taxonomy_url(kind="kinds", name=page.taxonomies.kinds[0]) }}">{{ page.taxonomies.kinds[0] }}</a>
           {% endif %}
-          <span class="divider">&nbsp;&gt;&nbsp;</span>
-          {{ page.title }}
         </div>
       {% endblock breadcrumbs %}
       <div>
-        <h1 class="no-border pt4 p-name entry-title" >{{ page.title }}</h1>
+        {% if page.title %}
+        <h1 class="no-border pt4 p-name entry-title" >{{ title }}</h1>
+        {% endif %}
         <div class="display-none p-author h-card vcard">
           <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
           <a class="p-name u-url url u-uid" href="{{ config.extra.indieweb_url }}">{{ config.extra.author }}</a>
@@ -41,6 +41,7 @@
 {% block main %}
 <div class="h-entry hentry detail-page">
 <div class="page-body">
+
     <div class="display-none p-summary">
       {{ page.summary | safe }}
     </div>
@@ -121,7 +122,7 @@
 <script>
   document.getElementById('copyButton').addEventListener('click', function(event) {
     event.preventDefault();
-    var text = '《{{ page.title }}》 ' + window.location.href;
+    var text = '《{{ page.title | default(value="test") }}》 ' + window.location.href;
     var textArea = document.createElement('textarea');
     textArea.textContent = text;
     document.body.append(textArea);

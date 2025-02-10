@@ -6,26 +6,40 @@
   {% endif %}
 {% endmacro get_reading_time %}
 {% macro post_max(page,index) %}
-  <article class="h-entry hentry feed-entry ">
+
+  {%- set thought_class ="" -%}
+  {% if page.taxonomies and page.taxonomies.tags and page.taxonomies.tags is  containing("Thought") %}
+    {%- set thought_class = " feed-entry-thought" -%}
+  {% endif %}
+
+  {%- set quote_class ="" -%}
+  {% if page.taxonomies and page.taxonomies.tags and page.taxonomies.tags is  containing("Quote") %}
+    {%- set quote_class = " feed-entry-quote" -%}
+  {% endif %}
+<article class="h-entry hentry feed-entry{{ thought_class }}{{quote_class}}">
   <div class="article-wrapper">
     <div class="display-none p-author h-card vcard">
       <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
-      <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.extra.author }}</a>
+      <a class="p-name u-url url" href="{{ config.base_url }}">{{ config.author }}</a>
       <p class="p-note">{{ config.extra.bio }}</p>
     </div>
+    {% if page.title %}
     <h2 class="no-border pb-sm entry-title">
       <a class="no-underline  u-url p-name entry-title" rel="bookmark" href="{{ page.permalink }}">{{ page.title }}</a> <a href="#index-{{index}}" id="index-{{index}}" class="zola-anchor"></a>
     </h2>
-    {% if page.summary -%}
-      <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
-      <p><a rel="bookmark" href="{{ page.permalink | safe }}#continue-reading">
-       &rarr;&nbsp; {{ trans(key="label_read_more",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
-      </a></p>
-    {% elif page.description -%}
-      <p class="p-summary entry-summary">{{ page.description }}</p>
-    {% elif page.content -%}
-      {{ page.content | safe }}
-    {% endif -%}
+    {% endif %}
+    <div class="p-content">
+      {% if page.summary -%}
+        <div class="p-summary entry-summary">{{ page.summary | safe }}</div>
+        <p><a rel="bookmark" href="{{ page.permalink | safe }}#continue-reading">
+         &rarr;&nbsp; {{ trans(key="label_read_more",lang=lang) }}: {{ macro::get_reading_time(minutes=page.reading_time) }} min
+        </a></p>
+      {% elif page.description -%}
+        <p class="p-summary entry-summary">{{ page.description }}</p>
+      {% elif page.content -%}
+        {{ page.content | safe }}
+      {% endif -%}
+    </div>
     <div class="muted item-footer">
       <a title="{{ page.date | date(format="%Y-%m-%d") }}" class="no-underline u-url p-name entry-title" rel="bookmark" href="{{ page.permalink | safe }}">
         <time class="dt-published published" datetime="{{ page.date }}">{{ page.date | date(format="%Y.%m.%d") }}</time>
@@ -42,7 +56,7 @@
   </article>
   {% endmacro post_max %}
   {% macro post_min(page) %}
-    <a href="{{ page.permalink }}">{{ page.title }}</a>
+    <a href="{{ page.permalink }}">{{ page.title | default(value= page.content | striptags | trim | split(pat="\n") | first |  spaceless | truncate(length=70) ) }}</a>
     <span class="muted item-footer">{{ page.updated }}</span>
   {% endmacro post_min %}
   {% macro backlink(pages) %}

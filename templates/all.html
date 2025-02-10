@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+{% block rss %}
+  {% set term_name_slugify = page.slug %}
+  {% set rss_path = page.path ~ "/atom.xml" %}
+<link rel="alternate" type="application/atom+xml" title="{{ page.title }} - {{ config.title }} RSS" href="{{ get_url(path=rss_path, trailing_slash=false,lang=lang) }}">
+  {% endblock rss %}
+  {% block root %}
+
+  {% set_global tag_term = get_taxonomy_term(kind="tags", term=page.extra.tag)  %}
+  {% set_global tag_pages =  tag_term.pages | sort(attribute="date") | reverse %}
+    <div class="taxonomy-single-page main-box-block h-feed hfeed">
+      <div class="display-none">
+        <div class="p-name site-title">{{ config.title }}</div>
+        <p class="p-summary site-description">{{ config.description }}</p>
+      </div>
+      <div>
+        <header id="overview" class="pt root-wrapper">
+      <div class="post-header-breadcrumbs">
+        <a href="{{ get_url(path="@/_index.md",lang=lang) }}">{{ trans(key="label_home",lang=lang) }}</a>
+          <span class="divider">&nbsp;&gt;&nbsp;</span>
+          {{ page.title }}
+      </div>
+
+      <div>
+        <h1 class="no-border pt4 p-name entry-title text-center" >{{ page.title }}</h1>
+        <div class="display-none p-author h-card vcard">
+          <img class="u-photo icon" alt="Owen" src="{{ get_url(path="site/images/favicon-96x96.png",cachebust=true) }}"/>
+          <a class="p-name u-url url u-uid" href="{{ config.extra.indieweb_url }}">{{ config.extra.author }}</a>
+          <p class="p-note">{{ config.extra.bio }}</p>
+        </div>
+      </div>
+    </header>
+
+
+        {% for page in tag_pages %}
+          {{ macro::post_max(page=page,index=loop.index) }}
+        {% endfor %}
+      </div>
+    </div>
+  {% endblock main %}

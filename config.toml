@@ -10,6 +10,7 @@ taxonomies = [
   { name = "categories", feed = true, paginate_by = 50 },
 ]
 title = "Owen的博客"
+author = "Owen Young"
 
 [markdown]
 # When set to "true", all code blocks are highlighted.
@@ -61,6 +62,7 @@ webmention_path = "webmentions"
 anchors = "on"
 paths = "on"
 taxonomies = "on"
+paths_keep_dates = true
 
 [translations]
 label_toggle_more = "展开全部"

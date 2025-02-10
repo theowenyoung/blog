@@ -13,14 +13,14 @@
       </header>
 {% endblock header %}
 {% block main -%}
-{% set_global file_lang_path = "" %}
-{% if config.default_language != lang %}
-  {% set_global file_lang_path = "." ~
-lang %}
-{% endif %}
-{% block rss %}
-  {% set rss_path = section.path ~ "atom.xml" %}
-  <link rel="alternate" type="application/atom+xml" title="{{ section.title }} - {{ config.title }} RSS" href="{{ get_url(path=rss_path, trailing_slash=false) }}">
+  {% set_global file_lang_path = "" %}
+  {% if config.default_language != lang %}
+    {% set_global file_lang_path = "." ~
+  lang %}
+  {% endif %}
+  {% block rss %}
+    {% set rss_path = section.path ~ "atom.xml" %}
+    <link rel="alternate" type="application/atom+xml" title="{{ section.title }} - {{ config.title }} RSS" href="{{ get_url(path=rss_path, trailing_slash=false) }}">
   {% endblock rss %}
   <div class="section-page">
     <div class="h-feed hfeed">

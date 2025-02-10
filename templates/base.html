@@ -20,54 +20,59 @@
 {%- else -%}
 {%- set_global is_index = false -%}
 {%- endif -%}
+{%- set_global title = '' -%}
+{%- block social_meta -%}
+{%- if page.title -%}
+  {%- set_global title = page.title -%}
+{%- elif term.name -%}
+  {%- set titled_type_name = taxonomy.name | title -%}
+  {%- set_global title = titled_type_name ~ " | " ~ term.name  -%}
+{%- elif taxonomy.name  -%}
+  {%- set_global title = taxonomy.name | title -%}
+{%- elif section.title -%}
+  {%- set_global title = section.title -%}
+{%- elif page.content -%}
+  {%- set_global title = page.content | striptags | trim | split(pat="\n") | first |  spaceless | truncate(length=140) -%}
+{%- endif -%}
+
+{%- set_global full_title = config.title -%}
+{%- if title -%}
+  {%- set_global full_title = title ~ " - " ~ config.title -%}
+{%- elif is_index == true -%}
+  {%- set_global title = config.title -%}
+  {%- set_global full_title = config.title -%}
+{%- endif -%}
+{%- if page.description -%}
+  {%- set_global description =  page.description -%}
+{%- elif page.summary -%}
+  {%- set_global description =  page.summary | spaceless | striptags -%}
+{%- elif page.content -%}
+  {%- set_global description = page.content | spaceless | striptags | truncate(length=200) -%}
+{%- elif is_index -%}
+  {%- set_global description = config.description -%}
+{%- elif section.content -%}
+  {%- set_global description = section.content | spaceless | striptags | truncate(length=200) -%}
+{%- else -%}
+  {%- set_global description = config.description -%}
+{%- endif -%}
+{%- if page.extra.image -%}
+  {%- set_global image = page.extra.image -%}
+{%- elif is_index and config.extra.image -%}
+  {%- set_global image = config.extra.image -%}
+{%- elif page.assets -%}
+  {%- for asset in page.assets | sort -%}
+    {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
+        {%- set_global image=get_url(path=asset) -%}
+        {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}" itemscope itemtype="http://schema.org/Blog">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
-    {%- block social_meta -%}
-      {%- if page.title -%}
-        {%- set_global title = page.title -%}
-      {%- elif term.name -%}
-        {%- set titled_type_name = taxonomy.name | title -%}
-        {%- set_global title = titled_type_name ~ " | " ~ term.name  -%}
-      {%- elif taxonomy.name  -%}
-        {%- set_global title = taxonomy.name | title -%}
-      {%- elif section.title -%}
-        {%- set_global title = section.title -%}
-      {%- endif -%}
-      {%- if title -%}
-        {%- set_global full_title = title ~ " - " ~ config.title -%}
-      {%- elif is_index == true -%}
-        {%- set_global title = config.title -%}
-        {%- set_global full_title = config.title -%}
-      {%- endif -%}
-      {%- if page.description -%}
-        {%- set_global description =  page.description -%}
-      {%- elif page.summary -%}
-        {%- set_global description =  page.summary | spaceless | striptags -%}
-      {%- elif page.content -%}
-        {%- set_global description = page.content | spaceless | striptags | truncate(length=200) -%}
-      {%- elif is_index -%}
-        {%- set_global description = config.description -%}
-      {%- elif section.content -%}
-        {%- set_global description = section.content | spaceless | striptags | truncate(length=200) -%}
-      {%- else -%}
-        {%- set_global description = config.description -%}
-      {%- endif -%}
-      {%- if page.extra.image -%}
-        {%- set_global image = page.extra.image -%}
-      {%- elif is_index and config.extra.image -%}
-        {%- set_global image = config.extra.image -%}
-      {%- elif page.assets -%}
-        {%- for asset in page.assets | sort -%}
-          {%- if asset is matching("[.](jpg|png|jpeg)$") -%}
-              {%- set_global image=get_url(path=asset) -%}
-              {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
-      {%- endif -%}
     <title>{{full_title}}</title>
       <meta property="og:title" content="{{title}}"/>
       <meta itemprop="headline" content="{{title}}"/>
