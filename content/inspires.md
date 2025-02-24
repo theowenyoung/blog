@@ -31,6 +31,9 @@ taxonomies:
 
 ## 有意思
 
+- [按周排列的博客](https://weeks.ginatrapani.org)
+- [按时间轴排列的博客](https://ned.im/changelog) - 时间轴博客
+- [Deta Surf 浏览器介绍视频](https://www.youtube.com/watch?v=Tfshewczwlc&t=29s) - 比较喜欢这个音色和风格。
 - [Are.na](https://www.are.na) - 可以在上面策展自己收集的作品
 - [知识库导航](https://zsk.ai)
 - [Ask 小宇宙](https://ask.xiaoyuzhoufm.com/) - 作为播客的全文搜索，很好用。
