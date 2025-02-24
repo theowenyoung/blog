@@ -57,10 +57,9 @@ taxonomies:
 
 ## 资源
 
-- [z-lib 全球最大的电子书资源库](https://singlelogin.se/) 已经不可用，建议使用客户端
+- [z-lib 全球最大的电子书资源库](https://z-library.sk/) 网站地址经常被封，建议在他们的官方[长毛象](https://mastodon.social/@Z_Lib_official) 或者 官方[推特](https://x.com/Z_Lib_official) 上获取最新地址
   - [客户端下载](https://x.com/vista8/status/1801866877574254985)
   - [安娜档案](https://annas-archive.org/) - 索引了 z-library 的所有图书，可用于搜索和下载
-  - [z-lib 登录地址](https://singlelogin.se/)
   - [z-lib 洋葱网络地址](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/) - `http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/`
 - [Global Grey Books](https://www.globalgreyebooks.com/index.html) - 由英国的一位女性维护，亲自制作超过2400本电子书。只提供免费的、已进入公共领域的无版权书籍。
 - [编程随想整理的电子书资源](https://program-think.blogspot.com/2021/05/share-books.html)
