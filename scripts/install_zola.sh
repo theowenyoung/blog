@@ -6,7 +6,7 @@ mkdir -p $BIN_DIR
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 	cd -- /tmp
 	curl -OL https://github.com/getzola/zola/releases/download/v0.20.0/zola-v0.20.0-x86_64-unknown-linux-gnu.tar.gz
-	tar -xf /tmp/zola-x86_64-unknown-linux-gnu.tar.gz -C $BIN_DIR
+	tar -xf /tmp/zola-v0.20.0-x86_64-unknown-linux-gnu.tar.gz -C $BIN_DIR
 elif [[ "$OSTYPE" == "darwin"* ]]; then
 	# Mac OSX
 	cd -- /tmp/
