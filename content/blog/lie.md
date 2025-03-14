@@ -6,8 +6,6 @@ draft: true
 taxonomies:
   categories:
     - Random
-  tags:
-    -
 ---
 
 我想变得更有智慧一点。

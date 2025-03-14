@@ -38,7 +38,7 @@ taxonomies:
   用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！
 - [Epub to HTML](https://epub.to)
 - [制作 epub](http://sqqihao.github.io/EPubBuilder/src/index.html)
-- [让pdf 变得像扫描版](https://zh.lookscanned.io/scan)
+- [让 pdf 变得像扫描版](https://zh.lookscanned.io/scan)
 
 ## Tools
 
@@ -307,7 +307,7 @@ taxonomies:
 ## 字幕工具
 
 - [ass to srt](https://sorz.github.io/asstosrt-wasm/) - ass to srt converter
-- [Bazarr Setup](/content/blog/bazarr-setup.en.md) - Subtitle manager
+- [Bazarr Setup](@/blog/bazarr-setup.en.md) - Subtitle manager
 - [subtitles translate](https://translate-s ubtitles.com/) - Google translate
   subtitles
 - [Subhd](https://subhd.tv/) - Best Chinese subtitle
@@ -438,9 +438,9 @@ X as a Y services.
 ## 网页归档(Archive)
 
 - [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
-- [SingleFile](https://github.com/gildas-lormeau/SingleFile) - 浏览器扩展，把网页保存为一个独立的html文件
+- [SingleFile](https://github.com/gildas-lormeau/SingleFile) - 浏览器扩展，把网页保存为一个独立的 html 文件
 
-## 付费apps
+## 付费 apps
 
 - [homerow](https://www.homerow.app/) - 全局 vim mode 导航和滚动
 - [clean shot](https://cleanshot.com/) - 好用的截图工具

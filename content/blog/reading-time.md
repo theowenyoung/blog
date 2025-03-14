@@ -11,7 +11,7 @@ taxonomies:
     - About
 ---
 
-我发现 Zola 给中文文章的阅读时间预估特别高，比如我刚发布的这篇[给 Zola 博客增加搜索功能](/content/blog/add-search/index.md), 显示要 20 分钟才能阅读完:
+我发现 Zola 给中文文章的阅读时间预估特别高，比如我刚发布的这篇[给 Zola 博客增加搜索功能](@/blog/add-search/index.md), 显示要 20 分钟才能阅读完:
 
 > 发布于: 2022-07-12 · 最后更新时间: 2022-07-12 · 阅读时间: 20 min
 

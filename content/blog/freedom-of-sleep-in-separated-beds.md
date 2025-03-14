@@ -6,8 +6,6 @@ draft: true
 taxonomies:
   categories:
     - Random
-  tags:
-    -
 ---
 
 <!-- more -->

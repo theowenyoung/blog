@@ -30,7 +30,7 @@ taxonomies:
 - [卫报](https://www.theguardian.com/)
 - [每日电讯报](https://www.telegraph.co.uk/) - 英国
 - [The Rest of World](https://restofworld.org/) - 科技报道
-- [还有更多请参见我的笔记](/content/sources.md)
+- [还有更多请参见我的笔记](@/sources.md)
 
 还有很多网址聚合类的网站，比如 [Hacker News](https://news.ycombinator.com),
 [Lobster](https://lobste.rs/), [Reddit](https://www.reddit.com)

@@ -11,12 +11,12 @@ taxonomies:
     - Cloudflare
 ---
 
-昨天在 Cloudflare 搭建了 [JSONBin](/content/blog/jsonbin.md) 服务，作为持久化存储的方案，今天又总结出了我的工作流似乎还需要一个重要的 Trigger，那就是 Cron 任务，如果把这个问题解决，那么百分之 90 的用例就都被覆盖了。
+昨天在 Cloudflare 搭建了 [JSONBin](@/blog/jsonbin.md) 服务，作为持久化存储的方案，今天又总结出了我的工作流似乎还需要一个重要的 Trigger，那就是 Cron 任务，如果把这个问题解决，那么百分之 90 的用例就都被覆盖了。
 
 目前已解决的工作流问题：
 
 - Webhook Trigger: [Deno Deploy](https://deno.com/deploy)
-- 持久化存储： [JSONBin](/content/blog/jsonbin.md)
+- 持久化存储： [JSONBin](@/blog/jsonbin.md)
 
 <!-- more -->
 

@@ -6,8 +6,6 @@ drafts: true
 taxonomies:
   categories:
     - Notes
-  tags:
-    -
 ---
 
 有意思的，需要付费的东西：

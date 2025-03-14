@@ -17,9 +17,9 @@ Also see [here](https://github.com/Chocobozzz/PeerTube/blob/develop/support/doc/
 
 ## Pre Requirement
 
-1. [Debian Server Setup](/content/blog/debian-server-setup.en.md)
-2. [Caddy2 Setup for Debian](/content/blog/caddy2-setup-for-debian.en.md)
-3. [Nodejs Setup for Debian](/content/blog/nodejs-setup-for-debian.en.md)
+1. [Debian Server Setup](@/blog/debian-server-setup.en.md)
+2. [Caddy2 Setup for Debian](@/blog/caddy2-setup-for-debian.en.md)
+3. [Nodejs Setup for Debian](@/blog/nodejs-setup-for-debian.en.md)
 4. Install yarn, and be sure to have [a recent version](https://github.com/yarnpkg/yarn/releases/latest):
    [https://yarnpkg.com/en/docs/install#linux-tab](https://yarnpkg.com/en/docs/install#linux-tab)
 

@@ -9,7 +9,7 @@ taxonomies:
     - Self-hosted
 ---
 
-Before setup sonarr, you should setup [qBittorrent setup for Debian](/content/blog/qbittorrent-setup-for-debian.en.md)
+Before setup sonarr, you should setup [qBittorrent setup for Debian](@/blog/qbittorrent-setup-for-debian.en.md)
 
 <!-- more -->
 

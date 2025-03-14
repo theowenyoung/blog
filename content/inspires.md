@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [ooh.directory](https://ooh.directory/) ooh.directory是一个可以找到你感兴趣的优秀博客的地方。
 - [Are.na](https://www.are.na) - 可以在上面策展自己收集的作品
 - [知识库导航](https://zsk.ai)
 - [Ask 小宇宙](https://ask.xiaoyuzhoufm.com/) - 作为播客的全文搜索，很好用。

@@ -14,9 +14,9 @@ taxonomies:
 我在之前建立了一个个人的公开 [Wiki](https://wiki.owenyoung.com/)和
 [Blog](https://blog.owenyoung.com/)，这让我养成了记笔记，多写东西的习惯。但是随着时间的增长，我感到维护 2 个 repo
 实在有点麻烦，并且由于 Wiki
-和博客都是基于[Gatsby 框架](/content/blog/gatsby-cons.md)的，更新，维护，还有编译都挺花时间的。
+和博客都是基于[Gatsby 框架](@/blog/gatsby-cons.md)的，更新，维护，还有编译都挺花时间的。
 
-总的来说就是太复杂了，而由于我对自己的[笔记/博客系统](/content/blog/about-notes/index.md)是以一生的尺度去设计和维护的，所以我想让它保持简单。
+总的来说就是太复杂了，而由于我对自己的[笔记/博客系统](@/blog/about-notes/index.md)是以一生的尺度去设计和维护的，所以我想让它保持简单。
 
 <!-- more -->
 
@@ -48,7 +48,7 @@ markdown 的文件层级和 html 的文件层级其实是不一样的，对 mark
 但是像这样`[xxx](@/xxxm.d)`写链接的话，本地文件系统的相互链接就不工作了,编辑器不知道`@`是什么，这很令人苦恼。
 
 我就这个问题在 Zola
-的论坛提了[一个替代办法](https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242)，主要就是不用`@`做为特殊符号，直接用`/content`作为特殊符号，这样本地链接就其实是一个合法的内部绝对链接，像这样：`[xxx](/content/xxx.md)`，但是
+的论坛提了[一个替代办法](https://zola.discourse.group/t/custom-content-dir-or-support-absolute-internal-link/1242)，主要就是不用`@`做为特殊符号，直接用`/content`作为特殊符号，这样本地链接就其实是一个合法的内部绝对链接，像这样：`[xxx](@/xxx.md)`，但是
 Zola 还没接受我的请求，所以我[改动了 Zola 的代码，改动很少，就几行](https://github.com/theowenyoung/zola),
 现在我可以用 `/content/xxx.md`的形式作为内部链接。
 

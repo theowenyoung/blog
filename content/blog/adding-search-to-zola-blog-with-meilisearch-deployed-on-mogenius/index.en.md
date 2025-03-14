@@ -12,7 +12,7 @@ taxonomies:
     - Mogenius
 ---
 
-I deployed [Meilisearch](https://meilisearch.com/) on my VPS [a couple of days ago](/content/blog/add-search/index.md), but I'm panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it's not a stable environment to deploy meilisearch. So I started to browse [free-for-dev](https://www.trackawesomelist.com/ripienaar/free-for-dev/), see if there are some good(and cheap) solutions for me. I saw this:
+I deployed [Meilisearch](https://meilisearch.com/) on my VPS [a couple of days ago](@/blog/add-search/index.md), but I'm panic, because I mess up my VPS a lot, and I rebuild my VPS a lot, so it's not a stable environment to deploy meilisearch. So I started to browse [free-for-dev](https://www.trackawesomelist.com/ripienaar/free-for-dev/), see if there are some good(and cheap) solutions for me. I saw this:
 
 > [mogenius](https://mogenius.com/home) - A code-to-cloud platform to easily deploy any service, from static website to advanced microservice architectures. mogenius comes with fully managed hyper-scaling cloud resources, Kubernetes, CI/CD and security from Cloudflare. Free tier includes 1 CPU core, 2 GB RAM, 10 GB traffic, 4 GB SSD persistent storage.
 
