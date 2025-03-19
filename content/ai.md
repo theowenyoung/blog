@@ -19,6 +19,7 @@ taxonomies:
 - [ai 相关的工具/播客](https://www.aicyclopedia.com/)
 - [ai 技术收集](https://bytedance.feishu.cn/sheets/TcHTsRSczhda3BtpLQ4cMeVNnSf)
 - [反 AI 炒作的文章列表](https://gist.github.com/veekaybee/be375ab33085102f9027853128dc5f0e)
+- [There is an AI for that](https://theresanaiforthat.com/) - AI工具列表, only for AI
 
 ## 学习资料
 
