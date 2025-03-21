@@ -2,7 +2,7 @@
 title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 date: 2022-03-10
-updated: 2025-03-14
+updated: 2025-03-21
 taxonomies:
   categories:
     - Notes
@@ -10,6 +10,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 再一次[测 MBTI](https://www.16personalities.com/free-personality-test),结果显示 I(57%) N(56%) F(54%) P(53%) - A(76%), 个人认同陷入了混乱。。三个月前还是：I(51%) N(54%) T(57%) J(71%) - A(78%)。不过现在的这个百分比好像还不错，可 I 可 E，可 J 可 P，可 T 可 F，可 N 可 S...，前几天在一个 Reddit 网友都推荐的[一个测试](https://www.michaelcaloz.com/personality/)里测出来的是 INFP, 当时我还难以相信。 - 2025.03.21
 
 > 北欧有一种 Jantelagen 的文化规范，这种文化强调个人不应该在集体中过分突出自己或炫耀自己的成就，并批判那些违反这一准则的人。这种文化认为这是一种在大多数情况下使所有人平等的方式，旨在消除群体环境中的压力来源。吃这一套的人应该会比较抵触小红书和即刻，我是比较吃这一套，但也要经常反省自己有没有被污染。 - 2025.03.16
 
