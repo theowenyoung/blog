@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 组织是习惯放大机器。在一个组织中被放大的不仅仅是奇怪的习惯，还有创始团队的所有习惯（无论好坏）。创始人喜欢阅读吗？他们会吸引、留住并鼓励人们阅读。很快，阅读书籍就成为了他们文化的一部分。 - [source](https://invertedpassion.com/your-teams-culture-is-defined-by-your-behavior-not-your-words/)
+
 > “就改善你自己好了,”后来维特根斯坦对许多朋友说,“那是你为改善世界能做的一切。” - 《维特根斯坦传》
 
 > 这个时代，你在推特上发布“我建造了一个破环互联网但可以谋取个人私利的老虎机”，你将会收到一堆回复说：“哇，酷！我迫不及待想为了个人利益而破坏互联网。” - [source](https://benjamincongdon.me/blog/2025/01/25/AI-Slop-Suspicion-and-Writing-Back/)
