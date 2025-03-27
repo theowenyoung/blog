@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2025-01-26
+updated: 2025-03-27
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,8 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> "我为写这本书而活着，并为写它推迟了死亡。" - 《悉达多》 黑塞
 
 > 组织是习惯放大机器。在一个组织中被放大的不仅仅是奇怪的习惯，还有创始团队的所有习惯（无论好坏）。创始人喜欢阅读吗？他们会吸引、留住并鼓励人们阅读。很快，阅读书籍就成为了他们文化的一部分。 - [source](https://invertedpassion.com/your-teams-culture-is-defined-by-your-behavior-not-your-words/)
 
