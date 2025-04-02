@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [HN 被引用的博客排行](https://refactoringenglish.com/tools/hn-popularity/)
 - [ooh.directory](https://ooh.directory/) ooh.directory是一个可以找到你感兴趣的优秀博客的地方。
 - [Are.na](https://www.are.na) - 可以在上面策展自己收集的作品
 - [知识库导航](https://zsk.ai)
@@ -257,6 +258,7 @@ taxonomies:
 - [Muse](https://museapp.com/#pricing) - 浅黄色配色，好看
 - [Pinterest blog](https://business.pinterest.com/en-gb/blog/)
 - [paulstamatiou blog](https://paulstamatiou.com) - 配色像 Claude 的博客
+- [sgnt.ai](https://sgnt.ai/p/hell-out-of-llms/) - 好看的配色
 
 ## 资源
 
