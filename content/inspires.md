@@ -30,6 +30,7 @@ taxonomies:
 
 ## 有意思
 
+- [黑客法律](https://hacker-laws.com/)
 - [HN 被引用的博客排行](https://refactoringenglish.com/tools/hn-popularity/)
 - [ooh.directory](https://ooh.directory/) ooh.directory是一个可以找到你感兴趣的优秀博客的地方。
 - [Are.na](https://www.are.na) - 可以在上面策展自己收集的作品
