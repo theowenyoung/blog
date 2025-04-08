@@ -2,7 +2,7 @@
 title: 短想法
 description: 用一个文件存放自己简短的想法，也许简短的想法可以扩展成一篇文章，谁知道呢？
 date: 2022-03-10
-updated: 2025-03-21
+updated: 2025-04-09
 taxonomies:
   categories:
     - Notes
@@ -10,6 +10,8 @@ taxonomies:
     - Tweets
     - Random Book
 ---
+
+> 有些人更擅长赚钱，而有些人更擅长做有意思的产品。就我观察，前者常对后者心怀向往。所以后者如果能多坚持一下，很可能会柳暗花明又一村。 - 2025.04.09
 
 > 26.8% 的人住在省会城市，这些人贡献了 38.8% 的GDP. - [source](https://www.huxiu.com/article/4150034.html) - 2025.03.24
 
