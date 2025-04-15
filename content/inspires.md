@@ -261,6 +261,7 @@ taxonomies:
 - [paulstamatiou blog](https://paulstamatiou.com) - 配色像 Claude 的博客
 - [sgnt.ai](https://sgnt.ai/p/hell-out-of-llms/) - 好看的配色
 - [Brian Lovin 的博客](https://brianlovin.com/app-dissection/neubible-ios) - 太好看了
+- [一个写诗的哥们，网站比写程序的做得都要炫](https://davidwhyte.com/)
 
 ## 资源
 
