@@ -187,7 +187,7 @@ taxonomies:
 我也想对那些在原帖中对沉浸式翻译表示理解的朋友们说声谢谢，接下来沉浸式翻译也会推出更多的开源计划，比如：
 
 1. [AI 翻译模型](https://github.com/immersive-translate/immersiveL)
-2. PDF 文件解析引擎
+2. PDF 文件解析引擎 (2025.04更新： 已开源[BabelDoc](https://github.com/funstory-ai/BabelDOC))
 3. ePub 翻译
 4. ...
 
