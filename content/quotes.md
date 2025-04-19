@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2025-03-27
+updated: 2025-04-19
 taxonomies:
   categories:
     - Notes
