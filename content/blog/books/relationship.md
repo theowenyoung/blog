@@ -1,5 +1,5 @@
 ---
-title:
+title: Relationship
 date: 2025-04-19T22:12:44+08:00
 updated: 2025-04-19
 draft: true
