@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 真正拥有城市的人，其实是那些走路的人。
+
 > “成为他人微笑的理由。成为他人感受到爱并相信人性美好的理由。” ― Roy T. Bennett, The Light in the Heart
 
 > “在充满欺骗的时代，说出真相就是一种革命行为。” ― George Orwell
