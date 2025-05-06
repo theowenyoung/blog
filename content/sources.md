@@ -114,6 +114,7 @@ taxonomies:
 
 ## Product
 
+- [App Stackes](https://appstacks.club/) - 好看的 app 集合
 - [Product Hunt Trending (producthunt-trending.js.org)](https://producthunt-trending.js.org/?range=monthly) -
   Browser producthunk by ranking, weekly, monthly, yearly.
 - [r/SideProject - A community for sharing side projects (reddit.com)](https://www.reddit.com/r/SideProject/)
