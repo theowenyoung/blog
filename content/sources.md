@@ -43,6 +43,7 @@ taxonomies:
 - [精神食粮 Reddit 小组](https://old.reddit.com/r/Foodforthought/)
 - [真 Reddit 小组](https://old.reddit.com/r/TrueReddit/)
 - [Meta Filter](https://www.metafilter.com/)
+- [Drudge Report](https://drudgereport.com/) - 聚合来自主流新闻媒体、保守派媒体的头条新闻
 - [Soylentnews](https://soylentnews.org/)
 - [Read Something Interesting](https://readsomethinginteresting.com/)
 - [摆脱点击诱饵 Reddit 小组](https://www.reddit.com/r/savedyouaclick/) -
