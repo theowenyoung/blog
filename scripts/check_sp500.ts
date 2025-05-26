@@ -34,7 +34,7 @@ export async function checkSp500Signal(){
 export async function manualGetSp500Signal(){
     const idToken = await getIdToken();
     const text = await getLatestOperation(idToken);
-    await sendMessageToTelegram(`grizzlybulls 有新操作：${text}`);
+    await sendMessageToTelegram(`grizzlybulls 最新操作：${text}`);
 }
 
 
