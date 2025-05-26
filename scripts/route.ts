@@ -7,7 +7,7 @@ import { checkTrackawesomelistIsOk } from "./tasks/check_trackawesomelist_is_ok.
 import { checkBuzzingIsOk } from "./tasks/check_buzzing_is_ok.ts";
 import { onWebmention } from "./tasks/on_webmention.ts";
 import { HTTPError } from "./error.ts";
-import {manualGetSp500Signal} from "./check_sp500.ts";
+import { manualGetSp500Signal } from "./check_sp500.ts";
 export async function handleRequest(request: Request) {
   const APIKEY = Deno.env.get("APIKEY");
 
@@ -57,7 +57,7 @@ export async function handleRequest(request: Request) {
       } else {
         const formData = await request.formData();
         if (formData) {
-          text = formData.get("text") as string || "";
+          text = (formData.get("text") as string) || "";
         }
       }
     }
@@ -95,17 +95,25 @@ export async function handleRequest(request: Request) {
       const body = await request.json();
       return onTallyFormSubmit(body);
     }
-  }else if(pathname==='/onSp500Signal'){
+  } else if (pathname === "/onSp500Signal") {
     // check telegram webhook
     // only respond if some user manually mentions grizzlybulls
     const body = await request.json();
-    // check if the message contains @grizzlybulls_bot
-    const message = body.message;
-    if(message.text.includes('@grizzlybulls_bot')){
-      await manualGetSp500Signal();
-      return new Response("ok", { status: 200 });
+    // check telegram webhook message type
+    // for different message, edited_message, or channel_post, do different things
+    console.log("body", body);
+    if (body.message) {
+      console.log("message", body.message);
+
+      const message = body.message;
+      if (message.text.includes("@grizzlybulls_bot")) {
+        await manualGetSp500Signal();
+        return new Response("ok", { status: 200 });
+      }
     }
-   
+
+    // check if the message contains @grizzlybulls_bot
+
     return new Response("ok", { status: 200 });
   }
   // throw 404 if not found
