@@ -7,6 +7,7 @@ import { checkTrackawesomelistIsOk } from "./tasks/check_trackawesomelist_is_ok.
 import { checkBuzzingIsOk } from "./tasks/check_buzzing_is_ok.ts";
 import { onWebmention } from "./tasks/on_webmention.ts";
 import { HTTPError } from "./error.ts";
+import {manualGetSp500Signal} from "./check_sp500.ts";
 export async function handleRequest(request: Request) {
   const APIKEY = Deno.env.get("APIKEY");
 
@@ -94,6 +95,9 @@ export async function handleRequest(request: Request) {
       const body = await request.json();
       return onTallyFormSubmit(body);
     }
+  }else if(pathname==='/onSp500Signal'){
+    await manualGetSp500Signal();
+    return new Response("ok", { status: 200 });
   }
   // throw 404 if not found
   throw new HTTPError("not found", "not found", 404);
