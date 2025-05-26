@@ -96,7 +96,16 @@ export async function handleRequest(request: Request) {
       return onTallyFormSubmit(body);
     }
   }else if(pathname==='/onSp500Signal'){
-    await manualGetSp500Signal();
+    // check telegram webhook
+    // only respond if some user manually mentions grizzlybulls
+    const body = await request.json();
+    // check if the message contains @grizzlybulls_bot
+    const message = body.message;
+    if(message.text.includes('@grizzlybulls_bot')){
+      await manualGetSp500Signal();
+      return new Response("ok", { status: 200 });
+    }
+   
     return new Response("ok", { status: 200 });
   }
   // throw 404 if not found
