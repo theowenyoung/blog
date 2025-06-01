@@ -35,6 +35,8 @@ taxonomies:
 
 ## 有意思
 
+- [trailbase](https://github.com/trailbaseio/trailbase?tab=readme-ov-file) -
+  单文件 firebase 替代品
 - [Calmscroll](https://calmscroll.com) - 简约但是很有品味的 epub 电子书 阅读网站
 - [Tildes —— 一个由用户兴趣驱动的非营利社区网站](https://blog.tildes.net/announcing-tildes)
 - [黑客法律](https://hacker-laws.com/)
