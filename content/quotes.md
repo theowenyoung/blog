@@ -10,6 +10,10 @@ taxonomies:
     - Random Book
 ---
 
+> “不要制作任何你觉得有义务制作的东西。 只要制作你想制作的东西。
+> 如果感觉像家庭作业，就停下来，除非你喜欢家庭作业。” -
+> [source](https://austinkleon.substack.com/p/typewriter-interview-with-sarah-manguso)
+
 > 「如何最大化地利用我的员工？」这个问题对于领导者或管理者来说是错误的。更有建设性的思考应该是：「我们如何创造条件，让员工能够到达他们想要去的地方？」 -
 > [source](https://seths.blog/2025/05/how-do-i-get-the-most-of-out-my-people/)
 
