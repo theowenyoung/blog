@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 爱是通过持续的陪伴、肯定的言语和亲昵的举动来传递的。任何试图用金钱替代这三者的行为，终将遭到拒绝，甚至成为怨恨的根源。 -
+> [source](https://moretothat.com/the-levers-that-money-cant-pull/)
+
 > “不要制作任何你觉得有义务制作的东西。 只制作你想制作的东西。
 > 如果感觉像家庭作业，就停下来，除非你喜欢家庭作业。” -
 > [source](https://austinkleon.substack.com/p/typewriter-interview-with-sarah-manguso)
