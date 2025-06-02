@@ -10,7 +10,7 @@ taxonomies:
     - Random Book
 ---
 
-> “不要制作任何你觉得有义务制作的东西。 只要制作你想制作的东西。
+> “不要制作任何你觉得有义务制作的东西。 只制作你想制作的东西。
 > 如果感觉像家庭作业，就停下来，除非你喜欢家庭作业。” -
 > [source](https://austinkleon.substack.com/p/typewriter-interview-with-sarah-manguso)
 
