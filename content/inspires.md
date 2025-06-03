@@ -35,6 +35,7 @@ taxonomies:
 
 ## 有意思
 
+- [Browser Dating](https://browser.dating/) - 用你的浏览器历史记录来匹配约会对象
 - [trailbase](https://github.com/trailbaseio/trailbase?tab=readme-ov-file) -
   单文件 firebase 替代品
 - [Calmscroll](https://calmscroll.com) - 简约但是很有品味的 epub 电子书 阅读网站
