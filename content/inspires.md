@@ -35,6 +35,7 @@ taxonomies:
 
 ## 有意思
 
+- [翻译质量评测系统](https://qi.unbabel.com/) - Unbabel 提供
 - [Browser Dating](https://browser.dating/) - 用你的浏览器历史记录来匹配约会对象
 - [trailbase](https://github.com/trailbaseio/trailbase?tab=readme-ov-file) -
   单文件 firebase 替代品
@@ -301,6 +302,7 @@ taxonomies:
 - [一个写诗的哥们，网站比写程序的做得都要炫](https://davidwhyte.com/)
 - [Rotato](https://rotato.app/) 好看的landing 页面!
 - [App Stack](https://appstacks.club/) 好看的 APP 集合页面
+- [好看的博客详情页, 图片在右侧](https://aethermug.com/posts/i-do-not-remember-my-life-and-it-s-fine)
 
 ## 资源
 
