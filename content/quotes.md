@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 那些不适应这个世界的人，其实已经快要找到自我了。 - 赫尔曼·黑塞尔
+
 > 爱是通过持续的陪伴、肯定的言语和亲昵的举动来传递的。任何试图用金钱替代这三者的行为，终将遭到拒绝，甚至成为怨恨的根源。 -
 > [source](https://moretothat.com/the-levers-that-money-cant-pull/)
 
