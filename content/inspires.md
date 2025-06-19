@@ -37,6 +37,7 @@ taxonomies:
 
 - [Canine](https://github.com/czhu12/canine?tab=readme-ov-file) -
   一个非常优雅的可视化界面帮你操作 k8s 的工具。
+  - [alternative - kubero](https://github.com/kubero-dev/kubero)
 - [翻译质量评测系统](https://qi.unbabel.com/) - Unbabel 提供
 - [Browser Dating](https://browser.dating/) - 用你的浏览器历史记录来匹配约会对象
 - [trailbase](https://github.com/trailbaseio/trailbase?tab=readme-ov-file) -
