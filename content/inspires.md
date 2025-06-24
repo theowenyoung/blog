@@ -16,6 +16,15 @@ taxonomies:
 
 ## 有意思
 
+- [Brompton 折叠自行车](https://www.youtube.com/watch?v=TLg0NNjDBMQ) -
+  可以当购物车买菜的折叠自行车
+- [Metaeassen](https://metaessen.com/docs/concepts) - 基于
+  资源-实例-系统数据模型 理念的个人知识管理系统
+- [一个收集了很多博客，网站的目录](https://ooh.directory/)
+- [HTML for people](https://htmlforpeople.com/) - 给人看的 html 教程。
+- [omg.log 创始人的博客](https://neatnik.net/)
+- [omg.lol 的 mastodon 实例](https://social.lol/public/local) -
+  这个实例理论上只有 $20 年付的用户才能加入，所以基本都是活人，真人。
 - [Some pics](https://some.pics/) - 一个干净的图片流网站
 - [Canine](https://github.com/czhu12/canine?tab=readme-ov-file) -
   一个非常优雅的可视化界面帮你操作 k8s 的工具。
