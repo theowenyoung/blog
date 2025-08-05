@@ -16,6 +16,8 @@ taxonomies:
 
 ## 有意思
 
+- [Hactch Box](https://hatchbox.io/) - 一站式托管 Rails
+- [Pagecord](https://pagecord.com/) -
 - [Brompton 折叠自行车](https://www.youtube.com/watch?v=TLg0NNjDBMQ) -
   可以当购物车买菜的折叠自行车
 - [Metaeassen](https://metaessen.com/docs/concepts) - 基于
