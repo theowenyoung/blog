@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 我有一个暴论：“男人被性欲奴役，女人被性癖奴役。” -
+> [新闻中的性](https://www.xiaoyuzhoufm.com/episode/688b46168e06fe8de7a63276)
+
 > 有的时候就觉得我们的文学好像就是少数人写给少数几个人看的，我觉得不能这个样子，所以我一直在写。 -
 > [范雨素](https://www.bilibili.com/bangumi/play/ep1819126/?share_source=copy_web&t=2469)
 
@@ -39,9 +42,8 @@ taxonomies:
 >
 > 1. 我们的宗旨是激励和教育，而不是推广。
 > 2. 我们宁愿赢得信誉，也不愿购买信誉。对我们来说，最好的资源是朋友的口碑推荐或媒体的好评。
-> 3. 我们只在万不得已时做广告，通常是在专业运动杂志上。
->
-> 《Let my people go surfing》
+> 3. 我们只在万不得已时做广告，通常是在专业运动杂志上。 《Let my people go
+>    surfing》
 
 > 形成好习惯和坏习惯的学习机制是相同的，定期去健身房和每天抽烟其背后起作用的机制完全相同。 -
 > 《Good Habits, Bad Habits》
