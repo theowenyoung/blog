@@ -16,6 +16,7 @@ taxonomies:
 
 ## 有意思
 
+- [ttl.sh](https://ttl.sh/) - 匿名，临时的 Docker 注册表
 - [Hactch Box](https://hatchbox.io/) - 一站式托管 Rails
 - [Pagecord](https://pagecord.com/) -
 - [Brompton 折叠自行车](https://www.youtube.com/watch?v=TLg0NNjDBMQ) -
