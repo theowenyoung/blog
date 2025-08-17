@@ -16,7 +16,12 @@ taxonomies:
 
 ## 有意思
 
-- [Kamal]()
+- [Strflow](https://apps.apple.com/us/app/strflow-notes-journal/id6468486339) -
+  单人版的 slack, 用于给自己发消息。但是目前没有买断。
+- [Ghostty config UI](https://ghostty.zerebos.com/) 社区为 Ghostty
+  的配置写的UI，太好看太有创意了...
+- [Kamal](https://kamal-deploy.org/) - 37 Signals 公司推出的简单部署 Docker
+  的工具
 - [Uncloud](https://uncloud.run/docs/) - 简单可靠的方式部署 Docker 应用。
 - [ttl.sh](https://ttl.sh/) - 匿名，临时的 Docker 注册表
   - [Docker Pushmi-Pullyu](https://github.com/mkantor/docker-pushmi-pullyu/tree/master) -

@@ -51,6 +51,10 @@ taxonomies:
 
 ## Chat Manage
 
+## 客服
+
+- [Chatwoot](https://www.chatwoot.com/) - chatwoot, 客服，网站自动客服机器人
+
 ### Live Chat
 
 - [airy](https://github.com/airyhq/airy) - Open source conversational platform
@@ -131,9 +135,9 @@ between formats and can be used as a Go package.
   Applications
 - [couchdb](https://github.com/apache/couchdb) - Seamless multi-master syncing
   database with an intuitive HTTP/JSON API, designed for reliability
-- [localforage](https://github.com/localForage/localForage) - 💾 Offline storage,
-  improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful
-  API.
+- [localforage](https://github.com/localForage/localForage) - 💾 Offline
+  storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but
+  powerful API.
 - [kinto](https://github.com/Kinto/kinto.js/) - An Offline-First JavaScript
   Client for Kinto.
 - [puchdb](https://github.com/pouchdb/pouchdb) - 🐨 - PouchDB is a pocket-sized
@@ -247,13 +251,14 @@ between formats and can be used as a Go package.
 ## Forum
 
 - [Ansiwave](https://github.com/ansiwave/ansiwave) - Sqlite 驱动的，可离线的论坛
-- [Giscus](https://github.com/giscus/giscus) - github discussion backend 评论系统
+- [Giscus](https://github.com/giscus/giscus) - github discussion backend
+  评论系统
 
 ## Search
 
 - [typesense](https://github.com/typesense/typesense) - Fast, typo tolerant,
-  fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open
-  Source alternative to Algolia and an Easier-to-Use alternative to
+  fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An
+  Open Source alternative to Algolia and an Easier-to-Use alternative to
   ElasticSearch.
 - [MiniSearch](https://github.com/lucaong/minisearch)
 - [Stork](https://github.com/jameslittle230/stork) - 🔎 Impossibly fast web
@@ -332,7 +337,8 @@ between formats and can be used as a Go package.
 
 ## VPS 测速
 
-- [CSR](https://hostcsr.com/speedtest.html) - CSR 测速，有不少家的主机可以在线测试速度
+- [CSR](https://hostcsr.com/speedtest.html) - CSR
+  测速，有不少家的主机可以在线测试速度
 
 ## Static Site Generator
 
@@ -400,8 +406,9 @@ between formats and can be used as a Go package.
 
 ## Windows
 
-- [在 Windows 上用 WSL 优雅开发](https://dowww.spencerwoo.com/) - 可能是市面上最详尽的中文 WSL
-  开发环境配置指南 的文档现场，本章我们将对 WSL 本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows
+- [在 Windows 上用 WSL 优雅开发](https://dowww.spencerwoo.com/) -
+  可能是市面上最详尽的中文 WSL 开发环境配置指南 的文档现场，本章我们将对 WSL
+  本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows
   上面开发学习的基础知识。
 
 ## Configure as Server
@@ -467,8 +474,8 @@ See
 
 ## Indie Web
 
-- [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention
-  推送给你。
+- [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions
+  开源服务，把社交网络对你帖子的提及用 webmention 推送给你。
 - [Indie Webring](https://xn--sr8hvo.ws/) - 独立网站的 Webring 服务
 - [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your
   website
@@ -526,7 +533,8 @@ See
 
 ## 存储
 
-- [Garage](https://garagehq.deuxfleurs.fr/documentation/quick-start/) - S3 的自部署版本
+- [Garage](https://garagehq.deuxfleurs.fr/documentation/quick-start/) - S3
+  的自部署版本
 
 ## 代理
 
@@ -546,4 +554,5 @@ See
 
 ## 错误上报
 
-- [glitchtip](https://glitchtip.com/documentation) - sentry 替代， 错误日志上报平台
+- [glitchtip](https://glitchtip.com/documentation) - sentry 替代，
+  错误日志上报平台

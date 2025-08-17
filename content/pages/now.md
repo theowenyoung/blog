@@ -13,8 +13,8 @@ taxonomies:
     - Random Book
 ---
 
-> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](@/pages/about.md)
-> 了解更多。
+> 这是一个 [now](https://nownownow.com/about) 页面,
+> 在[关于页面](@/pages/about.md) 了解更多。
 
 <!-- more -->
 
@@ -31,7 +31,8 @@ taxonomies:
     - 低价卖东西，自己能接受，但是如何对待员工？
       - 成本最小化？
   - 开源+云托管
-  - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～ [关于页面](@/pages/about.md) 有我的联系方式.
+  - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～
+    [关于页面](@/pages/about.md) 有我的联系方式.
   - 这里有几个相关的讨论：
     - <https://gavinhoward.com/2023/12/is-source-available-really-that-bad/>
     - <https://drewdevault.com/2023/12/26/2023-12-26-Prusa-is-floundering.html>
@@ -70,16 +71,7 @@ taxonomies:
 - 强者思维，弱者思维，谁是正确的？
 - 如果作为一个平台，提供多个有对比的返利链接，由消费者自己挑选，就好了。
 
-> Open source is like charity. Don't call yourself a charity or associate yourself with charity unless you actually are one.
+> Open source is like charity. Don't call yourself a charity or associate
+> yourself with charity unless you actually are one.
 >
 > 开源就像慈善机构。不要称自己为慈善机构或将自己与慈善机构联系在一起，除非您确实是慈善机构。
-
-## 进行中
-
-- 正在开发一个新项目，预期成为国际互联网的入口
-- 记录我每天阅读后希望分享的链接，发布在[日记栏目](/categories/journal/)里
-- 开发[沉浸式翻译](https://immersive-translate.owenyoung.com/)扩展。
-
-## Projects
-
-查看所有 [Projects](@/projects.md)

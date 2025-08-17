@@ -10,6 +10,10 @@ taxonomies:
     - Random Book
 ---
 
+> “我只想穿着运动服戴着眼镜待在家里写作，”作家埃里卡·肯尼迪曾对《费城询问报》说。在家里穿着运动服时，她写了一部畅销小说，随后又写了续集，但从她的推特简介中你可能不会察觉到这一点，她的简介写着：“穿着裤子的大嘴鸟”，没有提到她的书籍《Bling》或《Feminista》。“我不会怪任何人对我有高期望，”她曾说，“但这归根结底是‘拥有这一切’意味着什么？是拥有一个响亮的头衔、高管福利、赚很多钱、让你的书登上《纽约时报》畅销书榜？还是意味着每天醒来都期待新的一天，无论这一天会带来什么？”对我来说，就像对她一样，美好的一天就是穿着运动服在家写作，发送有趣的邮件，也许发条推特。其他的一切都是额外的惊喜。
+> 埃迪丝·齐默曼 -
+> [source](https://archive.nytimes.com/www.nytimes.com/interactive/2012/12/30/magazine/the-lives-they-lived-2012.html?view=Lessons_for_the_Living_From_the_Departed)
+
 > 我有一个暴论：“男人被性欲奴役，女人被性癖奴役。” -
 > [新闻中的性](https://www.xiaoyuzhoufm.com/episode/688b46168e06fe8de7a63276)
 
