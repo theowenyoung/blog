@@ -1,7 +1,7 @@
 ---
 title: 开发相关的资源汇总
 date: 2022-03-25
-updated: 2024-05-20
+updated: 2025-08-18
 taxonomies:
   categories:
     - Notes
@@ -39,6 +39,10 @@ taxonomies:
   a PDF
 - [Github Markdown to HTML](https://github.com/calganaygun/MDcat/blob/main/mdcat.py)
 - [API LIST](https://apilist.fun/)
+
+## AI Gateways
+
+- [LiteLLM](https://github.com/BerriAI/litellm) AI Gateway
 
 ## Benchmarks
 
