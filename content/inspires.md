@@ -16,6 +16,7 @@ taxonomies:
 
 ## 有意思
 
+- [Leaflet](https://leaflet.pub/home) - 建立在 Bluesky At 协议上的博客
 - [Strflow](https://apps.apple.com/us/app/strflow-notes-journal/id6468486339) -
   单人版的 slack, 用于给自己发消息。但是目前没有买断。
 - [Ghostty config UI](https://ghostty.zerebos.com/) 社区为 Ghostty
