@@ -14,6 +14,10 @@ taxonomies:
 
 <!-- more -->
 
+## K8s
+
+- [edka](https://edka.io) - 自动帮你管理 hetzner 的 k8s 集群
+
 ## API Token
 
 - [API Tokens: A Tedious Survey](https://fly.io/blog/api-tokens-a-tedious-survey/)
@@ -560,3 +564,7 @@ See
 
 - [glitchtip](https://glitchtip.com/documentation) - sentry 替代，
   错误日志上报平台
+
+## 性价比服务器
+
+- [Netcup](https://www.netcup.com)

@@ -10,6 +10,25 @@ taxonomies:
     - Random Book
 ---
 
+> 我非常幸运。我读法学院之前就已经学会了学习的方法。在我这漫长的一生中，没有什么比持续学习对我的帮助更大。再拿沃伦·巴菲特来说，如果你们拿着计时器观察他，会发现他醒着的时候有一半时间是在看书。 -
+> 芒格
+
+> 身边有一群富有启发性的人，和你自己的天赋、勤奋一样重要。
+> 你的圆圈推动你变得更好。 - Drew Houston麻省理工演讲
+
+> 在课堂上，往往是老师学到的最多。学校的运作模式其实是本末倒置的。应该让学生成为教学的主体。 -
+> [source](https://thesystemsthinker.com/)
+
+> 用小一点的盘子和碗来“欺骗”你的大脑，这样每顿饭就能少吃点。 -
+> [source](https://dansilvestre.com/make-smarter-decisions/#Make_Smarter_Decisions_at_Work)
+
+> 想要每天做出更明智的选择吗？其实很简单，关键在于利用“默认设置”的力量。你每天
+> 90%的决定都是下意识做出的，很多都是环境使然。所以，大多数决定其实是一种习惯，而非经过深思熟虑的选择。而习惯，可以通过调整生活中那些看不见的默认设置来培养。想要做出更明智的选择，就得设计更聪明的默认设置。 -
+> [source](https://dansilvestre.com/make-smarter-decisions/#Make_Smarter_Decisions_at_Work)
+
+> 勇敢的人常自我反省，找出自己的个人虚荣指标，这样，他们就能避免走错路。 -
+> [source](https://www.julian.com/blog/vanity-metrics)
+
 > "想得到一样东西，最可靠的方法是让自己配得上它" - 芒格
 
 > "我希望别人很快乐" - 小小包麻麻墙上的话
