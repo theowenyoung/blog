@@ -16,6 +16,8 @@ taxonomies:
 
 ## 有意思
 
+- [体量最大的美股投资机构的持仓披露](https://www.dataroma.com/m/managers.php) -
+  延迟一个季度的
 - [Leaflet](https://leaflet.pub/home) - 建立在 Bluesky At 协议上的博客
   - [Grain](https://grain.social/) - 建立在 Bluesky At 协议上的图片社区.
 - [Strflow](https://apps.apple.com/us/app/strflow-notes-journal/id6468486339) -
