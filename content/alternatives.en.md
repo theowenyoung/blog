@@ -15,11 +15,15 @@ Curating awesome alternative resources.
 
 ## List
 
-- [alternative-front-ends](https://github.com/mendel5/alternative-front-ends) - #Front-End
+- [alternative-front-ends](https://github.com/mendel5/alternative-front-ends) -
+  #Front-End
 - [Alternative Internet](https://github.com/redecentralize/alternative-internet)
 - [Ethical Alternatives & Resources](https://ethical.net/resources/)
-- [Open source Alternatives](https://www.btw.so/open-source-alternatives) - Curated 200+ open source alternatives to tools that businesses require in day-to-day operations.
-- [awesome-alternatives-in-rust](https://github.com/TaKO8Ki/awesome-alternatives-in-rust) - A curated list of replacements for existing software written in Rust #Rust
+- [Open source Alternatives](https://www.btw.so/open-source-alternatives) -
+  Curated 200+ open source alternatives to tools that businesses require in
+  day-to-day operations.
+- [awesome-alternatives-in-rust](https://github.com/TaKO8Ki/awesome-alternatives-in-rust) -
+  A curated list of replacements for existing software written in Rust #Rust
 
 ## Twitter
 
@@ -31,13 +35,15 @@ Curating awesome alternative resources.
 
 ## Youtube
 
-- [Invidious](https://github.com/iv-org/invidious) - Invidious is an alternative front-end to YouTube
+- [Invidious](https://github.com/iv-org/invidious) - Invidious is an alternative
+  front-end to YouTube
 
   - Instances: <https://instances.invidious.io/>
 
 ## Google
 
-- [Bloom](https://github.com/skerkour/bloom) - The simplest way to de-Google your life and business: Inbox, Calendar, Files, Contacts & much more
+- [Bloom](https://github.com/skerkour/bloom) - The simplest way to de-Google
+  your life and business: Inbox, Calendar, Files, Contacts & much more
 
 ## Discord
 
@@ -65,18 +71,27 @@ Curating awesome alternative resources.
 
 - [Meli](https://github.com/getmeli/meli)
 
+## Vercel
+
+- [Devpush](https://github.com/hunvreus/devpush) - Vercel alternative
+
 ## Github
 
 - [Source Hut](https://sourcehut.org/)
-- [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki) - Sqlite use this system to develop things.
+- [fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki) - Sqlite use
+  this system to develop things.
 
 ## Pocket
 
-- [shiori](https://github.com/go-shiori/shiori) - Pocket open-source alternative.
+- [shiori](https://github.com/go-shiori/shiori) - Pocket open-source
+  alternative.
 
 ## Grammarly
 
-- [Languagetool](https://languagetool.org/) - LanguageTool's core functionality is open source. Anyone can set up their own LanguageTool server locally or in the cloud. Furthermore, we are looking for contributions to further improve our proofreading technology.
+- [Languagetool](https://languagetool.org/) - LanguageTool's core functionality
+  is open source. Anyone can set up their own LanguageTool server locally or in
+  the cloud. Furthermore, we are looking for contributions to further improve
+  our proofreading technology.
 
 ## Anki
 
