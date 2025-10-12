@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优雅引用卡片生成器</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 30px;
+        }
+
+        .input-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        textarea, input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .btn-add {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-add:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-change {
+            background: #059669;
+            color: white;
+        }
+
+        .btn-change:hover {
+            background: #047857;
+        }
+
+        .btn-clear {
+            background: #dc2626;
+            color: white;
+        }
+
+        .btn-clear:hover {
+            background: #b91c1c;
+        }
+
+        .btn-print {
+            background: #7c3aed;
+            color: white;
+        }
+
+        .btn-print:hover {
+            background: #6d28d9;
+        }
+
+        .quotes-list {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        .quotes-list h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .quote-item {
+            background: #f9fafb;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-right: 40px;
+        }
+
+        .quote-item .text {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .quote-item .source {
+            font-size: 12px;
+            color: #888;
+            font-style: italic;
+        }
+
+        .quote-item .remove {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #ef4444;
+            color: white;
+            border: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .preview-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .a4-preview {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            padding: 50mm 40mm;
+            position: relative;
+        }
+
+
+        /* 布局1：居中对称 */
+        .layout-1 .quote-display {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 50px;
+        }
+
+        .layout-1 .quote-block {
+            text-align: center;
+            max-width: 85%;
+            position: relative;
+            padding: 30px 0;
+        }
+
+        .layout-1 .quote-block::before,
+        .layout-1 .quote-block::after {
+            content: '◆';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ddd;
+            font-size: 12px;
+        }
+
+        .layout-1 .quote-block::before {
+            top: 0;
+        }
+
+        .layout-1 .quote-block::after {
+            bottom: 0;
+        }
+
+        /* 布局2：网格分栏 */
+        .layout-2 .quote-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            height: 100%;
+            align-content: center;
+        }
+
+        .layout-2 .quote-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 25px;
+            position: relative;
+        }
+
+        .layout-2 .quote-block::before {
+            content: '"';
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            font-size: 48px;
+            color: #eee;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        /* 布局3：交错排列 */
+        .layout-3 .quote-display {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            padding: 20px 0;
+        }
+
+        .layout-3 .quote-block {
+            padding: 25px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .layout-3 .quote-block:nth-child(even) {
+            text-align: right;
+            padding-left: 0;
+            padding-right: 30px;
+        }
+
+        /* 布局4：诗意排列 */
+        .layout-4 .quote-display {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 60px;
+        }
+
+        .layout-4 .quote-block {
+            text-align: center;
+            max-width: 75%;
+            position: relative;
+        }
+
+        .layout-4 .quote-block::before {
+            content: '「';
+            position: absolute;
+            left: -30px;
+            top: -10px;
+            font-size: 36px;
+            color: #ccc;
+        }
+
+        .layout-4 .quote-block::after {
+            content: '」';
+            position: absolute;
+            right: -30px;
+            bottom: -10px;
+            font-size: 36px;
+            color: #ccc;
+        }
+
+        /* 布局5：极简单栏 */
+        .layout-5 .quote-display {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+
+        .layout-5 .quote-block {
+            text-align: center;
+            padding: 20px 40px;
+        }
+
+        .quote-text {
+            font-family: 'Noto Serif SC', 'STSong', 'SimSun', serif;
+            line-height: 1.9;
+            color: #1a1a1a;
+            margin-bottom: 18px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        /* 根据文字长度自适应字体大小 */
+        .quote-text.size-xs { font-size: 28px; } /* 0-20字 */
+        .quote-text.size-s { font-size: 24px; }  /* 21-40字 */
+        .quote-text.size-m { font-size: 20px; }  /* 41-60字 */
+        .quote-text.size-l { font-size: 18px; }  /* 61-100字 */
+        .quote-text.size-xl { font-size: 16px; } /* 100字以上 */
+
+        .layout-1 .quote-text,
+        .layout-4 .quote-text {
+            quotes: """ """ "'" "'";
+        }
+
+        .layout-1 .quote-text::before,
+        .layout-4 .quote-text::before {
+            content: open-quote;
+        }
+
+        .layout-1 .quote-text::after,
+        .layout-4 .quote-text::after {
+            content: close-quote;
+        }
+
+        .quote-source {
+            font-family: 'Noto Serif SC', 'STKaiti', 'KaiTi', serif;
+            font-size: 15px;
+            color: #666;
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        .quote-source::before {
+            content: "—— ";
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            .container {
+                display: block;
+                margin: 0;
+                padding: 0;
+            }
+
+            .input-section {
+                display: none !important;
+            }
+
+            .preview-section {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .a4-preview {
+                box-shadow: none;
+                margin: 0;
+                padding: 50mm 40mm;
+                width: 210mm;
+                height: 297mm;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+
+            /* 打印时隐藏装饰线条 */
+            .a4-preview::before,
+            .a4-preview::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h1>✨ 优雅引用卡片</h1>
+            
+            <div class="form-group">
+                <label>引用内容</label>
+                <textarea id="quoteText" placeholder="输入一句优美的引用..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>引用来源（可选）</label>
+                <input type="text" id="quoteSource" placeholder="例如：作者、书名...">
+            </div>
+
+            <div class="button-group">
+                <button class="btn-add" onclick="addQuote()">添加引用</button>
+            </div>
+
+            <div class="quotes-list">
+                <h3>已添加的引用 (<span id="quoteCount">0</span>)</h3>
+                <div id="quotesList"></div>
+            </div>
+
+            <div class="button-group" style="margin-top: 20px;">
+                <button class="btn-change" onclick="changeLayout()">更换布局</button>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-clear" onclick="clearAll()">清空内容</button>
+                <button class="btn-print" onclick="printCard()">打印卡片</button>
+            </div>
+        </div>
+
+        <div class="preview-section">
+            <div class="a4-preview layout-1" id="preview">
+                <div class="quote-display" id="quoteDisplay">
+                    <div style="text-align: center; color: #ccc; font-size: 14px;">
+                        请添加引用以预览效果
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let quotes = [];
+        let currentLayout = 1;
+        const totalLayouts = 5;
+
+        // 页面加载时恢复数据
+        window.addEventListener('load', function() {
+            const saved = localStorage.getItem('quotes');
+            const savedLayout = localStorage.getItem('layout');
+            
+            if (saved) {
+                try {
+                    quotes = JSON.parse(saved);
+                    updateDisplay();
+                } catch (e) {
+                    console.error('恢复数据失败', e);
+                }
+            }
+            
+            if (savedLayout) {
+                currentLayout = parseInt(savedLayout);
+                updateLayoutClass();
+            }
+        });
+
+        function addQuote() {
+            const text = document.getElementById('quoteText').value.trim();
+            const source = document.getElementById('quoteSource').value.trim();
+
+            if (!text) {
+                alert('请输入引用内容！');
+                return;
+            }
+
+            quotes.push({ text: text, source: source });
+            saveToLocalStorage();
+            updateDisplay();
+
+            // 清空输入框
+            document.getElementById('quoteText').value = '';
+            document.getElementById('quoteSource').value = '';
+            document.getElementById('quoteText').focus();
+        }
+
+        function removeQuote(index) {
+            quotes.splice(index, 1);
+            saveToLocalStorage();
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            // 更新列表
+            const listHtml = quotes.map(function(q, i) {
+                return `
+                    <div class="quote-item">
+                        <div class="text">"${q.text}"</div>
+                        ${q.source ? `<div class="source">—— ${q.source}</div>` : ''}
+                        <button class="remove" onclick="removeQuote(${i})">×</button>
+                    </div>
+                `;
+            }).join('');
+            
+            document.getElementById('quotesList').innerHTML = listHtml;
+            document.getElementById('quoteCount').textContent = quotes.length;
+
+            // 更新预览
+            const displayHtml = quotes.length > 0 ? quotes.map(function(q) {
+                // 根据文字长度计算字体大小
+                const textLength = q.text.length;
+                let sizeClass = 'size-m';
+                
+                if (textLength <= 20) {
+                    sizeClass = 'size-xs';
+                } else if (textLength <= 40) {
+                    sizeClass = 'size-s';
+                } else if (textLength <= 60) {
+                    sizeClass = 'size-m';
+                } else if (textLength <= 100) {
+                    sizeClass = 'size-l';
+                } else {
+                    sizeClass = 'size-xl';
+                }
+                
+                return `
+                    <div class="quote-block">
+                        <div class="quote-text ${sizeClass}">${q.text}</div>
+                        ${q.source ? `<div class="quote-source">${q.source}</div>` : ''}
+                    </div>
+                `;
+            }).join('') : '<div style="text-align: center; color: #ccc; font-size: 14px;">请添加引用以预览效果</div>';
+            
+            document.getElementById('quoteDisplay').innerHTML = displayHtml;
+        }
+
+        function changeLayout() {
+            currentLayout = (currentLayout % totalLayouts) + 1;
+            localStorage.setItem('layout', currentLayout.toString());
+            updateLayoutClass();
+        }
+
+        function updateLayoutClass() {
+            const preview = document.getElementById('preview');
+            preview.className = 'a4-preview layout-' + currentLayout;
+        }
+
+        function clearAll() {
+            if (quotes.length === 0) {
+                alert('当前没有内容可清空！');
+                return;
+            }
+            
+            if (confirm('确定要清空所有引用吗？此操作不可恢复！')) {
+                quotes = [];
+                saveToLocalStorage();
+                updateDisplay();
+            }
+        }
+
+        function printCard() {
+            if (quotes.length === 0) {
+                alert('请先添加一些引用再打印！');
+                return;
+            }
+            window.print();
+        }
+
+        function saveToLocalStorage() {
+            try {
+                localStorage.setItem('quotes', JSON.stringify(quotes));
+            } catch (e) {
+                console.error('保存失败', e);
+            }
+        }
+
+        // 支持回车添加
+        document.getElementById('quoteText').addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                addQuote();
+            }
+        });
+
+        document.getElementById('quoteSource').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                addQuote();
+            }
+        });
+    </script>
+</body>
+</html>
