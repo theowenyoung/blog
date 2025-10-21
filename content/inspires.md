@@ -16,6 +16,7 @@ taxonomies:
 
 ## 有意思
 
+- [纽约时报 礼物推荐](https://www.nytimes.com/wirecutter/gifts/)
 - [体量最大的美股投资机构的持仓披露](https://www.dataroma.com/m/managers.php) -
   延迟一个季度的
 - [Leaflet](https://leaflet.pub/home) - 建立在 Bluesky At 协议上的博客
