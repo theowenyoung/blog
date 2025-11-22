@@ -16,7 +16,10 @@ taxonomies:
 
 ## 有意思
 
-- [莫斯电码聊天](https://noamtamir.github.io/morwse/) - 很有意思欬，感觉可以做一个 h5, 用户可以为任何文字生成一个莫斯电码的网页然后发送给朋友。
+- [报纸的头版存档](https://walzr.com/papers)
+- [莫斯电码聊天](https://noamtamir.github.io/morwse/) -
+  很有意思欬，感觉可以做一个 h5,
+  用户可以为任何文字生成一个莫斯电码的网页然后发送给朋友。
 - [纽约时报 礼物推荐](https://www.nytimes.com/wirecutter/gifts/)
 - [体量最大的美股投资机构的持仓披露](https://www.dataroma.com/m/managers.php) -
   延迟一个季度的
