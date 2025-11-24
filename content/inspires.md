@@ -16,6 +16,8 @@ taxonomies:
 
 ## 有意思
 
+- [The Ultimate Collection](https://select.supply/) -
+  收藏好品质的东西，科技，书籍，家居，工具。
 - [Forty News](https://forty.news/) - 放 40年前今日的新闻.
 - [报纸的头版存档](https://walzr.com/papers)
 - [莫斯电码聊天](https://noamtamir.github.io/morwse/) -
