@@ -60,6 +60,7 @@ Curating awesome alternative resources.
 ## Hacker News
 
 - [hacker news open source in ruby](hhttps://github.com/lobsters/lobsters)
+- [hacker news 向量搜索](https://hn.fiodorov.es)
 
 - [littr](https://github.com/mariusor/go-littr)
 
