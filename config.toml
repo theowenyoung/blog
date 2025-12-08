@@ -36,7 +36,7 @@ prefix_url = "https://www.owenyoung.com"
 indieweb_url = "https://owenyoung.com/"
 theme_color = "#fffcf9"
 meilisearch_url = "https://meilisearch.owenyoung.com"
-meilisearch_api_key = "fb8ab67a7ec1d9f57008c0c610dfc0743ed0f62619097fc259921dfd7d691ea5"
+meilisearch_api_key = "2b1e2908822c9ef959e0ba791b91fbbc713d0d1591edbe681a20a3d722e7565f"
 ### indieweb note
 bio = "Web developer, I like reading and explore the internet, so I have collected queit a few notes in my blog."
 ### THIRD PARTY
