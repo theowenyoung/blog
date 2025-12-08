@@ -55,7 +55,7 @@ image = "https://www.owenyoung.com/heading.jpg"
 "label_action_repost-of" = "reposted"
 "label_action_rsvp" = "answered"
 twitter_user = "TheOwenYoung"
-webmention_path = "webmentions"
+# webmention_path = "webmentions"
 ### I18N WORDS
 
 [slugify]

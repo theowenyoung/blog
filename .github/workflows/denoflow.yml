@@ -5,8 +5,8 @@ on:
   # push:
   #   branches:
   #     - main
-  schedule:
-    - cron: "1 0 * * *"
+  # schedule:
+  #   - cron: "1 0 * * *"
 jobs:
   denoflow:
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
       - run: make install
       - name: Build Site
         run: make build
-      - name: Publish to pages 
+      - name: Publish to pages
         uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
