@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 编程的本质是“将人类的意图结构化为可执行的形式”。 -
+> [source](https://generativeai.pub/the-eternal-return-of-abstraction-why-programming-was-never-about-code-18412033b517)
+
 > 男人憧憬着一个女人的身体的时候，就关心到她的灵魂，自己骗自己说是爱上了她的灵魂。唯有占领了她的身体之后，他才能够忘记她的灵魂。 -
 > 《红玫瑰与白玫瑰》
 
