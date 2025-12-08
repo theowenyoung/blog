@@ -1,0 +1,19 @@
+name: Trigger Deploy
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "scripts/**"
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger deployment
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: token ${{ secrets.PERSONAL_TOKEN }}" \
+            https://api.github.com/repos/tonormal/studio/dispatches \
+            -d '{"event_type":"deploy-external-app","client_payload":{"service":"owen-blog","repository":"${{ github.repository }}"}}'
