@@ -344,6 +344,7 @@ taxonomies:
 - [好看的博客详情页, 图片在右侧](https://aethermug.com/posts/i-do-not-remember-my-life-and-it-s-fine)
 - [好看的landing頁面](https://websmith.studio/)
 - [好看的博客配色](https://olly.pagecord.com/)
+- [Godaddy 新版配色也很不错](https://www.godaddy.com/en)
 
 ## 资源
 
