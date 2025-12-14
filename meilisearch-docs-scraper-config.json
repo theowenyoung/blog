@@ -23,7 +23,7 @@
     "lvl2": ".post-header .entry-title",
     "lvl3": ".e-content h2",
     "lvl4": "main h3",
-    "text": "article p, article li, .e-content p, .e-content li, .p-content p, .p-content li"
+    "text": ".e-content p, .e-content li, .p-content p, .p-content li"
   },
   "strip_chars": " .,;:#",
   "min_indexed_level": 2,
