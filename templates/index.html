@@ -2,11 +2,11 @@
 {% block before_meta %}
   {% if config.extra.meilisearch_url %}
     {%- if config.mode=="build" -%}
-    {%- set_global meilicss = load_data(path="static/site/styles/docs-searchbar.min.css") -%}
+    {%- set_global meilicss = load_data(path="static/site/styles/meilisearch-docsearch.css") -%}
     {%- else -%}
-      <link rel="preload" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <link rel="preload" href="{{ get_url(path="site/styles/meilisearch-docsearch.css", trailing_slash=false,cachebust=true) | safe }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <noscript>
-        <link rel="stylesheet" href="{{ get_url(path="site/styles/docs-searchbar.min.css", trailing_slash=false,cachebust=true) | safe }}">
+        <link rel="stylesheet" href="{{ get_url(path="site/styles/meilisearch-docsearch.css", trailing_slash=false,cachebust=true) | safe }}">
       </noscript>
     {%- endif -%}
   {% endif %}
@@ -46,7 +46,7 @@
           </p>
 
         {% endif %}
-        <input aria-label="search input" type="search" id="search-bar-input" placeholder="Search" class="relative"/>
+        <div id="docsearch"></div>
         </div>
       </div>
 {% endblock%}
@@ -138,19 +138,16 @@
   {% endblock main -%}
   {% block before_body_end %}
     {% if config.extra.meilisearch_url %}
-      <script defer src="{{ get_url(path="site/js/docs-searchbar.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
+      <script defer src="{{ get_url(path="site/js/meilisearch-docsearch.min.js", trailing_slash=false,cachebust=true) | safe }}"></script>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
-          docsSearchBar({
-            hostUrl: '{{ config.extra.meilisearch_url | safe }}',
-            apiKey: '{{ config.extra.meilisearch_api_key | safe }}',
-            indexUid: 'owen-blog',
-            inputSelector: '#search-bar-input',
-            meilisearchOptions: {
-              limit: 10
-            },
-            debug: false, // Set debug to true if you want to inspect the dropdown
-          })
+          const { docsearch } = window.__docsearch_meilisearch__;
+          docsearch({
+            container: "#docsearch",
+            host: "{{ config.extra.meilisearch_url | safe }}",
+            apiKey: "{{ config.extra.meilisearch_api_key | safe }}",
+            indexUid: "owen-blog",
+          });
         });
       </script>
     {% endif %}
