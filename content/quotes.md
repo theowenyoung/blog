@@ -1,7 +1,7 @@
 ---
 title: 收集发人深省的话
 date: 2021-03-26
-updated: 2025-09-06
+updated: 2026-01-11
 taxonomies:
   categories:
     - Notes
@@ -9,6 +9,11 @@ taxonomies:
     - Quotes
     - Random Book
 ---
+
+> 我 18 岁以前一直可怜的以为自己是手淫的发明人。 - 波兰斯基
+
+> 如果一个问题不能被解决，那么它就不是真正的问题。它只是一种情况、一种环境、一种生活现实，它像重力一样，是一个无法解决的问题。这里有一个小小的诀窍，它有助于你节省大量的时间。这个诀窍就是接受现实。我们拼命与现实抗争，利用所拥有的一切去改变现状。但不论你怎么做，现实永远是赢家。你无法打败它，无法欺骗它，也无法让它屈服于你的意志。现在不能，以后也不能。 -
+> 《斯坦福人生设计课》
 
 > 编程的本质是“将人类的意图结构化为可执行的形式”。 -
 > [source](https://generativeai.pub/the-eternal-return-of-abstraction-why-programming-was-never-about-code-18412033b517)
