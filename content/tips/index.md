@@ -25,7 +25,8 @@ taxonomies:
 
 ### 避雷
 
-- Kindle, 积灰好几年了，体验太差，尤其是翻页，然后找书又不太方便，所以现在基本都是在用微信读书了，可以自己导入书籍，电脑，ipad，手机都可以用。
+- Kindle,
+  积灰好几年了，体验太差，尤其是翻页，然后找书又不太方便，所以现在基本都是在用微信读书了，可以自己导入书籍，电脑，ipad，手机都可以用。
 
 ### 厨房
 
@@ -39,12 +40,17 @@ taxonomies:
 
 ### 笔记
 
-- [Foam](https://foambubble.github.io/foam/) + [我开发的主题](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki)，太爽了，所以我才这么勤快的更新 wiki
+- [Foam](https://foambubble.github.io/foam/) +
+  [我开发的主题](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki)，太爽了，所以我才这么勤快的更新
+  wiki
 
 ### 读书
 
 - 微信读书，可能有删减吧，但是你也可以自己倒入 pdf，三端都能用，很方便。
-- Kindle, 曾经觉得这是被割韭菜的产品，当时知乎大 V 铺天盖地的推广，但是买回来之后，基本没怎么用，闲置了 7 年之久。最近开始重度看 Hacker News 之后，突然喜欢了某种简单，离线的东西。于是重新开始用，由于 Kindle 几乎只能下一页，所以你的确不会被干扰，这一点很重要，我用微信读书的时候，一定会想切换到别的应用的。现在变成了我的遛狗必用硬件。我会在一个没有网络的地下室或者小区里边遛狗边看书。
+- Kindle, 曾经觉得这是被割韭菜的产品，当时知乎大 V
+  铺天盖地的推广，但是买回来之后，基本没怎么用，闲置了 7 年之久。最近开始重度看
+  Hacker News 之后，突然喜欢了某种简单，离线的东西。于是重新开始用，由于 Kindle
+  几乎只能下一页，所以你的确不会被干扰，这一点很重要，我用微信读书的时候，一定会想切换到别的应用的。现在变成了我的遛狗必用硬件。我会在一个没有网络的地下室或者小区里边遛狗边看书。
 
 ## 别人的购买推荐列表
 
@@ -67,3 +73,9 @@ taxonomies:
 
 - 吉他
 - GeoShred - ios 的乐器软件，有生产力的音乐演奏软件
+
+### 快捷键
+
+- command-e、command-g 快速查找页面文本
+- Shift-option-command-v：粘贴纯文本（ 不含任何格式 ），区别于直接使用 command-v
+  操作。
