@@ -1,7 +1,7 @@
 ---
 title: 生活技巧
 date: 2021-03-25
-updated: 2022-03-25
+updated: 2026-01-13
 taxonomies:
   categories:
     - Notes
@@ -79,3 +79,6 @@ taxonomies:
 - command-e、command-g 快速查找页面文本
 - Shift-option-command-v：粘贴纯文本（ 不含任何格式 ），区别于直接使用 command-v
   操作。
+- cmd-1 将窗口切换为图标视图
+- cmd-2 将窗口切换为列表视图
+- Command-~ 在当前程序的不同窗口之间切换
