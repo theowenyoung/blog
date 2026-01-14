@@ -109,3 +109,7 @@ taxonomies:
 ## HN
 
 - [Awesome HN](https://github.com/cheeaun/awesome-hacker-news)
+
+## reddit
+
+-[Cool Github repo](https://www.reddit.com/r/coolgithubprojects/top/?t=all)
