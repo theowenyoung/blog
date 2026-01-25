@@ -11,6 +11,8 @@ taxonomies:
     - Random Book
 ---
 
+> 每次参加内容创作者的活动（比如今天的小宇宙播客大赏）都会被感染到。看到这么多优秀的创作者都在认真地做好东西，特别受到鼓舞，也要做好东西！ - 2026.1.26
+
 > 老梁的这两期[湾区演讲(上)](https://www.youtube.com/watch?v=sVO5i2ysmwU),
 > [下集](https://www.youtube.com/watch?v=V7Ey0RpwGUg) 看了是真带劲。
 
