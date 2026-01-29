@@ -15,7 +15,7 @@ taxonomies:
 [Derek Sivers](https://sive.rs/)
 在[《Anything You Want》](https://sive.rs/a)中写道："我遇到的所有最酷的人，都是通过我写的东西找到我的人。"，从我有限的经验来看，我也是，所以请不要吝啬，如果你觉得我们的气质有点契合，那么
 i 人也可以先建立一种联系（因为是 i
-人，所以我们可以只建立联系而暂时不说话，但希望你在添加我的时候附上你的公开主页如博客，小红书，即刻，推特等等（还没有？快去建立！）
+人，所以我们可以只建立联系而暂时不说话，但希望你在添加我的时候附上你的公开主页如博客，小红书，即刻，推特等等（还没有？快去[建立](https://pika.page/)！）
 ）！
 
 ## 我的生活哲学
@@ -49,7 +49,7 @@ i 人也可以先建立一种联系（因为是 i
 - Telegram 频道: <https://t.me/owenyoungzh>
 - Telegram 私人账户: <https://t.me/itsowenyoung>
 - 微信朋友圈（请大胆通过邮件或者 [Telegram](https://t.me/itsowenyoung)
-  联系我索要微信号，或者告诉我你的微信号，希望能同时附上你的公开主页如博客，小红书，即刻，推特等等（还没有？快去建立！)
+  联系我索要微信号，或者告诉我你的微信号，希望能同时附上你的公开主页如博客，小红书，即刻，推特等等（还没有？快去[建立](https://pika.page/)！)
 - Twitter English [@TheOwenYoung](https://twitter.com/TheOwenYoung)
 
 ## 关于这个博客
