@@ -10,6 +10,13 @@ taxonomies:
     - Random Book
 ---
 
+> 自由不是你想怎么样就怎么样，自由是你有多少可选项。而可选项来自学习和积累，比如你想弹钢琴，你得先学会弹钢琴，你才有弹钢琴的自由。
+>
+> 人的自由或者人的本质就是学习。
+>
+> —— 播客虚实之间True
+> Imagination：[《成为有能的自己：能做任何事的能力》](https://www.xiaoyuzhoufm.com/episode/69785f960c314a9fed82136b#ts=2981?utm_source=subtitle_share_page&s=eyJ1IjoiNjM4MGY0ZDZlZGNlNjcxMDRhM2ZmNWI4In0%3D)
+
 > 老师到目前为止不需要真的专注于灵感，因为他们有"被俘虏的观众"——学生不能不上课，不像看电影无聊了可以关掉。 -
 > [学习如何发生](https://perell.com/essay/how-learning-happens/)
 
