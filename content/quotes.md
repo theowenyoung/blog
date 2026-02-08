@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 驱动人们追逐财富的不是物质需要，而是"被注意、被关注、被赞许"的渴望。但花钱买来的注意力是"垃圾食品"级别的——来得快，不持久，而且打动的多是陌生人。你真正在乎的人——家人、密友——衡量你的标准是你的善良、幽默、智慧、爱，不是你开什么车。 -
+> Adam Smith
+
 > 声望地位的定义："其他人知晓你拥有足以在愿意时帮助他人的资源"。 -
 > [source](https://meltingasphalt.com/social-status-down-the-rabbit-hole/)
 
