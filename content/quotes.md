@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> “我在商业中发现的最令人惊讶的事情，是对财务的高度关注，以及对服务的低度关注。”
+> ——亨利·福特
+
 > 当你强迫才华横溢的人扮演非本色角色时，他们很快就会沦为平庸之辈。 -
 > [source](https://collabfund.com/blog/your-way-is-the-only-way/)
 
