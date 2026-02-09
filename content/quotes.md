@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 我们所知的历史，无非是那些被记录下来、公开分享或对着镜头讲述的内容。那些被深藏心底、带进坟墓的秘密，其规模——我猜——至少是已知历史的千倍，也必定更为引人入胜。 - [source](https://collabfund.com/blog/what-a-world/)
+
 > "这位性感偶像、飞机爱好者兼冒险家仍在撰写个人电脑相关文章，并在硅谷经营着活跃的咨询业务，将自己的网络灵魂卖给出价最高者。" -
 > [Robert X. Cringely 的博客简介](https://www.cringely.com/bout-bob/)
 
