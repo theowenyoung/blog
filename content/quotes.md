@@ -10,6 +10,12 @@ taxonomies:
     - Random Book
 ---
 
+> 当你强迫才华横溢的人扮演非本色角色时，他们很快就会沦为平庸之辈。 -
+> [source](https://collabfund.com/blog/your-way-is-the-only-way/)
+
+> 衡量人生成功的终极标准，在于你是否获得了自己真正想要的东西。但这比听起来更难，因为人们很容易去模仿那些追求你并不想要的东西的人。 -
+> [source](https://collabfund.com/blog/your-way-is-the-only-way/)
+
 > "杂志建筑师"（Magazine
 > Architect）。这是建筑圈内的一个讽刺性称谓，专指那些热衷于设计外观炫目、频登专业期刊封面、斩获各类奖项，却在使用功能上严重欠缺、忽视使用者实际需求的建筑师。 -
 > [source](https://collabfund.com/blog/beautiful-vs-practical-advice/)
