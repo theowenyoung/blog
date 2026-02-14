@@ -45,6 +45,7 @@ taxonomies:
 ## CSS 框架
 
 - [bulma](https://github.com/jgthms/bulma)
+- [Tufte](https://github.com/edwardtufte/tufte-css) - 经典的打印样式
 - [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
   - [headwind](https://github.com/heybourn/headwind) vscode extension for sort
     class name
@@ -61,7 +62,8 @@ taxonomies:
 - [mkws 的极简 css 主题](https://t.mkws.sh/)
 - [tacit](https://github.com/yegor256/tacit) - 非常好看的 classless 框架
 - [radix ui](https://github.com/radix-ui/primitives)- 无基础样式的组件库
-- [Panda CSS](https://panda-css.com/) - Panda CSS， CSS in JS, 主题式的，theme-ui 式的。
+- [Panda CSS](https://panda-css.com/) - Panda CSS， CSS in JS,
+  主题式的，theme-ui 式的。
 
 ## React UI
 

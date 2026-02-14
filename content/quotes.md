@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 阅读博客的人往往是值得接触的群体：他们充满好奇心，富有耐心，乐于参与长篇论述的交流。 -
+> [source](https://www.joanwestenberg.com/the-case-for-blogging-in-the-ruins/)
+
 > “这时，我才开始体会到金钱的最大优势：考虑金钱以外事情的能力。” -
 > 《你当像鸟飞往你的山》
 
