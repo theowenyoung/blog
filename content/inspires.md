@@ -334,7 +334,6 @@ taxonomies:
 - [多个好看的卡片背景配色](https://hallofshame.design/collection/)
 - [Muse](https://museapp.com/#pricing) - 浅黄色配色，好看
 - [Pinterest blog](https://business.pinterest.com/en-gb/blog/)
-- [paulstamatiou blog](https://paulstamatiou.com) - 配色像 Claude 的博客
 - [sgnt.ai](https://sgnt.ai/p/hell-out-of-llms/) - 好看的配色
 - [Brian Lovin 的博客](https://brianlovin.com/app-dissection/neubible-ios) -
   太好看了
