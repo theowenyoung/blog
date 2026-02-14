@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 弗吉尼亚·伍尔夫曾论述拥有独立空间的重要性：那是供人进行创作的物理场所，不受干扰与控制。博客便是网络世界中的独立空间。在这里，你自主决定书写内容与表达方式，无需屈从于平台算法的任性摆布——那些平台只顾榨取你的参与度，却不关心这种参与究竟是否让你或他人变得更聪明。 -
+> [source](https://www.joanwestenberg.com/the-case-for-blogging-in-the-ruins/)
+
 > 阅读博客的人往往是值得接触的群体：他们充满好奇心，富有耐心，乐于参与长篇论述的交流。 -
 > [source](https://www.joanwestenberg.com/the-case-for-blogging-in-the-ruins/)
 
