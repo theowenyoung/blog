@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 对话模式（比如播客）更倾向于营造共识与默契而非提出质疑与批判。 -
+> [source](https://www.joanwestenberg.com/comfort-food-for-the-thinking-class-the-great-intellectual-stagnation/)
+
 > 拥有五万个从不打开邮件的订阅者名单，其价值远不及五百个逐字阅读并偶尔给予深度回复的读者。后者会购买你的著作，向朋友推荐你，并长久陪伴你。前者不过是你在那些无聊的数字炫耀派对上能拿出来吹嘘的数字而已。 -
 > [source](https://www.joanwestenberg.com/why-my-newsletter-costs-2-50/)
 
