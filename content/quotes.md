@@ -10,6 +10,9 @@ taxonomies:
     - Random Book
 ---
 
+> 我有一条原则：绝不开始任何不愿为此投入五年光阴的事业。绝不参与半年后就会厌倦的项目，绝不参与半心半意的快速致富计划。如果连自己都无法想象至少要为此奋斗五到七年，那我连尝试的念头都没有。我坚信长远规划的力量。 -
+> [source](https://www.joanwestenberg.com/i-work-on-a-5-year-time-frame-anything-less-is-a-loss/)
+
 > 对话模式（比如播客）更倾向于营造共识与默契而非提出质疑与批判。 -
 > [source](https://www.joanwestenberg.com/comfort-food-for-the-thinking-class-the-great-intellectual-stagnation/)
 
