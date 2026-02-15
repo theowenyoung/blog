@@ -44,6 +44,7 @@ taxonomies:
 
 ## CSS 框架
 
+- [OAT](https://oat.ink/) - CSS 框架
 - [bulma](https://github.com/jgthms/bulma)
 - [Tufte](https://github.com/edwardtufte/tufte-css) - 经典的打印样式
 - [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
