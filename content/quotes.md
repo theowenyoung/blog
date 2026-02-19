@@ -10,6 +10,8 @@ taxonomies:
     - Random Book
 ---
 
+> 如果你打算靠某件事谋生，务必确保它没有可扩展性。 - 塔勒布
+
 > 无数可能性在我面前展开，无数人试图将我推向不同方向，给我建议，询问他们如何投资或我将做什么。说这令人应接不暇简直是轻描淡写。 -
 > [OpenClaw 创始人 Peter Steinberger](https://steipete.me/posts/2026/openclaw)
 
