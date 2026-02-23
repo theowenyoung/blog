@@ -344,6 +344,7 @@ taxonomies:
 - [好看的landing頁面](https://websmith.studio/)
 - [好看的博客配色](https://olly.pagecord.com/)
 - [Godaddy 新版配色也很不错](https://www.godaddy.com/en)
+- [好看的排版，舒服](https://thelocalyarn.com/excursus/secretary/index.html)
 
 ## 资源
 
