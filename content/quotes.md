@@ -10,6 +10,11 @@ taxonomies:
     - Random Book
 ---
 
+> 无论你认为自己能行，还是认为自己不行——你都是对的。 - Henry Ford
+
+> 你就是宇宙的中心，而其他人也是。 -
+> [source](https://news.ycombinator.com/item?id=23096406)
+
 > 你将终生背负所有决定的后果。 -
 > [source](https://news.ycombinator.com/item?id=8082029)
 
