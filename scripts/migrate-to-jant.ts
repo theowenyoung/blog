@@ -79,18 +79,18 @@ interface State {
 // State management
 // ─────────────────────────────────────────────────────────────────────────────
 
-async function loadState(): Promise<State> {
-  try {
-    return JSON.parse(await Deno.readTextFile(STATE_FILE));
-  } catch {
-    return { migrated: {}, lastRun: "" };
-  }
-}
+// async function loadState(): Promise<State> {
+//   try {
+//     return JSON.parse(await Deno.readTextFile(STATE_FILE));
+//   } catch {
+//     return { migrated: {}, lastRun: "" };
+//   }
+// }
 
-async function saveState(state: State): Promise<void> {
-  state.lastRun = new Date().toISOString();
-  await Deno.writeTextFile(STATE_FILE, JSON.stringify(state, null, 2));
-}
+// async function saveState(state: State): Promise<void> {
+//   state.lastRun = new Date().toISOString();
+//   await Deno.writeTextFile(STATE_FILE, JSON.stringify(state, null, 2));
+// }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // File scanning
@@ -406,7 +406,8 @@ async function main() {
   if (flagDryRun) console.log("    Mode   : DRY RUN (no writes)");
   console.log();
 
-  const state = await loadState();
+  // const state = await loadState();
+  const state: State = { migrated: {}, lastRun: "" };
   const files = await scanBlogFiles();
   console.log(`Found ${files.length} markdown files\n`);
 
@@ -431,7 +432,7 @@ async function main() {
     } else if (res === "skipped") stats.skipped++;
     // "stop" means this type is full; continue loop for other types
 
-    if (!flagDryRun && res !== "skipped") await saveState(state);
+    // if (!flagDryRun && res !== "skipped") await saveState(state);
   }
 
   console.log("\n──────────────────────────────────────────");
@@ -440,7 +441,7 @@ async function main() {
   console.log(`  ❌  Errors  : ${stats.error}`);
   console.log(`  ⏭️   Skipped : ${stats.skipped}`);
   console.log(`  Breakdown  : note=${counters.note}, link=${counters.link}, quote=${counters.quote}`);
-  if (!flagDryRun) console.log(`  State      : ${STATE_FILE}`);
+  // if (!flagDryRun) console.log(`  State      : ${STATE_FILE}`);
   if (errorLog.length > 0) {
     console.log("\n❌  Error details:");
     for (const { path, error } of errorLog) {
