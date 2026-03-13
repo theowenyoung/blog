@@ -207,24 +207,25 @@ POST /api/posts
 
 **Fields:**
 
-| Field           | Type                                | Required | Default     | Description                                                          |
-| --------------- | ----------------------------------- | -------- | ----------- | -------------------------------------------------------------------- |
-| `format`        | `note` \| `link` \| `quote`         | **yes**  | —           | Post format                                                          |
-| `title`         | string                              | no       | —           | Post title. Notes with titles render as articles                     |
-| `body`          | string                              | no       | —           | Post content as TipTap JSON (used by the editor UI)                  |
-| `bodyMarkdown`  | string                              | no       | —           | Post content in Markdown (see [Body Format](#body-format))           |
-| `slug`          | string                              | no       | auto        | URL slug. Auto-generated from title or as random ID                  |
-| `status`        | `draft` \| `published`              | no       | `published` |                                                                      |
-| `visibility`    | `public` \| `unlisted` \| `private` | no       | `public`    |                                                                      |
-| `pinned`        | boolean                             | no       | `false`     | Pin to top of timeline (max 3)                                       |
-| `featured`      | boolean                             | no       | `false`     | Mark as featured content                                             |
-| `url`           | string (URL)                        | no       | —           | Link URL (for `link` format) or source URL (for `quote`)             |
-| `quoteText`     | string                              | no       | —           | Quoted text (for `quote` format)                                     |
-| `rating`        | integer (1–5)                       | no       | —           | Rating score                                                         |
-| `collectionIds` | string[]                            | no       | —           | Collection UUIDs to add the post to                                  |
-| `replyToId`     | string (UUID)                       | no       | —           | Create as a reply in a thread                                        |
-| `publishedAt`   | integer                             | no       | now         | Unix timestamp in seconds                                            |
-| `mediaIds`      | string[]                            | no       | —           | Media UUIDs to attach (max 20). Upload files first via `/api/upload` |
+| Field           | Type                                | Required | Default     | Description                                                                                                                                                                                                  |
+| --------------- | ----------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `format`        | `note` \| `link` \| `quote`         | **yes**  | —           | Post format                                                                                                                                                                                                  |
+| `title`         | string                              | no       | —           | Post title. Notes with titles render as articles                                                                                                                                                             |
+| `body`          | string                              | no       | —           | Post content as TipTap JSON (used by the editor UI)                                                                                                                                                          |
+| `bodyMarkdown`  | string                              | no       | —           | Post content in Markdown (see [Body Format](#body-format))                                                                                                                                                   |
+| `slug`          | string                              | no       | auto        | URL slug. Auto-generated from title or as random ID. Mutually exclusive with `path`                                                                                                                          |
+| `path`          | string                              | no       | —           | Custom URL path (without leading `/`). If the path is a valid slug, it's used directly; otherwise it's slugified for the URL and the original path is registered as an alias. Mutually exclusive with `slug` |
+| `status`        | `draft` \| `published`              | no       | `published` |                                                                                                                                                                                                              |
+| `visibility`    | `public` \| `unlisted` \| `private` | no       | `public`    |                                                                                                                                                                                                              |
+| `pinned`        | boolean                             | no       | `false`     | Pin to top of timeline (max 3)                                                                                                                                                                               |
+| `featured`      | boolean                             | no       | `false`     | Mark as featured content                                                                                                                                                                                     |
+| `url`           | string (URL)                        | no       | —           | Link URL (for `link` format) or source URL (for `quote`)                                                                                                                                                     |
+| `quoteText`     | string                              | no       | —           | Quoted text (for `quote` format)                                                                                                                                                                             |
+| `rating`        | integer (1–5)                       | no       | —           | Rating score                                                                                                                                                                                                 |
+| `collectionIds` | string[]                            | no       | —           | Collection UUIDs to add the post to                                                                                                                                                                          |
+| `replyToId`     | string (UUID)                       | no       | —           | Create as a reply in a thread                                                                                                                                                                                |
+| `publishedAt`   | integer                             | no       | now         | Unix timestamp in seconds                                                                                                                                                                                    |
+| `mediaIds`      | string[]                            | no       | —           | Media UUIDs to attach (max 20). Upload files first via `/api/upload`                                                                                                                                         |
 
 **Slug rules:**
 
@@ -634,7 +635,14 @@ Three target types:
 GET /api/custom-urls
 ```
 
-Public.
+Public. Results are sorted by creation date (newest first) and paginated using
+`DEFAULT_PAGE_SIZE` (100 items per page).
+
+**Query parameters:**
+
+| Parameter | Type    | Required | Default | Description |
+| --------- | ------- | -------- | ------- | ----------- |
+| `page`    | integer | no       | `1`     | Page number |
 
 **Response (200):**
 
@@ -659,7 +667,10 @@ Public.
       "redirectType": null,
       "createdAt": 1706000000
     }
-  ]
+  ],
+  "total": 42,
+  "page": 1,
+  "totalPages": 1
 }
 ```
 
@@ -1047,9 +1058,10 @@ async function migrate(posts) {
 
 - **Preserve dates**: Always set `publishedAt` to the original publish timestamp
   so posts appear in the correct chronological order.
-- **Slugs**: Use the original URL slug to maintain link compatibility. If your
-  old blog used paths like `/2024/01/my-post`, set `slug` to `2024-01-my-post`
-  or a similar flat slug.
+- **Paths**: Use `path` to preserve original URLs. If your old blog used paths
+  like `2024/01/my-post`, set `path` to `"2024/01/my-post"` — Jant will
+  auto-generate a slug and register the original path as an alias. For simple
+  slugs, use `slug` directly.
 - **Rate yourself**: Add `rating` (1–5) if your old blog had review scores.
 - **Threads**: To recreate comment chains or post series, create the root post
   first, then create replies with `replyToId` set to the root post's `id`.
@@ -1058,6 +1070,144 @@ async function migrate(posts) {
 - **Idempotency**: The API doesn't have built-in idempotency. If your script
   crashes mid-migration, check which posts already exist (via `GET /api/posts`)
   before re-running.
+
+---
+
+## Export & Import
+
+Jant has built-in export and import for full site backup and migration between
+instances.
+
+### Export
+
+Export your entire site as a [Zola](https://www.getzola.org/) static site in a
+ZIP file. The export includes all published posts, collections, threads (merged
+into single pages), and a complete Zola theme — you can build it into a
+standalone static site or import it into another Jant instance.
+
+**From the dashboard:**
+
+Go to **Settings > Account > Export Site** and click the button. Your browser
+will download `jant-export.zip`.
+
+**From the API:**
+
+```
+POST /api/export/zola
+```
+
+**Auth required.**
+
+```bash
+curl -X POST https://your-site.com/api/export/zola \
+  -H "Authorization: Bearer jnt_YOUR_TOKEN" \
+  -o jant-export.zip
+```
+
+**What's in the ZIP:**
+
+```
+config.toml              # Zola site config
+content/_index.md        # Root section
+content/{slug}/index.md  # One file per post (threads merged)
+templates/               # Zola templates (index, page, section, etc.)
+static/style.css         # Theme CSS (dark mode included)
+```
+
+- Threads are merged: the root post and all replies appear in one file,
+  separated by `<!-- jant:reply ... -->` marker comments
+- Reply URLs become Zola `aliases` so existing links still work
+- Media URLs point to the original site (files are not copied into the ZIP)
+- Collections are exported as Zola taxonomies under `/c/`
+
+**Building the static site:**
+
+```bash
+unzip jant-export.zip -d my-site
+cd my-site
+zola build    # Output in public/
+zola serve    # Preview at http://127.0.0.1:1111
+```
+
+### Import
+
+Restore an export ZIP into a Jant instance using the CLI:
+
+```bash
+export JANT_TOKEN=jnt_YOUR_TOKEN
+npx jant import-site --url https://your-site.com
+```
+
+**Authentication:** Set the `JANT_TOKEN` environment variable. This avoids
+exposing the token in shell history or process lists.
+
+**Options:**
+
+| Flag           | Required | Default           | Description                                 |
+| -------------- | -------- | ----------------- | ------------------------------------------- |
+| `--url`        | **yes**  | —                 | Target Jant instance URL                    |
+| `--path`       | no       | `.` (current dir) | Path to export directory or ZIP file        |
+| `--dry-run`    | no       | `false`           | Parse and validate without making API calls |
+| `--skip-media` | no       | `false`           | Skip downloading and re-uploading images    |
+| `-h, --help`   | no       | —                 | Show usage information                      |
+
+**What it does:**
+
+1. Reads and unzips the export file
+2. Creates collections from the ZIP's taxonomy data
+3. Creates posts with original titles, slugs, dates, formats, and ratings
+4. Recreates threads by creating replies with `replyToId`
+5. Downloads images referenced in Markdown and re-uploads them to the target
+   site
+6. Reports a summary of what was created
+
+**Example — dry run first:**
+
+```bash
+# Preview what would be imported (no changes made)
+npx jant import-site \
+  --url https://new-site.com \
+  --path ./jant-export \
+  --dry-run
+```
+
+**Example — import from a directory:**
+
+```bash
+export JANT_TOKEN=jnt_YOUR_TOKEN
+
+# Unzip first, inspect content, then import
+unzip jant-export.zip -d jant-export
+npx jant import-site \
+  --url https://new-site.com \
+  --path ./jant-export
+```
+
+**Example — import from a ZIP directly:**
+
+```bash
+export JANT_TOKEN=jnt_YOUR_TOKEN
+npx jant import-site \
+  --url https://new-site.com \
+  --path jant-export.zip
+```
+
+**Example — fast import without images:**
+
+```bash
+export JANT_TOKEN=jnt_YOUR_TOKEN
+npx jant import-site \
+  --url https://new-site.com \
+  --skip-media
+```
+
+**Tips:**
+
+- Always do a `--dry-run` first to check for parsing errors
+- The import is not idempotent — running it twice creates duplicate posts
+- Use `--skip-media` for faster imports when the original site will stay online
+- The target instance must have API tokens enabled (create one at **Settings >
+  API Tokens**)
 
 ---
 

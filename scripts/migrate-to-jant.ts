@@ -64,7 +64,7 @@ interface MigratedEntry {
   jantId: string;
   jantSlug: string;
   format: PostFormat;
-  customUrlId?: string;
+
   migratedAt: string;
   status: "success" | "error";
   error?: string;
@@ -128,20 +128,6 @@ function classify(relPath: string): { format: PostFormat; subtype: PostSubtype }
   if (relPath.startsWith("links/")) return { format: "link", subtype: "link" };
   if (relPath.startsWith("thoughts/")) return { format: "note", subtype: "thought" };
   return { format: "note", subtype: "note" };
-}
-
-/**
- * Convert relPath → Jant post slug (a-z, 0-9, hyphens only).
- * e.g. "books/12-rules-for-life.md" → "blog-books-12-rules-for-life"
- */
-function toJantSlug(relPath: string): string {
-  return ("blog-" + relPath)
-    .replace(/\.en\.md$/, "-en")
-    .replace(/\.md$/, "")
-    .replace(/\/index$/, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 }
 
 /**
@@ -346,7 +332,7 @@ async function migrateOne(
     status: isDraft ? "draft" : "published",
   };
 
-  if (publishedAt && !isNaN(publishedAt)) payload.publishedAt = publishedAt;
+  if (publishedAt && !isNaN(publishedAt) && !isDraft) payload.publishedAt = publishedAt;
   if (mediaIds.length > 0) payload.mediaIds = mediaIds;
   if (rating != null && rating >= 1 && rating <= 5) payload.rating = Math.round(rating);
 
@@ -366,8 +352,8 @@ async function migrateOne(
     // note (including thoughts)
     if (title) payload.title = title;
     if (processedMarkdown) payload.bodyMarkdown = processedMarkdown;
-    // Only non-thought notes get an explicit slug + custom URL
-    if (subtype !== "thought") payload.slug = toJantSlug(rel);
+    // Only non-thought notes get an explicit path (Jant auto-generates slug + alias)
+    if (subtype !== "thought") payload.path = toCustomPath(rel);
   }
 
   // ── Dry run ──────────────────────────────────────────────────────────────
@@ -394,30 +380,12 @@ async function migrateOne(
     return "error";
   }
 
-  // ── Create custom URL (only for non-thought notes) ──────────────────────
-  let customUrlId: string | undefined;
-  if (subtype === "note") {
-    const cPath = toCustomPath(rel);
-    try {
-      const cu = await apiPost<{ id: string }>("/api/custom-urls", {
-        path: cPath,
-        targetType: "post",
-        targetId: created.slug,
-      });
-      customUrlId = cu.id;
-      console.log(`  🔗  Custom URL: /${cPath} → /${created.slug}`);
-    } catch (err) {
-      console.warn(`  ⚠️   Custom URL failed: ${(err as Error).message}`);
-    }
-  }
-
   // ── Save state ───────────────────────────────────────────────────────────
   state.migrated[rel] = {
     sourcePath: filePath,
     jantId: created.id,
     jantSlug: created.slug,
     format,
-    customUrlId,
     migratedAt: new Date().toISOString(),
     status: "success",
   };
