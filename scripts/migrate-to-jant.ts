@@ -29,10 +29,11 @@ import { basename, dirname, join, relative } from "jsr:@std/path";
 // Config
 // ─────────────────────────────────────────────────────────────────────────────
 
-const JANT_BASE_URL = Deno.env.get("JANT_BASE_URL") ?? "https://jant.localtest.me";
-const JANT_API_TOKEN = Deno.env.get("JANT_API_TOKEN");
-if (!JANT_API_TOKEN) {
-  console.error("❌  JANT_API_TOKEN not set in .env");
+const JANT_BASE_URL =
+  Deno.env.get("JANT_BASE_URL") ?? "https://jant.localtest.me";
+const JANT_DEV_API_TOKEN = Deno.env.get("JANT_DEV_API_TOKEN");
+if (!JANT_DEV_API_TOKEN) {
+  console.error("❌  JANT_DEV_API_TOKEN not set in .env");
   Deno.exit(1);
 }
 
@@ -46,10 +47,17 @@ const flagDryRun = args.includes("--dry-run");
 const limitArg = args.find((a) => a.startsWith("--limit="));
 const typeArg = args.find((a) => a.startsWith("--type="));
 
-const LIMIT = flagAll ? Infinity : (limitArg ? parseInt(limitArg.split("=")[1], 10) : DEFAULT_LIMIT);
+const LIMIT = flagAll
+  ? Infinity
+  : limitArg
+    ? parseInt(limitArg.split("=")[1], 10)
+    : DEFAULT_LIMIT;
 const ONLY_TYPE = typeArg?.split("=")[1] as PostFormat | undefined;
 
-const AUTH = { Authorization: `Bearer ${JANT_API_TOKEN}` } as Record<string, string>;
+const AUTH = { Authorization: `Bearer ${JANT_DEV_API_TOKEN}` } as Record<
+  string,
+  string
+>;
 const JSON_HDRS = { ...AUTH, "Content-Type": "application/json" };
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -98,7 +106,10 @@ interface State {
 
 async function scanBlogFiles(): Promise<string[]> {
   const files: string[] = [];
-  for await (const entry of walk(BLOG_DIR, { exts: ["md"], includeDirs: false })) {
+  for await (const entry of walk(BLOG_DIR, {
+    exts: ["md"],
+    includeDirs: false,
+  })) {
     if (/\/_?index(\.en)?\.md$/.test(entry.path)) continue;
     files.push(entry.path);
   }
@@ -109,13 +120,18 @@ async function scanBlogFiles(): Promise<string[]> {
 // Frontmatter parsing
 // ─────────────────────────────────────────────────────────────────────────────
 
-function parseFrontmatter(content: string): { meta: Record<string, unknown>; body: string } {
+function parseFrontmatter(content: string): {
+  meta: Record<string, unknown>;
+  body: string;
+} {
   const m = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!m) return { meta: {}, body: content.trim() };
   let meta: Record<string, unknown> = {};
   try {
     meta = (parseYaml(m[1]) as Record<string, unknown>) ?? {};
-  } catch { /* ignore */ }
+  } catch {
+    /* ignore */
+  }
   return { meta, body: m[2].trim() };
 }
 
@@ -123,10 +139,17 @@ function parseFrontmatter(content: string): { meta: Record<string, unknown>; bod
 // Classification & slug helpers
 // ─────────────────────────────────────────────────────────────────────────────
 
-function classify(relPath: string): { format: PostFormat; subtype: PostSubtype } {
-  if (relPath.startsWith("quotes/")) return { format: "quote", subtype: "quote" };
+function classify(relPath: string): {
+  format: PostFormat;
+  subtype: PostSubtype;
+} {
+  if (relPath.startsWith("quotes/")) {
+    return { format: "quote", subtype: "quote" };
+  }
   if (relPath.startsWith("links/")) return { format: "link", subtype: "link" };
-  if (relPath.startsWith("thoughts/")) return { format: "note", subtype: "thought" };
+  if (relPath.startsWith("thoughts/")) {
+    return { format: "note", subtype: "thought" };
+  }
   return { format: "note", subtype: "note" };
 }
 
@@ -190,10 +213,7 @@ async function processMarkdown(
       mediaIds.push(uploaded.id);
       const jantUrl = JANT_BASE_URL + uploaded.url;
       // Replace all occurrences of this src in the markdown
-      result = result.replaceAll(
-        `![${alt}](${src})`,
-        `![${alt}](${jantUrl})`,
-      );
+      result = result.replaceAll(`![${alt}](${src})`, `![${alt}](${jantUrl})`);
       console.log(`  📷  Uploaded: ${basename(localPath)} → ${jantUrl}`);
     }
   }
@@ -206,9 +226,19 @@ async function processMarkdown(
     (_full, text, href) => {
       let newHref: string;
       if (href.startsWith("@/")) {
-        newHref = "/" + href.slice(2).replace(/\.md$/, "").replace(/\/index$/, "");
+        newHref =
+          "/" +
+          href
+            .slice(2)
+            .replace(/\.md$/, "")
+            .replace(/\/index$/, "");
       } else {
-        newHref = "/" + href.slice("/content/".length).replace(/\.md$/, "").replace(/\/index$/, "");
+        newHref =
+          "/" +
+          href
+            .slice("/content/".length)
+            .replace(/\.md$/, "")
+            .replace(/\/index$/, "");
       }
       return `[${text}](${newHref})`;
     },
@@ -221,7 +251,9 @@ async function processMarkdown(
   return { markdown: result, mediaIds };
 }
 
-async function uploadFile(path: string): Promise<{ id: string; url: string } | null> {
+async function uploadFile(
+  path: string,
+): Promise<{ id: string; url: string } | null> {
   try {
     const fd = new FormData();
     fd.append("file", new Blob([await Deno.readFile(path)]), basename(path));
@@ -232,7 +264,12 @@ async function uploadFile(path: string): Promise<{ id: string; url: string } | n
     });
     if (!r.ok) {
       const txt = await r.text().catch(() => "");
-      console.warn(`  ⚠️   Upload ${basename(path)} failed: ${r.status} ${txt.slice(0, 100)}`);
+      console.warn(
+        `  ⚠️   Upload ${basename(path)} failed: ${r.status} ${txt.slice(
+          0,
+          100,
+        )}`,
+      );
       return null;
     }
     return r.json();
@@ -294,14 +331,18 @@ async function migrateOne(
   if (ONLY_TYPE && format !== ONLY_TYPE) return "skipped";
   if (counters[format] >= LIMIT) return "stop";
 
-  console.log(`\n📄  ${rel}  [${format}${subtype !== format ? "/" + subtype : ""}]`);
+  console.log(
+    `\n📄  ${rel}  [${format}${subtype !== format ? "/" + subtype : ""}]`,
+  );
 
   // ── Extract meta fields ─────────────────────────────────────────────────
   const rawTitle = String(meta.title ?? "").trim();
   const title = rawTitle && rawTitle !== "Untitled" ? rawTitle : undefined;
 
   const dateStr = String(meta.date ?? "");
-  const publishedAt = dateStr ? Math.floor(new Date(dateStr).getTime() / 1000) : undefined;
+  const publishedAt = dateStr
+    ? Math.floor(new Date(dateStr).getTime() / 1000)
+    : undefined;
   if (dateStr && isNaN(publishedAt!)) {
     console.warn(`  ⚠️   Could not parse date: ${dateStr}`);
   }
@@ -309,7 +350,8 @@ async function migrateOne(
   const isDraft = meta.draft === true;
 
   const extraMeta = (meta.extra ?? {}) as Record<string, unknown>;
-  const rating = extraMeta.rating != null ? Number(extraMeta.rating) : undefined;
+  const rating =
+    extraMeta.rating != null ? Number(extraMeta.rating) : undefined;
   const rawUrl = extraMeta.url ? String(extraMeta.url) : undefined;
   const sourceUrl = isValidUrl(rawUrl) ? rawUrl : undefined;
   if (rawUrl && !sourceUrl) {
@@ -332,22 +374,24 @@ async function migrateOne(
     status: isDraft ? "draft" : "published",
   };
 
-  if (publishedAt && !isNaN(publishedAt) && !isDraft) payload.publishedAt = publishedAt;
+  if (publishedAt && !isNaN(publishedAt) && !isDraft) {
+    payload.publishedAt = publishedAt;
+  }
   if (mediaIds.length > 0) payload.mediaIds = mediaIds;
-  if (rating != null && rating >= 1 && rating <= 5) payload.rating = Math.round(rating);
+  if (rating != null && rating >= 1 && rating <= 5) {
+    payload.rating = Math.round(rating);
+  }
 
   if (format === "quote") {
     // quoteText = raw body text; url = optional source
     payload.quoteText = body.trim();
     if (sourceUrl) payload.url = sourceUrl;
     // No title, no explicit slug for quotes
-
   } else if (format === "link") {
     if (sourceUrl) payload.url = sourceUrl;
     if (title) payload.title = title;
     if (processedMarkdown) payload.bodyMarkdown = processedMarkdown;
     // No explicit slug for links — Jant auto-generates
-
   } else {
     // note (including thoughts)
     if (title) payload.title = title;
@@ -368,14 +412,22 @@ async function migrateOne(
   // ── Create post ──────────────────────────────────────────────────────────
   let created: { id: string; slug: string };
   try {
-    created = await apiPost<{ id: string; slug: string }>("/api/posts", payload);
+    created = await apiPost<{ id: string; slug: string }>(
+      "/api/posts",
+      payload,
+    );
     console.log(`  ✅  Created: slug=${created.slug} id=${created.id}`);
   } catch (err) {
     const msg = (err as Error).message;
     console.error(`  ❌  Post creation failed: ${msg}`);
     state.migrated[rel] = {
-      sourcePath: filePath, jantId: "", jantSlug: "", format,
-      migratedAt: new Date().toISOString(), status: "error", error: msg,
+      sourcePath: filePath,
+      jantId: "",
+      jantSlug: "",
+      format,
+      migratedAt: new Date().toISOString(),
+      status: "error",
+      error: msg,
     };
     return "error";
   }
@@ -419,7 +471,9 @@ async function main() {
     // Stop if all relevant type limits are reached
     const done = ONLY_TYPE
       ? counters[ONLY_TYPE] >= LIMIT
-      : counters.note >= LIMIT && counters.link >= LIMIT && counters.quote >= LIMIT;
+      : counters.note >= LIMIT &&
+        counters.link >= LIMIT &&
+        counters.quote >= LIMIT;
     if (done) break;
 
     const res = await migrateOne(file, state, counters);
@@ -428,7 +482,9 @@ async function main() {
     else if (res === "error") {
       stats.error++;
       const entry = state.migrated[relative(BLOG_DIR, file)];
-      if (entry?.error) errorLog.push({ path: relative(BLOG_DIR, file), error: entry.error });
+      if (entry?.error) {
+        errorLog.push({ path: relative(BLOG_DIR, file), error: entry.error });
+      }
     } else if (res === "skipped") stats.skipped++;
     // "stop" means this type is full; continue loop for other types
 
@@ -440,7 +496,9 @@ async function main() {
   console.log(`  ✅  Created : ${stats.success}`);
   console.log(`  ❌  Errors  : ${stats.error}`);
   console.log(`  ⏭️   Skipped : ${stats.skipped}`);
-  console.log(`  Breakdown  : note=${counters.note}, link=${counters.link}, quote=${counters.quote}`);
+  console.log(
+    `  Breakdown  : note=${counters.note}, link=${counters.link}, quote=${counters.quote}`,
+  );
   // if (!flagDryRun) console.log(`  State      : ${STATE_FILE}`);
   if (errorLog.length > 0) {
     console.log("\n❌  Error details:");
