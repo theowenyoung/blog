@@ -1,8 +1,6 @@
 # Jant API Reference
 
-REST API for programmatic access to your Jant microblog. Use it to publish
-posts, upload media, manage collections, and migrate content from other
-platforms.
+REST API for programmatic access to your Jant microblog. Use it to publish posts, upload media, manage collections, and migrate content from other platforms.
 
 **Base URL:** `https://your-site.com`
 
@@ -12,8 +10,7 @@ All endpoints return JSON. Timestamps are Unix seconds (not milliseconds).
 
 ## Authentication
 
-Read-only endpoints (GET) are public. All write operations (POST, PUT, DELETE)
-require authentication.
+Most API endpoints require authentication. Public endpoints are explicitly marked.
 
 ### API Tokens (recommended for scripts)
 
@@ -35,13 +32,11 @@ curl https://your-site.com/api/posts \
   -H "Authorization: Bearer jnt_YOUR_TOKEN"
 ```
 
-Tokens grant full API access (equivalent to session auth). Store them securely.
-You can revoke a token anytime from Settings > API Tokens.
+Tokens grant full API access (equivalent to session auth). Store them securely. You can revoke a token anytime from Settings > API Tokens.
 
 ### Session Cookies
 
-Sign in via the web UI at `/signin`. The session cookie is automatically
-included in browser requests.
+Sign in via the web UI at `/signin`. The session cookie is automatically included in browser requests.
 
 ### Errors
 
@@ -65,8 +60,7 @@ All errors follow this structure:
 }
 ```
 
-The `details` field is only present for validation errors and contains
-field-level messages.
+The `details` field is only present for validation errors and contains field-level messages.
 
 | Code                     | HTTP Status | Meaning                               |
 | ------------------------ | ----------- | ------------------------------------- |
@@ -76,9 +70,10 @@ field-level messages.
 | `NOT_FOUND`              | 404         | Resource doesn't exist                |
 | `CONFLICT`               | 409         | Slug conflict or constraint violation |
 | `RATE_LIMIT`             | 429         | Too many requests                     |
+| `CONFIGURATION_ERROR`    | 500         | Missing or invalid server config      |
 | `EXTERNAL_SERVICE_ERROR` | 500         | Internal failure                      |
 
-All ID parameters must be valid UUIDs. Invalid IDs return `400`.
+All ID parameters must be valid TypeIDs with the expected prefix. Examples: posts use `pst_*`, media uses `med_*`, collections use `col_*`, path records use `pth_*`. Invalid IDs return `400`.
 
 ---
 
@@ -92,7 +87,7 @@ Jant has three post formats:
 | ------- | -------------------------------------------------------- | -------------------------------------------- |
 | `note`  | Original content (short thoughts, long articles, images) | `bodyMarkdown`, `title` (optional)           |
 | `link`  | Shared reference (articles, tools, videos)               | `url` (important), `bodyMarkdown` (optional) |
-| `quote` | Cited text (book excerpts, quotes)                       | `quoteText`, `url` (optional source)         |
+| `quote` | Cited text (book excerpts, quotes)                       | `quoteText`, `sourceName`, `sourceUrl`       |
 
 ### List Posts
 
@@ -100,16 +95,16 @@ Jant has three post formats:
 GET /api/posts
 ```
 
-Public. No auth required.
+**Auth required.**
 
 **Query parameters:**
 
-| Parameter | Type                        | Default     | Description                                                      |
-| --------- | --------------------------- | ----------- | ---------------------------------------------------------------- |
-| `format`  | `note` \| `link` \| `quote` | all         | Filter by format                                                 |
-| `status`  | `draft` \| `published`      | `published` | Filter by status                                                 |
-| `cursor`  | string (UUID)               | —           | Cursor for pagination (pass `nextCursor` from previous response) |
-| `limit`   | integer                     | `100`       | Posts per page                                                   |
+| Parameter | Type                        | Default     | Description                                                                                           |
+| --------- | --------------------------- | ----------- | ----------------------------------------------------------------------------------------------------- |
+| `format`  | `note` \| `link` \| `quote` | all         | Filter by format                                                                                      |
+| `status`  | `draft` \| `published`      | `published` | Filter by status                                                                                      |
+| `cursor`  | string                      | —           | Cursor for pagination. Pass `nextCursor` from the previous response unchanged and treat it as opaque. |
+| `limit`   | integer                     | `100`       | Posts per page                                                                                        |
 
 **Response (200):**
 
@@ -117,7 +112,7 @@ Public. No auth required.
 {
   "posts": [
     {
-      "id": "019513a2-b3c4-7d5e-8f6a-1b2c3d4e5f6a",
+      "id": "pst_01jpyx3m7gw4w3h7m4bknq0v1d",
       "format": "note",
       "status": "published",
       "visibility": "public",
@@ -138,28 +133,32 @@ Public. No auth required.
       "lastActivityAt": 1706000000,
       "createdAt": 1706000000,
       "updatedAt": 1706000000,
-      "mediaAttachments": [
+      "attachments": [
         {
-          "id": "019513a2-...",
-          "url": "/media/2025/01/019513a2.jpg",
-          "previewUrl": "/media/2025/01/019513a2.jpg",
+          "type": "media",
+          "id": "med_01jpyx4g9m8b4y50a4gx3t7p1n",
+          "url": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
+          "previewUrl": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
           "posterUrl": null,
           "alt": null,
           "blurhash": null,
           "width": 800,
           "height": 600,
-          "position": 0,
           "mimeType": "image/jpeg",
+          "originalName": "photo.jpg",
+          "size": 1024000,
           "summary": null
         }
       ]
     }
   ],
-  "nextCursor": "019513a2-b3c4-7d5e-..."
+  "nextCursor": "pst_01jpyx3m7gw4w3h7m4bknq0v1d"
 }
 ```
 
 `nextCursor` is `null` when there are no more pages.
+
+Quote posts use `sourceName` and `sourceUrl` in API responses. They do not expose `title` or `url`.
 
 ### Get Post
 
@@ -167,19 +166,24 @@ Public. No auth required.
 GET /api/posts/:id
 ```
 
-Public. Returns the full post with `collectionIds` and `mediaAttachments`.
+**Auth required.** Returns the full post with `collectionIds` and ordered `attachments`.
 
 **Response (200):**
 
 ```json
 {
-  "id": "019513a2-...",
+  "id": "pst_01jpyx3m7gw4w3h7m4bknq0v1d",
   "format": "note",
-  "collectionIds": ["019513b1-...", "019513b2-..."],
-  "mediaAttachments": [],
+  "collectionIds": [
+    "col_01jpyx5qds8y79w2dd6sv4rznj",
+    "col_01jpyx5z8m7b7s8z1v8w9m1q2r"
+  ],
+  "attachments": [],
   "...": "same fields as list"
 }
 ```
+
+Quote posts returned from `GET /api/posts/:id` also use `sourceName` and `sourceUrl` instead of `title` and `url`.
 
 ### Create Post
 
@@ -193,39 +197,64 @@ POST /api/posts
 
 ```json
 {
-  "format": "note",
-  "title": "My First Post",
-  "bodyMarkdown": "Hello world!\n\nThis is **bold** and *italic* text.",
+  "format": "quote",
+  "quoteText": "What stands in the way becomes the way.",
+  "sourceName": "Marcus Aurelius",
+  "sourceUrl": "https://example.com/meditations",
+  "bodyMarkdown": "Still one of the clearest lines in the book.",
   "status": "published",
   "visibility": "public",
   "publishedAt": 1706000000,
-  "slug": "my-first-post",
-  "collectionIds": ["collection-uuid"],
-  "mediaIds": ["media-uuid-1", "media-uuid-2"]
+  "slug": "from-marcus-aurelius",
+  "collectionIds": ["col_01jpyx5qds8y79w2dd6sv4rznj"],
+  "attachments": [
+    { "type": "media", "mediaId": "med_01jpyx4g9m8b4y50a4gx3t7p1n" },
+    {
+      "type": "text",
+      "contentFormat": "markdown",
+      "content": "# Attached note\n\nExtra context here."
+    }
+  ]
 }
 ```
 
 **Fields:**
 
-| Field           | Type                                | Required | Default     | Description                                                                                                                                                                                                  |
-| --------------- | ----------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `format`        | `note` \| `link` \| `quote`         | **yes**  | —           | Post format                                                                                                                                                                                                  |
-| `title`         | string                              | no       | —           | Post title. Notes with titles render as articles                                                                                                                                                             |
-| `body`          | string                              | no       | —           | Post content as TipTap JSON (used by the editor UI)                                                                                                                                                          |
-| `bodyMarkdown`  | string                              | no       | —           | Post content in Markdown (see [Body Format](#body-format))                                                                                                                                                   |
-| `slug`          | string                              | no       | auto        | URL slug. Auto-generated from title or as random ID. Mutually exclusive with `path`                                                                                                                          |
-| `path`          | string                              | no       | —           | Custom URL path (without leading `/`). If the path is a valid slug, it's used directly; otherwise it's slugified for the URL and the original path is registered as an alias. Mutually exclusive with `slug` |
-| `status`        | `draft` \| `published`              | no       | `published` |                                                                                                                                                                                                              |
-| `visibility`    | `public` \| `unlisted` \| `private` | no       | `public`    |                                                                                                                                                                                                              |
-| `pinned`        | boolean                             | no       | `false`     | Pin to top of timeline (max 3)                                                                                                                                                                               |
-| `featured`      | boolean                             | no       | `false`     | Mark as featured content                                                                                                                                                                                     |
-| `url`           | string (URL)                        | no       | —           | Link URL (for `link` format) or source URL (for `quote`)                                                                                                                                                     |
-| `quoteText`     | string                              | no       | —           | Quoted text (for `quote` format)                                                                                                                                                                             |
-| `rating`        | integer (1–5)                       | no       | —           | Rating score                                                                                                                                                                                                 |
-| `collectionIds` | string[]                            | no       | —           | Collection UUIDs to add the post to                                                                                                                                                                          |
-| `replyToId`     | string (UUID)                       | no       | —           | Create as a reply in a thread                                                                                                                                                                                |
-| `publishedAt`   | integer                             | no       | now         | Unix timestamp in seconds                                                                                                                                                                                    |
-| `mediaIds`      | string[]                            | no       | —           | Media UUIDs to attach (max 20). Upload files first via `/api/upload`                                                                                                                                         |
+| Field           | Type                                     | Required | Default     | Description                                                                                                                                                                                                  |
+| --------------- | ---------------------------------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `format`        | `note` \| `link` \| `quote`              | **yes**  | —           | Post format                                                                                                                                                                                                  |
+| `title`         | string                                   | no       | —           | Post title. Used by `note` and `link` posts                                                                                                                                                                  |
+| `body`          | string                                   | no       | —           | Post content as TipTap JSON (used by the editor UI)                                                                                                                                                          |
+| `bodyMarkdown`  | string                                   | no       | —           | Post content in Markdown (see [Body Format](#body-format))                                                                                                                                                   |
+| `slug`          | string                                   | no       | auto        | URL slug. Auto-generated from title or as random ID. Mutually exclusive with `path`                                                                                                                          |
+| `path`          | string                                   | no       | —           | Custom URL path (without leading `/`). If the path is a valid slug, it's used directly; otherwise it's slugified for the URL and the original path is registered as an alias. Mutually exclusive with `slug` |
+| `status`        | `draft` \| `published`                   | no       | `published` |                                                                                                                                                                                                              |
+| `visibility`    | `public` \| `latest_hidden` \| `private` | no       | `public`    |                                                                                                                                                                                                              |
+| `pinned`        | boolean                                  | no       | `false`     | Pin to top of timeline (max 3)                                                                                                                                                                               |
+| `featured`      | boolean                                  | no       | `false`     | Mark as featured content                                                                                                                                                                                     |
+| `url`           | string (URL)                             | no       | —           | Link URL (for `link` format)                                                                                                                                                                                 |
+| `sourceName`    | string                                   | no       | —           | Quote source or attribution name (for `quote` format)                                                                                                                                                        |
+| `sourceUrl`     | string (URL)                             | no       | —           | Quote source URL (for `quote` format)                                                                                                                                                                        |
+| `quoteText`     | string                                   | no       | —           | Quoted text (for `quote` format)                                                                                                                                                                             |
+| `rating`        | integer (1–5)                            | no       | —           | Rating score                                                                                                                                                                                                 |
+| `collectionIds` | string[]                                 | no       | —           | Collection TypeIDs to add the post to                                                                                                                                                                        |
+| `replyToId`     | string                                   | no       | —           | Parent post TypeID when creating a reply in a thread                                                                                                                                                         |
+| `publishedAt`   | integer                                  | no       | now         | Unix timestamp in seconds                                                                                                                                                                                    |
+| `attachments`   | attachment[]                             | no       | —           | Ordered attachments (max 20). Use `type: "media"` for uploaded files and `type: "text"` for inline text attachments                                                                                          |
+
+### Attachments
+
+Posts accept and return an ordered `attachments` array. Array order is the attachment order shown on the post.
+
+Input objects:
+
+- Media attachment: `{ "type": "media", "mediaId": "uploaded-media-id", "alt": "Optional alt text" }`
+- Text attachment: `{ "type": "text", "contentFormat": "markdown", "content": "# Heading", "summary": "Optional card summary" }`
+
+Response objects:
+
+- Media attachment: includes `url`, `previewUrl`, `mimeType`, `originalName`, `size`, and optional display metadata
+- Text attachment: includes `contentFormat`, `summary`, `chars`, and `contentUrl` for fetching the Markdown body
 
 **Slug rules:**
 
@@ -239,7 +268,7 @@ POST /api/posts
 - Setting `replyToId` makes this post a reply in an existing thread
 - Replies inherit `status` and `visibility` from the thread root
 
-**Response (201):** Full post object with `mediaAttachments`.
+**Response (201):** Full post object with ordered `attachments`.
 
 ### Update Post
 
@@ -251,18 +280,42 @@ PUT /api/posts/:id
 
 ```json
 {
-  "title": "Updated Title",
-  "bodyMarkdown": "Updated content in **Markdown**."
+  "sourceName": "Epictetus",
+  "sourceUrl": "https://example.com/discourses",
+  "bodyMarkdown": "Updated commentary in **Markdown**."
 }
 ```
 
-**Media behavior:**
+For quote posts, use `sourceName` and `sourceUrl` when creating or updating attribution. `title` and `url` are reserved for note/link post semantics.
 
-- Omitting `mediaIds` → keeps existing attachments
-- `"mediaIds": []` → removes all attachments
-- `"mediaIds": ["new-id"]` → replaces all attachments
+**Attachment behavior:**
 
-**Response (200):** Updated post with `mediaAttachments`.
+- Omitting `attachments` → keeps existing attachments
+- `"attachments": []` → removes all attachments
+- `"attachments": [...]` → replaces all attachments in the given order
+
+**Response (200):** Updated post with ordered `attachments`.
+
+### Get Text Attachment Content
+
+```
+GET /api/attachments/:id/content
+```
+
+**Auth required.** Returns the Markdown body for a `type: "text"` attachment.
+
+**Response (200):**
+
+```json
+{
+  "id": "med_01jpyx7c0s7y5v2m4b8g1f9qkr",
+  "type": "text",
+  "contentFormat": "markdown",
+  "content": "# Attached note\n\nExtra context here.",
+  "summary": "Attached note Extra context here.",
+  "chars": 33
+}
+```
 
 ### Delete Post
 
@@ -270,8 +323,7 @@ PUT /api/posts/:id
 DELETE /api/posts/:id
 ```
 
-**Auth required.** Soft-deletes the post. If it's a thread root, all replies are
-also deleted. Associated media files are permanently removed from storage.
+**Auth required.** Soft-deletes the post. If it's a thread root, all replies are also deleted. Associated media files are permanently removed from storage.
 
 **Response (200):**
 
@@ -285,11 +337,8 @@ also deleted. Associated media files are permanently removed from storage.
 
 Post content can be provided in two ways — use one or the other, not both:
 
-- **`bodyMarkdown`** — Markdown string. The server converts it to the internal
-  document format and renders HTML (`bodyHtml`) and plain text (`bodyText`).
-  **Recommended for API users and scripts.**
-- **`body`** — TipTap JSON string. Used by the built-in editor UI. Only use this
-  if you are working with the TipTap document format directly.
+- **`bodyMarkdown`** — Markdown string. The server converts it to the internal document format and renders HTML (`bodyHtml`) and plain text (`bodyText`). **Recommended for API users and scripts.**
+- **`body`** — TipTap JSON string. Used by the built-in editor UI. Only use this if you are working with the TipTap document format directly.
 
 ### Paragraphs
 
@@ -314,8 +363,9 @@ Second paragraph.
 ### Inline formatting
 
 ```markdown
-This is **bold** and _italic_ text. Use `inline code` for code snippets. This is
-~~strikethrough~~ text.
+This is **bold** and _italic_ text.
+Use `inline code` for code snippets.
+This is ~~strikethrough~~ text.
 ```
 
 ### Links
@@ -330,7 +380,7 @@ This is **bold** and _italic_ text. Use `inline code` for code snippets. This is
 ![Alt text](https://example.com/image.png)
 ```
 
-For media attachments, use the `/api/upload` endpoint and `mediaIds` instead.
+For file attachments, upload first via `/api/upload`, then reference the returned ID in `attachments` with `type: "media"`.
 
 ### Lists
 
@@ -386,12 +436,10 @@ Rest of the article.
 
 ### Response fields
 
-The API response includes two rendered fields derived from
-`body`/`bodyMarkdown`:
+The API response includes two rendered fields derived from `body`/`bodyMarkdown`:
 
 - **`bodyHtml`** — HTML rendering of the content. Use this for display.
-- **`bodyText`** — Plain text extraction. Use this for search indexing or
-  previews.
+- **`bodyText`** — Plain text extraction. Use this for search indexing or previews.
 
 ---
 
@@ -420,22 +468,21 @@ POST /api/upload
 | `summary`  | string  | no       | Summary for text file attachments    |
 | `poster`   | File    | no       | Poster frame for video files (WebP)  |
 
-**File limits:** Configurable via `UPLOAD_MAX_FILE_SIZE_MB` env var (default:
-500 MB). All MIME types accepted.
+**File limits:** Configurable via `UPLOAD_MAX_FILE_SIZE_MB` env var (default: 500 MB). All MIME types accepted.
 
 **Response (200):**
 
 ```json
 {
-  "id": "019513a2-b3c4-7d5e-8f6a-1b2c3d4e5f6a",
-  "filename": "019513a2.jpg",
-  "url": "/media/2025/01/019513a2.jpg",
+  "id": "med_01jpyx4g9m8b4y50a4gx3t7p1n",
+  "filename": "med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
+  "url": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
   "mimeType": "image/jpeg",
   "size": 1024000
 }
 ```
 
-Save the `id` — you'll need it to attach the file to a post via `mediaIds`.
+Save the `id` — you'll need it to attach the file to a post with `{ "type": "media", "mediaId": "..." }`.
 
 Example:
 
@@ -445,7 +492,7 @@ curl -X POST https://your-site.com/api/upload \
   -H "Authorization: Bearer jnt_YOUR_TOKEN" \
   -F "file=@photo.jpg"
 
-# Response: {"id": "019513a2-...", "url": "/media/2025/01/019513a2.jpg", ...}
+# Response: {"id": "med_01jpyx4g9m8b4y50a4gx3t7p1n", "url": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg", ...}
 ```
 
 ### List Files
@@ -462,9 +509,9 @@ GET /api/upload
 {
   "media": [
     {
-      "id": "019513a2-...",
-      "filename": "019513a2.jpg",
-      "url": "/media/2025/01/019513a2.jpg",
+      "id": "med_01jpyx4g9m8b4y50a4gx3t7p1n",
+      "filename": "med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
+      "url": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
       "mimeType": "image/jpeg",
       "size": 1024000,
       "createdAt": 1706000000
@@ -489,9 +536,7 @@ Permanently deletes the file from storage and database.
 
 Base path: `/api/collections`
 
-Collections organize posts by topic (e.g. "Books", "Tools", "Movies"). A post
-can belong to multiple collections. Collection pages are available at
-`/c/{slug}`.
+Collections organize posts by topic (e.g. "Books", "Tools", "Movies"). A post can belong to multiple collections. Collection pages are available at `/c/{slug}`.
 
 ### List Collections
 
@@ -507,25 +552,35 @@ Public.
 {
   "collections": [
     {
-      "id": "019513b1-...",
+      "id": "col_01jpyx5qds8y79w2dd6sv4rznj",
       "slug": "reading",
       "title": "Reading",
       "description": "Books I've read",
-      "icon": null,
       "sortOrder": "newest",
       "createdAt": 1706000000,
       "updatedAt": 1706000000,
-      "postCount": 12
+      "postCount": 12,
+      "recentActivityAt": 1706100000
     }
   ],
   "sidebarItems": [
     {
-      "id": "019513c1-...",
+      "id": "cdi_01jpyx8r7s3v8m1q5c9k2f6gth",
       "type": "collection",
-      "collectionId": "019513b1-...",
+      "collectionId": "col_01jpyx5qds8y79w2dd6sv4rznj",
+      "label": null,
       "position": "a0",
       "createdAt": 1706000000,
       "updatedAt": 1706000000
+    },
+    {
+      "id": "cdi_01jpyx93hw5m2s8b6r4v1t9kqn",
+      "type": "divider",
+      "collectionId": null,
+      "label": "Essays",
+      "position": "a1",
+      "createdAt": 1706000100,
+      "updatedAt": 1706000100
     }
   ]
 }
@@ -552,18 +607,16 @@ POST /api/collections
   "slug": "reading",
   "title": "Reading",
   "description": "Books I've read",
-  "icon": "📚",
   "sortOrder": "newest"
 }
 ```
 
-| Field         | Type   | Required | Default  | Description                                           |
-| ------------- | ------ | -------- | -------- | ----------------------------------------------------- |
-| `slug`        | string | **yes**  | —        | URL slug (same rules as post slugs)                   |
-| `title`       | string | **yes**  | —        | Collection name                                       |
-| `description` | string | no       | —        | Description text                                      |
-| `icon`        | string | no       | —        | Emoji or icon identifier                              |
-| `sortOrder`   | string | no       | `newest` | `newest` \| `oldest` \| `rating_desc` \| `rating_asc` |
+| Field         | Type   | Required | Default  | Description                           |
+| ------------- | ------ | -------- | -------- | ------------------------------------- |
+| `slug`        | string | **yes**  | —        | URL slug (same rules as post slugs)   |
+| `title`       | string | **yes**  | —        | Collection name                       |
+| `description` | string | no       | —        | Description text                      |
+| `sortOrder`   | string | no       | `newest` | `newest` \| `oldest` \| `rating_desc` |
 
 **Response (201):** Created collection object.
 
@@ -573,8 +626,7 @@ POST /api/collections
 PUT /api/collections/:id
 ```
 
-**Auth required.** All fields optional. Set `description` or `icon` to `null` to
-clear.
+**Auth required.** All fields optional. Set `description` to `null` to clear.
 
 ### Delete Collection
 
@@ -582,8 +634,64 @@ clear.
 DELETE /api/collections/:id
 ```
 
-**Auth required.** Deletes the collection. Posts in the collection are NOT
-deleted.
+**Auth required.** Deletes the collection. Posts in the collection are NOT deleted.
+
+**Response (200):** `{ "success": true }`
+
+### Create Sidebar Divider
+
+```
+POST /api/collections/sidebar-items
+```
+
+**Auth required.**
+
+Creates a new divider item for the `/c` collection index.
+
+**Response (201):** Created sidebar item object.
+
+### Update Sidebar Divider
+
+```
+PUT /api/collections/sidebar-items/:id
+```
+
+**Auth required.**
+
+```json
+{ "label": "Essays" }
+```
+
+Set `label` to `null` or an empty string to remove it.
+
+**Response (200):** Updated sidebar item object.
+
+### Move Sidebar Item
+
+```
+PUT /api/collections/sidebar-items/:id/move
+```
+
+**Auth required.**
+
+```json
+{
+  "after": "cdi_01jpyx8r7s3v8m1q5c9k2f6gth",
+  "before": "cdi_01jpyx9m4h7s2v6b1r8k3t5qc"
+}
+```
+
+Both fields are optional and nullable. Use `null` to move to the beginning or end.
+
+**Response (200):** Updated sidebar item object.
+
+### Delete Sidebar Item
+
+```
+DELETE /api/collections/sidebar-items/:id
+```
+
+**Auth required.**
 
 **Response (200):** `{ "success": true }`
 
@@ -596,7 +704,7 @@ POST /api/collections/:id/posts
 **Auth required.**
 
 ```json
-{ "postId": "019513a2-..." }
+{ "postId": "pst_01jpyx3m7gw4w3h7m4bknq0v1d" }
 ```
 
 **Response (201):** `{ "success": true }`
@@ -617,9 +725,7 @@ DELETE /api/collections/:id/posts/:postId
 
 Base path: `/api/custom-urls`
 
-Custom URLs let you create aliases for posts/collections or set up redirects —
-useful for blog migration (e.g. mapping old paths like `/blog/2024/my-post` to a
-Jant post).
+Custom URLs let you create aliases for posts/collections or set up redirects — useful for blog migration (e.g. mapping old paths like `/blog/2024/my-post` to a Jant post).
 
 Three target types:
 
@@ -635,8 +741,7 @@ Three target types:
 GET /api/custom-urls
 ```
 
-Public. Results are sorted by creation date (newest first) and paginated using
-`DEFAULT_PAGE_SIZE` (100 items per page).
+Requires auth. Results are sorted by creation date (newest first) and paginated using `PAGE_SIZE` (default: 50).
 
 **Query parameters:**
 
@@ -650,7 +755,7 @@ Public. Results are sorted by creation date (newest first) and paginated using
 {
   "customUrls": [
     {
-      "id": "019513e1-...",
+      "id": "pth_01jpyxb27t6m4v9r2k8s5c1qfh",
       "path": "blog/old-post",
       "targetType": "redirect",
       "targetId": null,
@@ -659,10 +764,10 @@ Public. Results are sorted by creation date (newest first) and paginated using
       "createdAt": 1706000000
     },
     {
-      "id": "019513e2-...",
+      "id": "pth_01jpyxbk8v4m2s7r9c5t1g6qdn",
       "path": "2024/01/hello",
       "targetType": "post",
-      "targetId": "019513a2-...",
+      "targetId": "pst_01jpyx3m7gw4w3h7m4bknq0v1d",
       "toPath": null,
       "redirectType": null,
       "createdAt": 1706000000
@@ -712,8 +817,7 @@ Redirect an old blog path:
 }
 ```
 
-Create an alias for a post (visitor sees `/essays/on-writing` but the post lives
-at `/on-writing`):
+Create an alias for a post (visitor sees `/essays/on-writing` but the post lives at `/on-writing`):
 
 ```json
 {
@@ -765,18 +869,25 @@ Public. Searches published posts by title and body text.
   "query": "hello",
   "results": [
     {
-      "id": "019513a2-...",
+      "id": "pst_01jpyx3m7gw4w3h7m4bknq0v1d",
       "format": "note",
       "title": "Hello World",
       "slug": "hello-world",
       "snippet": "...matched <mark>hello</mark> text...",
       "publishedAt": 1706000000,
-      "url": "/hello-world"
+      "permalink": "/hello-world",
+      "url": null
     }
   ],
   "count": 1
 }
 ```
+
+All search results include `permalink`.
+
+- `note` results use `title`
+- `link` results may also include `url` for the external link target
+- `quote` results use `sourceName` and `sourceUrl` instead of `title`
 
 ---
 
@@ -798,7 +909,7 @@ Public.
 {
   "navItems": [
     {
-      "id": "019513d1-...",
+      "id": "nav_01jpyxcv3m7w4b8k2r5s9t1qfh",
       "type": "link",
       "label": "GitHub",
       "url": "https://github.com/...",
@@ -810,8 +921,7 @@ Public.
 }
 ```
 
-Types: `link` (custom URL) or `system` (built-in: RSS, Settings, Collections,
-Archive).
+Types: `link` (custom URL) or `system` (built-in: RSS, Settings, Collections, Archive).
 
 ### Create Nav Item
 
@@ -870,6 +980,7 @@ Returns user-configurable settings (not environment-only fields).
     "SITE_DESCRIPTION": "A personal microblog",
     "SITE_LANGUAGE": "en",
     "HOME_DEFAULT_VIEW": "latest",
+    "MAIN_RSS_FEED": "featured",
     "HEADER_NAV_MAX_VISIBLE": "3",
     "TIME_ZONE": "UTC",
     "SITE_FOOTER": "",
@@ -891,15 +1002,14 @@ PUT /api/settings
 }
 ```
 
-Environment-only keys (like `AUTH_SECRET`) are silently rejected. If all keys
-are rejected, returns `400`.
+Environment-only config keys (like `AUTH_SECRET`) are silently rejected. If all keys are rejected, returns `400`.
 
 **Response (200):**
 
 ```json
 {
   "settings": { "...": "updated values" },
-  "rejectedKeys": ["SITE_URL"]
+  "rejectedKeys": ["SITE_ORIGIN", "SITE_PATH_PREFIX"]
 }
 ```
 
@@ -909,13 +1019,20 @@ are rejected, returns `400`.
 
 ## Other Endpoints
 
-| Endpoint                 | Auth | Description                                                    |
-| ------------------------ | ---- | -------------------------------------------------------------- |
-| `GET /health`            | No   | Returns `{ "status": "ok" }`                                   |
-| `GET /feed`              | No   | RSS 2.0 feed (featured posts only)                             |
-| `GET /feed/atom.xml`     | No   | Atom feed (featured posts only)                                |
-| `GET /feed/all`          | No   | RSS 2.0 feed (all published posts, supports `?format=` filter) |
-| `GET /feed/all/atom.xml` | No   | Atom feed (all published posts)                                |
+| Endpoint                      | Auth | Description                                                     |
+| ----------------------------- | ---- | --------------------------------------------------------------- |
+| `GET /health`                 | No   | Returns `{ "status": "ok" }`                                    |
+| `GET /feed`                   | No   | RSS 2.0 canonical site feed (Featured by default, configurable) |
+| `GET /feed/atom.xml`          | No   | Atom canonical site feed (Featured by default, configurable)    |
+| `GET /feed/latest`            | No   | RSS 2.0 latest public posts feed (supports `?format=` filter)   |
+| `GET /feed/latest/atom.xml`   | No   | Atom latest public posts feed (supports `?format=` filter)      |
+| `GET /feed/featured`          | No   | RSS 2.0 featured posts feed                                     |
+| `GET /feed/featured/atom.xml` | No   | Atom featured posts feed                                        |
+
+Legacy aliases:
+
+- `GET /feed/all` → `308` redirect to `/feed/latest`
+- `GET /feed/all/atom.xml` → `308` redirect to `/feed/latest/atom.xml`
 
 ---
 
@@ -968,18 +1085,20 @@ curl -X POST https://your-site.com/api/posts \
     "slug": "my-old-blog-post",
     "status": "published",
     "publishedAt": 1609459200,
-    "collectionIds": ["collection-uuid"],
-    "mediaIds": ["media-uuid-1", "media-uuid-2"]
+    "collectionIds": ["col_01jpyx5qds8y79w2dd6sv4rznj"],
+    "attachments": [
+      { "type": "media", "mediaId": "med_01jpyx4g9m8b4y50a4gx3t7p1n" },
+      { "type": "media", "mediaId": "med_01jpyxd8hs5m3v7r1k9c2t4qgn" }
+    ]
   }'
 ```
 
 Key fields for migration:
 
-- **`publishedAt`**: Set to the original publish date (Unix seconds) to preserve
-  chronological order
+- **`publishedAt`**: Set to the original publish date (Unix seconds) to preserve chronological order
 - **`slug`**: Set to match the original URL path for link continuity
 - **`collectionIds`**: Map old categories/tags to Jant collections
-- **`mediaIds`**: Attach previously uploaded media
+- **`attachments`**: Attach previously uploaded media in the order you want them to appear
 
 ### Step 4: Configure Site
 
@@ -1030,7 +1149,10 @@ async function createPost(post) {
       slug: post.slug,
       status: "published",
       publishedAt: Math.floor(new Date(post.date).getTime() / 1000),
-      mediaIds: post.mediaIds || [],
+      attachments: (post.mediaIds || []).map((mediaId) => ({
+        type: "media",
+        mediaId,
+      })),
       collectionIds: post.collectionIds || [],
     }),
   });
@@ -1056,39 +1178,26 @@ async function migrate(posts) {
 
 ### Tips
 
-- **Preserve dates**: Always set `publishedAt` to the original publish timestamp
-  so posts appear in the correct chronological order.
-- **Paths**: Use `path` to preserve original URLs. If your old blog used paths
-  like `2024/01/my-post`, set `path` to `"2024/01/my-post"` — Jant will
-  auto-generate a slug and register the original path as an alias. For simple
-  slugs, use `slug` directly.
+- **Preserve dates**: Always set `publishedAt` to the original publish timestamp so posts appear in the correct chronological order.
+- **Paths**: Use `path` to preserve original URLs. If your old blog used paths like `2024/01/my-post`, set `path` to `"2024/01/my-post"` — Jant will auto-generate a slug and register the original path as an alias. For simple slugs, use `slug` directly.
 - **Rate yourself**: Add `rating` (1–5) if your old blog had review scores.
-- **Threads**: To recreate comment chains or post series, create the root post
-  first, then create replies with `replyToId` set to the root post's `id`.
-- **Drafts**: Set `status: "draft"` for unpublished content. Drafts are not
-  visible to visitors.
-- **Idempotency**: The API doesn't have built-in idempotency. If your script
-  crashes mid-migration, check which posts already exist (via `GET /api/posts`)
-  before re-running.
+- **Threads**: To recreate comment chains or post series, create the root post first, then create replies with `replyToId` set to the root post's `id`.
+- **Drafts**: Set `status: "draft"` for unpublished content. Drafts are not visible to visitors.
+- **Idempotency**: The API doesn't have built-in idempotency. If your script crashes mid-migration, check which posts already exist (via `GET /api/posts`) before re-running.
 
 ---
 
 ## Export & Import
 
-Jant has built-in export and import for full site backup and migration between
-instances.
+Jant has built-in site export and import for static publishing, offline inspection, and migration between instances.
 
 ### Export
 
-Export your entire site as a [Zola](https://www.getzola.org/) static site in a
-ZIP file. The export includes all published posts, collections, threads (merged
-into single pages), and a complete Zola theme — you can build it into a
-standalone static site or import it into another Jant instance.
+Export your entire site as a [Zola](https://www.getzola.org/) static site in a ZIP file. The export includes posts, collections, thread structure, and Jant-specific metadata for round-trip import — you can build it into a standalone static site or import it into another Jant instance.
 
 **From the dashboard:**
 
-Go to **Settings > Account > Export Site** and click the button. Your browser
-will download `jant-export.zip`.
+Go to **Settings > Account > Export Static Site** and click the button. Your browser will download `jant-export.zip`.
 
 **From the API:**
 
@@ -1104,21 +1213,50 @@ curl -X POST https://your-site.com/api/export/zola \
   -o jant-export.zip
 ```
 
+**From the CLI:**
+
+```bash
+# Export the local Node SQLite site
+npx jant site export --output jant-export.zip
+
+# Export a remote site
+export JANT_API_TOKEN=jnt_YOUR_TOKEN
+npx jant site export --url https://your-site.com --output jant-export.zip
+
+# Export directly to a directory for theme debugging
+npx jant site export --directory ./my-site
+cd ./my-site
+zola serve
+```
+
+Without `--url`, `jant site export` exports from the local Node SQLite runtime. With `--url`, it calls the authenticated export API. The CLI localizes referenced media into `static/media/` by default; pass `--no-localize-media` to keep original URLs. `jant export` remains available as a compatibility alias for database SQL export via `jant db export`.
+
+For backup planning, see [Backups & Recovery](backups.md). The site export is useful for migration and archival, but it is not the same thing as a full database-and-storage disaster-recovery plan.
+
 **What's in the ZIP:**
 
 ```
 config.toml              # Zola site config
 content/_index.md        # Root section
 content/{slug}/index.md  # One file per post (threads merged)
+content/c/{slug}/_index.md  # Collection title/description metadata for /c/{slug}/
 templates/               # Zola templates (index, page, section, etc.)
 static/style.css         # Theme CSS (dark mode included)
+static/favicon.ico      # Exported favicon (custom or default fallback)
+static/apple-touch-icon.png # Exported Apple touch icon (custom or default fallback)
 ```
 
-- Threads are merged: the root post and all replies appear in one file,
-  separated by `<!-- jant:reply ... -->` marker comments
+- Threads are merged: the root post and all replies appear in one file, separated by `<!-- jant:reply ... -->` marker comments
 - Reply URLs become Zola `aliases` so existing links still work
-- Media URLs point to the original site (files are not copied into the ZIP)
+- True root aliases are exported separately under `extra.jant.root_aliases` for round-trip import
+- The raw export API only writes content files. The CLI localizes media by default unless you pass `--no-localize-media`
+- Attachments are preserved as `data-jant-node="attachments"` HTML blocks for re-import
+- Rich image blocks preserve Jant-only attributes such as caption, link target, and layout
 - Collections are exported as Zola taxonomies under `/c/`
+- Collection display titles and descriptions are exported via `content/c/{slug}/_index.md`
+- A static `/archive/` page is exported so archive nav items still work in Zola
+- `config.toml` includes `[extra.jant_export]` metadata so importers can recognize the export format version
+- `config.toml` also records `site_avatar_mode`, `favicon_mode`, and `apple_touch_mode` so `jant site import` can distinguish exported defaults from custom uploaded assets
 
 **Building the static site:**
 
@@ -1134,21 +1272,24 @@ zola serve    # Preview at http://127.0.0.1:1111
 Restore an export ZIP into a Jant instance using the CLI:
 
 ```bash
-export JANT_TOKEN=jnt_YOUR_TOKEN
-npx jant import-site --url https://your-site.com
+export JANT_API_TOKEN=jnt_YOUR_TOKEN
+npx jant site import --url https://your-site.com --path ./export
 ```
 
-**Authentication:** Set the `JANT_TOKEN` environment variable. This avoids
-exposing the token in shell history or process lists.
+Without `--url`, `jant site import` imports into the local Node SQLite runtime. With `--url`, it imports into a remote site and requires `JANT_API_TOKEN` (unless using `--dry-run`). `jant import-site` remains available as a compatibility alias.
+
+The importer is designed for strict restore into an empty target site. If a collection slug, post slug, reply slug, or alias is already in use, the import stops with a conflict instead of skipping records.
+
+**Authentication:** Set the `JANT_API_TOKEN` environment variable for remote imports. This avoids exposing the token in shell history or process lists.
 
 **Options:**
 
 | Flag           | Required | Default           | Description                                 |
 | -------------- | -------- | ----------------- | ------------------------------------------- |
-| `--url`        | **yes**  | —                 | Target Jant instance URL                    |
+| `--url`        | no       | local runtime     | Target Jant instance URL                    |
 | `--path`       | no       | `.` (current dir) | Path to export directory or ZIP file        |
 | `--dry-run`    | no       | `false`           | Parse and validate without making API calls |
-| `--skip-media` | no       | `false`           | Skip downloading and re-uploading images    |
+| `--skip-media` | no       | `false`           | Skip downloading and re-uploading media     |
 | `-h, --help`   | no       | —                 | Show usage information                      |
 
 **What it does:**
@@ -1157,15 +1298,14 @@ exposing the token in shell history or process lists.
 2. Creates collections from the ZIP's taxonomy data
 3. Creates posts with original titles, slugs, dates, formats, and ratings
 4. Recreates threads by creating replies with `replyToId`
-5. Downloads images referenced in Markdown and re-uploads them to the target
-   site
+5. Downloads images referenced in Markdown and re-uploads them to the target site
 6. Reports a summary of what was created
 
 **Example — dry run first:**
 
 ```bash
 # Preview what would be imported (no changes made)
-npx jant import-site \
+npx jant site import \
   --url https://new-site.com \
   --path ./jant-export \
   --dry-run
@@ -1174,11 +1314,11 @@ npx jant import-site \
 **Example — import from a directory:**
 
 ```bash
-export JANT_TOKEN=jnt_YOUR_TOKEN
+export JANT_API_TOKEN=jnt_YOUR_TOKEN
 
 # Unzip first, inspect content, then import
 unzip jant-export.zip -d jant-export
-npx jant import-site \
+npx jant site import \
   --url https://new-site.com \
   --path ./jant-export
 ```
@@ -1186,8 +1326,8 @@ npx jant import-site \
 **Example — import from a ZIP directly:**
 
 ```bash
-export JANT_TOKEN=jnt_YOUR_TOKEN
-npx jant import-site \
+export JANT_API_TOKEN=jnt_YOUR_TOKEN
+npx jant site import \
   --url https://new-site.com \
   --path jant-export.zip
 ```
@@ -1195,8 +1335,8 @@ npx jant import-site \
 **Example — fast import without images:**
 
 ```bash
-export JANT_TOKEN=jnt_YOUR_TOKEN
-npx jant import-site \
+export JANT_API_TOKEN=jnt_YOUR_TOKEN
+npx jant site import \
   --url https://new-site.com \
   --skip-media
 ```
@@ -1206,8 +1346,7 @@ npx jant import-site \
 - Always do a `--dry-run` first to check for parsing errors
 - The import is not idempotent — running it twice creates duplicate posts
 - Use `--skip-media` for faster imports when the original site will stay online
-- The target instance must have API tokens enabled (create one at **Settings >
-  API Tokens**)
+- The target instance must have API tokens enabled (create one at **Settings > API Tokens**)
 
 ---
 

@@ -11,13 +11,12 @@
  *   deno run --allow-all --unsafely-ignore-certificate-errors scripts/migrate-to-jant.ts --dry-run  # preview only
  *
  * Post type mapping:
- *   content/blog/quotes/   → Jant format=quote  (no slug, no custom URL)
- *   content/blog/links/    → Jant format=link   (slug + custom URL)
- *   content/blog/thoughts/ → Jant format=note   (no slug, no custom URL)
- *   everything else        → Jant format=note   (slug + custom URL)
+ *   content/blog/quotes/   → Jant format=quote  (no explicit path)
+ *   content/blog/links/    → Jant format=link   (preserve blog path via `path`)
+ *   content/blog/thoughts/ → Jant format=note   (no explicit path)
+ *   everything else        → Jant format=note   (preserve blog path via `path`)
  *
- * State is saved to temp-state.json after each post.
- * Re-running will skip already-migrated posts.
+ * State is kept in memory for the current run only.
  */
 
 import "jsr:@std/dotenv/load";
@@ -29,8 +28,8 @@ import { basename, dirname, join, relative } from "jsr:@std/path";
 // Config
 // ─────────────────────────────────────────────────────────────────────────────
 
-const JANT_BASE_URL =
-  Deno.env.get("JANT_BASE_URL") ?? "https://jant.localtest.me";
+const JANT_BASE_URL = Deno.env.get("JANT_BASE_URL") ??
+  "https://jant.localtest.me";
 const JANT_DEV_API_TOKEN = Deno.env.get("JANT_DEV_API_TOKEN");
 if (!JANT_DEV_API_TOKEN) {
   console.error("❌  JANT_DEV_API_TOKEN not set in .env");
@@ -38,7 +37,7 @@ if (!JANT_DEV_API_TOKEN) {
 }
 
 const BLOG_DIR = "content/blog";
-const STATE_FILE = "temp-state.json";
+// const STATE_FILE = "temp-state.json";
 const DEFAULT_LIMIT = 2;
 
 const args = Deno.args;
@@ -50,8 +49,8 @@ const typeArg = args.find((a) => a.startsWith("--type="));
 const LIMIT = flagAll
   ? Infinity
   : limitArg
-    ? parseInt(limitArg.split("=")[1], 10)
-    : DEFAULT_LIMIT;
+  ? parseInt(limitArg.split("=")[1], 10)
+  : DEFAULT_LIMIT;
 const ONLY_TYPE = typeArg?.split("=")[1] as PostFormat | undefined;
 
 const AUTH = { Authorization: `Bearer ${JANT_DEV_API_TOKEN}` } as Record<
@@ -79,26 +78,34 @@ interface MigratedEntry {
 }
 
 interface State {
-  migrated: Record<string, MigratedEntry>; // key = relPath
+  migrated: Record<string, MigratedEntry>;
   lastRun: string;
+}
+
+interface ThreadState {
+  rootId: string;
+  rootPath: string;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
 // State management
 // ─────────────────────────────────────────────────────────────────────────────
 
-// async function loadState(): Promise<State> {
-//   try {
-//     return JSON.parse(await Deno.readTextFile(STATE_FILE));
-//   } catch {
-//     return { migrated: {}, lastRun: "" };
-//   }
-// }
+async function loadState(): Promise<State> {
+  // temp-state.json persistence is disabled for now.
+  // try {
+  //   return JSON.parse(await Deno.readTextFile(STATE_FILE));
+  // } catch {
+  //   return { migrated: {}, lastRun: "" };
+  // }
+  return { migrated: {}, lastRun: "" };
+}
 
-// async function saveState(state: State): Promise<void> {
-//   state.lastRun = new Date().toISOString();
-//   await Deno.writeTextFile(STATE_FILE, JSON.stringify(state, null, 2));
-// }
+async function saveState(_state: State): Promise<void> {
+  // temp-state.json persistence is disabled for now.
+  // state.lastRun = new Date().toISOString();
+  // await Deno.writeTextFile(STATE_FILE, JSON.stringify(state, null, 2));
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // File scanning
@@ -106,11 +113,13 @@ interface State {
 
 async function scanBlogFiles(): Promise<string[]> {
   const files: string[] = [];
-  for await (const entry of walk(BLOG_DIR, {
-    exts: ["md"],
-    includeDirs: false,
-  })) {
-    if (/\/_?index(\.en)?\.md$/.test(entry.path)) continue;
+  for await (
+    const entry of walk(BLOG_DIR, {
+      exts: ["md"],
+      includeDirs: false,
+    })
+  ) {
+    if (/\/_index(\.en)?\.md$/.test(entry.path)) continue;
     files.push(entry.path);
   }
   return files.sort();
@@ -177,14 +186,12 @@ function toCustomPath(relPath: string): string {
 async function processMarkdown(
   md: string,
   postFile: string,
-): Promise<{ markdown: string; mediaIds: string[] }> {
+): Promise<string> {
   let result = md;
-  const mediaIds: string[] = [];
   const seen = new Set<string>();
 
   // ── 1. Upload local images and replace URLs ─────────────────────────────
   for (const m of md.matchAll(/!\[([^\]]*)\]\(([^)]+)\)/g)) {
-    const alt = m[1];
     const src = m[2].trim();
     if (seen.has(src)) continue;
     seen.add(src);
@@ -210,10 +217,12 @@ async function processMarkdown(
 
     const uploaded = await uploadFile(localPath);
     if (uploaded) {
-      mediaIds.push(uploaded.id);
       const jantUrl = JANT_BASE_URL + uploaded.url;
-      // Replace all occurrences of this src in the markdown
-      result = result.replaceAll(`![${alt}](${src})`, `![${alt}](${jantUrl})`);
+      // Preserve original alt text while replacing every image occurrence for this src.
+      result = result.replace(
+        new RegExp(`!\\[([^\\]]*)\\]\\(${escapeRegExp(src)}\\)`, "g"),
+        (_full, currentAlt) => `![${currentAlt}](${jantUrl})`,
+      );
       console.log(`  📷  Uploaded: ${basename(localPath)} → ${jantUrl}`);
     }
   }
@@ -226,15 +235,13 @@ async function processMarkdown(
     (_full, text, href) => {
       let newHref: string;
       if (href.startsWith("@/")) {
-        newHref =
-          "/" +
+        newHref = "/" +
           href
             .slice(2)
             .replace(/\.md$/, "")
             .replace(/\/index$/, "");
       } else {
-        newHref =
-          "/" +
+        newHref = "/" +
           href
             .slice("/content/".length)
             .replace(/\.md$/, "")
@@ -248,7 +255,7 @@ async function processMarkdown(
   // Zola uses <!-- more -->, Jant uses <!--more-->
   result = result.replace(/<!--\s*more\s*-->/g, "<!--more-->");
 
-  return { markdown: result, mediaIds };
+  return result;
 }
 
 async function uploadFile(
@@ -265,10 +272,12 @@ async function uploadFile(
     if (!r.ok) {
       const txt = await r.text().catch(() => "");
       console.warn(
-        `  ⚠️   Upload ${basename(path)} failed: ${r.status} ${txt.slice(
-          0,
-          100,
-        )}`,
+        `  ⚠️   Upload ${basename(path)} failed: ${r.status} ${
+          txt.slice(
+            0,
+            100,
+          )
+        }`,
       );
       return null;
     }
@@ -291,6 +300,67 @@ function isValidUrl(url: string | undefined): url is string {
   } catch {
     return false;
   }
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function normalizeOptionalString(value: unknown): string | undefined {
+  if (value == null) return undefined;
+  const normalized = String(value).trim();
+  return normalized ? normalized : undefined;
+}
+
+function normalizeOptionalUrl(value: unknown): string | undefined {
+  const normalized = normalizeOptionalString(value)?.replace(
+    /^[`"'“”]+|[`"'“”]+$/g,
+    "",
+  );
+  return isValidUrl(normalized) ? normalized : undefined;
+}
+
+function normalizeOptionalInteger(value: unknown): number | undefined {
+  if (value == null || value === "") return undefined;
+  const parsed = Number(value);
+  if (!Number.isFinite(parsed)) return undefined;
+  return Math.trunc(parsed);
+}
+
+function isSuspiciousQuoteSourceName(value: string): boolean {
+  const normalized = value.trim();
+  return normalized.length > 120 ||
+    /[\r\n]/.test(normalized) ||
+    /[。；;]/.test(normalized);
+}
+
+function normalizeQuoteSourceName(
+  value: string | undefined,
+): string | undefined {
+  if (!value) return undefined;
+  return isSuspiciousQuoteSourceName(value) ? undefined : value;
+}
+
+function stripTrailingQuoteAttribution(
+  body: string,
+  sourceName: string | undefined,
+): string {
+  let result = body.replace(/\r\n/g, "\n").trim();
+  if (!sourceName) return result;
+
+  const escapedSource = escapeRegExp(sourceName.trim());
+  const separator = String.raw`[-—–─―]+`;
+  const patterns = [
+    new RegExp(String.raw`\s+${separator}\s*${escapedSource}\s*$`),
+    new RegExp(String.raw`\s*${separator}\s*\n${escapedSource}\s*$`),
+    new RegExp(String.raw`\s*\n${separator}\s*\n${escapedSource}\s*$`),
+  ];
+
+  for (const pattern of patterns) {
+    result = result.replace(pattern, "").trim();
+  }
+
+  return result;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -318,6 +388,7 @@ async function migrateOne(
   filePath: string,
   state: State,
   counters: Record<PostFormat, number>,
+  quoteThreads: Map<string, ThreadState>,
 ): Promise<"success" | "error" | "skipped" | "stop"> {
   const rel = relative(BLOG_DIR, filePath);
 
@@ -350,22 +421,59 @@ async function migrateOne(
   const isDraft = meta.draft === true;
 
   const extraMeta = (meta.extra ?? {}) as Record<string, unknown>;
-  const rating =
-    extraMeta.rating != null ? Number(extraMeta.rating) : undefined;
-  const rawUrl = extraMeta.url ? String(extraMeta.url) : undefined;
-  const sourceUrl = isValidUrl(rawUrl) ? rawUrl : undefined;
+  const rawSourceName = normalizeOptionalString(
+    extraMeta.source_name ?? extraMeta.sourceName,
+  );
+  const sourceName = normalizeQuoteSourceName(rawSourceName);
+  const rating = extraMeta.rating != null
+    ? Number(extraMeta.rating)
+    : undefined;
+  const rawUrl = normalizeOptionalString(
+    extraMeta.source_url ?? extraMeta.sourceUrl ?? extraMeta.url,
+  );
+  const sourceUrl = normalizeOptionalUrl(rawUrl);
+  const quoteThreadKey = normalizeOptionalString(
+    extraMeta.jant_thread_key ?? extraMeta.thread_key,
+  );
+  const quoteThreadOrder = normalizeOptionalInteger(
+    extraMeta.jant_thread_order ?? extraMeta.thread_order,
+  );
   if (rawUrl && !sourceUrl) {
     console.warn(`  ⚠️   Invalid URL in frontmatter, skipping: ${rawUrl}`);
+  }
+  if (format === "quote" && rawSourceName && !sourceName) {
+    console.warn(
+      `  ⚠️   Suspicious source_name in frontmatter, omitting: ${rawSourceName}`,
+    );
+  }
+
+  const existingThread = quoteThreadKey
+    ? quoteThreads.get(quoteThreadKey)
+    : undefined;
+  if (
+    format === "quote" && quoteThreadKey && (quoteThreadOrder ?? 1) > 1 &&
+    !existingThread
+  ) {
+    const msg =
+      `thread reply encountered before root: key=${quoteThreadKey} order=${quoteThreadOrder}`;
+    console.error(`  ❌  ${msg}`);
+    state.migrated[rel] = {
+      sourcePath: filePath,
+      jantId: "",
+      jantSlug: "",
+      format,
+      migratedAt: new Date().toISOString(),
+      status: "error",
+      error: msg,
+    };
+    return "error";
   }
 
   // ── Process markdown body (images + link conversion) ────────────────────
   // Quotes use plain text for quoteText — no markdown processing needed
   let processedMarkdown = "";
-  let mediaIds: string[] = [];
   if (format !== "quote" && body) {
-    const result = await processMarkdown(body, filePath);
-    processedMarkdown = result.markdown;
-    mediaIds = result.mediaIds;
+    processedMarkdown = await processMarkdown(body, filePath);
   }
 
   // ── Build API payload ────────────────────────────────────────────────────
@@ -377,26 +485,28 @@ async function migrateOne(
   if (publishedAt && !isNaN(publishedAt) && !isDraft) {
     payload.publishedAt = publishedAt;
   }
-  if (mediaIds.length > 0) payload.mediaIds = mediaIds;
   if (rating != null && rating >= 1 && rating <= 5) {
     payload.rating = Math.round(rating);
   }
 
   if (format === "quote") {
-    // quoteText = raw body text; url = optional source
-    payload.quoteText = body.trim();
-    if (sourceUrl) payload.url = sourceUrl;
-    // No title, no explicit slug for quotes
+    // quoteText = raw body text; sourceName/sourceUrl are optional attribution.
+    payload.quoteText = stripTrailingQuoteAttribution(body, sourceName) ||
+      body.trim();
+    if (sourceName) payload.sourceName = sourceName;
+    if (sourceUrl) payload.sourceUrl = sourceUrl;
+    if (existingThread) payload.replyToId = existingThread.rootId;
+    // No explicit path for quotes.
   } else if (format === "link") {
     if (sourceUrl) payload.url = sourceUrl;
     if (title) payload.title = title;
     if (processedMarkdown) payload.bodyMarkdown = processedMarkdown;
-    // No explicit slug for links — Jant auto-generates
+    payload.path = toCustomPath(rel);
   } else {
     // note (including thoughts)
     if (title) payload.title = title;
     if (processedMarkdown) payload.bodyMarkdown = processedMarkdown;
-    // Only non-thought notes get an explicit path (Jant auto-generates slug + alias)
+    // Only non-thought notes get an explicit path (Jant auto-generates slug + alias).
     if (subtype !== "thought") payload.path = toCustomPath(rel);
   }
 
@@ -405,18 +515,28 @@ async function migrateOne(
     const preview = { ...payload };
     if (preview.bodyMarkdown) preview.bodyMarkdown = "<markdown>";
     console.log("  [dry-run] Payload:", JSON.stringify(preview, null, 4));
+    if (format === "quote" && quoteThreadKey && !existingThread) {
+      quoteThreads.set(quoteThreadKey, {
+        rootId: `<dry-run:${quoteThreadKey}>`,
+        rootPath: rel,
+      });
+    }
     counters[format]++;
     return "success";
   }
 
   // ── Create post ──────────────────────────────────────────────────────────
-  let created: { id: string; slug: string };
+  let created: { id: string; slug?: string | null };
   try {
-    created = await apiPost<{ id: string; slug: string }>(
+    created = await apiPost<{ id: string; slug?: string | null }>(
       "/api/posts",
       payload,
     );
-    console.log(`  ✅  Created: slug=${created.slug} id=${created.id}`);
+    console.log(
+      `  ✅  Created:${
+        created.slug ? ` slug=${created.slug}` : ""
+      } id=${created.id}`,
+    );
   } catch (err) {
     const msg = (err as Error).message;
     console.error(`  ❌  Post creation failed: ${msg}`);
@@ -436,11 +556,21 @@ async function migrateOne(
   state.migrated[rel] = {
     sourcePath: filePath,
     jantId: created.id,
-    jantSlug: created.slug,
+    jantSlug: created.slug ?? "",
     format,
     migratedAt: new Date().toISOString(),
     status: "success",
   };
+
+  if (format === "quote" && quoteThreadKey && !existingThread) {
+    quoteThreads.set(quoteThreadKey, {
+      rootId: created.id,
+      rootPath: rel,
+    });
+    console.log(`  🧵  Thread root: ${quoteThreadKey}`);
+  } else if (format === "quote" && existingThread) {
+    console.log(`  🧵  Reply to: ${existingThread.rootPath}`);
+  }
 
   counters[format]++;
   return "success";
@@ -458,14 +588,14 @@ async function main() {
   if (flagDryRun) console.log("    Mode   : DRY RUN (no writes)");
   console.log();
 
-  // const state = await loadState();
-  const state: State = { migrated: {}, lastRun: "" };
+  const state = await loadState();
   const files = await scanBlogFiles();
   console.log(`Found ${files.length} markdown files\n`);
 
   const counters: Record<PostFormat, number> = { note: 0, link: 0, quote: 0 };
   const stats = { success: 0, error: 0, skipped: 0 };
   const errorLog: { path: string; error: string }[] = [];
+  const quoteThreads = new Map<string, ThreadState>();
 
   for (const file of files) {
     // Stop if all relevant type limits are reached
@@ -476,7 +606,7 @@ async function main() {
         counters.quote >= LIMIT;
     if (done) break;
 
-    const res = await migrateOne(file, state, counters);
+    const res = await migrateOne(file, state, counters, quoteThreads);
 
     if (res === "success") stats.success++;
     else if (res === "error") {
@@ -488,7 +618,7 @@ async function main() {
     } else if (res === "skipped") stats.skipped++;
     // "stop" means this type is full; continue loop for other types
 
-    // if (!flagDryRun && res !== "skipped") await saveState(state);
+    if (!flagDryRun && res !== "skipped") await saveState(state);
   }
 
   console.log("\n──────────────────────────────────────────");
@@ -499,7 +629,6 @@ async function main() {
   console.log(
     `  Breakdown  : note=${counters.note}, link=${counters.link}, quote=${counters.quote}`,
   );
-  // if (!flagDryRun) console.log(`  State      : ${STATE_FILE}`);
   if (errorLog.length > 0) {
     console.log("\n❌  Error details:");
     for (const { path, error } of errorLog) {
