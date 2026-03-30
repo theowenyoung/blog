@@ -1,38 +1,33 @@
 # Jant API Reference
 
-Jant exposes a compact HTTP API for automations, content migration, dashboard
-tooling, and hosted control-plane operations.
+Jant exposes a compact HTTP API for automations, content migration, dashboard tooling, and hosted control-plane operations.
 
 - Base URL: `https://your-site.com`
 - Default format: JSON
 - Timestamps: Unix seconds
-- Auth: session cookies, Bearer API tokens, or an internal admin token for
-  `/api/internal/*`
+- Auth: session cookies, Bearer API tokens, or an internal admin token for `/api/internal/*`
 
-For static export and round-trip import, also see
-[Export and Import](export-and-import.md). For backup planning, see
-[Backups](backups.md).
+For static export and round-trip import, also see [Export and Import](export-and-import.md). For backup planning, see [Backups](backups.md).
 
-`/api/auth/*` is handled by better-auth and is primarily intended for browser
-auth flows, so it is not covered here.
+`/api/auth/*` is handled by better-auth and is primarily intended for browser auth flows, so it is not covered here.
 
 ---
 
 ## API Surface
 
-| Area                    | Base path                              | Auth                 |
-| ----------------------- | -------------------------------------- | -------------------- |
-| Posts                   | `/api/posts`                           | API token or session |
-| Uploads (recommended)   | `/api/uploads`                         | API token or session |
-| Uploads (legacy)        | `/api/upload`, `/api/upload/multipart` | API token or session |
-| Text attachment content | `/api/attachments`                     | API token or session |
-| Collections             | `/api/collections`                     | Mixed                |
-| Navigation items        | `/api/nav-items`                       | Mixed                |
-| Custom URLs             | `/api/custom-urls`                     | API token or session |
-| Settings                | `/api/settings`                        | API token or session |
-| Search                  | `/api/search`                          | Public               |
-| Export                  | `/api/export`                          | API token or session |
-| Internal admin          | `/api/internal/*`                      | Internal admin token |
+| Area | Base path | Auth |
+| --- | --- | --- |
+| Posts | `/api/posts` | API token or session |
+| Uploads (recommended) | `/api/uploads` | API token or session |
+| Uploads (legacy) | `/api/upload`, `/api/upload/multipart` | API token or session |
+| Text attachment content | `/api/attachments` | API token or session |
+| Collections | `/api/collections` | Mixed |
+| Navigation items | `/api/nav-items` | Mixed |
+| Custom URLs | `/api/custom-urls` | API token or session |
+| Settings | `/api/settings` | API token or session |
+| Search | `/api/search` | Public |
+| Export | `/api/export` | API token or session |
+| Internal admin | `/api/internal/*` | Internal admin token |
 
 Auth labels in this document:
 
@@ -59,18 +54,15 @@ curl https://your-site.com/api/posts \
   -H "Authorization: Bearer jnt_YOUR_TOKEN"
 ```
 
-API tokens grant the same API access as an authenticated dashboard session for
-the current site.
+API tokens grant the same API access as an authenticated dashboard session for the current site.
 
 ### Session cookies
 
-Browser requests can use the normal dashboard session cookie after signing in at
-`/signin`.
+Browser requests can use the normal dashboard session cookie after signing in at `/signin`.
 
 ### Local development token
 
-When `DEV_API_TOKEN` is configured, Jant also accepts it as a Bearer token on
-local hosts only:
+When `DEV_API_TOKEN` is configured, Jant also accepts it as a Bearer token on local hosts only:
 
 - `localhost`
 - `127.0.0.1`
@@ -81,11 +73,9 @@ This is meant for local tooling, not production clients.
 
 ### Internal admin token
 
-`/api/internal/*` endpoints only accept the environment-provided
-`INTERNAL_ADMIN_TOKEN`.
+`/api/internal/*` endpoints only accept the environment-provided `INTERNAL_ADMIN_TOKEN`.
 
-If that token is not configured, those endpoints behave as if they do not exist
-and return `404`.
+If that token is not configured, those endpoints behave as if they do not exist and return `404`.
 
 ---
 
@@ -93,8 +83,7 @@ and return `404`.
 
 ### JSON and timestamps
 
-Unless an endpoint explicitly returns a ZIP, XML, or plain text response, it
-returns JSON.
+Unless an endpoint explicitly returns a ZIP, XML, or plain text response, it returns JSON.
 
 All timestamps are Unix seconds:
 
@@ -123,13 +112,10 @@ Invalid IDs return `400`.
 ### Slugs, paths, and aliases
 
 - Post and collection `slug` values are lowercase `a-z`, `0-9`, and `-`.
-- Post `path` is a create-time convenience field, not a general path-management
-  API.
+- Post `path` is a create-time convenience field, not a general path-management API.
 - If a post `path` is itself a valid slug, Jant uses it as the canonical slug.
-- If a post `path` is not a valid slug, Jant slugifies it for the canonical URL
-  and stores the original path as an alias.
-- Custom URL creation expects a leading slash in the request body, but
-  list/create responses return normalized paths without the leading slash.
+- If a post `path` is not a valid slug, Jant slugifies it for the canonical URL and stores the original path as an alias.
+- Custom URL creation expects a leading slash in the request body, but list/create responses return normalized paths without the leading slash.
 
 ### Body formats
 
@@ -143,8 +129,7 @@ Jant renders stored content into:
 - `bodyHtml`
 - `bodyText`
 
-Markdown support includes headings, lists, links, images, tables, fenced code
-blocks, blockquotes, and `<!--more-->` excerpt breaks.
+Markdown support includes headings, lists, links, images, tables, fenced code blocks, blockquotes, and `<!--more-->` excerpt breaks.
 
 ### Quote post field mapping
 
@@ -168,24 +153,22 @@ Domain errors use this shape:
 }
 ```
 
-- `details` is present for validation errors that carry structured field
-  information.
-- Unhandled server errors may return only
-  `{ "error": "Something went wrong on our end" }`.
+- `details` is present for validation errors that carry structured field information.
+- Unhandled server errors may return only `{ "error": "Something went wrong on our end" }`.
 
 Common error codes:
 
-| Code                     | HTTP  | Meaning                                                             |
-| ------------------------ | ----- | ------------------------------------------------------------------- |
-| `VALIDATION_ERROR`       | `400` | Invalid input, invalid ID, unsupported field combination            |
-| `UNAUTHORIZED`           | `401` | Missing or invalid auth                                             |
-| `FORBIDDEN`              | `403` | Authenticated but not allowed                                       |
-| `NOT_FOUND`              | `404` | Resource does not exist                                             |
-| `CONFLICT`               | `409` | Duplicate slug/path, invalid state transition, hosted-mode conflict |
-| `MEDIA_QUOTA_EXCEEDED`   | `409` | Hosted media quota would be exceeded                                |
-| `RATE_LIMIT`             | `429` | Too many requests                                                   |
-| `CONFIGURATION_ERROR`    | `500` | Missing or invalid server configuration                             |
-| `EXTERNAL_SERVICE_ERROR` | `500` | External dependency failed                                          |
+| Code | HTTP | Meaning |
+| --- | --- | --- |
+| `VALIDATION_ERROR` | `400` | Invalid input, invalid ID, unsupported field combination |
+| `UNAUTHORIZED` | `401` | Missing or invalid auth |
+| `FORBIDDEN` | `403` | Authenticated but not allowed |
+| `NOT_FOUND` | `404` | Resource does not exist |
+| `CONFLICT` | `409` | Duplicate slug/path, invalid state transition, hosted-mode conflict |
+| `MEDIA_QUOTA_EXCEEDED` | `409` | Hosted media quota would be exceeded |
+| `RATE_LIMIT` | `429` | Too many requests |
+| `CONFIGURATION_ERROR` | `500` | Missing or invalid server configuration |
+| `EXTERNAL_SERVICE_ERROR` | `500` | External dependency failed |
 
 Example validation error:
 
@@ -218,40 +201,39 @@ Jant supports three post formats:
 
 Post responses include these fields:
 
-| Field            | Type                                     | Notes                                                     |
-| ---------------- | ---------------------------------------- | --------------------------------------------------------- |
-| `id`             | `pst_*` string                           | Post ID                                                   |
-| `siteId`         | string                                   | Owning site                                               |
-| `format`         | `note` \| `link` \| `quote`              | Post format                                               |
-| `status`         | `draft` \| `published`                   | Stored post status                                        |
-| `visibility`     | `public` \| `latest_hidden` \| `private` | Resolved visibility shown to clients                      |
-| `pinnedAt`       | integer \| `null`                        | Pin timestamp                                             |
-| `featuredAt`     | integer \| `null`                        | Feature timestamp                                         |
-| `slug`           | string                                   | Canonical slug                                            |
-| `title`          | string \| `null`                         | Returned for non-quote responses; omitted for `quote`     |
-| `url`            | string \| `null`                         | Returned for non-quote responses; usually `null` on notes |
-| `sourceName`     | string \| `null`                         | Returned instead of `title` for `quote`                   |
-| `sourceUrl`      | string \| `null`                         | Returned instead of `url` for `quote`                     |
-| `body`           | string \| `null`                         | Raw TipTap JSON string when stored that way               |
-| `bodyHtml`       | string \| `null`                         | Rendered HTML                                             |
-| `bodyText`       | string \| `null`                         | Plain-text rendering                                      |
-| `quoteText`      | string \| `null`                         | Quote content                                             |
-| `summary`        | string \| `null`                         | Optional summary                                          |
-| `rating`         | integer \| `null`                        | `1` to `5` when set                                       |
-| `replyToId`      | `pst_*` string \| `null`                 | Parent reply/post ID                                      |
-| `threadId`       | `pst_*` string                           | Thread root ID                                            |
-| `deletedAt`      | integer \| `null`                        | Soft-delete timestamp                                     |
-| `publishedAt`    | integer \| `null`                        | Publish timestamp                                         |
-| `lastActivityAt` | integer                                  | Last activity timestamp                                   |
-| `createdAt`      | integer                                  | Unix seconds                                              |
-| `updatedAt`      | integer                                  | Unix seconds                                              |
-| `attachments`    | array                                    | Ordered media/text attachment objects                     |
-| `collectionIds`  | `col_*` string[]                         | Only included by `GET /api/posts/:id`                     |
+| Field | Type | Notes |
+| --- | --- | --- |
+| `id` | `pst_*` string | Post ID |
+| `siteId` | string | Owning site |
+| `format` | `note` \| `link` \| `quote` | Post format |
+| `status` | `draft` \| `published` | Stored post status |
+| `visibility` | `public` \| `latest_hidden` \| `private` | Resolved visibility shown to clients |
+| `pinnedAt` | integer \| `null` | Pin timestamp |
+| `featuredAt` | integer \| `null` | Feature timestamp |
+| `slug` | string | Canonical slug |
+| `title` | string \| `null` | Returned for non-quote responses; omitted for `quote` |
+| `url` | string \| `null` | Returned for non-quote responses; usually `null` on notes |
+| `sourceName` | string \| `null` | Returned instead of `title` for `quote` |
+| `sourceUrl` | string \| `null` | Returned instead of `url` for `quote` |
+| `body` | string \| `null` | Raw TipTap JSON string when stored that way |
+| `bodyHtml` | string \| `null` | Rendered HTML |
+| `bodyText` | string \| `null` | Plain-text rendering |
+| `quoteText` | string \| `null` | Quote content |
+| `summary` | string \| `null` | Optional summary |
+| `rating` | integer \| `null` | `1` to `5` when set |
+| `replyToId` | `pst_*` string \| `null` | Parent reply/post ID |
+| `threadId` | `pst_*` string | Thread root ID |
+| `deletedAt` | integer \| `null` | Soft-delete timestamp |
+| `publishedAt` | integer \| `null` | Publish timestamp |
+| `lastActivityAt` | integer | Last activity timestamp |
+| `createdAt` | integer | Unix seconds |
+| `updatedAt` | integer | Unix seconds |
+| `attachments` | array | Ordered media/text attachment objects |
+| `collectionIds` | `col_*` string[] | Only included by `GET /api/posts/:id` |
 
 ### Post response shape
 
-The post list and detail endpoints return the same core fields.
-`GET /api/posts/:id` additionally includes `collectionIds`.
+The post list and detail endpoints return the same core fields. `GET /api/posts/:id` additionally includes `collectionIds`.
 
 Example:
 
@@ -289,8 +271,7 @@ Notes:
 - Quote responses omit `title` and `url` instead of returning them as `null`.
 - `replyToId !== null` means the post is a thread reply.
 - `threadId` points at the thread root.
-- `GET /api/posts` includes both root posts and replies. There is currently no
-  `excludeReplies` query parameter.
+- `GET /api/posts` includes both root posts and replies. There is currently no `excludeReplies` query parameter.
 
 ### List posts
 
@@ -300,12 +281,12 @@ Auth: `Session or token`
 
 Query parameters:
 
-| Parameter | Type                        | Default     | Notes                                         |
-| --------- | --------------------------- | ----------- | --------------------------------------------- |
-| `format`  | `note` \| `link` \| `quote` | all         | Optional format filter                        |
-| `status`  | `draft` \| `published`      | `published` | Optional status filter                        |
-| `cursor`  | string                      | none        | Pass the previous `nextCursor` back unchanged |
-| `limit`   | integer                     | `100`       | Maximum `100`                                 |
+| Parameter | Type | Default | Notes |
+| --- | --- | --- | --- |
+| `format` | `note` \| `link` \| `quote` | all | Optional format filter |
+| `status` | `draft` \| `published` | `published` | Optional status filter |
+| `cursor` | string | none | Pass the previous `nextCursor` back unchanged |
+| `limit` | integer | `100` | Maximum `100` |
 
 Response:
 
@@ -336,8 +317,7 @@ Response:
 
 Notes:
 
-- Each item uses the post response fields above, except list responses omit
-  `collectionIds`.
+- Each item uses the post response fields above, except list responses omit `collectionIds`.
 - `nextCursor` is `null` when there are no more results.
 
 ### Suggest or validate a slug
@@ -348,13 +328,13 @@ Auth: `Session or token`
 
 Query parameters:
 
-| Parameter | Type           | Required | Notes                                                |
-| --------- | -------------- | -------- | ---------------------------------------------------- |
-| `mode`    | `suggest`      | yes      | Suggest a slug from `title`                          |
-| `title`   | string         | suggest  | Source title used for slug suggestion                |
-| `postId`  | `pst_*` string | no       | Exclude the current post when suggesting or checking |
-| `mode`    | `check`        | yes      | Check whether a specific slug is available           |
-| `slug`    | string         | check    | Lowercase slug candidate to validate and check       |
+| Parameter | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `mode` | `suggest` | yes | Suggest a slug from `title` |
+| `title` | string | suggest | Source title used for slug suggestion |
+| `postId` | `pst_*` string | no | Exclude the current post when suggesting or checking |
+| `mode` | `check` | yes | Check whether a specific slug is available |
+| `slug` | string | check | Lowercase slug candidate to validate and check |
 
 Modes:
 
@@ -385,15 +365,13 @@ Response:
 }
 ```
 
-When editing an existing post, pass `postId` so the current slug counts as
-available:
+When editing an existing post, pass `postId` so the current slug counts as available:
 
 ```text
 GET /api/posts/slug?mode=check&slug=hello-world&postId=pst_...
 ```
 
-Invalid slug candidates return `400`, including reserved slugs and slugs with
-invalid characters.
+Invalid slug candidates return `400`, including reserved slugs and slugs with invalid characters.
 
 ### Get a single post
 
@@ -451,27 +429,27 @@ Request body:
 
 Fields:
 
-| Field           | Type                                     | Required         | Notes                                                       |
-| --------------- | ---------------------------------------- | ---------------- | ----------------------------------------------------------- |
-| `format`        | `note` \| `link` \| `quote`              | yes              | Post format                                                 |
-| `title`         | string                                   | format-dependent | Required for `link`; max `300`; not allowed for `quote`     |
-| `sourceName`    | string                                   | no               | Quote attribution name, max `300`                           |
-| `body`          | string                                   | no               | TipTap JSON string                                          |
-| `bodyMarkdown`  | string                                   | no               | Recommended for scripts                                     |
-| `slug`          | string                                   | no               | Canonical slug                                              |
-| `path`          | string                                   | no               | Create-time path helper; mutually exclusive with `slug`     |
-| `status`        | `draft` \| `published`                   | no               | Defaults to `published`                                     |
-| `visibility`    | `public` \| `latest_hidden` \| `private` | no               | Defaults to `public`                                        |
-| `pinned`        | boolean                                  | no               | Pin the post                                                |
-| `featured`      | boolean                                  | no               | Mark as featured                                            |
-| `url`           | absolute URL                             | format-dependent | Required for `link`; allows `http:`, `https:`, or `mailto:` |
-| `sourceUrl`     | absolute URL                             | no               | Quote attribution URL                                       |
-| `quoteText`     | string                                   | format-dependent | Required for `quote`                                        |
-| `rating`        | integer                                  | no               | `1` to `5`; send `0` to clear on update                     |
-| `collectionIds` | string[]                                 | no               | Collection TypeIDs                                          |
-| `replyToId`     | string                                   | no               | Make this post a thread reply                               |
-| `publishedAt`   | integer                                  | no               | Unix seconds; only valid for published posts                |
-| `attachments`   | attachment[]                             | no               | Ordered attachments, max `20`                               |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `format` | `note` \| `link` \| `quote` | yes | Post format |
+| `title` | string | format-dependent | Required for `link`; max `300`; not allowed for `quote` |
+| `sourceName` | string | no | Quote attribution name, max `300` |
+| `body` | string | no | TipTap JSON string |
+| `bodyMarkdown` | string | no | Recommended for scripts |
+| `slug` | string | no | Canonical slug |
+| `path` | string | no | Create-time path helper; mutually exclusive with `slug` |
+| `status` | `draft` \| `published` | no | Defaults to `published` |
+| `visibility` | `public` \| `latest_hidden` \| `private` | no | Defaults to `public` |
+| `pinned` | boolean | no | Pin the post |
+| `featured` | boolean | no | Mark as featured |
+| `url` | absolute URL | format-dependent | Required for `link`; allows `http:`, `https:`, or `mailto:` |
+| `sourceUrl` | absolute URL | no | Quote attribution URL |
+| `quoteText` | string | format-dependent | Required for `quote` |
+| `rating` | integer | no | `1` to `5`; send `0` to clear on update |
+| `collectionIds` | string[] | no | Collection TypeIDs |
+| `replyToId` | string | no | Make this post a thread reply |
+| `publishedAt` | integer | no | Unix seconds; only valid for published posts |
+| `attachments` | attachment[] | no | Ordered attachments, max `20` |
 
 Important rules:
 
@@ -479,25 +457,21 @@ Important rules:
 - Use `slug` or `path`, not both.
 - `path` is only available on create. Post updates only support `slug`.
 - `link` posts require `title` and `url`.
-- `quote` posts require `quoteText` and must use `sourceName` / `sourceUrl`
-  instead of `title` / `url`.
+- `quote` posts require `quoteText` and must use `sourceName` / `sourceUrl` instead of `title` / `url`.
 - Replies cannot be pinned.
 - Replies inherit thread visibility.
-- Replies inherit the root status unless you explicitly create the reply as
-  `draft`.
+- Replies inherit the root status unless you explicitly create the reply as `draft`.
 
 Path behavior:
 
 - `path: "hello-world"` creates the post at `/hello-world`.
-- `path: "2024/01/hello-world"` creates a slugified canonical URL such as
-  `/2024-01-hello-world` and stores `/2024/01/hello-world` as an alias.
+- `path: "2024/01/hello-world"` creates a slugified canonical URL such as `/2024-01-hello-world` and stores `/2024/01/hello-world` as an alias.
 
 Response: `201 Created` with the full post object and ordered `attachments`.
 
 ### Attachments
 
-Posts accept an ordered `attachments` array. Order in the request is the order
-shown on the post.
+Posts accept an ordered `attachments` array. Order in the request is the order shown on the post.
 
 Input shapes:
 
@@ -601,8 +575,7 @@ Example:
 
 Request body fields:
 
-This endpoint accepts the same JSON fields as `POST /api/posts`, except `path`.
-All fields are optional.
+This endpoint accepts the same JSON fields as `POST /api/posts`, except `path`. All fields are optional.
 
 Attachment replacement rules:
 
@@ -612,8 +585,7 @@ Attachment replacement rules:
 
 Notes:
 
-- `path` is not supported on update. Use `slug` for canonical URL changes and
-  `custom-urls` for extra aliases.
+- `path` is not supported on update. Use `slug` for canonical URL changes and `custom-urls` for extra aliases.
 - For quote posts, keep using `sourceName` and `sourceUrl`.
 - Thread replies reject direct `visibility` and `pinned` changes.
 - Draft updates cannot set `publishedAt`.
@@ -627,8 +599,7 @@ Response: `200 OK` with the updated post.
 
 Auth: `Session or token`
 
-Deletes the post. If the target is a thread root, its replies are deleted as
-part of the same operation.
+Deletes the post. If the target is a thread root, its replies are deleted as part of the same operation.
 
 Response:
 
@@ -650,8 +621,7 @@ Jant currently exposes three upload APIs:
 
 File size is limited by `UPLOAD_MAX_FILE_SIZE_MB` and defaults to `500 MB`.
 
-Jant accepts a broad set of image, video, audio, document, text, archive, font,
-design, and code MIME types. Unsupported types return `400`.
+Jant accepts a broad set of image, video, audio, document, text, archive, font, design, and code MIME types. Unsupported types return `400`.
 
 ### Recommended upload flow
 
@@ -690,8 +660,7 @@ Fields:
 | `size`           | integer | yes      | File size in bytes              |
 | `checksumSha256` | string  | no       | Base64-encoded SHA-256 checksum |
 
-The response includes an upload session ID (`upl_*`) and one of three transport
-kinds.
+The response includes an upload session ID (`upl_*`) and one of three transport kinds.
 
 #### Relay transport
 
@@ -722,8 +691,7 @@ kinds.
 
 #### Presigned PUT transport
 
-When the storage driver supports direct uploads, Jant can return a presigned
-target instead:
+When the storage driver supports direct uploads, Jant can return a presigned target instead:
 
 ```json
 {
@@ -839,8 +807,7 @@ Response:
 
 Base path: `/api/upload`
 
-Use this if you want the old one-shot multipart form upload behavior. New
-clients should prefer `/api/uploads`.
+Use this if you want the old one-shot multipart form upload behavior. New clients should prefer `/api/uploads`.
 
 #### Upload a file
 
@@ -873,8 +840,7 @@ Response:
 }
 ```
 
-If the request sends `Accept: text/event-stream`, the endpoint may return SSE
-patches instead of JSON for dashboard use.
+If the request sends `Accept: text/event-stream`, the endpoint may return SSE patches instead of JSON for dashboard use.
 
 #### List uploaded files
 
@@ -917,8 +883,7 @@ Response:
 
 Base path: `/api/upload/multipart`
 
-This is the older chunked-upload API. Prefer `/api/uploads` unless you already
-implement this flow.
+This is the older chunked-upload API. Prefer `/api/uploads` unless you already implement this flow.
 
 #### Initiate a multipart upload
 
@@ -1044,41 +1009,38 @@ Collections group posts by topic. A post can belong to multiple collections.
 
 Collection responses include these fields:
 
-| Field              | Type                                  | Notes                          |
-| ------------------ | ------------------------------------- | ------------------------------ |
-| `id`               | `col_*` string                        | Collection ID                  |
-| `siteId`           | string                                | Owning site                    |
-| `slug`             | string                                | Canonical collection slug      |
-| `title`            | string                                | Display title                  |
-| `description`      | string \| `null`                      | Optional description           |
-| `sortOrder`        | `newest` \| `oldest` \| `rating_desc` | Per-collection post sort order |
-| `createdAt`        | integer                               | Unix seconds                   |
-| `updatedAt`        | integer                               | Unix seconds                   |
-| `postCount`        | integer                               | Only present in list responses |
-| `recentActivityAt` | integer                               | Only present in list responses |
+| Field | Type | Notes |
+| --- | --- | --- |
+| `id` | `col_*` string | Collection ID |
+| `siteId` | string | Owning site |
+| `slug` | string | Canonical collection slug |
+| `title` | string | Display title |
+| `description` | string \| `null` | Optional description |
+| `sortOrder` | `newest` \| `oldest` \| `rating_desc` | Per-collection post sort order |
+| `createdAt` | integer | Unix seconds |
+| `updatedAt` | integer | Unix seconds |
+| `postCount` | integer | Only present in list responses |
+| `recentActivityAt` | integer | Only present in list responses |
 
 Directory item responses include these fields:
 
-| Field          | Type                                | Notes                            |
-| -------------- | ----------------------------------- | -------------------------------- |
-| `id`           | `cdi_*` string                      | Directory item ID                |
-| `siteId`       | string                              | Owning site                      |
-| `type`         | `collection` \| `divider` \| `link` | Item kind                        |
-| `collectionId` | `col_*` string \| `null`            | Present for `type: "collection"` |
-| `label`        | string \| `null`                    | Divider label or link label      |
-| `url`          | string \| `null`                    | Present for `type: "link"`       |
-| `position`     | string                              | Fractional ordering key          |
-| `createdAt`    | integer                             | Unix seconds                     |
-| `updatedAt`    | integer                             | Unix seconds                     |
+| Field | Type | Notes |
+| --- | --- | --- |
+| `id` | `cdi_*` string | Directory item ID |
+| `siteId` | string | Owning site |
+| `type` | `collection` \| `divider` \| `link` | Item kind |
+| `collectionId` | `col_*` string \| `null` | Present for `type: "collection"` |
+| `label` | string \| `null` | Divider label or link label |
+| `url` | string \| `null` | Present for `type: "link"` |
+| `position` | string | Fractional ordering key |
+| `createdAt` | integer | Unix seconds |
+| `updatedAt` | integer | Unix seconds |
 
 Notes:
 
-- Creating a collection automatically creates a `type: "collection"` directory
-  item.
+- Creating a collection automatically creates a `type: "collection"` directory item.
 - Deleting a collection also deletes its `type: "collection"` directory item.
-- `POST /api/collections/directory-items` only accepts `divider` and `link`.
-  Collection-backed items are managed through collection CRUD, not this
-  endpoint.
+- `POST /api/collections/directory-items` only accepts `divider` and `link`. Collection-backed items are managed through collection CRUD, not this endpoint.
 
 ### List collections
 
@@ -1088,9 +1050,9 @@ Auth: `Public`
 
 Query parameters:
 
-| Parameter | Type      | Default | Notes                                              |
-| --------- | --------- | ------- | -------------------------------------------------- |
-| `view`    | `compose` | none    | Specialized compose view sorted by recent activity |
+| Parameter | Type | Default | Notes |
+| --- | --- | --- | --- |
+| `view` | `compose` | none | Specialized compose view sorted by recent activity |
 
 Default response:
 
@@ -1129,8 +1091,7 @@ Default response:
 Notes:
 
 - The default response returns directory ordering in `directoryItems`.
-- `view=compose` returns collections sorted by recent activity and always
-  returns an empty `directoryItems` array.
+- `view=compose` returns collections sorted by recent activity and always returns an empty `directoryItems` array.
 
 ### Get a collection
 
@@ -1172,18 +1133,17 @@ Request body:
 
 Fields:
 
-| Field         | Type                                  | Required | Notes                                                                        |
-| ------------- | ------------------------------------- | -------- | ---------------------------------------------------------------------------- |
-| `slug`        | string                                | yes      | Canonical collection slug, max `200`, lowercase letters/numbers/hyphens only |
-| `title`       | string                                | yes      | Display title, max `120`                                                     |
-| `description` | string                                | no       | Optional description, max `500`                                              |
-| `sortOrder`   | `newest` \| `oldest` \| `rating_desc` | no       | Defaults to `newest`                                                         |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `slug` | string | yes | Canonical collection slug, max `200`, lowercase letters/numbers/hyphens only |
+| `title` | string | yes | Display title, max `120` |
+| `description` | string | no | Optional description, max `500` |
+| `sortOrder` | `newest` \| `oldest` \| `rating_desc` | no | Defaults to `newest` |
 
 Notes:
 
 - Reserved slugs are rejected.
-- On success, Jant also creates the collection's `type: "collection"` directory
-  item.
+- On success, Jant also creates the collection's `type: "collection"` directory item.
 
 Response: `201 Created` with the collection object, including `siteId`.
 
@@ -1197,12 +1157,12 @@ This is a partial update.
 
 Request body fields:
 
-| Field         | Type                                  | Required | Notes                              |
-| ------------- | ------------------------------------- | -------- | ---------------------------------- |
-| `slug`        | string                                | no       | Same rules as create               |
-| `title`       | string                                | no       | Max `120`                          |
-| `description` | string \| `null`                      | no       | Set to `null` to clear             |
-| `sortOrder`   | `newest` \| `oldest` \| `rating_desc` | no       | Replaces the collection sort order |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `slug` | string | no | Same rules as create |
+| `title` | string | no | Max `120` |
+| `description` | string \| `null` | no | Set to `null` to clear |
+| `sortOrder` | `newest` \| `oldest` \| `rating_desc` | no | Replaces the collection sort order |
 
 Response: `200 OK` with the updated collection object, including `siteId`.
 
@@ -1251,13 +1211,13 @@ Link:
 
 Fields by type:
 
-| Field   | Type             | Required | Notes                                                         |
-| ------- | ---------------- | -------- | ------------------------------------------------------------- |
-| `type`  | `divider`        | yes      | Creates a divider item                                        |
-| `label` | string \| `null` | no       | Divider label, max `60`; blank values are stored as `null`    |
-| `type`  | `link`           | yes      | Creates a custom link item                                    |
-| `label` | string           | yes      | Link label, 1-60 chars after trim                             |
-| `url`   | string           | yes      | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `type` | `divider` | yes | Creates a divider item |
+| `label` | string \| `null` | no | Divider label, max `60`; blank values are stored as `null` |
+| `type` | `link` | yes | Creates a custom link item |
+| `label` | string | yes | Link label, 1-60 chars after trim |
+| `url` | string | yes | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
 
 Notes:
 
@@ -1296,18 +1256,17 @@ This is a partial update.
 
 Request body fields:
 
-| Field   | Type             | Required | Notes                                              |
-| ------- | ---------------- | -------- | -------------------------------------------------- |
-| `label` | string \| `null` | no       | For dividers: update label, or set `null` to clear |
-| `url`   | string           | no       | For links: update URL                              |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `label` | string \| `null` | no | For dividers: update label, or set `null` to clear |
+| `url` | string | no | For links: update URL |
 
 Notes:
 
 - Divider items only use `label`.
 - Link items use `label` and `url`.
 - Link labels cannot be cleared with `null`.
-- Collection-backed items should be managed through collection endpoints, not
-  updated directly here.
+- Collection-backed items should be managed through collection endpoints, not updated directly here.
 
 Response: `200 OK` with the updated directory item.
 
@@ -1328,10 +1287,10 @@ Request body:
 
 Fields:
 
-| Field    | Type                     | Required | Notes                               |
-| -------- | ------------------------ | -------- | ----------------------------------- |
-| `after`  | `cdi_*` string \| `null` | no       | Place the item after this neighbor  |
-| `before` | `cdi_*` string \| `null` | no       | Place the item before this neighbor |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `after` | `cdi_*` string \| `null` | no | Place the item after this neighbor |
+| `before` | `cdi_*` string \| `null` | no | Place the item before this neighbor |
 
 Notes:
 
@@ -1384,8 +1343,7 @@ Response:
 
 Auth: `Session or token`
 
-Removes the post-to-collection association. It does not delete the post or the
-collection.
+Removes the post-to-collection association. It does not delete the post or the collection.
 
 Response:
 
@@ -1403,17 +1361,17 @@ Navigation items power the header navigation.
 
 Nav item responses include these fields:
 
-| Field       | Type                                              | Notes                             |
-| ----------- | ------------------------------------------------- | --------------------------------- |
-| `id`        | `nav_*` string                                    | Nav item ID                       |
-| `siteId`    | string                                            | Owning site                       |
-| `type`      | `link` \| `system`                                | Custom link or built-in item      |
+| Field | Type | Notes |
+| --- | --- | --- |
+| `id` | `nav_*` string | Nav item ID |
+| `siteId` | string | Owning site |
+| `type` | `link` \| `system` | Custom link or built-in item |
 | `systemKey` | `rss` \| `settings` \| `collections` \| `archive` | Only present for `type: "system"` |
-| `label`     | string                                            | Display label                     |
-| `url`       | string                                            | Stored URL or path                |
-| `position`  | string                                            | Fractional ordering key           |
-| `createdAt` | integer                                           | Unix seconds                      |
-| `updatedAt` | integer                                           | Unix seconds                      |
+| `label` | string | Display label |
+| `url` | string | Stored URL or path |
+| `position` | string | Fractional ordering key |
+| `createdAt` | integer | Unix seconds |
+| `updatedAt` | integer | Unix seconds |
 
 ### List nav items
 
@@ -1466,13 +1424,13 @@ Create a built-in item:
 
 Fields by type:
 
-| Field       | Type                                              | Required | Notes                                                         |
-| ----------- | ------------------------------------------------- | -------- | ------------------------------------------------------------- |
-| `type`      | `link`                                            | yes      | Creates a custom nav link                                     |
-| `label`     | string                                            | yes      | Link label, 1-100 chars after trim                            |
-| `url`       | string                                            | yes      | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
-| `type`      | `system`                                          | yes      | Creates a built-in nav item                                   |
-| `systemKey` | `rss` \| `settings` \| `collections` \| `archive` | yes      | Built-in destination key                                      |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `type` | `link` | yes | Creates a custom nav link |
+| `label` | string | yes | Link label, 1-100 chars after trim |
+| `url` | string | yes | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
+| `type` | `system` | yes | Creates a built-in nav item |
+| `systemKey` | `rss` \| `settings` \| `collections` \| `archive` | yes | Built-in destination key |
 
 System keys:
 
@@ -1549,28 +1507,27 @@ Response:
 
 Base path: `/api/custom-urls`
 
-Custom URLs let you attach extra paths to posts or collections, or define
-internal redirects.
+Custom URLs let you attach extra paths to posts or collections, or define internal redirects.
 
 Custom URL responses include these fields:
 
-| Field          | Type                                 | Notes                                             |
-| -------------- | ------------------------------------ | ------------------------------------------------- |
-| `id`           | `pth_*` string                       | Custom URL ID                                     |
-| `path`         | string                               | Normalized path without a leading slash           |
-| `targetType`   | `post` \| `collection` \| `redirect` | Target kind                                       |
-| `targetId`     | string \| `null`                     | Resolved post/collection TypeID for alias records |
-| `toPath`       | string \| `null`                     | Redirect destination with a leading slash         |
-| `redirectType` | `301` \| `302` \| `null`             | Redirect status for redirect records              |
-| `createdAt`    | integer                              | Unix seconds                                      |
+| Field | Type | Notes |
+| --- | --- | --- |
+| `id` | `pth_*` string | Custom URL ID |
+| `path` | string | Normalized path without a leading slash |
+| `targetType` | `post` \| `collection` \| `redirect` | Target kind |
+| `targetId` | string \| `null` | Resolved post/collection TypeID for alias records |
+| `toPath` | string \| `null` | Redirect destination with a leading slash |
+| `redirectType` | `301` \| `302` \| `null` | Redirect status for redirect records |
+| `createdAt` | integer | Unix seconds |
 
 Target types:
 
-| Type         | Meaning                             | Key fields               |
-| ------------ | ----------------------------------- | ------------------------ |
-| `post`       | Alias that resolves to a post       | `targetId`               |
-| `collection` | Alias that resolves to a collection | `targetId`               |
-| `redirect`   | Internal redirect to another path   | `toPath`, `redirectType` |
+| Type | Meaning | Key fields |
+| --- | --- | --- |
+| `post` | Alias that resolves to a post | `targetId` |
+| `collection` | Alias that resolves to a collection | `targetId` |
+| `redirect` | Internal redirect to another path | `toPath`, `redirectType` |
 
 ### List custom URLs
 
@@ -1616,8 +1573,7 @@ Response:
 
 Notes:
 
-- List and create responses only cover alias and redirect records. Canonical
-  post and collection slugs are not returned here.
+- List and create responses only cover alias and redirect records. Canonical post and collection slugs are not returned here.
 - Response `path` values are normalized and do not include a leading slash.
 - Alias responses return the resolved post or collection TypeID in `targetId`.
 
@@ -1640,13 +1596,13 @@ Request body:
 
 Fields:
 
-| Field          | Type                                 | Required      | Notes                                                                         |
-| -------------- | ------------------------------------ | ------------- | ----------------------------------------------------------------------------- |
-| `path`         | string                               | yes           | Must start with `/`; max `512`; lowercase letters, numbers, `-`, and `/` only |
-| `targetType`   | `post` \| `collection` \| `redirect` | yes           | Target kind                                                                   |
-| `targetId`     | string                               | alias only    | For `post` and `collection`, send the canonical slug, not the TypeID          |
-| `toPath`       | string                               | redirect only | Internal destination path such as `/new-path`; normalized before storage      |
-| `redirectType` | `"301"` \| `"302"`                   | redirect only | Defaults to `301`                                                             |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `path` | string | yes | Must start with `/`; max `512`; lowercase letters, numbers, `-`, and `/` only |
+| `targetType` | `post` \| `collection` \| `redirect` | yes | Target kind |
+| `targetId` | string | alias only | For `post` and `collection`, send the canonical slug, not the TypeID |
+| `toPath` | string | redirect only | Internal destination path such as `/new-path`; normalized before storage |
+| `redirectType` | `"301"` \| `"302"` | redirect only | Defaults to `301` |
 
 Examples:
 
@@ -1675,10 +1631,8 @@ Important notes:
 
 - `path` must not collide with an existing slug or custom URL.
 - Reserved paths are rejected.
-- Redirects are for internal paths. External redirect targets are not supported
-  by this API.
-- Post and collection targets must already exist by slug or the API returns
-  `404`.
+- Redirects are for internal paths. External redirect targets are not supported by this API.
+- Post and collection targets must already exist by slug or the API returns `404`.
 - Create responses resolve slug targets to TypeIDs.
 
 Response: `201 Created` with the new custom URL object.
@@ -1689,8 +1643,7 @@ Response: `201 Created` with the new custom URL object.
 
 Auth: `Session or token`
 
-This only deletes non-canonical custom URL records. Canonical post and
-collection slugs are not removable through this endpoint.
+This only deletes non-canonical custom URL records. Canonical post and collection slugs are not removable through this endpoint.
 
 Response:
 
@@ -1704,15 +1657,13 @@ Response:
 
 Base path: `/api/settings`
 
-These endpoints manage user-editable site settings and a small amount of
-dashboard state.
+These endpoints manage user-editable site settings and a small amount of dashboard state.
 
 All settings endpoints require auth.
 
 ### Editable setting keys
 
-`GET /api/settings` and `PUT /api/settings` operate on editable site config
-only.
+`GET /api/settings` and `PUT /api/settings` operate on editable site config only.
 
 All values are strings because they map directly to stored config values.
 
@@ -1731,13 +1682,11 @@ All values are strings because they map directly to stored config values.
 
 Notes:
 
-- Editable keys are derived from the config registry; env-only and internal keys
-  are excluded.
+- Editable keys are derived from the config registry; env-only and internal keys are excluded.
 - Boolean and numeric settings are still strings in the API.
 - Send strings in `PUT /api/settings`, not JSON booleans or numbers.
 - `TIME_ZONE` is normalized to canonical IANA names when possible.
-- `GET /api/settings` fills in defaults for editable keys that are not stored
-  yet.
+- `GET /api/settings` fills in defaults for editable keys that are not stored yet.
 - In demo mode, `NOINDEX` is always returned as `"true"`.
 
 ### Get editable settings
@@ -1767,8 +1716,7 @@ Response:
 
 Notes:
 
-- The response always returns the full editable settings object, not only keys
-  stored in the database.
+- The response always returns the full editable settings object, not only keys stored in the database.
 - Environment-only and internal keys never appear in this response.
 
 ### Update editable settings
@@ -1792,16 +1740,14 @@ Request rules:
 - `SITE_NAME` is trimmed and limited to `120` characters.
 - `SITE_DESCRIPTION` is trimmed and limited to `300` characters.
 - `SITE_FOOTER` is trimmed and limited to `5000` characters.
-- `TIME_ZONE` accepts canonical IANA names and normalizes legacy aliases such as
-  `"Beijing"` to `"Asia/Shanghai"`.
+- `TIME_ZONE` accepts canonical IANA names and normalizes legacy aliases such as `"Beijing"` to `"Asia/Shanghai"`.
 
 Behavior:
 
 - Editable keys are updated.
 - Rejected keys are ignored if at least one editable key remains.
 - If every provided key is rejected, the endpoint returns `400`.
-- Successful responses return the full current editable settings object, plus
-  optional top-level `rejectedKeys`.
+- Successful responses return the full current editable settings object, plus optional top-level `rejectedKeys`.
 
 Example partial-apply response:
 
@@ -1828,8 +1774,7 @@ Rejected keys are returned:
 - in `details.rejectedKeys` on `400`
 - in top-level `rejectedKeys` on successful partial updates
 
-In demo mode, `NOINDEX` updates are rejected and the returned value stays
-`"true"`.
+In demo mode, `NOINDEX` updates are rejected and the returned value stays `"true"`.
 
 ### Mark compose shortcut discovery as seen
 
@@ -1874,8 +1819,7 @@ Notes:
 
 - File storage must be configured or the endpoint returns `500`.
 - Omitting `file` returns `400`.
-- On success, this endpoint updates the internal avatar/favicon settings used by
-  site rendering.
+- On success, this endpoint updates the internal avatar/favicon settings used by site rendering.
 
 ### Remove site avatar and related icons
 
@@ -1914,18 +1858,18 @@ Query parameters:
 
 Result objects include these fields:
 
-| Field         | Type                        | Notes                                             |
-| ------------- | --------------------------- | ------------------------------------------------- |
-| `id`          | `pst_*` string              | Post ID                                           |
-| `format`      | `note` \| `link` \| `quote` | Post format                                       |
-| `slug`        | string                      | Canonical slug                                    |
-| `snippet`     | string \| omitted           | Search snippet; may contain `<mark>` tags         |
-| `publishedAt` | integer \| `null`           | Publish timestamp                                 |
-| `permalink`   | string                      | Public path, including any configured site prefix |
-| `title`       | string \| `null`            | Present for `note` and `link` results             |
-| `url`         | string \| `null`            | Present for `note` and `link` results             |
-| `sourceName`  | string \| `null`            | Present instead of `title` for `quote` results    |
-| `sourceUrl`   | string \| `null`            | Present instead of `url` for `quote` results      |
+| Field | Type | Notes |
+| --- | --- | --- |
+| `id` | `pst_*` string | Post ID |
+| `format` | `note` \| `link` \| `quote` | Post format |
+| `slug` | string | Canonical slug |
+| `snippet` | string \| omitted | Search snippet; may contain `<mark>` tags |
+| `publishedAt` | integer \| `null` | Publish timestamp |
+| `permalink` | string | Public path, including any configured site prefix |
+| `title` | string \| `null` | Present for `note` and `link` results |
+| `url` | string \| `null` | Present for `note` and `link` results |
+| `sourceName` | string \| `null` | Present instead of `title` for `quote` results |
+| `sourceUrl` | string \| `null` | Present instead of `url` for `quote` results |
 
 Response:
 
@@ -1985,13 +1929,10 @@ Archive contents:
 
 Notes:
 
-- Thread replies are merged into their thread root page in the exported Zola
-  content.
+- Thread replies are merged into their thread root page in the exported Zola content.
 - Collection membership is exported as the `c` taxonomy.
-- Navigation items, theme CSS, custom CSS, favicon, and Apple touch icon are
-  included in the scaffold when available.
-- Exported post bodies become Markdown. Media references point back to the
-  original Jant media URLs; the ZIP does not bundle original media binaries.
+- Navigation items, theme CSS, custom CSS, favicon, and Apple touch icon are included in the scaffold when available.
+- Exported post bodies become Markdown. Media references point back to the original Jant media URLs; the ZIP does not bundle original media binaries.
 
 Example:
 
@@ -2007,8 +1948,7 @@ This export is suitable for:
 - archival
 - round-trip import into another Jant instance
 
-For the CLI import/export workflow, see
-[Export and Import](export-and-import.md).
+For the CLI import/export workflow, see [Export and Import](export-and-import.md).
 
 ---
 
@@ -2016,8 +1956,7 @@ For the CLI import/export workflow, see
 
 Base path: `/api/internal`
 
-These endpoints are for hosted control-plane and maintenance workflows, not
-normal site integrations.
+These endpoints are for hosted control-plane and maintenance workflows, not normal site integrations.
 
 Requirements:
 
@@ -2028,10 +1967,8 @@ If `INTERNAL_ADMIN_TOKEN` is not configured, these endpoints return `404`.
 
 Notes:
 
-- `api-tokens` and upload-cleanup endpoints operate on the current resolved
-  site.
-- Managed-site lifecycle and domain endpoints return `409` outside host-based
-  mode.
+- `api-tokens` and upload-cleanup endpoints operate on the current resolved site.
+- Managed-site lifecycle and domain endpoints return `409` outside host-based mode.
 
 ### API token maintenance
 
@@ -2083,8 +2020,7 @@ Fields:
 
 Notes:
 
-- The JSON body is optional. If the request is not JSON, the endpoint treats it
-  as an empty object.
+- The JSON body is optional. If the request is not JSON, the endpoint treats it as an empty object.
 - File storage must be configured or the endpoint returns `500`.
 
 Response:
@@ -2098,10 +2034,10 @@ Response:
 
 Response fields:
 
-| Field                     | Type    | Notes                                          |
-| ------------------------- | ------- | ---------------------------------------------- |
+| Field | Type | Notes |
+| --- | --- | --- |
 | `abortedMultipartUploads` | integer | Number of underlying multipart uploads aborted |
-| `deletedSessions`         | integer | Number of expired upload-session rows removed  |
+| `deletedSessions` | integer | Number of expired upload-session rows removed |
 
 ### Managed site lifecycle
 
@@ -2125,11 +2061,11 @@ Request body:
 
 Fields:
 
-| Field         | Type   | Required | Notes                                                     |
-| ------------- | ------ | -------- | --------------------------------------------------------- |
-| `key`         | string | yes      | Lowercase site key, `3-40` chars, letters/numbers/hyphens |
-| `primaryHost` | string | yes      | Lowercase hostname, max `255`                             |
-| `siteName`    | string | yes      | Display name, `1-120` chars after trim                    |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `key` | string | yes | Lowercase site key, `3-40` chars, letters/numbers/hyphens |
+| `primaryHost` | string | yes | Lowercase hostname, max `255` |
+| `siteName` | string | yes | Display name, `1-120` chars after trim |
 
 Response:
 
@@ -2183,8 +2119,7 @@ Response:
 
 - Content type: `application/zip`
 - Filename resembles `<site-key>-site-export.zip`
-- Export shape matches `POST /api/export/zola`, but for the specified managed
-  site
+- Export shape matches `POST /api/export/zola`, but for the specified managed site
 
 #### Suspend a managed site
 
@@ -2265,10 +2200,10 @@ Request body:
 
 Fields:
 
-| Field         | Type    | Required | Notes                                         |
-| ------------- | ------- | -------- | --------------------------------------------- |
-| `host`        | string  | yes      | Lowercase hostname, max `255`                 |
-| `makePrimary` | boolean | no       | When true, demotes the current primary domain |
+| Field | Type | Required | Notes |
+| --- | --- | --- | --- |
+| `host` | string | yes | Lowercase hostname, max `255` |
+| `makePrimary` | boolean | no | When true, demotes the current primary domain |
 
 Notes:
 
@@ -2288,8 +2223,7 @@ Response: updated `domains` list.
 
 Notes:
 
-- If the target domain is already primary, the response still returns the
-  current `domains` list.
+- If the target domain is already primary, the response still returns the current `domains` list.
 - Missing `domainId` returns `404`.
 
 #### Delete a domain
@@ -2302,32 +2236,30 @@ Response: updated `domains` list.
 
 Notes:
 
-- Deleting the current primary domain without promoting another domain first
-  returns `409`.
+- Deleting the current primary domain without promoting another domain first returns `409`.
 - Missing `domainId` returns `404`.
 
 ---
 
 ## Other Public Endpoints
 
-These are not part of the JSON content-management API, but they are often useful
-in automation or operations.
+These are not part of the JSON content-management API, but they are often useful in automation or operations.
 
-| Endpoint                      | Auth   | Response | Notes                                                           |
-| ----------------------------- | ------ | -------- | --------------------------------------------------------------- |
-| `GET /health`                 | Public | JSON     | Lightweight liveness probe                                      |
-| `GET /readyz`                 | Public | JSON     | Readiness check for startup config and database                 |
-| `GET /feed`                   | Public | RSS      | Canonical site feed (`latest` or `featured`, based on settings) |
-| `GET /feed/atom.xml`          | Public | Atom     | Canonical site feed in Atom format                              |
-| `GET /feed/latest`            | Public | RSS      | Latest public posts feed                                        |
-| `GET /feed/latest/atom.xml`   | Public | Atom     | Latest public posts feed                                        |
-| `GET /feed/featured`          | Public | RSS      | Featured posts feed                                             |
-| `GET /feed/featured/atom.xml` | Public | Atom     | Featured posts feed                                             |
-| `GET /feed/all`               | Public | Redirect | Legacy alias to `/feed/latest`                                  |
-| `GET /feed/all/atom.xml`      | Public | Redirect | Legacy Atom alias to `/feed/latest/atom.xml`                    |
-| `GET /c/:slug/feed`           | Public | RSS      | Collection feed for one collection or collection selection      |
-| `GET /sitemap.xml`            | Public | XML      | Sitemap for published posts                                     |
-| `GET /robots.txt`             | Public | Text     | Robots rules and sitemap location                               |
+| Endpoint | Auth | Response | Notes |
+| --- | --- | --- | --- |
+| `GET /health` | Public | JSON | Lightweight liveness probe |
+| `GET /readyz` | Public | JSON | Readiness check for startup config and database |
+| `GET /feed` | Public | RSS | Canonical site feed (`latest` or `featured`, based on settings) |
+| `GET /feed/atom.xml` | Public | Atom | Canonical site feed in Atom format |
+| `GET /feed/latest` | Public | RSS | Latest public posts feed |
+| `GET /feed/latest/atom.xml` | Public | Atom | Latest public posts feed |
+| `GET /feed/featured` | Public | RSS | Featured posts feed |
+| `GET /feed/featured/atom.xml` | Public | Atom | Featured posts feed |
+| `GET /feed/all` | Public | Redirect | Legacy alias to `/feed/latest` |
+| `GET /feed/all/atom.xml` | Public | Redirect | Legacy Atom alias to `/feed/latest/atom.xml` |
+| `GET /c/:slug/feed` | Public | RSS | Collection feed for one collection or collection selection |
+| `GET /sitemap.xml` | Public | XML | Sitemap for published posts |
+| `GET /robots.txt` | Public | Text | Robots rules and sitemap location |
 
 ### Health and readiness
 
@@ -2343,8 +2275,7 @@ Response:
 { "status": "ok" }
 ```
 
-This endpoint bypasses site resolution and only answers whether the process is
-up.
+This endpoint bypasses site resolution and only answers whether the process is up.
 
 #### Readiness
 
@@ -2369,30 +2300,21 @@ Notes:
 - Returns `200` when all checks pass.
 - Returns `503` when `status` is `"error"`.
 - `startupConfig.error` and `database.error` appear when a check fails.
-- This endpoint is stricter than `/health`: it verifies startup configuration
-  and performs a lightweight database query.
+- This endpoint is stricter than `/health`: it verifies startup configuration and performs a lightweight database query.
 
 ### Feeds
 
-All feed endpoints are public and return cached XML with
-`Cache-Control: public, max-age=180`.
+All feed endpoints are public and return cached XML with `Cache-Control: public, max-age=180`.
 
 Feed notes:
 
-- `GET /feed` and `GET /feed/atom.xml` use the configured `MAIN_RSS_FEED` to
-  choose `latest` or `featured`.
-- `GET /feed/latest` and `GET /feed/latest/atom.xml` accept
-  `?format=note|link|quote`.
+- `GET /feed` and `GET /feed/atom.xml` use the configured `MAIN_RSS_FEED` to choose `latest` or `featured`.
+- `GET /feed/latest` and `GET /feed/latest/atom.xml` accept `?format=note|link|quote`.
 - Invalid `format` values are ignored rather than rejected.
-- Latest feeds include published root posts only, excluding private posts and
-  `latest_hidden` posts.
-- Featured feeds include published featured root posts and exclude private
-  posts.
-- `GET /feed/all` and `GET /feed/all/atom.xml` are legacy aliases that redirect
-  to the `latest` feed with `308`, preserving the query string.
-- `GET /c/:slug/feed` returns an RSS feed for the collection page selection.
-  Non-canonical collection aliases redirect to the canonical selection path with
-  `301`.
+- Latest feeds include published root posts only, excluding private posts and `latest_hidden` posts.
+- Featured feeds include published featured root posts and exclude private posts.
+- `GET /feed/all` and `GET /feed/all/atom.xml` are legacy aliases that redirect to the `latest` feed with `308`, preserving the query string.
+- `GET /c/:slug/feed` returns an RSS feed for the collection page selection. Non-canonical collection aliases redirect to the canonical selection path with `301`.
 
 ### Sitemap and robots
 
@@ -2417,10 +2339,8 @@ Auth: `Public`
 Notes:
 
 - Returns text with content type `text/plain; charset=utf-8`.
-- When `NOINDEX` is enabled, the file disallows the entire site with
-  `Disallow: /`.
-- Otherwise it allows the public site and disallows the internal utility prefix
-  `/_/`.
+- When `NOINDEX` is enabled, the file disallows the entire site with `Disallow: /`.
+- Otherwise it allows the public site and disallows the internal utility prefix `/_/`.
 - Always includes an absolute `Sitemap:` line that points at `/sitemap.xml`.
 
 ---
@@ -2467,16 +2387,14 @@ Recommended order:
 1. Create collections first if you want to preserve categories or tags.
 2. Upload files and keep the returned media IDs.
 3. Create posts with original `publishedAt` timestamps.
-4. Use `path` on post creation or `custom-urls` after creation to preserve old
-   URLs.
+4. Use `path` on post creation or `custom-urls` after creation to preserve old URLs.
 
 Migration tips:
 
 - Use `bodyMarkdown` unless you already have TipTap JSON.
 - Use `replyToId` to rebuild threads.
 - Use `status: "draft"` for unpublished imports.
-- The API is not idempotent on its own. If your importer may retry, track
-  created IDs or slugs in your own process.
+- The API is not idempotent on its own. If your importer may retry, track created IDs or slugs in your own process.
 
 ### Export a site
 
@@ -2495,7 +2413,5 @@ The API is currently unversioned.
 Practical stability rules:
 
 - The site-owner endpoints documented here are intended to be scriptable.
-- `/api/internal/*` is operational rather than public API surface and may change
-  more aggressively.
-- Breaking changes are announced in release notes rather than through URL-based
-  versioning.
+- `/api/internal/*` is operational rather than public API surface and may change more aggressively.
+- Breaking changes are announced in release notes rather than through URL-based versioning.

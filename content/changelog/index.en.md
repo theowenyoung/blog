@@ -88,16 +88,11 @@ Powerd by [Meilisearch](https://github.com/meilisearch/meilisearch)
 
 ## 2022.07.09 Fix large building time
 
-I wrote a heavy logic in the `base.html` template, this can increase much
-building time, actually the logic is only dependent by two page, so I move it,
-now the building time is about 1 second again, also
-[see here](https://github.com/getzola/zola/issues/1902#issuecomment-1178845667)
+I wrote a heavy logic in the `base.html` template, this can increase much building time, actually the logic is only dependent by two page, so I move it, now the building time is about 1 second again, also [see here](https://github.com/getzola/zola/issues/1902#issuecomment-1178845667)
 
 ## 2022.07.06 Desktop Read Mode
 
-when screen width greater than 67.5rem, then set the background color of main
-area as white, it's like the safari reader mode, can be more focus to the
-reader. ![home page](./2022-07-06-home-page-screen-shot.png)
+when screen width greater than 67.5rem, then set the background color of main area as white, it's like the safari reader mode, can be more focus to the reader. ![home page](./2022-07-06-home-page-screen-shot.png)
 
 ## 2022.07.03 Decrease Base fontsize
 
@@ -111,8 +106,7 @@ Add Toggle More Button.
 
 ## 2022.06.18 refactor sidebar/archive
 
-Migrate `sidebar/_index.md` to `pages/sidebar.md`, all spectified page located
-in `content/pages` directories.
+Migrate `sidebar/_index.md` to `pages/sidebar.md`, all spectified page located in `content/pages` directories.
 
 ## [2022.06.14](https://github.com/theowenyoung/blog/commit/7a87eb29b6e3eaafdae14488a8f42de817073f3f) - Activity Page
 
@@ -122,13 +116,11 @@ Adding Activity page.
 
 1. Support [IndieAuth](https://indieauth.net/)
 
-2. Joining [IndieWeb Webring](https://xn--sr8hvo.ws/), See home page bottom
-   right corner
+2. Joining [IndieWeb Webring](https://xn--sr8hvo.ws/), See home page bottom right corner
 
 ![](./indiewebring.jpg)
 
-3. Support [Webmention](https://indieweb.org/Webmention), see example
-   [Now, I'm in IndieWeb?](@/blog/indieweb.en.md)
+3. Support [Webmention](https://indieweb.org/Webmention), see example [Now, I'm in IndieWeb?](@/blog/indieweb.en.md)
 
 ![](./webmention-response.jpg)
 
@@ -140,9 +132,7 @@ Add Latest Updates to home page.
 
 ## [2022.04.25](https://github.com/theowenyoung/blog/commit/ebe57d4b3717c5052ea3319e8e1f04e9d7b80153) - Random Category
 
-Change category `Misc` to `Random`, I prefer `Random` than `Misc`, cause I even
-don't know what `Misc` is. It's inspired by
-[Pin 起來](https://pinchlime.com/categories/random/)
+Change category `Misc` to `Random`, I prefer `Random` than `Misc`, cause I even don't know what `Misc` is. It's inspired by [Pin 起來](https://pinchlime.com/categories/random/)
 
 ## [2022.04.24](https://github.com/theowenyoung/blog/commit/cfc2b4dc4c96c1e16e8f4a257da2d30b254f8afc) - SEO
 
@@ -156,16 +146,8 @@ Adding Edit this article link to every post.
 
 ## [2022.03.29](https://github.com/theowenyoung/blog/commit/0f8244f2e8a8799ce6b6cbd82914db734af33f30) - Birthday
 
-1. Today is this blog's birthday, and I'm happy to announce that I've migrated
-   from [Wiki](https://wiki.owenyoung.com/) and
-   [Blog](https://blog.owenyoung.com/) to
-   [New Blog](https://www.owenyoung.com/). The Blog is built with
-   [Zola](https://www.getzola.org/), I also wrote
-   [迁移博客和 Wiki 到 Zola](@/blog/migrate-to-zola/index.md) to record it. The
-   biggest difference is the blazing building speed of Zola, for now, it only
-   takes 2 seconds to build the whole site.
+1. Today is this blog's birthday, and I'm happy to announce that I've migrated from [Wiki](https://wiki.owenyoung.com/) and [Blog](https://blog.owenyoung.com/) to [New Blog](https://www.owenyoung.com/). The Blog is built with [Zola](https://www.getzola.org/), I also wrote [迁移博客和 Wiki 到 Zola](@/blog/migrate-to-zola/index.md) to record it. The biggest difference is the blazing building speed of Zola, for now, it only takes 2 seconds to build the whole site.
 
-2. Support [读书笔记](@/blog/books/_index.md) Templates, show my review score
-   of the book, and show [Books Sort By Rating](@/pages/books.md)
+2. Support [读书笔记](@/blog/books/_index.md) Templates, show my review score of the book, and show [Books Sort By Rating](@/pages/books.md)
 
 ![](./books-template.jpg)

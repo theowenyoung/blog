@@ -1,15 +1,10 @@
 # AGENTS.md
 
-This file provides guidance to Code Agent when working with code in this
-repository.
+This file provides guidance to Code Agent when working with code in this repository.
 
 ## Project Overview
 
-This is Owen's personal blog built with [Zola](https://www.getzola.org/), a
-Rust-based static site generator. The project uses a
-[forked version of Zola](https://github.com/theowenyoung/zola) with one
-modification: internal links use `/content/xxx.md` instead of `@/xxx.md` so
-editors can navigate to linked files.
+This is Owen's personal blog built with [Zola](https://www.getzola.org/), a Rust-based static site generator. The project uses a [forked version of Zola](https://github.com/theowenyoung/zola) with one modification: internal links use `/content/xxx.md` instead of `@/xxx.md` so editors can navigate to linked files.
 
 Live site: https://www.owenyoung.com
 
@@ -66,6 +61,5 @@ Internal links should use `/content/path/to/file.md` format (not `@/path`).
 
 ## Configuration
 
-- `config.toml` - Main Zola configuration (site settings, taxonomies,
-  translations)
+- `config.toml` - Main Zola configuration (site settings, taxonomies, translations)
 - `.env` - Environment variables (loaded by Makefile)

@@ -72,5 +72,4 @@ gem install foreman --no-document
 
 <http://localhost:3000>
 
-email: `admin@localhost:3000`
-password: `mastodonadmin`
+email: `admin@localhost:3000` password: `mastodonadmin`

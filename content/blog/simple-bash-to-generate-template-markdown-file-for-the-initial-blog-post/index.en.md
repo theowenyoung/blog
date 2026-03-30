@@ -15,10 +15,9 @@ When you're using markdown to write your blog, you can use the following templat
 
 <!-- more -->
 
-
 ```yaml
 ---
-title: 
+title:
 date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+08:00
 updated: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}
 draft: true
@@ -26,7 +25,7 @@ taxonomies:
   categories:
     - Random
   tags:
-    - 
+    -
 ---
 ```
 
@@ -34,8 +33,7 @@ I used to generate these markdown articles with VSCode extention [foam-lite](htt
 
 ![](./vscode-foam.gif)
 
-The problem is that it's an VSCode extention, not an general tool, and the tool also has a little limitations.
-for example, the default generated file path is based on the current directory, so I always need to navigate to the correct directory to generate the markdown file.
+The problem is that it's an VSCode extention, not an general tool, and the tool also has a little limitations. for example, the default generated file path is based on the current directory, so I always need to navigate to the correct directory to generate the markdown file.
 
 And recent days, I started to use [Dotfiles](https://github.com/theowenyoung/dotfiles) to manage all my configuration files, and I used a lot of bash scripts to manage my dotfiles. So why not to use bash scripts to generate the initial markdown files? It's general enough, and it's easy to use, and it can be reused in any editors.
 
@@ -160,18 +158,16 @@ Or, If I'm in VSCode, I created a task for VSCode in `.vscode/tasks.json`:
         "close": true
       }
     }
-
   ],
   "inputs": [
     {
       "type": "promptString",
       "id": "filename",
       "description": "You article path.",
-      "default": "",
+      "default": ""
     }
   ]
 }
 ```
-
 
 All source codes are in my blog [repo](https://github.com/theowenyoung/blog)

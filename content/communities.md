@@ -16,12 +16,9 @@ taxonomies:
 
 ## Index
 
-- [Hive Index](https://thehiveindex.com/) - Find online communities, find your
-  people.
-- [Get community list](https://getcommunitylist.com/) - Find hundreds of
-  Communities to Promote your Product $49 #Paid
-- [community list](https://www.notion.so/Community-908921f2f6584ae990bea68b048b8ea9) -
-  List of some active community you must follow, Free
+- [Hive Index](https://thehiveindex.com/) - Find online communities, find your people.
+- [Get community list](https://getcommunitylist.com/) - Find hundreds of Communities to Promote your Product $49 #Paid
+- [community list](https://www.notion.so/Community-908921f2f6584ae990bea68b048b8ea9) - List of some active community you must follow, Free
 - [Reddit List](http://redditlist.com/sfw) - Reddit subs trends, categories
 - [reddit subreddistats](https://subredditstats.com/)
 - [查看相似的 reddit 小组](https://anvaka.github.io/redsim/)
@@ -45,8 +42,7 @@ taxonomies:
 
 ## 问题
 
-- [TooAfraidToAsk reddit 小组](https://www.reddit.com/r/TooAfraidToAsk/) -
-  太害怕而不敢问的问题，各种政治不正确的问题
+- [TooAfraidToAsk reddit 小组](https://www.reddit.com/r/TooAfraidToAsk/) - 太害怕而不敢问的问题，各种政治不正确的问题
 - [告诉我事实 reddit 小组](https://www.reddit.com/r/TellMeAFact) - 回答必须附带来源
 - [大家都在干嘛 reddit 小组](https://www.reddit.com/r/OutOfTheLoop/)
 
@@ -64,9 +60,7 @@ taxonomies:
 
 ## Developers
 
-- [Make friends making the web. ✨](https://webwide.chat/) - Webwide is an
-  inclusive, supportive community of professional and hobbyist web designers &
-  developers.
+- [Make friends making the web. ✨](https://webwide.chat/) - Webwide is an inclusive, supportive community of professional and hobbyist web designers & developers.
 
 ## Foods
 
@@ -128,8 +122,7 @@ taxonomies:
 
 ## 致富
 
-- [制造百万富翁 - reddit](https://www.reddit.com/r/millionairemakers) -
-  成为百万富翁，每月抽一个人，由其他 redditors 资助
+- [制造百万富翁 - reddit](https://www.reddit.com/r/millionairemakers) - 成为百万富翁，每月抽一个人，由其他 redditors 资助
 
 ## 搞笑
 

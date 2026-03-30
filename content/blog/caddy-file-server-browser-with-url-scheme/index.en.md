@@ -13,8 +13,7 @@ Copy the [Template](https://gist.github.com/theowenyoung/e09cb6e2c59f247fdc3f4e6
 
 <!-- more -->
 
-This template will display the follow page:
-![screenshot](./caddy-file-template-screenshot.png)
+This template will display the follow page: ![screenshot](./caddy-file-template-screenshot.png)
 
 ```bash
 localhost {

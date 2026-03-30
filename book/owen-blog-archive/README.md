@@ -2,10 +2,8 @@
 
 你也可以下载这本电子书的其他版本：
 
-- epub 版本：
-  <https://github.com/theowenyoung/blog/releases/download/book/owen-blog-archive.epub>
-- html 压缩包
-  <https://github.com/theowenyoung/blog/releases/download/book/owen-blog-archive-html.zip>
+- epub 版本： <https://github.com/theowenyoung/blog/releases/download/book/owen-blog-archive.epub>
+- html 压缩包 <https://github.com/theowenyoung/blog/releases/download/book/owen-blog-archive-html.zip>
 - 源码: <https://github.com/theowenyoung/blog>
 
 或者在线阅读这本电子书： <https://archive.owenyoung.com>

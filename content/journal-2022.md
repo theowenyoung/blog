@@ -17,7 +17,6 @@ taxonomies:
 
 > 这里是我在阅读后觉得有必要放在这个 Inbox，以后可能会回味，但又没必要特地放在某个分类下的文章列表。
 
-
 - [我如何为我的博客构建无服务器搜索](https://www.morling.dev/blog/how-i-built-a-serverless-search-for-my-blog/)
 - [荷兰如何养活世界](https://news.ycombinator.com/from?site=nationalgeographic.com)
 - [摩洛哥的乡村女教师们](https://www.youtube.com/watch?v=Ha-31FEFX8s)
@@ -28,7 +27,6 @@ taxonomies:
 - [由于气候变暖，2100 年地球将不适合居住的地方的地图](https://interaktiv.morgenpost.de/klimawandel-hitze-meeresspiegel-wassermangel-stuerme-unbewohnbar/en.html)
 - [俄罗斯处于精神崩溃的边缘](https://granta.com/russia-verge-nervous-breakdown/)
 - [朝鲜裔日本人在日本怀念北朝鲜](https://www.youtube.com/watch?v=qBfyIQbxXPs)
-
 
 ## 临时想法备份
 

@@ -79,8 +79,7 @@ taxonomies:
 
 ## 工具
 
-- [已倒闭：Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai
-  从谷歌成千上万本书里给出最相关的段落。 zsh:1: unknown file attribute: h
+- [已倒闭：Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的段落。 zsh:1: unknown file attribute: h
 - [在线epub电子书阅读器](https://1paragraph.app/) - 网页版, 很好用，适合英文电子书，配合浏览器翻译，很棒。
 - [在线发送图书给 Kindle](https://www.amazon.com/sendtokindle)
 - [Epub 简繁在线转换](https://v.magiconch.com/epub-transform)

@@ -273,17 +273,7 @@ Then, I add a webmention form, so if people want to submit their mentions, they 
 
 ## 5. Send webmention when you publish a new article
 
-When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using
-[Denoflow](https://github.com/denoflow/denoflow) and the
-[Webmention.app](https://webmention.app/) API.
-[Webmention.app](https://webmention.app/) can check all the mentioned links in
-the new article and send all webmentions to them. Before
-[Webmention.app](https://webmention.app/) can recognize the mentioned links, we
-need to add some extra [microformats2](https://indieweb.org/microformats2) to
-our article html. Basically, it's some html tag class names. These took me quite
-a few time to update my templates, so now I have supported
-[h-card](https://indieweb.org/h-card), [h-entry](https://indieweb.org/h-entry)
-and [h-feed](https://indieweb.org/h-feed). It looks like this:
+When we publish a new article, we want to send a webmention to the mentioned links. We can do this by using [Denoflow](https://github.com/denoflow/denoflow) and the [Webmention.app](https://webmention.app/) API. [Webmention.app](https://webmention.app/) can check all the mentioned links in the new article and send all webmentions to them. Before [Webmention.app](https://webmention.app/) can recognize the mentioned links, we need to add some extra [microformats2](https://indieweb.org/microformats2) to our article html. Basically, it's some html tag class names. These took me quite a few time to update my templates, so now I have supported [h-card](https://indieweb.org/h-card), [h-entry](https://indieweb.org/h-entry) and [h-feed](https://indieweb.org/h-feed). It looks like this:
 
 ```html
 <article class="h-entry">
@@ -348,8 +338,7 @@ You can find the all source code of this blog on [Github](https://github.com/the
 
 ## Resources
 
-- [Bird.gy](https://brid.gy/) - Bridgy connects your web site to social media.
-  Likes, retweets, mentions, cross-posting
+- [Bird.gy](https://brid.gy/) - Bridgy connects your web site to social media. Likes, retweets, mentions, cross-posting
 - [Indie Webring](https://xn--sr8hvo.ws/)
 - [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
 - [Webmention.app](https://webmention.app/) - Automate your outgoing webmentions

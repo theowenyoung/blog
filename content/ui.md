@@ -22,10 +22,8 @@ taxonomies:
 ## Tools
 
 - [RGB to hex, hsl convert tool by Google](https://www.google.com/search?q=rgb+to+hex&oq=rgb+to+hex&aqs=edge.0.0i433i512l4j0i512l2j69i65.2649j0j1&sourceid=chrome&ie=UTF-8)
-- [screely](https://www.screely.com) - Instantly Turn a Screenshot into a
-  Browser Mockup
-- [Logo generator](https://formito.com/tools/favicon) - generate logo like
-  stripe or hacker news
+- [screely](https://www.screely.com) - Instantly Turn a Screenshot into a Browser Mockup
+- [Logo generator](https://formito.com/tools/favicon) - generate logo like stripe or hacker news
 
 ## Command Tools
 
@@ -33,8 +31,7 @@ taxonomies:
 
 ## Free Resources
 
-- [Open source illustrations kit](https://illlustrations.co/) - Free
-  illustrations images resource, #Free #Image #UI
+- [Open source illustrations kit](https://illlustrations.co/) - Free illustrations images resource, #Free #Image #UI
 - [placeholder avatar](https://pravatar.cc/)
 - [开源 emoji 库](https://openmoji.org/)
 
@@ -48,8 +45,7 @@ taxonomies:
 - [bulma](https://github.com/jgthms/bulma)
 - [Tufte](https://github.com/edwardtufte/tufte-css) - 经典的打印样式
 - [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-  - [headwind](https://github.com/heybourn/headwind) vscode extension for sort
-    class name
+  - [headwind](https://github.com/heybourn/headwind) vscode extension for sort class name
   - [tailwindcss-forms](https://github.com/tailwindlabs/tailwindcss-forms)
   - [daisy ui](https://daisyui.com/)
   - [track awesome tailwind](https://www.trackawesomelist.com/aniftyco/awesome-tailwindcss/readme#ui-libraries-components--templates)
@@ -63,8 +59,7 @@ taxonomies:
 - [mkws 的极简 css 主题](https://t.mkws.sh/)
 - [tacit](https://github.com/yegor256/tacit) - 非常好看的 classless 框架
 - [radix ui](https://github.com/radix-ui/primitives)- 无基础样式的组件库
-- [Panda CSS](https://panda-css.com/) - Panda CSS， CSS in JS,
-  主题式的，theme-ui 式的。
+- [Panda CSS](https://panda-css.com/) - Panda CSS， CSS in JS, 主题式的，theme-ui 式的。
 
 ## React UI
 
@@ -72,8 +67,7 @@ taxonomies:
 
 ## CSS Tools
 
-- [theme-change](https://github.com/saadeghi/theme-change) - Change CSS theme
-  with toggle, buttons or select using CSS custom properties and localStorage
+- [theme-change](https://github.com/saadeghi/theme-change) - Change CSS theme with toggle, buttons or select using CSS custom properties and localStorage
 
 ## Realworld inspiration
 

@@ -24,8 +24,7 @@ taxonomies:
 - [JSON Web Token (JWT) Claims](https://www.iana.org/assignments/jwt/jwt.xhtml)
 - [aws signature v4](https://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html)
 - [actix http status code](https://docs.rs/actix-http/2.2.1/actix_http/http/struct.StatusCode.html)
-- [Web Auth](https://webauthn.guide/) - A better alternative for securing our
-  sensitive information online
+- [Web Auth](https://webauthn.guide/) - A better alternative for securing our sensitive information online
 - [Twitter unofficial key](https://gist.github.com/shobotch/5160017)
 
 ## Auth 相关
@@ -39,8 +38,7 @@ taxonomies:
 
 - [JSON API](https://github.com/json-api/json-api)
 - [REST API response format](https://github.com/cryptlex/rest-api-response-format)
-- [extract table](https://extract-table.com/) - Extract a table from an image or
-  a PDF
+- [extract table](https://extract-table.com/) - Extract a table from an image or a PDF
 - [Github Markdown to HTML](https://github.com/calganaygun/MDcat/blob/main/mdcat.py)
 - [API LIST](https://apilist.fun/)
 
@@ -65,9 +63,7 @@ taxonomies:
 
 ### Live Chat
 
-- [airy](https://github.com/airyhq/airy) - Open source conversational platform
-  to power conversations with an open source Live Chat, Messengers like Facebook
-  Messenger, WhatsApp and more
+- [airy](https://github.com/airyhq/airy) - Open source conversational platform to power conversations with an open source Live Chat, Messengers like Facebook Messenger, WhatsApp and more
 
 ### Open source Server
 
@@ -96,9 +92,7 @@ taxonomies:
 
 ## Command Tools
 
-[Dasel](https://github.com/TomWright/dasel) - Select, put and delete data from
-JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion
-between formats and can be used as a Go package.
+[Dasel](https://github.com/TomWright/dasel) - Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single tool. Supports conversion between formats and can be used as a Go package.
 
 ## Image process
 
@@ -107,16 +101,14 @@ between formats and can be used as a Go package.
 ## Learning
 
 - [Free code camp](https://www.freecodecamp.org/) - Learn to code — for free.
-- [Learn X in Y minutes](https://learnxinyminutes.com/) - Learn programming in a
-  few minutes.
+- [Learn X in Y minutes](https://learnxinyminutes.com/) - Learn programming in a few minutes.
 - [50 天内完成 50 个 web mini 项目 - HTML/CSS 和 JavaScript](https://github.com/bradtraversy/50projects50days)
 - [极客时间的付费课程](https://learn.lianglianglee.com/)
   - [Learning](https://freegeektime.com/posts/)
 
 ## Admin Dashboard
 
-- [ToolJet](https://github.com/ToolJet/ToolJet/) - Open-source low-code
-  framework for building React-based web applications and internal tools 🚀
+- [ToolJet](https://github.com/ToolJet/ToolJet/) - Open-source low-code framework for building React-based web applications and internal tools 🚀
 
 ## Database
 
@@ -132,37 +124,26 @@ between formats and can be used as a Go package.
 
 ### ORM
 
-- [prisma](https://github.com/prisma/prisma) - Next-generation ORM for Node.js &
-  TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite & MongoDB
-  (Preview)
+- [prisma](https://github.com/prisma/prisma) - Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite & MongoDB (Preview)
 - [Neon](https://github.com/neondatabase/neon) - Serverless Postgres
 
 ### Offline
 
-- [rxdb](https://github.com/pubkey/rxdb) - 🔄 A realtime Database for JavaScript
-  Applications
-- [couchdb](https://github.com/apache/couchdb) - Seamless multi-master syncing
-  database with an intuitive HTTP/JSON API, designed for reliability
-- [localforage](https://github.com/localForage/localForage) - 💾 Offline
-  storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but
-  powerful API.
-- [kinto](https://github.com/Kinto/kinto.js/) - An Offline-First JavaScript
-  Client for Kinto.
-- [puchdb](https://github.com/pouchdb/pouchdb) - 🐨 - PouchDB is a pocket-sized
-  database.
+- [rxdb](https://github.com/pubkey/rxdb) - 🔄 A realtime Database for JavaScript Applications
+- [couchdb](https://github.com/apache/couchdb) - Seamless multi-master syncing database with an intuitive HTTP/JSON API, designed for reliability
+- [localforage](https://github.com/localForage/localForage) - 💾 Offline storage, improved. Wraps IndexedDB, WebSQL, or localStorage using a simple but powerful API.
+- [kinto](https://github.com/Kinto/kinto.js/) - An Offline-First JavaScript Client for Kinto.
+- [puchdb](https://github.com/pouchdb/pouchdb) - 🐨 - PouchDB is a pocket-sized database.
 
 ### Tools
 
 - [sqlite playgound](https://sqlime.org/)
-- [supabase/postgres](https://github.com/supabase/postgres) - Unmodified
-  Postgres with some useful plugins
+- [supabase/postgres](https://github.com/supabase/postgres) - Unmodified Postgres with some useful plugins
 
 ### Sqlite
 
-- [Sqllite httpvfs](https://github.com/phiresky/sql.js-httpvfs) - Query Sqlite
-  with static files
-- [Litestream](https://github.com/benbjohnson/litestream) - Streaming
-  replication for SQLite.
+- [Sqllite httpvfs](https://github.com/phiresky/sql.js-httpvfs) - Query Sqlite with static files
+- [Litestream](https://github.com/benbjohnson/litestream) - Streaming replication for SQLite.
 
 ### Version
 
@@ -176,8 +157,7 @@ between formats and can be used as a Go package.
 
 ### Framework
 
-- [aleph](https://github.com/alephjs/aleph.js) - The Full-stack Framework, ssr,
-  next.js alternative in Deno.
+- [aleph](https://github.com/alephjs/aleph.js) - The Full-stack Framework, ssr, next.js alternative in Deno.
 - [ultra](https://github.com/exhibitionist-digital/ultra)
 
 ### Serverless
@@ -193,18 +173,15 @@ between formats and can be used as a Go package.
 
 ### AI Enhance
 
-- [GitHub Copilot · Your AI pair programmer](https://copilot.github.com/) -
-  Github Copilot
+- [GitHub Copilot · Your AI pair programmer](https://copilot.github.com/) - Github Copilot
 
 ### Front-End
 
-- [Monaco React](https://github.com/suren-atoyan/monaco-react) - Code Editor UI
-  for React
+- [Monaco React](https://github.com/suren-atoyan/monaco-react) - Code Editor UI for React
 
 ## Broswer Extensioon Dev
 
-- [WebExtension browser API Polyfill](https://github.com/mozilla/webextension-polyfill) -
-  A lightweight polyfill library for Promise-based WebExtension APIs in Chrome
+- [WebExtension browser API Polyfill](https://github.com/mozilla/webextension-polyfill) - A lightweight polyfill library for Promise-based WebExtension APIs in Chrome
 - [Bypass paywalls clean](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean)
 
 ## Pay
@@ -214,18 +191,14 @@ between formats and can be used as a Go package.
 
 ## Configure as FrontEnd
 
-- [Hyperview](https://github.com/instawork/hyperview) - Backend xml to native
-  app. #ReactNative
+- [Hyperview](https://github.com/instawork/hyperview) - Backend xml to native app. #ReactNative
 
 ## Gatby Framework
 
 ### Plugins
 
-- [GitHub - kraynel/gatsby-transformer-gitinfo](https://github.com/kraynel/gatsby-transformer-gitinfo) -
-  Add git info to file, so you can get last update date for your files.
-- [gatsby-plugin-local-search](https://github.com/angeloashmore/gatsby-plugin-local-search) -
-  Gatsby plugin for providing client-side search for data available in Gatsby's
-  GraphQL layer using a variety of engines
+- [GitHub - kraynel/gatsby-transformer-gitinfo](https://github.com/kraynel/gatsby-transformer-gitinfo) - Add git info to file, so you can get last update date for your files.
+- [gatsby-plugin-local-search](https://github.com/angeloashmore/gatsby-plugin-local-search) - Gatsby plugin for providing client-side search for data available in Gatsby's GraphQL layer using a variety of engines
 
 ### Tutorials
 
@@ -252,31 +225,22 @@ between formats and can be used as a Go package.
 
 ## Low Code
 
-- [lowdefy](https://github.com/lowdefy/lowdefy) - An open-source, self-hosted,
-  low-code framework to build internal tools, web apps, admin panels, BI
-  dashboards, workflows, and CRUD apps with YAML or JSON. 用 yaml 生成内部工具
+- [lowdefy](https://github.com/lowdefy/lowdefy) - An open-source, self-hosted, low-code framework to build internal tools, web apps, admin panels, BI dashboards, workflows, and CRUD apps with YAML or JSON. 用 yaml 生成内部工具
 
 ## Forum
 
 - [Ansiwave](https://github.com/ansiwave/ansiwave) - Sqlite 驱动的，可离线的论坛
-- [Giscus](https://github.com/giscus/giscus) - github discussion backend
-  评论系统
+- [Giscus](https://github.com/giscus/giscus) - github discussion backend评论系统
 
 ## Search
 
-- [typesense](https://github.com/typesense/typesense) - Fast, typo tolerant,
-  fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An
-  Open Source alternative to Algolia and an Easier-to-Use alternative to
-  ElasticSearch.
+- [typesense](https://github.com/typesense/typesense) - Fast, typo tolerant, fuzzy search engine for building delightful search experiences ⚡ 🔍 ✨ An Open Source alternative to Algolia and an Easier-to-Use alternative to ElasticSearch.
 - [MiniSearch](https://github.com/lucaong/minisearch)
-- [Stork](https://github.com/jameslittle230/stork) - 🔎 Impossibly fast web
-  search, made for static sites.
-- [Tiny Search](https://github.com/tinysearch/tinysearch) - 🔍 Tiny, full-text
-  search engine for static websites built with Rust and Wasm
+- [Stork](https://github.com/jameslittle230/stork) - 🔎 Impossibly fast web search, made for static sites.
+- [Tiny Search](https://github.com/tinysearch/tinysearch) - 🔍 Tiny, full-text search engine for static websites built with Rust and Wasm
 - [Next 中的静态全文搜索.js 使用 WebAssembly、Rust 和 Xor Filters](https://hackernoon.com/static-full-text-search-in-nextjs-with-webassembly-rust-and-xor-filters-tldr)
 - [在 Javascript 中为 Next.js 静态站点编写全文搜索](https://www.ahmadrosid.com/blog/fulltext-search-with-inverted-index)
-- [flexsearch](https://github.com/nextapps-de/flexsearch) - 浏览器和 nodejs
-  的下一代全文搜索库.js
+- [flexsearch](https://github.com/nextapps-de/flexsearch) - 浏览器和 nodejs 的下一代全文搜索库.js
 - [pagefind](https://github.com/cloudcannon/pagefind) - 在本地浏览器上搜索
 
 ## Protocol
@@ -291,23 +255,19 @@ between formats and can be used as a Go package.
 
 ## Encode/Decode
 
-- [json crush](https://github.com/KilledByAPixel/JSONCrush) - json to url
-  friendly
+- [json crush](https://github.com/KilledByAPixel/JSONCrush) - json to url friendly
 
 ## Schema
 
 - [Awesome Jsonschema](https://github.com/jviotti/awesome-jsonschema)
-- [react-schemaorg](https://github.com/google/react-schemaorg) - Type-checked
-  Schema.org JSON-LD for React
-- [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form) -
-  A React component for building Web forms from JSON Schema.
+- [react-schemaorg](https://github.com/google/react-schemaorg) - Type-checked Schema.org JSON-LD for React
+- [react-jsonschema-form](https://github.com/rjsf-team/react-jsonschema-form) - A React component for building Web forms from JSON Schema.
 
 ## Semantic
 
 ### List
 
-- [Classless CSS](https://github.com/dbohdan/classless-css) - A list of
-  Classless CSS frameworks.
+- [Classless CSS](https://github.com/dbohdan/classless-css) - A list of Classless CSS frameworks.
   - [Marx](https://mblode.github.io/marx/documentation/)
   - [Tufte](https://github.com/edwardtufte/tufte-css)
 
@@ -322,13 +282,11 @@ between formats and can be used as a Go package.
 ## SEO
 
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
-- [screen stab](https://www.screenstab.com/editor/) - convert image to a more
-  seo mode.
+- [screen stab](https://www.screenstab.com/editor/) - convert image to a more seo mode.
 
 ## Monitors
 
-- [Little Warden](https://littlewarden.com) - Monitor your websides for things
-  like expires, ssl error. £24.99/Month
+- [Little Warden](https://littlewarden.com) - Monitor your websides for things like expires, ssl error. £24.99/Month
 
 ## Sample
 
@@ -336,8 +294,7 @@ between formats and can be used as a Go package.
 
 ## 算法
 
-- [Gorse](https://github.com/zhenghaoz/gorse) - An open source recommender
-  system service written in Go
+- [Gorse](https://github.com/zhenghaoz/gorse) - An open source recommender system service written in Go
 
 ## Code in Cloud
 
@@ -345,8 +302,7 @@ between formats and can be used as a Go package.
 
 ## VPS 测速
 
-- [CSR](https://hostcsr.com/speedtest.html) - CSR
-  测速，有不少家的主机可以在线测试速度
+- [CSR](https://hostcsr.com/speedtest.html) - CSR测速，有不少家的主机可以在线测试速度
 
 ## Static Site Generator
 
@@ -363,13 +319,11 @@ between formats and can be used as a Go package.
 
 ### Comments
 
-- [Static Man](https://github.com/eduardoboucas/staticman) - 💪 User-generated
-  content for Git-powered websites, comment save to repo.
+- [Static Man](https://github.com/eduardoboucas/staticman) - 💪 User-generated content for Git-powered websites, comment save to repo.
 
 ### Marddown Tools
 
-- [xdm](https://github.com/wooorm/xdm) - Just a _really_ good MDX compiler. No
-  runtime. With esbuild, Rollup, and webpack plugins
+- [xdm](https://github.com/wooorm/xdm) - Just a _really_ good MDX compiler. No runtime. With esbuild, Rollup, and webpack plugins
 
 ## Swift
 
@@ -382,11 +336,7 @@ between formats and can be used as a Go package.
 
 ### SAAS
 
-- [utlimate-saas-js](https://github.com/gmpetrov/utlimate-saas-js) - Ultimate
-  SAAS template
-  Typescript/Next.js/NextAuth.js/Prisma/Stripe/Tailwindcss/Postgresql , Stop
-  loosing time implementing authentication and payment over and over again.
-  Focus on what brings value to your customers
+- [utlimate-saas-js](https://github.com/gmpetrov/utlimate-saas-js) - Ultimate SAAS template Typescript/Next.js/NextAuth.js/Prisma/Stripe/Tailwindcss/Postgresql , Stop loosing time implementing authentication and payment over and over again. Focus on what brings value to your customers
 
 ### Template Engine
 
@@ -397,8 +347,7 @@ between formats and can be used as a Go package.
 
 ### Boilerplate
 
-- [makenew](https://github.com/makenew/) - Tested project skeletons to instantly
-  bootstrap and reliably maintain your next project.
+- [makenew](https://github.com/makenew/) - Tested project skeletons to instantly bootstrap and reliably maintain your next project.
 - [html boilerplate](https://www.matuzo.at/blog/html-boilerplate/)
 
 ### Landing page
@@ -409,23 +358,16 @@ between formats and can be used as a Go package.
 
 ### Docuemnts Templates
 
-- [Document template](https://github.com/kbariotis/templatesf) - A set of
-  standard document templates.
+- [Document template](https://github.com/kbariotis/templatesf) - A set of standard document templates.
 
 ## Windows
 
-- [在 Windows 上用 WSL 优雅开发](https://dowww.spencerwoo.com/) -
-  可能是市面上最详尽的中文 WSL 开发环境配置指南 的文档现场，本章我们将对 WSL
-  本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows
-  上面开发学习的基础知识。
+- [在 Windows 上用 WSL 优雅开发](https://dowww.spencerwoo.com/) - 可能是市面上最详尽的中文 WSL 开发环境配置指南 的文档现场，本章我们将对 WSL 本身、WSL 近期更新和 WSL 的优越特性进行简单介绍，带领你熟悉利用 WSL 在 Windows 上面开发学习的基础知识。
 
 ## Configure as Server
 
-- [Daptin](https://github.com/daptin/daptin) - Daptin - Backend As A Service -
-  GraphQL/JSON-API Headless CMS
-- [Denoflow](https://github.com/denoflow/denoflow) - Configuration as Code, use
-  YAML to write automated workflows that run on Deno, with any Deno modules,
-  Typescript/Javascript codes
+- [Daptin](https://github.com/daptin/daptin) - Daptin - Backend As A Service - GraphQL/JSON-API Headless CMS
+- [Denoflow](https://github.com/denoflow/denoflow) - Configuration as Code, use YAML to write automated workflows that run on Deno, with any Deno modules, Typescript/Javascript codes
 
 ## Bash as Workflows
 
@@ -446,8 +388,7 @@ iina://weblink?url={encoed url}
 
 ## Git Workflow
 
-See
-[here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+See [here](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 ## Mac
 
@@ -459,8 +400,7 @@ See
 
 ## 计算机教程
 
-- [CS50 针对律师的计算机课程](https://cs50.harvard.edu/law/2019/) -
-  哈佛大学的教授出品，课程设计的很好，非常适合计算机基础学习
+- [CS50 针对律师的计算机课程](https://cs50.harvard.edu/law/2019/) - 哈佛大学的教授出品，课程设计的很好，非常适合计算机基础学习
 
 ## Rust 教程
 
@@ -477,33 +417,26 @@ See
 
 ## Search
 
-- [Common Crawl](https://commoncrawl.org/the-data/get-started/) -
-  全球网站抓取免费数据集，适用本地搜索引擎数据库
+- [Common Crawl](https://commoncrawl.org/the-data/get-started/) - 全球网站抓取免费数据集，适用本地搜索引擎数据库
 
 ## Indie Web
 
-- [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions
-  开源服务，把社交网络对你帖子的提及用 webmention 推送给你。
+- [Bird.gy](https://brid.gy/) - 独立网站的 Webmentions 开源服务，把社交网络对你帖子的提及用 webmention 推送给你。
 - [Indie Webring](https://xn--sr8hvo.ws/) - 独立网站的 Webring 服务
-- [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your
-  website
-- [Webmention.io](https://webmention.io/) - Webmention.io is a hosted service
-  created to easily receive webmentions on any web page.
+- [Telegraph](https://telegraph.p3k.io/) - Easily send Webmentions from your website
+- [Webmention.io](https://webmention.io/) - Webmention.io is a hosted service created to easily receive webmentions on any web page.
 - [Fediring](https://fediring.net/)
 
 ## System OS
 
-- [Guix](https://guix.gnu.org/) - Guix comes with thousands of packages which
-  include applications, system tools, documentation, fonts, and other digital
-  goods readily available for installing with the GNU Guix package manager.
+- [Guix](https://guix.gnu.org/) - Guix comes with thousands of packages which include applications, system tools, documentation, fonts, and other digital goods readily available for installing with the GNU Guix package manager.
 - [NixOS](https://nixos.org/)
   - [NixOS 联盟](https://myme.no/posts/2022-06-14-nixos-confederation.html)
   - [Nixos notes](https://wiki.nikiv.dev/operating-systems/linux/nixos)
 
 ## Bash
 
-- [zx](https://github.com/google/zx) - A tool for writing better scripts, using
-  Javascript
+- [zx](https://github.com/google/zx) - A tool for writing better scripts, using Javascript
 
 ## Vim
 
@@ -541,8 +474,7 @@ See
 
 ## 存储
 
-- [Garage](https://garagehq.deuxfleurs.fr/documentation/quick-start/) - S3
-  的自部署版本
+- [Garage](https://garagehq.deuxfleurs.fr/documentation/quick-start/) - S3的自部署版本
 
 ## 代理
 
@@ -562,8 +494,7 @@ See
 
 ## 错误上报
 
-- [glitchtip](https://glitchtip.com/documentation) - sentry 替代，
-  错误日志上报平台
+- [glitchtip](https://glitchtip.com/documentation) - sentry 替代，错误日志上报平台
 
 ## 性价比服务器
 

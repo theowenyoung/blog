@@ -20,8 +20,7 @@ Also see [here](https://github.com/Chocobozzz/PeerTube/blob/develop/support/doc/
 1. [Debian Server Setup](@/blog/debian-server-setup.en.md)
 2. [Caddy2 Setup for Debian](@/blog/caddy2-setup-for-debian.en.md)
 3. [Nodejs Setup for Debian](@/blog/nodejs-setup-for-debian.en.md)
-4. Install yarn, and be sure to have [a recent version](https://github.com/yarnpkg/yarn/releases/latest):
-   [https://yarnpkg.com/en/docs/install#linux-tab](https://yarnpkg.com/en/docs/install#linux-tab)
+4. Install yarn, and be sure to have [a recent version](https://github.com/yarnpkg/yarn/releases/latest): [https://yarnpkg.com/en/docs/install#linux-tab](https://yarnpkg.com/en/docs/install#linux-tab)
 
 ```bash
 sudo npm i -g yarn
@@ -87,8 +86,7 @@ $ sudo -u postgres createuser -P peertube
 
 For password you can use `peertube` from the default config yaml.
 
-Here you should enter a password for PostgreSQL `peertube` user, that should be copied in `production.yaml` file.
-Don't just hit enter else it will be empty.
+Here you should enter a password for PostgreSQL `peertube` user, that should be copied in `production.yaml` file. Don't just hit enter else it will be empty.
 
 ```
 $ sudo -u postgres createdb -O peertube -E UTF8 -T template0 peertube_prod
@@ -136,8 +134,7 @@ sudo -H -u peertube yarn install --production --pure-lockfile
 
 ### PeerTube configuration
 
-Copy the default configuration file that contains the default configuration provided by PeerTube.
-You **must not** update this file.
+Copy the default configuration file that contains the default configuration provided by PeerTube. You **must not** update this file.
 
 ```
 $ cd /var/www/peertube
@@ -151,9 +148,7 @@ $ cd /var/www/peertube
 $ sudo -u peertube cp peertube-latest/config/production.yaml.example config/production.yaml
 ```
 
-Then edit the `config/production.yaml` file according to your webserver
-and database configuration (`webserver`, `database`, `redis`, `smtp` and `admin.email` sections in particular).
-Keys defined in `config/production.yaml` will override keys defined in `config/default.yaml`.
+Then edit the `config/production.yaml` file according to your webserver and database configuration (`webserver`, `database`, `redis`, `smtp` and `admin.email` sections in particular). Keys defined in `config/production.yaml` will override keys defined in `config/default.yaml`.
 
 **PeerTube does not support webserver host change**. Even though [PeerTube CLI can help you to switch hostname](https://docs.joinpeertube.org/maintain-tools?id=update-hostjs) there's no official support for that since it is a risky operation that might result in unforeseen errors.
 
@@ -398,8 +393,7 @@ example.com {
 }
 ```
 
-Then modify the webserver configuration file. Please pay attention to the `alias` keys of the static locations.
-It should correspond to the paths of your storage directories (set in the configuration file inside the `storage` key).
+Then modify the webserver configuration file. Please pay attention to the `alias` keys of the static locations. It should correspond to the paths of your storage directories (set in the configuration file inside the `storage` key).
 
 ```
 $ sudo vim /etc/nginx/sites-available/peertube
@@ -425,8 +419,7 @@ Now you have the certificates you can reload nginx:
 $ sudo systemctl reload nginx
 ```
 
-Certbot should have installed a cron to automatically renew your certificate.
-Since our nginx template supports webroot renewal, we suggest you to update the renewal config file to use the `webroot` authenticator:
+Certbot should have installed a cron to automatically renew your certificate. Since our nginx template supports webroot renewal, we suggest you to update the renewal config file to use the `webroot` authenticator:
 
 ```
 $ # Replace authenticator = standalone by authenticator = webroot
@@ -443,9 +436,7 @@ $ sudo cp /var/www/peertube/peertube-latest/support/sysctl.d/30-peertube-tcp.con
 $ sudo sysctl -p /etc/sysctl.d/30-peertube-tcp.conf
 ```
 
-Your distro may enable this by default, but at least Debian 9 does not, and the default FIFO
-scheduler is quite prone to "Buffer Bloat" and extreme latency when dealing with slower client
-links as we often encounter in a video server.
+Your distro may enable this by default, but at least Debian 9 does not, and the default FIFO scheduler is quite prone to "Buffer Bloat" and extreme latency when dealing with slower client links as we often encounter in a video server.
 
 ### systemd
 
@@ -488,15 +479,13 @@ $ sudo service peertube start
 
 ### Administrator
 
-The administrator password is automatically generated and can be found in the PeerTube
-logs (path defined in `production.yaml`). You can also set another password with:
+The administrator password is automatically generated and can be found in the PeerTube logs (path defined in `production.yaml`). You can also set another password with:
 
 ```
 $ cd /var/www/peertube/peertube-latest && NODE_CONFIG_DIR=/var/www/peertube/config NODE_ENV=production npm run reset-password -- -u root
 ```
 
-Alternatively you can set the environment variable `PT_INITIAL_ROOT_PASSWORD`,
-to your own administrator password, although it must be 6 characters or more.
+Alternatively you can set the environment variable `PT_INITIAL_ROOT_PASSWORD`, to your own administrator password, although it must be 6 characters or more.
 
 ### What now?
 

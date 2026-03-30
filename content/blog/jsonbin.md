@@ -37,7 +37,7 @@ curl 'https://json.owenyoung.com/foo/bar?key=abc'
 ```javascript
 let sentArr = [];
 const response = await fetch(
-  "https://json.owenyoung.com/rss/hackernews/sent?key=abc"
+  "https://json.owenyoung.com/rss/hackernews/sent?key=abc",
 );
 if (response.ok) {
   sentArr = await response.json();
@@ -62,7 +62,7 @@ const writeResponse = await fetch(
   {
     method: "POST",
     body: JSON.stringify(sentArr),
-  }
+  },
 );
 
 if (!writeResponse.ok) {

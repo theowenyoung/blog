@@ -99,7 +99,6 @@ Curating awesome rust resources.
 - [couch-rs](https://github.com/mibes/couch-rs) - CouchDB library for Rust
 - [sled](https://github.com/spacejam/sled) - the champagne of beta embedded databases, redis alternatives
 - [rksuid](https://github.com/nharring/rksuid) - Rust implementation of Segment.io's ksuid, id generator.
-
   - [sonyflake-rs](https://github.com/bahlo/sonyflake-rs) - sony flake id generator rust
   - [ulid-rs](https://github.com/dylanhart/ulid-rs)
 

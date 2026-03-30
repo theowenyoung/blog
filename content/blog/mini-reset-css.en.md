@@ -15,8 +15,9 @@ taxonomies:
 
 ```css
 html {
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
-    "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family:
+    "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
 }
 body {
   overflow-wrap: break-word;

@@ -95,8 +95,7 @@ npx changeset
 
 Now, generate new version, changeset will take care your dependences,
 
-> Note, by default, if `a` upgrade from `1.0.1` to `1.0.2`, `c` depends on `a@^1.0.1`, then `c` `package.json` will not change, cause npm will auto update `a@^1.0.1` to the last version `1.0.2`
-> if you want change to the exact version every time, you can set the config to
+> Note, by default, if `a` upgrade from `1.0.1` to `1.0.2`, `c` depends on `a@^1.0.1`, then `c` `package.json` will not change, cause npm will auto update `a@^1.0.1` to the last version `1.0.2` if you want change to the exact version every time, you can set the config to
 >
 > ```bash
 >  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {

@@ -29,13 +29,11 @@ taxonomies:
 
 ## 追踪
 
-- [I Know what your download](https://iknowwhatyoudownload.com/) - 我知道你下载了什么，追踪
-  ip 的下载列表，有点可怕。。
+- [I Know what your download](https://iknowwhatyoudownload.com/) - 我知道你下载了什么，追踪 ip 的下载列表，有点可怕。。
 
 ## 转换
 
-- [微友活码](https://www.huomaqun.com/) -
-  用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！
+- [微友活码](https://www.huomaqun.com/) - 用微友活码生成的营销二维码，具有不受个人号加人数量限制，不受扫码进群百人限制，群二维码过期灵活更新，扫码数据实时统计等优点，是个人号、微群及企业微信私域流量沉淀，营销引流必备的免费工具！
 - [Epub to HTML](https://epub.to)
 - [制作 epub](http://sqqihao.github.io/EPubBuilder/src/index.html)
 - [让 pdf 变得像扫描版](https://zh.lookscanned.io/scan)
@@ -50,16 +48,13 @@ taxonomies:
 
 ## Developmenets
 
-- [cosmopolitan - build-once run-anywhere c library](https://github.com/jart/cosmopolitan) -
-  编译生成单一的可执行文件的服务器
+- [cosmopolitan - build-once run-anywhere c library](https://github.com/jart/cosmopolitan) - 编译生成单一的可执行文件的服务器
 - [try it online](https://tio.run/#) - 在线运行几百种编程语言
-- [Docker Run](https://github.com/glotcode/docker-run) - 使用 docker
-  来运行不信任的代码，运行后删除
+- [Docker Run](https://github.com/glotcode/docker-run) - 使用 docker 来运行不信任的代码，运行后删除
 
 ## Stocks
 
-- [GamestonkTerminal](https://github.com/GamestonkTerminal/GamestonkTerminal) -
-  Investment Research for Everyone. python 写的投资情绪等分析。
+- [GamestonkTerminal](https://github.com/GamestonkTerminal/GamestonkTerminal) - Investment Research for Everyone. python 写的投资情绪等分析。
 
 ## Wifi
 
@@ -83,10 +78,8 @@ taxonomies:
 ## 图片裁剪
 
 - [photo 16x9](https://photo16x9.com/) - 填充背景色以使得图片满足 16:9 的推特比例
-- [DPI Converter — Change DPI of Image Online — Clideo](https://clideo.com/dpi-converter) -
-  DPI 在线转换
-- [Resize image in cm, mm, inch or px online free | ImResizer](https://imresizer.com/) -
-  按照不同单位在线转换图片
+- [DPI Converter — Change DPI of Image Online — Clideo](https://clideo.com/dpi-converter) - DPI 在线转换
+- [Resize image in cm, mm, inch or px online free | ImResizer](https://imresizer.com/) - 按照不同单位在线转换图片
 
 ## 背景音乐，白噪音
 
@@ -191,35 +184,26 @@ taxonomies:
 
 ## Chrome Extensions
 
-- [Save To one File](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle/related?hl=en) -
-  把文件保存到一个文件中
+- [Save To one File](https://chrome.google.com/webstore/detail/singlefile/mpiodijhokgodhhofbcjdecpffjipkle/related?hl=en) - 把文件保存到一个文件中
 
 ## Only Macos
 
-- [Radar](https://getradar.co/) - Menu bar app to check the things that matter
-  to you
+- [Radar](https://getradar.co/) - Menu bar app to check the things that matter to you
 - [Menubarx](https://menubarx.app/) - Menu bar app to browser website.
 - [Taskpaper](https://www.taskpaper.com/)- Plain text task manager
 
 ## iOS
 
-- [Logo BeReal](https://bere.al/en) - Your Friends for Real. Everyday at a
-  random time, everyone is notified simultaneously to capture and share a Photo
-  in 2 Minutes. A new and unique way to discover who your friends really are in
-  their daily life.
-- [HouseBook](https://apps.apple.com/us/app/housebook/id1489866496?utm_campaign=newsletter-2020-07-17&utm_medium=email&utm_source=10words) -
-  Keep track of your stuff.
-- [Your life weekly calendar](https://apps.apple.com/app/id1474476414?utm_campaign=newsletter-2020-03-20&utm_medium=email&utm_source=10words) -
-  List your life by weeks. every week is a dot.
-- [使命闹钟](https://apps.apple.com/cn/app/alarmy-alarm-clock-%E4%BD%BF%E5%91%BD%E9%97%B9%E9%92%9F/id1163786766) -
-  Alarmy 可以帮助您先起床，并让您每天早上成功完成所有“要做的事情”。借助各种有趣的任务和响亮的随机铃声，您可以轻松唤醒并刷新每天养成成功习惯的习惯
+- [Logo BeReal](https://bere.al/en) - Your Friends for Real. Everyday at a random time, everyone is notified simultaneously to capture and share a Photo in 2 Minutes. A new and unique way to discover who your friends really are in their daily life.
+- [HouseBook](https://apps.apple.com/us/app/housebook/id1489866496?utm_campaign=newsletter-2020-07-17&utm_medium=email&utm_source=10words) - Keep track of your stuff.
+- [Your life weekly calendar](https://apps.apple.com/app/id1474476414?utm_campaign=newsletter-2020-03-20&utm_medium=email&utm_source=10words) - List your life by weeks. every week is a dot.
+- [使命闹钟](https://apps.apple.com/cn/app/alarmy-alarm-clock-%E4%BD%BF%E5%91%BD%E9%97%B9%E9%92%9F/id1163786766) - Alarmy 可以帮助您先起床，并让您每天早上成功完成所有“要做的事情”。借助各种有趣的任务和响亮的随机铃声，您可以轻松唤醒并刷新每天养成成功习惯的习惯
 - [自动给图片里的人脸打一个表情符号](https://apps.apple.com/us/app/maskeraid/id1590163828)
   - [自动给视频打码](https://apps.apple.com/us/app/anonymous-camera/id1504102584)
 
 ## Web
 
-- [Stupid RSS Reader](https://github.com/gurov/stupid-rss-reader) - ⊕ PWA RSS
-  client on Angular 11
+- [Stupid RSS Reader](https://github.com/gurov/stupid-rss-reader) - ⊕ PWA RSS client on Angular 11
 
 ## All
 
@@ -239,8 +223,7 @@ taxonomies:
 
 ## Backup
 
-- [Save-to-the-Wayback-Machine](https://github.com/VerifiedJoseph/Save-to-the-Wayback-Machine) -
-  A browser extension that allow you to save the webpage to wayback machine
+- [Save-to-the-Wayback-Machine](https://github.com/VerifiedJoseph/Save-to-the-Wayback-Machine) - A browser extension that allow you to save the webpage to wayback machine
 
 ## Browser
 
@@ -250,11 +233,9 @@ taxonomies:
 
 ### Common List
 
-- [Microsoft Edge](https://www.microsoft.com/en-us/edge) - Microsoft Edge is the
-  fast and secure browser, which I'm using now. its the best for now.
+- [Microsoft Edge](https://www.microsoft.com/en-us/edge) - Microsoft Edge is the fast and secure browser, which I'm using now. its the best for now.
 - [Vivaldi Browser | Now with built-in Translate, Mail, and Calendar](https://vivaldi.com/)
-- [Waterfox](https://www.waterfox.net/) - The way to surf the web. Striking the
-  perfect balance of privacy and useability.
+- [Waterfox](https://www.waterfox.net/) - The way to surf the web. Striking the perfect balance of privacy and useability.
 - [Orion](https://browser.kagi.com/) - 基于 safari webkit 的隐私优先的 mac/ios 浏览器
 
 ### open source
@@ -265,8 +246,7 @@ taxonomies:
 ### For developer
 
 - [Blisk](https://blisk.io/)- Cross-Device Testing Done Right
-- [bonsai](https://bonsaibrowser.com/) - Web-browser for research that helps
-  programmers think clearly.
+- [bonsai](https://bonsaibrowser.com/) - Web-browser for research that helps programmers think clearly.
 - [Brow](https://www.brow.sh/) - Text based broswer
 - [Nyxt](https://github.com/atlas-engineer/nyxt) - 像 vim 一样的浏览器
 - [Beaker Browswer](https://beakerbrowser.com/) - p2p 浏览器
@@ -274,12 +254,8 @@ taxonomies:
 
 ### Paid Browser
 
-- <https://sizzy.co/> - The browser for developers, view one page with multiple
-  devices once
-- <https://www.meetsidekick.com/> - The fastest browser for work ever made,
-  Designed to be the ultimate online work experience, it brings together your
-  team and every web tool you use – all in one interface. Actually, not so fast,
-  but the UI, the workflow, the sidebar, will give your new experience.
+- <https://sizzy.co/> - The browser for developers, view one page with multiple devices once
+- <https://www.meetsidekick.com/> - The fastest browser for work ever made, Designed to be the ultimate online work experience, it brings together your team and every web tool you use – all in one interface. Actually, not so fast, but the UI, the workflow, the sidebar, will give your new experience.
 
 ### Mobile Browser
 
@@ -292,8 +268,7 @@ taxonomies:
 
 ## Twitter Tools
 
-- [feddsmage](https://www.feedsmage.com/) - I found 40 feeds in your timeline ✨
-  5 are newsletters 📨 11 are slow feeds 🐌 (usually lost in the noise).
+- [feddsmage](https://www.feedsmage.com/) - I found 40 feeds in your timeline ✨ 5 are newsletters 📨 11 are slow feeds 🐌 (usually lost in the noise).
 - [poet](https://poet.so/) 精美的推特制作网站
 
 ## Resume
@@ -308,8 +283,7 @@ taxonomies:
 
 - [ass to srt](https://sorz.github.io/asstosrt-wasm/) - ass to srt converter
 - [Bazarr Setup](@/blog/bazarr-setup.en.md) - Subtitle manager
-- [subtitles translate](https://translate-s ubtitles.com/) - Google translate
-  subtitles
+- [subtitles translate](https://translate-s ubtitles.com/) - Google translate subtitles
 - [Subhd](https://subhd.tv/) - Best Chinese subtitle
 - [Youtube 字幕下载](https://savesubs.com/)
 - [Dualsub youtube 双语字幕 chrome 插件](https://chrome.google.com/webstore/detail/dualsub/gnlibmlfpencglodjpgnalbdebfhpmfp) - 支持很多视频网站
@@ -322,8 +296,7 @@ taxonomies:
 
 ### List
 
-- [如何给车辆办理“护照”出境自驾？](https://zhuanlan.zhihu.com/p/25400818)
-  ，[备份](https://web.archive.org/web/20210825164831/https://zhuanlan.zhihu.com/p/25400818)
+- [如何给车辆办理“护照”出境自驾？](https://zhuanlan.zhihu.com/p/25400818) ，[备份](https://web.archive.org/web/20210825164831/https://zhuanlan.zhihu.com/p/25400818)
 
 ### Communities
 
@@ -346,8 +319,7 @@ taxonomies:
 
 ## 在线平台模拟
 
-- [Never Install](https://neverinstall.com/) -
-  浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。
+- [Never Install](https://neverinstall.com/) - 浏览器的云端环境，可以使用浏览器，应用等，但是好像不是很流畅啊。临时使用比较适合。
 
 ## 思维管理
 
@@ -355,13 +327,11 @@ taxonomies:
 
 ## Bash
 
-- [Macos Default](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) -
-  find command to change macos defaults
+- [Macos Default](https://macos-defaults.com/#%F0%9F%99%8B-what-s-a-defaults-command) - find command to change macos defaults
 
 ## HTTP Client
 
-- [Rest Client](https://github.com/Huachao/vscode-restclient) - Vscode http
-  request by plain text
+- [Rest Client](https://github.com/Huachao/vscode-restclient) - Vscode http request by plain text
 - [HURL](https://hurl.dev)
 
 ## Cheatsheets
@@ -372,15 +342,13 @@ taxonomies:
 
 X as a Y services.
 
-- [Pulumi](https://github.com/pulumi/pulumi) - 通用的基础设施即代码，用 js 或者 go 或者 python
-  编写部署在各种云(AWS,Google Cloud, Azure, Kubenetes)上的应用
+- [Pulumi](https://github.com/pulumi/pulumi) - 通用的基础设施即代码，用 js 或者 go 或者 python 编写部署在各种云(AWS,Google Cloud, Azure, Kubenetes)上的应用
 - [Dhall](https://dhall-lang.org/) - 可维护的配置文件, 配置语言
   - [JSONNet](https://jsonnet.org/) - JSON 的简单扩展,可配置
 
 ## TUI
 
-- [DEV Dash](https://github.com/Phantas0s/devdash) - 🍱
-  面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等
+- [DEV Dash](https://github.com/Phantas0s/devdash) - 🍱面向开发人员和创作者的高度可配置的终端仪表板,包含谷歌分析，谷歌统计等
 
 ## 文件分享
 
@@ -389,11 +357,9 @@ X as a Y services.
 ## Web developer
 
 - [web page test](https://www.webpagetest.org/) - 通过这个网站，可以测试网站的性能
-- [validator.w3.org](https://validator.w3.org) - W3C 标记验证程序， 检查网站 HTML
-  语法中的可改进项和错误
+- [validator.w3.org](https://validator.w3.org) - W3C 标记验证程序， 检查网站 HTML 语法中的可改进项和错误
 - [wave](https://wave.webaim.org/) - 检测网站的可访问性，可帮助作者使其网络内容更易于残障人士访问
-- [Wahts my dns](https://www.whatsmydns.net/) - 查看网站的 DNS 传播情况，当你更换 dns
-  后，可以用这个网站 check 是否全部生效
+- [Wahts my dns](https://www.whatsmydns.net/) - 查看网站的 DNS 传播情况，当你更换 dns 后，可以用这个网站 check 是否全部生效
 
 ## Epub
 
@@ -403,8 +369,7 @@ X as a Y services.
 
 ## Search
 
-- [Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai
-  从谷歌成千上万本书里给出最相关的答案。
+- [Google 推出的 AI： 与书籍对话](https://books.google.com/talktobooks/) - 输入一个问题，ai 从谷歌成千上万本书里给出最相关的答案。
 
 ## 图书封面
 

@@ -13,8 +13,7 @@ taxonomies:
     - Random Book
 ---
 
-> 这是一个 [now](https://nownownow.com/about) 页面,
-> 在[关于页面](@/pages/about.md) 了解更多。
+> 这是一个 [now](https://nownownow.com/about) 页面, 在[关于页面](@/pages/about.md) 了解更多。
 
 <!-- more -->
 
@@ -29,12 +28,10 @@ taxonomies:
     - 低价卖东西，自己能接受，但是如何对待员工？
       - 成本最小化？
   - 开源+云托管
-  - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～
-    [关于页面](@/pages/about.md) 有我的联系方式.
+  - 思绪有点乱，如果您对此有任何想法，可以找我一起聊聊～ [关于页面](@/pages/about.md) 有我的联系方式.
   - 这里有几个相关的讨论：
     - <https://gavinhoward.com/2023/12/is-source-available-really-that-bad/>
     - <https://drewdevault.com/2023/12/26/2023-12-26-Prusa-is-floundering.html>
     - <https://news.ycombinator.com/item?id=38331173>
 - 我意识到我不想剥削别人。
 - 我讨厌移动端，我喜欢桌面版。
-

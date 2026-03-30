@@ -5,8 +5,6 @@ draft: true
 updated: 2022-06-29
 ---
 
-
-
 ## Articles
 
 - [PGP Problems](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html)
@@ -22,5 +20,6 @@ updated: 2022-06-29
 - [Age](https://github.com/FiloSottile/age) - A simple, modern and secure encryption tool (and Go library) with small explicit keys, no config options, and UNIX-style composability.
 
 -[Napa](https://crates.io/crates/napa) - A simple and secure command line password manager written by rust, using age.
+
 - [sops](https://github.com/mozilla/sops) - pass manager base yaml/json
 - [shamir](https://github.com/incipher/shamir) - go, give other people to look your password

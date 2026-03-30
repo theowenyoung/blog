@@ -51,8 +51,7 @@ Enjoy! There is so much out there to learn, read as much as you can, question an
 
 [The best fiction in recent times](https://marginalrevolution.com/marginalrevolution/2022/04/the-best-fiction-in-recent-times.html)
 
-by Tyler Cowen April 15, 2022 at 12:42 am in Books The Arts
-Here are my picks, in no particular order:
+by Tyler Cowen April 15, 2022 at 12:42 am in Books The Arts Here are my picks, in no particular order:
 
 W.G. Sebald, The Emigrants (1992, maybe not recent?).
 

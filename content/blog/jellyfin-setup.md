@@ -25,8 +25,7 @@ sudo systemctl restart jellyfin
 
 ## 中文字体
 
-1. Download google noto fonts:
-   This [repo](https://github.com/CodePlayer/webfont-noto) compiled noto fonts, so you can just download it and use it.
+1. Download google noto fonts: This [repo](https://github.com/CodePlayer/webfont-noto) compiled noto fonts, so you can just download it and use it.
 
    ```bash
    wget https://github.com/CodePlayer/webfont-noto/raw/master/dist/NotoSans/NotoSansCJKsc-hinted/subset/NotoSansCJKsc-hinted-standard/NotoSansCJKsc-Regular.woff2

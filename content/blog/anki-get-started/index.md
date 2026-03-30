@@ -9,13 +9,11 @@ taxonomies:
     - English
 ---
 
-用了那么多背单词软件，发现还是[Anki](https://ankiweb.net/)好用，我觉得其中最好用是 Anki 提供的强大的 Tag
-功能，你可以给每个单词打上一个 Tag ，这样方便你日后归类来复习这些单词，比如你可以有一个「hard」的 Tag。
+用了那么多背单词软件，发现还是[Anki](https://ankiweb.net/)好用，我觉得其中最好用是 Anki 提供的强大的 Tag 功能，你可以给每个单词打上一个 Tag ，这样方便你日后归类来复习这些单词，比如你可以有一个「hard」的 Tag。
 
 <!-- more -->
 
-Tag 是 Anki 官方提供的功能，你可以直接在 Anki 上管理 tag，但是默认的 tag 管理比较不够便捷，所以如果配合以下插件，就能更方便的添加，查看
-Tag。
+Tag 是 Anki 官方提供的功能，你可以直接在 Anki 上管理 tag，但是默认的 tag 管理比较不够便捷，所以如果配合以下插件，就能更方便的添加，查看 Tag。
 
 这里纪录下我的 Anki 配置，希望你也能用得着。最终效果如下：
 
@@ -24,13 +22,11 @@ Tag。
 ## 预先准备
 
 - [下载 Anki 桌面版](https://apps.ankiweb.net/)
-- [下载一个词库][https://ankiweb.net/shared/decks/] -
-  可选，我初学的时候用的是这个排名第一的[4000 Essential English Words 英英](https://ankiweb.net/shared/info/1104981491)
+- [下载一个词库][https://ankiweb.net/shared/decks/] - 可选，我初学的时候用的是这个排名第一的[4000 Essential English Words 英英](https://ankiweb.net/shared/info/1104981491)
 
 ## 必备插件
 
-下载插件是在「Tools->Add-ons->Get Add-ons」,输入插件的 Code，插件的 Code
-在插件主页上找到，[点击这里](https://ankiweb.net/shared/addons/ 2.1)可以浏览所有的插件。
+下载插件是在「Tools->Add-ons->Get Add-ons」,输入插件的 Code，插件的 Code 在插件主页上找到，[点击这里](https://ankiweb.net/shared/addons/ 2.1)可以浏览所有的插件。
 
 > Note: 每次安装完插件后，重启才能生效。
 
@@ -71,8 +67,7 @@ Code: `304770511`
 
 Code: `380714095`
 
-接下来就是这个 Clickable Tags 插件了，上一个插件解决了添加 Tag 的问题，这个插件解决显示 Tag
-的问题，用了这个插件后你可以把这个单词所属的 Tag 都显示在 Review 页面，并且可以随时点击进去查看同个 Tag 的所有单词。效果如下：
+接下来就是这个 Clickable Tags 插件了，上一个插件解决了添加 Tag 的问题，这个插件解决显示 Tag 的问题，用了这个插件后你可以把这个单词所属的 Tag 都显示在 Review 页面，并且可以随时点击进去查看同个 Tag 的所有单词。效果如下：
 
 ![](./clickable-tags.png)
 

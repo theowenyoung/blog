@@ -46,8 +46,7 @@ Enter to the cloudspace, and click the add button to create a new service with `
 1. Fill the servicename, for me I just type `meilisearch`
 2. Connect your github account(you can give it only selected repo permissions, you must selected at least one repo, it can be any public repo)
 
-   Screenshot:
-   ![0](0.png)
+   Screenshot: ![0](0.png)
 
 3. Click `Add repository`, input the repo name, I input it as `meili`, and with `public` permission.
 
@@ -58,7 +57,6 @@ Enter to the cloudspace, and click the add button to create a new service with `
 4. set resources limit (if needed, the default value is a recomendation from Mogenius).
 
 5. set environment variables:
-
    1. add `MEILI_MASTER_KEY` as key vault to protect your master key. (Click `create new secret` to fill the secret)
    2. the following environment variables can be plain text type.
 

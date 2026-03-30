@@ -28,8 +28,7 @@ taxonomies:
   - [编辑精选](https://www.wikihow.com/Category:Featured-Articles)
 - [如何为你的朋友运营一个社交网络](https://runyourown.social/)
 - [Tech Interview Handbook](https://techinterviewhandbook.org/) - 面试指南
-- [anonymousplanet](https://anonymousplanet.org/guide.html) - The Hitchhiker’s
-  Guide to Online Anonymity, 匿名指南
+- [anonymousplanet](https://anonymousplanet.org/guide.html) - The Hitchhiker’s Guide to Online Anonymity, 匿名指南
 
 ## 人生
 

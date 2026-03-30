@@ -27,8 +27,7 @@ taxonomies:
 
 对于博客我已经这么做了，我最近一个月一直在博客上更新自己阅读后觉得[还不错的文章](https://www.owenyoung.com/categories/journal/), 每篇里面大概 3-5 篇链接，这就是一篇博文了。也不给社交网络推送，就自己的博客里发，有一天没一天的，但是没有压力，不会感到博文必须要很长才能发的压力。同时这也是一个重要的笔记，可以供以后参考。
 
-刚好最近一个月我都在断断续续的重写 [Track Awesome List](https://www.trackawesomelist.com), 这是一个追踪 Github 上好几百个[Awesome](https://github.com/topics/awesome)
-列表更新的网站。为什么会有这个需求呢？因为所有的 awesome list 都是按照分类组织的，当你 star 之后，它的更新其实很难被追踪，除非你愿意去对比 commit 的历史记录，我相信这不是一个愉快的工作。所以，我在 2 年前就做了一个简单的网站，通过分析那些 awesome 项目的历史提交记录，然后生成一个按照日/周倒序的页面，比如我经常查看[Free for Dev](https://www.trackawesomelist.com/ripienaar/free-for-dev/) 和 [Awesome self-hosted](https://www.trackawesomelist.com/awesome-selfhosted/awesome-selfhosted/)的最新项目。
+刚好最近一个月我都在断断续续的重写 [Track Awesome List](https://www.trackawesomelist.com), 这是一个追踪 Github 上好几百个[Awesome](https://github.com/topics/awesome) 列表更新的网站。为什么会有这个需求呢？因为所有的 awesome list 都是按照分类组织的，当你 star 之后，它的更新其实很难被追踪，除非你愿意去对比 commit 的历史记录，我相信这不是一个愉快的工作。所以，我在 2 年前就做了一个简单的网站，通过分析那些 awesome 项目的历史提交记录，然后生成一个按照日/周倒序的页面，比如我经常查看[Free for Dev](https://www.trackawesomelist.com/ripienaar/free-for-dev/) 和 [Awesome self-hosted](https://www.trackawesomelist.com/awesome-selfhosted/awesome-selfhosted/)的最新项目。
 
 <!-- more -->
 

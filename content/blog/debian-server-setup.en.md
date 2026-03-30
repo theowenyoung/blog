@@ -38,7 +38,6 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub username@remote_host
 > This will copy your id_rsa.pub to remote machine `~/.ssh/authorized_keys`
 
 3. Change the default password
-
    1. `passwd`
 
 4. Create an admin group

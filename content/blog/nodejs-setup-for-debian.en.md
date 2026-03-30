@@ -9,8 +9,6 @@ taxonomies:
     - Nodejs
 ---
 
-
-
 ## Install
 
 See also [here](https://github.com/nodesource/distributions/blob/master/README.md)
