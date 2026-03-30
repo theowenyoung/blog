@@ -16,34 +16,6 @@ taxonomies:
 
 ## 镜像服务
 
-### Github
-
-- [Fastgit](https://doc.fastgit.org/zh-cn/) - Github 国内镜像
-
-- Download: `https://download.fastgit.org/org/repo/xxx`
-- Clone `git clone https://github.com/org/repo`
-- Clone with ssh `git clone git@ssh.fastgit.org:theowenyoung/gatsby-theme-primer-wiki.git`
-
-### Rust
-
-- [rsproxy cn](https://rsproxy.cn/) - rust 国内镜像
-
-### Docker
-
-- 阿里云公网: `https://registry.cn-hangzhou.aliyuncs.com`
-- 腾讯云： `https://mirror.ccs.tencentyun.com`
-  - [使用说明](https://cloud.tencent.com/document/product/1207/45596)
-
-`sudo vim /etc/docker/daemon.json`
-
-```json
-{ "registry-mirrors": ["https://mirror.ccs.tencentyun.com"] }
-```
-
-```bash
-sudo systemctl restart docker
-```
-
 ## 解决方案
 
 - [阿里云函数计算 php 环境如何自定义内置扩展，覆盖系统自带扩展](https://developer.aliyun.com/article/645670?spm=5176.smartservice_service_chat.0.0.6a33709aQ2zFPh)
@@ -104,7 +76,8 @@ sudo docker image prune -a
 
 ### Generate ssh key
 
-Reference: [Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+Reference:
+[Generating a new SSH key and adding it to the ssh-agent - GitHub Docs](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
@@ -124,11 +97,13 @@ cat .ssh/id_ed25519.pub
 
 ### 获取首次提交时间
 
-- [Finding the date/time a file was first added to a Git repository - Stack Overflow](https://stackoverflow.com/questions/2390199/finding-the-date-time-a-file-was-first-added-to-a-git-repository/25633731) - 获取首次提交时间
+- [Finding the date/time a file was first added to a Git repository - Stack Overflow](https://stackoverflow.com/questions/2390199/finding-the-date-time-a-file-was-first-added-to-a-git-repository/25633731) -
+  获取首次提交时间
 
 ### 提交消息的模版
 
-- [Git Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) - git 语义化提交消息模版
+- [Git Semantic Commit Messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) -
+  git 语义化提交消息模版
 
 ### 合并上游的时候不弹出确认框
 
@@ -173,9 +148,11 @@ folder/*
   ![License Comparison](./license-comparision.png)
 - [Coopcycle](https://wiki.coopcycle.org/en:license) - 商业不友好开源许可
   - <https://artlessdevices.com/>
-- [Prosperity Public License](https://prosperitylicense.com/versions/3.0.0) - 本许可证允许您免费将此软件用于非商业目的并分享，以及在商业目的下试用 30 天。
+- [Prosperity Public License](https://prosperitylicense.com/versions/3.0.0) -
+  本许可证允许您免费将此软件用于非商业目的并分享，以及在商业目的下试用 30 天。
 
-> By [如何选择开源许可证？](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
+> By
+> [如何选择开源许可证？](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 
 ## Linux Common Commands
 
@@ -346,7 +323,8 @@ sudo journalctl -f -u service-name.service
 
 ### See who connect with Me
 
-See: [here](https://www.linuxshelltips.com/find-ip-addresses-are-connected-to-linux/)
+See:
+[here](https://www.linuxshelltips.com/find-ip-addresses-are-connected-to-linux/)
 
 ```bash
 ss -tun state connected
@@ -360,7 +338,8 @@ netstat -tn 2>/dev/null | grep -E '\s[0-9.]+:443\s' | awk '{print $5}' | cut -d 
 
 ### Ban
 
-See [here](https://docs.rackspace.com/support/how-to/block-an-ip-address-on-a-Linux-server/)
+See
+[here](https://docs.rackspace.com/support/how-to/block-an-ip-address-on-a-Linux-server/)
 
 ```bash
 sudo systemctl status firewalld
@@ -447,18 +426,19 @@ See <https://www.postgresql.org/docs/current/sql-altertable.html>
 
 ### Upsert
 
-See <https://stackoverflow.com/questions/61494958/postgres-on-conflict-do-update-only-non-null-values-in-python>
+See
+<https://stackoverflow.com/questions/61494958/postgres-on-conflict-do-update-only-non-null-values-in-python>
 
 ### Export Schema
 
 ```bash
- pg_dump database_name -s --no-owner > schema.sql
+pg_dump database_name -s --no-owner > schema.sql
 ```
 
 ### Export Only data
 
 ```bash
- pg_dump database_name -a --no-owner > data.sql
+pg_dump database_name -a --no-owner > data.sql
 ```
 
 ### Delete or Drop or Remove Database
@@ -485,7 +465,8 @@ psql database_name < data.sql
 
 ### Smart word break in CSS
 
-> From [Smarter word break in CSS? - Stack Overflow](https://stackoverflow.com/a/48830291)
+> From
+> [Smarter word break in CSS? - Stack Overflow](https://stackoverflow.com/a/48830291)
 
 ```css
 body {
@@ -504,7 +485,8 @@ body {
 
 ### Resources
 
-- [Vim online exercises](https://www.vim.so/) - help you master vim with interactive exercises.
+- [Vim online exercises](https://www.vim.so/) - help you master vim with
+  interactive exercises.
 
 ### Tips
 
@@ -522,7 +504,8 @@ body {
 
 ### Quick Switch Windows
 
-Also see [here](https://stackoverflow.com/questions/37371739/os-x-cycle-between-windows-in-visual-studio-code)
+Also see
+[here](https://stackoverflow.com/questions/37371739/os-x-cycle-between-windows-in-visual-studio-code)
 
 Added the following shortcut to `keybindings.json`
 
