@@ -428,40 +428,63 @@ async function processMarkdown(
   let result = md;
   const seen = new Set<string>();
 
-  // ── 1. Upload local images and replace URLs ─────────────────────────────
+  // ── 1. Upload images (local + remote) and replace URLs ───────────────
   for (const m of md.matchAll(/!\[([^\]]*)\]\(([^)]+)\)/g)) {
     const src = m[2].trim();
     if (seen.has(src)) continue;
     seen.add(src);
 
-    // Skip external URLs
-    if (/^https?:\/\/|^\/\//.test(src)) continue;
+    const isRemote = /^https?:\/\/|^\/\//.test(src);
 
-    const localPath = src.startsWith("/")
-      ? join("static", src)
-      : join(dirname(postFile), src);
+    if (isRemote) {
+      // ── Remote image: download then upload ───────────────────────────
+      const remoteUrl = src.startsWith("//") ? `https:${src}` : src;
+      const filename = basename(new URL(remoteUrl).pathname) || "image";
 
-    try {
-      await Deno.stat(localPath);
-    } catch {
-      console.warn(`  ⚠️   Image not found: ${localPath}`);
-      continue;
-    }
+      if (flagDryRun) {
+        console.log(`  [dry-run] Would download & upload: ${remoteUrl}`);
+        continue;
+      }
 
-    if (flagDryRun) {
-      console.log(`  [dry-run] Would upload: ${localPath}`);
-      continue;
-    }
+      const downloaded = await downloadFile(remoteUrl);
+      if (!downloaded) continue;
 
-    const uploaded = await uploadFile(localPath);
-    if (uploaded) {
-      const jantUrl = new URL(uploaded.url, JANT_BASE_URL).toString();
-      // Preserve original alt text while replacing every image occurrence for this src.
-      result = result.replace(
-        new RegExp(`!\\[([^\\]]*)\\]\\(${escapeRegExp(src)}\\)`, "g"),
-        (_full, currentAlt) => `![${currentAlt}](${jantUrl})`,
-      );
-      console.log(`  📷  Uploaded: ${basename(localPath)} → ${jantUrl}`);
+      const uploaded = await uploadBlob(downloaded.data, filename);
+      if (uploaded) {
+        const jantUrl = new URL(uploaded.url, JANT_BASE_URL).toString();
+        result = result.replace(
+          new RegExp(`!\\[([^\\]]*)\\]\\(${escapeRegExp(src)}\\)`, "g"),
+          (_full, currentAlt) => `![${currentAlt}](${jantUrl})`,
+        );
+        console.log(`  📷  Downloaded & uploaded: ${filename} → ${jantUrl}`);
+      }
+    } else {
+      // ── Local image: read from disk then upload ──────────────────────
+      const localPath = src.startsWith("/")
+        ? join("static", src)
+        : join(dirname(postFile), src);
+
+      try {
+        await Deno.stat(localPath);
+      } catch {
+        console.warn(`  ⚠️   Image not found: ${localPath}`);
+        continue;
+      }
+
+      if (flagDryRun) {
+        console.log(`  [dry-run] Would upload: ${localPath}`);
+        continue;
+      }
+
+      const uploaded = await uploadFile(localPath);
+      if (uploaded) {
+        const jantUrl = new URL(uploaded.url, JANT_BASE_URL).toString();
+        result = result.replace(
+          new RegExp(`!\\[([^\\]]*)\\]\\(${escapeRegExp(src)}\\)`, "g"),
+          (_full, currentAlt) => `![${currentAlt}](${jantUrl})`,
+        );
+        console.log(`  📷  Uploaded: ${basename(localPath)} → ${jantUrl}`);
+      }
     }
   }
 
@@ -494,6 +517,48 @@ async function processMarkdown(
   result = result.replace(/<!--\s*more\s*-->/g, "<!--more-->");
 
   return result;
+}
+
+async function downloadFile(
+  url: string,
+): Promise<{ data: Uint8Array } | null> {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) {
+      console.warn(`  ⚠️   Download failed: ${r.status} ${url}`);
+      return null;
+    }
+    return { data: new Uint8Array(await r.arrayBuffer()) };
+  } catch (e) {
+    console.warn(`  ⚠️   Download error ${url}: ${(e as Error).message}`);
+    return null;
+  }
+}
+
+async function uploadBlob(
+  data: Uint8Array,
+  filename: string,
+): Promise<{ id: string; url: string } | null> {
+  try {
+    const fd = new FormData();
+    fd.append("file", new Blob([data]), filename);
+    const r = await fetch(`${JANT_BASE_URL}/api/upload`, {
+      method: "POST",
+      headers: AUTH,
+      body: fd,
+    });
+    if (!r.ok) {
+      const txt = await r.text().catch(() => "");
+      console.warn(
+        `  ⚠️   Upload ${filename} failed: ${r.status} ${txt.slice(0, 100)}`,
+      );
+      return null;
+    }
+    return r.json();
+  } catch (e) {
+    console.warn(`  ⚠️   Upload error ${filename}: ${(e as Error).message}`);
+    return null;
+  }
 }
 
 async function uploadFile(

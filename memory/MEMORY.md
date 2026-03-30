@@ -28,6 +28,7 @@ JANT_BASE_URL=https://node-jant.localtest.me deno run --allow-all --unsafely-ign
 JANT_BASE_URL=https://docker-jant.localtest.me deno run --allow-all --unsafely-ignore-certificate-errors scripts/migrate-to-jant.ts --all
 JANT_BASE_URL=https://jant.owenyoung.com deno run --allow-all --unsafely-ignore-certificate-errors scripts/migrate-to-jant.ts --all
 JANT_BASE_URL=https://preview.jant.me deno run --allow-all --unsafely-ignore-certificate-errors scripts/migrate-to-jant.ts --all
+JANT_BASE_URL=https://owen.jant.blog deno run --allow-all --unsafely-ignore-certificate-errors scripts/fix-jant-external-images.ts --dry-run
 deno run --allow-all --unsafely-ignore-certificate-errors scripts/migrate-to-jant.ts --limit=10
 deno run --allow-all --unsafely-ignore-certificate-errors scripts/migrate-to-jant.ts --dry-run
 ```
