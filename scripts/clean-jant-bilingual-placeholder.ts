@@ -48,7 +48,7 @@ const AUTH = {
 } as Record<string, string>;
 const JSON_HDRS = { ...AUTH, "Content-Type": "application/json" };
 
-const PLACEHOLDER = "(双语机器译文)";
+const PLACEHOLDER = "(双语机翻译文)";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types

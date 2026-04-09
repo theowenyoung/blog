@@ -15,19 +15,21 @@ For static export and round-trip import, also see [Export and Import](export-and
 
 ## API Surface
 
-| Area | Base path | Auth |
-| --- | --- | --- |
-| Posts | `/api/posts` | API token or session |
-| Uploads (recommended) | `/api/uploads` | API token or session |
-| Uploads (legacy) | `/api/upload`, `/api/upload/multipart` | API token or session |
-| Text attachment content | `/api/attachments` | API token or session |
-| Collections | `/api/collections` | Mixed |
-| Navigation items | `/api/nav-items` | Mixed |
-| Custom URLs | `/api/custom-urls` | API token or session |
-| Settings | `/api/settings` | API token or session |
-| Search | `/api/search` | Public |
-| Export | `/api/export` | API token or session |
-| Internal admin | `/api/internal/*` | Internal admin token |
+| Area                    | Base path                              | Auth                 |
+| ----------------------- | -------------------------------------- | -------------------- |
+| Public posts            | `/api/public/posts`                    | Public               |
+| Posts                   | `/api/posts`                           | API token or session |
+| Uploads (recommended)   | `/api/uploads`                         | API token or session |
+| Uploads (legacy)        | `/api/upload`, `/api/upload/multipart` | API token or session |
+| Text attachment content | `/api/attachments`                     | API token or session |
+| MCP                     | `/api/mcp`                             | API token or session |
+| Collections             | `/api/collections`                     | Mixed                |
+| Navigation items        | `/api/nav-items`                       | Mixed                |
+| Custom URLs             | `/api/custom-urls`                     | API token or session |
+| Settings                | `/api/settings`                        | API token or session |
+| Search                  | `/api/search`                          | Public               |
+| Export                  | `/api/export`                          | API token or session |
+| Internal admin          | `/api/internal/*`                      | Internal admin token |
 
 Auth labels in this document:
 
@@ -76,6 +78,94 @@ This is meant for local tooling, not production clients.
 `/api/internal/*` endpoints only accept the environment-provided `INTERNAL_ADMIN_TOKEN`.
 
 If that token is not configured, those endpoints behave as if they do not exist and return `404`.
+
+---
+
+## Automation Entry Points
+
+Jant exposes the same site-owner automation surface three ways:
+
+- local `npx jant` commands when the automation runs on the site machine
+- HTTP JSON endpoints under `/api/*`
+- an authenticated MCP endpoint at `/api/mcp`
+
+Projects created with `create-jant` also include `examples/agent-content-automation/README.md`, which shows copy-pasteable CLI and MCP flows for posts, media, and settings.
+
+### Local CLI
+
+The site-aware CLI maps directly to the HTTP endpoints documented below.
+
+Available command groups:
+
+- `npx jant posts`
+- `npx jant media`
+- `npx jant collections`
+- `npx jant settings`
+- `npx jant search`
+
+Resolution rules:
+
+- Pass `--url https://your-site.com`, or let the CLI read `SITE_ORIGIN` from the environment or `wrangler.toml`.
+- Pass `--token jnt_...`, or set `JANT_API_TOKEN`.
+- On local hosts only, `DEV_API_TOKEN` is also accepted.
+- `npx jant collections list`, `npx jant collections get`, and `npx jant search` can call public endpoints without a token. Other commands require auth.
+
+Examples:
+
+```bash
+npx jant posts create --input ./post.json
+npx jant media upload ./cover.webp --alt "Cover image"
+npx jant collections add-post col_01... pst_01...
+npx jant settings update --json '{"SITE_NAME":"Quiet Notes"}'
+npx jant search "quiet design"
+```
+
+### MCP
+
+Base path: `/api/mcp`
+
+Auth: `Session or token`
+
+Jant's MCP endpoint is a minimal HTTP JSON-RPC transport for remote agents and automation systems that already speak MCP.
+
+Current transport behavior:
+
+- `POST` only
+- content type `application/json`
+- requires `MCP-Protocol-Version: 2025-06-18`
+- supports `initialize`, `ping`, `tools/list`, `tools/call`, and `notifications/initialized`
+- does not support batch requests, SSE streaming, or session negotiation
+
+Current tool groups:
+
+- posts: `jant_posts_list`, `jant_posts_get`, `jant_posts_get_content`, `jant_posts_create`, `jant_posts_update`, `jant_posts_delete`
+- media: `jant_media_list`, `jant_media_get`, `jant_media_upload`, `jant_media_update_alt`, `jant_media_delete`
+- attachments: `jant_attachments_get_content`
+- collections: `jant_collections_list`, `jant_collections_get`, `jant_collections_create`, `jant_collections_update`, `jant_collections_delete`, `jant_collections_add_post`, `jant_collections_remove_post`
+- settings: `jant_settings_get`, `jant_settings_update`
+- search: `jant_search_posts`
+
+Tool calls return normal MCP `result` envelopes. Successful tool calls include both `structuredContent` and a JSON string copy in `content[0].text`. Tool-level validation and domain failures return `200 OK` with `isError: true`.
+
+Initialize:
+
+```bash
+curl -X POST https://your-site.com/api/mcp \
+  -H "Authorization: Bearer jnt_YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -H "MCP-Protocol-Version: 2025-06-18" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18"}}'
+```
+
+Create a post through `tools/call`:
+
+```bash
+curl -X POST https://your-site.com/api/mcp \
+  -H "Authorization: Bearer jnt_YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -H "MCP-Protocol-Version: 2025-06-18" \
+  -d '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"jant_posts_create","arguments":{"format":"note","bodyMarkdown":"Created through MCP.","status":"published","visibility":"public"}}}'
+```
 
 ---
 
@@ -131,6 +221,12 @@ Jant renders stored content into:
 
 Markdown support includes headings, lists, links, images, tables, fenced code blocks, blockquotes, and `<!--more-->` excerpt breaks.
 
+Line breaks follow standard Markdown rules:
+
+- A single newline stays within the same paragraph.
+- A blank line starts a new paragraph.
+- Use two trailing spaces or a backslash before the newline to create a hard line break.
+
 ### Quote post field mapping
 
 Quote posts use quote-specific names in the API:
@@ -158,17 +254,17 @@ Domain errors use this shape:
 
 Common error codes:
 
-| Code | HTTP | Meaning |
-| --- | --- | --- |
-| `VALIDATION_ERROR` | `400` | Invalid input, invalid ID, unsupported field combination |
-| `UNAUTHORIZED` | `401` | Missing or invalid auth |
-| `FORBIDDEN` | `403` | Authenticated but not allowed |
-| `NOT_FOUND` | `404` | Resource does not exist |
-| `CONFLICT` | `409` | Duplicate slug/path, invalid state transition, hosted-mode conflict |
-| `MEDIA_QUOTA_EXCEEDED` | `409` | Hosted media quota would be exceeded |
-| `RATE_LIMIT` | `429` | Too many requests |
-| `CONFIGURATION_ERROR` | `500` | Missing or invalid server configuration |
-| `EXTERNAL_SERVICE_ERROR` | `500` | External dependency failed |
+| Code                     | HTTP  | Meaning                                                             |
+| ------------------------ | ----- | ------------------------------------------------------------------- |
+| `VALIDATION_ERROR`       | `400` | Invalid input, invalid ID, unsupported field combination            |
+| `UNAUTHORIZED`           | `401` | Missing or invalid auth                                             |
+| `FORBIDDEN`              | `403` | Authenticated but not allowed                                       |
+| `NOT_FOUND`              | `404` | Resource does not exist                                             |
+| `CONFLICT`               | `409` | Duplicate slug/path, invalid state transition, hosted-mode conflict |
+| `MEDIA_QUOTA_EXCEEDED`   | `409` | Hosted media quota would be exceeded                                |
+| `RATE_LIMIT`             | `429` | Too many requests                                                   |
+| `CONFIGURATION_ERROR`    | `500` | Missing or invalid server configuration                             |
+| `EXTERNAL_SERVICE_ERROR` | `500` | External dependency failed                                          |
 
 Example validation error:
 
@@ -201,35 +297,35 @@ Jant supports three post formats:
 
 Post responses include these fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
-| `id` | `pst_*` string | Post ID |
-| `siteId` | string | Owning site |
-| `format` | `note` \| `link` \| `quote` | Post format |
-| `status` | `draft` \| `published` | Stored post status |
-| `visibility` | `public` \| `latest_hidden` \| `private` | Resolved visibility shown to clients |
-| `pinnedAt` | integer \| `null` | Pin timestamp |
-| `featuredAt` | integer \| `null` | Feature timestamp |
-| `slug` | string | Canonical slug |
-| `title` | string \| `null` | Returned for non-quote responses; omitted for `quote` |
-| `url` | string \| `null` | Returned for non-quote responses; usually `null` on notes |
-| `sourceName` | string \| `null` | Returned instead of `title` for `quote` |
-| `sourceUrl` | string \| `null` | Returned instead of `url` for `quote` |
-| `body` | string \| `null` | Raw TipTap JSON string when stored that way |
-| `bodyHtml` | string \| `null` | Rendered HTML |
-| `bodyText` | string \| `null` | Plain-text rendering |
-| `quoteText` | string \| `null` | Quote content |
-| `summary` | string \| `null` | Optional summary |
-| `rating` | integer \| `null` | `1` to `5` when set |
-| `replyToId` | `pst_*` string \| `null` | Parent reply/post ID |
-| `threadId` | `pst_*` string | Thread root ID |
-| `deletedAt` | integer \| `null` | Soft-delete timestamp |
-| `publishedAt` | integer \| `null` | Publish timestamp |
-| `lastActivityAt` | integer | Last activity timestamp |
-| `createdAt` | integer | Unix seconds |
-| `updatedAt` | integer | Unix seconds |
-| `attachments` | array | Ordered media/text attachment objects |
-| `collectionIds` | `col_*` string[] | Only included by `GET /api/posts/:id` |
+| Field            | Type                                     | Notes                                                     |
+| ---------------- | ---------------------------------------- | --------------------------------------------------------- |
+| `id`             | `pst_*` string                           | Post ID                                                   |
+| `siteId`         | string                                   | Owning site                                               |
+| `format`         | `note` \| `link` \| `quote`              | Post format                                               |
+| `status`         | `draft` \| `published`                   | Stored post status                                        |
+| `visibility`     | `public` \| `latest_hidden` \| `private` | Resolved visibility shown to clients                      |
+| `pinnedAt`       | integer \| `null`                        | Pin timestamp                                             |
+| `featuredAt`     | integer \| `null`                        | Feature timestamp                                         |
+| `slug`           | string                                   | Canonical slug                                            |
+| `title`          | string \| `null`                         | Returned for non-quote responses; omitted for `quote`     |
+| `url`            | string \| `null`                         | Returned for non-quote responses; usually `null` on notes |
+| `sourceName`     | string \| `null`                         | Returned instead of `title` for `quote`                   |
+| `sourceUrl`      | string \| `null`                         | Returned instead of `url` for `quote`                     |
+| `body`           | string \| `null`                         | Raw TipTap JSON string when stored that way               |
+| `bodyHtml`       | string \| `null`                         | Rendered HTML                                             |
+| `bodyText`       | string \| `null`                         | Plain-text rendering                                      |
+| `quoteText`      | string \| `null`                         | Quote content                                             |
+| `summary`        | string \| `null`                         | Optional summary                                          |
+| `rating`         | integer \| `null`                        | `1` to `5` when set                                       |
+| `replyToId`      | `pst_*` string \| `null`                 | Parent reply/post ID                                      |
+| `threadId`       | `pst_*` string                           | Thread root ID                                            |
+| `deletedAt`      | integer \| `null`                        | Soft-delete timestamp                                     |
+| `publishedAt`    | integer \| `null`                        | Publish timestamp                                         |
+| `lastActivityAt` | integer                                  | Last activity timestamp                                   |
+| `createdAt`      | integer                                  | Unix seconds                                              |
+| `updatedAt`      | integer                                  | Unix seconds                                              |
+| `attachments`    | array                                    | Ordered media/text attachment objects                     |
+| `collectionIds`  | `col_*` string[]                         | Only included by `GET /api/posts/:id`                     |
 
 ### Post response shape
 
@@ -273,6 +369,119 @@ Notes:
 - `threadId` points at the thread root.
 - `GET /api/posts` includes both root posts and replies. There is currently no `excludeReplies` query parameter.
 
+## Public posts
+
+Base path: `/api/public/posts`
+
+These endpoints expose the public reading view, not the dashboard editing view.
+
+Public post responses include these fields:
+
+| Field             | Type                        | Notes                                                          |
+| ----------------- | --------------------------- | -------------------------------------------------------------- |
+| `id`              | `pst_*` string              | Post ID                                                        |
+| `format`          | `note` \| `link` \| `quote` | Post format                                                    |
+| `status`          | `published`                 | Public endpoints only return published posts                   |
+| `visibility`      | `public` \| `latest_hidden` | List excludes `latest_hidden`; single-post reads may return it |
+| `slug`            | string                      | Canonical slug                                                 |
+| `permalink`       | string                      | Public post URL                                                |
+| `title`           | string \| `null`            | Returned for `note` and `link` posts                           |
+| `url`             | string \| `null`            | Returned for `link` posts                                      |
+| `sourceName`      | string \| `null`            | Returned instead of `title` for `quote`                        |
+| `sourceUrl`       | string \| `null`            | Returned instead of `url` for `quote`                          |
+| `bodyHtml`        | string \| `null`            | Rendered HTML; omitted when `content=markdown`                 |
+| `bodyText`        | string \| `null`            | Plain-text rendering; omitted when `content=markdown`          |
+| `bodyMarkdown`    | string \| `null`            | Markdown source; only returned when `content=markdown`         |
+| `quoteText`       | string \| `null`            | Quote content                                                  |
+| `summary`         | string \| `null`            | Optional summary                                               |
+| `rating`          | integer \| `null`           | `1` to `5` when set                                            |
+| `previewKind`     | string \| `null`            | Link preview kind                                              |
+| `previewProvider` | string \| `null`            | Link preview provider                                          |
+| `previewImageUrl` | string \| `null`            | Public preview image URL                                       |
+| `replyToId`       | `pst_*` string \| `null`    | Parent reply/post ID                                           |
+| `threadId`        | `pst_*` string              | Thread root ID                                                 |
+| `pinnedAt`        | integer \| `null`           | Pin timestamp                                                  |
+| `featuredAt`      | integer \| `null`           | Feature timestamp                                              |
+| `publishedAt`     | integer \| `null`           | Publish timestamp                                              |
+| `lastActivityAt`  | integer                     | Last activity timestamp                                        |
+| `createdAt`       | integer                     | Unix seconds                                                   |
+| `updatedAt`       | integer                     | Unix seconds                                                   |
+| `attachments`     | array                       | Ordered media/text attachment objects                          |
+| `collections`     | object[]                    | Public collection refs with `id`, `slug`, `title`, and `url`   |
+
+### List public posts
+
+`GET /api/public/posts`
+
+Auth: `Public`
+
+Query parameters:
+
+| Parameter    | Type                                  | Required | Default              | Notes                                                                                               |
+| ------------ | ------------------------------------- | -------- | -------------------- | --------------------------------------------------------------------------------------------------- |
+| `format`     | `note` \| `link` \| `quote`           | no       | all                  | Format filter                                                                                       |
+| `collection` | string                                | no       | none                 | Filter by collection slug(s). Single slug (`design`) or multiple comma-separated (`tech,art`)       |
+| `sort`       | `newest` \| `oldest` \| `rating_desc` | no       | collection's default | Sort order override. Only effective when `collection` is set. Without `collection`, this is ignored |
+| `cursor`     | string                                | no       | none                 | Pass the previous `nextCursor` back unchanged                                                       |
+| `limit`      | integer                               | no       | `20`                 | `1` to `100`                                                                                        |
+| `content`    | `markdown`                            | no       | none                 | Return `bodyMarkdown` instead of rendered body fields                                               |
+
+Collection filtering notes:
+
+- Single collection: `?collection=design`
+- Multiple collections (union): `?collection=tech,art`
+- When filtering by a single collection, results default to that collection's configured `sortOrder`.
+- When filtering by multiple collections, results default to `newest`.
+- Use `sort` to override the default: `?collection=design&sort=oldest`
+- If any slug in the `collection` parameter does not resolve, the endpoint returns an empty result set.
+
+Response:
+
+```json
+{
+  "posts": [
+    {
+      "id": "pst_01jpyx3m7gw4w3h7m4bknq0v1d",
+      "format": "note",
+      "status": "published",
+      "visibility": "public",
+      "slug": "hello-world",
+      "permalink": "/hello-world",
+      "title": "Hello World",
+      "bodyHtml": "<p>Hello world</p>",
+      "bodyText": "Hello world",
+      "quoteText": null,
+      "replyToId": null,
+      "threadId": "pst_01jpyx3m7gw4w3h7m4bknq0v1d",
+      "publishedAt": 1706000000,
+      "attachments": [],
+      "collections": []
+    }
+  ],
+  "nextCursor": "pst_01jpyx3m7gw4w3h7m4bknq0v1d"
+}
+```
+
+Notes:
+
+- This list returns published public thread roots only.
+- Drafts, private posts, replies, and `latest_hidden` posts are excluded.
+- `content=markdown` returns `bodyMarkdown` and omits `bodyHtml/bodyText`.
+
+### Get a public post by slug
+
+`GET /api/public/posts/:slug`
+
+Auth: `Public`
+
+This returns a single published public post by canonical slug.
+
+Notes:
+
+- `latest_hidden` posts remain readable by direct slug.
+- Draft and private posts return `404`.
+- `content=markdown` returns `bodyMarkdown` and omits `bodyHtml/bodyText`.
+
 ### List posts
 
 `GET /api/posts`
@@ -281,12 +490,12 @@ Auth: `Session or token`
 
 Query parameters:
 
-| Parameter | Type | Default | Notes |
-| --- | --- | --- | --- |
-| `format` | `note` \| `link` \| `quote` | all | Optional format filter |
-| `status` | `draft` \| `published` | `published` | Optional status filter |
-| `cursor` | string | none | Pass the previous `nextCursor` back unchanged |
-| `limit` | integer | `100` | Maximum `100` |
+| Parameter | Type                        | Required | Default     | Notes                                         |
+| --------- | --------------------------- | -------- | ----------- | --------------------------------------------- |
+| `format`  | `note` \| `link` \| `quote` | no       | all         | Format filter                                 |
+| `status`  | `draft` \| `published`      | no       | `published` | Status filter                                 |
+| `cursor`  | string                      | no       | none        | Pass the previous `nextCursor` back unchanged |
+| `limit`   | integer                     | no       | `100`       | `1` to `100`                                  |
 
 Response:
 
@@ -328,13 +537,13 @@ Auth: `Session or token`
 
 Query parameters:
 
-| Parameter | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `mode` | `suggest` | yes | Suggest a slug from `title` |
-| `title` | string | suggest | Source title used for slug suggestion |
-| `postId` | `pst_*` string | no | Exclude the current post when suggesting or checking |
-| `mode` | `check` | yes | Check whether a specific slug is available |
-| `slug` | string | check | Lowercase slug candidate to validate and check |
+| Parameter | Type           | Required | Notes                                                |
+| --------- | -------------- | -------- | ---------------------------------------------------- |
+| `mode`    | `suggest`      | yes      | Suggest a slug from `title`                          |
+| `title`   | string         | suggest  | Source title used for slug suggestion                |
+| `postId`  | `pst_*` string | no       | Exclude the current post when suggesting or checking |
+| `mode`    | `check`        | yes      | Check whether a specific slug is available           |
+| `slug`    | string         | check    | Lowercase slug candidate to validate and check       |
 
 Modes:
 
@@ -429,27 +638,27 @@ Request body:
 
 Fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `format` | `note` \| `link` \| `quote` | yes | Post format |
-| `title` | string | format-dependent | Required for `link`; max `300`; not allowed for `quote` |
-| `sourceName` | string | no | Quote attribution name, max `300` |
-| `body` | string | no | TipTap JSON string |
-| `bodyMarkdown` | string | no | Recommended for scripts |
-| `slug` | string | no | Canonical slug |
-| `path` | string | no | Create-time path helper; mutually exclusive with `slug` |
-| `status` | `draft` \| `published` | no | Defaults to `published` |
-| `visibility` | `public` \| `latest_hidden` \| `private` | no | Defaults to `public` |
-| `pinned` | boolean | no | Pin the post |
-| `featured` | boolean | no | Mark as featured |
-| `url` | absolute URL | format-dependent | Required for `link`; allows `http:`, `https:`, or `mailto:` |
-| `sourceUrl` | absolute URL | no | Quote attribution URL |
-| `quoteText` | string | format-dependent | Required for `quote` |
-| `rating` | integer | no | `1` to `5`; send `0` to clear on update |
-| `collectionIds` | string[] | no | Collection TypeIDs |
-| `replyToId` | string | no | Make this post a thread reply |
-| `publishedAt` | integer | no | Unix seconds; only valid for published posts |
-| `attachments` | attachment[] | no | Ordered attachments, max `20` |
+| Field           | Type                                     | Required             | Default        | Notes                                                                     |
+| --------------- | ---------------------------------------- | -------------------- | -------------- | ------------------------------------------------------------------------- |
+| `format`        | `note` \| `link` \| `quote`              | yes                  | —              | Post format                                                               |
+| `title`         | string                                   | required for `link`  | —              | Max `300`; not allowed for `quote`                                        |
+| `sourceName`    | string                                   | no                   | `null`         | Quote attribution name, max `300`; only for `quote`                       |
+| `body`          | string                                   | no                   | `null`         | TipTap JSON string; mutually exclusive with `bodyMarkdown`                |
+| `bodyMarkdown`  | string                                   | no                   | `null`         | Recommended for scripts; mutually exclusive with `body`                   |
+| `slug`          | string                                   | no                   | auto-generated | Canonical slug; mutually exclusive with `path`                            |
+| `path`          | string                                   | no                   | —              | Create-time path helper; mutually exclusive with `slug`                   |
+| `status`        | `draft` \| `published`                   | no                   | `published`    | Post status                                                               |
+| `visibility`    | `public` \| `latest_hidden` \| `private` | no                   | `public`       | Post visibility                                                           |
+| `pinned`        | boolean                                  | no                   | `false`        | Pin the post; not allowed on replies                                      |
+| `featured`      | boolean                                  | no                   | `false`        | Mark as featured                                                          |
+| `url`           | absolute URL                             | required for `link`  | —              | Allows `http:`, `https:`, or `mailto:`; not allowed for `note` or `quote` |
+| `sourceUrl`     | absolute URL                             | no                   | `null`         | Quote attribution URL; not allowed for non-quote                          |
+| `quoteText`     | string                                   | required for `quote` | —              | Not allowed for `note` or `link`                                          |
+| `rating`        | integer                                  | no                   | `null`         | `1` to `5`; send `0` to clear on update                                   |
+| `collectionIds` | `col_*` string[]                         | no                   | `[]`           | Collection TypeIDs; max `20`                                              |
+| `replyToId`     | `pst_*` string                           | no                   | `null`         | Make this post a thread reply                                             |
+| `publishedAt`   | integer                                  | no                   | current time   | Unix seconds; only valid when `status` is `published`                     |
+| `attachments`   | attachment[]                             | no                   | `[]`           | Ordered attachments, max `20`                                             |
 
 Important rules:
 
@@ -458,6 +667,7 @@ Important rules:
 - `path` is only available on create. Post updates only support `slug`.
 - `link` posts require `title` and `url`.
 - `quote` posts require `quoteText` and must use `sourceName` / `sourceUrl` instead of `title` / `url`.
+- `note` posts do not accept `url`, `quoteText`, `sourceName`, or `sourceUrl`.
 - Replies cannot be pinned.
 - Replies inherit thread visibility.
 - Replies inherit the root status unless you explicitly create the reply as `draft`.
@@ -492,11 +702,17 @@ Input shapes:
 }
 ```
 
-Notes:
+Fields:
 
-- `contentFormat` currently only supports `markdown`.
-- Media attachment `alt` is optional and limited to `500` characters.
-- Text attachment `summary` is optional and limited to `300` characters.
+| Field           | Type           | Required | Default | Notes                                  |
+| --------------- | -------------- | -------- | ------- | -------------------------------------- |
+| `type`          | `"media"`      | yes      | —       | Media attachment                       |
+| `mediaId`       | `med_*` string | yes      | —       | Previously uploaded media ID           |
+| `alt`           | string         | no       | `null`  | Alt text, max `500`                    |
+| `type`          | `"text"`       | yes      | —       | Text attachment                        |
+| `contentFormat` | `"markdown"`   | yes      | —       | Currently only `markdown` is supported |
+| `content`       | string         | yes      | —       | Non-empty text content                 |
+| `summary`       | string         | no       | `null`  | Optional summary, max `300`            |
 
 Response shapes:
 
@@ -575,7 +791,7 @@ Example:
 
 Request body fields:
 
-This endpoint accepts the same JSON fields as `POST /api/posts`, except `path`. All fields are optional.
+This endpoint accepts the same JSON fields as `POST /api/posts`, except `path`. All fields are optional. Additionally, update accepts `null` to clear `title`, `sourceName`, `body`, `bodyMarkdown`, `url`, `sourceUrl`, `quoteText`, and `rating`.
 
 Attachment replacement rules:
 
@@ -653,12 +869,12 @@ Request body:
 
 Fields:
 
-| Field            | Type    | Required | Notes                           |
-| ---------------- | ------- | -------- | ------------------------------- |
-| `filename`       | string  | yes      | Original filename               |
-| `contentType`    | string  | yes      | MIME type                       |
-| `size`           | integer | yes      | File size in bytes              |
-| `checksumSha256` | string  | no       | Base64-encoded SHA-256 checksum |
+| Field            | Type    | Required | Default | Notes                           |
+| ---------------- | ------- | -------- | ------- | ------------------------------- |
+| `filename`       | string  | yes      | —       | Original filename               |
+| `contentType`    | string  | yes      | —       | MIME type                       |
+| `size`           | integer | yes      | —       | File size in bytes              |
+| `checksumSha256` | string  | no       | `null`  | Base64-encoded SHA-256 checksum |
 
 The response includes an upload session ID (`upl_*`) and one of three transport kinds.
 
@@ -771,15 +987,15 @@ Request body:
 
 Fields:
 
-| Field      | Type    | Required            | Notes                          |
-| ---------- | ------- | ------------------- | ------------------------------ |
-| `width`    | integer | no                  | Image/video width              |
-| `height`   | integer | no                  | Image/video height             |
-| `blurhash` | string  | no                  | Optional blurhash              |
-| `waveform` | string  | no                  | Optional audio waveform        |
-| `summary`  | string  | no                  | Mainly useful for text uploads |
-| `chars`    | integer | no                  | Mainly useful for text uploads |
-| `parts`    | array   | transport-dependent | Required for `multipartRelay`  |
+| Field      | Type    | Required                      | Default | Notes                                 |
+| ---------- | ------- | ----------------------------- | ------- | ------------------------------------- |
+| `width`    | integer | no                            | `null`  | Image/video width; positive           |
+| `height`   | integer | no                            | `null`  | Image/video height; positive          |
+| `blurhash` | string  | no                            | `null`  | Blurhash string, max `200`            |
+| `waveform` | string  | no                            | `null`  | Audio waveform, max `2000`            |
+| `summary`  | string  | no                            | `null`  | Mainly for text uploads, max `500`    |
+| `chars`    | integer | no                            | `null`  | Mainly for text uploads; non-negative |
+| `parts`    | array   | required for `multipartRelay` | —       | `[{partNumber, etag}]`                |
 
 Response:
 
@@ -803,11 +1019,109 @@ Response:
 { "success": true }
 ```
 
-### Legacy single-request uploads
+### List uploaded media
+
+`GET /api/upload`
+
+Auth: `Session or token`
+
+This is the media metadata endpoint used by `npx jant media list`.
+
+Query parameters:
+
+| Parameter    | Type    | Required | Default | Notes                                      |
+| ------------ | ------- | -------- | ------- | ------------------------------------------ |
+| `limit`      | integer | no       | `50`    | `1` to `200`                               |
+| `mimePrefix` | string  | no       | none    | Prefix filter such as `image/` or `video/` |
+
+Response:
+
+```json
+{
+  "media": [
+    {
+      "id": "med_01jpyx4g9m8b4y50a4gx3t7p1n",
+      "siteId": "sit_01jpyx1v6z9k4c7b2m5q8r3nfh",
+      "postId": null,
+      "filename": "photo.webp",
+      "originalName": "photo.webp",
+      "mimeType": "image/webp",
+      "size": 1024000,
+      "provider": "r2",
+      "width": 1200,
+      "height": 800,
+      "durationSeconds": null,
+      "alt": "Cover image",
+      "position": "0",
+      "blurhash": null,
+      "waveform": null,
+      "summary": null,
+      "chars": null,
+      "mediaKind": "image",
+      "createdAt": 1706000000,
+      "updatedAt": 1706000000,
+      "type": "media",
+      "url": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.webp",
+      "previewUrl": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.webp",
+      "posterUrl": null
+    }
+  ]
+}
+```
+
+Notes:
+
+- This list may include ordinary uploaded binaries and stored text attachments.
+- Text attachments use `type: "text"` and expose `contentFormat` plus `contentUrl` instead of `url`, `previewUrl`, and `posterUrl`.
+
+### Get a media item
+
+`GET /api/upload/:id`
+
+Auth: `Session or token`
+
+Returns one media or text attachment record using the same response shape as `GET /api/upload`.
+
+### Update media alt text
+
+`PATCH /api/upload/:id`
+
+Auth: `Session or token`
+
+Request body:
+
+```json
+{
+  "alt": "Cover image"
+}
+```
+
+Rules:
+
+- `alt` is trimmed before storing.
+- Max length is `500`.
+
+Response: `200 OK` with the updated media object.
+
+### Delete a media item
+
+`DELETE /api/upload/:id`
+
+Auth: `Session or token`
+
+Deletes the media record and its stored object.
+
+Response:
+
+```json
+{ "success": true }
+```
+
+### Legacy one-shot upload
 
 Base path: `/api/upload`
 
-Use this if you want the old one-shot multipart form upload behavior. New clients should prefer `/api/uploads`.
+Use this only if you want the older multipart form upload behavior in a single request. New clients should prefer `/api/uploads`.
 
 #### Upload a file
 
@@ -817,16 +1131,16 @@ Content type: `multipart/form-data`
 
 Form fields:
 
-| Field      | Type    | Required | Notes                          |
-| ---------- | ------- | -------- | ------------------------------ |
-| `file`     | file    | yes      | Main file                      |
-| `width`    | integer | no       | Image/video width              |
-| `height`   | integer | no       | Image/video height             |
-| `alt`      | string  | no       | Alt text                       |
-| `blurhash` | string  | no       | Blurhash                       |
-| `waveform` | string  | no       | Audio waveform                 |
-| `summary`  | string  | no       | Summary for text uploads       |
-| `poster`   | file    | no       | Poster frame for video uploads |
+| Field      | Type    | Required | Default | Notes                          |
+| ---------- | ------- | -------- | ------- | ------------------------------ |
+| `file`     | file    | yes      | —       | Main file                      |
+| `width`    | integer | no       | `null`  | Image/video width              |
+| `height`   | integer | no       | `null`  | Image/video height             |
+| `alt`      | string  | no       | `null`  | Alt text                       |
+| `blurhash` | string  | no       | `null`  | Blurhash                       |
+| `waveform` | string  | no       | `null`  | Audio waveform                 |
+| `summary`  | string  | no       | `null`  | Summary for text uploads       |
+| `poster`   | file    | no       | —       | Poster frame for video uploads |
 
 Response:
 
@@ -841,43 +1155,6 @@ Response:
 ```
 
 If the request sends `Accept: text/event-stream`, the endpoint may return SSE patches instead of JSON for dashboard use.
-
-#### List uploaded files
-
-`GET /api/upload`
-
-Query parameters:
-
-| Parameter | Type    | Default |
-| --------- | ------- | ------- |
-| `limit`   | integer | `50`    |
-
-Response:
-
-```json
-{
-  "media": [
-    {
-      "id": "med_01jpyx4g9m8b4y50a4gx3t7p1n",
-      "filename": "med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
-      "url": "/media/med_01jpyx4g9m8b4y50a4gx3t7p1n.jpg",
-      "mimeType": "image/jpeg",
-      "size": 1024000,
-      "createdAt": 1706000000
-    }
-  ]
-}
-```
-
-#### Delete a file
-
-`DELETE /api/upload/:id`
-
-Response:
-
-```json
-{ "success": true }
-```
 
 ### Legacy explicit multipart relay
 
@@ -933,9 +1210,9 @@ Content type: `multipart/form-data`
 
 Form field:
 
-| Field    | Type | Required |
-| -------- | ---- | -------- |
-| `poster` | file | yes      |
+| Field    | Type | Required | Default | Notes             |
+| -------- | ---- | -------- | ------- | ----------------- |
+| `poster` | file | yes      | —       | WebP poster frame |
 
 Response:
 
@@ -1009,32 +1286,32 @@ Collections group posts by topic. A post can belong to multiple collections.
 
 Collection responses include these fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
-| `id` | `col_*` string | Collection ID |
-| `siteId` | string | Owning site |
-| `slug` | string | Canonical collection slug |
-| `title` | string | Display title |
-| `description` | string \| `null` | Optional description |
-| `sortOrder` | `newest` \| `oldest` \| `rating_desc` | Per-collection post sort order |
-| `createdAt` | integer | Unix seconds |
-| `updatedAt` | integer | Unix seconds |
-| `postCount` | integer | Only present in list responses |
-| `recentActivityAt` | integer | Only present in list responses |
+| Field              | Type                                  | Notes                          |
+| ------------------ | ------------------------------------- | ------------------------------ |
+| `id`               | `col_*` string                        | Collection ID                  |
+| `siteId`           | string                                | Owning site                    |
+| `slug`             | string                                | Canonical collection slug      |
+| `title`            | string                                | Display title                  |
+| `description`      | string \| `null`                      | Optional description           |
+| `sortOrder`        | `newest` \| `oldest` \| `rating_desc` | Per-collection post sort order |
+| `createdAt`        | integer                               | Unix seconds                   |
+| `updatedAt`        | integer                               | Unix seconds                   |
+| `postCount`        | integer                               | Only present in list responses |
+| `recentActivityAt` | integer                               | Only present in list responses |
 
 Directory item responses include these fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
-| `id` | `cdi_*` string | Directory item ID |
-| `siteId` | string | Owning site |
-| `type` | `collection` \| `divider` \| `link` | Item kind |
-| `collectionId` | `col_*` string \| `null` | Present for `type: "collection"` |
-| `label` | string \| `null` | Divider label or link label |
-| `url` | string \| `null` | Present for `type: "link"` |
-| `position` | string | Fractional ordering key |
-| `createdAt` | integer | Unix seconds |
-| `updatedAt` | integer | Unix seconds |
+| Field          | Type                                | Notes                            |
+| -------------- | ----------------------------------- | -------------------------------- |
+| `id`           | `cdi_*` string                      | Directory item ID                |
+| `siteId`       | string                              | Owning site                      |
+| `type`         | `collection` \| `divider` \| `link` | Item kind                        |
+| `collectionId` | `col_*` string \| `null`            | Present for `type: "collection"` |
+| `label`        | string \| `null`                    | Divider label or link label      |
+| `url`          | string \| `null`                    | Present for `type: "link"`       |
+| `position`     | string                              | Fractional ordering key          |
+| `createdAt`    | integer                             | Unix seconds                     |
+| `updatedAt`    | integer                             | Unix seconds                     |
 
 Notes:
 
@@ -1050,9 +1327,9 @@ Auth: `Public`
 
 Query parameters:
 
-| Parameter | Type | Default | Notes |
-| --- | --- | --- | --- |
-| `view` | `compose` | none | Specialized compose view sorted by recent activity |
+| Parameter | Type      | Required | Default | Notes                                              |
+| --------- | --------- | -------- | ------- | -------------------------------------------------- |
+| `view`    | `compose` | no       | none    | Specialized compose view sorted by recent activity |
 
 Default response:
 
@@ -1133,12 +1410,12 @@ Request body:
 
 Fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `slug` | string | yes | Canonical collection slug, max `200`, lowercase letters/numbers/hyphens only |
-| `title` | string | yes | Display title, max `120` |
-| `description` | string | no | Optional description, max `500` |
-| `sortOrder` | `newest` \| `oldest` \| `rating_desc` | no | Defaults to `newest` |
+| Field         | Type                                  | Required | Default  | Notes                                                                        |
+| ------------- | ------------------------------------- | -------- | -------- | ---------------------------------------------------------------------------- |
+| `slug`        | string                                | yes      | —        | Canonical collection slug, max `200`, lowercase letters/numbers/hyphens only |
+| `title`       | string                                | yes      | —        | Display title, max `120`                                                     |
+| `description` | string                                | no       | `null`   | Optional description, max `500`                                              |
+| `sortOrder`   | `newest` \| `oldest` \| `rating_desc` | no       | `newest` | Per-collection post sort order                                               |
 
 Notes:
 
@@ -1157,12 +1434,12 @@ This is a partial update.
 
 Request body fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `slug` | string | no | Same rules as create |
-| `title` | string | no | Max `120` |
-| `description` | string \| `null` | no | Set to `null` to clear |
-| `sortOrder` | `newest` \| `oldest` \| `rating_desc` | no | Replaces the collection sort order |
+| Field         | Type                                  | Required | Default   | Notes                              |
+| ------------- | ------------------------------------- | -------- | --------- | ---------------------------------- |
+| `slug`        | string                                | no       | unchanged | Same rules as create               |
+| `title`       | string                                | no       | unchanged | Max `120`                          |
+| `description` | string \| `null`                      | no       | unchanged | Send `null` to clear               |
+| `sortOrder`   | `newest` \| `oldest` \| `rating_desc` | no       | unchanged | Replaces the collection sort order |
 
 Response: `200 OK` with the updated collection object, including `siteId`.
 
@@ -1186,7 +1463,7 @@ Response:
 
 Auth: `Session or token`
 
-Creates a manual directory item for the `/c` collections index.
+Creates a manual directory item for the `/collections` directory page.
 
 Request body:
 
@@ -1211,13 +1488,13 @@ Link:
 
 Fields by type:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `type` | `divider` | yes | Creates a divider item |
-| `label` | string \| `null` | no | Divider label, max `60`; blank values are stored as `null` |
-| `type` | `link` | yes | Creates a custom link item |
-| `label` | string | yes | Link label, 1-60 chars after trim |
-| `url` | string | yes | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
+| Field   | Type             | Required         | Default | Notes                                                         |
+| ------- | ---------------- | ---------------- | ------- | ------------------------------------------------------------- |
+| `type`  | `divider`        | yes              | —       | Creates a divider item                                        |
+| `label` | string \| `null` | no               | `null`  | Divider label, max `60`; blank values are stored as `null`    |
+| `type`  | `link`           | yes              | —       | Creates a custom link item                                    |
+| `label` | string           | yes (for `link`) | —       | Link label, 1-60 chars after trim                             |
+| `url`   | string           | yes (for `link`) | —       | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
 
 Notes:
 
@@ -1256,10 +1533,10 @@ This is a partial update.
 
 Request body fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `label` | string \| `null` | no | For dividers: update label, or set `null` to clear |
-| `url` | string | no | For links: update URL |
+| Field   | Type             | Required | Default   | Notes                                               |
+| ------- | ---------------- | -------- | --------- | --------------------------------------------------- |
+| `label` | string \| `null` | no       | unchanged | For dividers: update label, or send `null` to clear |
+| `url`   | string           | no       | unchanged | For links: update URL                               |
 
 Notes:
 
@@ -1287,10 +1564,10 @@ Request body:
 
 Fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `after` | `cdi_*` string \| `null` | no | Place the item after this neighbor |
-| `before` | `cdi_*` string \| `null` | no | Place the item before this neighbor |
+| Field    | Type                     | Required | Default | Notes                               |
+| -------- | ------------------------ | -------- | ------- | ----------------------------------- |
+| `after`  | `cdi_*` string \| `null` | no       | `null`  | Place the item after this neighbor  |
+| `before` | `cdi_*` string \| `null` | no       | `null`  | Place the item before this neighbor |
 
 Notes:
 
@@ -1327,9 +1604,9 @@ Request body:
 
 Fields:
 
-| Field    | Type           | Required | Notes   |
-| -------- | -------------- | -------- | ------- |
-| `postId` | `pst_*` string | yes      | Post ID |
+| Field    | Type           | Required | Default | Notes   |
+| -------- | -------------- | -------- | ------- | ------- |
+| `postId` | `pst_*` string | yes      | —       | Post ID |
 
 Response:
 
@@ -1361,17 +1638,17 @@ Navigation items power the header navigation.
 
 Nav item responses include these fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
-| `id` | `nav_*` string | Nav item ID |
-| `siteId` | string | Owning site |
-| `type` | `link` \| `system` | Custom link or built-in item |
+| Field       | Type                                              | Notes                             |
+| ----------- | ------------------------------------------------- | --------------------------------- |
+| `id`        | `nav_*` string                                    | Nav item ID                       |
+| `siteId`    | string                                            | Owning site                       |
+| `type`      | `link` \| `system`                                | Custom link or built-in item      |
 | `systemKey` | `rss` \| `settings` \| `collections` \| `archive` | Only present for `type: "system"` |
-| `label` | string | Display label |
-| `url` | string | Stored URL or path |
-| `position` | string | Fractional ordering key |
-| `createdAt` | integer | Unix seconds |
-| `updatedAt` | integer | Unix seconds |
+| `label`     | string                                            | Display label                     |
+| `url`       | string                                            | Stored URL or path                |
+| `position`  | string                                            | Fractional ordering key           |
+| `createdAt` | integer                                           | Unix seconds                      |
+| `updatedAt` | integer                                           | Unix seconds                      |
 
 ### List nav items
 
@@ -1424,13 +1701,13 @@ Create a built-in item:
 
 Fields by type:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `type` | `link` | yes | Creates a custom nav link |
-| `label` | string | yes | Link label, 1-100 chars after trim |
-| `url` | string | yes | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
-| `type` | `system` | yes | Creates a built-in nav item |
-| `systemKey` | `rss` \| `settings` \| `collections` \| `archive` | yes | Built-in destination key |
+| Field       | Type                                              | Required           | Default | Notes                                                         |
+| ----------- | ------------------------------------------------- | ------------------ | ------- | ------------------------------------------------------------- |
+| `type`      | `link`                                            | yes                | —       | Creates a custom nav link                                     |
+| `label`     | string                                            | yes (for `link`)   | —       | Link label, 1-100 chars after trim                            |
+| `url`       | string                                            | yes (for `link`)   | —       | Relative path or absolute `http:`, `https:`, or `mailto:` URL |
+| `type`      | `system`                                          | yes                | —       | Creates a built-in nav item                                   |
+| `systemKey` | `rss` \| `settings` \| `collections` \| `archive` | yes (for `system`) | —       | Built-in destination key                                      |
 
 System keys:
 
@@ -1511,23 +1788,23 @@ Custom URLs let you attach extra paths to posts or collections, or define intern
 
 Custom URL responses include these fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
-| `id` | `pth_*` string | Custom URL ID |
-| `path` | string | Normalized path without a leading slash |
-| `targetType` | `post` \| `collection` \| `redirect` | Target kind |
-| `targetId` | string \| `null` | Resolved post/collection TypeID for alias records |
-| `toPath` | string \| `null` | Redirect destination with a leading slash |
-| `redirectType` | `301` \| `302` \| `null` | Redirect status for redirect records |
-| `createdAt` | integer | Unix seconds |
+| Field          | Type                                 | Notes                                             |
+| -------------- | ------------------------------------ | ------------------------------------------------- |
+| `id`           | `pth_*` string                       | Custom URL ID                                     |
+| `path`         | string                               | Normalized path without a leading slash           |
+| `targetType`   | `post` \| `collection` \| `redirect` | Target kind                                       |
+| `targetId`     | string \| `null`                     | Resolved post/collection TypeID for alias records |
+| `toPath`       | string \| `null`                     | Redirect destination with a leading slash         |
+| `redirectType` | `301` \| `302` \| `null`             | Redirect status for redirect records              |
+| `createdAt`    | integer                              | Unix seconds                                      |
 
 Target types:
 
-| Type | Meaning | Key fields |
-| --- | --- | --- |
-| `post` | Alias that resolves to a post | `targetId` |
-| `collection` | Alias that resolves to a collection | `targetId` |
-| `redirect` | Internal redirect to another path | `toPath`, `redirectType` |
+| Type         | Meaning                             | Key fields               |
+| ------------ | ----------------------------------- | ------------------------ |
+| `post`       | Alias that resolves to a post       | `targetId`               |
+| `collection` | Alias that resolves to a collection | `targetId`               |
+| `redirect`   | Internal redirect to another path   | `toPath`, `redirectType` |
 
 ### List custom URLs
 
@@ -1537,9 +1814,9 @@ Auth: `Session or token`
 
 Query parameters:
 
-| Parameter | Type    | Default |
-| --------- | ------- | ------- |
-| `page`    | integer | `1`     |
+| Parameter | Type    | Required | Default |
+| --------- | ------- | -------- | ------- |
+| `page`    | integer | no       | `1`     |
 
 Response:
 
@@ -1596,13 +1873,13 @@ Request body:
 
 Fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `path` | string | yes | Must start with `/`; max `512`; lowercase letters, numbers, `-`, and `/` only |
-| `targetType` | `post` \| `collection` \| `redirect` | yes | Target kind |
-| `targetId` | string | alias only | For `post` and `collection`, send the canonical slug, not the TypeID |
-| `toPath` | string | redirect only | Internal destination path such as `/new-path`; normalized before storage |
-| `redirectType` | `"301"` \| `"302"` | redirect only | Defaults to `301` |
+| Field          | Type                                 | Required                            | Default | Notes                                                                         |
+| -------------- | ------------------------------------ | ----------------------------------- | ------- | ----------------------------------------------------------------------------- |
+| `path`         | string                               | yes                                 | —       | Must start with `/`; max `512`; lowercase letters, numbers, `-`, and `/` only |
+| `targetType`   | `post` \| `collection` \| `redirect` | yes                                 | —       | Target kind                                                                   |
+| `targetId`     | string                               | required for `post` or `collection` | —       | Send the canonical slug, not the TypeID                                       |
+| `toPath`       | string                               | required for `redirect`             | —       | Internal destination path such as `/new-path`; normalized before storage      |
+| `redirectType` | `"301"` \| `"302"`                   | no                                  | `301`   | Only used for `redirect`                                                      |
 
 Examples:
 
@@ -1674,7 +1951,6 @@ All values are strings because they map directly to stored config values.
 | `SITE_LANGUAGE`              | Language code           | `"en"`              |
 | `HOME_DEFAULT_VIEW`          | Home feed mode          | `"latest"`          |
 | `MAIN_RSS_FEED`              | Canonical feed kind     | `"featured"`        |
-| `HEADER_NAV_MAX_VISIBLE`     | Header nav item count   | `"3"`               |
 | `TIME_ZONE`                  | IANA timezone           | `"Asia/Shanghai"`   |
 | `SITE_FOOTER`                | Footer HTML/text        | `"<p>Footer</p>"`   |
 | `SHOW_JANT_BRANDING_ON_HOME` | Branding toggle         | `"true"`            |
@@ -1705,7 +1981,6 @@ Response:
     "SITE_LANGUAGE": "en",
     "HOME_DEFAULT_VIEW": "latest",
     "MAIN_RSS_FEED": "featured",
-    "HEADER_NAV_MAX_VISIBLE": "2",
     "TIME_ZONE": "UTC",
     "SITE_FOOTER": "",
     "SHOW_JANT_BRANDING_ON_HOME": "",
@@ -1759,7 +2034,6 @@ Example partial-apply response:
     "SITE_LANGUAGE": "en",
     "HOME_DEFAULT_VIEW": "latest",
     "MAIN_RSS_FEED": "featured",
-    "HEADER_NAV_MAX_VISIBLE": "2",
     "TIME_ZONE": "UTC",
     "SITE_FOOTER": "",
     "SHOW_JANT_BRANDING_ON_HOME": "",
@@ -1803,11 +2077,11 @@ Content type: `multipart/form-data`
 
 Form fields:
 
-| Field        | Type | Required | Notes                  |
-| ------------ | ---- | -------- | ---------------------- |
-| `file`       | file | yes      | Main avatar image      |
-| `favicon`    | file | no       | Favicon `.ico` payload |
-| `appleTouch` | file | no       | Apple touch icon       |
+| Field        | Type | Required | Default | Notes                  |
+| ------------ | ---- | -------- | ------- | ---------------------- |
+| `file`       | file | yes      | —       | Main avatar image      |
+| `favicon`    | file | no       | —       | Favicon `.ico` payload |
+| `appleTouch` | file | no       | —       | Apple touch icon       |
 
 Response:
 
@@ -1858,18 +2132,18 @@ Query parameters:
 
 Result objects include these fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
-| `id` | `pst_*` string | Post ID |
-| `format` | `note` \| `link` \| `quote` | Post format |
-| `slug` | string | Canonical slug |
-| `snippet` | string \| omitted | Search snippet; may contain `<mark>` tags |
-| `publishedAt` | integer \| `null` | Publish timestamp |
-| `permalink` | string | Public path, including any configured site prefix |
-| `title` | string \| `null` | Present for `note` and `link` results |
-| `url` | string \| `null` | Present for `note` and `link` results |
-| `sourceName` | string \| `null` | Present instead of `title` for `quote` results |
-| `sourceUrl` | string \| `null` | Present instead of `url` for `quote` results |
+| Field         | Type                        | Notes                                             |
+| ------------- | --------------------------- | ------------------------------------------------- |
+| `id`          | `pst_*` string              | Post ID                                           |
+| `format`      | `note` \| `link` \| `quote` | Post format                                       |
+| `slug`        | string                      | Canonical slug                                    |
+| `snippet`     | string \| omitted           | Search snippet; may contain `<mark>` tags         |
+| `publishedAt` | integer \| `null`           | Publish timestamp                                 |
+| `permalink`   | string                      | Public path, including any configured site prefix |
+| `title`       | string \| `null`            | Present for `note` and `link` results             |
+| `url`         | string \| `null`            | Present for `note` and `link` results             |
+| `sourceName`  | string \| `null`            | Present instead of `title` for `quote` results    |
+| `sourceUrl`   | string \| `null`            | Present instead of `url` for `quote` results      |
 
 Response:
 
@@ -2014,9 +2288,9 @@ Request body:
 
 Fields:
 
-| Field   | Type    | Required | Notes                           |
-| ------- | ------- | -------- | ------------------------------- |
-| `limit` | integer | no       | Positive integer, maximum `500` |
+| Field   | Type    | Required | Default     | Notes                           |
+| ------- | ------- | -------- | ----------- | ------------------------------- |
+| `limit` | integer | no       | unspecified | Positive integer, maximum `500` |
 
 Notes:
 
@@ -2034,10 +2308,10 @@ Response:
 
 Response fields:
 
-| Field | Type | Notes |
-| --- | --- | --- |
+| Field                     | Type    | Notes                                          |
+| ------------------------- | ------- | ---------------------------------------------- |
 | `abortedMultipartUploads` | integer | Number of underlying multipart uploads aborted |
-| `deletedSessions` | integer | Number of expired upload-session rows removed |
+| `deletedSessions`         | integer | Number of expired upload-session rows removed  |
 
 ### Managed site lifecycle
 
@@ -2061,11 +2335,11 @@ Request body:
 
 Fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `key` | string | yes | Lowercase site key, `3-40` chars, letters/numbers/hyphens |
-| `primaryHost` | string | yes | Lowercase hostname, max `255` |
-| `siteName` | string | yes | Display name, `1-120` chars after trim |
+| Field         | Type   | Required | Default | Notes                                                     |
+| ------------- | ------ | -------- | ------- | --------------------------------------------------------- |
+| `key`         | string | yes      | —       | Lowercase site key, `3-40` chars, letters/numbers/hyphens |
+| `primaryHost` | string | yes      | —       | Lowercase hostname, max `255`                             |
+| `siteName`    | string | yes      | —       | Display name, `1-120` chars after trim                    |
 
 Response:
 
@@ -2200,10 +2474,10 @@ Request body:
 
 Fields:
 
-| Field | Type | Required | Notes |
-| --- | --- | --- | --- |
-| `host` | string | yes | Lowercase hostname, max `255` |
-| `makePrimary` | boolean | no | When true, demotes the current primary domain |
+| Field         | Type    | Required | Default | Notes                                         |
+| ------------- | ------- | -------- | ------- | --------------------------------------------- |
+| `host`        | string  | yes      | —       | Lowercase hostname, max `255`                 |
+| `makePrimary` | boolean | no       | `false` | When true, demotes the current primary domain |
 
 Notes:
 
@@ -2245,21 +2519,22 @@ Notes:
 
 These are not part of the JSON content-management API, but they are often useful in automation or operations.
 
-| Endpoint | Auth | Response | Notes |
-| --- | --- | --- | --- |
-| `GET /health` | Public | JSON | Lightweight liveness probe |
-| `GET /readyz` | Public | JSON | Readiness check for startup config and database |
-| `GET /feed` | Public | RSS | Canonical site feed (`latest` or `featured`, based on settings) |
-| `GET /feed/atom.xml` | Public | Atom | Canonical site feed in Atom format |
-| `GET /feed/latest` | Public | RSS | Latest public posts feed |
-| `GET /feed/latest/atom.xml` | Public | Atom | Latest public posts feed |
-| `GET /feed/featured` | Public | RSS | Featured posts feed |
-| `GET /feed/featured/atom.xml` | Public | Atom | Featured posts feed |
-| `GET /feed/all` | Public | Redirect | Legacy alias to `/feed/latest` |
-| `GET /feed/all/atom.xml` | Public | Redirect | Legacy Atom alias to `/feed/latest/atom.xml` |
-| `GET /c/:slug/feed` | Public | RSS | Collection feed for one collection or collection selection |
-| `GET /sitemap.xml` | Public | XML | Sitemap for published posts |
-| `GET /robots.txt` | Public | Text | Robots rules and sitemap location |
+| Endpoint                      | Auth   | Response | Notes                                                           |
+| ----------------------------- | ------ | -------- | --------------------------------------------------------------- |
+| `GET /health`                 | Public | JSON     | Lightweight liveness probe                                      |
+| `GET /readyz`                 | Public | JSON     | Readiness check for startup config and database                 |
+| `GET /feed`                   | Public | RSS      | Canonical site feed (`latest` or `featured`, based on settings) |
+| `GET /feed/atom.xml`          | Public | Atom     | Canonical site feed in Atom format                              |
+| `GET /feed/latest`            | Public | RSS      | Latest public posts feed                                        |
+| `GET /feed/latest/atom.xml`   | Public | Atom     | Latest public posts feed                                        |
+| `GET /feed/featured`          | Public | RSS      | Featured posts feed                                             |
+| `GET /feed/featured/atom.xml` | Public | Atom     | Featured posts feed                                             |
+| `GET /feed/all`               | Public | Redirect | Legacy alias to `/feed/latest`                                  |
+| `GET /feed/all/atom.xml`      | Public | Redirect | Legacy Atom alias to `/feed/latest/atom.xml`                    |
+| `GET /:slug/feed`             | Public | RSS      | Collection feed for one collection                              |
+| `GET /collections/:slug/feed` | Public | RSS      | Collection feed for a collection selection                      |
+| `GET /sitemap.xml`            | Public | XML      | Sitemap for published posts                                     |
+| `GET /robots.txt`             | Public | Text     | Robots rules and sitemap location                               |
 
 ### Health and readiness
 
@@ -2314,7 +2589,8 @@ Feed notes:
 - Latest feeds include published root posts only, excluding private posts and `latest_hidden` posts.
 - Featured feeds include published featured root posts and exclude private posts.
 - `GET /feed/all` and `GET /feed/all/atom.xml` are legacy aliases that redirect to the `latest` feed with `308`, preserving the query string.
-- `GET /c/:slug/feed` returns an RSS feed for the collection page selection. Non-canonical collection aliases redirect to the canonical selection path with `301`.
+- `GET /:slug/feed` returns an RSS feed for a single collection.
+- `GET /collections/:slug/feed` returns an RSS feed for a collection selection and redirects normalized selections to the canonical path with `301`.
 
 ### Sitemap and robots
 
@@ -2378,6 +2654,25 @@ curl -X POST https://your-site.com/api/posts \
       { "type": "media", "mediaId": "med_01..." }
     ]
   }'
+```
+
+### Automate content from a generated site
+
+Projects created with `create-jant` include `examples/agent-content-automation/README.md`.
+
+Use that folder when you want ready-made examples for:
+
+- creating note and quote posts from JSON
+- updating editable settings from JSON
+- uploading media and attaching the returned `med_*` ID to a post
+- calling `/api/mcp` from an MCP-capable agent
+
+When the automation runs on the same machine as the site, prefer the local CLI first:
+
+```bash
+npx jant posts create --input ./examples/agent-content-automation/note.json
+npx jant media upload ./path/to/photo.webp --alt "Cover image"
+npx jant settings update --input ./examples/agent-content-automation/site-settings.json
 ```
 
 ### Migrate content from another system
