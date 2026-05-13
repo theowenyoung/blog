@@ -1,4 +1,4 @@
-base_url = "https://www.owenyoung.com"
+base_url = "https://old.owenyoung.com"
 build_search_index = false
 compile_sass = false
 default_language = "zh"
