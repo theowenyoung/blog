@@ -4,6 +4,7 @@ compile_sass = false
 default_language = "zh"
 description = "主要关注技术，读书，摘抄，杂谈，文章评论，工具分享，工作流，灵感，英文学习，注意力管理，深度工作等方向。"
 generate_feeds = true
+generate_sitemap = false
 minify_html = true
 taxonomies = [
   { name = "tags", feed = true, paginate_by = 50 },
@@ -32,6 +33,7 @@ lazy_async_image = false
 [extra]
 author = "Owen Young"
 email = "owen@owenyoung.com"
+canonical_base_url = "https://www.owenyoung.com"
 prefix_url = "https://www.owenyoung.com"
 indieweb_url = "https://owenyoung.com/"
 theme_color = "#fffcf9"
